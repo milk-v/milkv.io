@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmilkv_io=self.webpackChunkmilkv_io||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Experience using Duo","permalink":"/blog/2023/1/4/2023-1-4-Duo/ExperienceUsingDuo"},{"title":"How Duo was created","permalink":"/blog/2023/1/4/2023-1-4-Duo/HowDuoCreated"}]}')}}]);
