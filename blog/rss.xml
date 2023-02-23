@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>MilkV Blog</title>
-        <link>https://milkv.io/home/blog</link>
+        <link>https://milk-v.github.io/blog</link>
         <description>MilkV Blog</description>
         <lastBuildDate>Wed, 04 Jan 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[Experience using Duo]]></title>
-            <link>https://milkv.io/home/blog/2023/1/4/2023-1-4-Duo/ExperienceUsingDuo</link>
-            <guid>https://milkv.io/home/blog/2023/1/4/2023-1-4-Duo/ExperienceUsingDuo</guid>
+            <link>https://milk-v.github.io/blog/2023/1/4/2023-1-4-Duo/ExperienceUsingDuo</link>
+            <guid>https://milk-v.github.io/blog/2023/1/4/2023-1-4-Duo/ExperienceUsingDuo</guid>
             <pubDate>Wed, 04 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[As an engineer who was not involved in the development of Duo, I received the first MilkV Duo MPU for the entire company and was told by my colleagues that my experience was critical to the subsequent optimization of Duo and that I was expected to talk about Duo's performance in application scenarios from a developer's perspective. The benefit of Duo is that he can run Linux and even AliOS at the same time, making it very simple for me to perform many control operations via software.]]></description>
             <content:encoded><![CDATA[<p>As an engineer who was not involved in the development of Duo, I received the first MilkV Duo MPU for the entire company and was told by my colleagues that my experience was critical to the subsequent optimization of Duo and that I was expected to talk about Duo's performance in application scenarios from a developer's perspective. The benefit of Duo is that he can run Linux and even AliOS at the same time, making it very simple for me to perform many control operations via software.</p><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="smart-door-locks">Smart door locks<a href="#smart-door-locks" class="hash-link" aria-label="Direct link to Smart door locks" title="Direct link to Smart door locks">​</a></h2><p>The vast majority of smart locks today are unlocked with a password, which can be accomplished with a very common MPU. Face-recognition smart door locks are very expensive, and manufacturers must invest a significant amount of money in custom development. With the introduction of <strong><em>Duo</em></strong>, such scenarios now have a new solution.  </p><p>Face recognition and door lock motor control are the two primary functional modules of smart door locks.  </p><p>And because <strong><em>Duo</em></strong> runs Linux and AliOS, we can easily deploy face recognition algorithms on the system. I chose to take advantage of Duo's AMP feature. I ran the CenterFace algorithm on my PC to generate a minimal model, which I then deployed on Duo's AliOS-Things, while Linux was used to control the opening and closing of door locks and other functions, allowing the face recognition module to run more reliably and with less impact on performance. I did not optimize or validate the model's recognition accuracy, but the actual running results satisfy the smart door lock scenario.
@@ -20,8 +20,8 @@ Please keep in mind that if you are training your model with PyTorch, you must c
         </item>
         <item>
             <title><![CDATA[How Duo was created]]></title>
-            <link>https://milkv.io/home/blog/2023/1/4/2023-1-4-Duo/HowDuoCreated</link>
-            <guid>https://milkv.io/home/blog/2023/1/4/2023-1-4-Duo/HowDuoCreated</guid>
+            <link>https://milk-v.github.io/blog/2023/1/4/2023-1-4-Duo/HowDuoCreated</link>
+            <guid>https://milk-v.github.io/blog/2023/1/4/2023-1-4-Duo/HowDuoCreated</guid>
             <pubDate>Wed, 04 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Introduction]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="introduction">Introduction<a href="#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction">​</a></h2><p>MilkV's team is comprised of experienced engineers who discovered in previous projects that there are very few small, general-purpose, low-power, low-cost development boards capable of running smart home systems. Because of the high demand for the AI processing capability of the development board itself, it is difficult to choose a suitable MPU for the development of AIoT, and to solve this problem, MilkV engineers decided to make their own MPU.</p><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="beginning">Beginning<a href="#beginning" class="hash-link" aria-label="Direct link to Beginning" title="Direct link to Beginning">​</a></h2><p>The MilkV engineers began the more detailed planning process with the initial concept in mind.
