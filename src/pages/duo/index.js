@@ -39,7 +39,6 @@ function DetailsPage() {
           <p style={{ fontSize: "1.25rem" }}>*Tax or shipping is not included </p>
         </div>
         <div className={cssList.rotateImg}></div>
-        <div className={cssList.title_line}></div>
         <div className={cssList.title2}>Specification</div>
         <div className={cssList.chartBox}>
           <h1 className={cssList.chartTitle}>More powerful than others</h1>
@@ -77,7 +76,7 @@ function DetailsPage() {
           </div>
           <div className={cssList.footerText}><h1>40P GPIO</h1></div>
           <div className={cssList.bigExhibits}>
-            <div className={cssList.head}>Incredible, it's a AMP computer！</div>
+            <div className={cssList.head}>Incredible, it's a AMP computer!</div>
             <div className={cssList.support}>Support Asymmetric multiprocessing</div>
             <div className={cssList.btnBox}>
 
@@ -106,11 +105,11 @@ function DetailsPage() {
           }}>
             <div className={cssList.bannerimg} style={{ left: '0' }}>
               <div className={cssList.img1} ></div>
-              <p>smart door lock</p>
+              <p>Smart Door Lock</p>
             </div>
             <div className={cssList.bannerimg} style={{ left: '28.06rem' }}>
               <div className={cssList.img2} ></div>
-              <p>Intelligent monitoring</p>
+              <p>Intelligent Monitoring</p>
             </div>
             <div className={cssList.bannerimg} style={{ left: '56.12rem' }}>
               <div className={cssList.img3} ></div>
@@ -122,7 +121,7 @@ function DetailsPage() {
             </div>
             <div className={cssList.bannerimg} style={{ left: '112.24rem' }}>
               <div className={cssList.img5} ></div>
-              <p>Pedestrian detection</p>
+              <p>Pedestrian Detection</p>
             </div>
           </div>
           <div className={cssList.prev} onClick={() => onPrve()}></div>

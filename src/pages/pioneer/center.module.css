@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Inter';
 }
 
 .centerBox {
@@ -9,17 +8,14 @@
     height: 100%;
     background-color: #000;
     position: relative;
-    font-family: 'Inter';
 }
 
 .startbox {
     width: 82.5rem;
-    height: 380.9375rem;
     margin: 0 auto;
     margin-top: 3.125rem;
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
-    font-family: 'Inter';
 }
 
 .center_Box {
@@ -27,7 +23,6 @@
     height: 100%;
     margin: 0 auto;
     position: relative;
-    font-family: 'Inter';
 }
 
 .pagBox {
@@ -38,7 +33,6 @@
     top: 8.125rem;
     background: url(/static/img/centerImg/Group401.png) no-repeat;
     background-size: 100%;
-    font-family: 'Inter';
 }
 
 .bigimg {
@@ -49,7 +43,6 @@
     background-size: 100%;
     position: relative;
     margin: 0 auto;
-    font-family: 'Inter';
 }
 
 .titleBox {
@@ -58,7 +51,6 @@
     position: absolute;
     top: 18.25rem;
     left: -5rem;
-    font-family: 'Inter';
 }
 
 .titleBox>h1 {
@@ -72,48 +64,41 @@
     background-clip: text;
     text-fill-color: transparent;
     text-align: center;
-    font-family: 'Inter';
 }
 
 .titleBox>p {
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 2.2963rem;
     color: #fff;
     text-align: center;
     margin-top: 1.17rem;
-    font-family: 'Inter';
 }
 
 .buy {
     margin-top: 0.34rem;
-    font-family: 'Inter';
 }
 
 .mintext {
     text-align: center;
     font-size: 1.4299rem;
     color: #fff;
-    font-family: 'Inter';
 }
 
 
 .title2 {
-    font-family: Inter;
+    margin-top: 5rem;
+    margin-bottom: 6.25rem;
     font-size: 4.7804rem;
     font-weight: 500;
     line-height: 4.8748rem;
     letter-spacing: 0em;
     text-align: center;
     color: #fff;
-    position: absolute;
+    position: relative;
     width: 38.7156rem;
     height: 4.875rem;
-    left: 0;
-    top: .475rem;
     text-align: left;
-    font-family: 'Inter';
 }
 
 .title2::after {
@@ -121,10 +106,9 @@
     position: absolute;
     right: -46.5625rem;
     bottom: 1.25rem;
-    width: 52.5625rem;
+    width: 55.5625rem;
     height: 2px;
     background: #929292;
-    font-family: 'Inter';
 }
 
 .title7 {
@@ -135,13 +119,11 @@
     letter-spacing: 0em;
     text-align: center;
     color: #fff;
-    position: absolute;
     width: 72.3125rem;
     height: 4.875rem;
-    left: 0;
-    top: 44.3438rem;
     text-align: left;
-    font-family: 'Inter';
+    position: relative;
+    margin-bottom: 5rem;
 }
 
 .title7::after {
@@ -149,10 +131,9 @@
     position: absolute;
     right: -39.5625rem;
     bottom: 1.2625rem;
-    width: 73rem;
+    width: 77rem;
     height: 2px;
     background: #929292;
-    font-family: 'Inter';
 }
 
 .title8 {
@@ -163,13 +144,11 @@
     letter-spacing: 0em;
     text-align: center;
     color: #fff;
-    position: absolute;
+    position: relative;
     width: 72.3125rem;
     height: 4.875rem;
-    left: 0;
-    top: 152.5625rem;
     text-align: left;
-    font-family: 'Inter';
+    margin-bottom: 5rem;
 }
 
 .title8::after {
@@ -180,27 +159,24 @@
     width: 63.4063rem;
     height: 2px;
     background: #929292;
-    font-family: 'Inter';
 }
 
 .power {
-    width: 100%;
-    height: 35.625rem;
-    position: absolute;
-    top: 11.7rem;
-    left: 0;
-    font-family: 'Inter';
+    width: 82.5rem;
+    height: 24.625rem;
+    margin: 0 auto 9.375rem;
+    position: relative;
 }
 
 .power1 {
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
     width: 28.4375rem;
     height: 24.625rem;
     background: url(/static/img/centerImg/image83.svg) no-repeat;
     background-size: cover;
-    font-family: 'Inter';
+    overflow: hidden;
 }
 
 .power1>h1 {
@@ -208,11 +184,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     text-align: center;
     font-size: 1.4625rem;
     margin-top: 1.17rem;
-    font-family: 'Inter';
 }
 
 .powerimg {
@@ -221,7 +195,6 @@
     margin: -1.17rem auto 0;
     background: url(/static/img/centerImg/SG20421.svg) no-repeat;
     background-size: 100%;
-    font-family: 'Inter';
 }
 
 .power2 {
@@ -231,7 +204,6 @@
     right: 0;
     top: 0;
     border: 1px solid #05EAFF;
-    font-family: 'Inter';
 }
 
 .power2_txt {
@@ -240,7 +212,6 @@
     height: 4.9375rem;
     left: 5.025rem;
     top: 1.4625rem;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 2.6875rem;
@@ -248,7 +219,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-family: 'Inter';
 }
 
 .power2_1 {
@@ -257,7 +227,6 @@
     height: 16.625rem;
     left: 5.025rem;
     top: 7rem;
-    font-family: 'Inter';
 }
 
 .power2_2 {
@@ -266,17 +235,14 @@
     height: 16.625rem;
     left: 24.25rem;
     top: 7rem;
-    font-family: 'Inter';
 }
 
 .power2 p {
     font-size: 1rem;
     color: #fff;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     margin-bottom: .5rem;
-    font-family: 'Inter';
 }
 
 .power2_2::after {
@@ -287,30 +253,24 @@
     height: 15rem;
     width: 2px;
     background: #929292;
-    font-family: 'Inter';
 }
 
 .pionBox {
-    width: 100%;
+    width: 82.5rem;
     height: 30.375rem;
-    position: absolute;
-    top: 111.1563rem;
-    left: 0;
+    margin: 0 auto 9.375rem;
     display: flex;
     justify-content: space-between;
-    font-family: 'Inter';
 }
 
 .pionBox>div {
     width: 26.4375rem;
     height: 30.375rem;
-    font-family: 'Inter';
 }
 
 .pionBox .pionBox_1 {
     background: url(/static/img/centerImg/image83.svg) no-repeat;
     background-size: cover;
-    font-family: 'Inter';
 }
 
 .pionBox .pionBox_1 .pionBox_1_img {
@@ -319,7 +279,6 @@
     margin: 4.75rem auto 0;
     background: url(/static/img/centerImg/0031.svg) no-repeat;
     background-size: cover;
-    font-family: 'Inter';
 }
 
 
@@ -331,7 +290,6 @@
     height: 100%;
     padding-left: 0;
     background-color: #000;
-    font-family: 'Inter';
 }
 
 .pionBox_2>ul>li {
@@ -339,12 +297,10 @@
     height: 100%;
     position: relative;
     overflow: hidden;
-    font-family: 'Inter';
 }
 
 .pionBox_2>ul>li>p {
     text-align: center;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: .875rem;
@@ -354,12 +310,10 @@
     flex-grow: 0;
     margin-top: 1.125rem;
     margin-bottom: 0;
-    font-family: 'Inter';
 }
 
 .pionBox_2>ul>li>h1 {
     text-align: center;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 2.625rem;
@@ -367,12 +321,11 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    font-family: 'Inter';
+    margin-top: 1.125rem;
 }
 
 .pionBox_2>ul>li>div {
     text-align: center;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 1.1875rem;
@@ -380,7 +333,6 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    font-family: 'Inter';
 }
 
 
@@ -392,7 +344,6 @@
     height: 100%;
     padding-left: 0;
     background-color: #000;
-    font-family: 'Inter';
 }
 
 .pionBox_3>ul>li {
@@ -400,12 +351,10 @@
     height: 100%;
     position: relative;
     overflow: hidden;
-    font-family: 'Inter';
 }
 
 .pionBox_3>ul>li>p {
     text-align: center;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: .875rem;
@@ -415,12 +364,10 @@
     flex-grow: 0;
     margin-top: 1.125rem;
     margin-bottom: 0;
-    font-family: 'Inter';
 }
 
 .pionBox_3>ul>li>h1 {
     text-align: center;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 2.625rem;
@@ -428,12 +375,11 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    font-family: 'Inter';
+    margin-top: 1.125rem;
 }
 
 .pionBox_3>ul>li>div {
     text-align: center;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 1.25rem;
@@ -441,7 +387,6 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    font-family: 'Inter';
 }
 
 .h1_1 {
@@ -450,7 +395,6 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    font-family: 'Inter';
 }
 
 .h1_2 {
@@ -459,7 +403,6 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    font-family: 'Inter';
 }
 
 .h1_3 {
@@ -468,7 +411,6 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    font-family: 'Inter';
 }
 
 
@@ -481,7 +423,6 @@
     top: 2rem;
     background: rgba(4, 246, 198, 0.82);
     filter: blur(4.375rem);
-    font-family: 'Inter';
 }
 
 .show2 {
@@ -492,7 +433,6 @@
     top: 7.75rem;
     background: rgba(4, 246, 198, 0.82);
     filter: blur(4.375rem);
-    font-family: 'Inter';
 }
 
 .show3 {
@@ -504,7 +444,6 @@
     background: rgba(4, 246, 198, 0.8);
     filter: blur(4.375rem);
     transform: rotate(105deg);
-    font-family: 'Inter';
 }
 
 
@@ -516,13 +455,11 @@
     letter-spacing: 0em;
     text-align: center;
     color: #fff;
-    position: absolute;
+    position: relative;
     width: 66.3125rem;
     height: 4.875rem;
-    left: 0;
-    top: 102.375rem;
     text-align: left;
-    font-family: 'Inter';
+    margin-bottom: 5rem;
 }
 
 .title3::after {
@@ -533,31 +470,23 @@
     width: 47.8125rem;
     height: 2px;
     background: #929292;
-    font-family: 'Inter';
 }
 
 .startbox>ul {
-    position: absolute;
-    width: 100%;
+    width: 82.5rem;
     height: 10.6875rem;
     display: flex;
     justify-content: space-between;
     padding-left: 0;
-    font-family: 'Inter';
 }
 
-.list1 {
-    top: 160.875rem;
-    left: 0;
-    font-family: 'Inter';
-}
+
 
 .list1>li {
     width: 19.4375rem;
     border: 1px solid #05EAFF;
     height: 100%;
     border-radius: 1.175rem;
-    font-family: 'Inter';
 }
 
 .list2>li {
@@ -565,18 +494,14 @@
     height: 100%;
     border-radius: 1.175rem;
     border: 1px solid #05EAFF;
-    font-family: 'Inter';
 }
 
 .list2 {
-    top: 173.1563rem;
-    left: 0;
-    font-family: 'Inter';
+    margin-bottom: 9.375rem;
 }
 
 .div_on1 {
     background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    font-family: 'Inter';
 }
 
 .div_on1>div {
@@ -585,12 +510,10 @@
     margin: 1.75rem auto 0;
     background: url(/static/img/centerImg/pioneer_2.svg) no-repeat;
     background-size: 100%;
-    font-family: 'Inter';
 }
 
 .div_on2 {
     background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    font-family: 'Inter';
 }
 
 .div_on2>div {
@@ -599,12 +522,10 @@
     margin: 1.75rem auto 0;
     background: url(/static/img/centerImg/pioneer_1.svg) no-repeat;
     background-size: 100%;
-    font-family: 'Inter';
 }
 
 .div_on3 {
     background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    font-family: 'Inter';
 }
 
 .div_on3>div {
@@ -613,12 +534,10 @@
     margin: 1.75rem auto 0;
     background: url(/static/img/centerImg/pioneer_4.svg) no-repeat;
     background-size: 100%;
-    font-family: 'Inter';
 }
 
 .div_on4 {
     background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    font-family: 'Inter';
 }
 
 .div_on4>div {
@@ -627,7 +546,6 @@
     margin: 1.75rem auto 0;
     background: url(/static/img/centerImg/pioneer_5.svg) no-repeat;
     background-size: 100%;
-    font-family: 'Inter';
 }
 
 .div_on5 {
@@ -636,7 +554,6 @@
     margin: 1.125rem auto 0;
     background: url(/static/img/centerImg/image75.svg) no-repeat;
     background-size: 100%;
-    font-family: 'Inter';
 }
 
 .div_on6 {
@@ -644,7 +561,6 @@
     height: 100%;
     background: url(/static/img/pioneerxitong.svg) no-repeat;
     background-size: 100%;
-    font-family: 'Inter';
 }
 
 .div_on7 {
@@ -653,7 +569,6 @@
     margin: 1.75rem auto 0;
     background: url(/static/img/centerImg/image74.svg) no-repeat;
     background-size: 100%;
-    font-family: 'Inter';
 }
 
 
@@ -665,13 +580,11 @@
     letter-spacing: 0em;
     text-align: center;
     color: #fff;
-    position: absolute;
+    position: relative;
     width: 66.3125rem;
     height: 4.875rem;
-    left: 0;
-    top: 190.9rem;
     text-align: left;
-    font-family: 'Inter';
+    margin-bottom: 5rem;
 }
 
 .title4::after {
@@ -682,16 +595,13 @@
     width: 46.625rem;
     height: 2px;
     background: #929292;
-    font-family: 'Inter';
 }
 
 .bannerBox {
-    position: absolute;
-    left: 0;
-    top: 198.9rem;
-    width: 100%;
-    height: 32.875rem;
-    font-family: 'Inter';
+    width: 82.5rem;
+    height: 22.875rem;
+    margin: 0 auto 9.375rem;
+    position: relative;
 }
 
 .bannerimg1 {
@@ -700,11 +610,9 @@
     color: #fff;
     position: absolute;
     left: 0;
-    top: 1.75rem;
     border: 1px solid #878787;
     border-radius: .25rem;
     background-color: #fff;
-    font-family: 'Inter';
 }
 
 .bannerimg1_1 {
@@ -712,7 +620,6 @@
     height: 21.8125rem;
     background: url(/static/img/111.jpg) no-repeat;
     background-size: contain;
-    font-family: 'Inter';
 }
 
 .bannerimg2 {
@@ -720,12 +627,10 @@
     height: 21.8125rem;
     color: #fff;
     position: absolute;
-    left: 27.5625rem;
-    top: 1.75rem;
+    left: 28.1875rem;
     border: .0625rem solid #878787;
     border-radius: .25rem;
     background-color: #fff;
-    font-family: 'Inter';
 }
 
 .bannerimg2_1 {
@@ -733,7 +638,6 @@
     height: 17.7188rem;
     background: url(/static/img/centerImg/Frame429.svg) no-repeat;
     background-size: 100%;
-    font-family: 'Inter';
 }
 
 .bannerimg3_1 {
@@ -741,25 +645,22 @@
     height: 17.7188rem;
     background: url(/static/img/centerImg/image80.svg) no-repeat;
     background-size: 100%;
-    font-family: 'Inter';
 }
 
 .bannerimg3 {
     background-color: #fff;
     width: 26.1875rem;
     height: 21.8125rem;
-    color: #fff;
     position: absolute;
-    left: 55.1875rem;
-    top: 1.75rem;
+    left: 56.375rem;
+    color: #fff;
+
     border: .0625rem solid #878787;
     border-radius: .25rem;
-    font-family: 'Inter';
 }
 
 .bannerT {
     position: absolute;
-    left: 0;
     bottom: 0;
     width: 26.1rem;
     height: 2.25rem;
@@ -768,44 +669,36 @@
     color: #fff;
     text-align: center;
     font-size: 1.0837rem;
-    font-family: 'Inter';
 }
 
 
 
 .RichImg {
-    position: absolute;
-    left: 0;
-    top: 55.575rem;
     width: 100%;
     height: 41.0625rem;
     background: url(/static/img/centerImg/Frame442.svg) no-repeat;
     background-size: 100%;
-    font-family: 'Inter';
+    margin-bottom: 9.375rem;
+    position: relative;
 }
 
 
 .embrace {
-    position: absolute;
-    left: 0;
-    top: 10.45rem;
     width: 100%;
     color: #fff;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 5.25rem;
     text-align: center;
-    font-family: 'Inter';
+    position: absolute;
+    top: 10rem;
 }
 
 .risc_v {
     position: absolute;
-    left: 0;
-    top: 17.2rem;
+    top: 17rem;
     width: 100%;
     color: #fff;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     text-align: center;
@@ -815,7 +708,6 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    font-family: 'Inter';
 }
 
 .riscBg {
@@ -825,50 +717,42 @@
     background: url(/static/img/footerbg.png) no-repeat;
     background-size: 100%;
     position: relative;
-    font-family: 'Inter';
 }
 
 .footText {
-    position: absolute;
-    top: 283.725rem;
-    left: 0;
-    width: 100%;
-    height: 61.5625rem;
-    font-family: 'Inter';
+    width: 82.5rem;
+    margin: 0 auto;
 }
 
 h2 {
     font-size: 2rem;
     opacity: .9;
-    font-family: 'Inter';
+    margin-bottom: 1.25rem;
 }
 
 .chartTech {
     width: 82.5rem;
-    height: 107.4375rem;
-    margin: 19.6875rem auto 0;
-    position: relative;
-    font-family: 'Inter';
+    margin: 0 auto 0;
 }
 
 .tech_text1 {
     width: 100%;
     height: 12.9375rem;
-    position: absolute;
-    top: 2.25rem;
+
     color: #fff;
-    font-family: 'Inter';
 }
 
 .tech_title {
     font-size: 3rem;
-    font-family: 'Inter';
+}
+
+.tech_text3>h1 {
+    margin: 5rem auto 1.5625rem;
 }
 
 .tech_p {
-    margin-top: 1.75rem;
+    margin-top: 5rem;
     font-size: 1.625rem;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
@@ -876,50 +760,44 @@ h2 {
     opacity: .8;
     order: 1;
     flex-grow: 0;
-    font-family: 'Inter';
+    margin-bottom: 5rem;
 }
 
 .tech_text2 {
     width: 100%;
     height: 14.875rem;
-    position: absolute;
-    top: 23.4rem;
+
     color: #fff;
-    font-family: 'Inter';
 }
 
 .box_tit {
     font-size: 1.625rem;
-    margin-bottom: 2.25rem;
-    font-family: 'Inter';
+    margin-bottom: 1.25rem;
 }
 
 .tech_text3 {
     width: 100%;
-    height: 14.875rem;
-    position: absolute;
-    top: 43.875rem;
+    height: 44.875rem;
     color: #fff;
-    font-family: 'Inter';
 }
+
 
 .tech_text4 {
     width: 100%;
-    height: 14.875rem;
-    position: absolute;
-    top: 96.525rem;
+    height: 29.875rem;
     color: #fff;
-    font-family: 'Inter';
 }
 
 .tech_text2>h1 {
-    margin-bottom: 2.25rem;
-    font-family: 'Inter';
+    margin-bottom: 1.5625rem;
+}
+
+.tech_text4>h2 {
+    margin-top: 1.5625rem;
 }
 
 .tech_p_line {
     font-size: 1.625rem;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     opacity: .8;
@@ -927,37 +805,26 @@ h2 {
     order: 1;
     flex-grow: 0;
     margin: 0;
-    font-family: 'Inter';
 }
 
 .tech_title3 {
     font-size: 3rem;
     color: #fff;
-    position: absolute;
-    top: 146.25rem;
-    font-family: 'Inter';
 }
 
 .pinImg {
-    position: absolute;
-    top: 56.25rem;
     width: 82.5rem;
     height: 35rem;
     background: url(/static/img/FrameBig.png) no-repeat;
     background-size: 100%;
-    font-family: 'Inter';
 }
 
-.document {
-    position: absolute;
-    top: 134.5625rem;
-    font-family: 'Inter';
-}
+
 
 .document>h1 {
     color: #fff;
     font-size: 3rem;
-    font-family: 'Inter';
+    margin-top: 5rem;
 }
 
 .document>ul {
@@ -967,7 +834,6 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-family: 'Inter';
 }
 
 .down {
@@ -976,7 +842,6 @@ h2 {
     background: url(/static/img/download.svg) no-repeat;
     background-size: 100%;
     margin-right: 1.1994rem;
-    font-family: 'Inter';
 }
 
 .document>ul>li {
@@ -984,31 +849,26 @@ h2 {
     line-height: 1.75rem;
     display: flex;
     justify-content: flex-start;
-    font-family: 'Inter';
 }
 
 .link_down {
     color: #fff;
     text-decoration: none;
     font-size: 1.6187rem;
-    font-family: 'Inter';
 }
 
 .title6 {
-    font-family: Inter;
     font-size: 5.5rem;
     font-weight: 500;
     line-height: 4.875rem;
     letter-spacing: 0em;
     text-align: center;
     color: #fff;
-    position: absolute;
+    position: relative;
     width: 66.3125rem;
     height: 4.875rem;
-    left: 0;
-    top: -7vh;
     text-align: left;
-    font-family: 'Inter';
+    margin-bottom: 5rem;
 }
 
 .title6::after {
@@ -1016,26 +876,24 @@ h2 {
     position: absolute;
     right: -15.625rem;
     bottom: 1.2625rem;
-    width: 51.4375rem;
+    width: 52.4375rem;
     height: .125rem;
     background: #929292;
-    font-family: 'Inter';
 }
 
 
 .on5_box {
     width: 86.375rem;
     height: 37rem;
-    margin: 15.0625rem auto;
-    font-family: 'Inter';
+    margin: 9.375rem auto;
 }
 
 .on5_box>ul {
+    padding: 0;
     width: 100%;
-    height: 100%;
+    height: 34rem;
     display: flex;
-    justify-content: space-around;
-    font-family: 'Inter';
+    justify-content: space-between;
 }
 
 .on5_box>ul>li {
@@ -1045,12 +903,10 @@ h2 {
     margin: 0 auto;
     border-radius: .5rem;
     position: relative;
-    font-family: 'Inter';
 }
 
 .on5_box>ul>li:hover {
     border-color: #00F5A0;
-    font-family: 'Inter';
 }
 
 .on5_box_h1 {
@@ -1058,7 +914,6 @@ h2 {
     color: #fff;
     text-align: center;
     margin-top: 5.5625rem;
-    font-family: 'Inter';
 }
 
 .on5_box_p {
@@ -1072,10 +927,8 @@ h2 {
     flex: none;
     order: 3;
     flex-grow: 0;
-    font-family: 'Inter';
     font-style: normal;
     margin-bottom: 4.6875rem;
-    font-family: 'Inter';
 }
 
 .on5_bottom {
@@ -1087,7 +940,6 @@ h2 {
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
     border-radius: .125rem;
     margin: 0 auto 0rem;
-    font-family: 'Inter';
 }
 
 .on5_img {
@@ -1095,8 +947,7 @@ h2 {
     height: 12.5938rem;
     background: url(/static/img/ma.png) no-repeat;
     background-size: 100%;
-    margin: 5rem auto;
-    font-family: 'Inter';
+    margin: 3.8rem auto 0;
 }
 
 .on5_img_QQ {
@@ -1104,6 +955,5 @@ h2 {
     height: 12.5938rem;
     background: url(/static/img/QQ.png) no-repeat;
     background-size: 100%;
-    margin: 5rem auto;
-    font-family: 'Inter';
+    margin: 3.8rem auto 0;
 }

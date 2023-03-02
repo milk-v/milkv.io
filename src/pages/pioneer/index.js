@@ -6,15 +6,6 @@ import Link from '@docusaurus/Link';
 import cCss from "./center.module.css"
 
 function Center() {
-  const [num, setNum] = useState(0)
-  const [count, setCount] = useState(0)
-  const [text, setText] = useState('Workstation')
-
-  useEffect(() => {
-    if (count == 0) setText('Workstation')
-    else if (count == 1) setText('SWICH')
-    else if (count == 2) setText('NAS')
-  }, [count])
 
 
   return (
@@ -62,8 +53,6 @@ function Center() {
         </div>
         <div className={cCss.title7}>Pioneer Board</div>
         <div className={cCss.RichImg}></div>
-
-
         <div className={cCss.title3}>Pioneer Box</div>
         <div className={cCss.pionBox}>
           <div className={cCss.pionBox_1}>

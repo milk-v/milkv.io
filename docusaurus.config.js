@@ -88,7 +88,6 @@ const config = {
       },
       footer: {
         style: 'light',
-
         links: [
           {
             html: `<div class="footer_text">
@@ -101,6 +100,9 @@ const config = {
           },
         ],
       },
+      typography: {
+        fontFamily: ["Helvetica", "pingFangSC", "Microsoft YaHei", "微软雅黑", "Arial", "sans-serif"]
+      }
     }),
 };
 

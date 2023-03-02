@@ -40,12 +40,13 @@ export default function (props) {
                 <div className={css.chian} onClick={() => toApp()}>
                     <div className={css.img}></div>
                     <div className={css.text}>China's mainland</div>
-                    <div className={css.right_text}>&gt;&gt;</div>
+                    <div className={css.right_text}></div>
                 </div>
                 <div className={css.other}>
                     <div className={css.img}></div>
                     <div className={css.text}>Other countries and regions</div>
-                    <div className={css.right_text}>&gt;&gt;</div>
+                    <div className={css.right_text}></div>
+                    <div className={css.coming}></div>
                 </div>
             </Modal>
         </>
