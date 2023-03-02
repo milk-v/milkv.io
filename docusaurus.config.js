@@ -95,7 +95,7 @@ const config = {
               <div class='footer_logo'></div>
               <div class='text_right'>
                 <h1>Milk-V Machines</h1>
-                <h1>Email：Contact@ .io</h1>
+                <h1>Email: support@milkv.io</h1>
               </div>
             </div>`
           },
