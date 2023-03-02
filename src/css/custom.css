@@ -13,11 +13,13 @@
   --ifm-color-primary-light: #3b94d3;
   --ifm-color-primary-lighter: #4599d5;
   --ifm-color-primary-lightest: #64aadc;
+  font-family: 'Inter';
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0);
+  font-family: 'Inter';
 }
 
 body,
@@ -26,90 +28,134 @@ html {
   height: 100%;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  font-family: 'Inter';
 }
 
 html {
   font-size: 1rem !important;
   background-color: #fff;
+  font-family: 'Inter';
 }
 
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Inter';
 }
 
 li {
   list-style: none;
+  font-family: 'Inter';
 }
 
 #__docusaurus {
   background-color: #fff;
+  font-family: 'Inter';
 }
 
 #__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots>li {
-  margin: 0 0 4.6875rem 3.5938rem;
+  margin: 0 0 4.6875rem 0.5938rem;
+  font-family: 'Inter';
 }
 
 #__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots>li>button {
   width: .3625rem;
   height: 3.5rem;
+  font-family: 'Inter';
 }
 
 #__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots>.slick-active>button {
   height: 4.375rem;
   background-color: #fff;
+  font-family: 'Inter';
 }
 
 #__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots {
-  margin-left: 145.5625rem;
-  margin-top: -1.125rem;
+  /* margin-right: 15rem;
+  margin-top: -1.125rem; */
   position: fixed;
-  right: 0;
+  left: 10rem;
+  font-family: 'Inter';
 }
 
 /* footer */
 .footer {
-  height: 9.375rem;
+  width: 100%;
+  height: 12.375rem;
   position: relative;
+  font-family: 'Inter';
 }
 
 .footer__link-separator {
   display: none;
+  font-family: 'Inter';
+
 }
 
 .footer_text1 {
   font-weight: 700;
-  position: absolute;
-  left: 102.5rem;
-  top: 2.75rem;
+  width: 18rem;
   font-size: 1.3125rem;
+  text-align: left;
+  font-family: 'Inter';
+  position: absolute;
+  top: 2rem;
+  right: 15rem;
 }
 
 
 .footer_text3 {
-  font-weight: 700;
-
   position: absolute;
-  left: 102.5rem;
+  top: 5rem;
+  right: 15rem;
+  font-weight: 700;
+  width: 18rem;
   font-size: 1.3125rem;
-  top: 5.6875rem;
+  text-align: left;
+  font-family: 'Inter';
 }
 
 .margin-bottom--sm {
   position: absolute;
   top: 1.4625rem;
   left: 17.9375rem;
+  font-family: 'Inter';
 }
 
 /* 弹窗 */
 .ant-modal-content {
   height: 35.125rem;
+  font-family: 'Inter';
 }
 
 .navbar__item {
   color: #000 !important;
+  font-family: 'Inter';
 }
 
 .navbar__item:hover {
   color: #2d88c9 !important;
+  font-family: 'Inter';
+}
+
+.footer_text {
+  width: 50rem;
+  height: 8rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_logo {
+  width: 15.875rem;
+  height: 4.75rem;
+  background: url(/static/img/ICON.svg) no-repeat center center;
+  background-size: cover;
+}
+
+.text_right {
+  text-align: left;
+  color: #2D88C9;
+  font-weight: 700;
 }

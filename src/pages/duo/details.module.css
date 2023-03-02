@@ -1,23 +1,27 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Inter';
 }
 
 a {
     text-decoration: none;
+    font-family: 'Inter';
 }
 
 body {
     background-color: #000;
     height: 58.5rem;
+    font-family: 'Inter';
 }
 
 .titleBox {
     text-align: center;
     width: 64.75rem;
     height: 34.5rem;
-    margin: 18.775rem auto 0;
+    margin: 15.775rem auto 0;
     color: #fff;
+    font-family: 'Inter';
 }
 
 .textLine {
@@ -27,6 +31,7 @@ body {
     background-clip: text;
     font-size: 4.375rem;
     margin-bottom: .3125rem;
+    font-family: 'Inter';
 }
 
 
@@ -41,6 +46,7 @@ body {
     z-index: 100;
     background: url(/static/img/Group.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 /* 阴影 */
@@ -52,6 +58,7 @@ body {
     top: -3.125rem;
     background: #01DEEA;
     filter: blur(16rem);
+    font-family: 'Inter';
 }
 
 .shadow2 {
@@ -62,6 +69,7 @@ body {
     top: 44.8125rem;
     background: #01B2EA;
     filter: blur(16rem);
+    font-family: 'Inter';
 }
 
 .shadow3 {
@@ -72,6 +80,7 @@ body {
     top: 8.875rem;
     background: #FCEA4C;
     filter: blur(3.75rem);
+    font-family: 'Inter';
 }
 
 .shadow4 {
@@ -82,6 +91,7 @@ body {
     top: 26.1875rem;
     background: rgba(11, 240, 185, 0.68);
     filter: blur(16rem);
+    font-family: 'Inter';
 }
 
 .shadow5 {
@@ -93,10 +103,11 @@ body {
     background: #01DEEA;
     filter: blur(16rem);
     z-index: -10;
+    font-family: 'Inter';
 }
 
 .title2 {
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: 4.8125rem;
     font-weight: 500;
     line-height: 4.875rem;
@@ -109,6 +120,7 @@ body {
     /* left: 0.9375rem;
     top: 68.3125rem; */
     margin: 30rem auto -28rem;
+    font-family: 'Inter';
 }
 
 .title2::after {
@@ -119,6 +131,7 @@ body {
     width: 49.4375rem;
     height: .125rem;
     background: #929292;
+    font-family: 'Inter';
 }
 
 
@@ -126,6 +139,7 @@ body {
     width: 86.375rem;
     height: 75.875rem;
     margin: 0 auto;
+    font-family: 'Inter';
 }
 
 .on5_box>ul {
@@ -133,6 +147,7 @@ body {
     height: 100%;
     display: flex;
     justify-content: space-around;
+    font-family: 'Inter';
 }
 
 .on5_box>ul>li {
@@ -142,10 +157,12 @@ body {
     margin-right: 2.375rem;
     border-radius: .5rem;
     position: relative;
+    font-family: 'Inter';
 }
 
 .on5_box>ul>li:hover {
     border-color: #00F5A0;
+    font-family: 'Inter';
 }
 
 .on5_box_h1 {
@@ -153,6 +170,7 @@ body {
     color: #fff;
     text-align: center;
     margin-top: 5.5625rem;
+    font-family: 'Inter';
 }
 
 .on5_box_p {
@@ -169,6 +187,7 @@ body {
     font-family: 'Inter';
     font-style: normal;
     margin-bottom: 4.6875rem;
+    font-family: 'Inter';
 }
 
 .on5_bottom {
@@ -180,9 +199,7 @@ body {
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
     border-radius: .125rem;
     margin: 0 auto;
-    position: absolute;
-    bottom: 5.25rem;
-    left: 7.125rem;
+    font-family: 'Inter';
 }
 
 .on5_img {
@@ -190,7 +207,8 @@ body {
     height: 12.5938rem;
     background: url(/static/img/ma.png) no-repeat;
     background-size: 100%;
-    margin: 0 auto 0;
+    margin: 5rem auto 0;
+    font-family: 'Inter';
 }
 
 .on5_img_QQ {
@@ -198,7 +216,8 @@ body {
     height: 12.5938rem;
     background: url(/static/img/QQ.png) no-repeat;
     background-size: 100%;
-    margin: -0 auto 0;
+    margin: 5rem auto 0;
+    font-family: 'Inter';
 }
 
 
@@ -209,6 +228,7 @@ body {
     margin: 33.9375rem auto 0;
     overflow: hidden;
     position: relative;
+    font-family: 'Inter';
 }
 
 .chartTitle {
@@ -223,6 +243,7 @@ body {
     font-size: 2.75rem;
     line-height: 120%;
     color: #FFFFFF;
+    font-family: 'Inter';
 }
 
 .chartTitle2 {
@@ -237,6 +258,7 @@ body {
     font-size: 1.4375rem;
     line-height: 150%;
     color: #FFFFFF;
+    font-family: 'Inter';
 }
 
 .largeText {
@@ -248,6 +270,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    font-family: 'Inter';
 }
 
 .exhibits {
@@ -255,6 +278,7 @@ body {
     height: 81.5625rem;
     margin: 1.75rem auto 0;
     position: relative;
+    font-family: 'Inter';
 }
 
 .exhibits .group2 {
@@ -267,6 +291,7 @@ body {
     border: .0625rem solid;
     border-image-source: linear-gradient(137.67deg, #01F2AA 0%, #01DCEE 100%);
     border-image-slice: 1;
+    font-family: 'Inter';
 }
 
 .exhibits .group2>.textList {
@@ -281,6 +306,7 @@ body {
     font-size: 2.1875rem;
     display: block;
     margin: 3.3125rem auto 0;
+    font-family: 'Inter';
 }
 
 .exhibitsImg {
@@ -291,6 +317,7 @@ body {
     margin: 8.75rem auto 0;
     background: url(/static/img/Group.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .micBox {
@@ -303,6 +330,7 @@ body {
     position: absolute;
     left: 0;
     top: 43.9375rem;
+    font-family: 'Inter';
 }
 
 .micList1 {
@@ -314,6 +342,7 @@ body {
     border-radius: .3125rem;
     background-color: #343431;
     overflow: hidden;
+    font-family: 'Inter';
 }
 
 .micList1 .frame1 {
@@ -324,6 +353,7 @@ body {
     left: .9375rem;
     background: url(/static/img/Frame1.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .micList1>p {
@@ -341,6 +371,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-family: 'Inter';
 }
 
 
@@ -352,6 +383,7 @@ body {
     left: 3.5625rem;
     background: url(/static/img/Frame2.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .micList2 {
@@ -363,6 +395,7 @@ body {
     border-radius: .3125rem;
     background-color: #343431;
     overflow: hidden;
+    font-family: 'Inter';
 }
 
 .micList2>p {
@@ -380,6 +413,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-family: 'Inter';
 }
 
 
@@ -391,6 +425,7 @@ body {
     top: 3.5rem;
     background: rgba(11, 240, 185, 0.68);
     filter: blur(16rem);
+    font-family: 'Inter';
 }
 
 .shadow7 {
@@ -401,6 +436,7 @@ body {
     top: 13.6875rem;
     background: #B1A53D;
     filter: blur(16rem);
+    font-family: 'Inter';
 }
 
 .footerText {
@@ -410,6 +446,7 @@ body {
     left: 0;
     top: 70.3125rem;
     background: #181818;
+    font-family: 'Inter';
 }
 
 .footerText>h1 {
@@ -423,6 +460,7 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'Inter';
 }
 
 .bigExhibits {
@@ -433,6 +471,7 @@ body {
     top: 0;
     background-color: #000;
     overflow: hidden;
+    font-family: 'Inter';
 }
 
 .head {
@@ -448,6 +487,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-family: 'Inter';
 }
 
 .support {
@@ -465,6 +505,7 @@ body {
     font-weight: 500;
     font-size: 1.525rem;
     text-align: center;
+    font-family: 'Inter';
 }
 
 .btnBox {
@@ -475,6 +516,7 @@ body {
     top: 22.6875rem;
     background: url(/static/img/Frame190.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 
@@ -487,6 +529,7 @@ body {
     background: #01DEEA;
     filter: blur(6.25rem);
     z-index: 10;
+    font-family: 'Inter';
 }
 
 .shadow9 {
@@ -497,6 +540,7 @@ body {
     top: -35.3125rem;
     background: #FFF858;
     filter: blur(6.25rem);
+    font-family: 'Inter';
 }
 
 .lineChart {
@@ -507,6 +551,7 @@ body {
     top: 56.5625rem;
     background-color: #000;
     overflow: hidden;
+    font-family: 'Inter';
 }
 
 .shadow10 {
@@ -517,6 +562,7 @@ body {
     top: -1.5625rem;
     background: #8042D5;
     filter: blur(13.75rem);
+    font-family: 'Inter';
 }
 
 .shadow11 {
@@ -527,6 +573,7 @@ body {
     top: 3.4375rem;
     background: #BF2091;
     filter: blur(16.25rem);
+    font-family: 'Inter';
 }
 
 .shadow12 {
@@ -538,6 +585,7 @@ body {
     background: rgba(215, 207, 20, 0.51);
     filter: blur(16.25rem);
     z-index: -100;
+    font-family: 'Inter';
 }
 
 .lineBox {
@@ -546,6 +594,7 @@ body {
     height: 17.75rem;
     left: 8rem;
     top: 3.4375rem;
+    font-family: 'Inter';
 }
 
 .line1 {
@@ -556,6 +605,7 @@ body {
     top: 0;
     border: .1424rem dashed rgba(255, 255, 255, 0.5);
     transform: matrix(-1, 0, 0, 1, 0, 0);
+    font-family: 'Inter';
 }
 
 .line2 {
@@ -566,6 +616,7 @@ body {
     top: 33.33%;
     border: .1424rem dashed rgba(255, 255, 255, 0.5);
     transform: matrix(-1, 0, 0, 1, 0, 0);
+    font-family: 'Inter';
 }
 
 .line3 {
@@ -576,6 +627,7 @@ body {
     bottom: 33.33%;
     border: .1424rem dashed rgba(255, 255, 255, 0.5);
     transform: matrix(-1, 0, 0, 1, 0, 0);
+    font-family: 'Inter';
 }
 
 .line4 {
@@ -586,6 +638,7 @@ body {
     bottom: 0;
     border: .1424rem dashed rgba(255, 255, 255, 0.5);
     transform: matrix(-1, 0, 0, 1, 0, 0);
+    font-family: 'Inter';
 }
 
 .lineGroup {
@@ -597,6 +650,7 @@ body {
     transform: rotate(-90deg);
     background: url(/static/img/Group.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .jj {
@@ -607,6 +661,7 @@ body {
     top: 8.75rem;
     background: url(/static/img/yingbi.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .title4 {
@@ -623,6 +678,7 @@ body {
     position: absolute;
     left: 0;
     top: -8rem;
+    font-family: 'Inter';
 }
 
 .title4::after {
@@ -633,15 +689,17 @@ body {
     width: 52.75rem;
     height: .125rem;
     background: #929292;
+    font-family: 'Inter';
 }
 
 .bannerList {
     width: 82.5rem;
-    height: 27.8125rem;
+    height: 30.8125rem;
     margin: 19.6875rem auto 0;
     position: relative;
     overflow: hidden;
     background-color: #000;
+    font-family: 'Inter';
 }
 
 .title3 {
@@ -657,6 +715,7 @@ body {
     position: absolute;
     left: 0;
     bottom: -20vh;
+    font-family: 'Inter';
 }
 
 .title3::after {
@@ -667,6 +726,7 @@ body {
     width: 21rem;
     height: .125rem;
     background: #929292;
+    font-family: 'Inter';
 }
 
 .bannerimg {
@@ -678,6 +738,7 @@ body {
     top: 1.75rem;
     border: .0625rem solid #878787;
     border-radius: .25rem;
+    font-family: 'Inter';
 }
 
 .bannerimg>.img1 {
@@ -687,6 +748,7 @@ body {
     margin: .3125rem auto 0;
     background: url(/static/img/jiank3.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .bannerimg>.img2 {
@@ -696,6 +758,7 @@ body {
     margin: 5px auto 0;
     background: url(/static/img/jiank2.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .bannerimg>.img3 {
@@ -705,6 +768,7 @@ body {
     margin: 5px auto 0;
     background: url(/static/img/jiank.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .bannerimg>.img4 {
@@ -713,6 +777,7 @@ body {
     height: 17.7188rem;
     background: url(/static/img/Rectangle2.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .bannerimg>.img5 {
@@ -721,44 +786,49 @@ body {
     height: 17.7188rem;
     background: url(/static/img/Rectangle1.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .bannerimg>p {
     font-size: 1.25rem;
     text-align: center;
     line-height: 5.25rem;
+    font-family: 'Inter';
 }
 
 .prev {
-    width: 4.125rem;
-    height: 4.125rem;
+    width: 5.125rem;
+    height: 5.125rem;
     background: url(/static/img/chevron-left.svg) no-repeat;
     background-size: 100%;
     position: absolute;
     bottom: 0;
-    right: 4.8125rem;
+    right: 3.8125rem;
     cursor: pointer;
+    font-family: 'Inter';
 }
 
 .next {
-    width: 4.125rem;
-    height: 4.125rem;
+    width: 5.125rem;
+    height: 5.125rem;
     background: url(/static/img/chevron-right.svg) no-repeat;
     background-size: 100%;
     position: absolute;
     bottom: 0;
-    right: 1.1994rem;
+    right: 0.1994rem;
     cursor: pointer;
+    font-family: 'Inter';
 }
 
 .Ghzbox {
     width: 50.625rem;
     height: 11.8125rem;
-    background: url(/static/img/Frame189.svg) no-repeat;
+    background: url(/static/img/Duochart1.svg) no-repeat;
     background-size: 100%;
     position: absolute;
     left: 8.5625rem;
     top: 23.0625rem;
+    font-family: 'Inter';
 }
 
 .shadow13 {
@@ -769,6 +839,7 @@ body {
     top: 245.6875rem;
     background: #01DEEA;
     filter: blur(16.25rem);
+    font-family: 'Inter';
 }
 
 .chartTech {
@@ -776,6 +847,7 @@ body {
     height: 107.4375rem;
     margin: 19.6875rem auto 0;
     position: relative;
+    font-family: 'Inter';
 }
 
 .tech_text1 {
@@ -784,10 +856,12 @@ body {
     position: absolute;
     top: 2.3125rem;
     color: #fff;
+    font-family: 'Inter';
 }
 
 .tech_title {
     font-size: 3rem;
+    font-family: 'Inter';
 }
 
 .tech_p {
@@ -801,6 +875,7 @@ body {
     flex: none;
     order: 1;
     flex-grow: 0;
+    font-family: 'Inter';
 }
 
 .tech_text2 {
@@ -809,10 +884,12 @@ body {
     position: absolute;
     top: 23.375rem;
     color: #fff;
+    font-family: 'Inter';
 }
 
 .tech_text2>h1 {
     margin-bottom: 2.3125rem;
+    font-family: 'Inter';
 }
 
 .tech_p_line {
@@ -825,6 +902,7 @@ body {
     order: 1;
     flex-grow: 0;
     margin: 0;
+    font-family: 'Inter';
 }
 
 .tech_title3 {
@@ -832,6 +910,7 @@ body {
     color: #fff;
     position: absolute;
     top: 51.5rem;
+    font-family: 'Inter';
 }
 
 .pinImg {
@@ -839,18 +918,21 @@ body {
     top: 56.25rem;
     width: 82.5rem;
     height: 35rem;
-    background: url(/static/img/FrameBig.png) no-repeat;
+    background: url(/static/img/Duochart2.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .document {
     position: absolute;
     top: 90.6875rem;
+    font-family: 'Inter';
 }
 
 .document>h1 {
     color: #fff;
     font-size: 3rem;
+    font-family: 'Inter';
 }
 
 .document>ul {
@@ -860,6 +942,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    font-family: 'Inter';
 }
 
 .down {
@@ -868,6 +951,7 @@ body {
     background: url(/static/img/download.svg) no-repeat;
     background-size: 100%;
     margin-right: 1.1994rem;
+    font-family: 'Inter';
 }
 
 .document>ul>li {
@@ -875,12 +959,14 @@ body {
     line-height: 1.75rem;
     display: flex;
     justify-content: flex-start;
+    font-family: 'Inter';
 }
 
 .link_down {
     color: #fff;
     text-decoration: none;
     font-size: 1.625rem;
+    font-family: 'Inter';
 }
 
 .shadow14 {
@@ -891,12 +977,13 @@ body {
     top: 260.0625rem;
     background: rgba(215, 207, 20, 0.32);
     filter: blur(16.25rem);
+    font-family: 'Inter';
 }
 
 .embrace {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 10.45rem;
     width: 100%;
     color: #fff;
     font-family: 'Inter';
@@ -904,31 +991,34 @@ body {
     font-weight: 500;
     font-size: 5.25rem;
     text-align: center;
+    font-family: 'Inter';
 }
 
 .risc_v {
     position: absolute;
     left: 0;
-    top: 5.25rem;
+    top: 17.2rem;
     width: 100%;
     color: #fff;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     text-align: center;
-    font-size: 5.25rem;
+    font-size: 5rem;
     background: linear-gradient(93.08deg, #00FFC2 33.15%, #0066FF 101.47%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    font-family: 'Inter';
 }
 
 .riscBg {
-    margin-top: -20rem;
-    width: 100%;
-    height: 94.5313rem;
-    background: url(/static/img/centerImg/041.svg) no-repeat;
+    margin: -30rem auto 20rem;
+    width: 120rem;
+    height: 50.625rem;
+    background: url(/static/img/footerbg.png) no-repeat;
     background-size: 100%;
     position: relative;
+    font-family: 'Inter';
 }

@@ -20,21 +20,22 @@ function Center() {
   return (
     <div className={cCss.centerBox}>
       <div className={cCss.bigimg}>
-        <div className={cCss.pagBox}></div>
-        <div className={cCss.titleBox}>
-          <h1>Milk-V Pioneer</h1>
-          <p>Make native RISC-V development possible</p>
-          <div className={cCss.buy}>
-            <Head />
+        <div className={cCss.center_Box}>
+          <div className={cCss.pagBox}></div>
+          <div className={cCss.titleBox}>
+            <h1>Milk-V Pioneer</h1>
+            <p>Make native RISC-V development possible</p>
+            <div className={cCss.buy}>
+              <Head />
+            </div>
           </div>
-          <div className={cCss.mintext}>*Tax or shipping is not included </div>
         </div>
       </div>
       <div className={cCss.startbox}>
         <div className={cCss.title2}>Specification</div>
         <div className={cCss.power}>
           <div className={cCss.power1}>
-            <h1>Power by SOPHON SG2042</h1>
+            <h1>Powered by SOPHON SG2042</h1>
             <div className={cCss.powerimg}></div>
           </div>
           <div className={cCss.power2}>
@@ -46,7 +47,7 @@ function Center() {
               <p>L3 Cache</p>
               <p>Typical power consumption</p>
               <p>DDR</p>
-              <p>PCI-e</p>
+              <p>PCI-E</p>
             </div>
             <div className={cCss.power2_2}>
               <p>2GHz</p>
@@ -54,7 +55,7 @@ function Center() {
               <p>1MB/Cluster</p>
               <p>64MB System Cache</p>
               <p>120W</p>
-              <p>4 channel 3200Mhz ECC RDIMM/UDIMM/SODIMM</p>
+              <p>4 channel 3200Hz ECC RDIMM/UDIMM/SODIMM</p>
               <p>2 x 16x Gen4 with CCIX support</p>
             </div>
           </div>
@@ -94,7 +95,7 @@ function Center() {
             <ul>
               <li>
                 <p>equipped with </p>
-                <h1 className={cCss.h1_1}>32GB 3200Mhz</h1>
+                <h1 className={cCss.h1_1}>32GB 3200MHz</h1>
                 <div>UDIMM DDR4 with ECC</div>
                 <div className={cCss.show1}></div>
               </li>
@@ -157,7 +158,7 @@ function Center() {
             <h1 className={cCss.tech_title}>Hardware </h1>
             <h2>Pioneer Board</h2>
             <p className={cCss.tech_p_line}>- SOPHGO SG2042 Chip</p>
-            <p className={cCss.tech_p_line}>- 64 Core RISC-V CPU up to 2Ghz</p>
+            <p className={cCss.tech_p_line}>- 64 Core RISC-V CPU up to 2GHz</p>
           </div>
           <div className={cCss.tech_text3}>
             <h1 className={cCss.tech_title}>Interface</h1>
@@ -211,18 +212,12 @@ function Center() {
             </div>
           </li>
           <li className={cCss.li}>
-            <h1 className={cCss.on5_box_h1}>Wechat</h1>
+            <h1 className={cCss.on5_box_h1}>WeChat</h1>
             <div className={cCss.on5_img}></div>
-            <div className={cCss.on5_bottom}>
-              <Link style={{ textDecoration: 'none', color: '#fff' }}>Scan QR code</Link>
-            </div>
           </li>
           <li className={cCss.li}>
             <h1 className={cCss.on5_box_h1}>QQ Group</h1>
             <div className={cCss.on5_img_QQ}></div>
-            <div className={cCss.on5_bottom}>
-              <Link style={{ textDecoration: 'none', color: '#fff' }}>Scan QR code</Link>
-            </div>
           </li>
         </ul>
       </div>

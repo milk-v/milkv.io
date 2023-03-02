@@ -50,8 +50,8 @@
 }
 
 .buyText {
-   position: absolute;
-   /* left: 5.25rem; */
+   line-height: 4.9375rem;
+   ;
 }
 
 .right {
@@ -218,8 +218,8 @@
    width: 6.9063rem;
    height: 6.9063rem;
    position: fixed;
-   right: 2.675rem;
-   top: 52.1875rem;
+   right: 2.3rem;
+   bottom: 2rem;
    cursor: pointer;
    color: #fff;
 }

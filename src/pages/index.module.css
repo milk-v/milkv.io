@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Inter';
 }
 
 .on1 {
@@ -13,6 +14,7 @@
     background-size: cover;
     width: 100%;
     height: 100%;
+    font-family: 'Inter';
 }
 
 .bananerStyle {
@@ -20,6 +22,7 @@
     height: 45vh;
     margin: 3vh auto 0vh;
     overflow: hidden;
+    font-family: 'Inter';
 }
 
 .contentStyle {
@@ -28,6 +31,7 @@
     background-color: #000;
     position: relative;
     overflow: hidden;
+    font-family: 'Inter';
 }
 
 .on1_p {
@@ -45,7 +49,8 @@
     font-weight: 700;
     font-size: 5.44vw;
     overflow: hidden;
-    word-wrap: break-word
+    word-wrap: break-word;
+    font-family: 'Inter';
 }
 
 .on1_p span {
@@ -54,6 +59,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: .3;
+    font-family: 'Inter';
 }
 
 .topLeft {
@@ -64,6 +70,7 @@
     top: -6.08;
     background: #01DEEA;
     filter: blur(10.42vw);
+    font-family: 'Inter';
 }
 
 .rightB {
@@ -74,6 +81,7 @@
     top: 82.15vh;
     background: #01DEEA;
     filter: blur(10.42vw);
+    font-family: 'Inter';
 }
 
 .on2_h {
@@ -85,10 +93,11 @@
     text-align: center;
     color: #FFFFFFE5;
     margin-bottom: 4vh;
+    font-family: 'Inter';
 }
 
 .on2_p {
-    width: 41.68vw;
+    width: 82.5rem;
     height: 13.88;
     margin: 0 auto;
     font-size: 1.197vw;
@@ -97,6 +106,7 @@
     letter-spacing: 0em;
     text-align: center;
     color: #FFFFFFCC;
+    font-family: 'Inter';
 }
 
 .on2_shadow {
@@ -108,6 +118,7 @@
     left: 5.62vw;
     top: 19.44vh;
     z-index: 20;
+    font-family: 'Inter';
 }
 
 .on2_list {
@@ -122,6 +133,7 @@
     grid-gap: 2px 2px;
     background-image: linear-gradient(to right, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
     z-index: -10;
+    font-family: 'Inter';
 }
 
 .on2_item {
@@ -131,6 +143,7 @@
     background-color: #000;
     overflow: "hidden";
     position: relative;
+    font-family: 'Inter';
 }
 
 .on2_item .icon1 {
@@ -140,6 +153,7 @@
     height: 6.253vw;
     background: url(/static/img/icon01.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .on2_item .icon2 {
@@ -149,6 +163,7 @@
     height: 6.253vw;
     background: url(/static/img/icon02.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .on2_item .icon3 {
@@ -158,6 +173,7 @@
     height: 6.253vw;
     background: url(/static/img/icon03.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .on2_item .icon4 {
@@ -167,6 +183,7 @@
     height: 6.253vw;
     background: url(/static/img/icon04.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .on2_item .icon5 {
@@ -176,6 +193,7 @@
     height: 6.253vw;
     background: url(/static/img/icon05.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .on2_item .icon6 {
@@ -185,6 +203,7 @@
     height: 6.253vw;
     background: url(/static/img/icon06.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .on2_item .icon7 {
@@ -194,6 +213,7 @@
     height: 6.253vw;
     background: url(/static/img/icon07.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .on2_item .icon8 {
@@ -203,6 +223,7 @@
     height: 6.253vw;
     background: url(/static/img/icon08.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .on2_item p {
@@ -210,11 +231,13 @@
     color: #fff;
     font-size: 1.06vw;
     text-align: center;
+    font-family: 'Inter';
 }
 
 .on2_item:hover {
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
     border: none;
+    font-family: 'Inter';
 }
 
 .on3_shadow1 {
@@ -225,6 +248,7 @@
     top: -2.136vh;
     background: #01DEEA;
     filter: blur(10.42vw);
+    font-family: 'Inter';
 }
 
 .on3_shadow2 {
@@ -235,6 +259,7 @@
     top: 85.79vh;
     background: #01DEEA;
     filter: blur(10.42vw);
+    font-family: 'Inter';
 }
 
 
@@ -248,6 +273,7 @@
     position: absolute;
     left: 1vw;
     top: 38vh;
+    font-family: 'Inter';
 }
 
 .on3_change {
@@ -257,10 +283,12 @@
     background-color: #000;
     margin-top: 15.81vh;
     position: relative;
+    font-family: 'Inter';
 }
 
 .on3_change_text {
     border-radius: 5px;
+    font-family: 'Inter';
 }
 
 .on3_change_text_span {
@@ -268,7 +296,8 @@
     color: #fff;
     position: absolute;
     top: 0;
-    left: 20vw
+    left: 20vw;
+    font-family: 'Inter';
 }
 
 .on3_p {
@@ -276,7 +305,8 @@
     color: #fff;
     position: absolute;
     top: 2.5vh;
-    right: 0
+    right: 0;
+    font-family: 'Inter';
 }
 
 .on3_p::after {
@@ -287,23 +317,27 @@
     width: 39vw;
     height: 2px;
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+    font-family: 'Inter';
 }
 
 .link_style {
     color: #fff;
     text-decoration: none;
+    font-family: 'Inter';
 }
 
 .box4_change {
     font-size: 2.7vw;
     text-align: center;
     color: #FFF;
+    font-family: 'Inter';
 }
 
 .change_text_box4 {
     font-size: 1.4vw;
     text-align: center;
     color: #FFF;
+    font-family: 'Inter';
 }
 
 .on3_h1 {
@@ -318,6 +352,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-family: 'Inter';
 }
 
 .on3_text {
@@ -329,6 +364,7 @@
     border-radius: 0.78vw;
     border: 3px solid;
     background: linear-gradient(81.89deg, #9263EC 1.67%, #0095FF 98.78%);
+    font-family: 'Inter';
 }
 
 .on3_text>div {
@@ -338,6 +374,7 @@
     height: 100%;
     border-radius: 0.5vw;
     padding: 0 0.4vw;
+    font-family: 'Inter';
 }
 
 .on3_box {
@@ -346,6 +383,7 @@
     top: 32vh;
     width: 33vw;
     height: 26vh;
+    font-family: 'Inter';
 }
 
 .box_list {
@@ -354,6 +392,7 @@
     display: flex;
     justify-content: flex-end;
     margin: 1vh 0 1.5vh -2vw;
+    font-family: 'Inter';
 }
 
 .box_list li {
@@ -361,6 +400,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Inter';
 }
 
 .box_list .icon2 {
@@ -370,6 +410,7 @@
     height: 3.253vw;
     background: url(/static/img/icon02.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .on4_txtBox {
@@ -378,6 +419,7 @@
     height: 27.99vh;
     left: 15.63vw;
     top: 16.02vh;
+    font-family: 'Inter';
 }
 
 .this {
@@ -391,6 +433,7 @@
     font-weight: 700;
     font-size: 3.022vw;
     color: #FFFFFF;
+    font-family: 'Inter';
 }
 
 .txt_line {
@@ -403,6 +446,7 @@
     font-style: normal;
     font-size: 1.563vw;
     color: #FFFFFF;
+    font-family: 'Inter';
 }
 
 .txt_line::after {
@@ -413,6 +457,7 @@
     width: 40vw;
     height: 2px;
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+    font-family: 'Inter';
 }
 
 .world {
@@ -429,6 +474,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-family: 'Inter';
 }
 
 .on4_show {
@@ -439,6 +485,7 @@
     bottom: -12.7vw;
     background: #01DEEA;
     filter: blur(10.24vw);
+    font-family: 'Inter';
 }
 
 .parBox {
@@ -449,6 +496,7 @@
     height: 5.23vh;
     display: flex;
     justify-content: space-around;
+    font-family: 'Inter';
 }
 
 .parBox2 {
@@ -459,6 +507,7 @@
     height: 5.23vh;
     display: flex;
     justify-content: space-around;
+    font-family: 'Inter';
 }
 
 .on4_bottom_left {
@@ -473,6 +522,7 @@
     position: absolute;
     top: 73vh;
     left: 16.8vw;
+    font-family: 'Inter';
 }
 
 .on4_bottom_right {
@@ -487,6 +537,7 @@
     position: absolute;
     top: 73vh;
     left: 27.8vw;
+    font-family: 'Inter';
 }
 
 .on4_pag {
@@ -497,16 +548,19 @@
     top: 43.41vh;
     background: url(/static/img/0061.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .on4_bottom_right:hover {
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%),
         linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    font-family: 'Inter';
 }
 
 .on4_bottom_left:hover {
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%),
         linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    font-family: 'Inter';
 }
 
 .parBox2>.parameter {
@@ -521,6 +575,7 @@
     font-weight: 400;
     text-align: center;
     line-height: 5.23vh;
+    font-family: 'Inter';
 }
 
 .parBox>.parameter {
@@ -535,6 +590,7 @@
     font-weight: 400;
     text-align: center;
     line-height: 5.23vh;
+    font-family: 'Inter';
 }
 
 .box_list .icon1 {
@@ -544,6 +600,7 @@
     height: 3.253vw;
     background: url(/static/img/icon01.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .box_list .icon8 {
@@ -553,6 +610,7 @@
     height: 3.253vw;
     background: url(/static/img/icon08.svg) no-repeat;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .box_list li>div {
@@ -563,6 +621,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Inter';
 }
 
 .on3_box>p {
@@ -570,6 +629,7 @@
     font-size: 1.12vw;
     margin-bottom: 0.5vh;
     position: relative;
+    font-family: 'Inter';
 }
 
 .p1::after {
@@ -579,7 +639,8 @@
     left: 0;
     width: 11.9vw;
     height: 0.23vh;
-    background: #fff
+    background: #fff;
+    font-family: 'Inter';
 }
 
 .p2::after {
@@ -589,7 +650,8 @@
     left: 0;
     width: 25.3vw;
     height: 0.23vh;
-    background: #fff
+    background: #fff;
+    font-family: 'Inter';
 }
 
 .p3::after {
@@ -599,7 +661,8 @@
     left: 0;
     width: 25.3vw;
     height: 0.23vh;
-    background: #fff
+    background: #fff;
+    font-family: 'Inter';
 }
 
 .on3_bottom_left {
@@ -615,6 +678,7 @@
     position: absolute;
     bottom: 0;
     right: 23.5vw;
+    font-family: 'Inter';
 }
 
 .on3_bottom_right {
@@ -630,16 +694,19 @@
     position: absolute;
     bottom: 0;
     right: 12.5vw;
+    font-family: 'Inter';
 }
 
 .on3_bottom_right:hover {
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%),
         linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    font-family: 'Inter';
 }
 
 .on3_bottom_left:hover {
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%),
         linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    font-family: 'Inter';
 }
 
 .on4_box {
@@ -649,6 +716,7 @@
     margin: 14vh auto 0;
     position: relative;
     overflow: hidden;
+    font-family: 'Inter';
 }
 
 .on4_bottom {
@@ -657,6 +725,7 @@
     align-items: center;
     width: 100%;
     margin-top: 2vh;
+    font-family: 'Inter';
 }
 
 .prev {
@@ -666,6 +735,7 @@
     background-size: 100%;
     cursor: pointer;
     margin-right: 2vw;
+    font-family: 'Inter';
 }
 
 .change_text_p {
@@ -680,6 +750,7 @@
     word-spacing: 0.2vw;
     color: #FFF;
     text-indent: 50px;
+    font-family: 'Inter';
 }
 
 .change_on4 {
@@ -687,10 +758,12 @@
     height: 2.5vh;
     margin-top: 5vh;
     position: relative;
+    font-family: 'Inter';
 }
 
 .li {
     position: relative;
+    font-family: 'Inter';
 }
 
 .next {
@@ -699,6 +772,7 @@
     background: url(/static/img/next.svg) no-repeat;
     cursor: pointer;
     background-size: 100%;
+    font-family: 'Inter';
 }
 
 .miniLogo {
@@ -710,6 +784,7 @@
     position: absolute;
     left: 20vw;
     top: 0.6vh;
+    font-family: 'Inter';
 }
 
 .on4_p {
@@ -720,6 +795,7 @@
     position: absolute;
     left: 12.7vw;
     top: 1vh;
+    font-family: 'Inter';
 }
 
 .on4_p::after {
@@ -730,6 +806,7 @@
     height: 1vw;
     width: 0.1vw;
     background: #666666;
+    font-family: 'Inter';
 }
 
 .on5_box {
@@ -737,6 +814,7 @@
     /* width: 50vw; */
     height: 63.28vh;
     margin: 15.5vh auto;
+    font-family: 'Inter';
 }
 
 .on5_box>ul {
@@ -744,6 +822,7 @@
     height: 100%;
     display: flex;
     justify-content: space-around;
+    font-family: 'Inter';
 }
 
 .on5_box>ul>li {
@@ -753,10 +832,12 @@
     margin-right: 2vw;
     border-radius: 8px;
     position: relative;
+    font-family: 'Inter';
 }
 
 .on5_box>ul>li:hover {
     border-color: #00F5A0;
+    font-family: 'Inter';
 }
 
 .on5_box_h1 {
@@ -764,6 +845,7 @@
     color: #fff;
     text-align: center;
     margin-top: 9.5vh;
+    font-family: 'Inter';
 }
 
 .on5_box_p {
@@ -780,6 +862,7 @@
     font-family: 'Inter';
     font-style: normal;
     margin-bottom: 8vh;
+    font-family: 'Inter';
 }
 
 .on5_bottom {
@@ -791,9 +874,7 @@
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
     border-radius: 2px;
     margin: 0 auto;
-    position: absolute;
-    bottom: 9vh;
-    left: 5.96vw;
+    font-family: 'Inter';
 }
 
 .on5_img {
@@ -801,7 +882,8 @@
     height: 10.5vw;
     background: url(/static/img/ma.png) no-repeat;
     background-size: 100%;
-    margin: -0 auto 0;
+    margin: 5rem auto;
+    font-family: 'Inter';
 }
 
 .on5_img_QQ {
@@ -809,7 +891,8 @@
     height: 10.5vw;
     background: url(/static/img/QQ.png) no-repeat;
     background-size: 100%;
-    margin: -0 auto 0;
+    margin: 5rem auto;
+    font-family: 'Inter';
 }
 
 .line {
@@ -821,6 +904,7 @@
     display: flex;
     flex-direction: column;
     z-index: 100;
+    font-family: 'Inter';
 }
 
 .line li {
@@ -829,6 +913,7 @@
     background-color: #545454;
     margin-bottom: 2vh;
     cursor: pointer;
+    font-family: 'Inter';
 }
 
 .bannermin {
@@ -836,4 +921,5 @@
     height: 40vh;
     margin: 0 auto;
     display: flex;
+    font-family: 'Inter';
 }

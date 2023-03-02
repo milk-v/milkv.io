@@ -88,18 +88,17 @@ const config = {
       },
       footer: {
         style: 'light',
-        logo: {
-          src: 'img/ICON.svg',
-          style: {
-          }
-        },
+
         links: [
           {
-            html: `<div class="footer_text1" style="color:#2D88C9;">Milk-V Machines</div>`
+            html: `<div class="footer_text">
+              <div class='footer_logo'></div>
+              <div class='text_right'>
+                <h1>Milk-V Machines</h1>
+                <h1>Email：Contact@ .io</h1>
+              </div>
+            </div>`
           },
-          {
-            html: `<div class="footer_text3" style="color:#2D88C9;">Email：support@milkv.io</div>`
-          }
         ],
       },
     }),

@@ -77,13 +77,13 @@ function HomepageHeader() {
                 <div className={styles.on2_item}>
                   <div>
                     <div className={styles.icon1}></div>
-                    <p>Low power</p>
+                    <p>Low Power</p>
                   </div>
                 </div>
                 <div className={styles.on2_item}>
                   <div>
                     <div className={styles.icon2}></div>
-                    <p>Low cost</p>
+                    <p>Low Cost</p>
                   </div>
                 </div>
                 <div className={styles.on2_item}>
@@ -107,7 +107,7 @@ function HomepageHeader() {
                 <div className={styles.on2_item}>
                   <div>
                     <div className={styles.icon6}></div>
-                    <p>Small area</p>
+                    <p>Small Area</p>
                   </div>
                 </div>
                 <div className={styles.on2_item}>
@@ -119,7 +119,7 @@ function HomepageHeader() {
                 <div className={styles.on2_item}>
                   <div>
                     <div className={styles.icon8}></div>
-                    <p>high performance</p>
+                    <p>High Performance</p>
                   </div>
                 </div>
               </div>
@@ -132,7 +132,7 @@ function HomepageHeader() {
                 <div className={styles.on3_shadow2}></div>
                 <div className={styles.on3_shadow3}></div>
                 <div className={styles.on3_text}>
-                  <div className={styles.on3_change_text}>Starting from $5</div>
+                  <div className={styles.on3_change_text}>Starting from $9</div>
                 </div>
                 <div className={styles.on3_img}> </div>
                 <h1 className={styles.on3_h1}>World Debut</h1>
@@ -158,8 +158,8 @@ function HomepageHeader() {
                       </div>
                     </li>
                   </ul>
-                  <p className={styles.p1}>Dual cores up to 1Ghz</p>
-                  <p className={styles.p2}>Rich IO for UART, I2C, SPI, SDIO, ADC and more</p>
+                  <p className={styles.p1}>Dual cores up to 1GHz</p>
+                  <p className={styles.p2}>Rich IO for UART, I2C, SPI, SDIO, ADC, and more</p>
                   <p className={styles.p3}>Running Linux or RTOS or both simultaneously</p>
                 </div>
                 <div className={styles.on3_bottom_left}>
@@ -178,8 +178,8 @@ function HomepageHeader() {
                 <p className={styles.txt_line}>RISC-V Developer  Motherboard/PC</p>
                 <h1 className={styles.world}>World Debut</h1>
                 <div className={styles.parBox}>
-                  <div className={styles.parameter}>64 cores up to 2Ghz</div>
-                  <div className={styles.parameter}>32GB 3200Mhz DDR4</div>
+                  <div className={styles.parameter}>64 cores up to 2GHz</div>
+                  <div className={styles.parameter}>32GB 3200MHz DDR4</div>
                 </div>
                 <div className={styles.parBox2}>
                   <div className={styles.parameter}>1TB M.2 SSD</div>
@@ -211,16 +211,10 @@ function HomepageHeader() {
                   <li className={styles.li}>
                     <h1 className={styles.on5_box_h1}>WeChat</h1>
                     <div className={styles.on5_img}></div>
-                    <div className={styles.on5_bottom}>
-                      <Link style={{ textDecoration: 'none', color: '#fff' }}>Scan QR code</Link>
-                    </div>
                   </li>
                   <li className={styles.li}>
                     <h1 className={styles.on5_box_h1}>QQ Group</h1>
                     <div className={styles.on5_img_QQ}></div>
-                    <div className={styles.on5_bottom}>
-                      <Link style={{ textDecoration: 'none', color: '#fff' }}>Scan QR code</Link>
-                    </div>
                   </li>
                 </ul>
               </div>

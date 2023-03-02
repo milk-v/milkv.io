@@ -32,8 +32,8 @@ function DetailsPage() {
           <h1 style={{
             fontSize: "6.2rem",
             marginBottom: '2.8rem'
-          }}>Milk-V DUO</h1>
-          <h2 className={cssList.textLine}>A 5$ RISC-V COMPUTER</h2>
+          }}>Milk-V Duo</h1>
+          <h2 className={cssList.textLine}>A 9$ RISC-V COMPUTER</h2>
           <p style={{ fontSize: "1.55rem" }}>Low cost, low power consumption, high performance</p>
           <Head />
           <p style={{ fontSize: "1.25rem" }}>*Tax or shipping is not included </p>
@@ -48,7 +48,7 @@ function DetailsPage() {
             <p style={{ fontSize: "6.25rem", color: "#01F2AA", marginRight: "1.2rem" }}>1</p>
             <p>
               <span style={{ fontSize: "6.25rem", color: "#fff" }}>G</span>
-              <span style={{ fontSize: "2.65rem", color: "#fff" }}>hz</span>
+              <span style={{ fontSize: "2.65rem", color: "#fff" }}>Hz</span>
             </p>
           </div>
           <p style={{
@@ -132,15 +132,15 @@ function DetailsPage() {
           <div className={cssList.title4}>Tech specs</div>
           <div className={cssList.tech_text1}>
             <h1 className={cssList.tech_title}>Introduction</h1>
-            <p className={cssList.tech_p}>Milk-V DUO is an MPU capable of running LINUX and RTOS based on the SOPHGO CV180xB chip.Milk-V DUO provides professionals, industrial OEMs, IoT enthusiasts, hobbyists, DIYers and creators with a reliable, low-cost and extremely capable platform for building and tinkering with their ideas to make them a reality.</p>
+            <p className={cssList.tech_p}>Milk-V Duo is an MPU capable of running Linux and RTOS based on the SOPHGO CV180xB chip.Milk-V Duo provides professionals, industrial OEMs, IoT enthusiasts, hobbyists, DIYers and creators with a reliable, low-cost and extremely capable platform for building and tinkering with their ideas to make them a reality.</p>
           </div>
           <div className={cssList.tech_text2}>
             <h1 className={cssList.tech_title}>Hardware </h1>
             <p className={cssList.tech_p_line}>- SOPHGO CV1800B Chip</p>
-            <p className={cssList.tech_p_line}>- Dual-Core RISC-V CPU up to 1Ghz</p>
+            <p className={cssList.tech_p_line}>- Dual-Core RISC-V CPU up to 1GHz</p>
             <p className={cssList.tech_p_line}>- 64MB RAM</p>
             <p className={cssList.tech_p_line}>- Provides 10/100Mbps Ethernet via optional add-on board</p>
-            <p className={cssList.tech_p_line}>- AMP technology supports running both LINUX and RTOS</p>
+            <p className={cssList.tech_p_line}>- AMP technology supports running both Linux and RTOS</p>
           </div>
           <h1 className={cssList.tech_title3}>Pin Out</h1>
           <div className={cssList.pinImg}></div>
@@ -149,7 +149,7 @@ function DetailsPage() {
             <ul>
               <li>
                 <div className={cssList.down}></div>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="/DUOProductBriefv1.1.zip" download="DUOProductBriefv1.1.zip">DUO Product Brief V1.1.zip</a>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="/DUOProductBriefv1.1.zip" download="DUOProductBriefv1.1.zip">Duo Product Brief V1.1.zip</a>
               </li>
               <li>
 
@@ -173,23 +173,17 @@ function DetailsPage() {
               </div>
             </li>
             <li className={cssList.li}>
-              <h1 className={cssList.on5_box_h1}>Wechat</h1>
+              <h1 className={cssList.on5_box_h1}>WeChat</h1>
               <div className={cssList.on5_img}></div>
-              <div className={cssList.on5_bottom}>
-                <Link style={{ textDecoration: 'none', color: '#fff' }}>Scan QR code</Link>
-              </div>
             </li>
             <li className={cssList.li}>
               <h1 className={cssList.on5_box_h1}>QQ Group</h1>
               <div className={cssList.on5_img_QQ}></div>
-              <div className={cssList.on5_bottom}>
-                <Link style={{ textDecoration: 'none', color: '#fff' }}>Scan QR code</Link>
-              </div>
             </li>
           </ul>
         </div>
         <div className={cssList.riscBg}>
-          <h1 className={cssList.embrace}>Embrace the new era with DUO, </h1>
+          <h1 className={cssList.embrace}>Embrace the new era with Duo, </h1>
           <h1 className={cssList.risc_v}>Let's make RISC-V better together.</h1>
         </div>
       </div>
