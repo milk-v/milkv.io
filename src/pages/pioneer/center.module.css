@@ -55,14 +55,12 @@
 
 .titleBox>h1 {
     font-size: 5.3625rem;
-    font-family: 'modern';
     font-style: normal;
     font-weight: 700;
     background: linear-gradient(90deg, #0F8CFF 1.27%, #00FFFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     text-align: center;
 }
 
@@ -112,7 +110,6 @@
 }
 
 .title7 {
-    font-family: Inter;
     font-size: 4.7813rem;
     font-weight: 500;
     line-height: 4.875rem;
@@ -137,7 +134,6 @@
 }
 
 .title8 {
-    font-family: Inter;
     font-size: 5.5rem;
     font-weight: 500;
     line-height: 4.875rem;
@@ -394,7 +390,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
 }
 
 .h1_2 {
@@ -402,7 +397,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
 }
 
 .h1_3 {
@@ -410,7 +404,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
 }
 
 
@@ -448,7 +441,6 @@
 
 
 .title3 {
-    font-family: Inter;
     font-size: 5.5rem;
     font-weight: 500;
     line-height: 4.875rem;
@@ -573,7 +565,6 @@
 
 
 .title4 {
-    font-family: Inter;
     font-size: 5.5rem;
     font-weight: 500;
     line-height: 4.875rem;
@@ -707,7 +698,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
 }
 
 .riscBg {

@@ -48,6 +48,7 @@ body {
     left: -10.25rem;
     top: -3.125rem;
     background: #01DEEA;
+    -moz-filter: blur(16rem);
     filter: blur(16rem);
 }
 
@@ -58,6 +59,7 @@ body {
     left: 107.0625rem;
     top: 44.8125rem;
     background: #01B2EA;
+    -moz-filter: blur(16rem);
     filter: blur(16rem);
 }
 
@@ -68,6 +70,7 @@ body {
     left: 80rem;
     top: 8.875rem;
     background: #FCEA4C;
+    -moz-filter: blur(3.75rem);
     filter: blur(3.75rem);
 }
 
@@ -78,6 +81,7 @@ body {
     left: 68.5rem;
     top: 26.1875rem;
     background: rgba(11, 240, 185, 0.68);
+    -moz-filter: blur(16rem);
     filter: blur(16rem);
 }
 
@@ -88,6 +92,7 @@ body {
     left: 6.5625rem;
     top: 70.1875rem;
     background: #01DEEA;
+    -moz-filter: blur(16rem);
     filter: blur(16rem);
     z-index: -10;
 }
@@ -110,7 +115,7 @@ body {
     position: absolute;
     right: 0rem;
     bottom: 1.25rem;
-    width: 53.4375rem;
+    width: 50.4375rem;
     height: .125rem;
     background: #929292;
 }
@@ -261,7 +266,6 @@ body {
 .exhibits .group2>.textList {
     height: 6.125rem;
     width: 31.875rem;
-    font-family: Inter;
     font-weight: 500;
     line-height: 3.0625rem;
     letter-spacing: 0em;
@@ -377,6 +381,7 @@ body {
     left: -5.4375rem;
     top: 3.5rem;
     background: rgba(11, 240, 185, 0.68);
+    -moz-filter: blur(16rem);
     filter: blur(16rem);
 }
 
@@ -387,6 +392,7 @@ body {
     left: 3.5625rem;
     top: 13.6875rem;
     background: #B1A53D;
+    -moz-filter: blur(16rem);
     filter: blur(16rem);
 }
 
@@ -469,6 +475,7 @@ body {
     left: -22.875rem;
     top: 1.8125rem;
     background: #01DEEA;
+    -moz-filter: blur(6.25rem);
     filter: blur(6.25rem);
     z-index: 10;
 }
@@ -480,6 +487,7 @@ body {
     left: 13rem;
     top: -35.3125rem;
     background: #FFF858;
+    -moz-filter: blur(6.25rem);
     filter: blur(6.25rem);
 }
 
@@ -500,6 +508,7 @@ body {
     left: 29.625rem;
     top: -1.5625rem;
     background: #8042D5;
+    -moz-filter: blur(13.75rem);
     filter: blur(13.75rem);
 }
 
@@ -510,6 +519,7 @@ body {
     left: -6.4375rem;
     top: 3.4375rem;
     background: #BF2091;
+    -moz-filter: blur(16.25rem);
     filter: blur(16.25rem);
 }
 
@@ -520,6 +530,7 @@ body {
     left: 60.625rem;
     top: 144rem;
     background: rgba(215, 207, 20, 0.51);
+    -moz-filter: blur(16.25rem);
     filter: blur(16.25rem);
     z-index: -100;
 }
@@ -627,7 +638,6 @@ body {
 }
 
 .title3 {
-    font-family: Inter;
     font-size: 4.8125rem;
     font-weight: 500;
     line-height: 4.875rem;
@@ -646,7 +656,7 @@ body {
     position: absolute;
     right: -13rem;
     bottom: 1.25rem;
-    width: 21rem;
+    width: 22.5rem;
     height: .125rem;
     background: #929292;
 }
@@ -750,6 +760,7 @@ body {
     left: 6.9375rem;
     top: 245.6875rem;
     background: #01DEEA;
+    -moz-filter: blur(16.25rem);
     filter: blur(16.25rem);
 }
 
@@ -870,6 +881,7 @@ body {
     left: 98.5625rem;
     top: 260.0625rem;
     background: rgba(215, 207, 20, 0.32);
+    -moz-filter: blur(16.25rem);
     filter: blur(16.25rem);
 }
 
@@ -899,7 +911,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+
 }
 
 .riscBg {

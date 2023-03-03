@@ -18,7 +18,8 @@
       "default",
       {
         "ignore": [
-          "scrollbar-width"
+          "scrollbar-width",
+          "-moz-filter"
         ]
       }
     ]

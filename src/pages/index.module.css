@@ -63,6 +63,7 @@
     left: -12.61vw;
     top: -6.08;
     background: #01DEEA;
+    -moz-filter: blur(10.42vw);
     filter: blur(10.42vw);
 }
 
@@ -73,6 +74,7 @@
     left: 88.53vw;
     top: 82.15vh;
     background: #01DEEA;
+    -moz-filter: blur(10.42vw);
     filter: blur(10.42vw);
 }
 
@@ -100,6 +102,7 @@
 
 .on2_shadow {
     background: #01DEEA;
+    -moz-filter: blur(10.42vw);
     filter: blur(10.42vw);
     position: absolute;
     width: 16.88vw;
@@ -223,6 +226,7 @@
     left: 83.74vw;
     top: -2.136vh;
     background: #01DEEA;
+    -moz-filter: blur(10.42vw);
     filter: blur(10.42vw);
 }
 
@@ -233,6 +237,7 @@
     left: 11.67vw;
     top: 85.79vh;
     background: #01DEEA;
+    -moz-filter: blur(10.42vw);
     filter: blur(10.42vw);
 }
 
@@ -306,7 +311,6 @@
 }
 
 .on3_h1 {
-    font-family: 'Roboto';
     font-style: normal;
     font-size: 7.7vw;
     font-weight: 700;
@@ -418,7 +422,6 @@
     height: 22.43vh;
     left: 0;
     top: 5vh;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 7.8vw;
@@ -435,6 +438,7 @@
     right: 15.7vw;
     bottom: -12.7vw;
     background: #01DEEA;
+    -moz-filter: blur(10.42vw);
     filter: blur(10.24vw);
 }
 
@@ -670,7 +674,6 @@
     height: 20vh;
     display: block;
     font-weight: 400;
-    font-family: Inter;
     font-style: normal;
     word-spacing: 0.2vw;
     color: #FFF;
