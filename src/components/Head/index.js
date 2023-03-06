@@ -18,7 +18,7 @@ export default function (props) {
     };
 
     const toApp = () => {
-        window.open('https://app6hodqg6k9861.h5xiaoeknow.com')
+        window.open('https://app6hodqg6k9861.h5.xiaoeknow.com')
     }
     return (
         <>
