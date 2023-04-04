@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'MilkV',
+  title: 'Milk-V',
   tagline: 'Everything about RISC-V',
   favicon: 'img/favicon.ico',
   url: 'https://milkv.io',

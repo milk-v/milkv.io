@@ -3,7 +3,7 @@ sidebar_label: 'Duo'
 sidebar_position: 10
 ---
 
-# DUO
+# Duo
 
 ## Introduction
 
