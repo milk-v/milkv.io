@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Pioneer'
+sidebar_position: 20
+---
+
 # Pioneer
 ## Introduction
 
