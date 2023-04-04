@@ -80,12 +80,12 @@ const config = {
               {
                 type: 'doc',
                 label: 'Duo',
-                docId: 'DUOProductBriefv1.1/Duo Product Brief v1.1',
+                docId: 'duo/duo',
               },
               {
                 type: 'doc',
                 label: 'Pioneer',
-                docId: 'PioneerProductBriefv1.0/Pioneer Product Brief v1.0',
+                docId: 'pioneer/pioneer',
               },
             ],
           },
