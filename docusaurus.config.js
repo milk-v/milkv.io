@@ -47,7 +47,7 @@ const config = {
       navbar: {
         hideOnScroll: true,
         logo: {
-          alt: 'My Site',
+          alt: 'milkv.io',
           src: 'img/LogoNew.svg',
         },
         items: [
@@ -68,13 +68,18 @@ const config = {
             to: '/pioneer'
           },
           {
+            position: 'right',
+            label: 'Community',
+            to: 'https://community.milkv.io/'
+          },
+          {
             type: 'dropdown',
             label: 'Doc',
             position: 'right',
             items: [
               {
                 type: 'doc',
-                label: 'DUO',
+                label: 'Duo',
                 docId: 'DUOProductBriefv1.1/Duo Product Brief v1.1',
               },
               {
