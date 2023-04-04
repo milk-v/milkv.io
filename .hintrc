@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "development"
+  ],
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_chr <= 109",
+    "not chrome <= 109",
+    "not edge <= 109",
+    "not ios_saf <= 16.2",
+    "not opera <= 94",
+    "not safari <= 16.2",
+    "not samsung <= 19"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "scrollbar-width",
+          "-moz-filter"
+        ]
+      }
+    ]
+  }
+}
