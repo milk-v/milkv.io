@@ -165,10 +165,10 @@ function DetailsPage() {
         <div className={cssList.on5_box}>
           <ul>
             <li className={cssList.li}>
-              <h1 className={cssList.on5_box_h1}>Communiy</h1>
-              <p className={cssList.on5_box_p}>Join the Milk-V Matrix Chat channel to share your ideas with the developers all around the world.</p>
+              <h1 className={cssList.on5_box_h1}>[matrix]</h1>
+              <p className={cssList.on5_box_p}>Join the Duo Matrix Chat channel to share your ideas with the developers all around the world.</p>
               <div className={cssList.on5_bottom}>
-                <Link to='https://community.milkv.io/' style={{ textDecoration: 'none', color: '#fff' }}>Get In Touch</Link>
+                <Link to='https://matrix.to/#/#milkv-duo:matrix.org' style={{ textDecoration: 'none', color: '#fff' }}>Join #milkv-duo</Link>
               </div>
             </li>
             <li className={cssList.li}>

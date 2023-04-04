@@ -202,10 +202,10 @@ function HomepageHeader() {
               <div className={styles.on5_box}>
                 <ul>
                   <li className={styles.li}>
-                    <h1 className={styles.on5_box_h1}>Communiy</h1>
-                    <p className={styles.on5_box_p}>Join the Milk-V Matrix Chat channel to share your ideas with the developers all around the world.</p>
+                    <h1 className={styles.on5_box_h1}>[matrix]</h1>
+                    <p className={styles.on5_box_p}>Join the Milk-V Matrix Chat channel(#milk-v:matrix.org) to share your ideas with the developers all around the world.</p>
                     <div className={styles.on5_bottom}>
-                      <Link to='https://community.milkv.io/' style={{ textDecoration: 'none', color: '#fff' }}>Get In Touch</Link>
+                      <Link to='https://matrix.to/#/#milk-v:matrix.org' style={{ textDecoration: 'none', color: '#fff' }}>Join #milk-v</Link>
                     </div>
                   </li>
                   <li className={styles.li}>
