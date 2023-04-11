@@ -45,6 +45,6 @@ Milk-V Duo is an MPU capable of running LINUX and RTOS based on the SOPHGO CV180
 ### Support
 For support please post your issue on the [Milk-V Community Duo Category](https://community.milkv.io/c/duo).
 
-[PIN]: /DOUImage/DUOPINOUT.png
+[PIN]: /img/Duochart2.svg
 [DUOLOOK1]: /DOUImage/front.png
 [DUOLOOK2]:/DOUImage/back.png
