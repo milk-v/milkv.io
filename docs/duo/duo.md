@@ -42,6 +42,10 @@ Milk-V Duo is an MPU capable of running LINUX and RTOS based on the SOPHGO CV180
 ## GPIO Pinout
 ![GPIO Alternate Functions][PIN]
 
+### Quick Start
+- [Image download](https://github.com/milk-v/duo-manifest/releases)
+- [How to build image](https://github.com/milk-v/duo-manifest)
+
 ### Support
 For support please post your issue on the [Milk-V Community Duo Category](https://community.milkv.io/c/duo).
 
