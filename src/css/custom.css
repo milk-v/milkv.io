@@ -43,6 +43,10 @@ li {
   list-style: none;
 }
 
+.markdown li {
+  list-style: unset;
+}
+
 #__docusaurus {
   background-color: #fff;
 }
@@ -130,7 +134,7 @@ li {
 }
 
 .footer_logo {
-  width: 15.875rem;
+  width: 16.25rem;
   height: 4.75rem;
   background: url(/static/img/ICON.svg) no-repeat center center;
   background-size: cover;
