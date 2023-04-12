@@ -147,12 +147,13 @@ function DetailsPage() {
             <h1>Documents</h1>
             <ul>
               <li>
-                <div className={cssList.down}></div>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="/DUOProductBriefv1.1.zip" download="DUOProductBriefv1.1.zip">Duo Product Brief V1.1.zip</a>
+                <span className={cssList.down}></span>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="/files/duo/duo-schematic-v1.1.pdf" download="duo-schematic-v1.1.pdf">Duo Schematic v1.1, PDF</a>
               </li>
               <li>
-
-              </li>
+                <span className={cssList.down}></span>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="/files/duo/duo-mechanical-drawings-v1.1.zip" download="duo-mechanical-drawings-v1.1.zip">Duo Mechanical Drawings v1.1, DXF</a>
+              </li>                
             </ul>
           </div>
         </div>
