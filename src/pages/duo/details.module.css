@@ -278,10 +278,10 @@ body {
 
 .exhibitsImg {
     display: block;
-    width: 28.3125rem;
-    height: 11.6875rem;
-    transform: rotate(-90deg);
-    margin: 8.75rem auto 0;
+    height: 28.125rem;
+    width: 11.75rem;
+    /* transform: rotate(90deg); */
+    margin: 2.75rem auto 0;
     background: url(/static/img/Group.svg) no-repeat;
     background-size: 100%;
 }
@@ -584,12 +584,11 @@ body {
 }
 
 .lineGroup {
-    width: 18.75rem;
-    height: 7.25rem;
+    height: 18.75rem;
+    width: 7.25rem;
     position: absolute;
-    top: 5.1875rem;
-    left: -3.625rem;
-    transform: rotate(-90deg);
+    top: 0;
+    left: 1.625rem;
     background: url(/static/img/Group.svg) no-repeat;
     background-size: 100%;
 }
