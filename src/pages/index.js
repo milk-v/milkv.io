@@ -127,40 +127,17 @@ function HomepageHeader() {
           </div>
           <div>
             <div className={styles.contentStyle}>
+              <img src='/img/on3_bg_img.webp' className={styles.on3_bg_img} />
               <div className={styles.on3_change}>
-                <div className={styles.on3_shadow1}></div>
-                <div className={styles.on3_shadow2}></div>
-                <div className={styles.on3_shadow3}></div>
+                <h2>World Debut</h2>
+                <h1>Milk-V Duo</h1>
+                <p>RISC-V Dual Core MPU</p>
                 <div className={styles.on3_text}>
                   <div className={styles.on3_change_text}>Starting from $9</div>
                 </div>
-                <div className={styles.on3_img}> </div>
-                <h1 className={styles.on3_h1}>World Debut</h1>
-                <span className={styles.on3_change_text_span}>
-                  This is
-                </span>
-                <p className={styles.on3_p}>RISC-V MPU</p>
                 <div className={styles.on3_box}>
-                  <ul className={styles.box_list}>
-                    <li>
-                      <div>
-                        <div className={styles.icon2}></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div className={styles.icon1}></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div className={styles.icon8}></div>
-                      </div>
-                    </li>
-                  </ul>
                   <p className={styles.p1}>Dual cores up to 1GHz</p>
                   <p className={styles.p2}>Rich IO for UART, I2C, SPI, SDIO, ADC, and more</p>
-                  <p className={styles.p3}>Running Linux or RTOS or both simultaneously</p>
                 </div>
                 <div className={styles.on3_bottom_left}>
                   <Head cd='on3'></Head>
@@ -173,28 +150,27 @@ function HomepageHeader() {
           </div>
           <div>
             <div className={styles.contentStyle} style={{ background: 'linear-gradient(284.67deg, #000B14 0%, #151818 49.57%, #001B1B 101.26%)' }}>
-              <div className={styles.on4_txtBox}>
-                <p className={styles.this}>This is</p>
-                <p className={styles.txt_line}>RISC-V Developer  Motherboard/PC</p>
-                <h1 className={styles.world}>World Debut</h1>
+              <div className={styles.centextBox}>
+                <h2>World Debut</h2>
+                <h1>Milk-V Pioneer</h1>
+                <p>RISC-V Developer Motherboard / Workstation</p>
                 <div className={styles.parBox}>
                   <div className={styles.parameter}>64 cores up to 2GHz</div>
-                  <div className={styles.parameter}>32GB 3200MHz DDR4</div>
+                  <div className={styles.parameter}>32GB / 128G 3200MHz DDR4</div>
                 </div>
-                <div className={styles.parBox2}>
+                <div className={styles.parBox}>
                   <div className={styles.parameter}>1TB M.2 SSD</div>
                   <div className={styles.parameter}>5 SATA interfaces</div>
-                  <div className={styles.parameter}>350W Power Apply</div>
+                </div>
+                <div className={styles.on3_bottom_left}>
+                  <Head cd='on3'></Head>
+                </div>
+                <div className={styles.on3_bottom_right}>
+                  <Link to="/pioneer" style={{ textDecoration: 'none', color: '#fff', width: '100%', height: '100%', display: 'block' }}>Learn more&gt;&gt;</Link>
                 </div>
               </div>
-              <div className={styles.on4_bottom_left}>
-                <Head cd='on3'></Head>
-              </div>
-              <div className={styles.on4_bottom_right}>
-                <Link to="/pioneer" style={{ textDecoration: 'none', color: '#fff', width: '100%', height: '100%', display: 'block' }}>Learn more&gt;&gt;</Link>
-              </div>
-              <div className={styles.on4_pag}></div>
-              <div className={styles.on4_show}></div>
+              <img src='/img/pioneer_top.png' className={styles.pioneer_top} />
+              <img src='/img/pioneer.png' className={styles.pioneer} />
             </div>
           </div>
           <div>

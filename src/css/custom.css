@@ -22,8 +22,7 @@
 
 body,
 html {
-  min-width: 20rem;
-  height: 100%;
+  overflow-x: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
   /* font-family: Helvetica, "pingFangSC", "Microsoft YaHei", "微软雅黑", Arial, sans-serif !important; */
