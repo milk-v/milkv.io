@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Layout from '@theme/Layout';
 import Head from "../../components/Head"
 
@@ -8,14 +8,16 @@ import cssList from "./details.module.css"
 
 function DetailsPage() {
   const [num, setNum] = useState(0)
+  const banner = useRef()
+
 
   const onPrve = () => {
     if (num == 0) return
-    setNum((num) => num + 28.06)
+    setNum((num) => num + (banner.current.offsetWidth / 3))
   }
   const onNext = () => {
-    if (num === -56.12) return
-    setNum((num) => num - 28.06)
+    if (num === -(2 * (banner.current.offsetWidth / 3))) return
+    setNum((num) => num - (banner.current.offsetWidth / 3))
   }
 
   return (
@@ -28,15 +30,12 @@ function DetailsPage() {
         backgroundColor: '#000'
       }}>
         <div className={cssList.titleBox}>
-          <p style={{ fontSize: "1.5rem", marginBottom: "0.4rem" }}>Meet</p>
-          <h1 style={{
-            fontSize: "6.2rem",
-            marginBottom: '2.8rem'
-          }}>Milk-V Duo</h1>
+          <p className={cssList.meet}>Meet</p>
+          <h1 className={cssList.titleTxt}>Milk-V Duo</h1>
           <h2 className={cssList.textLine}>A 9$ RISC-V COMPUTER</h2>
-          <p style={{ fontSize: "1.55rem" }}>Low cost, low power consumption, high performance</p>
+          <p className={cssList.low}>Low cost, low power consumption, high performance</p>
           <Head />
-          <p style={{ fontSize: "1.25rem" }}>*Tax or shipping is not included </p>
+          <p className={cssList.tax}>*Tax or shipping is not included </p>
         </div>
         <div className={cssList.rotateImg}></div>
         <div className={cssList.title2}>Specification</div>
@@ -44,15 +43,13 @@ function DetailsPage() {
           <h1 className={cssList.chartTitle}>More powerful than others</h1>
           <p className={cssList.chartTitle2}>Dual Core RISC-V CPU up to</p>
           <div className={cssList.largeText}>
-            <p style={{ fontSize: "6.25rem", color: "#01F2AA", marginRight: "1.2rem" }}>1</p>
+            <p className={cssList.one1}>1</p>
             <p>
-              <span style={{ fontSize: "6.25rem", color: "#fff" }}>G</span>
-              <span style={{ fontSize: "2.65rem", color: "#fff" }}>Hz</span>
+              <span className={cssList.spanG} >G</span>
+              <span className={cssList.spanHz}>Hz</span>
             </p>
           </div>
-          <p style={{
-            fontSize: "1rem", color: "#fff", marginRight: "1rem", position: "absolute", top: "15.35rem", left: "37.1rem"
-          }}>Vector Acceleration</p>
+          <p className={cssList.vector}>Vector Acceleration</p>
           <div className={cssList.shadow3}></div>
           <div className={cssList.shadow4}></div>
           <div className={cssList.Ghzbox}> </div>
@@ -99,27 +96,27 @@ function DetailsPage() {
           <div className={cssList.title3}>Small size, big potentials</div>
         </div>
         <div className={cssList.bannerList} >
-          <div style={{
-            transform: `translateX(${num}rem)`,
+          <div ref={banner} style={{
+            transform: `translateX(${num}px)`,
             transition: '1s'
           }}>
-            <div className={cssList.bannerimg} style={{ left: '0' }}>
+            <div className={cssList.bannerimg1}>
               <div className={cssList.img1} ></div>
               <p>Smart Door Lock</p>
             </div>
-            <div className={cssList.bannerimg} style={{ left: '28.06rem' }}>
+            <div className={cssList.bannerimg2}>
               <div className={cssList.img2} ></div>
               <p>Intelligent Monitoring</p>
             </div>
-            <div className={cssList.bannerimg} style={{ left: '56.12rem' }}>
+            <div className={cssList.bannerimg3}>
               <div className={cssList.img3} ></div>
               <p>Smart Street Light </p>
             </div>
-            <div className={cssList.bannerimg} style={{ left: '84.18rem' }}>
+            <div className={cssList.bannerimg4}>
               <div className={cssList.img4} ></div>
               <p>Traffic Monitoring </p>
             </div>
-            <div className={cssList.bannerimg} style={{ left: '112.24rem' }}>
+            <div className={cssList.bannerimg5}>
               <div className={cssList.img5} ></div>
               <p>Pedestrian Detection</p>
             </div>
@@ -147,12 +144,11 @@ function DetailsPage() {
             <h1>Documents</h1>
             <ul>
               <li>
-                <span className={cssList.down}></span>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="/files/duo/duo-schematic-v1.1.pdf" download="duo-schematic-v1.1.pdf">Duo Schematic v1.1, PDF</a>
+                <div className={cssList.down}></div>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="/DUOProductBriefv1.1.zip" download="DUOProductBriefv1.1.zip">Duo Product Brief V1.1.zip</a>
               </li>
               <li>
-                <span className={cssList.down}></span>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="/files/duo/duo-mechanical-drawings-v1.1.zip" download="duo-mechanical-drawings-v1.1.zip">Duo Mechanical Drawings v1.1, DXF</a>
+
               </li>
             </ul>
           </div>

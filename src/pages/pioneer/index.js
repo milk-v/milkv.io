@@ -85,7 +85,7 @@ function Center() {
               <li>
                 <p>equipped with </p>
                 <h1 className={cCss.h1_1}>32GB / 128GB 3200MHz</h1>
-                <div>UDIMM DDR4 with ECC</div>
+                <div>DDR4</div>
                 <div className={cCss.show1}></div>
               </li>
               <li>
@@ -170,7 +170,7 @@ function Center() {
             <h2>Pioneer Box</h2>
             <p className={cCss.box_tit}>Pioneer Box is a complete ready-to-use RISC-V PC with the following:</p>
             <p className={cCss.tech_p_line}>- 1x Pioneer Board</p>
-            <p className={cCss.tech_p_line}>- 32GB / 128GB UDIMM 3200 DDR4 with ECC</p>
+            <p className={cCss.tech_p_line}>- 32GB / 128GB 3200 DDR4</p>
             <p className={cCss.tech_p_line}>- 1x 1TB PCIe 3.0 SSD</p>
             <p className={cCss.tech_p_line}>- 1x Intel X520-DA2 Network Card with 2x 10Gbps SFP ports</p>
             <p className={cCss.tech_p_line}>- 1x AMD R5 230 Graphic Card with HDMI, VGA and DVI</p>

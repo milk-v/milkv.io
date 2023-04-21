@@ -25,8 +25,13 @@ html {
   overflow-x: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  /* font-family: Helvetica, "pingFangSC", "Microsoft YaHei", "微软雅黑", Arial, sans-serif !important; */
+  overflow-x: hidden;
 }
+
+* {
+  transition: .5s;
+}
+
 
 html {
   font-size: 16px !important;
