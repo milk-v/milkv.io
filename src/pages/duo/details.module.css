@@ -78,11 +78,11 @@ body {
 
     .rotateImg {
         position: absolute;
-        width: 595px;
-        height: 261px;
-        left: -262px;
+        height: 595px;
+        width: 261px;
+        left: -160px;
         top: 440.5008px;
-        transform: rotate(-56.36deg);
+        transform: rotate(40deg);
         z-index: 100;
         background: url(/static/img/Group.svg) no-repeat;
         background-size: 100%;
@@ -326,10 +326,9 @@ body {
 
     .exhibitsImg {
         display: block;
-        width: 453px;
-        height: 187px;
-        transform: rotate(-90deg);
-        margin: 140px auto 0;
+        height: 453px;
+        width: 187px;
+        margin: 50px auto 0;
         background: url(/static/img/Group.svg) no-repeat;
         background-size: 100%;
     }
@@ -1088,11 +1087,11 @@ body {
 
     .rotateImg {
         position: absolute;
-        width: 470px;
-        height: 201px;
-        left: -262px;
+        height: 470px;
+        width: 201px;
+        left: -150px;
         top: 440.5008px;
-        transform: rotate(-56.36deg);
+        transform: rotate(40deg);
         z-index: 100;
         background: url(/static/img/Group.svg) no-repeat;
         background-size: 100%;
@@ -1279,10 +1278,9 @@ body {
 
     .exhibitsImg {
         display: block;
-        width: 300px;
-        height: 120px;
-        transform: rotate(-90deg);
-        margin: 110px auto 0;
+        height: 300px;
+        width: 120px;
+        margin: 20px auto 0;
         background: url(/static/img/Group.svg) no-repeat;
         background-size: 100%;
     }
@@ -1939,11 +1937,11 @@ body {
     .rotateImg {
         opacity: .8;
         position: absolute;
-        width: 400px;
-        height: 160px;
-        left: -262px;
+        height: 400px;
+        width: 160px;
+        left: -150px;
         top: 250px;
-        transform: rotate(-56.36deg);
+        transform: rotate(40deg);
         background: url(/static/img/Group.svg) no-repeat;
         background-size: 100%;
     }
@@ -2121,10 +2119,9 @@ body {
 
     .exhibitsImg {
         display: block;
-        width: 250px;
-        height: 100px;
-        transform: rotate(-90deg);
-        margin: 110px auto 0;
+        height: 250px;
+        width: 100px;
+        margin: 20px auto 0;
         background: url(/static/img/Group.svg) no-repeat;
         background-size: 100%;
     }
