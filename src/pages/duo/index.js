@@ -41,7 +41,7 @@ function DetailsPage() {
         <div className={cssList.title2}>Specification</div>
         <div className={cssList.chartBox}>
           <h1 className={cssList.chartTitle}>More powerful than others</h1>
-          <p className={cssList.chartTitle2}>Dual Core RISC-V CPU up to</p>
+          <p className={cssList.chartTitle2}>RISC-V CPU up to</p>
           <div className={cssList.largeText}>
             <p className={cssList.one1}>1</p>
             <p>
@@ -73,7 +73,7 @@ function DetailsPage() {
           </div>
           <div className={cssList.footerText}><h1>40P GPIO</h1></div>
           <div className={cssList.bigExhibits}>
-            <div className={cssList.head}>Incredible, it's a AMP computer!</div>
+            <div className={cssList.head}>Incredible, it's a computer!</div>
             <div className={cssList.support}>Support Asymmetric multiprocessing</div>
             <div className={cssList.btnBox}>
 
@@ -136,7 +136,7 @@ function DetailsPage() {
             <p className={cssList.tech_p_line}>- Dual-Core RISC-V CPU up to 1GHz</p>
             <p className={cssList.tech_p_line}>- 64MB RAM</p>
             <p className={cssList.tech_p_line}>- Provides 10/100Mbps Ethernet via optional add-on board</p>
-            <p className={cssList.tech_p_line}>- AMP technology supports running both Linux and RTOS</p>
+            <p className={cssList.tech_p_line}>- technology supports running both Linux and RTOS</p>
           </div>
           <h1 className={cssList.tech_title3}>Pin Out</h1>
           <div className={cssList.pinImg}></div>
