@@ -205,14 +205,14 @@
 
     .pioneer_top {
         position: absolute;
-        right: 1000px;
-        bottom: 280px;
+        right: -30px;
+        bottom: -100px;
     }
 
     .pioneer {
         position: absolute;
-        right: 580px;
-        bottom: 380px;
+        right: -450px;
+        bottom: 0px;
     }
 
 }
@@ -416,14 +416,14 @@
 
     .pioneer_top {
         position: absolute;
-        right: 1000px;
-        bottom: 270px;
+        right: -30px;
+        bottom: -140px;
     }
 
     .pioneer {
         position: absolute;
-        right: 580px;
-        bottom: 370px;
+        right: -450px;
+        bottom: -30px;
     }
 }
 

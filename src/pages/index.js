@@ -126,9 +126,9 @@ function HomepageHeader() {
               <div className={styles.on3_bottom_right}>
                 <Link to="/pioneer" style={{ textDecoration: 'none', color: '#fff', width: '100%', height: '100%', display: 'block' }}>Learn more&gt;&gt;</Link>
               </div>
+              <img src='/img/pioneer_top.png' className={styles.pioneer_top} />
+              <img src='/img/pioneer.png' className={styles.pioneer} />
             </div>
-            <img src='/img/pioneer_top.png' className={styles.pioneer_top} />
-            <img src='/img/pioneer.png' className={styles.pioneer} />
           </div>
         </div>
         <div>
