@@ -32,7 +32,7 @@ function DetailsPage() {
         <div className={cssList.titleBox}>
           <p className={cssList.meet}>Meet</p>
           <h1 className={cssList.titleTxt}>Milk-V Duo</h1>
-          <h2 className={cssList.textLine}>A 9$ RISC-V COMPUTER</h2>
+          <h2 className={cssList.textLine}>A $9 RISC-V COMPUTER</h2>
           <p className={cssList.low}>Low cost, low power consumption, high performance</p>
           <Head />
           <p className={cssList.tax}>*Tax or shipping is not included </p>
