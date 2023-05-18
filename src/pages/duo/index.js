@@ -151,6 +151,14 @@ function DetailsPage() {
                 <span className={cssList.down}></span>
                 <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="/files/duo/duo-mechanical-drawings-v1.1.zip" download="duo-mechanical-drawings-v1.1.zip">Duo Mechanical Drawings v1.1, DXF</a>
               </li>
+              <li>
+                <span className={cssList.down}></span>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="/files/duo/duo-schematic-library-v1.2.olb" download="duo-schematic-library-v1.2.olb">Duo Schematic Library v1.2, OLB</a>
+              </li>
+              <li>
+                <span className={cssList.down}></span>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="/files/duo/duo-pcb-footprint-v1.2.dra" download="duo-pcb-footprint-v1.2.dra">Duo PCB Footprint v1.2, DRA</a>
+              </li>
             </ul>
           </div>
         </div>
