@@ -925,7 +925,7 @@ body {
         top: 900px;
         width: 1320px;
         height: 560px;
-        background: url(/static/img/Duochart2.png) no-repeat;
+        background: url(/static/img/pinout.png) no-repeat;
         background-size: 100%;
     }
 
@@ -1785,7 +1785,7 @@ body {
         top: 900px;
         width: 1000px;
         height: 560px;
-        background: url(/static/img/Duochart2.png) no-repeat;
+        background: url(/static/img/pinout.png) no-repeat;
         background-size: 100%;
     }
 
@@ -2624,7 +2624,7 @@ body {
         top: 650px;
         width: 700px;
         height: 360px;
-        background: url(/static/img/Duochart2.png) no-repeat;
+        background: url(/static/img/pinout.png) no-repeat;
         background-size: 100%;
     }
 
