@@ -128,7 +128,7 @@ function DetailsPage() {
           <div className={cssList.title4}>Tech specs</div>
           <div className={cssList.tech_text1}>
             <h1 className={cssList.tech_title}>Introduction</h1>
-            <p className={cssList.tech_p}>Milk-V Duo is an MPU capable of running Linux and RTOS based on the SOPHGO CV180xB chip.Milk-V Duo provides professionals, industrial OEMs, IoT enthusiasts, hobbyists, DIYers and creators with a reliable, low-cost and extremely capable platform for building and tinkering with their ideas to make them a reality.</p>
+            <p className={cssList.tech_p}>Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators.</p>
           </div>
           <div className={cssList.tech_text2}>
             <h1 className={cssList.tech_title}>Hardware </h1>

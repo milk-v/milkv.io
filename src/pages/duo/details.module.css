@@ -942,6 +942,7 @@ body {
     .document>ul {
         width: 1151px;
         height: 93.6px;
+        margin-top: 20px;
         margin-left: -29px;
         display: flex;
         flex-direction: column;
@@ -959,6 +960,7 @@ body {
     .document>ul>li {
         height: 23.4px;
         line-height: 28px;
+        margin-bottom: 10px;
         display: flex;
         justify-content: flex-start;
     }
@@ -1819,6 +1821,7 @@ body {
     .document>ul>li {
         height: 23.4px;
         line-height: 28px;
+        margin-bottom: 10px;
         display: flex;
         justify-content: flex-start;
     }
@@ -2658,14 +2661,16 @@ body {
     .document>ul>li {
         height: 23.4px;
         line-height: 28px;
+        margin-bottom: 10px;
         display: flex;
         justify-content: flex-start;
     }
 
     .link_down {
         color: #fff;
+        font-weight: 400;
         text-decoration: none;
-        font-size: 26px;
+        font-size: 18px;
     }
 
 
