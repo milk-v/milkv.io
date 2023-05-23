@@ -81,12 +81,12 @@ const config = {
               {
                 type: 'doc',
                 label: 'Duo',
-                docId: 'duo/duo',
+                docId: 'duo/overview',
               },
               {
                 type: 'doc',
                 label: 'Pioneer',
-                docId: 'pioneer/pioneer',
+                docId: 'pioneer/overview',
               },
             ],
           },
