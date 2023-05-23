@@ -99,8 +99,8 @@ const config = {
             html: `<div class="footer_text">
               <div class='footer_logo'></div>
               <div class='text_right'>
-                <h1>Milk-V Machines</h1>
-                <h1>Email: support@milkv.io</h1>
+                <h2>MilkV Technology</h2>
+                <h2>Email: support@milkv.io</h2>
               </div>
             </div>`
           },
