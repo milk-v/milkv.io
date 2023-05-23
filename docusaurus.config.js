@@ -5,6 +5,7 @@ const config = {
   favicon: 'img/favicon.ico',
   url: 'https://milkv.io',
   baseUrl: '/',
+  trailingSlash: false,
   organizationName: 'milk-v',
   projectName: 'milkv.io',
 
