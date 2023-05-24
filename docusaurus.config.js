@@ -70,6 +70,11 @@ const config = {
           },
           {
             position: 'right',
+            label: 'Mars',
+            to: '/mars'
+          },
+          {
+            position: 'right',
             label: 'Community',
             to: 'https://community.milkv.io/'
           },
