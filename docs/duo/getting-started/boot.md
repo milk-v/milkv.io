@@ -31,7 +31,7 @@ Here are the steps for using balenaEtcher.
 
 - Click **Flash!**
 
-![etcher-step2](/images/duo/etcher-step2.png)
+![etcher-step3](/images/duo/etcher-step3.png)
 
 ## Power on
 
