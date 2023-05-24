@@ -74,11 +74,6 @@ const config = {
             to: 'https://community.milkv.io/'
           },
           {
-            position: 'right',
-            label: 'Form',
-            to: '/form'
-          },
-          {
             type: 'dropdown',
             label: 'Doc',
             position: 'right',
