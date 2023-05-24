@@ -1,0 +1,136 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 100%;
+    background: url(/static/form/bg.webp) no-repeat;
+    background-size: 100%;
+}
+
+@media screen and (min-width: 1350px) {
+
+    .formBox {
+        width: 1320px;
+        margin: 0 auto;
+    }
+
+    .box>h1 {
+        margin: 100px 0 50px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+
+    .page {
+        width: 100%;
+        padding: 35px;
+        margin-bottom: 35px;
+        border-radius: 30px;
+        background-color: #fff;
+    }
+
+    .page>p {
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+        color: #767676;
+    }
+
+    .title {
+        margin-bottom: 50px;
+    }
+
+    .title>img {
+        width: 52px;
+        height: 52px;
+        margin-right: 20px;
+    }
+
+    .title>h1 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 33px;
+        color: #000000;
+    }
+
+    .inpBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .inpBox>label {
+        width: 40%;
+    }
+
+    label>textarea {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        outline: none;
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    label>input {
+        width: 100%;
+        height: 65px;
+        outline: none;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        padding: 0 10px;
+        font-size: 22px;
+    }
+
+    label>div {
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 120%;
+        color: #000000;
+        margin-bottom: 15px;
+    }
+
+    .page>label {
+        display: block;
+        margin-top: 55px;
+        width: 100%;
+    }
+
+    .page>label>input {
+        width: 100%;
+        height: 65px;
+    }
+
+    .page>h1 {
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 120%;
+        color: #000000;
+        margin-bottom: 25px;
+    }
+
+    .radioBox {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .radioBox>label {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1350px) and (min-width: 1050px) {}
+
+@media screen and (max-width: 1050px) and (min-width: 750px) {}
