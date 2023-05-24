@@ -59,7 +59,31 @@ In general, Linux can use RNDIS without configuration.
 
 ### macOS
 
-I'm sorry I couldn't find a way to use RNDIS on the latest macOS. If you know of a way to do this, please feel free to share it.
+There is no official driver for RNDIS. We need to install [HoRNDIS](https://joshuawise.com/horndis).
+
+1. Download HoRNDIS driver
+  - Intel https://github.com/jwise/HoRNDIS/releases
+  - Apple silicon https://github.com/jwise/HoRNDIS/files/7323710/HoRNDIS-M1.zip
+
+2. Disable System Integrity Protection
+
+    a. Enter macOS recovery
+
+    Please refer [macOS User Guide -> Recovery](https://support.apple.com/en-hk/guide/mac-help/mchl338cf9a8/mac) to enter recovery mode.
+
+    b. Open the terminal and type the following command
+
+   ```
+    csrutil disable
+
+    csrutil enable --without kext
+   ```
+
+    c. Restart the Mac
+
+3. Install the Kext extension in the zip pack
+
+4. Check the network settings
 
 ## SSH
 
