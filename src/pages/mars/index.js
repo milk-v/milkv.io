@@ -13,7 +13,7 @@ export default () => {
                     <div className={styles.titleBox}>
                         <h1>Milk-V Mars</h1>
                         <p>Bringing RISC-V Single Board Computers into the Mainstream</p>
-                        <Head></Head>
+                        <Head type='mars' />
                     </div>
                 </div>
                 <div className={styles.prodcuts}>
@@ -22,35 +22,35 @@ export default () => {
                     </div>
                     <div className={styles.prodcuts02}>
                         <img src='/mars/risc-v.svg' />
-                        <p>描述</p>
+                        <p>RISC-V is an open standard instruction set architecture (ISA) based on established reduced instruction set computer (RISC) principles.</p>
                     </div>
                     <div className={styles.prodcuts03}>
                         40PIN GPIO
                     </div>
                     <div className={styles.prodcuts04}>
-                        <h1>starfiveJH7110 chip</h1>
+                        <h1>StarfiveJH7110 chip</h1>
                         <p>(quad-core 1.5Ghz)</p>
                     </div>
                     <div className={styles.prodcuts05}>
-                        <p>一键切换uart串口下载模式（开机前按住- uart串口下载模式</p>
+                        <p>One key to switch uart serial download mode</p>
+                        <span>(press and hold before powering on - uart serial download mode)</span>
                     </div>
                     <div className={styles.prodcuts06}>
                         <h1>Support PoE</h1>
                         <p>network cable power</p>
                     </div>
-
                     <ul className={styles.productsUl}>
-                        <li>
+                        <li className={styles.li01}>
                             <h1>mipi DSI output</h1>
                             <p className={styles.titleMinP}>4lanes and 2lanes available</p>
                             <p className={styles.title_p}>- 4K@30FPS output</p>
                             <p className={styles.title_p}>- 4K@60FPS decoding</p>
                         </li>
-                        <li>
+                        <li className={styles.li02}>
                             <h1>Support</h1>
                             <p className={styles.titleMinP}>external M.2 E Key interface WI-FI / BT module</p>
                         </li>
-                        <li>
+                        <li className={styles.li03}>
                             <h1>Classic look</h1>
                             <p className={styles.titleMinP}>Adapted to Raspberry Pi 3B case</p>
                         </li>
@@ -70,7 +70,7 @@ export default () => {
                             <td>LPDDR4 1GB / 2GB / 4GB / 8GB</td>
                         </tr>
                         <tr>
-                            <td rowspan="3" >Storage</td>
+                            <td rowSpan="3" >Storage</td>
                             <td>eMMC Slot</td>
                         </tr>
                         <tr>
@@ -80,7 +80,7 @@ export default () => {
                             <td>SPI Flash for bootloader</td>
                         </tr>
                         <tr>
-                            <td rowspan="4" >Vedio output</td>
+                            <td rowSpan="4" >Vedio output</td>
                             <td>1x HDMI</td>
                         </tr>
                         <tr>
@@ -93,7 +93,7 @@ export default () => {
                             <td>Max dual display output: 1 HDMI + 1 MIPI DSI</td>
                         </tr>
                         <tr>
-                            <td rowspan="4">Multimedia</td>
+                            <td rowSpan="4">Multimedia</td>
                             <td>Camera with MIPI CSI(2-lane)</td>
                         </tr>
                         <tr>
@@ -106,7 +106,7 @@ export default () => {
                             <td>JPEG encoder/decoder</td>
                         </tr>
                         <tr>
-                            <td rowspan="3">Connectivity</td>
+                            <td rowSpan="3">Connectivity</td>
                             <td>1x RJ45 Gigabit Ethernet</td>
                         </tr>
                         <tr>
@@ -116,7 +116,7 @@ export default () => {
                             <td>1x M.2 E-Key</td>
                         </tr>
                         <tr>
-                            <td rowspan="3">Power</td>
+                            <td rowSpan="3">Power</td>
                             <td>USB-C port 5V DC (minimum 3A+)</td>
                         </tr>
                         <tr>

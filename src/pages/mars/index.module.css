@@ -1,4 +1,6 @@
 .headImage {
+    width: 100%;
+    aspect-ratio: 1920/ 725;
     margin: 0 auto;
     background-image: url(/static/mars/mars-head.webp);
     background-repeat: no-repeat;
@@ -14,10 +16,6 @@
     text-align: center;
 }
 
-.prodcuts>div {
-    background-color: rgb(7, 229, 7);
-}
-
 .marsBox {
     width: 100%;
     height: 100%;
@@ -25,11 +23,48 @@
     overflow: hidden;
 }
 
+.prodcuts>div {
+    background-color: #1a1a1a;
+}
+
+.prodcuts01 {
+    background: url(/static/mars/mars-icon-01.webp) no-repeat;
+    background-size: cover;
+}
+
+
+.prodcuts03 {
+    background: url(/static/mars/mars-icon-02.webp) no-repeat;
+    background-size: cover;
+}
+
+.prodcuts04 {
+    background: url(/static/mars/mars-icon-03.webp) no-repeat;
+    background-size: cover;
+}
+
+.prodcuts05 {
+    background: url(/static/mars/mars-icon-04.webp) no-repeat;
+    background-size: cover;
+}
+
+.prodcuts06 {
+    background: url(/static/mars/mars-icon-05.webp) no-repeat;
+    background-size: cover;
+}
+
+.li01 {
+    background: url(/static/mars/mars-icon-06.webp) no-repeat;
+    background-size: cover;
+}
+
+.li02 {
+    background: url(/static/mars/mars-icon-07.webp) no-repeat;
+    background-size: cover;
+}
+
 @media screen and (min-width: 1950px) {
-    .headImage {
-        width: 1920px;
-        height: 725px;
-    }
+
 
     .titleBox {
         margin-top: 100px;
@@ -78,6 +113,7 @@
         font-weight: 500;
         font-size: 32px;
         line-height: 120%;
+        color: #fff;
     }
 
     .prodcuts02 {
@@ -90,7 +126,7 @@
     }
 
     .prodcuts02>p {
-        margin-top: 65px;
+        margin-top: 35px;
         font-weight: 500;
         font-size: 20px;
         line-height: 120%;
@@ -143,14 +179,23 @@
         left: 485px;
         width: 470px;
         height: 630px;
-        padding: 540px 75px 0px;
+        padding: 530px 15px 0px;
     }
 
     .prodcuts05>p {
         font-weight: 500;
         font-size: 20px;
         line-height: 120%;
+        margin-bottom: 7px;
         color: #FFFFFF;
+    }
+
+    .prodcuts05>span {
+        display: block;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        color: #D8D8D8;
     }
 
     .prodcuts06 {
@@ -198,7 +243,6 @@
     .productsUl>li {
         width: 470px;
         height: 100%;
-        background-color: #C21500;
         padding: 14px 25px 0;
     }
 
@@ -402,11 +446,6 @@
 }
 
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
-    .headImage {
-        width: 1420px;
-        height: 600px;
-    }
-
     .titleBox {
         margin-top: 100px;
     }
@@ -453,6 +492,7 @@
     .prodcuts01>h1 {
         font-weight: 500;
         font-size: 32px;
+        color: #fff;
         line-height: 120%;
     }
 
@@ -466,7 +506,7 @@
     }
 
     .prodcuts02>p {
-        margin-top: 65px;
+        margin-top: 35px;
         font-weight: 500;
         font-size: 20px;
         line-height: 120%;
@@ -519,13 +559,22 @@
         left: 485px;
         width: 470px;
         height: 630px;
-        padding: 540px 75px 0px;
+        padding: 530px 15px 0px;
+    }
+
+    .prodcuts05>span {
+        display: block;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 120%;
+        color: #D8D8D8;
     }
 
     .prodcuts05>p {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 19px;
         line-height: 120%;
+        margin-bottom: 8px;
         color: #FFFFFF;
     }
 
@@ -574,7 +623,6 @@
     .productsUl>li {
         width: 470px;
         height: 100%;
-        background-color: #C21500;
         padding: 14px 25px 0;
     }
 
@@ -778,11 +826,6 @@
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1000px) {
-    .headImage {
-        width: 1000px;
-        height: 500px;
-    }
-
     .titleBox {
         margin-top: 50px;
     }
@@ -829,6 +872,7 @@
     .prodcuts01>h1 {
         font-weight: 500;
         font-size: 26px;
+        color: #fff;
         line-height: 120%;
     }
 
@@ -842,7 +886,7 @@
     }
 
     .prodcuts02>p {
-        margin-top: 45px;
+        margin-top: 15px;
         font-weight: 500;
         font-size: 16px;
         line-height: 120%;
@@ -895,12 +939,21 @@
         left: 335px;
         width: 320px;
         height: 450px;
-        padding: 40px 35px 0px;
+        padding: 380px 5px 0px;
+    }
+
+    .prodcuts05>span {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 120%;
+        color: #D8D8D8;
     }
 
     .prodcuts05>p {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 14px;
+        margin-bottom: 5px;
         line-height: 120%;
         color: #FFFFFF;
     }
@@ -950,7 +1003,6 @@
     .productsUl>li {
         width: 320px;
         height: 100%;
-        background-color: #C21500;
         padding: 10px 20px 0;
     }
 
@@ -1153,11 +1205,6 @@
 }
 
 @media screen and (max-width: 1000px) and (min-width: 750px) {
-    .headImage {
-        width: 750px;
-        height: 400px;
-    }
-
     .titleBox {
         margin-top: 50px;
     }
@@ -1204,6 +1251,7 @@
     .prodcuts01>h1 {
         font-weight: 500;
         font-size: 18px;
+        color: #fff;
         line-height: 120%;
     }
 
@@ -1217,9 +1265,9 @@
     }
 
     .prodcuts02>p {
-        margin-top: 25px;
+        margin-top: 15px;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 120%;
         color: #D8D8D8;
     }
@@ -1270,12 +1318,21 @@
         left: 250px;
         width: 240px;
         height: 330px;
-        padding: 30px 25px 0px;
+        padding: 270px 5px 0px;
+    }
+
+    .prodcuts05>span {
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 120%;
+        color: #D8D8D8;
     }
 
     .prodcuts05>p {
         font-weight: 500;
-        font-size: 16px;
+        font-size: 12px;
+        margin-bottom: 0px;
         line-height: 120%;
         color: #FFFFFF;
     }
@@ -1325,7 +1382,6 @@
     .productsUl>li {
         width: 240px;
         height: 100%;
-        background-color: #C21500;
         padding: 15px 10px 0;
     }
 

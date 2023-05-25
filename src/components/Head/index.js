@@ -5,8 +5,9 @@ import { Modal } from 'antd';
 
 export default function (props) {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const { ele = null, cd = null } = props
+    const { ele = null, cd = null, type } = props
 
+    console.log(type);
     const showModal = () => {
         setIsModalOpen(true);
     }
@@ -18,7 +19,17 @@ export default function (props) {
     };
 
     const toApp = () => {
-        window.open('https://app6hodqg6k9861.h5.xiaoeknow.com')
+        if (type === 'duo') {
+            window.open('https://app6hodqg6k9861.h5.xiaoeknow.com')
+
+        } else if (type === 'mars') {
+            window.open('https://app6hodqg6k9861.h5.xiaoeknow.com')
+
+        } else if (type === 'pioneer') {
+            window.open('https://app6hodqg6k9861.h5.xiaoeknow.com')
+        } else {
+            window.open('https://app6hodqg6k9861.h5.xiaoeknow.com')
+        }
     }
     return (
         <>
