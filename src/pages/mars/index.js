@@ -18,7 +18,7 @@ export default () => {
                 </div>
                 <div className={styles.prodcuts}>
                     <div className={styles.prodcuts01}>
-                        <h1>The first credit card size SBC</h1>
+                        <h1>The first RISC-V credit card size SBC</h1>
                     </div>
                     <div className={styles.prodcuts02}>
                         <img src='/mars/risc-v.svg' />
