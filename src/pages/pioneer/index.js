@@ -17,7 +17,7 @@ function Center() {
             <h1>Milk-V Pioneer</h1>
             <p>Make native RISC-V development possible</p>
             <div className={cCss.buy}>
-              <Head />
+              <Head type='pioneer' />
             </div>
           </div>
         </div>

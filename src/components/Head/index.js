@@ -5,7 +5,7 @@ import { Modal } from 'antd';
 
 export default function (props) {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const { ele = null, cd = null } = props
+    const { ele = null, cd = null, type } = props
 
     const showModal = () => {
         setIsModalOpen(true);
@@ -18,7 +18,17 @@ export default function (props) {
     };
 
     const toApp = () => {
-        window.open('https://app6hodqg6k9861.h5.xiaoeknow.com')
+        if (type === 'duo') {
+            window.open('https://app6hodqg6k9861.h5.xiaoeknow.com')
+
+        } else if (type === 'mars') {
+            // window.open('https://app6hodqg6k9861.h5.xiaoeknow.com')
+
+        } else if (type === 'pioneer') {
+            // window.open('https://app6hodqg6k9861.h5.xiaoeknow.com')
+        } else {
+            window.open('https://app6hodqg6k9861.h5.xiaoeknow.com')
+        }
     }
     return (
         <>
@@ -37,10 +47,11 @@ export default function (props) {
                 bodyStyle={{ height: '35rem', position: 'relative' }}
                 open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
                 <div className={css.Logo}></div>
-                <div className={css.chian} onClick={() => toApp()}>
+                <div className={css.chian} onClick={() => toApp()} style={{ backgroundColor: `${type == 'duo' || type == false ? '#fff' : '#ccc'}` }}>
                     <div className={css.img}></div>
                     <div className={css.text}>China's mainland</div>
                     <div className={css.right_text}></div>
+                    <div style={{ display: `${type == 'duo' || type == false ? 'none' : 'block'}` }} className={css.coming}></div>
                 </div>
                 <div className={css.other}>
                     <div className={css.img}></div>

@@ -34,7 +34,7 @@ function DetailsPage() {
           <h1 className={cssList.titleTxt}>Milk-V Duo</h1>
           <h2 className={cssList.textLine}>A $9 RISC-V COMPUTER</h2>
           <p className={cssList.low}>Low cost, low power consumption, high performance</p>
-          <Head />
+          <Head type='duo' />
           <p className={cssList.tax}>*Tax or shipping is not included </p>
         </div>
         <div className={cssList.rotateImg}></div>
