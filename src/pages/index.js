@@ -85,7 +85,7 @@ function HomepageHeader() {
         </div>
         <div>
           <div className={styles.contentStyle}>
-            <img src='/img/on3_bg_img.png' className={styles.on3_bg_img} />
+            <img src='/img/on3-bg-img.webp' className={styles.on3_bg_img} />
             <div className={styles.on3_change}>
               <h2>World Debut</h2>
               <h1>Milk-V Duo</h1>
