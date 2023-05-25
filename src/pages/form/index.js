@@ -111,7 +111,7 @@ export default () => {
                         </label>
                         <p>Please note that your shipping address will be used solely for the purpose of delivering the donated hardware. We value your privacy and will handle your information with utmost care.</p>
                     </div>
-                    <button type="submit">Send</button>
+                    <button type="submit" className={styles.formBtn}>Send</button>
                 </form>
                 {contextHolder}
             </div>
