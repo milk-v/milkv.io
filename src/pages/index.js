@@ -155,7 +155,7 @@ function HomepageHeader() {
           </div>
         </div>
       </div>
-      <Head ele='home'></Head>
+      <Head ele='home' type=''></Head>
     </>
   );
 }

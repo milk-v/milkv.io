@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Head from "../../components/Head"
@@ -12,7 +12,7 @@ export default () => {
                 <div className={styles.headImage}>
                     <div className={styles.titleBox}>
                         <h1>Milk-V Mars</h1>
-                        <p>Bringing RISC-V Single Board Computers into the Mainstream</p>
+                        <p>Embarking on the RISC-V Cosmic Journey</p>
                         <Head type='mars' />
                     </div>
                 </div>
@@ -28,7 +28,7 @@ export default () => {
                         40PIN GPIO
                     </div>
                     <div className={styles.prodcuts04}>
-                        <h1>StarfiveJH7110 chip</h1>
+                        <h1>Starfive JH7110</h1>
                         <p>(quad-core 1.5Ghz)</p>
                     </div>
                     <div className={styles.prodcuts05}>
@@ -41,14 +41,14 @@ export default () => {
                     </div>
                     <ul className={styles.productsUl}>
                         <li className={styles.li01}>
-                            <h1>mipi DSI output</h1>
+                            <h1>MIPI DSI</h1>
                             <p className={styles.titleMinP}>4lanes and 2lanes available</p>
                             <p className={styles.title_p}>- 4K@30FPS output</p>
                             <p className={styles.title_p}>- 4K@60FPS decoding</p>
                         </li>
                         <li className={styles.li02}>
-                            <h1>Support</h1>
-                            <p className={styles.titleMinP}>external M.2 E Key interface WI-FI / BT module</p>
+                            <h1>Support WI-FI / BT module</h1>
+                            <p className={styles.titleMinP}>external M.2 E Key</p>
                         </li>
                         <li className={styles.li03}>
                             <h1>Classic look</h1>
@@ -59,6 +59,7 @@ export default () => {
 
                 <h1 className={styles.maxtitle}>Specification</h1>
                 <p className={styles.moreP}>Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. This four-core device supports a plug-and-play eMMC module, as well as up to 8GB of LPDDR4 memory. The board is equipped with three USB 3.0 ports, one USB 2.0 port, an HDMI 2.0 port that supports 4K resolution, an RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO.</p>
+                <h2>Hardware</h2>
                 <table className={styles.tableBox}>
                     <tbody>
                         <tr>

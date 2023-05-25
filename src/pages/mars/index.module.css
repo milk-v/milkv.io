@@ -33,10 +33,6 @@
 }
 
 
-.prodcuts03 {
-    background: url(/static/mars/mars-icon-02.webp) no-repeat;
-    background-size: cover;
-}
 
 .prodcuts04 {
     background: url(/static/mars/mars-icon-03.webp) no-repeat;
@@ -63,8 +59,19 @@
     background-size: cover;
 }
 
-@media screen and (min-width: 1950px) {
+.li03 {
+    background: url(/static/mars/mars-icon-08.webp) no-repeat;
+    background-size: cover;
+}
 
+@media screen and (min-width: 1950px) {
+    .marsBox>h2 {
+        width: 1440px;
+        margin: 80px auto;
+        font-weight: 500;
+        font-size: 48px;
+        color: #FFFFFF;
+    }
 
     .titleBox {
         margin-top: 100px;
@@ -446,6 +453,14 @@
 }
 
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
+    .marsBox>h2 {
+        width: 1440px;
+        margin: 80px auto;
+        font-weight: 500;
+        font-size: 48px;
+        color: #FFFFFF;
+    }
+
     .titleBox {
         margin-top: 100px;
     }
@@ -826,6 +841,14 @@
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1000px) {
+    .marsBox>h2 {
+        width: 990px;
+        margin: 40px auto;
+        font-weight: 500;
+        font-size: 38px;
+        color: #FFFFFF;
+    }
+
     .titleBox {
         margin-top: 50px;
     }
@@ -1205,6 +1228,15 @@
 }
 
 @media screen and (max-width: 1000px) and (min-width: 750px) {
+
+    .marsBox>h2 {
+        width: 740px;
+        margin: 20px auto;
+        font-weight: 500;
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+
     .titleBox {
         margin-top: 50px;
     }
