@@ -37,7 +37,7 @@ export default function (props) {
                         <img src='/home/icon_more-right.svg' className={styles.img1} />
                         <img src='/home/icon_more-right_white.svg' className={styles.img2} />
                     </div>
-                    <img src='/home/COMINGSOON.svg' style={{ display: `${type === 'duo' && type === 'buy' ? 'none' : 'block'}` }} className={styles.coming} />
+                    <img src='/home/COMINGSOON.svg' style={{ display: `${type === 'duo' || type === 'buy' ? 'none' : 'block'}` }} className={styles.coming} />
                 </div>
                 <div className={styles.none}>
                     <img src='/home/other.svg' className={styles.buyIcon} />
