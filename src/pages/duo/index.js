@@ -9,6 +9,11 @@ import cssList from "./details.module.css"
 function DetailsPage() {
   const [num, setNum] = useState(0)
   const banner = useRef()
+  const [duo2, setDuo2] = useState(false)
+
+  const duoStart = () => {
+    setDuo2(false)
+  }
 
 
   const onPrve = () => {
@@ -22,6 +27,7 @@ function DetailsPage() {
 
   return (
     <>
+      <Head flag={duo2} module={duoStart} type='duo' />
       <div style={{
         position: "relative",
         width: '100%',
@@ -34,7 +40,7 @@ function DetailsPage() {
           <h1 className={cssList.titleTxt}>Milk-V Duo</h1>
           <h2 className={cssList.textLine}>A $9 RISC-V COMPUTER</h2>
           <p className={cssList.low}>Low cost, low power consumption, high performance</p>
-          <Head type='duo' />
+          <div className={cssList.btnbuy} onClick={() => setDuo2(buy => !buy)}>Buy Now</div>
           <p className={cssList.tax}>*Tax or shipping is not included </p>
         </div>
         <div className={cssList.rotateImg}></div>

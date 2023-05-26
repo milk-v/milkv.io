@@ -164,6 +164,47 @@
     transform: translateY(-80%);
 }
 
+.buyChe {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
+
+.buyChe:hover .buy1 {
+    display: none;
+}
+
+
+
+.buyChe:hover .buy2 {
+    display: block;
+}
+
+.buy2 {
+    display: none;
+}
+
+.buyChe>p {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.buyChe>img {
+    width: 80px;
+    height: 80px;
+}
+
+.buyChe:hover .buyCheP {
+    color: #01e7cc;
+}
+
 @media screen and (min-width: 1850px) {
     .pages1>h1 {
         top: 20%;
@@ -1170,5 +1211,21 @@
         background: url(/static/img/QQ.png) no-repeat;
         background-size: 100%;
         margin: 30px auto 0;
+    }
+
+    .buyChe>p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .buyChe {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .buyChe>img {
+        width: 60px;
+        height: 60px;
     }
 }

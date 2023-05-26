@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Head from "../../components/Head"
@@ -6,14 +6,22 @@ import Head from "../../components/Head"
 import styles from './index.module.css';
 
 export default () => {
+
+    const [mars2, setmars2] = useState(false)
+
+    const mars2Start = () => {
+        setmars2(false)
+    }
+
     return (
         <Layout>
+            <Head flag={mars2} module={mars2Start} type='mars' />
             <div className={styles.marsBox}>
                 <div className={styles.headImage}>
                     <div className={styles.titleBox}>
                         <h1>Milk-V Mars</h1>
                         <p>Embarking on the RISC-V Cosmic Journey</p>
-                        <Head type='mars' />
+                        <div className={styles.btnbuy} onClick={() => setmars2(buy => !buy)}>Buy Now</div>
                     </div>
                 </div>
                 <div className={styles.prodcuts}>

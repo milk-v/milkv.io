@@ -107,7 +107,7 @@ function HomepageHeader() {
               <li>5 SATA interfaces</li>
             </ul>
             <div className={styles.buyBtns}>
-              <div className={styles.btnto} onClick={() => setPioneer(duo => !duo)}>Buy</div>
+              <div className={styles.btnto} onClick={() => setPioneer(pioneer => !pioneer)}>Buy</div>
               <Link to='/pioneer'>
                 <div className={styles.btnto}>Learn more {'>>'}</div>
               </Link >
@@ -126,7 +126,7 @@ function HomepageHeader() {
             <h3>The first Quad-Core RISC-V credit card size SBC</h3>
             <p>JH7110, dual core up to 1.5GHz</p>
             <div className={styles.buyBtns}>
-              <div className={styles.btnto} onClick={() => setMars(duo => !duo)}>Buy</div>
+              <div className={styles.btnto} onClick={() => setMars(mars => !mars)}>Buy</div>
               <Link to='/mars'>
                 <div className={styles.btnto}>Learn more {'>>'}</div>
               </Link >
@@ -152,6 +152,11 @@ function HomepageHeader() {
             </li>
           </ul>
         </div>
+      </div>
+      <div className={styles.buyChe} onClick={() => setBuy(buy => !buy)} >
+        <img src='/home/buy.svg' className={styles.buy1} />
+        <img src='/home/onBuy.svg' className={styles.buy2} />
+        <p className={styles.buyCheP}>Online shop</p>
       </div>
     </>
   );

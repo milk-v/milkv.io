@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import styles from './head.module.css'
 
 
@@ -30,14 +30,14 @@ export default function (props) {
             <div className={styles.tanchuang} style={{ display: `${flag ? 'block' : 'none'}` }} >
                 <img src='/home/icon-close.svg' onClick={module} className={styles.close} />
                 <img src='/img/ICON.svg' className={styles.boxLogo} />
-                <div className={type === 'duo' ? styles.goBuy : styles.none} onClick={() => toApp()}>
+                <div className={type === 'duo' || type === 'buy' ? styles.goBuy : styles.none} onClick={() => toApp()}>
                     <img src='/home/china.svg' className={styles.buyIcon} />
                     <div className={styles.textBOx}>
                         <p className={styles.tp}>China's mainland</p>
                         <img src='/home/icon_more-right.svg' className={styles.img1} />
                         <img src='/home/icon_more-right_white.svg' className={styles.img2} />
                     </div>
-                    <img src='/home/COMINGSOON.svg' style={{ display: `${type === 'duo' ? 'none' : 'block'}` }} className={styles.coming} />
+                    <img src='/home/COMINGSOON.svg' style={{ display: `${type === 'duo' && type === 'buy' ? 'none' : 'block'}` }} className={styles.coming} />
                 </div>
                 <div className={styles.none}>
                     <img src='/home/other.svg' className={styles.buyIcon} />

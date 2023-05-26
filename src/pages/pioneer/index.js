@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Layout from '@theme/Layout';
 import Head from "../../components/Head"
 import Link from '@docusaurus/Link';
@@ -6,10 +6,15 @@ import Link from '@docusaurus/Link';
 import cCss from "./center.module.css"
 
 function Center() {
+  const [pionner, setPionner] = useState(false)
 
+  const pStart = () => {
+    setPionner(false)
+  }
 
   return (
     <div className={cCss.centerBox}>
+      <Head flag={pionner} module={pStart} type='pioneer' />
       <div className={cCss.bigimg}>
         <div className={cCss.center_Box}>
           <div className={cCss.pagBox}></div>
@@ -17,7 +22,7 @@ function Center() {
             <h1>Milk-V Pioneer</h1>
             <p>Make native RISC-V development possible</p>
             <div className={cCss.buy}>
-              <Head type='pioneer' />
+              <div className={cCss.btnbuy} onClick={() => setPionner(buy => !buy)}>Buy Now</div>
             </div>
           </div>
         </div>
