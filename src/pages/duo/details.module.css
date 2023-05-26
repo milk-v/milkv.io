@@ -11,8 +11,30 @@ body {
     background-color: #000;
 }
 
+.btnbuy {
+    border: 2px solid #fff;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnbuy:hover {
+    background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+}
 
 @media screen and (min-width: 1350px) {
+
+    .btnbuy {
+        width: 240px;
+        height: 80px;
+        font-size: 43px;
+        margin: 120px auto 30px;
+    }
+
     .meet {
         font-size: 24px;
         margin-bottom: 6.4px;
@@ -1022,6 +1044,13 @@ body {
 }
 
 @media screen and (max-width: 1350px) and (min-width: 1050px) {
+    .btnbuy {
+        width: 200px;
+        height: 70px;
+        font-size: 34px;
+        margin: 60px auto 20px;
+    }
+
     .meet {
         font-size: 24px;
         margin-bottom: 6.4px;
@@ -1874,6 +1903,13 @@ body {
 }
 
 @media screen and (max-width: 1050px) and (min-width: 750px) {
+    .btnbuy {
+        width: 160px;
+        height: 60px;
+        font-size: 26px;
+        margin: 40px auto 10px;
+    }
+
     .meet {
         font-size: 20px;
         margin-bottom: 0px;

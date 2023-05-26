@@ -64,7 +64,30 @@
     background-size: cover;
 }
 
+.btnbuy {
+    border: 2px solid #fff;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btnbuy:hover {
+    background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+}
+
 @media screen and (min-width: 1950px) {
+
+    .btnbuy {
+        width: 240px;
+        height: 80px;
+        font-size: 43px;
+        margin: 120px auto 30px;
+    }
+
     .marsBox>h2 {
         width: 1440px;
         margin: 80px auto;
@@ -453,6 +476,14 @@
 }
 
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
+
+    .btnbuy {
+        width: 200px;
+        height: 70px;
+        font-size: 34px;
+        margin: 60px auto 20px;
+    }
+
     .marsBox>h2 {
         width: 1440px;
         margin: 80px auto;
@@ -841,6 +872,15 @@
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1000px) {
+
+    .btnbuy {
+        width: 200px;
+        height: 70px;
+        font-size: 34px;
+        margin: 60px auto 20px;
+    }
+
+
     .marsBox>h2 {
         width: 990px;
         margin: 40px auto;
@@ -1228,6 +1268,12 @@
 }
 
 @media screen and (max-width: 1000px) and (min-width: 750px) {
+    .btnbuy {
+        width: 160px;
+        height: 60px;
+        font-size: 26px;
+        margin: 40px auto 10px;
+    }
 
     .marsBox>h2 {
         width: 740px;
