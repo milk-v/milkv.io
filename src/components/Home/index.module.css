@@ -105,6 +105,17 @@
         top: 35%;
     }
 
+    .on {
+        display: none;
+        transform: translateX(20px);
+        transition: 1s;
+    }
+
+    .products_ul>li:hover .on {
+        display: block;
+        transform: translateX(20px);
+    }
+
     .products_ul>li {
         width: 32%;
         min-height: 550px;

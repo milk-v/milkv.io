@@ -28,7 +28,7 @@ export default () => {
                     </li>
                     <li>
                         <div className={styles.imageBox} onClick={() => { goto.push('/docs/pioneer') }}>
-                            <img src="/mdHome/mdhoem-duo.webp" />
+                            <img src="/mdHome/mdhoem-pioneer.webp" />
                         </div>
                         <div className={styles.pNameBox}>
                             <p>💪</p>
@@ -42,7 +42,7 @@ export default () => {
                     </li>
                     <li>
                         <div className={styles.imageBox} onClick={() => { goto.push('/docs/mars') }}>
-                            <img src="/mdHome/mdhoem-duo.webp" />
+                            <img src="/mdHome/mdhoem-mars.webp" />
                         </div>
                         <div className={styles.pNameBox}>
                             <p>🔥</p>
