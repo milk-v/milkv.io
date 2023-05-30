@@ -88,6 +88,10 @@
     justify-content: space-between;
 }
 
+.products_ul>li {
+    margin-top: 0 !important;
+}
+
 @media screen and (min-width: 1850px) {
     ._title>h1 {
         font-weight: 600;
