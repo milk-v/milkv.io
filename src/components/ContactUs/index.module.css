@@ -1,5 +1,202 @@
-@media screen and (min-width: 1850px) {}
+@media screen and (min-width: 1450px) {
+    .cUs {
+        width: 1440px !important;
+        height: 578px !important;
+        margin: 0 auto;
+    }
 
-@media screen and (max-width: 1850px) and (min-width: 1400px) {}
+    .maxtitle {
+        width: 1440px;
+        font-weight: 500;
+        font-size: 80px;
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+        margin: 160px auto 20px;
+    }
 
-@media screen and (max-width: 1400px) and (min-width: 750px) {}
+    .maxtitle::after {
+        content: '';
+        position: absolute;
+        left: 450px;
+        bottom: 35px;
+        width: 100%;
+        height: 1px;
+        background-color: #ccc;
+    }
+
+    .cUs>h3 {
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 120%;
+        margin: 0;
+        color: #FFFFFF;
+    }
+
+    .message {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 55px;
+        padding: 0;
+    }
+
+    .message>li {
+        width: 48%;
+        height: 127px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .message>li>h1 {
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+
+    .message>li>p {
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 120%;
+        color: #2D88C9;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 1050px) {
+    .cUs {
+        width: 1000px !important;
+        height: 578px !important;
+        margin: 0 auto;
+    }
+
+    .maxtitle {
+        width: 1000px;
+        font-weight: 500;
+        font-size: 60px;
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+        margin: 100px auto 20px;
+    }
+
+    .maxtitle::after {
+        content: '';
+        position: absolute;
+        left: 350px;
+        bottom: 25px;
+        width: 100%;
+        height: 1px;
+        background-color: #ccc;
+    }
+
+    .cUs>h3 {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 120%;
+        margin: 0;
+        color: #FFFFFF;
+    }
+
+    .message {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 55px;
+        padding: 0;
+    }
+
+    .message>li {
+        width: 48%;
+        height: 127px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .message>li>h1 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+
+    .message>li>p {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        color: #2D88C9;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 750px) {
+    .cUs {
+        width: 740px !important;
+        height: 400px !important;
+        margin: 0 auto 50px;
+    }
+
+    .maxtitle {
+        width: 740px;
+        font-weight: 500;
+        font-size: 40px;
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+        margin: 30px auto 10px;
+    }
+
+    .maxtitle::after {
+        content: '';
+        position: absolute;
+        left: 230px;
+        bottom: 20px;
+        width: 100%;
+        height: 1px;
+        background-color: #ccc;
+    }
+
+    .cUs>h3 {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+        margin: 0;
+        color: #FFFFFF;
+    }
+
+    .message {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 23px;
+        padding: 0;
+    }
+
+    .message>li {
+        width: 48%;
+        height: 127px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    .message>li>h1 {
+        font-weight: 700;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    .message>li>p {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        color: #2D88C9;
+        margin-top: 10px;
+    }
+}

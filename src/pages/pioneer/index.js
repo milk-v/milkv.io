@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Layout from '@theme/Layout';
 import Head from "../../components/Head"
 import Link from '@docusaurus/Link';
-
+import ContactUs from "../../components/ContactUs"
 import cCss from "./center.module.css"
 
 function Center() {
@@ -196,6 +196,7 @@ function Center() {
           </div>
         </div>
       </div>
+      <ContactUs />
       <div className={cCss.on5_box}>
         <ul>
           <li className={cCss.li}>

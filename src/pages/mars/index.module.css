@@ -312,7 +312,6 @@
         width: 1440px;
         font-weight: 500;
         font-size: 80px;
-        line-height: 78px;
         color: #fff;
         overflow: hidden;
         position: relative;
@@ -322,8 +321,8 @@
     .maxtitle::after {
         content: '';
         position: absolute;
-        left: 500px;
-        bottom: 25px;
+        left: 430px;
+        bottom: 35px;
         width: 100%;
         height: 1px;
         background-color: #ccc;
@@ -708,7 +707,6 @@
         width: 1440px;
         font-weight: 500;
         font-size: 80px;
-        line-height: 78px;
         color: #fff;
         overflow: hidden;
         position: relative;
@@ -718,8 +716,8 @@
     .maxtitle::after {
         content: '';
         position: absolute;
-        left: 500px;
-        bottom: 25px;
+        left: 430px;
+        bottom: 35px;
         width: 100%;
         height: 1px;
         background-color: #ccc;
@@ -1105,7 +1103,6 @@
         width: 990px;
         font-weight: 500;
         font-size: 60px;
-        line-height: 78px;
         color: #fff;
         overflow: hidden;
         position: relative;
@@ -1115,7 +1112,7 @@
     .maxtitle::after {
         content: '';
         position: absolute;
-        left: 380px;
+        left: 340px;
         bottom: 30px;
         width: 100%;
         height: 1px;
@@ -1498,8 +1495,7 @@
     .maxtitle {
         width: 740px;
         font-weight: 500;
-        font-size: 50px;
-        line-height: 78px;
+        font-size: 40px;
         color: #fff;
         overflow: hidden;
         position: relative;
@@ -1509,8 +1505,8 @@
     .maxtitle::after {
         content: '';
         position: absolute;
-        left: 320px;
-        bottom: 30px;
+        left: 220px;
+        bottom: 15px;
         width: 100%;
         height: 1px;
         background-color: #ccc;

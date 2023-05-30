@@ -1,9 +1,8 @@
 import React, { useState, useRef } from 'react';
 import Layout from '@theme/Layout';
 import Head from "../../components/Head"
-
+import ContactUs from "../../components/ContactUs"
 import Link from '@docusaurus/Link';
-
 import cssList from "./details.module.css"
 
 function DetailsPage() {
@@ -174,6 +173,7 @@ function DetailsPage() {
         <div className={cssList.shadow12}></div>
         <div className={cssList.shadow13}></div>
         <div className={cssList.shadow14}></div>
+        <ContactUs />
         <div className={cssList.on5_box}>
           <ul>
             <li className={cssList.li}>

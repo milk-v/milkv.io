@@ -8,7 +8,6 @@
     width: 100%;
     aspect-ratio: 192/ 110;
     position: relative;
-    overflow: hidden;
 }
 
 .pages1 {
@@ -1474,7 +1473,7 @@
     }
 
     .pages5>.page3Img4 {
-        display: block;
+        display: block !important;
         width: 100%;
         height: auto;
         margin: 0 auto;

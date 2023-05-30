@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Head from "../../components/Head"
+import ContactUs from "../../components/ContactUs"
 
 import styles from './index.module.css';
 
@@ -65,7 +66,7 @@ export default () => {
                     </ul>
                 </div>
 
-                <h1 className={styles.maxtitle}>Specification</h1>
+                <h1 className={styles.maxtitle}>Tech specs</h1>
                 <p className={styles.moreP}>Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. This four-core device supports a plug-and-play eMMC module, as well as up to 8GB of LPDDR4 memory. The board is equipped with three USB 3.0 ports, one USB 2.0 port, an HDMI 2.0 port that supports 4K resolution, an RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO.</p>
                 <h2>Hardware</h2>
                 <table className={styles.tableBox}>
@@ -154,7 +155,7 @@ export default () => {
                     {/* colspan rowspan */}
 
                 </table>
-
+                <ContactUs />
                 <div className={styles.on5_box}>
                     <ul>
                         <li className={styles.li}>
