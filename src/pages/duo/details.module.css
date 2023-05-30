@@ -802,7 +802,7 @@ body {
         display: block;
         width: 420px;
         height: 283.5008px;
-        margin: .3125rem auto 0;
+        margin: 1px auto 0;
         background: url(/static/img/jiank2.svg) no-repeat;
         background-size: 100%;
     }
@@ -811,7 +811,7 @@ body {
         display: block;
         width: 420px;
         height: 283.5008px;
-        margin: .3125rem auto 0;
+        margin: 1px auto 0;
         background: url(/static/img/jiank.svg) no-repeat;
         background-size: 100%;
     }
@@ -1680,7 +1680,7 @@ body {
         display: block;
         width: 320px;
         height: 280px;
-        margin: .3125rem auto 0;
+        margin: 1px auto 0;
         background: url(/static/img/jiank2.svg) no-repeat;
         background-size: 100%;
     }
@@ -1689,7 +1689,7 @@ body {
         display: block;
         width: 320px;
         height: 280px;
-        margin: .3125rem auto 0;
+        margin: 1px auto 0;
         background: url(/static/img/jiank.svg) no-repeat;
         background-size: 100%;
     }
@@ -2527,7 +2527,7 @@ body {
         display: block;
         width: 220px;
         height: 190px;
-        margin: .3125rem auto 0;
+        margin: 1px auto 0;
         background: url(/static/img/jiank2.svg) no-repeat;
         background-size: 100%;
     }
@@ -2536,7 +2536,7 @@ body {
         display: block;
         width: 220px;
         height: 190px;
-        margin: .3125rem auto 0;
+        margin: 1px auto 0;
         background: url(/static/img/jiank.svg) no-repeat;
         background-size: 100%;
     }

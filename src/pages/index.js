@@ -1,16 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import { Carousel } from 'antd';
 
 import styles from './index.module.css';
 import Head from "../components/Head"
-
 
 function HomepageHeader() {
   const [duo, setDuo] = useState(false)
   const [pioneer, setPioneer] = useState(false)
   const [mars, setMars] = useState(false)
   const [buy, setBuy] = useState(false)
+
+  const carousel = useRef(null)
 
   const buyStart = () => {
     setBuy(false)
@@ -73,9 +75,57 @@ function HomepageHeader() {
               <p>High performance</p>
             </li>
           </ul>
+          <div className={styles.icons_banner} style={{ display: "none" }}>
+            <Carousel autoplay={true} dots={false} effect='fade' ref={carousel}>
+              <div className={styles.ban_item}>
+                <div>
+                  <img src='/home/icon01.svg' />
+                  <p>Low power</p>
+                </div>
+                <div>
+                  <img src='/home/icon02.svg' />
+                  <p>Low cost</p>
+                </div>
+              </div>
+              <div className={styles.ban_item}>
+                <div>
+                  <img src='/home/icon03.svg' />
+                  <p>Open Source</p>
+                </div>
+                <div>
+                  <img src='/home/icon04.svg' />
+                  <p>Modularizable</p>
+                </div>
+              </div>
+              <div className={styles.ban_item}>
+                <div>
+                  <img src='/home/icon05.svg' />
+                  <p>Simple</p>
+                </div>
+                <div>
+                  <img src='/home/icon06.svg' />
+                  <p>Small area</p>
+                </div>
+              </div>
+              <div className={styles.ban_item}>
+                <div>
+                  <img src='/home/icon07.svg' />
+                  <p>Small area</p>
+                </div>
+                <div>
+                  <img src='/home/icon08.svg' />
+                  <p>High performance</p>
+                </div>
+              </div>
+            </Carousel>
+            <div className={styles.btns}>
+              <img src='/img/chevron-left.svg' onClick={() => { carousel.current.prev() }} />
+              <img src='/img/chevron-right.svg' onClick={() => { carousel.current.next() }} />
+            </div>
+          </div>
         </div>
         <div className={styles.pages3}>
-          <img src='/home/on3-bg-img.webp' />
+          <img src='/home/on3-bg-img.webp' className={styles.page3Img} />
           <div className={styles.buyBox}>
             <div className={styles.lineshow}>
               <h2>WORLD DEBUT</h2>
@@ -94,6 +144,7 @@ function HomepageHeader() {
               </Link >
             </div>
           </div>
+          <img src='/mobile/mobile-home-02.webp' className={styles.page3Img2} style={{ display: 'none' }} />
         </div>
         <div className={styles.pages4}>
           <div className={styles.buyBox}>
@@ -113,13 +164,14 @@ function HomepageHeader() {
               </Link >
             </div>
           </div>
+          <img src='/mobile/mobile-home-03.webp' className={styles.page3Img3} style={{ display: 'none' }} />
           <div className={styles.imgBox}>
             <img src='/home/pioneer-top.webp' className={styles.pimg1} />
             <img src='/home/pioneer.png' className={styles.pimg2} />
           </div>
         </div>
         <div className={styles.pages5}>
-          <img src='/home/mars-home.webp' />
+          <img src='/home/mars-home.webp' className={styles.page5_img} />
           <div className={styles.buyBox}>
             <h2>World Debut</h2>
             <h1>Milk-V Mars</h1>
@@ -132,6 +184,7 @@ function HomepageHeader() {
               </Link >
             </div>
           </div>
+          <img src='/mobile/mobile-home-04.webp' className={styles.page3Img4} />
         </div>
         <div className={styles.on5_box}>
           <ul>
