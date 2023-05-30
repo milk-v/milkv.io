@@ -20,7 +20,7 @@ select {
     width: 30%;
     height: 65px;
     padding: 0 20px;
-    padding: 10px 20px;
+    padding: 10px 25px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -52,6 +52,63 @@ select:focus {
 
 .formBtn {
     border: none;
+    cursor: pointer;
+}
+
+.formBtn:hover {
+    color: #2c2c2c;
+}
+
+.pop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.popBox {
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.popBox>h1 {
+    font-size: 44px;
+    color: #242424;
+    margin: 50px auto 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.popBox>p {
+    font-size: 22px;
+    line-height: 120%;
+    color: #767676;
+    text-align: center;
+    font-weight: 400;
+}
+
+.popBox>h1>span {
+    font-size: 48px;
+}
+
+.ok {
+    width: 150px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d88c9;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1350px) {
@@ -139,7 +196,7 @@ select:focus {
         outline: none;
         background-color: #f9f9f9;
         border-radius: 10px;
-        border: 1px solid #ccc;
+        border: 1.5px solid #ccc;
         padding: 0 10px;
         font-size: 22px;
     }

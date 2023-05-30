@@ -1,12 +1,10 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import axios from 'axios';
-import { message } from 'antd';
 
 import styles from "./index.module.css"
 
 export default () => {
-    const [messageApi, contextHolder] = message.useMessage();
     const [userName, setUserName] = useState('')
     const [userEmail, setUserEmail] = useState('')
     const [county, setCounty] = useState('')
@@ -18,24 +16,32 @@ export default () => {
     const [description, setDescription] = useState('')
     const [description2, setDescription2] = useState('')
 
+    const [flag, setFlag] = useState(false)
+    const [flag2, setFlag2] = useState(false)
+
     const contactChange = (event) => {
         setDescription2(event.target.value);
     };
     const handleSubmit = (event) => {
         event.preventDefault();
-        const text = 'Country of Residence :' + `${county ? county : '未填写'}` + ';' + 'Organization :' + `${organization ? organization : '未填写'}` + ';' + 'Website :' + `${web ? web : '未填写'}` + ';' + 'Phone Number :' + `${phone ? phone : '未填写'}` + ';' + 'address :' + `${address ? address : '未填写'}` + ';' + 'project :' + project + ';' + 'Hardware :' + `${description2 ? description2 : '未填写'}` + ';' + 'description :' + description
 
         axios.get(`https://submit-form.com/0h0Ruc2s?name=${userName}&email=${userEmail}&Description=${description}&Project=${project}&Hardware =${description2}&Phone=${phone}&Organization=${organization}&Website=${web}&Country=${county}&Shipping=${address}`)
             .then((response) => {
-                console.log(response);
-                messageApi.success('Send successfully')
+                setFlag(true)
             })
             .catch((error) => {
-                console.log(error);
-                messageApi.error('Sending failure')
+                setFlag2(true)
             });
     };
-
+    useEffect(() => {
+        if (flag) {
+            document.documentElement.style.overflow = 'hidden'
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.documentElement.style.overflow = 'auto'
+            document.body.style.overflow = 'auto'
+        }
+    }, [flag])
 
     return (
         <Layout>
@@ -113,7 +119,20 @@ export default () => {
                     </div>
                     <button type="submit" className={styles.formBtn}>Send</button>
                 </form>
-                {contextHolder}
+            </div>
+            <div className={styles.pop} style={{ display: `${flag ? "flex" : 'none'}` }}>
+                <div className={styles.popBox}>
+                    <h1>😄Send successfully</h1>
+                    <p>Please do not send duplicate</p>
+                    <div className={styles.ok} onClick={() => { setFlag(false) }}>Yes</div>
+                </div>
+            </div>
+            <div className={styles.pop} style={{ display: `${flag2 ? "flex" : 'none'}` }}>
+                <div className={styles.popBox}>
+                    <h1>😭Sending failure</h1>
+                    <p>There is a problem with the server, it is being fixed, please do not send repeatedly</p>
+                    <div className={styles.ok} onClick={() => { setFlag2(false) }}>Yes</div>
+                </div>
             </div>
         </Layout>
     )

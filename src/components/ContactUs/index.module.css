@@ -1,0 +1,5 @@
+@media screen and (min-width: 1850px) {}
+
+@media screen and (max-width: 1850px) and (min-width: 1400px) {}
+
+@media screen and (max-width: 1400px) and (min-width: 750px) {}

@@ -1,0 +1,243 @@
+:root {
+    --ifm-container-width-xl: 95%;
+}
+
+.bgBox {
+    width: 100%;
+    height: 1000px;
+    background: url(/static/mdHome/mdHome-image.svg) no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+._title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.products_ul>li:hover {
+    box-shadow: 5px 5px 12px 0px #ccc;
+}
+
+.products_ul>li:hover .def {
+    display: none;
+}
+
+.products_ul>li:hover .on {
+    display: block;
+    transform: scale(.5) translateX(20px);
+}
+
+.products_ul>li img {
+    transition: .5s;
+}
+
+.products_ul>li:hover h1 {
+    color: #2d88c9;
+}
+
+.on {
+    display: none;
+    transform: translateX(20px) scale(.5);
+    transition: 1s;
+}
+
+.imageBox>img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.imageBox {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    aspect-ratio: 423/ 211;
+    background-color: #f5f5f5;
+}
+
+.pName {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pNameBox {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.pNameBox>p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.products_ul {
+    padding: 0;
+    width: 90%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 1850px) {
+    ._title>h1 {
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+
+    .pNameBox {
+        margin: 36px auto 20px;
+    }
+
+    .products_ul {
+        width: 80%;
+        top: 35%;
+    }
+
+    .products_ul>li {
+        width: 32%;
+        min-height: 550px;
+        padding-bottom: 50px;
+        border-radius: 15px;
+        list-style: none;
+        background-color: #fff;
+    }
+
+    .pName>h1 {
+        margin: 0 !important;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        color: #0C0D0D;
+    }
+
+    .products_ul>li>P {
+        width: 90%;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: #303131;
+    }
+}
+
+@media screen and (max-width: 1850px) and (min-width: 1400px) {
+    ._title>h1 {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+
+    ._title {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .pNameBox {
+        margin: 25px auto 15px;
+    }
+
+    .products_ul {
+        width: 90%;
+        top: 20%;
+    }
+
+
+    .products_ul>li {
+        width: 32%;
+        min-height: 400px;
+        padding-bottom: 30px;
+        border-radius: 15px;
+        list-style: none;
+        background-color: #fff;
+    }
+
+
+    .pName>h1 {
+        margin: 0 !important;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: #0C0D0D;
+    }
+
+    .products_ul>li>P {
+        width: 90%;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 120%;
+        color: #303131;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 750px) {
+    .products_ul>li>.pNameBox img {
+        transform: scale(.5);
+    }
+
+    ._title>h1 {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+
+    ._title {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .pNameBox {
+        margin: 25px auto 15px;
+    }
+
+    .products_ul {
+        width: 90%;
+        top: 13%;
+    }
+
+
+    .products_ul>li {
+        width: 32%;
+        min-height: 400px;
+        padding-bottom: 30px;
+        border-radius: 15px;
+        list-style: none;
+        background-color: #fff;
+    }
+
+
+    .pName>h1 {
+        margin: 0 !important;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: #0C0D0D;
+    }
+
+    .products_ul>li>P {
+        width: 90%;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 120%;
+        color: #303131;
+    }
+}

@@ -32,7 +32,7 @@ const config = {
             'https://github.com/milk-v/milkv.io/edit/main/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/mdHome.css')],
         },
       }),
     ],
@@ -92,6 +92,11 @@ const config = {
                 type: 'doc',
                 label: 'Pioneer',
                 docId: 'pioneer/overview',
+              },
+              {
+                type: 'doc',
+                label: 'Mars',
+                docId: 'mars/mars',
               },
             ],
           },
