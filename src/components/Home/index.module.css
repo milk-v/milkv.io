@@ -17,6 +17,10 @@
     transform: translateX(-50%);
 }
 
+.products_ul>li {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 .products_ul>li:hover {
     box-shadow: 5px 5px 12px 0px #ccc;
 }
