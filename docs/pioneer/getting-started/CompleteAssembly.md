@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Complete Assembly'
-sidebar_position: 23
+sidebar_position: 26
 ---
 # Complete Assembly
 Here is an example of a Pioneer Box case

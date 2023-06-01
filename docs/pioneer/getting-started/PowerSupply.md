@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Power Supply'
-sidebar_position: 23
+sidebar_position: 25
 ---
 # Power supply
 

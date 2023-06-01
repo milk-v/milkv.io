@@ -17,11 +17,7 @@ When you get the Pioneer Board, the package should contain:
 - 1x Cooler
 - 1x Cooler base
 - (Optional)2x DDR4
-### Pioneer Box
-When you get the Pioneer Box, the package should contain:
-- 1x Pioneer Box
-- 1x User Manual
-- 1x Power Cable
+
   
 ***Note*** ：**In case of missing items, please contact us.**
 
@@ -39,11 +35,18 @@ The following tools and accessories are required for the entire installation pro
 - 1x Cooler base
 - 1x Screw kit  
 
+### Step 2 Secure the Cooler base to the Pioneer Board
+Apply thermal grease to the top of the CPU
+![fanstep2](/pioneerimage/fanstep2.jpg)
 
-### Step 2 Attach the Cooler base to the Cooler
+### Step 3 Attach the Cooler base to the Cooler
+Attach the cooler base to the cooler with screws as shown.
+![fanstep3](/pioneerimage/fanstep3.jpg)
 
+### Step 4 Secure the Cooler base to the Pioneer Board
+Secure the cooler to the motherboard as shown. Please note, keep the cooler level during installation to avoid crushing the chip.
+![fanstep4](/pioneerimage/fanstep4.jpg)
 
-### Step 3 Secure the Cooler base to the Pioneer Board
-
-
-### Step 4 Connect the fan
+### Step 5 Connect the fan
+Connect the fan to the motherboard as shown in the picture.
+![fanstep5](/pioneerimage/fanstep5.jpg)
