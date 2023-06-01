@@ -22,7 +22,7 @@ Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard m
 ### Interface
 
 #### Pioneer Board
-![Pioneer Board](/pioneerimage/pioneerboardv1.1.webp)
+![Pioneer Board](/Pioneerimage/pioneerboardv1.1.webp)
 - Processor: SOPHON SG2042 (64 core C920, RVV 0.71)
 - Memory: 4x DDR4 DIMM slots up to 128 GB RAM support
 - PCI Express: 3x PCIe x16 Slot (PCIe 3.0 x8)
@@ -42,7 +42,7 @@ Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard m
   - 1x eMMC module connector
 
 #### Pioneer Box
-![Pioneer Box](/pioneerimage/pioneerbox.webp)
+![Pioneer Box](/Pioneerimage/pioneerbox.webp)
 Pioneer Box is a complete ready-to-use RISC-V PC with the following:
 
 - 1x Pioneer Board
