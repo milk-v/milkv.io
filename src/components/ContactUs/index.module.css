@@ -200,3 +200,67 @@
         margin-top: 10px;
     }
 }
+
+@media screen and (max-width: 750px) {
+    .cUs {
+        width: 330rem !important;
+        height: 400rem !important;
+        margin: 0 auto 30rem;
+    }
+
+    .maxtitle {
+        width: 330rem;
+        font-weight: 500;
+        font-size: 21rem;
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+        margin: 0rem auto 10rem;
+    }
+
+    .maxtitle::after {
+        content: '';
+        position: absolute;
+        left: 120rem;
+        bottom: 12rem;
+        width: 100%;
+        height: 1rem;
+        background-color: #ccc;
+    }
+
+    .cUs>h3 {
+        font-weight: 500;
+        font-size: 14rem;
+        margin: 0;
+        color: #FFFFFF;
+    }
+
+    .message {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 23rem;
+        padding: 0;
+    }
+
+    .message>li {
+        width: 100%;
+        border-bottom: 1rem solid #ccc;
+        margin-bottom: 10rem;
+    }
+
+    .message>li>h1 {
+        font-weight: 700;
+        font-size: 16rem;
+        color: #FFFFFF;
+    }
+
+    .message>li>p {
+        font-weight: 700;
+        font-size: 14rem;
+        line-height: 120%;
+        color: #2D88C9;
+        margin-top: 10rem;
+    }
+}

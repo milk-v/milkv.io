@@ -16,7 +16,7 @@ export default () => {
     const [description, setDescription] = useState('')
     const [description2, setDescription2] = useState('')
 
-    const [flag, setFlag] = useState(false)
+    const [flag, setFlag] = useState(true)
     const [flag2, setFlag2] = useState(false)
 
     const contactChange = (event) => {
