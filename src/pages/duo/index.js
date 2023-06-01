@@ -13,8 +13,6 @@ function DetailsPage() {
   const duoStart = () => {
     setDuo2(false)
   }
-
-
   const onPrve = () => {
     if (num == 0) return
     setNum((num) => num + (banner.current.offsetWidth / 3))

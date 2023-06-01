@@ -26,7 +26,7 @@ select {
     appearance: none;
     background: url(/static/form/toButtom.svg) no-repeat right center;
     background-color: #f9f9f9;
-    border: 1px #ccc solid1;
+    border: 1px #ccc solid;
     background-size: 40px;
     font-size: 24px;
     border-radius: 10px;
@@ -112,8 +112,6 @@ select:focus {
 }
 
 @media screen and (min-width: 1350px) {
-
-
     .formBox {
         width: 1320px;
         margin: 0 auto;
@@ -421,8 +419,6 @@ select:focus {
 }
 
 @media screen and (max-width: 1050px) and (min-width: 750px) {
-
-
     .formBox {
         width: 700px;
         margin: 0 auto;
@@ -566,5 +562,238 @@ select:focus {
         color: #fff;
         font-weight: 500;
         font-size: 24px;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .formBox {
+        width: 340rem;
+        margin: 0 auto;
+    }
+
+    .box>h1 {
+        width: 90%;
+        margin: 40rem auto;
+        text-align: center;
+        font-weight: 700;
+        font-size: 28rem;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+
+    .page {
+        width: 100%;
+        padding: 10rem;
+        margin-bottom: 35rem;
+        border-radius: 15rem;
+        background-color: #fff;
+    }
+
+    .page>p {
+        margin-top: 5rem;
+        font-weight: 400;
+        font-size: 12rem;
+        line-height: 120%;
+        color: #767676;
+    }
+
+    .title {
+        margin-bottom: 30rem;
+    }
+
+    .title>img {
+        width: 30rem;
+        height: 30rem;
+        margin-right: 20rem;
+    }
+
+    .title>h1 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 20rem;
+        color: #000000;
+    }
+
+    .inpBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .inpBox>label {
+        width: 45%;
+    }
+
+    label>textarea {
+        width: 100%;
+        height: 100rem;
+        border-radius: 10rem;
+        background-color: #f9f9f9;
+        border: 1rem solid #ccc;
+        outline: none;
+        font-size: 16rem;
+        padding: 10rem;
+    }
+
+    label>input {
+        width: 100%;
+        height: 35rem;
+        outline: none;
+        background-color: #f9f9f9;
+        border-radius: 10rem;
+        border: 1rem solid #ccc;
+        padding: 0 10rem;
+        font-size: 14rem;
+    }
+
+    label>div {
+        font-weight: 500;
+        font-size: 14rem;
+        line-height: 120%;
+        color: #000000;
+        margin-bottom: 5rem;
+    }
+
+    .page>div {
+        margin-top: 25rem;
+        overflow: hidden;
+    }
+
+    .page>label {
+        display: block;
+        margin-top: 25rem;
+        width: 100%;
+    }
+
+    .inpBox2>label {
+        display: block;
+        margin-bottom: 15rem;
+    }
+
+    .page>label>input {
+        width: 100%;
+        height: 35rem;
+    }
+
+    .page>h1 {
+        font-weight: 600;
+        font-size: 23rem;
+        line-height: 120%;
+        color: #000000;
+        margin-bottom: 25rem;
+    }
+
+    .radioBox {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .radioBox>label>div {
+        margin-bottom: 0;
+        margin-right: 15rem;
+        font-weight: 500;
+        font-size: 28rem;
+        color: #242424;
+    }
+
+    .radioBox>label {
+        margin-right: 95rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    label>input[type="radio"] {
+        width: 47rem;
+        height: 47rem;
+    }
+
+    .formBtn {
+        display: block;
+        margin: 0 auto;
+        width: 150rem;
+        height: 45rem;
+        padding: 10rem;
+        background: #000000;
+        border-radius: 8rem;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18rem;
+    }
+
+    select {
+        width: 30%;
+        height: 35rem;
+        padding: 0 20rem;
+        padding: 10rem 25rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(/static/form/toButtom.svg) no-repeat right center;
+        background-color: #f9f9f9;
+        border: 1rem #ccc solid;
+        background-size: 20rem;
+        font-size: 24rem;
+        border-radius: 10rem;
+    }
+
+    .box {
+        padding-bottom: 50rem;
+    }
+
+
+    .pop {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, .4);
+    }
+
+    .popBox {
+        width: 340rem;
+        height: 280rem;
+        background-color: #fff;
+        border-radius: 10rem;
+    }
+
+    .popBox>h1 {
+        font-size: 28rem;
+        color: #242424;
+        margin: 50rem auto 30rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .popBox>p {
+        font-size: 18rem;
+        line-height: 120%;
+        margin-bottom: 40rem;
+        color: #767676;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .popBox>h1>span {
+        font-size: 48rem;
+    }
+
+    .ok {
+        width: 150rem;
+        margin: 0 auto;
+        padding: 0rem 10rem;
+        font-size: 26rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #2d88c9;
+        color: #fff;
+        border-radius: 10rem;
+        cursor: pointer;
     }
 }

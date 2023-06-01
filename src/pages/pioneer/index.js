@@ -190,8 +190,6 @@ function Center() {
                 <div className={cCss.down}></div>
                 <a className={cCss.link_down} style={{ textDecoration: 'none' }} href="/PioneerProductBriefv1.0.zip" download="PioneerProductBriefv1.0.zip">Pioneer Product Brief V1.0.zip</a>
               </li>
-              <li>
-              </li>
             </ul>
           </div>
         </div>

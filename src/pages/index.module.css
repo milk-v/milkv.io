@@ -20,7 +20,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
 }
 
 .pages1>h1 {
@@ -1337,6 +1336,10 @@
         height: 30rem;
     }
 
+    .pages3>img {
+        z-index: -100;
+    }
+
     .pages3,
     .pages4 {
         width: 100%;
@@ -1434,8 +1437,8 @@
 
     .pages3>.page3Img2 {
         display: block !important;
-        margin-top: -90rem;
         position: static;
+        margin-top: 30rem;
         width: 100%;
         height: auto;
     }
@@ -1476,9 +1479,9 @@
         display: block !important;
         width: 100%;
         height: auto;
-        margin: 0 auto;
+        margin: 30rem auto 0;
         position: static;
-        transform: translateY(-20%);
+        transform: none;
     }
 
     .on5_box {

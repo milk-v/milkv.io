@@ -1656,3 +1656,382 @@
         position: relative;
     }
 }
+
+
+@media screen and (max-width: 750px) {
+    .btnbuy {
+        width: 120rem;
+        height: 45rem;
+        font-size: 20rem;
+        margin: 30rem auto 10rem;
+    }
+
+    .marsBox>h2 {
+        width: 340rem;
+        margin: 20rem auto;
+        font-weight: 500;
+        font-size: 20rem;
+        color: #FFFFFF;
+        font-weight: 600;
+    }
+
+    .titleBox {
+        margin-top: 50rem;
+    }
+
+    .titleBox>h1 {
+        font-weight: 700;
+        font-size: 37rem;
+        line-height: 120%;
+        background: linear-gradient(90deg, #FFC500 0%, #C21500 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .titleBox>p {
+        font-weight: 500;
+        font-size: 16rem;
+        line-height: 120%;
+        color: #FFFFFF;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .prodcuts {
+        width: 340rem;
+        margin: 0 auto 50rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .prodcuts01 {
+        width: 240rem;
+        height: 180rem;
+        padding: 5rem 10rem 0;
+    }
+
+    .prodcuts01>h1 {
+        font-weight: 500;
+        font-size: 18rem;
+        color: #fff;
+        line-height: 120%;
+    }
+
+    .prodcuts02 {
+        width: 240rem;
+        height: 150rem;
+        padding: 10rem 10rem 0;
+    }
+
+    .prodcuts02>p {
+        margin-top: 15rem;
+        font-weight: 500;
+        font-size: 12rem;
+        line-height: 120%;
+        color: #D8D8D8;
+    }
+
+    .prodcuts03 {
+        width: 240rem;
+        height: 130rem;
+        font-weight: 600;
+        font-size: 30rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        line-height: 130rem;
+    }
+
+    .prodcuts04 {
+        width: 240rem;
+        height: 300rem;
+        padding: 20rem 15rem 0;
+    }
+
+    .prodcuts04>h1 {
+        font-weight: 500;
+        font-size: 20rem;
+        line-height: 120%;
+        background: linear-gradient(270deg, #C31801 0%, #FFC301 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin: 0;
+    }
+
+    .prodcuts04>p {
+        font-weight: 500;
+        font-size: 14rem;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+
+    .prodcuts05 {
+        width: 240rem;
+        height: 330rem;
+        padding: 270rem 5rem 0rem;
+    }
+
+    .prodcuts05>span {
+        display: block;
+        font-weight: 500;
+        font-size: 12rem;
+        line-height: 120%;
+        color: #D8D8D8;
+    }
+
+    .prodcuts05>p {
+        font-weight: 500;
+        font-size: 12rem;
+        margin-bottom: 0rem;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+
+    .prodcuts06 {
+        width: 240rem;
+        height: 350rem;
+        padding: 30rem 20rem 0;
+    }
+
+    .prodcuts06>h1 {
+        font-weight: 500;
+        font-size: 28rem;
+        line-height: 120%;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0;
+    }
+
+    .prodcuts06>p {
+        font-weight: 500;
+        font-size: 16rem;
+        line-height: 120%;
+        color: #FFFFFF;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .productsUl {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .productsUl>li {
+        width: 240rem;
+        height: 150rem;
+        padding: 15rem 10rem 0;
+    }
+
+    .productsUl>li>h1 {
+        font-weight: 500;
+        font-size: 22rem;
+        line-height: 120%;
+        color: #FFFFFF;
+        margin: 0;
+        flex: none;
+        order: 0;
+    }
+
+    .productsUl>li>.titleMinP {
+        font-weight: 500;
+        font-size: 14rem;
+        line-height: 120%;
+        color: #FFFFFF;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin-bottom: 35rem;
+    }
+
+    .title_p {
+        margin: 0;
+        font-weight: 500;
+        font-size: 14rem;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.8);
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .maxtitle {
+        width: 340rem;
+        font-weight: 500;
+        font-size: 21rem;
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+        margin: 60rem auto 15rem;
+    }
+
+    .maxtitle::after {
+        content: '';
+        position: absolute;
+        left: 120rem;
+        bottom: 10rem;
+        width: 100%;
+        height: 1rem;
+        background-color: #ccc;
+    }
+
+    .moreP {
+        font-size: 14rem;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.8);
+        width: 340rem;
+        margin: 0 auto;
+    }
+
+    .tableBox {
+        margin: 30rem auto 100rem;
+        width: 340rem;
+    }
+
+    .tableBox td {
+        text-align: left;
+        height: 50rem;
+        font-weight: 500;
+        font-size: 14rem;
+        color: rgba(255, 255, 255, 0.85);
+        padding: 0;
+        padding-left: 10rem;
+    }
+
+    .tabP {
+        width: 330rem;
+    }
+
+
+    .embrace {
+        position: absolute;
+        left: 0;
+        top: 40rem;
+        width: 100%;
+        color: #fff;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18rem;
+        text-align: center;
+    }
+
+    .risc_v {
+        position: absolute;
+        left: 0;
+        top: 70rem;
+        width: 100%;
+        color: #fff;
+        font-style: normal;
+        font-weight: 500;
+        text-align: center;
+        font-size: 14rem;
+        background: linear-gradient(93.08deg, #00FFC2 33.15%, #0066FF 101.47%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+
+    }
+
+    .riscBg {
+        margin: -50rem auto 0;
+        width: 100%;
+        height: 200rem;
+        background: url(/static/img/footerbg.png) no-repeat;
+        background-size: 100%;
+        position: relative;
+    }
+
+    .on5_box {
+        width: 350rem !important;
+        height: 300rem !important;
+        margin: 0 auto 100rem;
+        overflow-x: auto;
+    }
+
+    .on5_box>ul {
+        padding: 0;
+        width: 100%;
+        height: 300rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .on5_box>ul>li {
+        width: 250rem;
+        height: 300rem;
+        border: 4rem solid #fff;
+        margin-right: 15rem;
+        border-radius: 8rem;
+        position: relative;
+    }
+
+    .on5_box>ul>li:hover {
+        border-color: #00F5A0;
+    }
+
+    .on5_box_h1 {
+        width: 250rem;
+        font-size: 30rem;
+        color: #fff;
+        text-align: center;
+        margin-top: 20rem;
+    }
+
+    .on5_box_p {
+        margin: 20rem auto 0;
+        font-size: 16rem;
+        color: #e5e5e5;
+        text-align: center;
+        font-weight: 400;
+        line-height: 28rem;
+        flex: none;
+        order: 3;
+        flex-grow: 0;
+        font-style: normal;
+        margin-bottom: 15rem;
+    }
+
+    .on5_bottom {
+        text-align: center;
+        width: 150rem;
+        height: 47rem;
+        line-height: 47rem;
+        font-size: 16rem;
+        background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+        border-radius: 2rem;
+        margin: 0 auto;
+    }
+
+    .on5_img {
+        width: 150rem;
+        height: 150rem;
+        background: url(/static/img/ma.png) no-repeat;
+        background-size: 100%;
+        margin: 30rem auto 0;
+    }
+
+    .on5_img_QQ {
+        width: 150rem;
+        height: 150rem;
+        background: url(/static/img/QQ.png) no-repeat;
+        background-size: 100%;
+        margin: 30rem auto 0;
+    }
+
+}
