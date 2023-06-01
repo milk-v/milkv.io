@@ -239,4 +239,37 @@ li {
     background-size: cover;
     margin-right: 10rem;
   }
+
+  .markdown {
+    padding: 20rem;
+  }
+
+
+}
+
+.markdown {
+  /* h1 margin-bottom */
+  --ifm-h1-vertical-rhythm-bottom: 0.55;
+}
+
+.markdown li {
+  font-size: 18px;
+}
+
+.markdown h1:first-child {
+  --ifm-h1-font-size: 2.5rem;
+}
+
+/* 字体size */
+:root {
+  --ifm-h1-font-size: 2rem;
+  --ifm-h2-font-size: 1.5rem;
+  --ifm-h3-font-size: 1.25rem;
+  --ifm-h4-font-size: 1rem;
+  --ifm-h5-font-size: 0.875rem;
+  --ifm-h6-font-size: 0.85rem;
+}
+
+strong {
+  color: #2d88c9;
 }
