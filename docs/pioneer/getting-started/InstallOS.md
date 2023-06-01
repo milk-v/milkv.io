@@ -17,12 +17,10 @@ sidebar_position: 21
 
 # 2. Get an Ubuntu Image
 
--   Dowload the [Ubuntu image](http://219.142.246.77:65000/sharing/agK6z51jP) directly.
+-   Dowload the [Ubuntu image](https://mega.nz/file/VOEH0SZA#4IvQl6BIUsK_xm914hCksgsBqC75JxIZxoUyziJlC50) directly.
 
     The image is created based on Ubuntu offical preinstall server image.
 
--   Or use your own compiled ``ubuntu-sophgo.img`` exiting in the
-    ``install/soc_mango/riscv64`` directory.
 
 The following uses ``ubuntu-sophgo.img`` to refer to the Ubuntu image.
 
@@ -168,7 +166,7 @@ d. Click the **Flash!** button to begin the process.
 
 -   Plug the microSD Card into the SG2042 EVB,
     connect the serial cable to your computer,
-    and power on the EVB.
+    and power on the Pioneer.
 -   Enter the username ``ubuntu`` and the password ``ubuntu``.
 -   Any operation needs the ``sudo`` privilege.
 
