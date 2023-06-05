@@ -21,7 +21,7 @@ When you get the Pioneer Board, the package should contain:
   
 ***Note*** ：**In case of missing items, please contact us.**
 
-## Power on
+## Before Power on
 **Before powering up the unit, make sure you have properly installed the radiator.**   
 
 The Pioneer Box already has a cooler installed and you can skip the following steps.
