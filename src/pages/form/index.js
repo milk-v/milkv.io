@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import axios from 'axios';
-
 import styles from "./index.module.css"
 
 export default () => {
@@ -36,12 +35,10 @@ export default () => {
     useEffect(() => {
         if (flag) {
             document.documentElement.style.overflow = 'hidden'
-            document.body.style.overflow = 'hidden'
         } else {
             document.documentElement.style.overflow = 'auto'
-            document.body.style.overflow = 'auto'
         }
-    }, [flag])
+    }, [flag, flag2])
 
     return (
         <Layout>
@@ -60,7 +57,7 @@ export default () => {
                             </label>
                             <label>
                                 <div> <span className={styles.red}>*</span> Email Address :</div>
-                                <input type="text" value={userEmail} onChange={(e) => setUserEmail(e.target.value)} required placeholder='Your Email Address:' />
+                                <input type="text" value={userEmail} onChange={(e) => setUserEmail(e.target.value)} required placeholder='Your Email Address' />
                             </label>
                         </div>
                         <div className={styles.inpBox2}>

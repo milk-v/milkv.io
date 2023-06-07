@@ -108,7 +108,7 @@ const config = {
           },
           {
             type: 'dropdown',
-            label: 'Doc',
+            label: 'Docs',
             position: 'right',
             items: [
               {

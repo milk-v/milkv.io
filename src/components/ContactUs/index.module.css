@@ -1,266 +1,526 @@
+.flexBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.flexBox>div {
+    width: 50%;
+    padding: 0 30px;
+}
+
+.textLeft {
+    position: relative;
+}
+
+.textLeft::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #2D88C9;
+}
+
+.textLeft>h1 {
+    font-weight: 600;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.textLeft>h3 {
+    font-weight: 700;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.textLeft>p {
+    font-weight: 700;
+    line-height: 120%;
+    color: #2D88C9;
+}
+
+.touchBox>h1 {
+    font-weight: 700;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.touchForm {
+    position: relative;
+}
+
+.touchForm>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.touchForm>div>label {
+    width: 48%;
+}
+
+.touchForm>label {
+    display: block;
+}
+
+.touchForm label>input {
+    outline: none;
+    background-color: #1a1a1a;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    color: #fff;
+    font-weight: 600;
+}
+
+.touchForm label>textarea {
+    background-color: #1a1a1a;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    color: #fff;
+    font-weight: 600;
+}
+
+.touchForm label>p {
+    font-weight: 500;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.touchBtn {
+    width: 130px;
+    height: 35px;
+    border: 1px solid #ccc;
+    background-color: #1a1a1a;
+    color: #FFF;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.touchBtn:hover {
+    background-color: #2D88C9;
+    cursor: pointer;
+}
+
+.pop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.popBox {
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.popBox>h1 {
+    font-size: 44px;
+    color: #242424;
+    margin: 50px auto 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.popBox>p {
+    font-size: 22px;
+    line-height: 120%;
+    color: #767676;
+    text-align: center;
+    font-weight: 400;
+}
+
+.popBox>h1>span {
+    font-size: 48px;
+}
+
+.ok {
+    width: 150px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d88c9;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 1450px) {
     .cUs {
         width: 1440px !important;
-        height: 578px !important;
+        height: 700px !important;
+        overflow: hidden;
         margin: 0 auto;
+        background-color: #1a1a1a;
     }
 
     .maxtitle {
-        width: 1440px;
         font-weight: 500;
         font-size: 80px;
         color: #fff;
-        overflow: hidden;
-        position: relative;
-        margin: 160px auto 20px;
+        margin: 20px auto 40px;
+        text-align: center;
     }
 
-    .maxtitle::after {
-        content: '';
-        position: absolute;
-        left: 450px;
-        bottom: 35px;
-        width: 100%;
-        height: 1px;
-        background-color: #ccc;
+    .touchForm {
+        padding-bottom: 50px;
     }
 
-    .cUs>h3 {
-        font-weight: 500;
-        font-size: 35px;
-        line-height: 120%;
-        margin: 0;
-        color: #FFFFFF;
+    .textLeft>h1 {
+        margin-bottom: 60px;
+        font-size: 30px;
     }
 
-    .message {
-        width: 100%;
-        height: 300px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 55px;
-        padding: 0;
-    }
-
-    .message>li {
-        width: 48%;
-        height: 127px;
-        border-bottom: 1px solid #ccc;
-    }
-
-    .message>li>h1 {
-        font-weight: 700;
+    .textLeft>h3 {
+        margin-bottom: 10px;
         font-size: 23px;
-        line-height: 120%;
-        color: #FFFFFF;
     }
 
-    .message>li>p {
-        font-weight: 700;
+    .textLeft>p {
+        margin-bottom: 30px;
         font-size: 23px;
-        line-height: 120%;
-        color: #2D88C9;
-        margin-top: 16px;
+    }
+
+    .touchBox>h1 {
+        font-size: 23px;
+        margin-bottom: 60px;
+    }
+
+
+    .touchForm>div>label {
+        margin-bottom: 20px;
+    }
+
+    .touchForm>label {
+        margin-bottom: 20px;
+    }
+
+    .touchForm label>input {
+        height: 50px;
+        padding: 0 10px;
+    }
+
+    .touchForm label>textarea {
+        height: 100px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .touchForm label>p {
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1050px) {
     .cUs {
         width: 1000px !important;
-        height: 578px !important;
+        height: 600px !important;
+        background-color: #1a1a1a;
         margin: 0 auto;
+        overflow: hidden;
     }
 
     .maxtitle {
         width: 1000px;
         font-weight: 500;
-        font-size: 60px;
+        font-size: 50px;
         color: #fff;
-        overflow: hidden;
-        position: relative;
-        margin: 100px auto 20px;
+        text-align: center;
+        margin: 20px auto 20px;
     }
 
-    .maxtitle::after {
-        content: '';
-        position: absolute;
-        left: 350px;
-        bottom: 25px;
-        width: 100%;
-        height: 1px;
-        background-color: #ccc;
+    .touchForm {
+        padding-bottom: 50px;
     }
 
-    .cUs>h3 {
-        font-weight: 500;
-        font-size: 28px;
-        line-height: 120%;
-        margin: 0;
-        color: #FFFFFF;
+    .textLeft>h1 {
+        margin-bottom: 40px;
+        font-size: 24px;
     }
 
-    .message {
-        width: 100%;
-        height: 300px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 55px;
-        padding: 0;
-    }
-
-    .message>li {
-        width: 48%;
-        height: 127px;
-        border-bottom: 1px solid #ccc;
-    }
-
-    .message>li>h1 {
-        font-weight: 700;
+    .textLeft>h3 {
+        margin-bottom: 10px;
         font-size: 18px;
-        line-height: 120%;
-        color: #FFFFFF;
     }
 
-    .message>li>p {
-        font-weight: 700;
+    .textLeft>p {
+        margin-bottom: 30px;
         font-size: 18px;
-        line-height: 120%;
-        color: #2D88C9;
-        margin-top: 16px;
     }
+
+    .touchBox>h1 {
+        font-size: 23px;
+        margin-bottom: 40px;
+    }
+
+
+    .touchForm>div>label {
+        margin-bottom: 20px;
+    }
+
+    .touchForm>label {
+        margin-bottom: 20px;
+    }
+
+    .touchForm label>input {
+        height: 40px;
+        padding: 0 10px;
+        font-size: 16px;
+    }
+
+    .touchForm label>textarea {
+        height: 100px;
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .touchForm label>p {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
 }
 
 @media screen and (max-width: 1050px) and (min-width: 750px) {
     .cUs {
         width: 740px !important;
-        height: 400px !important;
+        height: 480px !important;
+        overflow: hidden;
         margin: 0 auto 50px;
+        background-color: #1a1a1a;
     }
 
     .maxtitle {
-        width: 740px;
         font-weight: 500;
         font-size: 40px;
+        text-align: center;
         color: #fff;
-        overflow: hidden;
-        position: relative;
-        margin: 30px auto 10px;
+        margin-top: 10px;
     }
 
-    .maxtitle::after {
-        content: '';
-        position: absolute;
-        left: 230px;
-        bottom: 20px;
-        width: 100%;
-        height: 1px;
-        background-color: #ccc;
+    .touchForm {
+        padding-bottom: 50px;
     }
 
-    .cUs>h3 {
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 120%;
-        margin: 0;
-        color: #FFFFFF;
+    .textLeft>h1 {
+        margin-bottom: 40px;
+        font-size: 18px;
     }
 
-    .message {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 23px;
-        padding: 0;
+    .textLeft>h3 {
+        margin-bottom: 10px;
+        font-size: 14px;
     }
 
-    .message>li {
-        width: 48%;
-        height: 127px;
-        border-bottom: 1px solid #ccc;
+    .textLeft>p {
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    .touchBox>h1 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+
+    .touchForm>div>label {
         margin-bottom: 10px;
     }
 
-    .message>li>h1 {
-        font-weight: 700;
-        font-size: 16px;
-        color: #FFFFFF;
+    .touchForm>label {
+        margin-bottom: 10px;
     }
 
-    .message>li>p {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 120%;
-        color: #2D88C9;
+    .touchForm label>input {
+        height: 30px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .touchForm label>textarea {
+        height: 100px;
+        padding: 10px;
+        font-size: 12px;
         margin-top: 10px;
+    }
+
+    .touchForm label>p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .touchBtn {
+        width: 100px;
+        height: 30px;
+        border: 1px solid #ccc;
+        background-color: #1a1a1a;
+        color: #FFF;
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
 }
 
 @media screen and (max-width: 750px) {
-    .cUs {
-        width: 330rem !important;
-        height: 400rem !important;
-        margin: 0 auto 30rem;
+    .textLeft::after {
+        width: 0;
     }
 
-    .maxtitle {
-        width: 330rem;
-        font-weight: 500;
-        font-size: 21rem;
-        color: #fff;
-        overflow: hidden;
-        position: relative;
-        margin: 0rem auto 10rem;
-    }
 
-    .maxtitle::after {
-        content: '';
-        position: absolute;
-        left: 120rem;
-        bottom: 12rem;
-        width: 100%;
-        height: 1rem;
-        background-color: #ccc;
-    }
-
-    .cUs>h3 {
-        font-weight: 500;
-        font-size: 14rem;
-        margin: 0;
-        color: #FFFFFF;
-    }
-
-    .message {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+    .flexBox {
         flex-direction: column;
-        margin-top: 23rem;
+    }
+
+    .flexBox>div {
+        width: 100%;
         padding: 0;
     }
 
-    .message>li {
-        width: 100%;
-        border-bottom: 1rem solid #ccc;
+    .cUs {
+        width: 340rem !important;
+        height: 880rem !important;
+        overflow: hidden;
+        margin: 0 auto 0rem;
+        background-color: #1a1a1a;
+    }
+
+    .maxtitle {
+        font-weight: 500;
+        font-size: 35rem;
+        text-align: center;
+        color: #fff;
+        margin-top: 10rem;
+        margin-bottom: 30rem;
+    }
+
+    .touchForm {
+        padding-bottom: 50rem;
+    }
+
+    .textLeft>h1 {
+        margin-bottom: 40rem;
+        font-size: 18rem;
+    }
+
+    .textLeft>h3 {
+        margin-bottom: 10rem;
+        font-size: 14rem;
+    }
+
+    .textLeft>p {
+        margin-bottom: 30rem;
+        font-size: 14rem;
+    }
+
+    .touchBox>h1 {
+        font-size: 18rem;
+        margin-bottom: 20rem;
+    }
+
+
+    .touchForm>div>label {
         margin-bottom: 10rem;
     }
 
-    .message>li>h1 {
-        font-weight: 700;
-        font-size: 16rem;
-        color: #FFFFFF;
+    .touchForm>label {
+        margin-bottom: 10rem;
     }
 
-    .message>li>p {
-        font-weight: 700;
-        font-size: 14rem;
-        line-height: 120%;
-        color: #2D88C9;
+    .touchForm label>input {
+        height: 30rem;
+        padding: 0 10rem;
+        font-size: 12rem;
+    }
+
+    .touchForm label>textarea {
+        height: 100rem;
+        padding: 10rem;
+        font-size: 12rem;
         margin-top: 10rem;
+    }
+
+    .touchForm label>p {
+        font-size: 16rem;
+        margin-bottom: 10rem;
+    }
+
+    .touchBtn {
+        width: 100rem;
+        height: 30rem;
+        border: 1px solid #ccc;
+        background-color: #1a1a1a;
+        color: #FFF;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .pop {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, .4);
+        z-index: 10000;
+    }
+
+    .popBox {
+        width: 340rem;
+        height: 280rem;
+        background-color: #fff;
+        border-radius: 10rem;
+    }
+
+    .popBox>h1 {
+        font-size: 28rem;
+        color: #242424;
+        margin: 50rem auto 30rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .popBox>p {
+        font-size: 18rem;
+        line-height: 120%;
+        margin-bottom: 40rem;
+        color: #767676;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .popBox>h1>span {
+        font-size: 48rem;
+    }
+
+    .ok {
+        width: 150rem;
+        margin: 0 auto;
+        padding: 0rem 10rem;
+        font-size: 26rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #2d88c9;
+        color: #fff;
+        border-radius: 10rem;
+        cursor: pointer;
     }
 }
