@@ -90,7 +90,7 @@ export default () => {
                             <td>SPI Flash for bootloader</td>
                         </tr>
                         <tr>
-                            <td rowSpan="4" >Vedio output</td>
+                            <td rowSpan="4" >Video output</td>
                             <td>1x HDMI</td>
                         </tr>
                         <tr>
