@@ -9,7 +9,7 @@ export default () => {
     const [message, setMessage] = useState('')
 
     const [flag, setFlag] = useState(false)
-    const [flag2, setFlag2] = useState(true)
+    const [flag2, setFlag2] = useState(false)
 
 
     useEffect(() => {
