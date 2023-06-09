@@ -43,9 +43,9 @@ export default () => {
                         <h3>Sales Department</h3>
                         <p>sales@milkv.io</p>
                         <h3>Development Department</h3>
-                        <p>mailto:dev@milkv.io</p>
+                        <p>dev@milkv.io</p>
                         <h3>Customer Support Department</h3>
-                        <p>mailto:support@milkv.io</p>
+                        <p>support@milkv.io</p>
                     </div>
                     <div className={styles.touchBox}>
                         <h1>Send a message</h1>
@@ -62,7 +62,7 @@ export default () => {
                             </div>
                             <label>
                                 <p>Subject</p>
-                                <input type="text" value={subject} onChange={(e) => setSubject(e.target.value)} required placeholder='Theme Name' />
+                                <input type="text" value={subject} onChange={(e) => setSubject(e.target.value)} required />
                             </label>
                             <label>
                                 <p>Message</p>
