@@ -16,13 +16,13 @@ When you get the Pioneer Board, the package should contain:
 - 1x User Manual
 - 1x Cooler
 - 1x Cooler base
-- (Optional)2x DDR4
+- (Optional)DDR4 memory stick
 
   
 ***Note*** ：**In case of missing items, please contact us.**
 
 ## Before Power on
-**Before powering up the unit, make sure you have properly installed the radiator.**   
+**Before powering up the unit, make sure you have properly installed the heatsink.**   
 
 The Pioneer Box already has a cooler installed and you can skip the following steps.
 

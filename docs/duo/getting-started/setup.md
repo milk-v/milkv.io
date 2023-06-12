@@ -91,7 +91,7 @@ There is no official driver for RNDIS. We need to install [HoRNDIS](https://josh
 
 ![rndis-ssh1](/images/duo/rndis-ssh1.png)
 
-2. Enter the password **milkV** 
+2. Enter the password **milkv** 
 
     (The password will not be displayed on the screen)
 
