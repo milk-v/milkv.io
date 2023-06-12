@@ -69,7 +69,7 @@ function HomepageHeader() {
             </li>
             <li className={styles.li07}>
               <img src='/home/icon07.svg' />
-              <p>Small area</p>
+              <p>Fast</p>
             </li>
             <li className={styles.li08}>
               <img src='/home/icon08.svg' />
@@ -111,7 +111,7 @@ function HomepageHeader() {
               <div className={styles.ban_item}>
                 <div>
                   <img src='/home/icon07.svg' />
-                  <p>Small area</p>
+                  <p>Fast</p>
                 </div>
                 <div>
                   <img src='/home/icon08.svg' />
