@@ -101,4 +101,37 @@ There is no official driver for RNDIS. We need to install [HoRNDIS](https://josh
 
 ![rndis-ssh3](/images/duo/rndis-ssh3.png)
 
+
+## Serial Console
+
+### USB to TTL serial cable
+
+Each pin of a USB-to-TTL cable is defined as follows:
+
+![usb2ttl](/images/duo/usb2ttl.jpg)
+
+### Connection
+
+Connect USB to TTL serial cable as shown below. Do not connect the red wire.
+
+
+| Milk-V Dou   | <---> | USB to TTL |
+| ------------ | ----- | ---------- |
+| TX (pin 16)  | <---> | White wire |
+| RX (pin 17)  | <---> | Green wire |
+| GND (pin 18) | <---> | Black wire |
+
+
+![duo-serial](/images/duo/duo-serial.jpg)
+
+The default serial setting for Duo u-boot and kernel console is:
+
+```
+   baudrate: 115200
+   data bit: 8
+   stop bit: 1
+   parity  : none
+   flow control: none
+```
+
 ## sysroot
