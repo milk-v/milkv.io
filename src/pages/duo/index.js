@@ -171,7 +171,7 @@ function DetailsPage() {
         <div className={cssList.shadow12}></div>
         <div className={cssList.shadow13}></div>
         <div className={cssList.shadow14}></div>
-        <ContactUs />
+        <ContactUs product='duo' />
         <div className={cssList.on5_box}>
           <ul>
             <li className={cssList.li}>

@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import styles from './index.module.css';
 import axios from 'axios';
 
-export default () => {
+export default (props) => {
+    const { product } = props;
+
     const [userName, setUserName] = useState('')
     const [userEmail, setUserEmail] = useState('')
     const [subject, setSubject] = useState('')
@@ -24,7 +26,7 @@ export default () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        axios.get(`https://submit-form.com/FKfGJJEG?name=${userName}&email=${userEmail}&subject=${subject}&message=${message}`)
+        axios.get(`https://submit-form.com/FKfGJJEG?product=${product}&name=${userName}&email=${userEmail}&subject=${subject}&message=${message}`)
             .then((response) => {
                 setFlag(true)
             })
@@ -41,11 +43,11 @@ export default () => {
                     <div className={styles.textLeft}>
                         <h1>Having questions? Get in touch with us to resolve!</h1>
                         <h3>Sales Department</h3>
-                        <p>sales@milkv.io</p>
+                        <a className={styles.fromA} href="mailto:sales@milkv.io">sales@milkv.io</a>
                         <h3>Development Department</h3>
-                        <p>dev@milkv.io</p>
+                        <a className={styles.fromA} href="mailto:dev@milkv.io">dev@milkv.io</a>
                         <h3>Customer Support Department</h3>
-                        <p>support@milkv.io</p>
+                        <a className={styles.fromA} href="mailto:support@milkv.io">support@milkv.io</a>
                     </div>
                     <div className={styles.touchBox}>
                         <h1>Send a message</h1>

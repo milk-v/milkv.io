@@ -194,7 +194,7 @@ function Center() {
           </div>
         </div>
       </div>
-      <ContactUs />
+      <ContactUs product='pioneer' />
       <div className={cCss.on5_box}>
         <ul>
           <li className={cCss.li}>

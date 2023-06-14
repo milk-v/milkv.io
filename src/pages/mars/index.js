@@ -155,7 +155,7 @@ export default () => {
                     {/* colspan rowspan */}
 
                 </table>
-                <ContactUs />
+                <ContactUs product='mars' />
                 <div className={styles.on5_box}>
                     <ul>
                         <li className={styles.li}>

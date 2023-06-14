@@ -5,7 +5,6 @@ import { Carousel } from 'antd';
 
 import styles from './index.module.css';
 import Head from "../components/Head"
-import ContactUs from "../components/ContactUs"
 
 function HomepageHeader() {
   const [duo, setDuo] = useState(false)
@@ -187,7 +186,6 @@ function HomepageHeader() {
           </div>
           <img src='/mobile/mobile-home-04.webp' className={styles.page3Img4} style={{ display: "none" }} />
         </div>
-        <ContactUs />
         <div className={styles.on5_box}>
           <ul>
             <li className={styles.li}>

@@ -36,7 +36,7 @@
     color: #FFFFFF;
 }
 
-.textLeft>p {
+.textLeft>a {
     font-weight: 700;
     line-height: 120%;
     color: #2D88C9;
@@ -115,6 +115,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, .4);
+    z-index: 10000;
 }
 
 .popBox {
@@ -163,7 +164,7 @@
         width: 1440px !important;
         height: 700px !important;
         overflow: hidden;
-        margin: 0 auto;
+        margin: 100px auto;
         background-color: #1a1a1a;
     }
 
@@ -189,7 +190,8 @@
         font-size: 23px;
     }
 
-    .textLeft>p {
+    .textLeft>a {
+        display: block;
         margin-bottom: 30px;
         font-size: 23px;
     }
@@ -257,7 +259,7 @@
         font-size: 18px;
     }
 
-    .textLeft>p {
+    .textLeft>a {
         margin-bottom: 30px;
         font-size: 18px;
     }
@@ -327,7 +329,7 @@
         font-size: 14px;
     }
 
-    .textLeft>p {
+    .textLeft>a {
         margin-bottom: 30px;
         font-size: 14px;
     }
@@ -422,7 +424,7 @@
         font-size: 14rem;
     }
 
-    .textLeft>p {
+    .textLeft>a {
         margin-bottom: 30rem;
         font-size: 14rem;
     }
