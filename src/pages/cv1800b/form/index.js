@@ -104,7 +104,7 @@ function Individual(props) {
                 }}>“CV1800B Manual Confidentiality Clause”</p>
                 <label className={styles.terms}>
                     <input type="radio" className={styles.square} required checked={agree} onChange={() => { }} onClick={() => { setAgreeFlag(s => !s) }} />
-                    <span>我同意并遵守以上条款 / I agree and abide by the above terms</span>
+                    <span>我同意并遵守以上条款 <br style={{ display: 'none' }}></br> I agree and abide by the above terms</span>
                 </label>
                 <button type='submit'>Submit</button>
             </form>
@@ -234,7 +234,7 @@ function Schools(props) {
                 }}>“CV1800B Manual Confidentiality Clause”</p>
                 <label className={styles.terms}>
                     <input type="radio" className={styles.square} required checked={agree} onChange={() => { }} onClick={() => { setAgreeFlag(s => !s) }} />
-                    <span>我同意并遵守以上条款 / I agree and abide by the above terms</span>
+                    <span>我同意并遵守以上条款 <br style={{ display: 'none' }}></br> I agree and abide by the above terms</span>
                 </label>
                 <button type='submit'>Submit</button>
             </form>
@@ -351,7 +351,7 @@ function Corporations(props) {
                 }}>“CV1800B Manual Confidentiality Clause”</p>
                 <label className={styles.terms}>
                     <input type="radio" className={styles.square} required checked={agree} onChange={() => { }} onClick={() => { setAgreeFlag(s => !s) }} />
-                    <span>我同意并遵守以上条款 / I agree and abide by the above terms</span>
+                    <span>我同意并遵守以上条款 <br style={{ display: 'none' }}></br> I agree and abide by the above terms</span>
                 </label>
                 <button type='submit'>Submit</button>
             </form>
@@ -360,7 +360,7 @@ function Corporations(props) {
 }
 
 export default () => {
-    const [radioValue, setRadioValue] = useState('Corporations');
+    const [radioValue, setRadioValue] = useState('Individual');
     const [popflag, setPopflag] = useState(false)
     const [lang, setLang] = useState('en')
     const [agreeFlag, setAgreeFlag] = useState(false)

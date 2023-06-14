@@ -26,11 +26,6 @@
     /* text-align: center; */
 }
 
-.contentBox {
-    width: 1200px;
-    margin: 40px auto;
-}
-
 
 .labelBox>label input[type="radio"] {
     -webkit-appearance: none;
@@ -134,6 +129,12 @@
     background-color: #2D88C9;
 }
 
+.flexBox>label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .infoForm>.upload {
     display: none;
 }
@@ -150,9 +151,14 @@
     color: red;
 }
 
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1500px) {
     .cv1800b {
         padding-bottom: 200px;
+    }
+
+    .contentBox {
+        width: 1200px;
+        margin: 40px auto;
     }
 
     .cv1800b>h1 {
@@ -271,6 +277,423 @@
     }
 }
 
-@media screen and (max-width: 1350px) and (min-width: 1050px) {}
+@media screen and (max-width: 1500px) and (min-width: 1050px) {
+    .cv1800b {
+        padding-bottom: 200px;
+    }
 
-@media screen and (max-width: 1050px) and (min-width: 750px) {}
+    .cv1800b>h1 {
+        font-size: 48px;
+        margin: 100px 0 50px;
+    }
+
+    .contentBox {
+        width: 900px;
+        margin: 40px auto;
+    }
+
+    .radioForm,
+    .infoBox {
+        width: 1000px;
+        margin: 0 auto 25px;
+    }
+
+    .radioForm h1 {
+        font-size: 29px;
+        margin: 20px 0 25px;
+    }
+
+    .labelBox>label input[type="radio"] {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #2D88C9;
+        margin-right: 10px;
+    }
+
+    .infoForm>.terms>input[type="radio"] {
+        width: 25px;
+        height: 25px;
+        border: 1px solid #2D88C9;
+        margin-right: 10px;
+    }
+
+    .labelBox>label span {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .infoBox {
+        padding: 50px 0;
+    }
+
+    .infoForm label,
+    .flexBox {
+        width: 900px;
+        margin: 0 auto 50px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .infoForm>.valuered>p {
+        margin: 0;
+        color: red;
+        font-size: 14px;
+    }
+
+    .inputBox {
+        width: 900px;
+    }
+
+    .infoForm label span,
+    .flexBox>span {
+        font-size: 18px;
+        width: 350px;
+    }
+
+    .infoForm label input,
+    .infoForm label input {
+        height: 55px;
+        padding: 0 10px;
+        font-size: 18px;
+    }
+
+    .infoForm label input[type='file'] {
+        font-size: 16px;
+        border: none;
+    }
+
+
+    .infoForm>p {
+        font-size: 16px;
+    }
+
+    .infoForm>.terms {
+        margin-top: 20px;
+        border-bottom: none;
+    }
+
+    .infoForm>button {
+        width: 280px;
+        height: 60px;
+        border-radius: 50px;
+        font-size: 20px;
+        margin: 0 auto 50px;
+    }
+
+    .infoForm>.terms>span {
+        font-size: 18px;
+    }
+
+    .flexBox>label {
+        padding: 0px 10px;
+        font-size: 16px;
+        height: 50px;
+    }
+
+    .flexBox>img {
+        width: 30px;
+        margin-left: 20px;
+    }
+
+    .flexBox>span {
+        min-width: 300px !important;
+        margin-right: 20px;
+    }
+
+    .flexBox>p {
+        font-size: 12px;
+        margin: 0 0 0 10px;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 750px) {
+    .cv1800b {
+        padding-bottom: 200px;
+    }
+
+    .cv1800b>h1 {
+        font-size: 38px;
+        margin: 80px 0 50px;
+    }
+
+    .contentBox {
+        width: 700px;
+        margin: 40px auto;
+    }
+
+    .radioForm,
+    .infoBox {
+        width: 740px;
+        margin: 0 auto 25px;
+    }
+
+    .radioForm h1 {
+        font-size: 20px;
+        margin: 10px 0 10px;
+    }
+
+    .labelBox>label input[type="radio"] {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #2D88C9;
+        margin-right: 10px;
+    }
+
+    .infoForm>.terms>input[type="radio"] {
+        width: 25px;
+        height: 25px;
+        border: 1px solid #2D88C9;
+        margin-right: 10px;
+    }
+
+    .labelBox>label span {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .infoBox {
+        padding: 40px 0;
+    }
+
+    .infoForm label,
+    .flexBox {
+        width: 700px;
+        margin: 0 auto 50px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .infoForm>.valuered>p {
+        margin: 0;
+        color: red;
+        font-size: 14px;
+    }
+
+    .inputBox {
+        width: 700px;
+    }
+
+    .infoForm label span,
+    .flexBox>span {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .infoForm label input,
+    .infoForm label input {
+        height: 45px;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .infoForm label input[type='file'] {
+        font-size: 14px;
+        border: none;
+    }
+
+
+    .infoForm>p {
+        font-size: 14px;
+    }
+
+    .infoForm>.terms {
+        margin-top: 20px;
+        border-bottom: none;
+    }
+
+    .infoForm>button {
+        width: 200px;
+        height: 50px;
+        border-radius: 50px;
+        font-size: 18px;
+        margin: 0 auto 50px;
+    }
+
+    .infoForm>.terms>span {
+        font-size: 16px;
+    }
+
+    .flexBox>label {
+        padding: 0px 10px;
+        font-size: 14px;
+        height: 50px;
+    }
+
+    .flexBox>img {
+        width: 30px;
+        margin-left: 20px;
+    }
+
+    .flexBox>span {
+        min-width: 200px !important;
+        margin-right: 20px;
+    }
+
+    .flexBox>p {
+        font-size: 12px;
+        margin: 0 0 0 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .labelBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .labelBox>label {
+        margin-bottom: 10rem;
+    }
+
+    .infoForm>label,
+    .flexBox {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .inputBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .cv1800b {
+        padding-bottom: 50rem;
+    }
+
+    .cv1800b>h1 {
+        font-size: 28rem;
+        margin: 50rem 0;
+    }
+
+    .contentBox {
+        width: 340rem;
+        margin: 20rem auto;
+    }
+
+    .radioForm,
+    .infoBox {
+        width: 350rem;
+        margin: 0 auto 25rem;
+    }
+
+    .radioForm h1 {
+        font-size: 18rem;
+        margin: 10rem 0;
+    }
+
+    .labelBox>label input[type="radio"] {
+        width: 20rem;
+        height: 20rem;
+        border: 1rem solid #2D88C9;
+        margin-right: 10rem;
+    }
+
+    .infoForm>.terms>input[type="radio"] {
+        width: 20rem;
+        height: 20rem;
+        border: 1rem solid #2D88C9;
+        margin-right: 10rem;
+    }
+
+    .labelBox>label span {
+        font-weight: 500;
+        font-size: 14rem;
+    }
+
+    .infoBox {
+        padding: 40rem 0;
+    }
+
+    .infoForm label,
+    .flexBox {
+        width: 340rem;
+        margin: 0 auto 20rem;
+        padding-bottom: 20rem;
+        border-bottom: 1rem solid #ccc;
+    }
+
+    .infoForm>.valuered>p {
+        margin: 0;
+        color: red;
+        font-size: 14rem;
+    }
+
+    .inputBox {
+        width: 340rem;
+    }
+
+    .infoForm label span,
+    .flexBox>span {
+        font-size: 14rem;
+        margin-bottom: 5rem;
+    }
+
+    .infoForm label input,
+    .infoForm label input {
+        height: 45rem;
+        padding: 0 10rem;
+        font-size: 14rem;
+    }
+
+    .infoForm label input[type='file'] {
+        font-size: 14rem;
+        border: none;
+    }
+
+
+    .infoForm>p {
+        font-size: 14rem;
+    }
+
+    .infoForm>.terms {
+        margin-top: 20rem;
+        border-bottom: none;
+    }
+
+    .infoForm>button {
+        width: 200rem;
+        height: 50rem;
+        border-radius: 50rem;
+        font-size: 18rem;
+        margin: 0 auto 20rem;
+    }
+
+    .infoForm>.terms>span {
+        font-size: 12rem;
+    }
+
+    .infoForm>.terms {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .infoForm>.terms>span>br {
+        display: block !important;
+    }
+
+    .flexBox>label {
+        padding: 0rem 10rem;
+        font-size: 14rem;
+        height: 40rem;
+    }
+
+    .flexBox>img {
+        width: 30rem;
+        margin-left: 20rem;
+    }
+
+    .flexBox>span {
+        min-width: 200rem !important;
+        margin-right: 20rem;
+    }
+
+    .flexBox>p {
+        font-size: 12rem;
+    }
+}
