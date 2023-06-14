@@ -1,0 +1,84 @@
+.agreement {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.popBox {
+    width: 1000px;
+    height: 1200px;
+    padding: 20px 30px;
+    background-color: #fff;
+    position: relative;
+}
+
+.popBox>h1 {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 50px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.popBox>img {
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 30px;
+    position: absolute;
+}
+
+.cBox {
+    width: 100%;
+    height: 800px;
+    overflow-y: auto;
+    margin-top: 100px;
+}
+
+.cBox>h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.cBox>h2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.cBox>p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #333333;
+    margin-bottom: 50px;
+}
+
+.marginBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.marginBox>span {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    color: #000000;
+    margin-left: 20px;
+}
+
+.square {
+    width: 30px;
+    height: 30px;
+}
