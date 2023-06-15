@@ -32,4 +32,4 @@ Here is a summary of the files we have available for download
 
 ### Image
 
-- [Ubuntu_22.10](https://mega.nz/file/VOEH0SZA#4IvQl6BIUsK_xm914hCksgsBqC75JxIZxoUyziJlC50)
+- [Fedora 38 for Milk-V Pioneer](https://drive.google.com/file/d/1axjgIaOK-p4I1cdnfUQOlu7jynhNaUgg/view?usp=sharing)
