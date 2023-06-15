@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./index.module.css";
 
 export default (props) => {
     const { dis, type, agree, setAgreeFlag, setPopflag } = props;
+    useEffect(() => {
+        setPopflag(false)
+
+    }, [agree])
+
 
     const zh = <>
         <div className={styles.cBox}>

@@ -42,14 +42,19 @@
 }
 
 .infoForm label input,
+
 .labelBox>label input[type="text"] {
     width: 100%;
     outline: none;
     background-color: #f9f9f9;
     border-radius: 10px;
     border: 1.5px solid #ccc;
+    border-radius: 0;
 }
 
+.infoForm label textarea {
+    border-radius: 0;
+}
 
 .labelBox>label input[type="radio"]:checked {
     background-color: #2D88C9;
@@ -125,9 +130,6 @@
     cursor: pointer;
 }
 
-.infoForm>button:hover {
-    background-color: #2D88C9;
-}
 
 .flexBox>label {
     display: flex;
