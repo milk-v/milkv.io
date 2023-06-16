@@ -2,186 +2,63 @@
 sidebar_label: 'Install OS'
 sidebar_position: 21
 ---
+# OS installation steps
 
-# A Simple Method to Install Image on Milk-V Pioneer
+## 1. Preparation
 
-# 1. Prerequisites
+### 1.1 Tool preparation
+Before starting the installation, please prepare the following tools:
+- MicroSD card (at least greater than 16G)
+- MicroSD card reader
+- Serial port module
 
-- Computer with Linux OS
-- Pioneer Box / Board
-- microSD Card (16GB or above), microSD Card Reader
-- NVMe SSD
-- Serial Cable (Micro USB - USB)
+### 1.2 Software preparation
+- Download and install balenaEtcher (https://etcher.balena.io/)
+- Download the image (https://milkv.io/docs/pioneer/getting-started/download)  
+Select the desired image in the [Download page](https://milkv.io/docs/pioneer/getting-started/download), here is Fedora 38 as an example.
 
--------------------------------
+![downloadpage](/Pioneerimage/downloadpage.png)
+## 2. Burn the program to MicroSD card
 
-# 2. Get an Ubuntu Image
+### 2.1 Use BalenaEtcher to burn the image
+a.Click on the Flash from file button and choose the 
+fedora-disk-gnome-workstation_riscv64-f38-20230515-035559-milkv.raw.xz (hereinafter referred to as **fedora38.raw.xz** ) you want to use.
 
--   Dowload the [Ubuntu image](https://mega.nz/file/VOEH0SZA#4IvQl6BIUsK_xm914hCksgsBqC75JxIZxoUyziJlC50) directly.
+b. Click the Select target button and choose the microSD Card to write the fedora38.raw.xz to.
 
-    The image is created based on Ubuntu offical preinstall server image.
+c.Click the Flash! button to begin the process.  
 
+![balena-etcher](/Pioneerimage/balena-etcher.png)
+### 2.2 Installing to Pioneer
+Insert the burned microSD card into the Pioneer's microSD card slot.
 
-The following uses ``ubuntu-sophgo.img`` to refer to the Ubuntu image.
+## 3. Boot from microSD Card
 
-# 3. Create a Bootable microSD Card
+### 3.1 Power on
+Tap the boot button to start Pioneer.
 
-## Option 1: Use balenaEtcher
+### 3.2 Setting up an account
+The installation wizard sets up the account password.
 
-a. Download and install the [balenaEtcher](https://www.balena.io/etcher).
+### 3.3 Done! Getting Started with Fedora 38
+![fedora38](/Pioneerimage/fedora38.png)
 
-b. Click on the **Flash from file** button and choose the ``ubuntu-sophgo.img``
-   you want to use.
+## 4. Boot from microSD Card & NVMe SSD
+Please complete sections 1-3 above before proceeding with this step
+The following steps are recommended for operation using the serial port
 
-c. Click the **Select target** button and choose the microSD Card
-   to write the ``ubuntu-sophgo.img`` to.
+Enter the account password to log in to the Fedora system
+![loginfedora38](/Pioneerimage/loginfedora.png)
 
-d. Click the **Flash!** button to begin the process.
+### 4.1Use 'mv-rootfs.sh' to install the system to an NVMe SSD
+We have included the '[mv-rootfs.sh](https://milkv.io/docs/pioneer/getting-started/download)' script in /opt for easy configuration of your system to NVMe SSDs.
 
--------------------------------------
+Just refer to the following steps to run it.
 
-## Option 2: Use ``dd`` command directly
+~~~
+[milkv@fedora-riscv ~]$ cd /opt
+[milkv@fedora-riscv opt]$ sudo ./mv-rootfs.sh
+~~~
 
--   Use ``dd`` command to write ``ubuntu-sophgo.img`` to microSD Card
-
-.. highlights::
-
-    .. code:: sh
-
-        # To find the block device name of your microSD Card.
-        # For example, the microSD Card drive is /dev/sdc. Checking the name of your device is a key step,
-        # as writing to the wrong device might corrupt or destroy your data.
-
-        $ sudo dd if=ubuntu-sophgo.img of=/dev/sdc bs=1M
-
-        10240+0 records in
-        10240+0 records out
-        10737418240 bytes (11 GB, 10 GiB) copied, 1211.08 s, 8.9 MB/s
-
-
--   Resize root partition of microSD Card (**Optional**)
-
-.. highlights::
-
-    .. code:: sh
-
-
-        # Change partition table of your microSD Card.
-        $ sudo fdisk /dev/sdc
-
-        Welcome to fdisk (util-linux 2.37.2).
-        Changes will remain in memory only, until you decide to write them.
-        Be careful before using the write command.
-
-
-        Command (m for help): p
-        Disk /dev/sdc: 29.72 GiB, 31914983424 bytes, 62333952 sectors
-        Disk model: MassStorageClass
-        Units: sectors of 1 * 512 = 512 bytes
-        Sector size (logical/physical): 512 bytes / 512 bytes
-        I/O size (minimum/optimal): 512 bytes / 512 bytes
-        Disklabel type: dos
-        Disk identifier: 0x5c9f9baa
-
-        Device     Boot  Start      End Sectors  Size Id Type
-        /dev/sdc1         2048   262143  260096  127M  c W95 FAT32 (LBA)
-        /dev/sdc2       262144   524287  262144  128M  c W95 FAT32 (LBA)
-        /dev/sdc3       524288 10485759 9961472  4.8G 83 Linux
-
-        Command (m for help): d
-        Partition number (1-3, default 3): 3
-
-        Partition 3 has been deleted.
-
-        Command (m for help): n
-        Partition type
-        p   primary (2 primary, 0 extended, 2 free)
-        e   extended (container for logical partitions)
-        Select (default p): p
-        Partition number (3,4, default 3):
-        First sector (524288-62333951, default 524288):
-        Last sector, +/-sectors or +/-size{K,M,G,T,P} (524288-62333951, default 62333951):
-
-        Created a new partition 3 of type 'Linux' and of size 29.5 GiB.
-        Partition #3 contains a ext4 signature.
-
-        Do you want to remove the signature? [Y]es/[N]o: N
-
-        Command (m for help): w
-
-        The partition table has been altered.
-        Calling ioctl() to re-read partition table.
-        Syncing disks.
-
-.. highlights::
-
-    .. code:: sh
-
-        # Check partitions of your microSD Card.
-        $ sudo fdisk -l /dev/sdc
-
-        Disk /dev/sdc: 29.72 GiB, 31914983424 bytes, 62333952 sectors
-        Disk model: MassStorageClass
-        Units: sectors of 1 * 512 = 512 bytes
-        Sector size (logical/physical): 512 bytes / 512 bytes
-        I/O size (minimum/optimal): 512 bytes / 512 bytes
-        Disklabel type: dos
-        Disk identifier: 0x5c9f9baa
-
-        Device     Boot  Start      End  Sectors  Size Id Type
-        /dev/sdc1         2048   262143   260096  127M  c W95 FAT32 (LBA)
-        /dev/sdc2       262144   524287   262144  128M  c W95 FAT32 (LBA)
-        /dev/sdc3       524288 62333951 61809664 29.5G 83 Linux
-
-
-.. highlights::
-
-    .. code:: sh
-
-        # Force checking your file system.
-        $ sudo e2fsck -f /dev/sdc3
-
-        e2fsck 1.46.5 (30-Dec-2021)
-        Pass 1: Checking inodes, blocks, and sizes
-        Pass 2: Checking directory structure
-        Pass 3: Checking directory connectivity
-        Pass 4: Checking reference counts
-        Pass 5: Checking group summary information
-        cloudimg-rootfs: 79598/575424 files (0.0% non-contiguous), 1022378/1150203 blocks
-        xingxg@vmware:~/sophgo/install/soc_mango/riscv64$ sudo resize2fs /dev/sdc3
-        resize2fs 1.46.5 (30-Dec-2021)
-        Resizing the filesystem on /dev/sdc3 to 7726208 (4k) blocks.
-        The filesystem on /dev/sdc3 is now 7726208 (4k) blocks long.
-
-
--   Copy image to ``/home/ubuntu`` on the root partition of the microSD Card.
-
-.. highlights::
-
-    .. code:: sh
-
-        $ cp ubuntu-sophgo.img /mnt/home/ubuntu
-
-# 4. Boot from microSD Card
-
--   Plug the microSD Card into the SG2042 EVB,
-    connect the serial cable to your computer,
-    and power on the Pioneer.
--   Enter the username ``ubuntu`` and the password ``ubuntu``.
--   Any operation needs the ``sudo`` privilege.
-
-# 5. Use NVMe SSD and microSD Card
-
-If you want to boot your system from a combination of
-NVMe SSD and microSD Card,
-the following steps also need to be done.
-
-a. Use the ``dd`` command to copy the ``ubuntu-sophgo.img`` to the NVMe disk.
-
-b. Resize the root partition of the NVMe disk.
-
-c. Use the ``fdisk`` command to delete the root partition of the microSD Card.
-
-    .. note:: This step is critical because the root partition of the microSD Card and the NVMe disk has the same label!
-
-d. Reboot, and access Ubuntu using the NVMe disk.
+### 4.2 Reboot
+Reboot Pioneer to enable booting from SD cards and NVMe SSD

@@ -32,4 +32,7 @@ Here is a summary of the files we have available for download
 
 ### Image
 
-- [Fedora 38 for Milk-V Pioneer](https://drive.google.com/file/d/1axjgIaOK-p4I1cdnfUQOlu7jynhNaUgg/view?usp=sharing)
+- [Fedora 38 for Milk-V Pioneer](https://drive.google.com/file/d/1IjxeKiwtyDTmc2YGbn7yvpbCx0B1kkBh/view?usp=sharing)
+
+### Tools
+- [mv-rootfs.sh](https://drive.google.com/file/d/1550ZjmqCR99_t30qjf0FD-fKLUp5JbbY/view?usp=sharing)
