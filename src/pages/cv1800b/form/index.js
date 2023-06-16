@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from './index.module.css'
+import Layout from '@theme/Layout';
 
 import axios from "axios";
 
@@ -19,7 +20,7 @@ const style = {
 
 // 个人
 function Individual(props) {
-    const { type, setAgreeFlag, agree, setPopflag, setlang } = props
+    const { type, setAgreeFlag, agree, setPopflag, setlang, setFlagp } = props
     const [individualName, setIndividualName] = useState('')
     const [individualPhone, setIndividualPhone] = useState('')
     const [individualEmail, setIndividualEmail] = useState('')
@@ -29,11 +30,10 @@ function Individual(props) {
     const [flag, setFlag] = useState(false)
     const [btn, setBtn] = useState(false)
 
-
     const handleFileChange = (event) => {
         const file = event.target.files[0];
         if ((file.type === 'image/png' || file.type === 'image/webp' || file.type === 'image/jpeg' || file.type === 'application/pdf') && file.size <= 1000000) {
-            setIndividualFile(file);
+            setIndividualFile(file)
             setUpload(file.name);
             setFlag(true)
         } else {
@@ -67,16 +67,41 @@ function Individual(props) {
         } else {
             setBtn(false)
         }
-
     }, [individualName, individualPhone, individualEmail, individualPurpose, agree, flag])
 
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        let forms = new FormData()
+        forms.append('file', individualFile)
+        axios.post('http://192.168.2.218:8000/api/v1/file/upload/', forms).then((fileRes) => {
+            axios.post('http://192.168.2.218:8000/api/v1/pdf/submit/cv1800b', {
+                'request_type': type,
+                'name': individualName,
+                'phone': individualPhone,
+                'email': individualEmail,
+                "purpose": individualPurpose,
+                'identity_proof': fileRes.data.file_id,
+            }, {
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            }).then(res => {
+                setFlagp(true)
+                setIndividualName('')
+                setIndividualPhone('')
+                setIndividualEmail('')
+                setIndividuaPurpose('')
+                setUpload('Upload File')
+                setIndividualFile(null)
+                setFlag(false)
+                btn(false)
+            }).catch(err => {
 
+            })
+        }).catch(flieErr => {
 
-
-
+        })
     }
     return (
         <>
@@ -138,7 +163,7 @@ function Individual(props) {
 
 // 学校/机构
 function Schools(props) {
-    const { type, setAgreeFlag, agree, setPopflag, setlang } = props
+    const { type, setAgreeFlag, agree, setPopflag, setlang, setFlagp } = props
 
     const [individualName, setIndividualName] = useState('')
     const [individualPhone, setIndividualPhone] = useState('')
@@ -209,6 +234,56 @@ function Schools(props) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        let forms = new FormData()
+        forms.append('file', individualFile)
+        axios.post('http://192.168.2.218:8000/api/v1/file/upload/',
+            forms).then((fileRes) => {
+                axios.post('http://192.168.2.218:8000/api/v1/file/upload/',
+                    forms).then(res => {
+                        console.log('file1成功', res);
+                        let forms = new FormData()
+                        forms.append('file', individualFile2)
+                        axios.post('http://192.168.2.218:8000/api/v1/pdf/submit/cv1800b', {
+                            'request_type': type,
+                            'name': individualName,
+                            'phone': individualPhone,
+                            'email': individualEmail,
+                            'address': individualAddress,
+                            "organization_name": organization,
+                            'project_details': individualPurpose,
+                            "project_name": individualpname,
+                            'identity_proof': fileRes.data.file_id,
+                            "organization_proof": res.data.file_id,
+                        }, {
+                            headers: {
+                                'Content-Type': 'application/json',
+                            }
+                        }).then(res => {
+                            setFlagp(true)
+                            setIndividualName('')
+                            setIndividualPhone('')
+                            setIndividualEmail('')
+                            setIndividuaPurpose('')
+                            setIndividualAddress('')
+                            setOrganization('')
+                            setUpload('Upload File')
+                            setUpload2('Upload File')
+                            setIndividuapname('')
+                            setIndividualFile(null)
+                            setIndividualFile2(null)
+                            setFlag(false)
+                            setFlag2(false)
+                            btn(false)
+                        }).catch(err => {
+
+                        })
+
+                    }).catch(err => {
+
+                    })
+            }).catch(flieErr => {
+
+            })
     }
     return (
         <>
@@ -294,7 +369,7 @@ function Schools(props) {
 
 // 企业
 function Corporations(props) {
-    const { type, setAgreeFlag, agree, setPopflag, setlang } = props
+    const { type, setAgreeFlag, agree, setPopflag, setlang, setFlagp } = props
     const [applicantName, setApplicantName] = useState('')
     const [individualName, setIndividualName] = useState('')
     const [individualPhone, setIndividualPhone] = useState('')
@@ -351,13 +426,46 @@ function Corporations(props) {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        if (!dis && !dis2 && flag && agree) {
-            console.log(dis, dis2, flag, agree);
-            console.log('res')
-        } else {
-            console.log(dis, dis2, flag, agree);
-            console.log('err')
-        }
+        let forms = new FormData()
+        forms.append('file', individualFile)
+        axios.post('http://192.168.2.218:8000/api/v1/file/upload/', forms).then((fileRes) => {
+            console.log(fileRes.data.file_id);
+            axios.post('http://192.168.2.218:8000/api/v1/pdf/submit/cv1800b', {
+                'request_type': type,
+                'name': applicantName,
+                "organization_name": individualName,
+                'phone': individualPhone,
+                'email': individualEmail,
+                'address': individualAddress,
+                "project_name": individualpname,
+                "project_details": individualPurpose,
+                "business_registration_number": organization,
+                'identity_proof': fileRes.data.file_id,
+            }, {
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            }).then(res => {
+                setFlagp(true)
+                setIndividualName('')
+                setIndividualPhone('')
+                setIndividualEmail('')
+                setIndividuaPurpose('')
+                setIndividualAddress('')
+                setOrganization('')
+                setUpload('Upload File')
+                setIndividuapname('')
+                setIndividualFile(null)
+                setFlag(false)
+                btn(false)
+            }).catch(err => {
+
+            })
+
+        }).catch(flieErr => {
+
+        })
+
 
     }
     return (
@@ -447,6 +555,7 @@ export default () => {
     const [popflag, setPopflag] = useState(false)
     const [lang, setLang] = useState('en')
     const [agreeFlag, setAgreeFlag] = useState(false)
+    const [flag, setFlag] = useState(false)
 
 
     const handleOptionChange = (event) => {
@@ -455,37 +564,46 @@ export default () => {
 
     return (
         <>
-            <div className={styles.cv1800b}>
-                <h1>Get the complete CV1800B chip manual</h1>
-                <div className={styles.radioForm}>
-                    <div className={styles.contentBox}>
-                        <h1> You need to fill in the following relevant information.</h1>
-                        <div className={styles.labelBox}>
-                            <label>
-                                <input type="radio" name="organization" value='Individual' checked={radioValue === 'Individual'}
-                                    onChange={handleOptionChange} />
-                                <span>Individual</span>
-                            </label>
-                            <label>
-                                <input type="radio" name="organization" value='Schools' checked={radioValue === 'Schools'}
-                                    onChange={handleOptionChange} />
-                                <span>Schools or research institutions</span>
-                            </label>
-                            <label>
-                                <input type="radio" name="organization" value='Corporations' checked={radioValue === 'Corporations'}
-                                    onChange={handleOptionChange} />
-                                <span>For-profit organizations or corporations </span>
-                            </label>
+            <Layout>
+                <div className={styles.cv1800b}>
+                    <h1>Get the complete CV1800B chip manual</h1>
+                    <div className={styles.radioForm}>
+                        <div className={styles.contentBox}>
+                            <h1>You need to fill in the following relevant information.</h1>
+                            <div className={styles.labelBox}>
+                                <label>
+                                    <input type="radio" name="organization" value='Individual' checked={radioValue === 'Individual'}
+                                        onChange={handleOptionChange} />
+                                    <span>Individual</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="organization" value='Schools' checked={radioValue === 'Schools'}
+                                        onChange={handleOptionChange} />
+                                    <span>Schools or research institutions</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="organization" value='Corporations' checked={radioValue === 'Corporations'}
+                                        onChange={handleOptionChange} />
+                                    <span>For-profit organizations or corporations </span>
+                                </label>
+                            </div>
                         </div>
                     </div>
+                    <div className={styles.infoBox}>
+                        {
+                            radioValue === 'Individual' ? <Individual setFlagp={setFlag} agree={agreeFlag} setlang={setLang} type='individual' setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} /> : radioValue === 'Schools' ? <Schools setlang={setLang} setFlagp={setFlag} type='school_or_research_institution' agree={agreeFlag} setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} /> : radioValue === 'Corporations' ? <Corporations setFlagp={setFlag} setlang={setLang} agree={agreeFlag} type='profit_organization_or_corporations' setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} /> : null
+                        }
+                    </div>
                 </div>
-                <div className={styles.infoBox}>
-                    {
-                        radioValue === 'Individual' ? <Individual agree={agreeFlag} setlang={setLang} type={radioValue} setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} /> : radioValue === 'Schools' ? <Schools setlang={setLang} type={radioValue} agree={agreeFlag} setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} /> : radioValue === 'Corporations' ? <Corporations setlang={setLang} agree={agreeFlag} type={radioValue} setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} /> : null
-                    }
+                <div className={styles.pop} style={{ display: `${flag ? "flex" : 'none'}` }}>
+                    <div className={styles.popBox}>
+                        <h1>Application sent successfully</h1>
+                        <p>We will send the review result by email in the first time, please do not repeat the application</p>
+                        <div className={styles.ok} onClick={() => { setFlag(false) }}>Yes</div>
+                    </div>
                 </div>
-            </div>
-            <Agreement dis={popflag} type={lang} agree={agreeFlag} setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} />
+                <Agreement dis={popflag} type={lang} agree={agreeFlag} setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} />
+            </Layout>
         </>
     )
 }                 
