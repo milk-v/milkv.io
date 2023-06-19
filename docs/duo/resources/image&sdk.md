@@ -19,7 +19,7 @@ sidebar_position: 40
     mv /mnt/system/blink.sh /mnt/system/blink.  sh_backup && sync  
     then reboot the board  
 
-# SDK
-## Buildroot-sdk
+## SDK
+### Buildroot-sdk
 
   [Get it on GitHub](https://github.com/milkv-duo/milkv-duo-buildroot-sdk)
