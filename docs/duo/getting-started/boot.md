@@ -15,7 +15,7 @@ sidebar_position: 10
   - USB to TTL serial cable
 
 ## Download images and tools
-- Download the system image from Github [releases](https://github.com/milk-v/duo-manifest/releases).
+- Download the system image from [Official Image and SDK](https://milkv.io/docs/duo/resources/image&sdk).
 - Download the flash tool, [balenaEtcher](https://etcher.balena.io/) or [Rufus](https://rufus.ie/en/).
 
 ## Write images
