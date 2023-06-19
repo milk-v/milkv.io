@@ -153,7 +153,8 @@
     color: red;
 }
 
-.pop {
+.pop,
+.pop2 {
     position: fixed;
     top: 0;
     width: 100%;
@@ -169,6 +170,14 @@
     background-color: #fff;
     border-radius: 10px;
     padding: 0 20px;
+}
+
+.pop2>.popBox>h1 {
+    color: rgb(220, 55, 55);
+}
+
+.pop2>.popBox>.ok {
+    background-color: rgb(63, 100, 114);
 }
 
 .popBox>h1 {
