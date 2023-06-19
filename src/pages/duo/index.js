@@ -135,8 +135,8 @@ function DetailsPage() {
           </div>
           <div className={cssList.tech_text2}>
             <h1 className={cssList.tech_title}>Hardware </h1>
-            <p className={cssList.tech_p_line}>- SOPHGO CV1800B Chip</p>
-            <p className={cssList.tech_p_line}>- Dual-Core RISC-V CPU up to 1GHz</p>
+            <p className={cssList.tech_p_line}>- CVITEK CV1800B (C906@1Ghz + C906@700MHz)</p>
+            <p className={cssList.tech_p_line}>- Dual RV64 Core up to 1GHz</p>
             <p className={cssList.tech_p_line}>- 64MB RAM</p>
             <p className={cssList.tech_p_line}>- Provides 10/100Mbps Ethernet via optional add-on board</p>
             <p className={cssList.tech_p_line}>- technology supports running both Linux and RTOS</p>
