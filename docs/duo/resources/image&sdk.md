@@ -22,4 +22,4 @@ sidebar_position: 40
 ## SDK
 ### Buildroot-sdk
 
-  [Get it on GitHub](https://github.com/milkv-duo/milkv-duo-buildroot-sdk)
+  [Get it on GitHub](https://github.com/milkv-duo/duo-buildroot-sdk)
