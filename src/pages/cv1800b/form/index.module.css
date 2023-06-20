@@ -19,11 +19,12 @@
     overflow: hidden;
 }
 
-.radioForm h1 {
+.radioForm h1,
+.infoBox>h1 {
     font-weight: 500;
     line-height: 120%;
     color: #2D88C9;
-    /* text-align: center; */
+    text-align: center;
 }
 
 
@@ -50,10 +51,16 @@
     border-radius: 10px;
     border: 1.5px solid #ccc;
     border-radius: 0;
+    font-family: normal;
 }
 
 .infoForm label textarea {
+    font-family: normal;
     border-radius: 0;
+}
+
+.infoForm label textarea ::placeholder {
+    font-family: normal;
 }
 
 .labelBox>label input[type="radio"]:checked {
@@ -242,6 +249,11 @@
         margin: 40px 0 25px;
     }
 
+    .infoBox>h1 {
+        font-size: 39px;
+        margin-bottom: 40px;
+    }
+
     .labelBox>label input[type="radio"] {
         width: 25px;
         height: 25px;
@@ -333,7 +345,7 @@
     }
 
     .flexBox>span {
-        min-width: 300px !important;
+        min-width: 500px !important;
         margin-right: 20px;
     }
 
@@ -366,6 +378,11 @@
     .radioForm h1 {
         font-size: 29px;
         margin: 20px 0 25px;
+    }
+
+    .infoBox>h1 {
+        font-size: 29px;
+        margin-bottom: 40px;
     }
 
     .labelBox>label input[type="radio"] {
@@ -495,6 +512,11 @@
     .radioForm h1 {
         font-size: 20px;
         margin: 10px 0 10px;
+    }
+
+    .infoBox>h1 {
+        font-size: 20px;
+        margin-bottom: 40px;
     }
 
     .labelBox>label input[type="radio"] {
@@ -650,6 +672,11 @@
     .radioForm h1 {
         font-size: 18rem;
         margin: 10rem 0;
+    }
+
+    .infoBox>h1 {
+        font-size: 18rem;
+        margin-bottom: 20rem;
     }
 
     .labelBox>label input[type="radio"] {

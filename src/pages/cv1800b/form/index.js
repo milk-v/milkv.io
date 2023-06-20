@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 import axios from "axios";
 
 import Agreement from '../../../components/Agreement'
+import Footer from "../../../components/Footer"
 
 
 // 国际电话正则
@@ -45,7 +46,7 @@ function Individual(props) {
     const [dis, setDis] = useState(false)
     const [dis2, setDis2] = useState(false)
     const pBlur = (e) => {
-        if (phoneRegex.test(e.target.value) || phoneChinaRegex.test('8617679163620')) {
+        if (phoneRegex.test(e.target.value) || phoneChinaRegex.test(e.target.value)) {
             setDis(false)
             return
         } else {
@@ -88,14 +89,6 @@ function Individual(props) {
                 }
             }).then(res => {
                 setFlagp(true)
-                setIndividualName('')
-                setIndividualPhone('')
-                setIndividualEmail('')
-                setIndividuaPurpose('')
-                setUpload('Upload File')
-                setIndividualFile(null)
-                setFlag(false)
-                btn(false)
             }).catch(err => {
                 setFlagp(true)
             })
@@ -107,14 +100,14 @@ function Individual(props) {
         <>
             <form onSubmit={handleSubmit} className={styles.infoForm}>
                 <label>
-                    <span>Your Name:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Your Name:</span>
                     <input type="text" required value={individualName} onChange={(e) => setIndividualName(e.target.value)}
                         placeholder="Your Name"
                     />
                 </label>
                 <label className={styles.valuered}>
                     <div className={styles.inputBox}>
-                        <span>Phone Number:</span>
+                        <span><span style={{ color: 'red' }}>*</span>Phone Number:</span>
                         <input type="phone" required value={individualPhone} onBlur={pBlur} onChange={(e) => setIndividualPhone(e.target.value)}
                             placeholder="Your Contact Phone Number"
                         />
@@ -123,7 +116,7 @@ function Individual(props) {
                 </label>
                 <label className={styles.valuered}>
                     <div className={styles.inputBox}>
-                        <span>Email Address:</span>
+                        <span><span style={{ color: 'red' }}>*</span>Email Address:</span>
                         <input type="email" required value={individualEmail} onBlur={eBlur} onChange={(e) => setIndividualEmail(e.target.value)}
                             placeholder="Your Email Address"
                         />
@@ -131,13 +124,14 @@ function Individual(props) {
                     <p className={styles.redP} style={{ display: `${dis2 ? 'block' : 'none'}` }}>*Please fill in the correct format of e-mail</p>
                 </label>
                 <label>
-                    <span>Purpose:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Purpose:</span>
                     <textarea className={styles.bgText} required value={individualPurpose} onChange={(e) => setIndividuaPurpose(e.target.value)}
                         placeholder="A Brief Summary Of Why You Need The Complete CV1800B Manual"
                     ></textarea>
                 </label>
                 <div className={styles.flexBox}>
-                    <span>Relevant identification:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Proof of applicant's identity:
+                        <br></br>(ID card, work card, business card, etc.)</span>
                     <label htmlFor='upload'>{upload}</label>
                     <img src="/form/response.svg" style={{ display: `${flag ? 'block' : 'none'}` }} />
                     <p style={{ display: `${!flag ? 'block' : 'none'}` }} >*File size limit is 1mb, format is png / jpg / webp / pdf</p>
@@ -207,7 +201,7 @@ function Schools(props) {
     const [dis, setDis] = useState(false)
     const [dis2, setDis2] = useState(false)
     const pBlur = (e) => {
-        if (phoneRegex.test(e.target.value) || phoneChinaRegex.test('8617679163620')) {
+        if (phoneRegex.test(e.target.value) || phoneChinaRegex.test(e.target.value)) {
             setDis(false)
             return
         } else {
@@ -259,20 +253,6 @@ function Schools(props) {
                             }
                         }).then(res => {
                             setFlagp(true)
-                            setIndividualName('')
-                            setIndividualPhone('')
-                            setIndividualEmail('')
-                            setIndividuaPurpose('')
-                            setIndividualAddress('')
-                            setOrganization('')
-                            setUpload('Upload File')
-                            setUpload2('Upload File')
-                            setIndividuapname('')
-                            setIndividualFile(null)
-                            setIndividualFile2(null)
-                            setFlag(false)
-                            setFlag2(false)
-                            btn(false)
                         }).catch(err => {
                             setFlagp2(true)
                         })
@@ -288,19 +268,19 @@ function Schools(props) {
         <>
             <form onSubmit={handleSubmit} className={styles.infoForm}>
                 <label>
-                    <span>Applicant Name:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Applicant Name:</span>
                     <input type="text" required value={individualName} onChange={(e) => setIndividualName(e.target.value)}
                         placeholder="Your Applicant's Name"
                     />
                 </label>
                 <label>
-                    <span>Your Organization Name:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Your Organization Name:</span>
                     <input type="text" required value={organization} onChange={(e) => setOrganization(e.target.value)}
                         placeholder="Your Organization Name" />
                 </label>
                 <label className={styles.valuered}>
                     <div className={styles.inputBox}>
-                        <span>Phone Number:</span>
+                        <span><span style={{ color: 'red' }}>*</span>Phone Number:</span>
                         <input type="phone" onBlur={pBlur} required value={individualPhone} onChange={(e) => setIndividualPhone(e.target.value)}
                             placeholder="Your Contact Phone Number"
                         />
@@ -309,7 +289,7 @@ function Schools(props) {
                 </label>
                 <label className={styles.valuered}>
                     <div className={styles.inputBox}>
-                        <span>Email:</span>
+                        <span><span style={{ color: 'red' }}>*</span>Email:</span>
                         <input type="email" required value={individualEmail} onBlur={eBlur} onChange={(e) => setIndividualEmail(e.target.value)}
                             placeholder="Your Email Address"
                         />
@@ -317,31 +297,32 @@ function Schools(props) {
                     <p className={styles.redP} style={{ display: `${dis2 ? 'block' : 'none'}` }}>*Please fill in the correct format of e-mail</p>
                 </label>
                 <label>
-                    <span>Address:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Address:</span>
                     <input type="text" required value={individualAddress} onChange={(e) => setIndividualAddress(e.target.value)}
                         placeholder="Your Organization Address"
                     />
                 </label>
                 <label>
-                    <span>Project Name:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Project Name:</span>
                     <input type="text" required value={individualpname} onChange={(e) => setIndividuapname(e.target.value)}
                         placeholder="What Projects Will You Be Using Milk-V Duo On?"
                     />
                 </label>
                 <label>
-                    <span>Project Details:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Project Details:</span>
                     <textarea className={styles.bgText} required value={individualPurpose} onChange={(e) => setIndividuaPurpose(e.target.value)}
                         placeholder="Describe The Details Of The Project"
                     ></textarea>
                 </label>
                 <div className={styles.flexBox}>
-                    <span>Applicant identification:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Proof of applicant's identity:
+                        <br></br>(ID card, work card, business card, etc.)</span>
                     <label htmlFor='upload'>{upload}</label>
                     <img src="/form/response.svg" style={{ display: `${flag ? 'block' : 'none'}` }} />
                     <p style={{ display: `${!flag ? 'block' : 'none'}` }} >*File size limit is 1mb, format is png / jpg / webp / pdf</p>
                 </div>
                 <div className={styles.flexBox}>
-                    <span>Organizational Certification:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Organizational Certification:<br></br>(Authorization letter, photo of office location, work card, etc.)</span>
                     <label htmlFor='upload2'>{upload2}</label>
                     <img src="/form/response.svg" style={{ display: `${flag2 ? 'block' : 'none'}` }} />
                     <p style={{ display: `${!flag2 ? 'block' : 'none'}` }} >*File size limit is 1mb, format is png / jpg / webp / pdf</p>
@@ -396,7 +377,7 @@ function Corporations(props) {
     const [dis, setDis] = useState(false)
     const [dis2, setDis2] = useState(false)
     const pBlur = (e) => {
-        if (phoneRegex.test(e.target.value) || phoneChinaRegex.test('8617679163620')) {
+        if (phoneRegex.test(e.target.value) || phoneChinaRegex.test(e.target.value)) {
             setDis(false)
             return
         } else {
@@ -445,17 +426,6 @@ function Corporations(props) {
                 }
             }).then(res => {
                 setFlagp(true)
-                setIndividualName('')
-                setIndividualPhone('')
-                setIndividualEmail('')
-                setIndividuaPurpose('')
-                setIndividualAddress('')
-                setOrganization('')
-                setUpload('Upload File')
-                setIndividuapname('')
-                setIndividualFile(null)
-                setFlag(false)
-                btn(false)
             }).catch(err => {
                 setFlagp2(true)
             })
@@ -470,26 +440,26 @@ function Corporations(props) {
         <>
             <form onSubmit={handleSubmit} className={styles.infoForm}>
                 <label>
-                    <span>Applicant Name:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Applicant Name:</span>
                     <input type="text" required value={applicantName} onChange={(e) => setApplicantName(e.target.value)}
                         placeholder="Your Applicant's Name"
                     />
                 </label>
                 <label>
-                    <span>Name of organization or company:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Name of organization or company:</span>
                     <input type="text" required value={individualName} onChange={(e) => setIndividualName(e.target.value)}
                         placeholder="The Name Of Your Organization Or Company"
                     />
                 </label>
                 <label>
-                    <span>Business Registration Number:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Business Registration Number:</span>
                     <input type="text" required value={organization} onChange={(e) => setOrganization(e.target.value)}
                         placeholder="Your Business Registration Number"
                     />
                 </label>
                 <label className={styles.valuered}>
                     <div className={styles.inputBox}>
-                        <span>Phone Number:</span>
+                        <span><span style={{ color: 'red' }}>*</span>Phone Number:</span>
                         <input type="phone" required value={individualPhone} onBlur={pBlur} onChange={(e) => setIndividualPhone(e.target.value)}
                             placeholder="Your Contact Phone Number"
                         />
@@ -498,7 +468,7 @@ function Corporations(props) {
                 </label>
                 <label className={styles.valuered}>
                     <div className={styles.inputBox}>
-                        <span>Business email:</span>
+                        <span><span style={{ color: 'red' }}>*</span>Business email:</span>
                         <input type="email" required value={individualEmail} onBlur={eBlur} onChange={(e) => setIndividualEmail(e.target.value)}
                             placeholder="Your Business Email Address"
                         />
@@ -506,25 +476,25 @@ function Corporations(props) {
                     <p className={styles.redP} style={{ display: `${dis2 ? 'block' : 'none'}` }}>*Please fill in the correct format of e-mail</p>
                 </label>
                 <label>
-                    <span>Business Address:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Business Address:</span>
                     <input type="text" required value={individualAddress} onChange={(e) => setIndividualAddress(e.target.value)}
                         placeholder="Your Business Address"
                     />
                 </label>
                 <label>
-                    <span>Project Name:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Project Name:</span>
                     <input type="text" required value={individualpname} onChange={(e) => setIndividuapname(e.target.value)}
                         placeholder="What Projects Will You Be Using Milk-V Duo / CV1800B On?"
                     />
                 </label>
                 <label>
-                    <span>Project Details:</span>
+                    <span><span style={{ color: 'red' }}>*</span>Project Details:</span>
                     <textarea className={styles.bgText} required value={individualPurpose} onChange={(e) => setIndividuaPurpose(e.target.value)}
                         placeholder="Describe The Details Of The Project"
                     ></textarea>
                 </label>
                 <div className={styles.flexBox}>
-                    <span>Proof of applicant's identity (work card, business card, etc.):</span>
+                    <span><span style={{ color: 'red' }}>*</span>Proof of applicant's identity:<br></br>(work card, business card, etc.)</span>
                     <label htmlFor='upload'>{upload}</label>
                     <img src="/form/response.svg" style={{ display: `${flag ? 'block' : 'none'}` }} />
                     <p style={{ display: `${!flag ? 'block' : 'none'}` }} >*File size limit is 1mb, format is png / jpg / webp / pdf</p>
@@ -568,7 +538,7 @@ export default () => {
                     <h1>Get the complete CV1800B chip manual</h1>
                     <div className={styles.radioForm}>
                         <div className={styles.contentBox}>
-                            <h1>You need to fill in the following relevant information.</h1>
+                            <h1>Select Your Applicant Type</h1>
                             <div className={styles.labelBox}>
                                 <label>
                                     <input type="radio" name="organization" value='Individual' checked={radioValue === 'Individual'}
@@ -589,6 +559,7 @@ export default () => {
                         </div>
                     </div>
                     <div className={styles.infoBox}>
+                        <h1>You need to fill in the following relevant information</h1>
                         {
                             radioValue === 'Individual' ? <Individual setFlagp={setFlag} setFlagp2={setFlag2} agree={agreeFlag} setlang={setLang} type='individual' setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} /> : radioValue === 'Schools' ? <Schools setlang={setLang} setFlagp={setFlag} setFlagp2={setFlag2} type='school_or_research_institution' agree={agreeFlag} setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} /> : radioValue === 'Corporations' ? <Corporations setFlagp={setFlag} setFlagp2={setFlag2} setlang={setLang} agree={agreeFlag} type='profit_organization_or_corporations' setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} /> : null
                         }
@@ -598,7 +569,7 @@ export default () => {
                     <div className={styles.popBox}>
                         <h1>Application sent successfully</h1>
                         <p>We will send the review result by email in the first time, please do not repeat the application</p>
-                        <div className={styles.ok} onClick={() => { setFlag(false) }}>Yes</div>
+                        <div className={styles.ok} onClick={() => { setFlag(false) }}>Close</div>
                     </div>
                 </div>
                 <div className={styles.pop2} style={{ display: `${flag2 ? "flex" : 'none'}` }}>
@@ -609,6 +580,7 @@ export default () => {
                     </div>
                 </div>
                 <Agreement dis={popflag} type={lang} agree={agreeFlag} setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} />
+                <Footer></Footer>
             </Layout>
         </>
     )

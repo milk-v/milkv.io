@@ -135,20 +135,6 @@ const config = {
           },
         ],
       },
-      footer: {
-        style: 'light',
-        links: [
-          {
-            html: `<div class="footer_text">
-              <div class='footer_logo'></div>
-              <div class='text_right'>
-                <h2>MilkV Technology</h2>
-                <h2>Email: support@milkv.io</h2>
-              </div>
-            </div>`
-          },
-        ],
-      },
       typography: {
         fontFamily: ["Helvetica", "pingFangSC", "Microsoft YaHei", "微软雅黑", "Arial", "sans-serif"]
       }
