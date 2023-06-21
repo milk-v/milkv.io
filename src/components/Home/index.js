@@ -9,7 +9,7 @@ export default () => {
         <>
             <div className={styles.bgBox}>
                 <div className={styles._title}>
-                    <h1>MilkV Document</h1>
+                    <h1>MilkV Documents</h1>
                 </div>
                 <ul className={styles.products_ul}>
                     <li>
