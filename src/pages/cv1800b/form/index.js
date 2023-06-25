@@ -21,7 +21,7 @@ const style = {
 
 // 个人
 function Individual(props) {
-    const { type, setAgreeFlag, agree, setPopflag, setlang, setFlagp, setFlagp2 } = props
+    const { type, setAgreeFlag, agree, setPopflag, setlang, setFlagp, radioLang, } = props
     const [individualName, setIndividualName] = useState('')
     const [individualPhone, setIndividualPhone] = useState('')
     const [individualEmail, setIndividualEmail] = useState('')
@@ -68,13 +68,14 @@ function Individual(props) {
         } else {
             setBtn(false)
         }
-    }, [individualName, individualPhone, individualEmail, individualPurpose, agree, flag])
+    }, [individualName, individualPhone, individualEmail, individualPurpose, agree, flag, radioLang])
 
 
     const handleSubmit = (event) => {
         event.preventDefault();
         let forms = new FormData()
         forms.append('file', individualFile)
+        setBtn(false)
         axios.post('https://cv180.submit.rv64.org/api/v1/file/upload/', forms).then((fileRes) => {
             axios.post('https://cv180.submit.rv64.org/api/v1/pdf/submit/cv1800b', {
                 'request_type': type,
@@ -83,17 +84,21 @@ function Individual(props) {
                 'email': individualEmail,
                 "purpose": individualPurpose,
                 'identity_proof': fileRes.data.file_id,
+                'doc_lang': radioLang,
             }, {
                 headers: {
                     'Content-Type': 'application/json',
                 }
             }).then(res => {
                 setFlagp(true)
+                setBtn(true)
             }).catch(err => {
                 setFlagp(true)
+                setBtn(true)
             })
         }).catch(flieErr => {
-
+            setFlagp(true)
+            setBtn(true)
         })
     }
     return (
@@ -137,17 +142,17 @@ function Individual(props) {
                     <p style={{ display: `${!flag ? 'block' : 'none'}` }} >*File size limit is 1mb, format is png / jpg / webp / pdf</p>
                 </div>
                 <input type="file" id="upload" required onChange={handleFileChange} className={styles.upload} />
-                <p onClick={() => {
+                <p style={{ display: `${radioLang === 'CN' ? 'block' : radioLang === 'EN' ? 'none' : null}` }} onClick={() => {
                     setPopflag(true);
                     setlang('zh')
                 }}>《CV1800B手册保密条款》</p>
-                <p onClick={() => {
+                <p style={{ display: `${radioLang === 'EN' ? 'block' : radioLang === 'CN' ? 'none' : null}` }} onClick={() => {
                     setPopflag(true);
                     setlang('en')
                 }}>“CV1800B Manual Confidentiality Clause”</p>
                 <label className={styles.terms}>
                     <input type="radio" className={styles.square} required checked={agree} onChange={() => { }} onClick={() => { setAgreeFlag(s => !s) }} />
-                    <span>我同意并遵守以上条款 <br style={{ display: 'none' }}></br> I agree and abide by the above terms</span>
+                    <span>{radioLang === 'CN' ? "我同意并遵守以上条款" : "I agree and abide by the above terms"}</span>
                 </label>
                 <button type='submit' style={btn ? style : { cursor: 'not-allowed' }} disabled={btn ? false : true}>Submit</button>
             </form>
@@ -157,7 +162,7 @@ function Individual(props) {
 
 // 学校/机构
 function Schools(props) {
-    const { type, setAgreeFlag, agree, setPopflag, setlang, setFlagp, setFlagp2 } = props
+    const { type, setAgreeFlag, agree, setPopflag, setlang, setFlagp, setFlagp2, radioLang } = props
 
     const [individualName, setIndividualName] = useState('')
     const [individualPhone, setIndividualPhone] = useState('')
@@ -224,11 +229,12 @@ function Schools(props) {
             setBtn(false)
         }
 
-    }, [individualName, organization, individualPhone, individualEmail, individualAddress, individualpname, individualPurpose, agree, flag, flag2])
+    }, [individualName, organization, individualPhone, individualEmail, individualAddress, individualpname, individualPurpose, agree, flag, flag2, radioLang])
 
     const handleSubmit = (event) => {
         event.preventDefault();
         let forms = new FormData()
+        setBtn(false)
         forms.append('file', individualFile)
         axios.post('https://cv180.submit.rv64.org/api/v1/file/upload/',
             forms).then((fileRes) => {
@@ -247,21 +253,26 @@ function Schools(props) {
                             "project_name": individualpname,
                             'identity_proof': fileRes.data.file_id,
                             "organization_proof": res.data.file_id,
+                            'doc_lang': radioLang,
                         }, {
                             headers: {
                                 'Content-Type': 'application/json',
                             }
                         }).then(res => {
                             setFlagp(true)
+                            setBtn(true)
                         }).catch(err => {
                             setFlagp2(true)
+                            setBtn(true)
                         })
 
                     }).catch(err => {
-
+                        setFlagp2(true)
+                        setBtn(true)
                     })
             }).catch(flieErr => {
-
+                setFlagp2(true)
+                setBtn(true)
             })
     }
     return (
@@ -329,17 +340,17 @@ function Schools(props) {
                 </div>
                 <input type="file" id="upload" required onChange={handleFileChange} className={styles.upload} />
                 <input type="file" id="upload2" required onChange={handleFileChange2} className={styles.upload} />
-                <p onClick={() => {
+                <p style={{ display: `${radioLang === 'CN' ? 'block' : radioLang === 'EN' ? 'none' : null}` }} onClick={() => {
                     setPopflag(true);
                     setlang('zh')
                 }}>《CV1800B手册保密条款》</p>
-                <p onClick={() => {
+                <p style={{ display: `${radioLang === 'EN' ? 'block' : radioLang === 'CN' ? 'none' : null}` }} onClick={() => {
                     setPopflag(true);
                     setlang('en')
                 }}>“CV1800B Manual Confidentiality Clause”</p>
                 <label className={styles.terms}>
                     <input type="radio" className={styles.square} required checked={agree} onChange={() => { }} onClick={() => { setAgreeFlag(s => !s) }} />
-                    <span>我同意并遵守以上条款 <br style={{ display: 'none' }}></br> I agree and abide by the above terms</span>
+                    <span>{radioLang === 'CN' ? "我同意并遵守以上条款" : "I agree and abide by the above terms"}</span>
                 </label>
                 <button type='submit' style={btn ? style : { cursor: 'not-allowed' }} disabled={btn ? false : true} >Submit</button>
             </form>
@@ -349,7 +360,7 @@ function Schools(props) {
 
 // 企业
 function Corporations(props) {
-    const { type, setAgreeFlag, agree, setPopflag, setlang, setFlagp, setFlagp2 } = props
+    const { type, setAgreeFlag, agree, setPopflag, setlang, setFlagp, setFlagp2, radioLang } = props
     const [applicantName, setApplicantName] = useState('')
     const [individualName, setIndividualName] = useState('')
     const [individualPhone, setIndividualPhone] = useState('')
@@ -401,11 +412,11 @@ function Corporations(props) {
             setBtn(false)
         }
 
-    }, [applicantName, individualName, organization, individualPhone, individualEmail, individualAddress, individualpname, individualPurpose, agree, flag])
+    }, [applicantName, individualName, organization, individualPhone, individualEmail, individualAddress, individualpname, individualPurpose, agree, flag, radioLang])
 
     const handleSubmit = (event) => {
         event.preventDefault();
-
+        setBtn(false)
         let forms = new FormData()
         forms.append('file', individualFile)
         axios.post('https://cv180.submit.rv64.org/api/v1/file/upload/', forms).then((fileRes) => {
@@ -420,18 +431,22 @@ function Corporations(props) {
                 "project_details": individualPurpose,
                 "business_registration_number": organization,
                 'identity_proof': fileRes.data.file_id,
+                'doc_lang': radioLang,
             }, {
                 headers: {
                     'Content-Type': 'application/json',
                 }
             }).then(res => {
                 setFlagp(true)
+                setBtn(true)
             }).catch(err => {
                 setFlagp2(true)
+                setBtn(true)
             })
 
         }).catch(flieErr => {
-
+            setFlagp2(true)
+            setBtn(true)
         })
 
 
@@ -500,17 +515,17 @@ function Corporations(props) {
                     <p style={{ display: `${!flag ? 'block' : 'none'}` }} >*File size limit is 1mb, format is png / jpg / webp / pdf</p>
                 </div>
                 <input type="file" id="upload" required onChange={handleFileChange} className={styles.upload} />
-                <p onClick={() => {
+                <p style={{ display: `${radioLang === 'CN' ? 'block' : radioLang === 'EN' ? 'none' : null}` }} onClick={() => {
                     setPopflag(true);
                     setlang('zh')
                 }}>《CV1800B手册保密条款》</p>
-                <p onClick={() => {
+                <p style={{ display: `${radioLang === 'EN' ? 'block' : radioLang === 'CN' ? 'none' : null}` }} onClick={() => {
                     setPopflag(true);
                     setlang('en')
                 }}>“CV1800B Manual Confidentiality Clause”</p>
                 <label className={styles.terms}>
                     <input type="radio" className={styles.square} required checked={agree} onChange={() => { }} onClick={() => { setAgreeFlag(s => !s) }} />
-                    <span>我同意并遵守以上条款 <br style={{ display: 'none' }}></br> I agree and abide by the above terms</span>
+                    <span>{radioLang === 'CN' ? "我同意并遵守以上条款" : "I agree and abide by the above terms"}</span>
                 </label>
                 <button type='submit' style={btn ? style : { cursor: 'not-allowed' }} disabled={btn ? false : true}>Submit</button>
             </form>
@@ -525,11 +540,23 @@ export default () => {
     const [agreeFlag, setAgreeFlag] = useState(false)
     const [flag, setFlag] = useState(false)
     const [flag2, setFlag2] = useState(false)
+    const [radioLang, setRadioLang] = useState('EN')
 
 
     const handleOptionChange = (event) => {
         setRadioValue(event.target.value);
     }
+    const radioLangChange = (e) => {
+        setRadioLang(e.target.value)
+    }
+    useEffect(() => {
+        if (flag || flag2) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = 'auto'
+        }
+    }, [flag, flag2])
+
 
     return (
         <>
@@ -558,10 +585,25 @@ export default () => {
                             </div>
                         </div>
                     </div>
+                    <div className={styles.radioForm}>
+                        <div className={styles.contentBox}>
+                            <h1>Select the language of the document (Chinese or English)</h1>
+                            <div className={styles.labelBox}>
+                                <label>
+                                    <input type="radio" name="lang" value='CN' checked={radioLang === 'CN'} onChange={radioLangChange} />
+                                    <span>中文</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="lang" value='EN' checked={radioLang === 'EN'} onChange={radioLangChange} />
+                                    <span>Englishs</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                     <div className={styles.infoBox}>
                         <h1>You need to fill in the following relevant information</h1>
                         {
-                            radioValue === 'Individual' ? <Individual setFlagp={setFlag} setFlagp2={setFlag2} agree={agreeFlag} setlang={setLang} type='individual' setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} /> : radioValue === 'Schools' ? <Schools setlang={setLang} setFlagp={setFlag} setFlagp2={setFlag2} type='school_or_research_institution' agree={agreeFlag} setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} /> : radioValue === 'Corporations' ? <Corporations setFlagp={setFlag} setFlagp2={setFlag2} setlang={setLang} agree={agreeFlag} type='profit_organization_or_corporations' setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} /> : null
+                            radioValue === 'Individual' ? <Individual setFlagp={setFlag} setFlagp2={setFlag2} agree={agreeFlag} setlang={setLang} type='individual' setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} radioLang={radioLang} setRadioLang={setRadioLang} /> : radioValue === 'Schools' ? <Schools setlang={setLang} setFlagp={setFlag} setFlagp2={setFlag2} type='school_or_research_institution' agree={agreeFlag} setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} radioLang={radioLang} setRadioLang={setRadioLang} /> : radioValue === 'Corporations' ? <Corporations setFlagp={setFlag} setFlagp2={setFlag2} setlang={setLang} agree={agreeFlag} type='profit_organization_or_corporations' setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} radioLang={radioLang} setRadioLang={setRadioLang} /> : null
                         }
                     </div>
                 </div>
