@@ -21,7 +21,7 @@ const style = {
 
 // 个人
 function Individual(props) {
-    const { type, setAgreeFlag, agree, setPopflag, setlang, setFlagp, radioLang, } = props
+    const { type, setAgreeFlag, agree, setPopflag, setlang, setFlagp, radioLang, setFlagp2 } = props
     const [individualName, setIndividualName] = useState('')
     const [individualPhone, setIndividualPhone] = useState('')
     const [individualEmail, setIndividualEmail] = useState('')
@@ -90,14 +90,17 @@ function Individual(props) {
                     'Content-Type': 'application/json',
                 }
             }).then(res => {
+                console.log(res);
                 setFlagp(true)
                 setBtn(true)
             }).catch(err => {
-                setFlagp(true)
+                console.log(err);
+                setFlagp2(true)
                 setBtn(true)
             })
         }).catch(flieErr => {
-            setFlagp(true)
+            console.log(flieErr);
+            setFlagp2(true)
             setBtn(true)
         })
     }
