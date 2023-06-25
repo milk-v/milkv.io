@@ -2,7 +2,9 @@ import React, { useState, useRef } from 'react';
 import Layout from '@theme/Layout';
 import Head from "../../components/Head"
 import ContactUs from "../../components/ContactUs"
+import PopUp from "../../components/Popup"
 import Link from '@docusaurus/Link';
+import Footer from "../../components/Footer"
 import cssList from "./details.module.css"
 
 function DetailsPage() {
@@ -205,6 +207,8 @@ export default function () {
     <>
       <Layout>
         <DetailsPage></DetailsPage>
+        <PopUp></PopUp>
+        <Footer></Footer>
       </Layout>
     </>
   )

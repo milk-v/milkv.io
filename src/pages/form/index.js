@@ -83,7 +83,6 @@ export default () => {
                         <label>
                             <div><span className={styles.red}>*</span>Hardware :</div>
                             <select id="contact-method" name="contact-method" value={description2} onChange={contactChange} >
-                                <option value=""></option>
                                 <option value="DUO">Duo</option>
                                 <option value="Pioneer">Pioneer</option>
                                 <option value="Mars">Mars</option>

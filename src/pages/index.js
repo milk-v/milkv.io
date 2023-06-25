@@ -5,6 +5,9 @@ import { Carousel } from 'antd';
 
 import styles from './index.module.css';
 import Head from "../components/Head"
+import PopUp from "../components/Popup"
+import Footer from "../components/Footer"
+import ContactUs from "../components/ContactUs"
 
 function HomepageHeader() {
   const [duo, setDuo] = useState(false)
@@ -220,6 +223,8 @@ export default function Home() {
     <>
       <Layout>
         <HomepageHeader />
+        <PopUp></PopUp>
+        <Footer></Footer>
       </Layout>
     </>
   );

@@ -1,0 +1,228 @@
+.agreement {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 101;
+}
+
+.popBox {
+    background-color: #fff;
+    position: relative;
+}
+
+.popBox>h1 {
+    font-weight: 400;
+    line-height: 120%;
+    color: #000000;
+}
+
+.popBox>img {
+    position: absolute;
+    cursor: pointer;
+}
+
+.cBox {
+    width: 100%;
+    overflow-y: auto;
+}
+
+.cBox>h1 {
+    font-weight: 700;
+    line-height: 120%;
+    color: #000000;
+}
+
+.cBox>h2 {
+    font-weight: 600;
+    line-height: 120%;
+    color: #000000;
+}
+
+.cBox>p {
+    font-weight: 400;
+    line-height: 120%;
+    color: #333333;
+}
+
+.marginBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.marginBox>span {
+    font-weight: 500;
+    line-height: 120%;
+    font-weight: 700;
+    color: #000000;
+}
+
+@media screen and (min-width: 1500px) {
+    .popBox {
+        width: 1000px;
+        padding: 20px 30px;
+    }
+
+    .popBox>h1 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .popBox>img {
+        width: 50px;
+        height: 50px;
+        top: 20px;
+        right: 30px;
+    }
+
+    .cBox {
+        height: 800px;
+        margin-top: 100px;
+    }
+
+    .cBox>h1 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .cBox>h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .cBox>p {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .marginBox {
+        margin-top: 100px;
+    }
+
+
+    .marginBox>span {
+        font-size: 22px;
+        margin-left: 20px;
+    }
+
+    .square {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media screen and (max-width: 1500px) and (min-width: 750px) {
+    .popBox {
+        width: 700px;
+        height: 800px;
+        padding: 20px 30px;
+    }
+
+    .popBox>h1 {
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+    .popBox>img {
+        width: 40px;
+        height: 40px;
+        top: 20px;
+        right: 30px;
+    }
+
+    .cBox {
+        height: 550px;
+        margin-top: 50px;
+    }
+
+    .cBox>h1 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .cBox>h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .cBox>p {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .marginBox {
+        margin-top: 30px;
+    }
+
+
+    .marginBox>span {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .square {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .popBox {
+        width: 100%;
+        height: 100%;
+        padding: 20rem 30rem;
+    }
+
+    .popBox>h1 {
+        font-size: 14rem;
+        margin-top: 40rem;
+    }
+
+    .popBox>img {
+        width: 30rem;
+        height: 30rem;
+        top: 20rem;
+        right: 30rem;
+    }
+
+    .cBox {
+        height: 500rem;
+        margin-top: 50rem;
+    }
+
+    .cBox>h1 {
+        font-size: 20rem;
+        margin-bottom: 30rem;
+    }
+
+    .cBox>h2 {
+        font-size: 16rem;
+        margin-bottom: 15rem;
+    }
+
+    .cBox>p {
+        font-size: 14rem;
+        margin-bottom: 50rem;
+    }
+
+    .marginBox {
+        margin-top: 30rem;
+    }
+
+
+    .marginBox>span {
+        font-size: 15rem;
+        margin-left: 10rem;
+    }
+
+    .square {
+        width: 20rem;
+        height: 20rem;
+    }
+}

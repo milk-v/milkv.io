@@ -3,6 +3,8 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Head from "../../components/Head"
 import ContactUs from "../../components/ContactUs"
+import PopUp from "../../components/Popup"
+import Footer from "../../components/Footer"
 
 import styles from './index.module.css';
 
@@ -16,6 +18,7 @@ export default () => {
 
     return (
         <Layout>
+            <PopUp></PopUp>
             <Head flag={mars2} module={mars2Start} type='mars' />
             <div className={styles.marsBox}>
                 <div className={styles.headImage}>
@@ -180,6 +183,7 @@ export default () => {
                     <h1 className={styles.risc_v}>Let's make RISC-V better together.</h1>
                 </div>
             </div>
+            <Footer></Footer>
         </Layout>
     )
 }

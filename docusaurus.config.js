@@ -42,6 +42,11 @@ const config = {
 
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+        },
+      },
       algolia: {
         // The application ID provided by Algolia
         appId: '367OH7GCEI',
@@ -127,20 +132,6 @@ const config = {
                 docId: 'mars/mars',
               },
             ],
-          },
-        ],
-      },
-      footer: {
-        style: 'light',
-        links: [
-          {
-            html: `<div class="footer_text">
-              <div class='footer_logo'></div>
-              <div class='text_right'>
-                <h2>MilkV Technology</h2>
-                <h2>Email: support@milkv.io</h2>
-              </div>
-            </div>`
           },
         ],
       },

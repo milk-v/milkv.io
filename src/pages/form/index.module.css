@@ -565,7 +565,6 @@ select:focus {
     }
 }
 
-
 @media screen and (max-width: 750px) {
     .formBox {
         width: 340rem;

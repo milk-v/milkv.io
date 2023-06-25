@@ -4,6 +4,8 @@ import Head from "../../components/Head"
 import Link from '@docusaurus/Link';
 import ContactUs from "../../components/ContactUs"
 import cCss from "./center.module.css"
+import PopUp from "../../components/Popup"
+import Footer from "../../components/Footer"
 
 function Center() {
   const [pionner, setPionner] = useState(false)
@@ -228,6 +230,8 @@ export default function () {
     <>
       <Layout>
         <Center></Center>
+        <PopUp></PopUp>
+        <Footer></Footer>
       </Layout>
     </>
   )

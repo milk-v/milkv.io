@@ -95,6 +95,7 @@ li {
 
 /* footer */
 .footer {
+  display: none;
   width: 100%;
   height: 12.375rem;
   position: relative;

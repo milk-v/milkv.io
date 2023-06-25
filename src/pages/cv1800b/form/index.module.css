@@ -1,0 +1,927 @@
+.cv1800b {
+    width: 100%;
+    height: 100%;
+    background-color: #2d88c9;
+    overflow: hidden;
+}
+
+.cv1800b>h1 {
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.radioForm,
+.infoBox {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.radioForm h1,
+.infoBox>h1,
+.docLangH1 {
+    font-weight: 500;
+    line-height: 120%;
+    color: #2D88C9;
+    text-align: center;
+}
+
+
+.labelBox>label input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #2D88C9;
+    border-radius: 50%;
+}
+
+.inputBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoForm label input,
+
+.labelBox>label input[type="text"] {
+    width: 100%;
+    outline: none;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1.5px solid #ccc;
+    border-radius: 0;
+    font-family: normal;
+}
+
+.infoForm label textarea {
+    font-family: normal;
+    border-radius: 0;
+}
+
+.infoForm label textarea ::placeholder {
+    font-family: normal;
+}
+
+.labelBox>label input[type="radio"]:checked {
+    background-color: #2D88C9;
+}
+
+.labelBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelBox>label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelBox>label span {
+    color: #2D88C9;
+}
+
+.infoForm>.terms {
+    justify-content: center;
+}
+
+.infoForm>label,
+.flexBox {
+    display: flex;
+    align-items: center;
+}
+
+.infoForm>.valuered {
+    flex-direction: column;
+}
+
+.infoForm>.valuered>p {
+    margin: 0;
+    color: red;
+    font-size: 16px;
+}
+
+.infoForm>.terms>span {
+    width: auto;
+}
+
+.infoForm label span,
+.flexBox>span {
+    font-weight: 500;
+    line-height: 120%;
+    color: #2D88C9;
+}
+
+.infoForm p {
+    text-align: center;
+    color: #2D88C9;
+    font-weight: 500;
+    margin: 0;
+    cursor: pointer;
+}
+
+.infoForm p:hover {
+    text-decoration: underline;
+}
+
+.infoForm>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7A8F9E;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+.flexBox>label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoForm>.upload {
+    display: none;
+}
+
+.flexBox>label {
+    background-color: #7A8F9E;
+    color: #fff;
+    cursor: pointer;
+    width: auto !important;
+    margin: 0 !important;
+}
+
+.flexBox>p {
+    color: red;
+}
+
+.pop,
+.pop2 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.popBox {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.pop2>.popBox>h1 {
+    color: rgb(220, 55, 55);
+}
+
+.pop2>.popBox>.ok {
+    background-color: rgb(63, 100, 114);
+}
+
+.popBox>h1 {
+    font-size: 44px;
+    color: #2D88C9;
+    margin: 50px auto 30px;
+    line-height: 120%;
+    font-weight: 600;
+    text-align: center;
+}
+
+.popBox>p {
+    font-size: 22px;
+    line-height: 120%;
+    color: #767676;
+    text-align: center;
+    font-weight: 400;
+}
+
+.popBox>h1>span {
+    font-size: 48px;
+}
+
+.ok {
+    width: 150px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d88c9;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.typeLang {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.typeLang>input {
+    cursor: pointer;
+}
+
+.flexDoc {
+    margin: 0 auto;
+    display: flex;
+}
+
+@media screen and (min-width: 1500px) {
+    .cv1800b {
+        padding-bottom: 200px;
+    }
+
+    .contentBox {
+        width: 1200px;
+        margin: 40px auto;
+    }
+
+    .cv1800b>h1 {
+        font-size: 58px;
+        margin: 100px 0 50px;
+    }
+
+    .labelBox>label {
+        margin-right: 50px;
+    }
+
+    .radioForm,
+    .infoBox {
+        width: 1440px;
+        margin: 0 auto 25px;
+    }
+
+    .radioForm h1 {
+        font-size: 39px;
+        margin: 40px 0 25px;
+    }
+
+    .infoBox>h1,
+    .docLangH1 {
+        font-size: 39px;
+        margin-bottom: 40px;
+    }
+
+    .labelBox>label input[type="radio"] {
+        width: 25px;
+        height: 25px;
+        border: 1px solid #2D88C9;
+        margin-right: 10px;
+    }
+
+    .infoForm>.terms>input[type="radio"] {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #2D88C9;
+        margin-right: 10px;
+    }
+
+    .labelBox>label span {
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    .infoBox {
+        padding: 50px 0;
+    }
+
+    .infoForm label,
+    .flexBox {
+        width: 1200px;
+        margin: 0 auto 50px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .inputBox {
+        width: 1200px;
+    }
+
+    .infoForm label span,
+    .flexBox>span {
+        font-size: 24px;
+        width: 400px;
+    }
+
+    .infoForm label input,
+    .infoForm label input {
+        height: 65px;
+        padding: 0 10px;
+        font-size: 24px;
+    }
+
+    .infoForm label input[type='file'] {
+        width: 200px;
+        font-size: 18px;
+        height: 50px;
+        padding: 10px 0;
+        border-radius: 0;
+        background-color: #fff;
+        border: none;
+    }
+
+
+    .infoForm p {
+        font-size: 22px;
+    }
+
+    .infoForm>.terms {
+        margin-top: 10px;
+        border-bottom: none;
+    }
+
+    .infoForm>button {
+        width: 350px;
+        height: 60px;
+        border-radius: 50px;
+        font-size: 22px;
+        margin: 0 auto 50px;
+    }
+
+    .infoForm>.terms>span {
+        font-size: 22px;
+    }
+
+    .flexBox>label {
+        padding: 5px 5px;
+        font-size: 16px;
+    }
+
+    .flexBox>img {
+        width: 30px;
+        margin-left: 20px;
+    }
+
+    .flexBox>span {
+        min-width: 500px !important;
+        margin-right: 20px;
+    }
+
+    .flexBox>p {
+        margin: 0 0 0 10px;
+    }
+
+    .typeLang>input {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+    }
+
+    .flexDoc {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1050px) {
+    .cv1800b {
+        padding-bottom: 200px;
+    }
+
+    .cv1800b>h1 {
+        font-size: 48px;
+        margin: 100px 0 50px;
+    }
+
+    .labelBox>label {
+        margin-right: 30px;
+    }
+
+    .contentBox {
+        width: 900px;
+        margin: 40px auto;
+    }
+
+    .radioForm,
+    .infoBox {
+        width: 1000px;
+        margin: 0 auto 25px;
+    }
+
+    .radioForm h1 {
+        font-size: 29px;
+        margin: 20px 0 25px;
+    }
+
+    .infoBox>h1 {
+        font-size: 29px;
+        margin-bottom: 40px;
+    }
+
+    .labelBox>label input[type="radio"] {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #2D88C9;
+        margin-right: 10px;
+    }
+
+    .infoForm>.terms>input[type="radio"] {
+        width: 25px;
+        height: 25px;
+        border: 1px solid #2D88C9;
+        margin-right: 10px;
+    }
+
+    .labelBox>label span {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .infoBox {
+        padding: 50px 0;
+    }
+
+    .infoForm label,
+    .flexBox {
+        width: 900px;
+        margin: 0 auto 50px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .infoForm>.valuered>p {
+        margin: 0;
+        color: red;
+        font-size: 14px;
+    }
+
+    .inputBox {
+        width: 900px;
+    }
+
+    .infoForm label span,
+    .flexBox>span {
+        font-size: 18px;
+        width: 350px;
+    }
+
+    .infoForm label input,
+    .infoForm label input {
+        height: 55px;
+        padding: 0 10px;
+        font-size: 18px;
+    }
+
+    .infoForm label input[type='file'] {
+        font-size: 16px;
+        border: none;
+    }
+
+    .infoForm label textarea {
+        font-size: 16px;
+    }
+
+
+    .infoForm p {
+        font-size: 16px;
+    }
+
+    .infoForm>.terms {
+        margin-top: 10px;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .infoForm>button {
+        width: 280px;
+        height: 60px;
+        border-radius: 50px;
+        font-size: 20px;
+        margin: 0 auto 50px;
+    }
+
+    .infoForm>.terms>span {
+        font-size: 18px;
+    }
+
+    .flexBox>label {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .flexBox>img {
+        width: 30px;
+        margin-left: 20px;
+    }
+
+    .flexBox>span {
+        min-width: 300px !important;
+        margin-right: 20px;
+    }
+
+    .flexBox>p {
+        font-size: 12px;
+        margin: 0 0 0 10px;
+    }
+
+    .typeLang>input {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .flexDoc {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 750px) {
+    .cv1800b {
+        padding-bottom: 200px;
+    }
+
+    .cv1800b>h1 {
+        font-size: 38px;
+        margin: 80px 0 50px;
+    }
+
+    .labelBox>label {
+        margin-right: 10px;
+    }
+
+    .contentBox {
+        width: 700px;
+        margin: 30px auto;
+    }
+
+    .radioForm,
+    .infoBox {
+        width: 740px;
+        margin: 0 auto 25px;
+    }
+
+    .radioForm h1 {
+        font-size: 20px;
+        margin: 10px 0 10px;
+    }
+
+    .infoBox>h1,
+    .docLangH1 {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .labelBox>label input[type="radio"] {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #2D88C9;
+        margin-right: 10px;
+    }
+
+    .infoForm>.terms>input[type="radio"] {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #2D88C9;
+        margin-right: 10px;
+    }
+
+    .labelBox>label span {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .infoBox {
+        padding: 40px 0;
+    }
+
+    .infoForm label,
+    .flexBox {
+        width: 700px;
+        margin: 0 auto 50px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .infoForm>.valuered>p {
+        margin: 0;
+        color: red;
+        font-size: 14px;
+    }
+
+    .inputBox {
+        width: 700px;
+    }
+
+    .infoForm label span,
+    .flexBox>span {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .infoForm label input,
+    .infoForm label input {
+        height: 45px;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .infoForm label input[type='file'] {
+        font-size: 14px;
+        border: none;
+    }
+
+    .docLangH1 {
+        margin-bottom: 10px;
+    }
+
+    .infoForm label textarea {
+        font-size: 14px;
+    }
+
+    .infoForm p {
+        font-size: 14px;
+    }
+
+    .infoForm>.terms {
+        border-bottom: none;
+        margin-top: 10px;
+        padding-bottom: 0;
+    }
+
+    .infoForm>button {
+        width: 200px;
+        height: 50px;
+        border-radius: 50px;
+        font-size: 18px;
+        margin: 0 auto 30px;
+    }
+
+    .infoForm>.terms>span {
+        font-size: 16px;
+    }
+
+    .flexBox>label {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .flexBox>img {
+        width: 30px;
+        margin-left: 20px;
+    }
+
+    .flexBox>span {
+        min-width: 200px !important;
+        margin-right: 20px;
+    }
+
+    .flexBox>p {
+        font-size: 12px;
+        margin: 0 0 0 10px;
+    }
+
+    .typeLang>input {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+
+    .flexDoc {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .flexDoc {
+        flex-direction: column;
+    }
+
+    .labelBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .labelBox>label {
+        margin-bottom: 10rem;
+    }
+
+    .infoForm>label,
+    .flexBox {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .inputBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .cv1800b {
+        padding-bottom: 50rem;
+    }
+
+    .cv1800b>h1 {
+        font-size: 28rem;
+        margin: 50rem 0;
+    }
+
+    .contentBox {
+        width: 340rem;
+        margin: 20rem auto;
+    }
+
+    .radioForm,
+    .infoBox {
+        width: 350rem;
+        margin: 0 auto 25rem;
+    }
+
+    .radioForm h1 {
+        font-size: 18rem;
+        margin: 10rem 0;
+    }
+
+    .infoBox>h1,
+    .docLangH1 {
+        font-size: 18rem;
+        margin-bottom: 20rem;
+    }
+
+    .labelBox>label input[type="radio"] {
+        width: 20rem;
+        height: 20rem;
+        border: 1rem solid #2D88C9;
+        margin-right: 10rem;
+    }
+
+    .infoForm>.terms>input[type="radio"] {
+        width: 20rem;
+        height: 20rem;
+        border: 1rem solid #2D88C9;
+        margin-right: 10rem;
+    }
+
+    .infoForm>.terms>span {
+        margin: 0;
+    }
+
+    .labelBox>label span {
+        font-weight: 500;
+        font-size: 14rem;
+    }
+
+    .infoBox {
+        padding: 40rem 0;
+    }
+
+    .infoForm label,
+    .flexBox {
+        width: 340rem;
+        margin: 0 auto 20rem;
+        padding-bottom: 20rem;
+        border-bottom: 1rem solid #ccc;
+    }
+
+    .infoForm>.valuered>p {
+        margin: 0;
+        color: red;
+        font-size: 14rem;
+    }
+
+    .inputBox {
+        width: 340rem;
+    }
+
+    .infoForm label span,
+    .flexBox>span {
+        font-size: 14rem;
+        margin-bottom: 5rem;
+    }
+
+    .infoForm label input,
+    .infoForm label input {
+        height: 45rem;
+        padding: 0 10rem;
+        font-size: 14rem;
+    }
+
+    .infoForm label input[type='file'] {
+        font-size: 14rem;
+        border: none;
+    }
+
+    .infoForm label textarea {
+        font-size: 14rem;
+    }
+
+
+    .infoForm p {
+        font-size: 14rem;
+    }
+
+    .infoForm>.terms {
+        margin-top: 20rem;
+        border-bottom: none;
+    }
+
+    .infoForm>button {
+        width: 200rem;
+        height: 50rem;
+        border-radius: 50rem;
+        font-size: 18rem;
+        margin: 0 auto 20rem;
+    }
+
+    .infoForm>.terms>span {
+        font-size: 12rem;
+    }
+
+    .infoForm>.terms {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .infoForm>.terms>span>br {
+        display: block !important;
+    }
+
+    .flexBox>label {
+        padding: 0rem 10rem;
+        font-size: 14rem;
+        height: 40rem;
+    }
+
+    .flexBox>img {
+        width: 30rem;
+        margin-left: 20rem;
+    }
+
+    .flexBox>span {
+        min-width: 200rem !important;
+        margin-right: 20rem;
+    }
+
+    .flexBox>p {
+        font-size: 12rem;
+    }
+
+    .pop {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, .4);
+    }
+
+    .popBox {
+        width: 340rem;
+        background-color: #fff;
+        border-radius: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    .popBox>h1 {
+        font-size: 28rem;
+        color: #242424;
+        margin: 50rem auto 30rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .popBox>p {
+        font-size: 18rem;
+        line-height: 120%;
+        margin-bottom: 40rem;
+        color: #767676;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .popBox>h1>span {
+        font-size: 48rem;
+    }
+
+    .ok {
+        width: 150rem;
+        margin: 0 auto;
+        padding: 0rem 10rem;
+        font-size: 26rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #2d88c9;
+        color: #fff;
+        border-radius: 10rem;
+        cursor: pointer;
+    }
+}
