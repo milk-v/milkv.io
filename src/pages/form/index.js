@@ -18,18 +18,23 @@ export default () => {
     const [flag, setFlag] = useState(false)
     const [flag2, setFlag2] = useState(false)
 
+    const [formBtn, setFormBtn] = useState(false)
+
     const contactChange = (event) => {
         setDescription2(event.target.value);
     };
     const handleSubmit = (event) => {
         event.preventDefault();
+        setFormBtn(true)
 
         axios.get(`https://submit-form.com/0h0Ruc2s?name=${userName}&email=${userEmail}&Description=${description}&Project=${project}&Hardware =${description2}&Phone=${phone}&Organization=${organization}&Website=${web}&Country=${county}&Shipping=${address}`)
             .then((response) => {
                 setFlag(true)
+                setFormBtn(false)
             })
             .catch((error) => {
                 setFlag2(true)
+                setFormBtn(false)
             });
     };
     useEffect(() => {
@@ -57,7 +62,7 @@ export default () => {
                             </label>
                             <label>
                                 <div> <span className={styles.red}>*</span> Email Address :</div>
-                                <input type="text" value={userEmail} onChange={(e) => setUserEmail(e.target.value)} required placeholder='Your Email Address' />
+                                <input type="email" value={userEmail} onChange={(e) => setUserEmail(e.target.value)} required placeholder='Your Email Address' />
                             </label>
                         </div>
                         <div className={styles.inpBox2}>
@@ -113,7 +118,7 @@ export default () => {
                         </label>
                         <p>Please note that your shipping address will be used solely for the purpose of delivering the donated hardware. We value your privacy and will handle your information with utmost care.</p>
                     </div>
-                    <button type="submit" className={styles.formBtn}>Send</button>
+                    <button type="submit" className={styles.formBtn} disabled={formBtn} >Send</button>
                 </form>
             </div>
             <div className={styles.pop} style={{ display: `${flag ? "flex" : 'none'}` }}>

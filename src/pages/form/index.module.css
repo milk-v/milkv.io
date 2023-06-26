@@ -56,7 +56,7 @@ select:focus {
 }
 
 .formBtn:hover {
-    color: #2c2c2c;
+    background-color: rgba(60, 55, 55, 0.8);
 }
 
 .pop {

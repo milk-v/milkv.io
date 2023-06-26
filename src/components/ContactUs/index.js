@@ -13,6 +13,7 @@ export default (props) => {
     const [flag, setFlag] = useState(false)
     const [flag2, setFlag2] = useState(false)
 
+    const [formBtn, setFormBtn] = useState(false)
 
     useEffect(() => {
         if (flag) {
@@ -25,13 +26,15 @@ export default (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-
+        setFormBtn(true)
         axios.get(`https://submit-form.com/FKfGJJEG?product=${product}&name=${userName}&email=${userEmail}&subject=${subject}&message=${message}`)
             .then((response) => {
                 setFlag(true)
+                setFormBtn(false)
             })
             .catch((error) => {
                 setFlag2(true)
+                setFormBtn(false)
             });
     };
 
@@ -70,7 +73,7 @@ export default (props) => {
                                 <p>Message</p>
                                 <textarea type="text" value={message} onChange={(e) => setMessage(e.target.value)} required />
                             </label>
-                            <button type="submit" className={styles.touchBtn}>Send</button>
+                            <button type="submit" className={styles.touchBtn} disabled={formBtn} >Send</button>
                         </form>
                     </div>
                 </div>
