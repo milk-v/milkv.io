@@ -316,6 +316,14 @@
         width: 400px;
     }
 
+    .infoForm p {
+        font-size: 22px;
+    }
+
+    .flexBox>p {
+        font-size: 18px;
+    }
+
     .infoForm label input,
     .infoForm label input {
         height: 65px;
@@ -333,10 +341,6 @@
         border: none;
     }
 
-
-    .infoForm p {
-        font-size: 22px;
-    }
 
     .infoForm>.terms {
         margin-top: 10px;
@@ -644,6 +648,10 @@
         font-size: 14px;
     }
 
+    .flexBox>p {
+        font-size: 12px;
+    }
+
     .infoForm>.terms {
         border-bottom: none;
         margin-top: 10px;
@@ -824,6 +832,10 @@
 
     .infoForm p {
         font-size: 14rem;
+    }
+
+    .flexBox>p {
+        font-size: 10rem !important;
     }
 
     .infoForm>.terms {

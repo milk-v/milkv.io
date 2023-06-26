@@ -135,11 +135,11 @@ function Individual(props) {
                     ></textarea>
                 </label>
                 <div className={styles.flexBox}>
-                    <span><span style={{ color: 'red' }}>*</span>Proof of applicant's identity:
+                    <span><span style={{ color: 'red' }}>*</span>Proof of identity:
                         <br></br>(ID card, work card, business card, etc.)</span>
                     <label htmlFor='upload'>{upload}</label>
                     <img src="/form/response.svg" style={{ display: `${flag ? 'block' : 'none'}` }} />
-                    <p style={{ display: `${!flag ? 'block' : 'none'}` }} >*File size limit is 1mb, format is png / jpg / webp / pdf</p>
+                    <p style={{ display: `${!flag ? 'block' : 'none'}`, color: 'red' }} >*File size limit: 1 MB. Accepted formats: png, jpg, webp, pdf</p>
                 </div>
                 <input type="file" id="upload" required onChange={handleFileChange} className={styles.upload} />
                 <p style={{ display: `${radioLang === 'CN' ? 'block' : radioLang === 'EN' ? 'none' : null}` }} onClick={() => {
@@ -152,7 +152,7 @@ function Individual(props) {
                 }}>“CV1800B Manual Confidentiality Clause”</p>
                 <label className={styles.terms}>
                     <input type="radio" className={styles.square} required checked={agree} onChange={() => { }} onClick={() => { setAgreeFlag(s => !s) }} />
-                    <span>{radioLang === 'CN' ? "我同意并遵守以上条款" : "I agree and abide by the above terms"}</span>
+                    <span>{radioLang === 'CN' ? "我同意并遵守以上条款" : "I agree to and will abide by the terms above"}</span>
                 </label>
                 <button type='submit' style={btn ? style : { cursor: 'not-allowed' }} disabled={btn ? false : true}>Submit</button>
             </form>
@@ -326,17 +326,17 @@ function Schools(props) {
                     ></textarea>
                 </label>
                 <div className={styles.flexBox}>
-                    <span><span style={{ color: 'red' }}>*</span>Proof of applicant's identity:
+                    <span><span style={{ color: 'red' }}>*</span>Proof of identity:
                         <br></br>(ID card, work card, business card, etc.)</span>
                     <label htmlFor='upload'>{upload}</label>
                     <img src="/form/response.svg" style={{ display: `${flag ? 'block' : 'none'}` }} />
-                    <p style={{ display: `${!flag ? 'block' : 'none'}` }} >*File size limit is 1mb, format is png / jpg / webp / pdf</p>
+                    <p style={{ display: `${!flag ? 'block' : 'none'}`, color: 'red' }} >*File size limit: 1 MB. Accepted formats: png, jpg, webp, pdf</p>
                 </div>
                 <div className={styles.flexBox}>
                     <span><span style={{ color: 'red' }}>*</span>Organizational Certification:<br></br>(Authorization letter, photo of office location, work card, etc.)</span>
                     <label htmlFor='upload2'>{upload2}</label>
                     <img src="/form/response.svg" style={{ display: `${flag2 ? 'block' : 'none'}` }} />
-                    <p style={{ display: `${!flag2 ? 'block' : 'none'}` }} >*File size limit is 1mb, format is png / jpg / webp / pdf</p>
+                    <p style={{ display: `${!flag2 ? 'block' : 'none'}`, color: 'red' }} >*File size limit: 1 MB. Accepted formats: png, jpg, webp, pdf</p>
                 </div>
                 <input type="file" id="upload" required onChange={handleFileChange} className={styles.upload} />
                 <input type="file" id="upload2" required onChange={handleFileChange2} className={styles.upload} />
@@ -350,7 +350,7 @@ function Schools(props) {
                 }}>“CV1800B Manual Confidentiality Clause”</p>
                 <label className={styles.terms}>
                     <input type="radio" className={styles.square} required checked={agree} onChange={() => { }} onClick={() => { setAgreeFlag(s => !s) }} />
-                    <span>{radioLang === 'CN' ? "我同意并遵守以上条款" : "I agree and abide by the above terms"}</span>
+                    <span>{radioLang === 'CN' ? "我同意并遵守以上条款" : "I agree to and will abide by the terms above"}</span>
                 </label>
                 <button type='submit' style={btn ? style : { cursor: 'not-allowed' }} disabled={btn ? false : true} >Submit</button>
             </form>
@@ -509,10 +509,10 @@ function Corporations(props) {
                     ></textarea>
                 </label>
                 <div className={styles.flexBox}>
-                    <span><span style={{ color: 'red' }}>*</span>Proof of applicant's identity:<br></br>(work card, business card, etc.)</span>
+                    <span><span style={{ color: 'red' }}>*</span>Proof of identity:<br></br>(work card, business card, etc.)</span>
                     <label htmlFor='upload'>{upload}</label>
                     <img src="/form/response.svg" style={{ display: `${flag ? 'block' : 'none'}` }} />
-                    <p style={{ display: `${!flag ? 'block' : 'none'}` }} >*File size limit is 1mb, format is png / jpg / webp / pdf</p>
+                    <p style={{ display: `${!flag ? 'block' : 'none'}`, color: 'red' }} >*File size limit: 1 MB. Accepted formats: png, jpg, webp, pdf</p>
                 </div>
                 <input type="file" id="upload" required onChange={handleFileChange} className={styles.upload} />
                 <p style={{ display: `${radioLang === 'CN' ? 'block' : radioLang === 'EN' ? 'none' : null}` }} onClick={() => {
@@ -525,7 +525,7 @@ function Corporations(props) {
                 }}>“CV1800B Manual Confidentiality Clause”</p>
                 <label className={styles.terms}>
                     <input type="radio" className={styles.square} required checked={agree} onChange={() => { }} onClick={() => { setAgreeFlag(s => !s) }} />
-                    <span>{radioLang === 'CN' ? "我同意并遵守以上条款" : "I agree and abide by the above terms"}</span>
+                    <span>{radioLang === 'CN' ? "我同意并遵守以上条款" : "I agree to and will abide by the terms above"}</span>
                 </label>
                 <button type='submit' style={btn ? style : { cursor: 'not-allowed' }} disabled={btn ? false : true}>Submit</button>
             </form>
@@ -562,7 +562,7 @@ export default () => {
         <>
             <Layout>
                 <div className={styles.cv1800b}>
-                    <h1>Get the complete CV1800B chip manual</h1>
+                    <h1>CV1800B Manual Confidentiality Agreement</h1>
                     <div className={styles.radioForm}>
                         <div className={styles.contentBox}>
                             <h1>Select Your Applicant Type</h1>
@@ -595,13 +595,13 @@ export default () => {
                                 </label>
                                 <label>
                                     <input type="radio" name="lang" value='EN' checked={radioLang === 'EN'} onChange={radioLangChange} />
-                                    <span>Englishs</span>
+                                    <span>English</span>
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div className={styles.infoBox}>
-                        <h1>You need to fill in the following relevant information</h1>
+                        <h1>Please fill in the following information</h1>
                         {
                             radioValue === 'Individual' ? <Individual setFlagp={setFlag} setFlagp2={setFlag2} agree={agreeFlag} setlang={setLang} type='individual' setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} radioLang={radioLang} setRadioLang={setRadioLang} /> : radioValue === 'Schools' ? <Schools setlang={setLang} setFlagp={setFlag} setFlagp2={setFlag2} type='school_or_research_institution' agree={agreeFlag} setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} radioLang={radioLang} setRadioLang={setRadioLang} /> : radioValue === 'Corporations' ? <Corporations setFlagp={setFlag} setFlagp2={setFlag2} setlang={setLang} agree={agreeFlag} type='profit_organization_or_corporations' setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} radioLang={radioLang} setRadioLang={setRadioLang} /> : null
                         }

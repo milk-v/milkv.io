@@ -5,7 +5,8 @@
     height: 100%;
     position: fixed;
     background-color: rgba(0, 0, 0, .5);
-    z-index: 101;
+    z-index: 10001;
+    overflow: auto;
 }
 
 .popBox {
@@ -80,7 +81,7 @@
     }
 
     .cBox {
-        height: 800px;
+        height: 500px;
         margin-top: 100px;
     }
 
@@ -100,7 +101,7 @@
     }
 
     .marginBox {
-        margin-top: 100px;
+        /* margin-top: 100px; */
     }
 
 
@@ -119,7 +120,6 @@
 @media screen and (max-width: 1500px) and (min-width: 750px) {
     .popBox {
         width: 700px;
-        height: 800px;
         padding: 20px 30px;
     }
 
@@ -155,9 +155,9 @@
         margin-bottom: 50px;
     }
 
-    .marginBox {
+    /* .marginBox {
         margin-top: 30px;
-    }
+    } */
 
 
     .marginBox>span {
