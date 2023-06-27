@@ -11,6 +11,15 @@ sidebar_position: 25
  
  Power supply power is related to the number and power of your peripherals, we recommend choosing a power supply with 350W or more.
 
+ ## TDP Reference Table
+ | Items     | TDP  |
+|:-------------:|:----:|
+| SOPHON SG2042 | 120W |
+| AMD R5 230    | 20W  |
+| Intel X520-T2 | 20W  |
+| ASM2824        | 6W   |
+| Cooler        | 6W   |
+
 ## Installing the power supply  
 - Preparation  
     Make sure you have a desktop power supply that is suitable for your computer's configuration and power requirements, and that it has a 24-pin motherboard power connector.
