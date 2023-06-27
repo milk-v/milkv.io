@@ -37,7 +37,7 @@ export default () => {
                         <p>RISC-V is an open standard instruction set architecture (ISA) based on established reduced instruction set computer (RISC) principles.</p>
                     </div>
                     <div className={styles.prodcuts03}>
-                        40PIN GPIO
+
                     </div>
                     <div className={styles.prodcuts04}>
                         <h1>Starfive JH7110</h1>
