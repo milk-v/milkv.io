@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import styles from './index.module.css';
+
 import Head from "../../components/Head"
 import ContactUs from "../../components/ContactUs"
 import PopUp from "../../components/Popup"
 import Footer from "../../components/Footer"
-
-import styles from './index.module.css';
+import ContactBar from "../../components/ContactBar"
+import Embrace from "../../components/Embrace"
 
 export default () => {
-
     const [mars2, setmars2] = useState(false)
 
     const mars2Start = () => {
@@ -159,29 +160,8 @@ export default () => {
 
                 </table>
                 <ContactUs product='mars' />
-                <div className={styles.on5_box}>
-                    <ul>
-                        <li className={styles.li}>
-                            <h1 className={styles.on5_box_h1}>[matrix]</h1>
-                            <p className={styles.on5_box_p}>Join the Milk-V Matrix Chat channel(#milk-v:matrix.org) to share your ideas with the developers all around the world.</p>
-                            <div className={styles.on5_bottom}>
-                                <Link to='https://matrix.to/#/#milk-v:matrix.org' style={{ textDecoration: 'none', color: '#fff' }}>Join #milk-v</Link>
-                            </div>
-                        </li>
-                        <li className={styles.li}>
-                            <h1 className={styles.on5_box_h1}>WeChat</h1>
-                            <div className={styles.on5_img}></div>
-                        </li>
-                        <li className={styles.li}>
-                            <h1 className={styles.on5_box_h1}>QQ Group</h1>
-                            <div className={styles.on5_img_QQ}></div>
-                        </li>
-                    </ul>
-                </div>
-                <div className={styles.riscBg}>
-                    <h1 className={styles.embrace}>Embrace the new era with Mars, </h1>
-                    <h1 className={styles.risc_v}>Let's make RISC-V better together.</h1>
-                </div>
+                <ContactBar />
+                <Embrace product='mars' />
             </div>
             <Footer></Footer>
         </Layout>

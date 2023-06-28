@@ -1,10 +1,13 @@
 import React, { useState, useRef } from 'react';
 import Layout from '@theme/Layout';
+
 import Head from "../../components/Head"
 import ContactUs from "../../components/ContactUs"
 import PopUp from "../../components/Popup"
-import Link from '@docusaurus/Link';
 import Footer from "../../components/Footer"
+import ContactBar from "../../components/ContactBar"
+import Embrace from "../../components/Embrace"
+
 import cssList from "./details.module.css"
 import Translate from '@docusaurus/Translate';
 
@@ -167,36 +170,9 @@ function DetailsPage() {
             </ul>
           </div>
         </div>
-        <div className={cssList.shadow1}></div>
-        <div className={cssList.shadow2}></div>
-        <div className={cssList.shadow5}></div>
-        <div className={cssList.shadow12}></div>
-        <div className={cssList.shadow13}></div>
-        <div className={cssList.shadow14}></div>
         <ContactUs product='duo' />
-        <div className={cssList.on5_box}>
-          <ul>
-            <li className={cssList.li}>
-              <h1 className={cssList.on5_box_h1}>[matrix]</h1>
-              <p className={cssList.on5_box_p}>Join the Duo Matrix Chat channel to share your ideas with the developers all around the world.</p>
-              <div className={cssList.on5_bottom}>
-                <Link to='https://matrix.to/#/#milkv-duo:matrix.org' style={{ textDecoration: 'none', color: '#fff' }}>Join #milkv-duo</Link>
-              </div>
-            </li>
-            <li className={cssList.li}>
-              <h1 className={cssList.on5_box_h1}>WeChat</h1>
-              <div className={cssList.on5_img}></div>
-            </li>
-            <li className={cssList.li}>
-              <h1 className={cssList.on5_box_h1}>QQ Group</h1>
-              <div className={cssList.on5_img_QQ}></div>
-            </li>
-          </ul>
-        </div>
-        <div className={cssList.riscBg}>
-          <h1 className={cssList.embrace}><Translate id='duo.embrace1' /></h1>
-          <h1 className={cssList.risc_v}><Translate id='duo.embrace2' /></h1>
-        </div>
+        <ContactBar />
+        <Embrace product='duo' />
       </div>
     </>
   )
