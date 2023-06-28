@@ -7,7 +7,7 @@ import styles from './index.module.css';
 import Head from "../components/Head"
 import PopUp from "../components/Popup"
 import Footer from "../components/Footer"
-import ContactUs from "../components/ContactUs"
+import Translate from '@docusaurus/Translate';
 
 function HomepageHeader() {
   const [duo, setDuo] = useState(false)
@@ -42,40 +42,40 @@ function HomepageHeader() {
           </h1>
         </div>
         <div className={styles.pages2}>
-          <h1>Why choose RISC-V？</h1>
-          <p>Milk-V is committed to providing high quality RISC-V products to developers, enterprises and consumers, and to promoting the development of the RISC-V hardware and software ecosystem. Milk-V will firmly support open source, and hopes that through its own efforts and those of the community, future RISC-V products will be as numerous and bright as the stars in the Milky Way.</p>
+          <h1><Translate id='homepage.text.title1' /></h1>
+          <p><Translate id='homepage.text.title1.info' /></p>
           <ul className={styles.icons}>
             <li className={styles.li01}>
               <img src='/home/icon01.svg' />
-              <p>Low power</p>
+              <p><Translate id='homepage.text.Features1' /></p>
             </li>
             <li className={styles.li02}>
               <img src='/home/icon02.svg' />
-              <p>Low cost</p>
+              <p><Translate id='homepage.text.Features2' /></p>
             </li>
             <li className={styles.li03}>
               <img src='/home/icon03.svg' />
-              <p>Open Source</p>
+              <p><Translate id='homepage.text.Features3' /></p>
             </li>
             <li className={styles.li04}>
               <img src='/home/icon04.svg' />
-              <p>Modularizable</p>
+              <p><Translate id='homepage.text.Features4' /></p>
             </li>
             <li className={styles.li05}>
               <img src='/home/icon05.svg' />
-              <p>Simple</p>
+              <p><Translate id='homepage.text.Features5' /></p>
             </li>
             <li className={styles.li06}>
               <img src='/home/icon06.svg' />
-              <p>Small area</p>
+              <p><Translate id='homepage.text.Features6' /></p>
             </li>
             <li className={styles.li07}>
               <img src='/home/icon07.svg' />
-              <p>Fast</p>
+              <p><Translate id='homepage.text.Features7' /></p>
             </li>
             <li className={styles.li08}>
               <img src='/home/icon08.svg' />
-              <p>High performance</p>
+              <p><Translate id='homepage.text.Features8' /></p>
             </li>
           </ul>
           <div className={styles.icons_banner} style={{ display: "none" }}>
@@ -83,41 +83,41 @@ function HomepageHeader() {
               <div className={styles.ban_item}>
                 <div>
                   <img src='/home/icon01.svg' />
-                  <p>Low power</p>
+                  <p><Translate id='homepage.text.Features1' /></p>
                 </div>
                 <div>
                   <img src='/home/icon02.svg' />
-                  <p>Low cost</p>
+                  <p><Translate id='homepage.text.Features2' /></p>
                 </div>
               </div>
               <div className={styles.ban_item}>
                 <div>
                   <img src='/home/icon03.svg' />
-                  <p>Open Source</p>
+                  <p><Translate id='homepage.text.Features3' /></p>
                 </div>
                 <div>
                   <img src='/home/icon04.svg' />
-                  <p>Modularizable</p>
+                  <p><Translate id='homepage.text.Features4' /></p>
                 </div>
               </div>
               <div className={styles.ban_item}>
                 <div>
                   <img src='/home/icon05.svg' />
-                  <p>Simple</p>
+                  <p><Translate id='homepage.text.Features5' /></p>
                 </div>
                 <div>
                   <img src='/home/icon06.svg' />
-                  <p>Small area</p>
+                  <p><Translate id='homepage.text.Features6' /></p>
                 </div>
               </div>
               <div className={styles.ban_item}>
                 <div>
                   <img src='/home/icon07.svg' />
-                  <p>Fast</p>
+                  <p><Translate id='homepage.text.Features7' /></p>
                 </div>
                 <div>
                   <img src='/home/icon08.svg' />
-                  <p>High performance</p>
+                  <p><Translate id='homepage.text.Features8' /></p>
                 </div>
               </div>
             </Carousel>
@@ -131,19 +131,19 @@ function HomepageHeader() {
           <img src='/home/on3-bg-img.webp' className={styles.page3Img} />
           <div className={styles.buyBox}>
             <div className={styles.lineshow}>
-              <h2>WORLD DEBUT</h2>
+              <h2><Translate id='homepage.text.debut' /></h2>
               <div className={styles.paddBox}>
-                <div className={styles.paddBox2}>Starting from $9</div>
+                <div className={styles.paddBox2}><Translate id='homepage.text.Duo.Price' /></div>
               </div>
             </div>
             <h1>Milk-V Duo</h1>
-            <h3>RISC-V Dual Core MPU</h3>
-            <p>Dual cores up to 1GHz</p>
-            <p>Rich IO for UART, I2C, SPI, SDIO, ADC, and more</p>
+            <h3><Translate id='homepage.text.Duo.mpu' /></h3>
+            <p><Translate id='homepage.text.Duo.SellingPoint1' /></p><br></br>
+            <p><Translate id='homepage.text.Duo.SellingPoint2' /></p>
             <div className={styles.buyBtns}>
-              <div className={styles.btnto} onClick={() => setDuo(duo => !duo)}>Buy</div>
+              <div className={styles.btnto} onClick={() => setDuo(duo => !duo)}><Translate id='homepage.text.buy' /></div>
               <Link to='/duo'>
-                <div className={styles.btnto}>Learn more {'>>'}</div>
+                <div className={styles.btnto}><Translate id='homepage.text.learnMore' /> {'>>'}</div>
               </Link >
             </div>
           </div>
@@ -151,9 +151,9 @@ function HomepageHeader() {
         </div>
         <div className={styles.pages4}>
           <div className={styles.buyBox}>
-            <h2>WORLD DEBUT</h2>
+            <h2><Translate id='homepage.text.debut' /></h2>
             <h1>Milk-V Pioneer</h1>
-            <h3>RISC-V Developer  Motherboard / Workstation</h3>
+            <h3><Translate id='homepage.text.pioneer.mpu' /></h3>
             <ul className={styles.rp}>
               <li>64 cores up to 2GHz</li>
               <li>32GB / 128G 3200MHz DDR4</li>
@@ -161,9 +161,9 @@ function HomepageHeader() {
               <li>5 SATA interfaces</li>
             </ul>
             <div className={styles.buyBtns}>
-              <div className={styles.btnto} onClick={() => setPioneer(pioneer => !pioneer)}>Buy</div>
+              <div className={styles.btnto} onClick={() => setPioneer(pioneer => !pioneer)}><Translate id='homepage.text.buy' /></div>
               <Link to='/pioneer'>
-                <div className={styles.btnto}>Learn more {'>>'}</div>
+                <div className={styles.btnto}><Translate id='homepage.text.learnMore' /> {'>>'}</div>
               </Link >
             </div>
           </div>
@@ -176,14 +176,14 @@ function HomepageHeader() {
         <div className={styles.pages5}>
           <img src='/home/mars-home.webp' className={styles.page5_img} />
           <div className={styles.buyBox}>
-            <h2>World Debut</h2>
+            <h2><Translate id='homepage.text.debut' /></h2>
             <h1>Milk-V Mars</h1>
-            <h3>The first Quad-Core RISC-V credit card size SBC</h3>
+            <h3><Translate id='homepage.text.mars.mpu' /></h3>
             <p>JH7110, dual core up to 1.5GHz</p>
             <div className={styles.buyBtns}>
-              <div className={styles.btnto} onClick={() => setMars(mars => !mars)}>Buy</div>
+              <div className={styles.btnto} onClick={() => setMars(mars => !mars)}><Translate id='homepage.text.buy' /></div>
               <Link to='/mars'>
-                <div className={styles.btnto}>Learn more {'>>'}</div>
+                <div className={styles.btnto}><Translate id='homepage.text.learnMore' /> {'>>'}</div>
               </Link >
             </div>
           </div>
@@ -193,17 +193,17 @@ function HomepageHeader() {
           <ul>
             <li className={styles.li}>
               <h1 className={styles.on5_box_h1}>[matrix]</h1>
-              <p className={styles.on5_box_p}>Join the Duo Matrix Chat channel to share your ideas with the developers all around the world.</p>
+              <p className={styles.on5_box_p}><Translate id='contact.text.matrix' /></p>
               <div className={styles.on5_bottom}>
-                <Link to='https://matrix.to/#/#milkv-duo:matrix.org' style={{ textDecoration: 'none', color: '#fff' }}>Join #milkv-duo</Link>
+                <Link to='https://matrix.to/#/#milkv-duo:matrix.org' style={{ textDecoration: 'none', color: '#fff' }}><Translate id='contact.text.join' /></Link>
               </div>
             </li>
             <li className={styles.li}>
-              <h1 className={styles.on5_box_h1}>WeChat</h1>
+              <h1 className={styles.on5_box_h1}><Translate id='contact.text.WeChat' /></h1>
               <div className={styles.on5_img}></div>
             </li>
             <li className={styles.li}>
-              <h1 className={styles.on5_box_h1}>QQ Group</h1>
+              <h1 className={styles.on5_box_h1}><Translate id='contact.text.QQ' /></h1>
               <div className={styles.on5_img_QQ}></div>
             </li>
           </ul>
@@ -212,7 +212,7 @@ function HomepageHeader() {
       <div className={styles.buyChe} onClick={() => setBuy(buy => !buy)} >
         <img src='/home/buy.svg' className={styles.buy1} />
         <img src='/home/onBuy.svg' className={styles.buy2} />
-        <p className={styles.buyCheP}>Online shop</p>
+        <p className={styles.buyCheP}><Translate id='online.buy' /></p>
       </div>
     </>
   );
