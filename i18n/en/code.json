@@ -400,5 +400,249 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "homepage.text.title1": {
+    "message": "Why choose RISC-V？",
+    "description": "Home Page Title"
+  },
+  "homepage.text.title1.info": {
+    "message": "Milk-V is committed to providing high quality RISC-V products to developers, enterprises and consumers, and to promoting the development of the RISC-V hardware and software ecosystem. Milk-V will firmly support open source, and hopes that through its own efforts and those of the community, future RISC-V products will be as numerous and bright as the stars in the Milky Way.",
+    "description": "Home page title introduction"
+  },
+  "homepage.text.Duo.mpu": {
+    "message": "RISC-V Dual Core MPU",
+    "description": "Home Page Duo mpu"
+  },
+  "homepage.text.Duo.Price": {
+    "message": "Starting from $9",
+    "description": "Home Page Duo Price"
+  },
+  "homepage.text.debut": {
+    "message": "WORLD DEBUT",
+    "description": "Home Page debut"
+  },
+  "homepage.text.buy": {
+    "message": "Buy",
+    "description": "Home Page Buy"
+  },
+  "homepage.text.learnMore": {
+    "message": "Learn more",
+    "description": "Home Page learn more"
+  },
+  "homepage.text.Features1": {
+    "message": "Low power",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features2": {
+    "message": "Low cost",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features3": {
+    "message": "Open Source",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features4": {
+    "message": "Modularizable",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features5": {
+    "message": "Simple",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features6": {
+    "message": "Small area",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features7": {
+    "message": "Fast",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features8": {
+    "message": "High performance",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Duo.SellingPoint1": {
+    "message": "Dual cores up to 1GHz",
+    "description": "Home Page Selling Point"
+  },
+  "homepage.text.Duo.SellingPoint2": {
+    "message": "Rich IO for UART, I2C, SPI, SDIO, ADC, and more",
+    "description": "Home Page Selling Point"
+  },
+  "homepage.text.pioneer.mpu": {
+    "message": "RISC-V Developer Motherboard / Workstation",
+    "description": "Home Page pioneer mpu"
+  },
+  "homepage.text.mars.mpu": {
+    "message": "The first Quad-Core RISC-V credit card size SBC",
+    "description": "Home Page mars mpu"
+  },
+  "contact.text.matrix": {
+    "message": "Join the Duo Matrix Chat channel to share your ideas with the developers all around the world.",
+    "description": "matrix"
+  },
+  "contact.text.WeChat": {
+    "message": "WeChat",
+    "description": "WeChat"
+  },
+  "contact.text.QQ": {
+    "message": "QQ Group",
+    "description": "QQ群"
+  },
+  "contact.text.join": {
+    "message": "join #milkv-duo",
+    "description": " #milkv-duo"
+  },
+  "online.buy": {
+    "message": "Online shop",
+    "description": "online buy"
+  },
+  "footer.text.home": {
+    "message": "Home",
+    "description": "footer text"
+  },
+  "footer.text.community": {
+    "message": "Community",
+    "description": "footer text"
+  },
+  "footer.text.docs": {
+    "message": "Docs",
+    "description": "footer text"
+  },
+  "footer.text.address": {
+    "message": "Address",
+    "description": "footer text"
+  },
+  "footer.text.address.info": {
+    "message": "L8-01, Block B, Bao Cube Jewelry City, 198 Xin'an 4th Road, Liutang Community, Xixiang Street, Bao'an District, Shenzhen, China",
+    "description": "footer text"
+  },
+  "footer.text.Subscribe": {
+    "message": "Subscribe",
+    "description": "footer Subscribe"
+  },
+  "Duo.text.title1": {
+    "message": "Meet",
+    "description": "Duo.text.title"
+  },
+  "Duo.text.title2": {
+    "message": "A $9 RISC-V COMPUTER",
+    "description": "Duo.text.title"
+  },
+  "Duo.text.title3": {
+    "message": "Low cost, low power consumption, high performance",
+    "description": "Duo.text.title"
+  },
+  "Duo.text.title4": {
+    "message": "Tax or shipping is not included",
+    "description": "Duo.text.title"
+  },
+  "Buy.now": {
+    "message": "Buy Now",
+    "description": "buy now"
+  },
+  "line.title.Specification": {
+    "message": "Specification",
+    "description": "Specification"
+  },
+  "line.title.size": {
+    "message": "Small size, big potentials",
+    "description": "size"
+  },
+  "line.title.TechSpecs": {
+    "message": "Tech Specs",
+    "description": "TechSpecs"
+  },
+  "info.text.powerful": {
+    "message": "More powerful than others",
+    "description": "powerful"
+  },
+  "info.text.CPU": {
+    "message": "RISC-V CPU up to",
+    "description": "Duo CPU"
+  },
+  "info.text.Vector": {
+    "message": "Vector Acceleration",
+    "description": "Duo Vector "
+  },
+  "info.text.Ethernet": {
+    "message": "10/100Mbps Ethernet via optional add-on board",
+    "description": "Duo Ethernet "
+  },
+  "info.text.Incredible": {
+    "message": "Incredible, it's a computer!",
+    "description": "Duo Incredible "
+  },
+  "info.text.MicroSD": {
+    "message": "MicroSD support",
+    "description": "Duo MicroSD "
+  },
+  "info.text.RAM": {
+    "message": "64MB RAM",
+    "description": "Duo RAM "
+  },
+  "info.text.support": {
+    "message": "Support Asymmetric multiprocessing",
+    "description": "Duo support "
+  },
+  "info.text.size.title1": {
+    "message": "Smart Door Lock",
+    "description": "Duo size title "
+  },
+  "info.text.size.title2": {
+    "message": "Intelligent Monitoring",
+    "description": "Duo size title "
+  },
+  "info.text.size.title3": {
+    "message": "Smart Street Light",
+    "description": "Duo size title "
+  },
+  "info.text.size.title4": {
+    "message": "Traffic Monitoring",
+    "description": "Duo size title "
+  },
+  "info.text.size.title5": {
+    "message": "Pedestrian Detection",
+    "description": "Duo size title "
+  },
+  "duo.info.text.Introduction": {
+    "message": "Introduction",
+    "description": "Duo 简介"
+  },
+  "duo.info.text.Introduction.max": {
+    "message": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators.",
+    "description": "Duo 简介"
+  },
+  "duo.info.text.Hardware": {
+    "message": "Hardware",
+    "description": "Duo Hardware"
+  },
+  "duo.info.text.Documents": {
+    "message": "Documents",
+    "description": "Duo Documents"
+  },
+  "duo.info.text.pinOut": {
+    "message": "Pin Out",
+    "description": "Duo Documents"
+  },
+  "duo.Hardware.info1": {
+    "message": "Dual RV64 Core up to 1GHz",
+    "description": "Duo Hardware"
+  },
+  "duo.Hardware.info2": {
+    "message": "Provides 10/100Mbps Ethernet via optional add-on board",
+    "description": "Duo Hardware"
+  },
+  "duo.Hardware.info3": {
+    "message": "Technology supports running both Linux and RTOS",
+    "description": "Duo Hardware"
+  },
+  "duo.embrace1": {
+    "message": "Embrace the new era with Duo,",
+    "description": "Duo embrace"
+  },
+  "duo.embrace2": {
+    "message": "Let's make RISC-V better together.",
+    "description": "Duo embrace"
   }
 }

@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import Layout from '@theme/Layout';
-import Head from "../../components/Head"
 import Link from '@docusaurus/Link';
+
+import Head from "../../components/Head"
 import ContactUs from "../../components/ContactUs"
 import cCss from "./center.module.css"
 import PopUp from "../../components/Popup"
 import Footer from "../../components/Footer"
+import ContactBar from "../../components/ContactBar"
+import Embrace from "../../components/Embrace"
 
 function Center() {
   const [pionner, setPionner] = useState(false)
@@ -197,29 +200,8 @@ function Center() {
         </div>
       </div>
       <ContactUs product='pioneer' />
-      <div className={cCss.on5_box}>
-        <ul>
-          <li className={cCss.li}>
-            <h1 className={cCss.on5_box_h1}>[matrix]</h1>
-            <p className={cCss.on5_box_p}>Join the Pioneer Matrix Chat channel to share your ideas with the developers all around the world.</p>
-            <div className={cCss.on5_bottom}>
-              <Link to='https://matrix.to/#/#milkv-pioneer:matrix.org' style={{ textDecoration: 'none', color: '#fff' }}>Join #milkv-pioneer</Link>
-            </div>
-          </li>
-          <li className={cCss.li}>
-            <h1 className={cCss.on5_box_h1}>WeChat</h1>
-            <div className={cCss.on5_img}></div>
-          </li>
-          <li className={cCss.li}>
-            <h1 className={cCss.on5_box_h1}>QQ Group</h1>
-            <div className={cCss.on5_img_QQ}></div>
-          </li>
-        </ul>
-      </div>
-      <div className={cCss.riscBg}>
-        <h1 className={cCss.embrace}>Embrace the new era with Pioneer, </h1>
-        <h1 className={cCss.risc_v}>Let's make RISC-V better together.</h1>
-      </div>
+      <ContactBar />
+      <Embrace product='pionner' />
     </div>
   )
 }

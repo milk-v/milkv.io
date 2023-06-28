@@ -1,11 +1,15 @@
 import React, { useState, useRef } from 'react';
 import Layout from '@theme/Layout';
+
 import Head from "../../components/Head"
 import ContactUs from "../../components/ContactUs"
 import PopUp from "../../components/Popup"
-import Link from '@docusaurus/Link';
 import Footer from "../../components/Footer"
+import ContactBar from "../../components/ContactBar"
+import Embrace from "../../components/Embrace"
+
 import cssList from "./details.module.css"
+import Translate from '@docusaurus/Translate';
 
 function DetailsPage() {
   const [num, setNum] = useState(0)
@@ -35,18 +39,18 @@ function DetailsPage() {
         backgroundColor: '#000'
       }}>
         <div className={cssList.titleBox}>
-          <p className={cssList.meet}>Meet</p>
+          <p className={cssList.meet}><Translate id='Duo.text.title1' /></p>
           <h1 className={cssList.titleTxt}>Milk-V Duo</h1>
-          <h2 className={cssList.textLine}>A $9 RISC-V COMPUTER</h2>
-          <p className={cssList.low}>Low cost, low power consumption, high performance</p>
-          <div className={cssList.btnbuy} onClick={() => setDuo2(buy => !buy)}>Buy Now</div>
-          <p className={cssList.tax}>*Tax or shipping is not included </p>
+          <h2 className={cssList.textLine}><Translate id='Duo.text.title2' /></h2>
+          <p className={cssList.low}><Translate id='Duo.text.title3' /></p>
+          <div className={cssList.btnbuy} onClick={() => setDuo2(buy => !buy)}><Translate id='Buy.now' /></div>
+          <p className={cssList.tax}>*<Translate id='Duo.text.title4' /></p>
         </div>
         <div className={cssList.rotateImg}></div>
-        <div className={cssList.title2}>Specification</div>
+        <div className={cssList.title}><Translate id='line.title.Specification' /></div>
         <div className={cssList.chartBox}>
-          <h1 className={cssList.chartTitle}>More powerful than others</h1>
-          <p className={cssList.chartTitle2}>RISC-V CPU up to</p>
+          <h1 className={cssList.chartTitle}><Translate id='info.text.powerful' /></h1>
+          <p className={cssList.chartTitle2}><Translate id='info.text.CPU' /></p>
           <div className={cssList.largeText}>
             <p className={cssList.one1}>1</p>
             <p>
@@ -54,34 +58,33 @@ function DetailsPage() {
               <span className={cssList.spanHz}>Hz</span>
             </p>
           </div>
-          <p className={cssList.vector}>Vector Acceleration</p>
+          <p className={cssList.vector}><Translate id='info.text.Vector' /></p>
           <div className={cssList.shadow3}></div>
           <div className={cssList.shadow4}></div>
           <div className={cssList.Ghzbox}> </div>
         </div>
         <div className={cssList.exhibits}>
           <div className={cssList.group2}>
-            <div className={cssList.textList}>10/100Mbps Ethernet via optional add-on board</div>
+            <div className={cssList.textList}><Translate id='info.text.Ethernet' /></div>
             <div className={cssList.exhibitsImg}></div>
           </div>
           <div className={cssList.micBox}>
             <div className={cssList.micList1}>
               <div className={cssList.frame1}></div>
-              <p>MicroSD support</p>
+              <p><Translate id='info.text.MicroSD' /></p>
               <div className={cssList.shadow6}></div>
             </div>
             <div className={cssList.micList2}>
               <div className={cssList.frame2}></div>
-              <p>64MB RAM</p>
+              <p><Translate id='info.text.RAM' /></p>
               <div className={cssList.shadow7}></div>
             </div>
           </div>
-          <div className={cssList.footerText}><h1>40P GPIO</h1></div>
+          <div className={cssList.footerText}><h1>26P GPIO</h1></div>
           <div className={cssList.bigExhibits}>
-            <div className={cssList.head}>Incredible, it's a computer!</div>
-            <div className={cssList.support}>Support Asymmetric multiprocessing</div>
+            <div className={cssList.head}><Translate id='info.text.Incredible' /></div>
+            <div className={cssList.support}><Translate id='info.text.support' /></div>
             <div className={cssList.btnBox}>
-
               <div className={cssList.shadow8}></div>
               <div className={cssList.shadow9}></div>
             </div>
@@ -98,8 +101,8 @@ function DetailsPage() {
               <div className={cssList.jj} ></div>
             </div>
           </div>
-          <div className={cssList.title3}>Small size, big potentials</div>
         </div>
+        <div className={cssList.title}><Translate id='line.title.size' /></div>
         <div className={cssList.bannerList} >
           <div ref={banner} style={{
             transform: `translateX(${num}px)`,
@@ -107,46 +110,46 @@ function DetailsPage() {
           }}>
             <div className={cssList.bannerimg1}>
               <div className={cssList.img1} ></div>
-              <p>Smart Door Lock</p>
+              <p><Translate id='info.text.size.title1' /></p>
             </div>
             <div className={cssList.bannerimg2}>
               <div className={cssList.img2} ></div>
-              <p>Intelligent Monitoring</p>
+              <p><Translate id='info.text.size.title2' /></p>
             </div>
             <div className={cssList.bannerimg3}>
               <div className={cssList.img3} ></div>
-              <p>Smart Street Light </p>
+              <p><Translate id='info.text.size.title3' /></p>
             </div>
             <div className={cssList.bannerimg4}>
               <div className={cssList.img4} ></div>
-              <p>Traffic Monitoring </p>
+              <p><Translate id='info.text.size.title4' /></p>
             </div>
             <div className={cssList.bannerimg5}>
               <div className={cssList.img5} ></div>
-              <p>Pedestrian Detection</p>
+              <p><Translate id='info.text.size.title5' /></p>
             </div>
           </div>
           <div className={cssList.prev} onClick={() => onPrve()}></div>
           <div className={cssList.next} onClick={() => onNext()}></div>
         </div>
         <div className={cssList.chartTech}>
-          <div className={cssList.title4}>Tech specs</div>
+          <div className={cssList.title}><Translate id='line.title.TechSpecs' /></div>
           <div className={cssList.tech_text1}>
-            <h1 className={cssList.tech_title}>Introduction</h1>
-            <p className={cssList.tech_p}>Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators.</p>
+            <h1 className={cssList.tech_title}><Translate id='duo.info.text.Introduction' /></h1>
+            <p className={cssList.tech_p}><Translate id='duo.info.text.Introduction.max' /></p>
           </div>
           <div className={cssList.tech_text2}>
-            <h1 className={cssList.tech_title}>Hardware </h1>
+            <h1 className={cssList.tech_title}><Translate id='duo.info.text.Hardware' /></h1>
             <p className={cssList.tech_p_line}>- CVITEK CV1800B (C906@1Ghz + C906@700MHz)</p>
-            <p className={cssList.tech_p_line}>- Dual RV64 Core up to 1GHz</p>
-            <p className={cssList.tech_p_line}>- 64MB RAM</p>
-            <p className={cssList.tech_p_line}>- Provides 10/100Mbps Ethernet via optional add-on board</p>
-            <p className={cssList.tech_p_line}>- technology supports running both Linux and RTOS</p>
+            <p className={cssList.tech_p_line}>- <Translate id='duo.Hardware.info1' /></p>
+            <p className={cssList.tech_p_line}>- <Translate id='info.text.RAM' /></p>
+            <p className={cssList.tech_p_line}>- <Translate id='duo.Hardware.info2' /></p>
+            <p className={cssList.tech_p_line}>- <Translate id='duo.Hardware.info3' /></p>
           </div>
-          <h1 className={cssList.tech_title3}>Pin Out</h1>
+          <h1 className={cssList.tech_title3}><Translate id='duo.info.text.pinOut' /></h1>
           <div className={cssList.pinImg}></div>
           <div className={cssList.document}>
-            <h1>Documents</h1>
+            <h1><Translate id='duo.info.text.Documents' /></h1>
             <ul>
               <li>
                 <div className={cssList.down}></div>
@@ -167,36 +170,9 @@ function DetailsPage() {
             </ul>
           </div>
         </div>
-        <div className={cssList.shadow1}></div>
-        <div className={cssList.shadow2}></div>
-        <div className={cssList.shadow5}></div>
-        <div className={cssList.shadow12}></div>
-        <div className={cssList.shadow13}></div>
-        <div className={cssList.shadow14}></div>
         <ContactUs product='duo' />
-        <div className={cssList.on5_box}>
-          <ul>
-            <li className={cssList.li}>
-              <h1 className={cssList.on5_box_h1}>[matrix]</h1>
-              <p className={cssList.on5_box_p}>Join the Duo Matrix Chat channel to share your ideas with the developers all around the world.</p>
-              <div className={cssList.on5_bottom}>
-                <Link to='https://matrix.to/#/#milkv-duo:matrix.org' style={{ textDecoration: 'none', color: '#fff' }}>Join #milkv-duo</Link>
-              </div>
-            </li>
-            <li className={cssList.li}>
-              <h1 className={cssList.on5_box_h1}>WeChat</h1>
-              <div className={cssList.on5_img}></div>
-            </li>
-            <li className={cssList.li}>
-              <h1 className={cssList.on5_box_h1}>QQ Group</h1>
-              <div className={cssList.on5_img_QQ}></div>
-            </li>
-          </ul>
-        </div>
-        <div className={cssList.riscBg}>
-          <h1 className={cssList.embrace}>Embrace the new era with Duo, </h1>
-          <h1 className={cssList.risc_v}>Let's make RISC-V better together.</h1>
-        </div>
+        <ContactBar />
+        <Embrace product='duo' />
       </div>
     </>
   )

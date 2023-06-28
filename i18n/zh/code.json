@@ -400,5 +400,249 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "The title of the tag list page"
+  },
+  "homepage.text.title1": {
+    "message": "为什么选择RISC-V？",
+    "description": "Home Page Title"
+  },
+  "homepage.text.title1.info": {
+    "message": "Milk-V致力于为开发者、企业和消费者提供高质量的RISC-V产品，并推动RISC-V软硬件生态系统的发展。Milk-V将坚定地支持开源，并希望通过自己和社区的努力，未来的RISC-V产品将像银河系的星星一样多而明亮。",
+    "description": "Home page title introduction"
+  },
+  "homepage.text.Duo.mpu": {
+    "message": "RISC-V双核MPU",
+    "description": "Home Page Duo mpu"
+  },
+  "homepage.text.Duo.Price": {
+    "message": "9美元起",
+    "description": "Home Page Duo Price"
+  },
+  "homepage.text.debut": {
+    "message": "全球首发",
+    "description": "Home Page debut"
+  },
+  "homepage.text.buy": {
+    "message": "购买",
+    "description": "Home Page Buy"
+  },
+  "homepage.text.learnMore": {
+    "message": "了解更多",
+    "description": "Home Page learn more"
+  },
+  "homepage.text.Features1": {
+    "message": "低功率",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features2": {
+    "message": "低成本",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features3": {
+    "message": "开放源码",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features4": {
+    "message": "模块化",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features5": {
+    "message": "易设计",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features6": {
+    "message": "小面积",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features7": {
+    "message": "快速",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features8": {
+    "message": "高效能",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Duo.SellingPoint1": {
+    "message": "高达1GHz的双核",
+    "description": "Home Page Selling Point"
+  },
+  "homepage.text.Duo.SellingPoint2": {
+    "message": "用于UART、I2C、SPI、SDIO、ADC等的丰富IO",
+    "description": "Home Page Selling Point"
+  },
+  "homepage.text.pioneer.mpu": {
+    "message": "RISC-V开发者主板 / 工作站",
+    "description": "Home Page pioneer mpu"
+  },
+  "homepage.text.mars.mpu": {
+    "message": "第一个四核RISC-V信用卡大小的SBC",
+    "description": "Home Page mars mpu"
+  },
+  "contact.text.matrix": {
+    "message": "加入Duo Matrix聊天频道，与世界各地的开发者分享您的想法。",
+    "description": "matrix"
+  },
+  "contact.text.WeChat": {
+    "message": "微信",
+    "description": "WeChat"
+  },
+  "contact.text.QQ": {
+    "message": "QQ群",
+    "description": "QQ群"
+  },
+  "contact.text.join": {
+    "message": "加入 #milkv-duo",
+    "description": " #milkv-duo"
+  },
+  "online.buy": {
+    "message": "网上商城",
+    "description": "online buy"
+  },
+  "footer.text.home": {
+    "message": "主页",
+    "description": "footer text"
+  },
+  "footer.text.community": {
+    "message": "社区",
+    "description": "footer text"
+  },
+  "footer.text.docs": {
+    "message": "文档",
+    "description": "footer text"
+  },
+  "footer.text.address": {
+    "message": "地址",
+    "description": "footer text"
+  },
+  "footer.text.address.info": {
+    "message": "深圳市宝安区西乡街道柳塘社区新安四路198号宝立方珠宝城B座L8-01号",
+    "description": "footer text"
+  },
+  "footer.text.Subscribe": {
+    "message": "订阅",
+    "description": "footer Subscribe"
+  },
+  "Duo.text.title1": {
+    "message": "遇见",
+    "description": "Duo.text.title"
+  },
+  "Duo.text.title2": {
+    "message": "一台9美元的Risc-V电脑",
+    "description": "Duo.text.title"
+  },
+  "Duo.text.title3": {
+    "message": "成本低、功耗低、性能高",
+    "description": "Duo.text.title"
+  },
+  "Duo.text.title4": {
+    "message": "不包括税款或运费",
+    "description": "Duo.text.title"
+  },
+  "Buy.now": {
+    "message": "立即购买",
+    "description": "buy now"
+  },
+  "line.title.Specification": {
+    "message": "规格",
+    "description": "Specification"
+  },
+  "line.title.size": {
+    "message": "体积小，潜力大",
+    "description": "size"
+  },
+  "line.title.TechSpecs": {
+    "message": "技术规格",
+    "description": "TechSpecs"
+  },
+  "info.text.powerful": {
+    "message": "比别人更强大",
+    "description": "powerful"
+  },
+  "info.text.CPU": {
+    "message": "RISC-V CPU最高可达",
+    "description": "Duo CPU"
+  },
+  "info.text.Vector": {
+    "message": "矢量加速",
+    "description": "Duo Vector "
+  },
+  "info.text.Ethernet": {
+    "message": "通过可选的附加板提供10/100Mbps以太网",
+    "description": "Duo Ethernet "
+  },
+  "info.text.Incredible": {
+    "message": "令人难以置信的是，这是一台电脑!",
+    "description": "Duo Incredible "
+  },
+  "info.text.MicroSD": {
+    "message": "支持MicroSD",
+    "description": "Duo MicroSD "
+  },
+  "info.text.RAM": {
+    "message": "64MB内存",
+    "description": "Duo RAM "
+  },
+  "info.text.support": {
+    "message": "支持非对称多处理",
+    "description": "Duo support "
+  },
+  "info.text.size.title1": {
+    "message": "智能门锁",
+    "description": "Duo size title "
+  },
+  "info.text.size.title2": {
+    "message": "智能监控",
+    "description": "Duo size title "
+  },
+  "info.text.size.title3": {
+    "message": "智能路灯",
+    "description": "Duo size title "
+  },
+  "info.text.size.title4": {
+    "message": "交通监控",
+    "description": "Duo size title "
+  },
+  "info.text.size.title5": {
+    "message": "行人检测",
+    "description": "Duo size title "
+  },
+  "duo.info.text.Introduction": {
+    "message": "简介",
+    "description": "Duo 简介"
+  },
+  "duo.info.text.Introduction.max": {
+    "message": "Milk-V Duo是一个基于CV1800B芯片的超紧凑嵌入式开发平台。它可以运行Linux和RTOS，为专业人士、工业ODM、AIoT爱好者、DIY爱好者和创作者提供了一个可靠、低成本和高性能的平台。",
+    "description": "Duo 简介"
+  },
+  "duo.info.text.Hardware": {
+    "message": "硬件设施",
+    "description": "Duo Hardware"
+  },
+  "duo.info.text.Documents": {
+    "message": "文件",
+    "description": "Duo Documents"
+  },
+  "duo.info.text.pinOut": {
+    "message": "引脚分布图",
+    "description": "Duo Documents"
+  },
+  "duo.Hardware.info1": {
+    "message": "双RV64核心，最高1GHz",
+    "description": "Duo Hardware"
+  },
+  "duo.Hardware.info2": {
+    "message": "通过可选的附加板提供10/100Mbps以太网",
+    "description": "Duo Hardware"
+  },
+  "duo.Hardware.info3": {
+    "message": "技术支持同时运行Linux和RTOS",
+    "description": "Duo Hardware"
+  },
+  "duo.embrace1": {
+    "message": "与Duo一起拥抱新时代，",
+    "description": "Duo embrace"
+  },
+  "duo.embrace2": {
+    "message": "让我们一起使RISC-V变得更好。",
+    "description": "Duo embrace"
   }
 }
