@@ -13,7 +13,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh'],
   },
 
   presets: [
@@ -84,6 +84,7 @@ const config = {
           alt: 'milkv.io',
           src: 'img/LogoNew.svg',
         },
+
         items: [
           {
             label: 'Home',
@@ -132,6 +133,10 @@ const config = {
                 docId: 'mars/mars',
               },
             ],
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
         ],
       },
