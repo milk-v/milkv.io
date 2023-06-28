@@ -7,15 +7,15 @@ sidebar_position: 10
 
 ## 准备
 
-- 必要条件
+- 必要的
   - Duo
   - 大于1GB的microSD
-  - Type-C cable
+  - Type-C 数据线
 - 可选的
-  - USB to TTL serial cable
+  - USB to TTL 串口模块
 
-## 下载图片和工具
-- 从[官方图像和SDK](https://milkv.io/docs/duo/resources/image&sdk)下载系统图像.
+## 下载镜像和工具
+- 从[官方镜像和SDK](https://milkv.io/docs/duo/resources/image&sdk)下载系统镜像.
 - 下载Flash工具 [balenaEtcher](https://etcher.balena.io/) 或 [Rufus](https://rufus.ie/en/).
 
 ## Write images
