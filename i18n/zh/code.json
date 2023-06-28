@@ -418,7 +418,7 @@
     "description": "Home Page Duo Price"
   },
   "homepage.text.debut": {
-    "message": "世界首发",
+    "message": "全球首发",
     "description": "Home Page debut"
   },
   "homepage.text.buy": {
@@ -446,11 +446,11 @@
     "description": "Home Page Features"
   },
   "homepage.text.Features5": {
-    "message": "简单",
+    "message": "易设计",
     "description": "Home Page Features"
   },
   "homepage.text.Features6": {
-    "message": "小区域",
+    "message": "小面积",
     "description": "Home Page Features"
   },
   "homepage.text.Features7": {

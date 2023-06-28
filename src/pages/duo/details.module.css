@@ -26,8 +26,25 @@ body {
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
 }
 
-@media screen and (min-width: 1350px) {
+.title {
+    text-align: left;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
 
+.title::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (min-width: 1350px) {
     .btnbuy {
         width: 240px;
         height: 80px;
@@ -84,7 +101,6 @@ body {
     .titleBox {
         text-align: center;
         width: 1036px;
-        height: 552px;
         margin: 252.4px auto 0;
         color: #fff;
     }
@@ -167,27 +183,15 @@ body {
         z-index: -10;
     }
 
-    .title2 {
+    .title {
         font-size: 77px;
         font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
         text-align: left;
         color: #fff;
         position: relative;
         width: 1320px;
-        height: 78px;
-        margin: 177px auto 100px;
-    }
-
-    .title2::after {
-        content: '';
-        position: absolute;
-        right: 0px;
-        bottom: 20px;
-        width: 807px;
-        height: 2px;
-        background: #929292;
+        height: 110px;
+        overflow: hidden;
     }
 
 
@@ -272,7 +276,7 @@ body {
         width: 1320px;
         height: 604px;
         background-color: #141619;
-        margin: 0 auto;
+        margin: 100px auto;
         overflow: hidden;
         position: relative;
     }
@@ -672,61 +676,13 @@ body {
         background-size: 100%;
     }
 
-    .title4 {
-        font-size: 77px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #fff;
-        width: 1113px;
-        height: 78px;
-        position: absolute;
-        left: 0;
-        top: -128px;
-    }
-
-    .title4::after {
-        content: '';
-        position: absolute;
-        right: -195px;
-        bottom: 20px;
-        width: 844px;
-        height: 2px;
-        background: #929292;
-    }
-
     .bannerList {
         width: 1320px;
         height: 493px;
-        margin: 315px auto 0;
+        margin: 100px auto 0;
         position: relative;
         overflow: hidden;
         background-color: #000;
-    }
-
-    .title3 {
-        font-size: 77px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #fff;
-        width: 1113px;
-        height: 78px;
-        position: absolute;
-        left: 0;
-        bottom: -20vh;
-    }
-
-    .title3::after {
-        content: '';
-        position: absolute;
-        right: -208px;
-        bottom: 20px;
-        width: 360px;
-        height: 2px;
-        background: #929292;
     }
 
     .bannerimg1 {
@@ -883,16 +839,14 @@ body {
 
     .chartTech {
         width: 1320px;
-        height: 1719px;
-        margin: 315px auto 0;
+        margin: 200px auto 0;
         position: relative;
     }
 
     .tech_text1 {
+        margin-top: 100px;
         width: 100%;
         height: 207px;
-        position: absolute;
-        top: 37px;
         color: #fff;
     }
 
@@ -914,10 +868,8 @@ body {
 
     .tech_text2 {
         width: 100%;
-        height: 238px;
-        position: absolute;
-        top: 374px;
         color: #fff;
+        margin-bottom: 80px;
     }
 
     .tech_text2>h1 {
@@ -938,32 +890,24 @@ body {
     .tech_title3 {
         font-size: 48px;
         color: #fff;
-        position: absolute;
-        top: 824px;
     }
 
     .pinImg {
-        position: absolute;
-        top: 900px;
         width: 1320px;
         height: 580px;
         background: url(/static/img/pinout.png) no-repeat;
         background-size: 100%;
     }
 
-    .document {
-        position: absolute;
-        top: 1451px;
-    }
 
     .document>h1 {
         color: #fff;
         font-size: 48px;
+        margin-top: 80px;
     }
 
     .document>ul {
         width: 1151px;
-        height: 93.6px;
         margin-top: 20px;
         margin-left: -29px;
         display: flex;
@@ -1101,8 +1045,7 @@ body {
     .titleBox {
         text-align: center;
         width: 836px;
-        height: 452px;
-        margin: 152.4px auto 0;
+        margin: 150px auto 100px;
         color: #fff;
     }
 
@@ -1127,27 +1070,11 @@ body {
         background-size: 100%;
     }
 
-    .title2 {
+    .title {
         font-size: 47px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #fff;
-        position: relative;
         width: 1000px;
         height: 78px;
-        margin: 177px auto 100px;
-    }
-
-    .title2::after {
-        content: '';
-        position: absolute;
-        right: 0px;
-        bottom: 20px;
-        width: 687px;
-        height: 2px;
-        background: #929292;
+        margin: 100px auto 100px;
     }
 
 
@@ -1550,61 +1477,13 @@ body {
         background-size: 100%;
     }
 
-    .title4 {
-        font-size: 47px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #fff;
-        width: 1113px;
-        height: 78px;
-        position: absolute;
-        left: 0;
-        top: -128px;
-    }
-
-    .title4::after {
-        content: '';
-        position: absolute;
-        right: 100px;
-        bottom: 20px;
-        width: 750px;
-        height: 2px;
-        background: #929292;
-    }
-
     .bannerList {
         width: 1000px;
         height: 400px;
-        margin: 95px auto 0;
+        margin: 55px auto 0;
         position: relative;
         overflow: hidden;
         background-color: #000;
-    }
-
-    .title3 {
-        font-size: 47px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #fff;
-        width: 1000px;
-        height: 78px;
-        position: absolute;
-        left: -80px;
-        bottom: -80px;
-    }
-
-    .title3::after {
-        content: '';
-        position: absolute;
-        right: 0px;
-        bottom: 20px;
-        width: 440px;
-        height: 2px;
-        background: #929292;
     }
 
     .bannerimg1 {
@@ -1752,7 +1631,6 @@ body {
 
     .chartTech {
         width: 1000px;
-        height: 1719px;
         margin: 200px auto 0;
         position: relative;
     }
@@ -1760,8 +1638,7 @@ body {
     .tech_text1 {
         width: 100%;
         height: 207px;
-        position: absolute;
-        top: 37px;
+        margin: 50px 0;
         color: #fff;
     }
 
@@ -1772,20 +1649,16 @@ body {
     .tech_p {
         margin-top: 28px;
         font-size: 29px;
-        font-style: normal;
         font-weight: 400;
         line-height: 120%;
         opacity: 0.8;
-        flex: none;
         order: 1;
         flex-grow: 0;
     }
 
     .tech_text2 {
         width: 100%;
-        height: 238px;
-        position: absolute;
-        top: 374px;
+        margin: 50px 0;
         color: #fff;
     }
 
@@ -1795,10 +1668,8 @@ body {
 
     .tech_p_line {
         font-size: 26px;
-        font-style: normal;
         opacity: 0.8;
         font-weight: 400;
-        flex: none;
         order: 1;
         flex-grow: 0;
         margin: 0;
@@ -1806,24 +1677,17 @@ body {
 
     .tech_title3 {
         font-size: 48px;
+        margin-bottom: 27.2px;
         color: #fff;
-        position: absolute;
-        top: 824px;
     }
 
     .pinImg {
-        position: absolute;
-        top: 900px;
         width: 1000px;
-        height: 560px;
+        height: 500px;
         background: url(/static/img/pinout.png) no-repeat;
         background-size: 100%;
     }
 
-    .document {
-        position: absolute;
-        top: 1451px;
-    }
 
     .document>h1 {
         color: #fff;
@@ -1832,8 +1696,8 @@ body {
 
     .document>ul {
         width: 1151px;
-        height: 93.6px;
         margin-left: -29px;
+        margin-bottom: 100px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -1850,15 +1714,16 @@ body {
     .document>ul>li {
         height: 23.4px;
         line-height: 28px;
-        margin-bottom: 10px;
+        margin-top: 20px;
         display: flex;
         justify-content: flex-start;
+        align-items: center;
     }
 
     .link_down {
         color: #fff;
         text-decoration: none;
-        font-size: 26px;
+        font-size: 22px;
     }
 
 
@@ -1983,27 +1848,11 @@ body {
         background-size: 100%;
     }
 
-    .title2 {
+    .title {
         font-size: 37px;
-        font-weight: 500;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #fff;
-        position: relative;
         width: 700px;
-        margin: 100px auto 50px;
+        margin: 60px auto 50px;
     }
-
-    .title2::after {
-        content: '';
-        position: absolute;
-        right: 0px;
-        bottom: 15px;
-        width: 460px;
-        height: 2px;
-        background: #929292;
-    }
-
 
     .on5_box {
         width: 700px;
@@ -2398,60 +2247,13 @@ body {
         background-size: 100%;
     }
 
-    .title4 {
-        font-size: 37px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #fff;
-        width: 700px;
-        position: absolute;
-        left: 0;
-        top: -128px;
-    }
-
-    .title4::after {
-        content: '';
-        position: absolute;
-        right: -20px;
-        bottom: 25px;
-        width: 520px;
-        height: 2px;
-        background: #929292;
-    }
-
     .bannerList {
         width: 700px;
         height: 320px;
-        margin: 95px auto 0;
+        margin: 55px auto 0;
         position: relative;
         overflow: hidden;
         background-color: #000;
-    }
-
-    .title3 {
-        font-size: 37px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #fff;
-        width: 700px;
-        height: 78px;
-        position: absolute;
-        left: 0px;
-        bottom: -80px;
-    }
-
-    .title3::after {
-        content: '';
-        position: absolute;
-        right: 0px;
-        bottom: 20px;
-        width: 240px;
-        height: 2px;
-        background: #929292;
     }
 
     .bannerimg1 {
@@ -2565,8 +2367,8 @@ body {
     }
 
     .prev {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         background: url(/static/img/chevron-left.svg) no-repeat;
         background-size: 100%;
         position: absolute;
@@ -2576,8 +2378,8 @@ body {
     }
 
     .next {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         background: url(/static/img/chevron-right.svg) no-repeat;
         background-size: 100%;
         position: absolute;
@@ -2599,40 +2401,32 @@ body {
 
     .chartTech {
         width: 700px;
-        height: 1200px;
         margin: 150px auto 0;
-        position: relative;
     }
 
     .tech_text1 {
         width: 100%;
         height: 207px;
-        position: absolute;
-        top: 2px;
+        margin: 4px 0;
         color: #fff;
     }
 
     .tech_title {
-        font-size: 40px;
+        font-size: 28px;
     }
 
     .tech_p {
         margin-top: 28px;
         font-size: 20px;
-        font-style: normal;
         font-weight: 400;
         line-height: 120%;
         opacity: 0.8;
-        flex: none;
         order: 1;
         flex-grow: 0;
     }
 
     .tech_text2 {
         width: 100%;
-        height: 238px;
-        position: absolute;
-        top: 270px;
         color: #fff;
     }
 
@@ -2642,53 +2436,44 @@ body {
 
     .tech_p_line {
         font-size: 20px;
-        font-style: normal;
         opacity: 0.8;
         font-weight: 400;
-        flex: none;
         order: 1;
         flex-grow: 0;
         margin: 0;
     }
 
     .tech_title3 {
-        font-size: 48px;
+        font-size: 28px;
+        margin: 40px 0;
         color: #fff;
-        position: absolute;
-        top: 580px;
     }
 
     .pinImg {
-        position: absolute;
-        top: 650px;
         width: 700px;
         height: 360px;
         background: url(/static/img/pinout.png) no-repeat;
         background-size: 100%;
     }
 
-    .document {
-        position: absolute;
-        top: 1000px;
-    }
 
     .document>h1 {
         color: #fff;
-        font-size: 48px;
+        font-size: 28px;
     }
 
     .document>ul {
         width: 1151px;
-        height: 93.6px;
         margin-left: -29px;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
 
     .down {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         background: url(/static/img/download.svg) no-repeat;
         background-size: 100%;
         margin-right: 19.1904px;
@@ -2698,15 +2483,17 @@ body {
         height: 23.4px;
         line-height: 28px;
         margin-bottom: 10px;
+        margin-top: 5px;
         display: flex;
         justify-content: flex-start;
+        align-items: center;
     }
 
     .link_down {
         color: #fff;
         font-weight: 400;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 16px;
     }
 
 
@@ -2752,6 +2539,26 @@ body {
 
 
 @media screen and (max-width: 750px) {
+
+    .title {
+        width: 350rem;
+        text-align: left;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .title::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #ccc;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
     .btnbuy {
         width: 120rem;
         height: 45rem;
@@ -2823,26 +2630,16 @@ body {
         display: none;
     }
 
-    .title2 {
-        font-size: 21rem;
+    .title {
+        font-size: 26rem;
         font-weight: 500;
         letter-spacing: 0em;
         text-align: left;
         color: #fff;
         overflow: hidden;
         position: relative;
-        width: 330px;
+        width: 350px;
         margin: 50rem auto 0;
-    }
-
-    .title2::after {
-        content: '';
-        position: absolute;
-        left: 140rem;
-        bottom: 14rem;
-        width: 460rem;
-        height: 1rem;
-        background: #929292;
     }
 
 
@@ -3241,27 +3038,6 @@ body {
         background-size: 100%;
     }
 
-    .title4 {
-        font-size: 21rem;
-        font-weight: 500;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #fff;
-        width: 340rem;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .title4::after {
-        content: '';
-        position: absolute;
-        left: 120rem;
-        bottom: 12rem;
-        width: 100%;
-        height: 2rem;
-        background: #929292;
-    }
-
     .bannerList {
         width: 340rem;
         height: 260rem;
@@ -3269,28 +3045,6 @@ body {
         position: relative;
         overflow: auto;
         background-color: #000;
-    }
-
-    .title3 {
-        font-size: 21rem;
-        font-weight: 500;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #fff;
-        width: 340rem;
-        position: absolute;
-        left: 0rem;
-        bottom: -50rem;
-    }
-
-    .title3::after {
-        content: '';
-        position: absolute;
-        right: 0rem;
-        bottom: 15rem;
-        width: 80rem;
-        height: 1rem;
-        background: #929292;
     }
 
     .bannerimg1 {

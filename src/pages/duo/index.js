@@ -44,7 +44,7 @@ function DetailsPage() {
           <p className={cssList.tax}>*<Translate id='Duo.text.title4' /></p>
         </div>
         <div className={cssList.rotateImg}></div>
-        <div className={cssList.title2}><Translate id='line.title.Specification' /></div>
+        <div className={cssList.title}><Translate id='line.title.Specification' /></div>
         <div className={cssList.chartBox}>
           <h1 className={cssList.chartTitle}><Translate id='info.text.powerful' /></h1>
           <p className={cssList.chartTitle2}><Translate id='info.text.CPU' /></p>
@@ -77,12 +77,11 @@ function DetailsPage() {
               <div className={cssList.shadow7}></div>
             </div>
           </div>
-          <div className={cssList.footerText}><h1>40P GPIO</h1></div>
+          <div className={cssList.footerText}><h1>26P GPIO</h1></div>
           <div className={cssList.bigExhibits}>
             <div className={cssList.head}><Translate id='info.text.Incredible' /></div>
             <div className={cssList.support}><Translate id='info.text.support' /></div>
             <div className={cssList.btnBox}>
-
               <div className={cssList.shadow8}></div>
               <div className={cssList.shadow9}></div>
             </div>
@@ -99,8 +98,8 @@ function DetailsPage() {
               <div className={cssList.jj} ></div>
             </div>
           </div>
-          <div className={cssList.title3}><Translate id='line.title.size' /></div>
         </div>
+        <div className={cssList.title}><Translate id='line.title.size' /></div>
         <div className={cssList.bannerList} >
           <div ref={banner} style={{
             transform: `translateX(${num}px)`,
@@ -131,7 +130,7 @@ function DetailsPage() {
           <div className={cssList.next} onClick={() => onNext()}></div>
         </div>
         <div className={cssList.chartTech}>
-          <div className={cssList.title4}><Translate id='line.title.TechSpecs' /></div>
+          <div className={cssList.title}><Translate id='line.title.TechSpecs' /></div>
           <div className={cssList.tech_text1}>
             <h1 className={cssList.tech_title}><Translate id='duo.info.text.Introduction' /></h1>
             <p className={cssList.tech_p}><Translate id='duo.info.text.Introduction.max' /></p>
