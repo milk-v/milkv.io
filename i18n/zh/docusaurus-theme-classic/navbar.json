@@ -1,0 +1,26 @@
+{
+  "item.label.Home": {
+    "message": "主页",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.Duo": {
+    "message": "Duo",
+    "description": "Navbar item with label Duo"
+  },
+  "item.label.Pioneer": {
+    "message": "Pioneer",
+    "description": "Navbar item with label Pioneer"
+  },
+  "item.label.Mars": {
+    "message": "Mars",
+    "description": "Navbar item with label Mars"
+  },
+  "item.label.Community": {
+    "message": "社区",
+    "description": "Navbar item with label Community"
+  },
+  "item.label.Docs": {
+    "message": "文档",
+    "description": "Navbar item with label Docs"
+  }
+}

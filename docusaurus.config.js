@@ -13,7 +13,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en','zh'],
   },
 
   presets: [
@@ -132,6 +132,10 @@ const config = {
                 docId: 'mars/mars',
               },
             ],
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
         ],
       },

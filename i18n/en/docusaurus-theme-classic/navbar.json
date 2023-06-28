@@ -1,0 +1,26 @@
+{
+  "item.label.Home": {
+    "message": "Home",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.Duo": {
+    "message": "Duo",
+    "description": "Navbar item with label Duo"
+  },
+  "item.label.Pioneer": {
+    "message": "Pioneer",
+    "description": "Navbar item with label Pioneer"
+  },
+  "item.label.Mars": {
+    "message": "Mars",
+    "description": "Navbar item with label Mars"
+  },
+  "item.label.Community": {
+    "message": "Community",
+    "description": "Navbar item with label Community"
+  },
+  "item.label.Docs": {
+    "message": "Docs",
+    "description": "Navbar item with label Docs"
+  }
+}

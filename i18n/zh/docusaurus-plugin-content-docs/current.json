@@ -1,0 +1,54 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.🍐 Duo": {
+    "message": "🍐 Duo",
+    "description": "The label for category 🍐 Duo in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🍐 Duo.link.generated-index.description": {
+    "message": "你好，我是Milk-V Duo",
+    "description": "The generated-index page description for category 🍐 Duo in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🚀 Getting Started": {
+    "message": "🚀 入门指南",
+    "description": "The label for category 🚀 Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🚀 Getting Started.link.generated-index.description": {
+    "message": "开始使用Duo",
+    "description": "The generated-index page description for category 🚀 Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🖥️ App Development": {
+    "message": "🖥️ 应用开发",
+    "description": "The label for category 🖥️ App Development in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🖥️ App Development.link.generated-index.description": {
+    "message": "应用程序开发",
+    "description": "The generated-index page description for category 🖥️ App Development in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🧰 Resources": {
+    "message": "🧰 资源",
+    "description": "The label for category 🧰 Resources in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🧰 Resources.link.generated-index.description": {
+    "message": "实用资源",
+    "description": "The generated-index page description for category 🧰 Resources in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.💪 Pioneer": {
+    "message": "💪 Pioneer",
+    "description": "The label for category 💪 Pioneer in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.💪 Pioneer.link.generated-index.description": {
+    "message": "Be the Pioneer",
+    "description": "The generated-index page description for category 💪 Pioneer in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🏁 Getting Started": {
+    "message": "🏁 入门指南",
+    "description": "The label for category 🏁 Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🏁 Getting Started.link.generated-index.description": {
+    "message": "开始使用 Pioneer",
+    "description": "The generated-index page description for category 🏁 Getting Started in sidebar tutorialSidebar"
+  }
+}
