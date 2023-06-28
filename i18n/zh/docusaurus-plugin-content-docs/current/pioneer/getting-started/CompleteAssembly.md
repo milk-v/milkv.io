@@ -1,5 +1,5 @@
 ---
-sidebar_label: '完整的装配'
+sidebar_label: '安装至机箱'
 sidebar_position: 26
 ---
 # 完整的装配
