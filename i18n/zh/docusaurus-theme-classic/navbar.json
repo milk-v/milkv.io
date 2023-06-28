@@ -1,6 +1,6 @@
 {
   "item.label.Home": {
-    "message": "Home",
+    "message": "主页",
     "description": "Navbar item with label Home"
   },
   "item.label.Duo": {
@@ -16,11 +16,11 @@
     "description": "Navbar item with label Mars"
   },
   "item.label.Community": {
-    "message": "Community",
+    "message": "社区",
     "description": "Navbar item with label Community"
   },
   "item.label.Docs": {
-    "message": "Docs",
+    "message": "文档",
     "description": "Navbar item with label Docs"
   }
 }
