@@ -4,11 +4,14 @@ import Link from '@docusaurus/Link';
 
 import Head from "../../components/Head"
 import ContactUs from "../../components/ContactUs"
-import cCss from "./center.module.css"
 import PopUp from "../../components/Popup"
 import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
 import Embrace from "../../components/Embrace"
+
+import cCss from "./center.module.css"
+import Translate from '@docusaurus/Translate';
+
 
 function Center() {
   const [pionner, setPionner] = useState(false)
@@ -25,22 +28,22 @@ function Center() {
           <div className={cCss.pagBox}></div>
           <div className={cCss.titleBox}>
             <h1>Milk-V Pioneer</h1>
-            <p>Make native RISC-V development possible</p>
+            <p><Translate id='pioneer.page.title' /></p>
             <div className={cCss.buy}>
-              <div className={cCss.btnbuy} onClick={() => setPionner(buy => !buy)}>Buy Now</div>
+              <div className={cCss.btnbuy} onClick={() => setPionner(buy => !buy)}><Translate id='Buy.now' /></div>
             </div>
           </div>
         </div>
       </div>
       <div className={cCss.startbox}>
-        <div className={cCss.title2}>Specification</div>
+        <div className={cCss.title2}><Translate id='line.title.Specification' /></div>
         <div className={cCss.power}>
           <div className={cCss.power1}>
-            <h1>Powered by SOPHON SG2042</h1>
+            <h1><Translate id='pioneer.page.Specification.text1' /></h1>
             <div className={cCss.powerimg}></div>
           </div>
           <div className={cCss.power2}>
-            <div className={cCss.power2_txt}>64 Core RISC-V CPU</div>
+            <div className={cCss.power2_txt}><Translate id='pioneer.page.Specification.text2' /></div>
             <div className={cCss.power2_1}>
               <p>Main Frequency</p>
               <p>L1 Cache</p>
@@ -71,21 +74,21 @@ function Center() {
           <div className={cCss.pionBox_2}>
             <ul>
               <li>
-                <p>equipped with </p>
+                <p><Translate id='pioneer.page.Box.text1' /></p>
                 <h1 className={cCss.h1_1}>AMD R5 230</h1>
-                <div>Graphic Card</div>
+                <div><Translate id='pioneer.page.Box.text2' /></div>
                 <div className={cCss.show1}></div>
               </li>
               <li>
-                <p>equipped with </p>
+                <p><Translate id='pioneer.page.Box.text1' /></p>
                 <h1 className={cCss.h1_2}>Intel X520-DA2</h1>
-                <div>Network Card </div>
+                <div><Translate id='pioneer.page.Box.text3' /></div>
                 <div className={cCss.show2}></div>
               </li>
               <li>
-                <p>equipped with </p>
+                <p><Translate id='pioneer.page.Box.text1' /></p>
                 <h1 className={cCss.h1_3}>MSI A350 350W</h1>
-                <div>Power</div>
+                <div><Translate id='pioneer.page.Box.text4' /></div>
                 <div className={cCss.show3}></div>
               </li>
             </ul>
@@ -93,27 +96,27 @@ function Center() {
           <div className={cCss.pionBox_3}>
             <ul>
               <li>
-                <p>equipped with </p>
+                <p><Translate id='pioneer.page.Box.text1' /></p>
                 <h1 className={cCss.h1_1}>32GB / 128GB 3200MHz</h1>
                 <div>DDR4</div>
                 <div className={cCss.show1}></div>
               </li>
               <li>
-                <p>equipped with </p>
+                <p><Translate id='pioneer.page.Box.text1' /></p>
                 <h1 className={cCss.h1_2}>1TB</h1>
                 <div>PCIe 3.0 SSD</div>
                 <div className={cCss.show2}></div>
               </li>
               <li>
-                <p>equipped with </p>
+                <p><Translate id='pioneer.page.Box.text1' /></p>
                 <h1 className={cCss.h1_3}>RGB</h1>
-                <div>Cooler</div>
+                <div><Translate id='pioneer.page.Box.text5' /></div>
                 <div className={cCss.show3}></div>
               </li>
             </ul>
           </div>
         </div>
-        <div className={cCss.title8}>Software Support</div>
+        <div className={cCss.title8}><Translate id='pioneer.page.title.minText1' /></div>
         <ul className={cCss.list1}>
           <li className={cCss.div_on1}><div></div></li>
           <li className={cCss.div_on2}><div></div></li>
@@ -131,11 +134,11 @@ function Center() {
             <div className={cCss.div_on7}></div>
           </li>
         </ul>
-        <div className={cCss.title4}>Really Useful</div>
+        <div className={cCss.title4}><Translate id='pioneer.page.title.minText2' /></div>
         <div className={cCss.bannerBox}>
           <div className={cCss.bannerimg1}>
             <div className={cCss.bannerimg1_1}></div>
-            <div className={cCss.bannerT}>Workstation</div>
+            <div className={cCss.bannerT}><Translate id='pioneer.page.really1' /></div>
           </div>
           <div className={cCss.bannerimg2}>
             <div className={cCss.bannerimg2_1}></div>
@@ -149,12 +152,12 @@ function Center() {
       </div>
       <div className={cCss.footText}>
         <div className={cCss.chartTech}>
-          <div className={cCss.title6}>Tech specs</div>
+          <div className={cCss.title6}><Translate id='line.title.TechSpecs' /></div>
           <div className={cCss.tech_text1}>
-            <p className={cCss.tech_p}>Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard mATX form factor. With PC-like interfaces and PC industrial compability, Pioneer provides native RISC-V development environment and RISC-V desktop experience. It is the first choice for RISC-V developers and hardware pioneers to experience the cutting edge technology of RISC-V. Embrace RISC-V, embrace the future. </p>
+            <p className={cCss.tech_p}><Translate id='pioneer.page.info' /></p>
           </div>
           <div className={cCss.tech_text2}>
-            <h1 className={cCss.tech_title}>Hardware </h1>
+            <h1 className={cCss.tech_title}><Translate id='duo.info.text.Hardware' /></h1>
             <h2>Pioneer Board</h2>
             <p className={cCss.tech_p_line}>- SOPHGO SG2042 Chip</p>
             <p className={cCss.tech_p_line}>- 64 Core RISC-V CPU up to 2GHz</p>
@@ -189,7 +192,7 @@ function Center() {
             <p className={cCss.tech_p_line}>- White slim PC enclosure with handle</p>
           </div>
           <div className={cCss.document}>
-            <h1>Documents</h1>
+            <h1><Translate id='duo.info.text.Documents' /></h1>
             <ul>
               <li>
                 <div className={cCss.down}></div>

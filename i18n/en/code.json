@@ -644,5 +644,53 @@
   "duo.embrace2": {
     "message": "Let's make RISC-V better together.",
     "description": "Duo embrace"
+  },
+  "pioneer.page.title": {
+    "message": "Make native RISC-V development possible",
+    "description": "pioneer page title"
+  },
+  "pioneer.page.Specification.text1": {
+    "message": "Powered by SOPHON SG2042",
+    "description": "pioneer Specification"
+  },
+  "pioneer.page.Specification.text2": {
+    "message": "64 Core RISC-V CPU",
+    "description": "pioneer Specification"
+  },
+  "pioneer.page.Box.text1": {
+    "message": "equipped with",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text2": {
+    "message": "Graphic Card",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text3": {
+    "message": "Network Card",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text4": {
+    "message": "Power",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text5": {
+    "message": "Cooler",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.title.minText1": {
+    "message": "Software Support",
+    "description": "pioneer min Text"
+  },
+  "pioneer.page.title.minText2": {
+    "message": "Really Useful",
+    "description": "pioneer min Text"
+  },
+  "pioneer.page.really1": {
+    "message": "Workstation",
+    "description": "pioneer min Text"
+  },
+  "pioneer.page.info": {
+    "message": "Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard mATX form factor. With PC-like interfaces and PC industrial compability, Pioneer provides native RISC-V development environment and RISC-V desktop experience. It is the first choice for RISC-V developers and hardware pioneers to experience the cutting edge technology of RISC-V. Embrace RISC-V, embrace the future.",
+    "description": "pioneer info"
   }
 }
