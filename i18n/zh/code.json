@@ -692,5 +692,65 @@
   "pioneer.page.info": {
     "message": "Milk-V Pioneer是一块基于SOPHON SG2042的开发主板，采用标准的mATX外形尺寸。Pioneer具有类似PC的接口和PC的工业兼容性，提供原生的RISC-V开发环境和RISC-V桌面体验。它是RISC-V开发者和硬件先驱者体验RISC-V前沿技术的首选。拥抱RISC-V，拥抱未来。",
     "description": "pioneer info"
+  },
+  "mars.page.title": {
+    "message": "踏上RISC-V的宇宙之旅",
+    "description": "mars title"
+  },
+  "mars.page.info1": {
+    "message": "第一个RISC-V信用卡大小的SBC",
+    "description": "mars info"
+  },
+  "mars.page.info2": {
+    "message": "RISC-V是一个开放标准的指令集架构（ISA），基于既定的精简指令集计算机（RISC）原则。",
+    "description": "mars info"
+  },
+  "mars.page.info3": {
+    "message": "(四核1.5Ghz)",
+    "description": "mars info"
+  },
+  "mars.page.info4": {
+    "message": "一键切换uart串行下载模式",
+    "description": "mars info"
+  },
+  "mars.page.info5": {
+    "message": "(在开机前按住--uart串行下载模式)",
+    "description": "mars info"
+  },
+  "mars.page.info6": {
+    "message": "支持 PoE",
+    "description": "mars info"
+  },
+  "mars.page.info7": {
+    "message": "网线电源",
+    "description": "mars info"
+  },
+  "mars.page.info8": {
+    "message": "支持WI-FI/BT模块",
+    "description": "mars info"
+  },
+  "mars.page.info9": {
+    "message": "经典造型",
+    "description": "mars info"
+  },
+  "mars.page.info10": {
+    "message": "适用于Raspberry Pi 3B外壳",
+    "description": "mars info"
+  },
+  "mars.tech.info": {
+    "message": "Milk-V Mars是一款高性能的RISC-V单板计算机（SBC），只有信用卡大小，基于StarFive JH7110构建。这个四核设备支持即插即用的eMMC模块，以及高达8GB的LPDDR4内存。该板配备了三个USB 3.0端口，一个USB 2.0端口，一个支持4K分辨率的HDMI 2.0端口，一个支持PoE（以太网供电）的RJ45以太网端口，以及一个用于WIFI/BT模块的M.2 E-Key插槽。它还包括一个4线MIPI CSI和一个2线MIPI CSI，以及一个40 pin的GPIO。",
+    "description": "mars tech"
+  },
+  "mars": {
+    "message": "星火",
+    "description": "mars Name"
+  },
+  "duo": {
+    "message": "朵",
+    "description": "duo Name"
+  },
+  "pioneer": {
+    "message": "先锋者",
+    "description": "pioneer Name"
   }
 }

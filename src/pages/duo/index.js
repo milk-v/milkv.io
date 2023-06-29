@@ -40,7 +40,7 @@ function DetailsPage() {
       }}>
         <div className={cssList.titleBox}>
           <p className={cssList.meet}><Translate id='Duo.text.title1' /></p>
-          <h1 className={cssList.titleTxt}>Milk-V Duo</h1>
+          <h1 className={cssList.titleTxt}>Milk-V <Translate id='duo' /></h1>
           <h2 className={cssList.textLine}><Translate id='Duo.text.title2' /></h2>
           <p className={cssList.low}><Translate id='Duo.text.title3' /></p>
           <div className={cssList.btnbuy} onClick={() => setDuo2(buy => !buy)}><Translate id='Buy.now' /></div>

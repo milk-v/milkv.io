@@ -692,5 +692,65 @@
   "pioneer.page.info": {
     "message": "Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard mATX form factor. With PC-like interfaces and PC industrial compability, Pioneer provides native RISC-V development environment and RISC-V desktop experience. It is the first choice for RISC-V developers and hardware pioneers to experience the cutting edge technology of RISC-V. Embrace RISC-V, embrace the future.",
     "description": "pioneer info"
+  },
+  "mars.page.title": {
+    "message": "Embarking on the RISC-V Cosmic Journey",
+    "description": "mars title"
+  },
+  "mars.page.info1": {
+    "message": "The first RISC-V credit card size SBC",
+    "description": "mars info"
+  },
+  "mars.page.info2": {
+    "message": "RISC-V is an open standard instruction set architecture (ISA) based on established reduced instruction set computer (RISC) principles.",
+    "description": "mars info"
+  },
+  "mars.page.info3": {
+    "message": "(quad-core 1.5Ghz)",
+    "description": "mars info"
+  },
+  "mars.page.info4": {
+    "message": "One key to switch uart serial download mode",
+    "description": "mars info"
+  },
+  "mars.page.info5": {
+    "message": "(press and hold before powering on - uart serial download mode)",
+    "description": "mars info"
+  },
+  "mars.page.info6": {
+    "message": "Support PoE",
+    "description": "mars info"
+  },
+  "mars.page.info7": {
+    "message": "network cable power",
+    "description": "mars info"
+  },
+  "mars.page.info8": {
+    "message": "Support WI-FI / BT module",
+    "description": "mars info"
+  },
+  "mars.page.info9": {
+    "message": "Classic look",
+    "description": "mars info"
+  },
+  "mars.page.info10": {
+    "message": "Adapted to Raspberry Pi 3B case",
+    "description": "mars info"
+  },
+  "mars.tech.info": {
+    "message": "Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. This four-core device supports a plug-and-play eMMC module, as well as up to 8GB of LPDDR4 memory. The board is equipped with three USB 3.0 ports, one USB 2.0 port, an HDMI 2.0 port that supports 4K resolution, an RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO.",
+    "description": "mars tech"
+  },
+  "mars": {
+    "message": "Mars",
+    "description": "mars Name"
+  },
+  "duo": {
+    "message": "Duo",
+    "description": "duo Name"
+  },
+  "pioneer": {
+    "message": "Pioneer",
+    "description": "pioneer Name"
   }
 }

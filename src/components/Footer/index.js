@@ -29,9 +29,9 @@ export default () => {
                             <img src="/img/ICON.svg" className={styles.footer_logo} />
                             <div className={styles.footer_navbar}>
                                 <Link to='/'><Translate id='footer.text.home' /></Link>
-                                <Link to='/duo'>Duo</Link>
-                                <Link to='/pioneer'>Pioneer</Link>
-                                <Link to='/mars'>Mars</Link>
+                                <Link to='/duo'><Translate id='duo' /></Link>
+                                <Link to='/pioneer'><Translate id='pioneer' /></Link>
+                                <Link to='/mars'><Translate id='mars' /></Link>
                                 <Link to='https://community.milkv.io/'><Translate id='footer.text.community' /></Link>
                                 <Link to='/docs/home'><Translate id='footer.text.docs' /></Link>
                             </div>

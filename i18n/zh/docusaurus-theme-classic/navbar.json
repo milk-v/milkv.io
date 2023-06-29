@@ -4,15 +4,15 @@
     "description": "Navbar item with label Home"
   },
   "item.label.Duo": {
-    "message": "Duo",
+    "message": "朵",
     "description": "Navbar item with label Duo"
   },
   "item.label.Pioneer": {
-    "message": "Pioneer",
+    "message": "先锋者",
     "description": "Navbar item with label Pioneer"
   },
   "item.label.Mars": {
-    "message": "Mars",
+    "message": "星火",
     "description": "Navbar item with label Mars"
   },
   "item.label.Community": {

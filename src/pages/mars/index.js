@@ -10,6 +10,8 @@ import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
 import Embrace from "../../components/Embrace"
 
+import Translate from '@docusaurus/Translate';
+
 export default () => {
     const [mars2, setmars2] = useState(false)
 
@@ -24,33 +26,33 @@ export default () => {
             <div className={styles.marsBox}>
                 <div className={styles.headImage}>
                     <div className={styles.titleBox}>
-                        <h1>Milk-V Mars</h1>
-                        <p>Embarking on the RISC-V Cosmic Journey</p>
-                        <div className={styles.btnbuy} onClick={() => setmars2(buy => !buy)}>Buy Now</div>
+                        <h1>Milk-V <Translate id='mars' /></h1>
+                        <p><Translate id='mars.page.title' /></p>
+                        <div className={styles.btnbuy} onClick={() => setmars2(buy => !buy)}><Translate id='Buy.now' /></div>
                     </div>
                 </div>
                 <div className={styles.prodcuts}>
                     <div className={styles.prodcuts01}>
-                        <h1>The first RISC-V credit card size SBC</h1>
+                        <h1><Translate id='mars.page.info1' /></h1>
                     </div>
                     <div className={styles.prodcuts02}>
                         <img src='/mars/risc-v.svg' />
-                        <p>RISC-V is an open standard instruction set architecture (ISA) based on established reduced instruction set computer (RISC) principles.</p>
+                        <p><Translate id='mars.page.info2' /></p>
                     </div>
                     <div className={styles.prodcuts03}>
 
                     </div>
                     <div className={styles.prodcuts04}>
                         <h1>Starfive JH7110</h1>
-                        <p>(quad-core 1.5Ghz)</p>
+                        <p><Translate id='mars.page.info3' /></p>
                     </div>
                     <div className={styles.prodcuts05}>
-                        <p>One key to switch uart serial download mode</p>
-                        <span>(press and hold before powering on - uart serial download mode)</span>
+                        <p><Translate id='mars.page.info4' /></p>
+                        <span><Translate id='mars.page.info5' /></span>
                     </div>
                     <div className={styles.prodcuts06}>
-                        <h1>Support PoE</h1>
-                        <p>network cable power</p>
+                        <h1><Translate id='mars.page.info6' /></h1>
+                        <p><Translate id='mars.page.info7' /></p>
                     </div>
                     <ul className={styles.productsUl}>
                         <li className={styles.li01}>
@@ -60,19 +62,18 @@ export default () => {
                             <p className={styles.title_p}>- 4K@60FPS decoding</p>
                         </li>
                         <li className={styles.li02}>
-                            <h1>Support WI-FI / BT module</h1>
+                            <h1><Translate id='mars.page.info8' /></h1>
                             <p className={styles.titleMinP}>external M.2 E Key</p>
                         </li>
                         <li className={styles.li03}>
-                            <h1>Classic look</h1>
-                            <p className={styles.titleMinP}>Adapted to Raspberry Pi 3B case</p>
+                            <h1><Translate id='mars.page.info9' /></h1>
+                            <p className={styles.titleMinP}><Translate id='mars.page.info10' /></p>
                         </li>
                     </ul>
                 </div>
-
-                <h1 className={styles.maxtitle}>Tech specs</h1>
-                <p className={styles.moreP}>Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. This four-core device supports a plug-and-play eMMC module, as well as up to 8GB of LPDDR4 memory. The board is equipped with three USB 3.0 ports, one USB 2.0 port, an HDMI 2.0 port that supports 4K resolution, an RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO.</p>
-                <h2>Hardware</h2>
+                <h1 className={styles.maxtitle}><Translate id='line.title.TechSpecs' /></h1>
+                <p className={styles.moreP}><Translate id='mars.tech.info' /></p>
+                <h2><Translate id='duo.info.text.Hardware' /></h2>
                 <table className={styles.tableBox}>
                     <tbody>
                         <tr>

@@ -27,7 +27,7 @@ function Center() {
         <div className={cCss.center_Box}>
           <div className={cCss.pagBox}></div>
           <div className={cCss.titleBox}>
-            <h1>Milk-V Pioneer</h1>
+            <h1>Milk-V <Translate id='pioneer' /></h1>
             <p><Translate id='pioneer.page.title' /></p>
             <div className={cCss.buy}>
               <div className={cCss.btnbuy} onClick={() => setPionner(buy => !buy)}><Translate id='Buy.now' /></div>
