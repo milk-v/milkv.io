@@ -36,7 +36,7 @@ function Center() {
         </div>
       </div>
       <div className={cCss.startbox}>
-        <div className={cCss.title2}><Translate id='line.title.Specification' /></div>
+        <div className={cCss.title}><Translate id='line.title.Specification' /></div>
         <div className={cCss.power}>
           <div className={cCss.power1}>
             <h1><Translate id='pioneer.page.Specification.text1' /></h1>
@@ -64,9 +64,9 @@ function Center() {
             </div>
           </div>
         </div>
-        <div className={cCss.title7}>Pioneer Board</div>
+        <div className={cCss.title}>Pioneer Board</div>
         <div className={cCss.RichImg}></div>
-        <div className={cCss.title3}>Pioneer Box</div>
+        <div className={cCss.title}>Pioneer Box</div>
         <div className={cCss.pionBox}>
           <div className={cCss.pionBox_1}>
             <div className={cCss.pionBox_1_img}></div>
@@ -116,7 +116,7 @@ function Center() {
             </ul>
           </div>
         </div>
-        <div className={cCss.title8}><Translate id='pioneer.page.title.minText1' /></div>
+        <div className={cCss.title}><Translate id='pioneer.page.title.minText1' /></div>
         <ul className={cCss.list1}>
           <li className={cCss.div_on1}><div></div></li>
           <li className={cCss.div_on2}><div></div></li>
@@ -134,7 +134,7 @@ function Center() {
             <div className={cCss.div_on7}></div>
           </li>
         </ul>
-        <div className={cCss.title4}><Translate id='pioneer.page.title.minText2' /></div>
+        <div className={cCss.title}><Translate id='pioneer.page.title.minText2' /></div>
         <div className={cCss.bannerBox}>
           <div className={cCss.bannerimg1}>
             <div className={cCss.bannerimg1_1}></div>
@@ -152,7 +152,7 @@ function Center() {
       </div>
       <div className={cCss.footText}>
         <div className={cCss.chartTech}>
-          <div className={cCss.title6}><Translate id='line.title.TechSpecs' /></div>
+          <div className={cCss.title}><Translate id='line.title.TechSpecs' /></div>
           <div className={cCss.tech_text1}>
             <p className={cCss.tech_p}><Translate id='pioneer.page.info' /></p>
           </div>

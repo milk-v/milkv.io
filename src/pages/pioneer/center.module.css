@@ -21,6 +21,24 @@
     cursor: pointer;
 }
 
+.title {
+    text-align: left;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.title::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 .btnbuy:hover {
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
 }
@@ -31,6 +49,30 @@
         height: 80px;
         font-size: 43px;
         margin: 120px auto 30px;
+    }
+
+    .list1 {
+        margin-top: 100px;
+    }
+
+    .title {
+        font-size: 77px;
+        font-weight: 500;
+        text-align: left;
+        color: #fff;
+        position: relative;
+        width: 1320px;
+        height: 110px;
+        overflow: hidden;
+    }
+
+    .chartBox {
+        width: 1320px;
+        height: 604px;
+        background-color: #141619;
+        margin: 100px auto;
+        overflow: hidden;
+        position: relative;
     }
 
     .startbox {
@@ -106,84 +148,10 @@
         color: #fff;
     }
 
-
-    .title2 {
-        margin-top: 80px;
-        margin-bottom: 100px;
-        font-size: 76.4864px;
-        font-weight: 500;
-        line-height: 77.9968px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        position: relative;
-        width: 619.4496px;
-        height: 78px;
-        text-align: left;
-    }
-
-    .title2::after {
-        content: '';
-        position: absolute;
-        right: -745px;
-        bottom: 20px;
-        width: 889px;
-        height: 1px;
-        background: #929292;
-    }
-
-    .title7 {
-        font-size: 76.5008px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        width: 1157px;
-        height: 78px;
-        text-align: left;
-        position: relative;
-        margin-bottom: 80px;
-    }
-
-    .title7::after {
-        content: '';
-        position: absolute;
-        right: -633px;
-        bottom: 20.2px;
-        width: 1232px;
-        height: 1px;
-        background: #929292;
-    }
-
-    .title8 {
-        font-size: 88px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        position: relative;
-        width: 1157px;
-        height: 78px;
-        text-align: left;
-        margin-bottom: 80px;
-    }
-
-    .title8::after {
-        content: '';
-        position: absolute;
-        right: -633px;
-        bottom: 20.2px;
-        width: 1014.5008px;
-        height: 1px;
-        background: #929292;
-    }
-
     .power {
         width: 1320px;
         height: 394px;
-        margin: 0 auto 150px;
+        margin: 100px auto 150px;
         position: relative;
     }
 
@@ -277,7 +245,7 @@
     .pionBox {
         width: 1320px;
         height: 486px;
-        margin: 0 auto 150px;
+        margin: 100px auto 150px;
         display: flex;
         justify-content: space-between;
     }
@@ -586,35 +554,10 @@
         background-size: 100%;
     }
 
-
-    .title4 {
-        font-size: 88px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        position: relative;
-        width: 1061px;
-        height: 78px;
-        text-align: left;
-        margin-bottom: 80px;
-    }
-
-    .title4::after {
-        content: '';
-        position: absolute;
-        right: -250px;
-        bottom: 20.2px;
-        width: 746px;
-        height: 1px;
-        background: #929292;
-    }
-
     .bannerBox {
         width: 1320px;
         height: 366px;
-        margin: 0 auto 150px;
+        margin: 100px auto 150px;
         position: relative;
     }
 
@@ -692,6 +635,7 @@
         height: 657px;
         background: url(/static/img/centerImg/Frame442.svg) no-repeat;
         background-size: 100%;
+        margin-top: 100px;
         margin-bottom: 150px;
         position: relative;
     }
@@ -871,30 +815,6 @@
         text-decoration: none;
         font-size: 25.8992px;
     }
-
-    .title6 {
-        font-size: 88px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        position: relative;
-        width: 1061px;
-        height: 78px;
-        text-align: left;
-        margin-bottom: 80px;
-    }
-
-    .title6::after {
-        content: '';
-        position: absolute;
-        right: -250px;
-        bottom: 20.2px;
-        width: 839px;
-        height: 2px;
-        background: #929292;
-    }
 }
 
 @media screen and (max-width: 1350px) and (min-width: 1050px) {
@@ -903,6 +823,13 @@
         height: 70px;
         font-size: 34px;
         margin: 60px auto 20px;
+    }
+
+    .title {
+        font-size: 47px;
+        width: 1000px;
+        height: 78px;
+        margin: 100px auto 100px;
     }
 
     .startbox {
@@ -973,77 +900,6 @@
         text-align: center;
         font-size: 20px;
         color: #fff;
-    }
-
-
-    .title2 {
-        margin-top: 0px;
-        margin-bottom: 50px;
-        font-size: 50px;
-        font-weight: 500;
-        line-height: 77.9968px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        position: relative;
-        height: 78px;
-        text-align: left;
-    }
-
-    .title2::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        bottom: 20px;
-        width: 680px;
-        height: 2px;
-        background: #929292;
-    }
-
-    .title7 {
-        font-size: 50px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        height: 78px;
-        text-align: left;
-        position: relative;
-        margin-bottom: 50px;
-    }
-
-    .title7::after {
-        content: '';
-        width: 650px;
-        position: absolute;
-        right: 0;
-        bottom: 20.2px;
-        height: 1px;
-        background: #929292;
-    }
-
-    .title8 {
-        font-size: 50px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        position: relative;
-        height: 78px;
-        text-align: left;
-        margin-bottom: 50px;
-    }
-
-    .title8::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        bottom: 20.2px;
-        width: 560px;
-        height: 1px;
-        background: #929292;
     }
 
     .power {
@@ -1450,30 +1306,6 @@
         background-size: 100%;
     }
 
-
-    .title4 {
-        font-size: 50px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        position: relative;
-        height: 78px;
-        text-align: left;
-        margin-bottom: 50px;
-    }
-
-    .title4::after {
-        content: '';
-        position: absolute;
-        right: 0px;
-        bottom: 20.2px;
-        width: 680px;
-        height: 1px;
-        background: #929292;
-    }
-
     .bannerBox {
         width: 1000px;
         height: 315px;
@@ -1732,31 +1564,6 @@
         text-decoration: none;
         font-size: 25.8992px;
     }
-
-    .title6 {
-        width: 1000px;
-        font-size: 50px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        position: relative;
-        height: 78px;
-        text-align: left;
-        margin-bottom: 20px;
-        margin: 0 auto;
-    }
-
-    .title6::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        bottom: 20.2px;
-        width: 730px;
-        height: 2px;
-        background: #929292;
-    }
 }
 
 @media screen and (max-width: 1050px) and (min-width: 750px) {
@@ -1765,6 +1572,12 @@
         height: 60px;
         font-size: 26px;
         margin: 40px auto 10px;
+    }
+
+    .title {
+        font-size: 37px;
+        width: 700px;
+        margin: 60px auto 50px;
     }
 
     .startbox {
@@ -1835,77 +1648,6 @@
         text-align: center;
         font-size: 20px;
         color: #fff;
-    }
-
-
-    .title2 {
-        margin-top: 0px;
-        margin-bottom: 20px;
-        font-size: 37px;
-        font-weight: 500;
-        line-height: 77.9968px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        position: relative;
-        height: 78px;
-        text-align: left;
-    }
-
-    .title2::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        bottom: 25px;
-        width: 460px;
-        height: 2px;
-        background: #929292;
-    }
-
-    .title7 {
-        font-size: 37px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        height: 78px;
-        text-align: left;
-        position: relative;
-        margin-bottom: 20px;
-    }
-
-    .title7::after {
-        content: '';
-        width: 435px;
-        position: absolute;
-        right: 0;
-        bottom: 25px;
-        height: 1px;
-        background: #929292;
-    }
-
-    .title8 {
-        font-size: 37px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        position: relative;
-        height: 78px;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-
-    .title8::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        bottom: 25px;
-        width: 370px;
-        height: 1px;
-        background: #929292;
     }
 
     .power {
@@ -2305,30 +2047,6 @@
         background-size: 100%;
     }
 
-
-    .title4 {
-        font-size: 37px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        position: relative;
-        height: 78px;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-
-    .title4::after {
-        content: '';
-        position: absolute;
-        right: 0px;
-        bottom: 25px;
-        width: 460px;
-        height: 1px;
-        background: #929292;
-    }
-
     .bannerBox {
         width: 700px;
         height: 224px;
@@ -2578,31 +2296,6 @@
         text-decoration: none;
         font-size: 20px;
     }
-
-    .title6 {
-        font-size: 37px;
-        font-weight: 500;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        position: relative;
-        height: 78px;
-        text-align: left;
-        margin-bottom: 20px;
-        margin: 0 auto;
-    }
-
-    .title6::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        bottom: 25px;
-        width: 500px;
-        height: 2px;
-        background: #929292;
-    }
-
 }
 
 @media screen and (max-width: 750px) {
@@ -2611,6 +2304,26 @@
         height: 45rem;
         font-size: 20rem;
         margin: 50rem auto 10rem;
+    }
+
+    .title {
+        width: 350rem;
+        text-align: left;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        font-size: 20rem;
+    }
+
+    .title::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #ccc;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 
     .startbox {
@@ -2670,68 +2383,9 @@
         color: #fff;
     }
 
-
-    .title2 {
-        margin-bottom: 20rem;
-        font-size: 21rem;
-        font-weight: 500;
-        color: #fff;
-        position: relative;
-    }
-
-    .title2::after {
-        content: '';
-        position: absolute;
-        left: 140rem;
-        bottom: 15rem;
-        width: 100%;
-        height: 1rem;
-        background: #929292;
-    }
-
-    .title7 {
-        font-size: 21rem;
-        font-weight: 500;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-        text-align: left;
-        margin-bottom: 20rem;
-        position: relative;
-    }
-
-    .title7::after {
-        content: '';
-        width: 100%;
-        position: absolute;
-        left: 150rem;
-        bottom: 15rem;
-        height: 1rem;
-        background: #929292;
-    }
-
-    .title8 {
-        width: 100%;
-        font-size: 21rem;
-        font-weight: 500;
-        color: #fff;
-        position: relative;
-        margin-bottom: 20rem;
-    }
-
-    .title8::after {
-        content: '';
-        position: absolute;
-        left: 190rem;
-        bottom: 15rem;
-        width: 100%;
-        height: 1rem;
-        background: #929292;
-    }
-
     .power {
         width: 340rem;
-        margin: 0 auto 30rem;
+        margin: 30rem auto;
         display: flex;
         flex-direction: column;
     }
@@ -2806,7 +2460,7 @@
 
     .pionBox {
         width: 340rem;
-        margin: 0 auto 30rem;
+        margin: 30rem auto;
     }
 
     .pionBox>div {
@@ -3005,7 +2659,9 @@
         padding-left: 0;
     }
 
-
+    .list1 {
+        margin-top: 20rem;
+    }
 
     .list1>li {
         width: 80rem;
@@ -3096,29 +2752,10 @@
         background-size: 100%;
     }
 
-
-    .title4 {
-        font-size: 21rem;
-        font-weight: 500;
-        color: #fff;
-        position: relative;
-        margin-bottom: 20rem;
-    }
-
-    .title4::after {
-        content: '';
-        position: absolute;
-        left: 140rem;
-        bottom: 15rem;
-        width: 100%;
-        height: 1rem;
-        background: #929292;
-    }
-
     .bannerBox {
         width: 340rem;
         height: 224rem;
-        margin: 0 auto 50rem;
+        margin: 20rem auto 50rem;
         display: flex;
         overflow-x: auto;
     }
@@ -3191,6 +2828,7 @@
         background-size: 100%;
         margin-bottom: 20rem;
         position: relative;
+        margin-top: 20rem;
     }
 
     .embrace {
@@ -3348,24 +2986,5 @@
         color: #fff;
         text-decoration: none;
         font-size: 12rem;
-    }
-
-    .title6 {
-        font-size: 21rem;
-        font-weight: 500;
-        color: #fff;
-        position: relative;
-        margin-bottom: 20rem;
-        overflow: hidden;
-    }
-
-    .title6::after {
-        content: '';
-        position: absolute;
-        left: 120rem;
-        bottom: 15rem;
-        width: 100%;
-        height: 1rem;
-        background: #929292;
     }
 }
