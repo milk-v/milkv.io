@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Pioneer Bug List '
+sidebar_label: 'Known Issues'
 sidebar_position: 50
 ---
 # Pioneer Bug List
