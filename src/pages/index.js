@@ -192,7 +192,7 @@ function HomepageHeader() {
           </div>
           <img src='/mobile/mobile-home-04.webp' className={styles.page3Img4} style={{ display: "none" }} />
         </div>
-        <ContactBar />
+        <ContactBar product='duo' />
       </div>
       <div className={styles.buyChe} onClick={() => setBuy(buy => !buy)} >
         <img src='/home/buy.svg' className={styles.buy1} />

@@ -5,7 +5,11 @@ import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
 
 
-export default () => {
+export default (props) => {
+    const { product } = props
+
+    const link_url = product === 'duo' ? 'https://matrix.to/#/#milkv-duo:matrix.org' : product === 'pioneer' ? 'https://matrix.to/#/#milkv-pioneer:matrix.org' : product === 'mars' ? 'https://matrix.to/#/#milk-v:matrix.org' : null
+
     return (
         <>
             <div className={styles.on5_box}>
@@ -14,7 +18,7 @@ export default () => {
                         <h1 className={styles.on5_box_h1}>[matrix]</h1>
                         <p className={styles.on5_box_p}><Translate id='contact.text.matrix' /></p>
                         <div className={styles.on5_bottom}>
-                            <Link to='https://matrix.to/#/#milkv-duo:matrix.org' style={{ textDecoration: 'none', color: '#fff' }}><Translate id='contact.text.join' /></Link>
+                            <Link to={link_url} style={{ textDecoration: 'none', color: '#fff' }}><Translate id='contact.text.join' />{product}</Link>
                         </div>
                     </li>
                     <li className={styles.li}>

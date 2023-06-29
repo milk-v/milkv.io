@@ -160,7 +160,7 @@ export default () => {
 
                 </table>
                 <ContactUs product='mars' />
-                <ContactBar />
+                <ContactBar product='mars' />
                 <Embrace product='mars' />
             </div>
             <Footer></Footer>

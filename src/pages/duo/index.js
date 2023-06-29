@@ -171,7 +171,7 @@ function DetailsPage() {
           </div>
         </div>
         <ContactUs product='duo' />
-        <ContactBar />
+        <ContactBar product='duo' />
         <Embrace product='duo' />
       </div>
     </>

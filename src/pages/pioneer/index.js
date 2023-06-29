@@ -200,7 +200,7 @@ function Center() {
         </div>
       </div>
       <ContactUs product='pioneer' />
-      <ContactBar />
+      <ContactBar product='pioneer' />
       <Embrace product='pionner' />
     </div>
   )
