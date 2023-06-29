@@ -644,5 +644,53 @@
   "duo.embrace2": {
     "message": "让我们一起使RISC-V变得更好。",
     "description": "Duo embrace"
+  },
+  "pioneer.page.title": {
+    "message": "让本地RISC-V开发成为可能",
+    "description": "pioneer title"
+  },
+  "pioneer.page.Specification.text1": {
+    "message": "由 SOPHON SG2042 提供",
+    "description": "pioneer Specification"
+  },
+  "pioneer.page.Specification.text2": {
+    "message": "64核 RISC-V CPU",
+    "description": "pioneer Specification"
+  },
+  "pioneer.page.Box.text1": {
+    "message": "配备",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text2": {
+    "message": "显卡",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text3": {
+    "message": "网卡",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text4": {
+    "message": "功率",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text5": {
+    "message": "制冷",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.title.minText1": {
+    "message": "软件支持",
+    "description": "pioneer min Text"
+  },
+  "pioneer.page.title.minText2": {
+    "message": "真的很有用",
+    "description": "pioneer min Text"
+  },
+  "pioneer.page.really1": {
+    "message": "工作站",
+    "description": "pioneer min Text"
+  },
+  "pioneer.page.info": {
+    "message": "Milk-V Pioneer是一块基于SOPHON SG2042的开发主板，采用标准的mATX外形尺寸。Pioneer具有类似PC的接口和PC的工业兼容性，提供原生的RISC-V开发环境和RISC-V桌面体验。它是RISC-V开发者和硬件先驱者体验RISC-V前沿技术的首选。拥抱RISC-V，拥抱未来。",
+    "description": "pioneer info"
   }
 }
