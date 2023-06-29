@@ -19,7 +19,7 @@ export default () => {
 
     return (
         <Layout>
-            <PopUp></PopUp>
+            {/* <PopUp></PopUp> */}
             <BuyPop flag={mars2} module={mars2Start} type='mars' />
             <div className={styles.marsBox}>
                 <div className={styles.headImage}>

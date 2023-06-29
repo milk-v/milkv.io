@@ -17,7 +17,6 @@ export default function (props) {
             window.open('https://app6hodqg6k9861.h5.xiaoeknow.com')
 
         } else if (type === 'mars') {
-            // window.open('https://app6hodqg6k9861.h5.xiaoeknow.com')
 
         } else if (type === 'pioneer') {
             window.open('https://www.crowdsupply.com/milkv/milk-v-pioneer')
@@ -30,25 +29,6 @@ export default function (props) {
             <div className={styles.tanchuang} style={{ display: `${flag ? 'block' : 'none'}` }} >
                 <img src='/home/icon-close.svg' onClick={module} className={styles.close} />
                 <img src='/img/ICON.svg' className={styles.boxLogo} />
-                {/* <div className={type === 'duo' || type === 'buy' ? styles.goBuy : styles.none} onClick={() => toApp()}>
-                    <img src='/home/china.svg' className={styles.buyIcon} />
-                    <div className={styles.textBOx}>
-                        <p className={styles.tp}>China's mainland</p>
-                        <img src='/home/icon_more-right.svg' className={styles.img1} />
-                        <img src='/home/icon_more-right_white.svg' className={styles.img2} />
-                    </div>
-                    <img src='/home/COMINGSOON.svg' style={{ display: `${type === 'duo' || type === 'buy' ? 'none' : 'block'}` }} className={styles.coming} />
-                </div>
-                <div className={styles.none}>
-                    <img src='/home/other.svg' className={styles.buyIcon} />
-                    <div className={styles.textBOx}>
-                        <p className={styles.tp}>Other countries and regions</p>
-                        <img src='/home/icon_more-right.svg' className={styles.img1} />
-                        <img src='/home/icon_more-right_white.svg' className={styles.img2} />
-                    </div>
-                    <img src='/home/COMINGSOON.svg' className={styles.coming} />
-                </div> */}
-
                 {
                     type === 'home' ? <>
                         <div className={styles.goBuy} onClick={() => toApp()}>

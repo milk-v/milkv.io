@@ -215,7 +215,7 @@ export default function () {
     <>
       <Layout>
         <Center></Center>
-        <PopUp></PopUp>
+        {/* <PopUp></PopUp> */}
         <Footer></Footer>
       </Layout>
     </>

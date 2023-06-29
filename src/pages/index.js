@@ -208,7 +208,7 @@ export default function Home() {
     <>
       <Layout>
         <HomepageHeader />
-        <PopUp></PopUp>
+        {/* <PopUp></PopUp> */}
         <Footer></Footer>
       </Layout>
     </>

@@ -37,7 +37,7 @@ export default () => {
                             </div>
                         </div>
                         <div className={styles.footer_right}>
-                            <h1> <Link to='/docs/home'><Translate id='footer.text.Subscribe' /></Link></h1>
+                            <h1><Translate id='footer.text.Subscribe' /></h1>
                             <form
                                 action="https://milkv.us21.list-manage.com/subscribe/post?u=44d3c4015a2452785a54f16e5&amp;id=efeca1c0c1&amp;f_id=00375ee1f0"
                                 method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className={styles.validate}

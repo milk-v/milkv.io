@@ -183,7 +183,7 @@ export default function () {
     <>
       <Layout>
         <DetailsPage></DetailsPage>
-        <PopUp></PopUp>
+        {/* <PopUp></PopUp> */}
         <Footer></Footer>
       </Layout>
     </>
