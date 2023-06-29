@@ -29,9 +29,11 @@ export default (props) => {
 
 
     const handleSubmit = (event) => {
+        let url = product === 'duo' ? 'https://submit-form.com/mxM7Oj62' : product === 'pioneer' ? 'https://submit-form.com/LajdNi4B' : product === 'mars' ? 'https://submit-form.com/8WXCfzfP' : null
+
         event.preventDefault();
         setFormBtn(true)
-        axios.get(`https://submit-form.com/FKfGJJEG?product=${product}&name=${userName}&email=${userEmail}&subject=${subject}&message=${message}`)
+        axios.get(`${url}?product=${product}&name=${userName}&email=${userEmail}&subject=${subject}&message=${message}`)
             .then((response) => {
                 setFlag(true)
                 setFormBtn(false)
@@ -54,7 +56,10 @@ export default (props) => {
                         <h3><Translate id='contact.title.Development' /></h3>
                         <a className={styles.fromA} href="mailto:dev@milkv.io">dev@milkv.io</a>
                         <h3><Translate id='contact.title.support' /></h3>
-                        <a className={styles.fromA} href="mailto:support@milkv.io">support@milkv.io</a>
+                        {
+                            product === 'duo' ? <a className={styles.fromA} href="mailto:duo@milkv.io">duo@milkv.io</a> : product === 'pioneer' ? <a className={styles.fromA} href="mailto:pinoeer@milkv.io">pinoeer@milkv.io</a> : product === 'mars' ? <a className={styles.fromA} href="mailto:mars@milkv.io">mars@milkv.io</a> : null
+                        }
+
                     </div>
                     <div className={styles.touchBox}>
                         <h1><Translate id='contact.title.sendMessage' /></h1>
