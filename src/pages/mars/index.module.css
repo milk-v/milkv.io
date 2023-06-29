@@ -79,6 +79,24 @@
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
 }
 
+.title {
+    text-align: left;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.title::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 @media screen and (min-width: 1950px) {
 
     .btnbuy {
@@ -86,6 +104,18 @@
         height: 80px;
         font-size: 43px;
         margin: 120px auto 30px;
+    }
+
+    .title {
+        font-size: 77px;
+        font-weight: 500;
+        text-align: left;
+        color: #fff;
+        position: relative;
+        width: 1450px;
+        height: 110px;
+        overflow: hidden;
+        margin: 150px auto 100px;
     }
 
     .marsBox>h2 {
@@ -170,7 +200,7 @@
         width: 470px;
         height: 205px;
         font-weight: 600;
-        font-size: 56px;
+        font-size: 42px;
         color: rgba(255, 255, 255, 0.8);
         text-align: center;
         line-height: 205px;
@@ -308,26 +338,6 @@
         flex-grow: 0;
     }
 
-    .maxtitle {
-        width: 1440px;
-        font-weight: 500;
-        font-size: 80px;
-        color: #fff;
-        overflow: hidden;
-        position: relative;
-        margin: 150px auto 80px;
-    }
-
-    .maxtitle::after {
-        content: '';
-        position: absolute;
-        left: 430px;
-        bottom: 35px;
-        width: 100%;
-        height: 1px;
-        background-color: #ccc;
-    }
-
     .moreP {
         font-size: 26px;
         line-height: 120%;
@@ -432,6 +442,13 @@
         flex-grow: 0;
     }
 
+    .title {
+        font-size: 50px;
+        width: 1440px;
+        height: 78px;
+        margin: 100px auto 80px;
+    }
+
     .titleBox>p {
         font-weight: 500;
         font-size: 38px;
@@ -489,7 +506,7 @@
         width: 470px;
         height: 205px;
         font-weight: 600;
-        font-size: 56px;
+        font-size: 36px;
         color: rgba(255, 255, 255, 0.8);
         text-align: center;
         line-height: 205px;
@@ -627,26 +644,6 @@
         flex-grow: 0;
     }
 
-    .maxtitle {
-        width: 1440px;
-        font-weight: 500;
-        font-size: 80px;
-        color: #fff;
-        overflow: hidden;
-        position: relative;
-        margin: 150px auto 80px;
-    }
-
-    .maxtitle::after {
-        content: '';
-        position: absolute;
-        left: 430px;
-        bottom: 35px;
-        width: 100%;
-        height: 1px;
-        background-color: #ccc;
-    }
-
     .moreP {
         font-size: 26px;
         line-height: 120%;
@@ -735,6 +732,13 @@
         color: #FFFFFF;
     }
 
+    .title {
+        font-size: 42px;
+        width: 990px;
+        height: 56px;
+        margin: 100px auto 80px;
+    }
+
     .titleBox {
         margin-top: 50px;
     }
@@ -809,7 +813,7 @@
         width: 320px;
         height: 160px;
         font-weight: 600;
-        font-size: 38px;
+        font-size: 28px;
         color: rgba(255, 255, 255, 0.8);
         text-align: center;
         line-height: 160px;
@@ -947,26 +951,6 @@
         flex-grow: 0;
     }
 
-    .maxtitle {
-        width: 990px;
-        font-weight: 500;
-        font-size: 60px;
-        color: #fff;
-        overflow: hidden;
-        position: relative;
-        margin: 100px auto 50px;
-    }
-
-    .maxtitle::after {
-        content: '';
-        position: absolute;
-        left: 340px;
-        bottom: 30px;
-        width: 100%;
-        height: 1px;
-        background-color: #ccc;
-    }
-
     .moreP {
         font-size: 18px;
         line-height: 120%;
@@ -1043,6 +1027,13 @@
         height: 60px;
         font-size: 26px;
         margin: 40px auto 10px;
+    }
+
+    .title {
+        font-size: 36px;
+        width: 740px;
+        height: 52px;
+        margin: 80px auto 40px;
     }
 
     .marsBox>h2 {
@@ -1127,7 +1118,7 @@
         width: 240px;
         height: 130px;
         font-weight: 600;
-        font-size: 30px;
+        font-size: 20px;
         color: rgba(255, 255, 255, 0.8);
         text-align: center;
         line-height: 130px;
@@ -1265,26 +1256,6 @@
         flex-grow: 0;
     }
 
-    .maxtitle {
-        width: 740px;
-        font-weight: 500;
-        font-size: 40px;
-        color: #fff;
-        overflow: hidden;
-        position: relative;
-        margin: 60px auto 30px;
-    }
-
-    .maxtitle::after {
-        content: '';
-        position: absolute;
-        left: 220px;
-        bottom: 15px;
-        width: 100%;
-        height: 1px;
-        background-color: #ccc;
-    }
-
     .moreP {
         font-size: 14px;
         line-height: 120%;
@@ -1371,6 +1342,13 @@
         font-size: 20rem;
         color: #FFFFFF;
         font-weight: 600;
+    }
+
+    .title {
+        font-size: 26rem;
+        width: 350rem;
+        height: 36rem;
+        margin: 80px auto 20px;
     }
 
     .titleBox {
@@ -1565,26 +1543,6 @@
         flex: none;
         order: 1;
         flex-grow: 0;
-    }
-
-    .maxtitle {
-        width: 340rem;
-        font-weight: 500;
-        font-size: 21rem;
-        color: #fff;
-        overflow: hidden;
-        position: relative;
-        margin: 60rem auto 15rem;
-    }
-
-    .maxtitle::after {
-        content: '';
-        position: absolute;
-        left: 120rem;
-        bottom: 10rem;
-        width: 100%;
-        height: 1rem;
-        background-color: #ccc;
     }
 
     .moreP {

@@ -22,5 +22,9 @@
   "item.label.Docs": {
     "message": "文档",
     "description": "Navbar item with label Docs"
+  },
+  "item.label.Products": {
+    "message": "产品",
+    "description": "Navbar item with label Docs"
   }
 }

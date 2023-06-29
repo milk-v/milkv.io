@@ -92,25 +92,28 @@ const config = {
             to: '/'
           },
           {
-            label: 'Duo',
-            to: '/duo',
-            position: 'right',
-
-          },
-          {
-            position: 'right',
-            label: 'Pioneer',
-            to: '/pioneer'
-          },
-          {
-            position: 'right',
-            label: 'Mars',
-            to: '/mars'
-          },
-          {
             position: 'right',
             label: 'Community',
             to: 'https://community.milkv.io/'
+          },
+          {
+            type: 'dropdown',
+            label: 'Products',
+            position: 'right',
+            items: [
+              {
+                label: 'Duo',
+                to: '/duo',
+              },
+              {
+                label: 'Pioneer',
+                to: '/pioneer'
+              },
+              {
+                label: 'Mars',
+                to: '/mars'
+              },
+            ],
           },
           {
             type: 'dropdown',

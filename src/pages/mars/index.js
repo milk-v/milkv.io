@@ -40,7 +40,7 @@ export default () => {
                         <p><Translate id='mars.page.info2' /></p>
                     </div>
                     <div className={styles.prodcuts03}>
-
+                        40 Pin GPIO Header
                     </div>
                     <div className={styles.prodcuts04}>
                         <h1>Starfive JH7110</h1>
@@ -71,7 +71,7 @@ export default () => {
                         </li>
                     </ul>
                 </div>
-                <h1 className={styles.maxtitle}><Translate id='line.title.TechSpecs' /></h1>
+                <h1 className={styles.title}><Translate id='line.title.TechSpecs' /></h1>
                 <p className={styles.moreP}><Translate id='mars.tech.info' /></p>
                 <h2><Translate id='duo.info.text.Hardware' /></h2>
                 <table className={styles.tableBox}>
@@ -142,7 +142,7 @@ export default () => {
                         </tr>
                         <tr>
                             <td>GPIO</td>
-                            <td>40 Pin GPIO</td>
+                            <td>40 Pin GPIO Header</td>
                         </tr>
                         <tr>
                             <td>Dimensions</td>
