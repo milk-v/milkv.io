@@ -7,7 +7,11 @@ import axios from "axios";
 import Agreement from '../../../components/Agreement'
 import Footer from "../../../components/Footer"
 
+import Translate from '@docusaurus/Translate';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
+
+{/* <Translate id='Donation.title' /> */ }
 // 国际电话正则
 const phoneRegex = /^(\+?\d{1,3}[- ]?)?\d{11}$/
 const phoneChinaRegex = /^1[3-9]\d{9}$/;
@@ -22,11 +26,14 @@ const style = {
 // 个人
 function Individual(props) {
     const { type, setAgreeFlag, agree, setPopflag, setlang, setFlagp, radioLang, setFlagp2 } = props
+
+    const currentLanguage = useBaseUrl('/');
+
     const [individualName, setIndividualName] = useState('')
     const [individualPhone, setIndividualPhone] = useState('')
     const [individualEmail, setIndividualEmail] = useState('')
     const [individualPurpose, setIndividuaPurpose] = useState('')
-    const [upload, setUpload] = useState('Upload File')
+    const [upload, setUpload] = useState(currentLanguage === '/' ? 'Upload File' : '上传文件')
     const [individualFile, setIndividualFile] = useState(null)
     const [flag, setFlag] = useState(false)
     const [btn, setBtn] = useState(false)
@@ -38,7 +45,7 @@ function Individual(props) {
             setUpload(file.name);
             setFlag(true)
         } else {
-            setUpload('Error format');
+            setUpload(currentLanguage === '/' ? 'Format error' : '不符合规范');
             setFlag(false)
         }
     }
@@ -105,41 +112,41 @@ function Individual(props) {
         <>
             <form onSubmit={handleSubmit} className={styles.infoForm}>
                 <label>
-                    <span><span style={{ color: 'red' }}>*</span>Your Name:</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='contact.title.name' />:</span>
                     <input type="text" required value={individualName} onChange={(e) => setIndividualName(e.target.value)}
-                        placeholder="Your Name"
+                        placeholder={currentLanguage === '/' ? 'Your Name' : '你的名字'}
                     />
                 </label>
                 <label className={styles.valuered}>
                     <div className={styles.inputBox}>
-                        <span><span style={{ color: 'red' }}>*</span>Phone Number:</span>
+                        <span><span style={{ color: 'red' }}>*</span><Translate id='Donation.title.Shipping.Phone' />:</span>
                         <input type="phone" required value={individualPhone} onBlur={pBlur} onChange={(e) => setIndividualPhone(e.target.value)}
-                            placeholder="Your Contact Phone Number"
+                            placeholder={currentLanguage === '/' ? 'Your Contact Phone Number' : '您的联系电话'}
                         />
                     </div>
-                    <p className={styles.redP} style={{ display: `${dis ? 'block' : 'none'}` }}>*Please fill in the correct format of the phone number</p>
+                    <p className={styles.redP} style={{ display: `${dis ? 'block' : 'none'}` }}>*<Translate id='cv1800b.phone.correct' /></p>
                 </label>
                 <label className={styles.valuered}>
                     <div className={styles.inputBox}>
-                        <span><span style={{ color: 'red' }}>*</span>Email Address:</span>
+                        <span><span style={{ color: 'red' }}>*</span><Translate id='contact.title.email' />:</span>
                         <input type="email" required value={individualEmail} onBlur={eBlur} onChange={(e) => setIndividualEmail(e.target.value)}
-                            placeholder="Your Email Address"
+                            placeholder={currentLanguage === '/' ? 'Enter your email' : '请输入你的电子邮箱'}
                         />
                     </div>
-                    <p className={styles.redP} style={{ display: `${dis2 ? 'block' : 'none'}` }}>*Please fill in the correct format of e-mail</p>
+                    <p className={styles.redP} style={{ display: `${dis2 ? 'block' : 'none'}` }}>*<Translate id='cv1800b.email.correct' /></p>
                 </label>
                 <label>
-                    <span><span style={{ color: 'red' }}>*</span>Purpose:</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.Individual.Purpose' />:</span>
                     <textarea className={styles.bgText} required value={individualPurpose} onChange={(e) => setIndividuaPurpose(e.target.value)}
-                        placeholder="A Brief Summary Of Why You Need The Complete CV1800B Manual"
+                        placeholder={currentLanguage === '/' ? 'A Brief Summary Of Why You Need The Complete CV1800B Manual' : '简要说明为什么你需要完整的CV1800B手册'}
                     ></textarea>
                 </label>
                 <div className={styles.flexBox}>
-                    <span><span style={{ color: 'red' }}>*</span>Proof of identity:
-                        <br></br>(ID card, work card, business card, etc.)</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.Individual.Proof' />:
+                        <br></br><Translate id='cv1800b.Individual.Proof.info' /></span>
                     <label htmlFor='upload'>{upload}</label>
                     <img src="/form/response.svg" style={{ display: `${flag ? 'block' : 'none'}` }} />
-                    <p style={{ display: `${!flag ? 'block' : 'none'}`, color: 'red' }} >*File size limit: 1 MB. Accepted formats: png, jpg, webp, pdf</p>
+                    <p style={{ display: `${!flag ? 'block' : 'none'}`, color: 'red' }} >*<Translate id='cv1800b.Individual.file.info' /></p>
                 </div>
                 <input type="file" id="upload" required onChange={handleFileChange} className={styles.upload} />
                 <p style={{ display: `${radioLang === 'CN' ? 'block' : radioLang === 'EN' ? 'none' : null}` }} onClick={() => {
@@ -154,7 +161,7 @@ function Individual(props) {
                     <input type="radio" className={styles.square} required checked={agree} onChange={() => { }} onClick={() => { setAgreeFlag(s => !s) }} />
                     <span>{radioLang === 'CN' ? "我同意并遵守以上条款" : "I agree to and will abide by the terms above"}</span>
                 </label>
-                <button type='submit' style={btn ? style : { cursor: 'not-allowed' }} disabled={btn ? false : true}>Submit</button>
+                <button type='submit' style={btn ? style : { cursor: 'not-allowed' }} disabled={btn ? false : true}><Translate id='Submit' /></button>
             </form>
         </>
     )
@@ -164,14 +171,16 @@ function Individual(props) {
 function Schools(props) {
     const { type, setAgreeFlag, agree, setPopflag, setlang, setFlagp, setFlagp2, radioLang } = props
 
+    const currentLanguage = useBaseUrl('/');
+
     const [individualName, setIndividualName] = useState('')
     const [individualPhone, setIndividualPhone] = useState('')
     const [individualEmail, setIndividualEmail] = useState('')
     const [individualAddress, setIndividualAddress] = useState('')
     const [individualPurpose, setIndividuaPurpose] = useState('')
     const [individualpname, setIndividuapname] = useState('')
-    const [upload, setUpload] = useState('Upload File')
-    const [upload2, setUpload2] = useState('Upload File')
+    const [upload, setUpload] = useState(currentLanguage === '/' ? 'Upload File' : '上传文件')
+    const [upload2, setUpload2] = useState(currentLanguage === '/' ? 'Upload File' : '上传文件')
     const [organization, setOrganization] = useState('')
     const [individualFile, setIndividualFile] = useState(null)
     const [individualFile2, setIndividualFile2] = useState(null)
@@ -186,7 +195,7 @@ function Schools(props) {
             setUpload(file.name);
             setFlag(true)
         } else {
-            setUpload('Error format');
+            setUpload(currentLanguage === '/' ? 'Format error' : '不符合规范');
             setFlag(false)
         }
     }
@@ -198,7 +207,7 @@ function Schools(props) {
             setUpload2(file.name);
             setFlag2(true)
         } else {
-            setUpload2('Error format');
+            setUpload2(currentLanguage === '/' ? 'Format error' : '不符合规范');
             setFlag2(false)
         }
     }
@@ -279,64 +288,64 @@ function Schools(props) {
         <>
             <form onSubmit={handleSubmit} className={styles.infoForm}>
                 <label>
-                    <span><span style={{ color: 'red' }}>*</span>Applicant Name:</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.Schools.name' />:</span>
                     <input type="text" required value={individualName} onChange={(e) => setIndividualName(e.target.value)}
-                        placeholder="Your Applicant's Name"
+                        placeholder={currentLanguage === '/' ? "Your Applicant's Name" : '您的申请人姓名'}
                     />
                 </label>
                 <label>
-                    <span><span style={{ color: 'red' }}>*</span>Your Organization Name:</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.Schools.Organization.name' />:</span>
                     <input type="text" required value={organization} onChange={(e) => setOrganization(e.target.value)}
-                        placeholder="Your Organization Name" />
+                        placeholder={currentLanguage === '/' ? "Your Organization Name" : '您的组织名称'} />
                 </label>
                 <label className={styles.valuered}>
                     <div className={styles.inputBox}>
-                        <span><span style={{ color: 'red' }}>*</span>Phone Number:</span>
+                        <span><span style={{ color: 'red' }}>*</span><Translate id='Donation.title.Shipping.Phone' />:</span>
                         <input type="phone" onBlur={pBlur} required value={individualPhone} onChange={(e) => setIndividualPhone(e.target.value)}
-                            placeholder="Your Contact Phone Number"
+                            placeholder={currentLanguage === '/' ? "Your Contact Phone Number" : '您的联系电话'}
                         />
                     </ div>
-                    <p className={styles.redP} style={{ display: `${dis ? 'block' : 'none'}` }}>*Please fill in the correct format of the phone number</p>
+                    <p className={styles.redP} style={{ display: `${dis ? 'block' : 'none'}` }}>*<Translate id='cv1800b.phone.correct' /></p>
                 </label>
                 <label className={styles.valuered}>
                     <div className={styles.inputBox}>
-                        <span><span style={{ color: 'red' }}>*</span>Email:</span>
+                        <span><span style={{ color: 'red' }}>*</span><Translate id='contact.title.email' />:</span>
                         <input type="email" required value={individualEmail} onBlur={eBlur} onChange={(e) => setIndividualEmail(e.target.value)}
-                            placeholder="Your Email Address"
+                            placeholder={currentLanguage === '/' ? "Your Email Address" : '您的电子邮件地址'}
                         />
                     </ div>
-                    <p className={styles.redP} style={{ display: `${dis2 ? 'block' : 'none'}` }}>*Please fill in the correct format of e-mail</p>
+                    <p className={styles.redP} style={{ display: `${dis2 ? 'block' : 'none'}` }}>*<Translate id='cv1800b.email.correct' /></p>
                 </label>
                 <label>
-                    <span><span style={{ color: 'red' }}>*</span>Address:</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='footer.text.address' />:</span>
                     <input type="text" required value={individualAddress} onChange={(e) => setIndividualAddress(e.target.value)}
-                        placeholder="Your Organization Address"
+                        placeholder={currentLanguage === '/' ? "Your Organization Address" : '您的组织地址'}
                     />
                 </label>
                 <label>
-                    <span><span style={{ color: 'red' }}>*</span>Project Name:</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='Donation.title.Project.name' />:</span>
                     <input type="text" required value={individualpname} onChange={(e) => setIndividuapname(e.target.value)}
-                        placeholder="What Projects Will You Be Using Milk-V Duo On?"
+                        placeholder={currentLanguage === '/' ? "What Projects Will You Be Using Milk-V Duo On?" : '您将在哪些项目中使用Milk-V Duo？'}
                     />
                 </label>
                 <label>
-                    <span><span style={{ color: 'red' }}>*</span>Project Details:</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.Schools.Project.Details' />:</span>
                     <textarea className={styles.bgText} required value={individualPurpose} onChange={(e) => setIndividuaPurpose(e.target.value)}
-                        placeholder="Describe The Details Of The Project"
+                        placeholder={currentLanguage === '/' ? "Describe The Details Of The Project" : '描述项目的细节'}
                     ></textarea>
                 </label>
                 <div className={styles.flexBox}>
-                    <span><span style={{ color: 'red' }}>*</span>Proof of identity:
-                        <br></br>(ID card, work card, business card, etc.)</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.Individual.Proof' />:
+                        <br></br><Translate id='cv1800b.Individual.Proof.info' /></span>
                     <label htmlFor='upload'>{upload}</label>
                     <img src="/form/response.svg" style={{ display: `${flag ? 'block' : 'none'}` }} />
-                    <p style={{ display: `${!flag ? 'block' : 'none'}`, color: 'red' }} >*File size limit: 1 MB. Accepted formats: png, jpg, webp, pdf</p>
+                    <p style={{ display: `${!flag ? 'block' : 'none'}`, color: 'red' }} >*<Translate id='cv1800b.Individual.file.info' /></p>
                 </div>
                 <div className={styles.flexBox}>
-                    <span><span style={{ color: 'red' }}>*</span>Organizational Certification:<br></br>(Authorization letter, photo of office location, work card, etc.)</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.Schools.Certification' />:<br></br><Translate id='cv1800b.Schools.Certification.info' /></span>
                     <label htmlFor='upload2'>{upload2}</label>
                     <img src="/form/response.svg" style={{ display: `${flag2 ? 'block' : 'none'}` }} />
-                    <p style={{ display: `${!flag2 ? 'block' : 'none'}`, color: 'red' }} >*File size limit: 1 MB. Accepted formats: png, jpg, webp, pdf</p>
+                    <p style={{ display: `${!flag2 ? 'block' : 'none'}`, color: 'red' }} >*<Translate id='cv1800b.Individual.file.info' /></p>
                 </div>
                 <input type="file" id="upload" required onChange={handleFileChange} className={styles.upload} />
                 <input type="file" id="upload2" required onChange={handleFileChange2} className={styles.upload} />
@@ -352,7 +361,7 @@ function Schools(props) {
                     <input type="radio" className={styles.square} required checked={agree} onChange={() => { }} onClick={() => { setAgreeFlag(s => !s) }} />
                     <span>{radioLang === 'CN' ? "我同意并遵守以上条款" : "I agree to and will abide by the terms above"}</span>
                 </label>
-                <button type='submit' style={btn ? style : { cursor: 'not-allowed' }} disabled={btn ? false : true} >Submit</button>
+                <button type='submit' style={btn ? style : { cursor: 'not-allowed' }} disabled={btn ? false : true} ><Translate id='Submit' /></button>
             </form>
         </>
     )
@@ -361,6 +370,9 @@ function Schools(props) {
 // 企业
 function Corporations(props) {
     const { type, setAgreeFlag, agree, setPopflag, setlang, setFlagp, setFlagp2, radioLang } = props
+
+    const currentLanguage = useBaseUrl('/');
+
     const [applicantName, setApplicantName] = useState('')
     const [individualName, setIndividualName] = useState('')
     const [individualPhone, setIndividualPhone] = useState('')
@@ -369,7 +381,7 @@ function Corporations(props) {
     const [individualPurpose, setIndividuaPurpose] = useState('')
     const [individualpname, setIndividuapname] = useState('')
     const [organization, setOrganization] = useState('')
-    const [upload, setUpload] = useState('Upload File')
+    const [upload, setUpload] = useState(currentLanguage === '/' ? 'Upload File' : '上传文件')
     const [individualFile, setIndividualFile] = useState(null)
     const [flag, setFlag] = useState(false)
     const [btn, setBtn] = useState(false)
@@ -381,7 +393,7 @@ function Corporations(props) {
             setUpload(file.name);
             setFlag(true)
         } else {
-            setUpload('Error format');
+            setUpload(currentLanguage === '/' ? 'Format error' : '不符合规范');
             setFlag(false)
         }
     }
@@ -455,64 +467,64 @@ function Corporations(props) {
         <>
             <form onSubmit={handleSubmit} className={styles.infoForm}>
                 <label>
-                    <span><span style={{ color: 'red' }}>*</span>Applicant Name:</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.Schools.name' />:</span>
                     <input type="text" required value={applicantName} onChange={(e) => setApplicantName(e.target.value)}
-                        placeholder="Your Applicant's Name"
+                        placeholder={currentLanguage === '/' ? "Your Applicant's Name" : '您的申请人姓名'}
                     />
                 </label>
                 <label>
-                    <span><span style={{ color: 'red' }}>*</span>Name of organization or company:</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.corporations.name' />:</span>
                     <input type="text" required value={individualName} onChange={(e) => setIndividualName(e.target.value)}
-                        placeholder="The Name Of Your Organization Or Company"
+                        placeholder={currentLanguage === '/' ? "The Name Of Your Organization Or Company" : '你的组织或公司的名称'}
                     />
                 </label>
                 <label>
-                    <span><span style={{ color: 'red' }}>*</span>Business Registration Number:</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.corporations.Registration' />:</span>
                     <input type="text" required value={organization} onChange={(e) => setOrganization(e.target.value)}
-                        placeholder="Your Business Registration Number"
+                        placeholder={currentLanguage === '/' ? "Your Business Registration Number" : '您的企业注册号'}
                     />
                 </label>
                 <label className={styles.valuered}>
                     <div className={styles.inputBox}>
-                        <span><span style={{ color: 'red' }}>*</span>Phone Number:</span>
+                        <span><span style={{ color: 'red' }}>*</span><Translate id='Donation.title.Shipping.Phone' />:</span>
                         <input type="phone" required value={individualPhone} onBlur={pBlur} onChange={(e) => setIndividualPhone(e.target.value)}
-                            placeholder="Your Contact Phone Number"
+                            placeholder={currentLanguage === '/' ? "Your Contact Phone Number" : '您的联系电话'}
                         />
                     </div>
-                    <p className={styles.redP} style={{ display: `${dis ? 'block' : 'none'}` }}>*Please fill in the correct format of the phone number</p>
+                    <p className={styles.redP} style={{ display: `${dis ? 'block' : 'none'}` }}>*<Translate id='cv1800b.phone.correct' /></p>
                 </label>
                 <label className={styles.valuered}>
                     <div className={styles.inputBox}>
-                        <span><span style={{ color: 'red' }}>*</span>Business email:</span>
+                        <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.corporations.Businessemail' />:</span>
                         <input type="email" required value={individualEmail} onBlur={eBlur} onChange={(e) => setIndividualEmail(e.target.value)}
-                            placeholder="Your Business Email Address"
+                            placeholder={currentLanguage === '/' ? "Your Business Email Address" : '您的商业电子邮件地址'}
                         />
                     </div>
-                    <p className={styles.redP} style={{ display: `${dis2 ? 'block' : 'none'}` }}>*Please fill in the correct format of e-mail</p>
+                    <p className={styles.redP} style={{ display: `${dis2 ? 'block' : 'none'}` }}>*<Translate id='cv1800b.email.correct' /></p>
                 </label>
                 <label>
-                    <span><span style={{ color: 'red' }}>*</span>Business Address:</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.corporations.BusinessAddress' />:</span>
                     <input type="text" required value={individualAddress} onChange={(e) => setIndividualAddress(e.target.value)}
-                        placeholder="Your Business Address"
+                        placeholder={currentLanguage === '/' ? "Your Business Address" : '您的商业地址'}
                     />
                 </label>
                 <label>
-                    <span><span style={{ color: 'red' }}>*</span>Project Name:</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='Donation.title.Project.name' />:</span>
                     <input type="text" required value={individualpname} onChange={(e) => setIndividuapname(e.target.value)}
-                        placeholder="What Projects Will You Be Using Milk-V Duo / CV1800B On?"
+                        placeholder={currentLanguage === '/' ? "What Projects Will You Be Using Milk-V Duo On?" : '您将在哪些项目中使用Milk-V Duo？'}
                     />
                 </label>
                 <label>
-                    <span><span style={{ color: 'red' }}>*</span>Project Details:</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.Schools.Project.Details' />:</span>
                     <textarea className={styles.bgText} required value={individualPurpose} onChange={(e) => setIndividuaPurpose(e.target.value)}
-                        placeholder="Describe The Details Of The Project"
+                        placeholder={currentLanguage === '/' ? "Describe The Details Of The Project" : '描述项目的细节'}
                     ></textarea>
                 </label>
                 <div className={styles.flexBox}>
-                    <span><span style={{ color: 'red' }}>*</span>Proof of identity:<br></br>(work card, business card, etc.)</span>
+                    <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.Individual.Proof' />:<br></br><Translate id='cv1800b.corporations.id' /></span>
                     <label htmlFor='upload'>{upload}</label>
                     <img src="/form/response.svg" style={{ display: `${flag ? 'block' : 'none'}` }} />
-                    <p style={{ display: `${!flag ? 'block' : 'none'}`, color: 'red' }} >*File size limit: 1 MB. Accepted formats: png, jpg, webp, pdf</p>
+                    <p style={{ display: `${!flag ? 'block' : 'none'}`, color: 'red' }} >*<Translate id='cv1800b.Individual.file.info' /></p>
                 </div>
                 <input type="file" id="upload" required onChange={handleFileChange} className={styles.upload} />
                 <p style={{ display: `${radioLang === 'CN' ? 'block' : radioLang === 'EN' ? 'none' : null}` }} onClick={() => {
@@ -527,20 +539,21 @@ function Corporations(props) {
                     <input type="radio" className={styles.square} required checked={agree} onChange={() => { }} onClick={() => { setAgreeFlag(s => !s) }} />
                     <span>{radioLang === 'CN' ? "我同意并遵守以上条款" : "I agree to and will abide by the terms above"}</span>
                 </label>
-                <button type='submit' style={btn ? style : { cursor: 'not-allowed' }} disabled={btn ? false : true}>Submit</button>
+                <button type='submit' style={btn ? style : { cursor: 'not-allowed' }} disabled={btn ? false : true}><Translate id='Submit' /></button>
             </form>
         </>
     )
 }
 
 export default () => {
-    const [radioValue, setRadioValue] = useState('Individual');
+    const [radioValue, setRadioValue] = useState('Corporations');
     const [popflag, setPopflag] = useState(false)
     const [lang, setLang] = useState('en')
     const [agreeFlag, setAgreeFlag] = useState(false)
     const [flag, setFlag] = useState(false)
     const [flag2, setFlag2] = useState(false)
-    const [radioLang, setRadioLang] = useState('EN')
+    const currentLanguage = useBaseUrl('/');
+    const [radioLang, setRadioLang] = useState(currentLanguage === '/' ? 'EN' : 'CN')
 
 
     const handleOptionChange = (event) => {
@@ -562,32 +575,32 @@ export default () => {
         <>
             <Layout>
                 <div className={styles.cv1800b}>
-                    <h1>CV1800B Manual Confidentiality Agreement</h1>
+                    <h1><Translate id='cv1800b.title' /></h1>
                     <div className={styles.radioForm}>
                         <div className={styles.contentBox}>
-                            <h1>Select Your Applicant Type</h1>
+                            <h1><Translate id='cv1800b.title.Applicant' /></h1>
                             <div className={styles.labelBox}>
                                 <label>
                                     <input type="radio" name="organization" value='Individual' checked={radioValue === 'Individual'}
                                         onChange={handleOptionChange} />
-                                    <span>Individual</span>
+                                    <span><Translate id='cv1800b.title.Applicant.Individual' /></span>
                                 </label>
                                 <label>
                                     <input type="radio" name="organization" value='Schools' checked={radioValue === 'Schools'}
                                         onChange={handleOptionChange} />
-                                    <span>Schools or research institutions</span>
+                                    <span><Translate id='cv1800b.title.Applicant.Schools' /></span>
                                 </label>
                                 <label>
                                     <input type="radio" name="organization" value='Corporations' checked={radioValue === 'Corporations'}
                                         onChange={handleOptionChange} />
-                                    <span>For-profit organizations or corporations </span>
+                                    <span><Translate id='cv1800b.title.Applicant.corporations' /></span>
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div className={styles.radioForm}>
                         <div className={styles.contentBox}>
-                            <h1>Select the language of the document (Chinese or English)</h1>
+                            <h1><Translate id='cv1800b.title.lang' /></h1>
                             <div className={styles.labelBox}>
                                 <label>
                                     <input type="radio" name="lang" value='CN' checked={radioLang === 'CN'} onChange={radioLangChange} />
@@ -601,7 +614,7 @@ export default () => {
                         </div>
                     </div>
                     <div className={styles.infoBox}>
-                        <h1>Please fill in the following information</h1>
+                        <h1><Translate id='cv1800b.title.file' /></h1>
                         {
                             radioValue === 'Individual' ? <Individual setFlagp={setFlag} setFlagp2={setFlag2} agree={agreeFlag} setlang={setLang} type='individual' setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} radioLang={radioLang} setRadioLang={setRadioLang} /> : radioValue === 'Schools' ? <Schools setlang={setLang} setFlagp={setFlag} setFlagp2={setFlag2} type='school_or_research_institution' agree={agreeFlag} setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} radioLang={radioLang} setRadioLang={setRadioLang} /> : radioValue === 'Corporations' ? <Corporations setFlagp={setFlag} setFlagp2={setFlag2} setlang={setLang} agree={agreeFlag} type='profit_organization_or_corporations' setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} radioLang={radioLang} setRadioLang={setRadioLang} /> : null
                         }

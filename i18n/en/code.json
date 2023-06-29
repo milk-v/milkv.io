@@ -876,5 +876,101 @@
   "Donation.title.Shipping.addess.process": {
     "message": "Please note that your shipping address will be used solely for the purpose of delivering the donated hardware. We value your privacy and will handle your information with utmost care.",
     "description": "Shipping"
+  },
+  "cv1800b.title": {
+    "message": "CV1800B Manual Confidentiality Agreement",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.Applicant": {
+    "message": "Select Your Applicant Type",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.Applicant.Individual": {
+    "message": "Individual",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.Applicant.Schools": {
+    "message": "Schools or research institutions",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.Applicant.corporations": {
+    "message": "For-profit organizations or corporations",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.lang": {
+    "message": "Select the language of the document (Chinese or English)",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.file": {
+    "message": "Please fill in the following information",
+    "description": "cv1800b"
+  },
+  "cv1800b.Individual.Purpose": {
+    "message": "Purpose",
+    "description": "cv1800b"
+  },
+  "cv1800b.Individual.Proof": {
+    "message": "Proof of identity",
+    "description": "cv1800b"
+  },
+  "cv1800b.Individual.Proof.info": {
+    "message": "(ID card, work card, business card, etc.)",
+    "description": "cv1800b"
+  },
+  "cv1800b.Individual.file.info": {
+    "message": "File size limit: 1 MB. Accepted formats: png, jpg, webp, pdf",
+    "description": "cv1800b"
+  },
+  "Submit": {
+    "message": "Submit",
+    "description": "Submit"
+  },
+  "cv1800b.phone.correct": {
+    "message": "Please fill in the correct format of the phone number",
+    "description": "cv1800b"
+  },
+  "cv1800b.email.correct": {
+    "message": "Please fill in the correct format of e-mail",
+    "description": "cv1800b"
+  },
+  "cv1800b.Schools.name": {
+    "message": "Applicant Name",
+    "description": "cv1800b"
+  },
+  "cv1800b.Schools.Organization.name": {
+    "message": "Your Organization Name",
+    "description": "cv1800b"
+  },
+  "cv1800b.Schools.Certification": {
+    "message": "Organizational Certification",
+    "description": "cv1800b"
+  },
+  "cv1800b.Schools.Certification.info": {
+    "message": "(Authorization letter, photo of office location, work card, etc.)",
+    "description": "cv1800b"
+  },
+  "cv1800b.Schools.Project.Details": {
+    "message": "Project Details",
+    "description": "cv1800b"
+  },
+  "cv1800b.corporations.id": {
+    "message": "(work card, business card, etc.)",
+    "description": "cv1800b"
+  },
+  "cv1800b.corporations.Businessemail": {
+    "message": "Business Email",
+    "description": "cv1800b"
+  },
+  "cv1800b.corporations.BusinessAddress": {
+    "message": "Business Address",
+    "description": "cv1800b"
+  },
+  "cv1800b.corporations.name": {
+    "message": "Name of organization or company",
+    "description": "cv1800b"
+  },
+  "cv1800b.corporations.Registration": {
+    "message": "Business Registration Number",
+    "description": "cv1800b"
   }
 }

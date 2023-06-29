@@ -1,5 +1,5 @@
 ---
-sidebar_label: '🔥 星火'
+sidebar_label: '🔥 Mars'
 sidebar_position: 3
 ---
 
