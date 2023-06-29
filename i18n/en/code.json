@@ -824,5 +824,57 @@
   "contact.send.close": {
     "message": "Close",
     "description": "send"
+  },
+  "Donation.title": {
+    "message": "Donation Application Form",
+    "description": "Donation"
+  },
+  "Donation.title.Information": {
+    "message": "Donation Application Form",
+    "description": "Donation"
+  },
+  "Donation.title.Information.Organization": {
+    "message": "Organization/Affiliation (if applicable)",
+    "description": "Donation"
+  },
+  "Donation.title.Information.web": {
+    "message": "Website (if applicable)",
+    "description": "Donation"
+  },
+  "Donation.title.Project": {
+    "message": "Project Information",
+    "description": "Project"
+  },
+  "Donation.title.Project.name": {
+    "message": "Project Name",
+    "description": "Project"
+  },
+  "Donation.title.Project.Description": {
+    "message": "Project Description",
+    "description": "Project"
+  },
+  "Donation.title.Shipping": {
+    "message": "Shipping Information",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.Country": {
+    "message": "Country of Residence",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.Phone": {
+    "message": "Phone Number",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.Phone.process": {
+    "message": "Your phone number will be used solely for communication related to the donation process. We respect your privacy and will ensure the confidentiality of your contact information.",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.addess": {
+    "message": "Shipping Address",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.addess.process": {
+    "message": "Please note that your shipping address will be used solely for the purpose of delivering the donated hardware. We value your privacy and will handle your information with utmost care.",
+    "description": "Shipping"
   }
 }

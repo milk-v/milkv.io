@@ -818,11 +818,63 @@
     "description": "send"
   },
   "contact.send.err.info": {
-    "message": "服务器异常，正在修复中，请稍后再试。",
+    "message": "服务器异常，正在修复中，请稍后重试。",
     "description": "send"
   },
   "contact.send.close": {
     "message": "关闭",
     "description": "send"
+  },
+  "Donation.title": {
+    "message": "捐献申请表",
+    "description": "Donation"
+  },
+  "Donation.title.Information": {
+    "message": "个人资料",
+    "description": "Donation"
+  },
+  "Donation.title.Information.Organization": {
+    "message": "组织/分支机构(如果有)",
+    "description": "Donation"
+  },
+  "Donation.title.Information.web": {
+    "message": "网站(如果有)",
+    "description": "Donation"
+  },
+  "Donation.title.Project": {
+    "message": "项目信息",
+    "description": "Project"
+  },
+  "Donation.title.Project.name": {
+    "message": "项目名称",
+    "description": "Project"
+  },
+  "Donation.title.Project.Description": {
+    "message": "项目描述",
+    "description": "Project"
+  },
+  "Donation.title.Shipping": {
+    "message": "发货信息",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.Country": {
+    "message": "居住国",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.Phone": {
+    "message": "电话",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.Phone.process": {
+    "message": "您的电话号码将仅用于与捐赠过程有关的通信。我们尊重您的隐私，并将确保您的联系信息的保密性。",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.addess": {
+    "message": "发货地址",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.addess.process": {
+    "message": "请注意，您的送货地址将只用于运送捐赠的硬件。我们重视您的隐私，并将以最谨慎的方式处理您的信息。",
+    "description": "Shipping"
   }
 }
