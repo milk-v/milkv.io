@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import Layout from '@theme/Layout';
 
-import Head from "../../components/Head"
+import BuyPop from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
 import PopUp from "../../components/Popup"
 import Footer from "../../components/Footer"
@@ -30,7 +30,7 @@ function DetailsPage() {
 
   return (
     <>
-      <Head flag={duo2} module={duoStart} type='duo' />
+      <BuyPop flag={duo2} module={duoStart} type='duo' />
       <div style={{
         position: "relative",
         width: '100%',

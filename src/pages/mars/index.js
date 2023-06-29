@@ -3,7 +3,7 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
 
-import Head from "../../components/Head"
+import BuyPop from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
 import PopUp from "../../components/Popup"
 import Footer from "../../components/Footer"
@@ -20,7 +20,7 @@ export default () => {
     return (
         <Layout>
             <PopUp></PopUp>
-            <Head flag={mars2} module={mars2Start} type='mars' />
+            <BuyPop flag={mars2} module={mars2Start} type='mars' />
             <div className={styles.marsBox}>
                 <div className={styles.headImage}>
                     <div className={styles.titleBox}>

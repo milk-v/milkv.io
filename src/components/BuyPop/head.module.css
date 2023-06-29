@@ -53,10 +53,13 @@
    display: none;
 }
 
+.tanchuang {
+   padding-bottom: 100px;
+}
+
 @media screen and (min-width: 1000px) {
    .tanchuang {
       width: 800px;
-      height: 600px;
       background-color: #fff;
       border-radius: 20px;
       position: fixed;
@@ -102,7 +105,6 @@
 @media screen and (max-width: 1000px) and (min-width: 750px) {
    .tanchuang {
       width: 700px;
-      height: 500px;
       background-color: #fff;
       border-radius: 20px;
       position: fixed;

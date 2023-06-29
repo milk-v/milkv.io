@@ -4,7 +4,7 @@ import Layout from '@theme/Layout';
 import { Carousel } from 'antd';
 
 import styles from './index.module.css';
-import Head from "../components/Head"
+import BuyPop from "../components/BuyPop"
 import PopUp from "../components/Popup"
 import Footer from "../components/Footer"
 import ContactBar from "../components/ContactBar"
@@ -34,10 +34,10 @@ function HomepageHeader() {
   }
   return (
     <>
-      <Head flag={duo} module={duoStart} type='duo' />
-      <Head flag={pioneer} module={pioneerStart} type='pioneer' />
-      <Head flag={mars} module={marsStart} type='mars' />
-      <Head flag={buy} module={buyStart} type='buy' />
+      <BuyPop flag={duo} module={duoStart} type='duo' />
+      <BuyPop flag={pioneer} module={pioneerStart} type='pioneer' />
+      <BuyPop flag={mars} module={marsStart} type='mars' />
+      <BuyPop flag={buy} module={buyStart} type='home' />
       <div className={styles.bg}>
         <div className={styles.pages1}>
           <h1>

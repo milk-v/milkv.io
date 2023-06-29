@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 
-import Head from "../../components/Head"
+import Head from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
 import PopUp from "../../components/Popup"
 import Footer from "../../components/Footer"
