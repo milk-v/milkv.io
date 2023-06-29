@@ -1,5 +1,5 @@
 ---
-sidebar_label: '🗞️ Press'
+sidebar_label: '🗞️ 新闻'
 sidebar_position: 99
 ---
 

@@ -10,7 +10,6 @@ export default () => {
     const [rep, setRep] = useState(false);
     const currentLanguage = useBaseUrl('/');
 
-
     const changeEmail = (e) => {
         setEmail(e.target.value)
         if (emailRegex.test(e.target.value)) {

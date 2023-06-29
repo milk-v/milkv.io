@@ -641,6 +641,14 @@
     "message": "Embrace the new era with Duo,",
     "description": "Duo embrace"
   },
+  "pioneer.embrace1": {
+    "message": "Embrace the new era with Pionner,",
+    "description": "Duo embrace"
+  },
+  "mars.embrace1": {
+    "message": "Embrace the new era with Mars,",
+    "description": "Duo embrace"
+  },
   "duo.embrace2": {
     "message": "Let's make RISC-V better together.",
     "description": "Duo embrace"
@@ -752,5 +760,69 @@
   "pioneer": {
     "message": "Pioneer",
     "description": "pioneer Name"
+  },
+  "contact.title": {
+    "message": "GET IN TOUCH",
+    "description": "contact title"
+  },
+  "contact.title.info": {
+    "message": "Having questions? Get in touch with us to resolve!",
+    "description": "contact info"
+  },
+  "contact.title.Sales": {
+    "message": "Sales Department",
+    "description": "contact info"
+  },
+  "contact.title.Development": {
+    "message": "Development Department",
+    "description": "contact info"
+  },
+  "contact.title.support": {
+    "message": "Customer Support Department",
+    "description": "contact info"
+  },
+  "contact.title.sendMessage": {
+    "message": "Send a message",
+    "description": "contact sendMessage"
+  },
+  "contact.title.name": {
+    "message": "Name",
+    "description": "name"
+  },
+  "contact.title.email": {
+    "message": "Email",
+    "description": "email"
+  },
+  "contact.title.subject": {
+    "message": "Subject",
+    "description": "subject"
+  },
+  "contact.title.message": {
+    "message": "Message",
+    "description": "message"
+  },
+  "contact.title.send": {
+    "message": "Send",
+    "description": "send"
+  },
+  "contact.send.res": {
+    "message": "Send successfully",
+    "description": "send"
+  },
+  "contact.send.res.info": {
+    "message": "Please do not send duplicate",
+    "description": "send"
+  },
+  "contact.send.err": {
+    "message": "Sending failure",
+    "description": "send"
+  },
+  "contact.send.err.info": {
+    "message": "The server is abnormal, it is being fixed, please try again later",
+    "description": "send"
+  },
+  "contact.send.close": {
+    "message": "Close",
+    "description": "send"
   }
 }

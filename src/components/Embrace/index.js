@@ -13,7 +13,7 @@ export default (props) => {
 
                 <h1 className={styles.embrace}>
                     {
-                        product === 'duo' ? <Translate id='duo.embrace1' /> : product === 'pionner' ? 'Embrace the new era with Pionner,' : product === 'mars' ? 'Embrace the new era with Mars,' : null
+                        product === 'duo' ? <Translate id='duo.embrace1' /> : product === 'pionner' ? <Translate id='pioneer.embrace1' /> : product === 'mars' ? <Translate id='mars.embrace1' /> : null
                     }
                 </h1>
                 <h1 className={styles.risc_v}><Translate id='duo.embrace2' /></h1>

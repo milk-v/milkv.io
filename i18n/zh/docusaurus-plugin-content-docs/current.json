@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.🍐 Duo": {
-    "message": "🍐 Duo",
+    "message": "🍐 朵",
     "description": "The label for category 🍐 Duo in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.🍐 Duo.link.generated-index.description": {
@@ -36,7 +36,7 @@
     "description": "The generated-index page description for category 🧰 Resources in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.💪 Pioneer": {
-    "message": "💪 Pioneer",
+    "message": "💪 先锋者",
     "description": "The label for category 💪 Pioneer in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.💪 Pioneer.link.generated-index.description": {

@@ -526,7 +526,7 @@
     "description": "Duo.text.title"
   },
   "Duo.text.title2": {
-    "message": "一台9美元的Risc-V电脑",
+    "message": "一台9美元的RISC-V电脑",
     "description": "Duo.text.title"
   },
   "Duo.text.title3": {
@@ -638,7 +638,15 @@
     "description": "Duo Hardware"
   },
   "duo.embrace1": {
-    "message": "与Duo一起拥抱新时代，",
+    "message": "与 “朵” 一起拥抱新时代，",
+    "description": "Duo embrace"
+  },
+  "pioneer.embrace1": {
+    "message": "与 “先锋者” 一起拥抱新时代，",
+    "description": "Duo embrace"
+  },
+  "mars.embrace1": {
+    "message": "与 “星火” 一起拥抱新时代，",
     "description": "Duo embrace"
   },
   "duo.embrace2": {
@@ -752,5 +760,69 @@
   "pioneer": {
     "message": "先锋者",
     "description": "pioneer Name"
+  },
+  "contact.title": {
+    "message": "取得联系",
+    "description": "contact title"
+  },
+  "contact.title.info": {
+    "message": "有问题吗？请与我们联系以解决!",
+    "description": "contact info"
+  },
+  "contact.title.Sales": {
+    "message": "销售部",
+    "description": "contact info"
+  },
+  "contact.title.Development": {
+    "message": "开发部",
+    "description": "contact info"
+  },
+  "contact.title.support": {
+    "message": "客户支持部",
+    "description": "contact info"
+  },
+  "contact.title.sendMessage": {
+    "message": "发送消息",
+    "description": "contact sendMessage"
+  },
+  "contact.title.name": {
+    "message": "姓名",
+    "description": "name"
+  },
+  "contact.title.email": {
+    "message": "邮箱",
+    "description": "email"
+  },
+  "contact.title.subject": {
+    "message": "主题",
+    "description": "subject"
+  },
+  "contact.title.message": {
+    "message": "留言",
+    "description": "message"
+  },
+  "contact.title.send": {
+    "message": "发送",
+    "description": "send"
+  },
+  "contact.send.res": {
+    "message": "发送成功",
+    "description": "send"
+  },
+  "contact.send.res.info": {
+    "message": "请勿重复发送",
+    "description": "send"
+  },
+  "contact.send.err": {
+    "message": "发送失败",
+    "description": "send"
+  },
+  "contact.send.err.info": {
+    "message": "服务器异常，正在修复中，请稍后再试。",
+    "description": "send"
+  },
+  "contact.send.close": {
+    "message": "关闭",
+    "description": "send"
   }
 }
