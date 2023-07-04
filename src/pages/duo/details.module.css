@@ -673,7 +673,7 @@ body {
     .pinImg {
         width: 1320px;
         height: 580px;
-        background: url(/static/img/pinout.png) no-repeat;
+        background: url(/static/img/pinout.webp) no-repeat;
         background-size: 100%;
     }
 
@@ -1373,7 +1373,7 @@ body {
     .pinImg {
         width: 1000px;
         height: 500px;
-        background: url(/static/img/pinout.png) no-repeat;
+        background: url(/static/img/pinout.webp) no-repeat;
         background-size: 100%;
     }
 
@@ -2065,7 +2065,7 @@ body {
     .pinImg {
         width: 700px;
         height: 360px;
-        background: url(/static/img/pinout.png) no-repeat;
+        background: url(/static/img/pinout.webp) no-repeat;
         background-size: 100%;
     }
 
@@ -2768,7 +2768,7 @@ body {
         margin: 20rem auto;
         width: 340rem;
         height: 165rem;
-        background: url(/static/img/pinout.png) no-repeat;
+        background: url(/static/img/pinout.webp) no-repeat;
         background-size: 100%;
     }
 

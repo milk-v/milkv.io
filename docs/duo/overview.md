@@ -66,7 +66,7 @@ Milk-V Duo is an ultra-compact embedded development platform based on the CV1800
 - Up to 7x PWM
 - Up to 1x RUN
 - Up to 1x JTAG  
-![pinoutv1.2](/DOUImage/pinout-v1.2.png)
+![pinoutv1.2](/img/pinout.webp)
 
 
 ## Board Specifications
