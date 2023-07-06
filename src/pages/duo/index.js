@@ -153,6 +153,10 @@ function DetailsPage() {
             <ul>
               <li>
                 <div className={cssList.down}></div>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="/files/duo/duo-datasheet-v1.2.pdf" download="duo-datasheet-v1.2.pdf">Duo Datasheet v1.2, PDF</a>
+              </li>
+              <li>
+                <div className={cssList.down}></div>
                 <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="/files/duo/duo-schematic-v1.1.pdf" download="duo-schematic-v1.1.pdf">Duo Schematic v1.1, PDF</a>
               </li>
               <li>
