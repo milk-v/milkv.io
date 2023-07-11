@@ -43,7 +43,7 @@ export default () => {
                                 target="_blank" noValidate>
                                 <div id="mc_embed_signup_scroll" className={styles.subscribeText}>
                                     <input type="email" value={email} onChange={changeEmail} name="EMAIL" className={styles.subscribeEmail} id="mce-EMAIL" required placeholder={currentLanguage === '/' ? 'Enter your email' : '请输入你的电子邮箱'} />
-                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" className={styles.subscribeBtn} disabled={rep} style={{ display: `${rep ? 'block' : 'none'}` }}></button>
+                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" className={styles.subscribeBtn} disabled={!rep} style={{ display: `${rep ? 'block' : 'none'}` }}></button>
                                 </div>
                             </form>
                         </div>
