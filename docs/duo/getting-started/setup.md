@@ -15,43 +15,43 @@ We have enabled RNDIS and DHCP on the system by default in order to use USB netw
 
 2. The "RNDIS" device appear in the Device Manager
 
-![rndis-step1](/images/duo/rndis-step1.png)
+![rndis-step1](/docs/duo/rndis-step1.png)
 
 3. Select "RNDIS" and right click to update the driver
 
-![rndis-step2](/images/duo/rndis-step2.png)
+![rndis-step2](/docs/duo/rndis-step2.png)
 
 4. Select "Browse my computer for drivers"
 
-![rndis-step3](/images/duo/rndis-step3.png)
+![rndis-step3](/docs/duo/rndis-step3.png)
 
 5. Select "Let me pick from a list of available drivers on my computer"
 
-![rndis-step4](/images/duo/rndis-step4.png)
+![rndis-step4](/docs/duo/rndis-step4.png)
 
 6. Select "Network adapters"
 
-![rndis-step5](/images/duo/rndis-step5.png)
+![rndis-step5](/docs/duo/rndis-step5.png)
 
 7. Manufacturer/Model: Microsoft/USB RNDIS Adapter
 
-![rndis-step6](/images/duo/rndis-step6.png)
+![rndis-step6](/docs/duo/rndis-step6.png)
 
 8. Ignore warning message
 
-![rndis-step7](/images/duo/rndis-step7.png)
+![rndis-step7](/docs/duo/rndis-step7.png)
 
 9. Driver update successful
 
-![rndis-step8](/images/duo/rndis-step8.png)
+![rndis-step8](/docs/duo/rndis-step8.png)
 
 10. Check "USB RNDIS Adapter"
 
-![rndis-step9](/images/duo/rndis-step9.png)
+![rndis-step9](/docs/duo/rndis-step9.png)
 
 11. Find the IP and test the network using ping
 
-![rndis-step10](/images/duo/rndis-step10.png)
+![rndis-step10](/docs/duo/rndis-step10.png)
 
 ### Linux
 
@@ -116,17 +116,17 @@ There is no official driver for RNDIS. We need to install [HoRNDIS](https://josh
 
 1. Open the terminal, type **ssh root@192.168.42.1**, and answer yes
 
-![rndis-ssh1](/images/duo/rndis-ssh1.png)
+![rndis-ssh1](/docs/duo/rndis-ssh1.png)
 
 2. Enter the password **milkv** 
 
     (The password will not be displayed on the screen)
 
-![rndis-ssh2](/images/duo/rndis-ssh2.png)
+![rndis-ssh2](/docs/duo/rndis-ssh2.png)
 
 3. Login successful
 
-![rndis-ssh3](/images/duo/rndis-ssh3.png)
+![rndis-ssh3](/docs/duo/rndis-ssh3.png)
 
 
 ## Serial Console
@@ -135,7 +135,7 @@ There is no official driver for RNDIS. We need to install [HoRNDIS](https://josh
 
 Each pin of a USB-to-TTL cable is defined as follows:
 
-![usb2ttl](/images/duo/usb2ttl.jpg)
+![usb2ttl](/docs/duo/usb2ttl.jpg)
 
 ### Connection
 
@@ -149,7 +149,7 @@ Connect USB to TTL serial cable as shown below. Do not connect the red wire.
 | GND (pin 18) | <---> | Black wire |
 
 
-![duo-serial](/images/duo/duo-serial.jpg)
+![duo-serial](/docs/duo/duo-serial.jpg)
 
 The default serial setting for Duo u-boot and kernel console is:
 

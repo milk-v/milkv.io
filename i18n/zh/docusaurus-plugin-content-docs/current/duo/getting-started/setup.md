@@ -15,43 +15,43 @@ sidebar_position: 20
 
 2. "RNDIS" 设备出现在设备管理器中。
 
-![rndis-step1](/images/duo/rndis-step1.png)
+![rndis-step1](/docs/duo/rndis-step1.png)
 
 3. 选择 "RNDIS "并右键单击以更新驱动程序。
 
-![rndis-step2](/images/duo/rndis-step2.png)
+![rndis-step2](/docs/duo/rndis-step2.png)
 
 4. 选择 "Browse my computer for drivers"
 
-![rndis-step3](/images/duo/rndis-step3.png)
+![rndis-step3](/docs/duo/rndis-step3.png)
 
 5. 选择 "Let me pick from a list of available drivers on my computer"
 
-![rndis-step4](/images/duo/rndis-step4.png)
+![rndis-step4](/docs/duo/rndis-step4.png)
 
 6. 选择 "Network adapters"
 
-![rndis-step5](/images/duo/rndis-step5.png)
+![rndis-step5](/docs/duo/rndis-step5.png)
 
 7. Manufacturer/Model: Microsoft/USB RNDIS Adapter
 
-![rndis-step6](/images/duo/rndis-step6.png)
+![rndis-step6](/docs/duo/rndis-step6.png)
 
 8. 忽略警告信息
 
-![rndis-step7](/images/duo/rndis-step7.png)
+![rndis-step7](/docs/duo/rndis-step7.png)
 
 9. 驱动程序更新成功
 
-![rndis-step8](/images/duo/rndis-step8.png)
+![rndis-step8](/docs/duo/rndis-step8.png)
 
 10. 检查 "USB RNDIS Adapter"
 
-![rndis-step9](/images/duo/rndis-step9.png)
+![rndis-step9](/docs/duo/rndis-step9.png)
 
 11. 找到IP并使用ping来测试网络
 
-![rndis-step10](/images/duo/rndis-step10.png)
+![rndis-step10](/docs/duo/rndis-step10.png)
 
 ### Linux
 
@@ -116,15 +116,15 @@ neko@milk-v:~
 
 1. 打开终端，输入 **ssh root@192.168.42.1**, 并回答是
 
-![rndis-ssh1](/images/duo/rndis-ssh1.png)
+![rndis-ssh1](/docs/duo/rndis-ssh1.png)
 
 2. 输入密码 **milkv** (密码将不显示在屏幕上)
 
-![rndis-ssh2](/images/duo/rndis-ssh2.png)
+![rndis-ssh2](/docs/duo/rndis-ssh2.png)
 
 3. 登陆成功
 
-![rndis-ssh3](/images/duo/rndis-ssh3.png)
+![rndis-ssh3](/docs/duo/rndis-ssh3.png)
 
 
 ## 串行控制台
@@ -133,7 +133,7 @@ neko@milk-v:~
 
 USB-TTL模块的每个针脚定义如下：
 
-![usb2ttl](/images/duo/usb2ttl.jpg)
+![usb2ttl](/docs/duo/usb2ttl.jpg)
 
 ### 连接
 
@@ -147,7 +147,7 @@ USB-TTL模块的每个针脚定义如下：
 | GND (pin 18) | <---> | Black wire |
 
 
-![duo-serial](/images/duo/duo-serial.jpg)
+![duo-serial](/docs/duo/duo-serial.jpg)
 
 Duo u-boot和内核控制台的默认串行设置是：
 

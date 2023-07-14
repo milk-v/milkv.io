@@ -23,15 +23,15 @@ Here are the steps for using balenaEtcher.
 
 - Click **Flash from file**
 
-![etcher-step1](/images/duo/etcher-step1.png)
+![etcher-step1](/docs/duo/etcher-step1.png)
 
 - Click **Select target**
 
-![etcher-step2](/images/duo/etcher-step2.png)
+![etcher-step2](/docs/duo/etcher-step2.png)
 
 - Click **Flash!**
 
-![etcher-step3](/images/duo/etcher-step3.png)
+![etcher-step3](/docs/duo/etcher-step3.png)
 
 ## Power on
 

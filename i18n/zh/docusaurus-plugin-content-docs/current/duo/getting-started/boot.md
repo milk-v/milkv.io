@@ -23,15 +23,15 @@ sidebar_position: 10
 
 - 点击 **Flash from file**
 
-![etcher-step1](/images/duo/etcher-step1.png)
+![etcher-step1](/docs/duo/etcher-step1.png)
 
 - 点击 **Select target**
 
-![etcher-step2](/images/duo/etcher-step2.png)
+![etcher-step2](/docs/duo/etcher-step2.png)
 
 - 点击 **Flash!**
 
-![etcher-step3](/images/duo/etcher-step3.png)
+![etcher-step3](/docs/duo/etcher-step3.png)
 
 ## 开启电源
 使用适配器（5V）或电脑USB，用Type-C线连接Duo。
