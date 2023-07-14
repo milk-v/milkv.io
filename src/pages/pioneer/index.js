@@ -191,15 +191,6 @@ function Center() {
             <p className={cCss.tech_p_line}>- 1x Cooler with PWM Fan up to 2300 RPM supporting up to 160W D-TDP</p>
             <p className={cCss.tech_p_line}>- White slim PC enclosure with handle</p>
           </div>
-          <div className={cCss.document}>
-            <h1><Translate id='duo.info.text.Documents' /></h1>
-            <ul>
-              <li>
-                <div className={cCss.down}></div>
-                <a className={cCss.link_down} style={{ textDecoration: 'none' }} href="/PioneerProductBriefv1.0.zip" download="PioneerProductBriefv1.0.zip">Pioneer Product Brief V1.0.zip</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
       <ContactUs product='pioneer' />
