@@ -11,7 +11,7 @@ Version 1.2
 # Introduction
 Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators.  
   
-![duo](/DOUImage/duo-v1.2.png)
+![duo](/docs/duo/duo-v1.2.png)
 
 # Specification
 | Milk-V Duo | Specification                                           |
@@ -66,7 +66,7 @@ Milk-V Duo is an ultra-compact embedded development platform based on the CV1800
 - Up to 7x PWM
 - Up to 1x RUN
 - Up to 1x JTAG  
-![pinoutv1.2](/img/pinout.webp)
+![pinoutv1.2](/docs/duo/pinout.webp)
 
 
 ## Board Specifications

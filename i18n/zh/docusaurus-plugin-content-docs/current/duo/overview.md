@@ -11,7 +11,7 @@ sidebar_position: 1
 # 简介
 Milk-V Duo是一个基于CV1800B芯片的超紧凑嵌入式开发平台。它可以运行Linux和RTOS，为专业人士、工业ODM、AIoT爱好者、DIY爱好者和创作者提供了一个可靠、低成本和高性能的平台。  
   
-![duo](/DOUImage/duo-v1.2.png)
+![duo](/docs/duo/duo-v1.2.png)
 
 # 规格
 | Milk-V Duo | 规格                                                    |
@@ -68,7 +68,7 @@ Milk-V Duo是一个基于CV1800B芯片的超紧凑嵌入式开发平台。它可
 - Up to 7x PWM
 - Up to 1x RUN
 - Up to 1x JTAG  
-![pinoutv1.2](/img/pinout.webp)
+![pinoutv1.2](/docs/duo/pinout.webp)
 
 
 ## 电路板规格
