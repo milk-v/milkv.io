@@ -27,8 +27,8 @@ export default function (props) {
     return (
         <>
             <div className={styles.tanchuang} style={{ display: `${flag ? 'block' : 'none'}` }} >
-                <img src='/home/icon-close.svg' onClick={module} className={styles.close} />
-                <img src='/img/ICON.svg' className={styles.boxLogo} />
+                <img src='/pages/icon-close.svg' onClick={module} className={styles.close} />
+                <img src='/pages/ICON.svg' className={styles.boxLogo} />
                 {
                     type === 'home' ? <>
                         <div className={styles.goBuy} onClick={() => toApp()}>
@@ -40,7 +40,7 @@ export default function (props) {
                             </div>
                         </div>
                         <div className={styles.goBuy} onClick={() => window.open('https://www.crowdsupply.com/milkv')}>
-                            <img src='/img/CrowdSupply_logo.png' className={styles.buyIcon} />
+                            <img src='/pages/CrowdSupply_logo.png' className={styles.buyIcon} />
                             <div className={styles.textBOx}>
                                 <p className={styles.tp}>Crowd Supply</p>
                                 <img src='/home/icon_more-right.svg' className={styles.img1} />
@@ -49,7 +49,7 @@ export default function (props) {
                         </div>
                     </> : type === 'pioneer' ? <>
                         <div className={styles.goBuy} onClick={() => toApp()}>
-                            <img src='/img/CrowdSupply_logo.png' className={styles.buyIcon} />
+                            <img src='/pages/CrowdSupply_logo.png' className={styles.buyIcon} />
                             <div className={styles.textBOx}>
                                 <p className={styles.tp}>Crowd Supply</p>
                                 <img src='/home/icon_more-right.svg' className={styles.img1} />
