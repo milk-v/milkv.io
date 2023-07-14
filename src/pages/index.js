@@ -49,35 +49,35 @@ function HomepageHeader() {
           <p><Translate id='homepage.text.title1.info' /></p>
           <ul className={styles.icons}>
             <li className={styles.li01}>
-              <img src='/home/icon01.svg' />
+              <img src='/pages/icon01.svg' />
               <p><Translate id='homepage.text.Features1' /></p>
             </li>
             <li className={styles.li02}>
-              <img src='/home/icon02.svg' />
+              <img src='/pages/icon02.svg' />
               <p><Translate id='homepage.text.Features2' /></p>
             </li>
             <li className={styles.li03}>
-              <img src='/home/icon03.svg' />
+              <img src='/pages/icon03.svg' />
               <p><Translate id='homepage.text.Features3' /></p>
             </li>
             <li className={styles.li04}>
-              <img src='/home/icon04.svg' />
+              <img src='/pages/icon04.svg' />
               <p><Translate id='homepage.text.Features4' /></p>
             </li>
             <li className={styles.li05}>
-              <img src='/home/icon05.svg' />
+              <img src='/pages/icon05.svg' />
               <p><Translate id='homepage.text.Features5' /></p>
             </li>
             <li className={styles.li06}>
-              <img src='/home/icon06.svg' />
+              <img src='/pages/icon06.svg' />
               <p><Translate id='homepage.text.Features6' /></p>
             </li>
             <li className={styles.li07}>
-              <img src='/home/icon07.svg' />
+              <img src='/pages/icon07.svg' />
               <p><Translate id='homepage.text.Features7' /></p>
             </li>
             <li className={styles.li08}>
-              <img src='/home/icon08.svg' />
+              <img src='/pages/icon08.svg' />
               <p><Translate id='homepage.text.Features8' /></p>
             </li>
           </ul>
@@ -85,53 +85,53 @@ function HomepageHeader() {
             <Carousel autoplay={true} dots={false} effect='fade' ref={carousel}>
               <div className={styles.ban_item}>
                 <div>
-                  <img src='/home/icon01.svg' />
+                  <img src='/pages/icon01.svg' />
                   <p><Translate id='homepage.text.Features1' /></p>
                 </div>
                 <div>
-                  <img src='/home/icon02.svg' />
+                  <img src='/pages/icon02.svg' />
                   <p><Translate id='homepage.text.Features2' /></p>
                 </div>
               </div>
               <div className={styles.ban_item}>
                 <div>
-                  <img src='/home/icon03.svg' />
+                  <img src='/pages/icon03.svg' />
                   <p><Translate id='homepage.text.Features3' /></p>
                 </div>
                 <div>
-                  <img src='/home/icon04.svg' />
+                  <img src='/pages/icon04.svg' />
                   <p><Translate id='homepage.text.Features4' /></p>
                 </div>
               </div>
               <div className={styles.ban_item}>
                 <div>
-                  <img src='/home/icon05.svg' />
+                  <img src='/pages/icon05.svg' />
                   <p><Translate id='homepage.text.Features5' /></p>
                 </div>
                 <div>
-                  <img src='/home/icon06.svg' />
+                  <img src='/pages/icon06.svg' />
                   <p><Translate id='homepage.text.Features6' /></p>
                 </div>
               </div>
               <div className={styles.ban_item}>
                 <div>
-                  <img src='/home/icon07.svg' />
+                  <img src='/pages/icon07.svg' />
                   <p><Translate id='homepage.text.Features7' /></p>
                 </div>
                 <div>
-                  <img src='/home/icon08.svg' />
+                  <img src='/pages/icon08.svg' />
                   <p><Translate id='homepage.text.Features8' /></p>
                 </div>
               </div>
             </Carousel>
             <div className={styles.btns}>
-              <img src='/img/chevron-left.svg' onClick={() => { carousel.current.prev() }} />
-              <img src='/img/chevron-right.svg' onClick={() => { carousel.current.next() }} />
+              <img src='/pages/chevron-left.svg' onClick={() => { carousel.current.prev() }} />
+              <img src='/pages/chevron-right.svg' onClick={() => { carousel.current.next() }} />
             </div>
           </div>
         </div>
         <div className={styles.pages3}>
-          <img src='/home/on3-bg-img.webp' className={styles.page3Img} />
+          <img src='/pages/on3-bg-img.webp' className={styles.page3Img} />
           <div className={styles.buyBox}>
             <div className={styles.lineshow}>
               <h2><Translate id='homepage.text.debut' /></h2>
@@ -172,12 +172,12 @@ function HomepageHeader() {
           </div>
           <img src='/mobile/mobile-home-03.webp' className={styles.page3Img3} style={{ display: 'none' }} />
           <div className={styles.imgBox}>
-            <img src='/home/pioneer-top.webp' className={styles.pimg1} />
-            <img src='/home/pioneer.png' className={styles.pimg2} />
+            <img src='/pages/pioneer-top.webp' className={styles.pimg1} />
+            <img src='/pages/pioneer.png' className={styles.pimg2} />
           </div>
         </div>
         <div className={styles.pages5}>
-          <img src='/home/mars-home.webp' className={styles.page5_img} />
+          <img src='/pages/mars-home.webp' className={styles.page5_img} />
           <div className={styles.buyBox}>
             <h2><Translate id='homepage.text.debut' /></h2>
             <h1>Milk-V Mars</h1>
@@ -195,8 +195,8 @@ function HomepageHeader() {
         <ContactBar product='duo' />
       </div>
       <div className={styles.buyChe} onClick={() => setBuy(buy => !buy)} >
-        <img src='/home/buy.svg' className={styles.buy1} />
-        <img src='/home/onBuy.svg' className={styles.buy2} />
+        <img src='/pages/buy.svg' className={styles.buy1} />
+        <img src='/pages/onBuy.svg' className={styles.buy2} />
         <p className={styles.buyCheP}><Translate id='online.buy' /></p>
       </div>
     </>
