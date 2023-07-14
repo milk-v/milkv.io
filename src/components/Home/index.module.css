@@ -5,7 +5,7 @@
 .bgBox {
     width: 100%;
     height: 1000px;
-    background: url(/static/mdHome/mdHome-image.svg) no-repeat;
+    background: url(/static/icons/mdHome-image.svg) no-repeat;
     background-size: 100%;
     position: relative;
 }
