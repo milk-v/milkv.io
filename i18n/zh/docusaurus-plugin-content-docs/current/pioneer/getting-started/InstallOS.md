@@ -17,7 +17,7 @@ sidebar_position: 21
 - 下载 [图片](https://milkv.io/docs/pioneer/getting-started/download)  
  在 [下载页面](https://milkv.io/docs/pioneer/getting-started/download) 中选择所需图像, 这里以Fedora 38为例。
 
-![downloadpage](/Pioneerimage/downloadpage.png)
+![downloadpage](/docs/pioneer/downloadpage.png)
 ## 2. 将程序刻录到MicroSD卡上
 
 ### 2.1 使用BalenaEtcher来刻录图像
@@ -28,7 +28,7 @@ b.点击选择目标按钮，选择microSD卡，将fedora38.raw.xz写入其中�
 
 c.点击Flash！按钮，开始这个过程。 
 
-![balena-etcher](/Pioneerimage/balena-etcher.png)
+![balena-etcher](/docs/pioneer/balena-etcher.png)
 ### 2.2 安装Pioneer
 将烧好的microSD卡插入 Pioneer 的microSD卡槽。
 
@@ -41,14 +41,14 @@ c.点击Flash！按钮，开始这个过程。
 安装向导设置了账户密码。
 
 ### 3.3 完成了! 开始使用Fedora 38
-![fedora38](/Pioneerimage/fedora38.png)
+![fedora38](/docs/pioneer/fedora38.png)
 
 ## 4. 从microSD卡和NVMe SSD启动
 在进行本步骤之前，请完成上述第1-3节的内容
 建议在使用串口操作时采取以下步骤
 
 输入账户密码以登录Fedora系统
-![loginfedora38](/Pioneerimage/loginfedora.png)
+![loginfedora38](/docs/pioneer/loginfedora.png)
 
 ### 4.1 使用 'mv-rootfs.sh' 将系统安装到NVMe SSD上
 We have included the '[mv-rootfs.sh](https://milkv.io/docs/pioneer/getting-started/download)' script in /opt for easy configuration of your system to NVMe SSDs.

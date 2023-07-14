@@ -37,16 +37,16 @@ Pioneer Box 已经安装了冷却器，你可以跳过以下步骤。
 
 ### 第2步 将冷却器底座固定在Pioneer Board上
 在CPU的顶部涂抹导热硅脂
-![fanstep2](/Pioneerimage/fanstep2.webp)
+![fanstep2](/docs/pioneer/fanstep2.webp)
 
 ### 将冷却器底座安装到冷却器上
 如图所示，用螺钉将冷却器底座固定在冷却器上。
-![fanstep3](/Pioneerimage/fanstep3.webp)
+![fanstep3](/docs/pioneer/fanstep3.webp)
 
 ### 第4步 将冷却器底座固定在Pioneer Board上
 如图所示，将散热器固定在主板上。请注意，在安装过程中保持散热器的水平，以避免压坏芯片。
-![fanstep4](/Pioneerimage/fanstep4.webp)
+![fanstep4](/docs/pioneer/fanstep4.webp)
 
 ### 第5步 连接风扇
 如图所示，将风扇连接到主板上。
-![fanstep5](/Pioneerimage/fanstep5.webp)
+![fanstep5](/docs/pioneer/fanstep5.webp)

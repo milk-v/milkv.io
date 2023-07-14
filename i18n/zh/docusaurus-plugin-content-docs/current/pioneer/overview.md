@@ -22,7 +22,7 @@ Milk-V Pioneer是一块基于SOPHON SG2042的开发主板，采用标准的mATX�
 ### 接口
 
 #### Pioneer Board
-![Pioneer Board](/Pioneerimage/pioneerboardv1.1.webp)
+![Pioneer Board](/docs/pioneer/pioneerboardv1.1.webp)
 - 处理器: SOPHON SG2042 (64 core C920, RVV 0.71)
 - 内存: 4x DDR4 DIMM slots up to 128 GB RAM support
 - PCI Express: 3x PCIe x16 Slot (PCIe 3.0 x8)
@@ -42,7 +42,7 @@ Milk-V Pioneer是一块基于SOPHON SG2042的开发主板，采用标准的mATX�
   - 1x eMMC module connector
 
 #### Pioneer Box
-![Pioneer Box](/Pioneerimage/pioneerbox.webp)
+![Pioneer Box](/docs/pioneer/pioneerbox.webp)
 Pioneer Box是一个完整的随时可用的RISC-V电脑，具有以下特点:
 
 - 1x Pioneer Board

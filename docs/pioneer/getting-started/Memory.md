@@ -18,13 +18,13 @@ Please note that when installing multiple memory sticks, make sure that the memo
 ### Example
 
 - When you only need to install 1 stick of memory, install it like this
-![DDR_1](/Pioneerimage/ddr_1.webp)  
+![DDR_1](/docs/pioneer/ddr_1.webp)  
 
 - When you only need to install 2 memory stick, install it like this
-![DDR_2](/Pioneerimage/ddr_2.webp)  
+![DDR_2](/docs/pioneer/ddr_2.webp)  
 
 - When you only need to install 3 memory stick, please install it like this
-![DDR_3](/Pioneerimage/ddr_3.webp)  
+![DDR_3](/docs/pioneer/ddr_3.webp)  
 
 - When you only need to install 4 memory stick, please install it like this
-![DDR_4](/Pioneerimage/ddr_4.webp)
+![DDR_4](/docs/pioneer/ddr_4.webp)

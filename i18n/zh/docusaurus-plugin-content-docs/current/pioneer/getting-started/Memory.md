@@ -18,13 +18,13 @@ sidebar_position: 22
 ### 例子
 
 - 当你只需要安装1个内存条时，可以这样安装
-![DDR_1](/Pioneerimage/ddr_1.webp)  
+![DDR_1](/docs/pioneer/ddr_1.webp)  
 
 - 当你只需要安装2个内存条时，可以这样安装
-![DDR_2](/Pioneerimage/ddr_2.webp)  
+![DDR_2](/docs/pioneer/ddr_2.webp)  
 
 - 当你只需要安装3个内存条时，请这样安装
-![DDR_3](/Pioneerimage/ddr_3.webp)  
+![DDR_3](/docs/pioneer/ddr_3.webp)  
 
 - 当你只需要安装4个内存条时，请像这样安装
-![DDR_4](/Pioneerimage/ddr_4.webp)
+![DDR_4](/docs/pioneer/ddr_4.webp)
