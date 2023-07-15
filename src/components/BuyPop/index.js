@@ -32,19 +32,19 @@ export default function (props) {
                 {
                     type === 'home' ? <>
                         <div className={styles.goBuy} onClick={() => toApp()}>
-                            <img src='/home/china.svg' className={styles.buyIcon} />
+                            <img src='/pages/china.svg' className={styles.buyIcon} />
                             <div className={styles.textBOx}>
                                 <p className={styles.tp}>China's mainland</p>
-                                <img src='/home/icon_more-right.svg' className={styles.img1} />
-                                <img src='/home/icon_more-right_white.svg' className={styles.img2} />
+                                <img src='/pages/icon_more-right.svg' className={styles.img1} />
+                                <img src='/pages/icon_more-right_white.svg' className={styles.img2} />
                             </div>
                         </div>
                         <div className={styles.goBuy} onClick={() => window.open('https://www.crowdsupply.com/milkv')}>
                             <img src='/pages/CrowdSupply_logo.png' className={styles.buyIcon} />
                             <div className={styles.textBOx}>
                                 <p className={styles.tp}>Crowd Supply</p>
-                                <img src='/home/icon_more-right.svg' className={styles.img1} />
-                                <img src='/home/icon_more-right_white.svg' className={styles.img2} />
+                                <img src='/pages/icon_more-right.svg' className={styles.img1} />
+                                <img src='/pages/icon_more-right_white.svg' className={styles.img2} />
                             </div>
                         </div>
                     </> : type === 'pioneer' ? <>
@@ -52,46 +52,46 @@ export default function (props) {
                             <img src='/pages/CrowdSupply_logo.png' className={styles.buyIcon} />
                             <div className={styles.textBOx}>
                                 <p className={styles.tp}>Crowd Supply</p>
-                                <img src='/home/icon_more-right.svg' className={styles.img1} />
-                                <img src='/home/icon_more-right_white.svg' className={styles.img2} />
+                                <img src='/pages/icon_more-right.svg' className={styles.img1} />
+                                <img src='/pages/icon_more-right_white.svg' className={styles.img2} />
                             </div>
                         </div>
                     </> : type === 'duo' ? <>
                         <div className={styles.goBuy} onClick={() => toApp()}>
-                            <img src='/home/china.svg' className={styles.buyIcon} />
+                            <img src='/pages/china.svg' className={styles.buyIcon} />
                             <div className={styles.textBOx}>
                                 <p className={styles.tp}>China's mainland</p>
-                                <img src='/home/icon_more-right.svg' className={styles.img1} />
-                                <img src='/home/icon_more-right_white.svg' className={styles.img2} />
+                                <img src='/pages/icon_more-right.svg' className={styles.img1} />
+                                <img src='/pages/icon_more-right_white.svg' className={styles.img2} />
                             </div>
                         </div>
                         <div className={styles.none}>
-                            <img src='/home/other.svg' className={styles.buyIcon} />
+                            <img src='/pages/other.svg' className={styles.buyIcon} />
                             <div className={styles.textBOx}>
                                 <p className={styles.tp}>Other countries and regions</p>
-                                <img src='/home/icon_more-right.svg' className={styles.img1} />
-                                <img src='/home/icon_more-right_white.svg' className={styles.img2} />
+                                <img src='/pages/icon_more-right.svg' className={styles.img1} />
+                                <img src='/pages/icon_more-right_white.svg' className={styles.img2} />
                             </div>
-                            <img src='/home/COMINGSOON.svg' className={styles.coming} />
+                            <img src='/pages/COMINGSOON.svg' className={styles.coming} />
                         </div>
                     </> : type === 'mars' ? <>
                         <div className={styles.none} >
-                            <img src='/home/china.svg' className={styles.buyIcon} />
+                            <img src='/pages/china.svg' className={styles.buyIcon} />
                             <div className={styles.textBOx}>
                                 <p className={styles.tp}>China's mainland</p>
-                                <img src='/home/icon_more-right.svg' className={styles.img1} />
-                                <img src='/home/icon_more-right_white.svg' className={styles.img2} />
-                                <img src='/home/COMINGSOON.svg' className={styles.coming} />
+                                <img src='/pages/icon_more-right.svg' className={styles.img1} />
+                                <img src='/pages/icon_more-right_white.svg' className={styles.img2} />
+                                <img src='/pages/COMINGSOON.svg' className={styles.coming} />
                             </div>
                         </div>
                         <div className={styles.none}>
-                            <img src='/home/other.svg' className={styles.buyIcon} />
+                            <img src='/pages/other.svg' className={styles.buyIcon} />
                             <div className={styles.textBOx}>
                                 <p className={styles.tp}>Other countries and regions</p>
-                                <img src='/home/icon_more-right.svg' className={styles.img1} />
-                                <img src='/home/icon_more-right_white.svg' className={styles.img2} />
+                                <img src='/pages/icon_more-right.svg' className={styles.img1} />
+                                <img src='/pages/icon_more-right_white.svg' className={styles.img2} />
                             </div>
-                            <img src='/home/COMINGSOON.svg' className={styles.coming} />
+                            <img src='/pages/COMINGSOON.svg' className={styles.coming} />
                         </div>
                     </> : null
                 }

@@ -82,7 +82,7 @@ const config = {
         hideOnScroll: true,
         logo: {
           alt: 'milkv.io',
-          src: 'img/LogoNew.svg',
+          src: 'pages/LogoNew.svg',
         },
 
         items: [
