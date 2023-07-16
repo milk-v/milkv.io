@@ -2,7 +2,7 @@
 const config = {
   title: 'Milk-V',
   tagline: 'Everything about RISC-V',
-  favicon: 'img/favicon.ico',
+  favicon: 'pages/favicon.ico',
   url: 'https://milkv.io',
   baseUrl: '/',
   trailingSlash: false,
