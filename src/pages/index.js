@@ -150,7 +150,7 @@ function HomepageHeader() {
               </Link >
             </div>
           </div>
-          <img src='/mobile/mobile-home-02.webp' className={styles.page3Img2} style={{ display: 'none' }} />
+          <img src='/pages/mobile-home-02.webp' className={styles.page3Img2} style={{ display: 'none' }} />
         </div>
         <div className={styles.pages4}>
           <div className={styles.buyBox}>
@@ -170,7 +170,7 @@ function HomepageHeader() {
               </Link >
             </div>
           </div>
-          <img src='/mobile/mobile-home-03.webp' className={styles.page3Img3} style={{ display: 'none' }} />
+          <img src='/pages/mobile-home-03.webp' className={styles.page3Img3} style={{ display: 'none' }} />
           <div className={styles.imgBox}>
             <img src='/pages/pioneer-top.webp' className={styles.pimg1} />
             <img src='/pages/pioneer.png' className={styles.pimg2} />
@@ -190,7 +190,7 @@ function HomepageHeader() {
               </Link >
             </div>
           </div>
-          <img src='/mobile/mobile-home-04.webp' className={styles.page3Img4} style={{ display: "none" }} />
+          <img src='/pages/mobile-home-04.webp' className={styles.page3Img4} style={{ display: "none" }} />
         </div>
         <ContactBar product='duo' />
       </div>
