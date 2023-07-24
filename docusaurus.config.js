@@ -113,6 +113,10 @@ const config = {
                 label: 'Mars',
                 to: '/mars'
               },
+              {
+                label: 'Meles',
+                to: '/meles'
+              },
             ],
           },
           {

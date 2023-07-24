@@ -1,0 +1,2086 @@
+/* aspect-ratio: 192/ 110; */
+.melesHead {
+    width: 100%;
+    aspect-ratio: 192/ 99;
+    background: url(/static/meles/over-meles-image.webp) no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.btnbuy {
+    border: 2px solid #fff;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btnbuy:hover {
+    background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+}
+
+.titleBox {
+    position: absolute;
+    left: 15%;
+    top: 32%;
+}
+
+.titleBox>h1 {
+    color: #FFF;
+    text-align: left;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+}
+
+.titleBox>h1>span {
+    font-weight: 300;
+}
+
+.titleBox>p {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.titleIcons {
+    position: absolute;
+    left: 15%;
+    bottom: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.titleIcons h3 {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+}
+
+.titleIcons p {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+}
+
+
+.bgColor {
+    background-color: #151515;
+    overflow: hidden;
+}
+
+.tHeadSoC {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.tHeadSoCLeft {
+    background-color: #000;
+    height: 100%;
+}
+
+.tHeadSoCRight {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topBox {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.topBox h1 {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+    line-height: 120%;
+}
+
+.tHeadSoCLeft>img {
+    display: block;
+}
+
+
+.hzBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.hzBox>p {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.hzBox>h1 {
+    color: #0089D6;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hzBox>h1>span {
+    color: #fff;
+}
+
+.hzBox>h1::after {
+    content: '2.0GHz';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(0, 137, 214, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hzBox>h1::before {
+    content: '2.0GHz';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 137, 214, 0.25) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.viaeoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.viaeoLeft {
+    height: 100%;
+    background: url(/static/meles/over-meles-4kbg.webp) no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.viaeoLeft>h1 {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+}
+
+.viaeoLeft>p {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.icons4k {
+    position: absolute;
+}
+
+.viaeoRight {
+    height: 100%;
+    background: url(/static/meles/over-meles-displaybg.webp) no-repeat;
+    background-size: 100%;
+}
+
+.viaeoRight>h1 {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+}
+
+.viaeoRight>img {
+    display: block;
+}
+
+.viaeoRight>p {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0;
+}
+
+.typeIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+.typeIcons>li>img {
+    display: block;
+    margin: 0 auto;
+}
+
+.typeIcons>li>p {
+    color: #FFF;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.icons4k {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.highBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.highBoxLeft {
+    background-color: #000;
+    height: 100%;
+}
+
+.highBoxLeft>h1 {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.highTable {
+    display: table;
+    margin: 0;
+}
+
+.highTable,
+.highTable>tbody {
+    width: 100%;
+}
+
+.highTable td {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.highTable td>span {
+    color: #0089D6;
+}
+
+.tdFlex {
+    display: flex;
+    align-items: center;
+}
+
+.tdFlex>p {
+    margin: 0;
+}
+
+.tdFlex>img {
+    display: block;
+}
+
+.tdFlex2 {
+    display: flex;
+}
+
+.supportText>p {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.highBoxRight {
+    height: 100%;
+    background-color: #000;
+    position: relative;
+}
+
+.gpuTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #fff;
+}
+
+.gpuTitle>h1 {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.gpuTitle>h2 {
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.highBoxRight>h1 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    background: linear-gradient(270deg, #00A3FF 0%, #00D6C9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    z-index: 5;
+}
+
+.highBoxRight>h1::before {
+    content: '';
+    width: 30px;
+    height: 5px;
+    background: linear-gradient(277deg, #01A4FF 0%, #01CFD0 100%);
+    position: absolute;
+    top: -8px;
+    left: 0;
+}
+
+.gpuIcons {
+    z-index: 15;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gpuIcons>img {
+    width: 100%;
+}
+
+.highBoxRight>img {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.sizeBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sizeBox>div {
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.sizeBox h1 {
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.sizeLeft>h1 {
+    text-align: right;
+}
+
+.sizeRight>h1 {
+    text-align: left;
+}
+
+.sizeLeft>img {
+    display: block;
+}
+
+.sizeLeft>.shadowBox {
+    background-color: rgba(217, 217, 217, 0.8);
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+}
+
+.sizeRight>img {
+    position: absolute;
+}
+
+.sizeRight>.shadowBox {
+    position: absolute;
+    background-color: rgba(217, 217, 217, 0.24);
+    bottom: -40%;
+    left: -40%;
+}
+
+.take_ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.take_ul>li {
+    height: 100%;
+    background-color: #000;
+}
+
+.take_ul>li>p {
+    text-align: center;
+    color: #fff;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0;
+}
+
+.take_ul>li>img {
+    width: 100%;
+}
+
+.title {
+    text-align: left;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.title::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+table td {
+    line-height: 120%;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width: 1950px) {
+    .btnbuy {
+        width: 240px;
+        height: 80px;
+        font-size: 43px;
+        margin-top: 120px;
+    }
+
+    .titleBox>h1 {
+        font-size: 87px;
+    }
+
+    .titleBox>p {
+        font-size: 32px;
+    }
+
+    .titleIcons>img {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+    }
+
+    .titleIcons h3 {
+        font-size: 20px;
+    }
+
+    .titleIcons p {
+        font-size: 16px;
+    }
+
+    .tHeadSoC {
+        width: 1440px;
+        height: 640px;
+        margin: 40px auto 20px;
+    }
+
+    .tHeadSoCLeft {
+        width: 975px;
+        padding: 30px;
+    }
+
+    .tHeadSoCRight {
+        width: 445px;
+    }
+
+    .topBox h1 {
+        font-size: 40px;
+    }
+
+    .tHeadSoCLeft>img {
+        width: 915px;
+        height: 466px;
+        margin-top: 40px;
+    }
+
+    .hzBox>p {
+        font-size: 24px;
+    }
+
+    .hzBox>h1 {
+        font-size: 62px;
+        padding: 65px 0;
+    }
+
+    .hzBox>img {
+        margin: 10px 0;
+    }
+
+    .hzBox>h1>span {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .hzBox>h1::after {
+        font-size: 62px;
+    }
+
+    .hzBox>h1::before {
+        font-size: 62px;
+    }
+
+    .tHeadSoCRight>img {
+        width: 445px;
+        height: 294px;
+    }
+
+    .viaeoBox {
+        width: 1440px;
+        height: 575px;
+        margin: 20px auto;
+    }
+
+    .viaeoLeft {
+        width: 970px;
+        padding: 25px 30px;
+    }
+
+    .viaeoLeft>h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .viaeoLeft>p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .icons4k {
+        height: 97px;
+        left: 30px;
+        bottom: 30px;
+    }
+
+    .viaeoRight {
+        width: 450px;
+        padding: 25px 30px;
+    }
+
+    .viaeoRight>h1 {
+        font-size: 36px;
+    }
+
+    .viaeoRight>img {
+        margin: 120px 0 25px;
+        width: 55px;
+        height: 40px;
+    }
+
+    .viaeoRight>p {
+        font-size: 24px;
+    }
+
+    .typeIcons {
+        width: 1440px;
+        height: 200px;
+        margin: 20px auto;
+        padding: 0 30px;
+    }
+
+    .typeIcons>li>img {
+        width: 105px;
+        height: 105px;
+    }
+
+    .typeIcons>li>p {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    .highBox {
+        width: 1440px;
+        height: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px auto;
+    }
+
+    .highBoxLeft {
+        background-color: #000;
+        padding: 30px;
+        width: 728px;
+        height: 100%;
+    }
+
+    .highBoxLeft>h1 {
+        color: #FFF;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        margin-bottom: 40px;
+    }
+
+    .highTable {
+        display: table;
+        margin: 0;
+    }
+
+    .highTable,
+    .highTable>tbody {
+        width: 100%;
+    }
+
+    .highTable td {
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+    }
+
+    .highTable td>span {
+        color: #0089D6;
+    }
+
+    .tdFlex {
+        display: flex;
+        align-items: center;
+    }
+
+    .tdFlex>p {
+        margin: 0;
+    }
+
+    .tdFlex>img {
+        display: block;
+        margin: 0 5px;
+    }
+
+    .tdFlex2 {
+        display: flex;
+    }
+
+    .tdFlex2>p {
+        margin-right: 15px;
+    }
+
+    .supportText>p {
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .supportText>p>span {
+        font-size: 12px;
+        margin-right: 3px;
+    }
+
+    .highBoxRight {
+        width: 690px;
+        height: 100%;
+        background-color: #000;
+        position: relative;
+        padding: 30px;
+    }
+
+    .gpuTitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        color: #fff;
+        margin-bottom: 95px;
+    }
+
+    .gpuTitle>h1 {
+        color: #FFF;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+    }
+
+    .gpuTitle>h2 {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .highBoxRight>h1 {
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        background: linear-gradient(270deg, #00A3FF 0%, #00D6C9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        position: relative;
+        z-index: 5;
+    }
+
+    .highBoxRight>h1::before {
+        content: '';
+        width: 30px;
+        height: 5px;
+        background: linear-gradient(277deg, #01A4FF 0%, #01CFD0 100%);
+        position: absolute;
+        top: -8px;
+        left: 0;
+    }
+
+    .gpuIcons {
+        width: 242px;
+        z-index: 15;
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gpuIcons>img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .highBoxRight>img {
+        z-index: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 629px;
+        height: 354px;
+    }
+
+    .highBox {
+        width: 1440px;
+        height: 550px;
+        margin: 20px auto;
+    }
+
+    .highBoxLeft {
+        padding: 30px;
+        width: 728px;
+    }
+
+    .highBoxLeft>h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .highTable td {
+        font-size: 20px;
+    }
+
+    .tdFlex>img {
+        margin: 0 5px;
+    }
+
+    .supportText>p {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .supportText>p>span {
+        font-size: 12px;
+        margin-right: 3px;
+    }
+
+    .highBoxRight {
+        width: 690px;
+        padding: 30px;
+    }
+
+    .gpuTitle {
+        margin-bottom: 95px;
+    }
+
+    .gpuTitle>h1 {
+        font-size: 40px;
+    }
+
+    .gpuTitle>h2 {
+        font-size: 24px;
+    }
+
+    .highBoxRight>h1 {
+        font-size: 24px;
+    }
+
+    .gpuIcons {
+        width: 242px;
+        z-index: 15;
+        right: 30px;
+        bottom: 30px;
+    }
+
+    .gpuIcons>img {
+        margin-top: 20px;
+    }
+
+    .highBoxRight>img {
+        width: 629px;
+        height: 354px;
+    }
+
+    .sizeBox {
+        width: 1440px;
+        height: 369px;
+        margin: 20px auto;
+    }
+
+    .sizeBox h1 {
+        font-size: 40px;
+    }
+
+    .sizeLeft {
+        width: 540px;
+        height: 100%;
+        padding: 20px 10px 10px;
+    }
+
+    .sizeLeft>img {
+        width: 509px;
+        height: 222px;
+        margin: 70px auto 0;
+    }
+
+    .sizeLeft>.shadowBox {
+        width: 364px;
+        height: 173px;
+        border-radius: 364px;
+        filter: blur(160px);
+    }
+
+    .sizeRight {
+        width: 876px;
+        height: 369px;
+        padding: 20px 30px 0 30px;
+    }
+
+    .sizeRight>img {
+        width: 635px;
+        height: 226px;
+        right: 30px;
+        bottom: 10px;
+    }
+
+    .sizeRight>.shadowBox {
+        width: 904px;
+        height: 375px;
+        border-radius: 904px;
+        filter: blur(160px);
+    }
+
+    .take_ul {
+        width: 1440px;
+        height: 250px;
+        margin: 20px auto;
+    }
+
+    .take_ul>li {
+        width: 345px;
+    }
+
+    .take_ul>li>p {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    .title {
+        font-size: 77px;
+        font-weight: 500;
+        text-align: left;
+        color: #fff;
+        position: relative;
+        width: 1450px;
+        height: 110px;
+        overflow: hidden;
+        margin: 150px auto 100px;
+    }
+
+    .moreP {
+        font-size: 26px;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.8);
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    .tableBox {
+        margin: 80px auto;
+        width: 1440px;
+    }
+
+    .tableBox td {
+        text-align: left;
+        height: 58px;
+        font-weight: 500;
+        font-size: 32px;
+        color: rgba(255, 255, 255, 0.85);
+        padding-left: 60px;
+    }
+
+    .tabP {
+        width: 1030px;
+    }
+
+    .tabline {
+        width: 410px;
+    }
+
+    .headword {
+        width: 1440px;
+        margin: 80px auto;
+        font-weight: 500;
+        font-size: 48px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1450px) {
+    .btnbuy {
+        width: 160px;
+        height: 55px;
+        font-size: 26px;
+        margin-top: 60px;
+    }
+
+    .titleBox>h1 {
+        font-size: 68px;
+    }
+
+    .titleBox>p {
+        font-size: 24px;
+    }
+
+    .titleIcons>img {
+        width: 110px;
+        height: 110px;
+        margin-right: 15px;
+    }
+
+    .titleIcons h3 {
+        font-size: 18px;
+    }
+
+    .titleIcons p {
+        font-size: 14px;
+    }
+
+    .tHeadSoC {
+        width: 1150px;
+        height: 512px;
+        margin: 40px auto 20px;
+    }
+
+    .tHeadSoCLeft {
+        width: 780px;
+        padding: 24px;
+    }
+
+    .tHeadSoCRight {
+        width: 356px;
+    }
+
+    .topBox h1 {
+        font-size: 32px;
+    }
+
+    .topBox img {
+        width: calc(236px*.8);
+        height: calc(66px*.8);
+    }
+
+    .tHeadSoCLeft>img {
+        width: calc(915px*.8);
+        height: calc(466px*.8);
+        margin-top: 30px;
+    }
+
+    .hzBox>p {
+        font-size: 20px;
+    }
+
+    .hzBox>h1 {
+        font-size: 48px;
+        padding: 40px 0;
+    }
+
+    .hzBox>img {
+        margin: 10px 0;
+    }
+
+    .hzBox>h1>span {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .hzBox>h1::after {
+        font-size: 48px;
+    }
+
+    .hzBox>h1::before {
+        font-size: 48px;
+    }
+
+    .tHeadSoCRight>img {
+        width: calc(445px*.8);
+        height: calc(294px*.8);
+    }
+
+    .viaeoBox {
+        width: calc(1440px*.8);
+        height: calc(575px*.8);
+        margin: 20px auto;
+    }
+
+    .viaeoLeft {
+        width: calc(970px*.8);
+        padding: 20px;
+    }
+
+    .viaeoLeft>h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .viaeoLeft>p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .icons4k {
+        height: 80px;
+        left: 30px;
+        bottom: 30px;
+    }
+
+    .icons4k>img {
+        height: 100%;
+    }
+
+    .viaeoRight {
+        width: calc(450px*.8);
+        padding: 20px;
+    }
+
+    .viaeoRight>h1 {
+        font-size: 30px;
+    }
+
+    .viaeoRight>img {
+        margin: 120px 0 25px;
+        width: 55px;
+        height: 40px;
+    }
+
+    .viaeoRight>p {
+        font-size: 20px;
+    }
+
+    .typeIcons {
+        width: calc(1440px*.8);
+        height: calc(200px*.8);
+        margin: 20px auto;
+        padding: 0 30px;
+    }
+
+    .typeIcons>li>img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .typeIcons>li>p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .highBox {
+        width: calc(1440px*.8);
+        height: calc(580px*.8);
+        margin: 20px auto;
+    }
+
+    .highBoxLeft {
+        padding: 15px;
+        width: calc(728px*.8);
+    }
+
+    .highBoxLeft>h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .highTable td {
+        font-size: 16px;
+    }
+
+    .tdFlex>img {
+        margin: 0 5px;
+    }
+
+    .supportText>p {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .supportText>p>span {
+        font-size: 12px;
+        margin-right: 3px;
+    }
+
+    .highBoxRight {
+        width: calc(690px*.8);
+        padding: 15px;
+    }
+
+    .gpuTitle {
+        margin-bottom: 75px;
+    }
+
+    .gpuTitle>h1 {
+        font-size: 30px;
+    }
+
+    .gpuTitle>h2 {
+        font-size: 20px;
+    }
+
+    .highBoxRight>h1 {
+        font-size: 24px;
+    }
+
+    .gpuIcons {
+        width: calc(242px*.8);
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .gpuIcons>img {
+        margin-top: 20px;
+    }
+
+    .highBoxRight>img {
+        width: calc(629px*.8);
+        height: calc(354px*.8);
+    }
+
+    .tdFlex2>p {
+        margin-right: 10px;
+    }
+
+    .sizeBox {
+        width: calc(1440px*.8);
+        height: calc(369px*.8);
+        margin: 20px auto;
+    }
+
+    .sizeBox h1 {
+        font-size: 30px;
+    }
+
+    .sizeLeft {
+        width: calc(540px*.8);
+        height: 100%;
+        padding: 20px 10px 10px;
+    }
+
+    .sizeLeft>img {
+        width: calc(509px*.8);
+        height: calc(222px*.8);
+        margin: 50px auto 0;
+    }
+
+    .sizeLeft>.shadowBox {
+        width: 364px;
+        height: 173px;
+        border-radius: calc(364px*.8);
+        filter: blur(180px);
+    }
+
+    .sizeRight {
+        width: calc(876px*.8);
+        height: calc(369px*.8);
+        padding: 20px 30px 0 30px;
+    }
+
+    .sizeRight>img {
+        width: calc(635px*.8);
+        height: calc(226px*.8);
+        right: 30px;
+        bottom: 10px;
+    }
+
+    .sizeRight>.shadowBox {
+        width: calc(904px*.8);
+        height: calc(375px*.8);
+        border-radius: calc(904px*.8);
+        filter: blur(100px);
+    }
+
+    .take_ul {
+        width: calc(1440px*.8);
+        height: calc(250px*.8);
+        margin: 20px auto;
+    }
+
+    .take_ul>li {
+        width: calc(345px*.8);
+    }
+
+    .take_ul>li>p {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .title {
+        font-size: 50px;
+        width: calc(1440px*.8);
+        height: 78px;
+        margin: 100px auto 80px;
+    }
+
+    .moreP {
+        font-size: 26px;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.8);
+        width: calc(1440px*.8);
+        margin: 0 auto;
+    }
+
+    .tableBox {
+        margin: 80px auto;
+        width: 1440px;
+    }
+
+    .tableBox td {
+        text-align: left;
+        height: 58px;
+        font-weight: 500;
+        font-size: 32px;
+        color: rgba(255, 255, 255, 0.85);
+        padding-left: 60px;
+    }
+
+    .tabP {
+        width: 1030px;
+    }
+
+    .tabline {
+        width: 410px;
+    }
+
+    .headword {
+        width: 1440px;
+        margin: 80px auto;
+        font-weight: 500;
+        font-size: 48px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 1000px) {
+    .btnbuy {
+        width: 150px;
+        height: 50px;
+        font-size: 24px;
+        margin-top: 60px;
+    }
+
+    .titleBox>h1 {
+        font-size: 58px;
+    }
+
+    .titleBox>p {
+        font-size: 18px;
+    }
+
+    .titleIcons>img {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+    }
+
+    .titleIcons h3 {
+        font-size: 16px;
+    }
+
+    .titleIcons p {
+        font-size: 13px;
+    }
+
+    .tHeadSoC {
+        width: calc(1150px*.8);
+        height: calc(512px*.8);
+        margin: 40px auto 20px;
+    }
+
+    .tHeadSoCLeft {
+        width: calc(780px*.8);
+        padding: 20px;
+    }
+
+    .tHeadSoCRight {
+        width: calc(356px*.8);
+    }
+
+    .topBox h1 {
+        font-size: 24px;
+    }
+
+    .topBox img {
+        width: calc(236px*.8*.8);
+        height: calc(66px*.8*.8);
+    }
+
+    .tHeadSoCLeft>img {
+        width: calc(915px*.8*.8);
+        height: calc(466px*.8*.8);
+        margin-top: 20px;
+    }
+
+    .hzBox>p {
+        font-size: 16px;
+    }
+
+    .hzBox>h1 {
+        font-size: 38px;
+        padding: 32px 0;
+    }
+
+    .hzBox>img {
+        margin: 10px 0;
+    }
+
+    .hzBox>h1>span {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .hzBox>h1::after {
+        font-size: 38px;
+    }
+
+    .hzBox>h1::before {
+        font-size: 38px;
+    }
+
+    .tHeadSoCRight>img {
+        width: calc(445px*.8*.8);
+        height: calc(294px*.8*.8);
+    }
+
+    .viaeoBox {
+        width: calc(1440px*.8*.8);
+        height: calc(575px*.8*.8);
+        margin: 20px auto;
+    }
+
+    .viaeoLeft {
+        width: calc(970px*.8*.8);
+        padding: 20px;
+    }
+
+    .viaeoLeft>h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .viaeoLeft>p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .icons4k {
+        height: 60px;
+        left: 20px;
+        bottom: 30px;
+    }
+
+    .icons4k>img {
+        height: 100%;
+    }
+
+    .viaeoRight {
+        width: calc(450px*.8*.8);
+        padding: 20px;
+    }
+
+    .viaeoRight>h1 {
+        font-size: 24px;
+    }
+
+    .viaeoRight>img {
+        margin: 100px 0 25px;
+        width: 55px;
+        height: 40px;
+    }
+
+    .viaeoRight>p {
+        font-size: 16px;
+    }
+
+    .typeIcons {
+        width: calc(1440px*.8*.8);
+        height: calc(200px*.8*.8);
+        margin: 20px auto;
+        padding: 0 30px;
+        align-items: flex-start;
+    }
+
+    .typeIcons>li {
+        flex: 1;
+    }
+
+    .typeIcons>li>img {
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+    }
+
+    .typeIcons>li>p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .highBox {
+        width: calc(1440px*.8*.8);
+        height: calc(600px*.8*.8);
+        margin: 20px auto;
+    }
+
+    .highBoxLeft {
+        padding: 10px;
+        width: calc(728px*.8*.8);
+    }
+
+    .highBoxLeft>h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .highTable td {
+        font-size: 12px;
+    }
+
+    .tdFlex>img {
+        margin: 0 5px;
+    }
+
+    .supportText>p {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    .supportText>p>span {
+        font-size: 12px;
+        margin-right: 3px;
+    }
+
+    .highBoxRight {
+        width: calc(690px*.8*.8);
+        padding: 10px;
+    }
+
+    .gpuTitle {
+        margin-bottom: 45px;
+    }
+
+    .gpuTitle>h1 {
+        font-size: 20px;
+    }
+
+    .gpuTitle>h2 {
+        font-size: 16px;
+    }
+
+    .highBoxRight>h1 {
+        font-size: 16px;
+    }
+
+    .gpuIcons {
+        width: calc(242px*.8*.8);
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .gpuIcons>img {
+        margin-top: 10px;
+    }
+
+    .highBoxRight>img {
+        width: calc(629px*.8*.8);
+        height: calc(354px*.8*.8);
+    }
+
+    .tdFlex2>p {
+        margin-right: 10px;
+    }
+
+    .sizeBox {
+        width: calc(1440px*.8*.8);
+        height: calc(369px*.8*.8);
+        margin: 20px auto;
+    }
+
+    .sizeBox h1 {
+        font-size: 20px;
+    }
+
+    .sizeLeft {
+        width: calc(540px*.8*.8);
+        height: 100%;
+        padding: 20px 10px 10px;
+    }
+
+    .sizeLeft>img {
+        width: calc(509px*.8*.8);
+        height: calc(222px*.8*.8);
+        margin: 40px auto 0;
+    }
+
+    .sizeLeft>.shadowBox {
+        width: 364px;
+        height: 173px;
+        border-radius: calc(364px*.8*.8);
+        filter: blur(180px);
+    }
+
+    .sizeRight {
+        width: calc(876px*.8*.8);
+        height: calc(369px*.8*.8);
+        padding: 20px 30px 0 30px;
+    }
+
+    .sizeRight>img {
+        width: calc(635px*.8*.8);
+        height: calc(226px*.8*.8);
+        right: 30px;
+        bottom: 10px;
+    }
+
+    .sizeRight>.shadowBox {
+        width: calc(904px*.8*.8);
+        height: calc(375px*.8*.8);
+        border-radius: calc(904px*.8*.8);
+        filter: blur(100px);
+    }
+
+    .take_ul {
+        width: calc(1440px*.8*.8);
+        height: calc(250px*.8*.8);
+        margin: 20px auto;
+    }
+
+    .take_ul>li {
+        width: calc(345px*.8*.8);
+    }
+
+    .take_ul>li>p {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .title {
+        font-size: 42px;
+        width: 990px;
+        height: 56px;
+        margin: 100px auto 80px;
+    }
+
+    .moreP {
+        font-size: 18px;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.8);
+        width: 990px;
+        margin: 0 auto;
+    }
+
+    .tableBox {
+        margin: 50px auto 100px;
+        width: 990px;
+    }
+
+    .tableBox td {
+        text-align: left;
+        height: 58px;
+        font-weight: 500;
+        font-size: 22px;
+        color: rgba(255, 255, 255, 0.85);
+        padding-left: 60px;
+    }
+
+    .tabP {
+        width: 730px;
+    }
+
+    .tabline {
+        width: 250px;
+    }
+
+    .headword {
+        width: 990px;
+        margin: 40px auto;
+        font-weight: 500;
+        font-size: 38px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 750px) {
+    .btnbuy {
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+    .titleBox>h1 {
+        font-size: 35px;
+    }
+
+    .titleBox>p {
+        font-size: 13px;
+    }
+
+    .titleIcons>img {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .titleIcons h3 {
+        font-size: 14px;
+    }
+
+    .titleIcons p {
+        font-size: 12px;
+    }
+
+    .tHeadSoC {
+        width: calc(1150px*.8*.8);
+        height: calc(512px*.8*.8);
+        margin: 40px auto 20px;
+    }
+
+    .tHeadSoCLeft {
+        width: calc(780px*.8*.8);
+        padding: 20px;
+    }
+
+    .tHeadSoCRight {
+        width: calc(356px*.8*.8);
+    }
+
+    .topBox h1 {
+        font-size: 20px;
+    }
+
+    .topBox img {
+        width: calc(236px*.8*.8*.8);
+        height: calc(66px*.8*.8*.8);
+    }
+
+    .tHeadSoCLeft>img {
+        width: calc(915px*.8*.8*.8);
+        height: calc(466px*.8*.8*.8);
+        margin-top: 20px;
+    }
+
+    .hzBox>p {
+        font-size: 14px;
+    }
+
+    .hzBox>h1 {
+        font-size: 28px;
+        padding: 20px 0;
+    }
+
+    .hzBox>img {
+        margin: 10px 0;
+    }
+
+    .hzBox>h1>span {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .hzBox>h1::after {
+        font-size: 28px;
+    }
+
+    .hzBox>h1::before {
+        font-size: 28px;
+    }
+
+    .tHeadSoCRight>img {
+        width: calc(445px*.8*.8*.8);
+        height: calc(294px*.8*.8*.8);
+    }
+
+    .viaeoBox {
+        width: calc(1440px*.8*.8*.8);
+        height: calc(575px*.8*.8*.8);
+        margin: 20px auto;
+    }
+
+    .viaeoLeft {
+        width: calc(970px*.8*.8*.8);
+        padding: 20px;
+    }
+
+    .viaeoLeft>h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .viaeoLeft>p {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .icons4k {
+        height: 45px;
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .icons4k>img {
+        height: 100%;
+    }
+
+    .viaeoRight {
+        width: calc(450px*.8*.8*.8);
+        padding: 20px;
+    }
+
+    .viaeoRight>h1 {
+        font-size: 18px;
+    }
+
+    .viaeoRight>img {
+        margin: 80px 0 25px;
+        width: 55px;
+        height: 40px;
+    }
+
+    .viaeoRight>p {
+        font-size: 14px;
+    }
+
+    .typeIcons {
+        width: calc(1440px*.8*.8*.8);
+        height: calc(200px*.8*.8);
+        margin: 20px auto;
+        padding: 0 30px;
+        align-items: flex-start;
+    }
+
+    .typeIcons>li {
+        flex: 1;
+    }
+
+    .typeIcons>li>img {
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+    }
+
+    .typeIcons>li>p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .highBox {
+        width: calc(1440px*.8*.8*.8);
+        height: calc(720px*.8*.8*.8);
+        margin: 20px auto;
+    }
+
+    .highBoxLeft {
+        padding: 10px;
+        width: calc(728px*.8*.8*.8);
+    }
+
+    .highBoxLeft>h1 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .highTable td {
+        font-size: 12px;
+    }
+
+    .tdFlex>img {
+        margin: 0 -15px;
+        transform: scale(.6);
+    }
+
+    .supportText>p {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    .supportText>p>span {
+        font-size: 12px;
+        margin-right: 3px;
+    }
+
+    .highBoxRight {
+        width: calc(690px*.8*.8*.8);
+        padding: 10px;
+    }
+
+    .gpuTitle {
+        margin-bottom: 25px;
+    }
+
+    .gpuTitle>h1 {
+        font-size: 16px;
+    }
+
+    .gpuTitle>h2 {
+        font-size: 14px;
+    }
+
+    .highBoxRight>h1 {
+        font-size: 14px;
+    }
+
+    .gpuIcons {
+        width: calc(242px*.8*.8);
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .gpuIcons>img {
+        margin-top: 10px;
+    }
+
+    .highBoxRight>img {
+        width: calc(629px*.8*.8);
+        height: calc(354px*.8*.8);
+    }
+
+    .tdFlex2>p {
+        margin-right: 10px;
+    }
+
+    .sizeBox {
+        width: calc(1440px*.8*.8*.8);
+        height: calc(369px*.8*.8*.8);
+        margin: 20px auto;
+    }
+
+    .sizeBox h1 {
+        font-size: 16px;
+    }
+
+    .sizeLeft {
+        width: calc(540px*.8*.8*.8);
+        height: 100%;
+        padding: 10px 10px 10px;
+    }
+
+    .sizeLeft>img {
+        width: calc(509px*.8*.8*.8);
+        height: calc(222px*.8*.8*.8);
+        margin: 30px auto 0;
+    }
+
+    .sizeLeft>.shadowBox {
+        width: 364px;
+        height: 173px;
+        border-radius: calc(364px*.8*.8*.8);
+        filter: blur(180px);
+    }
+
+    .sizeRight {
+        width: calc(876px*.8*.8*.8);
+        height: calc(369px*.8*.8*.8);
+        padding: 10px 20px 0 20px;
+    }
+
+    .sizeRight>img {
+        width: calc(635px*.8*.8*.8);
+        height: calc(226px*.8*.8*.8);
+        right: 30px;
+        bottom: 10px;
+    }
+
+    .sizeRight>.shadowBox {
+        width: calc(904px*.8*.8*.8);
+        height: calc(375px*.8*.8*.8);
+        border-radius: calc(904px*.8*.8*.8);
+        filter: blur(100px);
+    }
+
+    .take_ul {
+        width: calc(1440px*.8*.8*.8);
+        height: calc(250px*.8*.8*.8);
+        margin: 20px auto 50px;
+    }
+
+    .take_ul>li {
+        width: calc(345px*.8*.8*.8);
+    }
+
+    .take_ul>li>p {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+    .title {
+        font-size: 36px;
+        width: 740px;
+        height: 52px;
+        margin: 80px auto 40px;
+    }
+
+    .moreP {
+        font-size: 14px;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.8);
+        width: 740px;
+        margin: 0 auto;
+    }
+
+    .tableBox {
+        margin: 30px auto 100px;
+        width: 740px;
+    }
+
+    .tableBox td {
+        text-align: left;
+        height: 50px;
+        font-weight: 500;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.85);
+        padding-left: 30px;
+    }
+
+    .tabP {
+        width: 730px;
+    }
+
+    .tabline {
+        width: 250px;
+    }
+
+    .headword {
+        width: 740px;
+        margin: 20px auto;
+        font-weight: 500;
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .btnbuy {
+        width: 120rem;
+        height: 45rem;
+        font-size: 20rem;
+        margin-top: 30rem;
+    }
+
+    .title {
+        font-size: 26rem;
+        width: 350rem;
+        height: 36rem;
+        margin: 80px auto 20px;
+    }
+
+    .moreP {
+        font-size: 14rem;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.8);
+        width: 340rem;
+        margin: 0 auto;
+    }
+
+    .tableBox {
+        margin: 30rem auto 100rem;
+        width: 340rem;
+    }
+
+    .tableBox td {
+        text-align: left;
+        height: 50rem;
+        font-weight: 500;
+        font-size: 14rem;
+        color: rgba(255, 255, 255, 0.85);
+        padding-left: 10rem;
+    }
+
+    .tabP {
+        width: 330rem;
+    }
+
+    .headword {
+        width: 340rem;
+        margin: 20rem auto;
+        font-weight: 500;
+        font-size: 20rem;
+        color: #FFFFFF;
+        font-weight: 600;
+    }
+}
