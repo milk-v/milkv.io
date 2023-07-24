@@ -2036,10 +2036,11 @@ table td {
 
 @media screen and (max-width: 750px) {
     .btnbuy {
-        width: 120rem;
-        height: 45rem;
-        font-size: 20rem;
-        margin-top: 30rem;
+        width: 70rem;
+        height: 25rem;
+        margin: 0 auto;
+        font-size: 13rem;
+        margin-top: 10rem;
     }
 
     .title {
@@ -2082,5 +2083,327 @@ table td {
         font-size: 20rem;
         color: #FFFFFF;
         font-weight: 600;
+    }
+
+    .titleBox {
+        left: 5%;
+        width: 150rem;
+    }
+
+    .titleBox>h1,
+    .titleBox>p {
+        text-align: center;
+    }
+
+    .titleBox>h1 {
+        font-size: 18rem;
+    }
+
+    .titleBox>p {
+        margin-top: 5rem;
+        font-size: 10rem;
+    }
+
+    .titleIcons {
+        display: none;
+    }
+
+    .titleIcons>img {
+        width: 30rem;
+        height: 30rem;
+        margin-right: 5rem;
+    }
+
+    .titleIcons h3 {
+        font-size: 11rem;
+    }
+
+    .titleIcons p {
+        font-size: 10rem;
+    }
+
+
+    .tHeadSoC {
+        width: 350rem;
+        margin: 40rem auto 20rem;
+        flex-direction: column;
+    }
+
+    .tHeadSoCLeft {
+        width: 100%;
+        padding: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    .tHeadSoCRight {
+        width: 100%;
+    }
+
+    .topBox {
+        align-items: center;
+    }
+
+    .topBox h1 {
+        font-size: 16rem;
+    }
+
+    .topBox img {
+        width: 118rem;
+        height: 33rem;
+    }
+
+    .tHeadSoCLeft>img {
+        width: 100%;
+        height: 200rem;
+        margin-top: 20rem;
+    }
+
+    .hzBox {
+        margin-bottom: 10rem;
+    }
+
+    .hzBox>p {
+        font-size: 14rem;
+    }
+
+    .hzBox>h1 {
+        font-size: 28rem;
+        padding: 20rem 0;
+    }
+
+    .hzBox>img {
+        transform: scale(.8);
+        margin: 10rem 0;
+    }
+
+    .hzBox>h1>span {
+        font-size: 12rem;
+        margin-right: 10rem;
+    }
+
+    .hzBox>h1::after {
+        font-size: 28rem;
+    }
+
+    .hzBox>h1::before {
+        font-size: 28rem;
+    }
+
+    .tHeadSoCRight>img {
+        width: 100%;
+        aspect-ratio: 386/ 255;
+    }
+
+    .viaeoBox {
+        width: 350rem;
+        margin: 20rem auto;
+        flex-direction: column;
+    }
+
+    .viaeoLeft {
+        width: 100%;
+        height: 220rem;
+        padding: 20rem;
+        background: none;
+    }
+
+    .viaeoLeft>h1 {
+        font-size: 20rem;
+        margin-bottom: 30rem;
+    }
+
+    .viaeoLeft>p {
+        font-size: 10rem;
+        margin-bottom: 5rem;
+    }
+
+    .icons4k {
+        height: 30rem;
+        left: 20rem;
+        bottom: 20rem;
+    }
+
+    .icons4k>img {
+        height: 100%;
+    }
+
+    .viaeoRight {
+        width: calc(450rem*.8*.8*.8);
+        padding: 20rem;
+    }
+
+    .viaeoRight>h1 {
+        font-size: 18rem;
+    }
+
+    .viaeoRight>img {
+        margin: 80rem 0 25rem;
+        width: 55rem;
+        height: 40rem;
+    }
+
+    .viaeoRight>p {
+        font-size: 14rem;
+    }
+
+    .typeIcons {
+        width: 350rem;
+        margin: 20rem auto;
+        padding: 0 30rem;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .typeIcons>li {
+        width: 60rem;
+        margin-bottom: 20rem;
+    }
+
+    .typeIcons>li>p {
+        font-size: 12rem;
+        margin-top: 10rem;
+    }
+
+    .highBox {
+        width: 350rem;
+        margin: 20rem auto;
+        flex-direction: column;
+    }
+
+    .highBoxLeft {
+        padding: 10rem;
+        width: calc(728rem*.8*.8*.8);
+    }
+
+    .highBoxLeft>h1 {
+        font-size: 14rem;
+        margin-bottom: 10rem;
+    }
+
+    .highTable td {
+        font-size: 12rem;
+    }
+
+    .tdFlex>img {
+        margin: 0 -15rem;
+        transform: scale(.6);
+    }
+
+    .supportText>p {
+        font-size: 12rem;
+        margin-bottom: 3rem;
+    }
+
+    .supportText>p>span {
+        font-size: 12rem;
+        margin-right: 3rem;
+    }
+
+    .highBoxRight {
+        width: 100%;
+        height: 300rem;
+        padding: 10rem;
+    }
+
+    .gpuTitle {
+        margin-bottom: 25rem;
+    }
+
+    .gpuTitle>h1 {
+        font-size: 16rem;
+    }
+
+    .gpuTitle>h2 {
+        font-size: 14rem;
+        margin: 0;
+    }
+
+    .highBoxRight>h1 {
+        font-size: 14rem;
+    }
+
+    .gpuIcons {
+        width: calc(242rem*.8*.8);
+        right: 10rem;
+        bottom: 10rem;
+    }
+
+    .gpuIcons>img {
+        margin-top: 10rem;
+    }
+
+    .highBoxRight>img {
+        width: calc(629rem*.8*.8);
+        height: calc(354rem*.8*.8);
+    }
+
+    .tdFlex2>p {
+        margin-right: 10rem;
+    }
+
+    .sizeBox {
+        width: 100%;
+        margin: 20rem auto;
+        flex-direction: column;
+    }
+
+    .sizeBox h1 {
+        font-size: 16rem;
+        text-align: left;
+    }
+
+    .sizeLeft {
+        width: 100%;
+        height: 100%;
+        padding: 10rem 10rem 10rem;
+    }
+
+    .sizeLeft>img {
+        width: calc(509rem*.8*.8*.8);
+        height: calc(222rem*.8*.8*.8);
+        margin: 30rem auto 0;
+    }
+
+    .sizeLeft>.shadowBox {
+        width: 364rem;
+        height: 173rem;
+        border-radius: calc(364rem*.8*.8*.8);
+        filter: blur(180rem);
+    }
+
+    .sizeRight {
+        width: 100%;
+        height: calc(369rem*.8*.8*.8);
+        padding: 10rem 20rem 0 20rem;
+    }
+
+    .sizeRight>img {
+        width: calc(635rem*.8*.8*.8);
+        height: calc(226rem*.8*.8*.8);
+        right: 30rem;
+        bottom: 10rem;
+    }
+
+    .sizeRight>.shadowBox {
+        width: calc(904rem*.8*.8*.8);
+        height: calc(375rem*.8*.8*.8);
+        border-radius: calc(904rem*.8*.8*.8);
+        filter: blur(100rem);
+    }
+
+    .take_ul {
+        width: 350rem;
+        margin: 20rem auto 30rem;
+        flex-wrap: wrap;
+    }
+
+    .take_ul>li {
+        width: 170rem;
+    }
+
+    .take_ul>li>p {
+        font-size: 12rem;
+        padding: 10rem 0;
     }
 }
