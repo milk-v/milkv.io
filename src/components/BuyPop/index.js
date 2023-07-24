@@ -93,6 +93,25 @@ export default function (props) {
                             </div>
                             <img src='/pages/COMINGSOON.svg' className={styles.coming} />
                         </div>
+                    </> : type === 'meles' ? <>
+                        <div className={styles.none} >
+                            <img src='/pages/china.svg' className={styles.buyIcon} />
+                            <div className={styles.textBOx}>
+                                <p className={styles.tp}>China's mainland</p>
+                                <img src='/pages/icon_more-right.svg' className={styles.img1} />
+                                <img src='/pages/icon_more-right_white.svg' className={styles.img2} />
+                                <img src='/pages/COMINGSOON.svg' className={styles.coming} />
+                            </div>
+                        </div>
+                        {/* <div className={styles.none}>
+                            <img src='/pages/other.svg' className={styles.buyIcon} />
+                            <div className={styles.textBOx}>
+                                <p className={styles.tp}>Other countries and regions</p>
+                                <img src='/pages/icon_more-right.svg' className={styles.img1} />
+                                <img src='/pages/icon_more-right_white.svg' className={styles.img2} />
+                            </div>
+                            <img src='/pages/COMINGSOON.svg' className={styles.coming} />
+                        </div> */}
                     </> : null
                 }
 

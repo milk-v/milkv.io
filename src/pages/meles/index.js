@@ -18,12 +18,12 @@ export default () => {
     }
     return (
         <Layout>
-            {/* <BuyPop flag={mars2} module={mars2Start} type='mars' /> */}
+            <BuyPop flag={meles} module={mars2Start} type='meles' />
             <div className={styles.melesHead}>
                 <div className={styles.titleBox}>
                     <h1>Milk-V <span>Meles</span></h1>
                     <p>Embarking on the RISC-V Cosmic Journey</p>
-                    <div className={styles.btnbuy} onClick={() => setmars2(buy => !buy)}>
+                    <div className={styles.btnbuy} onClick={() => setMeles(buy => !buy)}>
                         <Translate id='Buy.now' />
                     </div>
                 </div>
