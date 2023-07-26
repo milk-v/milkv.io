@@ -29,7 +29,7 @@ export default (props) => {
 
 
     const handleSubmit = (event) => {
-        let url = product === 'duo' ? 'https://submit-form.com/mxM7Oj62' : product === 'pioneer' ? 'https://submit-form.com/LajdNi4B' : product === 'mars' ? 'https://submit-form.com/8WXCfzfP' : null
+        let url = product === 'duo' ? 'https://submit-form.com/mxM7Oj62' : product === 'pioneer' ? 'https://submit-form.com/LajdNi4B' : product === 'mars' ? 'https://submit-form.com/8WXCfzfP' : product === 'meles' ? 'https://submit-form.com/pWzoLWYI' : null
 
         event.preventDefault();
         setFormBtn(true)

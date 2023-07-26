@@ -286,7 +286,7 @@ export default () => {
                     {/* colspan rowspan */}
 
                 </table>
-                <ContactUs product='mars' />
+                <ContactUs product='meles' />
                 <ContactBar product='mars' />
                 <Embrace product='meles' />
             </div>
