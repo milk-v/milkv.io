@@ -17,7 +17,7 @@ export default function (props) {
             window.open('https://app6hodqg6k9861.h5.xiaoeknow.com')
 
         } else if (type === 'mars') {
-
+            window.open('https://ewmmz.xet.tech/s/1As0hQ')
         } else if (type === 'pioneer') {
             window.open('https://www.crowdsupply.com/milkv/milk-v-pioneer')
         } else if (type === 'home') {
@@ -75,13 +75,13 @@ export default function (props) {
                             <img src='/pages/COMINGSOON.svg' className={styles.coming} />
                         </div>
                     </> : type === 'mars' ? <>
-                        <div className={styles.none} >
+                        <div className={styles.goBuy} onClick={() => toApp()}>
                             <img src='/pages/china.svg' className={styles.buyIcon} />
                             <div className={styles.textBOx}>
                                 <p className={styles.tp}>China's mainland</p>
                                 <img src='/pages/icon_more-right.svg' className={styles.img1} />
                                 <img src='/pages/icon_more-right_white.svg' className={styles.img2} />
-                                <img src='/pages/COMINGSOON.svg' className={styles.coming} />
+                                {/* <img src='/pages/COMINGSOON.svg' className={styles.coming} /> */}
                             </div>
                         </div>
                         <div className={styles.none}>
