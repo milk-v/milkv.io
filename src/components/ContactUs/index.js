@@ -57,7 +57,7 @@ export default (props) => {
                         <a className={styles.fromA} href="mailto:dev@milkv.io">dev@milkv.io</a>
                         <h3><Translate id='contact.title.support' /></h3>
                         {
-                            product === 'duo' ? <a className={styles.fromA} href="mailto:duo@milkv.io">duo@milkv.io</a> : product === 'pioneer' ? <a className={styles.fromA} href="mailto:pioneer@milkv.io">pioneer@milkv.io</a> : product === 'mars' ? <a className={styles.fromA} href="mailto:mars@milkv.io">mars@milkv.io</a> : null
+                            product === 'duo' ? <a className={styles.fromA} href="mailto:duo@milkv.io">duo@milkv.io</a> : product === 'pioneer' ? <a className={styles.fromA} href="mailto:pioneer@milkv.io">pioneer@milkv.io</a> : product === 'mars' ? <a className={styles.fromA} href="mailto:mars@milkv.io">mars@milkv.io</a> : product === 'meles' ? <a className={styles.fromA} href="mailto:meles@milkv.io">meles@milkv.io</a> : null
                         }
 
                     </div>
