@@ -5,7 +5,7 @@ sidebar_position: 22
 # Memory
 
 ## DDR4 Support List
-Please check the [DDR Support List](https://github.com/milkv-pioneer/hardware/blob/main/pioneer_ddr_list.pdf)
+Please check the [DDR Support List](https://github.com/milkv-pioneer/hardware/blob/main/sg2042_ddr_support_list.md)
 
 Installing memory sticks that are not included in the list may prevent proper boot-up.  
 
