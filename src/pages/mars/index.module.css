@@ -60,8 +60,9 @@
 }
 
 .li03 {
-    background: url(/static/mars/mars-icon-08.webp) no-repeat;
-    background-size: cover;
+    /* background: url(/static/mars/mars-icon-08.webp) no-repeat;
+    background-size: cover; */
+    background-color: #000;
 }
 
 .btnbuy {

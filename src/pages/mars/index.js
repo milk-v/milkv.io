@@ -66,8 +66,8 @@ export default () => {
                             <p className={styles.titleMinP}>external M.2 E Key</p>
                         </li>
                         <li className={styles.li03}>
-                            <h1><Translate id='mars.page.info9' /></h1>
-                            <p className={styles.titleMinP}><Translate id='mars.page.info10' /></p>
+                            {/* <h1><Translate id='mars.page.info9' /></h1>
+                            <p className={styles.titleMinP}><Translate id='mars.page.info10' /></p> */}
                         </li>
                     </ul>
                 </div>
