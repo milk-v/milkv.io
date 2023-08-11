@@ -139,6 +139,11 @@ const config = {
                 label: 'Mars',
                 docId: 'mars/mars',
               },
+              {
+                type: 'doc',
+                label: 'Meles',
+                docId: 'meles/meles',
+              },
             ],
           },
           {
