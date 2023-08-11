@@ -71,7 +71,7 @@ export default (props) => {
                                 </label>
                                 <label>
                                     <p><Translate id='contact.title.email' /></p>
-                                    <input type="text" value={userEmail} onChange={(e) => setUserEmail(e.target.value)} required placeholder={currentLanguage === '/' ? 'Enter your email' : '请输入你的电子邮箱'} />
+                                    <input type="text" value={userEmail} onChange={(e) => setUserEmail(e.target.value)} required placeholder={currentLanguage === '/' ? 'Your Email' : '你的邮箱'} />
                                 </label>
                             </div>
                             <label>
