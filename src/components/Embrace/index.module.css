@@ -71,7 +71,7 @@
     .riscBg {
         margin: 0 auto 100px;
         width: 80%;
-        height: 800px;
+        height: 600px;
         background: url(/static/pages/footerbg.png) no-repeat;
         background-size: 100%;
         position: relative;

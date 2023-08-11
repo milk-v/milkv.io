@@ -29,7 +29,7 @@ export default (props) => {
 
 
     const handleSubmit = (event) => {
-        let url = product === 'duo' ? 'https://submit-form.com/mxM7Oj62' : product === 'pioneer' ? 'https://submit-form.com/LajdNi4B' : product === 'mars' ? 'https://submit-form.com/8WXCfzfP' : null
+        let url = product === 'duo' ? 'https://submit-form.com/mxM7Oj62' : product === 'pioneer' ? 'https://submit-form.com/LajdNi4B' : product === 'mars' ? 'https://submit-form.com/8WXCfzfP' : product === 'meles' ? 'https://submit-form.com/pWzoLWYI' : null
 
         event.preventDefault();
         setFormBtn(true)
@@ -57,7 +57,7 @@ export default (props) => {
                         <a className={styles.fromA} href="mailto:dev@milkv.io">dev@milkv.io</a>
                         <h3><Translate id='contact.title.support' /></h3>
                         {
-                            product === 'duo' ? <a className={styles.fromA} href="mailto:duo@milkv.io">duo@milkv.io</a> : product === 'pioneer' ? <a className={styles.fromA} href="mailto:pioneer@milkv.io">pioneer@milkv.io</a> : product === 'mars' ? <a className={styles.fromA} href="mailto:mars@milkv.io">mars@milkv.io</a> : null
+                            product === 'duo' ? <a className={styles.fromA} href="mailto:duo@milkv.io">duo@milkv.io</a> : product === 'pioneer' ? <a className={styles.fromA} href="mailto:pioneer@milkv.io">pioneer@milkv.io</a> : product === 'mars' ? <a className={styles.fromA} href="mailto:mars@milkv.io">mars@milkv.io</a> : product === 'meles' ? <a className={styles.fromA} href="mailto:meles@milkv.io">meles@milkv.io</a> : null
                         }
 
                     </div>
@@ -71,7 +71,7 @@ export default (props) => {
                                 </label>
                                 <label>
                                     <p><Translate id='contact.title.email' /></p>
-                                    <input type="text" value={userEmail} onChange={(e) => setUserEmail(e.target.value)} required placeholder={currentLanguage === '/' ? 'Enter your email' : '请输入你的电子邮箱'} />
+                                    <input type="text" value={userEmail} onChange={(e) => setUserEmail(e.target.value)} required placeholder={currentLanguage === '/' ? 'Your Email' : '你的邮箱'} />
                                 </label>
                             </div>
                             <label>
