@@ -8,7 +8,7 @@ import Translate from '@docusaurus/Translate';
 export default (props) => {
     const { product } = props
 
-    const link_url = product === 'duo' ? 'https://matrix.to/#/#milkv-duo:matrix.org' : product === 'pioneer' ? 'https://matrix.to/#/#milkv-pioneer:matrix.org' : product === 'mars' ? 'https://matrix.to/#/#milk-v:matrix.org' : null
+    const link_url = product === 'duo' ? 'https://matrix.to/#/#milkv-duo:matrix.org' : product === 'pioneer' ? 'https://matrix.to/#/#milkv-pioneer:matrix.org' : product === 'mars' ? 'https://matrix.to/#/#milk-v:matrix.org' : product === 'meles' ? 'https://matrix.to/#/#milkv-meles:matrix.org' : null
 
     return (
         <>

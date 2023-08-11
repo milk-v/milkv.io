@@ -287,7 +287,7 @@ export default () => {
 
                 </table>
                 <ContactUs product='meles' />
-                <ContactBar product='mars' />
+                <ContactBar product='meles' />
                 <Embrace product='meles' />
             </div>
             <Footer></Footer>
