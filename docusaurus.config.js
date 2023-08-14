@@ -114,6 +114,10 @@ const config = {
                 to: '/mars'
               },
               {
+                label: 'Mars CM',
+                to: '/mars-cm'
+              },
+              {
                 label: 'Meles',
                 to: '/meles'
               },

@@ -1,0 +1,1933 @@
+.header_page {
+    width: 100%;
+    aspect-ratio: 192/ 94;
+    background: url(/static/mars-cm/marscm-contexts.webp) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black {
+    background-color: #151515;
+    width: 100%;
+    overflow: hidden;
+}
+
+.title_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.title_content>img {
+    flex-shrink: 0;
+}
+
+.leftTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftTitle>h1 {
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    color: #FFF;
+    margin-bottom: 0;
+}
+
+.leftTitle>h1>span {
+    background: linear-gradient(90deg, #FFC500 0%, #C21500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.leftTitle>p {
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.btnbuy {
+    border: 2px solid #fff;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btnbuy:hover {
+    background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+}
+
+.cup_view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_cpu {
+    height: 100%;
+    background-color: #000;
+}
+
+.detail_info1>h2,
+.detail_info2>h2,
+.detail_info3>h2,
+.os>h2,
+.PCIe>h2,
+.storage_4k_view>div>h2,
+.support_audio>h2,
+.video_text_info>h2,
+.left_cpu>h2 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    opacity: 1;
+}
+
+.memory>.lpddr4,
+.support_storage>h2,
+.left_cpu>h2 {
+    background: linear-gradient(90deg, #F09819 0%, #EDDE5D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.os>h2,
+.PCIe>h2,
+.support_audio>h2 {
+    background: linear-gradient(90deg, #1FA2FF 0%, #12D8FA 50%, #A6FFCB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.detail_info1>h2,
+.detail_info2>h2,
+.detail_info3>h2,
+.memory>h2,
+.support_4k>h2,
+.video_text_info>h2 {
+    color: #FFF;
+}
+
+.detail_info1>p,
+.detail_info2>p,
+.detail_info3>p,
+.PCIe>p,
+.storage_4k_view>div>p,
+.support_audio>p,
+.video_text_info>p,
+.left_cpu>p {
+    color: rgba(255, 255, 255, 0.85);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.detail_info1>p>span,
+.detail_info2>p>span,
+.detail_info3>p>span,
+.PCIe>p>span,
+.storage_4k_view>div>p>span,
+.support_audio>p>span,
+.video_text_info>p>span,
+.left_cpu>p>span {
+    margin-right: 4px;
+}
+
+.detail_info1>p>span,
+.detail_info2>p>span,
+.detail_info3>p>span,
+.PCIe>p>span,
+.storage_4k_view>div>p>span,
+.support_audio>p>span,
+.video_text_info>p>span,
+.left_cpu>p>span {
+    opacity: .8;
+}
+
+.video_icons_info>img {
+    height: 100%;
+}
+
+.cup_view>img {
+    height: 100%;
+}
+
+.cpu {
+    flex-shrink: 0;
+    margin: 0 auto;
+    background: url(/static/mars-cm/marscm-cpu.webp) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.cpu>img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.detail,
+.parameters_view,
+.storage_4k_view,
+.multimedia_view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PCIe,
+.memory,
+.detail>div,
+.storage_4k_view>div,
+.multimedia_view>div {
+    height: 100%;
+    background-color: #000;
+}
+
+.support_video {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(/static/mars-cm/video-contexts.webp) no-repeat;
+    background-size: cover;
+}
+
+.video_icons_info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.support_audio {
+    position: relative;
+}
+
+.audio_contexts {
+    background: url(/static/mars-cm/audio-contexts.webp) no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+}
+
+.support_storage {
+    background: url(/static/mars-cm/storage-contexts.webp) no-repeat;
+    background-size: cover;
+}
+
+.tf_emmc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tf_emmc>p {
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.support_4k {
+    background: url(/static/mars-cm/4k-contexts.webp) no-repeat;
+    background-size: cover;
+}
+
+.pcle_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pcle_info>p {
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+}
+
+.info_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info_grid>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+}
+
+.memory {
+    background: url(/static/mars-cm/marscm-memory.webp) no-repeat;
+    background-size: cover;
+}
+
+.memory>p {
+    margin: 0;
+    text-align: center;
+}
+
+.memory>.lpddr4 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.memory>.capacity {
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.os {
+    height: 100%;
+    background-color: #000;
+
+}
+
+.os>h2 {
+    text-align: center;
+}
+
+.support_os_icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail_info1>img {
+    display: block;
+    margin: 0 auto;
+}
+
+.detail_info2 {
+    background: url(/static/mars-cm/marscm-onboard.webp) no-repeat;
+    background-size: cover;
+}
+
+.detail_info3 {
+    background: url(/static/mars-cm/marscm-wifi.webp) no-repeat;
+    background-size: cover;
+}
+
+.support_boards {
+    background-color: #000;
+}
+
+.support_boards>h2 {
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.boards_more {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boards_more>li>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+}
+
+.boards_more>li>p {
+    text-align: center;
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.tabBox_tech {
+    margin: 0 auto;
+}
+
+.title {
+    text-align: left;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.title::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (min-width: 1950px) {
+    .btnbuy {
+        width: 240px;
+        height: 80px;
+        font-size: 43px;
+    }
+
+    .title {
+        font-size: 77px;
+        font-weight: 500;
+        text-align: left;
+        color: #fff;
+        position: relative;
+        height: 110px;
+        overflow: hidden;
+        margin: 150px auto 100px;
+    }
+
+    .moreP {
+        font-size: 26px;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0 auto;
+    }
+
+    .headword {
+        margin: 80px auto;
+        font-weight: 500;
+        font-size: 48px;
+        color: #FFFFFF;
+    }
+
+    .headword {
+        margin: 80px auto;
+        font-weight: 500;
+        font-size: 48px;
+        color: #FFFFFF;
+    }
+
+    .tableBox {
+        margin: 80px auto;
+        width: 100%;
+    }
+
+    .tableBox td {
+        text-align: left;
+        height: 58px;
+        font-weight: 500;
+        font-size: 32px;
+        color: rgba(255, 255, 255, 0.85);
+        padding-left: 60px;
+    }
+
+    .tabP {
+        width: 1030px;
+    }
+
+    .tabline {
+        width: 410px;
+    }
+
+    /* start */
+    .title_content {
+        width: 1440px;
+    }
+
+    .title_content>img {
+        width: 586px;
+        height: 432px;
+    }
+
+    .leftTitle>h1 {
+        font-size: 76px;
+    }
+
+    .leftTitle>p {
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
+
+    .cup_view {
+        width: 1440px;
+        height: 500px;
+        margin: 50px auto 0;
+    }
+
+    .left_cpu {
+        width: 640px;
+        padding: 30px;
+    }
+
+    .detail_info1>h2,
+    .detail_info2>h2,
+    .detail_info3>h2,
+    .os>h2,
+    .PCIe>h2,
+    .storage_4k_view>div>h2,
+    .support_audio>h2,
+    .video_text_info>h2,
+    .left_cpu>h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .detail_info1>h2,
+    .detail_info2>h2,
+    .detail_info3>h2 {
+        font-size: 32px;
+    }
+
+    .detail_info1>p,
+    .detail_info2>p,
+    .detail_info3>p,
+    .PCIe>p,
+    .storage_4k_view>div>p,
+    .support_audio>p,
+    .video_text_info>p,
+    .left_cpu>p {
+        font-size: 16px;
+    }
+
+    .cup_view>img {
+        width: 780px;
+    }
+
+    .cpu {
+        width: 564px;
+        height: 328px;
+    }
+
+    .cpu>img {
+        width: 226px;
+        height: 36px;
+    }
+
+    .detail,
+    .parameters_view,
+    .storage_4k_view,
+    .multimedia_view {
+        width: 1440px;
+        height: 500px;
+        margin: 20px auto;
+    }
+
+    .parameters_view {
+        height: 380px;
+    }
+
+    .detail {
+        height: 369px;
+    }
+
+    .PCIe,
+    .memory,
+    .detail>div,
+    .storage_4k_view>div,
+    .multimedia_view>div {
+        height: 100%;
+        padding: 30px;
+    }
+
+    .support_video {
+        width: 856px;
+    }
+
+    .video_icons_info {
+        height: 64px;
+    }
+
+    .support_audio {
+        width: 564px;
+    }
+
+    .audio_contexts {
+        width: 447px;
+        height: 190px;
+        bottom: 40px;
+    }
+
+    .support_storage {
+        width: 565px;
+    }
+
+    .tf_emmc {
+        margin-top: 130px;
+    }
+
+    .tf_emmc>p {
+        font-size: 47px;
+        margin: 0 15px;
+    }
+
+    .tfcard {
+        width: 170px;
+        height: 117px;
+    }
+
+    .emmc {
+        width: 237px;
+        height: 168px;
+    }
+
+    .support_4k {
+        width: 854px;
+    }
+
+    .PCIe {
+        width: 522px;
+    }
+
+    .pcle_info {
+        margin: 80px auto 0;
+    }
+
+    .pcle_info>p {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    .info_grid {
+        width: 350px;
+        grid-gap: 10px;
+    }
+
+    .info_grid>div {
+        font-size: 16px;
+        height: 30px;
+    }
+
+    .memory {
+        width: 564px;
+    }
+
+    .memory>.lpddr4 {
+        margin-top: 65px;
+        font-size: 82px;
+    }
+
+    .memory>.capacity {
+        font-size: 40px;
+    }
+
+    .os {
+        width: 314px;
+        padding-top: 30px;
+
+    }
+
+    .support_os_icons {
+        margin: 20px auto 0;
+    }
+
+    .support_os_icons>img {
+        width: 228px;
+        height: 56px;
+        margin-bottom: 10px;
+    }
+
+    .detail>div {
+        padding-top: 10px;
+        width: 466px;
+    }
+
+    .detail_info1>img {
+        width: 407px;
+        height: 190px;
+    }
+
+    .support_boards {
+        width: 1440px;
+        margin: 0 auto 150px;
+    }
+
+    .support_boards>h2 {
+        padding: 30px;
+        font-size: 32px;
+    }
+
+    .boards_more>li {
+        width: 464px;
+        height: 267px;
+    }
+
+    .boards_more>li>div {
+        width: 100%;
+        height: 267px;
+    }
+
+    .boards_more>li>p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .rockcm3 {
+        width: 377px;
+        height: 222px;
+    }
+
+    .orangepi {
+        width: 314px;
+        height: 208px;
+    }
+
+    .raspberrypi {
+        width: 351px;
+        height: 203px;
+    }
+
+    .tabBox_tech {
+        width: 1440px;
+    }
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1450px) {
+    .btnbuy {
+        width: 160px;
+        height: 55px;
+        font-size: 26px;
+    }
+
+    .title {
+        font-size: 50px;
+        height: 78px;
+        margin: 100px auto 80px;
+    }
+
+    .moreP {
+        font-size: 26px;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0 auto;
+    }
+
+    .tableBox {
+        margin: 80px auto;
+    }
+
+    .tableBox td {
+        text-align: left;
+        height: 58px;
+        font-weight: 500;
+        font-size: 28px;
+        color: rgba(255, 255, 255, 0.85);
+        padding-left: 60px;
+    }
+
+    .tabP {
+        width: 1030px;
+    }
+
+    .tabline {
+        width: 410px;
+    }
+
+    /* start */
+    .title_content {
+        width: calc(1440px*.9);
+    }
+
+    .title_content>img {
+        width: calc(586px*.9);
+        height: calc(432px*.9);
+    }
+
+    .leftTitle>h1 {
+        font-size: calc(76px*.9);
+    }
+
+    .leftTitle>p {
+        font-size: calc(32px*.9);
+        margin-bottom: calc(60px*.9);
+    }
+
+    .cup_view {
+        width: calc(1440px*.9);
+        height: calc(500px*.9);
+        margin: 40px auto 0;
+    }
+
+    .left_cpu {
+        width: calc(640px*.9);
+        padding: 27px;
+    }
+
+    .detail_info1>h2,
+    .detail_info2>h2,
+    .detail_info3>h2,
+    .os>h2,
+    .PCIe>h2,
+    .storage_4k_view>div>h2,
+    .support_audio>h2,
+    .video_text_info>h2,
+    .left_cpu>h2 {
+        font-size: calc(36px*.9);
+        margin-bottom: 18px;
+    }
+
+    .detail_info1>h2,
+    .detail_info2>h2,
+    .detail_info3>h2 {
+        font-size: calc(32px*.9);
+    }
+
+    .detail_info1>p,
+    .detail_info2>p,
+    .detail_info3>p,
+    .PCIe>p,
+    .storage_4k_view>div>p,
+    .support_audio>p,
+    .video_text_info>p,
+    .left_cpu>p {
+        font-size: 14px;
+    }
+
+
+
+    .cup_view>img {
+        width: calc(780px*.9);
+    }
+
+    .cpu {
+        width: calc(564px*.9);
+        height: calc(328px*.9);
+    }
+
+    .cpu>img {
+        width: calc(226px*.9);
+        height: calc(36px*.9);
+    }
+
+    .detail,
+    .parameters_view,
+    .storage_4k_view,
+    .multimedia_view {
+        width: calc(1440px*.9);
+        height: calc(500px*.9);
+        margin: 18px auto;
+    }
+
+    .parameters_view {
+        height: calc(380px*.9);
+    }
+
+    .detail {
+        height: calc(369px*.9);
+    }
+
+    .PCIe,
+    .memory,
+    .detail>div,
+    .storage_4k_view>div,
+    .multimedia_view>div {
+        height: 100%;
+        padding: 27px;
+    }
+
+    .support_video {
+        width: calc(856px*.9);
+    }
+
+    .video_icons_info {
+        height: 50px;
+    }
+
+    .support_audio {
+        width: calc(564px*.9);
+    }
+
+    .audio_contexts {
+        width: calc(447px*.9);
+        height: calc(190px*.9);
+        bottom: calc(40px*.9);
+    }
+
+    .support_storage {
+        width: calc(565px*.9);
+    }
+
+    .tf_emmc {
+        margin-top: calc(130px*.9);
+    }
+
+    .tf_emmc>p {
+        font-size: calc(47px*.9);
+        margin: 0 12px;
+    }
+
+    .tfcard {
+        width: calc(170px*.9);
+        height: calc(117px*.9);
+    }
+
+    .emmc {
+        width: calc(237px*.9);
+        height: calc(168px*.9);
+    }
+
+    .support_4k {
+        width: calc(854px*.9);
+    }
+
+    .PCIe {
+        width: calc(522px*.9);
+    }
+
+    .pcle_info {
+        margin: 72px auto 0;
+    }
+
+    .pcle_info>p {
+        font-size: 18px;
+        margin-right: 5px;
+    }
+
+    .info_grid {
+        width: calc(350px*.9);
+        grid-gap: 9px;
+    }
+
+    .info_grid>div {
+        font-size: 14px;
+        height: 27px;
+    }
+
+    .memory {
+        width: calc(564px*.9);
+    }
+
+    .memory>.lpddr4 {
+        margin-top: calc(65px*.9);
+        font-size: calc(82px*.9);
+    }
+
+    .memory>.capacity {
+        font-size: 36px;
+    }
+
+    .os {
+        width: calc(314px*.9);
+        padding-top: 27px;
+
+    }
+
+    .support_os_icons {
+        margin: 18px auto 0;
+    }
+
+    .support_os_icons>img {
+        width: calc(228px*.9);
+        height: calc(56px*.9);
+        margin-bottom: 10px;
+    }
+
+    .detail>div {
+        padding-top: 9px;
+        width: calc(466px*.9);
+    }
+
+    .detail_info1>img {
+        width: calc(407px*.9);
+        height: calc(190px*.9);
+    }
+
+    .support_boards {
+        width: calc(1440px*.9);
+        margin: 0 auto calc(150px*.9);
+    }
+
+    .support_boards>h2 {
+        padding: 27px;
+        font-size: calc(32px*.9);
+    }
+
+    .boards_more>li {
+        width: calc(464px*.9);
+        height: calc(267px*.9);
+    }
+
+    .boards_more>li>div {
+        width: 100%;
+        height: calc(267px*.9);
+    }
+
+    .boards_more>li>p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .rockcm3 {
+        width: calc(377px*.9);
+        height: calc(222px*.9);
+    }
+
+    .orangepi {
+        width: calc(314px*.9);
+        height: calc(208px*.9);
+    }
+
+    .raspberrypi {
+        width: calc(351px*.9);
+        height: calc(203px*.9);
+    }
+
+    .tabBox_tech {
+        width: calc(1440px*.9);
+    }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 1000px) {
+    .btnbuy {
+        width: 150px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .title {
+        font-size: 42px;
+        height: 56px;
+        margin: 100px auto 80px;
+    }
+
+    .moreP {
+        font-size: 18px;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0 auto;
+    }
+
+    .headword {
+        margin: 40px auto;
+        font-weight: 500;
+        font-size: 38px;
+        color: #FFFFFF;
+    }
+
+    .tableBox {
+        margin: 50px auto 100px;
+        width: 990px;
+    }
+
+    .tableBox td {
+        text-align: left;
+        height: 58px;
+        font-weight: 500;
+        font-size: 22px;
+        color: rgba(255, 255, 255, 0.85);
+        padding-left: 60px;
+    }
+
+    .tabP {
+        width: 730px;
+    }
+
+    .tabline {
+        width: 250px;
+    }
+
+    /* start */
+    .title_content {
+        width: calc(1440px*.9*.7);
+    }
+
+    .title_content>img {
+        width: calc(586px*.9*.7);
+        height: calc(432px*.9*.7);
+    }
+
+    .leftTitle>h1 {
+        font-size: calc(76px*.9*.7);
+    }
+
+    .leftTitle>p {
+        font-size: calc(32px*.9*.7);
+        margin-bottom: calc(60px*.9*.7);
+    }
+
+    .cup_view {
+        width: calc(1440px*.9*.7);
+        height: calc(500px*.9*.7);
+        margin: 20px auto 0;
+    }
+
+    .left_cpu {
+        width: calc(640px*.9*.7);
+        padding: 15px;
+    }
+
+    .detail_info1>h2,
+    .detail_info2>h2,
+    .detail_info3>h2,
+    .os>h2,
+    .PCIe>h2,
+    .storage_4k_view>div>h2,
+    .support_audio>h2,
+    .video_text_info>h2,
+    .left_cpu>h2 {
+        font-size: calc(36px*.9*.7);
+        margin-bottom: 5px;
+    }
+
+    .detail_info1>h2,
+    .detail_info2>h2,
+    .detail_info3>h2 {
+        font-size: calc(32px*.9*.7);
+    }
+
+    .detail_info1>p,
+    .detail_info2>p,
+    .detail_info3>p,
+    .PCIe>p,
+    .storage_4k_view>div>p,
+    .support_audio>p,
+    .video_text_info>p,
+    .left_cpu>p {
+        font-size: 14px;
+    }
+
+    .cup_view>img {
+        width: calc(780px*.9*.7);
+    }
+
+    .cpu {
+        width: calc(564px*.9*.7);
+        height: calc(328px*.9*.7);
+    }
+
+    .cpu>img {
+        width: calc(226px*.9*.7);
+        height: calc(36px*.9*.7);
+    }
+
+    .detail,
+    .parameters_view,
+    .storage_4k_view,
+    .multimedia_view {
+        width: calc(1440px*.9*.7);
+        height: calc(500px*.9*.7);
+        margin: 18px auto;
+    }
+
+    .parameters_view {
+        height: calc(380px*.9*.7);
+    }
+
+    .detail {
+        height: calc(369px*.9*.7);
+    }
+
+    .PCIe,
+    .memory,
+    .detail>div,
+    .storage_4k_view>div,
+    .multimedia_view>div {
+        height: 100%;
+        padding: 15px;
+    }
+
+    .support_video {
+        width: calc(856px*.9*.7);
+    }
+
+    .video_icons_info {
+        height: 54px;
+    }
+
+    .support_audio {
+        width: calc(564px*.9*.7);
+    }
+
+    .audio_contexts {
+        width: calc(447px*.9*.7);
+        height: calc(190px*.9*.7);
+        bottom: calc(40px*.9*.7);
+    }
+
+    .support_storage {
+        width: calc(565px*.9*.7);
+    }
+
+    .tf_emmc {
+        margin-top: calc(130px*.9*.7);
+    }
+
+    .tf_emmc>p {
+        font-size: calc(47px*.9*.7);
+        margin: 0 8px;
+    }
+
+    .tfcard {
+        width: calc(170px*.9*.7);
+        height: calc(117px*.9*.7);
+    }
+
+    .emmc {
+        width: calc(237px*.9*.7);
+        height: calc(168px*.9*.7);
+    }
+
+    .support_4k {
+        width: calc(854px*.9*.7);
+    }
+
+    .PCIe {
+        width: calc(522px*.9*.7);
+    }
+
+    .pcle_info {
+        margin: 30px auto 0;
+    }
+
+    .pcle_info>p {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .info_grid {
+        grid-gap: 5px;
+    }
+
+    .info_grid>div {
+        font-size: 12px;
+        height: 20px;
+    }
+
+    .memory {
+        width: calc(564px*.9*.7);
+    }
+
+    .memory>.lpddr4 {
+        margin-top: calc(65px*.9*.7);
+        font-size: calc(82px*.9*.7);
+    }
+
+    .memory>.capacity {
+        font-size: calc(36px*.9*.7);
+    }
+
+    .os {
+        width: calc(314px*.9*.7);
+        padding-top: 15px;
+
+    }
+
+    .support_os_icons {
+        margin: 14px auto 0;
+    }
+
+    .support_os_icons>img {
+        width: calc(228px*.9*.7);
+        height: calc(56px*.9*.7);
+        margin-bottom: 10px;
+    }
+
+    .detail>div {
+        padding-top: 9px;
+        width: calc(466px*.9*.7);
+    }
+
+    .detail_info1>img {
+        width: calc(407px*.9*.7);
+        height: calc(190px*.9*.7);
+    }
+
+    .support_boards {
+        width: calc(1440px*.9*.7);
+        margin: 0 auto calc(150px*.9*.7);
+    }
+
+    .support_boards>h2 {
+        padding: 20px;
+        font-size: calc(32px*.9*.7);
+    }
+
+    .boards_more>li {
+        width: calc(464px*.9*.7);
+        height: calc(267px*.9*.7);
+    }
+
+    .boards_more>li>div {
+        width: 100%;
+        height: calc(267px*.9*.7);
+    }
+
+    .boards_more>li>p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .rockcm3 {
+        width: calc(377px*.9*.7);
+        height: calc(222px*.9*.7);
+    }
+
+    .orangepi {
+        width: calc(314px*.9*.7);
+        height: calc(208px*.9*.7);
+    }
+
+    .raspberrypi {
+        width: calc(351px*.9*.7);
+        height: calc(203px*.9*.7);
+    }
+
+    .tabBox_tech {
+        width: calc(1440px*.9*.7);
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 750px) {
+    .btnbuy {
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 36px;
+        height: 52px;
+        margin: 80px auto 40px;
+    }
+
+    .moreP {
+        font-size: 14px;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0 auto;
+    }
+
+    .headword {
+        margin: 20px auto;
+        font-weight: 500;
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+
+    .tableBox {
+        margin: 30px auto 100px;
+    }
+
+    .tableBox td {
+        text-align: left;
+        height: 50px;
+        font-weight: 500;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.85);
+        padding-left: 30px;
+    }
+
+    .tabP {
+        width: 730px;
+    }
+
+    .tabline {
+        width: 250px;
+    }
+
+    /* start */
+    .title_content {
+        width: calc(1440px*.9*.7*.8);
+    }
+
+    .title_content>img {
+        width: calc(586px*.9*.7*.8);
+        height: calc(432px*.9*.7*.8);
+    }
+
+    .leftTitle>h1 {
+        font-size: calc(76px*.9*.7*.8);
+    }
+
+    .leftTitle>p {
+        font-size: calc(32px*.9*.7*.8);
+        margin-bottom: calc(60px*.9*.7*.8);
+    }
+
+    .cup_view {
+        width: calc(1440px*.9*.7*.8);
+        height: calc(500px*.9*.7*.8);
+        margin: 20px auto 0;
+    }
+
+    .left_cpu {
+        width: calc(640px*.9*.7*.8);
+        padding: 5px;
+    }
+
+    .detail_info1>h2,
+    .detail_info2>h2,
+    .detail_info3>h2,
+    .os>h2,
+    .PCIe>h2,
+    .storage_4k_view>div>h2,
+    .support_audio>h2,
+    .video_text_info>h2,
+    .left_cpu>h2 {
+        font-size: calc(36px*.9*.7*.8);
+        margin-bottom: 5px;
+    }
+
+    .detail_info1>h2,
+    .detail_info2>h2,
+    .detail_info3>h2 {
+        font-size: calc(32px*.9*.7*.8);
+    }
+
+    .detail_info1>p,
+    .detail_info2>p,
+    .detail_info3>p,
+    .PCIe>p,
+    .storage_4k_view>div>p,
+    .support_audio>p,
+    .video_text_info>p,
+    .left_cpu>p {
+        font-size: 12px;
+    }
+
+    .cup_view>img {
+        width: calc(780px*.9*.7*.8);
+    }
+
+    .cpu {
+        width: calc(564px*.9*.7*.7);
+        height: calc(328px*.9*.7*.6);
+    }
+
+    .cpu>img {
+        width: calc(226px*.9*.7*.8);
+        height: calc(36px*.9*.7*.8);
+    }
+
+    .detail,
+    .parameters_view,
+    .storage_4k_view,
+    .multimedia_view {
+        width: calc(1440px*.9*.7*.8);
+        height: calc(500px*.9*.7*.8);
+        margin: 18px auto;
+    }
+
+    .parameters_view {
+        height: calc(380px*.9*.7*.8);
+    }
+
+    .detail {
+        height: calc(369px*.9*.7*.8);
+    }
+
+    .PCIe,
+    .memory,
+    .detail>div,
+    .storage_4k_view>div,
+    .multimedia_view>div {
+        height: 100%;
+        padding: 5px;
+    }
+
+    .support_video {
+        width: calc(856px*.9*.7*.8);
+    }
+
+    .video_icons_info {
+        height: 40px;
+    }
+
+    .support_audio {
+        width: calc(564px*.9*.7*.8);
+    }
+
+    .audio_contexts {
+        width: calc(447px*.9*.7*.8);
+        height: calc(190px*.9*.7*.8);
+        bottom: calc(40px*.9*.7*.8);
+    }
+
+    .support_storage {
+        width: calc(565px*.9*.7*.8);
+    }
+
+    .tf_emmc {
+        margin-top: calc(130px*.9*.7*.8);
+    }
+
+    .tf_emmc>p {
+        font-size: calc(47px*.9*.7*.8);
+        margin: 0 5px;
+    }
+
+    .tfcard {
+        width: calc(170px*.9*.7*.8);
+        height: calc(117px*.9*.7*.8);
+    }
+
+    .emmc {
+        width: calc(237px*.9*.7*.8);
+        height: calc(168px*.9*.7*.8);
+    }
+
+    .support_4k {
+        width: calc(854px*.9*.7*.8);
+    }
+
+    .PCIe {
+        width: calc(522px*.9*.7*.8);
+    }
+
+    .pcle_info {
+        margin: 20px auto 0;
+    }
+
+    .pcle_info>p {
+        white-space: nowrap;
+        font-size: 12px;
+        margin-right: 0px;
+    }
+
+    .info_grid {
+        grid-gap: 3px;
+    }
+
+    .info_grid>div {
+        white-space: nowrap;
+        font-size: 12px;
+        height: 18px;
+    }
+
+    .memory {
+        width: calc(564px*.9*.7*.8);
+    }
+
+    .memory>.lpddr4 {
+        margin-top: calc(65px*.9*.7*.8);
+        font-size: calc(82px*.9*.7*.8);
+    }
+
+    .memory>.capacity {
+        font-size: calc(36px*.9*.7*.8);
+    }
+
+    .os {
+        width: calc(314px*.9*.7*.8);
+        padding-top: 5px;
+
+    }
+
+    .support_os_icons {
+        margin: 10px auto 0;
+    }
+
+    .support_os_icons>img {
+        width: calc(228px*.9*.7*.8);
+        height: calc(56px*.9*.7*.8);
+        margin-bottom: 5px;
+    }
+
+    .detail>div {
+        padding-top: 5px;
+        width: calc(466px*.9*.7*.8);
+    }
+
+    .detail_info1>img {
+        margin-top: 15px;
+        width: calc(407px*.9*.7*.8);
+        height: calc(190px*.9*.7*.8);
+    }
+
+    .support_boards {
+        width: calc(1440px*.9*.7*.8);
+        margin: 0 auto calc(150px*.9*.7*.8);
+    }
+
+    .support_boards>h2 {
+        padding: 5px;
+        font-size: calc(32px*.9*.7*.8);
+    }
+
+    .boards_more>li {
+        width: calc(464px*.9*.7*.8);
+        height: calc(267px*.9*.7*.8);
+    }
+
+    .boards_more>li>div {
+        width: 100%;
+        height: calc(267px*.9*.7*.8);
+    }
+
+    .boards_more>li>p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .rockcm3 {
+        width: calc(377px*.9*.7*.8);
+        height: calc(222px*.9*.7*.8);
+    }
+
+    .orangepi {
+        width: calc(314px*.9*.7*.8);
+        height: calc(208px*.9*.7*.8);
+    }
+
+    .raspberrypi {
+        width: calc(351px*.9*.7*.8);
+        height: calc(203px*.9*.7*.8);
+    }
+
+    .tabBox_tech {
+        width: calc(1440px*.9*.7*.8);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .btnbuy {
+        width: 70rem;
+        height: 25rem;
+        margin: 0 auto;
+        font-size: 13rem;
+    }
+
+    .title {
+        font-size: 26rem;
+        height: 36rem;
+        margin: 80px auto 20px;
+    }
+
+    .moreP {
+        font-size: 14rem;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0 auto;
+    }
+
+    .headword {
+        margin: 20rem auto;
+        font-weight: 500;
+        font-size: 20rem;
+        color: #FFFFFF;
+        font-weight: 600;
+    }
+
+    .tableBox {
+        margin: 30rem auto 100rem;
+        width: 340rem;
+    }
+
+    .tableBox td {
+        text-align: left;
+        height: 50rem;
+        font-weight: 500;
+        font-size: 14rem;
+        color: rgba(255, 255, 255, 0.85);
+        padding-left: 10rem;
+    }
+
+    .tabP {
+        width: 330rem;
+    }
+
+    /* start */
+    .title_content {
+        width: 350rem;
+    }
+
+    .title_content>img {
+        width: calc(586rem*.25);
+        height: calc(432rem*.25);
+    }
+
+    .leftTitle>h1 {
+        font-size: 24rem;
+    }
+
+    .leftTitle>p {
+        text-align: center;
+        font-size: 12rem;
+        margin-bottom: 20rem;
+    }
+
+    .cup_view {
+        width: 350rem;
+        margin: 20rem auto 0;
+        flex-direction: column;
+    }
+
+    .left_cpu {
+        width: 100%;
+        padding: 15rem;
+    }
+
+    .detail_info1>h2,
+    .detail_info2>h2,
+    .detail_info3>h2,
+    .os>h2,
+    .PCIe>h2,
+    .storage_4k_view>div>h2,
+    .support_audio>h2,
+    .video_text_info>h2,
+    .left_cpu>h2 {
+        font-size: 18rem;
+        margin-bottom: 5rem;
+    }
+
+    .detail_info1>h2,
+    .detail_info2>h2,
+    .detail_info3>h2 {
+        font-size: 18rem;
+    }
+
+    .detail_info1>p,
+    .detail_info2>p,
+    .detail_info3>p,
+    .PCIe>p,
+    .storage_4k_view>div>p,
+    .support_audio>p,
+    .video_text_info>p,
+    .left_cpu>p {
+        font-size: 12rem;
+    }
+
+    .cup_view>img {
+        width: 100%;
+    }
+
+    .cpu {
+        width: calc(564rem*.5);
+        height: calc(328rem*.5);
+    }
+
+    .cpu>img {
+        width: calc(226px*.9*.7*.8);
+        height: calc(36px*.9*.7*.8);
+    }
+
+    .detail,
+    .parameters_view,
+    .storage_4k_view,
+    .multimedia_view {
+        width: 350rem;
+        margin: 18rem auto;
+    }
+
+    .detail,
+    .parameters_view,
+    .storage_4k_view,
+    .multimedia_view {
+        flex-direction: column;
+    }
+
+    .support_storage,
+    .detail,
+    .parameters_view {
+        width: 350rem;
+    }
+
+    .PCIe,
+    .memory,
+    .detail>div,
+    .storage_4k_view>div,
+    .multimedia_view>div {
+        padding: 15rem;
+    }
+
+    .support_video {
+        width: 100%;
+        height: 220rem !important;
+    }
+
+    .video_icons_info {
+        height: 40rem;
+    }
+
+    .support_audio {
+        height: 220rem !important;
+        width: 100%;
+    }
+
+
+    .audio_contexts {
+        width: calc(447rem*.9*.7*.8);
+        height: calc(190rem*.9*.7*.8);
+        bottom: calc(40rem*.9*.7*.8);
+    }
+
+
+    .tf_emmc {
+        margin-top: calc(130rem*.9*.7*.8);
+    }
+
+    .tf_emmc>p {
+        font-size: calc(47rem*.9*.7*.8);
+        margin: 0 5rem;
+    }
+
+    .tfcard {
+        width: calc(170rem*.9*.7);
+        height: calc(117rem*.9*.7);
+    }
+
+    .emmc {
+        width: calc(237rem*.9*.7);
+        height: calc(168rem*.9*.7);
+    }
+
+    .support_4k {
+        width: 100%;
+        height: 180rem !important;
+    }
+
+    .PCIe {
+        width: 100%;
+    }
+
+    .parameters_view>div {
+        margin-bottom: 15rem;
+    }
+
+    .pcle_info {
+        margin: 20rem auto 0;
+    }
+
+    .pcle_info>p {
+        white-space: nowrap;
+        font-size: 14rem;
+        margin-right: 5rem;
+    }
+
+    .info_grid {
+        grid-gap: 5rem;
+    }
+
+    .info_grid>div {
+        white-space: nowrap;
+        font-size: 13rem;
+        height: 18rem;
+    }
+
+    .memory {
+        width: 100%;
+    }
+
+    .memory>.lpddr4 {
+        margin-top: calc(65rem*.9*.7*.8);
+        font-size: calc(82rem*.9*.7*.8);
+    }
+
+    .memory>.capacity {
+        font-size: calc(36rem*.9*.7*.8);
+    }
+
+    .os {
+        width: 100%;
+        padding: 15rem;
+    }
+
+    .os>h2 {
+        text-align: left;
+    }
+
+    .support_os_icons {
+        margin: 10rem auto 0;
+    }
+
+    .support_os_icons>img {
+        width: calc(228rem*.9*.7*.8);
+        height: calc(56rem*.9*.7*.8);
+        margin-bottom: 5rem;
+    }
+
+    .detail>div {
+        padding: 15rem;
+        margin-bottom: 15rem;
+        width: 100%;
+        height: 300rem;
+    }
+
+    .detail_info1>img {
+        margin-top: 45rem;
+        width: calc(407rem*.8);
+        height: calc(190rem*.8);
+    }
+
+    .support_boards {
+        width: 350rem;
+        margin: 0 auto;
+        background-color: #151515;
+    }
+
+    .support_boards>h2 {
+        padding: 5rem;
+        font-size: calc(32rem*.9*.7*.8);
+    }
+
+    .boards_more {
+        flex-direction: column;
+    }
+
+    .boards_more>li {
+        width: 100%;
+        margin-bottom: 20rem;
+    }
+
+    .boards_more>li>div {
+        width: 100%;
+        height: calc(267rem*.9*.7);
+    }
+
+    .boards_more>li>p {
+        font-size: 12rem;
+        margin-top: 10rem;
+    }
+
+    .rockcm3 {
+        width: calc(377rem*.9*.7*.8);
+        height: calc(222rem*.9*.7*.8);
+    }
+
+    .orangepi {
+        width: calc(314rem*.9*.7*.8);
+        height: calc(208rem*.9*.7*.8);
+    }
+
+    .raspberrypi {
+        width: calc(351rem*.9*.7*.8);
+        height: calc(203rem*.9*.7*.8);
+    }
+
+    .tabBox_tech {
+        width: 350rem;
+    }
+}
