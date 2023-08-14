@@ -8,8 +8,12 @@
 .footerInfo,
 .footer_navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+}
+
+.footer_navbar {
+    flex-wrap: wrap;
 }
 
 .footerInfo {
@@ -23,6 +27,7 @@
 .footer_navbar>a {
     font-weight: 500;
     color: #2D88C9;
+    white-space: nowrap;
 }
 
 .footer_right>h1 {
