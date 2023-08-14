@@ -343,10 +343,6 @@
     background-size: cover;
 }
 
-.support_boards {
-    background-color: #000;
-}
-
 .support_boards>h2 {
     color: #FFF;
     font-family: Inter;
@@ -816,6 +812,16 @@
         font-size: 14px;
     }
 
+    .detail_info1>p>span,
+    .detail_info2>p>span,
+    .detail_info3>p>span,
+    .PCIe>p>span,
+    .storage_4k_view>div>p>span,
+    .support_audio>p>span,
+    .video_text_info>p>span,
+    .left_cpu>p>span {
+        margin-right: 12px;
+    }
 
 
     .cup_view>img {
@@ -1119,6 +1125,17 @@
         font-size: 14px;
     }
 
+    .detail_info1>p>span,
+    .detail_info2>p>span,
+    .detail_info3>p>span,
+    .PCIe>p>span,
+    .storage_4k_view>div>p>span,
+    .support_audio>p>span,
+    .video_text_info>p>span,
+    .left_cpu>p>span {
+        font-size: 12px;
+    }
+
     .cup_view>img {
         width: calc(780px*.9*.7);
     }
@@ -1416,6 +1433,18 @@
     .video_text_info>p,
     .left_cpu>p {
         font-size: 12px;
+    }
+
+    .detail_info1>p>span,
+    .detail_info2>p>span,
+    .detail_info3>p>span,
+    .PCIe>p>span,
+    .storage_4k_view>div>p>span,
+    .support_audio>p>span,
+    .video_text_info>p>span,
+    .left_cpu>p>span {
+        font-size: 12px;
+        transform: scale(.8);
     }
 
     .cup_view>img {
@@ -1718,6 +1747,17 @@
     .video_text_info>p,
     .left_cpu>p {
         font-size: 12rem;
+    }
+
+    .detail_info1>p>span,
+    .detail_info2>p>span,
+    .detail_info3>p>span,
+    .PCIe>p>span,
+    .storage_4k_view>div>p>span,
+    .support_audio>p>span,
+    .video_text_info>p>span,
+    .left_cpu>p>span {
+        font-size: 10rem;
     }
 
     .cup_view>img {

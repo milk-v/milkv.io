@@ -164,7 +164,7 @@ export default () => {
 
                     <div className={styles.tabBox_tech}>
                         <h1 className={styles.title}><Translate id='line.title.TechSpecs' /></h1>
-                        <p className={styles.moreP}>The Mars Compute Module is a System on Module (SoM) based on a the StarFive JH7110 System on Chip (SoC). The Mars CM integrates the Central Process Unit (CPU), Power Man‑agement Unit (PMU), DRAM memory, flash storage and wireless connectivity (WiFi 5 and BT 5.2) in a small form factor of just 55mm x 40mm. The MARS Compute Module offers a cost‑efficient solution out of the box for many different applications.</p>
+                        <p className={styles.moreP}>The Mars Compute Module is a System on Module (SoM) based on a the StarFive JH7110 System on Chip (SoC). The Mars CM integrates the Central Process Unit (CPU), Power Man‑agement Unit (PMU), DRAM memory, flash storage and wireless connectivity (WiFi 5 and BT 5.2) in a small form factor of just 55mm x 40mm. The Mars Compute Module offers a cost‑efficient solution out of the box for many different applications.</p>
                         <h2 className={styles.headword}><Translate id='duo.info.text.Hardware' /></h2>
                         <table className={styles.tableBox}>
                             <tbody>
@@ -258,7 +258,7 @@ export default () => {
 
                     <ContactUs product='mars' />
                     <ContactBar product='mars' />
-                    <Embrace product='mars' />
+                    <Embrace product='marscm' />
                 </div>
                 <Footer></Footer>
             </Layout>
