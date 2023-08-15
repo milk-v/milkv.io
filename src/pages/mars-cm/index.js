@@ -257,7 +257,7 @@ export default () => {
 
                     <ContactUs product='mars' />
                     <ContactBar product='mars' />
-                    <Embrace product='marscm' />
+                    <Embrace product='mars' />
                 </div>
                 <Footer></Footer>
             </Layout>

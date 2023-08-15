@@ -649,6 +649,10 @@
     "message": "与 “Mars” 一起拥抱新时代，",
     "description": "Duo embrace"
   },
+  "meles.embrace1": {
+    "message": "与 “Meles” 一起拥抱新时代，",
+    "description": "Duo embrace"
+  },
   "duo.embrace2": {
     "message": "让我们一起使RISC-V变得更好。",
     "description": "Duo embrace"

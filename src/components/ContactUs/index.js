@@ -29,8 +29,15 @@ export default (props) => {
 
 
     const handleSubmit = (event) => {
-        let url = product === 'duo' ? 'https://submit-form.com/mxM7Oj62' : product === 'pioneer' ? 'https://submit-form.com/LajdNi4B' : product === 'mars' ? 'https://submit-form.com/8WXCfzfP' : product === 'meles' ? 'https://submit-form.com/pWzoLWYI' : null
 
+        let productsUrls = {
+            'duo': 'https://submit-form.com/mxM7Oj62',
+            'pioneer': 'https://submit-form.com/LajdNi4B',
+            'mars': 'https://submit-form.com/8WXCfzfP',
+            'meles': 'https://submit-form.com/pWzoLWYI'
+        };
+
+        const url = productsUrls[product] || null;
         event.preventDefault();
         setFormBtn(true)
         axios.get(`${url}?product=${product}&name=${userName}&email=${userEmail}&subject=${subject}&message=${message}`)

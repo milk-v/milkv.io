@@ -10,13 +10,10 @@ export default (props) => {
     return (
         <>
             <div className={styles.riscBg}>
-
-                <h1 className={styles.embrace}>
-                    {
-                        product === 'duo' ? <Translate id='duo.embrace1' /> : product === 'pionner' ? <Translate id='pioneer.embrace1' /> : product === 'mars' ? <Translate id='mars.embrace1' /> : product === 'meles' ? 'Embrace the new era with Meles,' : product === 'marscm' ? 'Embrace the new era with Mars CM,' : null
-                    }
-                </h1>
-                <h1 className={styles.risc_v}><Translate id='duo.embrace2' /></h1>
+                <h2 className={styles.embrace}>
+                    <Translate id={`${product}.embrace1`} />
+                </h2>
+                <h2 className={styles.risc_v}><Translate id='duo.embrace2' /></h2>
             </div>
         </>
     )
