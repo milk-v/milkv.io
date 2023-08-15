@@ -15,7 +15,6 @@ export default function (props) {
     const toApp = () => {
         if (type === 'duo') {
             window.open('https://app6hodqg6k9861.h5.xiaoeknow.com')
-
         } else if (type === 'mars') {
             window.open('https://ewmmz.xet.tech/s/1As0hQ')
         } else if (type === 'pioneer') {
@@ -112,7 +111,16 @@ export default function (props) {
                             </div>
                             <img src='/pages/COMINGSOON.svg' className={styles.coming} />
                         </div> */}
-                    </> : null
+                    </> : type === 'mars-cm' ?
+                        <div className={styles.none} onClick={() => toApp()}>
+                            <img src='/pages/china.svg' className={styles.buyIcon} />
+                            <div className={styles.textBOx}>
+                                <p className={styles.tp}>China's mainland</p>
+                                <img src='/pages/icon_more-right.svg' className={styles.img1} />
+                                <img src='/pages/icon_more-right_white.svg' className={styles.img2} />
+                                <img src='/pages/COMINGSOON.svg' className={styles.coming} />
+                            </div>
+                        </div> : null
                 }
 
             </div>

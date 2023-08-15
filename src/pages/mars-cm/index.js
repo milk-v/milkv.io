@@ -22,7 +22,7 @@ export default () => {
     return (
         <>
             <Layout>
-                <BuyPop flag={marscm} module={mars2Start} type='mars' />
+                <BuyPop flag={marscm} module={mars2Start} type='mars-cm' />
                 <div className={styles.header_page}>
                     <div className={styles.title_content}>
                         <div className={styles.leftTitle}>
