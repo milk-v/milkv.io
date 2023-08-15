@@ -27,7 +27,7 @@ export default () => {
                     <div className={styles.title_content}>
                         <div className={styles.leftTitle}>
                             <h1><span>Milk-V Mars</span> CM</h1>
-                            <p>Embarking on the RISC-V Cosmic Journey</p>
+                            <p>A RISC-V Compute Module in compatible form factor</p>
                             <div className={styles.btnbuy} onClick={() => setMarscm(buy => !buy)}>
                                 <Translate id='Buy.now' />
                             </div>
@@ -66,7 +66,7 @@ export default () => {
                         </div>
                         <div className={styles.support_audio}>
                             <h2>Dual-channel <br></br>Stereo Audio Output</h2>
-                            <p><span>●</span>1x MIPI CSI (2x2-lane or 1x4-lanes)</p>
+                            <p><span>●</span>1x 2CH Audio out (via GPIO)</p>
                             <div className={styles.audio_contexts}></div>
                         </div>
                     </div>
@@ -90,10 +90,10 @@ export default () => {
                     <div className={styles.parameters_view}>
                         <div className={styles.PCIe}>
                             <h2>PCIe Available</h2>
-                            <p><span>●</span>2x PCIe 1-lane Host, Gen 2 (5Gbps)</p>
+                            <p><span>●</span>1x PCIe 1-lane Host, Gen 2 (5Gbps)</p>
                             <p><span>●</span>Supports Multiple High-speed peripherals</p>
                             <div className={styles.pcle_info}>
-                                <p>PCle =</p>
+                                <p>PCle can be extended to</p>
                                 <div className={styles.info_grid}>
                                     <div>SATA</div>
                                     <div>USB</div>
@@ -134,12 +134,12 @@ export default () => {
                             <p><span>●</span>1x Onboard Gigabit Ethernet PHY</p>
                         </div>
                         <div className={styles.detail_info3}>
-                            <h2>Onboard WI-FI 5/BT 5.2</h2>
+                            <h2>Onboard WI-FI 5 / BT 5.2</h2>
                             <p><span>●</span>1x AP6256 onboard</p>
                         </div>
                     </div>
                     <div className={styles.support_boards}>
-                        <h2>Supports Multiple IO Boards</h2>
+                        <h2>Compatible with Classic IO Board</h2>
                         <ul className={styles.boards_more}>
                             <li>
                                 <div>
@@ -161,10 +161,9 @@ export default () => {
                             </li>
                         </ul>
                     </div>
-
                     <div className={styles.tabBox_tech}>
                         <h1 className={styles.title}><Translate id='line.title.TechSpecs' /></h1>
-                        <p className={styles.moreP}>The Mars Compute Module is a System on Module (SoM) based on a the StarFive JH7110 System on Chip (SoC). The Mars CM integrates the Central Process Unit (CPU), Power Man‑agement Unit (PMU), DRAM memory, flash storage and wireless connectivity (WiFi 5 and BT 5.2) in a small form factor of just 55mm x 40mm. The Mars Compute Module offers a cost‑efficient solution out of the box for many different applications.</p>
+                        <p className={styles.moreP}>The Mars Compute Module is a System on Module (SoM) based on a the StarFive JH7110 System on Chip (SoC). The Mars CM integrates the Central Process Unit (CPU), Power Man agement Unit (PMU), DRAM memory, flash storage and wireless connectivity (WiFi 5 and BT 5.2) in a small form factor of just 55mm x 40mm. The Mars Compute Module offers a cost-efficient solution out of the box for many different applications.</p>
                         <h2 className={styles.headword}><Translate id='duo.info.text.Hardware' /></h2>
                         <table className={styles.tableBox}>
                             <tbody>
