@@ -14,6 +14,10 @@
     overflow: hidden;
 }
 
+.tableBox {
+    background-color: #151515;
+}
+
 .title_content {
     display: flex;
     justify-content: space-between;
@@ -79,9 +83,13 @@
     background-color: #000;
 }
 
-.detail_info1>h2,
-.detail_info2>h2,
-.detail_info3>h2,
+.block_diagram {
+    background: url(/static/mars-cm/functional-diagram.webp) no-repeat;
+    background-size: 100%;
+}
+
+.block_diagram>h2,
+.detail>div>h2,
 .os>h2,
 .PCIe>h2,
 .storage_4k_view>div>h2,
@@ -112,18 +120,16 @@
     background-clip: text;
 }
 
-.detail_info1>h2,
-.detail_info2>h2,
-.detail_info3>h2,
+.block_diagram>h2,
+.detail>div>h2,
 .memory>h2,
 .support_4k>h2,
 .video_text_info>h2 {
     color: #FFF;
 }
 
-.detail_info1>p,
-.detail_info2>p,
-.detail_info3>p,
+
+.detail>div>p,
 .PCIe>p,
 .storage_4k_view>div>p,
 .support_audio>p,
@@ -135,13 +141,11 @@
     line-height: 120%;
     margin: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
 }
 
-.detail_info1>p>span,
-.detail_info2>p>span,
-.detail_info3>p>span,
+.detail>div>p>span,
 .PCIe>p>span,
 .storage_4k_view>div>p>span,
 .support_audio>p>span,
@@ -150,9 +154,7 @@
     margin-right: 4px;
 }
 
-.detail_info1>p>span,
-.detail_info2>p>span,
-.detail_info3>p>span,
+.detail>div>p>span,
 .PCIe>p>span,
 .storage_4k_view>div>p>span,
 .support_audio>p>span,
@@ -165,7 +167,7 @@
     height: 100%;
 }
 
-.cup_view>img {
+.block_diagram {
     height: 100%;
 }
 
@@ -192,6 +194,7 @@
     justify-content: space-between;
 }
 
+.block_diagram,
 .PCIe,
 .memory,
 .detail>div,
@@ -320,6 +323,7 @@
     align-items: center;
 }
 
+.detail_info4>img,
 .detail_info1>img {
     display: block;
     margin: 0 auto;
@@ -333,13 +337,6 @@
 .detail_info3 {
     background: url(/static/mars-cm/marscm-wifi.webp) no-repeat;
     background-size: cover;
-}
-
-.support_boards>h2 {
-    color: #FFF;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
 }
 
 .boards_more {
@@ -470,7 +467,7 @@
 
     .cup_view {
         width: 1440px;
-        height: 500px;
+        height: 620px;
         margin: 50px auto 0;
     }
 
@@ -479,9 +476,11 @@
         padding: 30px;
     }
 
-    .detail_info1>h2,
-    .detail_info2>h2,
-    .detail_info3>h2,
+    .block_diagram {
+        padding: 30px;
+    }
+
+    .block_diagram>h2,
     .os>h2,
     .PCIe>h2,
     .storage_4k_view>div>h2,
@@ -492,15 +491,11 @@
         margin-bottom: 20px;
     }
 
-    .detail_info1>h2,
-    .detail_info2>h2,
-    .detail_info3>h2 {
+    .detail>div>h2 {
         font-size: 32px;
     }
 
-    .detail_info1>p,
-    .detail_info2>p,
-    .detail_info3>p,
+    .detail>div>p,
     .PCIe>p,
     .storage_4k_view>div>p,
     .support_audio>p,
@@ -509,11 +504,12 @@
         font-size: 16px;
     }
 
-    .cup_view>img {
+    .block_diagram {
         width: 780px;
     }
 
     .cpu {
+        margin-top: 50px;
         width: 564px;
         height: 328px;
     }
@@ -649,22 +645,19 @@
 
     .detail>div {
         padding-top: 10px;
-        width: 466px;
+        width: 345px;
     }
 
     .detail_info1>img {
-        width: 407px;
-        height: 190px;
+        margin-top: 50px;
+        width: 303px;
+        height: 127px;
     }
 
-    .support_boards {
-        width: 1440px;
-        margin: 0 auto 150px;
-    }
-
-    .support_boards>h2 {
-        padding: 30px;
-        font-size: 32px;
+    .detail_info4>img {
+        margin-top: 50px;
+        width: 277px;
+        height: 160px;
     }
 
     .boards_more>li {
@@ -764,7 +757,7 @@
 
     .cup_view {
         width: calc(1440px*.9);
-        height: calc(500px*.9);
+        height: calc(620px*.9);
         margin: 40px auto 0;
     }
 
@@ -773,9 +766,11 @@
         padding: 27px;
     }
 
-    .detail_info1>h2,
-    .detail_info2>h2,
-    .detail_info3>h2,
+    .block_diagram {
+        padding: 27px;
+    }
+
+    .block_diagram>h2,
     .os>h2,
     .PCIe>h2,
     .storage_4k_view>div>h2,
@@ -786,15 +781,11 @@
         margin-bottom: 18px;
     }
 
-    .detail_info1>h2,
-    .detail_info2>h2,
-    .detail_info3>h2 {
+    .detail>div>h2 {
         font-size: calc(32px*.9);
     }
 
-    .detail_info1>p,
-    .detail_info2>p,
-    .detail_info3>p,
+    .detail>div>p,
     .PCIe>p,
     .storage_4k_view>div>p,
     .support_audio>p,
@@ -803,25 +794,24 @@
         font-size: 14px;
     }
 
-    .detail_info1>p>span,
-    .detail_info2>p>span,
-    .detail_info3>p>span,
+    .detail>div>p>span,
     .PCIe>p>span,
     .storage_4k_view>div>p>span,
     .support_audio>p>span,
     .video_text_info>p>span,
     .left_cpu>p>span {
-        margin-right: 12px;
+        margin-right: 5px;
     }
 
 
-    .cup_view>img {
+    .block_diagram {
         width: calc(780px*.9);
     }
 
     .cpu {
-        width: calc(564px*.9);
-        height: calc(328px*.9);
+        margin-top: 50px;
+        width: calc(564px*.95);
+        height: calc(328px*.95);
     }
 
     .cpu>img {
@@ -955,22 +945,19 @@
 
     .detail>div {
         padding-top: 9px;
-        width: calc(466px*.9);
+        width: calc(345px*.9);
     }
 
     .detail_info1>img {
-        width: calc(407px*.9);
-        height: calc(190px*.9);
+        margin-top: 50px;
+        width: calc(303px*.9);
+        height: calc(127px*.9);
     }
 
-    .support_boards {
-        width: calc(1440px*.9);
-        margin: 0 auto calc(150px*.9);
-    }
-
-    .support_boards>h2 {
-        padding: 27px;
-        font-size: calc(32px*.9);
+    .detail_info4>img {
+        margin-top: 50px;
+        width: calc(277px*.9);
+        height: calc(160px*.9);
     }
 
     .boards_more>li {
@@ -1078,7 +1065,7 @@
 
     .cup_view {
         width: calc(1440px*.9*.7);
-        height: calc(500px*.9*.7);
+        height: calc(620px*.9*.7);
         margin: 20px auto 0;
     }
 
@@ -1087,9 +1074,12 @@
         padding: 15px;
     }
 
-    .detail_info1>h2,
-    .detail_info2>h2,
-    .detail_info3>h2,
+    .block_diagram {
+        padding: 15px;
+    }
+
+    .block_diagram>h2,
+    .detail>div>h2,
     .os>h2,
     .PCIe>h2,
     .storage_4k_view>div>h2,
@@ -1100,15 +1090,11 @@
         margin-bottom: 5px;
     }
 
-    .detail_info1>h2,
-    .detail_info2>h2,
-    .detail_info3>h2 {
+    .detail>div>h2 {
         font-size: calc(32px*.9*.7);
     }
 
-    .detail_info1>p,
-    .detail_info2>p,
-    .detail_info3>p,
+    .detail>div>p,
     .PCIe>p,
     .storage_4k_view>div>p,
     .support_audio>p,
@@ -1117,9 +1103,7 @@
         font-size: 14px;
     }
 
-    .detail_info1>p>span,
-    .detail_info2>p>span,
-    .detail_info3>p>span,
+    .detail>div>p>span,
     .PCIe>p>span,
     .storage_4k_view>div>p>span,
     .support_audio>p>span,
@@ -1128,13 +1112,13 @@
         font-size: 12px;
     }
 
-    .cup_view>img {
+    .block_diagram {
         width: calc(780px*.9*.7);
     }
 
     .cpu {
-        width: calc(564px*.9*.7);
-        height: calc(328px*.9*.7);
+        width: calc(564px*.9*.8);
+        height: calc(328px*.9*.8);
     }
 
     .cpu>img {
@@ -1267,22 +1251,19 @@
 
     .detail>div {
         padding-top: 9px;
-        width: calc(466px*.9*.7);
+        width: calc(345px*.9*.7);
     }
 
     .detail_info1>img {
-        width: calc(407px*.9*.7);
-        height: calc(190px*.9*.7);
+        margin-top: 10px;
+        width: calc(303px*.9*.7);
+        height: calc(127px*.9*.7);
     }
 
-    .support_boards {
-        width: calc(1440px*.9*.7);
-        margin: 0 auto calc(150px*.9*.7);
-    }
-
-    .support_boards>h2 {
-        padding: 20px;
-        font-size: calc(32px*.9*.7);
+    .detail_info4>img {
+        margin-top: 40px;
+        width: calc(277px*.9*.7);
+        height: calc(160px*.9*.7);
     }
 
     .boards_more>li {
@@ -1389,7 +1370,7 @@
 
     .cup_view {
         width: calc(1440px*.9*.7*.8);
-        height: calc(500px*.9*.7*.8);
+        height: calc(620px*.9*.7*.8);
         margin: 20px auto 0;
     }
 
@@ -1398,9 +1379,12 @@
         padding: 5px;
     }
 
-    .detail_info1>h2,
-    .detail_info2>h2,
-    .detail_info3>h2,
+    .block_diagram {
+        padding: 5px;
+    }
+
+    .block_diagram>h2,
+    .detail>div>h2,
     .os>h2,
     .PCIe>h2,
     .storage_4k_view>div>h2,
@@ -1411,15 +1395,11 @@
         margin-bottom: 5px;
     }
 
-    .detail_info1>h2,
-    .detail_info2>h2,
-    .detail_info3>h2 {
+    .detail>div>h2 {
         font-size: calc(32px*.9*.7*.8);
     }
 
-    .detail_info1>p,
-    .detail_info2>p,
-    .detail_info3>p,
+    .detail>div>p,
     .PCIe>p,
     .storage_4k_view>div>p,
     .support_audio>p,
@@ -1428,9 +1408,7 @@
         font-size: 12px;
     }
 
-    .detail_info1>p>span,
-    .detail_info2>p>span,
-    .detail_info3>p>span,
+    .detail>div>p>span,
     .PCIe>p>span,
     .storage_4k_view>div>p>span,
     .support_audio>p>span,
@@ -1440,13 +1418,13 @@
         transform: scale(.8);
     }
 
-    .cup_view>img {
+    .block_diagram {
         width: calc(780px*.9*.7*.8);
     }
 
     .cpu {
-        width: calc(564px*.9*.7*.7);
-        height: calc(328px*.9*.7*.6);
+        width: calc(564px*.9*.7*.9);
+        height: calc(328px*.9*.7*.9);
     }
 
     .cpu>img {
@@ -1581,23 +1559,19 @@
 
     .detail>div {
         padding-top: 5px;
-        width: calc(466px*.9*.7*.8);
+        width: calc(345px*.9*.7*.8);
     }
 
     .detail_info1>img {
         margin-top: 15px;
-        width: calc(407px*.9*.7*.8);
-        height: calc(190px*.9*.7*.8);
+        width: calc(303px*.9*.7*.8);
+        height: calc(127px*.9*.7*.8);
     }
 
-    .support_boards {
-        width: calc(1440px*.9*.7*.8);
-        margin: 0 auto calc(150px*.9*.7*.8);
-    }
-
-    .support_boards>h2 {
-        padding: 5px;
-        font-size: calc(32px*.9*.7*.8);
+    .detail_info4>img {
+        margin-top: 30px;
+        width: calc(277px*.9*.5);
+        height: calc(160px*.9*.5);
     }
 
     .boards_more>li {
@@ -1713,9 +1687,7 @@
         padding: 15rem;
     }
 
-    .detail_info1>h2,
-    .detail_info2>h2,
-    .detail_info3>h2,
+    .detail>div>h2,
     .os>h2,
     .PCIe>h2,
     .storage_4k_view>div>h2,
@@ -1732,9 +1704,7 @@
         font-size: 18rem;
     }
 
-    .detail_info1>p,
-    .detail_info2>p,
-    .detail_info3>p,
+    .detail>div>p,
     .PCIe>p,
     .storage_4k_view>div>p,
     .support_audio>p,
@@ -1743,9 +1713,7 @@
         font-size: 12rem;
     }
 
-    .detail_info1>p>span,
-    .detail_info2>p>span,
-    .detail_info3>p>span,
+    .detail>div>p>span,
     .PCIe>p>span,
     .storage_4k_view>div>p>span,
     .support_audio>p>span,
@@ -1754,7 +1722,7 @@
         font-size: 10rem;
     }
 
-    .cup_view>img {
+    .block_diagram {
         width: 100%;
     }
 
@@ -1811,13 +1779,11 @@
         width: 100%;
     }
 
-
     .audio_contexts {
         width: calc(447rem*.9*.7*.8);
         height: calc(190rem*.9*.7*.8);
         bottom: calc(40rem*.9*.7*.8);
     }
-
 
     .tf_emmc {
         margin-top: calc(130rem*.9*.7*.8);
@@ -1912,19 +1878,14 @@
 
     .detail_info1>img {
         margin-top: 45rem;
-        width: calc(407rem*.8);
-        height: calc(190rem*.8);
+        width: calc(303rem*.8);
+        height: calc(127rem*.8);
     }
 
-    .support_boards {
-        width: 350rem;
-        margin: 0 auto;
-        background-color: #151515;
-    }
-
-    .support_boards>h2 {
-        padding: 5rem;
-        font-size: calc(32rem*.9*.7*.8);
+    .detail_info4>img {
+        margin-top: 30px;
+        width: calc(277px);
+        height: calc(160px);
     }
 
     .boards_more {
@@ -1963,5 +1924,12 @@
 
     .tabBox_tech {
         width: 350rem;
+    }
+
+    .block_diagram {
+        width: 100%;
+        height: 300rem;
+        padding-left: 15rem;
+        margin-top: 20rem;
     }
 }

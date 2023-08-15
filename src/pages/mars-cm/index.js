@@ -45,7 +45,9 @@ export default () => {
                                 <img src="/mars-cm/risc-v-white.svg" />
                             </div>
                         </div>
-                        <img src="/mars-cm/functional-diagram.webp" alt="Mars CM functional block diagram" />
+                        <div className={styles.block_diagram}>
+                            <h2>Mars CM Block Diagram</h2>
+                        </div>
                     </div>
                     <div className={styles.multimedia_view}>
                         <div className={styles.support_video}>
@@ -134,32 +136,14 @@ export default () => {
                             <p><span>●</span>1x Onboard Gigabit Ethernet PHY</p>
                         </div>
                         <div className={styles.detail_info3}>
-                            <h2>Onboard WI-FI 5 / BT 5.2</h2>
+                            <h2>Onboard<br></br> WI-FI 5 / BT 5.2</h2>
                             <p><span>●</span>1x AP6256 onboard</p>
                         </div>
-                    </div>
-                    <div className={styles.support_boards}>
-                        <h2>Compatible with Classic IO Board</h2>
-                        <ul className={styles.boards_more}>
-                            <li>
-                                <div>
-                                    <img src="/mars-cm/rockcm3-ioboard.webp" className={styles.rockcm3} />
-                                </div>
-                                <p>Radxa ROCK CM3 IO Board</p>
-                            </li>
-                            <li>
-                                <div>
-                                    <img src="/mars-cm/orangepi-ioboard.webp" className={styles.orangepi} />
-                                </div>
-                                <p>Orange Pi CM4 IO Board</p>
-                            </li>
-                            <li>
-                                <div>
-                                    <img src="/mars-cm/raspberrypi-ioboard.webp" className={styles.raspberrypi} />
-                                </div>
-                                <p>Raspberry Pi CM4 IO Board</p>
-                            </li>
-                        </ul>
+                        <div className={styles.detail_info4}>
+                            <h2>Compatible with Classic IO Board</h2>
+                            <p><span>●</span>CM4 IO Board</p>
+                            <img src="/mars-cm/cm4ioboard.webp" />
+                        </div>
                     </div>
                     <div className={styles.tabBox_tech}>
                         <h1 className={styles.title}><Translate id='line.title.TechSpecs' /></h1>
@@ -219,7 +203,7 @@ export default () => {
                                     <td>1x USB 2.0</td>
                                 </tr>
                                 <tr>
-                                    <td>2x PCIe 1-lane Host, Gen 2 (5Gbps)</td>
+                                    <td>1x PCIe 1-lane Host, Gen 2 (5Gbps)</td>
                                 </tr>
                                 <tr>
                                     <td>Up to 28x GPIO, supporting 3.3V</td>
@@ -254,7 +238,6 @@ export default () => {
                             </tbody>
                         </table>
                     </div>
-
                     <ContactUs product='mars' />
                     <ContactBar product='mars' />
                     <Embrace product='mars' />
