@@ -159,33 +159,32 @@ function Center() {
           <div className={cCss.tech_text2}>
             <h1 className={cCss.tech_title}><Translate id='duo.info.text.Hardware' /></h1>
             <h2>Pioneer Board</h2>
-            <p className={cCss.tech_p_line}>- SOPHGO SG2042 Chip</p>
+            <p className={cCss.tech_p_line}>- SOPHGO SG2042 Chip (64-core C920, RVV 0.71)</p>
             <p className={cCss.tech_p_line}>- 64 Core RISC-V CPU up to 2GHz</p>
-          </div>
-          <div className={cCss.tech_text3}>
-            <h1 className={cCss.tech_title}>Interface</h1>
-            <h2>Pioneer Board</h2>
             <p className={cCss.tech_p_line}>- 4x DDR4 DIMM slots up to 128GB ram support</p>
-            <p className={cCss.tech_p_line}>- 3x PCIe x16 Slot(PCIe 3.0 x8)</p>
+            <p className={cCss.tech_p_line}>- 1x PCIe x16 Slot (PCIe 4.0 x16)</p>
+            <p className={cCss.tech_p_line}>- 1x PCIe x16 Slot (PCIe 4.0 x8)</p>
             <p className={cCss.tech_p_line}>- 5x SATA</p>
             <p className={cCss.tech_p_line}>- 8x USB3</p>
-            <p className={cCss.tech_p_line}>- 2x M.2 M KEY(PCIe 3.0 x4)</p>
-            <p className={cCss.tech_p_line}>- 1x M.2 E KEY(PCIe 3.0 x1 + USB 2.0)</p>
+            <p className={cCss.tech_p_line}>- 2x M.2 M KEY (PCIe 3.0 x4)</p>
+            <p className={cCss.tech_p_line}>- 1x M.2 E KEY (PCIe 3.0 x1 + USB 2.0)</p>
             <p className={cCss.tech_p_line}>- 2x RJ45 2.5G</p>
-            <p className={cCss.tech_p_line}>- 1x USB Header for front panel(2x USB 3.0)</p>
+            <p className={cCss.tech_p_line}>- 1x USB Header for front panel (2x USB 3.0)</p>
             <p className={cCss.tech_p_line}>- 1x misc header for front panel power, reset, LED etc</p>
-            <p className={cCss.tech_p_line}>- 2x JTAG debug port</p>
+            <p className={cCss.tech_p_line}>- 1x eMMC module connector</p>
             <p className={cCss.tech_p_line}>- 1x micro USB debug console</p>
             <p className={cCss.tech_p_line}>- 1x micro SD card for recovery or OS loading</p>
             <p className={cCss.tech_p_line}>- 1x SPI flash for BIOS</p>
+            <p className={cCss.tech_p_line}>- 1x standard 24-pin ATX power connector</p>
           </div>
+
           <div className={cCss.tech_text4}>
             <h2>Pioneer Box</h2>
             <p className={cCss.box_tit}>Pioneer Box is a complete ready-to-use RISC-V PC with the following:</p>
             <p className={cCss.tech_p_line}>- 1x Pioneer Board</p>
-            <p className={cCss.tech_p_line}>- 32GB / 128GB 3200 DDR4</p>
+            <p className={cCss.tech_p_line}>- 128GB 3200 DDR4</p>
             <p className={cCss.tech_p_line}>- 1x 1TB PCIe 3.0 SSD</p>
-            <p className={cCss.tech_p_line}>- 1x Intel X520-DA2 Network Card with 2x 10Gbps SFP ports</p>
+            <p className={cCss.tech_p_line}>- 1x Intel X540-T2 Network Card with 2x 10Gbps RJ45 ports</p>
             <p className={cCss.tech_p_line}>- 1x AMD R5 230 Graphic Card with HDMI, VGA and DVI</p>
             <p className={cCss.tech_p_line}>- 1x MSI A350 350W Power Apply</p>
             <p className={cCss.tech_p_line}>- 1x Cooler with PWM Fan up to 2300 RPM supporting up to 160W D-TDP</p>

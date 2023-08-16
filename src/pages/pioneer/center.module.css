@@ -724,8 +724,6 @@
 
     .tech_text2 {
         width: 100%;
-        height: 238px;
-
         color: #fff;
     }
 
@@ -736,7 +734,6 @@
 
     .tech_text3 {
         width: 100%;
-        height: 718px;
         color: #fff;
     }
 
@@ -1484,10 +1481,8 @@
 
     .tech_text3 {
         width: 100%;
-        height: 718px;
         color: #fff;
     }
-
 
     .tech_text4 {
         width: 100%;
@@ -1526,8 +1521,6 @@
         background: url(/static/pages/FrameBig.png) no-repeat;
         background-size: 100%;
     }
-
-
 
     .document>h1 {
         color: #fff;
@@ -1769,7 +1762,6 @@
         background-size: cover;
     }
 
-
     .pionBox_2>ul {
         display: flex;
         flex-direction: column;
@@ -1821,7 +1813,6 @@
         order: 0;
         flex-grow: 0;
     }
-
 
     .pionBox_3>ul {
         display: flex;
@@ -1896,8 +1887,6 @@
         background-clip: text;
     }
 
-
-
     .show1 {
         position: absolute;
         width: 278px;
@@ -1928,7 +1917,6 @@
         filter: blur(70px);
         transform: rotate(105deg);
     }
-
 
     .title3 {
         font-size: 37px;
@@ -1961,8 +1949,6 @@
         padding-left: 0;
     }
 
-
-
     .list1>li {
         width: 170px;
         border: 1px solid #05EAFF;
@@ -1985,8 +1971,6 @@
         background: url(/static/pages/centerImg/fedoralogo.svg) no-repeat;
         background-size: 100%;
     }
-
-
 
     .div_on2 {
         background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
@@ -2223,7 +2207,6 @@
 
     .tech_text3 {
         width: 100%;
-        height: 580px;
         color: #fff;
     }
 
