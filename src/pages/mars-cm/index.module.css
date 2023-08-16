@@ -412,14 +412,7 @@
 
     .headword {
         margin: 80px auto;
-        font-weight: 500;
-        font-size: 48px;
-        color: #FFFFFF;
-    }
-
-    .headword {
-        margin: 80px auto;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 48px;
         color: #FFFFFF;
     }
@@ -719,6 +712,13 @@
         line-height: 120%;
         color: rgba(255, 255, 255, 0.8);
         margin: 0 auto;
+    }
+
+    .headword {
+        margin: 40px auto;
+        font-weight: 600;
+        font-size: 48px;
+        color: #FFFFFF;
     }
 
     .tableBox {
@@ -1029,7 +1029,7 @@
 
     .headword {
         margin: 40px auto;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 38px;
         color: #FFFFFF;
     }
@@ -1342,7 +1342,7 @@
 
     .headword {
         margin: 20px auto;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 28px;
         color: #FFFFFF;
     }
@@ -1657,7 +1657,7 @@
 
     .headword {
         margin: 20rem auto;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 20rem;
         color: #FFFFFF;
         font-weight: 600;
