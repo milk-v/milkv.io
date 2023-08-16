@@ -76,7 +76,7 @@ export default () => {
                         <div className={styles.support_storage}>
                             <h2>Flexible Configuration of Storage Devices</h2>
                             <p><span>●</span>1x Nor Flash for boot (16M)</p>
-                            <p><span>●</span>Storage: 1x SDIO 2.0 (options to 4GB/8GB eMMC)</p>
+                            <p><span>●</span>Storage: 1x SDIO 2.0 (options to eMMC)</p>
                             <div className={styles.tf_emmc}>
                                 <img src="/mars-cm/TF-card.svg" alt="TF Card" className={styles.tfcard} />
                                 <p>or</p>
@@ -94,7 +94,7 @@ export default () => {
                             <h2>PCIe Available</h2>
                             <p><span>●</span>1x PCIe 1-lane Host, Gen 2 (5Gbps)</p>
                             <p><span>●</span>Supports Multiple High-speed peripherals</p>
-                            <div className={styles.pcle_info}>
+                            {/* <div className={styles.pcle_info}>
                                 <p>PCle can be extended to</p>
                                 <div className={styles.info_grid}>
                                     <div>SATA</div>
@@ -104,7 +104,8 @@ export default () => {
                                     <div>RS485</div>
                                     <div>......</div>
                                 </div>
-                            </div>
+                            </div> */}
+                            <img src="/mars-cm/extended.webp" />
                         </div>
                         <div className={styles.memory}>
                             <h2>Memory</h2>
@@ -147,7 +148,7 @@ export default () => {
                     </div>
                     <div className={styles.tabBox_tech}>
                         <h1 className={styles.title}><Translate id='line.title.TechSpecs' /></h1>
-                        <p className={styles.moreP}>The Mars Compute Module is a System on Module (SoM) based on a the StarFive JH7110 System on Chip (SoC). The Mars CM integrates the Central Process Unit (CPU), Power Man agement Unit (PMU), DRAM memory, flash storage and wireless connectivity (WiFi 5 and BT 5.2) in a small form factor of just 55mm x 40mm. The Mars Compute Module offers a cost-efficient solution out of the box for many different applications.</p>
+                        <p className={styles.moreP}>The Mars Compute Module is a System on Module (SoM) based on a the StarFive JH7110 System on Chip (SoC). The Mars CM integrates the Central Process Unit (CPU), Power Management Unit (PMU), DRAM memory, flash storage and wireless connectivity (WiFi 5 and BT 5.2) in a small form factor of just 55mm x 40mm. The Mars Compute Module offers a cost-efficient solution out of the box for many different applications.</p>
                         <h2 className={styles.headword}><Translate id='duo.info.text.Hardware' /></h2>
                         <table className={styles.tableBox}>
                             <tbody>
@@ -161,7 +162,7 @@ export default () => {
                                 </tr>
                                 <tr>
                                     <td rowSpan="2" >Storage</td>
-                                    <td>1x SDIO 2.0 (options to 4GB / 8GB eMMC)</td>
+                                    <td>1x SDIO 2.0 (options to eMMC)</td>
                                 </tr>
                                 <tr>
                                     <td>1x Nor Flash for boot (16M)</td>
@@ -183,7 +184,7 @@ export default () => {
                                 </tr>
                                 <tr>
                                     <td>Wireless</td>
-                                    <td>Support WIFI 5/BT5.2</td>
+                                    <td>Support WIFI 5 / BT5.2</td>
                                 </tr>
                                 <tr>
                                     <td rowSpan="4">Multimedia</td>
