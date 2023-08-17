@@ -206,7 +206,7 @@ export default () => {
                     </div>
                     <ContactUs product='mars' />
                     <ContactBar product='mars' />
-                    <Embrace product='mars' />
+                    <Embrace product='vega' />
                 </div>
                 <Footer></Footer>
             </Layout>

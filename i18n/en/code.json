@@ -653,6 +653,10 @@
     "message": "Embrace the new era with Meles,",
     "description": "Duo embrace"
   },
+  "vega.embrace1": {
+    "message": "Embrace the new era with Vega,",
+    "description": "Duo embrace"
+  },
   "duo.embrace2": {
     "message": "Let's make RISC-V better together.",
     "description": "Duo embrace"

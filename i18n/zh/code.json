@@ -653,6 +653,10 @@
     "message": "与 “Meles” 一起拥抱新时代，",
     "description": "Duo embrace"
   },
+  "vega.embrace1": {
+    "message": "与 “Vega” 一起拥抱新时代，",
+    "description": "vega embrace"
+  },
   "duo.embrace2": {
     "message": "让我们一起使RISC-V变得更好。",
     "description": "Duo embrace"
