@@ -12,14 +12,13 @@ export default (props) => {
 
     return (
         <>
-            {/* <Translate id='contact.text.matrix' /> */}
             <div className={styles.on5_box}>
                 <ul>
                     <li className={styles.li}>
                         <h1 className={styles.on5_box_h1}>[matrix]</h1>
                         <p className={styles.on5_box_p}>Join the {product.charAt(0).toUpperCase() + product.slice(1)} Matrix Chat channel to share your ideas with the developers all around the world.</p>
                         <div className={styles.on5_bottom}>
-                            <Link to={product != 'mars' ? link_url : 'https://matrix.to/#/#milk-v:matrix.org'} style={{ textDecoration: 'none', color: '#fff' }}><Translate id='contact.text.join' />{product}</Link>
+                            <Link to={link_url} style={{ textDecoration: 'none', color: '#fff' }}><Translate id='contact.text.join' />{product}</Link>
                         </div>
                     </li>
                     <li className={styles.li}>
