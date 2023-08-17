@@ -241,7 +241,7 @@
     }
 
     .footer_navbar {
-        justify-content: space-between;
+        justify-content: flex-start;
         width: 340rem;
         padding-bottom: 10rem;
         border-bottom: 1rem solid #2D88C9;
@@ -249,6 +249,7 @@
 
     .footer_navbar>a {
         font-size: 14rem;
+        margin-right: 12rem;
     }
 
     .footer_right {
