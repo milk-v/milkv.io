@@ -204,8 +204,8 @@ export default () => {
                             </tbody>
                         </table>
                     </div>
-                    <ContactUs product='mars' />
-                    <ContactBar product='mars' />
+                    <ContactUs product='vege' />
+                    <ContactBar product='vege' />
                     <Embrace product='vega' />
                 </div>
                 <Footer></Footer>

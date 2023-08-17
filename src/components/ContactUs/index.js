@@ -34,7 +34,8 @@ export default (props) => {
             'duo': 'https://submit-form.com/mxM7Oj62',
             'pioneer': 'https://submit-form.com/LajdNi4B',
             'mars': 'https://submit-form.com/8WXCfzfP',
-            'meles': 'https://submit-form.com/pWzoLWYI'
+            'meles': 'https://submit-form.com/pWzoLWYI',
+            'vege': 'https://submit-form.com/CAMdDUGu',
         };
 
         const url = productsUrls[product] || null;
@@ -63,10 +64,7 @@ export default (props) => {
                         <h3><Translate id='contact.title.Development' /></h3>
                         <a className={styles.fromA} href="mailto:dev@milkv.io">dev@milkv.io</a>
                         <h3><Translate id='contact.title.support' /></h3>
-                        {
-                            product === 'duo' ? <a className={styles.fromA} href="mailto:duo@milkv.io">duo@milkv.io</a> : product === 'pioneer' ? <a className={styles.fromA} href="mailto:pioneer@milkv.io">pioneer@milkv.io</a> : product === 'mars' ? <a className={styles.fromA} href="mailto:mars@milkv.io">mars@milkv.io</a> : product === 'meles' ? <a className={styles.fromA} href="mailto:meles@milkv.io">meles@milkv.io</a> : null
-                        }
-
+                        <a className={styles.fromA} href={`mailto:${product}@milkv.io`} >{`${product}@milkv.io`}</a>
                     </div>
                     <div className={styles.touchBox}>
                         <h1><Translate id='contact.title.sendMessage' /></h1>
