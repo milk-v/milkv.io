@@ -363,9 +363,7 @@
     line-height: 120%;
 }
 
-.tabBox_tech {
-    margin: 0 auto;
-}
+
 
 .title {
     text-align: left;
@@ -495,6 +493,15 @@
     .video_text_info>p,
     .left_cpu>p {
         font-size: 16px;
+    }
+
+    .detail>div>p>span,
+    .PCIe>p>span,
+    .storage_4k_view>div>p>span,
+    .support_audio>p>span,
+    .video_text_info>p>span,
+    .left_cpu>p>span {
+        font-size: 14px;
     }
 
     .block_diagram {
@@ -806,6 +813,7 @@
     .support_audio>p>span,
     .video_text_info>p>span,
     .left_cpu>p>span {
+        font-size: 12px;
         margin-right: 5px;
     }
 

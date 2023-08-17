@@ -487,9 +487,6 @@
 
 table td {
     line-height: 120%;
-
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 @media screen and (min-width: 1950px) {

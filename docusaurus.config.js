@@ -121,6 +121,10 @@ const config = {
                 label: 'Meles',
                 to: '/meles'
               },
+              {
+                label: 'Vega',
+                to: '/vega'
+              },
             ],
           },
           {
