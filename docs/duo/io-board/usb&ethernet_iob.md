@@ -18,5 +18,31 @@ This expansion board can improve the development efficiency of Duo and facilitat
 - 1x Serial port pinout
 - 1x Type-C power input connector
 
+## Instructions for use
+Before using it, please make sure you are using the [latest image](https://milkv.io/docs/duo/resources/image&sdk).
+
+### Use the IO-Board
+Note that when using the IO-Board, the USB network (RNDIS) is not available, Please use the Ethernet interface on the IO-Board
+
+Enable the 4 USB ports on the IO-Board:
+
+~~~
+rm /mnt/system/usb.sh
+ln -s /mnt/system/usb-host.sh /mnt/system/usb.sh
+sync
+~~~
+
+then reboot the board
+
+Restore the USB network (RNDIS) when the IO-Board is not used
+
+~~~
+rm /mnt/system/usb.sh
+ln -s /mnt/system/usb-rndis.sh /mnt/system/usb.sh
+sync
+~~~
+
+then reboot the board
+
 ## Downloads
 - Hardware schematics(coming soon)
