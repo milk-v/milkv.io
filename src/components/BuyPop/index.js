@@ -21,27 +21,33 @@ export default (props) => {
         'home': {
             chinan_url: 'https://app6hodqg6k9861.h5.xiaoeknow.com',
             crowdSupply_url: 'https://www.crowdsupply.com/milkv',
-            arace_url: 'https://arace.tech/collections/milk-v'
+            arace_url: '',
+            // https://arace.tech/collections/milk-v
         },
         'duo': {
             chinan_url: 'https://app6hodqg6k9861.h5.xiaoeknow.com',
-            arace_url: 'https://arace.tech/collections/milk-v-duo'
+            arace_url: '',
+            // https://arace.tech/collections/milk-v-duo
         },
         'pioneer': {
             crowdSupply_url: 'https://www.crowdsupply.com/milkv/milk-v-pioneer',
-            arace_url: 'https://arace.tech/collections/milk-v-pioneer'
+            arace_url: '',
+            // https://arace.tech/collections/milk-v-pioneer
         },
         'mars': {
             chinan_url: 'https://ewmmz.xet.tech/s/1As0hQ',
-            arace_url: 'https://arace.tech/products/milk-v-mars'
+            arace_url: '',
+            // https://arace.tech/products/milk-v-mars
         },
         'mars-cm': {
-            chinan_url: '',
-            arace_url: 'https://arace.tech/products/milk-v-mars-cm',
+            chinan_url: 'https://ewmmz.xet.tech/s/4qfvPb',
+            arace_url: '',
+            // https://arace.tech/products/milk-v-mars-cm
         },
         'meles': {
             chinan_url: '',
-            arace_url: 'https://arace.tech/products/milk-v-meles',
+            arace_url: '',
+            // https://arace.tech/products/milk-v-meles
         },
         'vega': {
             chinan_url: '',
