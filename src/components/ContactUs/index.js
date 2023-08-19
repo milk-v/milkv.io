@@ -35,7 +35,7 @@ export default (props) => {
             'pioneer': 'https://submit-form.com/LajdNi4B',
             'mars': 'https://submit-form.com/8WXCfzfP',
             'meles': 'https://submit-form.com/pWzoLWYI',
-            'vege': 'https://submit-form.com/CAMdDUGu',
+            'vega': 'https://submit-form.com/CAMdDUGu',
         };
 
         const url = productsUrls[product] || null;

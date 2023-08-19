@@ -33,7 +33,7 @@ export default () => {
                                 <Link to='/mars'><Translate id='mars' /></Link>
                                 <Link to='/mars-cm'>Mars CM</Link>
                                 <Link to='/meles'>Meles</Link>
-                                <Link to='/vega'>Vage</Link>
+                                <Link to='/vega'>Vega</Link>
                                 <Link to='https://community.milkv.io/'><Translate id='footer.text.community' /></Link>
                                 <Link to='/docs/home'><Translate id='footer.text.docs' /></Link>
                             </div>

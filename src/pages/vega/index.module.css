@@ -83,11 +83,14 @@
     z-index: 10;
 }
 
+.flowchart,
+.chip,
 .specification_item {
     background-color: #000;
     position: relative;
 }
 
+.chip h2,
 .specification_item h2 {
     font-style: normal;
     font-weight: 700;
@@ -95,6 +98,7 @@
     opacity: 1;
 }
 
+.chip p,
 .specification_item p {
     color: rgba(255, 255, 255, 0.85);
     font-style: normal;
@@ -107,11 +111,14 @@
     margin-bottom: 5px;
 }
 
+.chip p>span,
 .specification_item p>span {
     opacity: .8;
     margin-right: 4px;
 }
 
+.flowchart h2,
+.chip h2,
 .specification h2 {
     background: var(--vega, linear-gradient(270deg, #4094FB 0%, #39D3FC 100%));
     -webkit-background-clip: text;
@@ -199,6 +206,25 @@
     width: 38%;
 }
 
+.chipImage {
+    position: absolute;
+    z-index: 5;
+}
+
+.chip>p {
+    position: relative;
+    z-index: 10;
+}
+
+.flowchart {
+    width: 1440px;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
 @media screen and (min-width: 1950px) {
     .btnbuy {
         width: 240px;
@@ -222,6 +248,7 @@
         line-height: 120%;
         color: rgba(255, 255, 255, 0.8);
         margin: 0 auto;
+        margin-top: 20px;
     }
 
     .headword {
@@ -245,11 +272,13 @@
         padding-left: 60px;
     }
 
+    .chip h2,
     .specification_item h2 {
         font-size: 36px;
         margin-bottom: 20px;
     }
 
+    .chip h2,
     .specification h2 {
         min-height: 90px;
     }
@@ -258,10 +287,12 @@
         min-height: 120px;
     }
 
+    .chip p,
     .specification_item p {
         font-size: 16px;
     }
 
+    .chip p>span,
     .specification_item p>span {
         font-size: 14px;
     }
@@ -279,10 +310,11 @@
     .specification {
         width: 1440px;
         height: 686px;
-        margin: 50px auto 0;
+        margin: 0px auto 0;
         gap: 16px;
     }
 
+    .chip,
     .specification_item {
         padding: 30px;
     }
@@ -325,6 +357,49 @@
     .application_box>li>p {
         font-size: 20px;
     }
+
+    .chipImage {
+        position: absolute;
+        right: 30px;
+        top: 0;
+        height: 100%;
+        width: 384px;
+    }
+
+    .chip {
+        width: 1440px;
+        height: 273px;
+        margin: 0 auto 16px;
+        background-color: #000;
+    }
+
+    .development_icons {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        width: 350px;
+        height: 50px;
+    }
+
+    .flowchart {
+        width: 1440px;
+        margin: 0 auto 16px;
+        padding: 30px;
+    }
+
+    .flowchart h2 {
+        font-size: 28px;
+    }
+
+    .flowchart_fsl>img {
+        width: 686px;
+        height: 420px;
+    }
+
+    .flowchart_uCore>img {
+        width: 620px;
+        height: 420px;
+    }
 }
 
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
@@ -344,15 +419,18 @@
         width: calc(1440px*.9);
     }
 
+    .chip h2,
     .specification_item h2 {
         font-size: calc(36px*.9);
         margin-bottom: 18px;
     }
 
+    .chip p,
     .specification_item p {
         font-size: 14px;
     }
 
+    .chip p>span,
     .specification_item p>span {
         font-size: 12px;
     }
@@ -362,6 +440,7 @@
         line-height: 120%;
         color: rgba(255, 255, 255, 0.8);
         margin: 0 auto;
+        margin-top: 20px;
     }
 
     .headword {
@@ -397,10 +476,11 @@
     .specification {
         width: calc(1440px*.9);
         height: calc(686px*.9);
-        margin: 50px auto 0;
+        margin: 0px auto 0;
         gap: 16px;
     }
 
+    .chip,
     .specification_item {
         padding: calc(30px*.9);
     }
@@ -444,12 +524,56 @@
         font-size: 20px;
     }
 
+    .chip h2,
     .specification h2 {
         min-height: 90px;
     }
 
     .specification_text h2 {
         min-height: 100px;
+    }
+
+    .chipImage {
+        position: absolute;
+        right: 27px;
+        top: 0;
+        height: 100%;
+        width: calc(384px*.9);
+    }
+
+    .chip {
+        width: calc(1440px*.9);
+        height: calc(273px*.9);
+        margin: 0 auto 16px;
+        background-color: #000;
+    }
+
+    .development_icons {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        width: calc(350px*.9);
+        height: calc(50px*.9);
+    }
+
+    .flowchart {
+        width: calc(1440px*.9);
+        margin: 0 auto 16px;
+        padding: 30px;
+    }
+
+    .flowchart h2 {
+        font-size: 24px;
+    }
+
+    .flowchart_fsl>img {
+        width: calc(686px*.9);
+        height: calc(420px*.9);
+    }
+
+    .flowchart_uCore>img {
+        width: calc(620px*.9);
+        height: calc(420px*.9);
     }
 }
 
@@ -470,15 +594,18 @@
         width: calc(1440px*.9*.7);
     }
 
+    .chip h2,
     .specification_item h2 {
         font-size: calc(36px*.9*.7);
         margin-bottom: 5px;
     }
 
+    .chip p,
     .specification_item p {
         font-size: 14px;
     }
 
+    .chip p>span,
     .specification_item p>span {
         font-size: 12px;
     }
@@ -488,6 +615,7 @@
         line-height: 120%;
         color: rgba(255, 255, 255, 0.8);
         margin: 0 auto;
+        margin-top: 20px;
     }
 
     .headword {
@@ -523,28 +651,29 @@
 
     .specification {
         width: calc(1440px*.9*.7);
-        margin: 40px auto 0;
+        margin: 0px auto 0;
         gap: 10px;
     }
 
+    .chip,
     .specification_item {
         padding: calc(30px*.9*.7);
     }
 
     .side_view {
-        width: calc(430px*.9);
-        height: calc(230px*.9);
+        width: calc(430px*.6);
+        height: calc(230px*.6);
     }
 
     .rear_view {
-        width: calc(395px*.9);
-        height: calc(70px*.9);
+        width: calc(395px*.6);
+        height: calc(70px*.6);
         bottom: 20px;
     }
 
     .source_icon {
-        width: calc(180px*.9);
-        height: calc(175px*.9);
+        width: calc(180px*.6);
+        height: calc(175px*.6);
         right: 40px;
         bottom: 20px;
     }
@@ -570,12 +699,56 @@
         font-size: 14px;
     }
 
+    .chip h2,
     .specification h2 {
         min-height: 80px;
     }
 
     .specification_text h2 {
         min-height: 80px;
+    }
+
+    .chipImage {
+        position: absolute;
+        right: 27px;
+        top: 0;
+        height: 100%;
+        width: calc(384px*.9*.7);
+    }
+
+    .chip {
+        width: calc(1440px*.9*.7);
+        height: calc(273px*.9*.7);
+        margin: 0 auto 10px;
+        background-color: #000;
+    }
+
+    .development_icons {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width: calc(350px*.9*.7);
+        height: calc(50px*.9*.7);
+    }
+
+    .flowchart {
+        width: calc(1440px*.9*.7);
+        margin: 0 auto 10px;
+        padding: 15px;
+    }
+
+    .flowchart h2 {
+        font-size: 20px;
+    }
+
+    .flowchart_fsl>img {
+        width: calc(686px*.9*.7);
+        height: calc(420px*.9*.7);
+    }
+
+    .flowchart_uCore>img {
+        width: calc(620px*.9*.7);
+        height: calc(420px*.9*.7);
     }
 }
 
@@ -596,15 +769,18 @@
         width: calc(1440px*.9*.7*.8);
     }
 
+    .chip h2,
     .specification_item h2 {
         font-size: calc(36px*.9*.7*.8);
         margin-bottom: 5px;
     }
 
+    .chip p,
     .specification_item p {
         font-size: 12px;
     }
 
+    .chip p>span,
     .specification_item p>span {
         font-size: 12px;
         transform: scale(.8);
@@ -615,6 +791,7 @@
         line-height: 120%;
         color: rgba(255, 255, 255, 0.8);
         margin: 0 auto;
+        margin-top: 10px;
     }
 
     .headword {
@@ -649,28 +826,29 @@
 
     .specification {
         width: calc(1440px*.9*.7*.8);
-        margin: 40px auto 0;
+        margin: 0px auto 0;
         gap: 10px;
     }
 
+    .chip,
     .specification_item {
         padding: calc(30px*.9*.7*.8);
     }
 
     .side_view {
-        width: calc(430px*.9*.9);
-        height: calc(230px*.9*.9);
+        width: calc(430px*.9*.5);
+        height: calc(230px*.9*.5);
     }
 
     .rear_view {
-        width: calc(395px*.9*.9);
-        height: calc(70px*.9*.9);
+        width: calc(395px*.9*.5);
+        height: calc(70px*.9*.5);
         bottom: 20px;
     }
 
     .source_icon {
-        width: calc(180px*.9*.9);
-        height: calc(175px*.9*.9);
+        width: calc(180px*.9*.5);
+        height: calc(175px*.9*.5);
         right: 40px;
         bottom: 20px;
     }
@@ -696,12 +874,56 @@
         font-size: 12px;
     }
 
+    .chip h2,
     .specification h2 {
         min-height: 60px;
     }
 
     .specification_text h2 {
         min-height: 60px;
+    }
+
+    .chipImage {
+        position: absolute;
+        right: 27px;
+        top: 0;
+        height: 100%;
+        width: calc(384px*.9*.7*.8);
+    }
+
+    .chip {
+        width: calc(1440px*.9*.7*.8);
+        height: calc(273px*.9*.7*.8);
+        margin: 0 auto 10px;
+        background-color: #000;
+    }
+
+    .development_icons {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        width: calc(350px*.9*.7*.8);
+        height: calc(50px*.9*.7*.8);
+    }
+
+    .flowchart {
+        width: calc(1440px*.9*.7*.8);
+        margin: 0 auto 10px;
+        padding: 15px;
+    }
+
+    .flowchart h2 {
+        font-size: 16px;
+    }
+
+    .flowchart_fsl>img {
+        width: calc(686px*.9*.7*.8);
+        height: calc(420px*.9*.7*.8);
+    }
+
+    .flowchart_uCore>img {
+        width: calc(620px*.9*.7*.8);
+        height: calc(420px*.9*.7*.8);
     }
 }
 
@@ -728,6 +950,7 @@
         line-height: 120%;
         color: rgba(255, 255, 255, 0.8);
         margin: 0 auto;
+        margin-top: 15rem;
     }
 
     .headword {
@@ -756,15 +979,18 @@
         width: 330rem;
     }
 
+    .chip h2,
     .specification_item h2 {
         font-size: 18rem;
         margin-bottom: 5rem;
     }
 
+    .chip p,
     .specification_item p {
         font-size: 12rem;
     }
 
+    .chip p>span,
     .specification_item p>span {
         font-size: 10rem;
     }
@@ -772,6 +998,12 @@
     /* start */
     .title_content>h1 {
         font-size: calc(87rem*.4);
+    }
+
+    .chip {
+        width: 350rem;
+        margin: 0 auto;
+        padding: 10rem;
     }
 
     .title_content>p {
@@ -851,5 +1083,25 @@
     .application_box>li {
         width: 49%;
         margin-bottom: 10rem;
+    }
+
+    .chip {
+        height: 300rem;
+    }
+
+    .chipImage {
+        position: static !important;
+        width: calc(384rem*.6);
+        height: calc(273rem*.6);
+        display: block;
+        margin: 0 auto;
+    }
+
+    .development_icons {
+        position: static !important;
+        display: block;
+        margin: 50rem auto 0;
+        width: calc(350rem*.9);
+        height: calc(50rem*.9);
     }
 }

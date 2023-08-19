@@ -32,16 +32,25 @@ export default () => {
                     </div>
                 </div>
                 <div className={styles.black}>
-                    <div className={styles.specification}>
-                        <div className={styles.specification_item}>
-                            <div className={styles.size_text}>
-                                <h2>RISC-V Network Chip <br></br> - FSL91030M</h2>
-                                <p><span>●</span>Operating at 500MHz, the UX608 with TEE supports dual modes of Linux or UCOS.</p>
-                                <p><span>●</span>It integrates 8 channels of Gigabit Ethernet PHY, along with 2 channels of 10 Gigabit SerDes and 4 channels of 1 Gigabit SerDes interfaces.</p>
-                                <p><span>●</span>Flexible business port selection is supported, catering to various application scenarios.</p>
-                            </div>
-                            <img src="/vega/FSL91030M.webp" className={styles.microchip} />
+                    <div className={styles.chip}>
+                        <h2>RISC-V Network Chip<br></br>
+                            -FSL1030M</h2>
+                        <p><span>●</span>Operating at 500MHz, the UX608 with TEE supports dual modes of Linux or UCOS.</p>
+                        <p><span>●</span>It integrates 8 channels of Gigabit Ethernet PHY, along with 2 channels of 10 Gigabit SerDes and 4 channels of 1 Gigabit SerDes interfaces.</p>
+                        <p><span>●</span>Flexible business port selection is supported, catering to various application scenarios.</p>
+                        <img src="/vega/FSL91030M.webp" className={styles.chipImage} />
+                    </div>
+                    <div className={styles.flowchart}>
+                        <div className={styles.flowchart_fsl}>
+                            <h2>FSL1030M</h2>
+                            <img src="/vega/FSL1030M-info.webp" />
                         </div>
+                        <div className={styles.flowchart_uCore}>
+                            <h2>UX608 uCore</h2>
+                            <img src="/vega/UX608-info.webp" />
+                        </div>
+                    </div>
+                    <div className={styles.specification}>
                         <div className={styles.specification_item}>
                             <div className={styles.size_text}>
                                 <h2>Compact in size</h2>
@@ -49,6 +58,14 @@ export default () => {
                                 <p><span>●</span>Two units can be installed on each layer</p>
                             </div>
                             <img src="/vega/vega-side-view.webp" className={styles.side_view} />
+                        </div>
+                        <div className={styles.specification_item}>
+                            <div className={styles.size_text}>
+                                <h2>Development-friendly interface</h2>
+                                <p><span>●</span>Provides JTAG interface to facilitate underlying development</p>
+                                <p><span>●</span>Provides RS232 and I2C interfaces for easy access to other sensors</p>
+                            </div>
+                            <img src="/vega/Development-icons.webp" className={styles.development_icons} />
                         </div>
                         <div className={styles.specification_item}>
                             <div className={styles.size_text}>
@@ -62,7 +79,9 @@ export default () => {
                         <div className={styles.specification_item}>
                             <div className={styles.size_text}>
                                 <h2>Designed for Open Source</h2>
-                                <p><span>●</span>Open source SDK, provide comprehensive DIY support for developers and enthusiasts.</p>
+                                <p><span>●</span>Based on open source Linux, convenient for secondary development and DIY.</p>
+                                <p><span>●</span>Open openSBI, u-boot, Linux kernel source code, provide cross-compile toolchain.</p>
+                                <p><span>●</span>Provide interface SDKs and APIs to flexibly realize business configurations.</p>
                             </div>
                             <img src="/vega/source-icon.webp" className={styles.source_icon} />
                         </div>
@@ -72,7 +91,7 @@ export default () => {
                             <h2>Network Redundancy and Protection</h2>
                             <p><span>●</span>Spanning Tree Protocol (STP), Rapid</p>
                             <p><span>●</span>Spanning Tree Protocol (RSTP)</p>
-                            <p><span>●</span>1+1/1:1 Port Protection, Link Aggregation</p>
+                            <p><span>●</span>1+1 / 1:1 Port Protection, Link Aggregation</p>
                         </div>
                         <div className={styles.specification_item}>
                             <h2>Security and Filtering</h2>
@@ -82,7 +101,7 @@ export default () => {
                         <div className={styles.specification_item}>
                             <h2>Service Quality Enhancement</h2>
                             <p><span>●</span>Defense against DoS attacks, protocol packet filtering</p>
-                            <p><span>●</span>Blacklist/whitelist, IEEE802.1x</p>
+                            <p><span>●</span>Blacklist / whitelist, IEEE802.1x</p>
                         </div>
                         <div className={styles.specification_item}>
                             <h2>Advanced Feature Support</h2>
@@ -92,7 +111,7 @@ export default () => {
                         </div>
                         <div className={styles.specification_item}>
                             <h2>Flexible Queue Scheduling</h2>
-                            <p><span>●</span>8 queues per port, multiple scheduling methods (SP/WRR/DWRR)</p>
+                            <p><span>●</span>8 queues per port, multiple scheduling methods (SP / WRR / DWRR)</p>
                             <p><span>●</span>Hybrid scheduling for optimized performance</p>
                         </div>
                         <div className={styles.specification_item}>
@@ -106,6 +125,11 @@ export default () => {
                             <p><span>●</span>Mirroring and remote configuration</p>
                             <p><span>●</span>Periodic hardware-based OAM message transmission</p>
                             <p><span>●</span>Synchronous Ethernet (SyncE), 1588 functionality</p>
+                        </div>
+                        <div className={styles.specification_item}>
+                            <h2>Easy to Use</h2>
+                            <p><span>●</span>Supports remote configuration, provides WEB and SSH access</p>
+                            <p><span>●</span>Provides command line service configuration for VLAN configuration, port mirroring, MAC address learning, traffic control, etc.</p>
                         </div>
                     </div>
                     <div className={styles.application}>
@@ -148,6 +172,8 @@ export default () => {
                     <div className={styles.tabBox_tech}>
                         <h1 className={styles.title}><Translate id='line.title.TechSpecs' /></h1>
                         <p className={styles.moreP}>Milk-V Vega is a compact and low-density box-style open-source 10 Gigabit network switch developed by Milk-V for the next generation of network architecture. It serves as a unified platform for various services such as broadband, voice, video, and surveillance. Equipped with domestically produced RISC-V high-reliability network switch chips from China, it simplifies network infrastructure, reduces energy and operational costs, and finds applications in data centers, industrial parks, medium to large enterprise networks, hotels, and educational institutions.</p>
+                        <p className={styles.moreP}>Milk-V Vega is a compact and low-density box-style open-source 10 Gigabit network switch developed by Milk-V for the next generation of network architecture. It serves as a unified platform for various services such as broadband, voice, video, and surveillance. Equipped with domestically produced RISC-V high-reliability network switch chips from China, it simplifies network infrastructure, reduces energy and operational costs, and finds applications in data centers, industrial parks, medium to large enterprise networks, hotels, and educational institutions.
+                        </p>
                         <h2 className={styles.headword}><Translate id='duo.info.text.Hardware' /></h2>
                         <table className={styles.tableBox}>
                             <tbody>
@@ -204,8 +230,8 @@ export default () => {
                             </tbody>
                         </table>
                     </div>
-                    <ContactUs product='vege' />
-                    <ContactBar product='vege' />
+                    <ContactUs product='vega' />
+                    <ContactBar product='vega' />
                     <Embrace product='vega' />
                 </div>
                 <Footer></Footer>
