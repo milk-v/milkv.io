@@ -35,7 +35,7 @@ You can also use Ubuntu installed in a virtual machine, Ubuntu installed via WSL
   cd hello-world
   make
   ```
-  After the compilation is successful, send the generated helloworld executable program to the Duo device through the network port or the RNDIS network. For example, the RNDIS method supported by the default firmware, Duo’s IP is 192.168.42.1, the user name is `root`, and the password is `milkv`
+  After the compilation is successful, send the generated `helloworld` executable program to the Duo device through the network port or the RNDIS network. For example, the RNDIS method supported by the [default firmware](https://github.com/milkv-duo/duo-buildroot-sdk/releases), Duo’s IP is 192.168.42.1, the user name is `root`, and the password is `milkv`
   ```
   scp helloworld root@192.168.42.1:/root/
   ```
@@ -65,11 +65,11 @@ Note:
 
 ## Explanation of each example
 
-### hello-world
+### [hello-world](https://github.com/milkv-duo/duo-examples/tree/main/hello-world)
 
 A simple example that doesn't interact with Duo peripherals, only prints the output 'Hello, World!' to verify the development environment.
 
-### blink
+### [blink](https://github.com/milkv-duo/duo-examples/tree/main/blink)
 
 This example demonstrates how to control an LED connected to a GPIO pin. It uses the WiringX library to toggle the GPIO pin's voltage level, resulting in the LED blinking.  
 
@@ -86,7 +86,7 @@ Once you have finished testing the 'blink' program implemented in C, if you want
 mv /mnt/system/blink.sh_backup /mnt/system/blink.sh && sync
 ```
 
-### I2C
+### [I2C](https://github.com/milkv-duo/duo-examples/tree/main/i2c)
 
 #### [bmp280_i2c](https://github.com/milkv-duo/duo-examples/tree/main/i2c/bmp280_i2c)
 

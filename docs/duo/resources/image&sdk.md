@@ -4,12 +4,7 @@ sidebar_position: 40
 ---
 # Official Image and SDK
 ## Image
-- **(Latest)** [milkv-duo-20230616-2232.img](https://github.com/milkv-duo/milkv-duo-buildroot-sdk/releases/tag/20230616)  
-    Upload new image and sdk:
-
-    Enable ssh  
-    Enable RNDIS  
-    Blink LED  
+- **(Latest)** [milkv-duo-buildroot-sdk.img](https://github.com/milkv-duo/duo-buildroot-sdk/releases/)  
     Root password: milkv  
     Login via RNDIS using ssh:  
     ~~~
