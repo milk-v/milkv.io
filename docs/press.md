@@ -19,3 +19,6 @@ sidebar_position: 99
 - Liliputing - [Milk-V Mars is a Raspberry Pi-sized PC with a quad-core RISC-V processor](https://liliputing.com/milk-v-mars-is-a-raspberry-pi-sized-pc-with-a-quad-core-risc-v-processor/)
 
 - LinuxGizmos - [Milk-V Mars single board computer features RISC-V StarFive processor](https://linuxgizmos.com/milk-v-mars-single-board-computer-features-risc-v-starfive-processor/)
+
+## Vega
+- The Paradise [The world’s first open source 10 Gigabit RISC-V network switch Milk-V Vega unveiled](https://theparadise.ng/the-worlds-first-open-source-10-gigabit-risc-v-network-switch-milk-v-vega-unveiled/)
