@@ -1049,9 +1049,9 @@
     }
 
     .source_icon {
-        width: calc(180rem*.9*.9);
-        height: calc(175rem*.9*.9);
-        right: 40rem;
+        width: calc(180rem*.9*.5);
+        height: calc(175rem*.9*.5);
+        right: 20rem;
         bottom: 20rem;
     }
 
@@ -1085,10 +1085,6 @@
         margin-bottom: 10rem;
     }
 
-    .chip {
-        height: 300rem;
-    }
-
     .chipImage {
         position: static !important;
         width: calc(384rem*.6);
@@ -1103,5 +1099,25 @@
         margin: 50rem auto 0;
         width: calc(350rem*.9);
         height: calc(50rem*.9);
+    }
+
+
+    .flowchart {
+        width: 350rem;
+        margin: 0 auto;
+        flex-direction: column;
+        padding: 10rem;
+    }
+
+    .flowchart>div {
+        margin-bottom: 10rem;
+    }
+
+    .flowchart h2 {
+        font-size: 18rem;
+    }
+
+    .flowchart img {
+        width: 100%;
     }
 }
