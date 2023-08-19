@@ -142,7 +142,7 @@ Each pin of a USB-to-TTL cable is defined as follows:
 Connect USB to TTL serial cable as shown below. Do not connect the red wire.
 
 
-| Milk-V Dou   | <---> | USB to TTL |
+| Milk-V Duo   | <---> | USB to TTL |
 | ------------ | ----- | ---------- |
 | TX (pin 16)  | <---> | White wire |
 | RX (pin 17)  | <---> | Green wire |
