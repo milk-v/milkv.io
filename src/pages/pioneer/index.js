@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 
 import Head from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
-import PopUp from "../../components/Popup"
 import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
 import Embrace from "../../components/Embrace"
 
 import cCss from "./center.module.css"
 import Translate from '@docusaurus/Translate';
+import MetaData from "../../components/MetaData"
 
 
 function Center() {
@@ -204,8 +203,8 @@ export default function () {
   return (
     <>
       <Layout>
+        <MetaData page='pioneer' />
         <Center></Center>
-        {/* <PopUp></PopUp> */}
         <Footer></Footer>
       </Layout>
     </>

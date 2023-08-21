@@ -3,10 +3,10 @@ import Layout from '@theme/Layout';
 
 import BuyPop from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
-import PopUp from "../../components/Popup"
 import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
 import Embrace from "../../components/Embrace"
+import MetaData from "../../components/MetaData"
 
 import cssList from "./details.module.css"
 import Translate from '@docusaurus/Translate';
@@ -186,8 +186,8 @@ export default function () {
   return (
     <>
       <Layout>
+        <MetaData page='duo' />
         <DetailsPage></DetailsPage>
-        {/* <PopUp></PopUp> */}
         <Footer></Footer>
       </Layout>
     </>

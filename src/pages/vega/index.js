@@ -8,14 +8,11 @@ import ContactUs from "../../components/ContactUs"
 import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
 import Embrace from "../../components/Embrace"
-
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import Head from '@docusaurus/Head';
+import MetaData from "../../components/MetaData"
 
 
 export default () => {
     const [vega, setvega] = useState(false)
-    const currentLanguage = useBaseUrl('/');
 
     const mars2Start = () => {
         setvega(false)
@@ -23,11 +20,7 @@ export default () => {
     return (
         <>
             <Layout>
-                <Head>
-                    <title>milk-V Vega</title>
-                    {/* <meta name="description" content={currentLanguage === '/' ? 'Your Name' : '你的名字'} />
-                    <meta name="keywords" content={currentLanguage === '/' ? 'Your Name' : '你的名字'} /> */}
-                </Head>
+                <MetaData page='vega' />
                 <BuyPop flag={vega} module={mars2Start} type='vega' />
                 <div className={styles.header_title}>
                     <div className={styles.title_content}>

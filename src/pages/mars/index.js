@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
 
 import BuyPop from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
-import PopUp from "../../components/Popup"
 import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
 import Embrace from "../../components/Embrace"
+import MetaData from "../../components/MetaData"
 
 import Translate from '@docusaurus/Translate';
 
@@ -21,7 +20,7 @@ export default () => {
 
     return (
         <Layout>
-            {/* <PopUp></PopUp> */}
+            <MetaData page='mars' />
             <BuyPop flag={mars2} module={mars2Start} type='mars' />
             <div className={styles.marsBox}>
                 <div className={styles.headImage}>
@@ -157,7 +156,6 @@ export default () => {
                             <td>2 Pin 5V slot for FAN</td>
                         </tr>
                     </tbody>
-                    {/* colspan rowspan */}
 
                 </table>
                 <ContactUs product='mars' />

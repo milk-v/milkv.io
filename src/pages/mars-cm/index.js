@@ -9,6 +9,7 @@ import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
 import Translate from '@docusaurus/Translate';
 import Embrace from "../../components/Embrace"
+import MetaData from "../../components/MetaData"
 
 
 export default () => {
@@ -22,6 +23,7 @@ export default () => {
     return (
         <>
             <Layout>
+                <MetaData page='marscm' />
                 <BuyPop flag={marscm} module={mars2Start} type='mars-cm' />
                 <div className={styles.header_page}>
                     <div className={styles.title_content}>
