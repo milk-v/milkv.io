@@ -35,7 +35,6 @@
 
 .title_content>h1 {
     text-align: center;
-    font-family: Inter;
     font-style: normal;
     font-weight: 700;
     line-height: 130%;
@@ -48,7 +47,6 @@
 
 .title_content>p {
     color: #FFF;
-    font-family: Inter;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
@@ -189,7 +187,6 @@
     flex: 1;
     margin: 0;
     color: #FFF;
-    font-family: Inter;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;

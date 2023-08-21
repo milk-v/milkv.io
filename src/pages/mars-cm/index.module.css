@@ -383,6 +383,10 @@
     left: 0;
 }
 
+.tabBox_tech {
+    margin: 0 auto;
+}
+
 @media screen and (min-width: 1950px) {
     .btnbuy {
         width: 240px;
