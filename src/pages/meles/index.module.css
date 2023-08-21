@@ -343,13 +343,11 @@
 
 .gpuTitle>h2 {
     color: #FFF;
-    font-family: Inter;
     font-style: normal;
     font-weight: 400;
 }
 
 .highBoxRight>h1 {
-    font-family: Inter;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
@@ -405,7 +403,6 @@
 
 .sizeBox h1 {
     color: #FFF;
-    font-family: Inter;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
@@ -456,7 +453,6 @@
 .take_ul>li>p {
     text-align: center;
     color: #fff;
-    font-family: Inter;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
@@ -750,14 +746,12 @@ table td {
 
     .gpuTitle>h2 {
         color: #FFF;
-        font-family: Inter;
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
     }
 
     .highBoxRight>h1 {
-        font-family: Inter;
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
