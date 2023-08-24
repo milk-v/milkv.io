@@ -57,9 +57,9 @@ export default (props) => {
 
     const buyElement = Object.keys(buy_info[type]).map((item, index) => {
         const image_data = {
-            'chinan_url': '/pages/china.svg',
-            'crowdSupply_url': '/pages/CrowdSupply_logo.png',
-            'other_url': '/pages/other.svg',
+            'chinan_url': '/components/china.svg',
+            'crowdSupply_url': '/components/CrowdSupply_logo.png',
+            'other_url': '/components/other.svg',
             'arace_url': '/icons/arace.svg',
 
         }
@@ -78,10 +78,10 @@ export default (props) => {
                 <img src={image_data[item]} className={styles.buyIcon} />
                 <div className={styles.textBOx}>
                     <p className={styles.tp}>{text_data[item]}</p>
-                    <img src='/pages/icon_more-right.svg' className={styles.img1} />
-                    <img src='/pages/icon_more-right_white.svg' className={styles.img2} />
+                    <img src='/components/icon_more-right.svg' className={styles.img1} />
+                    <img src='/components/icon_more-right_white.svg' className={styles.img2} />
                     {
-                        buy_info[type][item] ? null : <img src='/pages/COMINGSOON.svg' className={styles.coming} />
+                        buy_info[type][item] ? null : <img src='/components/COMINGSOON.svg' className={styles.coming} />
                     }
                 </div>
             </a>
@@ -92,8 +92,8 @@ export default (props) => {
     return (
         <>
             <div className={styles.tanchuang} style={{ display: `${flag ? 'block' : 'none'}` }} >
-                <img src='/pages/icon-close.svg' onClick={module} className={styles.close} />
-                <img src='/pages/ICON.svg' className={styles.boxLogo} />
+                <img src='/components/icon-close.svg' onClick={module} className={styles.close} />
+                <img src='/components/ICON.svg' className={styles.boxLogo} />
                 {
                     buyElement
                 }

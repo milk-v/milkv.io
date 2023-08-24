@@ -25,7 +25,7 @@ export default () => {
                 <div className={styles.centent}>
                     <div className={styles.footerInfo}>
                         <div className={styles.footer_left}>
-                            <img src="/pages/ICON.svg" className={styles.footer_logo} />
+                            <img src="/components/ICON.svg" className={styles.footer_logo} />
                             <div className={styles.footer_navbar}>
                                 <Link to='/'><Translate id='footer.text.home' /></Link>
                                 <Link to='/duo'><Translate id='duo' /></Link>

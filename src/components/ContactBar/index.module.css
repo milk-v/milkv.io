@@ -33,12 +33,12 @@
 }
 
 .on5_img {
-    background: url(/static/pages/ma.png) no-repeat;
+    background: url(/static/components/ma.png) no-repeat;
     background-size: 100%;
 }
 
 .on5_img_QQ {
-    background: url(/static/pages/QQ.png) no-repeat;
+    background: url(/static/components/QQ.png) no-repeat;
     background-size: 100%;
 }
 
@@ -315,7 +315,7 @@
     .on5_img {
         width: 150rem;
         height: 150rem;
-        background: url(/static/pages/ma.png) no-repeat;
+        background: url(/static/components/ma.png) no-repeat;
         background-size: 100%;
         margin: 30rem auto 0;
     }
@@ -323,7 +323,7 @@
     .on5_img_QQ {
         width: 150rem;
         height: 150rem;
-        background: url(/static/pages/QQ.png) no-repeat;
+        background: url(/static/components/QQ.png) no-repeat;
         background-size: 100%;
         margin: 30rem auto 0;
     }

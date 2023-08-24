@@ -11,7 +11,6 @@
 }
 
 .pages1 {
-    background: url(/static/pages/bg-1.svg) no-repeat;
     background-size: 100%;
 }
 
@@ -947,13 +946,6 @@
         font-size: 38rem;
     }
 
-    .pages1 {
-        background: url(/static/pages/mobile-home-01.webp) no-repeat;
-        background-size: 100%;
-        width: 100%;
-        height: 800rem;
-    }
-
     .pages2 {
         width: 100%;
         height: 800rem;
@@ -1213,3 +1205,15 @@
         height: 40rem;
     }
 }
+
+
+
+@media screen and (min-width: 1950px) {}
+
+@media screen and (max-width: 1950px) and (min-width: 1450px) {}
+
+@media screen and (max-width: 1450px) and (min-width: 1000px) {}
+
+@media screen and (max-width: 1000px) and (min-width: 750px) {}
+
+@media screen and (max-width: 750px) {}
