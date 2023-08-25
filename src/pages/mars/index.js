@@ -77,7 +77,7 @@ export default () => {
                     <tbody>
                         <tr>
                             <td className={styles.tabline}>SoC</td>
-                            <td className={styles.tabP}>Starfive JH7110 64bit SoC with RV64GC, up to 1.5GHz</td>
+                            <td className={styles.tabP}>StarFive JH7110 64bit SoC with RV64GC, up to 1.5GHz</td>
                         </tr>
                         <tr>
                             <td >Memory</td>
