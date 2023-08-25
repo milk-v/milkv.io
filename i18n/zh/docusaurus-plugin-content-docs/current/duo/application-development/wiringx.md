@@ -16,7 +16,7 @@ sidebar_position: 10
 
 Milk-V Duo 的 wiringX 引脚序号, 与Duo的物理引脚标号是一致的，LED控制引脚不在引出的40PIN物理引脚上，其wiringX的序号是0
 
-![duo](/docs/duo/duo-wiringx-pinout.png)
+![duo|1024x1169](/docs/duo/duo-wiringx-pinout.png)
 
 ## 一、wiringX APIs
 
@@ -24,7 +24,9 @@ Milk-V Duo 的 wiringX 引脚序号, 与Duo的物理引脚标号是一致的，L
 
 #### int wiringXSetup(char *name, ...)
 初始化 WiringX 库，用于初始化 GPIO 引脚的配置和资源，对于Duo，固定写法为  
-```wiringXSetup("duo", NULL)```
+```
+wiringXSetup("duo", NULL)
+```
 
 #### int wiringXValidGPIO(int pin)
 判断GPIO pin是否可用
@@ -72,8 +74,17 @@ Milk-V Duo 的 wiringX 引脚序号, 与Duo的物理引脚标号是一致的，L
 - **wiringXI2CReadReg8(fd, reg)**: 从reg寄存器读取1个字节的数据
 - **wiringXI2CReadReg16(fd, reg)**: 从reg寄存器读取2个字节的数据
 - **wiringXI2CWrite(fd, reg)**: 写寄存器的地址reg
-- **wiringXI2CWriteReg8(fd, reg, value8)**: 将8位数据value8写入寄存器reg
-- **wiringXI2CWriteReg16(fd, reg, value16)**: 将16位数据value16写入寄存器reg
+- <details><summary>wiringXI2CWriteReg8(fd, reg, value8)</summary>
+  <p>
+  将8位数据value8写入寄存器reg
+  </p>
+  </details>
+
+- <details><summary>wiringXI2CWriteReg16(fd, reg, value16)</summary>
+  <p>
+  将16位数据value16写入寄存器reg
+  </p>
+  </details>
 
 
 ## 二、代码示范
