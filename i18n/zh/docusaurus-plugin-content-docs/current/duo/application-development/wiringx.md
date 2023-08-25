@@ -3,12 +3,128 @@ sidebar_label: 'WiringX'
 sidebar_position: 10
 ---
 
-# Introduction
+## 简介
 `wiringX`是一个开源的GPIO控制库，旨在为不同的嵌入式平台提供通用且统一的GPIO控制接口。它基于WiringPi库进行了改进和扩展，并支持多种嵌入式平台，对`Milk-V Duo`也进行了适配。使用`wiringX`，开发者可以使用相同的代码来控制不同平台上的GPIO引脚，简化了跨平台开发的工作，使得开发嵌入式应用程序更加方便和灵活。
 
-这个仓库提供了在Duo上使用wiringX的一些样例 : [duo-examples](https://github.com/milkv-duo/duo-examples)
+本文将分为如下4个部分介绍如何使用wiringX在Duo上开发应用
+1. wiringX 的 APIs
+2. 基本使用方法代码示范, 以及如何配置Duo的引脚复用
+3. 基于wiringX的应用程序编译环境配置
+4. 一些使用wiringX实现的Demo和项目介绍
 
-## 准备开发环境
+如果您对wiringX的使用方法已经非常熟悉,可以直接参考我们的样例代码: [duo-examples](https://github.com/milkv-duo/duo-examples)
+
+Milk-V Duo 的 wiringX 引脚序号, 与Duo的物理引脚标号是一致的，LED控制引脚不在引出的40PIN物理引脚上，其wiringX的序号是0
+
+![duo](/docs/duo/duo-wiringx-pinout.png)
+
+## 一、wiringX APIs
+
+### 通用
+
+#### int wiringXSetup(char *name, ...)
+初始化 WiringX 库，用于初始化 GPIO 引脚的配置和资源，对于Duo，固定写法为  
+```wiringXSetup("duo", NULL)```
+
+#### int wiringXValidGPIO(int pin)
+判断GPIO pin是否可用
+
+#### void delayMicroseconds(unsigned int ms)
+延时毫秒
+
+#### int wiringXGC(void)
+
+#### char *wiringXPlatform(void)
+
+
+### GPIO
+
+#### pinMode(pin, mode)
+设置指定引脚的工作模式, pin 是引脚编号, mode 可以是
+- PINMODE_INPUT 输入模式
+- PINMODE_OUTPUT 输出模式
+- PINMODE_INTERRUPT 中断模式
+
+#### int digitalRead(int pin)
+读取指定引脚pin的输入值, 返回值为 HIGH 或 LOW
+
+#### int digitalWrite(int pin, enum digital_value_t value)
+设置指定引脚pin的输出值, value 可以是
+- HIGH 高电平
+- LOW 低电平
+
+#### int waitForInterrupt(int pin, int ms)
+等待引脚pin上的中断发生, 参数ms为超时时间, 单位毫秒  
+*该函数已弃用, 建议使用 wiringXISR*
+
+#### int wiringXISR(int pin, enum isr_mode_t mode)
+将引脚pin配置为中断方式
+
+其中`mode`的几种模式
+- ISR_MODE_RISING
+- ISR_MODE_FALLING
+- ISR_MODE_BOTH
+
+### I2C
+
+- **wiringXI2CSetup(dev, addr)**: 配置i2c节点和i2c地址
+- **wiringXI2CRead(fd)**: 读取1个字节的数据
+- **wiringXI2CReadReg8(fd, reg)**: 从reg寄存器读取1个字节的数据
+- **wiringXI2CReadReg16(fd, reg)**: 从reg寄存器读取2个字节的数据
+- **wiringXI2CWrite(fd, reg)**: 写寄存器的地址reg
+- **wiringXI2CWriteReg8(fd, reg, value8)**: 将8位数据value8写入寄存器reg
+- **wiringXI2CWriteReg16(fd, reg, value16)**: 将16位数据value16写入寄存器reg
+
+
+## 二、代码示范
+
+### GPIO
+
+下面是一个操作GPIO的例子，将序号为0的LED控制脚间隔1秒循环拉高再拉低，看到的现象就是Duo上的LED间隔1秒不断闪烁
+```
+#include <stdio.h>
+#include <unistd.h>
+
+#include <wiringx.h>
+
+int main() {
+    int DUO_LED = 0;
+
+    if(wiringXSetup("duo", NULL) == -1) {
+        wiringXGC();
+        return -1;
+    }
+
+    if(wiringXValidGPIO(DUO_LED) != 0) {
+        printf("Invalid GPIO %d\n", DUO_LED);
+    }
+
+    pinMode(DUO_LED, PINMODE_OUTPUT);
+
+    while(1) {
+        printf("Duo LED GPIO (wiringX) %d: High\n", DUO_LED);
+        digitalWrite(DUO_LED, HIGH);
+        sleep(1);
+        printf("Duo LED GPIO (wiringX) %d: Low\n", DUO_LED);
+        digitalWrite(DUO_LED, LOW);
+        sleep(1);
+    }
+
+    return 0;
+}
+```
+
+### I2C
+
+以下是一个I2C的示例
+
+```
+wiringXI2CSetup
+```
+
+## 三、开发环境配置
+
+### 准备开发环境
 
 使用本地的Ubuntu系统，推荐 Ubuntu 20.04 LTS  
 (也可以使用虚拟机中的Ubuntu系统、Windows中WSL安装的Ubuntu、基于Docker的Ubuntu系统)
@@ -49,7 +165,7 @@ sidebar_position: 10
   ```
   **至此，我们的编译开发环境就可以正常使用了**
 
-## 如何创建自己的工程
+### 如何创建自己的工程
 
 根据需要，拷贝现有的例子，稍加修改即可。比如需要操作某个GPIO，可以参考`blink`例子，LED闪烁就是通过控制GPIO电平高低实现的，平台初始化和控制GPIO的方法，可参考`blink.c`中的代码
 
@@ -66,7 +182,7 @@ sidebar_position: 10
 - 新建工程目录不是必须要放到duo-examples目录下的，可以根据自己的习惯放到其他位置，执行make编译命令之前，加载过duo-examples目录下的编译环境就可以了(`source /PATH/TO/duo-examples/envsetup.sh`)
 - 在加载过编译环境(`envsetup.sh`)的终端里，不要编译其他平台如ARM或X86的Makefile工程，如需编译其他平台项目，需要新开终端
 
-## 各例子说明
+## 四、Demo和项目说明
 
 ### [hello-world](https://github.com/milkv-duo/duo-examples/tree/main/hello-world)
 
