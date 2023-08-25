@@ -274,3 +274,9 @@ li {
 strong {
   color: #2d88c9;
 }
+
+/* 字体 */
+@font-face {
+  font-family: Roboto;
+  src: url(/static/ttf/Roboto-Black-1.ttf);
+}
