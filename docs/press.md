@@ -22,3 +22,4 @@ sidebar_position: 99
 
 ## Vega
 - The Paradise [The world’s first open source 10 Gigabit RISC-V network switch Milk-V Vega unveiled](https://theparadise.ng/the-worlds-first-open-source-10-gigabit-risc-v-network-switch-milk-v-vega-unveiled/)
+- Hackster.io [RISC-V Specialist Milk-V Jumps Into the Network Market with the New 10-gig-E Vega Switch](https://www.hackster.io/news/risc-v-specialist-milk-v-jumps-into-the-network-market-with-the-new-10-gig-e-vega-switch-ef91693d20a3)
