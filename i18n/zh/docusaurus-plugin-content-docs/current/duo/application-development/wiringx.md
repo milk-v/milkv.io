@@ -23,120 +23,138 @@ Milk-V Duo 的 wiringX 引脚序号, 与Duo的物理引脚标号是一致的，L
 ### 通用
 
 <details><summary>int wiringXSetup(char *name, ...)</summary>
-  <p>
-  初始化 WiringX 库，用于初始化 GPIO 引脚的配置和资源，对于Duo，固定写法为 wiringXSetup("duo", NULL)
-  </p>
+
+  初始化 WiringX 库，用于初始化 GPIO 引脚的配置和资源，对于Duo，固定写法为
+  ```
+  wiringXSetup("duo", NULL)
+  ```
+
 </details>
+
 
 <details><summary>int wiringXValidGPIO(int pin)</summary>
-  <p>
+
   判断GPIO pin是否可用
-  </p>
+
 </details>
+
 
 <details><summary>void delayMicroseconds(unsigned int ms)</summary>
-  <p>
+
   延时毫秒
-  </p>
+
 </details>
+
 
 <details><summary>int wiringXGC(void)</summary>
-  <p>
+
   释放资源
-  </p>
+
 </details>
 
+
 <details><summary>char *wiringXPlatform(void)</summary>
-  <p>
+
   返回平台信息
-  </p>
+
 </details>
+
 
 ### GPIO
 
 <details><summary>pinMode(pin, mode)</summary>
-  <p>
+
   设置指定引脚的工作模式, pin 是引脚编号, mode 可以是
   - PINMODE_INPUT 输入模式
   - PINMODE_OUTPUT 输出模式
   - PINMODE_INTERRUPT 中断模式
-  </p>
+
 </details>
+
 
 <details><summary>int digitalRead(int pin)</summary>
-  <p>
+
   读取指定引脚pin的输入值, 返回值为 HIGH 或 LOW
-  </p>
+
 </details>
 
+
 <details><summary>int digitalWrite(int pin, enum digital_value_t value)</summary>
-  <p>
+
   设置指定引脚pin的输出值, value 可以是
   - HIGH 高电平
   - LOW 低电平
-  </p>
+
 </details>
+
 
 <details><summary>int waitForInterrupt(int pin, int ms)</summary>
-  <p>
+
   等待引脚pin上的中断发生, 参数ms为超时时间, 单位毫秒  
   *该函数已弃用, 建议使用 wiringXISR*
-  </p>
+
 </details>
 
+
 <details><summary>int wiringXISR(int pin, enum isr_mode_t mode)</summary>
-  <p>
-  将引脚pin配置为中断方式,   其中`mode`的几种模式
-  - ISR_MODE_RISING
-  - ISR_MODE_FALLING
-  - ISR_MODE_BOTH
-  </p>
+
+将引脚pin配置为中断方式,   其中`mode`的几种模式
+- ISR_MODE_RISING
+- ISR_MODE_FALLING
+- ISR_MODE_BOTH
+
 </details>
 
 
 ### I2C
 
 <details><summary>wiringXI2CSetup(dev, addr)</summary>
-  <p>
+
   配置i2c节点和i2c地址
-  </p>
+
 </details>
+
 
 <details><summary>wiringXI2CRead(fd)</summary>
-  <p>
+
   读取1个字节的数据
-  </p>
+
 </details>
+
 
 <details><summary>wiringXI2CReadReg8(fd, reg)</summary>
-  <p>
+
   从reg寄存器读取1个字节的数据
-  </p>
+
 </details>
+
 
 <details><summary>wiringXI2CReadReg16(fd, reg)</summary>
-  <p>
+
   从reg寄存器读取2个字节的数据
-  </p>
+
 </details>
+
 
 <details><summary>wiringXI2CWrite(fd, reg)</summary>
-  <p>
+
   写寄存器的地址reg
-  </p>
+
 </details>
 
+
 <details><summary>wiringXI2CWriteReg8(fd, reg, value8)</summary>
-  <p>
+
   将8位数据value8写入寄存器reg
-  </p>
-  </details>
+
+</details>
+
 
 <details><summary>wiringXI2CWriteReg16(fd, reg, value16)</summary>
-  <p>
+
   将16位数据value16写入寄存器reg
-  </p>
-  </details>
+
+</details>
 
 
 ## 二、代码示范
