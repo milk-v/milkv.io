@@ -93,6 +93,11 @@ const config = {
           },
           {
             position: 'right',
+            label: 'About',
+            to: '/about'
+          },
+          {
+            position: 'right',
             label: 'Community',
             to: 'https://community.milkv.io/'
           },
