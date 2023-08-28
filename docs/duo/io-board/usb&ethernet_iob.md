@@ -44,4 +44,5 @@ sync
 
 then reboot the board
 
-
+## Hardware schematics
+- [Hardware schematics](https://github.com/milkv-duo/accessories/blob/master/Duo_USB%26Ethernet_IOB/duo_iob_v1.11.pdf)
