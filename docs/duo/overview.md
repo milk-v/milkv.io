@@ -80,8 +80,8 @@ Milk-V Duo is an ultra-compact embedded development platform based on the CV1800
 - Compatible with veroboard and breadboard
 
 ## Quick Start
-[Image download](https://github.com/milk-v/duo-manifest/releases)  
-[How to build image](https://github.com/milk-v/duo-manifest)  
+[Image download](https://github.com/milkv-duo/duo-buildroot-sdk/releases)  
+[How to build image](https://github.com/milkv-duo/duo-buildroot-sdk)  
 
 ## Support
 For support please post your issue on the [Milk-V Community Duo Category](https://community.milkv.io/c/duo/5).
