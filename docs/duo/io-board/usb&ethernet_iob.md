@@ -45,4 +45,4 @@ sync
 then reboot the board
 
 ## Downloads
-- Hardware schematics(coming soon)
+- [Hardware schematics](https://github.com/milkv-mars/Hardware/blob/main/Mars_hardware_schematics/Mars_V1.11_20230821.pdf)
