@@ -5,6 +5,7 @@ import Translate from '@docusaurus/Translate';
 import styles from './index.module.css';
 
 import BuyPop from "../components/BuyPop"
+import SupportUs from "../components/SupportUs"
 import Footer from "../components/Footer"
 import ContactBar from "../components/ContactBar"
 
@@ -42,8 +43,6 @@ const Duo_module = (props) => {
   )
 }
 
-
-
 const Home_web = () => {
   const [pioneer, setPioneer] = useState(false)
   const [mars, setMars] = useState(false)
@@ -75,10 +74,10 @@ const Home_web = () => {
       <BuyPop flag={buy} module={buyStart} type='home' />
       <div className={styles.home_header}>
         <div className={styles.header_title}>
-          <h1>"As many RISC-V as the <br></br> stars in the Milky Way"</h1>
+          <h1>"As Many RISC-V as the <br></br> Stars in the Milky Way"</h1>
           <div className={styles.button_use}>
-            <Link href=''>Comunity</Link>
-            <Link href=''>Learn More</Link>
+            <Link href=''>Milk-V Comunity</Link>
+            <Link href='/about'>Why RISC-V ?</Link>
           </div>
         </div>
       </div>
@@ -101,12 +100,12 @@ const Home_web = () => {
           <img src='/home/milkv-docs-logo.svg' alt='milkv docs' />
           <div className={styles.docs_info}>
             <h1>MilkV Documents</h1>
-            <p>这里是一段文字描述，引导用户去文档查看更多...这里是一段文字描述，引导用户去文档查看更多...这里是一段文字描述，引导用户去文档查看更多...这里是一段文字描述，引导用户去文档查看更多...</p>
-
+            <p>View our documentation for technical support</p>
           </div>
-          <Link href='' className={styles.docs_a}>Learn More</Link>
+          <Link href='/docs/home' className={styles.docs_a}>Learn More</Link>
         </div>
         <ContactBar product='duo' />
+        <SupportUs />
       </div>
     </>
   )
