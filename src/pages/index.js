@@ -174,7 +174,7 @@ const Vega_module = (props) => {
   )
 }
 const Home_web = () => {
-  const [index, setIndex] = useState(3)
+  const [index, setIndex] = useState(1)
   const tabs = [
     { name: 'Duo', index: 1, element: <Duo_module /> },
     { name: 'Pioneer', index: 2, element: <Pionner_module /> },
@@ -218,7 +218,7 @@ const Home_web = () => {
           </div>
           <Link href='/docs/home' className={styles.docs_a}>Learn More</Link>
         </div>
-        <ContactBar product='duo' />
+        <ContactBar product='home' />
         <SupportUs />
       </div>
     </>

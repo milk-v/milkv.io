@@ -18,7 +18,7 @@ export default (props) => {
                     <li>
                         < img src='/components/channel.svg' />
                         <div className={styles.on5_bottom}>
-                            <Link to={link_url} style={{ textDecoration: 'none', color: '#fff' }}><Translate id='contact.text.join' />{product}</Link>
+                            <Link to={product === 'home' ? 'https://matrix.to/#/#milk-v:matrix.org' : link_url} style={{ textDecoration: 'none', color: '#fff' }}>{product !== 'home' ? <><Translate id='contact.text.join' />{product}</> : 'join #milk-v'} </Link>
                         </div>
                         <p>Join the {product.charAt(0).toUpperCase() + product.slice(1)} Matrix Chat channel to share your ideas with the developers all around the world.</p>
                     </li>
@@ -37,3 +37,8 @@ export default (props) => {
         </>
     )
 }
+
+// https://matrix.to/#/#milkv-:matrix.org
+
+// https://matrix.to/#/#milk-v:matrix.org
+// https://matrix.to/#/#milk-v:matrix.org

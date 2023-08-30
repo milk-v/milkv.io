@@ -540,10 +540,9 @@
         width: 350rem;
     }
 
-
     .form_contexts>h2 {
-        font-size: 28rem;
-        margin: 60rem 0 40rem;
+        font-size: 24rem;
+        margin: 40rem 0;
     }
 
     .info_left {
@@ -568,8 +567,13 @@
         font-size: 16rem;
     }
 
+    .emailRadio {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .emailRadio>label {
-        margin-right: 20rem;
+        margin-bottom: 10rem;
     }
 
     .emailRadio>label>input {
@@ -583,12 +587,16 @@
     }
 
     .suppport_input {
+        flex-direction: column;
+        align-items: flex-start;
         margin: 20rem 0;
     }
 
     .suppport_input>input {
+        width: 100%;
         height: 40rem;
         font-size: 14rem;
+        margin-bottom: 10rem;
     }
 
     .message>textarea {
@@ -603,5 +611,9 @@
         gap: 10rem;
         margin-top: 10rem;
         font-size: 14rem;
+    }
+
+    .form_right {
+        width: 350rem;
     }
 }

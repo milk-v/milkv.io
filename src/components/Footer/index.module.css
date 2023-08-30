@@ -364,6 +364,12 @@
         font-size: 12px;
         margin: 40px 0;
     }
+
+    .wechat_min {
+        width: 25px;
+        height: 25px;
+    }
+
 }
 
 @media screen and (max-width: 1000px) and (min-width: 750px) {
@@ -456,6 +462,12 @@
         font-size: 12px;
         margin: 40px 0;
     }
+
+    .wechat_min {
+        width: 25px;
+        height: 25px;
+    }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -560,5 +572,19 @@
 
     .footer_bottom_text>p {
         margin-bottom: 20rem;
+    }
+
+    .wechat_min {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .we {
+        padding-bottom: 100rem;
+    }
+
+    .wechat {
+        display: block !important;
+        top: 10% !important;
     }
 }
