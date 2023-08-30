@@ -16,7 +16,7 @@ sidebar_position: 10
 
 Milk-V Duo 的 wiringX 引脚序号, 与Duo的物理引脚标号是一致的，LED控制引脚不在引出的40PIN物理引脚上，其wiringX的序号是0
 
-![duo](/docs/duo/i18n/zh/docusaurus-plugin-content-docs/current/duo/application-development/wiringx.md)
+![duo](/docs/duo/duo-wiringx-pinout-with-pin-name-800x600.png)
 
 ## 一、wiringX APIs
 
