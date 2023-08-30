@@ -13,21 +13,24 @@ export default (props) => {
     return (
         <>
             <div className={styles.on5_box}>
-                <ul>
-                    <li className={styles.li}>
-                        <h1 className={styles.on5_box_h1}>[matrix]</h1>
-                        <p className={styles.on5_box_p}>Join the {product.charAt(0).toUpperCase() + product.slice(1)} Matrix Chat channel to share your ideas with the developers all around the world.</p>
+                <h2>Join us to share more.</h2>
+                <ul className={product !== 'home' ? styles.min_ul : null}>
+                    <li>
+                        < img src='/components/channel.svg' />
                         <div className={styles.on5_bottom}>
                             <Link to={link_url} style={{ textDecoration: 'none', color: '#fff' }}><Translate id='contact.text.join' />{product}</Link>
                         </div>
+                        <p>Join the {product.charAt(0).toUpperCase() + product.slice(1)} Matrix Chat channel to share your ideas with the developers all around the world.</p>
                     </li>
-                    <li className={styles.li}>
-                        <h1 className={styles.on5_box_h1}><Translate id='contact.text.WeChat' /></h1>
-                        <div className={styles.on5_img}></div>
+                    <li>
+                        <img src='/components/weChat.svg' />
+                        <h2><Translate id='contact.text.WeChat' /></h2>
+                        <p>Join Milk-V WeChat Group</p>
                     </li>
-                    <li className={styles.li}>
-                        <h1 className={styles.on5_box_h1}><Translate id='contact.text.QQ' /></h1>
-                        <div className={styles.on5_img_QQ}></div>
+                    <li>
+                        < img src='/components/QQGroup.svg' />
+                        <h2><Translate id='contact.text.QQ' /></h2>
+                        <p>Join Milk-V QQ Group</p>
                     </li>
                 </ul>
             </div>

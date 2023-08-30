@@ -105,8 +105,8 @@ const Home_web = () => {
 
           </div>
           <Link href='' className={styles.docs_a}>Learn More</Link>
-          <></>
         </div>
+        <ContactBar product='duo' />
       </div>
     </>
   )
