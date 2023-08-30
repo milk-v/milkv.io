@@ -43,35 +43,149 @@ const Duo_module = (props) => {
   )
 }
 
-const Home_web = () => {
-  const [pioneer, setPioneer] = useState(false)
-  const [mars, setMars] = useState(false)
-  const [buy, setBuy] = useState(false)
+const Pionner_module = (props) => {
+  const [pioneer, setPionner] = useState(false)
+  const pionnerStart = () => {
+    setPionner(false)
+  }
+  return (
+    <>
+      <BuyPop flag={pioneer} module={pionnerStart} type='pioneer' />
+      <div className={styles.info_module}>
+        <div className={styles.main_module}>
+          <div className={styles.left_title}>
+            <h2>Milk-V Pioneer</h2>
+            <p>Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard mATX form factor. It is the first choice for RISC-V developers and hardware pioneers to experience the cutting edge technology of RISC-V.</p>
+            <div className={styles.learnMore_use}>
+              <Link href=''>Learn More</Link>
+              <div className={styles.buy_button} onClick={() => { setPionner(true) }}>Buy New</div>
+            </div>
+          </div>
+          <div className={styles.right_img}>
+            <img src='/home/home-pionner-view.webp' alt='Pioneer' />
+          </div>
+        </div>
+        <div className={styles.grid_item1_module}>
 
-  const [index, setIndex] = useState(1)
+        </div>
+        <div className={styles.grid_item2_module}>
+
+        </div>
+      </div >
+    </>
+  )
+}
+
+const Mars_module = (props) => {
+  const [pioneer, setPionner] = useState(false)
+  const pionnerStart = () => {
+    setPionner(false)
+  }
+  return (
+    <>
+      <BuyPop flag={pioneer} module={pionnerStart} type='mars' />
+      <div className={styles.info_module}>
+        <div className={styles.main_module}>
+          <div className={styles.left_title}>
+            <h2>Milk-V Mars</h2>
+            <p>Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. An RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO.</p>
+            <div className={styles.learnMore_use}>
+              <Link href=''>Learn More</Link>
+              <div className={styles.buy_button} onClick={() => { setPionner(true) }}>Buy New</div>
+            </div>
+          </div>
+          <div className={styles.right_img}>
+            <img src='/home/home-mars-view.webp' alt='Mars' />
+          </div>
+        </div>
+        <div className={styles.view_mian}>
+          <div className={styles.left}>
+            <h2>Milk-V Mars</h2>
+            <p>serices</p>
+          </div>
+          <div className={styles.right}>
+            <div className={styles.right_img}>
+              <img src='/home/home-marscm-view.webp' alt='Mars CM' />
+            </div>
+            <div className={styles.right_text}>
+              <h2>Milk-V Mars CM</h2>
+              <p>Dual cores up to 800MHz,Rich IO for UART, I2C, SPI, SDIO, ADC and more,Running Linux or RTOS or both simultaneously</p>
+              <div className={styles.learnMore_use}>
+                <Link href=''>Learn More</Link>
+                <div className={styles.buy_button} onClick={() => { setPionner(true) }}>Buy New</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div >
+    </>
+  )
+}
+const Meles_module = (props) => {
+  const [pioneer, setPionner] = useState(false)
+  const pionnerStart = () => {
+    setPionner(false)
+  }
+  return (
+    <>
+      <BuyPop flag={pioneer} module={pionnerStart} type='meles' />
+      <div className={styles.info_module}>
+        <div className={styles.main_module}>
+          <div className={styles.left_title}>
+            <h2>Milk-V Meles</h2>
+            <p>Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH1520. It is powered by a Quad Core RISC-V 64GCV C910, capable of running up to 2.0GHz. This SBC is packed with rich interfaces and boasts powerful computing and AI capabilities, making it an ideal RISC-V intelligent hardware platform for hobbyists, makers, engineers, teachers, and students.</p>
+            <div className={styles.learnMore_use}>
+              <Link href=''>Learn More</Link>
+              <div className={styles.buy_button} onClick={() => { setPionner(true) }}>Buy New</div>
+            </div>
+          </div>
+          <div className={styles.right_img}>
+            <img src='/home/home-meles-view.webp' alt='Meles' />
+          </div>
+        </div>
+      </div >
+    </>
+  )
+}
+const Vega_module = (props) => {
+  const [pioneer, setPionner] = useState(false)
+  const pionnerStart = () => {
+    setPionner(false)
+  }
+  return (
+    <>
+      <BuyPop flag={pioneer} module={pionnerStart} type='vega' />
+      <div className={styles.info_module}>
+        <div className={styles.main_module}>
+          <div className={styles.left_title}>
+            <h2>Milk-V Vega</h2>
+            <p>Milk-V Vega is a compact and low-density box-style open-source 10 Gigabit network switch developed by Milk-V for the next generation of network architecture. It serves as a unified platform for various services such as broadband, voice, video, and surveillance.</p>
+            <div className={styles.learnMore_use}>
+              <Link href=''>Learn More</Link>
+              <div className={styles.buy_button} onClick={() => { setPionner(true) }}>Buy New</div>
+            </div>
+          </div>
+          <div className={styles.right_img}>
+            <img src='/home/home-vega-view.webp' alt='Vega' />
+          </div>
+        </div>
+      </div >
+    </>
+  )
+}
+const Home_web = () => {
+  const [index, setIndex] = useState(3)
   const tabs = [
-    { name: 'Duo', index: 1, element: <Duo_module></Duo_module> },
-    { name: 'Pioneer', index: 2, element: <></> },
-    { name: 'Mars', index: 3, element: <></> },
-    { name: 'Meles', index: 4, element: <></> },
-    { name: 'Vega', index: 5, element: <></> },
+    { name: 'Duo', index: 1, element: <Duo_module /> },
+    { name: 'Pioneer', index: 2, element: <Pionner_module /> },
+    { name: 'Mars', index: 3, element: <Mars_module /> },
+    { name: 'Meles', index: 4, element: <Meles_module /> },
+    { name: 'Vega', index: 5, element: <Vega_module /> },
   ];
 
-  const buyStart = () => {
-    setBuy(false)
-  }
-  const marsStart = () => {
-    setMars(false)
-  }
-  const pioneerStart = () => {
-    setPioneer(false)
-  }
 
   return (
     <>
-      <BuyPop flag={pioneer} module={pioneerStart} type='pioneer' />
-      <BuyPop flag={mars} module={marsStart} type='mars' />
-      <BuyPop flag={buy} module={buyStart} type='home' />
       <div className={styles.home_header}>
         <div className={styles.header_title}>
           <h1>"As Many RISC-V as the <br></br> Stars in the Milky Way"</h1>
