@@ -39,7 +39,9 @@ export default () => {
                         <div className={styles.footer_right}>
                             <ul className={styles.footer_ul}>
                                 <li>
-                                    <Link to='/' className={styles.line_name}>Home</Link>
+                                    <p className={styles.line_name}>Pages</p>
+                                    <Link to='/'>Home</Link>
+                                    <Link to='/about'>About</Link>
                                 </li>
                                 <li>
                                     <p className={styles.line_name}>Products</p>

@@ -40,42 +40,34 @@ const AboutUs = () => {
                             <li>
                                 <img src="/about/427320092.svg" />
                                 <h2>Low Power</h2>
-                                <p>wn efforts and those of the community, future RISC-V products will be as numerous and bright as the </p>
                             </li>
                             <li>
                                 <img src="/about/427320092-1.svg" />
                                 <h2>Low Cost</h2>
-                                <p>wn efforts and those of the community, future RISC-V products will be as numerous and bright as the </p>
                             </li>
                             <li>
                                 <img src="/about/427320092-2.svg" />
                                 <h2>Open Standard</h2>
-                                <p>wn efforts and those of the community, future RISC-V products will be as numerous and bright as the </p>
                             </li>
                             <li>
                                 <img src="/about/427320092-3.svg" />
                                 <h2>Modularizable</h2>
-                                <p>wn efforts and those of the community, future RISC-V products will be as numerous and bright as the </p>
                             </li>
                             <li>
                                 <img src="/about/427320092-4.svg" />
                                 <h2>Simple</h2>
-                                <p>wn efforts and those of the community, future RISC-V products will be as numerous and bright as the </p>
                             </li>
                             <li>
                                 <img src="/about/427320092-5.svg" />
                                 <h2>Small Area</h2>
-                                <p>wn efforts and those of the community, future RISC-V products will be as numerous and bright as the </p>
                             </li>
                             <li>
                                 <img src="/about/427320092-6.svg" />
                                 <h2>Fast</h2>
-                                <p>wn efforts and those of the community, future RISC-V products will be as numerous and bright as the </p>
                             </li>
                             <li>
                                 <img src="/about/427320092-7.svg" />
                                 <h2>High Performance</h2>
-                                <p>wn efforts and those of the community, future RISC-V products will be as numerous and bright as the </p>
                             </li>
 
                         </ul>
