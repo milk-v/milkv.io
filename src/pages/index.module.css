@@ -789,4 +789,159 @@
     }
 }
 
-@media screen and (max-width: 750px) {}
+@media screen and (max-width: 750px) {
+
+    .home_header {
+        height: 300rem;
+        background-position: 60% 50%;
+    }
+
+    .header_title {
+        bottom: 30rem;
+        width: 350rem;
+        margin-top: 50rem;
+    }
+
+    .header_title>h1 {
+        font-size: 24rem;
+        line-height: 140%;
+    }
+
+    .button_use {
+        margin: 20rem 0;
+    }
+
+    .button_use>a,
+    .docs_a,
+    .learnMore_use>a,
+    .buy_button {
+        width: 120rem;
+        height: 35rem;
+        font-size: 12rem;
+    }
+
+    .button_use>a {
+        margin-right: 10rem;
+    }
+
+    .tab {
+        width: 350rem;
+        height: 20rem;
+        margin: 20rem auto;
+        position: sticky;
+        top: 0;
+    }
+
+    .tab>li>p {
+        font-size: 16rem;
+        padding: 3rem 0;
+    }
+
+    .info_module {
+        width: 350rem;
+        margin: 30rem auto;
+    }
+
+    .main_module {
+        margin-bottom: 15rem;
+        height: 600rem;
+        flex-direction: column;
+    }
+
+    .main_module>div {
+        width: 100%;
+        height: 50%;
+    }
+
+    .left {
+        height: 100rem !important;
+        margin-bottom: 15rem;
+    }
+
+    .right {
+        width: 350rem;
+        flex-direction: column;
+    }
+
+    .right>div {
+        width: 100%;
+        height: 250rem;
+    }
+
+    .right_text {
+        padding: 0rem;
+        margin-top: -50rem;
+    }
+
+    .right_text>h2 {
+        font-size: 20rem;
+    }
+
+    .right_text>p {
+        font-size: 12rem;
+        margin: 0rem 0 20rem;
+    }
+
+    .right_text>.learnMore_use>a {
+        width: 120rem;
+        height: 35rem;
+    }
+
+    .left>h2 {
+        font-size: 24rem;
+        line-height: 120%;
+    }
+
+    .left>p {
+        font-size: 16rem;
+    }
+
+    .left_title {
+        padding: 30rem;
+    }
+
+    .left_title>h2 {
+        font-size: 28rem;
+        margin-bottom: 0rem;
+        margin-top: 20rem;
+    }
+
+    .left_title>p {
+        font-size: 12rem;
+        line-height: 150%;
+        margin-bottom: 20rem;
+        height: 90rem;
+    }
+
+    .docs_link {
+        width: 350rem;
+        height: calc(310rem*.7*.7*.75);
+        padding: 20rem 5rem;
+        margin: 20rem auto;
+    }
+
+    .docs_info>h1 {
+        font-size: 14rem;
+        margin-bottom: 5rem;
+    }
+
+    .docs_link>img {
+        width: 50rem;
+        height: 50rem;
+        margin: 0 5rem;
+    }
+
+    .docs_info>p {
+        font-size: 10rem;
+        margin-bottom: 0;
+        line-height: 120%;
+    }
+
+    .view_mian {
+        flex-direction: column;
+    }
+
+    .view_mian>div {
+        width: 100%;
+    }
+}
