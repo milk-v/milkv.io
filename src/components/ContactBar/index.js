@@ -16,7 +16,7 @@ export default (props) => {
                 <h2>Join Us to Share More</h2>
                 <ul className={product !== 'home' ? styles.min_ul : null}>
                     <li>
-                        < img src='/components/channel.svg' />
+                        < img src='/components/channel.png' />
                         <div className={styles.on5_bottom}>
                             <Link to={product === 'home' ? 'https://matrix.to/#/#milk-v:matrix.org' : link_url} style={{ textDecoration: 'none', color: '#fff' }}>{product !== 'home' ? <><Translate id='contact.text.join' />{product}</> : 'join #milk-v'} </Link>
                         </div>

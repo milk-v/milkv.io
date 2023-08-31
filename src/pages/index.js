@@ -25,7 +25,7 @@ const Duo_module = (props) => {
             <p>Dual cores up to 800MHz,Rich IO for UART, I2C, SPI, SDIO, ADC and more,Running Linux or RTOS or both simultaneously</p>
             <div className={styles.learnMore_use}>
               <Link href='/duo'>Learn More</Link>
-              <div className={styles.buy_button} onClick={() => { setDuo(true) }}>Buy New</div>
+              <div className={styles.buy_button} onClick={() => { setDuo(true) }}>Buy Now</div>
             </div>
           </div>
           <div className={styles.right_img}>
@@ -58,7 +58,7 @@ const Pionner_module = (props) => {
             <p>Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard mATX form factor. It is the first choice for RISC-V developers and hardware pioneers to experience the cutting edge technology of RISC-V.</p>
             <div className={styles.learnMore_use}>
               <Link href='/pioneer'>Learn More</Link>
-              <div className={styles.buy_button} onClick={() => { setPionner(true) }}>Buy New</div>
+              <div className={styles.buy_button} onClick={() => { setPionner(true) }}>Buy Now</div>
             </div>
           </div>
           <div className={styles.right_img}>
@@ -104,7 +104,7 @@ const Mars_module = (props) => {
               <p>Dual cores up to 800MHz,Rich IO for UART, I2C, SPI, SDIO, ADC and more,Running Linux or RTOS or both simultaneously</p>
               <div className={styles.learnMore_use}>
                 <Link href='/mars-cm'>Learn More</Link>
-                <div className={styles.buy_button} onClick={() => { setMarscm(true) }}>Buy New</div>
+                <div className={styles.buy_button} onClick={() => { setMarscm(true) }}>Buy Now</div>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ const Mars_module = (props) => {
             <p>Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. An RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO.</p>
             <div className={styles.learnMore_use}>
               <Link href='/mars'>Learn More</Link>
-              <div className={styles.buy_button} onClick={() => { setPionner(true) }}>Buy New</div>
+              <div className={styles.buy_button} onClick={() => { setPionner(true) }}>Buy Now</div>
             </div>
           </div>
           <div className={styles.right_img}>
@@ -141,7 +141,7 @@ const Meles_module = (props) => {
             <p>Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH1520. It is powered by a Quad Core RISC-V 64GCV C910, capable of running up to 2.0GHz. This SBC is packed with rich interfaces and boasts powerful computing and AI capabilities, making it an ideal RISC-V intelligent hardware platform for hobbyists, makers, engineers, teachers, and students.</p>
             <div className={styles.learnMore_use}>
               <Link href='/meles'>Learn More</Link>
-              <div className={styles.buy_button} onClick={() => { setPionner(true) }}>Buy New</div>
+              <div className={styles.buy_button} onClick={() => { setPionner(true) }}>Buy Now</div>
             </div>
           </div>
           <div className={styles.right_img}>
@@ -167,7 +167,7 @@ const Vega_module = (props) => {
             <p>Milk-V Vega is a compact and low-density box-style open-source 10 Gigabit network switch developed by Milk-V for the next generation of network architecture. It serves as a unified platform for various services such as broadband, voice, video, and surveillance.</p>
             <div className={styles.learnMore_use}>
               <Link href='/vega'>Learn More</Link>
-              <div className={styles.buy_button} onClick={() => { setPionner(true) }}>Buy New</div>
+              <div className={styles.buy_button} onClick={() => { setPionner(true) }}>Buy Now</div>
             </div>
           </div>
           <div className={styles.right_img}>
@@ -180,6 +180,7 @@ const Vega_module = (props) => {
 }
 const Home_web = () => {
   const [index, setIndex] = useState(1)
+  const [isPaused, setIsPaused] = useState(false);
   const tabs = [
     { name: 'Duo', index: 1, element: <Duo_module /> },
     { name: 'Pioneer', index: 2, element: <Pionner_module /> },
@@ -188,6 +189,26 @@ const Home_web = () => {
     { name: 'Vega', index: 5, element: <Vega_module /> },
   ];
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (!isPaused) {
+        setIndex(prevCount => (prevCount === 5 ? 1 : prevCount + 1));
+      }
+    }, 2000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [isPaused]);
+
+
+  const handleMouseEnter = () => {
+    setIsPaused(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsPaused(false);
+  };
 
   return (
     <>
@@ -208,7 +229,7 @@ const Home_web = () => {
             </li>
           ))}
         </ul>
-        <div>
+        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           {
             tabs.filter((tab, idx) => {
               return tab.index === index
