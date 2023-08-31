@@ -362,6 +362,7 @@
 
     .view_mian {
         height: 646px;
+        margin-bottom: 40px;
     }
 
     .left {
@@ -479,6 +480,7 @@
 
     .view_mian {
         height: calc(646px*.7);
+        margin-bottom: 28px;
     }
 
     .left {
@@ -598,6 +600,7 @@
 
     .view_mian {
         height: calc(646px*.7*.7);
+        margin-bottom: 20px;
     }
 
     .left {
@@ -718,6 +721,7 @@
 
     .view_mian {
         height: calc(646px*.7*.7*.75);
+        margin-bottom: 15px;
     }
 
     .left {
@@ -939,6 +943,7 @@
 
     .view_mian {
         flex-direction: column;
+        margin-bottom: 10rem;
     }
 
     .view_mian>div {

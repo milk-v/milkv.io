@@ -13,7 +13,7 @@ export default (props) => {
     return (
         <>
             <div className={styles.on5_box}>
-                <h2>Join us to share more.</h2>
+                <h2>Join Us to Share More</h2>
                 <ul className={product !== 'home' ? styles.min_ul : null}>
                     <li>
                         < img src='/components/channel.svg' />
@@ -37,8 +37,3 @@ export default (props) => {
         </>
     )
 }
-
-// https://matrix.to/#/#milkv-:matrix.org
-
-// https://matrix.to/#/#milk-v:matrix.org
-// https://matrix.to/#/#milk-v:matrix.org
