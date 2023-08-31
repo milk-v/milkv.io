@@ -1,0 +1,619 @@
+.supportForm {
+    width: 100%;
+    background: linear-gradient(194deg, #ECF7FF 0.01%, #FFF 100%);
+    overflow: hidden;
+}
+
+.form_contexts {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.form_contexts>h2 {
+    color: #333;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 3.2px;
+}
+
+.contact_info {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+.info_left p {
+    color: #333;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.info_left a {
+    color: #2D88C9;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+}
+
+.message>h2,
+.form_right>h2 {
+    color: #333;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.emailRadio,
+.emailRadio>label {
+    display: flex;
+    align-items: center;
+}
+
+.emailRadio>label>input {
+    background-color: inherit !important;
+}
+
+.emailRadio>label>span {
+    color: #333;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    white-space: nowrap;
+}
+
+.suppport_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.suppport_input>input {
+    width: 31%;
+    color: #333;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+    border-bottom: 1.5px solid #000;
+    padding-left: 5px;
+    outline: none;
+    background-color: inherit !important;
+}
+
+.message>textarea {
+    width: 100%;
+    outline: none;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    transition: none;
+    background-color: inherit !important;
+}
+
+.support_form_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    float: right;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.support_form_btn:hover {
+    background-color: #2D88C9;
+    border-color: #2D88C9;
+    color: #fff;
+}
+
+@keyframes loading-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #2D88C9;
+    border-radius: 50%;
+    animation: loading-animation 1s linear infinite;
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popBox {
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.popBox>h1 {
+    font-size: 44px;
+    color: #242424;
+    margin: 50px auto 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.popBox>p {
+    font-size: 22px;
+    line-height: 120%;
+    color: #767676;
+    text-align: center;
+    font-weight: 400;
+}
+
+.popBox>h1>span {
+    font-size: 48px;
+}
+
+.ok {
+    width: 150px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d88c9;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1950px) {
+    .supportForm {
+        height: 900px;
+    }
+
+    .form_contexts {
+        width: 1920px;
+    }
+
+
+    .form_contexts>h2 {
+        font-size: 71px;
+        margin: 80px 0 140px;
+    }
+
+    .info_left>div {
+        margin-bottom: 40px;
+    }
+
+    .info_left p {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .info_left a {
+        font-size: 26px;
+    }
+
+    .message>h2,
+    .form_right>h2 {
+        font-size: 24px;
+    }
+
+    .emailRadio>label {
+        margin-right: 150px;
+    }
+
+    .emailRadio>label>input {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .emailRadio>label>span {
+        font-size: 18px;
+    }
+
+    .suppport_input {
+        margin: 40px 0;
+    }
+
+    .suppport_input>input {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .message>textarea {
+        height: 120px;
+        font-size: 16px;
+    }
+
+    .support_form_btn {
+        width: 146px;
+        height: 46px;
+        padding: 10px;
+        gap: 10px;
+        margin-top: 10px;
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1450px) {
+    .supportForm {
+        height: 650px;
+    }
+
+    .form_contexts {
+        width: calc(1920px*.7);
+    }
+
+
+    .form_contexts>h2 {
+        font-size: 52px;
+        margin: 60px 0 50px;
+    }
+
+    .info_left>div {
+        margin-bottom: 25px;
+    }
+
+    .info_left p {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    .info_left a {
+        font-size: 19px;
+    }
+
+    .message>h2,
+    .form_right>h2 {
+        font-size: 22px;
+    }
+
+    .emailRadio>label {
+        margin-right: 100px;
+    }
+
+    .emailRadio>label>input {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .emailRadio>label>span {
+        font-size: 16px;
+    }
+
+    .suppport_input {
+        margin: 20px 0;
+    }
+
+    .suppport_input>input {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .message>textarea {
+        height: 120px;
+        font-size: 16px;
+    }
+
+    .support_form_btn {
+        width: 146px;
+        height: 46px;
+        padding: 10px;
+        gap: 10px;
+        margin-top: 10px;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 1000px) {
+    .supportForm {
+        height: 650px;
+    }
+
+    .form_contexts {
+        width: calc(1920px*.7*.7);
+    }
+
+
+    .form_contexts>h2 {
+        font-size: 38px;
+        margin: 60px 0 50px;
+    }
+
+    .info_left>div {
+        margin-bottom: 20px;
+    }
+
+    .info_left p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .info_left a {
+        font-size: 16px;
+    }
+
+    .message>h2,
+    .form_right>h2 {
+        font-size: 18px;
+    }
+
+    .emailRadio>label {
+        margin-right: 20px;
+    }
+
+    .emailRadio>label>input {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .emailRadio>label>span {
+        font-size: 14px;
+    }
+
+    .suppport_input {
+        margin: 20px 0;
+    }
+
+    .suppport_input>input {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .message>textarea {
+        height: 120px;
+        font-size: 16px;
+    }
+
+    .support_form_btn {
+        width: 120px;
+        height: 46px;
+        padding: 10px;
+        gap: 10px;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 750px) {
+    .supportForm {
+        padding-bottom: 20px;
+    }
+
+    .contact_info {
+        flex-direction: column;
+    }
+
+    .form_contexts {
+        width: calc(1920px*.7*.7*.75);
+    }
+
+
+    .form_contexts>h2 {
+        font-size: 28px;
+        margin: 60px 0 40px;
+    }
+
+    .info_left {
+        margin-bottom: 30px;
+    }
+
+    .info_left>div {
+        margin-bottom: 15px;
+    }
+
+    .info_left p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .info_left a {
+        font-size: 16px;
+    }
+
+    .message>h2,
+    .form_right>h2 {
+        font-size: 16px;
+    }
+
+    .emailRadio>label {
+        margin-right: 20px;
+    }
+
+    .emailRadio>label>input {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .emailRadio>label>span {
+        font-size: 14px;
+    }
+
+    .suppport_input {
+        margin: 20px 0;
+    }
+
+    .suppport_input>input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .message>textarea {
+        height: 120px;
+        font-size: 14px;
+    }
+
+    .support_form_btn {
+        width: 100px;
+        height: 40px;
+        padding: 10px;
+        gap: 10px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .popBox {
+        width: 340rem;
+        height: 280rem;
+        background-color: #fff;
+        border-radius: 10rem;
+    }
+
+    .popBox>h1 {
+        font-size: 28rem;
+        color: #242424;
+        margin: 50rem auto 30rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .popBox>p {
+        font-size: 18rem;
+        line-height: 120%;
+        margin-bottom: 40rem;
+        color: #767676;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .popBox>h1>span {
+        font-size: 48rem;
+    }
+
+    .ok {
+        width: 150rem;
+        margin: 0 auto;
+        padding: 0rem 10rem;
+        font-size: 26rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #2d88c9;
+        color: #fff;
+        border-radius: 10rem;
+        cursor: pointer;
+    }
+
+    .supportForm {
+        padding-bottom: 20rem;
+    }
+
+    .contact_info {
+        flex-direction: column;
+    }
+
+    .form_contexts {
+        width: 350rem;
+    }
+
+    .form_contexts>h2 {
+        font-size: 24rem;
+        margin: 40rem 0;
+    }
+
+    .info_left {
+        margin-bottom: 30rem;
+    }
+
+    .info_left>div {
+        margin-bottom: 15rem;
+    }
+
+    .info_left p {
+        font-size: 16rem;
+        margin-bottom: 10rem;
+    }
+
+    .info_left a {
+        font-size: 16rem;
+    }
+
+    .message>h2,
+    .form_right>h2 {
+        font-size: 16rem;
+    }
+
+    .emailRadio {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .emailRadio>label {
+        margin-bottom: 10rem;
+    }
+
+    .emailRadio>label>input {
+        width: 20rem;
+        height: 20rem;
+        margin-right: 10rem;
+    }
+
+    .emailRadio>label>span {
+        font-size: 14rem;
+    }
+
+    .suppport_input {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20rem 0;
+    }
+
+    .suppport_input>input {
+        width: 100%;
+        height: 40rem;
+        font-size: 14rem;
+        margin-bottom: 10rem;
+    }
+
+    .message>textarea {
+        height: 120rem;
+        font-size: 14rem;
+    }
+
+    .support_form_btn {
+        width: 100rem;
+        height: 40rem;
+        padding: 10rem;
+        gap: 10rem;
+        margin-top: 10rem;
+        font-size: 14rem;
+    }
+
+    .form_right {
+        width: 350rem;
+    }
+}

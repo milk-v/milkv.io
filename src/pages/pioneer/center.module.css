@@ -96,7 +96,7 @@
         height: 735px;
         left: 647px;
         top: 130px;
-        background: url(/static/pages/centerImg/Group401.png) no-repeat;
+        background: url(/static//pioneer/pioneer-box.png) no-repeat;
         background-size: 100%;
     }
 
@@ -104,7 +104,7 @@
         background-color: aqua;
         width: 100%;
         height: 861.12px;
-        background: url(/static/pages/centerImg/FrameBox.svg) no-repeat;
+        background: url(/static//pioneer/pioneer-contexts.svg) no-repeat;
         background-size: 100%;
         position: relative;
         margin: 0 auto;
@@ -161,7 +161,7 @@
         top: 0;
         width: 455px;
         height: 394px;
-        background: url(/static/pages/centerImg/chip-contexts.webp) no-repeat;
+        background: url(/static/pioneer/chip-contexts.webp) no-repeat;
         background-size: cover;
         overflow: hidden;
     }
@@ -180,7 +180,7 @@
         width: 355px;
         height: 355px;
         margin: -18.72px auto 0;
-        background: url(/static/pages/centerImg/SG2042.webp) no-repeat;
+        background: url(/static/pioneer/SG2042.webp) no-repeat;
         background-size: 100%;
     }
 
@@ -256,7 +256,7 @@
     }
 
     .pionBox .pionBox_1 {
-        background: url(/static/pages/centerImg/chip-contexts.webp) no-repeat;
+        background: url(/static/pioneer/chip-contexts.webp) no-repeat;
         background-size: cover;
     }
 
@@ -264,7 +264,7 @@
         width: 378px;
         height: 316px;
         margin: 76px auto 0;
-        background: url(/static/pages/centerImg/pioneer-frontview.webp) no-repeat;
+        background: url(/static/pioneer/pioneer-frontview.webp) no-repeat;
         background-size: cover;
     }
 
@@ -484,7 +484,7 @@
     }
 
     .div_on1 {
-        background: url(/static/pages/centerImg/fedoralogo.svg);
+        background: url(/static/pioneer/fedoralogo.svg);
         background-size: 100%;
 
     }
@@ -503,7 +503,7 @@
         width: 168px;
         height: 128px;
         margin: 28px auto 0;
-        background: url(/static/pages/centerImg/pioneer_1.svg) no-repeat;
+        background: url(/static/pioneer/os-icon3.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -515,7 +515,7 @@
         width: 222px;
         height: 125px;
         margin: 28px auto 0;
-        background: url(/static/pages/centerImg/pioneer_4.svg) no-repeat;
+        background: url(/static/pioneer/os-icon6.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -527,7 +527,7 @@
         width: 119px;
         height: 125px;
         margin: 28px auto 0;
-        background: url(/static/pages/centerImg/pioneer_5.svg) no-repeat;
+        background: url(/static/pioneer/os-icon4.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -535,14 +535,14 @@
         width: 180px;
         height: 130px;
         margin: 18px auto 0;
-        background: url(/static/pages/centerImg/image75.svg) no-repeat;
+        background: url(/static/pioneer/os-icon2.svg) no-repeat;
         background-size: 100%;
     }
 
     .div_on6 {
         width: 100%;
         height: 100%;
-        background: url(/static/pages/pioneerxitong.svg) no-repeat;
+        background: url(/static/pioneer/pioneerxitong.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -550,7 +550,7 @@
         width: 376px;
         height: 125px;
         margin: 28px auto 0;
-        background: url(/static/pages/centerImg/image74.svg) no-repeat;
+        background: url(/static/pioneer/os-icon1.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -575,7 +575,7 @@
     .bannerimg1_1 {
         width: 416px;
         height: 349px;
-        background: url(/static/pages/111.jpg) no-repeat;
+        background: url(/static/pioneer/workstation.jpg) no-repeat;
         background-size: contain;
     }
 
@@ -593,14 +593,14 @@
     .bannerimg2_1 {
         width: 416px;
         height: 283.5008px;
-        background: url(/static/pages/centerImg/Frame429.svg) no-repeat;
+        background: url(/static/pioneer/swich.svg) no-repeat;
         background-size: 100%;
     }
 
     .bannerimg3_1 {
         width: 416px;
         height: 283.5008px;
-        background: url(/static/pages/centerImg/image80.svg) no-repeat;
+        background: url(/static/pioneer/pioneer-rearview.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -633,7 +633,7 @@
     .RichImg {
         width: 100%;
         height: 657px;
-        background: url(/static/pages/centerImg/board-info.webp) no-repeat;
+        background: url(/static/pioneer/board-info.webp) no-repeat;
         background-size: 100%;
         margin-top: 100px;
         margin-bottom: 150px;
@@ -673,7 +673,7 @@
         margin: 0 auto 100px;
         width: 80%;
         height: 800px;
-        background: url(/static/pages/footerbg.png) no-repeat;
+        background: url(/static/components/footerbg.png) no-repeat;
         background-size: 100%;
         position: relative;
     }
@@ -768,14 +768,6 @@
         color: #fff;
     }
 
-    .pinImg {
-        width: 1320px;
-        height: 560px;
-        background: url(/static/pages/FrameBig.png) no-repeat;
-        background-size: 100%;
-    }
-
-
 
     .document>h1 {
         color: #fff;
@@ -795,7 +787,7 @@
     .down {
         width: 30px;
         height: 30px;
-        background: url(/static/pages/download.svg) no-repeat;
+        background: url(/static/components/download.svg) no-repeat;
         background-size: 100%;
         margin-right: 19.1904px;
     }
@@ -849,7 +841,7 @@
         width: 600px;
         height: 625px;
         left: 400px;
-        background: url(/static/pages/centerImg/Group401.png) no-repeat;
+        background: url(/static//pioneer/pioneer-box.png) no-repeat;
         background-size: 100%;
     }
 
@@ -857,7 +849,7 @@
         background-color: aqua;
         width: 100%;
         height: 600px;
-        background: url(/static/pages/centerImg/FrameBox.svg) no-repeat;
+        background: url(/static//pioneer/pioneer-contexts.svg) no-repeat;
         background-size: 100%;
         position: relative;
         margin: 0 auto;
@@ -912,7 +904,7 @@
         top: 0;
         width: 310px;
         height: 300px;
-        background: url(/static/pages/centerImg/chip-contexts.webp) no-repeat;
+        background: url(/static/pioneer/chip-contexts.webp) no-repeat;
         background-size: cover;
         overflow: hidden;
     }
@@ -931,7 +923,7 @@
         width: 235px;
         height: 250px;
         margin: -18.72px auto 0;
-        background: url(/static/pages/centerImg/SG2042.webp) no-repeat;
+        background: url(/static/pioneer/SG2042.webp) no-repeat;
         background-size: 100%;
     }
 
@@ -1007,7 +999,7 @@
     }
 
     .pionBox .pionBox_1 {
-        background: url(/static/pages/centerImg/chip-contexts.webp) no-repeat;
+        background: url(/static/pioneer/chip-contexts.webp) no-repeat;
         background-size: cover;
     }
 
@@ -1015,7 +1007,7 @@
         width: 300px;
         height: 270px;
         margin: 76px auto 0;
-        background: url(/static/pages/centerImg/pioneer-frontview.webp) no-repeat;
+        background: url(/static/pioneer/pioneer-frontview.webp) no-repeat;
         background-size: cover;
     }
 
@@ -1234,7 +1226,7 @@
     }
 
     .div_on1 {
-        background: url(/static/pages/centerImg/fedoralogo.svg);
+        background: url(/static/pioneer/fedoralogo.svg);
         background-size: 100%;
     }
 
@@ -1252,7 +1244,7 @@
         width: 120px;
         height: 100px;
         margin: 28px auto 0;
-        background: url(/static/pages/centerImg/pioneer_1.svg) no-repeat;
+        background: url(/static/pioneer/os-icon3.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -1264,7 +1256,7 @@
         width: 160px;
         height: 90px;
         margin: 28px auto 0;
-        background: url(/static/pages/centerImg/pioneer_4.svg) no-repeat;
+        background: url(/static/pioneer/os-icon6.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -1276,7 +1268,7 @@
         width: 80px;
         height: 100px;
         margin: 28px auto 0;
-        background: url(/static/pages/centerImg/pioneer_5.svg) no-repeat;
+        background: url(/static/pioneer/os-icon4.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -1284,14 +1276,14 @@
         width: 130px;
         height: 100px;
         margin: 18px auto 0;
-        background: url(/static/pages/centerImg/image75.svg) no-repeat;
+        background: url(/static/pioneer/os-icon2.svg) no-repeat;
         background-size: 100%;
     }
 
     .div_on6 {
         width: 100%;
         height: 100%;
-        background: url(/static/pages/pioneerxitong.svg) no-repeat;
+        background: url(/static/pioneer/pioneerxitong.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -1299,7 +1291,7 @@
         width: 300px;
         height: 100px;
         margin: 28px auto 0;
-        background: url(/static/pages/centerImg/image74.svg) no-repeat;
+        background: url(/static/pioneer/os-icon1.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -1324,7 +1316,7 @@
     .bannerimg1_1 {
         width: 307px;
         height: 270px;
-        background: url(/static/pages/111.jpg) no-repeat;
+        background: url(/static/pioneer/workstation.jpg) no-repeat;
         background-size: contain;
     }
 
@@ -1342,14 +1334,14 @@
     .bannerimg2_1 {
         width: 307px;
         height: 300px;
-        background: url(/static/pages/centerImg/Frame429.svg) no-repeat;
+        background: url(/static/pioneer/swich.svg) no-repeat;
         background-size: 100%;
     }
 
     .bannerimg3_1 {
         width: 307px;
         height: 300px;
-        background: url(/static/pages/centerImg/image80.svg) no-repeat;
+        background: url(/static/pioneer/pioneer-rearview.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -1382,7 +1374,7 @@
     .RichImg {
         width: 100%;
         height: 500px;
-        background: url(/static/pages/centerImg/board-info.webp) no-repeat;
+        background: url(/static/pioneer/board-info.webp) no-repeat;
         background-size: 100%;
         margin-bottom: 50px;
         position: relative;
@@ -1422,7 +1414,7 @@
         margin: 0 auto 0;
         width: 1000px;
         height: 500px;
-        background: url(/static/pages/footerbg.png) no-repeat;
+        background: url(/static/components/footerbg.png) no-repeat;
         background-size: 100%;
         position: relative;
     }
@@ -1515,13 +1507,6 @@
         color: #fff;
     }
 
-    .pinImg {
-        width: 1320px;
-        height: 560px;
-        background: url(/static/pages/FrameBig.png) no-repeat;
-        background-size: 100%;
-    }
-
     .document>h1 {
         color: #fff;
         font-size: 48px;
@@ -1540,7 +1525,7 @@
     .down {
         width: 30px;
         height: 30px;
-        background: url(/static/pages/download.svg) no-repeat;
+        background: url(/static/components/download.svg) no-repeat;
         background-size: 100%;
         margin-right: 19.1904px;
     }
@@ -1593,7 +1578,7 @@
         width: 400px;
         height: 400px;
         left: 330px;
-        background: url(/static/pages/centerImg/Group401.png) no-repeat;
+        background: url(/static//pioneer/pioneer-box.png) no-repeat;
         background-size: 100%;
     }
 
@@ -1601,7 +1586,7 @@
         background-color: aqua;
         width: 100%;
         height: 400px;
-        background: url(/static/pages/centerImg/FrameBox.svg) no-repeat;
+        background: url(/static//pioneer/pioneer-contexts.svg) no-repeat;
         background-size: 100%;
         position: relative;
         margin: 0 auto;
@@ -1656,7 +1641,7 @@
         top: 0;
         width: 210px;
         height: 230px;
-        background: url(/static/pages/centerImg/chip-contexts.webp) no-repeat;
+        background: url(/static/pioneer/chip-contexts.webp) no-repeat;
         background-size: cover;
         overflow: hidden;
     }
@@ -1675,7 +1660,7 @@
         width: 180px;
         height: 200px;
         margin: -18.72px auto 0;
-        background: url(/static/pages/centerImg/SG2042.webp) no-repeat;
+        background: url(/static/pioneer/SG2042.webp) no-repeat;
         background-size: 100%;
     }
 
@@ -1750,7 +1735,7 @@
     }
 
     .pionBox .pionBox_1 {
-        background: url(/static/pages/centerImg/chip-contexts.webp) no-repeat;
+        background: url(/static/pioneer/chip-contexts.webp) no-repeat;
         background-size: cover;
     }
 
@@ -1758,7 +1743,7 @@
         width: 210px;
         height: 190px;
         margin: 26px auto 0;
-        background: url(/static/pages/centerImg/pioneer-frontview.webp) no-repeat;
+        background: url(/static/pioneer/pioneer-frontview.webp) no-repeat;
         background-size: cover;
     }
 
@@ -1968,7 +1953,7 @@
     }
 
     .div_on1 {
-        background: url(/static/pages/centerImg/fedoralogo.svg) no-repeat;
+        background: url(/static/pioneer/fedoralogo.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -1980,7 +1965,7 @@
         width: 80px;
         height: 60px;
         margin: 20px auto 0;
-        background: url(/static/pages/centerImg/pioneer_1.svg) no-repeat;
+        background: url(/static/pioneer/os-icon3.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -1992,7 +1977,7 @@
         width: 100px;
         height: 70px;
         margin: 20px auto 0;
-        background: url(/static/pages/centerImg/pioneer_4.svg) no-repeat;
+        background: url(/static/pioneer/os-icon6.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -2004,7 +1989,7 @@
         width: 60px;
         height: 80px;
         margin: 20px auto 0;
-        background: url(/static/pages/centerImg/pioneer_5.svg) no-repeat;
+        background: url(/static/pioneer/os-icon4.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -2012,14 +1997,14 @@
         width: 100px;
         height: 70px;
         margin: 10px auto 0;
-        background: url(/static/pages/centerImg/image75.svg) no-repeat;
+        background: url(/static/pioneer/os-icon2.svg) no-repeat;
         background-size: 100%;
     }
 
     .div_on6 {
         width: 100%;
         height: 100%;
-        background: url(/static/pages/pioneerxitong.svg) no-repeat;
+        background: url(/static/pioneer/pioneerxitong.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -2027,7 +2012,7 @@
         width: 200px;
         height: 70px;
         margin: 15px auto 0;
-        background: url(/static/pages/centerImg/image74.svg) no-repeat;
+        background: url(/static/pioneer/os-icon1.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -2052,7 +2037,7 @@
     .bannerimg1_1 {
         width: 218px;
         height: 220px;
-        background: url(/static/pages/111.jpg) no-repeat;
+        background: url(/static/pioneer/workstation.jpg) no-repeat;
         background-size: contain;
     }
 
@@ -2070,14 +2055,14 @@
     .bannerimg2_1 {
         width: 218px;
         height: 220px;
-        background: url(/static/pages/centerImg/Frame429.svg) no-repeat;
+        background: url(/static/pioneer/swich.svg) no-repeat;
         background-size: 100%;
     }
 
     .bannerimg3_1 {
         width: 218px;
         height: 220px;
-        background: url(/static/pages/centerImg/image80.svg) no-repeat;
+        background: url(/static/pioneer/pioneer-rearview.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -2110,7 +2095,7 @@
     .RichImg {
         width: 100%;
         height: 350px;
-        background: url(/static/pages/centerImg/board-info.webp) no-repeat;
+        background: url(/static/pioneer/board-info.webp) no-repeat;
         background-size: 100%;
         margin-bottom: 50px;
         position: relative;
@@ -2149,7 +2134,7 @@
         margin: 0 auto 0;
         width: 700px;
         height: 400px;
-        background: url(/static/pages/footerbg.png) no-repeat;
+        background: url(/static/components/footerbg.png) no-repeat;
         background-size: 100%;
         position: relative;
     }
@@ -2261,7 +2246,7 @@
     .down {
         width: 30px;
         height: 30px;
-        background: url(/static/pages/download.svg) no-repeat;
+        background: url(/static/components/download.svg) no-repeat;
         background-size: 100%;
         margin-right: 10px;
     }
@@ -2376,7 +2361,7 @@
     .power1 {
         width: 100%;
         height: 340rem;
-        background: url(/static/pages/centerImg/chip-contexts.webp) no-repeat;
+        background: url(/static/pioneer/chip-contexts.webp) no-repeat;
         background-size: cover;
         position: relative;
     }
@@ -2394,7 +2379,7 @@
     .powerimg {
         width: 70%;
         height: 70%;
-        background: url(/static/pages/centerImg/SG2042.webp) no-repeat;
+        background: url(/static/pioneer/SG2042.webp) no-repeat;
         background-size: 100%;
         position: absolute;
         top: 50%;
@@ -2452,7 +2437,7 @@
     }
 
     .pionBox .pionBox_1 {
-        background: url(/static/pages/centerImg/chip-contexts.webp) no-repeat;
+        background: url(/static/pioneer/chip-contexts.webp) no-repeat;
         background-size: cover;
         position: relative;
     }
@@ -2460,7 +2445,7 @@
     .pionBox .pionBox_1 .pionBox_1_img {
         width: 65%;
         height: 60%;
-        background: url(/static/pages/centerImg/pioneer-frontview.webp) no-repeat;
+        background: url(/static/pioneer/pioneer-frontview.webp) no-repeat;
         background-size: cover;
         position: absolute;
         top: 50%;
@@ -2671,7 +2656,7 @@
     }
 
     .div_on1 {
-        background: url(/static/pages/centerImg/fedoralogo.svg) no-repeat;
+        background: url(/static/pioneer/fedoralogo.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -2685,7 +2670,7 @@
         width: 50rem;
         height: 60rem;
         margin: 0 auto;
-        background: url(/static/pages/centerImg/pioneer_1.svg) no-repeat;
+        background: url(/static/pioneer/os-icon3.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -2697,7 +2682,7 @@
         width: 50rem;
         height: 60rem;
         margin: 5rem auto 0;
-        background: url(/static/pages/centerImg/pioneer_4.svg) no-repeat;
+        background: url(/static/pioneer/os-icon6.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -2709,7 +2694,7 @@
         width: 30rem;
         height: 50rem;
         margin: 5rem auto 0;
-        background: url(/static/pages/centerImg/pioneer_5.svg) no-repeat;
+        background: url(/static/pioneer/os-icon4.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -2717,13 +2702,13 @@
         width: 60rem;
         height: 60rem;
         margin: 0rem auto 0;
-        background: url(/static/pages/centerImg/image75.svg) no-repeat;
+        background: url(/static/pioneer/os-icon2.svg) no-repeat;
         background-size: 100%;
     }
 
     .div_on6 {
         height: 100%;
-        background: url(/static/pages/pioneerxitong.svg) no-repeat;
+        background: url(/static/pioneer/pioneerxitong.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -2731,7 +2716,7 @@
         width: 100rem;
         height: 70rem;
         margin: 15rem auto 0;
-        background: url(/static/pages/centerImg/image74.svg) no-repeat;
+        background: url(/static/pioneer/os-icon1.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -2755,7 +2740,7 @@
     .bannerimg1_1 {
         width: 218rem;
         height: 180rem;
-        background: url(/static/pages/111.jpg) no-repeat;
+        background: url(/static/pioneer/workstation.jpg) no-repeat;
         background-size: contain;
     }
 
@@ -2771,14 +2756,14 @@
     .bannerimg2_1 {
         width: 218rem;
         height: 180rem;
-        background: url(/static/pages/centerImg/Frame429.svg) no-repeat;
+        background: url(/static/pioneer/swich.svg) no-repeat;
         background-size: 100%;
     }
 
     .bannerimg3_1 {
         width: 218rem;
         height: 180rem;
-        background: url(/static/pages/centerImg/image80.svg) no-repeat;
+        background: url(/static/pioneer/pioneer-rearview.svg) no-repeat;
         background-size: 100%;
     }
 
@@ -2807,7 +2792,7 @@
     .RichImg {
         width: 100%;
         height: 180rem;
-        background: url(/static/pages/centerImg/board-info.webp) no-repeat;
+        background: url(/static/pioneer/board-info.webp) no-repeat;
         background-size: 100%;
         margin-bottom: 20rem;
         position: relative;
@@ -2847,7 +2832,7 @@
         margin: -50rem auto 0;
         width: 100%;
         height: 200rem;
-        background: url(/static/pages/footerbg.png) no-repeat;
+        background: url(/static/components/footerbg.png) no-repeat;
         background-size: 100%;
         position: relative;
     }
@@ -2952,7 +2937,7 @@
     .down {
         width: 20rem;
         height: 20rem;
-        background: url(/static/pages/download.svg) no-repeat;
+        background: url(/static/components/download.svg) no-repeat;
         background-size: 100%;
         margin-right: 10rem;
     }

@@ -1,288 +1,590 @@
-.footerBox {
+.footer_module {
     width: 100%;
-    background-color: #fff;
+    background-color: #000000;
     overflow: hidden;
-    z-index: 100;
 }
 
-.footerInfo,
-.footer_navbar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.footer_navbar {
-    flex-wrap: wrap;
-}
-
-.footerInfo {
-    border-bottom: 1px solid #2D88C9;
+.footer_content {
+    margin: 0 auto;
 }
 
 .footer_logo {
     display: block;
 }
 
-.footer_navbar>a {
-    font-weight: 500;
-    color: #2D88C9;
-    white-space: nowrap;
+.footer_info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #71777D;
 }
 
-.footer_right>h1 {
-    font-weight: 700;
-    color: #2D88C9;
+.footer_bottom_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer_left>h2 {
+    color: #FFF;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
 }
 
 .subscribeText {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #2D88C9;
 }
 
 .subscribeEmail {
-    border: none;
     outline: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: inherit;
+    color: #fff;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .subscribeBtn {
-    background: url(/static/form/Subscribe-right.svg) no-repeat;
-    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    border-radius: 10px;
+    background: #2D88C9;
     cursor: pointer;
-    outline: none;
     border: none;
 }
 
-.address>h1 {
-    font-weight: 500;
+.footer_right {
+    width: 65%;
+}
+
+.footer_ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer_ul>li>a {
+    display: block;
+    color: #767676;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+}
+
+.footer_ul>li>a:hover {
     color: #2D88C9;
 }
 
-.address>p {
+.footer_ul>li>.line_name {
+    color: #FFF;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+}
+
+.twitter,
+.we {
+    display: flex !important;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.we:hover .wechat {
+    display: block;
+}
+
+.we>.wechat {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.we>p,
+.twitter>p {
+    color: #767676;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.wechat_info {
+    color: #767676;
+    font-family: Roboto Condensed;
+    font-style: normal;
     font-weight: 400;
     line-height: 120%;
-    color: #2D88C9;
 }
 
-@media screen and (min-width: 1500px) {
-    .centent {
-        width: 1440px;
-        margin: 50px auto;
-    }
+.footer_bottom_text {
+    color: #92989F;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+}
 
-    .footerInfo {
-        padding-bottom: 40px;
+@media screen and (min-width: 1950px) {
+    .footer_content {
+        width: 1920px;
     }
 
     .footer_logo {
-        width: 206px;
-        height: 60px;
+        width: 240px;
+        height: 70px;
+        margin: 100px 0;
+    }
+
+    .footer_info {
+        padding-bottom: 80px;
+    }
+
+    .footer_left>h2 {
+        font-size: 32px;
         margin-bottom: 40px;
     }
 
-    .footer_navbar>a {
-        font-size: 28px;
-        margin-right: 30px;
-    }
-
-    .footer_right>h1 {
-        font-size: 36px;
-        margin-bottom: 25px;
-    }
-
-    .subscribeText {
-        width: 580px;
-    }
-
     .subscribeEmail {
-        height: 55px;
-        font-size: 22px;
+        width: 280px;
+        height: 50px;
+        margin-right: 20px;
+        padding-left: 10px;
+        font-size: 20px;
     }
 
     .subscribeBtn {
-        width: 40px;
-        height: 22px;
+        width: 102px;
+        height: 52px;
+        padding: 10px 30px;
+        font-size: 18px;
     }
 
-    .address>h1 {
-        margin-top: 40px;
-        margin-bottom: 10px;
-        font-size: 32px;
-        color: #2D88C9;
+    .footer_ul>li>a {
+        font-size: 24px;
+        margin-bottom: 12px;
     }
 
-    .address>p {
-        font-size: 22px;
+    .footer_ul>li>.line_name {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .twitter>img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .we>p,
+    .twitter>p {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    .we>.wechat {
+        width: 140px;
+        height: 140px;
+        margin: 20px 0 10px;
+    }
+
+    .wechat_info {
+        font-size: 20px;
+    }
+
+    .footer_bottom_text {
+        font-size: 20px;
+        margin: 60px 0;
     }
 }
 
-@media screen and (max-width: 1500px) and (min-width: 1050px) {
-    .centent {
-        width: 1000px;
-        margin: 35px auto;
-    }
-
-    .footerInfo {
-        padding-bottom: 28px;
+@media screen and (max-width: 1950px) and (min-width: 1450px) {
+    .footer_content {
+        width: calc(1920px*.7);
     }
 
     .footer_logo {
-        width: 144px;
-        height: 42px;
-        margin-bottom: 28px;
+        width: calc(240px*.7);
+        height: calc(70px*.7);
+        margin: 70px 0;
     }
 
-    .footer_navbar>a {
+    .footer_info {
+        padding-bottom: 50px;
+    }
+
+    .footer_left>h2 {
         font-size: 20px;
-        margin-right: 21px;
+        margin-bottom: 30px;
     }
 
-    .footer_right>h1 {
-        font-size: 26px;
+    .subscribeEmail {
+        width: 240px;
+        height: 50px;
+        margin-right: 10px;
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .subscribeBtn {
+        width: 102px;
+        height: 52px;
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+
+    .footer_ul>li>a {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    .footer_ul>li>.line_name {
+        font-size: 24px;
         margin-bottom: 20px;
     }
 
-    .subscribeText {
-        width: 406px;
+    .twitter>img {
+        width: 35px;
+        height: 35px;
     }
 
-    .subscribeEmail {
-        height: 38px;
-        font-size: 16px;
+    .we>p,
+    .twitter>p {
+        font-size: 24px;
+        margin-left: 10px;
     }
 
-    .subscribeBtn {
-        width: 28px;
-        height: 20px;
+    .we>.wechat {
+        width: 130px;
+        height: 130px;
+        margin: 20px 0 10px;
     }
 
-    .address>h1 {
-        margin-top: 28px;
-        margin-bottom: 7px;
-        font-size: 26px;
-        color: #2D88C9;
-    }
-
-    .address>p {
+    .wechat_info {
         font-size: 18px;
+    }
+
+    .footer_bottom_text {
+        font-size: 18px;
+        margin: 40px 0;
     }
 }
 
-@media screen and (max-width: 1050px) and (min-width: 750px) {
-    .centent {
-        width: 700px;
-        margin: 25px auto;
-    }
-
-    .footerInfo {
-        padding-bottom: 22px;
+@media screen and (max-width: 1450px) and (min-width: 1000px) {
+    .footer_content {
+        width: calc(1920px*.7*.7);
     }
 
     .footer_logo {
-        width: 100px;
-        height: 28px;
-        margin-bottom: 24px;
+        width: calc(240px*.7*.7);
+        height: calc(70px*.7*.7);
+        margin: 50px 0;
     }
 
-    .footer_navbar>a {
-        font-size: 14px;
-        margin-right: 15px;
+    .footer_info {
+        padding-bottom: 0px;
     }
 
-    .footer_right>h1 {
-        font-size: 20px;
-        margin-bottom: 14px;
-    }
-
-    .subscribeText {
-        width: 284px;
+    .footer_left>h2 {
+        font-size: 16px;
+        margin-bottom: 30px;
     }
 
     .subscribeEmail {
-        height: 28px;
+        width: 200px;
+        height: 40px;
+        margin-right: 10px;
+        padding-left: 10px;
         font-size: 16px;
     }
 
     .subscribeBtn {
-        width: 28px;
-        height: 20px;
+        width: 80px;
+        height: 40px;
+        padding: 10px 30px;
+        font-size: 14px;
     }
 
-    .address>h1 {
-        margin-top: 28px;
-        margin-bottom: 7px;
-        font-size: 22px;
-        color: #2D88C9;
+    .footer_ul>li>a {
+        font-size: 14px;
+        margin-bottom: 5px;
     }
 
-    .address>p {
-        font-size: 16px;
+    .footer_ul>li>.line_name {
+        font-size: 18px;
+        margin-bottom: 15px;
     }
+
+    .twitter>img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .we>p,
+    .twitter>p {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .we>.wechat {
+        width: 100px;
+        height: 100px;
+        margin: 20px 0 10px;
+    }
+
+    .wechat_info {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footer_bottom_text {
+        font-size: 12px;
+        margin: 40px 0;
+    }
+
+    .wechat_min {
+        width: 25px;
+        height: 25px;
+    }
+
 }
 
-@media screen and (max-width: 750px) {
-    .centent {
-        width: 340rem;
-        margin: 20rem auto;
+@media screen and (max-width: 1000px) and (min-width: 750px) {
+    .footer_content {
+        width: calc(1920px*.7*.7*.75);
     }
 
-    .footerInfo {
-        padding-bottom: 10rem;
+    .footer_logo {
+        width: calc(240px*.7*.7*.75);
+        height: calc(70px*.7*.7*.75);
+        margin: 50px 0;
+    }
+
+    .footer_info {
+        padding-bottom: 0px;
+        flex-direction: column;
+    }
+
+    .footer_left {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer_left>h2 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .footer_right {
+        width: 100%;
+    }
+
+    .subscribeEmail {
+        width: 200px;
+        height: 40px;
+        margin-right: 10px;
+        margin-left: 50px;
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .subscribeBtn {
+        width: 80px;
+        height: 40px;
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .footer_ul>li>a {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .footer_ul>li>.line_name {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .twitter>img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer_bottom_text {
         flex-direction: column;
         align-items: flex-start;
     }
 
+    .we>p,
+    .twitter>p {
+        font-size: 14px;
+        margin-left: 10px;
+
+    }
+
+    .we>.wechat {
+        width: 100px;
+        height: 100px;
+        margin: 20px 0 10px;
+    }
+
+    .wechat_info {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footer_bottom_text {
+        font-size: 12px;
+        margin: 40px 0;
+    }
+
+    .wechat_min {
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .footer_content {
+        width: 350rem;
+    }
+
     .footer_logo {
-        width: 100rem;
-        height: 28rem;
-        margin-bottom: 10rem;
+        width: 120rem;
+        height: 35rem;
+        margin: 30rem 0;
     }
 
-    .footer_navbar {
-        justify-content: flex-start;
-        width: 340rem;
-        padding-bottom: 10rem;
-        border-bottom: 1rem solid #2D88C9;
+    .footer_info {
+        padding-bottom: 0;
+        flex-direction: column;
     }
 
-    .footer_navbar>a {
-        font-size: 14rem;
-        margin-right: 12rem;
+    .footer_left {
+        margin-bottom: 40rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .footer_left>h2 {
+        font-size: 16rem;
+        margin-bottom: 0;
     }
 
     .footer_right {
-        margin-top: 20rem;
-    }
-
-    .footer_right>h1 {
-        font-size: 20rem;
-        margin-bottom: 14rem;
-    }
-
-    .subscribeText {
-        width: 340rem;
+        width: 100%;
     }
 
     .subscribeEmail {
-        height: 28rem;
+        width: 240rem;
+        height: 40rem;
+        margin-right: 10rem;
+        padding-left: 10rem;
+        margin-top: 10rem;
         font-size: 16rem;
     }
 
     .subscribeBtn {
-        width: 28rem;
-        height: 20rem;
-    }
-
-    .address>h1 {
+        width: 80rem;
+        height: 40rem;
+        padding: 10rem 30rem;
         margin-top: 10rem;
-        margin-bottom: 5rem;
-        font-size: 18rem;
-        color: #2D88C9;
+        font-size: 14rem;
     }
 
-    .address>p {
+    .footer_ul {
+        flex-direction: column;
+    }
+
+    .footer_ul>li {
+        margin-bottom: 30rem;
+    }
+
+    .footer_ul>li>a {
+        font-size: 18rem;
+        margin-bottom: 5rem;
+    }
+
+    .footer_ul>li>.line_name {
+        font-size: 22rem;
+        margin-bottom: 15rem;
+    }
+
+    .twitter>img {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .footer_bottom_text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .we>p,
+    .twitter>p {
         font-size: 14rem;
+        margin-left: 10rem;
+    }
+
+    .we>.wechat {
+        width: 100rem;
+        height: 100rem;
+        margin: 20rem 0 10rem;
+    }
+
+    .wechat_info {
+        font-size: 14rem;
+        text-align: center;
+    }
+
+    .footer_bottom_text {
+        font-size: 12rem;
+        margin: 20rem 0;
+    }
+
+    .footer_bottom_text>p {
+        margin-bottom: 20rem;
+    }
+
+    .wechat_min {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .we {
+        padding-bottom: 100rem;
+    }
+
+    .wechat {
+        display: block !important;
+        top: 10% !important;
     }
 }

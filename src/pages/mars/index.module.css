@@ -403,7 +403,7 @@
         margin: 0 auto 100px;
         width: 80%;
         height: 800px;
-        background: url(/static/pages/footerbg.png) no-repeat;
+        background: url(/static/components/footerbg.png) no-repeat;
         background-size: 100%;
         position: relative;
     }
@@ -709,7 +709,7 @@
         margin: 0 auto 100px;
         width: 80%;
         height: 800px;
-        background: url(/static/pages/footerbg.png) no-repeat;
+        background: url(/static/components/footerbg.png) no-repeat;
         background-size: 100%;
         position: relative;
     }
@@ -1016,7 +1016,7 @@
         margin: 0 auto 0;
         width: 1000px;
         height: 500px;
-        background: url(/static/pages/footerbg.png) no-repeat;
+        background: url(/static/components/footerbg.png) no-repeat;
         background-size: 100%;
         position: relative;
     }
@@ -1321,7 +1321,7 @@
         margin: 0 auto 0;
         width: 700px;
         height: 400px;
-        background: url(/static/pages/footerbg.png) no-repeat;
+        background: url(/static/components/footerbg.png) no-repeat;
         background-size: 100%;
         position: relative;
     }
@@ -1607,7 +1607,7 @@
         margin: -50rem auto 0;
         width: 100%;
         height: 200rem;
-        background: url(/static/pages/footerbg.png) no-repeat;
+        background: url(/static/components/footerbg.png) no-repeat;
         background-size: 100%;
         position: relative;
     }

@@ -193,7 +193,7 @@ function Center() {
       </div>
       <ContactUs product='pioneer' />
       <ContactBar product='pioneer' />
-      <Embrace product='pionner' />
+      <Embrace product='pioneer' />
     </div>
   )
 }

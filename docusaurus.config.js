@@ -2,7 +2,7 @@
 const config = {
   title: 'Milk-V',
   tagline: 'Everything about RISC-V',
-  favicon: 'pages/favicon.ico',
+  favicon: 'favicon.ico',
   url: 'https://milkv.io',
   baseUrl: '/',
   trailingSlash: false,
@@ -82,7 +82,7 @@ const config = {
         hideOnScroll: true,
         logo: {
           alt: 'milkv.io',
-          src: 'pages/LogoNew.svg',
+          src: 'components/LogoNew.svg',
         },
 
         items: [
@@ -90,6 +90,11 @@ const config = {
             label: 'Home',
             position: 'right',
             to: '/'
+          },
+          {
+            position: 'right',
+            label: 'About',
+            to: '/about'
           },
           {
             position: 'right',

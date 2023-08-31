@@ -125,7 +125,7 @@ li {
 .footer_logo {
   width: 16.25rem;
   height: 4.75rem;
-  background: url(/static/pages/ICON.svg) no-repeat center center;
+  background: url(/static/components/ICON.svg) no-repeat center center;
   background-size: cover;
 }
 
@@ -236,7 +236,7 @@ li {
   .footer_logo {
     width: 116rem;
     height: 33rem;
-    background: url(/static/pages/ICON.svg) no-repeat center center;
+    background: url(/static/components/ICON.svg) no-repeat center center;
     background-size: cover;
     margin-right: 10rem;
   }
@@ -273,4 +273,10 @@ li {
 
 strong {
   color: #2d88c9;
+}
+
+/* 字体 */
+@font-face {
+  font-family: Roboto;
+  src: url(/static/ttf/Roboto-Condensed-3.ttf);
 }

@@ -1,0 +1,357 @@
+.about_contexts {
+    width: 100%;
+    background-color: #151515;
+    overflow: hidden;
+}
+
+.about_map {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.about_map>h2 {
+    color: #FFF;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 3.2px;
+}
+
+.present {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.left_text {
+    color: #767676;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.specificities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.specificities>li>h2 {
+    color: #FFF;
+    text-align: left;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.embrace {
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.embrace>p {
+    color: #767676;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.embrace>h2 {
+    color: #000;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 3.2px;
+    position: relative;
+    z-index: 10;
+}
+
+.btm_line {
+    width: 0%;
+    position: absolute;
+    background-color: #000;
+    left: 0;
+    z-index: 9;
+}
+
+@media screen and (min-width: 1950px) {
+    .about_map {
+        width: 1920px;
+    }
+
+    .about_map>h2 {
+        font-size: 71px;
+        margin-top: 200px;
+        margin-bottom: 150px;
+    }
+
+    .left_text {
+        width: 560px;
+        font-size: 36px;
+    }
+
+    .specificities {
+        width: 1020px;
+        height: 1500px;
+        gap: 20px;
+    }
+
+    .specificities>li>img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .specificities>li>h2 {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .embrace {
+        height: 800px;
+    }
+
+    .embrace>p {
+        font-size: 41px;
+        margin-bottom: 40px;
+    }
+
+    .embrace>h2 {
+        font-size: 88px;
+        margin-bottom: 15px;
+    }
+
+    .btm_line {
+        height: 10px;
+        bottom: -30px;
+    }
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1450px) {
+    .about_map {
+        width: calc(1920px*.7);
+    }
+
+    .about_map>h2 {
+        font-size: 56px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+
+    .left_text {
+        width: calc(560px*.8);
+        font-size: 30px;
+    }
+
+    .specificities {
+        width: calc(1020px*.7);
+        height: calc(1500px*.7);
+        gap: 20px;
+    }
+
+    .specificities>li>img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .specificities>li>h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .embrace {
+        height: calc(800px*.7);
+    }
+
+    .embrace>p {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .embrace>h2 {
+        font-size: 70px;
+        margin-bottom: 15px;
+    }
+
+    .btm_line {
+        height: 6px;
+        bottom: -20px;
+    }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 1000px) {
+    .about_map {
+        width: calc(1920px*.7*.7);
+    }
+
+    .about_map>h2 {
+        font-size: 38px;
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+
+    .left_text {
+        width: calc(560px*.6);
+        font-size: 24px;
+    }
+
+    .specificities {
+        width: calc(1020px*.7*.7);
+        height: calc(1500px*.7*.7);
+        gap: 20px;
+    }
+
+    .specificities>li>img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .specificities>li>h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .embrace {
+        height: calc(800px*.7*.7);
+    }
+
+    .embrace>p {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    .embrace>h2 {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+    .btm_line {
+        height: 4px;
+        bottom: -10px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 750px) {
+    .about_map {
+        width: calc(1920px*.7*.7*.7);
+    }
+
+    .about_map>h2 {
+        font-size: 28px;
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+
+    .left_text {
+        width: calc(560px*.5);
+        font-size: 18px;
+    }
+
+    .specificities {
+        width: calc(1020px*.7*.7*.7);
+        height: calc(1500px*.7*.7*.7);
+        gap: 20px;
+    }
+
+    .specificities>li>img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .specificities>li>h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .embrace {
+        height: calc(800px*.7*.7*.7);
+    }
+
+    .embrace>p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .embrace>h2 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .btm_line {
+        height: 2px;
+        bottom: -10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about_map {
+        width: 350rem;
+    }
+
+    .about_map>h2 {
+        font-size: 26rem;
+        margin-top: 60rem;
+        margin-bottom: 30rem;
+    }
+
+    .present {
+        flex-direction: column;
+    }
+
+    .left_text {
+        width: 100%;
+        font-size: 18rem;
+
+    }
+
+    .specificities {
+        width: 100%;
+        height: calc(1500rem*.7*.7*.7);
+        gap: 20rem;
+        margin: 40rem auto;
+    }
+
+    .specificities>li>img {
+        width: 60rem;
+        height: 60rem;
+        margin-bottom: 10rem;
+    }
+
+    .specificities>li>h2 {
+        font-size: 14rem;
+        margin-bottom: 10rem;
+    }
+
+    .embrace {
+        height: calc(800rem*.7*.7*.7);
+    }
+
+    .embrace>p {
+        font-size: 14rem;
+        margin-bottom: 10rem;
+    }
+
+    .embrace>h2 {
+        font-size: 16rem;
+        margin-bottom: 5rem;
+    }
+
+    .btm_line {
+        height: 2rem;
+        bottom: -5rem;
+    }
+}
