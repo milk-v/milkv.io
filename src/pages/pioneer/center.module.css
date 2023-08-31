@@ -683,7 +683,7 @@
         margin: 0 auto;
     }
 
-    h2 {
+    .footText h2 {
         font-size: 32px;
         opacity: .9;
         margin-bottom: 20px;
@@ -1424,7 +1424,7 @@
         margin: 0 auto;
     }
 
-    h2 {
+    .footText h2 {
         font-size: 32px;
         opacity: .9;
         margin-bottom: 20px;
@@ -2144,7 +2144,7 @@
         margin: 0 auto;
     }
 
-    h2 {
+    .footText h2 {
         font-size: 32px;
         opacity: .9;
         margin-bottom: 20px;
@@ -2842,7 +2842,7 @@
         margin: 0 auto;
     }
 
-    h2 {
+    .footText h2 {
         font-size: 22rem;
         opacity: .9;
         margin-bottom: 15rem;

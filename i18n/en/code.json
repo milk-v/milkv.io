@@ -637,30 +637,6 @@
     "message": "Technology supports running both Linux and RTOS",
     "description": "Duo Hardware"
   },
-  "duo.embrace1": {
-    "message": "Embrace the new era with Duo,",
-    "description": "Duo embrace"
-  },
-  "pioneer.embrace1": {
-    "message": "Embrace the new era with Pionner,",
-    "description": "Duo embrace"
-  },
-  "mars.embrace1": {
-    "message": "Embrace the new era with Mars,",
-    "description": "Duo embrace"
-  },
-  "meles.embrace1": {
-    "message": "Embrace the new era with Meles,",
-    "description": "Duo embrace"
-  },
-  "vega.embrace1": {
-    "message": "Embrace the new era with Vega,",
-    "description": "Duo embrace"
-  },
-  "duo.embrace2": {
-    "message": "Let's make RISC-V better together.",
-    "description": "Duo embrace"
-  },
   "pioneer.page.title": {
     "message": "Make native RISC-V development possible",
     "description": "pioneer page title"

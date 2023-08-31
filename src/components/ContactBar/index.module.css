@@ -1,6 +1,5 @@
 .on5_box {
     width: 100%;
-    background-color: #151515;
     overflow: hidden;
 }
 
@@ -27,7 +26,8 @@
 .on5_box>ul>li {
     width: 31%;
     height: 100%;
-    background-color: #000;
+    border-radius: 10px;
+    background-color: #1C1C1C;
 }
 
 .on5_box>ul>li>img {

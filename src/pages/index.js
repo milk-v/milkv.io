@@ -194,7 +194,7 @@ const Home_web = () => {
       if (!isPaused) {
         setIndex(prevCount => (prevCount === 5 ? 1 : prevCount + 1));
       }
-    }, 2000);
+    }, 3000);
 
     return () => {
       clearInterval(timer);
@@ -222,7 +222,7 @@ const Home_web = () => {
         </div>
       </div>
       <div className={styles.black_shore}>
-        <ul className={styles.tab}>
+        <ul className={styles.tab} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           {tabs.map((tab, idx) => (
             <li key={idx} className={index === tab.index ? styles.index : null} onClick={() => { setIndex(tab.index) }}>
               <p>{tab.name}</p>

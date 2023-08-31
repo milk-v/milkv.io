@@ -1,6 +1,6 @@
 .home_header {
     width: 100%;
-    aspect-ratio: 1920/700;
+    aspect-ratio: 1920/600;
     background: url(/static/home/home-header-contexts.webp) no-repeat;
     background-size: cover;
     position: relative;

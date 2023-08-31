@@ -5,7 +5,6 @@ import Head from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
 import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
-import Embrace from "../../components/Embrace"
 
 import cCss from "./center.module.css"
 import Translate from '@docusaurus/Translate';
@@ -193,7 +192,6 @@ function Center() {
       </div>
       <ContactUs product='pioneer' />
       <ContactBar product='pioneer' />
-      <Embrace product='pioneer' />
     </div>
   )
 }

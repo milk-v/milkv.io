@@ -6,7 +6,6 @@ import BuyPop from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
 import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
-import Embrace from "../../components/Embrace"
 import MetaData from "../../components/MetaData"
 
 import Translate from '@docusaurus/Translate';
@@ -160,7 +159,6 @@ export default () => {
                 </table>
                 <ContactUs product='mars' />
                 <ContactBar product='mars' />
-                <Embrace product='mars' />
             </div>
             <Footer></Footer>
         </Layout>

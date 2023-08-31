@@ -8,7 +8,6 @@ import ContactUs from "../../components/ContactUs"
 import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
 import Translate from '@docusaurus/Translate';
-import Embrace from "../../components/Embrace"
 import MetaData from "../../components/MetaData"
 
 
@@ -243,7 +242,6 @@ export default () => {
                     </div>
                     <ContactUs product='mars' />
                     <ContactBar product='mars' />
-                    <Embrace product='mars' />
                 </div>
                 <Footer></Footer>
             </Layout>
