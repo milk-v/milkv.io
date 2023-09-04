@@ -549,6 +549,10 @@
         font-size: 20px;
         margin-bottom: 0;
     }
+
+    .button_use>a {
+        margin-right: 50px;
+    }
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1000px) {

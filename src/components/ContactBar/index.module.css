@@ -66,8 +66,12 @@
     border-radius: 35px;
     border: 1.5px solid #fff;
     margin: 0 auto;
+    cursor: pointer;
 }
 
+.on5_bottom:hover {
+    background-color: #2d88c9;
+}
 
 @media screen and (min-width: 1950px) {
     .on5_box>h2 {
