@@ -62,7 +62,7 @@ Milk-V Duo 的 wiringX 引脚序号, 与Duo的物理引脚标号是一致的，L
 
 ### GPIO
 
-<details><summary>pinMode(pin, mode)</summary>
+<details><summary>int pinMode(int pin, pinmode_t mode)</summary>
 
   设置指定引脚的工作模式, pin 是引脚编号, mode 可以是
   - PINMODE_INPUT 输入模式
@@ -108,51 +108,132 @@ Milk-V Duo 的 wiringX 引脚序号, 与Duo的物理引脚标号是一致的，L
 
 ### I2C
 
-<details><summary>wiringXI2CSetup(dev, addr)</summary>
+<details><summary>int wiringXI2CSetup(const char *dev, int addr)</summary>
 
   配置i2c节点和i2c地址
 
 </details>
 
 
-<details><summary>wiringXI2CRead(fd)</summary>
+<details><summary>int wiringXI2CRead(int fd)</summary>
 
   读取1个字节的数据
 
 </details>
 
 
-<details><summary>wiringXI2CReadReg8(fd, reg)</summary>
+<details><summary>int wiringXI2CReadReg8(int fd, int reg)</summary>
 
   从reg寄存器读取1个字节的数据
 
 </details>
 
 
-<details><summary>wiringXI2CReadReg16(fd, reg)</summary>
+<details><summary>int wiringXI2CReadReg16(int fd, int reg)</summary>
 
   从reg寄存器读取2个字节的数据
 
 </details>
 
 
-<details><summary>wiringXI2CWrite(fd, reg)</summary>
+<details><summary>int wiringXI2CWrite(int fd, int reg)</summary>
 
   写寄存器的地址reg
 
 </details>
 
 
-<details><summary>wiringXI2CWriteReg8(fd, reg, value8)</summary>
+<details><summary>int wiringXI2CWriteReg8(int fd, int reg, int value8)</summary>
 
   将8位数据value8写入寄存器reg
 
 </details>
 
 
-<details><summary>wiringXI2CWriteReg16(fd, reg, value16)</summary>
+<details><summary>int wiringXI2CWriteReg16(int fd, int reg, int value16)</summary>
 
   将16位数据value16写入寄存器reg
+
+</details>
+
+### SPI
+
+<details><summary>int wiringXSPISetup(int channel, int speed)</summary>
+
+  配置SPI设备的channel(Duo上为0)和speed(Duo中默认为500000)
+
+</details>
+
+<details><summary>int wiringXSPIDataRW(int channel, unsigned char *data, int len)</summary>
+
+  SPI总线是上升沿写数据，下降沿读数据，所以该函数同时执行读写操作，因此读取的数据会覆盖写入的数据，使用时需注意
+
+</details>
+
+<details><summary>int wiringXSPIGetFd(int channel)</summary>
+
+  获取SPI设备的文件描述符，channel在Duo中默认为0
+
+</details>
+
+### UART
+
+<details><summary>int wiringXSerialOpen(const char *dev, struct wiringXSerial_t serial)</summary>
+
+  打开串口设备，dev是设备描述符，serial是个结构体，需要填充串口相关参数  
+  具体可参考下面的[UART使用示例](#UART-使用示例)
+
+  ```c
+  typedef struct wiringXSerial_t {
+      unsigned int baud;           // 波特率
+      unsigned int databits;       // 数据位:   7/8
+      unsigned int parity;         // 奇偶校验: o/e/n
+      unsigned int stopbits;       // 停止位:   1/2
+      unsigned int flowcontrol;    // 硬件流控: x/n
+  } wiringXSerial_t;
+  ```
+
+</details>
+
+<details><summary>void wiringXSerialClose(int fd)</summary>
+
+  关闭串口
+
+</details>
+
+<details><summary>void wiringXSerialFlush(int fd)</summary>
+
+  清空缓存区
+
+</details>
+
+<details><summary>void wiringXSerialPutChar(int fd, unsigned char c)</summary>
+
+  输出一个字符
+
+</details>
+
+<details><summary>void wiringXSerialPuts(int fd, const char *s)</summary>
+
+  输出字符串
+
+</details>
+
+<details><summary>void wiringXSerialPrintf(int fd, const char *message, ...)</summary>
+
+  格式化输出
+
+</details>
+
+<details><summary>int wiringXSerialDataAvail(int fd)</summary>
+
+  返回缓存区接收到的数据个数
+
+</details>
+
+<details><summary>int wiringXSerialGetChar(int fd)</summary>
+
+  从串口设备读取一个字符
 
 </details>
 
@@ -221,9 +302,9 @@ IIC0_SCL function:
 ```
 符合预期
 
-### GPIO 代码样例
+### GPIO 使用示例
 
-下面是一个操作GPIO的例子，将序号为0的LED控制脚间隔1秒循环拉高再拉低，看到的现象就是Duo上的LED间隔1秒不断闪烁
+下面是一个操作GPIO的例子，将Duo的20引脚间隔1秒循环拉高再拉低，物理20引脚的wiringX序号也是20
 
 ```c
 #include <stdio.h>
@@ -232,33 +313,36 @@ IIC0_SCL function:
 #include <wiringx.h>
 
 int main() {
-    int DUO_LED = 0;
+    int DUO_GPIO = 20;
 
     if(wiringXSetup("duo", NULL) == -1) {
         wiringXGC();
         return -1;
     }
 
-    if(wiringXValidGPIO(DUO_LED) != 0) {
-        printf("Invalid GPIO %d\n", DUO_LED);
+    if(wiringXValidGPIO(DUO_GPIO) != 0) {
+        printf("Invalid GPIO %d\n", DUO_GPIO);
     }
 
-    pinMode(DUO_LED, PINMODE_OUTPUT);
+    pinMode(DUO_GPIO, PINMODE_OUTPUT);
 
     while(1) {
-        printf("Duo LED GPIO (wiringX) %d: High\n", DUO_LED);
-        digitalWrite(DUO_LED, HIGH);
+        printf("Duo GPIO (wiringX) %d: High\n", DUO_GPIO);
+        digitalWrite(DUO_GPIO, HIGH);
         sleep(1);
-        printf("Duo LED GPIO (wiringX) %d: Low\n", DUO_LED);
-        digitalWrite(DUO_LED, LOW);
+        printf("Duo GPIO (wiringX) %d: Low\n", DUO_GPIO);
+        digitalWrite(DUO_GPIO, LOW);
         sleep(1);
     }
 
     return 0;
 }
 ```
+编译后放到Duo中运行，可以用万用表或者示波器测量20引脚的状态是否符合预期
 
-### I2C 代码样例
+也可以使用板上的LED引脚来验证，通过观察LED亮灭来直观地判断程序是否正确执行，LED引脚的wiringX序号为0，把上面代码中的20引脚改为0即可，需要注意的是默认固件开机后通过脚本控制LED闪烁了，要将其禁用，方法请参考下面的[blink](#blink)例子说明
+
+### I2C 使用示例
 
 以下是一个I2C的示例
 
@@ -283,11 +367,17 @@ int main(void)
         return -1;
     }
 
+    if ((fd_i2c = wiringXI2CSetup(I2C_DEV, I2C_ADDR)) <0) {
+        printf("I2C Setup failed: %d\n", fd_i2c);
+        wiringXGC();
+        return -1;
+    }
+
     // TODO
 }
 ```
 
-### SPI 代码样例
+### SPI 使用示例
 
 以下是一个SPI的示例
 
@@ -300,7 +390,15 @@ int main(void)
 
 int main(void)
 {
+    int fd_spi;
+
     if(wiringXSetup("duo", NULL) == -1) {
+        wiringXGC();
+        return -1;
+    }
+
+    if ((fd_spi = wiringXSPISetup(0, 500000)) <0) {
+        printf("SPI Setup failed: %d\n", fd_spi);
         wiringXGC();
         return -1;
     }
@@ -309,29 +407,63 @@ int main(void)
 }
 ```
 
-### UART 代码样例
+### UART 使用示例
 
-以下是一个UART的示例
+以下是一个UART的示例，使用引脚4/5上的UART4
 
 ```c
 #include <stdio.h>
 #include <unistd.h>
-#include <stdint.h>
 
 #include <wiringx.h>
 
-int main(void)
-{
+int main() {
+    struct wiringXSerial_t wiringXSerial = {115200, 8, 'n', 1, 'n'};
+    char buf[1024];
+    int str_len = 0;
+    int i;
+    int fd;
+
     if(wiringXSetup("duo", NULL) == -1) {
         wiringXGC();
         return -1;
     }
 
-    // TODO
+    if ((fd = wiringXSerialOpen("/dev/ttyS4", wiringXSerial)) < 0) {
+        printf("Open serial device failed: %d\n", fd);
+        wiringXGC();
+        return -1;
+    }
+
+    wiringXSerialPuts(fd, "Duo Serial Test\n");
+
+    while(1)
+    {
+        str_len = wiringXSerialDataAvail(fd);
+        if (str_len > 0) {
+            i = 0;
+            while (str_len--)
+            {
+                buf[i++] = wiringXSerialGetChar(fd);
+            }
+            printf("Duo UART receive: %s\n", buf);
+        }
+    }
+
+    wiringXSerialClose(fd);
+
+    return 0;
 }
 ```
+测试方法:
 
-### PWM 代码样例
+电脑上的USB转串口线的RX接Duo的4脚(UART4_TX)，串口线的TX接Duo的5脚(UART4_RX)，串口线的GND接Duo的GND，电脑中使用串口调试助手配置好相应的COM口和参数
+
+上述程序编译后生成的可执行程序命名为`uart_test`，通过ssh上传到Duo中运行，可以看到电脑上的串口工具中收到了`Duo Serial Test`字符串，串口工具中发送一个字符串`Hello World`，Duo的终端上也会收到对应的字符串，说明串口收发都正常
+
+![duo](/docs/duo/duo-wiringx-uart-test-zh.png)
+
+### PWM 使用示例
 
 以下是一个UART的示例
 
