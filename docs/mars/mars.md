@@ -120,3 +120,7 @@ Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/uvccam_supp
 
 ### Support
 For support please post your issue on the [Milk-V Community Mars Category](https://community.milkv.io/c/mars).
+
+### Hardware schematics
+- [Hardware schematics](https://github.com/milkv-mars/Hardware/blob/main/Mars_hardware_schematics/Mars_V1.11_20230821.pdf)
+
