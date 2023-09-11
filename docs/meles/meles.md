@@ -43,7 +43,9 @@ Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH
 | Other        | 1x 2Pin for Fan                                                                        |
 
 ## Hardware
+
 ### SoC
+
 **T-Head TH1520** has the following 
 
 | TH1520 | Specification                                                                    |
