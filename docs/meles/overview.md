@@ -1,5 +1,5 @@
 ---
-sidebar_label: '🦡 Meles'
+sidebar_label: '🌍 Overview'
 sidebar_position: 4
 ---
 

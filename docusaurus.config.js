@@ -155,7 +155,7 @@ const config = {
               {
                 type: 'doc',
                 label: 'Meles',
-                docId: 'meles/meles',
+                docId: 'meles/overview',
               },
             ],
           },
