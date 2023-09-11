@@ -150,7 +150,7 @@ const config = {
               {
                 type: 'doc',
                 label: 'Mars',
-                docId: 'mars/mars',
+                docId: 'mars/overview',
               },
               {
                 type: 'doc',
