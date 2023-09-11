@@ -43,9 +43,7 @@ Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH
 | Other        | 1x 2Pin for Fan                                                                        |
 
 ## Hardware
-
 ### SoC
-
 **T-Head TH1520** has the following 
 
 | TH1520 | Specification                                                                    |
@@ -70,7 +68,14 @@ Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH
 |        | Supports AVS2.0 decoding, up to 4K resolution                                    |
 |        | Supports VP6/7/8/AVS/AVS+/VC1/MPEG4 decoding, up to 1920x1080 resolution         |
 |        | Decoding at 4K@75fps maximum                                                     |
-| Encode | Supports H.264 BP/MP/HP@level4.2 encoding, up to 4K resolution                   |
+| Encode | Supports H.264 BP/MP/HP(level4.2) encoding, up to 4K resolution                  |
 |        | Supports H.265/HEVC Main Profile encoding, up to 4K resolution                   |
 |        | Only supports I-frames and P-frames                                              |
 |        | Encoding at 4K@40fps maximum                                                     |
+
+### Memory
+**Milk-V Meles** offers a choice of 8GB / 16GB memory sizes.  
+The memory specification is LPDDR4X 4266MT/s.
+
+## Support
+For support please post your issue on the [Milk-V Community Meles Category](https://community.milkv.io/c/meles).
