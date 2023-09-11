@@ -41,3 +41,34 @@ Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH
 | LED          | 1x Power LED                                                                           |
 |              | 1x User LED                                                                            |
 | Other        | 1x 2Pin for Fan                                                                        |
+
+## Hardware
+### SoC
+**T-Head TH1520** has the following 
+
+| TH1520 | Specification                                                                    |
+| ------ | -------------------------------------------------------------------------------- |
+| CPU    | RISC-V 64GCV C910*4@**2.0GHz**                                                   |
+|        | Each core contains 64KB I cache amd 64KB D Cache                                 |
+|        | 1MB of Shared L2 Cache                                                           |
+|        | Support TEE and REE, configured during core booting                              |
+|        | Support multi-core debugging framework of custom and RISC-V compatible interface |
+|        | Independent power domain, supports DVFS                                          |
+| GPU    | OpenCL 1.1/1.2/2.0                                                               |
+|        | OpenGL ES 3.0/3.1/3.2                                                            |
+|        | Vulkan 1.1/1.2                                                                   |
+|        | Android NN HAL                                                                   |
+| NPU    | Support 4TOPS@INT8, up to 1GHz                                                   |
+|        | Support TensorFlow、ONNX、Caffe                                                  |
+|        | Support CNN、RNN、DNN                                                            |
+| Decode | Real-time decoder, support H.265/H.264/VP9/8/7/6/AVS/AVS+/AVS2.0/VC1/MPEG4       |
+|        | Supports H.264 BP/MP/HP@level 5.1 decoding, up to 4K resolution                  |
+|        | Supports H.265/HEVC Main Profile@level 5.1 decoding, up to 4K resolution         |
+|        | Supports VP9 Profile-2 decoding, up to 4K resolution                             |
+|        | Supports AVS2.0 decoding, up to 4K resolution                                    |
+|        | Supports VP6/7/8/AVS/AVS+/VC1/MPEG4 decoding, up to 1920x1080 resolution         |
+|        | Decoding at 4K@75fps maximum                                                     |
+| Encode | Supports H.264 BP/MP/HP@level4.2 encoding, up to 4K resolution                   |
+|        | Supports H.265/HEVC Main Profile encoding, up to 4K resolution                   |
+|        | Only supports I-frames and P-frames                                              |
+|        | Encoding at 4K@40fps maximum                                                     |
