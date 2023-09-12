@@ -242,7 +242,8 @@ Configure pin as an interrupt mode, with several modes for mode
 
 ### Pin multiplexing configuration
 
-Please note that many pins on Duo are multiplexed, meaning their functions can be switched. Before using a pin, make sure its current function matches your requirements. If it doesn't, you can use the `cvi_pinmux` command to switch it to the desired function
+Please note that many of Duo's pins have multipurpose functionality. When using `wiringX` to control the functions of each pin, it is important to confirm the current state of the pin to ensure it matches the desired functionality. If it doesn't, you can use the `cvi_pinmux` command to switch it to the desired function
+
 
 Executing the `cvi_pinmux` command directly allows you to view the usage instructions
 ```
