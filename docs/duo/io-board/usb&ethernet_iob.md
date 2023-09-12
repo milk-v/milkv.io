@@ -24,24 +24,51 @@ Before using it, please make sure you are using the [latest image](https://milkv
 ### Use the IO-Board
 Note that when using the IO-Board, the USB network (RNDIS) is not available, Please use the Ethernet interface on the IO-Board
 
-Enable the 4 USB ports on the IO-Board:
+If you need to assign a fixed MAC address to the Ethernet port of the IO-Board, please execute the following command(**Replace the MAC address in the command with the MAC address you want to set, and please note that MAC addresses of different devices within the same network segment must not be duplicated**)
+```
+echo "pre-up ifconfig eth0 hw ether 78:01:B3:FC:E8:55" >> /etc/network/interfaces && sync
+```
+then reboot the board
 
+Enable the 4 USB ports on the IO-Board:
 ~~~
 rm /mnt/system/usb.sh
 ln -s /mnt/system/usb-host.sh /mnt/system/usb.sh
 sync
 ~~~
+then reboot the board
 
+For example, if a USB flash drive is connected to the USB port on the IO-Board, you can use the command `ls /dev/sd*` to check if the device is detected
+
+To mount the USB drive and view its contents in the system (taking /dev/sda1 as an example):
+```
+mkdir /mnt/udisk
+mount /dev/sda1 /mnt/udisk
+```
+Verify if the contents in the `/mnt/udisk` directory match the expectations
+```
+ls /mnt/udisk
+```
+
+The command to unmount a USB flash drive
+```
+umount /mnt/udisk
+```
+
+To restore the functionality of the USB network (RNDIS) when not using the IO-Board, you can follow these steps
+```
+rm /mnt/system/usb.sh
+ln -s /mnt/system/usb-rndis.sh /mnt/system/usb.sh
+sync
+```
 then reboot the board
 
 Restore the USB network (RNDIS) when the IO-Board is not used
-
 ~~~
 rm /mnt/system/usb.sh
 ln -s /mnt/system/usb-rndis.sh /mnt/system/usb.sh
 sync
 ~~~
-
 then reboot the board
 
 ## Hardware schematics
