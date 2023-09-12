@@ -85,9 +85,9 @@ export default () => {
                         </div>
                     </div>
                     <div className={styles.footer_bottom_text}>
-                        <p>Shenzhen MilkV Technology Co., Ltd</p>
+                        <p><Translate id='homepage.corporations.companyname' /></p>
                         <p>
-                            L8-01, Block B, Bao Cube Jewelry City, 198 Xin'an 4th Road, Liutang Community, Xixiang Street,<br></br> Bao'an District, Shenzhen, China
+                        <Translate id='homepage.corporations.companyaddress_1' /><br></br><Translate id='homepage.corporations.companyaddress_2' />
                         </p>
                     </div>
                 </div>

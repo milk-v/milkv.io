@@ -24,17 +24,17 @@ export default () => {
 
     const emailData = [
         {
-            email: 'Sales Department',
+            email: <Translate id='homepage.corporations.salesdepartment' />,
             value: 'sales',
             url: 'https://submit-form.com/ft1cVox2',
         },
         {
-            email: 'Development Department',
+            email: <Translate id='homepage.corporations.devdepartment' />,
             value: 'dev',
             url: 'https://submit-form.com/mvqV3NLt',
         },
         {
-            email: 'Customer Support Department',
+            email: <Translate id='homepage.corporations.customerdepartment' />,
             value: 'support',
             url: 'https://submit-form.com/zyL1ZT1C',
         },
@@ -78,27 +78,27 @@ export default () => {
             <div className={styles.supportForm}>
                 <div className={styles.form_contexts}>
                     <h2>
-                        Having questions?<br></br>
-                        Get in touch with us to resolve!
+                    <Translate id='homepage.corporations.emailtitle_1' /><br></br>
+                    <Translate id='homepage.corporations.emailtitle_2' />
                     </h2>
                     <div className={styles.contact_info}>
                         <div className={styles.info_left}>
                             <div>
-                                <p>Sales Department</p>
+                                <p><Translate id='homepage.corporations.salesdepartment' /></p>
                                 <a href='mailto:sales@milkv.io'>sales@milkv.io</a>
                             </div>
                             <div>
-                                <p>Development Department</p>
+                                <p><Translate id='homepage.corporations.devdepartment' /></p>
                                 <a href='mailto:dev@milkv.io'>dev@milkv.io</a>
                             </div>
                             <div>
-                                <p>Customer Support Department</p>
+                                <p><Translate id='homepage.corporations.customerdepartment' /></p>
                                 <a href='mailto:support@milkv.io'>support@milkv.io</a>
                             </div>
                         </div>
                         <form className={styles.form_right} onSubmit={formSend}>
                             <h2>
-                                This e-mail is to
+                            <Translate id='homepage.corporations.emailto' />
                             </h2>
                             <div className={styles.emailRadio}>
                                 {ele}
@@ -117,7 +117,7 @@ export default () => {
                             </div>
                             <div className={styles.message}>
                                 <h2>
-                                    Message
+                                <Translate id='homepage.corporations.emailmessage' />
                                 </h2>
                                 <textarea value={message} required onChange={(e) => { setMessage(e.target.value) }}></textarea>
                             </div>

@@ -956,5 +956,133 @@
   "cv1800b.corporations.Registration": {
     "message": "商业登记号码",
     "description": "cv1800b"
+  },
+  "homepage.corporations.Documentstitle": {
+    "message": "Milk-V 文档",
+    "description": "homepage documents"
+  },
+  "homepage.corporations.Documentswords": {
+    "message": "查看文档以获取技术支持",
+    "description": "homepage documents"
+  },
+  "homepage.corporations.CommunityBotton": {
+    "message": "Milk-V 社区",
+    "description": "Milk-V Community booton"
+  },
+  "homepage.corporations.WhyRVBotton": {
+    "message": "为什么选择RISC-V？",
+    "description": "Why RISC-V ? booton"
+  },
+  "homepage.corporations.duo": {
+    "message": "双核心，主频高达 1GHz，丰富的 IO，包括 UART、I2C、SPI、SDIO、ADC 等，可同时运行 Linux 或 RTOS。",
+    "description": "duo description"
+  },
+  "homepage.corporations.duolearnmore": {
+    "message": "了解更多",
+    "description": "duo Learn more"
+  },
+  "homepage.corporations.duobuynow": {
+    "message": "立即购买",
+    "description": "duo buy"
+  },
+  "homepage.corporations.pioneer": {
+    "message": "Milk-V Pioneer 是一款基于 SOPHON SG2042 的开发主板/工作站，采用标准 mATX 外形。它是 RISC-V 开发人员和硬件先驱体验 RISC-V 尖端技术的首选。",
+    "description": "pioneer description"
+  },
+  "homepage.corporations.pioneerlearnmore": {
+    "message": "了解更多",
+    "description": "pioneer Learn more"
+  },
+  "homepage.corporations.pioneerbuynow": {
+    "message": "立即购买",
+    "description": "pioneer buy"
+  },
+  "homepage.corporations.marscm": {
+    "message": "Mars CM 是一个基于 StarFive JH7110 片上系统（SoC）的模块化系统（SoM）。 ",
+    "description": "mars cm"
+  },
+  "homepage.corporations.mars": {
+    "message": "Milk-V Mars 是一款高性能 RISC-V 单板计算机 (SBC)，只有信用卡大小，采用 StarFive JH7110。它有一个支持 PoE（以太网供电）的 RJ45 以太网端口和一个用于 WIFI/BT 模块的 M.2 E-Key 插槽。它还包括一个 4 通道 MIPI CSI 和一个 2 通道 MIPI CSI，以及一个 40 引脚的 GPIO 座子。",
+    "description": "mars"
+  },
+  "homepage.corporations.marslearnmore": {
+    "message": "了解更多",
+    "description": "mars Learn more"
+  },
+  "homepage.corporations.marsbuynow": {
+    "message": "立即购买",
+    "description": "mars buy now"
+  },
+  "homepage.corporations.meles": {
+    "message": "Milk-V Meles 是基于 TH1520 的信用卡大小的单板计算机（SBC）。它采用四核 RISC-V 64GCV C910，主频高达 2.0GHz。这款 SBC 配备了丰富的接口，拥有强大的计算和人工智能功能，是业余爱好者、制造商、工程师、教师和学生理想的 RISC-V 智能硬件平台。",
+    "description": "meles "
+  },
+  "homepage.corporations.melesbuynow": {
+    "message": "立即购买",
+    "description": "meles buy"
+  },
+  "homepage.corporations.meleslearnmore": {
+    "message": "了解更多",
+    "description": "meles learn more"
+  },
+  "homepage.corporations.vega": {
+    "message": "Milk-V Vega 是 Milk-V 为下一代网络架构开发的一款紧凑型、低密度盒式开源万兆网络交换机。它是宽带、语音、视频和监控等各种服务的统一平台。",
+    "description": "vega "
+  },
+  "homepage.corporations.vegabuynow": {
+    "message": "立即购买",
+    "description": "vega buy"
+  },
+  "homepage.corporations.vegalearnmore": {
+    "message": "了解更多",
+    "description": "vega learn more"
+  },
+  "homepage.corporations.docslearnmore": {
+    "message": "了解更多",
+    "description": "docs learn more"
+  },
+  "homepage.corporations.joinus": {
+    "message": "加入讨论与分享",
+    "description": "Join Us to Share More"
+  },
+  "homepage.corporations.emailtitle_1": {
+    "message": "遇到问题了？",
+    "description": "Having questions?"
+  },
+  "homepage.corporations.emailtitle_2": {
+    "message": "和我们取得联系以得到解决！",
+    "description": "Get in touch with us to resolve!"
+  },
+  "homepage.corporations.salesdepartment": {
+    "message": "销售部门",
+    "description": "sales department"
+  },
+  "homepage.corporations.devdepartment": {
+    "message": "研发部门",
+    "description": "development department"
+  },
+  "homepage.corporations.customerdepartment": {
+    "message": "客户支持部门",
+    "description": "customer department"
+  },
+  "homepage.corporations.emailto": {
+    "message": "这封邮件将发往",
+    "description": "This e-mail is to"
+  },
+  "homepage.corporations.emailmessage": {
+    "message": "内容",
+    "description": "main message"
+  },
+  "homepage.corporations.companyname": {
+    "message": "深圳市群芯闪耀科技有限公司",
+    "description": "footer company name"
+  },
+  "homepage.corporations.companyaddress_1": {
+    "message": "中国广东省深圳市宝安区西乡街道流塘社区新安四路198号宝立方B座L8-01室",
+    "description": "footer company address"
+  },
+  "homepage.corporations.companyaddress_2": {
+    "message": " ",
+    "description": "footer company address"
   }
 }

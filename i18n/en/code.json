@@ -956,5 +956,133 @@
   "cv1800b.corporations.Registration": {
     "message": "Business Registration Number",
     "description": "cv1800b"
+  },
+  "homepage.corporations.Documentstitle": {
+    "message": "Milk-V Documents",
+    "description": "homepage documents"
+  },
+  "homepage.corporations.Documentswords": {
+    "message": "View our documentation for technical support",
+    "description": "homepage documents"
+  },
+  "homepage.corporations.CommunityBotton": {
+    "message": "Milk-V Community",
+    "description": "Milk-V Community booton"
+  },
+  "homepage.corporations.WhyRVBotton": {
+    "message": "Why RISC-V ?",
+    "description": "Why RISC-V ? booton"
+  },
+  "homepage.corporations.duo": {
+    "message": "Dual cores up to 1GHz,Rich IO for UART, I2C, SPI, SDIO, ADC and more,Running Linux or RTOS or both simultaneously.",
+    "description": "duo description"
+  },
+  "homepage.corporations.duolearnmore": {
+    "message": "Learn more",
+    "description": "duo Learn more"
+  },
+  "homepage.corporations.duobuynow": {
+    "message": "Buy Now",
+    "description": "duo buy"
+  },
+  "homepage.corporations.pioneer": {
+    "message": "Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard mATX form factor. It is the first choice for RISC-V developers and hardware pioneers to experience the cutting edge technology of RISC-V.",
+    "description": "pioneer description"
+  },
+  "homepage.corporations.pioneerlearnmore": {
+    "message": "Learn more",
+    "description": "pioneer Learn more"
+  },
+  "homepage.corporations.pioneerbuynow": {
+    "message": "Buy Now",
+    "description": "pioneer buy"
+  },
+  "homepage.corporations.marscm": {
+    "message": "The Mars Compute Module is a System on Module (SoM) based on a the StarFive JH7110 System on Chip (SoC). ",
+    "description": "mars cm"
+  },
+  "homepage.corporations.mars": {
+    "message": "Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. An RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO. ",
+    "description": "mars"
+  },
+  "homepage.corporations.marslearnmore": {
+    "message": "Learn more",
+    "description": "mars Learn more"
+  },
+  "homepage.corporations.marsbuynow": {
+    "message": "Buy Now",
+    "description": "mars buy now"
+  },
+  "homepage.corporations.meles": {
+    "message": "Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH1520. It is powered by a Quad Core RISC-V 64GCV C910, capable of running up to 2.0GHz. This SBC is packed with rich interfaces and boasts powerful computing and AI capabilities, making it an ideal RISC-V intelligent hardware platform for hobbyists, makers, engineers, teachers, and students.",
+    "description": "meles "
+  },
+  "homepage.corporations.melesbuynow": {
+    "message": "Buy Now",
+    "description": "meles buy"
+  },
+  "homepage.corporations.meleslearnmore": {
+    "message": "Learn more",
+    "description": "meles learn more"
+  },
+  "homepage.corporations.vega": {
+    "message": "Milk-V Vega is a compact and low-density box-style open-source 10 Gigabit network switch developed by Milk-V for the next generation of network architecture. It serves as a unified platform for various services such as broadband, voice, video, and surveillance.",
+    "description": "vega "
+  },
+  "homepage.corporations.vegabuynow": {
+    "message": "Buy Now",
+    "description": "vega buy"
+  },
+  "homepage.corporations.vegalearnmore": {
+    "message": "Learn more",
+    "description": "vega learn more"
+  },
+  "homepage.corporations.docslearnmore": {
+    "message": "Learn more",
+    "description": "docs learn more"
+  },
+  "homepage.corporations.joinus": {
+    "message": "Join Us to Share More",
+    "description": "Join Us to Share More"
+  },
+  "homepage.corporations.emailtitle_1": {
+    "message": "Having questions?",
+    "description": "Having questions?"
+  },
+  "homepage.corporations.emailtitle_2": {
+    "message": "Get in touch with us to resolve!",
+    "description": "Get in touch with us to resolve!"
+  },
+  "homepage.corporations.salesdepartment": {
+    "message": "Sales Department",
+    "description": "Sales Department"
+  },
+  "homepage.corporations.devdepartment": {
+    "message": "Development Department",
+    "description": "Development Department"
+  },
+  "homepage.corporations.customerdepartment": {
+    "message": "Customer Support Department",
+    "description": "Customer Support Department"
+  },
+  "homepage.corporations.emailto": {
+    "message": "This e-mail is to",
+    "description": "This e-mail is to"
+  },
+  "homepage.corporations.emailmessage": {
+    "message": "Message",
+    "description": "main message"
+  },
+  "homepage.corporations.companyname": {
+    "message": "Shenzhen MilkV Technology Co., Ltd",
+    "description": "footer company name"
+  },
+  "homepage.corporations.companyaddress_1": {
+    "message": "L8-01, Block B, Bao Cube Jewelry City, 198 Xin'an 4th Road, Liutang Community, Xixiang Street,Bao'an District,",
+    "description": "footer company address"
+  },
+  "homepage.corporations.companyaddress_2": {
+    "message": "Shenzhen, China",
+    "description": "footer company address"
   }
 }

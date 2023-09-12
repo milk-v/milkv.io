@@ -13,7 +13,7 @@ export default (props) => {
     return (
         <>
             <div className={styles.on5_box}>
-                <h2>Join Us to Share More</h2>
+                <h2><Translate id='homepage.corporations.joinus' /></h2>
                 <ul className={product !== 'home' ? styles.min_ul : null}>
                     <li>
                         < img src='/components/channel.png' />
