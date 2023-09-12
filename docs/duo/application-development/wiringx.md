@@ -542,7 +542,7 @@ Note:
 - Creating a new project directory is not mandatory to be placed within the `duo-examples` directory. You can choose any location based on your preference. Before executing the `make` compilation command, it is sufficient to load the compilation environment from the `duo-examples` directory (source /PATH/TO/duo-examples/envsetup.sh).
 - Within the terminal where the compilation environment (envsetup.sh) is loaded, avoid compiling Makefile projects for other platforms such as ARM or X86. If you need to compile projects for other platforms, open a new terminal.
 
-## Explanation of each example
+## 4. Explanation of each example
 
 ### [hello-world](https://github.com/milkv-duo/duo-examples/tree/main/hello-world)
 
