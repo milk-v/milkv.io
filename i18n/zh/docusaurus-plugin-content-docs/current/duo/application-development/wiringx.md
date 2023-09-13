@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'WiringX'
+sidebar_label: 'wiringX'
 sidebar_position: 10
 ---
 
