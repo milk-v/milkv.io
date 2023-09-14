@@ -1,0 +1,34 @@
+{
+  "item.label.Home": {
+    "message": "Главная",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.About": {
+    "message": "О Нас",
+    "description": "Navbar item with label About"
+  },
+  "item.label.Duo": {
+    "message": "Duo",
+    "description": "Navbar item with label Duo"
+  },
+  "item.label.Pioneer": {
+    "message": "Pioneer",
+    "description": "Navbar item with label Pioneer"
+  },
+  "item.label.Mars": {
+    "message": "Mars",
+    "description": "Navbar item with label Mars"
+  },
+  "item.label.Community": {
+    "message": "Сообщество",
+    "description": "Navbar item with label Community"
+  },
+  "item.label.Docs": {
+    "message": "Документация",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Products": {
+    "message": "Продукты",
+    "description": "Navbar item with label Docs"
+  }
+}
