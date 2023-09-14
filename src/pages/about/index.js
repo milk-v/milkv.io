@@ -98,7 +98,7 @@ export default () => {
     return (
         <>
             <Layout>
-                <MetaData page='vega' />
+                <MetaData page='about' />
                 <AboutUs />
                 <Footer />
             </Layout>

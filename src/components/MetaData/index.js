@@ -9,6 +9,30 @@ export default (props) => {
 
 
     const metadata = {
+        home: {
+            en: {
+                title: 'Milk-V: Embracing RISC-V with Milk-V',
+                description: '○Milk-V is committed to providing high quality RISC-V products to developers, enterprises and consumers, and to promoting the development of the RISC-V hardware and software ecosystem. Milk-V will firmly support open source, and hopes that through its own efforts and those of the community, future RISC-V products will be as numerous and bright as the stars in the Milky Way.',
+                keywords: 'Milk-V,RISC-V,SBC,Pioneer,Duo,Mars,Mars CM,Vega,Meles',
+            },
+            zh: {
+                title: 'Milk-V：和 Milk-V 一起拥抱 RISC-V',
+                description: 'Milk-V （深圳市群芯闪耀科技有限公司）致力于为开发者、企业和消费者提供高质量的 RISC-V 产品，推动 RISC-V 硬件和软件生态系统的发展。Milk-V 将坚定不移地支持开源，并希望通过自身和社区的努力，未来的 RISC-V 产品能像银河中的星星一样璀璨繁荣',
+                keywords: 'Milk-V,RISC-V,开发板,Pioneer,Duo,Mars,Mars CM,Vega,Meles',
+            },
+        },
+        about: {
+            en: {
+                title: 'About Milk-V',
+                description: 'Milk-V is committed to providing high quality RISC-V products to developers, enterprises and consumers, and to promoting the development of the RISC-V hardware and software ecosystem. Milk-V will firmly support open source, and hopes that through its own efforts and those of the community, future RISC-V products will be as numerous and bright as the stars in the Milky Way',
+                keywords: 'Milk-V About,RISC-V',
+            },
+            zh: {
+                title: '关于群芯闪耀',
+                description: 'Milk-V （深圳市群芯闪耀科技有限公司）致力于为开发者、企业和消费者提供高质量的 RISC-V 产品，推动 RISC-V 硬件和软件生态系统的发展。Milk-V 将坚定不移地支持开源，并希望通过自身和社区的努力，未来的 RISC-V 产品能像银河中的星星一样璀璨繁荣',
+                keywords: '关于Milk-V,RISC-V',
+            },
+        },
         duo: {
             en: {
                 title: 'Milk-V Duo: Extremely Cost-Effective Ultra-Compact Embedded Linux Development Platforms',

@@ -8,6 +8,7 @@ import BuyPop from "../components/BuyPop"
 import SupportUs from "../components/SupportUs"
 import Footer from "../components/Footer"
 import ContactBar from "../components/ContactBar"
+import MetaData from "../components/MetaData"
 
 
 const Duo_module = (props) => {
@@ -255,6 +256,7 @@ export default function Home() {
   return (
     <>
       <Layout>
+        <MetaData page='home' />
         <Home_web />
         <Footer></Footer>
       </Layout>
