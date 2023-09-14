@@ -404,27 +404,6 @@ The compiled executable of the above program is named `uart_test`. After uploadi
 
 ![duo](/docs/duo/duo-wiringx-uart-test.png)
 
-### PWM Usage Example
-
-Here is an example of UART communication
-
-```c
-#include <stdio.h>
-#include <unistd.h>
-#include <stdint.h>
-
-#include <wiringx.h>
-
-int main(void)
-{
-    if(wiringXSetup("duo", NULL) == -1) {
-        wiringXGC();
-        return -1;
-    }
-
-    // TODO
-}
-```
 
 ## 3. Development Environment Setup
 
