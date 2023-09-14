@@ -11,8 +11,22 @@ TPU is an AI acceleration engine for deep learning neural network, which can be 
 
 CV1800B TPU Supported Model
 
-![duo](/docs/duo/duo-cv1800b-tpu-model_202307.png)
+![duo](/docs/duo/tpu/duo-cv1800b-tpu-model_202307.png)
 
-# Usage
+# Application Examples
+
+## Object Detection Based on YOLOv5
+
+## Image Classification Based on MobileNetV2
+
+## Image Classification Based on ShuffleNetV2
+
+## Image Classification Based on Googlenet
+
+## Image Classification Based on Squeezenet
+
+## Image Classification Based on Densenet
+
+## Image Classification Based on Resnet18
 
 
