@@ -251,11 +251,11 @@ $ model_transform.py \
  ```
 运行成功效果示例
 
-![duo](/docs/duo/tpu/duo-tpu-yolo5_04.png)
+
 
 转成mlir模型后，会生成一个`yolov5n.mlir`文件，该文件即为mlir模型文件，还会生成一个`yolov5n_in_f32.npz`文件，该文件是后续转模型的输入文件
 
-![duo](/docs/duo/tpu/duo-tpu-yolo5_05.png)
+
 
 ### 5. MLIR转INT8模型
 
@@ -270,7 +270,7 @@ $ run_calibration.py yolov5n.mlir \
  ```
  运行完成后，会生成yolov5n_cali_table文件，该文件用于后续编译int8模型
 
-![duo](/docs/duo/tpu/duo-tpu-yolo5_06.png)
+
 
 #### 编译为int8模型
 
@@ -292,11 +292,11 @@ $ model_deploy.py \
 
 编译成功效果示例
 
-![duo](/docs/duo/tpu/duo-tpu-yolo5_07.png)
+
 
 编译完成后，会生成`yolov5n_int8_fuse.cvimodel`文件
 
-![duo](/docs/duo/tpu/duo-tpu-yolo5_08.png)
+
 
 ### 6. 在Duo开发板上进行验证
 
@@ -358,11 +358,10 @@ $ ./samples/samples_extra/bin/cvi_sample_detector_yolo_v5_fused_preprocess\
 
  检测成功结果示例
 
-![duo](/docs/duo/tpu/duo-tpu-yolo5_09.png)
+
 
 运行成功后，会生成检测结果文件`yolov5n_out.jpg`
 
-![duo](/docs/duo/tpu/duo-tpu-yolo5_10.png)
 
 
 ### 7. 附录
@@ -379,7 +378,6 @@ $ ./samples/samples_extra/bin/cvi_sample_detector_yolo_v5_fused_preprocess\
 sftp://218.17.249.213 user: cvitek_mlir_2023 password: 7&2Wd%cu5k
 ```
 
-![duo](/docs/duo/tpu/duo-tpu-yolo5_11.png)
 
 或者直接使用wget获取
 ```
