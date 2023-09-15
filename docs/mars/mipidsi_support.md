@@ -1,6 +1,6 @@
 ---
 sidebar_label: '🖥 MIPI DSI Display Supported'
-sidebar_position: 200
+sidebar_position: 110
 ---
 # Display for MIPI DSI 
 

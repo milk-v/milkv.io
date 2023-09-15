@@ -1,6 +1,6 @@
 ---
 sidebar_label: '📹 UVC Camera Supported'
-sidebar_position: 300
+sidebar_position: 120
 ---
 # UVC Camera
 Milk-V Mars supports the following 
