@@ -13,11 +13,15 @@ export default (props) => {
     const [userEmail, setUserEmail] = useState('')
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
+    const [hiddenmsg, setHiddenmsg] = useState('')
+
 
     const [flag, setFlag] = useState(false)
     const [flag2, setFlag2] = useState(false)
 
     const [formBtn, setFormBtn] = useState(false)
+
+
 
     useEffect(() => {
         if (flag) {
@@ -30,6 +34,26 @@ export default (props) => {
 
     const handleSubmit = (event) => {
 
+
+        // 创建Date对象来获取当前时间
+        var currentDate = new Date();
+
+        // 获取年份、月份和日期
+        var year = currentDate.getFullYear();
+        var month = currentDate.getMonth() + 1; // 月份从0开始，所以要加1
+        var day = currentDate.getDate();
+
+        // 获取小时、分钟和秒
+        var hours = currentDate.getHours();
+        var minutes = currentDate.getMinutes();
+        var seconds = currentDate.getSeconds();
+
+        // 构建中文日期和时间字符串
+        var chineseDate = year + "-" + month + "-" + day;
+        var chineseTime = hours + ":" + minutes + ":" + seconds;
+
+        let msg = `${subject}: ${chineseDate} ${chineseTime}`
+        console.log(msg);
         let productsUrls = {
             'duo': 'https://submit-form.com/mxM7Oj62',
             'pioneer': 'https://submit-form.com/LajdNi4B',
@@ -41,7 +65,7 @@ export default (props) => {
         const url = productsUrls[product] || null;
         event.preventDefault();
         setFormBtn(true)
-        axios.get(`${url}?product=${product}&name=${userName}&email=${userEmail}&subject=${subject}&message=${message}`)
+        axios.get(`${url}?product=${product}&name=${userName}&email=${userEmail}&subject=${subject}&message=${message}&_email.subject=${msg}&_email.from=${userName}`)
             .then((response) => {
                 setFlag(true)
                 setFormBtn(false)
@@ -69,6 +93,8 @@ export default (props) => {
                     <div className={styles.touchBox}>
                         <h1><Translate id='contact.title.sendMessage' /></h1>
                         <form className={styles.touchForm} onSubmit={handleSubmit}>
+                            <input type="hidden" name="_email.subject" value={hiddenmsg} />
+                            <input type="hidden" name="_email.from" value={userName} />
                             <div>
                                 <label>
                                     <p><Translate id='contact.title.name' /></p>
@@ -76,7 +102,7 @@ export default (props) => {
                                 </label>
                                 <label>
                                     <p><Translate id='contact.title.email' /></p>
-                                    <input type="text" value={userEmail} onChange={(e) => setUserEmail(e.target.value)} required placeholder={currentLanguage === '/' ? 'Your Email' : '你的邮箱'} />
+                                    <input type="email" value={userEmail} onChange={(e) => setUserEmail(e.target.value)} required placeholder={currentLanguage === '/' ? 'Your Email' : '你的邮箱'} />
                                 </label>
                             </div>
                             <label>
@@ -91,6 +117,9 @@ export default (props) => {
                         </form>
                     </div>
                 </div>
+            </div>
+            <div className={styles.mark_pop} style={{ display: `${formBtn ? 'flex' : 'none'}` }}>
+                <div className={styles.loader}></div>
             </div>
             <div className={styles.pop} style={{ display: `${flag ? "flex" : 'none'}` }}>
                 <div className={styles.popBox}>
