@@ -55,11 +55,25 @@ export default () => {
 
     const formSend = (event) => {
         event.preventDefault();
+
+        var currentDate = new Date();
+        var year = currentDate.getFullYear();
+        var month = currentDate.getMonth() + 1;
+        var day = currentDate.getDate();
+        var hours = currentDate.getHours();
+        var minutes = currentDate.getMinutes();
+        var seconds = currentDate.getSeconds();
+        // 构建中文日期和时间字符串
+        var chineseDate = year + "-" + month + "-" + day;
+        var chineseTime = hours + ":" + minutes + ":" + seconds;
+
+        let msg = `${subject}: ${chineseDate} ${chineseTime}`
+
         setFormBtn(true)
         setMask(true)
         setLoading(true)
 
-        axios.get(`${url}?name=${userName}&email=${userEmail}&subject=${subject}&message=${message}`)
+        axios.get(`${url}?name=${userName}&email=${userEmail}&subject=${subject}&message=${message}&_email.subject=${msg}&_email.from=${userName}`)
             .then((response) => {
                 setLoading(false)
                 setFormBtn(false)
@@ -78,8 +92,8 @@ export default () => {
             <div className={styles.supportForm}>
                 <div className={styles.form_contexts}>
                     <h2>
-                    <Translate id='homepage.corporations.emailtitle_1' /><br></br>
-                    <Translate id='homepage.corporations.emailtitle_2' />
+                        <Translate id='homepage.corporations.emailtitle_1' /><br></br>
+                        <Translate id='homepage.corporations.emailtitle_2' />
                     </h2>
                     <div className={styles.contact_info}>
                         <div className={styles.info_left}>
@@ -98,7 +112,7 @@ export default () => {
                         </div>
                         <form className={styles.form_right} onSubmit={formSend}>
                             <h2>
-                            <Translate id='homepage.corporations.emailto' />
+                                <Translate id='homepage.corporations.emailto' />
                             </h2>
                             <div className={styles.emailRadio}>
                                 {ele}
@@ -117,7 +131,7 @@ export default () => {
                             </div>
                             <div className={styles.message}>
                                 <h2>
-                                <Translate id='homepage.corporations.emailmessage' />
+                                    <Translate id='homepage.corporations.emailmessage' />
                                 </h2>
                                 <textarea value={message} required onChange={(e) => { setMessage(e.target.value) }}></textarea>
                             </div>
@@ -128,7 +142,6 @@ export default () => {
             </div>
             <div className={styles.mask} style={{ display: `${mask ? 'flex' : "none"}` }}>
                 <div className={styles.loading} style={{ display: `${loading ? 'block' : "none"}` }} >
-
                 </div>
                 <div style={{ display: `${loading ? 'none' : "block"}` }}>
                     <div className={styles.pop} style={{ display: `${flag ? "flex" : 'none'}` }}>

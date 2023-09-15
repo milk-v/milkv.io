@@ -33,27 +33,19 @@ export default (props) => {
 
 
     const handleSubmit = (event) => {
-
-
-        // 创建Date对象来获取当前时间
         var currentDate = new Date();
-
-        // 获取年份、月份和日期
         var year = currentDate.getFullYear();
-        var month = currentDate.getMonth() + 1; // 月份从0开始，所以要加1
+        var month = currentDate.getMonth() + 1;
         var day = currentDate.getDate();
-
-        // 获取小时、分钟和秒
         var hours = currentDate.getHours();
         var minutes = currentDate.getMinutes();
         var seconds = currentDate.getSeconds();
-
         // 构建中文日期和时间字符串
         var chineseDate = year + "-" + month + "-" + day;
         var chineseTime = hours + ":" + minutes + ":" + seconds;
 
         let msg = `${subject}: ${chineseDate} ${chineseTime}`
-        console.log(msg);
+
         let productsUrls = {
             'duo': 'https://submit-form.com/mxM7Oj62',
             'pioneer': 'https://submit-form.com/LajdNi4B',

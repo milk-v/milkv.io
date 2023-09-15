@@ -184,12 +184,9 @@
         transform: rotate(0deg);
     }
 
-    /* 起始位置，不旋转 */
     100% {
         transform: rotate(360deg);
     }
-
-    /* 结束位置，完全旋转一圈 */
 }
 
 @media screen and (min-width: 1450px) {
