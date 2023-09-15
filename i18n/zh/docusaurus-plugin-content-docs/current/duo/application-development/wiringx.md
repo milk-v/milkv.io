@@ -404,28 +404,6 @@ int main() {
 
 ![duo](/docs/duo/duo-wiringx-uart-test-zh.png)
 
-### PWM 使用示例
-
-以下是一个UART的示例
-
-```c
-#include <stdio.h>
-#include <unistd.h>
-#include <stdint.h>
-
-#include <wiringx.h>
-
-int main(void)
-{
-    if(wiringXSetup("duo", NULL) == -1) {
-        wiringXGC();
-        return -1;
-    }
-
-    // TODO
-}
-```
-
 ## 三、开发环境配置
 
 ### 准备开发环境
