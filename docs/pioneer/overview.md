@@ -15,6 +15,7 @@ Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard m
 
 #### Pioneer Board
 ![Pioneer Board](/docs/pioneer/pioneerboardv1.1.webp)
+
 | Pioneer Board | Specification                                      |
 | ------------- | -------------------------------------------------- |
 | Processor     | SOPHON SG2042 (64 Core C920, RVV 0.71, up to 2GHz) |
