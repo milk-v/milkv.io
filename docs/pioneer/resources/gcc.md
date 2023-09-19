@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'GCC Compiler'
+sidebar_label: 'GCC Toolchain'
 sidebar_position: 30
 ---
 

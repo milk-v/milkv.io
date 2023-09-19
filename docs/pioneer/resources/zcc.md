@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'ZCC Compiler'
+sidebar_label: 'ZCC Toolchain'
 sidebar_position: 30
 ---
 # ZCC User Manual
