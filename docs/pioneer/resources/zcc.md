@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'ZCC Compiler'
-sidebar_position: 20
+sidebar_position: 30
 ---
 # ZCC User Manual
 
@@ -8,7 +8,7 @@ sidebar_position: 20
 
 Since ZCC is a paid compiler, before downloading or using Terapines ZCC, please go to [**cloud.terapines.com**](https://cloud.terapines.com/) and submit an account registration request.
 
-Your registration may not be approved right away, for assistance, please contact 
+Your registration may not be approved right away, for assistance, please contact **aries.wu@terapines.com**
 
 ## Get ZCC Toolchain
 
