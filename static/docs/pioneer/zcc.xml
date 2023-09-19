@@ -1,0 +1,391 @@
+<?xml version="1.0"?>
+<!DOCTYPE flagsdescription
+   SYSTEM "http://www.spec.org/dtd/cpuflags2.dtd"
+>
+
+<!-- Lines in this file will be up to this wide =============================================================================== -->
+
+
+<!-- This flags file is both an example for the SPEC CPU(R) 2017 documentation and a useful flags file for results with ZCC.
+
+     The first three lines at the top must be exactly as shown.  They claim that the file conforms to the DTD (Document Type
+     Description) at the listed URL.  Results submitted to SPEC must use a well-formed flags file.  You can check your XML using
+     a validating parser such as RXP, http://www.ltg.ed.ac.uk/~richard/rxp.html, also included in your kit as 'specrxp'.  See:
+         http://www.spec.org/cpu2017/Docs/utility.html#specrxp.
+     Or, you can use an on-line parser, such as: 
+         http://www.cogsci.ed.ac.uk/~richard/xml-check.html
+         http://validator.w3.org/
+
+     When results are displayed at www.spec.org, the XML file is transformed to HTML (using 'flags_dump', which is on your kit).
+     You should ALSO validate the HTML version, which can be done at:
+        http://validator.w3.org/ 
+-->
+
+<!--
+     $Id$
+-->
+
+<flagsdescription>
+
+<!-- filename   http://www.spec.org/cpu2017/Docs/flag-description.html#filename
+                A complete (.rsf) result includes one or more embedded flags files.  When an embedded flags file is extracted, it 
+                will need a name.  The next line tells the tools what name to use when extracting.  -->
+<filename>ZCC</filename>
+
+<!-- title    http://www.spec.org/cpu2017/Docs/flag-description.html#title
+              All flag descriptions MUST have a title.  It'll be used as the page title for the full HTML version, and as for 
+              page headings in HTML reports.  -->
+<title>Terapines LTD zcc(based on clang) Compiler Suite Flag Descriptions</title>
+
+<style>
+    <![CDATA[
+    body { background: white; }
+    ]]>
+</style>
+
+<!-- sw_environment     http://www.spec.org/cpu2017/Docs/flag-description.html#sw_environment
+                        Information about shell resources, environment variables, and other software options or installation
+                        settings.  They'll be included in both the flags dump and per-result flag report.  As the contents should
+                        be HTML, it will save lots of time to just enclose the whole thing in a CDATA section.  See:
+                        http://www.spec.org/cpu2017/Docs/flag-description.html#CDATA -->
+<sw_environment>
+    <![CDATA[
+   <p>One or more of the following may have been used in the run.  If so, it will be listed in the notes sections.  Here
+      is a brief guide to understanding them:</p>
+   <ul>
+      <li><p><b><kbd>LD_LIBRARY_PATH=&lt;directories&gt;</kbd></b>  (set via config file <samp>preENV</samp>)
+            <br />LD_LIBRARY_PATH controls the search order for libraries.  Often, it can be defaulted.  Sometimes, it is
+            explicitly set (as documented in the notes in the submission), in order to ensure that the correct versions of
+            libraries are picked up.  </p></li>
+      <li><p><b><kbd>OMP_STACKSIZE=N</kbd></b> (set via config file <samp>preENV</samp>)
+            <br />Set the stack size for subordinate threads.</p></li>
+      <li><p> <b><kbd>ulimit -s N</kbd></b><br />
+            <b><kbd>ulimit -s unlimited</kbd></b><br />
+            'ulimit' is a Unix commands, entered prior to the run.  It sets the stack size for the main process, either
+            to N kbytes or to no limit.</p> </li>
+   </ul>
+    ]]>
+</sw_environment>
+
+
+<!-- header            http://www.spec.org/cpu2017/Docs/flag-description.html#header
+                       The header section is entirely optional.  If it is provided, and no class is specified, then it will be
+                       inserted verbatim at the top of the flags dump and the per-result flag report.
+
+                       If a class is specified, that text will be inserted verbatim before flags of that class in the flags dump.
+                       It is omitted from the per-result flag report.
+-->
+<header>
+    <![CDATA[
+    <h2>Compilers: Terapines LTD zcc(based on clang) Compiler Suite</h2>
+    ]]>
+</header>
+
+
+<!-- =============================================================================================================================
+     flag       https://www.spec.org/cpu2017/Docs/flag-description.html#flag
+                Descriptions of flags start here and continue to the end of the file.
+                We begin with flags in the 'compiler' class, which get matched first.  
+     ============================================================================================================================= 
+-->
+
+<!-- Our first example is more complicated than most (sorry - but we want this flag to get processed first.)  Its function is 
+     to get rid of irrelevant detail about compiler paths, by matching them, and then throwing them away.
+
+     flag name    https://www.spec.org/cpu2017/Docs/flag-description.html#flag_name
+                  Each flag must have a unique name.  See additional discussion at flag 'gxx', below.
+
+     flag class   https://www.spec.org/cpu2017/Docs/flag-description.html#flag_class
+                  Each flag must have a class.  See additional discussion of classes about 1 screenful further below.
+
+     flag regexp  https://www.spec.org/cpu2017/Docs/flag-description.html#flag_regexp
+                  The regexp is how you teach the SPEC tools to find your flags.  This example matches:
+                    - A path string that starts and ends with "/" containing only non-blank characters, followed by
+                    - a compiler name: one of 'gcc', 'g++', or 'gfortran', followed by
+                    - white space or end of string: https://www.spec.org/cpu2017/Docs/flag-description.html#lookahead -->
+<flag name="ZCC_compiler_path_eater"
+     class="compiler"
+    regexp="\S+/(zcc|z\+\+|gfortran)(?=\s|$)">
+   <!-- We are still defining our flag.  
+        The opening tag had 3 attributes (name, class, regexp).  It has several more tags:
+   -->
+   <display enable="0" />  <!-- display        https://www.spec.org/cpu2017/Docs/flag-description.html#display
+                                               This causes the text that was matched to be thrown away and not reported.  (The
+                                               text can nevertheless be reviewed, and will be, if you submit your result to SPEC
+                                               for publication on its website.)
+                           -->
+   <include text="$1" />   <!-- include text   https://www.spec.org/cpu2017/Docs/flag-description.html#include_text
+                                               Wait, wait, we don't want to throw away everything; just the path.  The regexp
+                                               captures the compiler name in $1; this line puts it back into the text stream. 
+                           -->
+   <example>/path/to/{zcc|z++|gfortran}</example>                  
+                           <!-- example        https://www.spec.org/cpu2017/Docs/flag-description.html#example 
+                                               Although results do not include this flag (because display enable=0), we need to
+                                               print *something* when doing a flags dump (i.e. HTML rendering of this XML file).
+                                               The 'example' gives us that something.
+                           -->
+</flag>                    <!-- Done defining this flag -->
+
+
+<!-- flag class   https://www.spec.org/cpu2017/Docs/flag-description.html#flag_class
+                  Every flag must have a class.  You can use 4 of them:
+
+          class="compiler"       https://www.spec.org/cpu2017/Docs/flag-description.html#compiler_class
+                                 Invocation string for the compiler (example: 'gcc').  Other flags can be associated with a
+                                 specific compiler using the compiler attribute. See the example below for flag '-g-gcc'.
+                                 Compare the "compiler class" 
+                                     vs. the "compilers attribute" at: 
+                                 https://www.spec.org/cpu2017/Docs/flag-description.html#compilers_attribute 
+                               
+          class="optimization"   https://www.spec.org/cpu2017/Docs/flag-description.html#optimization
+                                 A flag that affects performance (example: '-O3')
+                               
+          class="portability"    https://www.spec.org/cpu2017/Docs/flag-description.html#portability
+                                 A flag which SPEC has approved for portability use, or which you plan to ask SPEC to approve,
+                                 prior to any public use of your results (example: '-DSPEC_LINUX').  See:
+                                 https://www.spec.org/cpu2017/Docs/runrules.html#portability
+                               
+          class="other"           https://www.spec.org/cpu2017/Docs/flag-description.html#other
+                                  Anything else (example: '-v' to control verbosity)
+
+     flag text    https://www.spec.org/cpu2017/Docs/flag-description.html#flag_text
+                  The flag below actually has a description!  At last, we start to accomplish what we came here to do: describe
+                  flags.  Every flag must include descriptive text, except those that have 'display enable="0"'.  As the contents
+                  should be HTML, it will save lots of time to just enclose the whole thing in a CDATA section.  See
+                  https://www.spec.org/cpu2017/Docs/flag-description.html#CDATA 
+-->
+<flag name="zcc"
+   regexp="\bzcc(?=\s|$)"
+   class="compiler">
+   <![CDATA[
+   <p>Invokes the Terapines C compiler.  </p>
+   ]]>
+</flag>
+
+<flag name="zfc"
+   regexp="\bgfortran(?=\s|$)"
+   class="compiler">
+   <![CDATA[
+   <p>Invokes the GNU Fortran compiler.</p>
+   ]]>
+</flag>
+
+<!-- flag name    https://www.spec.org/cpu2017/Docs/flag-description.html#flag_name
+                  The flag below is NOT given a name of 'g++'; instead we use 'gxx'.  The syntax rules for names are:
+                   - Each flag must have a unique name.  
+                   - A flag name must begin with a letter, a colon, or an underscore.  
+                   - After that, it may be composed of letters, digits, periods, hyphens ('-'), underscores, or colons.  
+                   - Therefore:
+                      * Flag names cannot begin with a slash or hyphen ('/' or '-').
+                      * Flag names cannot include an equals sign
+                   - Search for 'DefaultRE' to see how to pick flag names that automatically imply commonly-useful regular
+                     expressions to match them.
+-->
+<flag name="zxx"
+   regexp="\bz\+\+(?=\s|$)"
+   class="compiler">
+   <example>z++</example>
+   <![CDATA[
+   <p>Invokes the Terapines C++ compiler.</p>
+   ]]>
+</flag>
+
+<!-- ============================================================================================================================= 
+     All other flags are, for ease of maintenance, sorted into alphabetical order.  
+     Sorting is alphabetical by the flag as used in compile commands, without regard to 
+        - preceding punctuation
+        - preceding 'no-'  (and -fno-mumble is alphabetized as -fmumble)
+        - upper/lower case
+        - preceding elements of a flag name that are not found in the compile command - i.e. 'F-' (explained a few lines down).
+     Maintenance note: you can check with this: 
+           grep name= zcc.xml | perl -pe 's/<flag name="//;s/"\b*$//;s/^F//;s/^-fno-/-f/;s/^-//;' > /tmp/tmp1.tmp
+           grep name= zcc.xml | perl -pe 's/<flag name="//;s/"\b*$//;s/^F//;s/^-fno-/-f/;s/^-//;' | sort -f > /tmp/tmp2.tmp
+           vimdiff /tmp/tmp[12].tmp
+     The only difference should be for the flags prior to this point, which must come first.
+     ============================================================================================================================= 
+-->
+
+<flag name="F-fcommon"
+   class="other">
+   <![CDATA[
+   <p>Place uninitialized global variables in a common block.  This allows the linker to resolve all tentative definitions of the same
+   variable in different compilation units to the same object.  See also 
+   <a href="https://gcc.gnu.org/gcc-10/porting_to.html">https://gcc.gnu.org/gcc-10/porting_to.html</a>.</p>
+   ]]>
+</flag>
+
+<flag name="F-fdlo"
+   class="optimization">
+   <![CDATA[
+   <p>Enable data locality Optimization When invoked with source code.  </p>
+   ]]>
+</flag>
+
+<flag name="ffinite-math-only"
+   regexp="-f(?:no-)finite-math-only"
+   class="optimization">
+   <example>-f-finite-math-only, -fno-finite-math-only</example>
+   <![CDATA[<p><kbd>ffinite-math-only</kbd>, which is implied by <kbd>-fast-math</kbd> and <kbd>-Ofast</kbd>, allows 
+      optimizations for floating-point arithmetic that assume that arguments and results are not NaNs or +-Infs.
+      Setting <kbd>-fno-finite-math-only</kbd> does the opposite: the compiler must prepare for the possible presence of 
+      NaNs and infinities.
+   </p>]]>
+</flag>
+
+<flag name="F-fgnu89-inline"
+   class="optimization">
+   <![CDATA[<p> Tells GCC to use the GNU semantics for "inline" functions, that is, the behavior prior to the C99 standard.
+      This switch may resolve duplicate symbol errors, as noted in the <a
+         href="https://www.spec.org/cpu2017/Docs/benchmarks/502.gcc_r.html#inline">502.gcc_r benchmark description</a>.
+   </p>]]>
+</flag>
+
+<flag name="F-flto"
+   class="optimization">
+   <![CDATA[
+   <p>Enable Link Time Optimization When invoked with source code, it generates GIMPLE (one of GCC's internal
+      representations) and writes it to special ELF sections in the object file.  When the object files are linked together,
+      all the function bodies are read from these ELF sections and instantiated as if they had been part of the same
+      translation unit.  </p>
+   ]]>
+</flag>
+
+<flag name="F-fno-strict-aliasing"
+class="optimization">
+   <![CDATA[
+      <p>The language standards set aliasing requirements: programmers are expected to follow conventions so that the
+         compiler can keep track of memory.  If a program violates the requirements (for example, using pointer arithmetic),
+         programs may crash, or (worse) wrong answers may be silently produced.</p>
+      <p>Unfortunately, the aliasing requirements from the standards are not always well understood.</p>
+      <p>Sometimes, the aliasing requirements are understood and nevertheless intentionally violated by smart programmers who
+         know what they are doing, such as the programmer responsible for the inner workings of Perl storage allocation and
+         variable handling.</p>
+      <p>The <samp>-fno-strict-aliasing</samp> switch instructs the optimizer that it must not assume that the aliasing
+         requirements from the standard are met by the current program.  You will probably need it for 500.perlbench_r and
+         600.perlbench_s.  Note that this is an <i>optimization</i> switch, not a portability switch.  When running
+         SPECint2017_rate_base or SPECint2017_speed_base, you must use the same optimization switches for all the C modules
+         in base; see 
+         <a href="https://www.spec.org/cpu2017/Docs/runrules.html#BaseFlags">
+            https://www.spec.org/cpu2017/Docs/runrules.html#BaseFlags</a>  
+         and 
+         <a href="https://www.spec.org/cpu2017/Docs/runrules.html#MustValidate">
+            https://www.spec.org/cpu2017/Docs/runrules.html#MustValidate</a>.  
+      </p>
+   ]]>
+</flag>
+
+<flag name="F-fno-unsafe-math-optimizations"
+     class="optimization">
+   <![CDATA[
+      <p>The switch <samp>-funsafe-math-optimizations</samp> allows the compiler to make certain(*) aggressive assumptions, such as
+         disregarding the programmer's intended order of operations. The run rules allow such re-ordering <a
+            href="https://www.spec.org/cpu2017/Docs/runrules.html#reordering">
+            https://www.spec.org/cpu2017/Docs/runrules.html#reordering</a>.  The rules also point out that you must get answers
+         that pass SPEC's validation requirements.  In some cases, that will mean that some optimizations must be turned off.
+      </p>
+      <p><samp>-fno-unsafe-math-optimizations</samp> turns off these(*) optimizations.  You may need to use this flag in order to get
+         certain benchmarks to validate.  Note that this is an <i>optimization</i> switch, not a portability switch.  If it is
+         needed, then in base you will need to use it consistently.  See: <a
+            href="https://www.spec.org/cpu2017/Docs/runrules.html#BaseFlags">
+            https://www.spec.org/cpu2017/Docs/runrules.html#BaseFlags</a> and <a
+            href="https://www.spec.org/cpu2017/Docs/runrules.html#MustValidate">
+            https://www.spec.org/cpu2017/Docs/runrules.html#MustValidate</a>.  </p>
+      <p style="margin-left:2em;">(*) Much more detail about which optimizations is <a href="#gnote">available</a>.</p>
+   ]]>
+</flag>
+
+<flag name="g-zcc"
+   regexp="-g(?:\d)?\b"
+   compilers="zcc,zfc,zxx"
+   class="optimization">
+   <example>-g</example>
+   Produce debugging information.
+</flag>
+
+<flag name="march"
+   class="optimization"
+   regexp="-march=(\S+)(?=\s|$)">    <!-- The end of this regexp is explained at
+                                          https://www.spec.org/cpu2017/Docs/flag-description.html#lookahead -->
+   <example>-march=rv64gc, 
+      -march=athlon,
+      -march=armv8.2-a+lse,
+      -march=native...</example>     <!-- When printing a result file, the actual matched token '-march=whatever' is printed.
+                                          When printing a flags dump (the HTML rendering of this file), there is nothing to
+                                          match, so what can be printed?  The example.  -->
+   <![CDATA[<p>
+      On x86 systems, allows use of instructions that require the listed architecture.</p>
+   <p>On Arm systems, specifies the name of the target architecture and, optionally, one or more feature modifiers.
+      This option has the form <kbd>-march=arch{+[no]feature}</kbd>
+   </p>]]>
+</flag>
+
+<flag name="mcpu"
+   regexp="-mcpu=(\S+)"
+   class="optimization">
+   <example>-mcpu=sifive-u74, -mcpu=neoverse-n1, -mcpu=niagara4, ...</example>
+   <![CDATA[<p>
+      On aarch64 systems, <kbd>mcpu</kbd> sets the what kind of instructions can be used (as if by -march) and how to 
+           tune for performance (as if by -mtune).
+      <br />On x86 systems, <kbd>mcpu</kbd> is a deprecated synonym for <kbd>mtune</kbd>.
+      <br />On SPARC systems, <kbd>mcpu</kbd> sets the available instruction set.
+   </p>]]>
+</flag>
+
+<flag name="no-unsigned-wrap"
+   class="optimization"
+   regexp="-mllvm --no-unsigned-wrap=(\S+)">
+   <example>-mllvm --no-unsigned-wrap=false;</example>
+   <![CDATA[<p>
+      Turn on/off no unsigned wrap optimization. 
+   </p>]]>
+</flag>
+
+<flag name="Olevel-zcc"
+   compilers="zcc,zfc,zxx"
+   regexp="-O\d\b"
+   class="optimization">
+   <example>-O1, -O2, -O3</example>
+   <![CDATA[<p>
+      Increases optimization levels: the higher the number, the more optimization is done.  Higher levels of optimization may
+      require additional compilation time, in the hopes of reducing execution time.  At -O, basic optimizations are performed, 
+      such as constant merging and elimination of dead code.  At -O2, additional optimizations are added, such as common
+      subexpression elimination and strict aliasing.  At -O3, even more optimizations are performed, such as function inlining and
+      vectorization.
+      <br /><a href="#gnote">Many more details are available</a>.
+   </p>]]>
+</flag>
+
+<flag name="std-c99-zcc"
+   compilers="zcc"
+   class="optimization"
+   regexp="-std=c99"
+   >
+   <![CDATA[<p>
+      Sets the language dialect to include syntax from the C99 standard, such as <samp>bool</samp> and other features used in CPU 2017
+      benchmarks.
+   </p>]]>
+</flag>
+
+<flag name="std-cxx03-zcc"
+   compilers="zxx"
+   class="optimization"
+   regexp="-std=c\+\+03"
+   >
+   <example>-std=c++03</example>
+   <![CDATA[<p>
+      Sets the language dialect to include syntax from the 1998 ISO C++ standard plus the 2003 technical corrigendum.
+   </p>]]>
+</flag>
+
+<flag name="target"
+   regexp="--target=(\S+)"
+   class="optimization">
+   <example>--target=riscv64-unknown-linux-gnu,
+       --target=riscv64-unknown-elf,
+       --target=riscv32-unknown-elf, ...</example>
+   <![CDATA[<p>
+      Specify the architecture to build for (all platforms)..
+   </p>]]>
+</flag>
+
+</flagsdescription>
