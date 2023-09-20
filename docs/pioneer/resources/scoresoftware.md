@@ -27,7 +27,7 @@ After running the./install.sh command, you will be prompted to whichdirectory to
 $mv riscv.cfg config/ // This command does not need to be executed if the official cfg is used
 ``````
 
-Currently, llvm compiler, T-head compiler, gcc are supported. If you want to test with a different compiler, you can specify the compiler by modifying the CC, CXX, FC parameters of riscv.cfg:
+Currently, Terapines zcc toolchain, llvm compiler, T-head compiler, gcc are supported. If you want to test with a different compiler, you can specify the compiler by modifying the CC, CXX, FC parameters of riscv.cfg:
 
 - **GCC**
 ``````
@@ -37,19 +37,30 @@ CXX = $(SPECLANG)g++ -std=c++O3
 
 - **T-head**
 ``````
-CC=home/fedora/tools/gcc-riscv64-thead-fedora38-linux-gnu-10.4/bin/gcc -std=c99
-CXX=home/fedora/tools/gcc-riscv64-thead-fedora38-linux-gnu-10.4/bin/g++  -std=c++O3
-FC=home/fedora/tools/gcc-riscv64-thead-fedora38-linux-gnu-10.4/bin/gfortran
+CC = /home/fedora/tools/gcc-riscv64-thead-fedora38-linux-gnu-10.4/bin/gcc -std=c99
+CXX = /home/fedora/tools/gcc-riscv64-thead-fedora38-linux-gnu-10.4/bin/g++  -std=c++O3
+FC = /home/fedora/tools/gcc-riscv64-thead-fedora38-linux-gnu-10.4/bin/gfortran
 ``````
 
-- **clang**  
+- **clang**
+
 Since llvm does not currently have a fortran library, fortran can only use gfortran:
 
 ``````
-CC=clang
-CXX=calng++
-FC=$(SPECLANG)gfortran
+CC = clang
+CXX = calng++
+FC = $(SPECLANG)gfortran
 ``````
+
+- **ZCC**
+
+Terapines fortran compiler zfc will be available in the next release.
+```
+CC = zcc --target=riscv64-unknown-linux-gnu -std=c99 -mllvm --no-unsigned-wrap=false
+CXX = z++ --target=riscv64-unknown-linux-gnu -std=c++03
+FC = $(SPECLANG)gfortran
+```
+
 #### 1.2 How to use
 
 ``````
@@ -93,7 +104,7 @@ $./install.sh -u linux-riscv
 $mv riscv.cfg config/ #If you use other config, this step can be ignored
 ``````
 
-Currently, the T-head compiler, gcc, is supported. If you want to use a different compiler for testing, you can specify the compiler by modifying the CC, CXX, FC parameters of riscv.cfg:
+Currently, Terapines zcc toolchain, llvm compiler, T-head compiler, gcc are supported. If you want to use a different compiler for testing, you can specify the compiler by modifying the CC, CXX, FC parameters of riscv.cfg:
 
 - **GCC**
 
@@ -106,18 +117,29 @@ FC = gfortran
 - **T-Head**
 
 ``````
-CC=home/fedora/tools/gcc-riscv64-thead-fedora38-linux-gnu-10.4/bin/gcc
-CXX=home/fedora/tools/GCC - riscv64 - thead - fedora38 - Linux - 10.4 - gnu/bin/g++
-FC= home/fedora/tools/GCC - riscv64 - thead - fedora38 - Linux - 10.4 -gnu/bin/gfortran
+CC = /home/fedora/tools/gcc-riscv64-thead-fedora38-linux-gnu-10.4/bin/gcc
+CXX = /home/fedora/tools/GCC - riscv64 - thead - fedora38 - Linux - 10.4 - gnu/bin/g++
+FC = /home/fedora/tools/GCC - riscv64 - thead - fedora38 - Linux - 10.4 -gnu/bin/gfortran
 ``````
 
 - **llvm**
 
 ``````
-CC=clang -Wno-int-conversion -std=gnu89
+CC = clang -Wno-int-conversion -std=gnu89
 CXX = g++
 FC = gfortran
 ``````
+
+- **ZCC**
+
+Terapines fortran compiler zfc will be available in the next release.
+
+``````
+CC = zcc --target=riscv64-unknown-linux-gnu -Wno-int-conversion -std=gnu89 -mllvm -no-unsigned-wrap=false
+CXX = z++ --target=riscv64-unknown-linux-gnu -std=c++03
+FC = gfortran
+``````
+
 *Note: export SPEC_INSTALL_NOCHECK=1 can bypass regression testing for perl*
 
 #### How to use
