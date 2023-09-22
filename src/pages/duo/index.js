@@ -152,23 +152,23 @@ function DetailsPage() {
             <ul>
               <li>
                 <div className={cssList.down}></div>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/raw/f0fe6d39113e02c8cf625ef76ff7bc7d938669ea/duo-datasheet-v1.2.pdf" download="duo-datasheet-v1.2.pdf">Duo Datasheet v1.2, PDF</a>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/hardware/tree/main/Duo">Duo Datasheet, PDF</a>
               </li>
               <li>
                 <div className={cssList.down}></div>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/raw/f0fe6d39113e02c8cf625ef76ff7bc7d938669ea/duo-schematic-v1.1.pdf" download="duo-schematic-v1.1.pdf">Duo Schematic v1.1, PDF</a>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/hardware/tree/main/Duo">Duo Schematic, PDF</a>
               </li>
               <li>
                 <span className={cssList.down}></span>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/raw/f0fe6d39113e02c8cf625ef76ff7bc7d938669ea/duo-mechanical-drawings-v1.1.zip" download="duo-mechanical-drawings-v1.1.zip">Duo Mechanical Drawings v1.1, DXF</a>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/hardware/tree/main/Duo">Duo Mechanical Drawings, DXF</a>
               </li>
               <li>
                 <span className={cssList.down}></span>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/raw/f0fe6d39113e02c8cf625ef76ff7bc7d938669ea/duo-schematic-library-v1.2.olb" download="duo-schematic-library-v1.2.olb">Duo Schematic Library v1.2, OLB</a>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/hardware/tree/main/Duo">Duo Schematic Library, OLB</a>
               </li>
               <li>
                 <span className={cssList.down}></span>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/raw/f0fe6d39113e02c8cf625ef76ff7bc7d938669ea/duo-pcb-footprint-v1.2.dra" download="duo-pcb-footprint-v1.2.dra">Duo PCB Footprint v1.2, DRA</a>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/hardware/tree/main/Duo">Duo PCB Footprint, DRA</a>
               </li>
             </ul>
           </div>
