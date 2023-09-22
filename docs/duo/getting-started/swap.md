@@ -9,8 +9,9 @@ Swap, also known as virtual RAM, is used to support storing data in hard disk wh
 
 # How to enable Swap on Duo
 
-> Risk Warning:  
-  This may cause wear and tear on your microSD card leading to a shorter drive lifespan! It is strongly recommended to enable swap functionality only when there is insufficient memory available!
+:::warning
+This may cause wear and tear on your microSD card leading to a shorter drive lifespan! It is strongly recommended to enable swap functionality only when there is insufficient memory available!
+:::
 
 Use the latest system image
 
@@ -43,8 +44,9 @@ You can modify the value of this [size](https://github.com/milkv-duo/duo-buildro
 
 By connecting to Duo through a serial cable or SSH, you can use the `fdisk` command to modify it. The principle involves deleting the existing swap partition and creating a new one with the specified size
 
-> Risk Warning：  
-  Any modifications to the partitions can potentially lead to data loss. Before performing any partition operations, please make sure to back up your important data！
+:::warning
+Any modifications to the partitions can potentially lead to data loss. Before performing any partition operations, please make sure to back up your important data！
+:::
 
 The following is the step-by-step command-line interactive method using `fdisk`. If you're not familiar with this method, a script-based approach is provided later, which can be executed once to complete the modification
 
