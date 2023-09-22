@@ -42,6 +42,7 @@ export default () => {
                                     <p className={styles.line_name}>Pages</p>
                                     <Link to='/'>Home</Link>
                                     <Link to='/about'>About</Link>
+                                    <Link to='/warranty'>Warranty</Link>
                                 </li>
                                 <li>
                                     <p className={styles.line_name}>Products</p>
@@ -87,7 +88,7 @@ export default () => {
                     <div className={styles.footer_bottom_text}>
                         <p><Translate id='homepage.corporations.companyname' /></p>
                         <p>
-                        <Translate id='homepage.corporations.companyaddress_1' /><br></br><Translate id='homepage.corporations.companyaddress_2' />
+                            <Translate id='homepage.corporations.companyaddress_1' /><br></br><Translate id='homepage.corporations.companyaddress_2' />
                         </p>
                     </div>
                 </div>

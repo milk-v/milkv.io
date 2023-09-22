@@ -1,0 +1,12 @@
+.view_pdf {
+    width: 100%;
+    height: 2000px;
+}
+
+@media screen and (max-width: 750px) {
+    .view_pdf {
+        width: 350rem;
+        height: 800rem;
+    }
+
+}
