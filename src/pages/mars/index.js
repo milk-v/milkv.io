@@ -136,7 +136,7 @@ export default () => {
                             <td>GPIO Power in, 5V DC via GPIO header (minimum 3A+)</td>
                         </tr>
                         <tr>
-                            <td>PoE</td>
+                            <td>PoE with add-on PoE HAT</td>
                         </tr>
                         <tr>
                             <td>GPIO</td>
