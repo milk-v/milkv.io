@@ -95,17 +95,6 @@ export default () => {
                             <h2>PCIe Available</h2>
                             <p><span>●</span>1x PCIe 1-lane Host, Gen 2 (5Gbps)</p>
                             <p><span>●</span>Supports Multiple High-speed peripherals</p>
-                            {/* <div className={styles.pcle_info}>
-                                <p>PCle can be extended to</p>
-                                <div className={styles.info_grid}>
-                                    <div>SATA</div>
-                                    <div>USB</div>
-                                    <div>RS232</div>
-                                    <div>High-speed Devices</div>
-                                    <div>RS485</div>
-                                    <div>......</div>
-                                </div>
-                            </div> */}
                             <img src="/mars-cm/extended.webp" />
                         </div>
                         <div className={styles.memory}>
