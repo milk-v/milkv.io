@@ -9,3 +9,45 @@
 .generatedIndexPage_node_modules-\@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module {
     margin: 0 auto;
 }
+
+
+
+.gpio_style>table {
+    overflow: visible;
+}
+
+.gpio_style>table td {
+    padding: 3px 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.green {
+    background-color: green;
+    color: #fff;
+}
+
+.black {
+    color: #fff;
+    background-color: black;
+}
+
+.blue {
+    color: #fff;
+    background-color: blue;
+}
+
+.yellow {
+    color: #000;
+    background-color: yellow;
+}
+
+.red {
+    color: #000;
+    background-color: red;
+}
+
+.orange {
+    color: #000;
+    background-color: orange;
+}

@@ -178,7 +178,6 @@ li {
     height: 40rem;
   }
 
-
   .navbar-sidebar__brand {
     height: 50rem;
   }
@@ -245,7 +244,159 @@ li {
     padding: 20rem;
   }
 
+  .clean-btn,
+  .navbar-sidebar__back {
+    font-size: 14rem;
 
+  }
+
+  .theme-doc-sidebar-item-category-level-1 {
+    font-size: 16rem;
+    margin-bottom: 10rem;
+  }
+
+
+  .container header h1 {
+    font-size: 18rem;
+  }
+
+  .container header p {
+    font-size: 14rem;
+  }
+
+  .container article .breadcrumbs>li>a>span {
+    font-size: 12rem;
+    height: 20rem;
+  }
+
+  .margin-top--lg {
+    width: 100%;
+  }
+
+  .container .card {
+    margin: 10rem 0;
+    padding: 5rem !important;
+  }
+
+  .container .card h2 {
+    font-size: 18rem;
+  }
+
+  .container .card p {
+    font-size: 16rem;
+  }
+
+  .pagination-nav {
+    margin-bottom: 50rem;
+    padding: 0 5rem;
+  }
+
+  .pagination-nav__label,
+  .pagination-nav__sublabel {
+    font-size: 12rem;
+  }
+
+  .pagination-nav__link {
+    padding: 10rem;
+  }
+
+  .anchor {
+    font-size: 12rem;
+  }
+
+  .hash-link {
+    font-size: 10rem;
+  }
+
+  .container table td,
+  .container thead th {
+    font-size: 12rem;
+    padding: 3rem 5rem;
+  }
+
+  .markdown h1 {
+    font-size: 20rem;
+    margin: 10rem 0;
+  }
+
+  .markdown h2 {
+    font-size: 18rem;
+    margin: 10rem 0;
+  }
+
+  .markdown h3 {
+    font-size: 16rem;
+    margin: 10rem 0;
+  }
+
+  .markdown p {
+    font-size: 14rem;
+    line-height: 120%;
+    margin: 10rem 0;
+  }
+
+  .token-line>* {
+    font-size: 10rem;
+  }
+
+  .clean-btn {
+    font-size: 12rem !important;
+  }
+
+  .theme-edit-this-page {
+    font-size: 12rem;
+  }
+
+  .tocCollapsibleButton_node_modules-\@docusaurus-theme-classic-lib-theme-TOCCollapsible-CollapseButton-styles-module {
+    padding: 10rem !important;
+    width: 90% !important;
+  }
+
+  .tocCollapsibleButton_node_modules-\@docusaurus-theme-classic-lib-theme-TOCCollapsible-CollapseButton-styles-module::after {
+    width: 20rem !important;
+    height: 20rem !important;
+  }
+
+  .tocCollapsibleContent_node_modules-\@docusaurus-theme-classic-lib-theme-TOCCollapsible-styles-module>ul>li {
+    padding: 0 10rem;
+  }
+
+  .details_node_modules-\@docusaurus-theme-classic-lib-theme-Details-styles-module {
+    font-size: 14rem;
+    padding: 10rem 5rem;
+    margin-bottom: 10rem !important;
+    text-align: left;
+    border-radius: 5rem;
+  }
+
+  .details_node_modules-\@docusaurus-theme-classic-lib-theme-Details-styles-module p,
+  .details_node_modules-\@docusaurus-theme-classic-lib-theme-Details-styles-module li {
+    font-size: 12rem;
+  }
+
+  .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module>summary {
+    display: flex;
+    padding-left: 20rem !important;
+  }
+
+  .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module>summary::before {
+    width: 1rem !important;
+    height: 1rem !important;
+    /* position: static !important; */
+  }
+
+  .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module>summary::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+  }
+
+  .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module {
+    --docusaurus-details-summary-arrow-size: 6rem !important;
+  }
 }
 
 .markdown {
