@@ -215,7 +215,7 @@ const Home_web = () => {
     <>
       <div className={styles.home_header}>
         <div className={styles.header_title}>
-          <h1>"Embracing RISC-V with Milk-V"</h1>
+          <h1>"<Translate id='Embracing' />"</h1>
           <div className={styles.button_use}>
             <Link href='https://community.milkv.io/'><Translate id='homepage.corporations.CommunityBotton' /></Link>
             <Link to='/about'><Translate id='homepage.corporations.WhyRVBotton' /></Link>

@@ -1084,5 +1084,13 @@
   "homepage.corporations.companyaddress_2": {
     "message": "Shenzhen, China",
     "description": "footer company address"
+  },
+  "Send": {
+    "message": "Send",
+    "description": "Send"
+  },
+  "Embracing": {
+    "message": "Embracing RISC-V with Milk-V",
+    "description": " "
   }
 }

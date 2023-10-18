@@ -135,7 +135,7 @@ export default () => {
                                 </h2>
                                 <textarea value={message} required onChange={(e) => { setMessage(e.target.value) }}></textarea>
                             </div>
-                            <button className={styles.support_form_btn} disabled={formbtn}>Send</button>
+                            <button className={styles.support_form_btn} disabled={formbtn}><Translate id='Send' /></button>
                         </form>
                     </div>
                 </div>

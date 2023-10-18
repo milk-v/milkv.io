@@ -1084,5 +1084,13 @@
   "homepage.corporations.companyaddress_2": {
     "message": " ",
     "description": "footer company address"
+  },
+  "Send": {
+    "message": "发送",
+    "description": "Send"
+  },
+  "Embracing": {
+    "message": "让 Milk-V 拥抱 RISC-V",
+    "description": " "
   }
 }
