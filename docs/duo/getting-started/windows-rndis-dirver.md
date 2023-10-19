@@ -1,3 +1,9 @@
+---
+sidebar_label: 'Install RNDIS driver'
+sidebar_position: 0
+sidebar_class_name: hidden
+---
+
 # Install RNDIS driver
 
 This is another way to install the RNDIS driver on windows, download the driver file and install it.

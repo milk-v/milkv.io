@@ -431,3 +431,7 @@ strong {
   font-family: Roboto;
   src: url(/static/ttf/Roboto-Condensed-3.ttf);
 }
+
+.hidden {
+  display: none !important;
+}
