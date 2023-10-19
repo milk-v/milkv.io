@@ -672,9 +672,6 @@ body {
 
     .pinImg {
         width: 1320px;
-        height: 580px;
-        background: url(/static/duo/pinout.webp) no-repeat;
-        background-size: 100%;
     }
 
 
@@ -1372,9 +1369,6 @@ body {
 
     .pinImg {
         width: 1000px;
-        height: 500px;
-        background: url(/static/duo/pinout.webp) no-repeat;
-        background-size: 100%;
     }
 
 
@@ -2064,9 +2058,6 @@ body {
 
     .pinImg {
         width: 700px;
-        height: 360px;
-        background: url(/static/duo/pinout.webp) no-repeat;
-        background-size: 100%;
     }
 
 
@@ -2767,9 +2758,6 @@ body {
         display: block;
         margin: 20rem auto;
         width: 340rem;
-        height: 165rem;
-        background: url(/static/duo/pinout.webp) no-repeat;
-        background-size: 100%;
     }
 
 

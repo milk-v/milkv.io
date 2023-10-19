@@ -146,7 +146,7 @@ function DetailsPage() {
             <p className={cssList.tech_p_line}>- <Translate id='duo.Hardware.info3' /></p>
           </div>
           <h1 className={cssList.tech_title3}><Translate id='duo.info.text.pinOut' /></h1>
-          <div className={cssList.pinImg}></div>
+          <img src='/docs/duo/pinout.webp' className={cssList.pinImg}></img>
           <div className={cssList.document}>
             <h1><Translate id='duo.info.text.Documents' /></h1>
             <ul>
