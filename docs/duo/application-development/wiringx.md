@@ -15,11 +15,38 @@ This article will be divided into the following four parts to introduce how to d
 
 If you are already familiar with the usage of wiringX, you can directly refer to our sample code:  [duo-examples](https://github.com/milkv-duo/duo-examples)
 
-The wiringX pin numbering of Milk-V Duo is consistent with the physical pin numbering of Duo. However, the LED control pin is not available on the 40-pin physical pinout, and its wiringX pin number is 0
+The wiringX pin numbering of Milk-V Duo is consistent with the pin name numbering of Duo. However, the LED control pin is not available on the 40-pin physical pinout, and its wiringX pin number is `25`
 
-![duo](/docs/duo/duo-wiringx-pinout-with-pin-name.png)
+<div className='gpio_style'>
 
-Please note that many of Duo's pins have multipurpose functionality. When using `wiringX` to control the functions of each pin, it is important to confirm the current state of the pin to ensure it matches the desired functionality. If it doesn't, you can use the `cvi_pinmux` command to switch it to the desired function
+| wiringX | PIN NAME |              Pin#               |              Pin#                | PIN NAME | wiringX |
+| ------- | -------- | :-----------------------------: | :------------------------------: | -------- | ------- |
+| 0       | GP0      | <div className='green'>1</div>  |    <div className='red'>40</div> | VBUS     |         |
+| 1       | GP1      | <div className='green'>2</div>  |    <div className='red'>39</div> | VSYS     |         |
+|         | GND      | <div className='black'>3</div>  |  <div className='black'>38</div> | GND      |         |
+| 2       | GP2      | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN   |         |
+| 3       | GP3      | <div className='green'>5</div>  |    <div className='red'>36</div> | 3V3(OUT) |         |
+| 4       | GP4      | <div className='green'>6</div>  |   <div className='gray'>35</div> |          |         |
+| 5       | GP5      | <div className='green'>7</div>  |   <div className='gray'>34</div> |          |         |
+|         | GND      | <div className='black'>8</div>  |  <div className='black'>33</div> | GND      |         |
+| 6       | GP6      | <div className='green'>9</div>  |  <div className='green'>32</div> | GP27     | 27      |
+| 7       | GP7      | <div className='green'>10</div> |  <div className='green'>31</div> | GP26     | 26      |
+| 8       | GP8      | <div className='green'>21</div> | <div className='orange'>30</div> | RUN      |         |
+| 9       | GP9      | <div className='green'>12</div> |  <div className='green'>29</div> | GP22     | 22      |
+|         | GND      | <div className='black'>13</div> |  <div className='black'>28</div> | GND      |         |
+| 10      | GP10     | <div className='green'>14</div> |  <div className='green'>27</div> | GP21     | 21      |
+| 11      | GP11     | <div className='green'>15</div> |  <div className='green'>26</div> | GP20     | 20      |
+| 12      | GP12     | <div className='green'>16</div> |  <div className='green'>25</div> | GP19     | 19      |
+| 13      | GP13     | <div className='green'>17</div> |  <div className='green'>24</div> | GP18     | 18      |
+|         | GND      | <div className='black'>18</div> |  <div className='black'>23</div> | GND      |         |
+| 14      | GP14     | <div className='green'>19</div> |  <div className='green'>22</div> | GP17     | 17      |
+| 15      | GP15     | <div className='green'>20</div> |  <div className='green'>21</div> | GP16     | 16      |
+|         |          | &nbsp;                          |                                  |          |         |
+| 25      | GP25     | <div className='blue'>LED</div> |                                  |          |         |
+
+</div>
+
+Please note that many of Duo's pins have multipurpose functionality. When using `wiringX` to control the functions of each pin, it is important to confirm the current state of the pin to ensure it matches the desired functionality. If it doesn't, you can use the `duo-pinmux` command to switch it to the desired function
 
 Please refer to the detailed usage instructions for more information：[pinmux](https://milkv.io/docs/duo/application-development/pinmux)
 
@@ -245,7 +272,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 ### GPIO Usage Example
 
-Here is an example of working with GPIO. It will toggle pin 20 on Duo every 1 second, pulling it high and then low. The physical pin number for pin 20 is also 20 in the WiringX numbering system
+Here is an example of working with GPIO. It will toggle pin 20 on Duo every 1 second, pulling it high and then low. The physical pin number for pin 20 is `15` in the WiringX numbering system
 
 ```c
 #include <stdio.h>
@@ -254,7 +281,7 @@ Here is an example of working with GPIO. It will toggle pin 20 on Duo every 1 se
 #include <wiringx.h>
 
 int main() {
-    int DUO_GPIO = 20;
+    int DUO_GPIO = 15;
 
     if(wiringXSetup("duo", NULL) == -1) {
         wiringXGC();
@@ -281,7 +308,7 @@ int main() {
 ```
 After compiling and running it on Duo, you can use a multimeter or an oscilloscope to measure the state of pin 20 and verify if it matches the expected behavior
 
-You can also use the onboard LED pin to verify the behavior. By observing the on/off state of the LED, you can intuitively determine if the program is executing correctly. The WiringX pin number for the LED is 0. Simply modify the code mentioned above by replacing pin 20 with pin 0. However, please note that the default firmware has a script to control LED blinking on startup, which needs to be disabled. You can refer to the example explanation for [blink](#blink) below for instructions on how to disable it
+You can also use the onboard LED pin to verify the behavior. By observing the on/off state of the LED, you can intuitively determine if the program is executing correctly. The WiringX pin number for the LED is `25`. Simply modify the code mentioned above by replacing pin `15` with pin `25`. However, please note that the default firmware has a script to control LED blinking on startup, which needs to be disabled. You can refer to the example explanation for [blink](#blink) below for instructions on how to disable it
 
 ### I2C Usage Example
 
