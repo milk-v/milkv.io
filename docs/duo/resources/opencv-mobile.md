@@ -160,7 +160,7 @@ zip -r -9 opencv-mobile-4.8.0.zip install
 |opencv_videostab|do video stablization on powerful pc or server|
 |opencv_viz|vtk is not available on mobile, write your own data visualization routines|
 
-## Hod to use on Milk-V Duo?
+## How to use on Milk-V Duo?
 original link: https://community.milkv.io/t/opencv-mobile-opencv-milkv-duo/557
 
 ### TL;DR
