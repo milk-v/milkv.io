@@ -53,6 +53,8 @@ We have enabled RNDIS and DHCP on the system by default in order to use USB netw
 
 ![rndis-step10](/docs/duo/rndis-step10.png)
 
+* If you are having trouble installing the rndis driver, you can try [another installation method](./windows-rndis-dirver).
+
 ### Linux
 
 In general, Linux can use RNDIS without configuration.
