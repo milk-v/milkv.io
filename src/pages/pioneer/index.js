@@ -140,7 +140,7 @@ function Center() {
           </div>
           <div className={cCss.bannerimg2}>
             <div className={cCss.bannerimg2_1}></div>
-            <div className={cCss.bannerT}>SWICH</div>
+            <div className={cCss.bannerT}>SWITCH</div>
           </div>
           <div className={cCss.bannerimg3}>
             <div className={cCss.bannerimg3_1}></div>
