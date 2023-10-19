@@ -44,7 +44,7 @@ This is another way to install the RNDIS driver on windows, download the driver 
 
 ![rndis-step9](/docs/duo/rndis-b9.png)
 
-11. Select "USB Ethernet/RNDIS Godget"
+11. Select "USB Ethernet/RNDIS Gadget"
 
 ![rndis-step10](/docs/duo/rndis-b10.png)
 
@@ -56,6 +56,6 @@ This is another way to install the RNDIS driver on windows, download the driver 
 
 ![rndis-step12](/docs/duo/rndis-b12.png)
 
-14. Check "USB Ethernet/RNDIS Godget"
+14. Check "USB Ethernet/RNDIS Gadget"
 
 ![rndis-step13](/docs/duo/rndis-b13.png)
