@@ -19,7 +19,8 @@
       {
         "ignore": [
           "scrollbar-width",
-          "-moz-filter"
+          "-moz-filter",
+          "text-align-last"
         ]
       }
     ],
