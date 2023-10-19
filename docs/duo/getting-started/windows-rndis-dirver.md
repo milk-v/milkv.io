@@ -48,7 +48,7 @@ This is another way to install the RNDIS driver on windows, download the driver 
 
 ![rndis-step10](/docs/duo/rndis-b10.png)
 
-12. Ignore warning message
+12. Ignore warning message and click "Yes"
 
 ![rndis-step11](/docs/duo/rndis-b11.png)
 

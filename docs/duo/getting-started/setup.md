@@ -37,7 +37,7 @@ We have enabled RNDIS and DHCP on the system by default in order to use USB netw
 
 ![rndis-step6](/docs/duo/rndis-step6.png)
 
-8. Ignore warning message
+8. Ignore warning message and click "Yes"
 
 ![rndis-step7](/docs/duo/rndis-step7.png)
 
