@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Little Core'
+sidebar_label: 'RTOS Core'
 sidebar_position: 40
 ---
 
