@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'TPU'
+sidebar_label: 'YOLOv5 Object Detection'
 sidebar_position: 30
 ---
 
