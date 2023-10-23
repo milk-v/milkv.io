@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Translate from '@docusaurus/Translate';
@@ -192,14 +192,14 @@ const Home_web = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      if (!isPaused) {
+      if (!isPaused && window.innerWidth > 750) {
         setIndex(prevCount => (prevCount === 5 ? 1 : prevCount + 1));
       }
     }, 3000);
 
     return () => {
       clearInterval(timer);
-    };
+    }
   }, [isPaused]);
 
 
@@ -225,7 +225,10 @@ const Home_web = () => {
       <div className={styles.black_shore}>
         <ul className={styles.tab} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           {tabs.map((tab, idx) => (
-            <li key={idx} className={index === tab.index ? styles.index : null} onClick={() => { setIndex(tab.index) }}>
+            <li key={idx} className={index === tab.index ? styles.index : null} onClick={() => {
+              setIndex(tab.index)
+              setIsPaused(true);
+            }}>
               <p>{tab.name}</p>
             </li>
           ))}

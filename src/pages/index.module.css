@@ -833,11 +833,9 @@
     }
 
     .tab {
-        width: 350rem;
+        width: 100%;
         height: 20rem;
         margin: 20rem auto;
-        position: sticky;
-        top: 0;
     }
 
     .tab>li>p {
