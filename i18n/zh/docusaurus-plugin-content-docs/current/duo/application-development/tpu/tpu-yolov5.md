@@ -17,13 +17,124 @@ CV1800B TPU 支持的模型
 
 ## 基于 YOLOv5 的目标检测
 
-### 1. 配置 docker 开发环境
+### 1. 在 windows 下准备原始模型文件
+
+#### 准备 yolov5 开发工具包和 yolov5n.pt 文件
+
+下载 [yolov5开发工具包](https://codeload.github.com/ultralytics/yolov5/zip/refs/heads/master) 以及 [yolov5n.pt](https://github.com/ultralytics/yolov5/releases/download/v6.2/yolov5n.pt) 文件，下载完成后将工具包解压，并将 `yolov5n.pt` 文件放在 `yolov5-master/` 目录下
+
+#### 配置conda环境
+
+需要提前安装 Anaconda [https://www.anaconda.com/](https://www.anaconda.com/)
+
+新建 `Anaconda Prompt` 终端, 执行 `conda env list` 查看当前环境
+```
+(base) C:\Users\Carbon> conda env list
+# conda environments:
+#
+base                  *  C:\Users\Carbon\anaconda3
+```
+
+新建conda虚拟环境并安装3.9.0版本的python，`duotpu`是自己取的名字
+```
+(base) C:\Users\Carbon> conda create --name duotpu python=3.9.0
+```
+
+成功后再次查看当前环境
+```
+(base) C:\Users\Carbon> conda env list
+# conda environments:
+#
+base                  *  C:\Users\Carbon\anaconda3
+duotpu                   C:\Users\Carbon\anaconda3\envs\duotpu
+```
+
+激活刚安装的 3.9.0 的环境
+```
+(base) C:\Users\Carbon> activate duotpu
+```
+
+确认已激活
+```
+(duotpu) C:\Users\Carbon> conda env list
+# conda environments:
+#
+base                     C:\Users\Carbon\anaconda3
+duotpu                *  C:\Users\Carbon\anaconda3\envs\duotpu
+```
+
+然后可使用如下指令安装 1.12.1 版本的 pytorch，具体安装指令可根据需求选择，后续过程只需要用到 CPU 即可
+```
+# CUDA 10.2
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=10.2 -c pytorch
+
+# CUDA 11.3
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
+
+# CUDA 11.6
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6 -c pytorch
+
+# CPU Only
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cpuonly -c pytorch
+```
+
+然后将终端路径`cd`到开发工具包的`yolov5-master/`路径下，输入 `pip install -r requirements.txt` 安装其他依赖项
+```
+(duotpu) C:\Users\Carbon> cd Duo-TPU\yolov5-master
+
+(duotpu) C:\Users\Carbon\Duo-TPU\yolov5-master> pip install -r requirements.txt
+```
+
+#### 生成原始模型文件
+
+在`yolov5-master/`目录下新建一个`main.py`文件，并在文件中写入如下代码
+```
+import torch
+from models.experimental import attempt_download
+model = torch.load(attempt_download("./yolov5n.pt"),
+map_location=torch.device('cpu'))['model'].float()
+model.eval()
+model.model[-1].export = True
+torch.jit.trace(model, torch.rand(1, 3, 640, 640), strict=False).save('./yolov5n_jit.pt')
+```
+
+然后找到`/yolov5-master/models/yolo.py`文件，将第63行到第79行的代码注释，并在第80行添加代码`return x`，如下图所示
+
+![duo](/docs/duo/tpu/duo-tpu-yolo5_01.png)
+
+另外这个文件也需要修改一下
+```
+C:\Users\Carbon\anaconda3\envs\duotpu\Lib\site-packages\torch\nn\modules\upsampling.py
+```
+第153行左右做如下修改
+
+![duo](/docs/duo/tpu/duo-tpu-yolo5_02.png)
+
+
+修改完成后，运行`python main.py`文件，就会在`yolov5-master`目录下生成`yolov5n_jit.pt`文件，该文件即为所需的原始模型文件
+```
+(duotpu) C:\Users\Carbon\Duo-TPU\yolov5-master> python main.py
+```
+
+#### 退出 conda 环境 (可选)
+
+上面已经生成了我们需要的模型文件，可以用`conda deactivate`命令退出 conda 环境
+```
+(duotpu) C:\Users\Carbon\Duo-TPU\yolov5-master> conda deactivate
+```
+
+如果不再需要这个 conda 虚拟环境了（duotpu），可以用如下命令删除
+```
+conda env remove --name <envname>
+```
+
+### 2. 配置 docker 开发环境
 
 #### docker安装
 
 在 windows 环境下，可以安装 Docker Desktop for Windows，docker [下载地址](https://docs.docker.com/desktop/install/windows-install/)
 
-![duo](/docs/duo/tpu/duo-tpu-yolo5_01.png)
+![duo](/docs/duo/tpu/duo-tpu-yolo5_04.png)
 
 在 Windows 下运行 docker 需要相关依赖，即如图中所示，需要使用 WSL2 后端或者 Hyper-V 后端作为运行依赖
 
@@ -32,7 +143,7 @@ Hyper-V后端的启用方式如下
 1. 控制面板 —— 程序和功能 —— 启用或关闭Windows功能
 2. 找到Hyper-V，勾选Hyper-V管理工具和Hyper-V平台，点确定后等待系统文件配置完成后重启电脑
 
-   ![duo](/docs/duo/tpu/duo-tpu-yolo5_02-zh.png)
+   ![duo](/docs/duo/tpu/duo-tpu-yolo5_05-zh.png)
 
 然后即可安装下载好 Docker Desktop for Windows，在安装指引中根据选择的后端进行相应的勾选
 
@@ -126,117 +237,6 @@ docker exec -it f3a060efb1d3 /bin/bash
 ```
 # tar -zxvf tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz
 # source ./tpu-mlir_v1.3.228-g19ca95e9-20230921/envsetup.sh
-```
-
-### 2. 在 windows 下准备原始模型文件
-
-#### 准备 yolov5 开发工具包和 yolov5n.pt 文件
-
-下载 [yolov5开发工具包](https://codeload.github.com/ultralytics/yolov5/zip/refs/heads/master) 以及 [yolov5n.pt](https://github.com/ultralytics/yolov5/releases/download/v6.2/yolov5n.pt) 文件，下载完成后将工具包解压，并将 `yolov5n.pt` 文件放在 `yolov5-master/` 目录下
-
-#### 配置conda环境
-
-需要提前安装 Anaconda [https://www.anaconda.com/](https://www.anaconda.com/)
-
-新建 `Anaconda Prompt` 终端, 执行 `conda env list` 查看当前环境
-```
-(base) C:\Users\Carbon> conda env list
-# conda environments:
-#
-base                  *  C:\Users\Carbon\anaconda3
-```
-
-新建conda虚拟环境并安装3.9.0版本的python，`duotpu`是自己取的名字
-```
-(base) C:\Users\Carbon> conda create --name duotpu python=3.9.0
-```
-
-成功后再次查看当前环境
-```
-(base) C:\Users\Carbon> conda env list
-# conda environments:
-#
-base                  *  C:\Users\Carbon\anaconda3
-duotpu                   C:\Users\Carbon\anaconda3\envs\duotpu
-```
-
-激活刚安装的 3.9.0 的环境
-```
-(base) C:\Users\Carbon> activate duotpu
-```
-
-确认已激活
-```
-(duotpu) C:\Users\Carbon> conda env list
-# conda environments:
-#
-base                     C:\Users\Carbon\anaconda3
-duotpu                *  C:\Users\Carbon\anaconda3\envs\duotpu
-```
-
-然后可使用如下指令安装 1.12.1 版本的 pytorch，具体安装指令可根据需求选择，后续过程只需要用到 CPU 即可
-```
-# CUDA 10.2
-conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=10.2 -c pytorch
-
-# CUDA 11.3
-conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
-
-# CUDA 11.6
-conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6 -c pytorch
-
-# CPU Only
-conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cpuonly -c pytorch
-```
-
-然后将终端路径`cd`到开发工具包的`yolov5-master/`路径下，输入 `pip install -r requirements.txt` 安装其他依赖项
-```
-(duotpu) C:\Users\Carbon> cd Duo-TPU\yolov5-master
-
-(duotpu) C:\Users\Carbon\Duo-TPU\yolov5-master> pip install -r requirements.txt
-```
-
-#### 生成原始模型文件
-
-在`yolov5-master/`目录下新建一个`main.py`文件，并在文件中写入如下代码
-```
-import torch
-from models.experimental import attempt_download
-model = torch.load(attempt_download("./yolov5n.pt"),
-map_location=torch.device('cpu'))['model'].float()
-model.eval()
-model.model[-1].export = True
-torch.jit.trace(model, torch.rand(1, 3, 640, 640), strict=False).save('./yolov5n_jit.pt')
-```
-
-然后找到`/yolov5-master/models/yolo.py`文件，将第63行到第79行的代码注释，并在第80行添加代码`return x`，如下图所示
-
-![duo](/docs/duo/tpu/duo-tpu-yolo5_04.png)
-
-另外这个文件也需要修改一下
-```
-C:\Users\Carbon\anaconda3\envs\duotpu\Lib\site-packages\torch\nn\modules\upsampling.py
-```
-第153行左右做如下修改
-
-![duo](/docs/duo/tpu/duo-tpu-yolo5_05.png)
-
-
-修改完成后，运行`python main.py`文件，就会在`yolov5-master`目录下生成`yolov5n_jit.pt`文件，该文件即为所需的原始模型文件
-```
-(duotpu) C:\Users\Carbon\Duo-TPU\yolov5-master> python main.py
-```
-
-#### 退出 conda 环境 (可选)
-
-上面已经生成了我们需要的模型文件，可以用`conda deactivate`命令退出 conda 环境
-```
-(duotpu) C:\Users\Carbon\Duo-TPU\yolov5-master> conda deactivate
-```
-
-如果不再需要这个 conda 虚拟环境了（duotpu），可以用如下命令删除
-```
-conda env remove --name <envname>
 ```
 
 ### 3. 在docker中准备工作目录
@@ -345,7 +345,7 @@ docker cp C:\Users\Carbon\Duo-TPU\yolov5-master\yolov5n_jit.pt DuoTPU:/workspace
 
    [下载地址](https://mega.nz/folder/yZghQA4R#aZkbTwJb7Ji5LvAWIuBtag)
 
-   包名: cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz
+   包名: `cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz`
 
 2. 从 ftp 服务器下载
 
