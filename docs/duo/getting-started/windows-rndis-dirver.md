@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Install RNDIS driver'
-sidebar_position: 0
+sidebar_position: -10
 sidebar_class_name: hidden
 ---
 
