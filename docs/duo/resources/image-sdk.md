@@ -25,7 +25,7 @@ sidebar_position: 40
     ```
     then reboot the board
 
-    [Use IO-Board](https://milkv.io/docs/duo/io-board/usb&ethernet_iob)
+    [Use IO-Board](https://milkv.io/docs/duo/io-board/usb-ethernet-iob)
 
 
 ## SDK
