@@ -2,7 +2,7 @@
 sidebar_label: 'Boot the Mars'
 sidebar_position: 10
 ---
-# Boot the Duo
+# Boot the Mars
 
 ## Prepare
 
