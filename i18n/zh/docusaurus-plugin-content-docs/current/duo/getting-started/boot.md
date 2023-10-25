@@ -15,7 +15,7 @@ sidebar_position: 10
   - USB to TTL 串口模块
 
 ## 下载镜像和工具
-- 从[官方镜像和SDK](https://milkv.io/docs/duo/resources/image&sdk)下载系统镜像.
+- 从[官方镜像和SDK](https://milkv.io/docs/duo/resources/image-sdk)下载系统镜像.
 - 下载Flash工具 [balenaEtcher](https://etcher.balena.io/) 或 [Rufus](https://rufus.ie/en/).
 
 ## Write images
