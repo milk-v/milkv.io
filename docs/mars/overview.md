@@ -110,13 +110,13 @@ The GPU of JH7110 has the following
 The memory specification is LPDDR4 2800MT/s.
 
 ### Camara for MIPI CSI 
-Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/mipicsi_support)
+Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/mipicsi-support)
 
 ### Display for MIPI DSI
-Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/mipidsi_support)
+Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/mipidsi-support)
 
 ### UVC Camera
-Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/uvccam_support)
+Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/uvccam-support)
 
 ### Support
 For support please post your issue on the [Milk-V Community Mars Category](https://community.milkv.io/c/mars).
