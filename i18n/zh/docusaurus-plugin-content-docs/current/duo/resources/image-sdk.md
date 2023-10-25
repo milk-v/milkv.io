@@ -31,7 +31,7 @@ sidebar_position: 40
     ```
     然后执行reboot命令或者重新上电
 
-    [底板 IO-Board 的使用方法](https://milkv.io/zh/docs/duo/io-board/usb&ethernet_iob)
+    [底板 IO-Board 的使用方法](https://milkv.io/zh/docs/duo/io-board/usb-ethernet-iob)
 
 ## SDK
 
