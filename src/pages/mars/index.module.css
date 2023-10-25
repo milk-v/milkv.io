@@ -32,8 +32,6 @@
     background-size: cover;
 }
 
-
-
 .prodcuts04 {
     background: url(/static/mars/mars-icon-03.webp) no-repeat;
     background-size: cover;
@@ -60,8 +58,6 @@
 }
 
 .li03 {
-    /* background: url(/static/mars/mars-icon-08.webp) no-repeat;
-    background-size: cover; */
     background-color: #000;
 }
 
@@ -99,7 +95,6 @@
 }
 
 @media screen and (min-width: 1950px) {
-
     .btnbuy {
         width: 240px;
         height: 80px;
@@ -113,14 +108,14 @@
         text-align: left;
         color: #fff;
         position: relative;
-        width: 1450px;
+        width: 1920px;
         height: 110px;
         overflow: hidden;
         margin: 150px auto 100px;
     }
 
     .marsBox>h2 {
-        width: 1440px;
+        width: 1920px;
         margin: 80px auto;
         font-weight: 500;
         font-size: 48px;
@@ -155,15 +150,15 @@
     }
 
     .prodcuts {
-        width: 1440px;
-        height: 1235px;
+        width: calc(1440px*1.333);
+        height: calc(1235px*1.333);
         margin: 0 auto;
         position: relative;
     }
 
     .prodcuts01 {
-        width: 470px;
-        height: 330px;
+        width: calc(470px*1.333);
+        height: calc(330px*1.333);
         position: absolute;
         top: 0;
         left: 0;
@@ -180,9 +175,9 @@
     .prodcuts02 {
         position: absolute;
         top: 0;
-        left: 485px;
-        width: 470px;
-        height: 245px;
+        left: calc(485px*1.333);
+        width: calc(470px*1.333);
+        height: calc(245px*1.333);
         padding: 30px 30px 0;
     }
 
@@ -197,9 +192,9 @@
     .prodcuts03 {
         position: absolute;
         top: 0;
-        left: 970px;
-        width: 470px;
-        height: 205px;
+        left: calc(970px*1.333);
+        width: calc(470px*1.333);
+        height: calc(205px*1.333);
         font-weight: 600;
         font-size: 42px;
         color: rgba(255, 255, 255, 0.8);
@@ -209,10 +204,10 @@
 
     .prodcuts04 {
         position: absolute;
-        top: 345px;
+        top: calc(345px*1.333);
         left: 0;
-        width: 470px;
-        height: 545px;
+        width: calc(470px*1.333);
+        height: calc(545px*1.333);
         padding: 40px 35px 0;
     }
 
@@ -236,11 +231,11 @@
 
     .prodcuts05 {
         position: absolute;
-        top: 260px;
-        left: 485px;
-        width: 470px;
-        height: 630px;
-        padding: 530px 15px 0px;
+        top: calc(260px*1.333);
+        left: calc(485px*1.333);
+        width: calc(470px*1.333);
+        height: calc(630px*1.333);
+        padding: calc(530px*1.333) 15px 0px;
     }
 
     .prodcuts05>p {
@@ -261,10 +256,10 @@
 
     .prodcuts06 {
         position: absolute;
-        top: 220px;
-        left: 970px;
-        width: 470px;
-        height: 670px;
+        top: calc(220px*1.333);
+        left: calc(970px*1.333);
+        width: calc(470px*1.333);
+        height: calc(670px*1.333);
         padding: 50px 40px 0;
     }
 
@@ -291,7 +286,7 @@
 
     .productsUl {
         width: 100%;
-        height: 330px;
+        height: calc(330px*1.333);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -302,9 +297,9 @@
     }
 
     .productsUl>li {
-        width: 470px;
+        width: calc(470px*1.333);
         height: 100%;
-        padding: 14px 25px 0;
+        padding: 20px 32px 0;
     }
 
     .productsUl>li>h1 {
@@ -343,13 +338,13 @@
         font-size: 26px;
         line-height: 120%;
         color: rgba(255, 255, 255, 0.8);
-        width: 1440px;
+        width: 1920px;
         margin: 0 auto;
     }
 
     .tableBox {
         margin: 80px auto;
-        width: 1440px;
+        width: 1920px;
     }
 
     .tableBox td {
@@ -363,11 +358,11 @@
     }
 
     .tabP {
-        width: 1030px;
+        width: 1430px;
     }
 
     .tabline {
-        width: 410px;
+        width: 510px;
     }
 
     .embrace {
@@ -410,7 +405,6 @@
 }
 
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
-
     .btnbuy {
         width: 200px;
         height: 70px;

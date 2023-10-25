@@ -48,7 +48,711 @@ body {
     text-align: center;
 }
 
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1950px) {
+    .btnbuy {
+        width: 240px;
+        height: 80px;
+        font-size: 43px;
+        margin: 120px auto 30px;
+    }
+
+    .meet {
+        font-size: 24px;
+        margin-bottom: 6.4px;
+    }
+
+    .low {
+
+        font-size: 24.8px;
+
+    }
+
+    .tax {
+        font-size: 20px;
+    }
+
+    .one1 {
+        font-size: 100px;
+        color: #01F2AA;
+        margin-right: 19.2px;
+    }
+
+    .spanG {
+        font-size: 100px;
+        color: #fff;
+    }
+
+    .spanHz {
+        font-size: 42.4px;
+        color: #fff;
+    }
+
+
+    .vector {
+        font-size: 16px;
+        color: #fff;
+        margin-right: 16px;
+        position: absolute;
+        top: 245.6px;
+        left: 593.6px;
+    }
+
+    .titleTxt {
+        font-size: 99.2px;
+        margin-bottom: 44.8px;
+    }
+
+    .titleBox {
+        text-align: center;
+        width: 1036px;
+        margin: 252.4px auto 0;
+        color: #fff;
+    }
+
+    .textLine {
+        background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 70px;
+        margin-bottom: 5px;
+    }
+
+    .rotateImg {
+        position: absolute;
+        height: 595px;
+        width: 261px;
+        left: -160px;
+        top: 440.5008px;
+        transform: rotate(40deg);
+        z-index: 100;
+        background: url(/static/duo/clip-green.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .title {
+        font-size: 77px;
+        font-weight: 500;
+        text-align: left;
+        color: #fff;
+        position: relative;
+        width: 1920px;
+        height: 110px;
+        overflow: hidden;
+    }
+
+    .chartBox {
+        width: 1920px;
+        height: 604px;
+        background-color: #141619;
+        margin: 100px auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .chartTitle {
+        position: absolute;
+        width: 962px;
+        height: 67px;
+        left: 115px;
+        top: 39px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 44px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+
+    .chartTitle2 {
+        position: absolute;
+        width: 574px;
+        height: 45px;
+        left: 115px;
+        top: 132px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+
+    .largeText {
+        position: absolute;
+        width: 180px;
+        height: 120px;
+        left: 131px;
+        top: 151px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .exhibits {
+        width: calc(1320px*1.45);
+        height: calc(1305px*1.45);
+        margin: 28px auto 158px;
+        position: relative;
+    }
+
+    .exhibits .group2 {
+        width: calc(650px*1.45);
+        height: calc(681px*1.45);
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #000;
+        border: 1px solid;
+        border-image-source: linear-gradient(137.67deg, #01F2AA 0%, #01DCEE 100%);
+        border-image-slice: 1;
+    }
+
+    .exhibits .group2>.textList {
+        height: calc(98px*1.45);
+        width: calc(510px*1.45);
+        font-weight: 500;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #FF5C00;
+        font-size: 35px;
+        display: block;
+        margin: 53px auto 0;
+    }
+
+    .exhibitsImg {
+        display: block;
+        height: calc(453px*1.45);
+        width: calc(187px*1.45);
+        margin: 50px auto 0;
+        background: url(/static/duo/clip-green.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .micBox {
+        width: calc(650px*1.45);
+        height: calc(398px*1.45);
+        border: 1px solid;
+        border-image-source: linear-gradient(248.35deg, #941970 1.15%, #572E91 100.6%);
+        border-image-slice: 1;
+        background-color: #000;
+        position: absolute;
+        left: 0;
+        top: calc(703px*1.45);
+    }
+
+    .micList1 {
+        position: absolute;
+        top: calc(30px*1.45);
+        left: calc(56px*1.45);
+        height: calc(324px*1.45);
+        width: calc(248px*1.45);
+        border-radius: 5px;
+        background-color: #343431;
+        overflow: hidden;
+    }
+
+    .micList1 .frame1 {
+        width: calc(200px*1.45);
+        height: calc(200px*1.45);
+        position: absolute;
+        top: calc(20px*1.45);
+        left: calc(15px*1.45);
+        background: url(/static/duo/sd.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .micList1>p {
+        position: absolute;
+        width: 100%;
+        height: calc(30px*1.45);
+        left: calc(57px*1.45);
+        top: calc(266px*1.45);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+
+    .micList2 .frame2 {
+        width: calc(163px*1.45);
+        height: calc(163px*1.45);
+        position: absolute;
+        top: calc(44px*1.45);
+        left: calc(57px*1.45);
+        background: url(/static/duo/clip.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .micList2 {
+        position: absolute;
+        top: calc(30px*1.45);
+        left: calc(349px*1.45);
+        height: calc(324px*1.45);
+        width: calc(248px*1.45);
+        border-radius: 5px;
+        background-color: #343431;
+        overflow: hidden;
+    }
+
+    .micList2>p {
+        position: absolute;
+        width: 100%;
+        height: calc(30px*1.45);
+        left: calc(85px*1.45);
+        top: calc(266px*1.45);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+
+    .footerText {
+        width: calc(650px*1.45);
+        height: calc(154px*1.45);
+        position: absolute;
+        left: 0;
+        top: calc(1125px*1.45);
+        background: #181818;
+    }
+
+    .footerText>h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 46px;
+        text-align: center;
+        margin-top: 47px;
+        background-image: -webkit-linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .bigExhibits {
+        width: calc(650px*1.45);
+        height: calc(883px*1.45);
+        position: absolute;
+        left: calc(670px*1.45);
+        top: 0;
+        background-color: #000;
+        overflow: hidden;
+    }
+
+    .head {
+        margin: 150px 0 0 160px;
+        height: calc(350px*1.45);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 55px;
+        background: linear-gradient(90deg, #FFE259 0%, #FFA751 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .support {
+        padding: 4px;
+        width: calc(484px*1.45);
+        height: calc(51px*1.45);
+        background: #0F896E;
+        border-radius: 5px;
+        position: absolute;
+        top: calc(253px*1.45);
+        left: calc(97px*1.45);
+        color: #fff;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24.4px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btnBox {
+        position: absolute;
+        width: calc(494.24px*1.45);
+        height: calc(453px*1.45);
+        left: calc(92px*1.45);
+        top: calc(363px*1.45);
+        background: url(/static/duo/duo-btn.webp) no-repeat;
+        background-size: 100%;
+    }
+
+    .lineChart {
+        width: calc(650px*1.45);
+        height: calc(374px*1.45);
+        position: absolute;
+        left: calc(670px*1.45);
+        top: calc(905px*1.45);
+        background-color: #000;
+        overflow: hidden;
+    }
+
+    .lineBox {
+        position: absolute;
+        width: calc(394px*1.45);
+        height: calc(284px*1.45);
+        left: calc(128px*1.45);
+        top: calc(55px*1.45);
+    }
+
+    .line1 {
+        position: absolute;
+        width: calc(394px*1.45);
+        height: 0px;
+        left: 0;
+        top: 0;
+        border: 2.2784px dashed rgba(255, 255, 255, 0.5);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    .line2 {
+        position: absolute;
+        width: calc(394px*1.45);
+        height: 0px;
+        left: 0;
+        top: 33.33%;
+        border: 2.2784px dashed rgba(255, 255, 255, 0.5);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    .line3 {
+        position: absolute;
+        width: calc(394px*1.45);
+        height: 0px;
+        left: 0;
+        bottom: 33.33%;
+        border: 2.2784px dashed rgba(255, 255, 255, 0.5);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    .line4 {
+        position: absolute;
+        width: calc(394px*1.45);
+        height: 0px;
+        left: 0;
+        bottom: 0;
+        border: 2.2784px dashed rgba(255, 255, 255, 0.5);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    .lineGroup {
+        height: calc(300px*1.45);
+        width: calc(116px*1.45);
+        position: absolute;
+        top: calc(3px*1.45);
+        left: calc(50px*1.45);
+        background: url(/static/duo/clip-green.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .jj {
+        position: absolute;
+        width: calc(149px*1.45);
+        height: calc(149px*1.45);
+        left: calc(178px*1.45);
+        top: calc(140px*1.45);
+        background: url(/static/duo/yingbi.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .bannerList {
+        width: 1320px;
+        height: 493px;
+        margin: 100px auto 0;
+        position: relative;
+        overflow: hidden;
+        background-color: #000;
+    }
+
+    .bannerimg1 {
+        width: 420px;
+        height: 349px;
+        background-color: #000;
+        color: #fff;
+        position: absolute;
+        left: 0;
+        top: 28px;
+        border: 1px solid #878787;
+        border-radius: 4px;
+    }
+
+    .bannerimg2 {
+        width: 420px;
+        height: 349px;
+        background-color: #000;
+        color: #fff;
+        position: absolute;
+        left: 448.96px;
+        top: 28px;
+        border: 1px solid #878787;
+        border-radius: 4px;
+    }
+
+    .bannerimg3 {
+        width: 420px;
+        height: 349px;
+        background-color: #000;
+        color: #fff;
+        position: absolute;
+        top: 28px;
+        left: 897.92px;
+        border: 1px solid #878787;
+        border-radius: 4px;
+    }
+
+    .bannerimg4 {
+        width: 420px;
+        height: 349px;
+        background-color: #000;
+        color: #fff;
+        position: absolute;
+        left: 1346.88px;
+        top: 28px;
+        border: 1px solid #878787;
+        border-radius: 4px;
+    }
+
+    .bannerimg5 {
+        width: 420px;
+        height: 349px;
+        background-color: #000;
+        color: #fff;
+        position: absolute;
+        left: 1795.84px;
+        top: 28px;
+        border: 1px solid #878787;
+        border-radius: 4px;
+    }
+
+    .bannerimg1>.img1 {
+        display: block;
+        width: 420px;
+        height: 283.5008px;
+        margin: 5px auto 0;
+        background: url(/static/duo/jiank3.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .bannerimg2>.img2 {
+        display: block;
+        width: 420px;
+        height: 283.5008px;
+        margin: 1px auto 0;
+        background: url(/static/duo/jiank2.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .bannerimg3>.img3 {
+        display: block;
+        width: 420px;
+        height: 283.5008px;
+        margin: 1px auto 0;
+        background: url(/static/duo/jiank.webp) no-repeat;
+        background-size: 100%;
+    }
+
+    .bannerimg4>.img4 {
+        display: block;
+        width: 420px;
+        height: 283.5008px;
+        background: url(/static/duo/Rectangle2.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .bannerimg5>.img5 {
+        display: block;
+        width: 420px;
+        height: 283.5008px;
+        background: url(/static/duo/Rectangle1.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .bannerimg>p {
+        font-size: 20px;
+        text-align: center;
+        line-height: 84px;
+    }
+
+    .prev {
+        width: 82px;
+        height: 82px;
+        background: url(/static/duo/chevron-left.svg) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 61px;
+        cursor: pointer;
+    }
+
+    .next {
+        width: 82px;
+        height: 82px;
+        background: url(/static/duo/chevron-right.svg) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 3.1904px;
+        cursor: pointer;
+    }
+
+    .Ghzbox {
+        width: 810px;
+        height: 189px;
+        background: url(/static/duo/Duochart1.svg) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 137px;
+        top: 369px;
+    }
+
+    .chartTech {
+        width: 1920px;
+        margin: 200px auto 0;
+        position: relative;
+    }
+
+    .tech_text1 {
+        margin-top: 100px;
+        width: 100%;
+        height: 207px;
+        color: #fff;
+    }
+
+    .tech_title {
+        font-size: 48px;
+    }
+
+    .tech_p {
+        margin-top: 28px;
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        opacity: 0.8;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .tech_text2 {
+        width: 100%;
+        color: #fff;
+        margin-bottom: 80px;
+    }
+
+    .tech_text2>h1 {
+        margin-bottom: 27.2px;
+    }
+
+    .tech_p_line {
+        font-size: 26px;
+        font-style: normal;
+        opacity: 0.8;
+        font-weight: 400;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0;
+    }
+
+    .tech_title3 {
+        font-size: 48px;
+        color: #fff;
+    }
+
+    .pinImg {
+        width: 1320px;
+    }
+
+
+    .document>h1 {
+        color: #fff;
+        font-size: 48px;
+        margin-top: 80px;
+    }
+
+    .document>ul {
+        width: 1151px;
+        margin-top: 20px;
+        margin-left: -29px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .down {
+        width: 30px;
+        height: 30px;
+        background: url(/static/components/download.svg) no-repeat;
+        background-size: 100%;
+        margin-right: 19.1904px;
+    }
+
+    .document>ul>li {
+        height: 23.4px;
+        line-height: 28px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .link_down {
+        color: #fff;
+        text-decoration: none;
+        font-size: 26px;
+    }
+
+    .embrace {
+        position: absolute;
+        left: 0;
+        top: 167.2px;
+        width: 100%;
+        color: #fff;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 74px;
+        text-align: center;
+    }
+
+    .risc_v {
+        position: absolute;
+        left: 0;
+        top: 275.2px;
+        width: 100%;
+        color: #fff;
+        font-style: normal;
+        font-weight: 500;
+        text-align: center;
+        font-size: 70px;
+        background: linear-gradient(93.08deg, #00FFC2 33.15%, #0066FF 101.47%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+
+    }
+
+    .riscBg {
+        margin: 0 auto 100px;
+        width: 80%;
+        height: 800px;
+        background: url(/static/components/footerbg.png) no-repeat;
+        background-size: 100%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1450px) {
     .btnbuy {
         width: 240px;
         height: 80px;
@@ -751,7 +1455,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1350px) and (min-width: 1050px) {
+@media screen and (max-width: 1450px) and (min-width: 1050px) {
     .btnbuy {
         width: 200px;
         height: 70px;
@@ -2140,7 +2844,6 @@ body {
         position: relative;
     }
 }
-
 
 @media screen and (max-width: 750px) {
 

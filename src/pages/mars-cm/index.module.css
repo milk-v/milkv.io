@@ -461,6 +461,328 @@
     }
 
     .cup_view {
+        width: 1920px;
+        height: calc(620px*1.333);
+        margin: 50px auto 0;
+    }
+
+    .left_cpu {
+        width: calc(640px*1.333);
+        padding: 30px;
+    }
+
+    .block_diagram {
+        padding: 30px;
+    }
+
+    .block_diagram>h2,
+    .os>h2,
+    .PCIe>h2,
+    .storage_4k_view>div>h2,
+    .support_audio>h2,
+    .video_text_info>h2,
+    .left_cpu>h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .detail>div>h2 {
+        font-size: 32px;
+    }
+
+    .detail>div>p,
+    .PCIe>p,
+    .storage_4k_view>div>p,
+    .support_audio>p,
+    .video_text_info>p,
+    .left_cpu>p {
+        font-size: 16px;
+    }
+
+    .detail>div>p>span,
+    .PCIe>p>span,
+    .storage_4k_view>div>p>span,
+    .support_audio>p>span,
+    .video_text_info>p>span,
+    .left_cpu>p>span {
+        font-size: 14px;
+    }
+
+    .block_diagram {
+        width: calc(780px*1.333);
+    }
+
+    .cpu {
+        margin-top: 50px;
+        width: calc(564px*1.333);
+        height: calc(328px*1.333);
+    }
+
+    .cpu>img {
+        width: 226px;
+        height: 36px;
+    }
+
+    .detail,
+    .parameters_view,
+    .storage_4k_view,
+    .multimedia_view {
+        width: calc(1440px*1.333);
+        height: calc(500px*1.333);
+        margin: 20px auto;
+    }
+
+    .parameters_view {
+        height: calc(380px*1.333);
+    }
+
+    .detail {
+        height: calc(369px*1.333);
+    }
+
+    .PCIe,
+    .memory,
+    .detail>div,
+    .storage_4k_view>div,
+    .multimedia_view>div {
+        height: 100%;
+        padding: 30px;
+    }
+
+    .support_video {
+        width: calc(856px*1.333);
+    }
+
+    .video_icons_info {
+        height: calc(64px*1.333);
+    }
+
+    .support_audio {
+        width: calc(564px*1.333);
+    }
+
+    .audio_contexts {
+        width: calc(447px*1.333);
+        height: calc(190px*1.333);
+        bottom: calc(40px*1.333);
+    }
+
+    .support_storage {
+        width: calc(565px*1.333);
+    }
+
+    .tf_emmc {
+        margin-top: calc(130px*1.333);
+    }
+
+    .tf_emmc>p {
+        font-size: 47px;
+        margin: 0 15px;
+    }
+
+    .tfcard {
+        width: calc(170px*1.333);
+        height: calc(117px*1.333);
+    }
+
+    .emmc {
+        width: calc(237px*1.333);
+        height: calc(168px*1.333);
+    }
+
+    .support_4k {
+        width: calc(854px*1.333);
+    }
+
+    .PCIe {
+        width: calc(522px*1.333);
+    }
+
+    .pcle_info {
+        margin: 80px auto 0;
+    }
+
+    .pcle_info>p {
+        font-size: 20px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    .info_grid {
+        width: calc(350px*1.333);
+        grid-gap: 10px;
+    }
+
+    .info_grid>div {
+        font-size: 16px;
+        height: 30px;
+    }
+
+    .memory {
+        width: calc(564px*1.333);
+    }
+
+    .memory>.lpddr4 {
+        margin-top: calc(65px*1.333);
+        font-size: 82px;
+    }
+
+    .memory>.capacity {
+        font-size: 40px;
+    }
+
+    .os {
+        width: calc(314px*1.333);
+        padding-top: 30px;
+
+    }
+
+    .support_os_icons {
+        margin: 20px auto 0;
+    }
+
+    .support_os_icons>img {
+        width: calc(228px*1.333);
+        height: calc(56px*1.333);
+        margin-bottom: 10px;
+    }
+
+    .detail>div {
+        padding-top: 10px;
+        width: calc(345px*1.333);
+    }
+
+    .detail_info1>img {
+        margin-top: 50px;
+        width: calc(303px*1.333);
+        height: calc(127px*1.333);
+    }
+
+    .detail_info4>img {
+        margin-top: 50px;
+        width: calc(277px*1.333);
+        height: calc(160px*1.333);
+    }
+
+    .boards_more>li {
+        width: calc(464px*1.333);
+        height: calc(267px*1.333);
+    }
+
+    .boards_more>li>div {
+        width: 100%;
+        height: calc(267px*1.333);
+    }
+
+    .boards_more>li>p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .rockcm3 {
+        width: calc(377px*1.333);
+        height: calc(222px*1.333);
+    }
+
+    .orangepi {
+        width: calc(314px*1.333);
+        height: calc(208px*1.333);
+    }
+
+    .raspberrypi {
+        width: calc(351px*1.333);
+        height: calc(203px*1.333);
+    }
+
+    .tabBox_tech {
+        width: calc(1440px*1.333);
+    }
+
+    .tableBox {
+        display: table;
+    }
+
+    .PCIe>img {
+        margin-top: 10px;
+        width: calc(480px*1.333);
+        height: calc(205px*1.333);
+    }
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1450px) {
+    .btnbuy {
+        width: 240px;
+        height: 80px;
+        font-size: 43px;
+    }
+
+    .title {
+        font-size: 77px;
+        font-weight: 500;
+        text-align: left;
+        color: #fff;
+        position: relative;
+        height: 110px;
+        overflow: hidden;
+        margin: 150px auto 100px;
+    }
+
+    .moreP {
+        font-size: 26px;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0 auto;
+    }
+
+    .headword {
+        margin: 80px auto;
+        font-weight: 600;
+        font-size: 48px;
+        color: #FFFFFF;
+    }
+
+    .tableBox {
+        margin: 80px auto;
+        width: 100%;
+    }
+
+    .tableBox td {
+        text-align: left;
+        height: 58px;
+        font-weight: 500;
+        font-size: 32px;
+        color: rgba(255, 255, 255, 0.85);
+        padding-left: 60px;
+    }
+
+    .tabP {
+        width: 1030px;
+    }
+
+    .tabline {
+        width: 410px;
+    }
+
+    /* start */
+    .title_content {
+        width: 1440px;
+    }
+
+    .title_content>img {
+        width: 586px;
+        height: 432px;
+    }
+
+    .leftTitle>h1 {
+        font-size: 76px;
+    }
+
+    .leftTitle>p {
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
+
+    .cup_view {
         width: 1440px;
         height: 620px;
         margin: 50px auto 0;
@@ -702,320 +1024,6 @@
         margin-top: 10px;
         width: 480px;
         height: 205px;
-    }
-}
-
-@media screen and (max-width: 1950px) and (min-width: 1450px) {
-    .btnbuy {
-        width: 160px;
-        height: 55px;
-        font-size: 26px;
-    }
-
-    .title {
-        font-size: 50px;
-        height: 78px;
-        margin: 100px auto 80px;
-    }
-
-    .moreP {
-        font-size: 26px;
-        line-height: 120%;
-        color: rgba(255, 255, 255, 0.8);
-        margin: 0 auto;
-    }
-
-    .headword {
-        margin: 40px auto;
-        font-weight: 600;
-        font-size: 48px;
-        color: #FFFFFF;
-    }
-
-    .tableBox {
-        margin: 80px auto;
-    }
-
-    .tableBox td {
-        text-align: left;
-        height: 58px;
-        font-weight: 500;
-        font-size: 28px;
-        color: rgba(255, 255, 255, 0.85);
-        padding-left: 60px;
-    }
-
-    .tabP {
-        width: 1030px;
-    }
-
-    .tabline {
-        width: 410px;
-    }
-
-    /* start */
-    .title_content {
-        width: calc(1440px*.9);
-    }
-
-    .title_content>img {
-        width: calc(586px*.9);
-        height: calc(432px*.9);
-    }
-
-    .leftTitle>h1 {
-        font-size: calc(76px*.9);
-    }
-
-    .leftTitle>p {
-        font-size: calc(32px*.9);
-        margin-bottom: calc(60px*.9);
-    }
-
-    .cup_view {
-        width: calc(1440px*.9);
-        height: calc(620px*.9);
-        margin: 40px auto 0;
-    }
-
-    .left_cpu {
-        width: calc(640px*.9);
-        padding: 27px;
-    }
-
-    .block_diagram {
-        padding: 27px;
-    }
-
-    .block_diagram>h2,
-    .os>h2,
-    .PCIe>h2,
-    .storage_4k_view>div>h2,
-    .support_audio>h2,
-    .video_text_info>h2,
-    .left_cpu>h2 {
-        font-size: calc(36px*.9);
-        margin-bottom: 18px;
-    }
-
-    .detail>div>h2 {
-        font-size: calc(32px*.9);
-    }
-
-    .detail>div>p,
-    .PCIe>p,
-    .storage_4k_view>div>p,
-    .support_audio>p,
-    .video_text_info>p,
-    .left_cpu>p {
-        font-size: 14px;
-    }
-
-    .detail>div>p>span,
-    .PCIe>p>span,
-    .storage_4k_view>div>p>span,
-    .support_audio>p>span,
-    .video_text_info>p>span,
-    .left_cpu>p>span {
-        font-size: 12px;
-        margin-right: 5px;
-    }
-
-
-    .block_diagram {
-        width: calc(780px*.9);
-    }
-
-    .cpu {
-        margin-top: 50px;
-        width: calc(564px*.95);
-        height: calc(328px*.95);
-    }
-
-    .cpu>img {
-        width: calc(226px*.9);
-        height: calc(36px*.9);
-    }
-
-    .detail,
-    .parameters_view,
-    .storage_4k_view,
-    .multimedia_view {
-        width: calc(1440px*.9);
-        height: calc(500px*.9);
-        margin: 18px auto;
-    }
-
-    .parameters_view {
-        height: calc(380px*.9);
-    }
-
-    .detail {
-        height: calc(369px*.9);
-    }
-
-    .PCIe,
-    .memory,
-    .detail>div,
-    .storage_4k_view>div,
-    .multimedia_view>div {
-        height: 100%;
-        padding: 27px;
-    }
-
-    .support_video {
-        width: calc(856px*.9);
-    }
-
-    .video_icons_info {
-        height: 50px;
-    }
-
-    .support_audio {
-        width: calc(564px*.9);
-    }
-
-    .audio_contexts {
-        width: calc(447px*.9);
-        height: calc(190px*.9);
-        bottom: calc(40px*.9);
-    }
-
-    .support_storage {
-        width: calc(565px*.9);
-    }
-
-    .tf_emmc {
-        margin-top: calc(130px*.9);
-    }
-
-    .tf_emmc>p {
-        font-size: calc(47px*.9);
-        margin: 0 12px;
-    }
-
-    .tfcard {
-        width: calc(170px*.9);
-        height: calc(117px*.9);
-    }
-
-    .emmc {
-        width: calc(237px*.9);
-        height: calc(168px*.9);
-    }
-
-    .support_4k {
-        width: calc(854px*.9);
-    }
-
-    .PCIe {
-        width: calc(522px*.9);
-    }
-
-    .pcle_info {
-        margin: 72px auto 0;
-    }
-
-    .pcle_info>p {
-        font-size: 18px;
-        margin-bottom: 10px;
-        margin-right: 5px;
-    }
-
-    .info_grid {
-        width: calc(350px*.9);
-        grid-gap: 9px;
-    }
-
-    .info_grid>div {
-        font-size: 14px;
-        height: 27px;
-    }
-
-    .memory {
-        width: calc(564px*.9);
-    }
-
-    .memory>.lpddr4 {
-        margin-top: calc(65px*.9);
-        font-size: calc(82px*.9);
-    }
-
-    .memory>.capacity {
-        font-size: 36px;
-    }
-
-    .os {
-        width: calc(314px*.9);
-        padding-top: 27px;
-
-    }
-
-    .support_os_icons {
-        margin: 18px auto 0;
-    }
-
-    .support_os_icons>img {
-        width: calc(228px*.9);
-        height: calc(56px*.9);
-        margin-bottom: 10px;
-    }
-
-    .detail>div {
-        padding-top: 9px;
-        width: calc(345px*.9);
-    }
-
-    .detail_info1>img {
-        margin-top: 50px;
-        width: calc(303px*.9);
-        height: calc(127px*.9);
-    }
-
-    .detail_info4>img {
-        margin-top: 50px;
-        width: calc(277px*.9);
-        height: calc(160px*.9);
-    }
-
-    .boards_more>li {
-        width: calc(464px*.9);
-        height: calc(267px*.9);
-    }
-
-    .boards_more>li>div {
-        width: 100%;
-        height: calc(267px*.9);
-    }
-
-    .boards_more>li>p {
-        font-size: 18px;
-        margin-top: 10px;
-    }
-
-    .rockcm3 {
-        width: calc(377px*.9);
-        height: calc(222px*.9);
-    }
-
-    .orangepi {
-        width: calc(314px*.9);
-        height: calc(208px*.9);
-    }
-
-    .raspberrypi {
-        width: calc(351px*.9);
-        height: calc(203px*.9);
-    }
-
-    .tabBox_tech {
-        width: calc(1440px*.9);
-    }
-
-    .PCIe>img {
-        margin-top: 20px;
-        width: calc(480px*.9);
-        height: calc(205px*.9);
     }
 }
 

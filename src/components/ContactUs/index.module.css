@@ -189,7 +189,75 @@
     }
 }
 
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1950px) {
+    .cUs {
+        width: 1920px !important;
+        height: 700px !important;
+        overflow: hidden;
+        margin: 100px auto;
+        background-color: #1a1a1a;
+    }
+
+    .maxtitle {
+        font-weight: 500;
+        font-size: 68px;
+        color: #fff;
+        margin: 20px auto 40px;
+        text-align: center;
+    }
+
+    .touchForm {
+        padding-bottom: 50px;
+    }
+
+    .textLeft>h1 {
+        margin-bottom: 60px;
+        font-size: 30px;
+    }
+
+    .textLeft>h3 {
+        margin-bottom: 10px;
+        font-size: 23px;
+    }
+
+    .textLeft>a {
+        display: block;
+        margin-bottom: 30px;
+        font-size: 23px;
+    }
+
+    .touchBox>h1 {
+        font-size: 23px;
+        margin-bottom: 60px;
+    }
+
+
+    .touchForm>div>label {
+        margin-bottom: 20px;
+    }
+
+    .touchForm>label {
+        margin-bottom: 20px;
+    }
+
+    .touchForm label>input {
+        height: 50px;
+        padding: 0 10px;
+    }
+
+    .touchForm label>textarea {
+        height: 100px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .touchForm label>p {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1450px) {
     .cUs {
         width: 1440px !important;
         height: 700px !important;

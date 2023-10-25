@@ -43,7 +43,765 @@
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
 }
 
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1950px) {
+    .btnbuy {
+        width: 240px;
+        height: 80px;
+        font-size: 43px;
+        margin: 120px auto 30px;
+    }
+
+    .list1 {
+        margin-top: 100px;
+    }
+
+    .title {
+        font-size: 77px;
+        font-weight: 500;
+        text-align: left;
+        color: #fff;
+        position: relative;
+        width: 1920px;
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .chartBox {
+        width: 1920px;
+        height: 604px;
+        background-color: #141619;
+        margin: 100px auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .startbox {
+        width: 1920px;
+        margin: 0 auto;
+        margin-top: 50px;
+        /* position: relative; */
+        overflow: hidden;
+    }
+
+    .center_Box {
+        width: 1320px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .pagBox {
+        position: absolute;
+        width: 707px;
+        height: 735px;
+        left: 647px;
+        top: 130px;
+        background: url(/static//pioneer/pioneer-box.png) no-repeat;
+        background-size: 100%;
+    }
+
+    .bigimg {
+        background-color: aqua;
+        width: 100%;
+        height: 861.12px;
+        background: url(/static//pioneer/pioneer-contexts.svg) no-repeat;
+        background-size: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .titleBox {
+        width: 972px;
+        height: 331px;
+        position: absolute;
+        top: 292px;
+        left: -80px;
+    }
+
+    .titleBox>h1 {
+        font-size: 85.8px;
+        font-style: normal;
+        font-weight: 700;
+        background: linear-gradient(90deg, #0F8CFF 1.27%, #00FFFF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-align: center;
+    }
+
+    .titleBox>p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36.7408px;
+        color: #fff;
+        text-align: center;
+        margin-top: 18.72px;
+    }
+
+    .buy {
+        margin-top: 5.44px;
+    }
+
+    .mintext {
+        text-align: center;
+        font-size: 22.8784px;
+        color: #fff;
+    }
+
+    .power {
+        width: 1920px;
+        margin: 100px auto 150px;
+        position: relative;
+    }
+
+    .power1 {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: calc(455px*1.45);
+        height: calc(394px*1.45);
+        background: url(/static/pioneer/chip-contexts.webp) no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .power1>h1 {
+        background: linear-gradient(89.98deg, #FFFFFF 0.02%, #00F0FF 0.03%, #9E00FF 49.33%, #15D1FF 100.74%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-align: center;
+        font-size: 23.4px;
+        margin-top: 18.72px;
+    }
+
+    .powerimg {
+        width: calc(355px*1.45);
+        height: calc(355px*1.45);
+        margin: -18.72px auto 0;
+        background: url(/static/pioneer/SG2042.webp) no-repeat;
+        background-size: 100%;
+    }
+
+    .power2 {
+        position: absolute;
+        width: calc(844px*1.45);
+        height: calc(394px*1.45);
+        right: 0;
+        top: 0;
+        border: 1px solid #05EAFF;
+    }
+
+    .power2_txt {
+        position: absolute;
+        width: calc(485px*1.45);
+        height: calc(79px*1.45);
+        left: 80.4px;
+        top: 23.4px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 43px;
+        background: linear-gradient(89.98deg, #FFFFFF 0.02%, #00F0FF 0.03%, #9E00FF 49.33%, #15D1FF 100.74%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .power2_1 {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        left: 80.4px;
+        top: 112px;
+    }
+
+    .power2_2 {
+        position: absolute;
+        width: 600px;
+        height: 400px;
+        left: 500px;
+        top: 112px;
+    }
+
+    .power2 p {
+        font-size: 24px;
+        color: #fff;
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    .power2_2::after {
+        content: '';
+        position: absolute;
+        left: -50px;
+        bottom: 0px;
+        height: 400px;
+        width: 1px;
+        background: #929292;
+    }
+
+    .pionBox {
+        width: 1920px;
+        margin: 120px auto 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pionBox>div {
+        width: calc(423px*1.45);
+        height: calc(486px*1.45);
+    }
+
+    .pionBox .pionBox_1 {
+        background: url(/static/pioneer/chip-contexts.webp) no-repeat;
+        background-size: cover;
+    }
+
+    .pionBox .pionBox_1 .pionBox_1_img {
+        width: calc(378px*1.45);
+        height: calc(316px*1.45);
+        margin: calc(76px*1.45) auto 0;
+        background: url(/static/pioneer/pioneer-frontview.webp) no-repeat;
+        background-size: cover;
+    }
+
+
+    .pionBox_2>ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        padding-left: 0;
+        background-color: #000;
+    }
+
+    .pionBox_2>ul>li {
+        flex: 1;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .pionBox_2>ul>li>p {
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+
+    .pionBox_2>ul>li>h1 {
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 45px;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin-top: 18px;
+    }
+
+    .pionBox_2>ul>li>div {
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19px;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+
+    .pionBox_3>ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        padding-left: 0;
+        background-color: #000;
+    }
+
+    .pionBox_3>ul>li {
+        flex: 1;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .pionBox_3>ul>li>p {
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+
+    .pionBox_3>ul>li>h1 {
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 45px;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin-top: 18px;
+    }
+
+    .pionBox_3>ul>li>div {
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .h1_1 {
+        background: linear-gradient(90.18deg, #01FDC3 -3.24%, #0176F9 101.38%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .h1_2 {
+        background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .h1_3 {
+        background: linear-gradient(90.18deg, #01FDC3 -3.24%, #0176F9 101.38%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+
+    .show1 {
+        position: absolute;
+        width: 278px;
+        height: 63.5008px;
+        left: 86px;
+        top: 32px;
+        background: rgba(4, 246, 198, 0.82);
+        filter: blur(70px);
+    }
+
+    .show2 {
+        position: absolute;
+        width: 278px;
+        height: 63.5008px;
+        left: 80px;
+        top: 124px;
+        background: rgba(4, 246, 198, 0.82);
+        filter: blur(70px);
+    }
+
+    .show3 {
+        position: absolute;
+        width: 278px;
+        height: 63.5008px;
+        left: 301.5008px;
+        top: 22.5008px;
+        background: rgba(4, 246, 198, 0.8);
+        filter: blur(70px);
+        transform: rotate(105deg);
+    }
+
+
+    .title3 {
+        font-size: 88px;
+        font-weight: 500;
+        line-height: 78px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        width: 1061px;
+        height: 78px;
+        text-align: left;
+        margin-bottom: 80px;
+    }
+
+    .title3::after {
+        content: '';
+        position: absolute;
+        right: -250px;
+        bottom: 20.2px;
+        width: 765px;
+        height: 1px;
+        background: #929292;
+    }
+
+    .startbox>ul {
+        width: 1920px;
+        height: 246px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+
+
+    .list1>li {
+        width: 450px;
+        border: 1px solid #05EAFF;
+        height: 100%;
+        border-radius: 18.8px;
+    }
+
+    .list2>li {
+        width: 613px;
+        height: 100%;
+        border-radius: 18.8px;
+        border: 1px solid #05EAFF;
+    }
+
+    .list2 {
+        margin-bottom: 150px;
+    }
+
+    .div_on1 {
+        background: url(/static/pioneer/fedoralogo.svg);
+        background-size: 100%;
+
+    }
+
+    .div_on1>div {
+        width: 125px;
+        height: 125px;
+        margin: 28px auto 0;
+    }
+
+    .div_on2 {
+        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+    }
+
+    .div_on2>div {
+        width: 168px;
+        height: 128px;
+        margin: 28px auto 0;
+        background: url(/static/pioneer/os-icon3.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .div_on3 {
+        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+    }
+
+    .div_on3>div {
+        width: 222px;
+        height: 125px;
+        margin: 28px auto 0;
+        background: url(/static/pioneer/os-icon6.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .div_on4 {
+        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+    }
+
+    .div_on4>div {
+        width: 119px;
+        height: 125px;
+        margin: 28px auto 0;
+        background: url(/static/pioneer/os-icon4.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .div_on5 {
+        width: 180px;
+        height: 130px;
+        margin: 18px auto 0;
+        background: url(/static/pioneer/os-icon2.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .div_on6 {
+        width: 100%;
+        height: 100%;
+        background: url(/static/pioneer/pioneerxitong.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .div_on7 {
+        width: 376px;
+        height: 125px;
+        margin: 28px auto 0;
+        background: url(/static/pioneer/os-icon1.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .bannerBox {
+        width: 1920px;
+        height: 530px;
+        margin: 100px auto 150px;
+        position: relative;
+    }
+
+    .bannerimg1 {
+        width: calc(419px*1.45);
+        height: calc(349px*1.45);
+        color: #fff;
+        position: absolute;
+        left: 0;
+        border: 1px solid #878787;
+        border-radius: 4px;
+        background-color: #fff;
+    }
+
+    .bannerimg1_1 {
+        width: calc(416px*1.45);
+        height: calc(349px*1.45);
+        background: url(/static/pioneer/workstation.jpg) no-repeat;
+        background-size: contain;
+    }
+
+    .bannerimg2 {
+        width: calc(419px*1.45);
+        height: calc(349px*1.45);
+        color: #fff;
+        position: absolute;
+        left: calc(451px*1.45);
+        border: 1px solid #878787;
+        border-radius: 4px;
+        background-color: #fff;
+    }
+
+    .bannerimg2_1 {
+        width: calc(416px*1.45);
+        height: calc(283.5008px*1.45);
+        background: url(/static/pioneer/swich.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .bannerimg3_1 {
+        width: calc(416px*1.45);
+        height: calc(283.5008px*1.45);
+        background: url(/static/pioneer/pioneer-rearview.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .bannerimg3 {
+        background-color: #fff;
+        width: calc(419px*1.45);
+        height: calc(349px*1.45);
+        position: absolute;
+        left: calc(902px*1.45);
+        color: #fff;
+
+        border: 1px solid #878787;
+        border-radius: 4px;
+    }
+
+    .bannerT {
+        position: absolute;
+        bottom: 0;
+        width: calc(417.6px*1.45);
+        height: calc(36px*1.45);
+        line-height: calc(36px*1.45);
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        font-size: 17.3392px;
+    }
+
+
+    .RichImg {
+        width: 100%;
+        height: calc(657px*1.45);
+        background: url(/static/pioneer/board-info.webp) no-repeat;
+        background-size: 100%;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        position: relative;
+    }
+
+    .embrace {
+        position: absolute;
+        left: 0;
+        top: 167.2px;
+        width: 100%;
+        color: #fff;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 74px;
+        text-align: center;
+    }
+
+    .risc_v {
+        position: absolute;
+        left: 0;
+        top: 275.2px;
+        width: 100%;
+        color: #fff;
+        font-style: normal;
+        font-weight: 500;
+        text-align: center;
+        font-size: 70px;
+        background: linear-gradient(93.08deg, #00FFC2 33.15%, #0066FF 101.47%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+
+    }
+
+    .riscBg {
+        margin: 0 auto 100px;
+        width: 80%;
+        height: 800px;
+        background: url(/static/components/footerbg.png) no-repeat;
+        background-size: 100%;
+        position: relative;
+    }
+
+    .footText {
+        width: 1920px;
+        margin: 0 auto;
+    }
+
+    .footText h2 {
+        font-size: 32px;
+        opacity: .9;
+        margin-bottom: 20px;
+    }
+
+    .chartTech {
+        width: 1920px;
+        margin: 0 auto 0;
+    }
+
+    .tech_text1 {
+        width: 100%;
+        height: 207px;
+
+        color: #fff;
+    }
+
+    .tech_title {
+        font-size: 48px;
+    }
+
+    .tech_text3>h1 {
+        margin: 80px auto 25px;
+    }
+
+    .tech_p {
+        margin-top: 80px;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        flex: none;
+        opacity: .8;
+        order: 1;
+        flex-grow: 0;
+        margin-bottom: 80px;
+    }
+
+    .tech_text2 {
+        width: 100%;
+        color: #fff;
+    }
+
+    .box_tit {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .tech_text3 {
+        width: 100%;
+        color: #fff;
+    }
+
+
+    .tech_text4 {
+        width: 100%;
+        height: 478px;
+        color: #fff;
+    }
+
+    .tech_text2>h1 {
+        margin-bottom: 25px;
+    }
+
+    .tech_text4>h2 {
+        margin-top: 25px;
+    }
+
+    .tech_p_line {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        opacity: .8;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0;
+    }
+
+    .tech_title3 {
+        font-size: 48px;
+        color: #fff;
+    }
+
+
+    .document>h1 {
+        color: #fff;
+        font-size: 48px;
+        margin-top: 80px;
+    }
+
+    .document>ul {
+        width: 1151.4px;
+        height: 93.6px;
+        margin-left: -28.8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .down {
+        width: 30px;
+        height: 30px;
+        background: url(/static/components/download.svg) no-repeat;
+        background-size: 100%;
+        margin-right: 19.1904px;
+    }
+
+    .document>ul>li {
+        height: 23.4px;
+        line-height: 28px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .link_down {
+        color: #fff;
+        text-decoration: none;
+        font-size: 25.8992px;
+    }
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1450px) {
     .btnbuy {
         width: 240px;
         height: 80px;
@@ -806,7 +1564,7 @@
     }
 }
 
-@media screen and (max-width: 1350px) and (min-width: 1050px) {
+@media screen and (max-width: 1450px) and (min-width: 1050px) {
     .btnbuy {
         width: 200px;
         height: 70px;

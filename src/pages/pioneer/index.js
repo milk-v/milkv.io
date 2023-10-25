@@ -79,7 +79,7 @@ function Center() {
               </li>
               <li>
                 <p><Translate id='pioneer.page.Box.text1' /></p>
-                <h1 className={cCss.h1_2}>Intel X520-DA2</h1>
+                <h1 className={cCss.h1_2}>Intel X540-T2</h1>
                 <div><Translate id='pioneer.page.Box.text3' /></div>
                 <div className={cCss.show2}></div>
               </li>
@@ -95,7 +95,7 @@ function Center() {
             <ul>
               <li>
                 <p><Translate id='pioneer.page.Box.text1' /></p>
-                <h1 className={cCss.h1_1}>32GB / 128GB 3200MHz</h1>
+                <h1 className={cCss.h1_1}>128GB 3200MHz</h1>
                 <div>DDR4</div>
                 <div className={cCss.show1}></div>
               </li>
