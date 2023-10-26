@@ -1,9 +1,9 @@
 ---
-sidebar_label: '基于MobileNetV2的图像分类'
-sidebar_position: 35
+sidebar_label: '基于Googlenet的图像分类'
+sidebar_position: 37
 ---
 
-# 基于 MobileNetV2 的图像分类
+# 基于 Googlenet 的图像分类
 
 ## 1. 配置 Docker 开发环境
 
@@ -11,113 +11,123 @@ sidebar_position: 35
 
 ## 2. 在 Docker 中准备工作目录
 
-创建并进入 `mobilenet_v2` 工作目录，注意是与 `tpu-mlir_*` 同级的目录
+创建并进入 `googlenet` 工作目录，注意是与 `tpu-mlir_*` 同级的目录
 ```
-# mkdir mobilenet_v2 && cd mobilenet_v2
-```
-
-下载官网的 MobileNet 模型:
-```
-git clone https://github.com/shicai/MobileNet-Caffe.git
+# mkdir googlenet && cd googlenet
 ```
 
-将克隆的 `MobileNet-Caffe` 目录下的模型文件、 `tpu-mlir` 工具链目录下的图片文件放入当前目录下
+获取原始模型
 ```
-# cp MobileNet-Caffe/mobilenet_v2_deploy.prototxt .
-# cp MobileNet-Caffe/mobilenet_v2.caffemodel .
+wget https://github.com/onnx/models/raw/main/vision/classification/inception_and_googlenet/googlenet/model/googlenet-12.onnx
+```
+
+拷贝测试图片:
+```
 # cp -rf ${TPUC_ROOT}/regression/dataset/ILSVRC2012/ .
 # cp -rf ${TPUC_ROOT}/regression/image/ .
 ```
 这里的 `${TPUC_ROOT}` 是环境变量，对应 `tpu-mlir_*` 目录，是在前面配置 Docker 开发环境中 `source ./tpu-mlir_*/envsetup.sh` 这一步加载的
 
-创建并进入 `work` 工作目录，用于存放编译生成的 `MLIR`、`cvimodel` 等文件
+创建并进入 `work` 工作目录，用于存放编译生成的 MLIR、cvimodel 等文件
 ```
 # mkdir work && cd work
 ```
 
-## 3. MobileNet-Caffe 模型转换
+## 3. ONNX 模型转换
 
 :::tip
 Duo 开发板搭载的是 CV1800B 芯片，该芯片支持 **ONNX 系列** 和 **Caffe 模型**，目前不支持 TFLite 模型。在量化数据类型方面，支持 **BF16 格式的量化** 和 **INT8 格式的非对称量化**
 :::
 
-模型转换步骤如下：
-- Caffe 模型转换成 MLIR
-- 生成量化需要的校准表
-- MLIR 量化成 INT8 非对称 cvimodel
+###  ONNX 模型转换成 MLIR
 
-###  Caffe 模型转换成 MLIR
-
-模型输入是图片，在转模型之前我们需要了解模型的预处理。如果模型用预处理后的 npz 文件做输入，则不需要考虑预处理。预处理过程用公式表达如下($x$代表输入): $$ y = (x-mean)\times scale $$
-
-本例中的模型是 BGR 输入, `mean` 和 `scale` 分别为 `103.94`,`116.78`,`123.68` 和 `0.017`,`0.017`,`0.017`，模型转换命令如下:
+本例中的模型是 BGR 输入, `mean` 和 `scale` 分别为 `123.675`,`116.28`,`103.53` 和 `0.0171`,`0.0175`,`0.0174`，模型转换命令如下:
 ```
 model_transform.py \
- --model_name mobilenet_v2 \
- --model_def ../mobilenet_v2_deploy.prototxt \
- --model_data ../mobilenet_v2.caffemodel \
- --input_shapes [[1,3,224,224]] \
- --resize_dims=256,256 \
- --mean 103.94,116.78,123.68 \
- --scale 0.017,0.017,0.017 \
- --pixel_format bgr \
+ --model_name googlenet \
+ --model_def ../googlenet-12.onnx \
  --test_input ../image/cat.jpg \
- --test_result mobilenet_v2_top_outputs.npz \
- --mlir mobilenet_v2.mlir
+ --input_shapes [[1,3,224,224]] \
+ --resize_dims 256,256 \
+ --mean 123.675,116.28,103.53 \
+ --scale 0.0171,0.0175,0.0174 \
+ --pixel_format rgb \
+ --test_result googlenet_top_outputs.npz \
+ --mlir googlenet.mlir
 ```
 
 运行成功效果示例
 
-![duo](/docs/duo/tpu/duo-tpu-mobilenetv2_05.png)
+![duo](/docs/duo/tpu/duo-tpu-googlenet_05.png)
 
-转成 MLIR 模型后，会生成一个 `mobilenet_v2.mlir` 文件，该文件即为 mlir 模型文件，还会生成一个 `mobilenet_v2_in_f32.npz` 文件和一个 `mobilenet_v2_top_outputs.npz` 文件，是后续转模型的输入文件
+转成 MLIR 模型后，会生成一个 `googlenet.mlir` 文件，该文件即为 MLIR 模型文件，还会生成一个 `googlenet_in_f32.npz` 文件和一个 `googlenet_top_outputs.npz` 文件，是后续转模型的输入文件
 
-![duo](/docs/duo/tpu/duo-tpu-mobilenetv2_06.png)
+![duo](/docs/duo/tpu/duo-tpu-googlenet_06.png)
+
+### MLIR 转 BF16 模型
+
+将 MLIR 模型转换为 BF16 模型的命令如下
+```
+model_deploy.py \
+ --mlir googlenet.mlir \
+ --quantize BF16 \
+ --chip cv180x \
+ --test_input googlenet_in_f32.npz \
+ --test_reference googlenet_top_outputs.npz \
+ --model googlenet_cv180x_bf16.cvimodel
+```
+
+运行成功效果示例
+
+![duo](/docs/duo/tpu/duo-tpu-googlenet_07.png)
+
+编译完成后，会生成 `googlenet_cv180x_bf16.cvimodel` 文件
+
+![duo](/docs/duo/tpu/duo-tpu-googlenet_08.png)
 
 ### MLIR 转 INT8 模型
 
 #### 生成量化需要的校准表
 
 运行 `run_calibration.py` 得到校准表，输入数据的数量根据情况准备 100~1000 张左右。 这里用现有的 100 张来自 ILSVRC2012 的图片举例，执行 calibration 命令：
-
 ```
-run_calibration.py mobilenet_v2.mlir \
+run_calibration.py googlenet.mlir \
  --dataset ../ILSVRC2012 \
  --input_num 100 \
- -o mobilenet_v2_cali_table
+ -o googlenet_cali_table
 ```
 
 运行成功效果示例
 
-![duo](/docs/duo/tpu/duo-tpu-mobilenetv2_07.png)
+![duo](/docs/duo/tpu/duo-tpu-googlenet_09.png)
 
-运行完成后会生成名为 `mobilenet_v2_cali_table` 的文件, 该文件用于后续编译 INT8 模型的输入文件
+运行完成后会生成名为 `googlenet_cali_table` 的文件, 该文件用于后续编译 INT8 模型的输入文件
 
-![duo](/docs/duo/tpu/duo-tpu-mobilenetv2_08.png)
+![duo](/docs/duo/tpu/duo-tpu-googlenet_10.png)
 
 #### MLIR 量化成 INT8 非对称 cvimodel
 
-用 `model_deploy.py` 脚本参数使用 `asymmetric` 进行非对称量化，将 MLIR 文件转成 INT8 非对称量化模型:
+将 MLIR 模型转换为 INT8 模型的命令如下:
 ```
 model_deploy.py \
- --mlir mobilenet_v2.mlir \
- --asymmetric \
- --calibration_table mobilenet_v2_cali_table \
- --fuse_preprocess \
- --customization_format BGR_PLANAR \
- --chip cv180x \
+ --mlir googlenet.mlir \
  --quantize INT8 \
+ --calibration_table googlenet_cali_table \
+ --chip cv180x \
  --test_input ../image/cat.jpg \
- --model mobilenet_v2_cv1800_int8_asym.cvimodel
+ --test_reference googlenet_top_outputs.npz \
+ --compare_all \
+ --fuse_preprocess \
+ --model googlenet_cv180x_int8_fuse.cvimodel
 ```
 
 运行成功效果示例
 
-![duo](/docs/duo/tpu/duo-tpu-mobilenetv2_09.png)
+![duo](/docs/duo/tpu/duo-tpu-googlenet_11.png)
 
-编译完成后, 会生成名为 `mobilenet_v2_cv1800_int8_asym.cvimodel` 的文件
+编译完成后, 会生成名为 `googlenet_cv180x_int8_fuse.cvimodel` 的文件
 
-![duo](/docs/duo/tpu/duo-tpu-mobilenetv2_10.png)
+![duo](/docs/duo/tpu/duo-tpu-googlenet_12.png)
 
 ## 4. 在 Duo 开发板上进行验证
 
@@ -162,10 +172,11 @@ docker cp C:\Users\Carbon\Duo-TPU\cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz 
 # mkdir -p /mnt/tpu && cd /mnt/tpu
 ```
 
-在 Docker 的终端中，将开发工具包和模型文件拷贝到开发板上
+在 Docker 的终端中，将开发工具包和前面生成的两个模型文件拷贝到开发板上
 ```
 # scp -r /workspace/cvitek_tpu_sdk root@192.168.42.1:/mnt/tpu/
-# scp /workspace/mobilenet_v2/work/mobilenet_v2_cv1800_int8_asym.cvimodel root@192.168.42.1:/mnt/tpu/cvitek_tpu_sdk/
+# scp /workspace/googlenet/work/googlenet_cv180x_bf16.cvimodel root@192.168.42.1:/mnt/tpu/cvitek_tpu_sdk/
+# scp /workspace/googlenet/work/googlenet_cv180x_int8_fuse.cvimodel root@192.168.42.1:/mnt/tpu/cvitek_tpu_sdk/
 ```
 
 ### 设置环境变量
@@ -182,30 +193,30 @@ docker cp C:\Users\Carbon\Duo-TPU\cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz 
 
 ![duo](/docs/duo/tpu/duo-tpu-cat.jpg)
 
-进入 samples 目录
-
+使用 `googlenet_cv180x_bf16.cvimodel` 模型进行图像分类
 ```
-# cd samples
-```
-
-查看 cvimodel info
-```
-./bin/cvi_sample_model_info ../mobilenet_v2_cv1800_int8_asym.cvimodel
-```
-
-![duo](/docs/duo/tpu/duo-tpu-mobilenetv2_11.png)
-
-运行图像分类测试
-```
-./bin/cvi_sample_classifier_fused_preprocess \
- ../mobilenet_v2_cv1800_int8_asym.cvimodel \
- ./data/cat.jpg \
- ./data/synset_words.txt
+./samples/bin/cvi_sample_classifier_bf16 \
+ ./googlenet_cv180x_bf16.cvimodel \
+ ./samples/data/cat.jpg \
+ ./samples/data/synset_words.txt
 ```
 
 分类成功结果示例
 
-![duo](/docs/duo/tpu/duo-tpu-mobilenetv2_12.png)
+![duo](/docs/duo/tpu/duo-tpu-googlenet_13.png)
+
+使用 `googlenet_cv180x_int8_fuse.cvimodel` 模型进行图像分类
+```
+./samples/bin/cvi_sample_classifier_fused_preprocess \
+ ./googlenet_cv180x_int8_fuse.cvimodel \
+ ./samples/data/cat.jpg \
+ ./samples/data/synset_words.txt
+```
+
+分类成功结果示例
+
+![duo](/docs/duo/tpu/duo-tpu-googlenet_14.png)
+
 
 ## 5. 附录
 
