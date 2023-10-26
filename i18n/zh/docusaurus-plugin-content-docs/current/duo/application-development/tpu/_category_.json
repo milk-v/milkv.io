@@ -4,6 +4,6 @@
   "link": {
     "type": "generated-index",
     "slug": "/duo/app-dev/tpu",
-    "description": "TPU Applications"
+    "description": "Duo 的 CPU CV1800B 集成了 CVITEK TPU，用于智能检测。TPU 是深度学习神经网络的 AI 加速引擎，可用于加速图像分类、物体检测、人脸检测与识别、分割、LSTM 等。TPU 的主要功能是分担 CPU 工作，加速计算机视觉和语音相关操作"
   }
 }

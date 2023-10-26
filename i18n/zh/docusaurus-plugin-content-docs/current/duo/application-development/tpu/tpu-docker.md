@@ -5,13 +5,13 @@ sidebar_position: 20
 
 # 配置 Docker 开发环境
 
-## docker安装
+## Docker安装
 
-在 windows 环境下，可以安装 Docker Desktop for Windows，docker [下载地址](https://docs.docker.com/desktop/install/windows-install/)
+在 windows 环境下，可以安装 Docker Desktop for Windows，Docker [下载地址](https://docs.docker.com/desktop/install/windows-install/)
 
 ![duo](/docs/duo/tpu/duo-tpu-docker_01.png)
 
-在 Windows 下运行 docker 需要相关依赖，即如图中所示，需要使用 WSL2 后端或者 Hyper-V 后端作为运行依赖
+在 Windows 下运行 Docker 需要相关依赖，即如图中所示，需要使用 WSL2 后端或者 Hyper-V 后端作为运行依赖
 
 Hyper-V后端的启用方式如下
 
@@ -22,11 +22,11 @@ Hyper-V后端的启用方式如下
 
 然后即可安装下载好 Docker Desktop for Windows，在安装指引中根据选择的后端进行相应的勾选
 
-安装完成后，需要重启电脑，然后即可使用 docker
+安装完成后，需要重启电脑，然后即可使用 Docker
 
-## 拉取开发所需docker镜像
+## 拉取开发所需 Docker 镜像
 
-从docker hub获取镜像文件
+从 Docker hub 获取镜像文件
 ```
 docker pull sophgo/tpuc_dev:v3.1
 ```
@@ -87,7 +87,7 @@ docker run --privileged --name DuoTPU -v /workspace -it sophgo/tpuc_dev:v3.1
 
 ## 拷贝开发工具包
 
-新建一个 Windows 终端，并将开发工具包从 windows 拷贝到 docker 容器中
+新建一个 Windows 终端，并将开发工具包从 windows 拷贝到 Docker 容器中
 ```
 docker cp <path>/tpu-mlir_*.tar.gz <container_name>:/workspace/
 ```
@@ -100,19 +100,26 @@ docker cp C:\Users\Carbon\Duo-TPU\tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz Du
 
 ## 将工具包解压并添加环境变量
 
-用 `docker ps` 命令查看当前docker容器列表
+用 `docker ps` 命令查看当前 Docker 容器列表
 ```
 PS C:\Users\Carbon\Duo-TPU> docker ps
 CONTAINER ID   IMAGE                  COMMAND
 f3a060efb1d3   sophgo/tpuc_dev:v3.1   "/bin/bash"
 ```
 
-用容器 ID 登陆到 docker 容器中
+用容器 ID 登陆到 Docker 容器中
 ```
 docker exec -it f3a060efb1d3 /bin/bash
 ```
 
-在 docker 容器中，解压工具包并添加环境变量
+在 Docker 命令行下，检查当前是否为 /workspace 目录，如果不是，用 cd 命令进入该目录
+```
+# cd /workspace/
+```
+
+![duo](/docs/duo/tpu/duo-tpu-docker_03.png)
+
+在 Docker 容器中，解压工具包并添加环境变量
 ```
 # tar -zxvf tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz
 # source ./tpu-mlir_v1.3.228-g19ca95e9-20230921/envsetup.sh

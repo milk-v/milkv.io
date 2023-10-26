@@ -134,12 +134,12 @@ conda env remove --name <envname>
 
 ## 3. 在 Docker 中准备工作目录
 
-建立`yolov5n_torch`工作目录，注意是与`tpu-mlir_*`同级的目录，并将模型文件和图片文件都放入该目录下
+创建并进入 `yolov5n_torch` 工作目录，注意是与`tpu-mlir_*`同级的目录，并将模型文件和图片文件都放入该目录下
 ```
 # mkdir yolov5n_torch && cd yolov5n_torch
 ```
 
-新建一个 Windows 终端，将`yolov5n_jit.pt`从 windows 拷贝到 docker 中
+新建一个 Windows 终端，将`yolov5n_jit.pt`从 windows 拷贝到 Docker 中
 ```
 docker cp <path>/yolov5-master/yolov5n_jit.pt <container_name>:/workspace/yolov5n_torch/yolov5n_jit.pt
 ```
@@ -148,7 +148,7 @@ docker cp <path>/yolov5-master/yolov5n_jit.pt <container_name>:/workspace/yolov5
 docker cp C:\Users\Carbon\Duo-TPU\yolov5-master\yolov5n_jit.pt DuoTPU:/workspace/yolov5n_torch/yolov5n_jit.pt
 ```
 
-再回到 docker 终端下，将图片文件放入 yolov5n_torch/ 目录下并建立 work 目录
+再回到 Docker 终端下，将图片文件放入 yolov5n_torch/ 目录下并建立 work 目录
 ```
 # cp -rf $TPUC_ROOT/regression/dataset/COCO2017 .
 # cp -rf $TPUC_ROOT/regression/image .
@@ -156,7 +156,14 @@ docker cp C:\Users\Carbon\Duo-TPU\yolov5-master\yolov5n_jit.pt DuoTPU:/workspace
 ```
 这里的`$TPUC_ROOT`是环境变量，对应`tpu-mlir_*`目录，是在前面配置 Docker 开发环境中 `source ./tpu-mlir_*/envsetup.sh` 这一步加载的
 
-## 4. TORCH 转 MLIR
+## 4. YOLOv5n-TORCH 模型转换
+
+模型转换步骤如下：
+- TORCH 模型转换成 MLIR
+- 生成量化需要的校准表
+- MLIR 量化成 INT8 非对称 cvimodel
+
+### TORCH 模型转换成 MLIR
 
 本例中，模型是 RGB 输入，`mean`和`scale`分别为`0,0,0`和`0.0039216,0`.`0039216`,`0.0039216`
 将 torch 模型转换为mlir模型的命令如下
@@ -178,19 +185,13 @@ docker cp C:\Users\Carbon\Duo-TPU\yolov5-master\yolov5n_jit.pt DuoTPU:/workspace
 
 ![duo](/docs/duo/tpu/duo-tpu-yolo5_06.png)
 
-转成 mlir 模型后，会生成一个`yolov5n.mlir`文件，该文件即为 mlir 模型文件，还会生成一个`yolov5n_in_f32.npz`文件，该文件是后续转模型的输入文件
+转成 MLIR 模型后，会生成一个`yolov5n.mlir`文件，该文件即为 MLIR 模型文件，还会生成一个`yolov5n_in_f32.npz`文件，该文件是后续转模型的输入文件
 
 ![duo](/docs/duo/tpu/duo-tpu-yolo5_07.png)
 
-## 5. MLIR 转 INT8 模型
+### 生成量化需要的校准表
 
-:::tip
-Duo 开发板搭载的是 CV1800B 芯片，该芯片支持 **ONNX 系列** 和 **Caffe 模型**，目前不支持 TFLite 模型。在量化数据类型方面，支持 **BF16 格式的量化** 和 **INT8 格式的非对称量化**
-:::
-
-### 生成校准表
-
-在转 int8 模型之前需要先生成校准表，这里用现有的 100 张来自 COCO2017 的图片举例，执行 calibration
+在转 INT8 模型之前需要先生成校准表，这里用现有的 100 张来自 COCO2017 的图片举例，执行 calibration
 ```
 # run_calibration.py yolov5n.mlir \
  --dataset ../COCO2017 \
@@ -200,13 +201,17 @@ Duo 开发板搭载的是 CV1800B 芯片，该芯片支持 **ONNX 系列** 和 *
 
 ![duo](/docs/duo/tpu/duo-tpu-yolo5_08.png)
 
-运行完成后，会生成 `yolov5n_cali_table` 文件，该文件用于后续编译 int8 模型
+运行完成后，会生成 `yolov5n_cali_table` 文件，该文件用于后续编译 INT8 模型
 
 ![duo](/docs/duo/tpu/duo-tpu-yolo5_09.png)
 
-### 编译为 int8 模型
+### MLIR 量化成 INT8 非对称 cvimodel
 
-将 mlir 模型转换为 int8 模型的命令如下
+:::tip
+Duo 开发板搭载的是 CV1800B 芯片，该芯片支持 **ONNX 系列** 和 **Caffe 模型**，目前不支持 TFLite 模型。在量化数据类型方面，支持 **BF16 格式的量化** 和 **INT8 格式的非对称量化**
+:::
+
+将 MLIR 模型转换为 INT8 模型的命令如下
 ```
 # model_deploy.py \
  --mlir yolov5n.mlir \
@@ -230,7 +235,7 @@ Duo 开发板搭载的是 CV1800B 芯片，该芯片支持 **ONNX 系列** 和 *
 
 ![duo](/docs/duo/tpu/duo-tpu-yolo5_11.png)
 
-## 6. 在 Duo 开发板上进行验证
+## 5. 在 Duo 开发板上进行验证
 
 ### 连接 Duo 开发板
 
@@ -253,17 +258,12 @@ Duo 开发板搭载的是 CV1800B 芯片，该芯片支持 **ONNX 系列** 和 *
    ```
    如果文件未找到，可以到 backup 目录中找一下，可能更新版本后旧版本的包被放到 backup 目录
 
-   使用 WinSCP 登陆 sftp 站点后的界面
-
-   ![duo](/docs/duo/tpu/duo-tpu-sftp.png)
-
-
-下载完成后，通过 Windows 终端拷贝到 docker 中
+下载完成后，通过 Windows 终端拷贝到 Docker 中
 ```
 docker cp C:\Users\Carbon\Duo-TPU\cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz  DuoTPU:/workspace/
 ```
 
-并在 docker 中进行解压
+并在 Docker 中进行解压
 ```
 # tar -zxvf cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz
 ```
@@ -277,7 +277,7 @@ docker cp C:\Users\Carbon\Duo-TPU\cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz 
 $ mkdir -p /mnt/tpu && cd /mnt/tpu
 ```
 
-在 docker 的终端中，将开发工具包和模型文件拷贝到开发板上
+在 Docker 的终端中，将开发工具包和模型文件拷贝到开发板上
 ```
 # scp -r /workspace/cvitek_tpu_sdk root@192.168.42.1:/mnt/tpu/
 # scp /workspace/yolov5n_torch/work/yolov5n_int8_fuse.cvimodel root@192.168.42.1:/mnt/tpu/cvitek_tpu_sdk
@@ -316,7 +316,7 @@ scp root@192.168.42.1:/mnt/tpu/cvitek_tpu_sdk/yolov5n_out.jpg .
 
 ![duo](/docs/duo/tpu/duo-tpu-yolo5_14.jpg)
 
-## 7. 附录
+## 6. 附录
 
 正文涉及到的文件总结如下
 
