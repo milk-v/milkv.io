@@ -52,8 +52,9 @@ f835d42d7adc: Download complete
 2b009425c205: Downloading  252.9MB/1.098GB
 ```
 
-## 启动容器
+## 启动 Docker 容器
 
+在 Windows 终端中执行
 ```
 docker run --privileged --name <container_name> -v /workspace -it sophgo/tpuc_dev:v3.1
 ```
@@ -62,43 +63,11 @@ docker run --privileged --name <container_name> -v /workspace -it sophgo/tpuc_de
 docker run --privileged --name DuoTPU -v /workspace -it sophgo/tpuc_dev:v3.1
 ```
 
-## 获取开发工具包
+## 登陆到 Docker 容器
 
-1. 从 MEGA 下载
+启动容器后会自动登陆到  Docker 窗口的终端界面，如果需要新开窗口，可以按如下方法操作
 
-   [下载地址](https://mega.nz/folder/yZghQA4R#aZkbTwJb7Ji5LvAWIuBtag)
-
-   当前最新的工具包为: `tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz`
-
-2. 从 FTP 服务器下载
-
-   ```
-   sftp://218.17.249.213
-   username: cvitek_mlir_2023
-   password: 7&2Wd%cu5k
-   ```
-   如果文件未找到，可以到 backup 目录中找一下，可能更新版本后旧版本的包被放到 backup 目录
-
-   使用 WinSCP 登陆 sftp 站点后的界面
-
-   ![duo](/docs/duo/tpu/duo-tpu-sftp.png)
-
-## 拷贝开发工具包
-
-新建一个 Windows 终端，并将开发工具包从 windows 拷贝到 Docker 容器中
-```
-docker cp <path>/tpu-mlir_*.tar.gz <container_name>:/workspace/
-```
-其中，`<path>`为 windows 系统中开发工具包所在的文件目录，`<container_name>`为容器名
-
-比如
-```
-docker cp C:\Users\Carbon\Duo-TPU\tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz DuoTPU:/workspace/
-```
-
-## 将工具包解压并添加环境变量
-
-用 `docker ps` 命令查看当前 Docker 容器列表
+在 Windows 终端中用 `docker ps` 命令查看当前 Docker 容器列表
 ```
 PS C:\Users\Carbon\Duo-TPU> docker ps
 CONTAINER ID   IMAGE                  COMMAND
@@ -110,15 +79,23 @@ f3a060efb1d3   sophgo/tpuc_dev:v3.1   "/bin/bash"
 docker exec -it f3a060efb1d3 /bin/bash
 ```
 
-在 Docker 命令行下，检查当前是否为 `/workspace` 目录，如果不是，用 `cd` 命令进入该目录
+在 Docker 终端中，检查当前是否为 `/workspace` 目录，如果不是，用 `cd` 命令进入该目录
 ```
 # cd /workspace/
 ```
 
 ![duo](/docs/duo/tpu/duo-tpu-docker_03.png)
 
-在 Docker 容器中，解压工具包并用 `source` 命令添加环境变量
+
+## 获取开发工具包并添加环境变量
+
+在 Docker 终端中下载 TPU-MLIR 模型转换工具包
 ```
-# tar -zxvf tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz
-# source ./tpu-mlir_v1.3.228-g19ca95e9-20230921/envsetup.sh
+git clone https://github.com/milkv-duo/tpu-mlir.git
+```
+
+在 Docker 终端中，用 `source` 命令添加环境变量
+In the Docker terminal, use the `source` command to add environment variables
+```
+# source ./tpu-mlir/envsetup.sh
 ```

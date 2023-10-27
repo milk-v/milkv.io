@@ -11,7 +11,7 @@ Refer to [here](https://milkv.io/docs/duo/application-development/tpu/tpu-docker
 
 ## 2. Prepare the working directory in Docker
 
-Create and enter the `densenet121` working directory, note that it is a directory at the same level as `tpu-mlir_*`.
+Create and enter the `densenet121` working directory, note that it is a directory at the same level as `tpu-mlir`.
 ```
 # mkdir densenet121 && cd densenet121
 ```
@@ -31,7 +31,7 @@ Copy test image:
 # cp -rf ${TPUC_ROOT}/regression/dataset/ILSVRC2012/ .
 # cp -rf ${TPUC_ROOT}/regression/image/ .
 ```
-`${TPUC_ROOT}` here is an environment variable, corresponding to the `tpu-mlir_*` directory, which is loaded in the `source ./tpu-mlir_*/envsetup.sh` step in the previous configuration of the Docker development environment.
+`${TPUC_ROOT}` here is an environment variable, corresponding to the `tpu-mlir` directory, which is loaded in the `source ./tpu-mlir/envsetup.sh` step in the previous configuration of the Docker development environment.
 
 Create and enter the `work` working directory to store compiled files such as `MLIR` and `cvimodel`
 ```
@@ -126,53 +126,36 @@ After compilation is completed, the `densenet121_cv180x_int8_fuse.cvimodel` file
 
 Complete the connection between the Duo development board and the computer according to the previous tutorial, and use tools such as `mobaxterm` or `Xshell` to open a terminal to operate the Duo development board.
 
-### Get cvitek_tpu_sdk
+### Get tpu-sdk
 
-1. Download from MEGA
-
-   [Download address](https://mega.nz/folder/yZghQA4R#aZkbTwJb7Ji5LvAWIuBtag)
-
-   Package Name: `cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz`
-
-2. Download from FTP server
-
-   ```
-   sftp://218.17.249.213
-   username: cvitek_mlir_2023
-   password: 7&2Wd%cu5k
-   ```
-   If the file is not found, you can search for it in the backup directory. The old version of the package may be placed in the backup directory after updating the version.
-
-After the download is complete, copy it to Docker through the Windows terminal
+Switch to the `/workspace` directory in the Docker terminal
 ```
-docker cp C:\Users\Carbon\Duo-TPU\cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz  DuoTPU:/workspace/
+cd /workspace
 ```
 
-And extract it in Docker
+Download tpu-sdk
 ```
-# tar -zxvf cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz
+git clone https://github.com/milkv-duo/tpu-sdk.git
 ```
 
-After the extraction is complete, a `cvitek_tpu_sdk` folder will be generated.
-
-### Copy the development toolkit and model files to the development board
+### Copy tpu-sdk and model files to Duo
 
 In the terminal of the Duo board, create a new directory `/mnt/tpu/`
 ```
 # mkdir -p /mnt/tpu && cd /mnt/tpu
 ```
 
-In the Docker terminal, copy the development toolkit and model files to the Duo board
+In the Docker terminal, copy `tpu-sdk` and model files to the Duo
 ```
-# scp -r /workspace/cvitek_tpu_sdk root@192.168.42.1:/mnt/tpu/
-# scp /workspace/densenet121/work/densenet121_cv180x_int8_fuse.cvimodel root@192.168.42.1:/mnt/tpu/cvitek_tpu_sdk/
+# scp -r /workspace/tpu-sdk root@192.168.42.1:/mnt/tpu/
+# scp /workspace/densenet121/work/densenet121_cv180x_int8_fuse.cvimodel root@192.168.42.1:/mnt/tpu/tpu-sdk/
 ```
 
 ### Set environment variables
 
 In the terminal of the Duo board, set the environment variables
 ```
-# cd /mnt/tpu/cvitek_tpu_sdk
+# cd /mnt/tpu/tpu-sdk
 # source ./envs_tpu_sdk.sh
 ```
 
@@ -193,27 +176,3 @@ Image classification using `densenet121_cv180x_int8_fuse.cvimodel` model:
 Example of successful classification results
 
 ![duo](/docs/duo/tpu/duo-tpu-densenet_11.png)
-
-## 5. Appendix
-
-The documents involved in the text are summarized as follows:
-
-- TPU-MLIR model conversion tool：`tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz`
-- TPU SDK Development Kit：`cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz`
-- (Additional) Sample test routine source code：`cvitek_tpu_samples.tar.gz`
-- (Additional) Converted cvimodel package：`cvimodel_samples_cv180x.tar.gz`
-
-The package files required for TPU development mentioned in the text can be obtained from the sftp site below, or downloaded from [MEGA](https://mega.nz/folder/yZghQA4R#aZkbTwJb7Ji5LvAWIuBtag)
-```
-sftp://218.17.249.213
-user: cvitek_mlir_2023
-password: 7&2Wd%cu5k
-```
-
-The interface after logging in to the sftp site using WinSCP:
-
-![duo](/docs/duo/tpu/duo-tpu-sftp.png)
-
-Notice:
-1. samples_extra in the sample directory provides more sample scripts, but the cvimodel name has been hard-coded in it. If you want to use the script to run, you need to modify the cvimodel name yourself.
-2. This section introduces the use of precompiled sample programs to deploy and test the converted cvimodel. If developers are interested in encoding and cross-compiling the sample source code, please refer to the official website [TPU-MLIR Documentation](https://doc.sophgo.com/sdk-docs/v23.05.01/docs_latest_release/docs/tpu-mlir/quick_start/html/10_cv18xx_guide.html#runtime-sample) in Chapter 9 "CV18xx Chip Usage Guide" Section 3 "Compiling and running the runtime sample" content.

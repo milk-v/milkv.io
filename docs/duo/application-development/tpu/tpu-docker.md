@@ -62,41 +62,9 @@ docker run --privileged --name <container_name> -v /workspace -it sophgo/tpuc_de
 docker run --privileged --name DuoTPU -v /workspace -it sophgo/tpuc_dev:v3.1
 ```
 
-## Get development kit
+## Log in to the Docker container
 
-1. Download from MEGA
-
-   [Download address](https://mega.nz/folder/yZghQA4R#aZkbTwJb7Ji5LvAWIuBtag)
-
-   The latest toolkit currently is: `tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz`
-
-2. Download from FTP server
-
-   ```
-   sftp://218.17.249.213
-   username: cvitek_mlir_2023
-   password: 7&2Wd%cu5k
-   ```
-   If the file is not found, you can search for it in the backup directory. The old version of the package may be placed in the backup directory after updating the version.
-
-   The interface after logging in to the sftp site using WinSCP:
-
-   ![duo](/docs/duo/tpu/duo-tpu-sftp.png)
-
-## Copy the development kit
-
-Create a new Windows terminal and copy the development kit from windows to the Docker container
-```
-docker cp <path>/tpu-mlir_*.tar.gz <container_name>:/workspace/
-```
-`<path>` is the file directory where the development tool kit is located in the windows system, `<container_name>` is the container name
-
-For example
-```
-docker cp C:\Users\Carbon\Duo-TPU\tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz DuoTPU:/workspace/
-```
-
-## Extract the toolkit and add environment variables
+After starting the container, you will automatically log in to the terminal interface of the Docker window. If you need to open a new window, you can do it as follows
 
 Use the `docker ps` command to view the current Docker container list
 ```
@@ -110,15 +78,22 @@ Log in to the Docker container using the `CONTAINER ID`
 docker exec -it f3a060efb1d3 /bin/bash
 ```
 
-In the Docker command line, check whether the current directory is `/workspace`. If not, use the `cd` command to enter the directory.
+In Docker terminal, check whether the current directory is `/workspace`. If not, use the `cd` command to enter the directory.
 ```
 # cd /workspace/
 ```
 
 ![duo](/docs/duo/tpu/duo-tpu-docker_03.png)
 
-In the Docker container, extract the toolkit and add environment variables using the `source` command:
+
+## Get development kit and add environment variables
+
+Download the TPU-MLIR model conversion toolkit in the Docker terminal
 ```
-# tar -zxvf tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz
-# source ./tpu-mlir_v1.3.228-g19ca95e9-20230921/envsetup.sh
+git clone https://github.com/milkv-duo/tpu-mlir.git
+```
+
+In the Docker terminal, use the `source` command to add environment variables
+```
+# source ./tpu-mlir/envsetup.sh
 ```
