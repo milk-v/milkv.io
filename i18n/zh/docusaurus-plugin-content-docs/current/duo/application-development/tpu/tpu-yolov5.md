@@ -3,25 +3,13 @@ sidebar_label: '基于YOLOv5的目标检测'
 sidebar_position: 30
 ---
 
-# 简介
-
-Duo 的 CPU CV1800B 集成了 CVITEK TPU，用于智能检测
-
-TPU 是深度学习神经网络的 AI 加速引擎，可用于加速图像分类、物体检测、人脸检测与识别、分割、LSTM 等。TPU 的主要功能是分担 CPU 工作， 加速计算机视觉和语音相关操作
-
-CV1800B TPU 支持的模型
-
-![duo](/docs/duo/tpu/duo-cv1800b-tpu-model_202307.png)
-
-# 应用实例
-
 # 基于 YOLOv5 的目标检测
 
 ## 1. 在 windows 下准备原始模型文件
 
-### 准备 yolov5 开发工具包和 yolov5n.pt 文件
+### 准备 YOLOv5 开发工具包和 yolov5n.pt 文件
 
-下载 [yolov5开发工具包](https://codeload.github.com/ultralytics/yolov5/zip/refs/heads/master) 以及 [yolov5n.pt](https://github.com/ultralytics/yolov5/releases/download/v6.2/yolov5n.pt) 文件，下载完成后将工具包解压，并将 `yolov5n.pt` 文件放在 `yolov5-master/` 目录下
+下载 [YOLOv5开发工具包](https://codeload.github.com/ultralytics/yolov5/zip/refs/heads/master) 以及 [yolov5n.pt](https://github.com/ultralytics/yolov5/releases/download/v6.2/yolov5n.pt) 文件，下载完成后将工具包解压，并将 `yolov5n.pt` 文件放在 `yolov5-master` 目录下
 
 ### 配置 conda 环境
 
@@ -35,7 +23,7 @@ CV1800B TPU 支持的模型
 base                  *  C:\Users\Carbon\anaconda3
 ```
 
-新建conda虚拟环境并安装3.9.0版本的python，`duotpu`是自己取的名字
+新建 conda 虚拟环境并安装 3.9.0 版本的 python，`duotpu` 是自己取的名字
 ```
 (base) C:\Users\Carbon> conda create --name duotpu python=3.9.0
 ```
@@ -78,7 +66,7 @@ conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cpuonly -c pytorch
 ```
 
-然后将终端路径`cd`到开发工具包的`yolov5-master/`路径下，输入 `pip install -r requirements.txt` 安装其他依赖项
+然后将终端路径`cd`到开发工具包的`yolov5-master`路径下，输入 `pip install -r requirements.txt` 安装其他依赖项
 ```
 (duotpu) C:\Users\Carbon> cd Duo-TPU\yolov5-master
 
@@ -87,7 +75,7 @@ conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cpuonly -c 
 
 ### 生成原始模型文件
 
-在`yolov5-master/`目录下新建一个`main.py`文件，并在文件中写入如下代码
+在 `yolov5-master` 目录下新建一个 `main.py` 文件，并在文件中写入如下代码
 ```
 import torch
 from models.experimental import attempt_download
@@ -98,7 +86,7 @@ model.model[-1].export = True
 torch.jit.trace(model, torch.rand(1, 3, 640, 640), strict=False).save('./yolov5n_jit.pt')
 ```
 
-然后找到`/yolov5-master/models/yolo.py`文件，将第63行到第79行的代码注释，并在第80行添加代码`return x`，如下图所示
+然后找到 `yolov5-master/models/yolo.py` 文件，将第63行到第79行的代码注释，并在第80行添加代码 return x`，如下图所示
 
 ![duo](/docs/duo/tpu/duo-tpu-yolo5_01.png)
 
@@ -111,7 +99,7 @@ C:\Users\Carbon\anaconda3\envs\duotpu\Lib\site-packages\torch\nn\modules\upsampl
 ![duo](/docs/duo/tpu/duo-tpu-yolo5_02.png)
 
 
-修改完成后，运行`python main.py`文件，就会在`yolov5-master`目录下生成`yolov5n_jit.pt`文件，该文件即为所需的原始模型文件
+修改完成后，运行 `python main.py` 文件，就会在 `yolov5-master` 目录下生成 `yolov5n_jit.pt` 文件，该文件即为所需的原始模型文件
 ```
 (duotpu) C:\Users\Carbon\Duo-TPU\yolov5-master> python main.py
 ```
@@ -174,7 +162,7 @@ Duo 开发板搭载的是 CV1800B 芯片，该芯片支持 **ONNX 系列** 和 *
 ### TORCH 模型转换成 MLIR
 
 本例中，模型是 RGB 输入，`mean`和`scale`分别为 `0,0,0` 和 `0.0039216`,`0.0039216`,`0.0039216`
-将 torch 模型转换为mlir模型的命令如下
+将 TORCH 模型转换为 MLIR 模型的命令如下
  ```
 # model_transform.py \
  --model_name yolov5n \
@@ -278,12 +266,12 @@ docker cp C:\Users\Carbon\Duo-TPU\cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz 
 
 ### 将开发工具包和模型文件拷贝到开发板上
 
-在 duo 开发板的终端中，新建文件目录 `/mnt/tpu/`
+在 duo 开发板的终端中，新建目录 `/mnt/tpu/`
 ```
 # mkdir -p /mnt/tpu && cd /mnt/tpu
 ```
 
-在 Docker 的终端中，将开发工具包和模型文件拷贝到开发板上
+在 Docker 的终端中，将开发工具包和模型文件拷贝到 Duo 开发板上
 ```
 # scp -r /workspace/cvitek_tpu_sdk root@192.168.42.1:/mnt/tpu/
 # scp /workspace/yolov5n_torch/work/yolov5n_int8_fuse.cvimodel root@192.168.42.1:/mnt/tpu/cvitek_tpu_sdk
@@ -330,10 +318,10 @@ scp root@192.168.42.1:/mnt/tpu/cvitek_tpu_sdk/yolov5n_out.jpg .
 
 正文涉及到的文件总结如下
 
-- TPU-MLIR 模型转换工具：tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz
-- TPU SDK 开发工具包：cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz
-- （附）Sample 测试例程源码：cvitek_tpu_samples.tar.gz
-- （附）转换好的 cvimodel 包：cvimodel_samples_cv180x.tar.gz
+- TPU-MLIR 模型转换工具：`tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz`
+- TPU SDK 开发工具包：`cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz`
+- (附) Sample 测试例程源码：`cvitek_tpu_samples.tar.gz`
+- (附) 转换好的 cvimodel 包：`cvimodel_samples_cv180x.tar.gz`
 
 正文提到的 TPU 开发所需的包文件可在下面 sftp 站点获取，或者从 [MEGA](https://mega.nz/folder/yZghQA4R#aZkbTwJb7Ji5LvAWIuBtag) 下载
 ```
@@ -348,5 +336,4 @@ password: 7&2Wd%cu5k
 
 注意：
 1. sample 目录下的 samples_extra 提供了更多 samples 脚本，但其中 cvimodel 名字已经硬编码在其中，如想使用脚本运行，需要自行修改 cvimodel 名字
-2. 此小节介绍的是使用预编译好的 sample 程序对转换好的 cvimodel 进行部署测试，如果开发者有兴趣对 samples 源码进行编码和交叉编译，请参考官网 [TPU-MLIR文档](https://doc.sophgo.com/sdk-docs/v23.05.01/docs_latest_release/docs/tpu-mlir/quick_start/html/10_cv18xx_guide.html#runtime-sample) 中的第9章《CV18xx芯片使用指南》中的
-第3小节 "编译和运行runtime sample" 内容
+2. 此小节介绍的是使用预编译好的 sample 程序对转换好的 cvimodel 进行部署测试，如果开发者有兴趣对 samples 源码进行编码和交叉编译，请参考官网 [TPU-MLIR文档](https://doc.sophgo.com/sdk-docs/v23.05.01/docs_latest_release/docs/tpu-mlir/quick_start/html/10_cv18xx_guide.html#runtime-sample) 中的第9章《CV18xx芯片使用指南》中的第3小节 "编译和运行runtime sample" 内容

@@ -5,18 +5,18 @@ sidebar_position: 20
 
 # 配置 Docker 开发环境
 
-## Docker安装
+## Docker 安装
 
-在 windows 环境下，可以安装 Docker Desktop for Windows，Docker [下载地址](https://docs.docker.com/desktop/install/windows-install/)
+在 windows 环境下，可以安装 `Docker Desktop for Windows`，Docker [下载地址](https://docs.docker.com/desktop/install/windows-install/)
 
 ![duo](/docs/duo/tpu/duo-tpu-docker_01.png)
 
 在 Windows 下运行 Docker 需要相关依赖，即如图中所示，需要使用 WSL2 后端或者 Hyper-V 后端作为运行依赖
 
-Hyper-V后端的启用方式如下
+Hyper-V 后端的启用方式如下
 
 1. 控制面板 —— 程序和功能 —— 启用或关闭Windows功能
-2. 找到Hyper-V，勾选Hyper-V管理工具和Hyper-V平台，点确定后等待系统文件配置完成后重启电脑
+2. 找到 `Hyper-V`，勾选 `Hyper-V管理工具` 和 `Hyper-V平台`，点确定后等待系统文件配置完成后重启电脑
 
    ![duo](/docs/duo/tpu/duo-tpu-docker_02-zh.png)
 
@@ -57,9 +57,7 @@ f835d42d7adc: Download complete
 ```
 docker run --privileged --name <container_name> -v /workspace -it sophgo/tpuc_dev:v3.1
 ```
-
 其中，`<container_name>`为自己定义的容器名，比如叫 DuoTPU
-
 ```
 docker run --privileged --name DuoTPU -v /workspace -it sophgo/tpuc_dev:v3.1
 ```
@@ -72,7 +70,7 @@ docker run --privileged --name DuoTPU -v /workspace -it sophgo/tpuc_dev:v3.1
 
    当前最新的工具包为: `tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz`
 
-2. 从 ftp 服务器下载
+2. 从 FTP 服务器下载
 
    ```
    sftp://218.17.249.213
@@ -107,19 +105,19 @@ CONTAINER ID   IMAGE                  COMMAND
 f3a060efb1d3   sophgo/tpuc_dev:v3.1   "/bin/bash"
 ```
 
-用容器 ID 登陆到 Docker 容器中
+用 `CONTAINER ID` 登陆到 Docker 容器中
 ```
 docker exec -it f3a060efb1d3 /bin/bash
 ```
 
-在 Docker 命令行下，检查当前是否为 /workspace 目录，如果不是，用 cd 命令进入该目录
+在 Docker 命令行下，检查当前是否为 `/workspace` 目录，如果不是，用 `cd` 命令进入该目录
 ```
 # cd /workspace/
 ```
 
 ![duo](/docs/duo/tpu/duo-tpu-docker_03.png)
 
-在 Docker 容器中，解压工具包并添加环境变量
+在 Docker 容器中，解压工具包并用 `source` 命令添加环境变量
 ```
 # tar -zxvf tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz
 # source ./tpu-mlir_v1.3.228-g19ca95e9-20230921/envsetup.sh

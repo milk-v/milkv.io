@@ -223,10 +223,10 @@ docker cp C:\Users\Carbon\Duo-TPU\cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz 
 
 正文涉及到的文件总结如下
 
-- TPU-MLIR 模型转换工具：tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz
-- TPU SDK 开发工具包：cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz
-- （附）Sample 测试例程源码：cvitek_tpu_samples.tar.gz
-- （附）转换好的 cvimodel 包：cvimodel_samples_cv180x.tar.gz
+- TPU-MLIR 模型转换工具：`tpu-mlir_v1.3.228-g19ca95e9-20230921.tar.gz`
+- TPU SDK 开发工具包：`cvitek_tpu_sdk_cv180x_musl_riscv64_rvv.tar.gz`
+- (附) Sample 测试例程源码：`cvitek_tpu_samples.tar.gz`
+- (附) 转换好的 cvimodel 包：`cvimodel_samples_cv180x.tar.gz`
 
 正文提到的 TPU 开发所需的包文件可在下面 sftp 站点获取，或者从 [MEGA](https://mega.nz/folder/yZghQA4R#aZkbTwJb7Ji5LvAWIuBtag) 下载
 ```
@@ -241,5 +241,4 @@ password: 7&2Wd%cu5k
 
 注意：
 1. sample 目录下的 samples_extra 提供了更多 samples 脚本，但其中 cvimodel 名字已经硬编码在其中，如想使用脚本运行，需要自行修改 cvimodel 名字
-2. 此小节介绍的是使用预编译好的 sample 程序对转换好的 cvimodel 进行部署测试，如果开发者有兴趣对 samples 源码进行编码和交叉编译，请参考官网 [TPU-MLIR文档](https://doc.sophgo.com/sdk-docs/v23.05.01/docs_latest_release/docs/tpu-mlir/quick_start/html/10_cv18xx_guide.html#runtime-sample) 中的第9章《CV18xx芯片使用指南》中的
-第3小节 "编译和运行runtime sample" 内容
+2. 此小节介绍的是使用预编译好的 sample 程序对转换好的 cvimodel 进行部署测试，如果开发者有兴趣对 samples 源码进行编码和交叉编译，请参考官网 [TPU-MLIR文档](https://doc.sophgo.com/sdk-docs/v23.05.01/docs_latest_release/docs/tpu-mlir/quick_start/html/10_cv18xx_guide.html#runtime-sample) 中的第9章《CV18xx芯片使用指南》中的第3小节 "编译和运行runtime sample" 内容
