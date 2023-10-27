@@ -21,7 +21,7 @@ sidebar_position: 35
 git clone https://github.com/shicai/MobileNet-Caffe.git
 ```
 
-将克隆的 `MobileNet-Caffe` 目录下的模型文件、 `tpu-mlir` 工具链目录下的图片文件放入当前目录下
+将克隆的 `MobileNet-Caffe` 目录下的模型文件、 `tpu-mlir_*` 工具链目录下的图片文件放入当前目录下
 ```
 # cp MobileNet-Caffe/mobilenet_v2_deploy.prototxt .
 # cp MobileNet-Caffe/mobilenet_v2.caffemodel .
@@ -46,7 +46,7 @@ Duo 开发板搭载的是 CV1800B 芯片，该芯片支持 **ONNX 系列** 和 *
 - 生成量化需要的校准表
 - MLIR 量化成 INT8 非对称 cvimodel
 
-###  Caffe 模型转换成 MLIR
+### Caffe 模型转换成 MLIR
 
 模型输入是图片，在转模型之前我们需要了解模型的预处理。如果模型用预处理后的 npz 文件做输入，则不需要考虑预处理。预处理过程用公式表达如下($x$代表输入): $$ y = (x-mean)\times scale $$
 

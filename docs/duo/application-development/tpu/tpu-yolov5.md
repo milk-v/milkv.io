@@ -117,7 +117,7 @@ conda env remove --name <envname>
 
 ## 2. Configure Docker development environment
 
-Refer to [here](https://milkv.io/docs/duo/application-development/tpu/tpu-docker). After configuring the Docker development environment, return here to continue the next step
+Refer to [here](https://milkv.io/docs/duo/application-development/tpu/tpu-docker). After configuring the Docker development environment, return here to continue the next step.
 
 ## 3. Prepare the working directory in Docker
 
@@ -197,6 +197,8 @@ Before converting to the INT8 model, you need to generate a calibration table. H
  --input_num 100 \
  -o ./yolov5n_cali_table
  ```
+
+Example of successful operation
 
 ![duo](/docs/duo/tpu/duo-tpu-yolo5_08.png)
 
@@ -286,7 +288,7 @@ In the terminal of the Duo board, set the environment variables
 # source ./envs_tpu_sdk.sh
 ```
 
-### Perform object detection
+### Perform Object Detection
 
 On the Duo board, perform object detection on the image
 

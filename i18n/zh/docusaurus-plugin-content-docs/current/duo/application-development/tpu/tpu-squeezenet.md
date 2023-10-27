@@ -49,9 +49,9 @@ Duo 开发板搭载的是 CV1800B 芯片，该芯片支持 **ONNX 系列** 和 *
 - 生成量化需要的校准表
 - MLIR 量化成 INT8 非对称 cvimodel
 
-###  ONNX 模型转换成 MLIR
+### ONNX 模型转换成 MLIR
 
-本例中的模型是 BGR 输入, `mean` 和 `scale` 分别为 `123.675`,`116.28`,`103.53` 和 `0.0171`,`0.0175`,`0.0174`
+本例中的模型是 RGB 输入, `mean` 和 `scale` 分别为 `123.675`,`116.28`,`103.53` 和 `0.0171`,`0.0175`,`0.0174`
 
 将 ONNX 模型转换为 MLIR 模型的命令如下:
 ```
@@ -92,13 +92,13 @@ run_calibration.py squeezenet1.1.mlir \
 
 ![duo](/docs/duo/tpu/duo-tpu-squeezenet_07.png)
 
-运行完成后会生成名为 `shufflenet_v2_cali_table` 的文件, 该文件用于后续编译 INT8 模型的输入文件
+运行完成后会生成名为 `squeezenet1.1_cali_table` 的文件, 该文件用于后续编译 INT8 模型的输入文件
 
 ![duo](/docs/duo/tpu/duo-tpu-squeezenet_08.png)
 
 #### MLIR 量化成 INT8 非对称 cvimodel
 
-将  MLIR 模型转换为 INT8 模型的命令如下:
+将 MLIR 模型转换为 INT8 模型的命令如下:
 ```
 model_deploy.py \
  --mlir squeezenet1.1.mlir \

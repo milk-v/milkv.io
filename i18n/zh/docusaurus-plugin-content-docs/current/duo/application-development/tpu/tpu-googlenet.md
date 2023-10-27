@@ -39,9 +39,9 @@ wget https://github.com/onnx/models/raw/main/vision/classification/inception_and
 Duo 开发板搭载的是 CV1800B 芯片，该芯片支持 **ONNX 系列** 和 **Caffe 模型**，目前不支持 TFLite 模型。在量化数据类型方面，支持 **BF16 格式的量化** 和 **INT8 格式的非对称量化**
 :::
 
-###  ONNX 模型转换成 MLIR
+### ONNX 模型转换成 MLIR
 
-本例中的模型是 BGR 输入, `mean` 和 `scale` 分别为 `123.675`,`116.28`,`103.53` 和 `0.0171`,`0.0175`,`0.0174`，模型转换命令如下:
+本例中的模型是 RGB 输入, `mean` 和 `scale` 分别为 `123.675`,`116.28`,`103.53` 和 `0.0171`,`0.0175`,`0.0174`，模型转换命令如下:
 ```
 model_transform.py \
  --model_name googlenet \
@@ -66,7 +66,7 @@ model_transform.py \
 
 ### MLIR 转 BF16 模型
 
-将 MLIR 模型转换为 BF16 模型的命令如下
+将 MLIR 模型转换为 BF16 模型的命令如下:
 ```
 model_deploy.py \
  --mlir googlenet.mlir \
