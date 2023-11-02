@@ -15,7 +15,19 @@ const config = {
     defaultLocale: 'en',
     locales: ['en', 'zh', 'ru'],
   },
-
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/docs/mars/cm',
+            from: ['/docs/mars-cm'],
+          },
+        ],
+      },
+    ],
+  ],
   presets: [
     [
       'classic',
