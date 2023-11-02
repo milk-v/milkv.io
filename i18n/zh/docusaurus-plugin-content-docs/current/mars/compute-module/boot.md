@@ -122,7 +122,7 @@ Mars CM 采用核心板的设计方式，引脚与树莓派 CM4 兼容，可以�
 
    烧录过程大约需要 10 分钟，最后提示 100% 并且没有报错信息，则烧录完成
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_17.png)
+   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_18.png)
 
 9.  烧录完成后，将 UsbFlashTool 窗口关闭，底板断电，取下步骤 2 中的跳线帽
 
