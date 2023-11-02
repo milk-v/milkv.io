@@ -11,9 +11,4 @@ login user: user
 login password: user  
 ~~~
 
-
-  [Download from Github](https://github.com/milkv-mars/mars-buildroot-sdk/releases/tag/20230723)
-
-  [![debain-logo](/docs/mars/Debian_logo.png)](https://github.com/milkv-mars/mars-buildroot-sdk/releases/tag/20230723)
-
------------------
+[Download from Github](https://github.com/milkv-mars/mars-buildroot-sdk/releases/tag/)
