@@ -85,7 +85,7 @@ Mars CM 采用核心板的设计方式，引脚与树莓派 CM4 兼容，可以�
 
 1. USB 转 TTL 串口线连接到底板的 40PIN 排针上，USB 端连接 PC 并记录下串口号
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_01.png)
+   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_01.jpg)
 
    ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_02.png)
 
@@ -93,11 +93,11 @@ Mars CM 采用核心板的设计方式，引脚与树莓派 CM4 兼容，可以�
 
 2. 将 CM4 IO Board 的 J12 排针的 1,2 脚用跳线帽短接 (USB 烧录模式)；
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_03.png)
+   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_03.jpg)
 
 3. 用 Mirco USB 接口的数据线连接 PC 和底板 J11 USB Slave 接口
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_04.png)
+   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_04.jpg)
 
 4. 打开刷机包中的 `UsbFlashTool-*-Windows.exe` 烧录程序
 
