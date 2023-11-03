@@ -44,7 +44,7 @@ Mars CM 采用核心板的设计方式，引脚与树莓派 CM4 兼容，可以�
 
    注意，如果有其他串口程序打开了该串口，请先将程序退出，不要占用该串口
   
-2. 将 CM4 IO Board 的 J12 排针的 1,2 脚用跳线帽短接 (USB 烧录模式)；
+2. 将 CM4 IO Board 的 J12 排针的 1,2 脚用跳线帽短接 (USB 烧录模式)
 
    ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_03.jpg)
 
@@ -52,11 +52,11 @@ Mars CM 采用核心板的设计方式，引脚与树莓派 CM4 兼容，可以�
 
    ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_04.jpg)
 
-4. 打开刷机包中的 `UsbFlashTool-*-Windows.exe` 烧录程序
+4. 打开刷机工具目录中的 `UsbFlashTool-*-Windows.exe` 烧录程序
 
    ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_05.png)
 
-5. 检查右侧串口设置中的串口号设置为第 1 步中记录的串口号
+5. 右侧串口设置中的串口号，设置为第 1 步中记录的串口号
 
    ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_06.png)
 
@@ -69,7 +69,7 @@ Mars CM 采用核心板的设计方式，引脚与树莓派 CM4 兼容，可以�
 
    ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_08.png)
 
-9. 在工具包目录下打开 zadig-2.5 程序，选中菜单 `Options` 中的 `List All Devices`，在下拉列表中先择 `StarFive JH7110 Device`，再点击 `Install Driver` 完成驱动的安装
+9. 在工具包目录下打开 `zadig-2.5` 程序，选中菜单 `Options` 中的 `List All Devices`，在下拉列表中先择 `StarFive JH7110 Device`，再点击 `Install Driver` 完成驱动的安装
 
    ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_09.png)
 
@@ -81,7 +81,7 @@ Mars CM 采用核心板的设计方式，引脚与树莓派 CM4 兼容，可以�
 
 ### 烧录镜像
 
-烧录镜像步骤与上面安装驱动步骤的前 6 项一致的
+烧录镜像的前 6 步与上面安装驱动的前 6 步是一致的
 
 1. USB 转 TTL 串口线连接到底板的 40PIN 排针上，USB 端连接 PC 并记录下串口号
 
@@ -91,7 +91,7 @@ Mars CM 采用核心板的设计方式，引脚与树莓派 CM4 兼容，可以�
 
    注意，如果有其他串口程序打开了该串口，请先将程序退出，不要占用该串口
 
-2. 将 CM4 IO Board 的 J12 排针的 1,2 脚用跳线帽短接 (USB 烧录模式)；
+2. 将 CM4 IO Board 的 J12 排针的 1,2 脚用跳线帽短接 (USB 烧录模式)
 
    ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_03.jpg)
 
@@ -99,11 +99,11 @@ Mars CM 采用核心板的设计方式，引脚与树莓派 CM4 兼容，可以�
 
    ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_04.jpg)
 
-4. 打开刷机包中的 `UsbFlashTool-*-Windows.exe` 烧录程序
+4. 打开刷机工具目录中的 `UsbFlashTool-*-Windows.exe` 烧录程序
 
    ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_05.png)
 
-5. 检查右侧串口设置中的串口号设置为第 1 步中记录的串口号
+5. 右侧串口设置中的串口号，设置为第 1 步中记录的串口号
 
    ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_06.png)
 
