@@ -23,7 +23,7 @@ Connect USB to TTL serial cable as shown below. Do not connect the red wire.
 | TX  (pin 8)  | <---> | White wire |
 | RX  (pin 10) | <---> | Green wire |
 
-![mars-serial](/docs/mars/mars-serial.png)
+![mars-serial](/docs/mars/mars-serial.jpg)
 
 The default serial setting for Mars console is:
 
