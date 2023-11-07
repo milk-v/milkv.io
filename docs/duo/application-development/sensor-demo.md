@@ -477,7 +477,7 @@ You can also use Ubuntu installed in a virtual machine, Ubuntu installed via WSL
   **At this point, our compilation and development environment is ready for use.**
 
 ### Operation Procedure
-![](img/7.png)
+![](/static/docs/duo/sensor-demo/DF9GMS_7.png)
 
 Next, compile it. Taking df9gms as an example, enter the directory of the example and simply execute make
 ```
@@ -485,7 +485,7 @@ cd df9gms
 make it
 ```
 Make an error report and source it. After compiling successfully, you will get the df9gms executable program. As shown in the figure below.
-![](img/8.png)
+![](/static/docs/duo/sensor-demo/DF9GMS_8.png)
 Then upload df9gms to the root path of the development board, and enter ```./df9gms``` to run it. The screenshot of successful running is shown below
-![](img/9.png)
+![](/static/docs/duo/sensor-demo/DF9GMS_9.png)
 
