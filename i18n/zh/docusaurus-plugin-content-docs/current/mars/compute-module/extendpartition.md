@@ -17,7 +17,7 @@ Mar CM 无论是带 eMMC 的版本，还是不带 eMMC 而使用 SD 卡做为存
 
 用 `df -h` 命令查看系统当前的分区状态
 
-```bash
+```
 # df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            1.4G     0  1.4G   0% /dev
@@ -35,13 +35,13 @@ tmpfs           388M   24K  388M   1% /run/user/0
 
 执行 `fdsik` 命令进入 fdisk 的命令行交互模式
 
-```bash
+```
 # fdisk /dev/mmcblk0
 ```
 
 输入 `p` 指令，查看当前分区的信息，可以看到系统分区 `/dev/mmcblk0p4` 当前容量是 `3.8G`
 
-```bash
+```
 Command (m for help): p
 
 Disk /dev/mmcblk0: 29.12 GiB, 31267487744 bytes, 61069312 sectors
@@ -60,7 +60,7 @@ Device          Start     End Sectors  Size Type
 
 再执行 `d` 指令删除原系来的统分区, 提示输入要删除的分区号，我们要删除 `/dev/mmcblk0p4`，所以再输入 `4`
 
-```bash
+```
 Command (m for help): d
 Partition number (1-4, default 4): 4
 
@@ -69,9 +69,13 @@ Partition 4 has been deleted.
 Command (m for help):
 ```
 
-再用 `n` 指令新建分区，提示输入分区号，我们还是使用 `/dev/mmcblk0p4`，所以输入 `4`，下面的提示 `First sector` 是要求输入新建分区的起始扇区值，命令已经帮我们识别到了默认的起始值(`default 221184`)，就是刚刚删除的 `/dev/mmcblk0p4` 的起始扇区，所以可以不输入，直接回车，最后就是输入新建分区的大小了，默认的 `default` 值就是全部的存储空间，也不用输入具体值，直接回车，提示 "Do you want to remove the signature? [Y]es/[N]o:" 输入 `No`
+再用 `n` 指令新建分区，提示输入分区号，我们还是使用 `/dev/mmcblk0p4`，所以输入 `4`
 
-```bash
+下面的提示 `First sector` 是要求输入新建分区的起始扇区值，命令已经帮我们识别到了默认的起始值(`default 221184`)，就是刚刚删除的 `/dev/mmcblk0p4` 的起始扇区，所以可以不输入，直接回车
+
+然后就是输入新建分区的大小了，默认的 `default` 值就是全部的存储空间，也不用输入具体值，直接回车，提示 "Do you want to remove the signature? [Y]es/[N]o:" 输入 `No`
+
+```
 Command (m for help): n
 Partition number (4-128, default 4): 4
 First sector (34-61069278, default 221184): 
@@ -87,7 +91,7 @@ Command (m for help):
 
 此时可以再执行 `p` 指令查看一下当前的分区情况，`/dev/mmcblk0p4` 已经扩展为存储的全部空间了，我这里是 `29G`
 
-```bash
+```
 Command (m for help): p
 
 Disk /dev/mmcblk0: 29.12 GiB, 31267487744 bytes, 61069312 sectors
@@ -108,7 +112,7 @@ Command (m for help):
 
 执行 `w` 指令保存修改，并退出 `fdisk` 交互模式
 
-```bash
+```
 Command (m for help): w
 The partition table has been altered.
 Syncing disks.
@@ -116,7 +120,7 @@ Syncing disks.
 
 最后，执行 `resize2fs` 命令来完成文件系统的扩容
 
-```bash
+```
 # resize2fs /dev/mmcblk0p4 
 resize2fs 1.46.6-rc1 (12-Sep-2022)
 Filesystem at /dev/mmcblk0p4 is mounted on /; on-line resizing required
@@ -126,7 +130,7 @@ The filesystem on /dev/mmcblk0p4 is now 7605760 (4k) blocks long.
 
 再次用 `df -h` 命令来查看分区状态，可以看到系统分区节点 `/dev/mmcblk0p4` 已经扩容到了 `29G`
 
-```bash
+```
 # df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            1.4G     0  1.4G   0% /dev
