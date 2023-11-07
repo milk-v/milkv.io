@@ -42,7 +42,7 @@ Extract the downloaded `Mars-UsbFlashTool-*-Windows.zip` into the Windows system
 
    ![mars-cm](/docs/mars/mars-usb-flash-tool_02.png)
 
-   Note: If any other serial port program is open and using the serial port, please exit the program to release the port and avoid occupying it.
+   **Note: If any other serial port program is open and using the serial port, please exit the program to release the port and avoid occupying it.**
 
 2. Short-circuit pins 1 and 2 of the J12 header on the CM4 IO Board using a jumper cap (USB flashing mode)
 
@@ -89,7 +89,7 @@ The first 6 steps of burning the image are the same as the first 6 steps of inst
 
    ![mars-cm](/docs/mars/mars-usb-flash-tool_02.png)
 
-   Note: If any other serial port program is open and using the serial port, please exit the program to release the port and avoid occupying it.
+   **Note: If any other serial port program is open and using the serial port, please exit the program to release the port and avoid occupying it.**
 
 2. Short-circuit pins 1 and 2 of the J12 header on the CM4 IO Board using a jumper cap (USB flashing mode)
 

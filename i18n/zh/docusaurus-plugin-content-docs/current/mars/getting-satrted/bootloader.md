@@ -15,7 +15,7 @@ Mars 出厂时已经预置了一个初始的 Bootloader 程序，正常使用中
 
 1. SPI Flash 中的 Bootloader 程序意外损坏，导致无法正常启动系统时
 2. 官方系统镜像升级(比如 Debian)，必须配合新的 Bootloader，否则无法启动时
-3. U-Boot 修复了一些 Bug，或者增加了新功能时，您需要使用这些新功能时
+3. U-Boot 修复了一些 Bug，或者增加了新功能，您需要使用这些新功能时
 
 更新 Mars 上 SPI Flash 中 Bootloader 的方法有几种，比如 Windows 烧录工具、TFTP、flashcp 命令等，这里先介绍在 Windows 系统中使用 UsbFlashTool 烧录工具的方法
 
@@ -39,7 +39,7 @@ Mars 出厂时已经预置了一个初始的 Bootloader 程序，正常使用中
 
    ![mars](/docs/mars/mars-usb-flash-tool_02.png)
 
-   注意，如果有其他串口程序打开了该串口，请先将程序退出，不要占用该串口
+   **注意，如果有其他串口程序打开了该串口，请先将程序退出，不要占用该串口**
   
 2. 用双公头 USB 数据线连接 PC 和 Mars 的 USB 2.0 接口
 
@@ -113,7 +113,7 @@ Mars 出厂时已经预置了一个初始的 Bootloader 程序，正常使用中
 
 7. 烧录 `SPL`
 
-   点击 `File Select`, 选择要烧录的 `SPL` 固件 `u-boot-spl.bin.normal.out` ，在 `File Type` 中选择 `SPL`，`Memory Type` 中选择 `FLASH`，再点击 Load 开始烧录固件
+   点击 `File Select`, 选择要烧录的 `SPL` 固件 `u-boot-spl.bin.normal.out` ，在 `File Type` 中选择 `SPL`，`Memory Type` 中选择 `FLASH`，再点击 `Load` 开始烧录固件
 
    ![mars](/docs/mars/mars-usb-flash-tool_16.png)
 
@@ -123,7 +123,7 @@ Mars 出厂时已经预置了一个初始的 Bootloader 程序，正常使用中
 
 8. 烧录 `U-BOOT`
 
-   点击 `File Select`, 选择要烧录的 `U-BOOT` 固件 `visionfive2_fw_payload.img` ，在 `File Type` 中选择 `U-Boot`，`Memory Type` 中选择 `FLASH`，再点击 Load 开始烧录固件
+   点击 `File Select`, 选择要烧录的 `U-BOOT` 固件 `visionfive2_fw_payload.img` ，在 `File Type` 中选择 `U-Boot`，`Memory Type` 中选择 `FLASH`，再点击 `Load` 开始烧录固件
 
    ![mars](/docs/mars/mars-usb-flash-tool_18.png)
 

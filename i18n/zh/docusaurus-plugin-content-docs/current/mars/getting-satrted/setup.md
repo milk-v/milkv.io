@@ -28,9 +28,9 @@ sidebar_position: 20
 Mars 默认的串口参数如下：
 
 ```
-   baudrate: 115200
-   data bit: 8
-   stop bit: 1
-   parity  : none
-   flow control: none
+baudrate: 115200
+data bit: 8
+stop bit: 1
+parity  : none
+flow control: none
 ```
