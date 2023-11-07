@@ -1,22 +1,21 @@
 ---
-sidebar_label: 'Setting Up'
+sidebar_label: '设置'
 sidebar_position: 20
 ---
 
-# Set up the working environment
+# 配置工作环境
 
-## Serial Console
+## 使用串口
 
-### USB to TTL serial cable
+### USB 转串口线连接
 
-Each pin of a USB-to-TTL cable is defined as follows:
+常见的 USB 转 TTL 线的引脚定义如下：
 
 ![usb2ttl](/docs/mars/usb2ttl.png)
 
-### Connection
+### 连接串口
 
-Connect USB to TTL serial cable as shown below. Do not connect the red wire.
-
+如下所示连接 USB 转 TTL 串口线，不要连接红色的供电线
 
 | Milk-V Mars  | <---> | USB to TTL |
 | ------------ | ----- | ---------- |
@@ -24,10 +23,9 @@ Connect USB to TTL serial cable as shown below. Do not connect the red wire.
 | TX  (pin 8)  | <---> | White wire |
 | RX  (pin 10) | <---> | Green wire |
 
-
 ![mars-serial](/docs/mars/mars-serial.png)
 
-The default serial setting for Mars console is:
+Mars 默认的串口参数如下：
 
 ```
    baudrate: 115200
@@ -36,4 +34,3 @@ The default serial setting for Mars console is:
    parity  : none
    flow control: none
 ```
-

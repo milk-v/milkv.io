@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Boot the Mars'
+sidebar_label: '启动 Mars'
 sidebar_position: 10
 ---
 # Boot the Mars
