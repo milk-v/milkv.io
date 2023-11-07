@@ -280,9 +280,7 @@ source envsetup.sh
 ```
 5、第一次加载会自动下载所需的SDK包，大小为180M左右，下载完会自动解压到duo-examples下，解压后的目录名为duo-sdk，下次加载时检测到已存在该目录，就不会再次下载了。  
 *注: 如果因为网络原因无法完成SDK包的下载，请通过其他途径获取到duo-sdk.tar.gz包，手动解压到duo-examples目录下，重新source envsetup.sh。下载路径在envsetup.sh中能找到：*<https://github.com/milkv-duo/duo-app-sdk/releases/download/duo-app-sdk-v1.2.0/duo-sdk-v1.2.0.tar.gz> *如下图所示。*
-
 ![](/static/docs/duo/sensor-demo/CHN_19.png)
-
 6、编译测试
 
 以hello-world为例，进入该例子目录直接执行make即可
