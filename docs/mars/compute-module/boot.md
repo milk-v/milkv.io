@@ -40,9 +40,9 @@ Extract the downloaded `Mars-UsbFlashTool-*-Windows.zip` into the Windows system
 
    ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_01.jpg)
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_02.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_02.png)
 
-   Note: If any other serial port program is open and using the serial port, please exit the program to release the port and avoid occupying it.
+   **Note: If any other serial port program is open and using the serial port, please exit the program to release the port and avoid occupying it.**
 
 2. Short-circuit pins 1 and 2 of the J12 header on the CM4 IO Board using a jumper cap (USB flashing mode)
 
@@ -54,28 +54,28 @@ Extract the downloaded `Mars-UsbFlashTool-*-Windows.zip` into the Windows system
 
 4. Run the `UsbFlashTool-*-Windows.exe` flashing program in the flashing tool directory
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_05.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_05.png)
 
 5. Set the serial port number in the `Serial Setting` on the right side to the serial port number noted in step 1
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_06.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_06.png)
 
 6. Power on the base-board through the 12V DC interface
 7. Select `Firmware` in `File Type`, then click `File Select` to select the `usbprog-mars-230510.out` in the `update` directory, then click `Load`, and wait for the message `Loaded` to appear after loading
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_07.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_07.png)
 
 8. At this time, the JH7110 device has been identified in the Windows Device Manager and the driver needs to be installed
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_08.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_08.png)
 
 9. Run the `zadig-2.5` program in the flashing tool directory, select `List All Devices` in the menu `Options`, select `StarFive JH7110 Device` in the drop-down list, and then click `Install Driver` to complete the driver installation
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_09.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_09.png)
 
    After the driver is successfully installed, check whether the status in the device manager has become a normal USB device
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_10.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_10.png)
 
 10. After the driver is installed successfully, close the UsbFlashTool window, power off the base-board, and remove the jumper cap in step 2
 
@@ -87,9 +87,9 @@ The first 6 steps of burning the image are the same as the first 6 steps of inst
 
    ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_01.jpg)
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_02.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_02.png)
 
-   Note: If any other serial port program is open and using the serial port, please exit the program to release the port and avoid occupying it.
+   **Note: If any other serial port program is open and using the serial port, please exit the program to release the port and avoid occupying it.**
 
 2. Short-circuit pins 1 and 2 of the J12 header on the CM4 IO Board using a jumper cap (USB flashing mode)
 
@@ -101,16 +101,16 @@ The first 6 steps of burning the image are the same as the first 6 steps of inst
 
 4. Run the `UsbFlashTool-*-Windows.exe` flashing program in the flashing tool directory
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_05.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_05.png)
 
 5. Set the serial port number in the `Serial Setting` on the right side to the serial port number noted in step 1
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_06.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_06.png)
 
 6. Power on the base-board through the 12V DC interface
 7. Select `Firmware` in `File Type`, then click `File Select` to select the `usbprog-mars-230510.out` in the `update` directory, then click `Load`, and wait for the message `Complete` to appear after loading
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_15.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_15.png)
 
 8. Click `File Select` again, select the firmware for Mars CM eMMC version, select `Allinone` in `File Type`, select `EMMC` in `Memory Type`, and then click Load to start burning the image
 

@@ -40,9 +40,9 @@ Mars CM 采用核心板的设计方式，引脚与树莓派 CM4 兼容，可以�
 
    ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_01.jpg)
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_02.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_02.png)
 
-   注意，如果有其他串口程序打开了该串口，请先将程序退出，不要占用该串口
+   **注意，如果有其他串口程序打开了该串口，请先将程序退出，不要占用该串口**
   
 2. 将 CM4 IO Board 的 J12 排针的 1,2 脚用跳线帽短接 (USB 烧录模式)
 
@@ -54,28 +54,28 @@ Mars CM 采用核心板的设计方式，引脚与树莓派 CM4 兼容，可以�
 
 4. 打开刷机工具目录中的 `UsbFlashTool-*-Windows.exe` 烧录程序
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_05.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_05.png)
 
 5. 右侧串口设置中的串口号，设置为第 1 步中记录的串口号
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_06.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_06.png)
 
 6. 绐底板的 12V DC 接口上电
 7. 在 `File Type` 中选择 `Firmware`, 再点 `File Select` 选择 `update` 目录中 `usbprog-mars-230510.out` 固件，再点 `Load`，等待加载完后提示 `Loaded`
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_07.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_07.png)
 
 8. 此时在 Windows 的设备管理器上已经识别到 JH7110 设备，需要安装驱动
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_08.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_08.png)
 
 9. 在工具包目录下打开 `zadig-2.5` 程序，选中菜单 `Options` 中的 `List All Devices`，在下拉列表中先择 `StarFive JH7110 Device`，再点击 `Install Driver` 完成驱动的安装
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_09.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_09.png)
 
    驱动安装成功后，检查一下设备管理器中的状态是否已成为正常的 USB 设备
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_10.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_10.png)
 
 10. 驱动安装成功后，将 UsbFlashTool 窗口关闭，底板断电，取下步骤 2 中的跳线帽
 
@@ -87,9 +87,9 @@ Mars CM 采用核心板的设计方式，引脚与树莓派 CM4 兼容，可以�
 
    ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_01.jpg)
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_02.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_02.png)
 
-   注意，如果有其他串口程序打开了该串口，请先将程序退出，不要占用该串口
+   **注意，如果有其他串口程序打开了该串口，请先将程序退出，不要占用该串口**
 
 2. 将 CM4 IO Board 的 J12 排针的 1,2 脚用跳线帽短接 (USB 烧录模式)
 
@@ -101,16 +101,16 @@ Mars CM 采用核心板的设计方式，引脚与树莓派 CM4 兼容，可以�
 
 4. 打开刷机工具目录中的 `UsbFlashTool-*-Windows.exe` 烧录程序
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_05.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_05.png)
 
 5. 右侧串口设置中的串口号，设置为第 1 步中记录的串口号
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_06.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_06.png)
 
 6. 绐底板的 12V DC 接口上电
 7. 在 `File Type` 中选择 `Firmware`, 再点 `File Select` 选择 `update` 目录中 `usbprog-mars-230510.out` 固件，再点 `Load`，等待加载完后提示 `Complete`
 
-   ![mars-cm](/docs/mars/cm/mars-cm-docs_boot_15.png)
+   ![mars-cm](/docs/mars/mars-usb-flash-tool_15.png)
 
 8. 再次点击 `File Select`, 选择要烧录的 Mars CM eMMC 版本的固件，在 `File Type` 中选择 `Allinone`，`Memory Type` 中选择 `EMMC`，再点击 Load 开始烧录镜像
 

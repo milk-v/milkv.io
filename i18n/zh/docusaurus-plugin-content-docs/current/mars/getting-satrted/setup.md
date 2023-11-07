@@ -23,14 +23,14 @@ sidebar_position: 20
 | TX  (pin 8)  | <---> | White wire |
 | RX  (pin 10) | <---> | Green wire |
 
-![mars-serial](/docs/mars/mars-serial.png)
+![mars-serial](/docs/mars/mars-serial.jpg)
 
 Mars 默认的串口参数如下：
 
 ```
-   baudrate: 115200
-   data bit: 8
-   stop bit: 1
-   parity  : none
-   flow control: none
+baudrate: 115200
+data bit: 8
+stop bit: 1
+parity  : none
+flow control: none
 ```
