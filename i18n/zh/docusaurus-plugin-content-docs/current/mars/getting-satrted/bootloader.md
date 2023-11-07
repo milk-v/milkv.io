@@ -21,9 +21,16 @@ Mars 出厂时已经预置了一个初始的 Bootloader 程序，正常使用中
 
 ## 使用 UsbFlashTool Windows 工具升级 Bootloader
 
-### 下载 UsbFlashTool 烧录工具
+### 下载 UsbFlashTool 烧录工具和 Bootloader 固件
 
-[UsbFlashTool](https://github.com/milkv-mars/mars-tools/blob/main/Mars-UsbFlashTool-v2.4-Windows.zip)
+[烧录工具 UsbFlashTool](https://github.com/milkv-mars/mars-tools/blob/main/Mars-UsbFlashTool-v2.4-Windows.zip)
+
+[Bootloader 固件](https://github.com/milkv-mars/mars-buildroot-sdk/releases)
+
+```
+SPL:    u-boot-spl.bin.normal.out
+U-BOOT: visionfive2_fw_payload.img
+```
 
 ### 安装驱动
 
@@ -79,7 +86,7 @@ Mars 出厂时已经预置了一个初始的 Bootloader 程序，正常使用中
 
 ### 升级 Bootloader
 
-烧录 Bootloader 的前 6 步与上面安装驱动的前 5 步是一致的
+烧录 Bootloader 的前 5 步与上面安装驱动的前 5 步是一致的
 
 1. USB 转 TTL 串口线连接到 Mars 的 40PIN 排针上，USB 端连接 PC 并记录下串口号
 
