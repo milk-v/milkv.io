@@ -346,7 +346,7 @@ Circuit diagram shown below: purple circle represents DF9GMS.
 ![](/static/docs/duo/sensor-demo/DF9GMS_5.png)
 
 DF9GMS should be connected as follows:
-![](/static/docs/duo/sensor-demo/DF9GMS_6.png)
+![](/static/docs/duo/sensor-demo/DF9GMS_6.jpg)
 
 ### Example Code: 
 GitHub link: [https://github.com/milkv-duo/duo-examples]()  
