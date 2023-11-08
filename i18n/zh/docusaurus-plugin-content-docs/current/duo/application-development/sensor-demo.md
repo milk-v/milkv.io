@@ -12,7 +12,7 @@ sidebar_position: 40
 
 GitHub链接：https://github.com/milkv-duo/duo-files/blob/master/duo-schematic-v1.1.pdf
 
-![](/static/docs/duo/sensor-demo/1.jpg)
+![](/docs/duo/sensor-demo/1.jpg)
 
 #### DHT22温湿度传感器
 
@@ -23,7 +23,7 @@ DHT22 温湿度传感器是一款多功能且经济高效的传感器，用于�
 #### 传感器模块
 
 DHT22模块共有3个引脚。而DHT22 裸骨传感器有 4 个引脚。如果我们考虑三个引脚中的模块，其中两个是电源引脚，一个是数据引脚。如果我们查看 4 针传感器，则额外的针是 NC 针，它没有任何功能。模块和传感器的引脚图如下所示。
-![](/static/docs/duo/sensor-demo/DHT22_10.png)
+![](/docs/duo/sensor-demo/DHT22_10.png)
 
 DATA用于 1-Wire 通信的数据引脚。
 
@@ -36,13 +36,13 @@ Not Used在此传感器中，未使用此引脚。
 #### DHT22 传感器模块的零件标记
 
 除传感器外，DHT22 模块在 PCB 上仅包含两个组件。一个上拉电阻和一个去耦电容，DHT22模块的零件标记如下所示。
-![](/static/docs/duo/sensor-demo/DHT22_11.png)
+![](/docs/duo/sensor-demo/DHT22_11.png)
 
 #### DHT22模块电路图
 
 DHT22温湿度传感器模块完整原理图如下图：
 
-![](/static/docs/duo/sensor-demo/DHT22_12.png)
+![](/docs/duo/sensor-demo/DHT22_12.png)
 
 DHT22模块的原理图如上所示。如前所述，董事会只有几名成员。VCC 和 GND 引脚直接连接到 DHT22，上拉电阻连接到 DATA 引脚。钽电容和多层电容提供足够的滤波。作为电源指示，在某些 PCB 中，您可以找到 LED 指示灯，但对于大多数电路板来说，LED 是不存在的。
 
@@ -71,12 +71,12 @@ DHT22 传感器使用专有的单总线通信协议，可以通过计算的定�
 #### DHT22 是如何工作的？
 
 如果您使用的是原装 DHT22 传感器，那么它里面会有一个NTC热敏电阻和传感器模块，但是您在市场上可以找到的大多数传感器大多是非原装零件，并且在里面您会发现一个小传感器，您可以在下图中看到。
-![](/static/docs/duo/sensor-demo/DHT22_13.png)
+![](/docs/duo/sensor-demo/DHT22_13.png)
 
 湿度传感元件由夹在两个电极之间的保湿基板组成。当基材吸收水分时，两个电极之间的电阻会降低。两个电极之间的电阻变化与相对湿度成正比。较高的相对湿度会降低电极之间的电阻，而较低的相对湿度会增加电极之间的电阻。这种电阻变化是通过板载 MCU 的 ADC 测量的，并计算出相对湿度。
 
 
-![](/static/docs/duo/sensor-demo/DHT22_14.png)
+![](/docs/duo/sensor-demo/DHT22_14.png)
 
 
 每个DHT22元件都经过实验室严格校准，湿度校准极其准确。校准系数作为程序存储在 OTP 存储器中，供传感器内部信号检测过程使用。
@@ -88,7 +88,7 @@ DHT22 传感器使用专有的单总线通信协议，可以通过计算的定�
 当MCU发送启动信号DHT从低功耗模式变为运行模式，并将所有40位数据转储给微控制器，微控制器读取数据并根据二进制数据计算温度和湿度。
 
 
-![](/static/docs/duo/sensor-demo/DHT22_15.png)
+![](/docs/duo/sensor-demo/DHT22_15.png)
 
 上图显示了数据通信如何与微控制器和 DHT22 一起工作。
 
@@ -98,10 +98,10 @@ DHT22：红线接3V3(OUT)，黑线接地，绿线接GPIOA15。
 
 电路图如下所示：黑色圆圈表示DHT22。
 
-![](/static/docs/duo/sensor-demo/5.jpg)
+![](/docs/duo/sensor-demo/5.jpg)
 
 DHT22接好后应该是这样的：
-![](/static/docs/duo/sensor-demo/DHT22_16.jpg)
+![](/docs/duo/sensor-demo/DHT22_16.jpg)
 
 ### 二、示例代码
 
@@ -285,7 +285,7 @@ source envsetup.sh
 ```
 5、第一次加载会自动下载所需的SDK包，大小为180M左右，下载完会自动解压到duo-examples下，解压后的目录名为duo-sdk，下次加载时检测到已存在该目录，就不会再次下载了。  
 *注: 如果因为网络原因无法完成SDK包的下载，请通过其他途径获取到duo-sdk.tar.gz包，手动解压到duo-examples目录下，重新source envsetup.sh。下载路径在envsetup.sh中能找到：*<https://github.com/milkv-duo/duo-app-sdk/releases/download/duo-app-sdk-v1.2.0/duo-sdk-v1.2.0.tar.gz> *如下图所示。*
-![](/static/docs/duo/sensor-demo/CHN_19.png)
+![](/docs/duo/sensor-demo/CHN_19.png)
 6、编译测试
 
 以hello-world为例，进入该例子目录直接执行make即可
@@ -308,7 +308,7 @@ Hello, World!
 
 ### 四、运行程序
 
-![](/static/docs/duo/sensor-demo/DF9GMS_7.png)
+![](/docs/duo/sensor-demo/DF9GMS_7.png)
 
 
 
@@ -318,11 +318,11 @@ cd dht22
 make it
 ```
 make报错source一下即可。编译成功后得到dht22可执行程序。如下图所示。
-![](/static/docs/duo/sensor-demo/DHT22_17.png)
+![](/docs/duo/sensor-demo/DHT22_17.png)
 
 然后把dht22上传到开发板root路径下，输入```./dht22```即可运行。运行成功截图如下：
 
-![](/static/docs/duo/sensor-demo/DHT22_18.png)
+![](/docs/duo/sensor-demo/DHT22_18.png)
 ## DF9GMS 180°
 
 ### 一、硬件信息
@@ -330,10 +330,10 @@ make报错source一下即可。编译成功后得到dht22可执行程序。如�
 #### duo开发板引脚
 
 GitHub链接：https://github.com/milkv-duo/duo-files/blob/master/duo-schematic-v1.1.pdf
-![](/static/docs/duo/sensor-demo/1.jpg)
+![](/docs/duo/sensor-demo/1.jpg)
 
 #### DF9GMS 180°
-![](/static/docs/duo/sensor-demo/DF9GMS_2.png)
+![](/docs/duo/sensor-demo/DF9GMS_2.png)
 
 
 由DFRobot 出品的DF9GMS微型舵机，该舵机采用高强度ABS透明外壳配以内部高精度尼龙齿轮组，加上精准的控制电路、高档轻量化空心杯电机使该微型舵机的重量只有9克，而输出力矩达到了惊人的1.6kg/cm。
@@ -356,7 +356,7 @@ GitHub链接：https://github.com/milkv-duo/duo-files/blob/master/duo-schematic-
 
 #### 组成结构及工作原理
 
-![](/static/docs/duo/sensor-demo/DF9GMS_3.png)
+![](/docs/duo/sensor-demo/DF9GMS_3.png)
 
 #### 连接图
 
@@ -369,17 +369,17 @@ GitHub链接：https://github.com/milkv-duo/duo-files/blob/master/duo-schematic-
   - 若干 杜邦线
 
   - 灰色——GND、红色——VCC、黄色——信号线
-![](/static/docs/duo/sensor-demo/DF9GMS_4.png)
+![](/docs/duo/sensor-demo/DF9GMS_4.png)
 
 #### 连接到开发板上
 
 DF9GMS：红线接VSYS，棕线接地，橙线接GPIO19。
 
 电路图如下所示：紫色圆圈表示DF9GMS。
-![](/static/docs/duo/sensor-demo/5.jpg)
+![](/docs/duo/sensor-demo/5.jpg)
 
 DF9GMS接好后应该是这样的：
-![](/static/docs/duo/sensor-demo/DF9GMS_6.jpg)
+![](/docs/duo/sensor-demo/DF9GMS_6.jpg)
 
 ### 二、示例代码
 
@@ -499,7 +499,7 @@ source envsetup.sh
 5、第一次加载会自动下载所需的SDK包，大小为180M左右，下载完会自动解压到duo-examples下，解压后的目录名为duo-sdk，下次加载时检测到已存在该目录，就不会再次下载了。  
 *注: 如果因为网络原因无法完成SDK包的下载，请通过其他途径获取到duo-sdk.tar.gz包，手动解压到duo-examples目录下，重新source envsetup.sh。下载路径在envsetup.sh中能找到：*<https://github.com/milkv-duo/duo-app-sdk/releases/download/duo-app-sdk-v1.2.0/duo-sdk-v1.2.0.tar.gz> *如下图所示。*
 
-![](/static/docs/duo/sensor-demo/CHN_19.png)
+![](/docs/duo/sensor-demo/CHN_19.png)
 
 6、编译测试
 
@@ -529,7 +529,7 @@ Hello, World!
 如图所示：
 
 
-![](/static/docs/duo/sensor-demo/DF9GMS_7.png)
+![](/docs/duo/sensor-demo/DF9GMS_7.png)
 
 
 接下来开始编译，以df9gms为例，进入该例子目录直接执行make即可
@@ -540,8 +540,8 @@ make
 ```
 make报错source一下即可。编译成功后得到df9gms可执行程序。如下图所示。
 
-![](/static/docs/duo/sensor-demo/DF9GMS_8.png)
+![](/docs/duo/sensor-demo/DF9GMS_8.png)
 
 然后把df9gms上传到开发板root路径下，输入./df9gms即可运行。运行成功截图如下：
-![](/static/docs/duo/sensor-demo/DF9GMS_9.png)
+![](/docs/duo/sensor-demo/DF9GMS_9.png)
 
