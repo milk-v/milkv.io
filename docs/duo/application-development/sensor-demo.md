@@ -97,6 +97,7 @@ DHT22 should be connected as follows:
 
 ### Example Code:
 GitHub link: https://github.com/milkv-duo/duo-examples
+
 **dht22.c：**
 ```
 // Ref: https://github.com/technion/lol_dht22/blob/master/dht22.c
@@ -350,6 +351,7 @@ DF9GMS should be connected as follows:
 
 ### Example Code: 
 GitHub link: https://github.com/milkv-duo/duo-examples
+
 **df9gms.c:**  
 ```
 #include <stdio.h>
