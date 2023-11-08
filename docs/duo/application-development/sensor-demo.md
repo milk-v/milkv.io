@@ -15,7 +15,7 @@ GitHub Link: https://github.com/milkv-duo/duo-files/blob/master/duo-schematic-v1
 
 #### DHT22 Temperature and Humidity Sensor
 
-dfrobotwiki Link: [https://wiki.dfrobot.com.cn/\_SKU_SEN0137\_%E9%AB%98%E7%B2%BE%E5%BA%A6DHT22%E6%B8%A9%E6%B9%BF%E5%BA%A6%E4%BC%A0%E6%84%9F%E5%99%A8]()
+dfrobotwiki Link: https://wiki.dfrobot.com.cn/\_SKU_SEN0137\_%E9%AB%98%E7%B2%BE%E5%BA%A6DHT22%E6%B8%A9%E6%B9%BF%E5%BA%A6%E4%BC%A0%E6%84%9F%E5%99%A8
 
 The DHT22 Temperature and Humidity Sensor is a versatile and cost-effective sensor used for measuring environmental temperature and humidity. It is based on digital signal output, providing high-precision measurements with a temperature resolution of 0.1 degrees Celsius and humidity resolution of 0.1%. The sensor uses a capacitive humidity sensing element and a thermistor to measure humidity and temperature, respectively. The DHT22 sensor also has relatively low power consumption and can operate within a voltage range of 3.3V to 5V, making it suitable for battery-powered projects. Additionally, the sensor offers long-term stability and high reliability, making it an ideal choice for various applications, including HVAC systems, weather stations, and indoor air quality monitoring systems.
 
