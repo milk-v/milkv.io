@@ -312,6 +312,9 @@ Make an error report and source it. After compiling successfully, you will get t
 
 ![](/static/docs/duo/sensor-demo/DHT22_17.png)
 
+
+
+
 Then upload df9gms to the root path of the development board, and enter``` ./dht22``` to run it. The screenshot of successful running is shown below
 
 ![](/static/docs/duo/sensor-demo/DHT22_18.png)
@@ -506,6 +509,9 @@ make it
 Make an error report and source it. After compiling successfully, you will get the df9gms executable program. As shown in the figure below.
 
 ![](/static/docs/duo/sensor-demo/DF9GMS_8.png)
+
+
+
 Then upload df9gms to the root path of the development board, and enter ```./df9gms``` to run it. The screenshot of successful running is shown below
 
 ![](/static/docs/duo/sensor-demo/DF9GMS_9.png)
