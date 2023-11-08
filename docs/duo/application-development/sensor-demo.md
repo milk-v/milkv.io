@@ -9,7 +9,7 @@ sidebar_position: 40
 
 #### Duo development board pin
 
-GitHub Link: [https://github.com/milkv-duo/duo-files/blob/master/duo-schematic-v1.1.pdf]()
+GitHub Link: https://github.com/milkv-duo/duo-files/blob/master/duo-schematic-v1.1.pdf
 
 ![]( /docs/duo/sensor-demo/1.jpg)
 
