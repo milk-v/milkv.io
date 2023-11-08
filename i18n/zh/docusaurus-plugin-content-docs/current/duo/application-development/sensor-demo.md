@@ -100,7 +100,7 @@ DHT22接好后应该是这样的：
 
 ### 二、示例代码
 
-GitHub链接：<https://github.com/milkv-duo/duo-examples>
+GitHub链接：https://github.com/milkv-duo/duo-examples
 
 **dht22.c：**
 ```
@@ -367,14 +367,14 @@ GitHub链接：https://github.com/milkv-duo/duo-files/blob/master/duo-schematic-
 DF9GMS：红线接VSYS，棕线接地，橙线接GPIO19。
 
 电路图如下所示：紫色圆圈表示DF9GMS。
-![]( /docs/duo/sensor-demo/DF9GMS_5.png)
+![]( /docs/duo/sensor-demo/5.jpg)
 
 DF9GMS接好后应该是这样的：
 ![]( /docs/duo/sensor-demo/DF9GMS_6.jpg)
 
 ### 二、示例代码
 
-GitHub链接：<https://github.com/milkv-duo/duo-examples>
+GitHub链接：https://github.com/milkv-duo/duo-examples
 
 **df9gms.c:**  
 ```
