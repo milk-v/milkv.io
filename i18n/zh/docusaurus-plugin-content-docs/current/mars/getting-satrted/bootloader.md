@@ -5,7 +5,7 @@ sidebar_position: 30
 
 # Mars Bootloader 引导程序升级
 
-Mars 无论是通过 SD 卡启动系统，还是通过 eMMC 模组启动系统，都要通过 Bootloader 引导程序来启动，这个引导程序存储在板上的一个 SPI Flash 中，包含 SPL 和 U-boot 两个部分
+Mars 无论是通过 SD 卡启动系统，还是通过 eMMC 模组启动系统，都要通过 Bootloader 引导程序来启动，这个引导程序存储在板上的一个 SPI Flash 中，包含 `SPL` 和 `U-Boot` 两个部分
 
 :::tip
 Mars 中的这个 Bootloader 您可以理解为我们电脑中的 BIOS
@@ -47,7 +47,7 @@ U-BOOT: visionfive2_fw_payload.img
    ![mars](/docs/mars/mars-usb-flash-tool_02.png)
 
    **注意，如果有其他串口程序打开了该串口，请先将程序退出，不要占用该串口**
-  
+
 2. 用双公头 USB 数据线连接 PC 和 Mars 的 USB 2.0 接口
 
    ![mars](/docs/mars/usba2usba.jpg)
@@ -95,7 +95,7 @@ U-BOOT: visionfive2_fw_payload.img
    ![mars](/docs/mars/mars-usb-flash-tool_02.png)
 
    注意，如果有其他串口程序打开了该串口，请先将程序退出，不要占用该串口
-  
+
 2. 用双公头 USB 数据线连接 PC 和 Mars 的 USB 2.0 接口
 
    ![mars](/docs/mars/usba2usba.jpg)
