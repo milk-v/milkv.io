@@ -23,6 +23,8 @@ DHT22 温湿度传感器是一款多功能且经济高效的传感器，用于�
 #### 传感器模块
 
 DHT22模块共有3个引脚。而DHT22 裸骨传感器有 4 个引脚。如果我们考虑三个引脚中的模块，其中两个是电源引脚，一个是数据引脚。如果我们查看 4 针传感器，则额外的针是 NC 针，它没有任何功能。模块和传感器的引脚图如下所示。
+
+
 ![](/docs/duo/sensor-demo/DHT22_10.png)
 
 DATA用于 1-Wire 通信的数据引脚。
@@ -545,5 +547,7 @@ make报错source一下即可。编译成功后得到df9gms可执行程序。如�
 ![](/docs/duo/sensor-demo/DF9GMS_8.png)
 
 然后把df9gms上传到开发板root路径下，输入./df9gms即可运行。运行成功截图如下：
+
+
 ![](/docs/duo/sensor-demo/DF9GMS_9.png)
 
