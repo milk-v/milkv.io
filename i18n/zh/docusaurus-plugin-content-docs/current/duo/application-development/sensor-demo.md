@@ -305,6 +305,8 @@ Hello, World!
 
 ![](/static/docs/duo/sensor-demo/DF9GMS_7.png)
 
+
+
 接下来开始编译，进入该目录直接执行make即可
 ```
 cd dht22
@@ -504,7 +506,6 @@ make
 
 ```
 scp helloworld root@192.168.42.1:/root/
-
 ```
 
 发送成功后，在ssh或者串口登陆的终端中运行./helloworld，会打印Hello, World!
@@ -520,6 +521,8 @@ Hello, World!
 
 如图所示：
 ![](/static/docs/duo/sensor-demo/DF9GMS_7.png)
+
+
 接下来开始编译，以df9gms为例，进入该例子目录直接执行make即可
 
 ```
