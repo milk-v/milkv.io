@@ -362,7 +362,7 @@ o Gray - GND, red - VCC, yellow - signal line
 DF9GMS: red wire connected to VSYS, brown wire connected to ground, orange wire connected to GPIO19.  
 Circuit diagram shown below: purple circle represents DF9GMS.
 
-![](/docs/duo/sensor-demo/DF9GMS_5.png)
+![](/docs/duo/sensor-demo/5.jpg)
 
 DF9GMS should be connected as follows:
 
