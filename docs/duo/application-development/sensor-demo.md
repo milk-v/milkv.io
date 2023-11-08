@@ -96,7 +96,7 @@ DHT22 should be connected as follows:
 ![]( /docs/duo/sensor-demo/DHT22_16.jpg)
 
 ### Example Code:
-GitHub link: [https://github.com/milkv-duo/duo-examples]()  
+GitHub link: https://github.com/milkv-duo/duo-examples
 **dht22.c：**
 ```
 // Ref: https://github.com/technion/lol_dht22/blob/master/dht22.c
@@ -310,7 +310,7 @@ Then upload df9gms to the root path of the development board, and enter``` ./dht
 
 #### Duo development board pin
 
-GitHub：[https://github.com/milkv-duo/duo-files/blob/master/duo-schematic-v1.1.pdf]()
+GitHub：https://github.com/milkv-duo/duo-files/blob/master/duo-schematic-v1.1.pdf
 
 ![]( /docs/duo/sensor-demo/1.jpg)
 
@@ -349,7 +349,7 @@ DF9GMS should be connected as follows:
 ![]( /docs/duo/sensor-demo/DF9GMS_6.jpg)
 
 ### Example Code: 
-GitHub link: [https://github.com/milkv-duo/duo-examples]()  
+GitHub link: https://github.com/milkv-duo/duo-examples
 **df9gms.c:**  
 ```
 #include <stdio.h>
