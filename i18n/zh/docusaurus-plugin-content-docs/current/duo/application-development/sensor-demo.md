@@ -329,6 +329,8 @@ GitHub链接：https://github.com/milkv-duo/duo-files/blob/master/duo-schematic-
 
 #### DF9GMS 180°
 ![](/static/docs/duo/sensor-demo/DF9GMS_2.png)
+
+
 由DFRobot 出品的DF9GMS微型舵机，该舵机采用高强度ABS透明外壳配以内部高精度尼龙齿轮组，加上精准的控制电路、高档轻量化空心杯电机使该微型舵机的重量只有9克，而输出力矩达到了惊人的1.6kg/cm。
 
 技术规格：
