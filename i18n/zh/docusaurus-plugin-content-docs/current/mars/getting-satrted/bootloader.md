@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Bootloader 升级'
-sidebar_position: 30
+sidebar_position: 40
 ---
 
 # Mars Bootloader 引导程序升级
