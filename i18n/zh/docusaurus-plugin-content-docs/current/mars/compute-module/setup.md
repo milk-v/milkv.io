@@ -15,7 +15,7 @@ sidebar_position: 20
 
 ### 连接串口
 
-如下所示连接 USB 转 TTL 串口线，不要连接红色的供电线
+以搭配树莓派 `CM4 IO Board` 底板为例，如下所示连接 USB 转 TTL 串口线，不要连接红色的供电线
 
 | Milk-V Mars  | <---> | USB 转 TTL 线 |
 | ------------ | ----- | ------------ |
@@ -23,9 +23,9 @@ sidebar_position: 20
 | TX  (pin 8)  | <---> | 白线 |
 | RX  (pin 10) | <---> | 绿线 |
 
-![mars-serial](/docs/mars/mars-serial.jpg)
+![mars-cm-serial](/docs/mars/cm/mars-cm-docs_boot_01.jpg)
 
-Mars 默认的串口参数如下：
+Mars CM 默认的串口参数如下：
 
 ```
 baudrate: 115200
