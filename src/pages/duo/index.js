@@ -152,23 +152,23 @@ function DetailsPage() {
             <ul>
               <li>
                 <div className={cssList.down}></div>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-hardware/tree/main/duo">Duo Datasheet, PDF</a>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/hardware/tree/main/duo">Duo Datasheet, PDF</a>
               </li>
               <li>
                 <div className={cssList.down}></div>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-hardware/tree/main/duo">Duo Schematic, PDF</a>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/hardware/tree/main/duo">Duo Schematic, PDF</a>
               </li>
               <li>
                 <span className={cssList.down}></span>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-hardware/tree/main/duo">Duo Mechanical Drawings, DXF</a>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/hardware/tree/main/duo">Duo Mechanical Drawings, DXF</a>
               </li>
               <li>
                 <span className={cssList.down}></span>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-hardware/tree/main/duo">Duo Schematic Library, OLB</a>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/hardware/tree/main/duo">Duo Schematic Library, OLB</a>
               </li>
               <li>
                 <span className={cssList.down}></span>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-hardware/tree/main/duo">Duo PCB Footprint, DRA</a>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/hardware/tree/main/duo">Duo PCB Footprint, DRA</a>
               </li>
             </ul>
           </div>
