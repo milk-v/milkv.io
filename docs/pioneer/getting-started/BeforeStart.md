@@ -43,25 +43,25 @@ The following tools and accessories are required for the entire installation pro
 - 1x Cooler base
 - 1x Screw kit  
 
-### Step 2. Secure the Cooler Base to The Pioneer Board
+### Step 2. Secure the Cooler Base to the Pioneer Board
 
 Apply thermal grease to the top of the CPU
 
 ![fanstep2](/docs/pioneer/fanstep2.webp)
 
-### Step 3. Attach the Cooler Base to The Cooler
+### Step 3. Attach the Cooler Base to the Cooler
 
 Attach the cooler base to the cooler with screws as shown.
 
 ![fanstep3](/docs/pioneer/fanstep3.webp)
 
-### Step 4. Secure The Cooler Base to The Pioneer Board
+### Step 4. Secure the Cooler Base to the Pioneer Board
 
 Secure the cooler to the motherboard as shown. Please note, keep the cooler level during installation to avoid crushing the chip.
 
 ![fanstep4](/docs/pioneer/fanstep4.webp)
 
-### Step 5. Connect The Fan
+### Step 5. Connect the Fan
 
 Connect the fan to the motherboard as shown in the picture.
 

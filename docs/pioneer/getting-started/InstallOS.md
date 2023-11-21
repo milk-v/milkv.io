@@ -10,6 +10,7 @@ sidebar_position: 21
 ### 1.1 Tool preparation
 
 Before starting the installation, please prepare the following tools:
+
 - MicroSD card (at least greater than 16G)
 - MicroSD card reader
 - Serial port module
@@ -17,7 +18,8 @@ Before starting the installation, please prepare the following tools:
 ### 1.2 Software preparation
 
 - Download and install balenaEtcher (https://etcher.balena.io/)
-- Download the image (https://milkv.io/docs/pioneer/getting-started/download)  
+- Download the image (https://milkv.io/docs/pioneer/getting-started/download)
+
 Select the desired image in the [Download page](https://milkv.io/docs/pioneer/getting-started/download), here is Fedora 38 as an example.
 
 ![downloadpage](/docs/pioneer/downloadpage.png)
@@ -34,18 +36,23 @@ b. Click the Select target button and choose the microSD Card to write the fedor
 c. Click the Flash! button to begin the process.  
 
 ![balena-etcher](/docs/pioneer/balena-etcher.png)
+
 ### 2.2 Installing to Pioneer
+
 Insert the burned microSD card into the Pioneer's microSD card slot.
 
 ## 3. Boot from microSD Card
 
 ### 3.1 Power on
+
 Tap the boot button to start Pioneer.
 
 ### 3.2 Setting up an account
+
 The installation wizard sets up the account password.
 
 ### 3.3 Done! Getting Started with Fedora 38
+
 ![fedora38](/docs/pioneer/fedora38.png)
 
 ## 4. Boot from microSD Card & NVMe SSD
@@ -54,6 +61,7 @@ Please complete sections 1-3 above before proceeding with this step
 The following steps are recommended for operation using the serial port
 
 Enter the account password to log in to the Fedora system
+
 ![loginfedora38](/docs/pioneer/loginfedora.png)
 
 ### 4.1 Use 'mv-rootfs.sh' to install the system to an NVMe SSD
