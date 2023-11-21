@@ -169,6 +169,11 @@ const config = {
                 label: 'Meles',
                 docId: 'meles/overview',
               },
+              {
+                type: 'doc',
+                label: 'Vega',
+                docId: 'vega/overview',
+              },
             ],
           },
           {
