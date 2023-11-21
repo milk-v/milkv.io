@@ -5,14 +5,16 @@ sidebar_position: 25
 # Power supply
 
 ## Power Supply Options
- Pioneer supports a standard 24P power supply, which means you can use the vast majority of PC power supplies on the market to power him.  
 
- Nevertheless, we strongly recommend that you choose a high quality power supply to reduce the risk of power failure damaging your hardware devices.  
+Pioneer supports a standard 24P power supply, which means you can use the vast majority of PC power supplies on the market to power him.  
+
+Nevertheless, we strongly recommend that you choose a high quality power supply to reduce the risk of power failure damaging your hardware devices.  
  
- Power supply power is related to the number and power of your peripherals, we recommend choosing a power supply with 350W or more.
+Power supply power is related to the number and power of your peripherals, we recommend choosing a power supply with 350W or more.
 
- ## TDP Reference Table
- | Items     | TDP  |
+## TDP Reference Table
+
+| Items     | TDP  |
 |:-------------:|:----:|
 | SOPHON SG2042 | 120W |
 | AMD R5 230    | 20W  |
@@ -21,6 +23,7 @@ sidebar_position: 25
 | Cooler        | 6W   |
 
 ## Installing the power supply  
+
 - Preparation  
     Make sure you have a desktop power supply that is suitable for your computer's configuration and power requirements, and that it has a 24-pin motherboard power connector.
 

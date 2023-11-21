@@ -14,6 +14,7 @@ Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard m
 ### Hardware
 
 #### Pioneer Board
+
 ![Pioneer Board](/docs/pioneer/pioneerboardv1.1.webp)
 
 | Pioneer Board | Specification                                      |
@@ -37,7 +38,9 @@ Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard m
 | Size          | 24.4cm x 24.4cm                                    |
 
 #### Pioneer Box
+
 ![Pioneer Box](/docs/pioneer/pioneerbox.webp)
+
 Pioneer Box is a complete ready-to-use RISC-V PC with the following:
 
 - 1x Pioneer Board
@@ -50,5 +53,5 @@ Pioneer Box is a complete ready-to-use RISC-V PC with the following:
 - White slim PC enclosure with handle
 
 ### Support
-For support please see the documentation section of the Milk-V website and post questions to the Milk-V Community.
 
+For support please see the documentation section of the Milk-V website and post questions to the Milk-V Community.
