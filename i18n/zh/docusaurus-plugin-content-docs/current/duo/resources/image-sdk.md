@@ -1,6 +1,6 @@
 ---
 sidebar_label: '官方镜像和SDK'
-sidebar_position: 40
+sidebar_position: 10
 ---
 # 官方镜像和SDK
 
