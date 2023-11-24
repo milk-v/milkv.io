@@ -20,3 +20,7 @@ The current version of Kernel is 6.1.x.
 ## RVV version
 
 The current is RVV 0.71. There will be a CPU upgrade at Q1 2024 to support RVV 1.00.
+
+## Type of battery
+
+The battery type is CR1220.
