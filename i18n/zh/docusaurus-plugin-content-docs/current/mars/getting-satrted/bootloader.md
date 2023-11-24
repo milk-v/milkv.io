@@ -17,9 +17,77 @@ Mars 出厂时已经预置了一个初始的 Bootloader 程序，正常使用中
 2. 官方系统镜像升级(比如 Debian)，必须配合新的 Bootloader，否则无法启动时
 3. U-Boot 修复了一些 Bug，或者增加了新功能，您需要使用这些新功能时
 
-更新 Mars 上 SPI Flash 中 Bootloader 的方法有几种，比如 Windows 烧录工具、TFTP、flashcp 命令等，这里先介绍在 Windows 系统中使用 UsbFlashTool 烧录工具的方法
+更新 Mars 上 SPI Flash 中 Bootloader 的方法有几种，比如 Windows 烧录工具、TFTP、flashcp 命令等，这里分别介绍使用 `flashcp` 命令和在 Windows 系统中使用 `UsbFlashTool` 烧录工具的方法
 
-## 使用 UsbFlashTool Windows 工具升级 Bootloader
+## 使用 flashcp 命令更新 Bootloader
+
+如果您的 Mars 当前的 Bootloader 可以正常引导 Debian 系统，您可以在 Debian 系统中使用 `flashcp` 命令来更新 Bootloader。
+
+1. 安装 flashcp 命令
+
+   Debian 系统中 `flashcp` 命令包含在 `mtd-utils` 这个包中，执行如下命令安装：
+   ```bash
+   sudo apt install mtd-utils
+   ```
+
+2. 下载 Bootloader 固件
+
+   [Bootloader 固件](https://github.com/milkv-mars/mars-buildroot-sdk/releases)
+
+   固件包含 `SPL` 和 `U-Boot` 两个文件：
+   ```
+   SPL:    mars_u-boot-spl.bin.normal.out
+   U-Boot: mars_visionfive2_fw_payload.img
+   ```
+   可以在 Mars 上直接下载，或者在 PC 上下载后通过 scp 命令或U盘拷贝到 Mars 上。
+
+3. 查看 SPI Flash 分区信息
+   ```
+   cat /proc
+   ```
+   输出结果如下：
+   ```
+   user@milkv:~$ cat /proc/mtd
+   dev:    size   erasesize  name
+   mtd0: 00040000 00001000 "spl"
+   mtd1: 00300000 00001000 "uboot"
+   mtd2: 00100000 00001000 "data"
+   ```
+   我们需要将 `SPL` 更新到 `mtd0` 分区, `U-Boot` 更新到 `mtd1` 分区。
+
+4. 更新 Bootloader
+
+   更新 SPL:
+   ```bash
+   sudo flashcp -v mars_u-boot-spl.bin.normal.out /dev/mtd0
+   ```
+   更新 U-Boot:
+   ```bash
+   sudo flashcp -v mars_visionfive2_fw_payload.img /dev/mtd1
+   ```
+   执行成功输出如下:
+   ```
+   user@milkv:~$ sudo flashcp -v mars_u-boot-spl.bin.normal.out /dev/mtd0
+   Erasing blocks: 36/36 (100%)
+   Writing data: 143k/143k (100%)
+   Verifying data: 143k/143k (100%)
+   user@milkv:~$
+   user@milkv:~$ sudo flashcp -v mars_visionfive2_fw_payload.img /dev/mtd1
+   Erasing blocks: 723/723 (100%)
+   Writing data: 2890k/2890k (100%)
+   Verifying data: 2890k/2890k (100%)
+   ```
+
+重新上电后，可根据 UART 串口日志中的时间戳判断 Bootloader 是否已经更新：
+
+```
+U-Boot SPL 2021.10 (Nov 24 2023 - 10:21:39 +0800)
+```
+```
+U-Boot 2021.10 (Nov 24 2023 - 10:21:39 +0800)
+```
+
+## 在 Windows 下使用 UsbFlashTool 工具升级 Bootloader
 
 ### 下载 UsbFlashTool 烧录工具和 Bootloader 固件
 
@@ -28,8 +96,8 @@ Mars 出厂时已经预置了一个初始的 Bootloader 程序，正常使用中
 [Bootloader 固件](https://github.com/milkv-mars/mars-buildroot-sdk/releases)
 
 ```
-SPL:    u-boot-spl.bin.normal.out
-U-BOOT: visionfive2_fw_payload.img
+SPL:    mars_u-boot-spl.bin.normal.out
+U-Boot: mars_visionfive2_fw_payload.img
 ```
 
 ### 安装驱动
@@ -141,7 +209,7 @@ U-BOOT: visionfive2_fw_payload.img
 9. 烧录完成后，将 UsbFlashTool 窗口关闭，Mars 断电
 
 
-重新上电后，可根据串口日志中的时间信息判断 Bootloader 是否已经更新
+重新上电后，可根据 UART 串口日志中的时间戳判断 Bootloader 是否已经更新
 
 ```
 U-Boot SPL 2021.10 (Aug 31 2023 - 12:55:45 +0800)

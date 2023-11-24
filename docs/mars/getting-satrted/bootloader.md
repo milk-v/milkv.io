@@ -17,9 +17,77 @@ When Mars is shipped, it already comes with a pre-installed initial Bootloader p
 2. When upgrading the official system image (such as Debian), it must be matched with the new bootloader, otherwise it cannot be started.
 3. U-Boot has fixed some bugs or added new functions. When you need to use these new functions.
 
-There are several ways to update the Bootloader in SPI Flash on Mars, such as Windows burning tools, TFTP, flashcp commands, etc. Here we first introduce how to use the UsbFlashTool burning tool in Windows systems.
+There are several ways to update the Bootloader in SPI Flash on Mars, such as Windows burning tools, TFTP, flashcp commands, etc. Here are the methods of using the `flashcp` command and using the `UsbFlashTool` burning tool in Windows systems.
 
-## Upgrade Bootloader using UsbFlashTool Windows tool
+## Update Bootloader using flashcp command
+
+If the current bootloader of your Mars can boot the Debian system normally, you can use the `flashcp` command in the Debian system to update the bootloader.
+
+1. Install flashcp command
+
+   The `flashcp` command in the Debian system is included in the `mtd-utils` package. Execute the following command to install:
+   ```bash
+   sudo apt install mtd-utils
+   ```
+
+2. Download Bootloader Firmware
+
+   [Bootloader firmware](https://github.com/milkv-mars/mars-buildroot-sdk/releases)
+
+   The firmware contains two files, `SPL` and `U-Boot`:
+   ```
+   SPL:    mars_u-boot-spl.bin.normal.out
+   U-Boot: mars_visionfive2_fw_payload.img
+   ```
+   You can download it directly on Mars, or download it on PC and then transfer it to Mars through scp command or USB flash drive.
+
+3. View SPI Flash partition information
+   ```
+   cat /proc
+   ```
+   The output is as follows:
+   ```
+   user@milkv:~$ cat /proc/mtd
+   dev:    size   erasesize  name
+   mtd0: 00040000 00001000 "spl"
+   mtd1: 00300000 00001000 "uboot"
+   mtd2: 00100000 00001000 "data"
+   ```
+   We need to update `SPL` to the `mtd0` partition and `U-Boot` to the `mtd1` partition.
+
+4. Update Bootloader
+
+   Update SPL:
+   ```bash
+   sudo flashcp -v mars_u-boot-spl.bin.normal.out /dev/mtd0
+   ```
+   Update U-Boot:
+   ```bash
+   sudo flashcp -v mars_visionfive2_fw_payload.img /dev/mtd1
+   ```
+   The output of successful execution is as follows:
+   ```
+   user@milkv:~$ sudo flashcp -v mars_u-boot-spl.bin.normal.out /dev/mtd0
+   Erasing blocks: 36/36 (100%)
+   Writing data: 143k/143k (100%)
+   Verifying data: 143k/143k (100%)
+   user@milkv:~$
+   user@milkv:~$ sudo flashcp -v mars_visionfive2_fw_payload.img /dev/mtd1
+   Erasing blocks: 723/723 (100%)
+   Writing data: 2890k/2890k (100%)
+   Verifying data: 2890k/2890k (100%)
+   ```
+
+After powering on again, you can determine whether the bootloader has been updated based on the timestamp in the UART serial port log:
+
+```
+U-Boot SPL 2021.10 (Nov 24 2023 - 10:21:39 +0800)
+```
+```
+U-Boot 2021.10 (Nov 24 2023 - 10:21:39 +0800)
+```
+
+## Use UsbFlashTool to upgrade bootloader under Windows
 
 ### Download UsbFlashTool burning tool and Bootloader firmware
 
@@ -28,8 +96,8 @@ There are several ways to update the Bootloader in SPI Flash on Mars, such as Wi
 [Bootloader firmware](https://github.com/milkv-mars/mars-buildroot-sdk/releases)
 
 ```
-SPL:    u-boot-spl.bin.normal.out
-U-BOOT: visionfive2_fw_payload.img
+SPL:    mars_u-boot-spl.bin.normal.out
+U-Boot: mars_visionfive2_fw_payload.img
 ```
 
 ### Install driver for the burning tool
