@@ -136,7 +136,7 @@ The test program has been placed in the [duo-examples](https://github.com/milkv-
    make
    ```
 
- After successful compilation, the generated `mailbox_test` test program should be transferred to Duo through the network port or USB network (RNDIS). For example, in USB network mode, the IP of Duo is `192.168.42.1`, and the user name is `root`, the password is `milkv`:
+After successful compilation, the generated `mailbox_test` test program should be transferred to Duo through the network port or USB network (RNDIS). For example, in USB network mode, the IP of Duo is `192.168.42.1`, and the user name is `root`, the password is `milkv`:
 ```
 $ scp mailbox_test root@192.168.42.1:/root/
 ```
