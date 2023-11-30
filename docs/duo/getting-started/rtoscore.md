@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'RTOS Core'
-sidebar_position: 40
+sidebar_position: 50
 ---
 
 # Introduction

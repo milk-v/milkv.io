@@ -1,6 +1,6 @@
 ---
-sidebar_label: '小核的使用'
-sidebar_position: 40
+sidebar_label: '使用小核'
+sidebar_position: 50
 ---
 
 # 简介
