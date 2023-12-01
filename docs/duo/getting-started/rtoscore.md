@@ -187,3 +187,17 @@ Additionally, if you want to view the relevant logs of the mailbox driver in the
    ./mailbox_test 
    ```
 2. Use the `dmesg` command
+
+### Appendix
+
+The directory where the relevant code is located:
+
+1. Big core mailbox Linux driver:
+   ```
+   linux_5.10/drivers/soc/cvitek/rtos_cmdqu/
+   ```
+2. Small core FreeRTOS:
+   ```
+   freertos/cvitek/driver/rtos_cmdqu/include/rtos_cmdqu.h
+   freertos/cvitek/task/comm/src/riscv64/
+   ```

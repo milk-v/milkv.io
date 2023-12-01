@@ -188,3 +188,17 @@ RTOS_CMDQU_SEND       没有返回值
    ./mailbox_test 
    ```
 2. 使用 `dmesg` 命令查看
+
+### 附录
+
+相关代码所在的目录
+
+1. 大核 mailbox Linux 驱动:
+   ```
+   linux_5.10/drivers/soc/cvitek/rtos_cmdqu/
+   ```
+2. 小核 FreeRTOS:
+   ```
+   freertos/cvitek/driver/rtos_cmdqu/include/rtos_cmdqu.h
+   freertos/cvitek/task/comm/src/riscv64/
+   ```

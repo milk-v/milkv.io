@@ -81,6 +81,7 @@ Milk-V Duo is an ultra-compact embedded development platform based on the CV1800
 
 ## Quick Start
 [Image download](https://github.com/milkv-duo/duo-buildroot-sdk/releases)
+
 [How to build image](https://milkv.io/docs/duo/getting-started/buildroot-sdk)
 
 ## Support

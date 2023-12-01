@@ -83,6 +83,7 @@ Milk-V Duo是一个基于CV1800B芯片的超紧凑嵌入式开发平台。它可
 
 ## 快速启动
 [镜像下载](https://github.com/milkv-duo/duo-buildroot-sdk/releases)
+
 [如何编译镜像](https://milkv.io/zh/docs/duo/getting-started/buildroot-sdk)
 
 ## 支持
