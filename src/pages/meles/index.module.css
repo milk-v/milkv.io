@@ -28,7 +28,7 @@
     top: 32%;
 }
 
-.titleBox>h1 {
+.titleBox>h2 {
     color: #FFF;
     text-align: left;
     font-style: normal;
@@ -37,7 +37,7 @@
     margin: 0;
 }
 
-.titleBox>h1>span {
+.titleBox>h2>span {
     font-weight: 300;
 }
 
@@ -104,7 +104,7 @@
     align-content: center;
 }
 
-.topBox h1 {
+.topBox h2 {
     color: #FFF;
     font-style: normal;
     font-weight: 700;
@@ -132,7 +132,7 @@
     line-height: 120%;
 }
 
-.hzBox>h1 {
+.hzBox>h2 {
     color: #0089D6;
     font-style: normal;
     font-weight: 500;
@@ -143,11 +143,11 @@
     position: relative;
 }
 
-.hzBox>h1>span {
+.hzBox>h2>span {
     color: #fff;
 }
 
-.hzBox>h1::after {
+.hzBox>h2::after {
     content: '2.0GHz';
     position: absolute;
     bottom: 0;
@@ -158,7 +158,7 @@
     background-clip: text;
 }
 
-.hzBox>h1::before {
+.hzBox>h2::before {
     content: '2.0GHz';
     position: absolute;
     top: 0;
@@ -183,7 +183,7 @@
     position: relative;
 }
 
-.viaeoLeft>h1 {
+.viaeoLeft>h2 {
     color: #FFF;
     font-style: normal;
     font-weight: 700;
@@ -208,7 +208,7 @@
     background-size: 100%;
 }
 
-.viaeoRight>h1 {
+.viaeoRight>h2 {
     color: #FFF;
     font-style: normal;
     font-weight: 700;
@@ -265,7 +265,7 @@
     height: 100%;
 }
 
-.highBoxLeft>h1 {
+.highBoxLeft>h2 {
     color: #FFF;
     font-style: normal;
     font-weight: 700;
@@ -334,7 +334,7 @@
     color: #fff;
 }
 
-.gpuTitle>h1 {
+.gpuTitle>h2 {
     color: #FFF;
     font-style: normal;
     font-weight: 700;
@@ -347,7 +347,7 @@
     font-weight: 400;
 }
 
-.highBoxRight>h1 {
+.highBoxRight>h2 {
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
@@ -359,7 +359,7 @@
     z-index: 5;
 }
 
-.highBoxRight>h1::before {
+.highBoxRight>h2::before {
     content: '';
     width: 30px;
     height: 5px;
@@ -401,18 +401,18 @@
     overflow: hidden;
 }
 
-.sizeBox h1 {
+.sizeBox h2 {
     color: #FFF;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
 }
 
-.sizeLeft>h1 {
+.sizeLeft>h2 {
     text-align: right;
 }
 
-.sizeRight>h1 {
+.sizeRight>h2 {
     text-align: left;
 }
 
@@ -493,7 +493,7 @@ table td {
         margin-top: 120px;
     }
 
-    .titleBox>h1 {
+    .titleBox>h2 {
         font-size: 87px;
     }
 
@@ -530,7 +530,7 @@ table td {
         width: calc(445px*1.333);
     }
 
-    .topBox h1 {
+    .topBox h2 {
         font-size: 40px;
     }
 
@@ -544,7 +544,7 @@ table td {
         font-size: 24px;
     }
 
-    .hzBox>h1 {
+    .hzBox>h2 {
         font-size: 124px;
         padding: 65px 0;
     }
@@ -553,16 +553,16 @@ table td {
         margin: 10px 0;
     }
 
-    .hzBox>h1>span {
+    .hzBox>h2>span {
         font-size: 16px;
         margin-right: 10px;
     }
 
-    .hzBox>h1::after {
+    .hzBox>h2::after {
         font-size: 100px;
     }
 
-    .hzBox>h1::before {
+    .hzBox>h2::before {
         font-size: 100px;
     }
 
@@ -582,7 +582,7 @@ table td {
         padding: 25px 30px;
     }
 
-    .viaeoLeft>h1 {
+    .viaeoLeft>h2 {
         font-size: 40px;
         margin-bottom: 15px;
     }
@@ -603,7 +603,7 @@ table td {
         padding: 25px 30px;
     }
 
-    .viaeoRight>h1 {
+    .viaeoRight>h2 {
         font-size: 36px;
     }
 
@@ -650,7 +650,7 @@ table td {
         height: 100%;
     }
 
-    .highBoxLeft>h1 {
+    .highBoxLeft>h2 {
         color: #FFF;
         font-size: 40px;
         font-style: normal;
@@ -736,7 +736,7 @@ table td {
         margin-bottom: 95px;
     }
 
-    .gpuTitle>h1 {
+    .gpuTitle>h2 {
         color: #FFF;
         font-size: 40px;
         font-style: normal;
@@ -751,7 +751,7 @@ table td {
         font-weight: 400;
     }
 
-    .highBoxRight>h1 {
+    .highBoxRight>h2 {
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
@@ -764,7 +764,7 @@ table td {
         z-index: 5;
     }
 
-    .highBoxRight>h1::before {
+    .highBoxRight>h2::before {
         content: '';
         width: 30px;
         height: 5px;
@@ -811,7 +811,7 @@ table td {
         width: calc(728px*1.333);
     }
 
-    .highBoxLeft>h1 {
+    .highBoxLeft>h2 {
         font-size: 40px;
         margin-bottom: 40px;
     }
@@ -843,7 +843,7 @@ table td {
         margin-bottom: 95px;
     }
 
-    .gpuTitle>h1 {
+    .gpuTitle>h2 {
         font-size: 40px;
     }
 
@@ -851,7 +851,7 @@ table td {
         font-size: 24px;
     }
 
-    .highBoxRight>h1 {
+    .highBoxRight>h2 {
         font-size: 24px;
     }
 
@@ -877,7 +877,7 @@ table td {
         margin: 20px auto;
     }
 
-    .sizeBox h1 {
+    .sizeBox h2 {
         font-size: 40px;
     }
 
@@ -994,7 +994,7 @@ table td {
         margin-top: 120px;
     }
 
-    .titleBox>h1 {
+    .titleBox>h2 {
         font-size: 87px;
     }
 
@@ -1031,7 +1031,7 @@ table td {
         width: 445px;
     }
 
-    .topBox h1 {
+    .topBox h2 {
         font-size: 40px;
     }
 
@@ -1045,7 +1045,7 @@ table td {
         font-size: 24px;
     }
 
-    .hzBox>h1 {
+    .hzBox>h2 {
         font-size: 62px;
         padding: 65px 0;
     }
@@ -1054,16 +1054,16 @@ table td {
         margin: 10px 0;
     }
 
-    .hzBox>h1>span {
+    .hzBox>h2>span {
         font-size: 16px;
         margin-right: 10px;
     }
 
-    .hzBox>h1::after {
+    .hzBox>h2::after {
         font-size: 62px;
     }
 
-    .hzBox>h1::before {
+    .hzBox>h2::before {
         font-size: 62px;
     }
 
@@ -1083,7 +1083,7 @@ table td {
         padding: 25px 30px;
     }
 
-    .viaeoLeft>h1 {
+    .viaeoLeft>h2 {
         font-size: 40px;
         margin-bottom: 15px;
     }
@@ -1104,7 +1104,7 @@ table td {
         padding: 25px 30px;
     }
 
-    .viaeoRight>h1 {
+    .viaeoRight>h2 {
         font-size: 36px;
     }
 
@@ -1151,7 +1151,7 @@ table td {
         height: 100%;
     }
 
-    .highBoxLeft>h1 {
+    .highBoxLeft>h2 {
         color: #FFF;
         font-size: 40px;
         font-style: normal;
@@ -1237,7 +1237,7 @@ table td {
         margin-bottom: 95px;
     }
 
-    .gpuTitle>h1 {
+    .gpuTitle>h2 {
         color: #FFF;
         font-size: 40px;
         font-style: normal;
@@ -1252,7 +1252,7 @@ table td {
         font-weight: 400;
     }
 
-    .highBoxRight>h1 {
+    .highBoxRight>h2 {
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
@@ -1265,7 +1265,7 @@ table td {
         z-index: 5;
     }
 
-    .highBoxRight>h1::before {
+    .highBoxRight>h2::before {
         content: '';
         width: 30px;
         height: 5px;
@@ -1312,7 +1312,7 @@ table td {
         width: 728px;
     }
 
-    .highBoxLeft>h1 {
+    .highBoxLeft>h2 {
         font-size: 40px;
         margin-bottom: 40px;
     }
@@ -1344,7 +1344,7 @@ table td {
         margin-bottom: 95px;
     }
 
-    .gpuTitle>h1 {
+    .gpuTitle>h2 {
         font-size: 40px;
     }
 
@@ -1352,7 +1352,7 @@ table td {
         font-size: 24px;
     }
 
-    .highBoxRight>h1 {
+    .highBoxRight>h2 {
         font-size: 24px;
     }
 
@@ -1378,7 +1378,7 @@ table td {
         margin: 20px auto;
     }
 
-    .sizeBox h1 {
+    .sizeBox h2 {
         font-size: 40px;
     }
 
@@ -1495,7 +1495,7 @@ table td {
         margin-top: 60px;
     }
 
-    .titleBox>h1 {
+    .titleBox>h2 {
         font-size: 58px;
     }
 
@@ -1532,7 +1532,7 @@ table td {
         width: calc(356px*.8);
     }
 
-    .topBox h1 {
+    .topBox h2 {
         font-size: 24px;
     }
 
@@ -1551,7 +1551,7 @@ table td {
         font-size: 16px;
     }
 
-    .hzBox>h1 {
+    .hzBox>h2 {
         font-size: 38px;
         padding: 32px 0;
     }
@@ -1560,16 +1560,16 @@ table td {
         margin: 10px 0;
     }
 
-    .hzBox>h1>span {
+    .hzBox>h2>span {
         font-size: 14px;
         margin-right: 10px;
     }
 
-    .hzBox>h1::after {
+    .hzBox>h2::after {
         font-size: 38px;
     }
 
-    .hzBox>h1::before {
+    .hzBox>h2::before {
         font-size: 38px;
     }
 
@@ -1589,7 +1589,7 @@ table td {
         padding: 20px;
     }
 
-    .viaeoLeft>h1 {
+    .viaeoLeft>h2 {
         font-size: 24px;
         margin-bottom: 15px;
     }
@@ -1614,7 +1614,7 @@ table td {
         padding: 20px;
     }
 
-    .viaeoRight>h1 {
+    .viaeoRight>h2 {
         font-size: 24px;
     }
 
@@ -1662,7 +1662,7 @@ table td {
         width: calc(728px*.8*.8);
     }
 
-    .highBoxLeft>h1 {
+    .highBoxLeft>h2 {
         font-size: 20px;
         margin-bottom: 20px;
     }
@@ -1694,7 +1694,7 @@ table td {
         margin-bottom: 45px;
     }
 
-    .gpuTitle>h1 {
+    .gpuTitle>h2 {
         font-size: 20px;
     }
 
@@ -1702,7 +1702,7 @@ table td {
         font-size: 16px;
     }
 
-    .highBoxRight>h1 {
+    .highBoxRight>h2 {
         font-size: 16px;
     }
 
@@ -1731,7 +1731,7 @@ table td {
         margin: 20px auto;
     }
 
-    .sizeBox h1 {
+    .sizeBox h2 {
         font-size: 20px;
     }
 
@@ -1843,7 +1843,7 @@ table td {
         margin-top: 40px;
     }
 
-    .titleBox>h1 {
+    .titleBox>h2 {
         font-size: 35px;
     }
 
@@ -1880,7 +1880,7 @@ table td {
         width: calc(356px*.8*.8);
     }
 
-    .topBox h1 {
+    .topBox h2 {
         font-size: 20px;
     }
 
@@ -1899,7 +1899,7 @@ table td {
         font-size: 14px;
     }
 
-    .hzBox>h1 {
+    .hzBox>h2 {
         font-size: 28px;
         padding: 20px 0;
     }
@@ -1908,16 +1908,16 @@ table td {
         margin: 10px 0;
     }
 
-    .hzBox>h1>span {
+    .hzBox>h2>span {
         font-size: 12px;
         margin-right: 10px;
     }
 
-    .hzBox>h1::after {
+    .hzBox>h2::after {
         font-size: 28px;
     }
 
-    .hzBox>h1::before {
+    .hzBox>h2::before {
         font-size: 28px;
     }
 
@@ -1937,7 +1937,7 @@ table td {
         padding: 20px;
     }
 
-    .viaeoLeft>h1 {
+    .viaeoLeft>h2 {
         font-size: 20px;
         margin-bottom: 10px;
     }
@@ -1962,7 +1962,7 @@ table td {
         padding: 20px;
     }
 
-    .viaeoRight>h1 {
+    .viaeoRight>h2 {
         font-size: 18px;
     }
 
@@ -2010,7 +2010,7 @@ table td {
         width: calc(728px*.8*.8*.8);
     }
 
-    .highBoxLeft>h1 {
+    .highBoxLeft>h2 {
         font-size: 14px;
         margin-bottom: 10px;
     }
@@ -2043,7 +2043,7 @@ table td {
         margin-bottom: 25px;
     }
 
-    .gpuTitle>h1 {
+    .gpuTitle>h2 {
         font-size: 16px;
     }
 
@@ -2051,7 +2051,7 @@ table td {
         font-size: 14px;
     }
 
-    .highBoxRight>h1 {
+    .highBoxRight>h2 {
         font-size: 14px;
     }
 
@@ -2080,7 +2080,7 @@ table td {
         margin: 20px auto;
     }
 
-    .sizeBox h1 {
+    .sizeBox h2 {
         font-size: 16px;
     }
 
@@ -2240,12 +2240,12 @@ table td {
         width: 150rem;
     }
 
-    .titleBox>h1,
+    .titleBox>h2,
     .titleBox>p {
         text-align: center;
     }
 
-    .titleBox>h1 {
+    .titleBox>h2 {
         font-size: 18rem;
     }
 
@@ -2293,7 +2293,7 @@ table td {
         align-items: center;
     }
 
-    .topBox h1 {
+    .topBox h2 {
         font-size: 16rem;
     }
 
@@ -2316,7 +2316,7 @@ table td {
         font-size: 14rem;
     }
 
-    .hzBox>h1 {
+    .hzBox>h2 {
         font-size: 28rem;
         padding: 20rem 0;
     }
@@ -2326,16 +2326,16 @@ table td {
         margin: 10rem 0;
     }
 
-    .hzBox>h1>span {
+    .hzBox>h2>span {
         font-size: 12rem;
         margin-right: 10rem;
     }
 
-    .hzBox>h1::after {
+    .hzBox>h2::after {
         font-size: 28rem;
     }
 
-    .hzBox>h1::before {
+    .hzBox>h2::before {
         font-size: 28rem;
     }
 
@@ -2357,7 +2357,7 @@ table td {
         background: none;
     }
 
-    .viaeoLeft>h1 {
+    .viaeoLeft>h2 {
         font-size: 20rem;
         margin-bottom: 30rem;
     }
@@ -2382,7 +2382,7 @@ table td {
         padding: 20rem;
     }
 
-    .viaeoRight>h1 {
+    .viaeoRight>h2 {
         font-size: 18rem;
     }
 
@@ -2426,7 +2426,7 @@ table td {
         width: calc(728rem*.8*.8*.8);
     }
 
-    .highBoxLeft>h1 {
+    .highBoxLeft>h2 {
         font-size: 14rem;
         margin-bottom: 10rem;
     }
@@ -2460,7 +2460,7 @@ table td {
         margin-bottom: 25rem;
     }
 
-    .gpuTitle>h1 {
+    .gpuTitle>h2 {
         font-size: 16rem;
     }
 
@@ -2469,7 +2469,7 @@ table td {
         margin: 0;
     }
 
-    .highBoxRight>h1 {
+    .highBoxRight>h2 {
         font-size: 14rem;
     }
 
@@ -2498,7 +2498,7 @@ table td {
         flex-direction: column;
     }
 
-    .sizeBox h1 {
+    .sizeBox h2 {
         font-size: 16rem;
         text-align: left;
     }

@@ -126,7 +126,7 @@
         margin-top: 100px;
     }
 
-    .titleBox>h1 {
+    .titleBox>h2 {
         font-weight: 700;
         font-size: 87px;
         line-height: 120%;
@@ -165,7 +165,7 @@
         padding: 25px 30px 0;
     }
 
-    .prodcuts01>h1 {
+    .prodcuts01>h2 {
         font-weight: 500;
         font-size: 32px;
         line-height: 120%;
@@ -211,7 +211,7 @@
         padding: 40px 35px 0;
     }
 
-    .prodcuts04>h1 {
+    .prodcuts04>h2 {
         font-weight: 500;
         font-size: 42px;
         line-height: 120%;
@@ -263,7 +263,7 @@
         padding: 50px 40px 0;
     }
 
-    .prodcuts06>h1 {
+    .prodcuts06>h2 {
         font-weight: 500;
         font-size: 58px;
         line-height: 120%;
@@ -302,7 +302,7 @@
         padding: 20px 32px 0;
     }
 
-    .productsUl>li>h1 {
+    .productsUl>li>h2 {
         font-weight: 500;
         font-size: 40px;
         line-height: 120%;
@@ -424,7 +424,7 @@
         margin-top: 100px;
     }
 
-    .titleBox>h1 {
+    .titleBox>h2 {
         font-weight: 700;
         font-size: 87px;
         line-height: 120%;
@@ -470,7 +470,7 @@
         padding: 25px 30px 0;
     }
 
-    .prodcuts01>h1 {
+    .prodcuts01>h2 {
         font-weight: 500;
         font-size: 32px;
         color: #fff;
@@ -516,7 +516,7 @@
         padding: 40px 35px 0;
     }
 
-    .prodcuts04>h1 {
+    .prodcuts04>h2 {
         font-weight: 500;
         font-size: 42px;
         line-height: 120%;
@@ -568,7 +568,7 @@
         padding: 50px 40px 0;
     }
 
-    .prodcuts06>h1 {
+    .prodcuts06>h2 {
         font-weight: 500;
         font-size: 58px;
         line-height: 120%;
@@ -607,7 +607,7 @@
         padding: 14px 25px 0;
     }
 
-    .productsUl>li>h1 {
+    .productsUl>li>h2 {
         font-weight: 500;
         font-size: 40px;
         line-height: 120%;
@@ -738,7 +738,7 @@
         margin-top: 50px;
     }
 
-    .titleBox>h1 {
+    .titleBox>h2 {
         font-weight: 700;
         font-size: 67px;
         line-height: 120%;
@@ -777,7 +777,7 @@
         padding: 15px 20px 0;
     }
 
-    .prodcuts01>h1 {
+    .prodcuts01>h2 {
         font-weight: 500;
         font-size: 26px;
         color: #fff;
@@ -823,7 +823,7 @@
         padding: 30px 25px 0;
     }
 
-    .prodcuts04>h1 {
+    .prodcuts04>h2 {
         font-weight: 500;
         font-size: 28px;
         line-height: 120%;
@@ -875,7 +875,7 @@
         padding: 40px 30px 0;
     }
 
-    .prodcuts06>h1 {
+    .prodcuts06>h2 {
         font-weight: 500;
         font-size: 38px;
         line-height: 120%;
@@ -914,7 +914,7 @@
         padding: 10px 20px 0;
     }
 
-    .productsUl>li>h1 {
+    .productsUl>li>h2 {
         font-weight: 500;
         font-size: 30px;
         line-height: 120%;
@@ -1043,7 +1043,7 @@
         margin-top: 50px;
     }
 
-    .titleBox>h1 {
+    .titleBox>h2 {
         font-weight: 700;
         font-size: 50px;
         line-height: 120%;
@@ -1082,7 +1082,7 @@
         padding: 5px 10px 0;
     }
 
-    .prodcuts01>h1 {
+    .prodcuts01>h2 {
         font-weight: 500;
         font-size: 18px;
         color: #fff;
@@ -1128,7 +1128,7 @@
         padding: 20px 15px 0;
     }
 
-    .prodcuts04>h1 {
+    .prodcuts04>h2 {
         font-weight: 500;
         font-size: 20px;
         line-height: 120%;
@@ -1180,7 +1180,7 @@
         padding: 30px 20px 0;
     }
 
-    .prodcuts06>h1 {
+    .prodcuts06>h2 {
         font-weight: 500;
         font-size: 28px;
         line-height: 120%;
@@ -1219,7 +1219,7 @@
         padding: 15px 10px 0;
     }
 
-    .productsUl>li>h1 {
+    .productsUl>li>h2 {
         font-weight: 500;
         font-size: 22px;
         line-height: 120%;
@@ -1350,7 +1350,7 @@
         margin-top: 50rem;
     }
 
-    .titleBox>h1 {
+    .titleBox>h2 {
         font-weight: 700;
         font-size: 37rem;
         line-height: 120%;
@@ -1388,7 +1388,7 @@
         padding: 5rem 10rem 0;
     }
 
-    .prodcuts01>h1 {
+    .prodcuts01>h2 {
         font-weight: 500;
         font-size: 18rem;
         color: #fff;
@@ -1425,7 +1425,7 @@
         padding: 20rem 15rem 0;
     }
 
-    .prodcuts04>h1 {
+    .prodcuts04>h2 {
         font-weight: 500;
         font-size: 20rem;
         line-height: 120%;
@@ -1471,7 +1471,7 @@
         padding: 30rem 20rem 0;
     }
 
-    .prodcuts06>h1 {
+    .prodcuts06>h2 {
         font-weight: 500;
         font-size: 28rem;
         line-height: 120%;
@@ -1508,7 +1508,7 @@
         padding: 15rem 10rem 0;
     }
 
-    .productsUl>li>h1 {
+    .productsUl>li>h2 {
         font-weight: 500;
         font-size: 22rem;
         line-height: 120%;

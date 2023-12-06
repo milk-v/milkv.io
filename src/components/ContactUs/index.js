@@ -71,10 +71,10 @@ export default (props) => {
     return (
         <>
             <div className={styles.cUs}>
-                <h1 className={styles.maxtitle}><Translate id='contact.title' /></h1>
+                <h2 className={styles.maxtitle}><Translate id='contact.title' /></h2>
                 <div className={styles.flexBox}>
                     <div className={styles.textLeft}>
-                        <h1><Translate id='contact.title.info' /></h1>
+                        <h2><Translate id='contact.title.info' /></h2>
                         <h3><Translate id='contact.title.Sales' /></h3>
                         <a className={styles.fromA} href="mailto:sales@milkv.io">sales@milkv.io</a>
                         <h3><Translate id='contact.title.Development' /></h3>
@@ -83,7 +83,7 @@ export default (props) => {
                         <a className={styles.fromA} href={`mailto:${product}@milkv.io`} >{`${product}@milkv.io`}</a>
                     </div>
                     <div className={styles.touchBox}>
-                        <h1><Translate id='contact.title.sendMessage' /></h1>
+                        <h2><Translate id='contact.title.sendMessage' /></h2>
                         <form className={styles.touchForm} onSubmit={handleSubmit}>
                             <input type="hidden" name="_email.subject" value={hiddenmsg} />
                             <input type="hidden" name="_email.from" value={userName} />
@@ -115,14 +115,14 @@ export default (props) => {
             </div>
             <div className={styles.pop} style={{ display: `${flag ? "flex" : 'none'}` }}>
                 <div className={styles.popBox}>
-                    <h1>😄<Translate id='contact.send.res' /></h1>
+                    <h2>😄<Translate id='contact.send.res' /></h2>
                     <p><Translate id='contact.send.res.info' /></p>
                     <div className={styles.ok} onClick={() => { setFlag(false) }}><Translate id='contact.send.close' /></div>
                 </div>
             </div>
             <div className={styles.pop} style={{ display: `${flag2 ? "flex" : 'none'}` }}>
                 <div className={styles.popBox}>
-                    <h1>😭<Translate id='contact.send.err' /></h1>
+                    <h2>😭<Translate id='contact.send.err' /></h2>
                     <p style={{ color: 'red' }}><Translate id='contact.send.err.info' /></p>
                     <div className={styles.ok} onClick={() => { setFlag2(false) }}><Translate id='contact.send.close' /></div>
                 </div>

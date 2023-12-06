@@ -146,14 +146,14 @@ export default () => {
                 <div style={{ display: `${loading ? 'none' : "block"}` }}>
                     <div className={styles.pop} style={{ display: `${flag ? "flex" : 'none'}` }}>
                         <div className={styles.popBox}>
-                            <h1>😄<Translate id='contact.send.res' /></h1>
+                            <h2>😄<Translate id='contact.send.res' /></h2>
                             <p><Translate id='contact.send.res.info' /></p>
                             <div className={styles.ok} onClick={() => { setMask(false) }}><Translate id='contact.send.close' /></div>
                         </div>
                     </div>
                     <div className={styles.pop} style={{ display: `${!flag ? "flex" : 'none'}` }}>
                         <div className={styles.popBox}>
-                            <h1>😭<Translate id='contact.send.err' /></h1>
+                            <h2>😭<Translate id='contact.send.err' /></h2>
                             <p style={{ color: 'red' }}><Translate id='contact.send.err.info' /></p>
                             <div className={styles.ok} onClick={() => { setMask(false) }}><Translate id='contact.send.close' /></div>
                         </div>

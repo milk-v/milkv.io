@@ -243,7 +243,7 @@ const Home_web = () => {
         <div className={styles.docs_link}>
           <img src='/home/milkv-docs-logo.svg' alt='milkv docs' />
           <div className={styles.docs_info}>
-            <h1><Translate id='homepage.corporations.Documentstitle' /></h1>
+            <h2><Translate id='homepage.corporations.Documentstitle' /></h2>
             <p><Translate id='homepage.corporations.Documentswords' /></p>
           </div>
           <Link to='/docs/home' className={styles.docs_a}><Translate id='homepage.corporations.docslearnmore' /></Link>

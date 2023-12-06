@@ -118,7 +118,7 @@
         left: -80px;
     }
 
-    .titleBox>h1 {
+    .titleBox>h2 {
         font-size: 85.8px;
         font-style: normal;
         font-weight: 700;
@@ -165,7 +165,7 @@
         overflow: hidden;
     }
 
-    .power1>h1 {
+    .power1>h2 {
         background: linear-gradient(89.98deg, #FFFFFF 0.02%, #00F0FF 0.03%, #9E00FF 49.33%, #15D1FF 100.74%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -297,7 +297,7 @@
         margin-bottom: 0;
     }
 
-    .pionBox_2>ul>li>h1 {
+    .pionBox_2>ul>li>h2 {
         text-align: center;
         font-style: normal;
         font-weight: 500;
@@ -351,7 +351,7 @@
         margin-bottom: 0;
     }
 
-    .pionBox_3>ul>li>h1 {
+    .pionBox_3>ul>li>h2 {
         text-align: center;
         font-style: normal;
         font-weight: 500;
@@ -876,7 +876,7 @@
         left: -80px;
     }
 
-    .titleBox>h1 {
+    .titleBox>h2 {
         font-size: 85.8px;
         font-style: normal;
         font-weight: 700;
@@ -924,7 +924,7 @@
         overflow: hidden;
     }
 
-    .power1>h1 {
+    .power1>h2 {
         background: linear-gradient(89.98deg, #FFFFFF 0.02%, #00F0FF 0.03%, #9E00FF 49.33%, #15D1FF 100.74%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -1057,7 +1057,7 @@
         margin-bottom: 0;
     }
 
-    .pionBox_2>ul>li>h1 {
+    .pionBox_2>ul>li>h2 {
         text-align: center;
         font-style: normal;
         font-weight: 500;
@@ -1111,7 +1111,7 @@
         margin-bottom: 0;
     }
 
-    .pionBox_3>ul>li>h1 {
+    .pionBox_3>ul>li>h2 {
         text-align: center;
         font-style: normal;
         font-weight: 500;
@@ -1620,7 +1620,7 @@
         top: 180px;
     }
 
-    .titleBox>h1 {
+    .titleBox>h2 {
         font-size: 70px;
         font-style: normal;
         font-weight: 700;
@@ -1667,7 +1667,7 @@
         overflow: hidden;
     }
 
-    .power1>h1 {
+    .power1>h2 {
         background: linear-gradient(89.98deg, #FFFFFF 0.02%, #00F0FF 0.03%, #9E00FF 49.33%, #15D1FF 100.74%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -1800,7 +1800,7 @@
         margin-bottom: 0;
     }
 
-    .pionBox_2>ul>li>h1 {
+    .pionBox_2>ul>li>h2 {
         text-align: center;
         font-style: normal;
         font-weight: 500;
@@ -1854,7 +1854,7 @@
         margin-bottom: 0;
     }
 
-    .pionBox_3>ul>li>h1 {
+    .pionBox_3>ul>li>h2 {
         text-align: center;
         font-style: normal;
         font-weight: 500;
@@ -2357,7 +2357,7 @@
         top: 100px;
     }
 
-    .titleBox>h1 {
+    .titleBox>h2 {
         font-size: 48px;
         font-style: normal;
         font-weight: 700;
@@ -2404,7 +2404,7 @@
         overflow: hidden;
     }
 
-    .power1>h1 {
+    .power1>h2 {
         background: linear-gradient(89.98deg, #FFFFFF 0.02%, #00F0FF 0.03%, #9E00FF 49.33%, #15D1FF 100.74%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -2534,7 +2534,7 @@
         margin-bottom: 0;
     }
 
-    .pionBox_2>ul>li>h1 {
+    .pionBox_2>ul>li>h2 {
         text-align: center;
         font-style: normal;
         font-weight: 500;
@@ -2586,7 +2586,7 @@
         margin-bottom: 0;
     }
 
-    .pionBox_3>ul>li>h1 {
+    .pionBox_3>ul>li>h2 {
         text-align: center;
         font-style: normal;
         font-weight: 500;
@@ -3079,7 +3079,7 @@
         top: 50rem;
     }
 
-    .titleBox>h1 {
+    .titleBox>h2 {
         font-size: 36rem;
         font-style: normal;
         font-weight: 700;
@@ -3124,7 +3124,7 @@
         position: relative;
     }
 
-    .power1>h1 {
+    .power1>h2 {
         background: linear-gradient(89.98deg, #FFFFFF 0.02%, #00F0FF 0.03%, #9E00FF 49.33%, #15D1FF 100.74%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -3244,7 +3244,7 @@
         margin-bottom: 0;
     }
 
-    .pionBox_2>ul>li>h1 {
+    .pionBox_2>ul>li>h2 {
         text-align: center;
         font-style: normal;
         font-weight: 500;
@@ -3301,7 +3301,7 @@
         margin-bottom: 0;
     }
 
-    .pionBox_3>ul>li>h1 {
+    .pionBox_3>ul>li>h2 {
         text-align: center;
         font-style: normal;
         font-weight: 500;

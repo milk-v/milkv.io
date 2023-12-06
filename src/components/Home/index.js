@@ -9,7 +9,7 @@ export default () => {
         <>
             <div className={styles.bgBox}>
                 <div className={styles._title}>
-                    <h1>MilkV Documents</h1>
+                    <h2>MilkV Documents</h2>
                 </div>
                 <ul className={styles.products_ul}>
                     <li>
@@ -19,7 +19,7 @@ export default () => {
                         <div className={styles.pNameBox}>
                             <p>🍐</p>
                             <div className={styles.pName} onClick={() => { goto.push('/docs/duo') }}>
-                                <h1>MilkV Duo</h1>
+                                <h2>MilkV Duo</h2>
                                 <img src="/icons/arrow-right-def.svg" className={styles.def} />
                                 <img src="/icons/arrow-right.svg" className={styles.on} />
                             </div>
@@ -33,7 +33,7 @@ export default () => {
                         <div className={styles.pNameBox}>
                             <p>💪</p>
                             <div className={styles.pName} onClick={() => { goto.push('/docs/pioneer') }}>
-                                <h1>MilkV Pioneer</h1>
+                                <h2>MilkV Pioneer</h2>
                                 <img src="/icons/arrow-right-def.svg" className={styles.def} />
                                 <img src="/icons/arrow-right.svg" className={styles.on} />
                             </div>
@@ -47,7 +47,7 @@ export default () => {
                         <div className={styles.pNameBox}>
                             <p>🔥</p>
                             <div className={styles.pName} onClick={() => { goto.push('/docs/mars') }}>
-                                <h1>MilkV Mars</h1>
+                                <h2>MilkV Mars</h2>
                                 <img src="/icons/arrow-right-def.svg" className={styles.def} />
                                 <img src="/icons/arrow-right.svg" className={styles.on} />
                             </div>

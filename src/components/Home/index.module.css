@@ -97,7 +97,7 @@
 }
 
 @media screen and (min-width: 1850px) {
-    ._title>h1 {
+    ._title>h2 {
         font-weight: 600;
         font-size: 46px;
         line-height: 120%;
@@ -133,7 +133,7 @@
         background-color: #fff;
     }
 
-    .pName>h1 {
+    .pName>h2 {
         margin: 0 !important;
         font-weight: 600;
         font-size: 24px;
@@ -152,7 +152,7 @@
 }
 
 @media screen and (max-width: 1850px) and (min-width: 1400px) {
-    ._title>h1 {
+    ._title>h2 {
         font-weight: 600;
         font-size: 36px;
         line-height: 120%;
@@ -186,7 +186,7 @@
     }
 
 
-    .pName>h1 {
+    .pName>h2 {
         margin: 0 !important;
         font-weight: 600;
         font-size: 20px;
@@ -209,7 +209,7 @@
         transform: scale(.5);
     }
 
-    ._title>h1 {
+    ._title>h2 {
         font-weight: 600;
         font-size: 26px;
         line-height: 120%;
@@ -243,7 +243,7 @@
     }
 
 
-    .pName>h1 {
+    .pName>h2 {
         margin: 0 !important;
         font-weight: 600;
         font-size: 20px;
@@ -266,7 +266,7 @@
         transform: scale(.5);
     }
 
-    ._title>h1 {
+    ._title>h2 {
         font-weight: 600;
         font-size: 20rem;
         white-space: nowrap;
@@ -302,7 +302,7 @@
     }
 
 
-    .pName>h1 {
+    .pName>h2 {
         margin: 0 !important;
         font-weight: 600;
         font-size: 20rem;

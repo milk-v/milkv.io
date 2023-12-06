@@ -22,7 +22,7 @@ export default () => {
             <BuyPop flag={meles} module={mars2Start} type='meles' />
             <div className={styles.melesHead}>
                 <div className={styles.titleBox}>
-                    <h1>Milk-V <span>Meles</span></h1>
+                    <h2>Milk-V <span>Meles</span></h2>
                     <p>Embarking on the RISC-V Cosmic Journey</p>
                     <div className={styles.btnbuy} onClick={() => setMeles(buy => !buy)}>
                         <Translate id='Buy.now' />
@@ -40,7 +40,7 @@ export default () => {
                 <div className={styles.tHeadSoC}>
                     <div className={styles.tHeadSoCLeft}>
                         <div className={styles.topBox}>
-                            <h1>T-Head TH1520 SoC</h1>
+                            <h2>T-Head TH1520 SoC</h2>
                             <img src="/meles/ptgLogo.svg" />
                         </div>
                         <img src="/meles/socchart.webp" />
@@ -49,14 +49,14 @@ export default () => {
                         <div className={styles.hzBox}>
                             <img src="/mars/risc-v.svg" />
                             <p>Quad Core RISC-V 64GCV C910</p>
-                            <h1 className={styles.shaodwText}><span>up to</span>2.0GHz</h1>
+                            <h2 className={styles.shaodwText}><span>up to</span>2.0GHz</h2>
                         </div>
                         <img src="/meles/over-meles-size.webp" />
                     </div>
                 </div>
                 <div className={styles.viaeoBox}>
                     <div className={styles.viaeoLeft}>
-                        <h1>Video Processing Master</h1>
+                        <h2>Video Processing Master</h2>
                         <p>Support H.265/H.264/VP9 standard video encoding, the highest resolution up to 4K@40fps.</p>
                         <p>Support H.265/H.264/VP9/AVS2 and other multi-format video decoding, the highest resolution up to 4K@75fps.</p>
                         <p>Support JPEG codec, maximum resolution up to 32Kx32K.</p>
@@ -70,7 +70,7 @@ export default () => {
                         </div>
                     </div>
                     <div className={styles.viaeoRight}>
-                        <h1>Display,<br></br>More Than One Way</h1>
+                        <h2>Display,<br></br>More Than One Way</h2>
                         <img src="/meles/over-meles-4k60fps.svg" />
                         <p>1x HDMI2.0</p>
                         <p>1x MIPI DSI 4-lane</p>
@@ -108,7 +108,7 @@ export default () => {
                 </ul>
                 <div className={styles.highBox}>
                     <div className={styles.highBoxLeft}>
-                        <h1>High Computing Power, True AI</h1>
+                        <h2>High Computing Power, True AI</h2>
                         <table className={styles.highTable}>
                             <tbody>
                                 <tr>
@@ -148,10 +148,10 @@ export default () => {
                     </div>
                     <div className={styles.highBoxRight}>
                         <div className={styles.gpuTitle}>
-                            <h1>GPU</h1>
+                            <h2>GPU</h2>
                             <h2>3D Graphics Acceleration Engine</h2>
                         </div>
-                        <h1>3200Mpixel/sec@800MHz</h1>
+                        <h2>3200Mpixel/sec@800MHz</h2>
                         <div className={styles.gpuIcons}>
                             <img src="/meles/opengl-icon.webp" />
                             <img src="/meles/opencl-icon.webp" />
@@ -162,12 +162,12 @@ export default () => {
                 </div>
                 <div className={styles.sizeBox}>
                     <div className={styles.sizeLeft}>
-                        <h1>I Can See the World, Too.</h1>
+                        <h2>I Can See the World, Too.</h2>
                         <img src="/meles/chart-left.webp" />
                         <div className={styles.shadowBox}></div>
                     </div>
                     <div className={styles.sizeRight}>
-                        <h1>One-click Make Things Easy</h1>
+                        <h2>One-click Make Things Easy</h2>
                         <img src="/meles/chart-right.webp" />
                         <div className={styles.shadowBox}></div>
                     </div>
@@ -190,7 +190,7 @@ export default () => {
                         <img src="/meles/take-04.webp" />
                     </li>
                 </ul>
-                <h1 className={styles.title}><Translate id='line.title.TechSpecs' /></h1>
+                <h2 className={styles.title}><Translate id='line.title.TechSpecs' /></h2>
                 <p className={styles.moreP}>Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH1520. It is powered by a Quad Core RISC-V 64GCV C910, capable of running up to 2.0GHz. This SBC is packed with rich interfaces and boasts powerful computing and AI capabilities, making it an ideal RISC-V intelligent hardware platform for hobbyists, makers, engineers, teachers, and students.</p>
                 <h2 className={styles.headword}><Translate id='duo.info.text.Hardware' /></h2>
                 <table className={styles.tableBox}>

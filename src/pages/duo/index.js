@@ -39,7 +39,7 @@ function DetailsPage() {
       }}>
         <div className={cssList.titleBox}>
           <p className={cssList.meet}><Translate id='Duo.text.title1' /></p>
-          <h1 className={cssList.titleTxt}>Milk-V <Translate id='duo' /></h1>
+          <h2 className={cssList.titleTxt}>Milk-V <Translate id='duo' /></h2>
           <h2 className={cssList.textLine}><Translate id='Duo.text.title2' /></h2>
           <p className={cssList.low}><Translate id='Duo.text.title3' /></p>
           <div className={cssList.btnbuy} onClick={() => setDuo2(buy => !buy)}><Translate id='Buy.now' /></div>
@@ -48,7 +48,7 @@ function DetailsPage() {
         <div className={cssList.rotateImg}></div>
         <div className={cssList.title}><Translate id='line.title.Specification' /></div>
         <div className={cssList.chartBox}>
-          <h1 className={cssList.chartTitle}><Translate id='info.text.powerful' /></h1>
+          <h2 className={cssList.chartTitle}><Translate id='info.text.powerful' /></h2>
           <p className={cssList.chartTitle2}><Translate id='info.text.CPU' /></p>
           <div className={cssList.largeText}>
             <p className={cssList.one1}>1</p>
@@ -79,7 +79,7 @@ function DetailsPage() {
               <div className={cssList.shadow7}></div>
             </div>
           </div>
-          <div className={cssList.footerText}><h1>26P GPIO</h1></div>
+          <div className={cssList.footerText}><h2>26P GPIO</h2></div>
           <div className={cssList.bigExhibits}>
             <div className={cssList.head}><Translate id='info.text.Incredible' /></div>
             <div className={cssList.support}><Translate id='info.text.support' /></div>
@@ -134,21 +134,21 @@ function DetailsPage() {
         <div className={cssList.chartTech}>
           <div className={cssList.title}><Translate id='line.title.TechSpecs' /></div>
           <div className={cssList.tech_text1}>
-            <h1 className={cssList.tech_title}><Translate id='duo.info.text.Introduction' /></h1>
+            <h2 className={cssList.tech_title}><Translate id='duo.info.text.Introduction' /></h2>
             <p className={cssList.tech_p}><Translate id='duo.info.text.Introduction.max' /></p>
           </div>
           <div className={cssList.tech_text2}>
-            <h1 className={cssList.tech_title}><Translate id='duo.info.text.Hardware' /></h1>
+            <h2 className={cssList.tech_title}><Translate id='duo.info.text.Hardware' /></h2>
             <p className={cssList.tech_p_line}>- CVITEK CV1800B (C906@1Ghz + C906@700MHz)</p>
             <p className={cssList.tech_p_line}>- <Translate id='duo.Hardware.info1' /></p>
             <p className={cssList.tech_p_line}>- <Translate id='info.text.RAM' /></p>
             <p className={cssList.tech_p_line}>- <Translate id='duo.Hardware.info2' /></p>
             <p className={cssList.tech_p_line}>- <Translate id='duo.Hardware.info3' /></p>
           </div>
-          <h1 className={cssList.tech_title3}><Translate id='duo.info.text.pinOut' /></h1>
+          <h2 className={cssList.tech_title3}><Translate id='duo.info.text.pinOut' /></h2>
           <img src='/docs/duo/pinout.webp' className={cssList.pinImg}></img>
           <div className={cssList.document}>
-            <h1><Translate id='duo.info.text.Documents' /></h1>
+            <h2><Translate id='duo.info.text.Documents' /></h2>
             <ul>
               <li>
                 <div className={cssList.down}></div>

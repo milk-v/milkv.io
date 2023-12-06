@@ -34,7 +34,7 @@
     align-items: center;
 }
 
-.leftTitle>h1 {
+.leftTitle>h2 {
     text-align: center;
     font-style: normal;
     font-weight: 700;
@@ -43,7 +43,7 @@
     margin-bottom: 0;
 }
 
-.leftTitle>h1>span {
+.leftTitle>h2>span {
     background: linear-gradient(90deg, #FFC500 0%, #C21500 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -451,7 +451,7 @@
         height: 432px;
     }
 
-    .leftTitle>h1 {
+    .leftTitle>h2 {
         font-size: 76px;
     }
 
@@ -773,7 +773,7 @@
         height: 432px;
     }
 
-    .leftTitle>h1 {
+    .leftTitle>h2 {
         font-size: 76px;
     }
 
@@ -1086,7 +1086,7 @@
         height: calc(432px*.9*.7);
     }
 
-    .leftTitle>h1 {
+    .leftTitle>h2 {
         font-size: calc(76px*.9*.7);
     }
 
@@ -1398,7 +1398,7 @@
         height: calc(432px*.9*.7*.8);
     }
 
-    .leftTitle>h1 {
+    .leftTitle>h2 {
         font-size: calc(76px*.9*.7*.8);
     }
 
@@ -1711,7 +1711,7 @@
         height: calc(432rem*.25);
     }
 
-    .leftTitle>h1 {
+    .leftTitle>h2 {
         font-size: 24rem;
     }
 

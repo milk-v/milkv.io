@@ -156,7 +156,7 @@
     border-radius: 10px;
 }
 
-.popBox>h1 {
+.popBox>h2 {
     font-size: 44px;
     color: #242424;
     margin: 50px auto 30px;
@@ -172,7 +172,7 @@
     font-weight: 400;
 }
 
-.popBox>h1>span {
+.popBox>h2>span {
     font-size: 48px;
 }
 
@@ -492,7 +492,7 @@
         border-radius: 10rem;
     }
 
-    .popBox>h1 {
+    .popBox>h2 {
         font-size: 28rem;
         color: #242424;
         margin: 50rem auto 30rem;
@@ -509,7 +509,7 @@
         font-weight: 400;
     }
 
-    .popBox>h1>span {
+    .popBox>h2>span {
         font-size: 48rem;
     }
 

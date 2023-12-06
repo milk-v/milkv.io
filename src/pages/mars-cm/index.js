@@ -27,7 +27,7 @@ export default () => {
                 <div className={styles.header_page}>
                     <div className={styles.title_content}>
                         <div className={styles.leftTitle}>
-                            <h1><span>Milk-V Mars</span> CM</h1>
+                            <h2><span>Milk-V Mars</span> CM</h2>
                             <p>A RISC-V Compute Module in compatible form factor</p>
                             <div className={styles.btnbuy} onClick={() => setMarscm(buy => !buy)}>
                                 <Translate id='Buy.now' />
@@ -137,7 +137,7 @@ export default () => {
                         </div>
                     </div>
                     <div className={styles.tabBox_tech}>
-                        <h1 className={styles.title}><Translate id='line.title.TechSpecs' /></h1>
+                        <h2 className={styles.title}><Translate id='line.title.TechSpecs' /></h2>
                         <p className={styles.moreP}>The Mars Compute Module is a System on Module (SoM) based on a the StarFive JH7110 System on Chip (SoC). The Mars CM integrates the Central Process Unit (CPU), Power Management Unit (PMU), DRAM memory, flash storage and wireless connectivity (WiFi 5 and BT 5.2) in a small form factor of just 55mm x 40mm. The Mars Compute Module offers a cost-efficient solution out of the box for many different applications.</p>
                         <h2 className={styles.headword}><Translate id='duo.info.text.Hardware' /></h2>
                         <table className={styles.tableBox}>

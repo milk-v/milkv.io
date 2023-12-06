@@ -25,7 +25,7 @@ function Center() {
         <div className={cCss.center_Box}>
           <div className={cCss.pagBox}></div>
           <div className={cCss.titleBox}>
-            <h1>Milk-V <Translate id='pioneer' /></h1>
+            <h2>Milk-V <Translate id='pioneer' /></h2>
             <p><Translate id='pioneer.page.title' /></p>
             <div className={cCss.buy}>
               <div className={cCss.btnbuy} onClick={() => setPionner(buy => !buy)}><Translate id='Buy.now' /></div>
@@ -37,7 +37,7 @@ function Center() {
         <div className={cCss.title}><Translate id='line.title.Specification' /></div>
         <div className={cCss.power}>
           <div className={cCss.power1}>
-            <h1><Translate id='pioneer.page.Specification.text1' /></h1>
+            <h2><Translate id='pioneer.page.Specification.text1' /></h2>
             <div className={cCss.powerimg}></div>
           </div>
           <div className={cCss.power2}>
@@ -73,19 +73,19 @@ function Center() {
             <ul>
               <li>
                 <p><Translate id='pioneer.page.Box.text1' /></p>
-                <h1 className={cCss.h1_1}>AMD R5 230</h1>
+                <h2 className={cCss.h1_1}>AMD R5 230</h2>
                 <div><Translate id='pioneer.page.Box.text2' /></div>
                 <div className={cCss.show1}></div>
               </li>
               <li>
                 <p><Translate id='pioneer.page.Box.text1' /></p>
-                <h1 className={cCss.h1_2}>Intel X540-T2</h1>
+                <h2 className={cCss.h1_2}>Intel X540-T2</h2>
                 <div><Translate id='pioneer.page.Box.text3' /></div>
                 <div className={cCss.show2}></div>
               </li>
               <li>
                 <p><Translate id='pioneer.page.Box.text1' /></p>
-                <h1 className={cCss.h1_3}>MSI A350 350W</h1>
+                <h2 className={cCss.h1_3}>MSI A350 350W</h2>
                 <div><Translate id='pioneer.page.Box.text4' /></div>
                 <div className={cCss.show3}></div>
               </li>
@@ -95,19 +95,19 @@ function Center() {
             <ul>
               <li>
                 <p><Translate id='pioneer.page.Box.text1' /></p>
-                <h1 className={cCss.h1_1}>128GB 3200MHz</h1>
+                <h2 className={cCss.h1_1}>128GB 3200MHz</h2>
                 <div>DDR4</div>
                 <div className={cCss.show1}></div>
               </li>
               <li>
                 <p><Translate id='pioneer.page.Box.text1' /></p>
-                <h1 className={cCss.h1_2}>1TB</h1>
+                <h2 className={cCss.h1_2}>1TB</h2>
                 <div>PCIe 3.0 SSD</div>
                 <div className={cCss.show2}></div>
               </li>
               <li>
                 <p><Translate id='pioneer.page.Box.text1' /></p>
-                <h1 className={cCss.h1_3}>RGB</h1>
+                <h2 className={cCss.h1_3}>RGB</h2>
                 <div><Translate id='pioneer.page.Box.text5' /></div>
                 <div className={cCss.show3}></div>
               </li>
@@ -155,7 +155,7 @@ function Center() {
             <p className={cCss.tech_p}><Translate id='pioneer.page.info' /></p>
           </div>
           <div className={cCss.tech_text2}>
-            <h1 className={cCss.tech_title}><Translate id='duo.info.text.Hardware' /></h1>
+            <h2 className={cCss.tech_title}><Translate id='duo.info.text.Hardware' /></h2>
             <h2>Pioneer Board</h2>
             <p className={cCss.tech_p_line}>- SOPHGO SG2042 Chip (64-core C920, RVV 0.71)</p>
             <p className={cCss.tech_p_line}>- 64 Core RISC-V CPU up to 2GHz</p>

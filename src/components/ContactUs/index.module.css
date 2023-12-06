@@ -42,7 +42,7 @@
     color: #2D88C9;
 }
 
-.touchBox>h1 {
+.touchBox>h2 {
     font-weight: 700;
     line-height: 120%;
     color: #FFFFFF;
@@ -125,7 +125,7 @@
     border-radius: 10px;
 }
 
-.popBox>h1 {
+.popBox>h2 {
     font-size: 44px;
     color: #242424;
     margin: 50px auto 30px;
@@ -141,7 +141,7 @@
     font-weight: 400;
 }
 
-.popBox>h1>span {
+.popBox>h2>span {
     font-size: 48px;
 }
 
@@ -226,7 +226,7 @@
         font-size: 23px;
     }
 
-    .touchBox>h1 {
+    .touchBox>h2 {
         font-size: 23px;
         margin-bottom: 60px;
     }
@@ -294,7 +294,7 @@
         font-size: 23px;
     }
 
-    .touchBox>h1 {
+    .touchBox>h2 {
         font-size: 23px;
         margin-bottom: 60px;
     }
@@ -362,7 +362,7 @@
         font-size: 18px;
     }
 
-    .touchBox>h1 {
+    .touchBox>h2 {
         font-size: 23px;
         margin-bottom: 40px;
     }
@@ -432,7 +432,7 @@
         font-size: 14px;
     }
 
-    .touchBox>h1 {
+    .touchBox>h2 {
         font-size: 18px;
         margin-bottom: 20px;
     }
@@ -485,7 +485,7 @@
         margin-top: 20rem;
     }
 
-    .touchBox>h1 {
+    .touchBox>h2 {
         display: none;
     }
 
@@ -535,7 +535,7 @@
         font-size: 14rem;
     }
 
-    .touchBox>h1 {
+    .touchBox>h2 {
         font-size: 18rem;
         margin-bottom: 20rem;
     }
@@ -597,7 +597,7 @@
         border-radius: 10rem;
     }
 
-    .popBox>h1 {
+    .popBox>h2 {
         font-size: 28rem;
         color: #242424;
         margin: 50rem auto 30rem;
@@ -614,7 +614,7 @@
         font-weight: 400;
     }
 
-    .popBox>h1>span {
+    .popBox>h2>span {
         font-size: 48rem;
     }
 

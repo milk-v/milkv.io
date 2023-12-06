@@ -24,14 +24,14 @@ export default () => {
             <div className={styles.marsBox}>
                 <div className={styles.headImage}>
                     <div className={styles.titleBox}>
-                        <h1>Milk-V <Translate id='mars' /></h1>
+                        <h2>Milk-V <Translate id='mars' /></h2>
                         <p><Translate id='mars.page.title' /></p>
                         <div className={styles.btnbuy} onClick={() => setmars2(buy => !buy)}><Translate id='Buy.now' /></div>
                     </div>
                 </div>
                 <div className={styles.prodcuts}>
                     <div className={styles.prodcuts01}>
-                        <h1><Translate id='mars.page.info1' /></h1>
+                        <h2><Translate id='mars.page.info1' /></h2>
                     </div>
                     <div className={styles.prodcuts02}>
                         <img src='/mars/risc-v.svg' />
@@ -41,7 +41,7 @@ export default () => {
                         40 Pin GPIO Header
                     </div>
                     <div className={styles.prodcuts04}>
-                        <h1>Starfive JH7110</h1>
+                        <h2>Starfive JH7110</h2>
                         <p><Translate id='mars.page.info3' /></p>
                     </div>
                     <div className={styles.prodcuts05}>
@@ -49,18 +49,18 @@ export default () => {
                         <span><Translate id='mars.page.info5' /></span>
                     </div>
                     <div className={styles.prodcuts06}>
-                        <h1><Translate id='mars.page.info6' /></h1>
+                        <h2><Translate id='mars.page.info6' /></h2>
                         <p><Translate id='mars.page.info7' /></p>
                     </div>
                     <ul className={styles.productsUl}>
                         <li className={styles.li01}>
-                            <h1>MIPI DSI</h1>
+                            <h2>MIPI DSI</h2>
                             <p className={styles.titleMinP}>4lanes and 2lanes available</p>
                             <p className={styles.title_p}>- 4K@30FPS output</p>
                             <p className={styles.title_p}>- 4K@60FPS decoding</p>
                         </li>
                         <li className={styles.li02}>
-                            <h1><Translate id='mars.page.info8' /></h1>
+                            <h2><Translate id='mars.page.info8' /></h2>
                             <p className={styles.titleMinP}>external M.2 E Key</p>
                         </li>
                         <li className={styles.li03}>
@@ -69,7 +69,7 @@ export default () => {
                         </li>
                     </ul>
                 </div>
-                <h1 className={styles.title}><Translate id='line.title.TechSpecs' /></h1>
+                <h2 className={styles.title}><Translate id='line.title.TechSpecs' /></h2>
                 <p className={styles.moreP}><Translate id='mars.tech.info' /></p>
                 <h2><Translate id='duo.info.text.Hardware' /></h2>
                 <table className={styles.tableBox}>
