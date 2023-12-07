@@ -23,7 +23,13 @@ const Duo_module = (props) => {
         <div className={styles.main_module}>
           <div className={styles.left_title}>
             <h2>Milk-V Duo</h2>
-            <p><Translate id='homepage.corporations.duo' /></p>
+            <h3>Now Duo</h3>
+            <div className={styles.vis_link}>
+              <Link>Duo 64</Link>
+              |
+              <Link>Duo 256</Link>
+            </div>
+            <p className={styles.duo_info_p}><Translate id='homepage.corporations.duo' /></p>
             <div className={styles.learnMore_use}>
               <Link href='/duo'><Translate id='homepage.corporations.duolearnmore' /></Link>
               <div className={styles.buy_button} onClick={() => { setDuo(true) }}><Translate id='homepage.corporations.duobuynow' /></div>
@@ -193,7 +199,7 @@ const Home_web = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       if (!isPaused && window.innerWidth > 750) {
-        setIndex(prevCount => (prevCount === 5 ? 1 : prevCount + 1));
+        // setIndex(prevCount => (prevCount === 5 ? 1 : prevCount + 1));
       }
     }, 3000);
 

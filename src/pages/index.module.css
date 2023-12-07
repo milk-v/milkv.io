@@ -316,6 +316,40 @@
     margin-bottom: 0;
 }
 
+.vis_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #818181;
+    font-weight: lighter;
+}
+
+.vis_link>a {
+    border-radius: 10px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto Flex;
+    font-style: normal;
+    font-weight: 400;
+    /* 177.778% */
+    letter-spacing: 0.48px;
+    white-space: nowrap;
+}
+
+.left_title>h3 {
+    color: #000;
+    text-align: center;
+    font-family: Roboto Flex;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
 @media screen and (min-width: 1950px) {
     .header_title {
         width: 1920px;
@@ -431,6 +465,30 @@
         font-size: 24px;
         margin-bottom: 0;
     }
+
+    .vis_link {
+        margin: 0px 0 40px;
+        font-size: 32px;
+    }
+
+    .vis_link>a {
+        width: 99px;
+        height: 30px;
+        padding: 10px;
+        font-size: 18px;
+        margin: 10px 10px 0;
+    }
+
+    .left_title>h3 {
+        margin-top: -10px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+
+    .left_title>.duo_info_p {
+        margin-bottom: 20px;
+    }
+
 }
 
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
@@ -553,6 +611,29 @@
     .button_use>a {
         margin-right: 50px;
     }
+
+    .vis_link {
+        margin: 0px 0 20px;
+        font-size: 24px;
+    }
+
+    .vis_link>a {
+        width: 90px;
+        height: 30px;
+        padding: 10px;
+        font-size: 16px;
+        margin: 5px 10px 0;
+    }
+
+    .left_title>h3 {
+        margin-top: -10px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+
+    .left_title>.duo_info_p {
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1000px) {
@@ -672,6 +753,28 @@
     .docs_info>p {
         font-size: 16px;
         margin-bottom: 0;
+    }
+
+    .vis_link {
+        margin: 0px 0 20px;
+        font-size: 20px;
+    }
+
+    .vis_link>a {
+        width: 80px;
+        height: 25px;
+        font-size: 16px;
+        margin: 5px 10px 0;
+    }
+
+    .left_title>h3 {
+        margin-top: -10px;
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+
+    .left_title>.duo_info_p {
+        margin-bottom: 0px !important;
     }
 }
 
@@ -794,6 +897,28 @@
     .docs_info>p {
         font-size: 14px;
         margin-bottom: 0;
+    }
+
+    .vis_link {
+        margin: 0px 0 5px;
+        font-size: 20px;
+    }
+
+    .vis_link>a {
+        width: 80px;
+        height: 25px;
+        font-size: 14px;
+        margin: 5px 10px 0;
+    }
+
+    .left_title>h3 {
+        margin-top: -10px;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+
+    .left_title>.duo_info_p {
+        margin-bottom: 5px !important;
     }
 }
 
@@ -950,5 +1075,27 @@
 
     .view_mian>div {
         width: 100%;
+    }
+
+    .vis_link {
+        margin: 0rem 0 5rem;
+        font-size: 20rem;
+    }
+
+    .vis_link>a {
+        width: 80rem;
+        height: 25rem;
+        font-size: 12rem;
+        margin: 5rem 10rem 0;
+    }
+
+    .left_title>h3 {
+        margin-top: -10rem;
+        margin-bottom: 0rem;
+        font-size: 12rem;
+    }
+
+    .left_title>.duo_info_p {
+        margin-bottom: 5rem !important;
     }
 }
