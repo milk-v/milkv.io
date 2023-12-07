@@ -199,7 +199,7 @@ const Home_web = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       if (!isPaused && window.innerWidth > 750) {
-        // setIndex(prevCount => (prevCount === 5 ? 1 : prevCount + 1));
+        setIndex(prevCount => (prevCount === 5 ? 1 : prevCount + 1));
       }
     }, 3000);
 
