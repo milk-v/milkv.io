@@ -974,7 +974,7 @@
     "description": "Why RISC-V ? booton"
   },
   "homepage.corporations.duo": {
-    "message": "Двухядерный процессор с частотой 1 ГГц, богатые возможности ввода-вывода для UART, I2C, SPI, SDIO, ADC и т.д., работа под управлением Linux или RTOS или обоих одновременно.",
+    "message": "Два ядра до 1 ГГц (опционально RISC-V / ARM), до 256 МБ памяти и TPU 1TOPS@INT8. Возможность одновременной работы с Linux и RTOS, богатые интерфейсы ввода-вывода.",
     "description": "duo description"
   },
   "homepage.corporations.duolearnmore": {

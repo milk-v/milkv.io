@@ -974,7 +974,7 @@
     "description": "Why RISC-V ? booton"
   },
   "homepage.corporations.duo": {
-    "message": "Dual cores up to 1GHz,Rich IO for UART, I2C, SPI, SDIO, ADC and more,Running Linux or RTOS or both simultaneously.",
+    "message": "Dual cores up to 1GHz (optional RISC-V / ARM), up to 256MB of memory, and a 1TOPS@INT8 TPU. Capable of running both Linux and RTOS simultaneously, with rich I/O interfaces.",
     "description": "duo description"
   },
   "homepage.corporations.duolearnmore": {

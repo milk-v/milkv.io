@@ -974,7 +974,7 @@
     "description": "Why RISC-V ? booton"
   },
   "homepage.corporations.duo": {
-    "message": "双核心，主频高达 1GHz，丰富的 IO，包括 UART、I2C、SPI、SDIO、ADC 等，可同时运行 Linux 或 RTOS。",
+    "message": "主频高达 1GHz 的双核（可选 RISC-V / ARM）、高达 256MB 的内存和 1TOPS@INT8 TPU。可同时运行 Linux 和 RTOS，具有丰富的 I/O 接口。",
     "description": "duo description"
   },
   "homepage.corporations.duolearnmore": {
