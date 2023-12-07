@@ -25,9 +25,9 @@ const Duo_module = (props) => {
             <h2>Milk-V Duo</h2>
             <h3>Now Duo</h3>
             <div className={styles.vis_link}>
-              <Link>Duo 64</Link>
+              <Link>Duo</Link>
               |
-              <Link>Duo 256</Link>
+              <Link>Duo 256M</Link>
             </div>
             <p className={styles.duo_info_p}><Translate id='homepage.corporations.duo' /></p>
             <div className={styles.learnMore_use}>
