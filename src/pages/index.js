@@ -10,6 +10,30 @@ import Footer from "../components/Footer"
 import ContactBar from "../components/ContactBar"
 import MetaData from "../components/MetaData"
 
+const Chips_module = () => {
+  return (
+    <>
+      <div className={styles.info_module}>
+        <div className={styles.main_module}>
+          <ul className={styles.chips_list}>
+            <li className={styles.right_line}>
+              <img src='/home/sg2000.webp' alt='SG2000' />
+              <Link to='/'>SG2000</Link>
+            </li>
+            <li className={styles.right_line}>
+              <img src='/home/sg2002.webp' alt='SG2002' />
+              <Link to='/'>SG2002</Link>
+            </li>
+            <li>
+              <img src='/home/sg2002.webp' alt='SG2002' />
+              <Link to='/'>SG2002</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </>
+  )
+}
 
 const Duo_module = (props) => {
   const [duo, setDuo] = useState(false)
@@ -133,6 +157,7 @@ const Mars_module = (props) => {
     </>
   )
 }
+
 const Meles_module = (props) => {
   const [pioneer, setPionner] = useState(false)
   const pionnerStart = () => {
@@ -159,6 +184,7 @@ const Meles_module = (props) => {
     </>
   )
 }
+
 const Vega_module = (props) => {
   const [pioneer, setPionner] = useState(false)
   const pionnerStart = () => {
@@ -185,10 +211,12 @@ const Vega_module = (props) => {
     </>
   )
 }
+
 const Home_web = () => {
-  const [index, setIndex] = useState(1)
+  const [index, setIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false);
   const tabs = [
+    { name: 'Chips', index: 0, element: <Chips_module /> },
     { name: 'Duo', index: 1, element: <Duo_module /> },
     { name: 'Pioneer', index: 2, element: <Pionner_module /> },
     { name: 'Mars', index: 3, element: <Mars_module /> },
@@ -199,7 +227,7 @@ const Home_web = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       if (!isPaused && window.innerWidth > 750) {
-        setIndex(prevCount => (prevCount === 5 ? 1 : prevCount + 1));
+        // setIndex(prevCount => (prevCount === 5 ? 0 : prevCount + 1));
       }
     }, 3000);
 
@@ -207,7 +235,6 @@ const Home_web = () => {
       clearInterval(timer);
     }
   }, [isPaused]);
-
 
   const handleMouseEnter = () => {
     setIsPaused(true);
