@@ -70,22 +70,13 @@ const config = {
 
         // Optional: see doc section below
         contextualSearch: true,
-
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
         externalUrlRegex: 'external\\.com|domain\\.com',
-
-        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
         replaceSearchResultPathname: {
           from: '/docs/', // or as RegExp: /\/docs\//
           to: '/',
         },
-
-        // Optional: Algolia search parameters
         searchParameters: {},
-
-        // Optional: path for search page that enabled by default (`false` to disable it)
         searchPagePath: false,
-
       },
       colorMode: {
         disableSwitch: true,
@@ -173,6 +164,25 @@ const config = {
                 type: 'doc',
                 label: 'Vega',
                 docId: 'vega/overview',
+              },
+            ],
+          },
+          {
+            type: 'dropdown',
+            label: 'Chips',
+            position: 'right',
+            items: [
+              {
+                label: 'SG2000',
+                to: '/chips/sg2000',
+              },
+              {
+                label: 'SG2002',
+                to: '/chips/sg2002'
+              },
+              {
+                label: 'CV1800B',
+                to: '/chips/cv1800b'
               },
             ],
           },

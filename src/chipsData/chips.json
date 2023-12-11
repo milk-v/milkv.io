@@ -1,0 +1,236 @@
+{
+    "sg2000": {
+        "title": "SG2002 is a high-performance, low-power chip for edge intelligent surveillance IP cameras, intelligent cat-eye door locks, visual doorbells, home intelligence and many other product areas. ",
+        "buy_link": "",
+        "front_view": "/chips/sg2000/sg2000-frontview.webp",
+        "chip_view": [
+            "/chips/sg2000/sg2000-01.webp",
+            "/chips/sg2000/sg2000-02.webp",
+            "/chips/sg2000/sg2000-03.webp"
+        ],
+        "chip_intro_text": [
+            "SG2000 is a high-performance, low-power chip designed for various product fields such as edge intelligent surveillance IP cameras, local facial recognition attendance machines, and smart home devices. It integrates H.264/H.265 video compression and decoding and ISP capabilities. It supports various image enhancement and correction algorithms like HDR wide dynamic range, 3D noise reduction, defogging, and lens distortion correction, providing customers with professional-grade video image quality.",
+            "The chip also integrates an in-house TPU, delivering approximately 0.5TOPS of computing power under INT8 operations. The specially designed TPU scheduling engine efficiently provides high-bandwidth data flow for tensor processing unit cores. It also offers users a powerful deep learning model compiler and software SDK development kit. Mainstream deep learning frameworks such as Caffe, Pytorch, ONNX, MXNet, and TensorFlow (Lite) can be easily ported to this platform."
+        ],
+        "diagram_url": "/chips/sg2000/sg2000-diagram.webp",
+        "hardware": {
+            "RISC-V CPU": [
+                "1xC906@1GHz、1xC906@700MHz"
+            ],
+            "Rm CPU": [
+                "1xCortex-A53@1GHz"
+            ],
+            "MCU": [
+                "8051@6KB SRAM"
+            ],
+            "TPU": [
+                "0.5 Top@INT8"
+            ],
+            "Memory": [
+                "Sip DRAM 512M"
+            ],
+            "Video Module": [
+                "ISP 5M@30fps",
+                "2L MIPI DSI 5M@30fps",
+                "4L or 2L+2L MIPI CSI 5M@30fps",
+                "H.265/H.264 Decoding and Encoding 5M@30fps"
+            ],
+            "Audio Module": [
+                "16bit Audio Codec",
+                "2xI2S/PCM",
+                "1xDMIC"
+            ],
+            "Storage": [
+                "SIP-NOR、SPI-NAND、eMMC5.0、2xSDIO3.0"
+            ],
+            "Network": [
+                "10M/100M MAC PHY"
+            ],
+            "Security Module": [
+                "Crypto/Secure boot/TRNG/Efuze"
+            ],
+            "Peripherals": [
+                "1xUSB2.0 DRD/5 or 7xUART/3 or 4xSPI/15 or 16xPWM/"
+            ],
+            "Temperature Range": [
+                "0℃～70℃"
+            ]
+        },
+        "scenarios": [
+            {
+                "img_link": "/chips/scenarios1.webp",
+                "scenarios_name": "Intelligent door locks"
+            },
+            {
+                "img_link": "/chips/scenarios2.webp",
+                "scenarios_name": "Video Conference"
+            },
+            {
+                "img_link": "/chips/scenarios3.webp",
+                "scenarios_name": "Industrial Internet of Things"
+            }
+        ],
+        "downloads": [
+            {
+                "download_link": "/",
+                "download_name": "SC2002规格书"
+            }
+        ]
+    },
+    "sg2002": {
+        "title": "SG2002 is a high-performance, low-power chip for edge intelligent surveillance IP cameras, intelligent cat-eye door locks, visual doorbells, home intelligence and many other product areas. ",
+        "buy_link": "",
+        "front_view": "/chips/sg2000/sg2000-frontview.webp",
+        "chip_view": [
+            "/chips/sg2000/sg2000-01.webp",
+            "/chips/sg2000/sg2000-02.webp",
+            "/chips/sg2000/sg2000-03.webp"
+        ],
+        "chip_intro_text": [
+            "SG2000 is a high-performance, low-power chip designed for various product fields such as edge intelligent surveillance IP cameras, local facial recognition attendance machines, and smart home devices. It integrates H.264/H.265 video compression and decoding and ISP capabilities. It supports various image enhancement and correction algorithms like HDR wide dynamic range, 3D noise reduction, defogging, and lens distortion correction, providing customers with professional-grade video image quality.",
+            "The chip also integrates an in-house TPU, delivering approximately 0.5TOPS of computing power under INT8 operations. The specially designed TPU scheduling engine efficiently provides high-bandwidth data flow for tensor processing unit cores. It also offers users a powerful deep learning model compiler and software SDK development kit. Mainstream deep learning frameworks such as Caffe, Pytorch, ONNX, MXNet, and TensorFlow (Lite) can be easily ported to this platform."
+        ],
+        "diagram_url": "/chips/sg2000/sg2000-diagram.webp",
+        "hardware": {
+            "RISC-V CPU": [
+                "1xC906@1GHz、1xC906@700MHz"
+            ],
+            "Rm CPU": [
+                "1xCortex-A53@1GHz"
+            ],
+            "MCU": [
+                "8051@6KB SRAM"
+            ],
+            "TPU": [
+                "0.5 Top@INT8"
+            ],
+            "Memory": [
+                "Sip DRAM 512M"
+            ],
+            "Video Module": [
+                "ISP 5M@30fps",
+                "2L MIPI DSI 5M@30fps",
+                "4L or 2L+2L MIPI CSI 5M@30fps",
+                "H.265/H.264 Decoding and Encoding 5M@30fps"
+            ],
+            "Audio Module": [
+                "16bit Audio Codec",
+                "2xI2S/PCM",
+                "1xDMIC"
+            ],
+            "Storage": [
+                "SIP-NOR、SPI-NAND、eMMC5.0、2xSDIO3.0"
+            ],
+            "Network": [
+                "10M/100M MAC PHY"
+            ],
+            "Security Module": [
+                "Crypto/Secure boot/TRNG/Efuze"
+            ],
+            "Peripherals": [
+                "1xUSB2.0 DRD/5 or 7xUART/3 or 4xSPI/15 or 16xPWM/"
+            ],
+            "Temperature Range": [
+                "0℃～70℃"
+            ]
+        },
+        "scenarios": [
+            {
+                "img_link": "/chips/scenarios1.webp",
+                "scenarios_name": "Intelligent door locks"
+            },
+            {
+                "img_link": "/chips/scenarios2.webp",
+                "scenarios_name": "Video Conference"
+            },
+            {
+                "img_link": "/chips/scenarios3.webp",
+                "scenarios_name": "Industrial Internet of Things"
+            }
+        ],
+        "downloads": [
+            {
+                "download_link": "/",
+                "download_name": "SC2002规格书"
+            }
+        ]
+    },
+    "cv1800b": {
+        "title": "SG2002 is a high-performance, low-power chip for edge intelligent surveillance IP cameras, intelligent cat-eye door locks, visual doorbells, home intelligence and many other product areas. ",
+        "buy_link": "",
+        "front_view": "/chips/cv1800b/cv1800b-frontview.webp",
+        "chip_view": [
+            "/chips/cv1800b/cv1800b-01.webp",
+            "/chips/cv1800b/cv1800b-02.webp",
+            "/chips/cv1800b/cv1800b-03.webp"
+        ],
+        "chip_intro_text": [
+            "SG2000 is a high-performance, low-power chip designed for various product fields such as edge intelligent surveillance IP cameras, local facial recognition attendance machines, and smart home devices. It integrates H.264/H.265 video compression and decoding and ISP capabilities. It supports various image enhancement and correction algorithms like HDR wide dynamic range, 3D noise reduction, defogging, and lens distortion correction, providing customers with professional-grade video image quality.",
+            "The chip also integrates an in-house TPU, delivering approximately 0.5TOPS of computing power under INT8 operations. The specially designed TPU scheduling engine efficiently provides high-bandwidth data flow for tensor processing unit cores. It also offers users a powerful deep learning model compiler and software SDK development kit. Mainstream deep learning frameworks such as Caffe, Pytorch, ONNX, MXNet, and TensorFlow (Lite) can be easily ported to this platform."
+        ],
+        "diagram_url": "/chips/sg2000/sg2000-diagram.webp",
+        "hardware": {
+            "RISC-V CPU": [
+                "1xC906@1GHz、1xC906@700MHz"
+            ],
+            "Rm CPU": [
+                "1xCortex-A53@1GHz"
+            ],
+            "MCU": [
+                "8051@6KB SRAM"
+            ],
+            "TPU": [
+                "0.5 Top@INT8"
+            ],
+            "Memory": [
+                "Sip DRAM 512M"
+            ],
+            "Video Module": [
+                "ISP 5M@30fps",
+                "2L MIPI DSI 5M@30fps",
+                "4L or 2L+2L MIPI CSI 5M@30fps",
+                "H.265/H.264 Decoding and Encoding 5M@30fps"
+            ],
+            "Audio Module": [
+                "16bit Audio Codec",
+                "2xI2S/PCM",
+                "1xDMIC"
+            ],
+            "Storage": [
+                "SIP-NOR、SPI-NAND、eMMC5.0、2xSDIO3.0"
+            ],
+            "Network": [
+                "10M/100M MAC PHY"
+            ],
+            "Security Module": [
+                "Crypto/Secure boot/TRNG/Efuze"
+            ],
+            "Peripherals": [
+                "1xUSB2.0 DRD/5 or 7xUART/3 or 4xSPI/15 or 16xPWM/"
+            ],
+            "Temperature Range": [
+                "0℃～70℃"
+            ]
+        },
+        "scenarios": [
+            {
+                "img_link": "/chips/scenarios1.webp",
+                "scenarios_name": "Intelligent door locks"
+            },
+            {
+                "img_link": "/chips/scenarios2.webp",
+                "scenarios_name": "Video Conference"
+            },
+            {
+                "img_link": "/chips/scenarios3.webp",
+                "scenarios_name": "Industrial Internet of Things"
+            }
+        ],
+        "downloads": [
+            {
+                "download_link": "/",
+                "download_name": "SC2002规格书"
+            }
+        ]
+    }
+}
