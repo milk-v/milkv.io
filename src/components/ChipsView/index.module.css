@@ -1,0 +1,675 @@
+.chip_module {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.chip_diagram,
+.chip_introduction,
+.chip_title {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.chip_introduction,
+.chip_title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.title_l_t {
+    width: 70%;
+}
+
+.title_l_t>h4 {
+    color: #222;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.title_l_t>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 50px;
+    border: 1px solid #000;
+}
+
+.chip_view>img {
+    width: 100%;
+    border: 1px solid #999;
+}
+
+.view_ul {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.view_ul>img {
+    width: 33%;
+    border: 1px solid #999;
+}
+
+.chip_intro_t>p {
+    color: #333;
+    text-align: justify;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.chip_diagram>h2 {
+    color: #000;
+    text-align: left;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.diagram_img {
+    width: 60%;
+}
+
+.hardware_ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.hardware_ul>li {
+    display: flex;
+    align-content: flex-start;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.causality,
+.causality_data {
+    color: rgba(0, 0, 0, 0.85);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: capitalize;
+}
+
+.causality {
+    width: 25%;
+    margin: 0;
+}
+
+.causality_data {
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.causality_data>li {
+    list-style-type: disc;
+}
+
+.causality_data>li:first-child {
+    margin: 0 !important;
+}
+
+.hardware_ul>li:last-child {
+    border-bottom: none;
+}
+
+.scenarios {
+    overflow: hidden;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0;
+}
+
+.scenarios>li {
+    overflow: hidden;
+}
+
+.scenarios>li>img {
+    width: 100%;
+}
+
+.scenarios>li>p {
+    color: #666;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.download_link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.download_link>a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.download_link>a:hover .link_text {
+    color: #2d88c9;
+}
+
+.download_link>a>span {
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+
+@media screen and (min-width: 1950px) {
+
+    .chip_diagram,
+    .chip_introduction,
+    .chip_title {
+        width: 1920px;
+        padding: 100px 0;
+    }
+
+    .chip_title>img {
+        width: 300px;
+    }
+
+    .title_l_t>h4 {
+        font-size: 36px;
+        margin-bottom: 35px;
+    }
+
+    .title_l_t>a {
+        width: 220px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .chip_view {
+        width: 665px;
+    }
+
+    .view_ul {
+        margin: 20px auto 0;
+    }
+
+    .chip_intro_t {
+        width: 1180px;
+    }
+
+    .chip_intro_t>p {
+        font-size: 26px;
+        margin-bottom: 50px;
+    }
+
+    .chip_diagram>h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .diagram_img {
+        margin-bottom: 70px;
+    }
+
+    .hardware_ul {
+        margin-bottom: 100px;
+    }
+
+    .hardware_ul>li {
+        padding: 40px 0;
+    }
+
+    .causality,
+    .causality_data {
+        font-size: 28px;
+    }
+
+    .causality_data>li {
+        margin-top: 40px;
+    }
+
+    .scenarios {
+        width: 1920px;
+        margin-bottom: 100px;
+    }
+
+    .scenarios>li>p {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .download_link>a {
+        margin-bottom: 20px;
+    }
+
+    .download_link>a>img {
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    .download_link>a>span {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1450px) {
+
+    .chip_diagram,
+    .chip_introduction,
+    .chip_title {
+        width: 80%;
+        padding: 80px 0;
+    }
+
+    .chip_title>img {
+        width: 250px;
+    }
+
+    .title_l_t>h4 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .title_l_t>a {
+        width: 180px;
+        height: 55px;
+        font-size: 20px;
+    }
+
+    .chip_view {
+        width: 33%;
+    }
+
+    .view_ul {
+        margin: 20px auto 0;
+    }
+
+    .chip_intro_t {
+        width: 65%;
+    }
+
+    .chip_intro_t>p {
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+
+    .chip_diagram>h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .diagram_img {
+        margin-bottom: 60px;
+    }
+
+    .hardware_ul {
+        margin-bottom: 80px;
+    }
+
+    .hardware_ul>li {
+        padding: 30px 0;
+    }
+
+    .causality,
+    .causality_data {
+        font-size: 24px;
+    }
+
+    .causality_data>li {
+        margin-top: 35px;
+    }
+
+    .scenarios {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .scenarios>li>p {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .download_link>a {
+        margin-bottom: 20px;
+    }
+
+    .download_link>a>img {
+        width: 40px;
+        margin-right: 20px;
+    }
+
+    .download_link>a>span {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 1000px) {
+
+    .chip_diagram,
+    .chip_introduction,
+    .chip_title {
+        width: 80%;
+        padding: 60px 0;
+    }
+
+    .chip_title>img {
+        width: 200px;
+    }
+
+    .title_l_t>h4 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .title_l_t>a {
+        width: 160px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .chip_view {
+        width: 33%;
+    }
+
+    .view_ul {
+        margin: 20px auto 0;
+    }
+
+    .chip_intro_t {
+        width: 65%;
+    }
+
+    .chip_intro_t>p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .chip_diagram>h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .diagram_img {
+        margin-bottom: 60px;
+    }
+
+    .hardware_ul {
+        margin-bottom: 80px;
+    }
+
+    .hardware_ul>li {
+        padding: 25px 0;
+    }
+
+    .causality,
+    .causality_data {
+        font-size: 20px;
+    }
+
+    .causality_data>li {
+        margin-top: 35px;
+    }
+
+    .scenarios {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .scenarios>li>p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .download_link>a {
+        margin-bottom: 20px;
+    }
+
+    .download_link>a>img {
+        width: 30px;
+        margin-right: 15px;
+    }
+
+    .download_link>a>span {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 750px) {
+
+    .chip_diagram,
+    .chip_introduction,
+    .chip_title {
+        width: 90%;
+        padding: 40px 0;
+    }
+
+    .chip_title>img {
+        width: 160px;
+    }
+
+    .title_l_t>h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .title_l_t>a {
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .chip_view {
+        width: 40%;
+    }
+
+    .view_ul {
+        margin: 20px auto 0;
+    }
+
+    .chip_intro_t {
+        width: 58%;
+    }
+
+    .chip_intro_t>p {
+        font-size: 14px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .chip_diagram>h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .diagram_img {
+        margin-bottom: 60px;
+    }
+
+    .hardware_ul {
+        margin-bottom: 80px;
+    }
+
+    .hardware_ul>li {
+        padding: 25px 0;
+    }
+
+    .causality {
+        width: 30%;
+    }
+
+    .causality,
+    .causality_data {
+        font-size: 16px;
+    }
+
+    .causality_data>li {
+        margin-top: 35px;
+    }
+
+    .scenarios {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .scenarios>li>p {
+        font-size: 14px;
+        line-height: normal;
+        margin-top: 10px;
+    }
+
+    .download_link>a {
+        margin-bottom: 20px;
+    }
+
+    .download_link>a>img {
+        width: 25px;
+        margin-right: 10px;
+    }
+
+    .download_link>a>span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .chip_diagram,
+    .chip_introduction,
+    .chip_title {
+        width: 90%;
+        padding: 40rem 0;
+    }
+
+    .chip_title {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .chip_introduction {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .chip_title>img {
+        width: 160rem;
+    }
+
+    .title_l_t {
+        width: 100%;
+    }
+
+    .title_l_t>h4 {
+        width: 100%;
+        font-size: 16rem;
+        margin-bottom: 10rem;
+    }
+
+    .title_l_t>a {
+        width: 100rem;
+        height: 35rem;
+        font-size: 14rem;
+    }
+
+    .chip_view {
+        width: 100%;
+    }
+
+    .view_ul {
+        margin: 20rem auto 0;
+    }
+
+    .chip_intro_t {
+        width: 100%;
+        margin-top: 20rem;
+    }
+
+    .chip_intro_t>p {
+        font-size: 14rem;
+        margin-bottom: 20rem;
+        text-align: left;
+    }
+
+    .chip_diagram>h2 {
+        font-size: 24rem;
+        margin-bottom: 20rem;
+    }
+
+    .diagram_img {
+        margin-bottom: 60rem;
+    }
+
+    .hardware_ul {
+        margin-bottom: 80rem;
+    }
+
+    .hardware_ul>li {
+        padding: 25rem 0;
+    }
+
+    .causality {
+        width: 40%;
+    }
+
+    .causality_data {
+        width: 58%;
+    }
+
+    .causality,
+    .causality_data {
+        font-size: 12rem;
+    }
+
+    .causality_data>li {
+        margin-top: 35rem;
+    }
+
+    .scenarios {
+        width: 100%;
+        margin-bottom: 60rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+
+    .scenarios>li>p {
+        font-size: 12rem;
+        line-height: normal;
+        margin-top: 10rem;
+    }
+
+    .download_link>a {
+        margin-bottom: 20rem;
+    }
+
+    .download_link>a>img {
+        width: 20rem;
+        margin-right: 10rem;
+    }
+
+    .download_link>a>span {
+        font-size: 12rem;
+    }
+}
