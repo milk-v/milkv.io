@@ -18,15 +18,15 @@ const Chips_module = () => {
           <ul className={styles.chips_list}>
             <li className={styles.right_line}>
               <img src='/home/sg2000.webp' alt='SG2000' />
-              <Link to='/'>SG2000</Link>
+              <Link to='/chips/sg2000'>SG2000</Link>
             </li>
             <li className={styles.right_line}>
               <img src='/home/sg2002.webp' alt='SG2002' />
-              <Link to='/'>SG2002</Link>
+              <Link to='/chips/sg2002'>SG2002</Link>
             </li>
             <li>
-              <img src='/home/sg2002.webp' alt='SG2002' />
-              <Link to='/'>SG2002</Link>
+              <img src='/home/cv1800B.svg' alt='CV1800B' />
+              <Link to='/chips/cv1800b'>CV1800B</Link>
             </li>
           </ul>
         </div>
