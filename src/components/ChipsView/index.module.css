@@ -45,7 +45,7 @@
     border: 1px solid #000;
 }
 
-.chip_view>img {
+.chip_view img {
     width: 100%;
     border: 1px solid #999;
 }
@@ -183,6 +183,44 @@
     font-style: normal;
     font-weight: 400;
     text-decoration-line: underline;
+}
+
+.table {
+    position: sticky;
+    top: 60px;
+    background-color: #000;
+    height: 100px;
+    width: 100%
+}
+
+.chip_view_contexts {
+    position: relative;
+}
+
+.chip_view_contexts>.magnifiers {
+    width: 50%;
+    aspect-ratio: 665/375;
+    background-color: #adb2b6;
+    position: absolute;
+    opacity: .5;
+}
+
+.chip_view_contexts>.magnifiers_view {
+    width: 150%;
+    aspect-ratio: 665/375;
+    position: absolute;
+    top: 0;
+    right: -160%;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.chip_view_contexts>.magnifiers_view>img {
+    position: absolute;
+    width: 200%;
+    border: none;
+    max-width: none;
 }
 
 @media screen and (min-width: 1950px) {
@@ -672,4 +710,21 @@
     .download_link>a>span {
         font-size: 12rem;
     }
+
+    .chip_view_contexts {
+        position: relative;
+    }
+
+    .chip_view_contexts>.magnifiers {
+        display: none !important;
+    }
+
+    .chip_view_contexts>.magnifiers_view {
+        display: none !important;
+    }
+
+    .chip_view_contexts>.magnifiers_view>img {
+        display: none !important;
+    }
+
 }

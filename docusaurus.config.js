@@ -82,7 +82,7 @@ const config = {
         disableSwitch: true,
       },
       navbar: {
-        hideOnScroll: true,
+        hideOnScroll: false,
         logo: {
           alt: 'milkv.io',
           src: 'components/LogoNew.svg',
