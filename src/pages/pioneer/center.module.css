@@ -3480,15 +3480,14 @@
 
     .bannerBox {
         width: 340rem;
-        height: 224rem;
         margin: 20rem auto 50rem;
         display: flex;
-        overflow-x: auto;
+        flex-direction: column;
     }
 
     .bannerimg1 {
         width: 220rem;
-        height: 180rem;
+        margin: 0 auto;
         color: #fff;
         border: 1rem solid #878787;
         border-radius: 4rem;
@@ -3497,6 +3496,7 @@
 
     .bannerimg1_1 {
         width: 218rem;
+        margin: 0 auto;
         height: 180rem;
         background: url(/static/pioneer/workstation.jpg) no-repeat;
         background-size: contain;
@@ -3504,7 +3504,7 @@
 
     .bannerimg2 {
         width: 220rem;
-        height: 180rem;
+        margin: 0 auto;
         color: #fff;
         border: 1rem solid #878787;
         border-radius: 4rem;
@@ -3513,6 +3513,7 @@
 
     .bannerimg2_1 {
         width: 218rem;
+        margin: 0 auto;
         height: 180rem;
         background: url(/static/pioneer/swich.svg) no-repeat;
         background-size: 100%;
@@ -3520,6 +3521,7 @@
 
     .bannerimg3_1 {
         width: 218rem;
+        margin: 0 auto;
         height: 180rem;
         background: url(/static/pioneer/pioneer-rearview.svg) no-repeat;
         background-size: 100%;
@@ -3530,7 +3532,7 @@
         width: 220rem;
         height: 180rem;
         color: #fff;
-
+        margin: 0 auto;
         border: 1rem solid #878787;
         border-radius: 4rem;
     }
