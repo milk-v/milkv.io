@@ -226,7 +226,7 @@ export default (props) => {
                     <h2>Block Diagram</h2>
                     <img src={jsonData[chipName].diagram_url} alt="" className={styles.diagram_img} />
                 </div>
-                <div ref={chip_hardware}>
+                <div ref={chip_hardware} className={styles.headModule}>
                     <h2 >Hardware</h2>
                     <ul className={styles.hardware_ul}>
                         {
