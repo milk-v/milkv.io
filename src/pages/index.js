@@ -216,18 +216,18 @@ const Home_web = () => {
   const [index, setIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false);
   const tabs = [
-    { name: 'Chips', index: 0, element: <Chips_module /> },
-    { name: 'Duo', index: 1, element: <Duo_module /> },
-    { name: 'Pioneer', index: 2, element: <Pionner_module /> },
-    { name: 'Mars', index: 3, element: <Mars_module /> },
-    { name: 'Meles', index: 4, element: <Meles_module /> },
-    { name: 'Vega', index: 5, element: <Vega_module /> },
+    { name: 'Duo', index: 0, element: <Duo_module /> },
+    { name: 'Pioneer', index: 1, element: <Pionner_module /> },
+    { name: 'Mars', index: 2, element: <Mars_module /> },
+    { name: 'Meles', index: 3, element: <Meles_module /> },
+    { name: 'Vega', index: 4, element: <Vega_module /> },
+    { name: 'Chips', index: 5, element: <Chips_module /> },
   ];
 
   useEffect(() => {
     const timer = setInterval(() => {
       if (!isPaused && window.innerWidth > 750) {
-        // setIndex(prevCount => (prevCount === 5 ? 0 : prevCount + 1));
+        setIndex(prevCount => (prevCount === 5 ? 0 : prevCount + 1));
       }
     }, 3000);
 
