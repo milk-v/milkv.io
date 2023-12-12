@@ -1,7 +1,7 @@
 {
     "sg2000": {
-        "title": "SG2002 is a high-performance, low-power chip for edge intelligent surveillance IP cameras, intelligent cat-eye door locks, visual doorbells, home intelligence and many other product areas. ",
-        "buy_link": "",
+        "title": "SG2000 is a high-performance, low-power chip for edge intelligent surveillance IP cameras, intelligent cat-eye door locks, visual doorbells, home intelligence and many other product areas.",
+        "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
         "front_view": "/chips/sg2000/sg2000-frontview.webp",
         "chip_view": [
             "/chips/sg2000/sg2000-01.webp",
@@ -68,6 +68,10 @@
             {
                 "img_link": "/chips/scenarios3.webp",
                 "scenarios_name": "Industrial Internet of Things"
+            },
+            {
+                "img_link": "/chips/scenarios4.webp",
+                "scenarios_name": "intelligent transport"
             }
         ],
         "downloads": [
@@ -78,8 +82,8 @@
         ]
     },
     "sg2002": {
-        "title": "SG2002 is a high-performance, low-power chip for edge intelligent surveillance IP cameras, intelligent cat-eye door locks, visual doorbells, home intelligence and many other product areas. ",
-        "buy_link": "",
+        "title": "SG2002 is a high-performance, low-power chip for edge intelligent surveillance IP cameras, intelligent cat-eye door locks, visual doorbells, home intelligence and many other product areas.",
+        "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
         "front_view": "/chips/sg2000/sg2000-frontview.webp",
         "chip_view": [
             "/chips/sg2000/sg2000-01.webp",
@@ -87,8 +91,9 @@
             "/chips/sg2000/sg2000-03.webp"
         ],
         "chip_intro_text": [
-            "SG2000 is a high-performance, low-power chip designed for various product fields such as edge intelligent surveillance IP cameras, local facial recognition attendance machines, and smart home devices. It integrates H.264/H.265 video compression and decoding and ISP capabilities. It supports various image enhancement and correction algorithms like HDR wide dynamic range, 3D noise reduction, defogging, and lens distortion correction, providing customers with professional-grade video image quality.",
-            "The chip also integrates an in-house TPU, delivering approximately 0.5TOPS of computing power under INT8 operations. The specially designed TPU scheduling engine efficiently provides high-bandwidth data flow for tensor processing unit cores. It also offers users a powerful deep learning model compiler and software SDK development kit. Mainstream deep learning frameworks such as Caffe, Pytorch, ONNX, MXNet, and TensorFlow (Lite) can be easily ported to this platform."
+            "SG2002 is a high-performance, low-power chip designed for various product fields such as edge intelligent surveillance IP cameras, smart door locks, visual doorbells, and home intelligence. It integrates H.264 video compression and decoding, H.265 video compression encoding, and ISP capabilities. It supports multiple image enhancement and correction algorithms such as HDR wide dynamic range, 3D noise reduction, defogging, and lens distortion correction, providing customers with professional-grade video image quality.",
+            "The chip also incorporates a self-developed TPU, delivering 1.0 TOPS of computing power under 8-bit integer operations. The specially designed TPU scheduling engine efficiently provides high-bandwidth data flow for all tensor processing unit cores. Additionally, it offers users a powerful deep learning model compiler and software SDK development kit. Leading deep learning frameworks like Caffe and Tensorflow can be easily ported to its platform. Furthermore, it includes security boot, secure updates, and encryption, providing a series of security solutions from development, mass production, to product applications.",
+            "The chip integrates an 8-bit MCU subsystem, replacing the typical external MCU to achieve cost-saving and power efficiency goals."
         ],
         "diagram_url": "/chips/sg2000/sg2000-diagram.webp",
         "hardware": {
@@ -102,10 +107,10 @@
                 "8051@6KB SRAM"
             ],
             "TPU": [
-                "0.5 Top@INT8"
+                "1Top@INT8"
             ],
             "Memory": [
-                "Sip DRAM 512M"
+                "Sip DRAM 256M"
             ],
             "Video Module": [
                 "ISP 5M@30fps",
@@ -128,7 +133,7 @@
                 "Crypto/Secure boot/TRNG/Efuze"
             ],
             "Peripherals": [
-                "1xUSB2.0 DRD/5 or 7xUART/3 or 4xSPI/15 or 16xPWM/"
+                "1xUSB2.0 DRD/5 or 7xUART/3 or 4xSPI/15 or 16xPWM/1xIR/6xI2C/6 or 4xADC/(66 or 110 Multiplexing) GPIOs"
             ],
             "Temperature Range": [
                 "0℃～70℃"
@@ -146,6 +151,10 @@
             {
                 "img_link": "/chips/scenarios3.webp",
                 "scenarios_name": "Industrial Internet of Things"
+            },
+            {
+                "img_link": "/chips/scenarios4.webp",
+                "scenarios_name": "intelligent transport"
             }
         ],
         "downloads": [
@@ -157,7 +166,7 @@
     },
     "cv1800b": {
         "title": "SG2002 is a high-performance, low-power chip for edge intelligent surveillance IP cameras, intelligent cat-eye door locks, visual doorbells, home intelligence and many other product areas. ",
-        "buy_link": "",
+        "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
         "front_view": "/chips/cv1800b/cv1800b-frontview.webp",
         "chip_view": [
             "/chips/cv1800b/cv1800b-01.webp",
@@ -165,51 +174,41 @@
             "/chips/cv1800b/cv1800b-03.webp"
         ],
         "chip_intro_text": [
-            "SG2000 is a high-performance, low-power chip designed for various product fields such as edge intelligent surveillance IP cameras, local facial recognition attendance machines, and smart home devices. It integrates H.264/H.265 video compression and decoding and ISP capabilities. It supports various image enhancement and correction algorithms like HDR wide dynamic range, 3D noise reduction, defogging, and lens distortion correction, providing customers with professional-grade video image quality.",
-            "The chip also integrates an in-house TPU, delivering approximately 0.5TOPS of computing power under INT8 operations. The specially designed TPU scheduling engine efficiently provides high-bandwidth data flow for tensor processing unit cores. It also offers users a powerful deep learning model compiler and software SDK development kit. Mainstream deep learning frameworks such as Caffe, Pytorch, ONNX, MXNet, and TensorFlow (Lite) can be easily ported to this platform."
+            "CV1800B is a high-performance, low-power consumption chip designed for various consumer monitoring IP cameras, home intelligence, and other products. It integrates an H.264/H.265 video compression encoder and ISP and supports various image enhancement and correction algorithms such as digital wide dynamic range, 3D noise reduction, defogging, and lens distortion correction to provide professional-grade video image quality to customers. The chip also integrates a self-developed intelligent reference design (human form detection, area detection, motion detection), built-in DDR, and complete peripherals and external devices, providing a high-integration and concise solution to facilitate customer product development and mass production. In addition, it also provides secure boot, secure update, and secure encryption and so on to provide a series of security solutions for users from development, mass production to product application. The chip integrates an 8-bit MCU subsystem, which can replace general external MCUs to achieve the goal of saving BOM cost and power consumption."
         ],
-        "diagram_url": "/chips/sg2000/sg2000-diagram.webp",
+        "diagram_url": "/chips/cv1800b/cv1800B-diagram.webp",
         "hardware": {
             "RISC-V CPU": [
                 "1xC906@1GHz、1xC906@700MHz"
-            ],
-            "Rm CPU": [
-                "1xCortex-A53@1GHz"
-            ],
-            "MCU": [
-                "8051@6KB SRAM"
             ],
             "TPU": [
                 "0.5 Top@INT8"
             ],
             "Memory": [
-                "Sip DRAM 512M"
+                "Sip DRAM 64M"
             ],
             "Video Module": [
-                "ISP 5M@30fps",
-                "2L MIPI DSI 5M@30fps",
-                "4L or 2L+2L MIPI CSI 5M@30fps",
-                "H.265/H.264 Decoding and Encoding 5M@30fps"
+                "ISP 4M@25fps",
+                "MIPI 4L CSI",
+                "H.265/H.264 Decoding and Encoding"
             ],
             "Audio Module": [
-                "16bit Audio Codec",
-                "2xI2S/PCM",
-                "1xDMIC"
+                "16bit Audio Codec"
             ],
             "Storage": [
-                "SIP-NOR、SPI-NAND、eMMC5.0、2xSDIO3.0"
+                "SIP-NOR、SPI-NAND、2xSDIO3.0"
             ],
             "Network": [
                 "10M/100M MAC PHY"
             ],
             "Security Module": [
-                "Crypto/Secure boot/TRNG/Efuze"
+                "Secure boot/AES/SHA/Efuse"
             ],
             "Peripherals": [
-                "1xUSB2.0 DRD/5 or 7xUART/3 or 4xSPI/15 or 16xPWM/"
+                "3 *ADC/4 *I2C /3 * SPI interfaces5*UART /4 *PWM;/2*SDIO 3.0 /51 GPIO"
             ],
             "Temperature Range": [
-                "0℃～70℃"
+                "-30℃～70℃"
             ]
         },
         "scenarios": [
@@ -224,6 +223,10 @@
             {
                 "img_link": "/chips/scenarios3.webp",
                 "scenarios_name": "Industrial Internet of Things"
+            },
+            {
+                "img_link": "/chips/scenarios4.webp",
+                "scenarios_name": "intelligent transport"
             }
         ],
         "downloads": [
