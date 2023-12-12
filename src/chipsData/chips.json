@@ -102,12 +102,12 @@
             ]
         },
         "resources": {
-            "test2": [
+            "Development Hardware": [
                 {
-                    "resources_name": "文件名称",
+                    "resources_name": "Huashan Sect",
                     "resources_url": "https://www.baidu.com",
-                    "resources_img": "PDF",
-                    "resources_info": "256.GB"
+                    "resources_img": "/chips/test-img.webp",
+                    "resources_info": "The Huashan Sect - CV181 Series Development Board, jointly released by Aligned Computing and Eco-Partner Hardware for a hundred thousand reasons, is an open-source ecosystem development board providing a RISC-V-based open development environment for extensive users. It focuses on visual and AI scene development, aiming to grow together with a vast community of developers."
                 }
             ]
         }

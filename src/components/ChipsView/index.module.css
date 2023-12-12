@@ -300,6 +300,38 @@
     line-height: 120%;
 }
 
+.board_info {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.board_info>img {
+    width: 30%;
+}
+
+.board_info>div {
+    width: 68%;
+}
+
+.info_t {
+    color: #2D88C9;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.info_p {
+    color: #000;
+    text-align: justify;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
 
 @media screen and (min-width: 1950px) {
 
@@ -439,6 +471,24 @@
     .download_list>ul>li>p>span {
         margin-right: 10px;
     }
+
+    .resources_m {
+        margin: 100px 0;
+    }
+
+    .board_info {
+        margin-bottom: 20px;
+    }
+
+    .info_t {
+        font-size: 18px;
+    }
+
+    .info_p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
 }
 
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
@@ -579,6 +629,23 @@
     .download_list>ul>li>p>span {
         margin-right: 10px;
     }
+
+    .resources_m {
+        margin: 80px 0;
+    }
+
+    .board_info {
+        margin-bottom: 20px;
+    }
+
+    .info_t {
+        font-size: 18px;
+    }
+
+    .info_p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1000px) {
@@ -718,6 +785,23 @@
 
     .download_list>ul>li>p>span {
         margin-right: 10px;
+    }
+
+    .resources_m {
+        margin: 80px 0;
+    }
+
+    .board_info {
+        margin-bottom: 20px;
+    }
+
+    .info_t {
+        font-size: 18px;
+    }
+
+    .info_p {
+        font-size: 14px;
+        margin-top: 10px;
     }
 }
 
@@ -868,6 +952,23 @@
 
     .download_list>ul>li>p>span {
         margin-right: 10px;
+    }
+
+    .resources_m {
+        margin: 80px 0;
+    }
+
+    .board_info {
+        margin-bottom: 20px;
+    }
+
+    .info_t {
+        font-size: 18px;
+    }
+
+    .info_p {
+        font-size: 12px;
+        margin-top: 10px;
     }
 }
 
@@ -1071,9 +1172,40 @@
 
     .download_list>ul>li>p {
         font-size: 11rem;
+        margin-top: 3rem;
     }
 
     .download_list>ul>li>p>span {
-        margin-right: 10rem;
+        margin-right: 6rem;
+    }
+
+    .resources_m {
+        margin: 60rem 0 0;
+    }
+
+    .board_info {
+        margin-bottom: 20rem;
+    }
+
+    .info_t {
+        font-size: 18rem;
+    }
+
+    .info_p {
+        font-size: 13rem;
+        margin-top: 10rem;
+    }
+
+    .board_info {
+        flex-direction: column;
+    }
+
+    .board_info>img {
+        margin-bottom: 10rem;
+    }
+
+    .board_info>img,
+    .board_info>div {
+        width: 100%;
     }
 }

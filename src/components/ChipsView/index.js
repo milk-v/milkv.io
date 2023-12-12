@@ -33,7 +33,7 @@ export default (props) => {
     const [down_filter_idx, setDown_filter_idx] = useState(0)
 
     const [resources_filter, setResources_filter] = useState(Object.keys(jsonData[chipName].resources))
-    const [dresources_filter_idx, setResources_filter_idx] = useState(0)
+    const [resources_filter_idx, setResources_filter_idx] = useState(0)
 
 
     const t_modern_sty = {
@@ -61,6 +61,7 @@ export default (props) => {
             let hardware_toTop = chip_hardware.current.offsetTop + chip_hardware.current.clientHeight - 100
             let applications_toTop = chip_applications.current.offsetTop + chip_applications.current.clientHeight - 100
             let doc_toTop = chip_doc.current.offsetTop + chip_doc.current.clientHeight - 100
+            let resources_toTop = chip_resources.current.offsetTop + chip_resources.current.clientHeight - 100
             if (scrollTop >= 0 && scrollTop < over_toTop) {
                 setTidx(0)
             } else if (scrollTop >= over_toTop && scrollTop <= diagram_toTop) {
@@ -71,6 +72,8 @@ export default (props) => {
                 setTidx(3)
             } else if (scrollTop >= applications_toTop && scrollTop <= doc_toTop) {
                 setTidx(4)
+            } else if (scrollTop >= doc_toTop && scrollTop <= resources_toTop) {
+                setTidx(5)
             }
             window.previousScrollTop = scrollTop;
         };
@@ -263,8 +266,14 @@ export default (props) => {
                             {
                                 down_filter.map((item, key) => {
                                     return (
-                                        <label key={key} onClick={() => { setDown_filter_idx(key) }}>
-                                            <input type="radio" name="prerequisite" value={item} checked={key === down_filter_idx} />
+                                        <label key={key} >
+                                            <input type="radio" name="prerequisite" value={item} checked={key === down_filter_idx}
+                                                onChange={(e) => {
+                                                    if (e.target.checked) {
+                                                        setDown_filter_idx(key)
+                                                    }
+                                                }}
+                                            />
                                             <span>{item}</span>
                                         </label>
                                     )
@@ -296,8 +305,13 @@ export default (props) => {
                             {
                                 resources_filter.map((item, key) => {
                                     return (
-                                        <label key={key} onClick={() => { setDown_filter_idx(key) }}>
-                                            <input type="radio" name="prerequisite" value={item} checked={key === dresources_filter_idx} />
+                                        <label key={key}>
+                                            <input type="radio" name="Resources" value={item} checked={key === resources_filter_idx}
+                                                onChange={(e) => {
+                                                    if (e.target.checked) {
+                                                        setResources_filter_idx(key)
+                                                    }
+                                                }} />
                                             <span>{item}</span>
                                         </label>
                                     )
@@ -305,8 +319,20 @@ export default (props) => {
                             }
                         </div>
                         <div className={styles.download_list}>
-                            <p>{resources_filter[dresources_filter_idx]}</p>
-
+                            <p>{resources_filter[resources_filter_idx]}</p>
+                            {
+                                jsonData[chipName].resources[resources_filter[resources_filter_idx]].map((item, key) => {
+                                    return (
+                                        <div className={styles.board_info} key={key}>
+                                            <img src={item.resources_img} />
+                                            <div>
+                                                <Link to={item.resources_url} className={styles.info_t}>{item.resources_name}</Link>
+                                                <p className={styles.info_p}>{item.resources_info}</p>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </div>
