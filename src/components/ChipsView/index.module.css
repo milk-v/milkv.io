@@ -71,7 +71,7 @@
     line-height: 120%;
 }
 
-.chip_diagram>h2 {
+.chip_diagram h2 {
     color: #000;
     text-align: left;
     font-family: Inter;
@@ -81,7 +81,7 @@
 }
 
 .diagram_img {
-    width: 60%;
+    width: 100%;
 }
 
 .hardware_ul {
@@ -185,14 +185,6 @@
     text-decoration-line: underline;
 }
 
-.table {
-    position: sticky;
-    top: 60px;
-    background-color: #000;
-    height: 100px;
-    width: 100%
-}
-
 .chip_view_contexts {
     position: relative;
 }
@@ -223,32 +215,74 @@
     max-width: none;
 }
 
+.toTop {
+    position: fixed;
+    display: none;
+    cursor: pointer;
+}
+
+.table_separate {
+    position: sticky;
+    background-color: #fff;
+    width: 100%;
+    z-index: 99;
+}
+
+.table_u {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.table_u>li {
+    height: 100%;
+    color: #999;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition: none;
+    box-sizing: border-box;
+}
+
+.table_u>li:hover {
+    color: #000;
+    border-bottom: 2px solid #2d88c9;
+}
+
 @media screen and (min-width: 1950px) {
 
     .chip_diagram,
     .chip_introduction,
     .chip_title {
-        width: 1920px;
+        width: 1240px;
         padding: 100px 0;
     }
 
     .chip_title>img {
-        width: 300px;
+        width: 200px;
     }
 
     .title_l_t>h4 {
-        font-size: 36px;
+        font-size: 24px;
         margin-bottom: 35px;
     }
 
     .title_l_t>a {
-        width: 220px;
-        height: 60px;
-        font-size: 24px;
+        width: 150px;
+        height: 45px;
+        font-size: 18px;
     }
 
     .chip_view {
-        width: 665px;
+        width: 38%;
     }
 
     .view_ul {
@@ -256,16 +290,16 @@
     }
 
     .chip_intro_t {
-        width: 1180px;
+        width: 60%;
     }
 
     .chip_intro_t>p {
-        font-size: 26px;
-        margin-bottom: 50px;
+        font-size: 20px;
+        margin-bottom: 30px;
     }
 
-    .chip_diagram>h2 {
-        font-size: 40px;
+    .chip_diagram h2 {
+        font-size: 28px;
         margin-bottom: 30px;
     }
 
@@ -283,7 +317,7 @@
 
     .causality,
     .causality_data {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .causality_data>li {
@@ -291,12 +325,12 @@
     }
 
     .scenarios {
-        width: 1920px;
+        width: 1240px;
         margin-bottom: 100px;
     }
 
     .scenarios>li>p {
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 20px;
     }
 
@@ -312,6 +346,30 @@
     .download_link>a>span {
         font-size: 24px;
     }
+
+    .toTop {
+        bottom: 100px;
+        right: 100px;
+    }
+
+    .toTop>img {
+        width: 60px;
+    }
+
+    .table_separate {
+        top: 60px;
+        height: 64px;
+    }
+
+    .table_u {
+        width: 1240px;
+    }
+
+    .table_u>li {
+        margin-right: 40px;
+        font-size: 20px;
+    }
+
 }
 
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
@@ -319,23 +377,23 @@
     .chip_diagram,
     .chip_introduction,
     .chip_title {
-        width: 80%;
+        width: 1200px;
         padding: 80px 0;
     }
 
     .chip_title>img {
-        width: 250px;
+        width: 180px;
     }
 
     .title_l_t>h4 {
-        font-size: 30px;
+        font-size: 20px;
         margin-bottom: 30px;
     }
 
     .title_l_t>a {
-        width: 180px;
-        height: 55px;
-        font-size: 20px;
+        width: 150px;
+        height: 45px;
+        font-size: 16px;
     }
 
     .chip_view {
@@ -351,12 +409,12 @@
     }
 
     .chip_intro_t>p {
-        font-size: 22px;
+        font-size: 18px;
         margin-bottom: 40px;
     }
 
-    .chip_diagram>h2 {
-        font-size: 36px;
+    .chip_diagram h2 {
+        font-size: 28px;
         margin-bottom: 30px;
     }
 
@@ -374,7 +432,7 @@
 
     .causality,
     .causality_data {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .causality_data>li {
@@ -387,7 +445,7 @@
     }
 
     .scenarios>li>p {
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 20px;
     }
 
@@ -396,12 +454,35 @@
     }
 
     .download_link>a>img {
-        width: 40px;
+        width: 35px;
         margin-right: 20px;
     }
 
     .download_link>a>span {
-        font-size: 22px;
+        font-size: 18px;
+    }
+
+    .toTop {
+        bottom: 50px;
+        right: 50px;
+    }
+
+    .toTop>img {
+        width: 50px;
+    }
+
+    .table_separate {
+        top: 60px;
+        height: 60px;
+    }
+
+    .table_u {
+        width: 1200px;
+    }
+
+    .table_u>li {
+        margin-right: 40px;
+        font-size: 18px;
     }
 }
 
@@ -410,23 +491,23 @@
     .chip_diagram,
     .chip_introduction,
     .chip_title {
-        width: 80%;
+        width: 950px;
         padding: 60px 0;
     }
 
     .chip_title>img {
-        width: 200px;
+        width: 150px;
     }
 
     .title_l_t>h4 {
-        font-size: 24px;
+        font-size: 18px;
         margin-bottom: 20px;
     }
 
     .title_l_t>a {
-        width: 160px;
-        height: 50px;
-        font-size: 18px;
+        width: 130px;
+        height: 40px;
+        font-size: 16px;
     }
 
     .chip_view {
@@ -442,12 +523,12 @@
     }
 
     .chip_intro_t>p {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 30px;
     }
 
-    .chip_diagram>h2 {
-        font-size: 30px;
+    .chip_diagram h2 {
+        font-size: 24px;
         margin-bottom: 20px;
     }
 
@@ -465,7 +546,7 @@
 
     .causality,
     .causality_data {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .causality_data>li {
@@ -494,6 +575,29 @@
     .download_link>a>span {
         font-size: 18px;
     }
+
+    .toTop {
+        bottom: 50px;
+        right: 50px;
+    }
+
+    .toTop>img {
+        width: 50px;
+    }
+
+    .table_separate {
+        top: 60px;
+        height: 50px;
+    }
+
+    .table_u {
+        width: 950px;
+    }
+
+    .table_u>li {
+        margin-right: 40px;
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 750px) {
@@ -502,22 +606,22 @@
     .chip_introduction,
     .chip_title {
         width: 90%;
-        padding: 40px 0;
+        padding: 30px 0;
     }
 
     .chip_title>img {
-        width: 160px;
+        width: 130px;
     }
 
     .title_l_t>h4 {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 10px;
     }
 
     .title_l_t>a {
         width: 120px;
-        height: 40px;
-        font-size: 16px;
+        height: 35px;
+        font-size: 14px;
     }
 
     .chip_view {
@@ -538,8 +642,8 @@
         text-align: left;
     }
 
-    .chip_diagram>h2 {
-        font-size: 30px;
+    .chip_diagram h2 {
+        font-size: 20px;
         margin-bottom: 20px;
     }
 
@@ -561,11 +665,11 @@
 
     .causality,
     .causality_data {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .causality_data>li {
-        margin-top: 35px;
+        margin-top: 30px;
     }
 
     .scenarios {
@@ -574,7 +678,7 @@
     }
 
     .scenarios>li>p {
-        font-size: 14px;
+        font-size: 12px;
         line-height: normal;
         margin-top: 10px;
     }
@@ -589,6 +693,33 @@
     }
 
     .download_link>a>span {
+        font-size: 12px;
+    }
+
+    .chip_view_contexts>.magnifiers_view {
+        right: -150%;
+    }
+
+    .toTop {
+        bottom: 40px;
+        right: 40px;
+    }
+
+    .toTop>img {
+        width: 50px;
+    }
+
+    .table_separate {
+        top: 60px;
+        height: 45px;
+    }
+
+    .table_u {
+        width: 90%;
+    }
+
+    .table_u>li {
+        margin-right: 30px;
         font-size: 14px;
     }
 }
@@ -651,7 +782,7 @@
         text-align: left;
     }
 
-    .chip_diagram>h2 {
+    .chip_diagram h2 {
         font-size: 24rem;
         margin-bottom: 20rem;
     }
@@ -727,4 +858,29 @@
         display: none !important;
     }
 
+    .toTop {
+        bottom: 20rem;
+        right: 20rem;
+    }
+
+    .toTop>img {
+        width: 30rem;
+    }
+
+    .table_separate {
+        top: 50rem;
+        height: 45rem;
+    }
+
+    .table_u {
+        width: 90%;
+        overflow: hidden;
+        display: none !important;
+    }
+
+    .table_u>li {
+        margin-right: 30rem;
+        font-size: 14rem;
+        white-space: nowrap;
+    }
 }
