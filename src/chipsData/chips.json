@@ -115,18 +115,18 @@
     "sg2002": {
         "title": "SG2002 is a high-performance, low-power chip for edge intelligent surveillance IP cameras, intelligent cat-eye door locks, visual doorbells, home intelligence and many other product areas.",
         "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
-        "front_view": "/chips/sg2000/sg2000-frontview.webp",
+        "front_view": "/chips/sg2002/sg2002-frontview.webp",
         "chip_view": [
-            "/chips/sg2000/sg2000-01.webp",
-            "/chips/sg2000/sg2000-02.webp",
-            "/chips/sg2000/sg2000-03.webp"
+            "/chips/sg2002/sg2002-01.webp",
+            "/chips/sg2002/sg2002-02.webp",
+            "/chips/sg2002/sg2002-03.webp"
         ],
         "chip_intro_text": [
             "SG2002 is a high-performance, low-power chip designed for various product fields such as edge intelligent surveillance IP cameras, smart door locks, visual doorbells, and home intelligence. It integrates H.264 video compression and decoding, H.265 video compression encoding, and ISP capabilities. It supports multiple image enhancement and correction algorithms such as HDR wide dynamic range, 3D noise reduction, defogging, and lens distortion correction, providing customers with professional-grade video image quality.",
             "The chip also incorporates a self-developed TPU, delivering 1.0 TOPS of computing power under 8-bit integer operations. The specially designed TPU scheduling engine efficiently provides high-bandwidth data flow for all tensor processing unit cores. Additionally, it offers users a powerful deep learning model compiler and software SDK development kit. Leading deep learning frameworks like Caffe and Tensorflow can be easily ported to its platform. Furthermore, it includes security boot, secure updates, and encryption, providing a series of security solutions from development, mass production, to product applications.",
             "The chip integrates an 8-bit MCU subsystem, replacing the typical external MCU to achieve cost-saving and power efficiency goals."
         ],
-        "diagram_url": "/chips/sg2000/sg2000-diagram.webp",
+        "diagram_url": "/chips/sg2002/sg2002-diagram.webp",
         "hardware": {
             "RISC-V CPU": [
                 "1xC906@1GHz、1xC906@700MHz"
@@ -188,15 +188,46 @@
                 "scenarios_name": "intelligent transport"
             }
         ],
-        "downloads": [
-            {
-                "download_link": "/",
-                "download_name": "SC2002规格书"
-            }
-        ]
+        "downloads": {
+            "test1": [
+                {
+                    "download_name": "文件名称",
+                    "download_url": "https://www.baidu.com",
+                    "file_format": "PDF",
+                    "file_size": "256.GB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "文件名称",
+                    "download_url": "https://www.baidu.com",
+                    "file_format": "PDF",
+                    "file_size": "256.GB",
+                    "file_date": "Jun 5,2023"
+                }
+            ],
+            "test2": [
+                {
+                    "download_name": "文件名称",
+                    "download_url": "https://www.baidu.com",
+                    "file_format": "PDF",
+                    "file_size": "256.GB",
+                    "file_date": "Jun 5,2023"
+                }
+            ]
+        },
+        "resources": {
+            "Development Hardware": [
+                {
+                    "resources_name": "Huashan Sect",
+                    "resources_url": "/docs/duo/overview",
+                    "resources_img": "/chips/duo-view.webp",
+                    "resources_info": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators"
+                }
+            ]
+        }
     },
     "cv1800b": {
-        "title": "SG2002 is a high-performance, low-power chip for edge intelligent surveillance IP cameras, intelligent cat-eye door locks, visual doorbells, home intelligence and many other product areas. ",
+        "title": "CV1800B is a high-performance, low-power consumption chip designed for various consumer monitoring IP cameras, home intelligence, and other product domains. It integrates H.264/H.265 video compression encoders and ISP; supporting digital wide dynamic range, 3D noise reduction, defogging, lens distortion correction, and various other image enhancement and correction algorithms, providing customers with professional-grade video image quality.",
         "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
         "front_view": "/chips/cv1800b/cv1800b-frontview.webp",
         "chip_view": [
@@ -260,11 +291,42 @@
                 "scenarios_name": "intelligent transport"
             }
         ],
-        "downloads": [
-            {
-                "download_link": "/",
-                "download_name": "SC2002规格书"
-            }
-        ]
+        "downloads": {
+            "test1": [
+                {
+                    "download_name": "文件名称",
+                    "download_url": "https://www.baidu.com",
+                    "file_format": "PDF",
+                    "file_size": "256.GB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "文件名称",
+                    "download_url": "https://www.baidu.com",
+                    "file_format": "PDF",
+                    "file_size": "256.GB",
+                    "file_date": "Jun 5,2023"
+                }
+            ],
+            "test2": [
+                {
+                    "download_name": "文件名称",
+                    "download_url": "https://www.baidu.com",
+                    "file_format": "PDF",
+                    "file_size": "256.GB",
+                    "file_date": "Jun 5,2023"
+                }
+            ]
+        },
+        "resources": {
+            "Development Hardware": [
+                {
+                    "resources_name": "Huashan Sect",
+                    "resources_url": "/docs/duo/overview",
+                    "resources_img": "/chips/duo-view.webp",
+                    "resources_info": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators"
+                }
+            ]
+        }
     }
 }
