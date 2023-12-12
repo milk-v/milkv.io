@@ -74,12 +74,43 @@
                 "scenarios_name": "intelligent transport"
             }
         ],
-        "downloads": [
-            {
-                "download_link": "/",
-                "download_name": "SC2002规格书"
-            }
-        ]
+        "downloads": {
+            "test1": [
+                {
+                    "download_name": "文件名称",
+                    "download_url": "https://www.baidu.com",
+                    "file_format": "PDF",
+                    "file_size": "256.GB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "文件名称",
+                    "download_url": "https://www.baidu.com",
+                    "file_format": "PDF",
+                    "file_size": "256.GB",
+                    "file_date": "Jun 5,2023"
+                }
+            ],
+            "test2": [
+                {
+                    "download_name": "文件名称",
+                    "download_url": "https://www.baidu.com",
+                    "file_format": "PDF",
+                    "file_size": "256.GB",
+                    "file_date": "Jun 5,2023"
+                }
+            ]
+        },
+        "resources": {
+            "test2": [
+                {
+                    "resources_name": "文件名称",
+                    "resources_url": "https://www.baidu.com",
+                    "resources_img": "PDF",
+                    "resources_info": "256.GB"
+                }
+            ]
+        }
     },
     "sg2002": {
         "title": "SG2002 is a high-performance, low-power chip for edge intelligent surveillance IP cameras, intelligent cat-eye door locks, visual doorbells, home intelligence and many other product areas.",

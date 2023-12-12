@@ -20,6 +20,7 @@ export default (props) => {
     const chip_hardware = useRef(null)
     const chip_applications = useRef(null)
     const chip_doc = useRef(null)
+    const chip_resources = useRef(null)
     const [tidx, setTidx] = useState(0)
 
 
@@ -27,6 +28,14 @@ export default (props) => {
     const [dis, setDis] = useState(false)
     const [x, setX] = useState(0);
     const [y, setY] = useState(0);
+
+    const [down_filter, setDown_filter] = useState(Object.keys(jsonData[chipName].downloads))
+    const [down_filter_idx, setDown_filter_idx] = useState(0)
+
+    const [resources_filter, setResources_filter] = useState(Object.keys(jsonData[chipName].resources))
+    const [dresources_filter_idx, setResources_filter_idx] = useState(0)
+
+
     const t_modern_sty = {
         borderBottom: "2px solid #2D88C9",
         color: "#000",
@@ -74,8 +83,6 @@ export default (props) => {
     }, []);
 
 
-
-
     const tab_arr = [
         {
             text: 'Overview',
@@ -96,6 +103,10 @@ export default (props) => {
         {
             text: 'Documents',
             ref: chip_doc,
+        },
+        {
+            text: 'Design Resources',
+            ref: chip_resources,
         },
     ]
 
@@ -247,14 +258,56 @@ export default (props) => {
                 <div ref={chip_doc}>
                     <h2 >Documents</h2>
                     <div className={styles.download_link}>
-                        {
-                            jsonData[chipName].downloads.map((item, key) => {
-                                return <Link to={item.download_link} key={key}>
-                                    <img src="/chips/download.svg" />
-                                    <span className={styles.link_text}>{item.download_name}</span>
-                                </Link>
-                            })
-                        }
+                        <div className={styles.radio_input}>
+                            <p>FILTER BY</p>
+                            {
+                                down_filter.map((item, key) => {
+                                    return (
+                                        <label key={key} onClick={() => { setDown_filter_idx(key) }}>
+                                            <input type="radio" name="prerequisite" value={item} checked={key === down_filter_idx} />
+                                            <span>{item}</span>
+                                        </label>
+                                    )
+                                })
+                            }
+                        </div>
+                        <div className={styles.download_list}>
+                            <p>{down_filter[down_filter_idx]}</p>
+                            <ul>
+                                {
+                                    jsonData[chipName].downloads[down_filter[down_filter_idx]].map((item, key) => {
+                                        return (
+                                            <li key={key}>
+                                                <Link to={item.download_url}>{item.download_name}</Link>
+                                                <p><span>{item.file_format}</span> <span>J{item.file_date}</span> <span>{item.file_size}</span></p>
+                                            </li>
+                                        )
+                                    })
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div ref={chip_resources} className={styles.resources_m}>
+                    <h2 >Design Resources</h2>
+                    <div className={styles.download_link}>
+                        <div className={styles.radio_input}>
+                            <p>FILTER BY</p>
+                            {
+                                resources_filter.map((item, key) => {
+                                    return (
+                                        <label key={key} onClick={() => { setDown_filter_idx(key) }}>
+                                            <input type="radio" name="prerequisite" value={item} checked={key === dresources_filter_idx} />
+                                            <span>{item}</span>
+                                        </label>
+                                    )
+                                })
+                            }
+                        </div>
+                        <div className={styles.download_list}>
+                            <p>{resources_filter[dresources_filter_idx]}</p>
+
+                        </div>
                     </div>
                 </div>
             </div>
