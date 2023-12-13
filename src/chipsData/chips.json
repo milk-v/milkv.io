@@ -218,7 +218,7 @@
         "resources": {
             "Development Hardware": [
                 {
-                    "resources_name": "Huashan Sect",
+                    "resources_name": "Duo",
                     "resources_url": "/docs/duo/overview",
                     "resources_img": "/chips/duo-view.webp",
                     "resources_info": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators"
@@ -321,7 +321,7 @@
         "resources": {
             "Development Hardware": [
                 {
-                    "resources_name": "Huashan Sect",
+                    "resources_name": "Duo",
                     "resources_url": "/docs/duo/overview",
                     "resources_img": "/chips/duo-view.webp",
                     "resources_info": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators"
