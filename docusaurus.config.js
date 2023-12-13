@@ -21,8 +21,28 @@ const config = {
       {
         redirects: [
           {
-            to: '/docs/mars/cm',
+            to: '/docs/mars/overview',
             from: ['/docs/mars-cm'],
+          },
+          {
+            to: '/docs/duo/overview',
+            from: ['/docs/duo'],
+          },
+          {
+            to: '/docs/mars/overview',
+            from: ['/docs/mars'],
+          },
+          {
+            to: '/docs/pioneer/overview',
+            from: ['/docs/pioneer'],
+          },
+          {
+            to: '/docs/vega/overview',
+            from: ['/docs/vega'],
+          },
+          {
+            to: '/docs/meles/overview',
+            from: ['/docs/meles'],
           },
         ],
       },
@@ -60,30 +80,16 @@ const config = {
         },
       },
       algolia: {
-        // The application ID provided by Algolia
         appId: '367OH7GCEI',
-
-        // Public API key: it is safe to commit it
         apiKey: 'ce5431087fbfc2c53ba31dede7186154',
-        // Your index name
         indexName: 'milkv',
-
-        // Optional: see doc section below
         contextualSearch: true,
-
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
         externalUrlRegex: 'external\\.com|domain\\.com',
-
-        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
         replaceSearchResultPathname: {
           from: '/docs/', // or as RegExp: /\/docs\//
           to: '/',
         },
-
-        // Optional: Algolia search parameters
         searchParameters: {},
-
-        // Optional: path for search page that enabled by default (`false` to disable it)
         searchPagePath: false,
 
       },
