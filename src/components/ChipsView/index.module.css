@@ -244,6 +244,24 @@
 
 .download_list {
     width: 72%;
+    overflow-y: auto;
+}
+
+.resources_m .download_list {
+    overflow: hidden;
+}
+
+.download_list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.download_list::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.download_list::-webkit-scrollbar-thumb {
+    background-color: #2D88C9;
+    border-radius: 5px;
 }
 
 .radio_input>p {
@@ -412,8 +430,8 @@
     }
 
     .toTop {
-        bottom: 100px;
-        right: 100px;
+        bottom: 60px;
+        right: 60px;
     }
 
     .toTop>img {
@@ -450,6 +468,7 @@
 
     .download_list {
         padding-left: 30px;
+        max-height: 300px;
     }
 
     .download_list>p {
@@ -608,6 +627,7 @@
 
     .download_list {
         padding-left: 30px;
+        max-height: 300px;
     }
 
     .download_list>p {
@@ -766,6 +786,7 @@
 
     .download_list {
         padding-left: 30px;
+        max-height: 300px;
     }
 
     .download_list>p {
@@ -934,6 +955,7 @@
 
     .download_list {
         padding-left: 30px;
+        max-height: 300px;
     }
 
     .download_list>p {
