@@ -252,7 +252,7 @@ const Home_web = () => {
             <h2><Translate id='homepage.corporations.Documentstitle' /></h2>
             <p><Translate id='homepage.corporations.Documentswords' /></p>
           </div>
-          <Link to='/docs/home' className={styles.docs_a}><Translate id='homepage.corporations.docslearnmore' /></Link>
+          <Link to='/docs' className={styles.docs_a}><Translate id='homepage.corporations.docslearnmore' /></Link>
         </div>
         <ContactBar product='home' />
         <SupportUs />
