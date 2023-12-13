@@ -55,6 +55,7 @@ export default () => {
                                 </li>
                                 <li>
                                     <p className={styles.line_name}>Docs</p>
+                                    <Link to='/docs'>Home</Link>
                                     <Link to='/docs/duo/overview'>Duo Docs</Link>
                                     <Link to='/docs/pioneer/overview'>Pioneer Docs </Link>
                                     <Link to='/docs/mars/overview'>Mars Docs </Link>

@@ -109,7 +109,6 @@ export default (props) => {
 
 
     const indexMetaData = currentLanguage === '/zh/' ? metadata[page].zh : metadata[page].en
-
     return (
         <>
             <Head>

@@ -1,5 +1,10 @@
 const sidebars = {
   duo: [
+    {
+      type: 'link',
+      label: '🏠 Home',
+      href: '/docs',
+    },
     'duo/overview',
     {
       type: "category",
@@ -98,6 +103,11 @@ const sidebars = {
     },
   ],
   pioneer: [
+    {
+      type: 'link',
+      label: '🏠 Home',
+      href: '/docs',
+    },
     'pioneer/overview',
     {
       type: "category",
@@ -144,6 +154,11 @@ const sidebars = {
     'pioneer/faq',
   ],
   mars: [
+    {
+      type: 'link',
+      label: '🏠 Home',
+      href: '/docs',
+    },
     'mars/overview',
     {
       type: "category",
@@ -197,9 +212,19 @@ const sidebars = {
     },
   ],
   meles: [
+    {
+      type: 'link',
+      label: '🏠 Home',
+      href: '/docs',
+    },
     'meles/overview'
   ],
   vega: [
+    {
+      type: 'link',
+      label: '🏠 Home',
+      href: '/docs',
+    },
     'vega/overview'
   ],
 };
