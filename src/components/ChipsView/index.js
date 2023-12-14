@@ -236,7 +236,7 @@ export default (props) => {
                                     <ul className={styles.causality_data}>
                                         {
                                             jsonData[chipName].hardware[item].map((ele, idx) => {
-                                                return <li key={idx}>{ele}</li>
+                                                return <li key={idx} style={{ color: "#333" }}>{ele}</li>
                                             })
                                         }
                                     </ul>

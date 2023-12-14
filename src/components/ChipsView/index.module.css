@@ -25,11 +25,11 @@
 }
 
 .title_l_t>h4 {
-    color: #222;
-    font-family: PingFang SC;
+    color: #333;
+    font-family: Inter;
     font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
+    font-weight: 400;
+    line-height: 150%;
 }
 
 .title_l_t>a {
@@ -64,11 +64,10 @@
 
 .chip_intro_t>p {
     color: #333;
-    text-align: justify;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    line-height: 120%;
+    line-height: 150%;
 }
 
 .chip_diagram h2 {
@@ -106,7 +105,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
-    text-transform: capitalize;
 }
 
 .causality {
@@ -366,7 +364,7 @@
     }
 
     .title_l_t>h4 {
-        font-size: 24px;
+        font-size: 20px;
         margin-bottom: 35px;
     }
 
@@ -389,7 +387,7 @@
     }
 
     .chip_intro_t>p {
-        font-size: 20px;
+        font-size: 16px;
         margin-bottom: 30px;
     }
 
@@ -548,7 +546,7 @@
     }
 
     .chip_intro_t>p {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 40px;
     }
 
@@ -707,7 +705,7 @@
     }
 
     .chip_intro_t>p {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 30px;
     }
 
@@ -866,7 +864,7 @@
     }
 
     .chip_intro_t>p {
-        font-size: 14px;
+        font-size: 12px;
         margin-bottom: 20px;
         text-align: left;
     }

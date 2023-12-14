@@ -1,6 +1,6 @@
 {
     "sg2000": {
-        "title": "SG2000 is a high-performance, low-power chip for edge intelligent surveillance IP cameras, intelligent cat-eye door locks, visual doorbells, home intelligence and many other product areas.",
+        "title": "SG2000 is a high-performance, low-power chip for AIOT. It features multiple cores, swift core switching, H.264/H.265 video codecs, professional-grade image enhancements, a proprietary 0.5TOPS INT8 TPU, an efficient TPU scheduling engine, and diverse peripheral interfaces.",
         "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
         "front_view": "/chips/sg2000/sg2000-frontview.webp",
         "chip_view": [
@@ -15,10 +15,10 @@
         "diagram_url": "/chips/sg2000/sg2000-diagram.webp",
         "hardware": {
             "RISC-V CPU": [
-                "1xC906@1GHz、1xC906@700MHz"
+                "1 xC906@1GHz、1 xC906@700MHz"
             ],
-            "Rm CPU": [
-                "1xCortex-A53@1GHz"
+            "Arm CPU": [
+                "1 xCortex-A53@1GHz "
             ],
             "MCU": [
                 "8051@6KB SRAM"
@@ -37,11 +37,11 @@
             ],
             "Audio Module": [
                 "16bit Audio Codec",
-                "2xI2S/PCM",
-                "1xDMIC"
+                "2 xI2S/PCM",
+                "1 xDMIC"
             ],
             "Storage": [
-                "SIP-NOR、SPI-NAND、eMMC5.0、2xSDIO3.0"
+                "SPI-NOR、SPI-NAND、eMMC5.0、2xSDIO3.0"
             ],
             "Network": [
                 "10M/100M MAC PHY"
@@ -50,7 +50,7 @@
                 "Crypto/Secure boot/TRNG/Efuze"
             ],
             "Peripherals": [
-                "1xUSB2.0 DRD/5 or 7xUART/3 or 4xSPI/15 or 16xPWM/"
+                "1 xUSB2.0 DRD/5 xUART/4 xSPI/16 xPWM/1 xIR/6 xI2C/6 xADC/ GPIOs"
             ],
             "Temperature Range": [
                 "0℃～70℃"
@@ -75,28 +75,61 @@
             }
         ],
         "downloads": {
-            "test1": [
+            "Hardware Design": [
                 {
-                    "download_name": "文件名称",
-                    "download_url": "https://www.baidu.com",
-                    "file_format": "PDF",
-                    "file_size": "256.GB",
+                    "download_name": "SG2000-BGA-SIP-V11-16.2",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/Reference-Design-SCH%26PCB/SG2000-BGA-SIP-V11-16.2.DSN?raw=true",
+                    "file_format": "DSN",
+                    "file_size": "1.94 MB",
                     "file_date": "Jun 5,2023"
                 },
                 {
-                    "download_name": "文件名称",
-                    "download_url": "https://www.baidu.com",
+                    "download_name": "SG2000-BGA-SIP-V11",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/Reference-Design-SCH%26PCB/SG2000-BGA-SIP-V11.pdf?raw=true",
                     "file_format": "PDF",
-                    "file_size": "256.GB",
+                    "file_size": "1.37 MB",
                     "file_date": "Jun 5,2023"
-                }
-            ],
-            "test2": [
+                },
                 {
-                    "download_name": "文件名称",
-                    "download_url": "https://www.baidu.com",
+                    "download_name": "SG2000-WEVB-0007A-V04-SCH",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/Reference-Design-SCH%26PCB/SG2000-WEVB-0007A-V04-SCH.pdf?raw=true",
                     "file_format": "PDF",
-                    "file_size": "256.GB",
+                    "file_size": "1.07 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0007B-V02-Component-Placement-Diagram",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/Reference-Design-SCH%26PCB/WDMB-0007B-V02-Component-Placement-Diagram.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "2.3 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0007B-V02",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/Reference-Design-SCH%26PCB/WDMB-0007B-V02.brd?raw=true",
+                    "file_format": "BRD",
+                    "file_size": "4.61 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0007B-V02",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/Reference-Design-SCH%26PCB/WDMB-0007B-V02.pcb?raw=true",
+                    "file_format": "PCB",
+                    "file_size": "3.77 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "SG2000-Hardware-PCB-Layout-Guide",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/SG2000-Hardware-PCB-Layout-Guide.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "10.9 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "SG2000-PINOUT",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/SG2000-PINOUT.xlsx?raw=true",
+                    "file_format": "XLSX",
+                    "file_size": "3.86 MB",
                     "file_date": "Jun 5,2023"
                 }
             ]
@@ -105,7 +138,7 @@
             "Development Hardware": [
                 {
                     "resources_name": "Huashan Sect",
-                    "resources_url": "https://www.baidu.com",
+                    "resources_url": "https://www.hw100k.com/coursedetail?id=195",
                     "resources_img": "/chips/test-img.webp",
                     "resources_info": "The Huashan Sect - CV181 Series Development Board, jointly released by Aligned Computing and Eco-Partner Hardware for a hundred thousand reasons, is an open-source ecosystem development board providing a RISC-V-based open development environment for extensive users. It focuses on visual and AI scene development, aiming to grow together with a vast community of developers."
                 }
@@ -113,7 +146,7 @@
         }
     },
     "sg2002": {
-        "title": "SG2002 is a high-performance, low-power chip for edge intelligent surveillance IP cameras, intelligent cat-eye door locks, visual doorbells, home intelligence and many other product areas.",
+        "title": "SG2002 is a high-performance chip for AIOT applications, with multiple cores, hardware codecs, an ISP for image enhancements, an in-house TPU for powerful processing, and diverse peripheral interfaces.",
         "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
         "front_view": "/chips/sg2002/sg2002-frontview.webp",
         "chip_view": [
@@ -129,10 +162,10 @@
         "diagram_url": "/chips/sg2002/sg2002-diagram.webp",
         "hardware": {
             "RISC-V CPU": [
-                "1xC906@1GHz、1xC906@700MHz"
+                "1 xC906@1GHz、1 xC906@700MHz"
             ],
-            "Rm CPU": [
-                "1xCortex-A53@1GHz"
+            "Arm CPU": [
+                "1 xCortex-A53@1GHz"
             ],
             "MCU": [
                 "8051@6KB SRAM"
@@ -151,11 +184,11 @@
             ],
             "Audio Module": [
                 "16bit Audio Codec",
-                "2xI2S/PCM",
-                "1xDMIC"
+                "2 xI2S/PCM",
+                "1 xDMIC"
             ],
             "Storage": [
-                "SIP-NOR、SPI-NAND、eMMC5.0、2xSDIO3.0"
+                "SPI-NOR、SPI-NAND、eMMC5.0、2 xSDIO3.0"
             ],
             "Network": [
                 "10M/100M MAC PHY"
@@ -164,7 +197,7 @@
                 "Crypto/Secure boot/TRNG/Efuze"
             ],
             "Peripherals": [
-                "1xUSB2.0 DRD/5 or 7xUART/3 or 4xSPI/15 or 16xPWM/1xIR/6xI2C/6 or 4xADC/(66 or 110 Multiplexing) GPIOs"
+                "1 xUSB2.0 DRD/5 xUART/3 xSPI/16 xPWM/1 xIR/6 xI2C/4 xADC/GPIOs"
             ],
             "Temperature Range": [
                 "0℃～70℃"
@@ -189,28 +222,40 @@
             }
         ],
         "downloads": {
-            "test1": [
+            "Hardware Design": [
                 {
-                    "download_name": "文件名称",
-                    "download_url": "https://www.baidu.com",
-                    "file_format": "PDF",
-                    "file_size": "256.GB",
+                    "download_name": "SG2002-QFN88-38-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/SG2002-QFN88-38-4L.DSN?raw=true",
+                    "file_format": "DSN",
+                    "file_size": "6.79 MB",
                     "file_date": "Jun 5,2023"
                 },
                 {
-                    "download_name": "文件名称",
-                    "download_url": "https://www.baidu.com",
+                    "download_name": "SG2002-QFN88-38-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/SG2002-QFN88-38-4L.pdf?raw=true",
                     "file_format": "PDF",
-                    "file_size": "256.GB",
+                    "file_size": "398 KB",
                     "file_date": "Jun 5,2023"
-                }
-            ],
-            "test2": [
+                },
                 {
-                    "download_name": "文件名称",
-                    "download_url": "https://www.baidu.com",
+                    "download_name": "WDMB-0006A-V01 Component Placement Diagram",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/WDMB-0006A-V01%20Component%20Placement%20Diagram.pdf?raw=true",
                     "file_format": "PDF",
-                    "file_size": "256.GB",
+                    "file_size": "637 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0006A-V01",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/WDMB-0006A-V01.brd?raw=true",
+                    "file_format": "BRD",
+                    "file_size": "2.09 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0006A-V01",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/WDMB-0006A-V01.pcb?raw=true",
+                    "file_format": "PCB",
+                    "file_size": "1.1 MB",
                     "file_date": "Jun 5,2023"
                 }
             ]
@@ -221,13 +266,13 @@
                     "resources_name": "Duo",
                     "resources_url": "/docs/duo/overview",
                     "resources_img": "/chips/duo-view.webp",
-                    "resources_info": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators"
+                    "resources_info": "Milk-V Duo 256M is an ultra-compact embedded development platform based on the SG2002 chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators."
                 }
             ]
         }
     },
     "cv1800b": {
-        "title": "CV1800B is a high-performance, low-power consumption chip designed for various consumer monitoring IP cameras, home intelligence, and other product domains. It integrates H.264/H.265 video compression encoders and ISP; supporting digital wide dynamic range, 3D noise reduction, defogging, lens distortion correction, and various other image enhancement and correction algorithms, providing customers with professional-grade video image quality.",
+        "title": "CV1800B: high-performance chip for consumer IP cameras and home intelligence. Integrates H.264/H.265 encoders and ISP for professional video quality.",
         "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
         "front_view": "/chips/cv1800b/cv1800b-frontview.webp",
         "chip_view": [
@@ -241,7 +286,7 @@
         "diagram_url": "/chips/cv1800b/cv1800B-diagram.webp",
         "hardware": {
             "RISC-V CPU": [
-                "1xC906@1GHz、1xC906@700MHz"
+                "1 xC906@1GHz、1 xC906@700MHz"
             ],
             "TPU": [
                 "0.5 Top@INT8"
@@ -258,7 +303,7 @@
                 "16bit Audio Codec"
             ],
             "Storage": [
-                "SIP-NOR、SPI-NAND、2xSDIO3.0"
+                "SPI-NOR、SPI-NAND、2 xSDIO3.0"
             ],
             "Network": [
                 "10M/100M MAC PHY"
@@ -267,7 +312,7 @@
                 "Secure boot/AES/SHA/Efuse"
             ],
             "Peripherals": [
-                "3 *ADC/4 *I2C /3 * SPI interfaces5*UART /4 *PWM;/2*SDIO 3.0 /51 GPIO"
+                "3 xADC/4 xI2C/3 xSPI/5 xUART/4 xPWM/2 xSDIO 3.0/51 GPIOs"
             ],
             "Temperature Range": [
                 "-30℃～70℃"
@@ -292,28 +337,68 @@
             }
         ],
         "downloads": {
-            "test1": [
+            "Hardware Design": [
                 {
-                    "download_name": "文件名称",
-                    "download_url": "https://www.baidu.com",
+                    "download_name": "CV1800B-Flash-Support-List",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-Flash-Support-List.pdf?raw=true",
                     "file_format": "PDF",
-                    "file_size": "256.GB",
+                    "file_size": "141 KB",
                     "file_date": "Jun 5,2023"
                 },
                 {
-                    "download_name": "文件名称",
-                    "download_url": "https://www.baidu.com",
-                    "file_format": "PDF",
-                    "file_size": "256.GB",
+                    "download_name": "CV1800B-QFN68-38-Board-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-4L.DSN?raw=true",
+                    "file_format": "DSN",
+                    "file_size": "2.1 MB",
                     "file_date": "Jun 5,2023"
-                }
-            ],
-            "test2": [
+                },
                 {
-                    "download_name": "文件名称",
-                    "download_url": "https://www.baidu.com",
+                    "download_name": "CV1800B-QFN68-38-Board-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-4L.pdf?raw=true",
                     "file_format": "PDF",
-                    "file_size": "256.GB",
+                    "file_size": "362 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-QFN68-38-Board-GPIO-List",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-GPIO-List.xlsx?raw=true",
+                    "file_format": "XLSX",
+                    "file_size": "248 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-Sensor-Support-List ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-Sensor-Support-List%20.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "180 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-VI-Interface-Detailed-Scenario-Description ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B_VI%20Interface%20Detailed%20Scenario%20Description.xlsx?raw=true",
+                    "file_format": "XLSX",
+                    "file_size": "40.3 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-WiFi-Support-List ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B_WiFi%20Support%20List%20.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "164 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0008A-V01 ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/WDMB-0008A-V01.asc?raw=true",
+                    "file_format": "ASC",
+                    "file_size": "912 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0008A-V01 ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/WDMB-0008A-V01.pcb?raw=true",
+                    "file_format": "PCB",
+                    "file_size": "1.05 MB",
                     "file_date": "Jun 5,2023"
                 }
             ]
@@ -324,7 +409,7 @@
                     "resources_name": "Duo",
                     "resources_url": "/docs/duo/overview",
                     "resources_img": "/chips/duo-view.webp",
-                    "resources_info": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators"
+                    "resources_info": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators."
                 }
             ]
         }
