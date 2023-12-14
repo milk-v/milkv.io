@@ -28,7 +28,7 @@ const Chips_module = () => {
               <Link to='/chips/sg2002'>SG2002</Link>
             </li>
             <li>
-              <img src='/home/cv1800B.webp' alt='CV1800B' onClick={() => { history.push("/chips/cv1800b") }} />
+              <img src='/home/cv1800b.webp' alt='CV1800B' onClick={() => { history.push("/chips/cv1800b") }} />
               <Link to='/chips/cv1800b'>CV1800B</Link>
             </li>
           </ul>
