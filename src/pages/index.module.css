@@ -387,6 +387,10 @@
     background-color: #B1B1B1;
 }
 
+.chips_list>li>img {
+    cursor: pointer;
+}
+
 @media screen and (min-width: 1950px) {
     .header_title {
         width: 1920px;

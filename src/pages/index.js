@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Translate from '@docusaurus/Translate';
 import styles from './index.module.css';
+import { useHistory } from '@docusaurus/router';
 
 import BuyPop from "../components/BuyPop"
 import SupportUs from "../components/SupportUs"
@@ -11,21 +12,23 @@ import ContactBar from "../components/ContactBar"
 import MetaData from "../components/MetaData"
 
 const Chips_module = () => {
+  const history = useHistory()
+
   return (
     <>
       <div className={styles.info_module}>
         <div className={styles.main_module}>
           <ul className={styles.chips_list}>
             <li className={styles.right_line}>
-              <img src='/home/sg2000.webp' alt='SG2000' />
+              <img src='/home/sg2000.webp' alt='SG2000' onClick={() => { history.push("/chips/sg2000") }} />
               <Link to='/chips/sg2000'>SG2000</Link>
             </li>
             <li className={styles.right_line}>
-              <img src='/home/sg2002.webp' alt='SG2002' />
+              <img src='/home/sg2002.webp' alt='SG2002' onClick={() => { history.push("/chips/sg2002") }} />
               <Link to='/chips/sg2002'>SG2002</Link>
             </li>
             <li>
-              <img src='/home/cv1800B.svg' alt='CV1800B' />
+              <img src='/home/cv1800B.webp' alt='CV1800B' onClick={() => { history.push("/chips/cv1800b") }} />
               <Link to='/chips/cv1800b'>CV1800B</Link>
             </li>
           </ul>
