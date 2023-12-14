@@ -276,9 +276,9 @@
         "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
         "front_view": "/chips/cv1800b/cv1800b-frontview.webp",
         "chip_view": [
-            "/chips/cv1800b/cv1800b-01.webp",
-            "/chips/cv1800b/cv1800b-02.webp",
-            "/chips/cv1800b/cv1800b-03.webp"
+            "/chips/cv1800b/cv1800B-01.webp",
+            "/chips/cv1800b/cv1800B-02.webp",
+            "/chips/cv1800b/cv1800B-03.webp"
         ],
         "chip_intro_text": [
             "CV1800B is a high-performance, low-power consumption chip designed for various consumer monitoring IP cameras, home intelligence, and other products. It integrates an H.264/H.265 video compression encoder and ISP and supports various image enhancement and correction algorithms such as digital wide dynamic range, 3D noise reduction, defogging, and lens distortion correction to provide professional-grade video image quality to customers. The chip also integrates a self-developed intelligent reference design (human form detection, area detection, motion detection), built-in DDR, and complete peripherals and external devices, providing a high-integration and concise solution to facilitate customer product development and mass production. In addition, it also provides secure boot, secure update, and secure encryption and so on to provide a series of security solutions for users from development, mass production to product application. The chip integrates an 8-bit MCU subsystem, which can replace general external MCUs to achieve the goal of saving BOM cost and power consumption."
