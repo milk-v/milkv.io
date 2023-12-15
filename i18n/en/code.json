@@ -526,7 +526,7 @@
     "description": "Duo.text.title"
   },
   "Duo.text.title2": {
-    "message": "A $9 RISC-V COMPUTER",
+    "message": "A RISC-V Computer",
     "description": "Duo.text.title"
   },
   "Duo.text.title3": {
@@ -610,7 +610,7 @@
     "description": "Duo 简介"
   },
   "duo.info.text.Introduction.max": {
-    "message": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators.",
+    "message": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost and high-performance platform for professionals, industrial ODMs, AIOT enthusiasts, DIY enthusiasts and creators.Duo 256M is an upgraded version of Duo designed with SG2002 as the main controller, with an upgraded memory of 256M to support the standard Linux system and applications, which can meet the application needs with high memory requirements and large storage capacity. Duo 256M is an upgraded version of Duo designed with SG2002 as the host controller, which supports standard Linux system and applications.",
     "description": "Duo 简介"
   },
   "duo.info.text.Hardware": {

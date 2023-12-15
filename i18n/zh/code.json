@@ -526,7 +526,7 @@
     "description": "Duo.text.title"
   },
   "Duo.text.title2": {
-    "message": "一台9美元的RISC-V电脑",
+    "message": "RISC-V 计算机",
     "description": "Duo.text.title"
   },
   "Duo.text.title3": {
@@ -610,7 +610,7 @@
     "description": "Duo 简介"
   },
   "duo.info.text.Introduction.max": {
-    "message": "Milk-V Duo是一个基于CV1800B芯片的超紧凑嵌入式开发平台。它可以运行Linux和RTOS，为专业人士、工业ODM、AIoT爱好者、DIY爱好者和创作者提供了一个可靠、低成本和高性能的平台。",
+    "message": "Milk-V Duo 是基于 CV1800B 芯片的超紧凑型嵌入式开发平台。Duo 256M 是以 SG2002 为主控制器设计的 Duo 的升级版，内存升级到 256M，支持标准的 Linux 系统和应用，可以满足大内存、大存储量的应用需求。Duo 256M 是以 SG2002 为主控制器设计的 Duo 的升级版，支持标准 Linux 系统和应用程序。",
     "description": "Duo 简介"
   },
   "duo.info.text.Hardware": {
