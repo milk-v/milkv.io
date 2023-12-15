@@ -25,11 +25,17 @@ export default (props) => {
                     <li>
                         <img src='/components/weChat.svg' />
                         <h2><Translate id='contact.text.WeChat' /></h2>
+                        <div className={styles.on5_bottom} id={styles.wechat}>
+                            <Link to='https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg3NDkwNTYyMw==#wechat_redirect' style={{ textDecoration: 'none', color: '#fff' }}><Translate id='contact.text.WeChat' /></Link>
+                        </div>
                         <p>Join Milk-V WeChat Group</p>
                     </li>
                     <li>
                         < img src='/components/QQGroup.svg' />
                         <h2><Translate id='contact.text.QQ' /></h2>
+                        <div className={styles.on5_bottom} id={styles.joinqq}>
+                            <Link to='https://qm.qq.com/cgi-bin/qm/qr?k=ZFCR14q78e6na-y4RH1KltBaC0UHqiiY&authKey=/HuSnCtvghVjBdHMhj1uZyhbHtLWTEq8AKt85nHQVEDTpYvYw5b0NWc1D1/yAav2&noverify=0' style={{ textDecoration: 'none', color: '#fff' }}><Translate id='contact.text.QQ' /></Link>
+                        </div>
                         <p>Join Milk-V QQ Group</p>
                     </li>
                 </ul>

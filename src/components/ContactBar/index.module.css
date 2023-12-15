@@ -73,6 +73,11 @@
     background-color: #2d88c9;
 }
 
+#wechat,
+#joinqq {
+    display: none;
+}
+
 @media screen and (min-width: 1950px) {
     .on5_box>h2 {
         width: 1920px;
@@ -272,5 +277,14 @@
         width: 130rem;
         height: 35rem;
         font-size: 14rem;
+    }
+
+    .on5_box>ul>li>h2 {
+        display: none;
+    }
+
+    #wechat,
+    #joinqq {
+        display: flex;
     }
 }
