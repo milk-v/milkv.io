@@ -7,24 +7,14 @@ import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
 import MetaData from "../../components/MetaData"
 
-import cssList from "./details.module.css"
+import styles from "./details.module.css"
 import Translate from '@docusaurus/Translate';
 
 function DetailsPage() {
-  const [num, setNum] = useState(0)
-  const banner = useRef()
   const [duo2, setDuo2] = useState(false)
 
   const duoStart = () => {
     setDuo2(false)
-  }
-  const onPrve = () => {
-    if (num == 0) return
-    setNum((num) => num + (banner.current.offsetWidth / 3))
-  }
-  const onNext = () => {
-    if (num === -(2 * (banner.current.offsetWidth / 3))) return
-    setNum((num) => num - (banner.current.offsetWidth / 3))
   }
 
   return (
@@ -35,140 +25,201 @@ function DetailsPage() {
         width: '100%',
         height: '100%',
         overflow: "hidden",
-        backgroundColor: '#000'
+        backgroundColor: '#151515'
       }}>
-        <div className={cssList.titleBox}>
-          <p className={cssList.meet}><Translate id='Duo.text.title1' /></p>
-          <h2 className={cssList.titleTxt}>Milk-V <Translate id='duo' /></h2>
-          <h2 className={cssList.textLine}><Translate id='Duo.text.title2' /></h2>
-          <p className={cssList.low}><Translate id='Duo.text.title3' /></p>
-          <div className={cssList.btnbuy} onClick={() => setDuo2(buy => !buy)}><Translate id='Buy.now' /></div>
-          <p className={cssList.tax}>*<Translate id='Duo.text.title4' /></p>
+        <div className={styles.titleBox}>
+          <p className={styles.meet}><Translate id='Duo.text.title1' /></p>
+          <h2 className={styles.titleTxt}>Milk-V <Translate id='duo' /></h2>
+          <h2 className={styles.textLine}><Translate id='Duo.text.title2' /></h2>
+          <p className={styles.low}><Translate id='Duo.text.title3' /></p>
+          <h3 className={styles.starting}>Starting from <span>$5</span></h3>
+          <div className={styles.btnbuy} onClick={() => setDuo2(buy => !buy)}><Translate id='Buy.now' /></div>
+          <p className={styles.tax}>(*<Translate id='Duo.text.title4' />)</p>
         </div>
-        <div className={cssList.rotateImg}></div>
-        <div className={cssList.title}><Translate id='line.title.Specification' /></div>
-        <div className={cssList.chartBox}>
-          <h2 className={cssList.chartTitle}><Translate id='info.text.powerful' /></h2>
-          <p className={cssList.chartTitle2}><Translate id='info.text.CPU' /></p>
-          <div className={cssList.largeText}>
-            <p className={cssList.one1}>1</p>
+        <div className={styles.rotateImg}></div>
+
+
+        <div className={styles.content_box}>
+          <div className={styles.storage}>
+            <div className={styles.left_view}>
+              <p className={styles.view_title}>Multiple Memory 0ptions<br /> Available for Selection</p>
+              <div className={styles.mb64}>64MB</div>
+              <div className={styles.mb256}>256MB</div>
+              <span>new</span>
+            </div>
+            <div className={styles.right_view}>
+              <p className={styles.max_title}>More Powerful than Others</p>
+              <p className={styles.min_title}>Dual Core RISC-V CPU up to</p>
+              <img src='/duo/comparison-chart.webp' className={styles.chat256} />
+              <img src='/duo/1ghz.svg' className={styles.right_ghz} />
+            </div>
+          </div>
+          <div className={styles.chips_diagram}>
+            <div>
+              <h3>CV1800B Architecture Diagram</h3>
+              <img src='/chips/cv1800b/cv1800b-diagram.webp' alt='CV1800B Diagram' />
+            </div>
+            <div>
+              <h3>SG2002 Architecture Diagram</h3>
+              <img src='/chips/sg2002/sg2002-diagram.webp' alt='SG2002 Diagram' />
+            </div>
+          </div>
+          <ul className={styles.support_ul}>
+            <li>
+              <p>Seamless switching between RISC-V and ARM architectures at the touch of a button</p>
+            </li>
+            <li>
+              <p>Dual-systeCapable of running dual operating systems concurrentlym Operation</p>
+            </li>
+            <li>
+              <p>All chip data is fully open-source</p>
+            </li>
+          </ul>
+          <div className={styles.peripherals}>
             <p>
-              <span className={cssList.spanG} >G</span>
-              <span className={cssList.spanHz}>Hz</span>
+              Interfaces compatible with Raspberry Pi, featuring a rich array of peripherals
             </p>
           </div>
-          <p className={cssList.vector}><Translate id='info.text.Vector' /></p>
-          <div className={cssList.shadow3}></div>
-          <div className={cssList.shadow4}></div>
-          <div className={cssList.Ghzbox}> </div>
-        </div>
-        <div className={cssList.exhibits}>
-          <div className={cssList.group2}>
-            <div className={cssList.textList}><Translate id='info.text.Ethernet' /></div>
-            <div className={cssList.exhibitsImg}></div>
+          <ul className={styles.audio_size_access}>
+            <li>
+              <p>Open AUDIO Interface</p>
+            </li>
+            <li>
+              <p className={styles.size_p}>As Compact and Lightweight as Chewing Gum</p>
+            </li>
+            <li>
+              <p>Extensive Range of Expansion Boards</p>
+            </li>
+          </ul>
+
+          <div className={styles.techspec_module}>
+            <h2><Translate id='line.title.TechSpecs' /></h2>
+            <p className={styles.techspec_info}>
+              <Translate id='duo.info.text.Introduction.max' />
+            </p>
+            <h3>
+              <Translate id='duo.info.text.Hardware' />
+            </h3>
+            <table className={styles.duo_techspec_table}>
+              <tbody>
+                <tr>
+                  <td className={styles.tr_width}></td>
+                  <td colSpan="2">Duo 256M</td>
+                  <td colSpan="2">Duo</td>
+                </tr>
+                <tr>
+                  <td>SoC</td>
+                  <td colSpan="2">SG2002</td>
+                  <td colSpan="2">CVITEK CV1800B</td>
+                </tr>
+                <tr>
+                  <td>RISC-V CPU</td>
+                  <td colSpan="2">C906@1Ghz + C906@700MHz</td>
+                  <td colSpan="2">C906@1Ghz + C906@700MHz</td>
+                </tr>
+                <tr>
+                  <td>Arm CPU</td>
+                  <td colSpan="2">1xCortex-A53 @ 1GHz
+                    (incompatible with C906@1GHz)</td>
+                  <td colSpan="2">N/A</td>
+                </tr>
+                <tr>
+                  <td>MCU</td>
+                  <td colSpan="2">8051@6KB SRAM</td>
+                  <td colSpan="2">N/A</td>
+                </tr>
+                <tr>
+                  <td>Memory</td>
+                  <td colSpan="2">256MB DDR3</td>
+                  <td colSpan="2">64MB DDR2</td>
+                </tr>
+                <tr>
+                  <td>NPU</td>
+                  <td colSpan="2">1Top @ INT8</td>
+                  <td colSpan="2">0.5Top @ INT8</td>
+                </tr>
+                <tr>
+                  <td>Storage</td>
+                  <td colSpan="2">1x microSD connector or
+                    1x SD NAND on board</td>
+                  <td colSpan="2">1x microSD connector or
+                    1x SD NAND on board</td>
+                </tr>
+                <tr>
+                  <td>USB</td>
+                  <td colSpan="2">1 x Type-C for power and data, USB Pads available</td>
+                  <td colSpan="2">1 x Type-C for power and data,
+                    USB Pads available</td>
+                </tr>
+                <tr>
+                  <td>CSI</td>
+                  <td colSpan="2">1x 16P FPC connector
+                    (MIPI CSI 2-lane)</td>
+                  <td colSpan="2">1x 16P FPC connector
+                    (MIPI CSI 2-lane)</td>
+                </tr>
+                <tr>
+                  <td>Sensor Support</td>
+                  <td colSpan="2">5M @ 30fps<br />100Mbps ethernet with PHY</td>
+                  <td colSpan="2">4M @ 25fps <br />100Mbps ethernet with PHY</td>
+                </tr>
+                <tr>
+                  <td>Audio</td>
+                  <td colSpan="2">Via GPIO Pads</td>
+                  <td colSpan="2">N/A</td>
+                </tr>
+                <tr>
+                  <td>GPIO</td>
+                  <td colSpan="2">26x GPIO Pads</td>
+                  <td colSpan="2">26x GPIO Pads</td>
+                </tr>
+                <tr>
+                  <td>Power</td>
+                  <td colSpan="2">5V/1A</td>
+                  <td colSpan="2">5V/1A</td>
+                </tr>
+                <tr>
+                  <td>OS Support</td>
+                  <td colSpan="2">Linux, RTOS</td>
+                  <td colSpan="2">Linux, RTOS</td>
+                </tr>
+                <tr>
+                  <td>Dimension</td>
+                  <td colSpan="2">21mm x 51mm</td>
+                  <td colSpan="2">21mm x 51mm</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>
+              <Translate id='duo.info.text.pinOut' />
+            </h3>
+            <h4>
+              - Duo / Duo 256M
+            </h4>
+            <img src='/duo/duo-pinout.webp' className={styles.duo_pinout} />
+            <h3><Translate id='duo.info.text.Documents' /></h3>
           </div>
-          <div className={cssList.micBox}>
-            <div className={cssList.micList1}>
-              <div className={cssList.frame1}></div>
-              <p><Translate id='info.text.MicroSD' /></p>
-              <div className={cssList.shadow6}></div>
-            </div>
-            <div className={cssList.micList2}>
-              <div className={cssList.frame2}></div>
-              <p><Translate id='info.text.RAM' /></p>
-              <div className={cssList.shadow7}></div>
-            </div>
-          </div>
-          <div className={cssList.footerText}><h2>26P GPIO</h2></div>
-          <div className={cssList.bigExhibits}>
-            <div className={cssList.head}><Translate id='info.text.Incredible' /></div>
-            <div className={cssList.support}><Translate id='info.text.support' /></div>
-            <div className={cssList.btnBox}>
-              <div className={cssList.shadow8}></div>
-              <div className={cssList.shadow9}></div>
-            </div>
-          </div>
-          <div className={cssList.lineChart}>
-            <div className={cssList.shadow10}></div>
-            <div className={cssList.shadow11}></div>
-            <div className={cssList.lineBox}>
-              <div className={cssList.line1}></div>
-              <div className={cssList.line2}></div>
-              <div className={cssList.line3}></div>
-              <div className={cssList.line4}></div>
-              <div className={cssList.lineGroup}></div>
-              <div className={cssList.jj} ></div>
-            </div>
-          </div>
-        </div>
-        <div className={cssList.title}><Translate id='line.title.size' /></div>
-        <div className={cssList.bannerList} >
-          <div ref={banner} style={{
-            transform: `translateX(${num}px)`,
-            transition: '1s'
-          }}>
-            <div className={cssList.bannerimg1}>
-              <div className={cssList.img1} ></div>
-              <p><Translate id='info.text.size.title1' /></p>
-            </div>
-            <div className={cssList.bannerimg2}>
-              <div className={cssList.img2} ></div>
-              <p><Translate id='info.text.size.title2' /></p>
-            </div>
-            <div className={cssList.bannerimg3}>
-              <div className={cssList.img3} ></div>
-              <p><Translate id='info.text.size.title3' /></p>
-            </div>
-            <div className={cssList.bannerimg4}>
-              <div className={cssList.img4} ></div>
-              <p><Translate id='info.text.size.title4' /></p>
-            </div>
-            <div className={cssList.bannerimg5}>
-              <div className={cssList.img5} ></div>
-              <p><Translate id='info.text.size.title5' /></p>
-            </div>
-          </div>
-          <div className={cssList.prev} onClick={() => onPrve()}></div>
-          <div className={cssList.next} onClick={() => onNext()}></div>
-        </div>
-        <div className={cssList.chartTech}>
-          <div className={cssList.title}><Translate id='line.title.TechSpecs' /></div>
-          <div className={cssList.tech_text1}>
-            <h2 className={cssList.tech_title}><Translate id='duo.info.text.Introduction' /></h2>
-            <p className={cssList.tech_p}><Translate id='duo.info.text.Introduction.max' /></p>
-          </div>
-          <div className={cssList.tech_text2}>
-            <h2 className={cssList.tech_title}><Translate id='duo.info.text.Hardware' /></h2>
-            <p className={cssList.tech_p_line}>- CVITEK CV1800B (C906@1Ghz + C906@700MHz)</p>
-            <p className={cssList.tech_p_line}>- <Translate id='duo.Hardware.info1' /></p>
-            <p className={cssList.tech_p_line}>- <Translate id='info.text.RAM' /></p>
-            <p className={cssList.tech_p_line}>- <Translate id='duo.Hardware.info2' /></p>
-            <p className={cssList.tech_p_line}>- <Translate id='duo.Hardware.info3' /></p>
-          </div>
-          <h2 className={cssList.tech_title3}><Translate id='duo.info.text.pinOut' /></h2>
-          <img src='/docs/duo/pinout.webp' className={cssList.pinImg}></img>
-          <div className={cssList.document}>
-            <h2><Translate id='duo.info.text.Documents' /></h2>
+          <div className={styles.document}>
             <ul>
               <li>
-                <div className={cssList.down}></div>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/tree/main/hardware/duo">Duo Datasheet, PDF</a>
+                <div className={styles.down}></div>
+                <a className={styles.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/tree/main/hardware/duo">Duo Datasheet, PDF</a>
               </li>
               <li>
-                <div className={cssList.down}></div>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/tree/main/hardware/duo">Duo Schematic, PDF</a>
+                <div className={styles.down}></div>
+                <a className={styles.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/tree/main/hardware/duo">Duo Schematic, PDF</a>
               </li>
               <li>
-                <span className={cssList.down}></span>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/tree/main/hardware/duo">Duo Mechanical Drawings, DXF</a>
+                <span className={styles.down}></span>
+                <a className={styles.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/tree/main/hardware/duo">Duo Mechanical Drawings, DXF</a>
               </li>
               <li>
-                <span className={cssList.down}></span>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/tree/main/hardware/duo">Duo Schematic Library, OLB</a>
+                <span className={styles.down}></span>
+                <a className={styles.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/tree/main/hardware/duo">Duo Schematic Library, OLB</a>
               </li>
               <li>
-                <span className={cssList.down}></span>
-                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/tree/main/hardware/duo">Duo PCB Footprint, DRA</a>
+                <span className={styles.down}></span>
+                <a className={styles.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/tree/main/hardware/duo">Duo PCB Footprint, DRA</a>
               </li>
             </ul>
           </div>

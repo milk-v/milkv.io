@@ -7,10 +7,6 @@ a {
     text-decoration: none;
 }
 
-body {
-    background-color: #000;
-}
-
 .btnbuy {
     border: 2px solid #fff;
     border-radius: 35px;
@@ -46,6 +42,261 @@ body {
 
 .bannerList p {
     text-align: center;
+}
+
+.starting {
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.starting>span {
+    background: linear-gradient(180deg, #02F4A5 -7%, #02DAF4 109%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.content_box {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.storage {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.storage>div {
+    position: relative;
+    background-color: #000;
+}
+
+.left_view {
+    width: 28.5%;
+}
+
+.right_view {
+    width: 70%;
+}
+
+.view_title {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.left_view>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.left_view>span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-weight: 500;
+    background-color: #f00;
+}
+
+.mb64 {
+    margin: 0 auto;
+    color: #fff;
+}
+
+.mb256 {
+    margin: 0 auto;
+    border-color: #0254D5 !important;
+    color: #0254D5;
+}
+
+.max_title {
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+}
+
+.min_title {
+    text-align: center;
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.chat256 {
+    display: block;
+    width: 90%;
+}
+
+.right_ghz {
+    position: absolute;
+}
+
+.chips_diagram {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chips_diagram>div {
+    width: 49.3%;
+    background-color: #000;
+}
+
+.chips_diagram>div>h3 {
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+}
+
+.chips_diagram>div>img {
+    width: 95%;
+    display: block;
+}
+
+.audio_size_access,
+.support_ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.support_ul>li {
+    width: 32.5%;
+    aspect-ratio: 466/524;
+}
+
+.audio_size_access>li>p,
+.peripherals>p,
+.support_ul>li>p {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.support_ul>li:last-child {
+    background: url(/static/duo/open-source.webp) no-repeat;
+    background-size: cover;
+}
+
+.support_ul>li:nth-last-child(2) {
+    background: url(/static/duo/support-os.webp) no-repeat;
+    background-size: cover;
+}
+
+.support_ul>li:nth-last-child(3) {
+    background: url(/static/duo/chip-view.webp) no-repeat;
+    background-size: cover;
+}
+
+.peripherals {
+    width: 100%;
+    aspect-ratio: 144/42;
+    background: url(/static/duo/peripherals.webp) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.audio_size_access>li {
+    width: 32.5%;
+    aspect-ratio: 467/321;
+}
+
+.audio_size_access>li:last-child {
+    background: url(/static/duo/accessios-support.webp) no-repeat;
+    background-size: cover;
+}
+
+.audio_size_access>li:nth-last-child(2) {
+    background: url(/static/duo/size-view.webp) no-repeat;
+    background-size: cover;
+}
+
+.audio_size_access>li:nth-last-child(3) {
+    background: url(/static/duo/audio.webp) no-repeat;
+    background-size: cover;
+}
+
+.techspec_module>h2 {
+    color: #FFF;
+    text-align: left;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.techspec_module>h3 {
+    color: #FFF;
+    text-align: left;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.techspec_module>p {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.tr_width {
+    width: 20%;
+}
+
+.duo_techspec_table>tbody>tr>td {
+    color: rgba(255, 255, 255, 0.85);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+
+.techspec_module>h4 {
+    color: #FFF;
+    text-align: left;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
 }
 
 @media screen and (min-width: 1950px) {
@@ -676,7 +927,7 @@ body {
     }
 
 
-    .document>h1 {
+    .document>h2 {
         color: #fff;
         font-size: 48px;
         margin-top: 80px;
@@ -750,14 +1001,150 @@ body {
         background-size: 100%;
         position: relative;
     }
+
+    .starting {
+        font-size: 42px;
+        margin: 70px 0;
+    }
+
+    .starting>span {
+        font-size: 42px;
+    }
+
+    .content_box {
+        width: 1920px;
+    }
+
+    .view_title {
+        font-size: 36px;
+        margin-top: 30px;
+    }
+
+    .left_view>div {
+        width: 260px;
+        height: 130px;
+        padding: 10px;
+        gap: 10px;
+        font-size: 48px;
+    }
+
+    .left_view>span {
+        padding: 2px 15px;
+        font-size: 24px;
+    }
+
+    .mb64 {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .max_title {
+        font-size: 34px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .min_title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .chat256 {
+        margin: 0 auto 30px;
+    }
+
+    .right_ghz {
+        top: 30px;
+        right: 80px;
+        width: 180px;
+    }
+
+    .chips_diagram {
+        margin-top: 30px;
+    }
+
+    .chips_diagram>div>h3 {
+        font-size: 28px;
+        margin: 50px 0 30px;
+    }
+
+    .chips_diagram>div>img {
+        margin: 0 auto 50px;
+    }
+
+    .support_ul>li {
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    .audio_size_access>li>p,
+    .peripherals>p,
+    .support_ul>li>p {
+        font-size: 36px;
+        margin-top: 50px;
+    }
+
+    .peripherals {
+        margin-top: 30px;
+    }
+
+    .audio_size_access>li {
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    .size_p {
+        margin-top: 20px !important;
+    }
+
+    .techspec_module {
+        margin-top: 150px;
+    }
+
+    .techspec_module>h2 {
+        font-size: 80px;
+    }
+
+    .techspec_module>h3 {
+        font-size: 48px;
+    }
+
+    .techspec_module>p {
+        font-size: 26px;
+        margin: 80px 0;
+    }
+
+    .duo_techspec_table {
+        margin: 30px 0 100px;
+    }
+
+    .duo_techspec_table>tbody>tr>td {
+        padding: 20px 0;
+        padding-left: 50px;
+        font-size: 32px;
+    }
+
+    .content_box {
+        margin-top: 100px;
+    }
+
+    .duo_pinout {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .techspec_module>h4 {
+        font-size: 28px;
+        margin-top: 100px;
+    }
 }
 
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
     .btnbuy {
-        width: 240px;
-        height: 80px;
-        font-size: 43px;
-        margin: 120px auto 30px;
+        width: 180px;
+        height: 60px;
+        font-size: 22px;
+        margin: 60px auto 30px;
     }
 
     .meet {
@@ -772,7 +1159,7 @@ body {
     }
 
     .tax {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .one1 {
@@ -1379,7 +1766,7 @@ body {
     }
 
 
-    .document>h1 {
+    .document>h2 {
         color: #fff;
         font-size: 48px;
         margin-top: 80px;
@@ -1453,13 +1840,149 @@ body {
         background-size: 100%;
         position: relative;
     }
+
+    .starting {
+        font-size: 36px;
+        margin: 50px 0;
+    }
+
+    .starting>span {
+        font-size: 32px;
+    }
+
+    .content_box {
+        width: 1420px;
+    }
+
+    .view_title {
+        font-size: 26px;
+        margin-top: 40px;
+    }
+
+    .left_view>div {
+        width: 220px;
+        height: 100px;
+        padding: 10px;
+        gap: 10px;
+        font-size: 40px;
+    }
+
+    .left_view>span {
+        padding: 2px 15px;
+        font-size: 20px;
+    }
+
+    .mb64 {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .max_title {
+        font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    .min_title {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .chat256 {
+        margin: 0 auto 30px;
+    }
+
+    .right_ghz {
+        top: 30px;
+        right: 80px;
+        width: 150px;
+    }
+
+    .chips_diagram {
+        margin-top: 20px;
+    }
+
+    .chips_diagram>div>h3 {
+        font-size: 26px;
+        margin: 50px 0 30px;
+    }
+
+    .chips_diagram>div>img {
+        margin: 0 auto 50px;
+    }
+
+    .support_ul>li {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    .audio_size_access>li>p,
+    .peripherals>p,
+    .support_ul>li>p {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .peripherals {
+        margin-top: 20px;
+    }
+
+    .audio_size_access>li {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    .size_p {
+        margin-top: 20px !important;
+    }
+
+    .techspec_module {
+        margin-top: 120px;
+    }
+
+    .techspec_module>h2 {
+        font-size: 60px;
+    }
+
+    .techspec_module>h3 {
+        font-size: 38px;
+    }
+
+    .techspec_module>p {
+        font-size: 20px;
+        margin: 50px 0;
+    }
+
+    .duo_techspec_table {
+        margin: 30px 0 80px;
+    }
+
+    .duo_techspec_table>tbody>tr>td {
+        padding: 20px 0;
+        padding-left: 30px;
+        font-size: 24px;
+    }
+
+    .content_box {
+        margin-top: 80px;
+    }
+
+    .duo_pinout {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .techspec_module>h4 {
+        font-size: 24px;
+        margin-top: 60px;
+    }
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1050px) {
     .btnbuy {
-        width: 200px;
-        height: 70px;
-        font-size: 34px;
+        width: 140px;
+        height: 50px;
+        font-size: 18px;
         margin: 60px auto 20px;
     }
 
@@ -1475,7 +1998,7 @@ body {
     }
 
     .tax {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .one1 {
@@ -2075,10 +2598,9 @@ body {
         width: 1000px;
     }
 
-
-    .document>h1 {
+    .document>h2 {
         color: #fff;
-        font-size: 48px;
+        font-size: 28px;
     }
 
     .document>ul {
@@ -2112,8 +2634,6 @@ body {
         text-decoration: none;
         font-size: 22px;
     }
-
-
 
     .embrace {
         position: absolute;
@@ -2152,13 +2672,148 @@ body {
         background-size: 100%;
         position: relative;
     }
+
+    .starting {
+        font-size: 30px;
+        margin: 30px 0;
+    }
+
+    .starting>span {
+        font-size: 34px;
+    }
+
+    .content_box {
+        width: 1000px;
+    }
+
+    .view_title {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .left_view>div {
+        width: 160px;
+        height: 80px;
+        padding: 10px;
+        font-size: 30px;
+    }
+
+    .left_view>span {
+        padding: 2px 15px;
+        font-size: 20px;
+    }
+
+    .mb64 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .max_title {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .min_title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .chat256 {
+        margin: 0 auto 20px;
+    }
+
+    .right_ghz {
+        top: 20px;
+        right: 40px;
+        width: 120px;
+    }
+
+    .chips_diagram {
+        margin-top: 20px;
+    }
+
+    .chips_diagram>div>h3 {
+        font-size: 20px;
+        margin: 30px 0 20px;
+    }
+
+    .chips_diagram>div>img {
+        margin: 0 auto 20px;
+    }
+
+    .support_ul>li {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    .audio_size_access>li>p,
+    .peripherals>p,
+    .support_ul>li>p {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .peripherals {
+        margin-top: 20px;
+    }
+
+    .audio_size_access>li {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    .size_p {
+        margin-top: 20px !important;
+    }
+
+    .techspec_module {
+        margin-top: 80px;
+    }
+
+    .techspec_module>h2 {
+        font-size: 40px;
+    }
+
+    .techspec_module>h3 {
+        font-size: 28px;
+    }
+
+    .techspec_module>p {
+        font-size: 16px;
+        margin: 30px 0;
+    }
+
+    .duo_techspec_table {
+        margin: 30px 0 50px;
+    }
+
+    .duo_techspec_table>tbody>tr>td {
+        padding: 20px 0;
+        padding-left: 30px;
+        font-size: 18px;
+    }
+
+    .content_box {
+        margin-top: 60px;
+    }
+
+    .duo_pinout {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .techspec_module>h4 {
+        font-size: 18px;
+        margin-top: 60px;
+    }
 }
 
 @media screen and (max-width: 1050px) and (min-width: 750px) {
     .btnbuy {
-        width: 160px;
-        height: 60px;
-        font-size: 26px;
+        width: 120px;
+        height: 50px;
+        font-size: 16px;
         margin: 40px auto 10px;
     }
 
@@ -2172,7 +2827,7 @@ body {
     }
 
     .tax {
-        font-size: 20px;
+        font-size: 12px;
     }
 
     .one1 {
@@ -2765,9 +3420,9 @@ body {
     }
 
 
-    .document>h1 {
+    .document>h2 {
         color: #fff;
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .document>ul {
@@ -2842,6 +3497,140 @@ body {
         background: url(/static/components/footerbg.png) no-repeat;
         background-size: 100%;
         position: relative;
+    }
+
+    .starting {
+        font-size: 20px;
+    }
+
+    .starting>span {
+        font-size: 20px;
+    }
+
+    .content_box {
+        width: 90%;
+    }
+
+    .view_title {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    .left_view>div {
+        width: 100px;
+        height: 50px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .left_view>span {
+        padding: 2px 15px;
+        font-size: 12px;
+    }
+
+    .mb64 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .max_title {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .min_title {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .chat256 {
+        margin: 0 auto 20px;
+    }
+
+    .right_ghz {
+        top: 20px;
+        right: 20px;
+        width: 80px;
+    }
+
+    .chips_diagram {
+        margin-top: 20px;
+    }
+
+    .chips_diagram>div>h3 {
+        font-size: 16px;
+        margin: 20px 0 15px;
+    }
+
+    .chips_diagram>div>img {
+        margin: 0 auto 20px;
+    }
+
+    .support_ul>li {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    .audio_size_access>li>p,
+    .peripherals>p,
+    .support_ul>li>p {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .peripherals {
+        margin-top: 20px;
+    }
+
+    .audio_size_access>li {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    .size_p {
+        margin-top: 10px !important;
+    }
+
+    .techspec_module {
+        margin-top: 50px;
+    }
+
+    .techspec_module>h2 {
+        font-size: 30px;
+    }
+
+    .techspec_module>h3 {
+        font-size: 20px;
+    }
+
+    .techspec_module>p {
+        font-size: 12px;
+        margin: 20px 0;
+    }
+
+    .duo_techspec_table {
+        margin: 30px 0 50px;
+    }
+
+    .duo_techspec_table>tbody>tr>td {
+        padding: 15px 0;
+        padding-left: 20px;
+        font-size: 14px;
+    }
+
+    .content_box {
+        margin-top: 50px;
+    }
+
+    .duo_pinout {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .techspec_module>h4 {
+        font-size: 14px;
+        margin-top: 40px;
     }
 }
 
@@ -3402,7 +4191,6 @@ body {
         top: 200rem;
     }
 
-
     .chartTech {
         width: 340rem;
         margin: 50rem auto;
@@ -3464,10 +4252,10 @@ body {
     }
 
 
-    .document>h1 {
+    .document>h2 {
         color: #fff;
         margin-top: 20rem;
-        font-size: 26rem;
+        font-size: 16rem;
     }
 
     .document>ul {
@@ -3539,5 +4327,170 @@ body {
         background: url(/static/components/footerbg.png) no-repeat;
         background-size: 100%;
         position: relative;
+    }
+
+    .storage {
+        flex-direction: column;
+    }
+
+    .starting {
+        font-size: 20rem;
+    }
+
+    .starting>span {
+        font-size: 20rem;
+    }
+
+    .content_box {
+        width: 95%;
+    }
+
+    .view_title {
+        font-size: 20rem;
+        margin-top: 30rem;
+    }
+
+    .storage>div {
+        width: 100%;
+    }
+
+    .left_view {
+        margin-bottom: 10rem;
+        padding-bottom: 20rem;
+    }
+
+    .left_view>div {
+        width: 100rem;
+        height: 50rem;
+        padding: 10rem;
+        font-size: 20rem;
+    }
+
+    .left_view>span {
+        padding: 2rem 15rem;
+        font-size: 14rem;
+    }
+
+    .mb64 {
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+    }
+
+    .max_title {
+        font-size: 20rem;
+        margin-top: 20rem;
+        margin-bottom: 5rem;
+    }
+
+    .min_title {
+        font-size: 14rem;
+        margin-bottom: 20rem;
+    }
+
+    .chat256 {
+        margin: 0 auto 20rem;
+    }
+
+    .right_ghz {
+        top: 40rem;
+        right: 20rem;
+        width: 50rem;
+    }
+
+    .chips_diagram {
+        margin-top: 20rem;
+        flex-direction: column;
+    }
+
+    .chips_diagram>div {
+        width: 100%;
+        margin-bottom: 10rem;
+    }
+
+    .chips_diagram>div>h3 {
+        font-size: 20rem;
+        margin: 20rem 0 15rem;
+    }
+
+    .chips_diagram>div>img {
+        margin: 0 auto 20rem;
+    }
+
+    .support_ul {
+        flex-direction: column;
+    }
+
+    .support_ul>li {
+        width: 100%;
+        margin-top: 20rem;
+        padding: 0 20rem;
+    }
+
+    .audio_size_access>li>p,
+    .peripherals>p,
+    .support_ul>li>p {
+        font-size: 20rem;
+        margin-top: 30rem;
+    }
+
+    .peripherals {
+        height: 350rem;
+        margin-top: 20rem;
+        background-position: 80%;
+    }
+
+    .audio_size_access {
+        flex-direction: column;
+    }
+
+    .audio_size_access>li {
+        width: 100%;
+        margin-top: 10rem;
+        padding: 0 20rem;
+    }
+
+    .size_p {
+        margin-top: 10rem !important;
+    }
+
+    .techspec_module {
+        margin-top: 50rem;
+    }
+
+    .techspec_module>h2 {
+        font-size: 30rem;
+    }
+
+    .techspec_module>h3 {
+        font-size: 20rem;
+    }
+
+    .techspec_module>p {
+        font-size: 12rem;
+        margin: 20rem 0;
+    }
+
+    .duo_techspec_table {
+        margin: 30rem 0 50rem;
+    }
+
+    .duo_techspec_table>tbody>tr>td {
+        padding: 15rem 0;
+        padding-left: 20rem;
+        font-size: 14rem;
+    }
+
+    .content_box {
+        margin-top: 50rem;
+    }
+
+    .duo_pinout {
+        width: 100%;
+        margin: 20rem 0;
+    }
+
+    .techspec_module>h4 {
+        font-size: 14rem;
+        margin-top: 20rem;
     }
 }
