@@ -119,8 +119,7 @@ function DetailsPage() {
                 </tr>
                 <tr>
                   <td>Arm CPU</td>
-                  <td colSpan="2">1xCortex-A53 @ 1GHz
-                    (incompatible with C906@1GHz)</td>
+                  <td colSpan="2">1xCortex-A53 @ 1GHz</td>
                   <td colSpan="2">N/A</td>
                 </tr>
                 <tr>

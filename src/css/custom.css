@@ -432,6 +432,11 @@ strong {
   src: url(/static/ttf/Roboto-Condensed-3.ttf);
 }
 
+@font-face {
+  font-family: Inter;
+  src: url(/static/ttf/Inter.ttf);
+}
+
 .hidden {
   display: none !important;
 }
