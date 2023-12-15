@@ -55,8 +55,12 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/milk-v/milkv.io/edit/main/',
+          editUrl: ({ locale, docPath }) => {
+            if (locale !== "en") {
+              return `https://github.com/milk-v/milkv.io/edit/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
+            }
+            return `https://github.com/milk-v/milkv.io/edit/main/docs/${docPath}`;
+          },
         },
         blog: {
           showReadingTime: true,
