@@ -9,7 +9,7 @@ const sidebars = {
     {
       type: "category",
       label: '🚀 Getting Started',
-      collapsed: true,
+      collapsed: false,
       link: {
         type: "generated-index",
         title: '🚀 Getting Started',
@@ -28,7 +28,7 @@ const sidebars = {
     {
       type: "category",
       label: '🖥️ App Development',
-      collapsed: true,
+      collapsed: false,
       link: {
         type: "generated-index",
         title: '🖥️ App Development',
@@ -41,7 +41,7 @@ const sidebars = {
         {
           type: "category",
           label: 'TPU',
-          collapsed: true,
+          collapsed: false,
           link: {
             title: 'TPU',
             description: ' ',
@@ -64,7 +64,7 @@ const sidebars = {
     {
       type: "category",
       label: '🧰 Resources',
-      collapsed: true,
+      collapsed: false,
       link: {
         type: "generated-index",
         title: '🧰 Resources',
@@ -80,7 +80,7 @@ const sidebars = {
     {
       type: "category",
       label: '🔌 IO Boards',
-      collapsed: true,
+      collapsed: false,
       link: {
         type: 'doc',
         id: 'duo/io-board/usb-ethernet-iob',
@@ -92,7 +92,7 @@ const sidebars = {
     {
       type: "category",
       label: '📷 Camera',
-      collapsed: true,
+      collapsed: false,
       link: {
         type: 'doc',
         id: 'duo/camera/gc2083',
@@ -112,7 +112,7 @@ const sidebars = {
     {
       type: "category",
       label: '🏁 Getting Started',
-      collapsed: true,
+      collapsed: false,
       link: {
         type: 'generated-index',
         title: '🏁 Getting Started',
@@ -135,7 +135,7 @@ const sidebars = {
     {
       type: "category",
       label: '🧰 Resources',
-      collapsed: true,
+      collapsed: false,
       link: {
         type: 'generated-index',
         title: '🧰 Resources',
@@ -163,7 +163,7 @@ const sidebars = {
     {
       type: "category",
       label: '🚀 Getting Started',
-      collapsed: true,
+      collapsed: false,
       link: {
         type: 'generated-index',
         title: '🚀 Getting Started',
@@ -183,7 +183,7 @@ const sidebars = {
     {
       type: "category",
       label: '🔳 Compute Module',
-      collapsed: true,
+      collapsed: false,
       link: {
         type: 'generated-index',
         title: '🔳 Compute Module',
@@ -199,7 +199,7 @@ const sidebars = {
         {
           type: "category",
           label: '🧰 Resources',
-          collapsed: true,
+          collapsed: false,
           link: {
             type: 'doc',
             id: 'mars/compute-module/resources/image',
