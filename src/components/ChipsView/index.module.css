@@ -349,6 +349,58 @@
     line-height: 120%;
 }
 
+.a_context {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(/static/chips/alleged-contexts.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.a_context>img {
+    display: block;
+}
+
+.p_intro {
+    width: 100%;
+    background-color: #2D88C9;
+    overflow: hidden;
+}
+
+.p_intro>ul {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.p_intro>ul>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p_intro>ul>li>h4 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 5px;
+}
+
+.p_intro>ul>li>p {
+    color: rgba(255, 255, 255, 0.90);
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    margin-bottom: 0;
+}
 
 @media screen and (min-width: 1950px) {
 
@@ -506,6 +558,30 @@
 
     .headModule {
         margin-top: 100px;
+    }
+
+    .a_context>img {
+        width: 250px;
+        margin: 50px auto;
+    }
+
+    .p_intro>ul {
+        width: 1240px;
+        margin: 35px auto;
+    }
+
+    .p_intro>ul>li>img {
+        width: 64px;
+        margin-bottom: 15px;
+    }
+
+    .p_intro>ul>li>h4 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .p_intro>ul>li>p {
+        font-size: 14px;
     }
 }
 
@@ -666,6 +742,30 @@
     .headModule {
         margin-top: 100px;
     }
+
+    .a_context>img {
+        width: 250px;
+        margin: 50px auto;
+    }
+
+    .p_intro>ul {
+        width: 1200px;
+        margin: 35px auto;
+    }
+
+    .p_intro>ul>li>img {
+        width: 60px;
+        margin-bottom: 15px;
+    }
+
+    .p_intro>ul>li>h4 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .p_intro>ul>li>p {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1000px) {
@@ -824,6 +924,30 @@
 
     .headModule {
         margin-top: 80px;
+    }
+
+    .a_context>img {
+        width: 200px;
+        margin: 40px auto;
+    }
+
+    .p_intro>ul {
+        width: 950px;
+        margin: 35px auto;
+    }
+
+    .p_intro>ul>li>img {
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .p_intro>ul>li>h4 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .p_intro>ul>li>p {
+        font-size: 12px;
     }
 }
 
@@ -993,6 +1117,30 @@
 
     .headModule {
         margin-top: 60px;
+    }
+
+    .a_context>img {
+        width: 200px;
+        margin: 40px auto;
+    }
+
+    .p_intro>ul {
+        width: 90%;
+        margin: 25px auto;
+    }
+
+    .p_intro>ul>li>img {
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .p_intro>ul>li>h4 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .p_intro>ul>li>p {
+        font-size: 12px;
     }
 }
 
@@ -1231,5 +1379,32 @@
     .board_info>img,
     .board_info>div {
         width: 100%;
+    }
+
+    .a_context>img {
+        width: 200rem;
+        margin: 40rem auto;
+    }
+
+    .p_intro>ul {
+        width: 90%;
+        margin: 25rem auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20rem;
+    }
+
+    .p_intro>ul>li>img {
+        width: 45rem;
+        margin-bottom: 15rem;
+    }
+
+    .p_intro>ul>li>h4 {
+        font-size: 14rem;
+        margin-bottom: 5rem;
+    }
+
+    .p_intro>ul>li>p {
+        font-size: 12rem;
     }
 }

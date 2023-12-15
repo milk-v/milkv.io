@@ -335,10 +335,44 @@ export default (props) => {
                         </div>
                     </div>
                 </div>
+                <div className={styles.certificate}>
+                    <div>
+                        <h2>Agency Certificate</h2>
+                        <div className={styles.a_context}>
+                            <img src="/chips/alleged-victim.webp" />
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className={styles.certificate}></div>
-
-
+            <div className={styles.p_intro}>
+                <ul>
+                    <li>
+                        <img src="/chips/promise1.svg" />
+                        <h4>Original Authentic</h4>
+                        <p>Factory Authorized Agent</p>
+                    </li>
+                    <li>
+                        <img src="/chips/promise2.svg" />
+                        <h4>Available for Immediate Dispatch</h4>
+                        <p>Ships within 4 Hours</p>
+                    </li>
+                    <li>
+                        <img src="/chips/promise3.svg" />
+                        <h4>Competitive Pricing</h4>
+                        <p>First-tier Agent Rates</p>
+                    </li>
+                    <li>
+                        <img src="/chips/promise4.svg" />
+                        <h4>Solution Design</h4>
+                        <p>All-in-One Chip Solution Design</p>
+                    </li>
+                    <li>
+                        <img src="/chips/promise5.svg" />
+                        <h4>Abundant Resources</h4>
+                        <p>Extensive Chip Design Resources</p>
+                    </li>
+                </ul>
+            </div>
             <div className={styles.toTop} style={{ display: `${scrollDirection ? 'block' : 'none'}` }} onClick={() => {
                 window.scrollTo({ top: 0, behavior: 'smooth' })
             }}>
