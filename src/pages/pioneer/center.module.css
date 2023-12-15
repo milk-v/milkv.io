@@ -43,16 +43,20 @@
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
 }
 
+.support_ioc {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #252525;
+}
+
 @media screen and (min-width: 1950px) {
     .btnbuy {
         width: 240px;
         height: 80px;
         font-size: 43px;
         margin: 120px auto 30px;
-    }
-
-    .list1 {
-        margin-top: 100px;
     }
 
     .title {
@@ -243,7 +247,7 @@
 
     .pionBox {
         width: 1920px;
-        margin: 120px auto 200px;
+        margin: 120px auto 50px;
         display: flex;
         justify-content: space-between;
     }
@@ -460,95 +464,6 @@
         padding-left: 0;
     }
 
-
-    .list1>li {
-        width: 450px;
-        border: 1px solid #05EAFF;
-        height: 100%;
-        border-radius: 18.8px;
-    }
-
-    .list2>li {
-        width: 613px;
-        height: 100%;
-        border-radius: 18.8px;
-        border: 1px solid #05EAFF;
-    }
-
-    .list2 {
-        margin-bottom: 150px;
-    }
-
-    .div_on1 {
-        background: url(/static/pioneer/fedoralogo.svg);
-        background-size: 100%;
-
-    }
-
-    .div_on1>div {
-        width: 125px;
-        height: 125px;
-        margin: 28px auto 0;
-    }
-
-    .div_on2 {
-        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    }
-
-    .div_on2>div {
-        width: 168px;
-        height: 128px;
-        margin: 28px auto 0;
-        background: url(/static/pioneer/os-icon3.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on3 {
-        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    }
-
-    .div_on3>div {
-        width: 222px;
-        height: 125px;
-        margin: 28px auto 0;
-        background: url(/static/pioneer/os-icon6.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on4 {
-        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    }
-
-    .div_on4>div {
-        width: 119px;
-        height: 125px;
-        margin: 28px auto 0;
-        background: url(/static/pioneer/os-icon4.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on5 {
-        width: 180px;
-        height: 130px;
-        margin: 18px auto 0;
-        background: url(/static/pioneer/os-icon2.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on6 {
-        width: 100%;
-        height: 100%;
-        background: url(/static/pioneer/pioneerxitong.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on7 {
-        width: 376px;
-        height: 125px;
-        margin: 28px auto 0;
-        background: url(/static/pioneer/os-icon1.svg) no-repeat;
-        background-size: 100%;
-    }
 
     .bannerBox {
         width: 1920px;
@@ -799,6 +714,15 @@
         text-decoration: none;
         font-size: 25.8992px;
     }
+
+    .support_ioc {
+        padding: 20px 50px;
+        margin-bottom: 100px;
+    }
+
+    .support_ioc>img {
+        width: 110px;
+    }
 }
 
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
@@ -807,10 +731,6 @@
         height: 80px;
         font-size: 43px;
         margin: 120px auto 30px;
-    }
-
-    .list1 {
-        margin-top: 100px;
     }
 
     .title {
@@ -1003,7 +923,7 @@
     .pionBox {
         width: 1320px;
         height: 486px;
-        margin: 100px auto 150px;
+        margin: 100px auto 30px;
         display: flex;
         justify-content: space-between;
     }
@@ -1219,97 +1139,6 @@
         display: flex;
         justify-content: space-between;
         padding-left: 0;
-    }
-
-
-
-    .list1>li {
-        width: 311px;
-        border: 1px solid #05EAFF;
-        height: 100%;
-        border-radius: 18.8px;
-    }
-
-    .list2>li {
-        width: 423px;
-        height: 100%;
-        border-radius: 18.8px;
-        border: 1px solid #05EAFF;
-    }
-
-    .list2 {
-        margin-bottom: 150px;
-    }
-
-    .div_on1 {
-        background: url(/static/pioneer/fedoralogo.svg);
-        background-size: 100%;
-
-    }
-
-    .div_on1>div {
-        width: 125px;
-        height: 125px;
-        margin: 28px auto 0;
-    }
-
-    .div_on2 {
-        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    }
-
-    .div_on2>div {
-        width: 168px;
-        height: 128px;
-        margin: 28px auto 0;
-        background: url(/static/pioneer/os-icon3.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on3 {
-        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    }
-
-    .div_on3>div {
-        width: 222px;
-        height: 125px;
-        margin: 28px auto 0;
-        background: url(/static/pioneer/os-icon6.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on4 {
-        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    }
-
-    .div_on4>div {
-        width: 119px;
-        height: 125px;
-        margin: 28px auto 0;
-        background: url(/static/pioneer/os-icon4.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on5 {
-        width: 180px;
-        height: 130px;
-        margin: 18px auto 0;
-        background: url(/static/pioneer/os-icon2.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on6 {
-        width: 100%;
-        height: 100%;
-        background: url(/static/pioneer/pioneerxitong.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on7 {
-        width: 376px;
-        height: 125px;
-        margin: 28px auto 0;
-        background: url(/static/pioneer/os-icon1.svg) no-repeat;
-        background-size: 100%;
     }
 
     .bannerBox {
@@ -1562,6 +1391,15 @@
         text-decoration: none;
         font-size: 25.8992px;
     }
+
+    .support_ioc {
+        padding: 20px 50px;
+        margin-bottom: 80px;
+    }
+
+    .support_ioc>img {
+        width: 80px;
+    }
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1050px) {
@@ -1746,7 +1584,7 @@
     .pionBox {
         width: 1000px;
         height: 420px;
-        margin: 0 auto 50px;
+        margin: 0 auto 0px;
         display: flex;
         justify-content: space-between;
     }
@@ -1963,95 +1801,6 @@
         padding-left: 0;
     }
 
-
-
-    .list1>li {
-        width: 230px;
-        border: 1px solid #05EAFF;
-        height: 100%;
-        border-radius: 18.8px;
-    }
-
-    .list2>li {
-        width: 320px;
-        height: 100%;
-        border-radius: 18.8px;
-        border: 1px solid #05EAFF;
-    }
-
-    .list2 {
-        margin-bottom: 50px;
-    }
-
-    .div_on1 {
-        background: url(/static/pioneer/fedoralogo.svg);
-        background-size: 100%;
-    }
-
-    .div_on1>div {
-        width: 100px;
-        height: 100px;
-        margin: 28px auto 0;
-    }
-
-    .div_on2 {
-        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    }
-
-    .div_on2>div {
-        width: 120px;
-        height: 100px;
-        margin: 28px auto 0;
-        background: url(/static/pioneer/os-icon3.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on3 {
-        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    }
-
-    .div_on3>div {
-        width: 160px;
-        height: 90px;
-        margin: 28px auto 0;
-        background: url(/static/pioneer/os-icon6.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on4 {
-        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    }
-
-    .div_on4>div {
-        width: 80px;
-        height: 100px;
-        margin: 28px auto 0;
-        background: url(/static/pioneer/os-icon4.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on5 {
-        width: 130px;
-        height: 100px;
-        margin: 18px auto 0;
-        background: url(/static/pioneer/os-icon2.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on6 {
-        width: 100%;
-        height: 100%;
-        background: url(/static/pioneer/pioneerxitong.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on7 {
-        width: 300px;
-        height: 100px;
-        margin: 28px auto 0;
-        background: url(/static/pioneer/os-icon1.svg) no-repeat;
-        background-size: 100%;
-    }
 
     .bannerBox {
         width: 1000px;
@@ -2300,6 +2049,15 @@
         text-decoration: none;
         font-size: 25.8992px;
     }
+
+    .support_ioc {
+        padding: 20px 50px;
+        margin-bottom: 80px;
+    }
+
+    .support_ioc>img {
+        width: 60px;
+    }
 }
 
 @media screen and (max-width: 1050px) and (min-width: 750px) {
@@ -2482,7 +2240,7 @@
     .pionBox {
         width: 700px;
         height: 240px;
-        margin: 0 auto 30px;
+        margin: 0 auto 0px;
         display: flex;
         justify-content: space-between;
     }
@@ -2690,88 +2448,6 @@
         display: flex;
         justify-content: space-between;
         padding-left: 0;
-    }
-
-    .list1>li {
-        width: 170px;
-        border: 1px solid #05EAFF;
-        height: 100%;
-        border-radius: 18.8px;
-    }
-
-    .list2>li {
-        width: 220px;
-        height: 100%;
-        border-radius: 18px;
-        border: 1px solid #05EAFF;
-    }
-
-    .list2 {
-        margin-bottom: 30px;
-    }
-
-    .div_on1 {
-        background: url(/static/pioneer/fedoralogo.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on2 {
-        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    }
-
-    .div_on2>div {
-        width: 80px;
-        height: 60px;
-        margin: 20px auto 0;
-        background: url(/static/pioneer/os-icon3.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on3 {
-        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    }
-
-    .div_on3>div {
-        width: 100px;
-        height: 70px;
-        margin: 20px auto 0;
-        background: url(/static/pioneer/os-icon6.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on4 {
-        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    }
-
-    .div_on4>div {
-        width: 60px;
-        height: 80px;
-        margin: 20px auto 0;
-        background: url(/static/pioneer/os-icon4.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on5 {
-        width: 100px;
-        height: 70px;
-        margin: 10px auto 0;
-        background: url(/static/pioneer/os-icon2.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on6 {
-        width: 100%;
-        height: 100%;
-        background: url(/static/pioneer/pioneerxitong.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on7 {
-        width: 200px;
-        height: 70px;
-        margin: 15px auto 0;
-        background: url(/static/pioneer/os-icon1.svg) no-repeat;
-        background-size: 100%;
     }
 
     .bannerBox {
@@ -3022,6 +2698,15 @@
         text-decoration: none;
         font-size: 20px;
     }
+
+    .support_ioc {
+        padding: 10px 30px;
+        margin-bottom: 50px;
+    }
+
+    .support_ioc>img {
+        width: 50px;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -3186,7 +2871,7 @@
 
     .pionBox {
         width: 340rem;
-        margin: 30rem auto;
+        margin: 30rem auto 10rem;
     }
 
     .pionBox>div {
@@ -3383,99 +3068,6 @@
         display: flex;
         justify-content: space-between;
         padding-left: 0;
-    }
-
-    .list1 {
-        margin-top: 20rem;
-    }
-
-    .list1>li {
-        width: 80rem;
-        height: 40rem;
-        overflow: hidden;
-        border: 1rem solid #05EAFF;
-        border-radius: 18.8rem;
-    }
-
-
-
-    .list2>li {
-        height: 50rem;
-        width: 220rem;
-        border-radius: 18rem;
-        border: 1rem solid #05EAFF;
-        overflow: hidden;
-    }
-
-
-
-    .list2 {
-        margin-bottom: 30rem;
-    }
-
-    .div_on1 {
-        background: url(/static/pioneer/fedoralogo.svg) no-repeat;
-        background-size: 100%;
-    }
-
-
-
-    .div_on2 {
-        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    }
-
-    .div_on2>div {
-        width: 50rem;
-        height: 60rem;
-        margin: 0 auto;
-        background: url(/static/pioneer/os-icon3.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on3 {
-        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    }
-
-    .div_on3>div {
-        width: 50rem;
-        height: 60rem;
-        margin: 5rem auto 0;
-        background: url(/static/pioneer/os-icon6.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on4 {
-        background: linear-gradient(106.82deg, rgba(1, 32, 45, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-    }
-
-    .div_on4>div {
-        width: 30rem;
-        height: 50rem;
-        margin: 5rem auto 0;
-        background: url(/static/pioneer/os-icon4.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on5 {
-        width: 60rem;
-        height: 60rem;
-        margin: 0rem auto 0;
-        background: url(/static/pioneer/os-icon2.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on6 {
-        height: 100%;
-        background: url(/static/pioneer/pioneerxitong.svg) no-repeat;
-        background-size: 100%;
-    }
-
-    .div_on7 {
-        width: 100rem;
-        height: 70rem;
-        margin: 15rem auto 0;
-        background: url(/static/pioneer/os-icon1.svg) no-repeat;
-        background-size: 100%;
     }
 
     .bannerBox {
@@ -3714,5 +3306,14 @@
         color: #fff;
         text-decoration: none;
         font-size: 12rem;
+    }
+
+    .support_ioc {
+        padding: 10rem;
+        margin-bottom: 50rem;
+    }
+
+    .support_ioc>img {
+        width: 30rem;
     }
 }

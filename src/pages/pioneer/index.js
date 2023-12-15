@@ -114,24 +114,15 @@ function Center() {
             </ul>
           </div>
         </div>
-        <div className={cCss.title}><Translate id='pioneer.page.title.minText1' /></div>
-        <ul className={cCss.list1}>
-          <li className={cCss.div_on1}><div></div></li>
-          <li className={cCss.div_on2}><div></div></li>
-          <li className={cCss.div_on3}><div></div></li>
-          <li className={cCss.div_on4}><div></div></li>
-        </ul>
-        <ul className={cCss.list2}>
-          <li>
-            <div className={cCss.div_on5}></div>
-          </li>
-          <li>
-            <div className={cCss.div_on6}></div>
-          </li>
-          <li>
-            <div className={cCss.div_on7}></div>
-          </li>
-        </ul>
+        <div className={cCss.support_ioc}>
+          <img src='/pioneer/support-icon1.webp' />
+          <img src='/pioneer/support-icon2.webp' />
+          <img src='/pioneer/support-icon3.webp' />
+          <img src='/pioneer/support-icon4.webp' />
+          <img src='/pioneer/support-icon5.webp' />
+          <img src='/pioneer/support-icon6.webp' />
+          <img src='/pioneer/support-icon7.webp' />
+        </div>
         <div className={cCss.title}><Translate id='pioneer.page.title.minText2' /></div>
         <div className={cCss.bannerBox}>
           <div className={cCss.bannerimg1}>
