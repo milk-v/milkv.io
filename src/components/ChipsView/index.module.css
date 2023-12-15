@@ -466,7 +466,7 @@
 
     .download_list {
         padding-left: 30px;
-        max-height: 300px;
+        max-height: 800px;
     }
 
     .download_list>p {
@@ -625,7 +625,7 @@
 
     .download_list {
         padding-left: 30px;
-        max-height: 300px;
+        max-height: 500px;
     }
 
     .download_list>p {
@@ -953,7 +953,7 @@
 
     .download_list {
         padding-left: 30px;
-        max-height: 300px;
+        max-height: 400px;
     }
 
     .download_list>p {
