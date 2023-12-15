@@ -3,26 +3,44 @@ sidebar_label: '🌍 Overview'
 sidebar_position: 1
 ---
 
-# Duo
+# Duo series 
 
-Version 1.2 
+# Revision history
 
--------------------------
+| Version | Date           | Changes from previous version                                              |
+|---------|----------------|----------------------------------------------------------------------------|
+|0.1      |  2023/11/24    | First version                                                              |
+|0.2      |  2023/12/15    | Introduction of Duo 256M and Related Products                              |
+--------------------------------------------------------------------------------------------------------
 # Introduction
 Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators.  
+
+The Milk-V Duo 256M is an upgraded version of Duo with a memory boost to 256M, catering to applications demanding larger memory capacities. It features the SG2002 computing series chip, elevating computational power to 1.0TOPS@INT8. It enables seamless switching between RISC-V/ARM architectures and supports simultaneous operation of dual systems. Additionally, it includes an array of rich GPIO interfaces such as SPI, UART, suitable for a wide range of hardware development in edge intelligent monitoring, including IP cameras, smart peephole locks, visual doorbells, and more.
+
   
 ![duo](/docs/duo/duo-v1.2.png)
 
 # Specification
-| Milk-V Duo | Specification                                           |
-| ---------- | ------------------------------------------------------- |
-| Processor  | CVITEK CV1800B (C906@1Ghz + C906@700MHz)                |
-| Memory     | DDR2 64MB                                               |
-| Storage    | 1x Mirco SD slot,1x SD NAND solder pad                  |
-| USB        | 1x Type-C for data and Power,1x USB2 solder pad         |
-| Camera     | 1x 16P FPC connector (MIPI CSI 2-lane)                  |
-| GPIO       | up to 26 Pins available for general purpose I/O（GPIO） |
-| Size       | 21mm*51mm                                               |
+|            | Duo                                                     | Duo 256M                                         |
+| ---------- | ------------------------------------------------------- | ------------------------------------------------ |
+| SoC        | CVITEK CV1800B                                          | SG2002                                           |
+| RISC-V CPU | C906@1Ghz + C906@700MHz                                 | C906@1Ghz + C906@700MHz                          |
+| Arm CPU    | N/A                                                     | 1 x Cortex-A53@1GHz                                |
+| MCU        | N/A                                                     | 8051@6KB SRAM                                    |
+| NPU        | 0.5Top@INT8                                             | 1Top@INT8                                        |
+| Storage    | 1 x microSD connector or 1x SD NAND on board             | 1 x microSD connector or 1x SD NAND on board      |
+| Memory     | DDR2 64MB                                               | DDR3 256MB                                       |
+| Storage    | 1 x Mirco SD slot,1x SD NAND solder pad                  | 1 x microSD connector or 1x SD NAND on board      |
+| USB        | 1 x Type-C for data and Power,1x USB2 solder pad         | 1 x Type-C for power and data, USB Pads available |
+| CSI        | 1 x 16P FPC connector (MIPI CSI 2-lane)                  | 1 x 16P FPC connector (MIPI CSI 2-lane)           |
+| Sensor Support| 4M @ 25fps                                            | 5M @ 30fps                                        |
+| Ethernet   | 100Mbps ethernet with PHY                                | 100Mbps ethernet with PHY                         |
+| Audio      | N/A                                                      | Via GPIO Pads                                     |
+| GPIO       | up to 26 Pins available for general purpose I/O（GPIO）  | up to 26 Pins available for general purpose I/O（GPIO）  |
+| Power      | 5V/1A                                                   | 5V/1A                                                   |
+| OS Support | Buildroot, RTOS                                         | Buildroot, RTOS, Debian/Ubuntu                       |
+| Size       | 21mm*51mm                                               | 21mm*51mm                                            |
+
 # Features 
 
 ## Processor
