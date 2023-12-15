@@ -171,8 +171,7 @@ export default (props) => {
                                         setY(magnifiers_box.current.offsetWidth - magnifiers_width)
                                     }
                                     if (top + magnifiers_height >= magnifiers_box.current.offsetHeight) {
-                                        console.log(magnifiers_box.current.clientHeight - magnifiers_height);
-                                        setX(magnifiers_box.current.clientHeight - magnifiers_height)
+                                        setX(magnifiers_box.current.clientHeight / 2 - 2)
                                     }
                                     if (top <= 0) {
                                         setX(0)
@@ -337,6 +336,9 @@ export default (props) => {
                     </div>
                 </div>
             </div>
+            <div className={styles.certificate}></div>
+
+
             <div className={styles.toTop} style={{ display: `${scrollDirection ? 'block' : 'none'}` }} onClick={() => {
                 window.scrollTo({ top: 0, behavior: 'smooth' })
             }}>
