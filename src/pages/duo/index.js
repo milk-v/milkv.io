@@ -57,7 +57,7 @@ function DetailsPage() {
           <div className={styles.chips_diagram}>
             <div>
               <h3>CV1800B Architecture Diagram</h3>
-              <img src='/chips/cv1800b/cv1800b-diagram.webp' alt='CV1800B Diagram' />
+              <img src='/chips/cv1800b/cv1800B-diagram.webp' alt='CV1800B Diagram' />
             </div>
             <div>
               <h3>SG2002 Architecture Diagram</h3>
