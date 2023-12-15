@@ -15,15 +15,15 @@
         "diagram_url": "/chips/sg2000/sg2000-diagram.webp",
         "hardware": {
             "RISC-V CPU": [
-                "1 xC906@1GHz、1 xC906@700MHz"
+                "1 x C906@1GHz + 1 x C906@700MHz"
             ],
             "Arm CPU": [
-                "1 xCortex-A53@1GHz "
+                "1 x Cortex-A53@1GHz "
             ],
             "MCU": [
                 "8051@6KB SRAM"
             ],
-            "TPU": [
+            "NPU": [
                 "0.5 Top@INT8"
             ],
             "Memory": [
@@ -37,11 +37,11 @@
             ],
             "Audio Module": [
                 "16bit Audio Codec",
-                "2 xI2S/PCM",
-                "1 xDMIC"
+                "2 x I2S/PCM",
+                "1 x DMIC"
             ],
             "Storage": [
-                "SPI-NOR、SPI-NAND、eMMC5.0、2xSDIO3.0"
+                "SPI-NOR, SPI-NAND, eMMC5.0, 2xSDIO3.0"
             ],
             "Network": [
                 "10M/100M MAC PHY"
@@ -50,7 +50,7 @@
                 "Crypto/Secure boot/TRNG/Efuze"
             ],
             "Peripherals": [
-                "1 xUSB2.0 DRD/5 xUART/4 xSPI/16 xPWM/1 xIR/6 xI2C/6 xADC/ GPIOs"
+                "1 x USB2.0 DRD/5 x UART/4 x SPI/16 x PWM/1 x IR/6 x I2C/6 x ADC/ GPIOs"
             ],
             "Temperature Range": [
                 "0℃～70℃"
@@ -162,15 +162,15 @@
         "diagram_url": "/chips/sg2002/sg2002-diagram.webp",
         "hardware": {
             "RISC-V CPU": [
-                "1 xC906@1GHz、1 xC906@700MHz"
+                "1 x C906@1GHz + 1 x C906@700MHz"
             ],
             "Arm CPU": [
-                "1 xCortex-A53@1GHz"
+                "1 x Cortex-A53@1GHz"
             ],
             "MCU": [
                 "8051@6KB SRAM"
             ],
-            "TPU": [
+            "NPU": [
                 "1Top@INT8"
             ],
             "Memory": [
@@ -188,7 +188,7 @@
                 "1 xDMIC"
             ],
             "Storage": [
-                "SPI-NOR、SPI-NAND、eMMC5.0、2 xSDIO3.0"
+                "SPI-NOR, SPI-NAND, eMMC5.0, 2 xSDIO3.0"
             ],
             "Network": [
                 "10M/100M MAC PHY"
@@ -197,7 +197,7 @@
                 "Crypto/Secure boot/TRNG/Efuze"
             ],
             "Peripherals": [
-                "1 xUSB2.0 DRD/5 xUART/3 xSPI/16 xPWM/1 xIR/6 xI2C/4 xADC/GPIOs"
+                "1 x USB2.0 DRD/5 x UART/3 x SPI/16 x PWM/1 x IR/6 x I2C/4 x ADC/GPIOs"
             ],
             "Temperature Range": [
                 "0℃～70℃"
@@ -286,9 +286,9 @@
         "diagram_url": "/chips/cv1800b/cv1800B-diagram.webp",
         "hardware": {
             "RISC-V CPU": [
-                "1 xC906@1GHz、1 xC906@700MHz"
+                "1 x C906@1GHz + 1 x C906@700MHz"
             ],
-            "TPU": [
+            "NPU": [
                 "0.5 Top@INT8"
             ],
             "Memory": [
@@ -303,7 +303,7 @@
                 "16bit Audio Codec"
             ],
             "Storage": [
-                "SPI-NOR、SPI-NAND、2 xSDIO3.0"
+                "SPI-NOR, SPI-NAND, 2 xSDIO3.0"
             ],
             "Network": [
                 "10M/100M MAC PHY"
@@ -312,7 +312,7 @@
                 "Secure boot/AES/SHA/Efuse"
             ],
             "Peripherals": [
-                "3 xADC/4 xI2C/3 xSPI/5 xUART/4 xPWM/2 xSDIO 3.0/51 GPIOs"
+                "3 x ADC/4 x I2C/3 x SPI/5 x UART/4 x PWM/2 x SDIO 3.0/51 GPIOs"
             ],
             "Temperature Range": [
                 "-30℃～70℃"
