@@ -402,6 +402,10 @@
     margin-bottom: 0;
 }
 
+.table_u>li {
+    white-space: nowrap;
+}
+
 @media screen and (min-width: 1950px) {
 
     .chip_diagram,
@@ -566,12 +570,12 @@
     }
 
     .p_intro>ul {
-        width: 1240px;
+        width: 1440px;
         margin: 35px auto;
     }
 
     .p_intro>ul>li>img {
-        width: 64px;
+        width: 80px;
         margin-bottom: 15px;
     }
 
@@ -749,12 +753,12 @@
     }
 
     .p_intro>ul {
-        width: 1200px;
+        width: 1350px;
         margin: 35px auto;
     }
 
     .p_intro>ul>li>img {
-        width: 60px;
+        width: 70px;
         margin-bottom: 15px;
     }
 
@@ -937,7 +941,7 @@
     }
 
     .p_intro>ul>li>img {
-        width: 50px;
+        width: 60px;
         margin-bottom: 15px;
     }
 

@@ -21,6 +21,9 @@ export default (props) => {
     const chip_applications = useRef(null)
     const chip_doc = useRef(null)
     const chip_resources = useRef(null)
+    const chip_agency = useRef(null)
+
+
     const [tidx, setTidx] = useState(0)
 
 
@@ -62,6 +65,7 @@ export default (props) => {
             let applications_toTop = chip_applications.current.offsetTop + chip_applications.current.clientHeight - 100
             let doc_toTop = chip_doc.current.offsetTop + chip_doc.current.clientHeight - 100
             let resources_toTop = chip_resources.current.offsetTop + chip_resources.current.clientHeight - 100
+            let agency_toTop = chip_agency.current.offsetTop + chip_agency.current.clientHeight - 100
             if (scrollTop >= 0 && scrollTop < over_toTop) {
                 setTidx(0)
             } else if (scrollTop >= over_toTop && scrollTop <= diagram_toTop) {
@@ -74,6 +78,8 @@ export default (props) => {
                 setTidx(4)
             } else if (scrollTop >= doc_toTop && scrollTop <= resources_toTop) {
                 setTidx(5)
+            } else if (scrollTop >= resources_toTop && scrollTop <= agency_toTop) {
+                setTidx(6)
             }
             window.previousScrollTop = scrollTop;
         };
@@ -111,6 +117,10 @@ export default (props) => {
             text: 'Design Resources',
             ref: chip_resources,
         },
+        {
+            text: 'Agency Certificate',
+            ref: chip_agency,
+        }
     ]
 
 
@@ -203,13 +213,13 @@ export default (props) => {
                             </div>
                             <img src={jsonData[chipName].chip_view[imgurl]} alt="" />
                         </div>
-                        <div className={styles.view_ul}>
+                        {/* <div className={styles.view_ul}>
                             {
                                 jsonData[chipName].chip_view.map((item, key) => {
                                     return <img src={item} key={key} onMouseEnter={(() => { setImgurl(key) })} onClick={(() => { setImgurl(key) })} />
                                 })
                             }
-                        </div>
+                        </div> */}
                     </div>
                     <div className={styles.chip_intro_t}>
                         {
@@ -335,7 +345,7 @@ export default (props) => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.certificate}>
+                <div className={styles.certificate} ref={chip_agency}>
                     <div>
                         <h2>Agency Certificate</h2>
                         <div className={styles.a_context}>
@@ -353,7 +363,7 @@ export default (props) => {
                     </li>
                     <li>
                         <img src="/chips/promise2.svg" />
-                        <h4>Available for Immediate Dispatch</h4>
+                        <h4>Ready to Ship</h4>
                         <p>Ships within 4 Hours</p>
                     </li>
                     <li>
