@@ -54,6 +54,18 @@
             ],
             "Temperature Range": [
                 "0℃～70℃"
+            ],
+            "Package Type": [
+                "LFBGA"
+            ],
+            "Package Dimensions": [
+                "10mm x 10mm x 1.3mm"
+            ],
+            "Pin Pitch": [
+                "0.65mm"
+            ],
+            "Total Pins": [
+                "205"
             ]
         },
         "scenarios": [
@@ -201,6 +213,18 @@
             ],
             "Temperature Range": [
                 "0℃～70℃"
+            ],
+            "Package Type": [
+                "QFN"
+            ],
+            "Package Dimensions": [
+                "9mmx9mmx0.9mm"
+            ],
+            "Pin Pitch": [
+                "0.35mm"
+            ],
+            "Total Pins": [
+                "88"
             ]
         },
         "scenarios": [
@@ -316,6 +340,18 @@
             ],
             "Temperature Range": [
                 "-30℃～70℃"
+            ],
+            "Package Type": [
+                "QFN"
+            ],
+            "Package Dimensions": [
+                "7mmx7mmx0.9mm"
+            ],
+            "Pin Pitch": [
+                "0.35mm"
+            ],
+            "Total Pins": [
+                "68"
             ]
         },
         "scenarios": [
