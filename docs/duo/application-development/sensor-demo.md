@@ -9,7 +9,7 @@ sidebar_position: 40
 
 #### Duo development board pin
 
-GitHub Link: https://github.com/milkv-duo/duo-files/blob/main/hardware/duo/duo-schematic-v1.2.pdf
+GitHub Link: https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-schematic-v1.2.pdf
 
 ![](/docs/duo/sensor-demo/1.jpg)
 
@@ -325,7 +325,7 @@ Then upload df9gms to the root path of the development board, and enter``` ./dht
 
 #### Duo development board pin
 
-GitHub：https://github.com/milkv-duo/duo-files/blob/main/hardware/duo/duo-schematic-v1.2.pdf
+GitHub：https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-schematic-v1.2.pdf
 
 ![](/docs/duo/sensor-demo/1.jpg)
 

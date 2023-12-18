@@ -10,7 +10,7 @@ sidebar_position: 40
 
 #### duo开发板引脚
 
-GitHub链接：https://github.com/milkv-duo/duo-files/blob/main/hardware/duo/duo-schematic-v1.2.pdf
+GitHub链接：https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-schematic-v1.2.pdf
 
 ![](/docs/duo/sensor-demo/1.jpg)
 
@@ -331,7 +331,7 @@ make报错source一下即可。编译成功后得到dht22可执行程序。如�
 
 #### duo开发板引脚
 
-GitHub链接：https://github.com/milkv-duo/duo-files/blob/main/hardware/duo/duo-schematic-v1.2.pdf
+GitHub链接：https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-schematic-v1.2.pdf
 ![](/docs/duo/sensor-demo/1.jpg)
 
 #### DF9GMS 180°

@@ -10,7 +10,7 @@ This is another way to install the RNDIS driver on windows, download the driver 
 
 0. Download the driver file and decompress it
 
-   [RNDIS_drivers_20231018.zip](https://github.com/milkv-duo/duo-files/raw/main/others/RNDIS_drivers_20231018.zip)
+   [RNDIS_drivers_20231018.zip](https://github.com/milkv-duo/duo-files/raw/main/common/RNDIS_drivers_20231018.zip)
 
 1. Connect the Duo to the computer via Type-C cable
 

@@ -78,56 +78,56 @@
             "Hardware Design": [
                 {
                     "download_name": "SG2000-BGA-SIP-V11-16.2",
-                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/Reference-Design-SCH%26PCB/SG2000-BGA-SIP-V11-16.2.DSN?raw=true",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/SG2000-BGA-SIP-V11-16.2.DSN?raw=true",
                     "file_format": "DSN",
                     "file_size": "1.94 MB",
                     "file_date": "Jun 5,2023"
                 },
                 {
                     "download_name": "SG2000-BGA-SIP-V11",
-                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/Reference-Design-SCH%26PCB/SG2000-BGA-SIP-V11.pdf?raw=true",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/SG2000-BGA-SIP-V11.pdf?raw=true",
                     "file_format": "PDF",
                     "file_size": "1.37 MB",
                     "file_date": "Jun 5,2023"
                 },
                 {
                     "download_name": "SG2000-WEVB-0007A-V04-SCH",
-                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/Reference-Design-SCH%26PCB/SG2000-WEVB-0007A-V04-SCH.pdf?raw=true",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/SG2000-WEVB-0007A-V04-SCH.pdf?raw=true",
                     "file_format": "PDF",
                     "file_size": "1.07 MB",
                     "file_date": "Jun 5,2023"
                 },
                 {
                     "download_name": "WDMB-0007B-V02-Component-Placement-Diagram",
-                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/Reference-Design-SCH%26PCB/WDMB-0007B-V02-Component-Placement-Diagram.pdf?raw=true",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/WDMB-0007B-V02-Component-Placement-Diagram.pdf?raw=true",
                     "file_format": "PDF",
                     "file_size": "2.3 MB",
                     "file_date": "Jun 5,2023"
                 },
                 {
                     "download_name": "WDMB-0007B-V02",
-                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/Reference-Design-SCH%26PCB/WDMB-0007B-V02.brd?raw=true",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/WDMB-0007B-V02.brd?raw=true",
                     "file_format": "BRD",
                     "file_size": "4.61 MB",
                     "file_date": "Jun 5,2023"
                 },
                 {
                     "download_name": "WDMB-0007B-V02",
-                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/Reference-Design-SCH%26PCB/WDMB-0007B-V02.pcb?raw=true",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/WDMB-0007B-V02.pcb?raw=true",
                     "file_format": "PCB",
                     "file_size": "3.77 MB",
                     "file_date": "Jun 5,2023"
                 },
                 {
                     "download_name": "SG2000-Hardware-PCB-Layout-Guide",
-                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/SG2000-Hardware-PCB-Layout-Guide.pdf?raw=true",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/SG2000-Hardware-PCB-Layout-Guide.pdf?raw=true",
                     "file_format": "PDF",
                     "file_size": "10.9 MB",
                     "file_date": "Jun 5,2023"
                 },
                 {
                     "download_name": "SG2000-PINOUT",
-                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-pi-s/hardware/SG2000-PINOUT.xlsx?raw=true",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/SG2000-PINOUT.xlsx?raw=true",
                     "file_format": "XLSX",
                     "file_size": "3.86 MB",
                     "file_date": "Jun 5,2023"
