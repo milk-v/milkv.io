@@ -33,6 +33,7 @@ const sidebars = {
         type: "generated-index",
         title: '🖥️ App Development',
         description: 'Application Development',
+        slug: '/duo/application-development'
       },
       items: [
         'duo/application-development/pinmux',
@@ -69,6 +70,7 @@ const sidebars = {
         type: "generated-index",
         title: '🧰 Resources',
         description: 'Useful Resources',
+        slug: '/duo/useful-resources'
       },
       items: [
         'duo/resources/image-sdk',
@@ -140,7 +142,7 @@ const sidebars = {
         type: 'generated-index',
         title: '🧰 Resources',
         description: 'Useful Resources',
-        slug: '/pioneer/resources'
+        slug: '/pioneer/useful-resources'
       },
       items: [
         'pioneer/resources/repository',
