@@ -109,7 +109,7 @@ function DetailsPage() {
                 </tr>
                 <tr>
                   <td>SoC</td>
-                  <td colSpan="2">SG2002</td>
+                  <td colSpan="2"><font color='#2d88c9'>SG2002</font></td>
                   <td colSpan="2">CVITEK CV1800B</td>
                 </tr>
                 <tr>
@@ -119,22 +119,22 @@ function DetailsPage() {
                 </tr>
                 <tr>
                   <td>Arm CPU</td>
-                  <td colSpan="2">1xCortex-A53 @ 1GHz</td>
+                  <td colSpan="2"><font color='#2d88c9'>1xCortex-A53 @ 1GHz</font></td>
                   <td colSpan="2">N/A</td>
                 </tr>
                 <tr>
                   <td>MCU</td>
-                  <td colSpan="2">8051@6KB SRAM</td>
-                  <td colSpan="2">N/A</td>
+                  <td colSpan="2"><font color='#2d88c9'>8051@6KB SRAM</font></td>
+                  <td colSpan="2">8051@8KB SRAM</td>
                 </tr>
                 <tr>
                   <td>Memory</td>
-                  <td colSpan="2">256MB DDR3</td>
+                  <td colSpan="2"><font color='#2d88c9'>256MB DDR3</font></td>
                   <td colSpan="2">64MB DDR2</td>
                 </tr>
                 <tr>
                   <td>NPU</td>
-                  <td colSpan="2">1Top @ INT8</td>
+                  <td colSpan="2"><font color='#2d88c9'>1Top @ INT8</font></td>
                   <td colSpan="2">0.5Top @ INT8</td>
                 </tr>
                 <tr>
@@ -159,12 +159,17 @@ function DetailsPage() {
                 </tr>
                 <tr>
                   <td>Sensor Support</td>
-                  <td colSpan="2">5M @ 30fps<br />100Mbps ethernet with PHY</td>
-                  <td colSpan="2">4M @ 25fps <br />100Mbps ethernet with PHY</td>
+                  <td colSpan="2"><font color='#2d88c9'>5M @ 30fps<br /></font></td>
+                  <td colSpan="2">4M @ 25fps </td>
+                </tr>
+                <tr>
+                  <td>Ethernet</td>
+                  <td colSpan="2">100Mbps ethernet with PHY</td>
+                  <td colSpan="2">100Mbps ethernet with PHY</td>
                 </tr>
                 <tr>
                   <td>Audio</td>
-                  <td colSpan="2">Via GPIO Pads</td>
+                  <td colSpan="2"><font color='#2d88c9'>Via GPIO Pads</font></td>
                   <td colSpan="2">N/A</td>
                 </tr>
                 <tr>
