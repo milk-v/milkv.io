@@ -118,7 +118,7 @@ export default (props) => {
             ref: chip_resources,
         },
         {
-            text: 'Agency Certificate',
+            text: 'Choosing Us',
             ref: chip_agency,
         }
     ]
@@ -347,41 +347,30 @@ export default (props) => {
                 </div>
                 <div className={styles.certificate} ref={chip_agency}>
                     <div>
-                        <h2>Agency Certificate</h2>
-                        <div className={styles.a_context}>
-                            <img src="/chips/alleged-victim.webp" />
+                        <h2>Choosing Us</h2>
+                        <div className={styles.choosing_item}>
+                            <div className={styles.text_l}>
+                                <h3>Authorized Distributor</h3>
+                                <p>Shenzhen MilkV Technology Co., Ltd. is an official authorized chip distributor for Alunar Technologies, offering a diverse range of chip models and delivering competitive pricing as a primary distributor.</p>
+                            </div>
+                            <img src="/chips/authorized.webp" />
+                        </div>
+                        <div className={styles.choosing_item}>
+                            <div className={styles.text_l}>
+                                <h3>Tailored Solution Design</h3>
+                                <p>We possess mature chip design solutions and extensive experience in chip design, providing tailored chip solutions to suit your unique needs.</p>
+                            </div>
+                            <img src="/chips/design.webp" />
+                        </div>
+                        <div className={styles.choosing_item}>
+                            <div className={styles.text_l}>
+                                <h3>Worry-Free After-sales Support</h3>
+                                <p>A Seasoned Team of Engineers Providing Technical Support: Comprehensive Solutions for Your Chip Design Challenges</p>
+                            </div>
+                            <img src="/chips/team.webp" />
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className={styles.p_intro}>
-                <ul>
-                    <li>
-                        <img src="/chips/promise1.svg" />
-                        <h4>Original Authentic</h4>
-                        <p>Factory Authorized Agent</p>
-                    </li>
-                    <li>
-                        <img src="/chips/promise2.svg" />
-                        <h4>Ready to Ship</h4>
-                        <p>Ships within 4 Hours</p>
-                    </li>
-                    <li>
-                        <img src="/chips/promise3.svg" />
-                        <h4>Competitive Pricing</h4>
-                        <p>First-tier Agent Rates</p>
-                    </li>
-                    <li>
-                        <img src="/chips/promise4.svg" />
-                        <h4>Solution Design</h4>
-                        <p>All-in-One Chip Solution Design</p>
-                    </li>
-                    <li>
-                        <img src="/chips/promise5.svg" />
-                        <h4>Abundant Resources</h4>
-                        <p>Extensive Chip Design Resources</p>
-                    </li>
-                </ul>
             </div>
             <div className={styles.toTop} style={{ display: `${scrollDirection ? 'block' : 'none'}` }} onClick={() => {
                 window.scrollTo({ top: 0, behavior: 'smooth' })
