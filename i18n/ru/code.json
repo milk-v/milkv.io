@@ -5,7 +5,7 @@
   },
   "theme.ErrorPageContent.tryAgain": {
     "message": "Еще раз",
-    "description": "The label of the button to try again when the page crashed"
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.NotFound.title": {
     "message": "Страница не найдена",
@@ -482,16 +482,13 @@
     "description": "matrix"
   },
   "contact.text.WeChat": {
-    "message": "WeChat",
-    "description": "WeChat"
+    "message": "WeChat"
   },
   "contact.text.QQ": {
-    "message": "QQ Group",
-    "description": "QQ群"
+    "message": "QQ Group"
   },
   "contact.text.join": {
-    "message": "join #milkv-",
-    "description": " #milkv-duo"
+    "message": "join #milkv-"
   },
   "online.buy": {
     "message": "Интернет-магазин",
@@ -510,8 +507,7 @@
     "description": "footer text"
   },
   "footer.text.address": {
-    "message": "Адрес",
-    "description": "footer text"
+    "message": "Адрес"
   },
   "footer.text.address.info": {
     "message": "L8-01, Block B, Bao Cube Jewelry City, 198 Xin'an 4th Road, Liutang Community, Xixiang Street, Bao'an District, Shenzhen, China",
@@ -522,36 +518,29 @@
     "description": "footer Subscribe"
   },
   "Duo.text.title1": {
-    "message": "Знакомьтесь",
-    "description": "Duo.text.title"
+    "message": "Знакомьтесь"
   },
   "Duo.text.title2": {
-    "message": "Компьютер RISC-V",
-    "description": "Duo.text.title"
+    "message": "Компьютер RISC-V"
   },
   "Duo.text.title3": {
-    "message": "Низкая стоимость, низкое энергопотребление, высокая производительность",
-    "description": "Duo.text.title"
+    "message": "Низкая стоимость, низкое энергопотребление, высокая производительность"
   },
   "Duo.text.title4": {
-    "message": "Налог и доставка не включены",
-    "description": "Duo.text.title"
+    "message": "Налог и доставка не включены"
   },
   "Buy.now": {
-    "message": "Купить",
-    "description": "buy now"
+    "message": "Купить"
   },
   "line.title.Specification": {
-    "message": "Спецификация",
-    "description": "Specification"
+    "message": "Спецификация"
   },
   "line.title.size": {
     "message": "Малый размер, большие возможности",
     "description": "size"
   },
   "line.title.TechSpecs": {
-    "message": "Технические характеристики",
-    "description": "TechSpecs"
+    "message": "Технические характеристики"
   },
   "info.text.powerful": {
     "message": "Более мощные, чем другие",
@@ -610,20 +599,16 @@
     "description": "Duo 简介"
   },
   "duo.info.text.Introduction.max": {
-    "message": "Milk-V Duo - это ультракомпактная встраиваемая платформа разработки на базе чипа CV1800B. Она может работать под управлением Linux и RTOS, обеспечивая надежную, недорогую и высокопроизводительную платформу для профессионалов, промышленных ODM, энтузиастов AIOT, энтузиастов DIY и создателей.Duo 256M - это обновленная версия Duo, разработанная с SG2002 в качестве главного контроллера, с обновленной памятью 256M для поддержки стандартной системы Linux и приложений, которая может удовлетворить потребности приложений с высокими требованиями к памяти и большим объемом хранения. Duo 256M - это обновленная версия Duo, разработанная с SG2002 в качестве главного контроллера, который поддерживает стандартную систему Linux и приложения.Переведено с помощью www.DeepL.com/Translator (бесплатная версия)",
-    "description": "Duo 简介"
+    "message": "Milk-V Duo - это ультракомпактная встраиваемая платформа разработки на базе чипа CV1800B. Она может работать под управлением Linux и RTOS, обеспечивая надежную, недорогую и высокопроизводительную платформу для профессионалов, промышленных ODM, энтузиастов AIOT, энтузиастов DIY и создателей.Duo 256M - это обновленная версия Duo, разработанная с SG2002 в качестве главного контроллера, с обновленной памятью 256M для поддержки стандартной системы Linux и приложений, которая может удовлетворить потребности приложений с высокими требованиями к памяти и большим объемом хранения. Duo 256M - это обновленная версия Duo, разработанная с SG2002 в качестве главного контроллера, который поддерживает стандартную систему Linux и приложения.Переведено с помощью www.DeepL.com/Translator (бесплатная версия)"
   },
   "duo.info.text.Hardware": {
-    "message": "Оборудование",
-    "description": "Duo Hardware"
+    "message": "Оборудование"
   },
   "duo.info.text.Documents": {
-    "message": "Документация",
-    "description": "Duo Documents"
+    "message": "Документация"
   },
   "duo.info.text.pinOut": {
-    "message": "Контакт вывода",
-    "description": "Duo Documents"
+    "message": "Контакт вывода"
   },
   "duo.Hardware.info1": {
     "message": "Два ядра RV64 с частотой до 1GHz",
@@ -638,88 +623,68 @@
     "description": "Duo Hardware"
   },
   "pioneer.page.title": {
-    "message": "Делает возможной разработку под RISC-V",
-    "description": "pioneer page title"
+    "message": "Делает возможной разработку под RISC-V"
   },
   "pioneer.page.Specification.text1": {
-    "message": "Работает на SOPHON SG2042",
-    "description": "pioneer Specification"
+    "message": "Работает на SOPHON SG2042"
   },
   "pioneer.page.Specification.text2": {
-    "message": "64-ядерный RISC-V процессор",
-    "description": "pioneer Specification"
+    "message": "64-ядерный RISC-V процессор"
   },
   "pioneer.page.Box.text1": {
-    "message": "содержит",
-    "description": "pioneer Box text"
+    "message": "содержит"
   },
   "pioneer.page.Box.text2": {
-    "message": "Графическая карта",
-    "description": "pioneer Box text"
+    "message": "Графическая карта"
   },
   "pioneer.page.Box.text3": {
-    "message": "Сетевая карта",
-    "description": "pioneer Box text"
+    "message": "Сетевая карта"
   },
   "pioneer.page.Box.text4": {
-    "message": "Питание",
-    "description": "pioneer Box text"
+    "message": "Питание"
   },
   "pioneer.page.Box.text5": {
-    "message": "Охлаждение",
-    "description": "pioneer Box text"
+    "message": "Охлаждение"
   },
   "pioneer.page.title.minText1": {
     "message": "Поддерживаемое ПО",
     "description": "pioneer min Text"
   },
   "pioneer.page.title.minText2": {
-    "message": "Очень полезно",
-    "description": "pioneer min Text"
+    "message": "Очень полезно"
   },
   "pioneer.page.really1": {
-    "message": "Рабочая станция",
-    "description": "pioneer min Text"
+    "message": "Рабочая станция"
   },
   "pioneer.page.info": {
-    "message": "Milk-V Pioneer - это материнская плата для разработчиков на базе SOPHON SG2042 в стандартном форм-факторе mATX. Обладая интерфейсами, подобными PC, и промышленной совместимостью с PC, Pioneer предоставляет встроенную среду разработки RISC-V и возможность работы с рабочим столом RISC-V. Это верный выбор для разработчиков RISC-V и пионеров в области аппаратного обеспечения, позволяющий познакомиться с передовыми технологиями RISC-V. Примите RISC-V, примите будущее.",
-    "description": "pioneer info"
+    "message": "Milk-V Pioneer - это материнская плата для разработчиков на базе SOPHON SG2042 в стандартном форм-факторе mATX. Обладая интерфейсами, подобными PC, и промышленной совместимостью с PC, Pioneer предоставляет встроенную среду разработки RISC-V и возможность работы с рабочим столом RISC-V. Это верный выбор для разработчиков RISC-V и пионеров в области аппаратного обеспечения, позволяющий познакомиться с передовыми технологиями RISC-V. Примите RISC-V, примите будущее."
   },
   "mars.page.title": {
-    "message": "Отправляясь в космическое путешествие на RISC-V",
-    "description": "mars title"
+    "message": "Отправляясь в космическое путешествие на RISC-V"
   },
   "mars.page.info1": {
-    "message": "Первый RISC-V размером с кредитную карту",
-    "description": "mars info"
+    "message": "Первый RISC-V размером с кредитную карту"
   },
   "mars.page.info2": {
-    "message": "RISC-V - это открытый стандарт архитектуры наборов инструкций (ISA), основанный на устоявшихся принципах компьютеров с сокращенным набором инструкций (RISC).",
-    "description": "mars info"
+    "message": "RISC-V - это открытый стандарт архитектуры наборов инструкций (ISA), основанный на устоявшихся принципах компьютеров с сокращенным набором инструкций (RISC)."
   },
   "mars.page.info3": {
-    "message": "(четырехъядерный процессор с частотой до 1.5GHz)",
-    "description": "mars info"
+    "message": "(четырехъядерный процессор с частотой до 1.5GHz)"
   },
   "mars.page.info4": {
-    "message": "Одна клавиша для переключения режима последовательной загрузки uart",
-    "description": "mars info"
+    "message": "Одна клавиша для переключения режима последовательной загрузки uart"
   },
   "mars.page.info5": {
-    "message": "(нажмите и удерживайте перед включением питания - переход в режим загрузки по uart)",
-    "description": "mars info"
+    "message": "(нажмите и удерживайте перед включением питания - переход в режим загрузки по uart)"
   },
   "mars.page.info6": {
-    "message": "Поддержка PoE",
-    "description": "mars info"
+    "message": "Поддержка PoE"
   },
   "mars.page.info7": {
-    "message": "питание через сетевой кабель",
-    "description": "mars info"
+    "message": "питание через сетевой кабель"
   },
   "mars.page.info8": {
-    "message": "Поддержка WI-FI / BT модулей",
-    "description": "mars info"
+    "message": "Поддержка WI-FI / BT модулей"
   },
   "mars.page.info9": {
     "message": "Классический внешний вид",
@@ -730,367 +695,276 @@
     "description": "mars info"
   },
   "mars.tech.info": {
-    "message": "Milk-V Mars - это высокопроизводительный RISC-V одноплатный компьютер размером с кредитную карту, построенный на базе StarFive JH7110. Это четырехъядерное устройство поддерживает подключаемый модуль eMMC, а также до 8 Гбайт памяти LPDDR4. Плата оснащена тремя портами USB 3.0, одним портом USB 2.0, портом HDMI 2.0 с поддержкой разрешения 4K, портом Ethernet RJ45 с поддержкой PoE (Power over Ethernet) и слотом M.2 E-Key для модуля WIFI/BT. Кроме того, на плате имеются 4-полосный MIPI CSI и 2-полосный MIPI CSI, а также 40-контактный GPIO.",
-    "description": "mars tech"
+    "message": "Milk-V Mars - это высокопроизводительный RISC-V одноплатный компьютер размером с кредитную карту, построенный на базе StarFive JH7110. Это четырехъядерное устройство поддерживает подключаемый модуль eMMC, а также до 8 Гбайт памяти LPDDR4. Плата оснащена тремя портами USB 3.0, одним портом USB 2.0, портом HDMI 2.0 с поддержкой разрешения 4K, портом Ethernet RJ45 с поддержкой PoE (Power over Ethernet) и слотом M.2 E-Key для модуля WIFI/BT. Кроме того, на плате имеются 4-полосный MIPI CSI и 2-полосный MIPI CSI, а также 40-контактный GPIO."
   },
   "mars": {
-    "message": "Mars",
-    "description": "mars Name"
+    "message": "Mars"
   },
   "duo": {
-    "message": "Duo",
-    "description": "duo Name"
+    "message": "Duo"
   },
   "pioneer": {
-    "message": "Pioneer",
-    "description": "pioneer Name"
+    "message": "Pioneer"
   },
   "contact.title": {
-    "message": "СВЯЖИТЕСЬ С НАМИ",
-    "description": "contact title"
+    "message": "СВЯЖИТЕСЬ С НАМИ"
   },
   "contact.title.info": {
-    "message": "Возникли вопросы? Свяжитесь с нами, чтобы решить их!",
-    "description": "contact info"
+    "message": "Возникли вопросы? Свяжитесь с нами, чтобы решить их!"
   },
   "contact.title.Sales": {
-    "message": "Отдел продаж",
-    "description": "contact info"
+    "message": "Отдел продаж"
   },
   "contact.title.Development": {
-    "message": "Отдел разработки",
-    "description": "contact info"
+    "message": "Отдел разработки"
   },
   "contact.title.support": {
-    "message": "Отдел поддержки клиентов",
-    "description": "contact info"
+    "message": "Отдел поддержки клиентов"
   },
   "contact.title.sendMessage": {
-    "message": "Отправить сообщение",
-    "description": "contact sendMessage"
+    "message": "Отправить сообщение"
   },
   "contact.title.name": {
-    "message": "Ваше Имя",
-    "description": "name"
+    "message": "Ваше Имя"
   },
   "contact.title.email": {
-    "message": "Email",
-    "description": "email"
+    "message": "Email"
   },
   "contact.title.subject": {
-    "message": "Тема сообщения",
-    "description": "subject"
+    "message": "Тема сообщения"
   },
   "contact.title.message": {
-    "message": "Сообщение",
-    "description": "message"
+    "message": "Сообщение"
   },
   "contact.title.send": {
-    "message": "Отправить",
-    "description": "send"
+    "message": "Отправить"
   },
   "contact.send.res": {
-    "message": "Отправлено успешно",
-    "description": "send"
+    "message": "Отправлено успешно"
   },
   "contact.send.res.info": {
-    "message": "Пожалуйста, не присылайте дубликаты",
-    "description": "send"
+    "message": "Пожалуйста, не присылайте дубликаты"
   },
   "contact.send.err": {
-    "message": "Сбой отправки",
-    "description": "send"
+    "message": "Сбой отправки"
   },
   "contact.send.err.info": {
-    "message": "На сервере возникли неполадки, они устраняются, пожалуйста, повторите попытку позже",
-    "description": "send"
+    "message": "На сервере возникли неполадки, они устраняются, пожалуйста, повторите попытку позже"
   },
   "contact.send.close": {
-    "message": "Закрыть",
-    "description": "send"
+    "message": "Закрыть"
   },
   "Donation.title": {
-    "message": "Форма заявки на пожертвование",
-    "description": "Donation"
+    "message": "Форма заявки на пожертвование"
   },
   "Donation.title.Information": {
-    "message": "Форма заявки на пожертвование",
-    "description": "Donation"
+    "message": "Форма заявки на пожертвование"
   },
   "Donation.title.Information.Organization": {
-    "message": "Организация (если требуется)",
-    "description": "Donation"
+    "message": "Организация (если требуется)"
   },
   "Donation.title.Information.web": {
-    "message": "Веб-сайт (если требуется)",
-    "description": "Donation"
+    "message": "Веб-сайт (если требуется)"
   },
   "Donation.title.Project": {
-    "message": "Информация о проекте",
-    "description": "Project"
+    "message": "Информация о проекте"
   },
   "Donation.title.Project.name": {
-    "message": "Название проекта",
-    "description": "Project"
+    "message": "Название проекта"
   },
   "Donation.title.Project.Description": {
-    "message": "Описание проекта",
-    "description": "Project"
+    "message": "Описание проекта"
   },
   "Donation.title.Shipping": {
-    "message": "Информация о доставке",
-    "description": "Shipping"
+    "message": "Информация о доставке"
   },
   "Donation.title.Shipping.Country": {
-    "message": "Страна проживания",
-    "description": "Shipping"
+    "message": "Страна проживания"
   },
   "Donation.title.Shipping.Phone": {
-    "message": "Номер телефона",
-    "description": "Shipping"
+    "message": "Номер телефона"
   },
   "Donation.title.Shipping.Phone.process": {
-    "message": "Ваш номер телефона будет использоваться исключительно для связи, связанной с процессом пожертвования. Мы уважаем вашу частную жизнь и обеспечим конфиденциальность вашей контактной информации.",
-    "description": "Shipping"
+    "message": "Ваш номер телефона будет использоваться исключительно для связи, связанной с процессом пожертвования. Мы уважаем вашу частную жизнь и обеспечим конфиденциальность вашей контактной информации."
   },
   "Donation.title.Shipping.addess": {
-    "message": "Адрес доставки",
-    "description": "Shipping"
+    "message": "Адрес доставки"
   },
   "Donation.title.Shipping.addess.process": {
-    "message": "Пожалуйста, обратите внимание, что ваш адрес доставки будет использоваться исключительно для доставки пожертвованного оборудования. Мы ценим вашу конфиденциальность и будем обращаться с вашей информацией очень бережно.",
-    "description": "Shipping"
+    "message": "Пожалуйста, обратите внимание, что ваш адрес доставки будет использоваться исключительно для доставки пожертвованного оборудования. Мы ценим вашу конфиденциальность и будем обращаться с вашей информацией очень бережно."
   },
   "cv1800b.title": {
-    "message": "CV1800B Manual Confidentiality Agreement",
-    "description": "cv1800b"
+    "message": "CV1800B Manual Confidentiality Agreement"
   },
   "cv1800b.title.Applicant": {
-    "message": "Выберите тип заявителя",
-    "description": "cv1800b"
+    "message": "Выберите тип заявителя"
   },
   "cv1800b.title.Applicant.Individual": {
-    "message": "Индивидуальный",
-    "description": "cv1800b"
+    "message": "Индивидуальный"
   },
   "cv1800b.title.Applicant.Schools": {
-    "message": "Школы или научно-исследовательские институты",
-    "description": "cv1800b"
+    "message": "Школы или научно-исследовательские институты"
   },
   "cv1800b.title.Applicant.corporations": {
-    "message": "Коммерческие организации или корпорации",
-    "description": "cv1800b"
+    "message": "Коммерческие организации или корпорации"
   },
   "cv1800b.title.lang": {
-    "message": "Выберите язык документа (китайский или английский)",
-    "description": "cv1800b"
+    "message": "Выберите язык документа (китайский или английский)"
   },
   "cv1800b.title.file": {
-    "message": "Пожалуйста, заполните следующую информацию",
-    "description": "cv1800b"
+    "message": "Пожалуйста, заполните следующую информацию"
   },
   "cv1800b.Individual.Purpose": {
-    "message": "Назначение",
-    "description": "cv1800b"
+    "message": "Назначение"
   },
   "cv1800b.Individual.Proof": {
-    "message": "Подтверждение личности",
-    "description": "cv1800b"
+    "message": "Подтверждение личности"
   },
   "cv1800b.Individual.Proof.info": {
-    "message": "(удостоверение личности, рабочая карта, визитная карточка и т.д.)",
-    "description": "cv1800b"
+    "message": "(удостоверение личности, рабочая карта, визитная карточка и т.д.)"
   },
   "cv1800b.Individual.file.info": {
-    "message": "Ограничение на размер файла: 1 МБ. Принимаемые форматы: png, jpg, webp, pdf",
-    "description": "cv1800b"
+    "message": "Ограничение на размер файла: 1 МБ. Принимаемые форматы: png, jpg, webp, pdf"
   },
   "Submit": {
-    "message": "Отправить",
-    "description": "Submit"
+    "message": "Отправить"
   },
   "cv1800b.phone.correct": {
-    "message": "Пожалуйста, заполните правильно поле номера телефона",
-    "description": "cv1800b"
+    "message": "Пожалуйста, заполните правильно поле номера телефона"
   },
   "cv1800b.email.correct": {
-    "message": "Пожалуйста, заполните правильно поле e-mail",
-    "description": "cv1800b"
+    "message": "Пожалуйста, заполните правильно поле e-mail"
   },
   "cv1800b.Schools.name": {
-    "message": "Имя заявителя",
-    "description": "cv1800b"
+    "message": "Имя заявителя"
   },
   "cv1800b.Schools.Organization.name": {
-    "message": "Название Вашей организации",
-    "description": "cv1800b"
+    "message": "Название Вашей организации"
   },
   "cv1800b.Schools.Certification": {
-    "message": "Сертификация организаций",
-    "description": "cv1800b"
+    "message": "Сертификация организаций"
   },
   "cv1800b.Schools.Certification.info": {
-    "message": "(Авторизационное письмо, фотография места расположения офиса, трудовая книжка и т.д.)",
-    "description": "cv1800b"
+    "message": "(Авторизационное письмо, фотография места расположения офиса, трудовая книжка и т.д.)"
   },
   "cv1800b.Schools.Project.Details": {
-    "message": "Детали проекта",
-    "description": "cv1800b"
+    "message": "Детали проекта"
   },
   "cv1800b.corporations.id": {
-    "message": "(рабочая карточка, визитная карточка и т.д.)",
-    "description": "cv1800b"
+    "message": "(рабочая карточка, визитная карточка и т.д.)"
   },
   "cv1800b.corporations.Businessemail": {
-    "message": "Деловая электронная почта",
-    "description": "cv1800b"
+    "message": "Деловая электронная почта"
   },
   "cv1800b.corporations.BusinessAddress": {
-    "message": "Бизнес-адрес",
-    "description": "cv1800b"
+    "message": "Бизнес-адрес"
   },
   "cv1800b.corporations.name": {
-    "message": "Название организации или компании",
-    "description": "cv1800b"
+    "message": "Название организации или компании"
   },
   "cv1800b.corporations.Registration": {
-    "message": "Регистрационный номер предприятия",
-    "description": "cv1800b"
+    "message": "Регистрационный номер предприятия"
   },
   "homepage.corporations.Documentstitle": {
-    "message": "Milk-V Документация",
-    "description": "homepage documents"
+    "message": "Milk-V Документация"
   },
   "homepage.corporations.Documentswords": {
-    "message": "Ознакомьтесь с нашей документацией для получения технической поддержки",
-    "description": "homepage documents"
+    "message": "Ознакомьтесь с нашей документацией для получения технической поддержки"
   },
   "homepage.corporations.CommunityBotton": {
-    "message": "Milk-V Сообщество",
-    "description": "Milk-V Community booton"
+    "message": "Milk-V Сообщество"
   },
   "homepage.corporations.WhyRVBotton": {
-    "message": "Почему RISC-V ?",
-    "description": "Why RISC-V ? booton"
+    "message": "Почему RISC-V ?"
   },
   "homepage.corporations.duo": {
-    "message": "Два ядра до 1 ГГц (опционально RISC-V / ARM), до 256 МБ памяти и TPU 1TOPS@INT8. Возможность одновременной работы с Linux и RTOS, богатые интерфейсы ввода-вывода.",
-    "description": "duo description"
+    "message": "Два ядра до 1 ГГц (опционально RISC-V / ARM), до 256 МБ памяти и TPU 1TOPS@INT8. Возможность одновременной работы с Linux и RTOS, богатые интерфейсы ввода-вывода."
   },
   "homepage.corporations.duolearnmore": {
-    "message": "Подробнее",
-    "description": "duo Learn more"
+    "message": "Подробнее"
   },
   "homepage.corporations.duobuynow": {
-    "message": "Купить",
-    "description": "duo buy"
+    "message": "Купить"
   },
   "homepage.corporations.pioneer": {
-    "message": "Milk-V Pioneer - это материнская плата для разработчиков на базе SOPHON SG2042 в стандартном форм-факторе mATX. Это лучший выбор для разработчиков RISC-V и аппаратных пионеров, которые хотят познакомиться с передовыми технологиями RISC-V.",
-    "description": "pioneer description"
+    "message": "Milk-V Pioneer - это материнская плата для разработчиков на базе SOPHON SG2042 в стандартном форм-факторе mATX. Это лучший выбор для разработчиков RISC-V и аппаратных пионеров, которые хотят познакомиться с передовыми технологиями RISC-V."
   },
   "homepage.corporations.pioneerlearnmore": {
-    "message": "Подробнее",
-    "description": "pioneer Learn more"
+    "message": "Подробнее"
   },
   "homepage.corporations.pioneerbuynow": {
-    "message": "Купить",
-    "description": "pioneer buy"
+    "message": "Купить"
   },
   "homepage.corporations.marscm": {
-    "message": "Вычислительный модуль Mars представляет собой систему на модуле (SoM), построенную на базе системы на кристалле (SoC) StarFive JH7110.",
-    "description": "mars cm"
+    "message": "Вычислительный модуль Mars представляет собой систему на модуле (SoM), построенную на базе системы на кристалле (SoC) StarFive JH7110."
   },
   "homepage.corporations.mars": {
-    "message": "Milk-V Mars - это высокопроизводительный RISC-V одноплатный компьютер размером с кредитную карту, построенный на базе StarFive JH7110. Имеется порт Ethernet RJ45 с поддержкой PoE (Power over Ethernet) и слот M.2 E-Key для модуля WIFI/BT. Также имеется 4-полосный MIPI CSI и 2-полосный MIPI CSI, а также 40-контактный GPIO.",
-    "description": "mars"
+    "message": "Milk-V Mars - это высокопроизводительный RISC-V одноплатный компьютер размером с кредитную карту, построенный на базе StarFive JH7110. Имеется порт Ethernet RJ45 с поддержкой PoE (Power over Ethernet) и слот M.2 E-Key для модуля WIFI/BT. Также имеется 4-полосный MIPI CSI и 2-полосный MIPI CSI, а также 40-контактный GPIO."
   },
   "homepage.corporations.marslearnmore": {
-    "message": "Подробнее",
-    "description": "mars Learn more"
+    "message": "Подробнее"
   },
   "homepage.corporations.marsbuynow": {
-    "message": "Купить",
-    "description": "mars buy now"
+    "message": "Купить"
   },
   "homepage.corporations.meles": {
-    "message": "Milk-V Meles - это одноплатный компьютер размером с кредитную карту, построенный на базе TH1520. Он оснащен четырехъядерным процессором RISC-V 64GCV C910, способным работать на частоте 2 ГГц. Этот модуль оснащен богатым интерфейсом и обладает мощными вычислительными и ИИ возможностями, что делает его идеальной интеллектуальной аппаратной платформой RISC-V для любителей, создателей, инженеров, преподавателей и студентов.",
-    "description": "meles "
+    "message": "Milk-V Meles - это одноплатный компьютер размером с кредитную карту, построенный на базе TH1520. Он оснащен четырехъядерным процессором RISC-V 64GCV C910, способным работать на частоте 2 ГГц. Этот модуль оснащен богатым интерфейсом и обладает мощными вычислительными и ИИ возможностями, что делает его идеальной интеллектуальной аппаратной платформой RISC-V для любителей, создателей, инженеров, преподавателей и студентов."
   },
   "homepage.corporations.melesbuynow": {
-    "message": "Купить",
-    "description": "meles buy"
+    "message": "Купить"
   },
   "homepage.corporations.meleslearnmore": {
-    "message": "Подробнее",
-    "description": "meles learn more"
+    "message": "Подробнее"
   },
   "homepage.corporations.vega": {
-    "message": "Milk-V Vega - компактный 10-гигабитный сетевой коммутатор с открытым исходным кодом, разработанный компанией Milk-V для нового поколения сетевых архитектур. Он служит унифицированной платформой для различных услуг, таких как широкополосная связь, передача голоса, видео и видеонаблюдение.",
-    "description": "vega "
+    "message": "Milk-V Vega - компактный 10-гигабитный сетевой коммутатор с открытым исходным кодом, разработанный компанией Milk-V для нового поколения сетевых архитектур. Он служит унифицированной платформой для различных услуг, таких как широкополосная связь, передача голоса, видео и видеонаблюдение."
   },
   "homepage.corporations.vegabuynow": {
-    "message": "Купить",
-    "description": "vega buy"
+    "message": "Купить"
   },
   "homepage.corporations.vegalearnmore": {
-    "message": "Подробнее",
-    "description": "vega learn more"
+    "message": "Подробнее"
   },
   "homepage.corporations.docslearnmore": {
-    "message": "Подробнее",
-    "description": "docs learn more"
+    "message": "Подробнее"
   },
   "homepage.corporations.joinus": {
-    "message": "Присоединяйтесь к нам, чтобы рассказать больше",
-    "description": "Join Us to Share More"
+    "message": "Присоединяйтесь к нам, чтобы рассказать больше"
   },
   "homepage.corporations.emailtitle_1": {
-    "message": "Есть вопросы?",
-    "description": "Having questions?"
+    "message": "Есть вопросы?"
   },
   "homepage.corporations.emailtitle_2": {
-    "message": "Свяжитесь с нами для решения этой проблемы!",
-    "description": "Get in touch with us to resolve!"
+    "message": "Свяжитесь с нами для решения этой проблемы!"
   },
   "homepage.corporations.salesdepartment": {
-    "message": "Отдел продаж",
-    "description": "Sales Department"
+    "message": "Отдел продаж"
   },
   "homepage.corporations.devdepartment": {
-    "message": "Отдел разработки",
-    "description": "Development Department"
+    "message": "Отдел разработки"
   },
   "homepage.corporations.customerdepartment": {
-    "message": "Отдел поддержки клиентов",
-    "description": "Customer Support Department"
+    "message": "Отдел поддержки клиентов"
   },
   "homepage.corporations.emailto": {
-    "message": "Это письмо предназначено для",
-    "description": "This e-mail is to"
+    "message": "Это письмо предназначено для"
   },
   "homepage.corporations.emailmessage": {
-    "message": "Сообщение",
-    "description": "main message"
+    "message": "Сообщение"
   },
   "homepage.corporations.companyname": {
-    "message": "Shenzhen MilkV Technology Co., Ltd",
-    "description": "footer company name"
+    "message": "Shenzhen MilkV Technology Co., Ltd"
   },
   "homepage.corporations.companyaddress_1": {
-    "message": "L8-01, Block B, Bao Cube Jewelry City, 198 Xin'an 4th Road, Liutang Community, Xixiang Street,Bao'an District,",
-    "description": "footer company address"
+    "message": "L8-01, Block B, Bao Cube Jewelry City, 198 Xin'an 4th Road, Liutang Community, Xixiang Street,Bao'an District,"
   },
   "homepage.corporations.companyaddress_2": {
-    "message": "Shenzhen, China",
-    "description": "footer company address"
+    "message": "Shenzhen, China"
   },
   "Send": {
-    "message": "отправка",
-    "description": "Send"
+    "message": "отправка"
   },
   "Embracing": {
-    "message": "Позвольте Milk-V обнять RISC-V",
-    "description": " "
+    "message": "Позвольте Milk-V обнять RISC-V"
   }
 }

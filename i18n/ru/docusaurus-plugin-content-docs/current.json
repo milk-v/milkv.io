@@ -1,54 +1,122 @@
 {
-  "version.label": {
-    "message": "Next",
-    "description": "The label for version current"
-  },
-  "sidebar.tutorialSidebar.category.🍐 Duo": {
-    "message": "🍐 Duo",
-    "description": "The label for category 🍐 Duo in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.🍐 Duo.link.generated-index.description": {
-    "message": "Hello, I am Milk-V Duo",
-    "description": "The generated-index page description for category 🍐 Duo in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.🚀 Getting Started": {
+  "sidebar.duo.category.🚀 Getting Started": {
     "message": "🚀 Getting Started",
-    "description": "The label for category 🚀 Getting Started in sidebar tutorialSidebar"
+    "description": "The label for category 🚀 Getting Started in sidebar duo"
   },
-  "sidebar.tutorialSidebar.category.🚀 Getting Started.link.generated-index.description": {
+  "sidebar.duo.category.🚀 Getting Started.link.generated-index.title": {
+    "message": "🚀 Getting Started",
+    "description": "The generated-index page title for category 🚀 Getting Started in sidebar duo"
+  },
+  "sidebar.duo.category.🚀 Getting Started.link.generated-index.description": {
     "message": "Getting Started with Duo",
-    "description": "The generated-index page description for category 🚀 Getting Started in sidebar tutorialSidebar"
+    "description": "The generated-index page description for category 🚀 Getting Started in sidebar duo"
   },
-  "sidebar.tutorialSidebar.category.🖥️ App Development": {
+  "sidebar.duo.category.🖥️ App Development": {
     "message": "🖥️ App Development",
-    "description": "The label for category 🖥️ App Development in sidebar tutorialSidebar"
+    "description": "The label for category 🖥️ App Development in sidebar duo"
   },
-  "sidebar.tutorialSidebar.category.🖥️ App Development.link.generated-index.description": {
+  "sidebar.duo.category.🖥️ App Development.link.generated-index.title": {
+    "message": "🖥️ App Development",
+    "description": "The generated-index page title for category 🖥️ App Development in sidebar duo"
+  },
+  "sidebar.duo.category.🖥️ App Development.link.generated-index.description": {
     "message": "Application Development",
-    "description": "The generated-index page description for category 🖥️ App Development in sidebar tutorialSidebar"
+    "description": "The generated-index page description for category 🖥️ App Development in sidebar duo"
   },
-  "sidebar.tutorialSidebar.category.🧰 Resources": {
+  "sidebar.duo.category.TPU": {
+    "message": "TPU",
+    "description": "The label for category TPU in sidebar duo"
+  },
+  "sidebar.duo.category.🧰 Resources": {
     "message": "🧰 Resources",
-    "description": "The label for category 🧰 Resources in sidebar tutorialSidebar"
+    "description": "The label for category 🧰 Resources in sidebar duo"
   },
-  "sidebar.tutorialSidebar.category.🧰 Resources.link.generated-index.description": {
+  "sidebar.duo.category.🧰 Resources.link.generated-index.title": {
+    "message": "🧰 Resources",
+    "description": "The generated-index page title for category 🧰 Resources in sidebar duo"
+  },
+  "sidebar.duo.category.🧰 Resources.link.generated-index.description": {
     "message": "Useful Resources",
-    "description": "The generated-index page description for category 🧰 Resources in sidebar tutorialSidebar"
+    "description": "The generated-index page description for category 🧰 Resources in sidebar duo"
   },
-  "sidebar.tutorialSidebar.category.💪 Pioneer": {
-    "message": "💪 Pioneer",
-    "description": "The label for category 💪 Pioneer in sidebar tutorialSidebar"
+  "sidebar.duo.category.🔌 IO Boards": {
+    "message": "🔌 IO Boards",
+    "description": "The label for category 🔌 IO Boards in sidebar duo"
   },
-  "sidebar.tutorialSidebar.category.💪 Pioneer.link.generated-index.description": {
-    "message": "Be the Pioneer",
-    "description": "The generated-index page description for category 💪 Pioneer in sidebar tutorialSidebar"
+  "sidebar.duo.category.📷 Camera": {
+    "message": "📷 Camera",
+    "description": "The label for category 📷 Camera in sidebar duo"
   },
-  "sidebar.tutorialSidebar.category.🏁 Getting Started": {
+  "sidebar.duo.link.🏠 Home": {
+    "message": "🏠 Home",
+    "description": "The label for link 🏠 Home in sidebar duo, linking to /docs"
+  },
+  "sidebar.pioneer.category.🏁 Getting Started": {
     "message": "🏁 Getting Started",
-    "description": "The label for category 🏁 Getting Started in sidebar tutorialSidebar"
+    "description": "The label for category 🏁 Getting Started in sidebar pioneer"
   },
-  "sidebar.tutorialSidebar.category.🏁 Getting Started.link.generated-index.description": {
-    "message": "Getting Started with Pioneer",
-    "description": "The generated-index page description for category 🏁 Getting Started in sidebar tutorialSidebar"
+  "sidebar.pioneer.category.🏁 Getting Started.link.generated-index.title": {
+    "message": "🏁 Getting Started",
+    "description": "The generated-index page title for category 🏁 Getting Started in sidebar pioneer"
+  },
+  "sidebar.pioneer.category.🏁 Getting Started.link.generated-index.description": {
+    "message": "Getting Started with Pionner",
+    "description": "The generated-index page description for category 🏁 Getting Started in sidebar pioneer"
+  },
+  "sidebar.pioneer.category.🧰 Resources": {
+    "message": "🧰 Resources",
+    "description": "The label for category 🧰 Resources in sidebar pioneer"
+  },
+  "sidebar.pioneer.category.🧰 Resources.link.generated-index.title": {
+    "message": "🧰 Resources",
+    "description": "The generated-index page title for category 🧰 Resources in sidebar pioneer"
+  },
+  "sidebar.pioneer.category.🧰 Resources.link.generated-index.description": {
+    "message": "Useful Resources",
+    "description": "The generated-index page description for category 🧰 Resources in sidebar pioneer"
+  },
+  "sidebar.pioneer.link.🏠 Home": {
+    "message": "🏠 Home",
+    "description": "The label for link 🏠 Home in sidebar pioneer, linking to /docs"
+  },
+  "sidebar.mars.category.🚀 Getting Started": {
+    "message": "🚀 Getting Started",
+    "description": "The label for category 🚀 Getting Started in sidebar mars"
+  },
+  "sidebar.mars.category.🚀 Getting Started.link.generated-index.title": {
+    "message": "🚀 Getting Started",
+    "description": "The generated-index page title for category 🚀 Getting Started in sidebar mars"
+  },
+  "sidebar.mars.category.🚀 Getting Started.link.generated-index.description": {
+    "message": "Getting Started with Mars",
+    "description": "The generated-index page description for category 🚀 Getting Started in sidebar mars"
+  },
+  "sidebar.mars.category.🔳 Compute Module": {
+    "message": "🔳 Compute Module",
+    "description": "The label for category 🔳 Compute Module in sidebar mars"
+  },
+  "sidebar.mars.category.🔳 Compute Module.link.generated-index.title": {
+    "message": "🔳 Compute Module",
+    "description": "The generated-index page title for category 🔳 Compute Module in sidebar mars"
+  },
+  "sidebar.mars.category.🔳 Compute Module.link.generated-index.description": {
+    "message": "The Mars Compute Module is a System on Module (SoM) based on a the StarFive JH7110 System on Chip (SoC) integrates the Central Process Unit (CPU), Power Management Unit (PMU), DRAM memory, flash storage and wireless connectivity (WiFi 5 and BT 5.2) in a small form factor of just 55mm x 40mm.",
+    "description": "The generated-index page description for category 🔳 Compute Module in sidebar mars"
+  },
+  "sidebar.mars.category.🧰 Resources": {
+    "message": "🧰 Resources",
+    "description": "The label for category 🧰 Resources in sidebar mars"
+  },
+  "sidebar.mars.link.🏠 Home": {
+    "message": "🏠 Home",
+    "description": "The label for link 🏠 Home in sidebar mars, linking to /docs"
+  },
+  "sidebar.meles.link.🏠 Home": {
+    "message": "🏠 Home",
+    "description": "The label for link 🏠 Home in sidebar meles, linking to /docs"
+  },
+  "sidebar.vega.link.🏠 Home": {
+    "message": "🏠 Home",
+    "description": "The label for link 🏠 Home in sidebar vega, linking to /docs"
   }
 }

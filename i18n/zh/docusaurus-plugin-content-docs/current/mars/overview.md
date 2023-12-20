@@ -1,5 +1,5 @@
 ---
-sidebar_label: '🌍 Overview'
+sidebar_label: '🌍 概述'
 sidebar_position: 1
 ---
 
@@ -15,7 +15,7 @@ Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of
 
 ## Specification
 | Milk-V Mars  | Specification                                       |
-|--------------|-----------------------------------------------------|
+| ------------ | --------------------------------------------------- |
 | SoC          | Starfive JH7110 64bit SoC with RV64GC, up to 1.5GHz |
 | Memory       | LPDDR4 1GB / 2GB / 4GB / 8GB                        |
 | Storage      | 1x eMMC Slot                                        |

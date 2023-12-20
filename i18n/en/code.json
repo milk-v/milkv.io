@@ -1092,5 +1092,57 @@
   "Embracing": {
     "message": "Embracing RISC-V with Milk-V",
     "description": " "
+  },
+  "overview": {
+    "message": "overview",
+    "description": " "
+  },
+  "BlockDiagram": {
+    "message": "Block Diagram",
+    "description": " "
+  },
+  "Applications": {
+    "message": "Applications",
+    "description": " "
+  },
+  "Documents": {
+    "message": "Documents",
+    "description": " "
+  },
+  "DesignResources": {
+    "message": "Design Resources",
+    "description": " "
+  },
+  "ChoosingUs": {
+    "message": "Choosing Us",
+    "description": " "
+  },
+  "ChoosingUs.item1.title": {
+    "message": "Authorized Distributor",
+    "description": " "
+  },
+  "ChoosingUs.item2.title": {
+    "message": "Tailored Solution Design",
+    "description": " "
+  },
+  "ChoosingUs.item3.title": {
+    "message": "Worry-Free After-sales Support",
+    "description": " "
+  },
+  "ChoosingUs.item1.info": {
+    "message": "Shenzhen MilkV Technology Co., Ltd. is an official authorized chip distributor for Alunar Technologies, offering a diverse range of chip models and delivering competitive pricing as a primary distributor.",
+    "description": " "
+  },
+  "ChoosingUs.item2.info": {
+    "message": "We possess mature chip design solutions and extensive experience in chip design, providing tailored chip solutions to suit your unique needs.",
+    "description": " "
+  },
+  "ChoosingUs.item3.info": {
+    "message": "A Seasoned Team of Engineers Providing Technical Support: Comprehensive Solutions for Your Chip Design Challenges.",
+    "description": " "
+  },
+  "SelectionMethod": {
+    "message": "FILTER BY",
+    "description": " "
   }
 }

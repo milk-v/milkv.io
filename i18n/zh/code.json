@@ -5,7 +5,7 @@
   },
   "theme.ErrorPageContent.tryAgain": {
     "message": "重试",
-    "description": "The label of the button to try again when the page crashed"
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.NotFound.title": {
     "message": "找不到页面",
@@ -482,16 +482,13 @@
     "description": "matrix"
   },
   "contact.text.WeChat": {
-    "message": "微信",
-    "description": "WeChat"
+    "message": "微信"
   },
   "contact.text.QQ": {
-    "message": "QQ群",
-    "description": "QQ群"
+    "message": "QQ群"
   },
   "contact.text.join": {
-    "message": "加入 #milkv-",
-    "description": " #milkv-duo"
+    "message": "加入 #milkv-"
   },
   "online.buy": {
     "message": "网上商城",
@@ -510,8 +507,7 @@
     "description": "footer text"
   },
   "footer.text.address": {
-    "message": "地址",
-    "description": "footer text"
+    "message": "地址"
   },
   "footer.text.address.info": {
     "message": "深圳市宝安区西乡街道柳塘社区新安四路198号宝立方珠宝城B座L8-01号",
@@ -522,36 +518,29 @@
     "description": "footer Subscribe"
   },
   "Duo.text.title1": {
-    "message": "遇见",
-    "description": "Duo.text.title"
+    "message": "遇见"
   },
   "Duo.text.title2": {
-    "message": "RISC-V 计算机",
-    "description": "Duo.text.title"
+    "message": "RISC-V 计算机"
   },
   "Duo.text.title3": {
-    "message": "成本低、功耗低、性能高",
-    "description": "Duo.text.title"
+    "message": "成本低、功耗低、性能高"
   },
   "Duo.text.title4": {
-    "message": "不包括税款或运费",
-    "description": "Duo.text.title"
+    "message": "不包括税款或运费"
   },
   "Buy.now": {
-    "message": "立即购买",
-    "description": "buy now"
+    "message": "立即购买"
   },
   "line.title.Specification": {
-    "message": "规格",
-    "description": "Specification"
+    "message": "规格"
   },
   "line.title.size": {
     "message": "体积小，潜力大",
     "description": "size"
   },
   "line.title.TechSpecs": {
-    "message": "技术规格",
-    "description": "TechSpecs"
+    "message": "技术规格"
   },
   "info.text.powerful": {
     "message": "比别人更强大",
@@ -610,20 +599,16 @@
     "description": "Duo 简介"
   },
   "duo.info.text.Introduction.max": {
-    "message": "Milk-V Duo 是基于 CV1800B 芯片的超紧凑型嵌入式开发平台。Duo 256M 是以 SG2002 为主控制器设计的 Duo 的升级版，内存升级到 256M，支持标准的 Linux 系统和应用，可以满足大内存、大存储量的应用需求。Duo 256M 是以 SG2002 为主控制器设计的 Duo 的升级版，支持标准 Linux 系统和应用程序。",
-    "description": "Duo 简介"
+    "message": "Milk-V Duo 是基于 CV1800B 芯片的超紧凑型嵌入式开发平台。Duo 256M 是以 SG2002 为主控制器设计的 Duo 的升级版，内存升级到 256M，支持标准的 Linux 系统和应用，可以满足大内存、大存储量的应用需求。Duo 256M 是以 SG2002 为主控制器设计的 Duo 的升级版，支持标准 Linux 系统和应用程序。"
   },
   "duo.info.text.Hardware": {
-    "message": "硬件设施",
-    "description": "Duo Hardware"
+    "message": "硬件设施"
   },
   "duo.info.text.Documents": {
-    "message": "文件",
-    "description": "Duo Documents"
+    "message": "文件"
   },
   "duo.info.text.pinOut": {
-    "message": "引脚分布图",
-    "description": "Duo Documents"
+    "message": "引脚分布图"
   },
   "duo.Hardware.info1": {
     "message": "双RV64核心，最高1GHz",
@@ -638,88 +623,68 @@
     "description": "Duo Hardware"
   },
   "pioneer.page.title": {
-    "message": "让本地RISC-V开发成为可能",
-    "description": "pioneer title"
+    "message": "让本地RISC-V开发成为可能"
   },
   "pioneer.page.Specification.text1": {
-    "message": "由 SOPHON SG2042 提供",
-    "description": "pioneer Specification"
+    "message": "由 SOPHON SG2042 提供"
   },
   "pioneer.page.Specification.text2": {
-    "message": "64核 RISC-V CPU",
-    "description": "pioneer Specification"
+    "message": "64核 RISC-V CPU"
   },
   "pioneer.page.Box.text1": {
-    "message": "配备",
-    "description": "pioneer Box text"
+    "message": "配备"
   },
   "pioneer.page.Box.text2": {
-    "message": "显卡",
-    "description": "pioneer Box text"
+    "message": "显卡"
   },
   "pioneer.page.Box.text3": {
-    "message": "网卡",
-    "description": "pioneer Box text"
+    "message": "网卡"
   },
   "pioneer.page.Box.text4": {
-    "message": "功率",
-    "description": "pioneer Box text"
+    "message": "功率"
   },
   "pioneer.page.Box.text5": {
-    "message": "制冷",
-    "description": "pioneer Box text"
+    "message": "制冷"
   },
   "pioneer.page.title.minText1": {
     "message": "软件支持",
     "description": "pioneer min Text"
   },
   "pioneer.page.title.minText2": {
-    "message": "真的很有用",
-    "description": "pioneer min Text"
+    "message": "真的很有用"
   },
   "pioneer.page.really1": {
-    "message": "工作站",
-    "description": "pioneer min Text"
+    "message": "工作站"
   },
   "pioneer.page.info": {
-    "message": "Milk-V Pioneer是一块基于SOPHON SG2042的开发主板，采用标准的mATX外形尺寸。Pioneer具有类似PC的接口和PC的工业兼容性，提供原生的RISC-V开发环境和RISC-V桌面体验。它是RISC-V开发者和硬件先驱者体验RISC-V前沿技术的首选。拥抱RISC-V，拥抱未来。",
-    "description": "pioneer info"
+    "message": "Milk-V Pioneer是一块基于SOPHON SG2042的开发主板，采用标准的mATX外形尺寸。Pioneer具有类似PC的接口和PC的工业兼容性，提供原生的RISC-V开发环境和RISC-V桌面体验。它是RISC-V开发者和硬件先驱者体验RISC-V前沿技术的首选。拥抱RISC-V，拥抱未来。"
   },
   "mars.page.title": {
-    "message": "踏上RISC-V的宇宙之旅",
-    "description": "mars title"
+    "message": "踏上RISC-V的宇宙之旅"
   },
   "mars.page.info1": {
-    "message": "第一个RISC-V信用卡大小的SBC",
-    "description": "mars info"
+    "message": "第一个RISC-V信用卡大小的SBC"
   },
   "mars.page.info2": {
-    "message": "RISC-V是一个开放标准的指令集架构（ISA），基于既定的精简指令集计算机（RISC）原则。",
-    "description": "mars info"
+    "message": "RISC-V是一个开放标准的指令集架构（ISA），基于既定的精简指令集计算机（RISC）原则。"
   },
   "mars.page.info3": {
-    "message": "(四核最高可达1.5GHz)",
-    "description": "mars info"
+    "message": "(四核最高可达1.5GHz)"
   },
   "mars.page.info4": {
-    "message": "一键切换uart串行下载模式",
-    "description": "mars info"
+    "message": "一键切换uart串行下载模式"
   },
   "mars.page.info5": {
-    "message": "(在开机前按住--uart串行下载模式)",
-    "description": "mars info"
+    "message": "(在开机前按住--uart串行下载模式)"
   },
   "mars.page.info6": {
-    "message": "支持 PoE",
-    "description": "mars info"
+    "message": "支持 PoE"
   },
   "mars.page.info7": {
-    "message": "网线电源",
-    "description": "mars info"
+    "message": "网线电源"
   },
   "mars.page.info8": {
-    "message": "支持WI-FI/BT模块",
-    "description": "mars info"
+    "message": "支持WI-FI/BT模块"
   },
   "mars.page.info9": {
     "message": "经典造型",
@@ -730,367 +695,328 @@
     "description": "mars info"
   },
   "mars.tech.info": {
-    "message": "Milk-V Mars是一款高性能的RISC-V单板计算机（SBC），只有信用卡大小，基于StarFive JH7110构建。这个四核设备支持即插即用的eMMC模块，以及高达8GB的LPDDR4内存。该板配备了三个USB 3.0端口，一个USB 2.0端口，一个支持4K分辨率的HDMI 2.0端口，一个支持PoE（以太网供电）的RJ45以太网端口，以及一个用于WIFI/BT模块的M.2 E-Key插槽。它还包括一个4线MIPI CSI和一个2线MIPI CSI，以及一个40 pin的GPIO。",
-    "description": "mars tech"
+    "message": "Milk-V Mars是一款高性能的RISC-V单板计算机（SBC），只有信用卡大小，基于StarFive JH7110构建。这个四核设备支持即插即用的eMMC模块，以及高达8GB的LPDDR4内存。该板配备了三个USB 3.0端口，一个USB 2.0端口，一个支持4K分辨率的HDMI 2.0端口，一个支持PoE（以太网供电）的RJ45以太网端口，以及一个用于WIFI/BT模块的M.2 E-Key插槽。它还包括一个4线MIPI CSI和一个2线MIPI CSI，以及一个40 pin的GPIO。"
   },
   "mars": {
-    "message": "Mars",
-    "description": "mars Name"
+    "message": "Mars"
   },
   "duo": {
-    "message": "Duo",
-    "description": "duo Name"
+    "message": "Duo"
   },
   "pioneer": {
-    "message": "Pioneer",
-    "description": "pioneer Name"
+    "message": "Pioneer"
   },
   "contact.title": {
-    "message": "取得联系",
-    "description": "contact title"
+    "message": "取得联系"
   },
   "contact.title.info": {
-    "message": "有问题吗？请与我们联系以解决!",
-    "description": "contact info"
+    "message": "有问题吗？请与我们联系以解决!"
   },
   "contact.title.Sales": {
-    "message": "销售部",
-    "description": "contact info"
+    "message": "销售部"
   },
   "contact.title.Development": {
-    "message": "开发部",
-    "description": "contact info"
+    "message": "开发部"
   },
   "contact.title.support": {
-    "message": "客户支持部",
-    "description": "contact info"
+    "message": "客户支持部"
   },
   "contact.title.sendMessage": {
-    "message": "发送消息",
-    "description": "contact sendMessage"
+    "message": "发送消息"
   },
   "contact.title.name": {
-    "message": "姓名",
-    "description": "name"
+    "message": "姓名"
   },
   "contact.title.email": {
-    "message": "邮箱",
-    "description": "email"
+    "message": "邮箱"
   },
   "contact.title.subject": {
-    "message": "主题",
-    "description": "subject"
+    "message": "主题"
   },
   "contact.title.message": {
-    "message": "留言",
-    "description": "message"
+    "message": "留言"
   },
   "contact.title.send": {
-    "message": "发送",
-    "description": "send"
+    "message": "发送"
   },
   "contact.send.res": {
-    "message": "发送成功",
-    "description": "send"
+    "message": "发送成功"
   },
   "contact.send.res.info": {
-    "message": "请勿重复发送",
-    "description": "send"
+    "message": "请勿重复发送"
   },
   "contact.send.err": {
-    "message": "发送失败",
-    "description": "send"
+    "message": "发送失败"
   },
   "contact.send.err.info": {
-    "message": "服务器异常，正在修复中，请稍后重试。",
-    "description": "send"
+    "message": "服务器异常，正在修复中，请稍后重试。"
   },
   "contact.send.close": {
-    "message": "关闭",
-    "description": "send"
+    "message": "关闭"
   },
   "Donation.title": {
-    "message": "捐献申请表",
-    "description": "Donation"
+    "message": "捐献申请表"
   },
   "Donation.title.Information": {
-    "message": "个人资料",
-    "description": "Donation"
+    "message": "个人资料"
   },
   "Donation.title.Information.Organization": {
-    "message": "组织/分支机构(如果有)",
-    "description": "Donation"
+    "message": "组织/分支机构(如果有)"
   },
   "Donation.title.Information.web": {
-    "message": "网站(如果有)",
-    "description": "Donation"
+    "message": "网站(如果有)"
   },
   "Donation.title.Project": {
-    "message": "项目信息",
-    "description": "Project"
+    "message": "项目信息"
   },
   "Donation.title.Project.name": {
-    "message": "项目名称",
-    "description": "Project"
+    "message": "项目名称"
   },
   "Donation.title.Project.Description": {
-    "message": "项目描述",
-    "description": "Project"
+    "message": "项目描述"
   },
   "Donation.title.Shipping": {
-    "message": "发货信息",
-    "description": "Shipping"
+    "message": "发货信息"
   },
   "Donation.title.Shipping.Country": {
-    "message": "居住国",
-    "description": "Shipping"
+    "message": "居住国"
   },
   "Donation.title.Shipping.Phone": {
-    "message": "电话号码",
-    "description": "Shipping"
+    "message": "电话号码"
   },
   "Donation.title.Shipping.Phone.process": {
-    "message": "您的电话号码将仅用于与捐赠过程有关的通信。我们尊重您的隐私，并将确保您的联系信息的保密性。",
-    "description": "Shipping"
+    "message": "您的电话号码将仅用于与捐赠过程有关的通信。我们尊重您的隐私，并将确保您的联系信息的保密性。"
   },
   "Donation.title.Shipping.addess": {
-    "message": "发货地址",
-    "description": "Shipping"
+    "message": "发货地址"
   },
   "Donation.title.Shipping.addess.process": {
-    "message": "请注意，您的送货地址将只用于运送捐赠的硬件。我们重视您的隐私，并将以最谨慎的方式处理您的信息。",
-    "description": "Shipping"
+    "message": "请注意，您的送货地址将只用于运送捐赠的硬件。我们重视您的隐私，并将以最谨慎的方式处理您的信息。"
   },
   "cv1800b.title": {
-    "message": "CV1800B手册保密协议",
-    "description": "cv1800b"
+    "message": "CV1800B手册保密协议"
   },
   "cv1800b.title.Applicant": {
-    "message": "选择你的申请者类型",
-    "description": "cv1800b"
+    "message": "选择你的申请者类型"
   },
   "cv1800b.title.Applicant.Individual": {
-    "message": "个人",
-    "description": "cv1800b"
+    "message": "个人"
   },
   "cv1800b.title.Applicant.Schools": {
-    "message": "学校或研究机构",
-    "description": "cv1800b"
+    "message": "学校或研究机构"
   },
   "cv1800b.title.Applicant.corporations": {
-    "message": "营利性组织或公司",
-    "description": "cv1800b"
+    "message": "营利性组织或公司"
   },
   "cv1800b.title.lang": {
-    "message": "选择文件的语言（中文或英文）",
-    "description": "cv1800b"
+    "message": "选择文件的语言（中文或英文）"
   },
   "cv1800b.title.file": {
-    "message": "请填写以下信息",
-    "description": "cv1800b"
+    "message": "请填写以下信息"
   },
   "cv1800b.Individual.Purpose": {
-    "message": "宗旨",
-    "description": "cv1800b"
+    "message": "宗旨"
   },
   "cv1800b.Individual.Proof": {
-    "message": "身份证明",
-    "description": "cv1800b"
+    "message": "身份证明"
   },
   "cv1800b.Individual.Proof.info": {
-    "message": "(身份证、工作证、名片等)",
-    "description": "cv1800b"
+    "message": "(身份证、工作证、名片等)"
   },
   "cv1800b.Individual.file.info": {
-    "message": "文件大小限制：1 MB。接受的格式： png, jpg, webp, pdf",
-    "description": "cv1800b"
+    "message": "文件大小限制：1 MB。接受的格式： png, jpg, webp, pdf"
   },
   "Submit": {
-    "message": "提交",
-    "description": "Submit"
+    "message": "提交"
   },
   "cv1800b.phone.correct": {
-    "message": "请填写正确格式的电话号码",
-    "description": "cv1800b"
+    "message": "请填写正确格式的电话号码"
   },
   "cv1800b.email.correct": {
-    "message": "请填写正确格式的电子邮箱",
-    "description": "cv1800b"
+    "message": "请填写正确格式的电子邮箱"
   },
   "cv1800b.Schools.name": {
-    "message": "申请人姓名",
-    "description": "cv1800b"
+    "message": "申请人姓名"
   },
   "cv1800b.Schools.Organization.name": {
-    "message": "您的组织名称",
-    "description": "cv1800b"
+    "message": "您的组织名称"
   },
   "cv1800b.Schools.Certification": {
-    "message": "组织认证",
-    "description": "cv1800b"
+    "message": "组织认证"
   },
   "cv1800b.Schools.Certification.info": {
-    "message": "(授权书、办公地点的照片、工作证等)",
-    "description": "cv1800b"
+    "message": "(授权书、办公地点的照片、工作证等)"
   },
   "cv1800b.Schools.Project.Details": {
-    "message": "项目描述",
-    "description": "cv1800b"
+    "message": "项目描述"
   },
   "cv1800b.corporations.id": {
-    "message": "(工作证、名片等)",
-    "description": "cv1800b"
+    "message": "(工作证、名片等)"
   },
   "cv1800b.corporations.Businessemail": {
-    "message": "商业电子邮箱",
-    "description": "cv1800b"
+    "message": "商业电子邮箱"
   },
   "cv1800b.corporations.BusinessAddress": {
-    "message": "商业地址",
-    "description": "cv1800b"
+    "message": "商业地址"
   },
   "cv1800b.corporations.name": {
-    "message": "组织或公司名称",
-    "description": "cv1800b"
+    "message": "组织或公司名称"
   },
   "cv1800b.corporations.Registration": {
-    "message": "商业登记号码",
-    "description": "cv1800b"
+    "message": "商业登记号码"
   },
   "homepage.corporations.Documentstitle": {
-    "message": "Milk-V 文档",
-    "description": "homepage documents"
+    "message": "Milk-V 文档"
   },
   "homepage.corporations.Documentswords": {
-    "message": "查看文档以获取技术支持",
-    "description": "homepage documents"
+    "message": "查看文档以获取技术支持"
   },
   "homepage.corporations.CommunityBotton": {
-    "message": "Milk-V 社区",
-    "description": "Milk-V Community booton"
+    "message": "Milk-V 社区"
   },
   "homepage.corporations.WhyRVBotton": {
-    "message": "为什么选择RISC-V？",
-    "description": "Why RISC-V ? booton"
+    "message": "为什么选择RISC-V？"
   },
   "homepage.corporations.duo": {
-    "message": "主频高达 1GHz 的双核（可选 RISC-V / ARM）、高达 256MB 的内存和 1TOPS@INT8 TPU。可同时运行 Linux 和 RTOS，具有丰富的 I/O 接口。",
-    "description": "duo description"
+    "message": "主频高达 1GHz 的双核（可选 RISC-V / ARM）、高达 256MB 的内存和 1TOPS@INT8 TPU。可同时运行 Linux 和 RTOS，具有丰富的 I/O 接口。"
   },
   "homepage.corporations.duolearnmore": {
-    "message": "了解更多",
-    "description": "duo Learn more"
+    "message": "了解更多"
   },
   "homepage.corporations.duobuynow": {
-    "message": "立即购买",
-    "description": "duo buy"
+    "message": "立即购买"
   },
   "homepage.corporations.pioneer": {
-    "message": "Milk-V Pioneer 是一款基于 SOPHON SG2042 的开发主板/工作站，采用标准 mATX 外形。它是 RISC-V 开发人员和硬件先驱体验 RISC-V 尖端技术的首选。",
-    "description": "pioneer description"
+    "message": "Milk-V Pioneer 是一款基于 SOPHON SG2042 的开发主板/工作站，采用标准 mATX 外形。它是 RISC-V 开发人员和硬件先驱体验 RISC-V 尖端技术的首选。"
   },
   "homepage.corporations.pioneerlearnmore": {
-    "message": "了解更多",
-    "description": "pioneer Learn more"
+    "message": "了解更多"
   },
   "homepage.corporations.pioneerbuynow": {
-    "message": "立即购买",
-    "description": "pioneer buy"
+    "message": "立即购买"
   },
   "homepage.corporations.marscm": {
-    "message": "Mars CM 是一个基于 StarFive JH7110 片上系统（SoC）的模块化系统（SoM）。 ",
-    "description": "mars cm"
+    "message": "Mars CM 是一个基于 StarFive JH7110 片上系统（SoC）的模块化系统（SoM）。 "
   },
   "homepage.corporations.mars": {
-    "message": "Milk-V Mars 是一款高性能 RISC-V 单板计算机 (SBC)，只有信用卡大小，采用 StarFive JH7110。它有一个支持 PoE（以太网供电）的 RJ45 以太网端口和一个用于 WIFI/BT 模块的 M.2 E-Key 插槽。它还包括一个 4 通道 MIPI CSI 和一个 2 通道 MIPI CSI，以及一个 40 引脚的 GPIO 座子。",
-    "description": "mars"
+    "message": "Milk-V Mars 是一款高性能 RISC-V 单板计算机 (SBC)，只有信用卡大小，采用 StarFive JH7110。它有一个支持 PoE（以太网供电）的 RJ45 以太网端口和一个用于 WIFI/BT 模块的 M.2 E-Key 插槽。它还包括一个 4 通道 MIPI CSI 和一个 2 通道 MIPI CSI，以及一个 40 引脚的 GPIO 座子。"
   },
   "homepage.corporations.marslearnmore": {
-    "message": "了解更多",
-    "description": "mars Learn more"
+    "message": "了解更多"
   },
   "homepage.corporations.marsbuynow": {
-    "message": "立即购买",
-    "description": "mars buy now"
+    "message": "立即购买"
   },
   "homepage.corporations.meles": {
-    "message": "Milk-V Meles 是基于 TH1520 的信用卡大小的单板计算机（SBC）。它采用四核 RISC-V 64GCV C910，主频高达 2.0GHz。这款 SBC 配备了丰富的接口，拥有强大的计算和人工智能功能，是业余爱好者、制造商、工程师、教师和学生理想的 RISC-V 智能硬件平台。",
-    "description": "meles "
+    "message": "Milk-V Meles 是基于 TH1520 的信用卡大小的单板计算机（SBC）。它采用四核 RISC-V 64GCV C910，主频高达 2.0GHz。这款 SBC 配备了丰富的接口，拥有强大的计算和人工智能功能，是业余爱好者、制造商、工程师、教师和学生理想的 RISC-V 智能硬件平台。"
   },
   "homepage.corporations.melesbuynow": {
-    "message": "立即购买",
-    "description": "meles buy"
+    "message": "立即购买"
   },
   "homepage.corporations.meleslearnmore": {
-    "message": "了解更多",
-    "description": "meles learn more"
+    "message": "了解更多"
   },
   "homepage.corporations.vega": {
-    "message": "Milk-V Vega 是 Milk-V 为下一代网络架构开发的一款紧凑型、低密度盒式开源万兆网络交换机。它是宽带、语音、视频和监控等各种服务的统一平台。",
-    "description": "vega "
+    "message": "Milk-V Vega 是 Milk-V 为下一代网络架构开发的一款紧凑型、低密度盒式开源万兆网络交换机。它是宽带、语音、视频和监控等各种服务的统一平台。"
   },
   "homepage.corporations.vegabuynow": {
-    "message": "立即购买",
-    "description": "vega buy"
+    "message": "立即购买"
   },
   "homepage.corporations.vegalearnmore": {
-    "message": "了解更多",
-    "description": "vega learn more"
+    "message": "了解更多"
   },
   "homepage.corporations.docslearnmore": {
-    "message": "了解更多",
-    "description": "docs learn more"
+    "message": "了解更多"
   },
   "homepage.corporations.joinus": {
-    "message": "加入讨论与分享",
-    "description": "Join Us to Share More"
+    "message": "加入讨论与分享"
   },
   "homepage.corporations.emailtitle_1": {
-    "message": "遇到问题了？",
-    "description": "Having questions?"
+    "message": "遇到问题了？"
   },
   "homepage.corporations.emailtitle_2": {
-    "message": "和我们取得联系以得到解决！",
-    "description": "Get in touch with us to resolve!"
+    "message": "和我们取得联系以得到解决！"
   },
   "homepage.corporations.salesdepartment": {
-    "message": "销售部门",
-    "description": "sales department"
+    "message": "销售部门"
   },
   "homepage.corporations.devdepartment": {
-    "message": "研发部门",
-    "description": "development department"
+    "message": "研发部门"
   },
   "homepage.corporations.customerdepartment": {
-    "message": "客户支持部门",
-    "description": "customer department"
+    "message": "客户支持部门"
   },
   "homepage.corporations.emailto": {
-    "message": "这封邮件将发往",
-    "description": "This e-mail is to"
+    "message": "这封邮件将发往"
   },
   "homepage.corporations.emailmessage": {
-    "message": "内容",
-    "description": "main message"
+    "message": "内容"
   },
   "homepage.corporations.companyname": {
-    "message": "深圳市群芯闪耀科技有限公司",
-    "description": "footer company name"
+    "message": "深圳市群芯闪耀科技有限公司"
   },
   "homepage.corporations.companyaddress_1": {
-    "message": "中国广东省深圳市宝安区西乡街道流塘社区新安四路198号宝立方B座L8-01室",
-    "description": "footer company address"
+    "message": "中国广东省深圳市宝安区西乡街道流塘社区新安四路198号宝立方B座L8-01室"
   },
   "homepage.corporations.companyaddress_2": {
-    "message": " ",
-    "description": "footer company address"
+    "message": " "
   },
   "Send": {
-    "message": "发送",
-    "description": "Send"
+    "message": "发送"
   },
   "Embracing": {
-    "message": "让 Milk-V 拥抱 RISC-V",
+    "message": "让 Milk-V 拥抱 RISC-V"
+  },
+  "overview": {
+    "message": "概述",
+    "description": " "
+  },
+  "BlockDiagram": {
+    "message": "功能框图",
+    "description": " "
+  },
+  "Applications": {
+    "message": "应用",
+    "description": " "
+  },
+  "Documents": {
+    "message": "文档",
+    "description": " "
+  },
+  "DesignResources": {
+    "message": "设计资源",
+    "description": " "
+  },
+  "ChoosingUs": {
+    "message": "选择我们",
+    "description": " "
+  },
+  "ChoosingUs.item1.title": {
+    "message": "授权经销商",
+    "description": " "
+  },
+  "ChoosingUs.item2.title": {
+    "message": "量身定制的解决方案设计",
+    "description": " "
+  },
+  "ChoosingUs.item3.title": {
+    "message": "无忧的售后支持",
+    "description": " "
+  },
+  "ChoosingUs.item1.info": {
+    "message": "我们拥有成熟的芯片设计解决方案和丰富的芯片设计经验，可根据您的独特需求提供量身定制的芯片解决方案。",
+    "description": " "
+  },
+  "ChoosingUs.item2.info": {
+    "message": "我们拥有成熟的芯片设计解决方案和丰富的芯片设计经验，可根据您的独特需求提供量身定制的芯片解决方案。",
+    "description": " "
+  },
+  "ChoosingUs.item3.info": {
+    "message": "经验丰富的工程师团队提供技术支持： 为您的芯片设计挑战提供全面解决方案",
+    "description": " "
+  },
+  "SelectionMethod": {
+    "message": "筛选方式",
     "description": " "
   }
 }
