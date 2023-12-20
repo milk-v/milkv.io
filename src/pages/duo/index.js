@@ -6,12 +6,17 @@ import ContactUs from "../../components/ContactUs"
 import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
 import MetaData from "../../components/MetaData"
-
+import Link from '@docusaurus/Link';
+import chips_s from '@site/src/components/ChipsView/index.module.css'
 import styles from "./details.module.css"
 import Translate from '@docusaurus/Translate';
 
+const download_data = require("@site/src/jsonFiles/downloadData.json")
+
 function DetailsPage() {
   const [duo2, setDuo2] = useState(false)
+  const [down_filter_idx, setDown_filter_idx] = useState(0)
+
 
   const duoStart = () => {
     setDuo2(false)
@@ -37,8 +42,6 @@ function DetailsPage() {
           <p className={styles.tax}>(*<Translate id='Duo.text.title4' />)</p>
         </div>
         <div className={styles.rotateImg}></div>
-
-
         <div className={styles.content_box}>
           <div className={styles.storage}>
             <div className={styles.left_view}>
@@ -91,7 +94,6 @@ function DetailsPage() {
               <p>Extensive Range of Expansion Boards</p>
             </li>
           </ul>
-
           <div className={styles.techspec_module}>
             <h2><Translate id='line.title.TechSpecs' /></h2>
             <p className={styles.techspec_info}>
@@ -204,28 +206,41 @@ function DetailsPage() {
             <h3><Translate id='duo.info.text.Documents' /></h3>
           </div>
           <div className={styles.document}>
-            <ul>
-              <li>
-                <div className={styles.down}></div>
-                <a className={styles.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/tree/main/duo/hardware">Duo Datasheet, PDF</a>
-              </li>
-              <li>
-                <div className={styles.down}></div>
-                <a className={styles.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/tree/main/duo/hardware">Duo Schematic, PDF</a>
-              </li>
-              <li>
-                <span className={styles.down}></span>
-                <a className={styles.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/tree/main/duo/hardware">Duo Mechanical Drawings, DXF</a>
-              </li>
-              <li>
-                <span className={styles.down}></span>
-                <a className={styles.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/tree/main/duo/hardware">Duo Schematic Library, OLB</a>
-              </li>
-              <li>
-                <span className={styles.down}></span>
-                <a className={styles.link_down} style={{ textDecoration: 'none' }} href="https://github.com/milkv-duo/duo-files/tree/main/duo/hardware">Duo PCB Footprint, DRA</a>
-              </li>
-            </ul>
+            <div className={chips_s.download_link}>
+              <div className={chips_s.radio_input}>
+                <p>FILTER BY</p>
+                {
+                  Object.keys(download_data.duo).map((item, key) => {
+                    return (
+                      <label key={key}>
+                        <input type="radio" name="Resources" value={item}
+                          checked={key === down_filter_idx}
+                          onChange={(e) => {
+                            if (e.target.checked) {
+                              setDown_filter_idx(key)
+                            }
+                          }}
+                        />
+                        <span style={{ color: "#fff" }}>{item}</span>
+                      </label>
+                    )
+                  })
+                }
+              </div>
+              <div className={chips_s.download_list}>
+                <p style={{ color: "#fff" }}>{Object.keys(download_data.duo)[down_filter_idx]}</p>
+                <ul>
+                  {
+                    download_data.duo[Object.keys(download_data.duo)[down_filter_idx]].map((item, key) => {
+                      return <li key={key}>
+                        <Link to={item.file_url}>{item.file_name}</Link>
+                        <p style={{ color: "#fff" }}><span>{item.file_format}</span> <span>{item.file_date}</span> <span>{item.file_size}</span></p>
+                      </li>
+                    })
+                  }
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <ContactUs product='duo' />

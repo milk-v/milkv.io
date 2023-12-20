@@ -1,0 +1,453 @@
+{
+    "sg2000": {
+        "title": "SG2000 is a high-performance, low-power chip for AIOT. It features multiple cores, swift core switching, H.264/H.265 video codecs, professional-grade image enhancements, a proprietary 0.5TOPS INT8 TPU, an efficient TPU scheduling engine, and diverse peripheral interfaces.",
+        "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
+        "front_view": "/chips/sg2000/sg2000-frontview.webp",
+        "chip_view": [
+            "/chips/sg2000/sg2000-01.webp",
+            "/chips/sg2000/sg2000-02.webp",
+            "/chips/sg2000/sg2000-03.webp"
+        ],
+        "chip_intro_text": [
+            "SG2000 is a high-performance, low-power chip designed for various product fields such as edge intelligent surveillance IP cameras, local facial recognition attendance machines, and smart home devices. It integrates H.264/H.265 video compression and decoding and ISP capabilities. It supports various image enhancement and correction algorithms like HDR wide dynamic range, 3D noise reduction, defogging, and lens distortion correction, providing customers with professional-grade video image quality.",
+            "The chip also integrates an in-house TPU, delivering approximately 0.5TOPS of computing power under INT8 operations. The specially designed TPU scheduling engine efficiently provides high-bandwidth data flow for tensor processing unit cores. It also offers users a powerful deep learning model compiler and software SDK development kit. Mainstream deep learning frameworks such as Caffe, Pytorch, ONNX, MXNet, and TensorFlow (Lite) can be easily ported to this platform."
+        ],
+        "diagram_url": "/chips/sg2000/sg2000-diagram.webp",
+        "hardware": {
+            "RISC-V CPU": [
+                "1 x C906@1GHz + 1 x C906@700MHz"
+            ],
+            "Arm CPU": [
+                "1 x Cortex-A53@1GHz "
+            ],
+            "MCU": [
+                "8051@6KB SRAM"
+            ],
+            "NPU": [
+                "0.5 Top@INT8"
+            ],
+            "Memory": [
+                "Sip DRAM 512M"
+            ],
+            "Video Module": [
+                "ISP 5M@30fps",
+                "2L MIPI DSI 5M@30fps",
+                "4L or 2L+2L MIPI CSI 5M@30fps",
+                "H.265/H.264 Decoding and Encoding 5M@30fps"
+            ],
+            "Audio Module": [
+                "16bit Audio Codec",
+                "2 x I2S/PCM",
+                "1 x DMIC"
+            ],
+            "Storage": [
+                "SPI-NOR, SPI-NAND, eMMC5.0, 2xSDIO3.0"
+            ],
+            "Network": [
+                "10M/100M MAC PHY"
+            ],
+            "Security Module": [
+                "Crypto/Secure boot/TRNG/Efuze"
+            ],
+            "Peripherals": [
+                "1 x USB2.0 DRD/5 x UART/4 x SPI/16 x PWM/1 x IR/6 x I2C/6 x ADC/ GPIOs"
+            ],
+            "Temperature Range": [
+                "0℃～70℃"
+            ],
+            "Package Type": [
+                "LFBGA"
+            ],
+            "Package Dimensions": [
+                "10mm x 10mm x 1.3mm"
+            ],
+            "Pin Pitch": [
+                "0.65mm"
+            ],
+            "Total Pins": [
+                "205"
+            ]
+        },
+        "scenarios": [
+            {
+                "img_link": "/chips/scenarios1.webp",
+                "scenarios_name": "Intelligent door locks"
+            },
+            {
+                "img_link": "/chips/scenarios2.webp",
+                "scenarios_name": "Video Conference"
+            },
+            {
+                "img_link": "/chips/scenarios3.webp",
+                "scenarios_name": "Industrial Internet of Things"
+            },
+            {
+                "img_link": "/chips/scenarios4.webp",
+                "scenarios_name": "intelligent transport"
+            }
+        ],
+        "downloads": {
+            "Hardware Design": [
+                {
+                    "download_name": "SG2000-BGA-SIP-V11-16.2",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/SG2000-BGA-SIP-V11-16.2.DSN?raw=true",
+                    "file_format": "DSN",
+                    "file_size": "1.94 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "SG2000-BGA-SIP-V11",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/SG2000-BGA-SIP-V11.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "1.37 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "SG2000-WEVB-0007A-V04-SCH",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/SG2000-WEVB-0007A-V04-SCH.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "1.07 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0007B-V02-Component-Placement-Diagram",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/WDMB-0007B-V02-Component-Placement-Diagram.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "2.3 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0007B-V02",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/WDMB-0007B-V02.brd?raw=true",
+                    "file_format": "BRD",
+                    "file_size": "4.61 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0007B-V02",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/WDMB-0007B-V02.pcb?raw=true",
+                    "file_format": "PCB",
+                    "file_size": "3.77 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "SG2000-Hardware-PCB-Layout-Guide",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/SG2000-Hardware-PCB-Layout-Guide.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "10.9 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "SG2000-PINOUT",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/SG2000-PINOUT.xlsx?raw=true",
+                    "file_format": "XLSX",
+                    "file_size": "3.86 MB",
+                    "file_date": "Jun 5,2023"
+                }
+            ]
+        },
+        "resources": {
+            "Development Hardware": [
+                {
+                    "resources_name": "Huashan Sect",
+                    "resources_url": "https://www.hw100k.com/coursedetail?id=195",
+                    "resources_img": "/chips/test-img.webp",
+                    "resources_info": "The Huashan Sect - CV181 Series Development Board, jointly released by Aligned Computing and Eco-Partner Hardware for a hundred thousand reasons, is an open-source ecosystem development board providing a RISC-V-based open development environment for extensive users. It focuses on visual and AI scene development, aiming to grow together with a vast community of developers."
+                }
+            ]
+        }
+    },
+    "sg2002": {
+        "title": "SG2002 is a high-performance chip for AIOT applications, with multiple cores, hardware codecs, an ISP for image enhancements, an in-house TPU for powerful processing, and diverse peripheral interfaces.",
+        "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
+        "front_view": "/chips/sg2002/sg2002-frontview.webp",
+        "chip_view": [
+            "/chips/sg2002/sg2002-01.webp",
+            "/chips/sg2002/sg2002-02.webp",
+            "/chips/sg2002/sg2002-03.webp"
+        ],
+        "chip_intro_text": [
+            "SG2002 is a high-performance, low-power chip designed for various product fields such as edge intelligent surveillance IP cameras, smart door locks, visual doorbells, and home intelligence. It integrates H.264 video compression and decoding, H.265 video compression encoding, and ISP capabilities. It supports multiple image enhancement and correction algorithms such as HDR wide dynamic range, 3D noise reduction, defogging, and lens distortion correction, providing customers with professional-grade video image quality.",
+            "The chip also incorporates a self-developed TPU, delivering 1.0 TOPS of computing power under 8-bit integer operations. The specially designed TPU scheduling engine efficiently provides high-bandwidth data flow for all tensor processing unit cores. Additionally, it offers users a powerful deep learning model compiler and software SDK development kit. Leading deep learning frameworks like Caffe and Tensorflow can be easily ported to its platform. Furthermore, it includes security boot, secure updates, and encryption, providing a series of security solutions from development, mass production, to product applications.",
+            "The chip integrates an 8-bit MCU subsystem, replacing the typical external MCU to achieve cost-saving and power efficiency goals."
+        ],
+        "diagram_url": "/chips/sg2002/sg2002-diagram.webp",
+        "hardware": {
+            "RISC-V CPU": [
+                "1 x C906@1GHz + 1 x C906@700MHz"
+            ],
+            "Arm CPU": [
+                "1 x Cortex-A53@1GHz"
+            ],
+            "MCU": [
+                "8051@6KB SRAM"
+            ],
+            "NPU": [
+                "1Top@INT8"
+            ],
+            "Memory": [
+                "Sip DRAM 256M"
+            ],
+            "Video Module": [
+                "ISP 5M@30fps",
+                "2L MIPI DSI 5M@30fps",
+                "4L or 2L+2L MIPI CSI 5M@30fps",
+                "H.265/H.264 Decoding and Encoding 5M@30fps"
+            ],
+            "Audio Module": [
+                "16bit Audio Codec",
+                "2 xI2S/PCM",
+                "1 xDMIC"
+            ],
+            "Storage": [
+                "SPI-NOR, SPI-NAND, eMMC5.0, 2 xSDIO3.0"
+            ],
+            "Network": [
+                "10M/100M MAC PHY"
+            ],
+            "Security Module": [
+                "Crypto/Secure boot/TRNG/Efuze"
+            ],
+            "Peripherals": [
+                "1 x USB2.0 DRD/5 x UART/3 x SPI/16 x PWM/1 x IR/6 x I2C/4 x ADC/GPIOs"
+            ],
+            "Temperature Range": [
+                "0℃～70℃"
+            ],
+            "Package Type": [
+                "QFN"
+            ],
+            "Package Dimensions": [
+                "9mmx9mmx0.9mm"
+            ],
+            "Pin Pitch": [
+                "0.35mm"
+            ],
+            "Total Pins": [
+                "88"
+            ]
+        },
+        "scenarios": [
+            {
+                "img_link": "/chips/scenarios1.webp",
+                "scenarios_name": "Intelligent door locks"
+            },
+            {
+                "img_link": "/chips/scenarios2.webp",
+                "scenarios_name": "Video Conference"
+            },
+            {
+                "img_link": "/chips/scenarios3.webp",
+                "scenarios_name": "Industrial Internet of Things"
+            },
+            {
+                "img_link": "/chips/scenarios4.webp",
+                "scenarios_name": "intelligent transport"
+            }
+        ],
+        "downloads": {
+            "Hardware Design": [
+                {
+                    "download_name": "SG2002-QFN88-38-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/SG2002-QFN88-38-4L.DSN?raw=true",
+                    "file_format": "DSN",
+                    "file_size": "6.79 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "SG2002-QFN88-38-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/SG2002-QFN88-38-4L.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "398 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0006A-V01 Component Placement Diagram",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/WDMB-0006A-V01%20Component%20Placement%20Diagram.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "637 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0006A-V01",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/WDMB-0006A-V01.brd?raw=true",
+                    "file_format": "BRD",
+                    "file_size": "2.09 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0006A-V01",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/WDMB-0006A-V01.pcb?raw=true",
+                    "file_format": "PCB",
+                    "file_size": "1.1 MB",
+                    "file_date": "Jun 5,2023"
+                }
+            ]
+        },
+        "resources": {
+            "Development Hardware": [
+                {
+                    "resources_name": "Duo",
+                    "resources_url": "/docs/duo/overview",
+                    "resources_img": "/chips/duo-view.webp",
+                    "resources_info": "Milk-V Duo 256M is an ultra-compact embedded development platform based on the SG2002 chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators."
+                }
+            ]
+        }
+    },
+    "cv1800b": {
+        "title": "CV1800B: high-performance chip for consumer IP cameras and home intelligence. Integrates H.264/H.265 encoders and ISP for professional video quality.",
+        "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
+        "front_view": "/chips/cv1800b/cv1800b-frontview.webp",
+        "chip_view": [
+            "/chips/cv1800b/cv1800B-01.webp",
+            "/chips/cv1800b/cv1800B-02.webp",
+            "/chips/cv1800b/cv1800B-03.webp"
+        ],
+        "chip_intro_text": [
+            "CV1800B is a high-performance, low-power consumption chip designed for various consumer monitoring IP cameras, home intelligence, and other products. It integrates an H.264/H.265 video compression encoder and ISP and supports various image enhancement and correction algorithms such as digital wide dynamic range, 3D noise reduction, defogging, and lens distortion correction to provide professional-grade video image quality to customers. The chip also integrates a self-developed intelligent reference design (human form detection, area detection, motion detection), built-in DDR, and complete peripherals and external devices, providing a high-integration and concise solution to facilitate customer product development and mass production. In addition, it also provides secure boot, secure update, and secure encryption and so on to provide a series of security solutions for users from development, mass production to product application. The chip integrates an 8-bit MCU subsystem, which can replace general external MCUs to achieve the goal of saving BOM cost and power consumption."
+        ],
+        "diagram_url": "/chips/cv1800b/cv1800B-diagram.webp",
+        "hardware": {
+            "RISC-V CPU": [
+                "1 x C906@1GHz + 1 x C906@700MHz"
+            ],
+            "NPU": [
+                "0.5 Top@INT8"
+            ],
+            "Memory": [
+                "Sip DRAM 64M"
+            ],
+            "Video Module": [
+                "ISP 4M@25fps",
+                "MIPI 4L CSI",
+                "H.265/H.264 Decoding and Encoding"
+            ],
+            "Audio Module": [
+                "16bit Audio Codec"
+            ],
+            "Storage": [
+                "SPI-NOR, SPI-NAND, 2 xSDIO3.0"
+            ],
+            "Network": [
+                "10M/100M MAC PHY"
+            ],
+            "Security Module": [
+                "Secure boot/AES/SHA/Efuse"
+            ],
+            "Peripherals": [
+                "3 x ADC/4 x I2C/3 x SPI/5 x UART/4 x PWM/2 x SDIO 3.0/51 GPIOs"
+            ],
+            "Temperature Range": [
+                "-30℃～70℃"
+            ],
+            "Package Type": [
+                "QFN"
+            ],
+            "Package Dimensions": [
+                "7mmx7mmx0.9mm"
+            ],
+            "Pin Pitch": [
+                "0.35mm"
+            ],
+            "Total Pins": [
+                "68"
+            ]
+        },
+        "scenarios": [
+            {
+                "img_link": "/chips/scenarios1.webp",
+                "scenarios_name": "Intelligent door locks"
+            },
+            {
+                "img_link": "/chips/scenarios2.webp",
+                "scenarios_name": "Video Conference"
+            },
+            {
+                "img_link": "/chips/scenarios3.webp",
+                "scenarios_name": "Industrial Internet of Things"
+            },
+            {
+                "img_link": "/chips/scenarios4.webp",
+                "scenarios_name": "intelligent transport"
+            }
+        ],
+        "downloads": {
+            "Hardware Design": [
+                {
+                    "download_name": "CV1800B-Flash-Support-List",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-Flash-Support-List.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "141 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-QFN68-38-Board-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-4L.DSN?raw=true",
+                    "file_format": "DSN",
+                    "file_size": "2.1 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-QFN68-38-Board-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-4L.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "362 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-QFN68-38-Board-GPIO-List",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-GPIO-List.xlsx?raw=true",
+                    "file_format": "XLSX",
+                    "file_size": "248 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-Sensor-Support-List ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-Sensor-Support-List%20.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "180 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-VI-Interface-Detailed-Scenario-Description ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B_VI%20Interface%20Detailed%20Scenario%20Description.xlsx?raw=true",
+                    "file_format": "XLSX",
+                    "file_size": "40.3 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-WiFi-Support-List ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B_WiFi%20Support%20List%20.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "164 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0008A-V01 ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/WDMB-0008A-V01.asc?raw=true",
+                    "file_format": "ASC",
+                    "file_size": "912 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0008A-V01 ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/WDMB-0008A-V01.pcb?raw=true",
+                    "file_format": "PCB",
+                    "file_size": "1.05 MB",
+                    "file_date": "Jun 5,2023"
+                }
+            ]
+        },
+        "resources": {
+            "Development Hardware": [
+                {
+                    "resources_name": "Duo",
+                    "resources_url": "/docs/duo/overview",
+                    "resources_img": "/chips/duo-view.webp",
+                    "resources_info": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators."
+                }
+            ]
+        }
+    }
+}

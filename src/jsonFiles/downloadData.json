@@ -1,0 +1,36 @@
+{
+    "duo": {
+        "硬件": [
+            {
+                "file_name": "下载文件1",
+                "file_url": "",
+                "file_size": "100KB",
+                "file_format": "PDF",
+                "file_date": "Jun 5, 2023"
+            },
+            {
+                "file_name": "下载文件2",
+                "file_url": "",
+                "file_size": "100KB",
+                "file_format": "PDF",
+                "file_date": "Jun 5, 2023"
+            }
+        ],
+        "软件": [
+            {
+                "file_name": "下载文件1",
+                "file_url": "",
+                "file_size": "100KB",
+                "file_format": "PDF",
+                "file_date": "Jun 5, 2023"
+            },
+            {
+                "file_name": "下载文件2",
+                "file_url": "",
+                "file_size": "100KB",
+                "file_format": "PDF",
+                "file_date": "Jun 5, 2023"
+            }
+        ]
+    }
+}
