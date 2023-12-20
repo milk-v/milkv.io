@@ -297,7 +297,7 @@ export default (props) => {
                                         return (
                                             <li key={key}>
                                                 <Link to={item.download_url}>{item.download_name}</Link>
-                                                <p><span>{item.file_format}</span> <span>J{item.file_date}</span> <span>{item.file_size}</span></p>
+                                                <p><span>{item.file_format}</span> <span>{item.file_date}</span> <span>{item.file_size}</span></p>
                                             </li>
                                         )
                                     })
