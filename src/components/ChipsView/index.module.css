@@ -359,6 +359,7 @@
     justify-content: space-between;
     overflow: hidden;
     width: 100%;
+    background-color: #f8f8f8;
 }
 
 .text_l {
@@ -542,7 +543,8 @@
     }
 
     .choosing_item {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        padding: 20px;
     }
 
     .choosing_item>img {
@@ -550,12 +552,16 @@
     }
 
     .text_l>h3 {
-        font-size: 32px;
+        font-size: 24px;
         margin-bottom: 20px;
     }
 
     .text_l>p {
         font-size: 20px;
+    }
+
+    .certificate>div>h2 {
+        margin-bottom: 50px;
     }
 }
 
@@ -718,7 +724,8 @@
     }
 
     .choosing_item {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        padding: 20px;
     }
 
     .choosing_item>img {
@@ -726,12 +733,16 @@
     }
 
     .text_l>h3 {
-        font-size: 30px;
+        font-size: 22px;
         margin-bottom: 20px;
     }
 
     .text_l>p {
         font-size: 18px;
+    }
+
+    .certificate>div>h2 {
+        margin-bottom: 50px;
     }
 }
 
@@ -894,7 +905,8 @@
     }
 
     .choosing_item {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        padding: 15px;
     }
 
     .choosing_item>img {
@@ -902,12 +914,16 @@
     }
 
     .text_l>h3 {
-        font-size: 26px;
+        font-size: 20px;
         margin-bottom: 20px;
     }
 
     .text_l>p {
         font-size: 16px;
+    }
+
+    .certificate>div>h2 {
+        margin-bottom: 40px;
     }
 }
 
@@ -1080,7 +1096,8 @@
     }
 
     .choosing_item {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+        padding: 10px;
     }
 
     .choosing_item>img {
@@ -1088,12 +1105,16 @@
     }
 
     .text_l>h3 {
-        font-size: 22px;
-        margin-bottom: 20px;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
 
     .text_l>p {
         font-size: 14px;
+    }
+
+    .certificate>div>h2 {
+        margin-bottom: 40px;
     }
 }
 
@@ -1335,9 +1356,10 @@
     }
 
     .choosing_item {
-        margin-bottom: 30rem;
+        margin-bottom: 20rem;
         flex-direction: column;
         align-items: center;
+        padding: 15rem;
     }
 
     .text_l {
@@ -1350,8 +1372,8 @@
     }
 
     .text_l>h3 {
-        font-size: 22rem;
-        margin-bottom: 20rem;
+        font-size: 20rem;
+        margin-bottom: 15rem;
     }
 
     .text_l>p {

@@ -6,7 +6,9 @@ import Footer from "@site/src/components/Footer"
 // import MetaData from "@site/src/components/MetaData"
 import SupportUs from "@site/src/components/SupportUs"
 import styles from './index.module.css'
-const jsonData = require('../../chipsData/chips.json');
+import Translate from '@docusaurus/Translate';
+
+const jsonData = require('../../jsonFiles/chips.json');
 
 
 export default (props) => {
@@ -94,31 +96,31 @@ export default (props) => {
 
     const tab_arr = [
         {
-            text: 'Overview',
+            text: <Translate id='overview' />,
             ref: chip_over,
         },
         {
-            text: 'Block Diagram',
+            text: <Translate id='BlockDiagram' />,
             ref: chip_diagram,
         },
         {
-            text: 'Hardware',
+            text: <Translate id='duo.info.text.Hardware' />,
             ref: chip_hardware,
         },
         {
-            text: 'Applications',
+            text: <Translate id='Applications' />,
             ref: chip_applications,
         },
         {
-            text: 'Documents',
+            text: <Translate id='Documents' />,
             ref: chip_doc,
         },
         {
-            text: 'Design Resources',
+            text: <Translate id='DesignResources' />,
             ref: chip_resources,
         },
         {
-            text: 'Choosing Us',
+            text: <Translate id='ChoosingUs' />,
             ref: chip_agency,
         }
     ]
@@ -130,7 +132,7 @@ export default (props) => {
                 <div className={styles.chip_title}>
                     <div className={styles.title_l_t}>
                         <h4>{jsonData[chipName].title}</h4>
-                        <Link to={jsonData[chipName].buy_link}>Buy Now</Link>
+                        <Link to={jsonData[chipName].buy_link}><Translate id="homepage.corporations.duobuynow" /></Link>
                     </div>
                     <img src={jsonData[chipName].front_view} />
                 </div>
@@ -232,11 +234,11 @@ export default (props) => {
             </div>
             <div className={styles.chip_diagram}>
                 <div ref={chip_diagram}>
-                    <h2>Block Diagram</h2>
+                    <h2><Translate id='BlockDiagram' /></h2>
                     <img src={jsonData[chipName].diagram_url} alt="" className={styles.diagram_img} />
                 </div>
                 <div ref={chip_hardware} className={styles.headModule}>
-                    <h2 >Hardware</h2>
+                    <h2 ><Translate id='duo.info.text.Hardware' /></h2>
                     <ul className={styles.hardware_ul}>
                         {
                             Object.keys(jsonData[chipName].hardware).map((item, key) => {
@@ -255,7 +257,7 @@ export default (props) => {
                     </ul>
                 </div>
                 <div ref={chip_applications}>
-                    <h2>Applications </h2>
+                    <h2> <Translate id='Applications' /></h2>
                     <ul className={styles.scenarios}>
                         {
                             jsonData[chipName].scenarios.map((item, key) => {
@@ -268,10 +270,10 @@ export default (props) => {
                     </ul>
                 </div>
                 <div ref={chip_doc}>
-                    <h2 >Documents</h2>
+                    <h2 ><Translate id='Documents' /></h2>
                     <div className={styles.download_link}>
                         <div className={styles.radio_input}>
-                            <p>FILTER BY</p>
+                            <p><Translate id="SelectionMethod" /></p>
                             {
                                 down_filter.map((item, key) => {
                                     return (
@@ -307,10 +309,10 @@ export default (props) => {
                     </div>
                 </div>
                 <div ref={chip_resources} className={styles.resources_m}>
-                    <h2 >Design Resources</h2>
+                    <h2><Translate id='DesignResources' /></h2>
                     <div className={styles.download_link}>
                         <div className={styles.radio_input}>
-                            <p>FILTER BY</p>
+                            <p><Translate id="SelectionMethod" /></p>
                             {
                                 resources_filter.map((item, key) => {
                                     return (
@@ -347,25 +349,25 @@ export default (props) => {
                 </div>
                 <div className={styles.certificate} ref={chip_agency}>
                     <div>
-                        <h2>Choosing Us</h2>
+                        <h2><Translate id='ChoosingUs' /></h2>
                         <div className={styles.choosing_item}>
                             <div className={styles.text_l}>
-                                <h3>Authorized Distributor</h3>
-                                <p>Shenzhen MilkV Technology Co., Ltd. is an official authorized chip distributor for Alunar Technologies, offering a diverse range of chip models and delivering competitive pricing as a primary distributor.</p>
+                                <h3><Translate id='ChoosingUs.item1.title' /></h3>
+                                <p><Translate id='ChoosingUs.item1.info' /></p>
                             </div>
                             <img src="/chips/authorized.webp" />
                         </div>
                         <div className={styles.choosing_item}>
                             <div className={styles.text_l}>
-                                <h3>Tailored Solution Design</h3>
-                                <p>We possess mature chip design solutions and extensive experience in chip design, providing tailored chip solutions to suit your unique needs.</p>
+                                <h3><Translate id='ChoosingUs.item2.title' /></h3>
+                                <p><Translate id='ChoosingUs.item2.info' /></p>
                             </div>
                             <img src="/chips/design.webp" />
                         </div>
                         <div className={styles.choosing_item}>
                             <div className={styles.text_l}>
-                                <h3>Worry-Free After-sales Support</h3>
-                                <p>A Seasoned Team of Engineers Providing Technical Support: Comprehensive Solutions for Your Chip Design Challenges</p>
+                                <h3><Translate id='ChoosingUs.item3.title' /></h3>
+                                <p><Translate id='ChoosingUs.item3.info' /></p>
                             </div>
                             <img src="/chips/team.webp" />
                         </div>
