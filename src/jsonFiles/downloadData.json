@@ -1,33 +1,75 @@
 {
     "duo": {
-        "硬件": [
+        "Datasheet": [
             {
-                "file_name": "下载文件1",
-                "file_url": "",
-                "file_size": "100KB",
+                "file_name": "CV1800B_CV1801B_Preliminary_Datasheet",
+                "file_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/datasheet/CV1800B-CV1801B-Preliminary-Datasheet-full-en.pdf?raw=true",
+                "file_size": "12.8 MB",
                 "file_format": "PDF",
                 "file_date": "Jun 5, 2023"
             },
             {
-                "file_name": "下载文件2",
-                "file_url": "",
-                "file_size": "100KB",
-                "file_format": "PDF",
+                "file_name": "CV180X_Clock",
+                "file_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/datasheet/CV180X-Clock-v1.xlsx?raw=true",
+                "file_size": "44.5 KB",
+                "file_format": "XLSX",
+                "file_date": "Jun 5, 2023"
+            },
+            {
+                "file_name": "CV180X_Interrupt",
+                "file_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/datasheet/CV180X-Interrupt-v1.xlsx?raw=true",
+                "file_size": "36.9 KB",
+                "file_format": "XLSX",
+                "file_date": "Jun 5, 2023"
+            },
+            {
+                "file_name": "CV180xb_Pinout",
+                "file_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/datasheet/CV180xb-Pinout-v1.xlsx?raw=true",
+                "file_size": "1.37 MB",
+                "file_format": "XLSX",
                 "file_date": "Jun 5, 2023"
             }
         ],
-        "软件": [
+        "Hardware Design Guidelines": [
             {
-                "file_name": "下载文件1",
-                "file_url": "",
-                "file_size": "100KB",
+                "file_name": "Duo_datasheet_V1.2",
+                "file_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-datasheet-v1.2.pdf?raw=true",
+                "file_size": "1.57 MB",
                 "file_format": "PDF",
                 "file_date": "Jun 5, 2023"
             },
             {
-                "file_name": "下载文件2",
-                "file_url": "",
-                "file_size": "100KB",
+                "file_name": "Duo_mechanical_drawings_V1.1",
+                "file_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-mechanical-drawings-v1.1.zip?raw=true",
+                "file_size": "104 KB",
+                "file_format": "ZIP",
+                "file_date": "Jun 5, 2023"
+            },
+            {
+                "file_name": "Duo_pcb_footprint_V1.2",
+                "file_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-pcb-footprint-v1.2.dra?raw=true",
+                "file_size": "169 KB",
+                "file_format": "DRA",
+                "file_date": "Jun 5, 2023"
+            },
+            {
+                "file_name": "Duo-schematic-library_V1.2",
+                "file_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-schematic-library-v1.2.olb?raw=true",
+                "file_size": "13 KB",
+                "file_format": "OLB",
+                "file_date": "Jun 5, 2023"
+            },
+            {
+                "file_name": "duo-schematic-v1.1",
+                "file_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-schematic-v1.1.pdf?raw=true",
+                "file_size": "456 KB",
+                "file_format": "PDF",
+                "file_date": "Jun 5, 2023"
+            },
+            {
+                "file_name": "duo-schematic-v1.2",
+                "file_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-schematic-v1.2.pdf?raw=true",
+                "file_size": "243 KB",
                 "file_format": "PDF",
                 "file_date": "Jun 5, 2023"
             }
