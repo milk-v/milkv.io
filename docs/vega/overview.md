@@ -76,6 +76,8 @@ Milk-V Vega is a compact and low-density box-style open-source 10 Gigabit networ
     - Supports remote configuration, provides WEB and SSH access
     - Provides command line service configuration for VLAN configuration, port mirroring, MAC address learning, traffic control, etc.
 
+## Hardware
+
 | Milk-V Vega                            | Specification       |
 | -------------------------------------- | ------------------- |
 | CPU Performance                        | 400MHz              |
