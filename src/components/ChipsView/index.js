@@ -348,28 +348,28 @@ export default (props) => {
                     </div>
                 </div>
                 <div className={styles.certificate} ref={chip_agency}>
+                    <h2><Translate id='ChoosingUs' /></h2>
                     <div>
-                        <h2><Translate id='ChoosingUs' /></h2>
                         <div className={styles.choosing_item}>
+                            <img src="/chips/authorized.webp" />
                             <div className={styles.text_l}>
                                 <h3><Translate id='ChoosingUs.item1.title' /></h3>
                                 <p><Translate id='ChoosingUs.item1.info' /></p>
                             </div>
-                            <img src="/chips/authorized.webp" />
                         </div>
                         <div className={styles.choosing_item}>
+                            <img src="/chips/design.webp" />
                             <div className={styles.text_l}>
                                 <h3><Translate id='ChoosingUs.item2.title' /></h3>
                                 <p><Translate id='ChoosingUs.item2.info' /></p>
                             </div>
-                            <img src="/chips/design.webp" />
                         </div>
                         <div className={styles.choosing_item}>
+                            <img src="/chips/team.webp" />
                             <div className={styles.text_l}>
                                 <h3><Translate id='ChoosingUs.item3.title' /></h3>
                                 <p><Translate id='ChoosingUs.item3.info' /></p>
                             </div>
-                            <img src="/chips/team.webp" />
                         </div>
                     </div>
                 </div>

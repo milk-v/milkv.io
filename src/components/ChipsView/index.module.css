@@ -353,22 +353,33 @@
     white-space: nowrap;
 }
 
-.choosing_item {
+.certificate>div {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+}
+
+.choosing_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     overflow: hidden;
-    width: 100%;
+    width: 32.5%;
     background-color: #f8f8f8;
 }
 
+.choosing_item>img {
+    height: 50%;
+}
+
 .text_l {
-    width: 50%;
+    width: 100%;
 }
 
 .text_l>h3 {
     color: #333;
-    text-align: left;
+    text-align: center;
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
@@ -377,6 +388,7 @@
 
 .text_l>p {
     color: #333;
+    text-align: center;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
@@ -545,19 +557,20 @@
     .choosing_item {
         margin-bottom: 30px;
         padding: 20px;
+        height: 350px;
     }
 
     .choosing_item>img {
-        width: 310px;
+        margin-bottom: 30px;
     }
 
     .text_l>h3 {
-        font-size: 24px;
-        margin-bottom: 20px;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .text_l>p {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .certificate>div>h2 {
@@ -726,19 +739,20 @@
     .choosing_item {
         margin-bottom: 30px;
         padding: 20px;
+        height: 350px;
     }
 
     .choosing_item>img {
-        width: 290px;
+        margin-bottom: 30px;
     }
 
     .text_l>h3 {
-        font-size: 22px;
-        margin-bottom: 20px;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .text_l>p {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .certificate>div>h2 {
@@ -907,19 +921,20 @@
     .choosing_item {
         margin-bottom: 30px;
         padding: 15px;
+        height: 300px;
     }
 
     .choosing_item>img {
-        width: 270px;
-    }
-
-    .text_l>h3 {
-        font-size: 20px;
         margin-bottom: 20px;
     }
 
+    .text_l>h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
     .text_l>p {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .certificate>div>h2 {
@@ -1098,19 +1113,20 @@
     .choosing_item {
         margin-bottom: 20px;
         padding: 10px;
+        height: 300px;
     }
 
     .choosing_item>img {
-        width: 230px;
+        margin-bottom: 20px;
     }
 
     .text_l>h3 {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 10px;
     }
 
     .text_l>p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .certificate>div>h2 {
@@ -1355,8 +1371,13 @@
         width: 100%;
     }
 
+    .certificate>div {
+        flex-direction: column;
+    }
+
     .choosing_item {
-        margin-bottom: 20rem;
+        width: 100%;
+        margin-bottom: 10rem;
         flex-direction: column;
         align-items: center;
         padding: 15rem;
@@ -1369,6 +1390,7 @@
 
     .choosing_item>img {
         width: 350rem;
+        margin-bottom: 20rem;
     }
 
     .text_l>h3 {
