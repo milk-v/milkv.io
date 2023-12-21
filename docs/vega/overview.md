@@ -24,7 +24,7 @@ Milk-V Vega is a compact and low-density box-style open-source 10 Gigabit networ
 - Compact in size
     - Supports standard 1U rack
     - Two units can be installed on each layer
-    ![vega-sideview](/docs/vega/vaga-side-view.webp)
+    ![vega-sideview](/docs/vega/vega-side-view.webp)
 
 - Development-friendly interface
     - Provides JTAG interface to facilitate underlying development
