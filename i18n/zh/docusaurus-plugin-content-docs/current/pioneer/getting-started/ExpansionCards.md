@@ -9,7 +9,7 @@ Pioneer有3个PCIe x16插槽（PCIe 3.0 x8）。
 PCIe扩展卡可以安装在3个PCIe插槽中。 
 当你完成安装时，请扣上插销。
 ### PCIe 支持列表
-请查看 [PCIe 支持列表](https://github.com/milkv-pioneer/hardware/blob/main/pioneer_pcie_list.pdf)
+请查看 [PCIe 支持列表](https://github.com/milkv-pioneer/pioneer-files/blob/main/hardware/pioneer_pcie_list.pdf)
 
 ---------------------------------
 ## M.2 E-Key Expansion Card
