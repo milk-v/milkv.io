@@ -375,13 +375,6 @@
         "downloads": {
             "Hardware Design": [
                 {
-                    "download_name": "CV1800B-Flash-Support-List",
-                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-Flash-Support-List.pdf?raw=true",
-                    "file_format": "PDF",
-                    "file_size": "141 KB",
-                    "file_date": "Jun 5,2023"
-                },
-                {
                     "download_name": "CV1800B-QFN68-38-Board-4L",
                     "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-4L.DSN?raw=true",
                     "file_format": "DSN",
