@@ -935,6 +935,7 @@
 
     .text_l>p {
         font-size: 12px;
+        line-height: 120%;
     }
 
     .certificate>div>h2 {
@@ -1113,7 +1114,7 @@
     .choosing_item {
         margin-bottom: 20px;
         padding: 10px;
-        height: 300px;
+        height: 320px;
     }
 
     .choosing_item>img {
@@ -1127,6 +1128,7 @@
 
     .text_l>p {
         font-size: 12px;
+        line-height: 120%;
     }
 
     .certificate>div>h2 {
