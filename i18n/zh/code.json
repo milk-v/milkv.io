@@ -1018,5 +1018,57 @@
   "SelectionMethod": {
     "message": "筛选方式",
     "description": " "
+  },
+  "Startingfrom": {
+    "message": "起步价",
+    "description": " "
+  },
+  "manykernels": {
+    "message": "提供多种内存选项",
+    "description": " "
+  },
+  "large": {
+    "message": "更强的性能",
+    "description": " "
+  },
+  "DualCore": {
+    "message": "双核RISC-V CPU高达",
+    "description": " "
+  },
+  "CV1800BDiagram": {
+    "message": "CV1800B 芯片架构图",
+    "description": " "
+  },
+  "SG2002Diagram": {
+    "message": "SG2002 芯片架构图",
+    "description": " "
+  },
+  "architectures": {
+    "message": "一键切换RISC-V和ARM",
+    "description": " "
+  },
+  "Dual-systeCapable": {
+    "message": "双系统运行，大核运行Linux系统，小核C906支持配置Arduino/FreeRTOS",
+    "description": " "
+  },
+  "chipOpen-source": {
+    "message": "芯片资料全部开源",
+    "description": " "
+  },
+  "Interfaces": {
+    "message": "丰富的外设集，包含SDIO、I2C、PWM、SPI、J-TAG和UART等，接口兼容树莓派",
+    "description": " "
+  },
+  "AUDIO": {
+    "message": "开放AUDIO接口",
+    "description": " "
+  },
+  "Lightweight": {
+    "message": "像口香糖一样轻薄便携",
+    "description": " "
+  },
+  "Boards": {
+    "message": "丰富的可拓展底板",
+    "description": " "
   }
 }

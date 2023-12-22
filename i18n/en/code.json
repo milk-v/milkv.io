@@ -1144,5 +1144,57 @@
   "SelectionMethod": {
     "message": "FILTER BY",
     "description": " "
+  },
+  "Startingfrom": {
+    "message": "Starting from",
+    "description": " "
+  },
+  "manykernels": {
+    "message": "Multiple Memory 0ptions Available for Selection",
+    "description": " "
+  },
+  "large": {
+    "message": "More Powerful than Others",
+    "description": " "
+  },
+  "DualCore": {
+    "message": "Dual Core RISC-V CPU up to",
+    "description": " "
+  },
+  "CV1800BDiagram": {
+    "message": "CV1800B Architecture Diagram",
+    "description": " "
+  },
+  "SG2002Diagram": {
+    "message": "SG2002 Architecture Diagram",
+    "description": " "
+  },
+  "architectures": {
+    "message": "Seamless switching between RISC-V and ARM architectures at the touch of a button",
+    "description": " "
+  },
+  "Dual-systeCapable": {
+    "message": "Dual-systeCapable of running dual operating systems concurrentlym Operation",
+    "description": " "
+  },
+  "chipOpen-source": {
+    "message": "All chip data is fully open-source",
+    "description": " "
+  },
+  "Interfaces": {
+    "message": "Interfaces compatible with Raspberry Pi, featuring a rich array of peripherals",
+    "description": " "
+  },
+  "AUDIO": {
+    "message": "Open AUDIO Interface",
+    "description": " "
+  },
+  "Lightweight": {
+    "message": "As Compact and Lightweight as Chewing Gum",
+    "description": " "
+  },
+  "Boards": {
+    "message": "Extensive Range of Expansion Boards",
+    "description": " "
   }
 }

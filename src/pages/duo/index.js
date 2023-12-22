@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import Layout from '@theme/Layout';
 
 import BuyPop from "../../components/BuyPop"
@@ -10,6 +10,7 @@ import Link from '@docusaurus/Link';
 import chips_s from '@site/src/components/ChipsView/index.module.css'
 import styles from "./details.module.css"
 import Translate from '@docusaurus/Translate';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const download_data = require("@site/src/jsonFiles/downloadData.json")
 
@@ -17,7 +18,10 @@ function DetailsPage() {
   const [duo2, setDuo2] = useState(false)
   const [down_filter_idx, setDown_filter_idx] = useState(0)
 
+  const currentLanguage = useBaseUrl('/');
+  const curren_language = currentLanguage === '/zh/' ? 'duo_zh' : 'duo'
 
+  console.log(download_data[curren_language]);
   const duoStart = () => {
     setDuo2(false)
   }
@@ -37,7 +41,7 @@ function DetailsPage() {
           <h2 className={styles.titleTxt}>Milk-V <Translate id='duo' /></h2>
           <h2 className={styles.textLine}><Translate id='Duo.text.title2' /></h2>
           <p className={styles.low}><Translate id='Duo.text.title3' /></p>
-          <h3 className={styles.starting}>Starting from <span>$5</span></h3>
+          <h3 className={styles.starting}><Translate id='Startingfrom' /><span>$5</span></h3>
           <div className={styles.btnbuy} onClick={() => setDuo2(buy => !buy)}><Translate id='Buy.now' /></div>
           <p className={styles.tax}>(*<Translate id='Duo.text.title4' />)</p>
         </div>
@@ -45,53 +49,53 @@ function DetailsPage() {
         <div className={styles.content_box}>
           <div className={styles.storage}>
             <div className={styles.left_view}>
-              <p className={styles.view_title}>Multiple Memory 0ptions<br /> Available for Selection</p>
+              <p className={styles.view_title} style={{ position: 'relative', zIndex: '20' }}><Translate id='manykernels' /></p>
               <div className={styles.mb64}>64MB</div>
               <div className={styles.mb256}>256MB</div>
               <span>new</span>
             </div>
             <div className={styles.right_view}>
-              <p className={styles.max_title}>More Powerful than Others</p>
-              <p className={styles.min_title}>Dual Core RISC-V CPU up to</p>
+              <p className={styles.max_title}><Translate id='large' /></p>
+              <p className={styles.min_title}><Translate id='DualCore' /></p>
               <img src='/duo/comparison-chart.webp' className={styles.chat256} />
               <img src='/duo/1ghz.svg' className={styles.right_ghz} />
             </div>
           </div>
           <div className={styles.chips_diagram}>
             <div>
-              <h3>CV1800B Architecture Diagram</h3>
+              <h3><Translate id='CV1800BDiagram' /></h3>
               <img src='/chips/cv1800b/cv1800B-diagram.webp' alt='CV1800B Diagram' />
             </div>
             <div>
-              <h3>SG2002 Architecture Diagram</h3>
+              <h3><Translate id='SG2002Diagram' /></h3>
               <img src='/chips/sg2002/sg2002-diagram.webp' alt='SG2002 Diagram' />
             </div>
           </div>
           <ul className={styles.support_ul}>
             <li>
-              <p>Seamless switching between RISC-V and ARM architectures at the touch of a button</p>
+              <p><Translate id='architectures' /></p>
             </li>
             <li>
-              <p>Dual-systeCapable of running dual operating systems concurrentlym Operation</p>
+              <p><Translate id='Dual-systeCapable' /></p>
             </li>
             <li>
-              <p>All chip data is fully open-source</p>
+              <p><Translate id='chipOpen-source' /></p>
             </li>
           </ul>
           <div className={styles.peripherals}>
             <p>
-              Interfaces compatible with Raspberry Pi, featuring a rich array of peripherals
+              <Translate id='Interfaces' />
             </p>
           </div>
           <ul className={styles.audio_size_access}>
             <li>
-              <p>Open AUDIO Interface</p>
+              <p> <Translate id='AUDIO' /></p>
             </li>
             <li>
-              <p className={styles.size_p}>As Compact and Lightweight as Chewing Gum</p>
+              <p className={styles.size_p}> <Translate id='Lightweight' /></p>
             </li>
             <li>
-              <p>Extensive Range of Expansion Boards</p>
+              <p> <Translate id='Boards' /></p>
             </li>
           </ul>
           <div className={styles.techspec_module}>
@@ -210,7 +214,7 @@ function DetailsPage() {
               <div className={chips_s.radio_input}>
                 <p>FILTER BY</p>
                 {
-                  Object.keys(download_data.duo).map((item, key) => {
+                  Object.keys(download_data[curren_language]).map((item, key) => {
                     return (
                       <label key={key}>
                         <input type="radio" name="Resources" value={item}
@@ -228,10 +232,10 @@ function DetailsPage() {
                 }
               </div>
               <div className={chips_s.download_list}>
-                <p style={{ color: "#fff" }}>{Object.keys(download_data.duo)[down_filter_idx]}</p>
+                <p style={{ color: "#fff" }}>{Object.keys(download_data[curren_language])[down_filter_idx]}</p>
                 <ul>
                   {
-                    download_data.duo[Object.keys(download_data.duo)[down_filter_idx]].map((item, key) => {
+                    download_data[curren_language][Object.keys(download_data[curren_language])[down_filter_idx]].map((item, key) => {
                       return <li key={key}>
                         <Link to={item.file_url}>{item.file_name}</Link>
                         <p style={{ color: "#fff" }}><span>{item.file_format}</span> <span>{item.file_date}</span> <span>{item.file_size}</span></p>
