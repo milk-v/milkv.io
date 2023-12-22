@@ -17,7 +17,7 @@ export default (props) => {
     const title_language = currentLanguage === '/zh/' ? 'title_zh' : 'title'
     const intro_language = currentLanguage === '/zh/' ? 'chip_intro_text_zh' : 'chip_intro_text'
     const scenarios_language = currentLanguage === '/zh/' ? 'scenarios_name_zh' : 'scenarios_name'
-
+    const downloads_language = currentLanguage === '/zh/' ? 'downloads_zh' : 'downloads'
 
     const [imgurl, setImgurl] = useState(0)
     const magnifiers = useRef(null)
@@ -40,16 +40,10 @@ export default (props) => {
     const [x, setX] = useState(0);
     const [y, setY] = useState(0);
 
-    const [down_filter, setDown_filter] = useState(Object.keys(jsonData[chipName].downloads))
+    const down_filter = Object.keys(jsonData[chipName][downloads_language])
     const [down_filter_idx, setDown_filter_idx] = useState(0)
-
-    // const [resources_filter2, setResources_filter2] = useState(Object.keys(jsonData[chipName].resources))
-
     const resources_filter = Object.keys(jsonData[chipName][curren_language])
-    console.log(resources_filter);
-
     const [resources_filter_idx, setResources_filter_idx] = useState(0)
-
 
     const t_modern_sty = {
         borderBottom: "2px solid #2D88C9",
@@ -305,7 +299,7 @@ export default (props) => {
                             <p>{down_filter[down_filter_idx]}</p>
                             <ul>
                                 {
-                                    jsonData[chipName].downloads[down_filter[down_filter_idx]].map((item, key) => {
+                                    jsonData[chipName][downloads_language][down_filter[down_filter_idx]].map((item, key) => {
                                         return (
                                             <li key={key}>
                                                 <Link to={item.download_url}>{item.download_name}</Link>

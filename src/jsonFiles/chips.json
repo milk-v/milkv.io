@@ -92,7 +92,7 @@
             {
                 "img_link": "/chips/scenarios4.webp",
                 "scenarios_name": "intelligent transport",
-                "scenarios_name_zh": "智能交通"
+                "scenarios_name_zh": "智慧城市"
             }
         ],
         "downloads": {
@@ -156,7 +156,7 @@
             ]
         },
         "downloads_zh": {
-            "Hardware Design": [
+            "硬件设计指南": [
                 {
                     "download_name": "SG2000-BGA-SIP-V11-16.2",
                     "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/SG2000-BGA-SIP-V11-16.2.DSN?raw=true",
@@ -238,7 +238,7 @@
     },
     "sg2002": {
         "title": "SG2002 is a high-performance chip for AIOT applications, with multiple cores, hardware codecs, an ISP for image enhancements, an in-house TPU for powerful processing, and diverse peripheral interfaces.",
-        "title——zh": "SG2002是专为AIOT应用而设计的高性能芯片，具备多个核心、硬件编解码器、用于图像增强的ISP、内置TPU提供强大的处理能力以及多样的外设接口",
+        "title_zh": "SG2002是专为AIOT应用而设计的高性能芯片，具备多个核心、硬件编解码器、用于图像增强的ISP、内置TPU提供强大的处理能力以及多样的外设接口",
         "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
         "front_view": "/chips/sg2002/sg2002-frontview.webp",
         "chip_view": [
@@ -374,7 +374,7 @@
             ]
         },
         "downloads_zh": {
-            "Hardware Design": [
+            "硬件设计指南": [
                 {
                     "download_name": "SG2002-QFN88-38-4L",
                     "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/SG2002-QFN88-38-4L.DSN?raw=true",
@@ -428,7 +428,7 @@
                     "resources_name": "Duo",
                     "resources_url": "/docs/duo/overview",
                     "resources_img": "/chips/duo-view.webp",
-                    "resources_info": "Milk-V Duo 256M is an ultra-compact embedded development platform based on the SG2002 chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators."
+                    "resources_info": "Milk-V Duo 256M 是基于 SG2002 芯片的超紧凑型嵌入式开发平台。它可以运行 Linux 和 RTOS，为专业人士、工业 ODM、AIoT 发烧友、DIY 爱好者和创作者提供了一个可靠、低成本和高性能的平台。"
                 }
             ]
         }
@@ -444,6 +444,9 @@
             "/chips/cv1800b/cv1800B-03.webp"
         ],
         "chip_intro_text": [
+            "CV1800B is a high-performance, low-power consumption chip designed for various consumer monitoring IP cameras, home intelligence, and other products. It integrates an H.264/H.265 video compression encoder and ISP and supports various image enhancement and correction algorithms such as digital wide dynamic range, 3D noise reduction, defogging, and lens distortion correction to provide professional-grade video image quality to customers. The chip also integrates a self-developed intelligent reference design (human form detection, area detection, motion detection), built-in DDR, and complete peripherals and external devices, providing a high-integration and concise solution to facilitate customer product development and mass production. In addition, it also provides secure boot, secure update, and secure encryption and so on to provide a series of security solutions for users from development, mass production to product application. The chip integrates an 8-bit MCU subsystem, which can replace general external MCUs to achieve the goal of saving BOM cost and power consumption."
+        ],
+        "chip_intro_text_zh": [
             "CV1800B是一款高性能、低功耗的芯片，专为各种消费级监控IP摄像头、家居智能等产品设计。它集成了H.264/H.265视频压缩编码器和ISP，支持数字宽动态范围、3D降噪、去雾和镜头畸变校正等多种图像增强和修正算法，为客户提供专业级视频图像质量。该芯片还集成了自主开发的智能参考设计（人体检测、区域检测、运动检测），内置DDR和完整的外围设备，为客户产品的开发和量产提供了高度集成和简洁的解决方案。此外，它还提供了安全启动、安全更新和安全加密等功能，为用户从开发、量产到产品应用提供了一系列安全解决方案。该芯片集成了8位MCU子系统，可以替代通用外部MCU，实现BOM成本和功耗的节约目标。"
         ],
         "diagram_url": "/chips/cv1800b/cv1800B-diagram.webp",
@@ -576,7 +579,7 @@
             ]
         },
         "downloads_zh": {
-            "Hardware Design": [
+            "硬件设计指南": [
                 {
                     "download_name": "CV1800B-QFN68-38-Board-4L",
                     "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-4L.DSN?raw=true",
@@ -646,12 +649,12 @@
             ]
         },
         "resources_zh": {
-            "Development Hardware": [
+            "硬件": [
                 {
                     "resources_name": "Duo",
                     "resources_url": "/docs/duo/overview",
                     "resources_img": "/chips/duo-view.webp",
-                    "resources_info": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators."
+                    "resources_info": "Milk-V Duo 是基于 CV1800B 芯片的超紧凑型嵌入式开发平台。它可以运行 Linux 和 RTOS，为专业人士、工业 ODM、AIoT 发烧友、DIY 爱好者和创作者提供了一个可靠、低成本和高性能的平台。"
                 }
             ]
         }

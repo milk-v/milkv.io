@@ -212,7 +212,7 @@ function DetailsPage() {
           <div className={styles.document}>
             <div className={chips_s.download_link}>
               <div className={chips_s.radio_input}>
-                <p>FILTER BY</p>
+                <p><Translate id="SelectionMethod" /></p>
                 {
                   Object.keys(download_data[curren_language]).map((item, key) => {
                     return (
