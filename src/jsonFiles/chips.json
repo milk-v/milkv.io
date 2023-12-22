@@ -1,6 +1,7 @@
 {
     "sg2000": {
         "title": "SG2000 is a high-performance, low-power chip for AIOT. It features multiple cores, swift core switching, H.264/H.265 video codecs, professional-grade image enhancements, a proprietary 0.5TOPS INT8 TPU, an efficient TPU scheduling engine, and diverse peripheral interfaces.",
+        "title_zh": "SG2000是面向AIOT领域的高性能、低功耗芯片。它具备多个核心、快速内核切换、H.264/H.265视频编解码器、专业级图像增强功能、专有的0.5TOPS INT8 TPU、高效的TPU调度引擎以及多样化的外设接口。",
         "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
         "front_view": "/chips/sg2000/sg2000-frontview.webp",
         "chip_view": [
@@ -11,6 +12,10 @@
         "chip_intro_text": [
             "SG2000 is a high-performance, low-power chip designed for various product fields such as edge intelligent surveillance IP cameras, local facial recognition attendance machines, and smart home devices. It integrates H.264/H.265 video compression and decoding and ISP capabilities. It supports various image enhancement and correction algorithms like HDR wide dynamic range, 3D noise reduction, defogging, and lens distortion correction, providing customers with professional-grade video image quality.",
             "The chip also integrates an in-house TPU, delivering approximately 0.5TOPS of computing power under INT8 operations. The specially designed TPU scheduling engine efficiently provides high-bandwidth data flow for tensor processing unit cores. It also offers users a powerful deep learning model compiler and software SDK development kit. Mainstream deep learning frameworks such as Caffe, Pytorch, ONNX, MXNet, and TensorFlow (Lite) can be easily ported to this platform."
+        ],
+        "chip_intro_text_zh": [
+            "SG2000是面向边缘智能监控IP摄像机、本地端人脸辨识考勤机、智能家居等产品领域而推出的高性能、低功耗芯片，集成了H.264/H.265视频压缩编解码器和ISP；支持HDR宽动态、3D降噪、除雾、镜头畸变校正等多种图像增强和矫正算法，为客户提供专业级的视频图像质量。",
+            "芯片更集成自研TPU，在INT8运算下，可提供约0.5TOPS算力。特殊设计的 TPU 调度引擎能有效地为张量处理器核心提供极高的带宽数据流；并为用户提供了强大的深度学习模型编译器和软件SDK开发包。主流的深度学习框架，比如Caffe，Pytorch，ONNX ，MXNet和TensorFlow(Lite) 框架的主流网络可以轻松的移植到平台上。"
         ],
         "diagram_url": "/chips/sg2000/sg2000-diagram.webp",
         "hardware": {
@@ -71,22 +76,86 @@
         "scenarios": [
             {
                 "img_link": "/chips/scenarios1.webp",
-                "scenarios_name": "Intelligent door locks"
+                "scenarios_name": "Intelligent door locks",
+                "scenarios_name_zh": "智能门锁"
             },
             {
                 "img_link": "/chips/scenarios2.webp",
-                "scenarios_name": "Video Conference"
+                "scenarios_name": "Video Conference",
+                "scenarios_name_zh": "视频会议"
             },
             {
                 "img_link": "/chips/scenarios3.webp",
-                "scenarios_name": "Industrial Internet of Things"
+                "scenarios_name": "Industrial Internet of Things",
+                "scenarios_name_zh": "工业物联网"
             },
             {
                 "img_link": "/chips/scenarios4.webp",
-                "scenarios_name": "intelligent transport"
+                "scenarios_name": "intelligent transport",
+                "scenarios_name_zh": "智能交通"
             }
         ],
         "downloads": {
+            "Hardware Design": [
+                {
+                    "download_name": "SG2000-BGA-SIP-V11-16.2",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/SG2000-BGA-SIP-V11-16.2.DSN?raw=true",
+                    "file_format": "DSN",
+                    "file_size": "1.94 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "SG2000-BGA-SIP-V11",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/SG2000-BGA-SIP-V11.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "1.37 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "SG2000-WEVB-0007A-V04-SCH",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/SG2000-WEVB-0007A-V04-SCH.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "1.07 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0007B-V02-Component-Placement-Diagram",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/WDMB-0007B-V02-Component-Placement-Diagram.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "2.3 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0007B-V02",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/WDMB-0007B-V02.brd?raw=true",
+                    "file_format": "BRD",
+                    "file_size": "4.61 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0007B-V02",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/Reference-Design-SCH%26PCB/WDMB-0007B-V02.pcb?raw=true",
+                    "file_format": "PCB",
+                    "file_size": "3.77 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "SG2000-Hardware-PCB-Layout-Guide",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/SG2000-Hardware-PCB-Layout-Guide.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "10.9 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "SG2000-PINOUT",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/SG2000-PINOUT.xlsx?raw=true",
+                    "file_format": "XLSX",
+                    "file_size": "3.86 MB",
+                    "file_date": "Jun 5,2023"
+                }
+            ]
+        },
+        "downloads_zh": {
             "Hardware Design": [
                 {
                     "download_name": "SG2000-BGA-SIP-V11-16.2",
@@ -155,10 +224,21 @@
                     "resources_info": "The Huashan Sect - CV181 Series Development Board, jointly released by Aligned Computing and Eco-Partner Hardware for a hundred thousand reasons, is an open-source ecosystem development board providing a RISC-V-based open development environment for extensive users. It focuses on visual and AI scene development, aiming to grow together with a vast community of developers."
                 }
             ]
+        },
+        "resources_zh": {
+            "硬件": [
+                {
+                    "resources_name": "华山派",
+                    "resources_url": "https://www.hw100k.com/coursedetail?id=195",
+                    "resources_img": "/chips/test-img.webp",
+                    "resources_info": " 华山派– CV181系列开发板，是算能和生态伙伴硬件十万个为什么联合推出的开源生态开发板，为广大使用者提供基于RISC-V的开源开发环境，以视觉、AI场景开发为核心，与广大开发者共同成长。"
+                }
+            ]
         }
     },
     "sg2002": {
         "title": "SG2002 is a high-performance chip for AIOT applications, with multiple cores, hardware codecs, an ISP for image enhancements, an in-house TPU for powerful processing, and diverse peripheral interfaces.",
+        "title——zh": "SG2002是专为AIOT应用而设计的高性能芯片，具备多个核心、硬件编解码器、用于图像增强的ISP、内置TPU提供强大的处理能力以及多样的外设接口",
         "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
         "front_view": "/chips/sg2002/sg2002-frontview.webp",
         "chip_view": [
@@ -170,6 +250,11 @@
             "SG2002 is a high-performance, low-power chip designed for various product fields such as edge intelligent surveillance IP cameras, smart door locks, visual doorbells, and home intelligence. It integrates H.264 video compression and decoding, H.265 video compression encoding, and ISP capabilities. It supports multiple image enhancement and correction algorithms such as HDR wide dynamic range, 3D noise reduction, defogging, and lens distortion correction, providing customers with professional-grade video image quality.",
             "The chip also incorporates a self-developed TPU, delivering 1.0 TOPS of computing power under 8-bit integer operations. The specially designed TPU scheduling engine efficiently provides high-bandwidth data flow for all tensor processing unit cores. Additionally, it offers users a powerful deep learning model compiler and software SDK development kit. Leading deep learning frameworks like Caffe and Tensorflow can be easily ported to its platform. Furthermore, it includes security boot, secure updates, and encryption, providing a series of security solutions from development, mass production, to product applications.",
             "The chip integrates an 8-bit MCU subsystem, replacing the typical external MCU to achieve cost-saving and power efficiency goals."
+        ],
+        "chip_intro_text_zh": [
+            "SG2002是面向边缘智能监控 IP 摄像机、智能猫眼门锁、可视门铃、居家智能等多项产品领域而推出的高性能、低功耗芯片，集成了 H.264 视频压缩编解码器, H.265 视频压缩编码器和 ISP；支持 HDR 宽动态、3D 降噪、除雾、镜头畸变校正等多种图像增强和矫正算法，为客户提供专业级的视频图像质量",
+            "芯片更集成了自研 TPU，在 8 位整数运算下，可提供 1.0TOPS 的算力。 特殊设计的TPU 调度引擎能有效地为所有的张量处理器核心提供极高的带宽数据流。此外也为用户提供了强大的深度学习模型编译器和软件 SDK 开发包。主流的深度学习框架，比如Caffe 和 Tensorflow，可以轻松地移植到其平台上。除此之外，还提供了安全启动，安全更新，安全加密等，为用户从开发、量产、产品应用，提供一系列安全解决方案。",
+            "芯片内集成一个 8 位元的 MCU 子系统, 可替代一般外挂的 MCU 以达到省 BOM cost 及功耗的目的。"
         ],
         "diagram_url": "/chips/sg2002/sg2002-diagram.webp",
         "hardware": {
@@ -230,22 +315,65 @@
         "scenarios": [
             {
                 "img_link": "/chips/scenarios1.webp",
-                "scenarios_name": "Intelligent door locks"
+                "scenarios_name": "Intelligent door locks",
+                "scenarios_name_zh": "智能门锁"
             },
             {
                 "img_link": "/chips/scenarios2.webp",
-                "scenarios_name": "Video Conference"
+                "scenarios_name": "Video Conference",
+                "scenarios_name_zh": "视频会议"
             },
             {
                 "img_link": "/chips/scenarios3.webp",
-                "scenarios_name": "Industrial Internet of Things"
+                "scenarios_name": "Industrial Internet of Things",
+                "scenarios_name_zh": "工业物联网"
             },
             {
                 "img_link": "/chips/scenarios4.webp",
-                "scenarios_name": "intelligent transport"
+                "scenarios_name": "intelligent transport",
+                "scenarios_name_zh": "智慧城市"
             }
         ],
         "downloads": {
+            "Hardware Design": [
+                {
+                    "download_name": "SG2002-QFN88-38-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/SG2002-QFN88-38-4L.DSN?raw=true",
+                    "file_format": "DSN",
+                    "file_size": "6.79 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "SG2002-QFN88-38-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/SG2002-QFN88-38-4L.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "398 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0006A-V01 Component Placement Diagram",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/WDMB-0006A-V01%20Component%20Placement%20Diagram.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "637 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0006A-V01",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/WDMB-0006A-V01.brd?raw=true",
+                    "file_format": "BRD",
+                    "file_size": "2.09 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0006A-V01",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/Reference%20Design_SCH%26PCB/WDMB-0006A-V01.pcb?raw=true",
+                    "file_format": "PCB",
+                    "file_size": "1.1 MB",
+                    "file_date": "Jun 5,2023"
+                }
+            ]
+        },
+        "downloads_zh": {
             "Hardware Design": [
                 {
                     "download_name": "SG2002-QFN88-38-4L",
@@ -293,10 +421,21 @@
                     "resources_info": "Milk-V Duo 256M is an ultra-compact embedded development platform based on the SG2002 chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators."
                 }
             ]
+        },
+        "resources_zh": {
+            "硬件": [
+                {
+                    "resources_name": "Duo",
+                    "resources_url": "/docs/duo/overview",
+                    "resources_img": "/chips/duo-view.webp",
+                    "resources_info": "Milk-V Duo 256M is an ultra-compact embedded development platform based on the SG2002 chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators."
+                }
+            ]
         }
     },
     "cv1800b": {
         "title": "CV1800B: high-performance chip for consumer IP cameras and home intelligence. Integrates H.264/H.265 encoders and ISP for professional video quality.",
+        "title_zh": "CV1800B 是面向民用消费监控 IP 摄像机、居家智能等多项产品领域而推出的高性能、低功耗芯片，集成了 H.264/H.265 视频压缩编码器和 ISP；支持数字宽动态、3D 降噪、除雾、镜头畸变校正等多种图像增强和矫正算法，为客户提供专业级的视频图像质量。",
         "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
         "front_view": "/chips/cv1800b/cv1800b-frontview.webp",
         "chip_view": [
@@ -305,7 +444,7 @@
             "/chips/cv1800b/cv1800B-03.webp"
         ],
         "chip_intro_text": [
-            "CV1800B is a high-performance, low-power consumption chip designed for various consumer monitoring IP cameras, home intelligence, and other products. It integrates an H.264/H.265 video compression encoder and ISP and supports various image enhancement and correction algorithms such as digital wide dynamic range, 3D noise reduction, defogging, and lens distortion correction to provide professional-grade video image quality to customers. The chip also integrates a self-developed intelligent reference design (human form detection, area detection, motion detection), built-in DDR, and complete peripherals and external devices, providing a high-integration and concise solution to facilitate customer product development and mass production. In addition, it also provides secure boot, secure update, and secure encryption and so on to provide a series of security solutions for users from development, mass production to product application. The chip integrates an 8-bit MCU subsystem, which can replace general external MCUs to achieve the goal of saving BOM cost and power consumption."
+            "CV1800B是一款高性能、低功耗的芯片，专为各种消费级监控IP摄像头、家居智能等产品设计。它集成了H.264/H.265视频压缩编码器和ISP，支持数字宽动态范围、3D降噪、去雾和镜头畸变校正等多种图像增强和修正算法，为客户提供专业级视频图像质量。该芯片还集成了自主开发的智能参考设计（人体检测、区域检测、运动检测），内置DDR和完整的外围设备，为客户产品的开发和量产提供了高度集成和简洁的解决方案。此外，它还提供了安全启动、安全更新和安全加密等功能，为用户从开发、量产到产品应用提供了一系列安全解决方案。该芯片集成了8位MCU子系统，可以替代通用外部MCU，实现BOM成本和功耗的节约目标。"
         ],
         "diagram_url": "/chips/cv1800b/cv1800B-diagram.webp",
         "hardware": {
@@ -357,19 +496,23 @@
         "scenarios": [
             {
                 "img_link": "/chips/scenarios1.webp",
-                "scenarios_name": "Intelligent door locks"
+                "scenarios_name": "Intelligent door locks",
+                "scenarios_name_zh": "智能门锁"
             },
             {
                 "img_link": "/chips/scenarios2.webp",
-                "scenarios_name": "Video Conference"
+                "scenarios_name": "Video Conference",
+                "scenarios_name_zh": "视频会议"
             },
             {
                 "img_link": "/chips/scenarios3.webp",
-                "scenarios_name": "Industrial Internet of Things"
+                "scenarios_name": "Industrial Internet of Things",
+                "scenarios_name_zh": "工业物联网"
             },
             {
                 "img_link": "/chips/scenarios4.webp",
-                "scenarios_name": "intelligent transport"
+                "scenarios_name": "intelligent transport",
+                "scenarios_name_zh": "智慧城市"
             }
         ],
         "downloads": {
@@ -432,7 +575,77 @@
                 }
             ]
         },
+        "downloads_zh": {
+            "Hardware Design": [
+                {
+                    "download_name": "CV1800B-QFN68-38-Board-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-4L.DSN?raw=true",
+                    "file_format": "DSN",
+                    "file_size": "2.1 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-QFN68-38-Board-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-4L.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "362 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-QFN68-38-Board-GPIO-List",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-GPIO-List.xlsx?raw=true",
+                    "file_format": "XLSX",
+                    "file_size": "248 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-Sensor-Support-List ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-Sensor-Support-List%20.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "180 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-VI-Interface-Detailed-Scenario-Description ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B_VI%20Interface%20Detailed%20Scenario%20Description.xlsx?raw=true",
+                    "file_format": "XLSX",
+                    "file_size": "40.3 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-WiFi-Support-List ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B_WiFi%20Support%20List%20.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "164 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0008A-V01 ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/WDMB-0008A-V01.asc?raw=true",
+                    "file_format": "ASC",
+                    "file_size": "912 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0008A-V01 ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/WDMB-0008A-V01.pcb?raw=true",
+                    "file_format": "PCB",
+                    "file_size": "1.05 MB",
+                    "file_date": "Jun 5,2023"
+                }
+            ]
+        },
         "resources": {
+            "Development Hardware": [
+                {
+                    "resources_name": "Duo",
+                    "resources_url": "/docs/duo/overview",
+                    "resources_img": "/chips/duo-view.webp",
+                    "resources_info": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators."
+                }
+            ]
+        },
+        "resources_zh": {
             "Development Hardware": [
                 {
                     "resources_name": "Duo",

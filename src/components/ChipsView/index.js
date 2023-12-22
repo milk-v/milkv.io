@@ -7,12 +7,18 @@ import Footer from "@site/src/components/Footer"
 import SupportUs from "@site/src/components/SupportUs"
 import styles from './index.module.css'
 import Translate from '@docusaurus/Translate';
-
+import useBaseUrl from '@docusaurus/useBaseUrl';
 const jsonData = require('../../jsonFiles/chips.json');
-
 
 export default (props) => {
     const { chipName } = props
+    const currentLanguage = useBaseUrl('/');
+    const curren_language = currentLanguage === '/zh/' ? 'resources_zh' : 'resources'
+    const title_language = currentLanguage === '/zh/' ? 'title_zh' : 'title'
+    const intro_language = currentLanguage === '/zh/' ? 'chip_intro_text_zh' : 'chip_intro_text'
+    const scenarios_language = currentLanguage === '/zh/' ? 'scenarios_name_zh' : 'scenarios_name'
+
+
     const [imgurl, setImgurl] = useState(0)
     const magnifiers = useRef(null)
     const magnifiers_box = useRef(null)
@@ -37,7 +43,11 @@ export default (props) => {
     const [down_filter, setDown_filter] = useState(Object.keys(jsonData[chipName].downloads))
     const [down_filter_idx, setDown_filter_idx] = useState(0)
 
-    const [resources_filter, setResources_filter] = useState(Object.keys(jsonData[chipName].resources))
+    // const [resources_filter2, setResources_filter2] = useState(Object.keys(jsonData[chipName].resources))
+
+    const resources_filter = Object.keys(jsonData[chipName][curren_language])
+    console.log(resources_filter);
+
     const [resources_filter_idx, setResources_filter_idx] = useState(0)
 
 
@@ -131,7 +141,7 @@ export default (props) => {
             <div className={styles.chip_module}>
                 <div className={styles.chip_title}>
                     <div className={styles.title_l_t}>
-                        <h4>{jsonData[chipName].title}</h4>
+                        <h4>{jsonData[chipName][title_language]}</h4>
                         <Link to={jsonData[chipName].buy_link}><Translate id="homepage.corporations.duobuynow" /></Link>
                     </div>
                     <img src={jsonData[chipName].front_view} />
@@ -225,7 +235,7 @@ export default (props) => {
                     </div>
                     <div className={styles.chip_intro_t}>
                         {
-                            jsonData[chipName].chip_intro_text.map((item, key) => {
+                            jsonData[chipName][intro_language].map((item, key) => {
                                 return <p key={key}>{item}</p>
                             })
                         }
@@ -263,7 +273,7 @@ export default (props) => {
                             jsonData[chipName].scenarios.map((item, key) => {
                                 return <li key={key}>
                                     <img src={item.img_link} alt="" />
-                                    <p>{item.scenarios_name}</p>
+                                    <p>{item[scenarios_language]}</p>
                                 </li>
                             })
                         }
@@ -332,7 +342,7 @@ export default (props) => {
                         <div className={styles.download_list}>
                             <p>{resources_filter[resources_filter_idx]}</p>
                             {
-                                jsonData[chipName].resources[resources_filter[resources_filter_idx]].map((item, key) => {
+                                jsonData[chipName][curren_language][resources_filter[resources_filter_idx]].map((item, key) => {
                                     return (
                                         <div className={styles.board_info} key={key}>
                                             <img src={item.resources_img} />
