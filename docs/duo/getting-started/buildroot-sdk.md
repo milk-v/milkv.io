@@ -33,7 +33,7 @@ SDK Directory Structure
 └── u-boot-2021.10      // u-boot source code
 ```
 
-## Build image
+# Build image
 
 Prepare the Compilation Environment. Using a local Ubuntu system, the officially supported compilation environment is `Ubuntu Jammy 22.04.x amd64` only!
 
@@ -41,9 +41,9 @@ If you are using other Linux distributions, we strongly recommend that you use t
 
 The following describes the compilation methods in the two environments.
 
-### 1. Compiled using Ubuntu 22.04
+## 1. Compiled using Ubuntu 22.04
 
-#### Packages to be installed
+### Packages to be installed
 
 Install the packages that compile dependencies:
 
@@ -51,13 +51,13 @@ Install the packages that compile dependencies:
 sudo apt install -y pkg-config build-essential ninja-build automake autoconf libtool wget curl git gcc libssl-dev bc slib squashfs-tools android-sdk-libsparse-utils jq python3-distutils scons parallel tree python3-dev python3-pip device-tree-compiler ssh cpio fakeroot libncurses5 flex bison libncurses5-dev genext2fs rsync unzip dosfstools mtools tcl openssh-client cmake
 ```
 
-#### Get SDK Source Code
+### Get SDK Source Code
 
 ```bash
 git clone https://github.com/milkv-duo/duo-buildroot-sdk.git --depth=1
 ```
 
-#### <1>. One-click Compilation
+### <1>. One-click Compilation
 
 Execute one-click compilation script `build.sh`：
 ```bash
@@ -100,7 +100,7 @@ After a successful compilation, you can find the generated SD card burning image
 
 *Note: The first compilation will automatically download the required toolchain, which is approximately 840MB in size. Once downloaded, it will be automatically extracted to the `host-tools` directory in the SDK directory. For subsequent compilations, if the `host-tools` directory is detected, the download will not be performed again*.
 
-#### <2>. Step-by-step Compilation
+### <2>. Step-by-step Compilation
 
 If you have not executed the one-click compilation script, you need to manually download the toolchain [host-tools](https://sophon-file.sophon.cn/sophon-prod-s3/drive/23/03/07/16/host-tools.tar.gz) and extract it to the SDK root directory:
 
@@ -143,25 +143,25 @@ Duo:      install/soc_cv1800b_milkv_duo_sd/[board].img
 Duo256M:  install/soc_cv1812cp_milkv_duo256m_sd/[board].img
 ```
 
-### 2. Compiled using Docker
+## 2. Compiled using Docker
 
 Docker support is required on hosts running Linux systems. For how to use Docker, please refer to the [official documentation](https://docs.docker.com/) or other tutorials.
 
 We put the SDK source code on the Linux host system and call the Docker image environment provided by Milk-V to compile it.
 
-#### Pull SDK code on Linux host
+### Pull SDK code on Linux host
 
 ```bash
 git clone https://github.com/milkv-duo/duo-buildroot-sdk.git --depth=1
 ```
 
-#### Enter the SDK code directory
+### Enter the SDK code directory
 
 ```bash
 cd duo-buildroot-sdk
 ```
 
-#### Pull the Docker image and run
+### Pull the Docker image and run
 
 ```bash
 docker run -itd --name duodocker -v $(pwd):/home/work milkvtech/milkv-duo:latest /bin/bash
@@ -180,7 +180,7 @@ CONTAINER ID   IMAGE                        COMMAND       CREATED       STATUS  
 8edea33c2239   milkvtech/milkv-duo:latest   "/bin/bash"   2 hours ago   Up 2 hours             duodocker
 ```
 
-#### <1>. One-click compilation using Docker
+### <1>. One-click compilation using Docker
 
 ```bash
 docker exec -it duodocker /bin/bash -c "cd /home/work && cat /etc/issue && ./build.sh [board]"
@@ -209,7 +209,7 @@ docker exec -it duodocker /bin/bash -c "cd /home/work && cat /etc/issue && ./bui
 
 After successful compilation, you can see the generated SD card burning image `[board]-*-*.img` in the `out` directory.
 
-#### <2>. Compile step by step using Docker
+### <2>. Compile step by step using Docker
 
 If you have not executed the one-click compilation script, you need to manually download the toolchain [host-tools](https://sophon-file.sophon.cn/sophon-prod-s3/drive/23/03/07/16/host-tools.tar.gz) and extract it to the SDK root directory:
 
@@ -272,7 +272,7 @@ root@8edea33c2239:/home/work# exit
 ```
 The generated firmware can also be seen in the host code directory.
 
-#### Stop Docker
+### Stop Docker
 
 After compilation is completed, if the above Docker running environment is no longer needed, you can stop it first and then delete it:
 ```bash
@@ -280,11 +280,11 @@ docker stop 8edea33c2239
 docker rm 8edea33c2239
 ```
 
-### 3. Other compilation considerations
+## 3. Other compilation considerations
 
 If you want to try to compile this SDK in an environment other than the above two environments, the following are things you may need to pay attention to, for reference only.
 
-#### cmake version
+### cmake version
 
 Note：`cmake` minimum version requirement is `3.16.5`.
 
@@ -314,7 +314,7 @@ When manually installed, `cmake` is located in `/usr/local/bin`. To check its ve
 cmake version 3.27.6
 ```
 
-#### Compiling with Windows Linux Subsystem (WSL)
+### Compiling with Windows Linux Subsystem (WSL)
 
 If you wish to perform the compilation with WSL, there's an small issue building the image.
 The $PATH, due Windows interoperability, has Windows environment variables which include some spaces between the paths.

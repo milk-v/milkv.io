@@ -33,7 +33,7 @@ SDK目录结构
 └── u-boot-2021.10      // 开源 uboot 代码
 ```
 
-## 编译镜像
+# 编译镜像
 
 准备编译环境，使用本地的 Ubuntu 系统，官方支持的编译环境为 `Ubuntu Jammy 22.04.x amd64`。
 
@@ -41,21 +41,21 @@ SDK目录结构
 
 以下分别介绍两种环境下的编译方法。
 
-### 一、使用 Ubuntu 22.04 编译
+## 一、使用 Ubuntu 22.04 编译
 
-#### 安装编译依赖的工具包
+### 安装编译依赖的工具包
 
 ```bash
 sudo apt install -y pkg-config build-essential ninja-build automake autoconf libtool wget curl git gcc libssl-dev bc slib squashfs-tools android-sdk-libsparse-utils jq python3-distutils scons parallel tree python3-dev python3-pip device-tree-compiler ssh cpio fakeroot libncurses5 flex bison libncurses5-dev genext2fs rsync unzip dosfstools mtools tcl openssh-client cmake
 ```
 
-#### 获取 SDK
+### 获取 SDK
 
 ```bash
 git clone https://github.com/milkv-duo/duo-buildroot-sdk.git --depth=1
 ```
 
-#### 1、一键编译
+### 1、一键编译
 
 执行一键编译脚本 `build.sh`：
 ```bash
@@ -98,7 +98,7 @@ Which would you like:
 
 *注: 第一次编译会自动下载所需的工具链，大小为 840M 左右，下载完会自动解压到 SDK 目录下的 `host-tools` 目录，下次编译时检测到已存在 `host-tools` 目录，就不会再次下载了*
 
-#### 2、分步编译
+### 2、分步编译
 
 如果未执行过一键编译脚本，需要先手动下载工具链 [host-tools](https://sophon-file.sophon.cn/sophon-prod-s3/drive/23/03/07/16/host-tools.tar.gz)，并解压到 SDK 根目录：
 
@@ -141,25 +141,25 @@ Duo:      install/soc_cv1800b_milkv_duo_sd/[board].img
 Duo256M:  install/soc_cv1812cp_milkv_duo256m_sd/[board].img
 ```
 
-### 二、使用 Docker 编译
+## 二、使用 Docker 编译
 
 需要在运行 Linux 系统的主机上支持 Docker。 Docker 的使用方法请参考[官方文档](https://docs.docker.com/)或其他教程。
 
 我们将 SDK 代码放在 Linux 主机系统上，调用 Milk-V 提供的 Docker 镜像环境来编译。
 
-#### 在 Linux 主机上拉 SDK 代码
+### 在 Linux 主机上拉 SDK 代码
 
 ```bash
 git clone https://github.com/milkv-duo/duo-buildroot-sdk.git --depth=1
 ```
 
-#### 进入 SDK 代码目录
+### 进入 SDK 代码目录
 
 ```bash
 cd duo-buildroot-sdk
 ```
 
-#### 拉取 Docker 镜像并运行
+### 拉取 Docker 镜像并运行
 
 ```bash
 docker run -itd --name duodocker -v $(pwd):/home/work milkvtech/milkv-duo:latest /bin/bash
@@ -178,7 +178,7 @@ CONTAINER ID   IMAGE                        COMMAND       CREATED       STATUS  
 8edea33c2239   milkvtech/milkv-duo:latest   "/bin/bash"   2 hours ago   Up 2 hours             duodocker
 ```
 
-#### 1. 使用 Docker 一键编译
+### 1. 使用 Docker 一键编译
 
 ```bash
 docker exec -it duodocker /bin/bash -c "cd /home/work && cat /etc/issue && ./build.sh [board]"
@@ -207,7 +207,7 @@ docker exec -it duodocker /bin/bash -c "cd /home/work && cat /etc/issue && ./bui
 
 编译成功后可以在 `out` 目录下看到生成的SD卡烧录镜像 `[board]-*-*.img`
 
-#### 2. 使用 Docker 分步编译
+### 2. 使用 Docker 分步编译
 
 如果未执行过一键编译脚本，需要先手动下载工具链 [host-tools](https://sophon-file.sophon.cn/sophon-prod-s3/drive/23/03/07/16/host-tools.tar.gz)，并解压到 SDK 根目录：
 
@@ -268,7 +268,7 @@ root@8edea33c2239:/home/work# exit
 ```
 在主机代码目录中同样也可以看到生成的固件。
 
-#### 停用 Docker
+### 停用 Docker
 
 编译完成后，如果不再需要以上的 Docker 运行环境，可先将其停止，再删除:
 ```bash
@@ -276,11 +276,11 @@ docker stop 8edea33c2239
 docker rm 8edea33c2239
 ```
 
-### 三、其他编译注意事项
+## 三、其他编译注意事项
 
 如果您想尝试在以上两种环境之外的环境下编译本 SDK，下面是可能需要注意的事项，仅供参考。
 
-#### cmake 版本号
+### cmake 版本号
 
 注意：`cmake` 版本最低要求 `3.16.5`
 
@@ -309,7 +309,7 @@ sudo sh cmake-3.27.6-linux-x86_64.sh --skip-license --prefix=/usr/local/
 cmake version 3.27.6
 ```
 
-#### 使用 Windows Linux 子系统 (WSL) 进行编译
+### 使用 Windows Linux 子系统 (WSL) 进行编译
 
 如果您希望使用 WSL 执行编译，则构建镜像时会遇到一个小问题，WSL 中的 $PATH 具有 Windows 环境变量，其中路径之间包含一些空格。
 
