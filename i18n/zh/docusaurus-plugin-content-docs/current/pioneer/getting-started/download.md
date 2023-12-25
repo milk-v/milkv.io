@@ -33,7 +33,7 @@ sidebar_position: 30
 
 ### 镜像
 
-- [Fedora 38 for Milk-V Pioneer](https://drive.google.com/file/d/1IjxeKiwtyDTmc2YGbn7yvpbCx0B1kkBh/view?usp=sharing)
+- [Fedora 38 for Milk-V Pioneer](https://drive.google.com/file/d/1-tYHNXjX6oekNorOGlWb_Az2nVOoey6y/view?usp=sharing)
 
 ### 工具
 
