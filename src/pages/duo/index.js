@@ -158,7 +158,7 @@ function DetailsPage() {
                   <td colSpan="2">1x microSD connector or
                     1x SD NAND on board</td>
                   <td colSpan="2">1x microSD connector 
-                    1x 8GB eMMC on board</td>
+                    1x eMMC Pad on board</td>
                 </tr>
                 <tr>
                   <td>USB</td>
