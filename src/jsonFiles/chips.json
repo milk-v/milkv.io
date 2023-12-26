@@ -46,7 +46,7 @@
                 "1 x DMIC"
             ],
             "Storage": [
-                "SPI-NOR, SPI-NAND, eMMC5.0, 2xSDIO3.0"
+                "SPI-NOR, SPI-NAND, eMMC5.0, 2 x SDIO3.0"
             ],
             "Network": [
                 "10M/100M MAC PHY"
@@ -281,11 +281,11 @@
             ],
             "Audio Module": [
                 "16bit Audio Codec",
-                "2 xI2S/PCM",
+                "2 x I2S/PCM",
                 "1 xDMIC"
             ],
             "Storage": [
-                "SPI-NOR, SPI-NAND, eMMC5.0, 2 xSDIO3.0"
+                "SPI-NOR, SPI-NAND, eMMC5.0, 2 x SDIO3.0"
             ],
             "Network": [
                 "10M/100M MAC PHY"
@@ -469,7 +469,7 @@
                 "16bit Audio Codec"
             ],
             "Storage": [
-                "SPI-NOR, SPI-NAND, 2 xSDIO3.0"
+                "SPI-NOR, SPI-NAND, 2 x SDIO3.0"
             ],
             "Network": [
                 "10M/100M MAC PHY"
