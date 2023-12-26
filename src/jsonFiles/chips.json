@@ -29,7 +29,7 @@
                 "8051@6KB SRAM"
             ],
             "NPU": [
-                "0.5 Top@INT8"
+                "0.5 TOPS@INT8"
             ],
             "Memory": [
                 "Sip DRAM 512M"
@@ -268,7 +268,7 @@
                 "8051@6KB SRAM"
             ],
             "NPU": [
-                "1Top@INT8"
+                "1 TOPS@INT8"
             ],
             "Memory": [
                 "Sip DRAM 256M"
@@ -282,7 +282,7 @@
             "Audio Module": [
                 "16bit Audio Codec",
                 "2 x I2S/PCM",
-                "1 xDMIC"
+                "1 x DMIC"
             ],
             "Storage": [
                 "SPI-NOR, SPI-NAND, eMMC5.0, 2 x SDIO3.0"
@@ -455,7 +455,7 @@
                 "1 x C906@1GHz + 1 x C906@700MHz"
             ],
             "NPU": [
-                "0.5 Top@INT8"
+                "0.5 TOPS@INT8"
             ],
             "Memory": [
                 "Sip DRAM 64M"
