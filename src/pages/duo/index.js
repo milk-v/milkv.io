@@ -110,38 +110,46 @@ function DetailsPage() {
               <tbody>
                 <tr>
                   <td className={styles.tr_width}></td>
-                  <td colSpan="2">Duo 256M</td>
                   <td colSpan="2">Duo</td>
+                  <td colSpan="2">Duo 256M</td>
+                  <td colSpan="2">Duo S</td>
+
                 </tr>
                 <tr>
                   <td>SoC</td>
-                  <td colSpan="2"><font color='#2d88c9'>SG2002</font></td>
                   <td colSpan="2">CVITEK CV1800B</td>
+                  <td colSpan="2"><font color='#2d88c9'>SG2002</font></td>
+                  <td colSpan="2"><font color='#2d88c9'>SG2000</font></td>
                 </tr>
                 <tr>
                   <td>RISC-V CPU</td>
                   <td colSpan="2">C906@1Ghz + C906@700MHz</td>
                   <td colSpan="2">C906@1Ghz + C906@700MHz</td>
+                  <td colSpan="2">C906@1Ghz + C906@700MHz</td>
                 </tr>
                 <tr>
                   <td>Arm CPU</td>
-                  <td colSpan="2"><font color='#2d88c9'>1xCortex-A53 @ 1GHz</font></td>
                   <td colSpan="2">N/A</td>
+                  <td colSpan="2"><font color='#2d88c9'>1xCortex-A53 @ 1GHz</font></td>
+                  <td colSpan="2"><font color='#2d88c9'>1xCortex-A53 @ 1GHz</font></td>
                 </tr>
                 <tr>
                   <td>MCU</td>
-                  <td colSpan="2"><font color='#2d88c9'>8051@6KB SRAM</font></td>
                   <td colSpan="2">8051@8KB SRAM</td>
+                  <td colSpan="2">8051@6KB SRAM</td>
+                  <td colSpan="2">8051@6KB SRAM</td>
                 </tr>
                 <tr>
                   <td>Memory</td>
-                  <td colSpan="2"><font color='#2d88c9'>256MB DDR3</font></td>
-                  <td colSpan="2">64MB DDR2</td>
+                  <td colSpan="2">SIP DRAM 64MB</td>
+                  <td colSpan="2"><font color='#2d88c9'>SIP DRAM 256MB</font></td>
+                  <td colSpan="2"><font color='#2d88c9'>SIP DRAM 512MB</font></td>
                 </tr>
                 <tr>
-                  <td>NPU</td>
-                  <td colSpan="2"><font color='#2d88c9'>1Top @ INT8</font></td>
-                  <td colSpan="2">0.5Top @ INT8</td>
+                  <td>TPU</td>
+                  <td colSpan="2">0.5TOPS@INT8</td>
+                  <td colSpan="2"><font color='#2d88c9'>1TOPS@INT8</font></td>
+                  <td colSpan="2">0.5TOPS@INT8</td>
                 </tr>
                 <tr>
                   <td>Storage</td>
@@ -149,12 +157,15 @@ function DetailsPage() {
                     1x SD NAND on board</td>
                   <td colSpan="2">1x microSD connector or
                     1x SD NAND on board</td>
+                  <td colSpan="2">1x microSD connector 
+                    1x eMMC Pad on board</td>
                 </tr>
                 <tr>
                   <td>USB</td>
-                  <td colSpan="2">1 x Type-C for power and data, USB Pads available</td>
                   <td colSpan="2">1 x Type-C for power and data,
                     USB Pads available</td>
+                  <td colSpan="2">1 x Type-C for power and data, USB Pads available</td>
+                  <td colSpan="2">1 x Type-C for power and data or <font color='#2d88c9'>1x USB 2.0 A Port HOST</font></td>
                 </tr>
                 <tr>
                   <td>CSI</td>
@@ -162,29 +173,49 @@ function DetailsPage() {
                     (MIPI CSI 2-lane)</td>
                   <td colSpan="2">1x 16P FPC connector
                     (MIPI CSI 2-lane)</td>
+                  <td colSpan="2">1x 16P FPC connector
+                    (MIPI CSI 2-lane), 
+                    <font color='#2d88c9'>1x 15P FPC connector (MIPI CSI 2-lane)</font></td>                    
                 </tr>
                 <tr>
                   <td>Sensor Support</td>
-                  <td colSpan="2"><font color='#2d88c9'>5M @ 30fps<br /></font></td>
-                  <td colSpan="2">4M @ 25fps </td>
+                  <td colSpan="2">4M@25fps </td>
+                  <td colSpan="2"><font color='#2d88c9'>5M@30fps<br /></font></td>
+                  <td colSpan="2"><font color='#2d88c9'>5M@30fps<br /></font></td>
                 </tr>
+                <tr>
+                  <td>DSI</td>
+                  <td colSpan="2">N/A</td>
+                  <td colSpan="2">N/A</td>
+                  <td colSpan="2"><font color='#2d88c9'>Via GPIO Header (MIPI DSI 4-lane)</font></td>                    
+                </tr>                
                 <tr>
                   <td>Ethernet</td>
                   <td colSpan="2">100Mbps ethernet with PHY</td>
                   <td colSpan="2">100Mbps ethernet with PHY</td>
+                  <td colSpan="2"><font color='#2d88c9'>100Mbps ethernet port(RJ45) onboard</font></td>
                 </tr>
                 <tr>
-                  <td>Audio</td>
-                  <td colSpan="2"><font color='#2d88c9'>Via GPIO Pads</font></td>
+                  <td>Wireless</td>
                   <td colSpan="2">N/A</td>
+                  <td colSpan="2">N/A</td>
+                  <td colSpan="2">WI-FI6/BT5 onboard</td>
+                </tr>                
+                <tr>
+                  <td>Audio</td>
+                  <td colSpan="2">N/A</td>
+                  <td colSpan="2"><font color='#2d88c9'>Via GPIO Pads</font></td>
+                  <td colSpan="2"><font color='#2d88c9'>Via GPIO Pin</font></td>
                 </tr>
                 <tr>
                   <td>GPIO</td>
-                  <td colSpan="2">26x GPIO Pads</td>
-                  <td colSpan="2">26x GPIO Pads</td>
+                  <td colSpan="2">Up to 26x GPIO Pads</td>
+                  <td colSpan="2">Up to 26x GPIO Pads</td>
+                  <td colSpan="2">Up to 39x GPIO Pin (Via 2x 26Pin GPIO Header)</td>
                 </tr>
                 <tr>
                   <td>Power</td>
+                  <td colSpan="2">5V/1A</td>
                   <td colSpan="2">5V/1A</td>
                   <td colSpan="2">5V/1A</td>
                 </tr>
@@ -192,12 +223,22 @@ function DetailsPage() {
                   <td>OS Support</td>
                   <td colSpan="2">Linux, RTOS</td>
                   <td colSpan="2">Linux, RTOS</td>
+                  <td colSpan="2">Linux, RTOS</td>
                 </tr>
                 <tr>
                   <td>Dimension</td>
                   <td colSpan="2">21mm x 51mm</td>
                   <td colSpan="2">21mm x 51mm</td>
+                  <td colSpan="2">43mm x 43mm</td>
                 </tr>
+                <tr>
+                  <td>Others</td>
+                  <td colSpan="2">N/A</td>
+                  <td colSpan="2">N/A</td>
+                  <td colSpan="2">1x BOOT swich, 
+                  1x Recovery Key, 
+                  1x RST Key </td>
+                </tr>                
               </tbody>
             </table>
             <h3>
