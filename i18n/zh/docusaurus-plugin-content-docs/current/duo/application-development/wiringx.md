@@ -18,29 +18,29 @@ Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LE
 
 <div className='gpio_style'>
 
-| wiringX | PIN NAME |              Pin#               |              Pin#                | PIN NAME | wiringX |
+| wiringX | PIN NAME |              Pin#               |               Pin#               | PIN NAME | wiringX |
 | ------- | -------- | :-----------------------------: | :------------------------------: | -------- | ------- |
-| 0       | GP0      | <div className='green'>1</div>  |    <div className='red'>40</div> | VBUS     |         |
-| 1       | GP1      | <div className='green'>2</div>  |    <div className='red'>39</div> | VSYS     |         |
-|         | GND      | <div className='black'>3</div>  |  <div className='black'>38</div> | GND      |         |
+| 0       | GP0      | <div className='green'>1</div>  |  <div className='red'>40</div>   | VBUS     |         |
+| 1       | GP1      | <div className='green'>2</div>  |  <div className='red'>39</div>   | VSYS     |         |
+|         | GND      | <div className='black'>3</div>  | <div className='black'>38</div>  | GND      |         |
 | 2       | GP2      | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN   |         |
-| 3       | GP3      | <div className='green'>5</div>  |    <div className='red'>36</div> | 3V3(OUT) |         |
-| 4       | GP4      | <div className='green'>6</div>  |   <div className='gray'>35</div> |          |         |
-| 5       | GP5      | <div className='green'>7</div>  |   <div className='gray'>34</div> |          |         |
-|         | GND      | <div className='black'>8</div>  |  <div className='black'>33</div> | GND      |         |
-| 6       | GP6      | <div className='green'>9</div>  |  <div className='green'>32</div> | GP27     | 27      |
-| 7       | GP7      | <div className='green'>10</div> |  <div className='green'>31</div> | GP26     | 26      |
+| 3       | GP3      | <div className='green'>5</div>  |  <div className='red'>36</div>   | 3V3(OUT) |         |
+| 4       | GP4      | <div className='green'>6</div>  |  <div className='gray'>35</div>  |          |         |
+| 5       | GP5      | <div className='green'>7</div>  |  <div className='gray'>34</div>  |          |         |
+|         | GND      | <div className='black'>8</div>  | <div className='black'>33</div>  | GND      |         |
+| 6       | GP6      | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27     | 27      |
+| 7       | GP7      | <div className='green'>10</div> | <div className='green'>31</div>  | GP26     | 26      |
 | 8       | GP8      | <div className='green'>21</div> | <div className='orange'>30</div> | RUN      |         |
-| 9       | GP9      | <div className='green'>12</div> |  <div className='green'>29</div> | GP22     | 22      |
-|         | GND      | <div className='black'>13</div> |  <div className='black'>28</div> | GND      |         |
-| 10      | GP10     | <div className='green'>14</div> |  <div className='green'>27</div> | GP21     | 21      |
-| 11      | GP11     | <div className='green'>15</div> |  <div className='green'>26</div> | GP20     | 20      |
-| 12      | GP12     | <div className='green'>16</div> |  <div className='green'>25</div> | GP19     | 19      |
-| 13      | GP13     | <div className='green'>17</div> |  <div className='green'>24</div> | GP18     | 18      |
-|         | GND      | <div className='black'>18</div> |  <div className='black'>23</div> | GND      |         |
-| 14      | GP14     | <div className='green'>19</div> |  <div className='green'>22</div> | GP17     | 17      |
-| 15      | GP15     | <div className='green'>20</div> |  <div className='green'>21</div> | GP16     | 16      |
-|         |          | &nbsp;                          |                                  |          |         |
+| 9       | GP9      | <div className='green'>12</div> | <div className='green'>29</div>  | GP22     | 22      |
+|         | GND      | <div className='black'>13</div> | <div className='black'>28</div>  | GND      |         |
+| 10      | GP10     | <div className='green'>14</div> | <div className='green'>27</div>  | GP21     | 21      |
+| 11      | GP11     | <div className='green'>15</div> | <div className='green'>26</div>  | GP20     | 20      |
+| 12      | GP12     | <div className='green'>16</div> | <div className='green'>25</div>  | GP19     | 19      |
+| 13      | GP13     | <div className='green'>17</div> | <div className='green'>24</div>  | GP18     | 18      |
+|         | GND      | <div className='black'>18</div> | <div className='black'>23</div>  | GND      |         |
+| 14      | GP14     | <div className='green'>19</div> | <div className='green'>22</div>  | GP17     | 17      |
+| 15      | GP15     | <div className='green'>20</div> | <div className='green'>21</div>  | GP16     | 16      |
+|         |          |             &nbsp;              |                                  |          |         |
 | 25      | GP25     | <div className='blue'>LED</div> |                                  |          |         |
 
 </div>
@@ -53,7 +53,9 @@ Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LE
 
 ### General
 
-<details><summary>int wiringXSetup(char *name, ...)</summary>
+<details>
+
+<summary>int wiringXSetup(char *name, ...)</summary>
 
   初始化 WiringX 库，用于初始化 GPIO 引脚的配置和资源，对于Duo，固定写法为
   ```
@@ -63,28 +65,36 @@ Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LE
 </details>
 
 
-<details><summary>int wiringXValidGPIO(int pin)</summary>
+<details>
+
+<summary>int wiringXValidGPIO(int pin)</summary>
 
   判断GPIO pin是否可用
 
 </details>
 
 
-<details><summary>void delayMicroseconds(unsigned int ms)</summary>
+<details>
+
+<summary>void delayMicroseconds(unsigned int ms)</summary>
 
   延时毫秒
 
 </details>
 
 
-<details><summary>int wiringXGC(void)</summary>
+<details>
+
+<summary>int wiringXGC(void)</summary>
 
   释放资源
 
 </details>
 
 
-<details><summary>char *wiringXPlatform(void)</summary>
+<details>
+
+<summary>char *wiringXPlatform(void)</summary>
 
   返回平台信息
 
@@ -93,7 +103,9 @@ Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LE
 
 ### GPIO
 
-<details><summary>int pinMode(int pin, pinmode_t mode)</summary>
+<details>
+
+<summary>int pinMode(int pin, pinmode_t mode)</summary>
 
   设置指定引脚的工作模式, pin 是引脚编号, mode 可以是
   - PINMODE_INPUT 输入模式
@@ -103,14 +115,18 @@ Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LE
 </details>
 
 
-<details><summary>int digitalRead(int pin)</summary>
+<details>
+
+<summary>int digitalRead(int pin)</summary>
 
   读取指定引脚pin的输入值, 返回值为 HIGH 或 LOW
 
 </details>
 
 
-<details><summary>int digitalWrite(int pin, enum digital_value_t value)</summary>
+<details>
+
+<summary>int digitalWrite(int pin, enum digital_value_t value)</summary>
 
   设置指定引脚pin的输出值, value 可以是
   - HIGH 高电平
@@ -119,7 +135,9 @@ Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LE
 </details>
 
 
-<details><summary>int waitForInterrupt(int pin, int ms)</summary>
+<details>
+
+<summary>int waitForInterrupt(int pin, int ms)</summary>
 
   等待引脚pin上的中断发生, 参数ms为超时时间, 单位毫秒  
   *该函数已弃用, 建议使用 wiringXISR*
@@ -127,7 +145,9 @@ Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LE
 </details>
 
 
-<details><summary>int wiringXISR(int pin, enum isr_mode_t mode)</summary>
+<details>
+
+<summary>int wiringXISR(int pin, enum isr_mode_t mode)</summary>
 
 将引脚pin配置为中断方式,   其中`mode`的几种模式
 - ISR_MODE_RISING
@@ -139,49 +159,63 @@ Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LE
 
 ### I2C
 
-<details><summary>int wiringXI2CSetup(const char *dev, int addr)</summary>
+<details>
+
+<summary>int wiringXI2CSetup(const char *dev, int addr)</summary>
 
   配置i2c节点和i2c地址
 
 </details>
 
 
-<details><summary>int wiringXI2CRead(int fd)</summary>
+<details>
+
+<summary>int wiringXI2CRead(int fd)</summary>
 
   读取1个字节的数据
 
 </details>
 
 
-<details><summary>int wiringXI2CReadReg8(int fd, int reg)</summary>
+<details>
+
+<summary>int wiringXI2CReadReg8(int fd, int reg)</summary>
 
   从reg寄存器读取1个字节的数据
 
 </details>
 
 
-<details><summary>int wiringXI2CReadReg16(int fd, int reg)</summary>
+<details>
+
+<summary>int wiringXI2CReadReg16(int fd, int reg)</summary>
 
   从reg寄存器读取2个字节的数据
 
 </details>
 
 
-<details><summary>int wiringXI2CWrite(int fd, int reg)</summary>
+<details>
+
+<summary>int wiringXI2CWrite(int fd, int reg)</summary>
 
   写寄存器的地址reg
 
 </details>
 
 
-<details><summary>int wiringXI2CWriteReg8(int fd, int reg, int value8)</summary>
+<details>
+
+<summary>int wiringXI2CWriteReg8(int fd, int reg, int value8)</summary>
 
   将8位数据value8写入寄存器reg
 
 </details>
 
 
-<details><summary>int wiringXI2CWriteReg16(int fd, int reg, int value16)</summary>
+<details>
+
+<summary>int wiringXI2CWriteReg16(int fd, int reg, int value16)</summary>
 
   将16位数据value16写入寄存器reg
 
@@ -189,19 +223,25 @@ Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LE
 
 ### SPI
 
-<details><summary>int wiringXSPISetup(int channel, int speed)</summary>
+<details>
+
+<summary>int wiringXSPISetup(int channel, int speed)</summary>
 
   配置SPI设备的channel(Duo上为0)和speed(Duo中默认为500000)
 
 </details>
 
-<details><summary>int wiringXSPIDataRW(int channel, unsigned char *data, int len)</summary>
+<details>
+
+<summary>int wiringXSPIDataRW(int channel, unsigned char *data, int len)</summary>
 
   SPI总线是上升沿写数据，下降沿读数据，所以该函数同时执行读写操作，因此读取的数据会覆盖写入的数据，使用时需注意
 
 </details>
 
-<details><summary>int wiringXSPIGetFd(int channel)</summary>
+<details>
+
+<summary>int wiringXSPIGetFd(int channel)</summary>
 
   获取SPI设备的文件描述符，channel在Duo中默认为0
 
@@ -209,7 +249,9 @@ Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LE
 
 ### UART
 
-<details><summary>int wiringXSerialOpen(const char *dev, struct wiringXSerial_t serial)</summary>
+<details>
+
+<summary>int wiringXSerialOpen(const char *dev, struct wiringXSerial_t serial)</summary>
 
   打开串口设备，dev是设备描述符，serial是个结构体，需要填充串口相关参数  
   具体可参考下面的[UART使用示例](#UART-使用示例)
@@ -226,43 +268,57 @@ Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LE
 
 </details>
 
-<details><summary>void wiringXSerialClose(int fd)</summary>
+<details>
+
+<summary>void wiringXSerialClose(int fd)</summary>
 
   关闭串口
 
 </details>
 
-<details><summary>void wiringXSerialFlush(int fd)</summary>
+<details>
+
+<summary>void wiringXSerialFlush(int fd)</summary>
 
   清空缓存区
 
 </details>
 
-<details><summary>void wiringXSerialPutChar(int fd, unsigned char c)</summary>
+<details>
+
+<summary>void wiringXSerialPutChar(int fd, unsigned char c)</summary>
 
   输出一个字符
 
 </details>
 
-<details><summary>void wiringXSerialPuts(int fd, const char *s)</summary>
+<details>
+
+<summary>void wiringXSerialPuts(int fd, const char *s)</summary>
 
   输出字符串
 
 </details>
 
-<details><summary>void wiringXSerialPrintf(int fd, const char *message, ...)</summary>
+<details>
+
+<summary>void wiringXSerialPrintf(int fd, const char *message, ...)</summary>
 
   格式化输出
 
 </details>
 
-<details><summary>int wiringXSerialDataAvail(int fd)</summary>
+<details>
+
+<summary>int wiringXSerialDataAvail(int fd)</summary>
 
   返回缓存区接收到的数据个数
 
 </details>
 
-<details><summary>int wiringXSerialGetChar(int fd)</summary>
+<details>
+
+<summary>int wiringXSerialGetChar(int fd)</summary>
 
   从串口设备读取一个字符
 

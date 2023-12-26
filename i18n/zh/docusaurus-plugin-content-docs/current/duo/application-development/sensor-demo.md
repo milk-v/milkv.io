@@ -16,7 +16,7 @@ GitHub链接：https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo
 
 #### DHT22温湿度传感器
 
-dfrobotwiki链接如下：<https://wiki.dfrobot.com.cn/_SKU_SEN0137_%E9%AB%98%E7%B2%BE%E5%BA%A6DHT22%E6%B8%A9%E6%B9%BF%E5%BA%A6%E4%BC%A0%E6%84%9F%E5%99%A8>
+dfrobotwiki链接如下：https://wiki.dfrobot.com.cn/_SKU_SEN0137_%E9%AB%98%E7%B2%BE%E5%BA%A6DHT22%E6%B8%A9%E6%B9%BF%E5%BA%A6%E4%BC%A0%E6%84%9F%E5%99%A8
 
 DHT22 温湿度传感器是一款多功能且经济高效的传感器，用于测量环境温度和湿度，应用范围广泛。它基于数字信号输出，可以提供高精度测量，温度分辨率为 0.1 摄氏度，湿度分辨率为 0.1%。该传感器采用电容式湿度传感元件和热敏电阻分别测量湿度和温度。DHT22 传感器的功耗也相对较低，可在 3.3V 至 5V 的电压范围内工作，使其适用于电池供电项目。此外，该传感器具有长期稳定性和高可靠性，这使其成为暖通空调等各种应用的完美选择，气象站和室内空气质量监测系统。
 
@@ -286,7 +286,7 @@ cd duo-examples
 source envsetup.sh
 ```
 5、第一次加载会自动下载所需的SDK包，大小为180M左右，下载完会自动解压到duo-examples下，解压后的目录名为duo-sdk，下次加载时检测到已存在该目录，就不会再次下载了。  
-*注: 如果因为网络原因无法完成SDK包的下载，请通过其他途径获取到duo-sdk.tar.gz包，手动解压到duo-examples目录下，重新source envsetup.sh。下载路径在envsetup.sh中能找到：*<https://github.com/milkv-duo/duo-app-sdk/releases/download/duo-app-sdk-v1.2.0/duo-sdk-v1.2.0.tar.gz> *如下图所示。*
+*注: 如果因为网络原因无法完成SDK包的下载，请通过其他途径获取到duo-sdk.tar.gz包，手动解压到duo-examples目录下，重新source envsetup.sh。下载路径在envsetup.sh中能找到：https://github.com/milkv-duo/duo-app-sdk/releases/download/duo-app-sdk-v1.2.0/duo-sdk-v1.2.0.tar.gz *如下图所示。*
 ![](/docs/duo/sensor-demo/CHN_19.png)
 6、编译测试
 
@@ -501,7 +501,7 @@ source envsetup.sh
 ```
 
 5、第一次加载会自动下载所需的SDK包，大小为180M左右，下载完会自动解压到duo-examples下，解压后的目录名为duo-sdk，下次加载时检测到已存在该目录，就不会再次下载了。  
-*注: 如果因为网络原因无法完成SDK包的下载，请通过其他途径获取到duo-sdk.tar.gz包，手动解压到duo-examples目录下，重新source envsetup.sh。下载路径在envsetup.sh中能找到：*<https://github.com/milkv-duo/duo-app-sdk/releases/download/duo-app-sdk-v1.2.0/duo-sdk-v1.2.0.tar.gz> *如下图所示。*
+*注: 如果因为网络原因无法完成SDK包的下载，请通过其他途径获取到duo-sdk.tar.gz包，手动解压到duo-examples目录下，重新source envsetup.sh。下载路径在envsetup.sh中能找到：https://github.com/milkv-duo/duo-app-sdk/releases/download/duo-app-sdk-v1.2.0/duo-sdk-v1.2.0.tar.gz 如下图所示。
 
 ![](/docs/duo/sensor-demo/CHN_19.png)
 

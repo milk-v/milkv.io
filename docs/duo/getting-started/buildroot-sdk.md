@@ -57,13 +57,14 @@ sudo apt install -y pkg-config build-essential ninja-build automake autoconf lib
 git clone https://github.com/milkv-duo/duo-buildroot-sdk.git --depth=1
 ```
 
-### <1>. One-click Compilation
+### 1). One-click Compilation
 
 Execute one-click compilation script `build.sh`：
 ```bash
 cd duo-buildroot-sdk/
 ./build.sh
 ```
+
 You will see tips on how to use the compiled script:
 ```bash
 # ./build.sh
@@ -100,7 +101,7 @@ After a successful compilation, you can find the generated SD card burning image
 
 *Note: The first compilation will automatically download the required toolchain, which is approximately 840MB in size. Once downloaded, it will be automatically extracted to the `host-tools` directory in the SDK directory. For subsequent compilations, if the `host-tools` directory is detected, the download will not be performed again*.
 
-### <2>. Step-by-step Compilation
+### 2). Step-by-step Compilation
 
 If you have not executed the one-click compilation script, you need to manually download the toolchain [host-tools](https://sophon-file.sophon.cn/sophon-prod-s3/drive/23/03/07/16/host-tools.tar.gz) and extract it to the SDK root directory:
 
@@ -180,7 +181,7 @@ CONTAINER ID   IMAGE                        COMMAND       CREATED       STATUS  
 8edea33c2239   milkvtech/milkv-duo:latest   "/bin/bash"   2 hours ago   Up 2 hours             duodocker
 ```
 
-### <1>. One-click compilation using Docker
+### 1). One-click compilation using Docker
 
 ```bash
 docker exec -it duodocker /bin/bash -c "cd /home/work && cat /etc/issue && ./build.sh [board]"
@@ -209,7 +210,7 @@ docker exec -it duodocker /bin/bash -c "cd /home/work && cat /etc/issue && ./bui
 
 After successful compilation, you can see the generated SD card burning image `[board]-*-*.img` in the `out` directory.
 
-### <2>. Compile step by step using Docker
+### 2). Compile step by step using Docker
 
 If you have not executed the one-click compilation script, you need to manually download the toolchain [host-tools](https://sophon-file.sophon.cn/sophon-prod-s3/drive/23/03/07/16/host-tools.tar.gz) and extract it to the SDK root directory:
 

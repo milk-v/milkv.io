@@ -140,11 +140,11 @@ USB-TTL模块的每个针脚定义如下：
 如下图所示，连接USB到TTL串口模块。 不要连接红线.
 
 
-| Milk-V Dou   | <---> | USB to TTL |
-| ------------ | ----- | ---------- |
-| TX (pin 16)  | <---> | White wire |
-| RX (pin 17)  | <---> | Green wire |
-| GND (pin 18) | <---> | Black wire |
+| Milk-V Dou   | \<---> | USB to TTL |
+| ------------ | ------ | ---------- |
+| TX (pin 16)  | \<---> | White wire |
+| RX (pin 17)  | \<---> | Green wire |
+| GND (pin 18) | \<---> | Black wire |
 
 
 ![duo-serial](/docs/duo/duo-serial.jpg)

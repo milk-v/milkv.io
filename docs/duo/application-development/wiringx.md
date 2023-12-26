@@ -19,29 +19,29 @@ The wiringX pin numbering of Milk-V Duo is consistent with the pin name numberin
 
 <div className='gpio_style'>
 
-| wiringX | PIN NAME |              Pin#               |              Pin#                | PIN NAME | wiringX |
+| wiringX | PIN NAME |              Pin#               |               Pin#               | PIN NAME | wiringX |
 | ------- | -------- | :-----------------------------: | :------------------------------: | -------- | ------- |
-| 0       | GP0      | <div className='green'>1</div>  |    <div className='red'>40</div> | VBUS     |         |
-| 1       | GP1      | <div className='green'>2</div>  |    <div className='red'>39</div> | VSYS     |         |
-|         | GND      | <div className='black'>3</div>  |  <div className='black'>38</div> | GND      |         |
+| 0       | GP0      | <div className='green'>1</div>  |  <div className='red'>40</div>   | VBUS     |         |
+| 1       | GP1      | <div className='green'>2</div>  |  <div className='red'>39</div>   | VSYS     |         |
+|         | GND      | <div className='black'>3</div>  | <div className='black'>38</div>  | GND      |         |
 | 2       | GP2      | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN   |         |
-| 3       | GP3      | <div className='green'>5</div>  |    <div className='red'>36</div> | 3V3(OUT) |         |
-| 4       | GP4      | <div className='green'>6</div>  |   <div className='gray'>35</div> |          |         |
-| 5       | GP5      | <div className='green'>7</div>  |   <div className='gray'>34</div> |          |         |
-|         | GND      | <div className='black'>8</div>  |  <div className='black'>33</div> | GND      |         |
-| 6       | GP6      | <div className='green'>9</div>  |  <div className='green'>32</div> | GP27     | 27      |
-| 7       | GP7      | <div className='green'>10</div> |  <div className='green'>31</div> | GP26     | 26      |
+| 3       | GP3      | <div className='green'>5</div>  |  <div className='red'>36</div>   | 3V3(OUT) |         |
+| 4       | GP4      | <div className='green'>6</div>  |  <div className='gray'>35</div>  |          |         |
+| 5       | GP5      | <div className='green'>7</div>  |  <div className='gray'>34</div>  |          |         |
+|         | GND      | <div className='black'>8</div>  | <div className='black'>33</div>  | GND      |         |
+| 6       | GP6      | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27     | 27      |
+| 7       | GP7      | <div className='green'>10</div> | <div className='green'>31</div>  | GP26     | 26      |
 | 8       | GP8      | <div className='green'>21</div> | <div className='orange'>30</div> | RUN      |         |
-| 9       | GP9      | <div className='green'>12</div> |  <div className='green'>29</div> | GP22     | 22      |
-|         | GND      | <div className='black'>13</div> |  <div className='black'>28</div> | GND      |         |
-| 10      | GP10     | <div className='green'>14</div> |  <div className='green'>27</div> | GP21     | 21      |
-| 11      | GP11     | <div className='green'>15</div> |  <div className='green'>26</div> | GP20     | 20      |
-| 12      | GP12     | <div className='green'>16</div> |  <div className='green'>25</div> | GP19     | 19      |
-| 13      | GP13     | <div className='green'>17</div> |  <div className='green'>24</div> | GP18     | 18      |
-|         | GND      | <div className='black'>18</div> |  <div className='black'>23</div> | GND      |         |
-| 14      | GP14     | <div className='green'>19</div> |  <div className='green'>22</div> | GP17     | 17      |
-| 15      | GP15     | <div className='green'>20</div> |  <div className='green'>21</div> | GP16     | 16      |
-|         |          | &nbsp;                          |                                  |          |         |
+| 9       | GP9      | <div className='green'>12</div> | <div className='green'>29</div>  | GP22     | 22      |
+|         | GND      | <div className='black'>13</div> | <div className='black'>28</div>  | GND      |         |
+| 10      | GP10     | <div className='green'>14</div> | <div className='green'>27</div>  | GP21     | 21      |
+| 11      | GP11     | <div className='green'>15</div> | <div className='green'>26</div>  | GP20     | 20      |
+| 12      | GP12     | <div className='green'>16</div> | <div className='green'>25</div>  | GP19     | 19      |
+| 13      | GP13     | <div className='green'>17</div> | <div className='green'>24</div>  | GP18     | 18      |
+|         | GND      | <div className='black'>18</div> | <div className='black'>23</div>  | GND      |         |
+| 14      | GP14     | <div className='green'>19</div> | <div className='green'>22</div>  | GP17     | 17      |
+| 15      | GP15     | <div className='green'>20</div> | <div className='green'>21</div>  | GP16     | 16      |
+|         |          |             &nbsp;              |                                  |          |         |
 | 25      | GP25     | <div className='blue'>LED</div> |                                  |          |         |
 
 </div>
@@ -54,7 +54,9 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 
 ### General
 
-<details><summary>int wiringXSetup(char *name, ...)</summary>
+<details>
+
+<summary>int wiringXSetup(char *name, ...)</summary>
 
   To initialize the WiringX library for configuring and managing GPIO pins, the fixed syntax for Duo is as follows
   ```
@@ -64,28 +66,36 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 </details>
 
 
-<details><summary>int wiringXValidGPIO(int pin)</summary>
+<details>
+
+<summary>int wiringXValidGPIO(int pin)</summary>
 
   To check if a GPIO pin is available,
 
 </details>
 
 
-<details><summary>void delayMicroseconds(unsigned int ms)</summary>
+<details>
+
+<summary>void delayMicroseconds(unsigned int ms)</summary>
 
   Delay for how many milliseconds
 
 </details>
 
 
-<details><summary>int wiringXGC(void)</summary>
+<details>
+
+<summary>int wiringXGC(void)</summary>
 
   To release resources
 
 </details>
 
 
-<details><summary>char *wiringXPlatform(void)</summary>
+<details>
+
+<summary>char *wiringXPlatform(void)</summary>
 
   Return platform information
 
@@ -94,7 +104,9 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 
 ### GPIO
 
-<details><summary>int pinMode(int pin, pinmode_t mode)</summary>
+<details>
+
+<summary>int pinMode(int pin, pinmode_t mode)</summary>
 
   Set the working mode for the specified pin, where pin is the pin number, and mode can be
   - PINMODE_INPUT input mode
@@ -104,14 +116,18 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 </details>
 
 
-<details><summary>int digitalRead(int pin)</summary>
+<details>
+
+<summary>int digitalRead(int pin)</summary>
 
   Read the input value of the specified pin, and the return value is HIGH or LOW
 
 </details>
 
 
-<details><summary>int digitalWrite(int pin, enum digital_value_t value)</summary>
+<details>
+
+<summary>int digitalWrite(int pin, enum digital_value_t value)</summary>
 
   Set the output value for the specified pin, where value can be
   - HIGH high level
@@ -120,7 +136,9 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 </details>
 
 
-<details><summary>int waitForInterrupt(int pin, int ms)</summary>
+<details>
+
+<summary>int waitForInterrupt(int pin, int ms)</summary>
 
   Wait for an interrupt to occur on pin, with a timeout of ms milliseconds  
   *This function has been deprecated. It is recommended to use wiringXISR*
@@ -128,7 +146,9 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 </details>
 
 
-<details><summary>int wiringXISR(int pin, enum isr_mode_t mode)</summary>
+<details>
+
+<summary>int wiringXISR(int pin, enum isr_mode_t mode)</summary>
 
 Configure pin as an interrupt mode, with several modes for mode
 - ISR_MODE_RISING
@@ -140,49 +160,63 @@ Configure pin as an interrupt mode, with several modes for mode
 
 ### I2C
 
-<details><summary>int wiringXI2CSetup(const char *dev, int addr)</summary>
+<details>
+
+<summary>int wiringXI2CSetup(const char *dev, int addr)</summary>
 
   Configure the I2C node and I2C address
 
 </details>
 
 
-<details><summary>int wiringXI2CRead(int fd)</summary>
+<details>
+
+<summary>int wiringXI2CRead(int fd)</summary>
 
   Read 1 byte of data
 
 </details>
 
 
-<details><summary>int wiringXI2CReadReg8(int fd, int reg)</summary>
+<details>
+
+<summary>int wiringXI2CReadReg8(int fd, int reg)</summary>
 
   Read 1 byte of data from the reg register
 
 </details>
 
 
-<details><summary>int wiringXI2CReadReg16(int fd, int reg)</summary>
+<details>
+
+<summary>int wiringXI2CReadReg16(int fd, int reg)</summary>
 
   Read 2 bytes of data from the reg register
 
 </details>
 
 
-<details><summary>int wiringXI2CWrite(int fd, int reg)</summary>
+<details>
+
+<summary>int wiringXI2CWrite(int fd, int reg)</summary>
 
   Write the address of the register reg
 
 </details>
 
 
-<details><summary>int wiringXI2CWriteReg8(int fd, int reg, int value8)</summary>
+<details>
+
+<summary>int wiringXI2CWriteReg8(int fd, int reg, int value8)</summary>
 
   Write the 8-bit data value8 to the register reg
 
 </details>
 
 
-<details><summary>int wiringXI2CWriteReg16(int fd, int reg, int value16)</summary>
+<details>
+
+<summary>int wiringXI2CWriteReg16(int fd, int reg, int value16)</summary>
 
   Write the 16-bit data value16 to the register reg
 
@@ -190,19 +224,25 @@ Configure pin as an interrupt mode, with several modes for mode
 
 ### SPI
 
-<details><summary>int wiringXSPISetup(int channel, int speed)</summary>
+<details>
+
+<summary>int wiringXSPISetup(int channel, int speed)</summary>
 
   Configure the channel (0 on Duo) and speed (default to 500000) of the SPI device
 
 </details>
 
-<details><summary>int wiringXSPIDataRW(int channel, unsigned char *data, int len)</summary>
+<details>
+
+<summary>int wiringXSPIDataRW(int channel, unsigned char *data, int len)</summary>
 
   The SPI bus writes data on the rising edge and reads data on the falling edge. Therefore, this function performs both read and write operations simultaneously, resulting in the read data overwriting the written data. Please be cautious when using it
 
 </details>
 
-<details><summary>int wiringXSPIGetFd(int channel)</summary>
+<details>
+
+<summary>int wiringXSPIGetFd(int channel)</summary>
 
   Get the file descriptor of the SPI device, with the channel defaulting to 0 on Duo
 
@@ -210,7 +250,9 @@ Configure pin as an interrupt mode, with several modes for mode
 
 ### UART
 
-<details><summary>int wiringXSerialOpen(const char *dev, struct wiringXSerial_t serial)</summary>
+<details>
+
+<summary>int wiringXSerialOpen(const char *dev, struct wiringXSerial_t serial)</summary>
 
   Open the serial port device, where `dev` is the device descriptor and `serial` is a structure that needs to be filled with serial port-related parameters. For more details, please refer to the [UART Usage Example](#UART-Usage-Example)
 
@@ -226,43 +268,57 @@ Configure pin as an interrupt mode, with several modes for mode
 
 </details>
 
-<details><summary>void wiringXSerialClose(int fd)</summary>
+<details>
+
+<summary>void wiringXSerialClose(int fd)</summary>
 
   Close the serial port
 
 </details>
 
-<details><summary>void wiringXSerialFlush(int fd)</summary>
+<details>
+
+<summary>void wiringXSerialFlush(int fd)</summary>
 
   Flush the buffer
 
 </details>
 
-<details><summary>void wiringXSerialPutChar(int fd, unsigned char c)</summary>
+<details>
+
+<summary>void wiringXSerialPutChar(int fd, unsigned char c)</summary>
 
   Output a character
 
 </details>
 
-<details><summary>void wiringXSerialPuts(int fd, const char *s)</summary>
+<details>
+
+<summary>void wiringXSerialPuts(int fd, const char *s)</summary>
 
   Output a string
 
 </details>
 
-<details><summary>void wiringXSerialPrintf(int fd, const char *message, ...)</summary>
+<details>
+
+<summary>void wiringXSerialPrintf(int fd, const char *message, ...)</summary>
 
   Format output
 
 </details>
 
-<details><summary>int wiringXSerialDataAvail(int fd)</summary>
+<details>
+
+<summary>int wiringXSerialDataAvail(int fd)</summary>
 
   Return the number of data received in the buffer
 
 </details>
 
-<details><summary>int wiringXSerialGetChar(int fd)</summary>
+<details>
+
+<summary>int wiringXSerialGetChar(int fd)</summary>
 
   Read a character from the serial port device
 

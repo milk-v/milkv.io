@@ -17,11 +17,11 @@ Each pin of a USB-to-TTL cable is defined as follows:
 
 Take using `Raspberry Pi CM4 IO Board` as the base-board as an example, connect USB to TTL serial cable as shown below. Do not connect the red wire.
 
-| Milk-V Mars  | <---> | USB to TTL |
-| ------------ | ----- | ---------- |
-| GND (pin 6)  | <---> | Black wire |
-| TX  (pin 8)  | <---> | White wire |
-| RX  (pin 10) | <---> | Green wire |
+| Milk-V Mars  | \<---> | USB to TTL |
+| ------------ | ------ | ---------- |
+| GND (pin 6)  | \<---> | Black wire |
+| TX  (pin 8)  | \<---> | White wire |
+| RX  (pin 10) | \<---> | Green wire |
 
 ![mars-cm-serial](/docs/mars/cm/mars-cm-docs_boot_01.jpg)
 

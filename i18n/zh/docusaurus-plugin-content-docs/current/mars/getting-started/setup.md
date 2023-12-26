@@ -17,11 +17,11 @@ sidebar_position: 20
 
 如下所示连接 USB 转 TTL 串口线，不要连接红色的供电线
 
-| Milk-V Mars  | <---> | USB 转 TTL 线 |
-| ------------ | ----- | ------------ |
-| GND (pin 6)  | <---> | 黑线 |
-| TX  (pin 8)  | <---> | 白线 |
-| RX  (pin 10) | <---> | 绿线 |
+| Milk-V Mars  | \<---> | USB 转 TTL 线 |
+| ------------ | ------ | ------------- |
+| GND (pin 6)  | \<---> | 黑线          |
+| TX  (pin 8)  | \<---> | 白线          |
+| RX  (pin 10) | \<---> | 绿线          |
 
 ![mars-serial](/docs/mars/mars-serial.jpg)
 
