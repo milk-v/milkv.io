@@ -11,6 +11,8 @@ sidebar_position: 1
 | ------- | ---------- | --------------------------------------------- |
 | 0.1     | 2023/11/24 | First version                                 |
 | 0.2     | 2023/12/15 | Introduction of Duo 256M and Related Products |
+| 0.3     | 2023/12/27 | Introduction of Duo S and Related Products    |
+
 --------------------------------------------------------------------------------------------------------
 # Introduction
 Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators.  
