@@ -10,8 +10,6 @@ sidebar_position: 10
 - Necessary
   - Vega
   - DC5525 12V/2A Power Adapter
-- Optional
-  - USB to TTL serial cable
 
 ## Image and SDK 
 
