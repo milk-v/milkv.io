@@ -227,7 +227,22 @@ const sidebars = {
       label: '🏠 Home',
       href: '/docs',
     },
-    'vega/overview'
+    'vega/overview',
+    {
+      type: "category",
+      label: '🚀 Getting Started',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: '🚀 Getting Started',
+        description: 'Getting Started with Mars',
+        slug: '/vega/getting-started'
+      },
+      items: [
+        'vega/getting-started/boot',
+        'vega/getting-started/setup',
+      ],
+    },
   ],
 };
 
