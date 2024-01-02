@@ -34,8 +34,7 @@ echo "pre-up ifconfig eth0 hw ether 78:01:B3:FC:E8:55" >> /etc/network/interface
 
 配置IO-Board底板上的4个USB口功能:
 ~~~
-rm /mnt/system/usb.sh
-ln -s /mnt/system/usb-host.sh /mnt/system/usb.sh
+ln -sf /mnt/system/usb-host.sh /mnt/system/usb.sh
 sync
 ~~~
 然后执行reboot命令或重新上电使其生效
@@ -60,7 +59,7 @@ umount /mnt/udisk
 在不使用IO-Board底板时，想恢复USB网卡(RNDIS)功能，执行
 ~~~
 rm /mnt/system/usb.sh
-ln -s /mnt/system/usb-rndis.sh /mnt/system/usb.sh
+ln -sf /mnt/system/usb-rndis.sh /mnt/system/usb.sh
 sync
 ~~~
 然后执行reboot命令或重新上电使其生效

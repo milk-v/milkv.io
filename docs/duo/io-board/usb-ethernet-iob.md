@@ -32,8 +32,7 @@ then reboot the board
 
 Enable the 4 USB ports on the IO-Board:
 ~~~
-rm /mnt/system/usb.sh
-ln -s /mnt/system/usb-host.sh /mnt/system/usb.sh
+ln -sf /mnt/system/usb-host.sh /mnt/system/usb.sh
 sync
 ~~~
 then reboot the board
@@ -57,18 +56,9 @@ umount /mnt/udisk
 
 To restore the functionality of the USB network (RNDIS) when not using the IO-Board, you can follow these steps
 ```
-rm /mnt/system/usb.sh
-ln -s /mnt/system/usb-rndis.sh /mnt/system/usb.sh
+ln -sf /mnt/system/usb-rndis.sh /mnt/system/usb.sh
 sync
 ```
-then reboot the board
-
-Restore the USB network (RNDIS) when the IO-Board is not used
-~~~
-rm /mnt/system/usb.sh
-ln -s /mnt/system/usb-rndis.sh /mnt/system/usb.sh
-sync
-~~~
 then reboot the board
 
 ## Hardware schematics
