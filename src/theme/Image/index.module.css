@@ -1,0 +1,15 @@
+.doc_img_center {
+    justify-content: center;
+}
+
+.doc_img_right {
+    justify-content: end;
+}
+
+.docs_img_d {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}

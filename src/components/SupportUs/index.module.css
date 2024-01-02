@@ -2,6 +2,8 @@
     width: 100%;
     background: linear-gradient(194deg, #ECF7FF 0.01%, #FFF 100%);
     overflow: hidden;
+    text-align: center;
+    display: inline-block;
 }
 
 .form_contexts {
