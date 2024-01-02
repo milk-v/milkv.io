@@ -19,9 +19,10 @@
     "@docusaurus/preset-classic": "^3.0.1",
     "@mdx-js/react": "3.0.0",
     "axios": "^1.4.0",
-    "clsx": "^2.0.0",
+    "clsx": "^2.1.0",
     "gsap": "^3.12.2",
     "prism-react-renderer": "^2.3.0",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.0.0"
   },
