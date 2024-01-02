@@ -101,6 +101,7 @@ const sidebars = {
       },
       items: [
         'duo/camera/gc2083',
+        'duo/camera/tuning',
       ],
     },
   ],
