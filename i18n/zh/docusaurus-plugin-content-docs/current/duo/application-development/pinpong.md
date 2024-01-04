@@ -48,5 +48,67 @@ pinpong 库是一套控制开源硬件主控板的 Python 库，基于 Firmata �
 
 ## GPIO
 
+### 板载 LED 闪烁
+
+这是一个让 Duo 板载 LED 闪烁的例子，可以直接在 Duo 中新建 `blink.py` 文件，或者在电脑中创建好之后通过 ssh 上传到 Duo 中。
+
+:::tip
+LED 引脚的序号是 25，如果使用其他引脚外接 LED，序号请参考上面的表格
+:::
+
+`blink.py` 文件的内容：
+```python
+# -*- coding: utf-8 -*-
+
+# 实验效果：控制 Milk-V Duo 板载 LED 灯一秒闪烁一次
+
+import time
+from pinpong.board import Board,Pin
+
+Board("MILKV-DUO").begin()  #初始化，选择板型，不输入板型则进行自动识别
+
+led = Pin(Pin.D25, Pin.OUT) #引脚初始化为电平输出
+
+while True:
+  led.value(1)   #输出高电平
+  print("1")     #终端打印信息
+  time.sleep(1)  #等待1秒 保持状态
+
+  led.value(0)   #输出低电平
+  print("0")     #终端打印信息
+  time.sleep(1)  #等待1秒 保持状态
+```
+
+在 Duo 的终端中执行 `python blink.py` 命令：
+```
+[root@milkv-duo]~# python blink.py
+milkv-duo
+
+  __________________________________________
+ |    ____  _       ____                    |
+ |   / __ \(_)___  / __ \____  ____  ____ _ |
+ |  / /_/ / / __ \/ /_/ / __ \/ __ \/ __ `/ |
+ | / ____/ / / / / ____/ /_/ / / / / /_/ /  |
+ |/_/   /_/_/ /_/_/    \____/_/ /_/\__, /   |
+ |   v0.5.2  Designed by DFRobot  /____/    |
+ |__________________________________________|
+
+1
+0
+1
+0
+```
+会看到 LED 间隔 1 秒闪烁。
+
+注意:
+当前 Duo 的默认固件上电后 LED 会自动闪烁，这个是通过开机脚本实现的，在测试该 blink 例子的时候，需要将 LED 闪烁的脚本禁用，在 Duo 的终端中执行：
+```bash
+mv /mnt/system/blink.sh /mnt/system/blink.sh_backup && sync
+```
+也就是将 LED 闪烁脚本改名，重启 Duo 后，LED 就不闪了
+测试完我们 blink 程序后，如果需要恢复 LED 闪烁脚本，再将其名字改回来，重启即可：
+```
+mv /mnt/system/blink.sh_backup /mnt/system/blink.sh && sync
+```
 
 ## I2C

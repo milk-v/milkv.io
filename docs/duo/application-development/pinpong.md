@@ -48,4 +48,66 @@ Please refer to the instructions: [pinmux](https://milkv.io/docs/duo/application
 
 ## GPIO
 
+### Onboard LED blinking
+
+This is an example of making the Duo onboard LED blink. You can create a new `blink.py` file directly in Duo, or create it on your computer and then upload it to Duo via ssh.
+
+:::tip
+The Pin number of the LED is 25. If you use other pins to connect external LEDs, please refer to the table above for the Pin number.
+:::
+
+Contents of the `blink.py` file:
+```python
+# -*- coding: utf-8 -*-
+
+import time
+from pinpong.board import Board,Pin
+
+Board("MILKV-DUO").begin()
+
+led = Pin(Pin.D25, Pin.OUT)
+
+while True:
+  led.value(1)
+  print("1")
+  time.sleep(1)
+
+  led.value(0)
+  print("0")
+  time.sleep(1)
+```
+
+Execute the `python blink.py` command in Duo's terminal:
+```
+[root@milkv-duo]~# python blink.py
+milkv-duo
+
+  __________________________________________
+ |    ____  _       ____                    |
+ |   / __ \(_)___  / __ \____  ____  ____ _ |
+ |  / /_/ / / __ \/ /_/ / __ \/ __ \/ __ `/ |
+ | / ____/ / / / / ____/ /_/ / / / / /_/ /  |
+ |/_/   /_/_/ /_/_/    \____/_/ /_/\__, /   |
+ |   v0.5.2  Designed by DFRobot  /____/    |
+ |__________________________________________|
+
+1
+0
+1
+0
+```
+You will see the LED blinking at 1 second intervals.
+
+**Note**:
+To test the `blink.py` example, which involves LED blinking, you need to disable the script responsible for the automatic LED blinking on the default firmware of Duo. In the Duo terminal, execute the following command:
+```
+mv /mnt/system/blink.sh /mnt/system/blink.sh_backup && sync
+```
+This command renames the LED blinking script. After restarting Duo, the LED will no longer blink.
+
+Once you have finished testing the `blink.py`, if you want to restore the LED blinking script, you can rename it back using the following command and then restart Duo:
+```
+mv /mnt/system/blink.sh_backup /mnt/system/blink.sh && sync
+```
+
 ## I2C
