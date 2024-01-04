@@ -110,4 +110,6 @@ Once you have finished testing the `blink.py`, if you want to restore the LED bl
 mv /mnt/system/blink.sh_backup /mnt/system/blink.sh && sync
 ```
 
-## I2C
+## Other examples
+
+Please refer to: [github](https://github.com/milkv-duo/duo-buildroot-sdk/tree/develop/buildroot-2021.05/package/python-pinpong/pinpong/examples/milkv-Duo)

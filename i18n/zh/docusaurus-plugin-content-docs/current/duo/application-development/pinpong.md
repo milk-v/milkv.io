@@ -111,4 +111,6 @@ mv /mnt/system/blink.sh /mnt/system/blink.sh_backup && sync
 mv /mnt/system/blink.sh_backup /mnt/system/blink.sh && sync
 ```
 
-## I2C
+## 其他示例
+
+请参考: [github](https://github.com/milkv-duo/duo-buildroot-sdk/tree/develop/buildroot-2021.05/package/python-pinpong/pinpong/examples/milkv-Duo)
