@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with: 
+          fetch-depth: 0
       - name: Build
         run: |
           python3 contributors.py $GITHUB_REPOSITORY ${{ github.token }}
