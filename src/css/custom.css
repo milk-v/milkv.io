@@ -1,10 +1,3 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2d88c9;
   --ifm-color-primary-dark: #297ab5;
@@ -15,7 +8,6 @@
   --ifm-color-primary-lightest: #64aadc;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0);
 }
@@ -66,11 +58,6 @@ html {
   overflow-x: hidden;
 }
 
-* {
-  transition: .5s;
-}
-
-
 html {
   font-size: 16px;
   background-color: #fff;
@@ -105,7 +92,6 @@ li {
   display: none;
 
 }
-
 
 .margin-bottom--sm {
   position: absolute;
@@ -194,10 +180,6 @@ li {
     margin-left: 20rem;
   }
 
-  .menu__list-item>a {
-    font-size: 16rem;
-  }
-
   .footer {
     width: 100%;
     height: 130rem;
@@ -218,11 +200,6 @@ li {
     align-items: center;
   }
 
-  .footer_text h2 {
-    font-size: 14rem;
-    font-weight: 500%;
-  }
-
   .container {
     height: 100%;
   }
@@ -241,32 +218,7 @@ li {
   }
 
   .markdown {
-    padding: 20rem;
-  }
-
-  .clean-btn,
-  .navbar-sidebar__back {
-    font-size: 14rem;
-
-  }
-
-  .theme-doc-sidebar-item-category-level-1 {
-    font-size: 16rem;
-    margin-bottom: 10rem;
-  }
-
-
-  .container header h1 {
-    font-size: 18rem;
-  }
-
-  .container header p {
-    font-size: 14rem;
-  }
-
-  .container article .breadcrumbs>li>a>span {
-    font-size: 12rem;
-    height: 20rem;
+    padding: 15rem;
   }
 
   .margin-top--lg {
@@ -278,73 +230,13 @@ li {
     padding: 5rem !important;
   }
 
-  .container .card h2 {
-    font-size: 18rem;
-  }
-
-  .container .card p {
-    font-size: 16rem;
-  }
-
   .pagination-nav {
     margin-bottom: 50rem;
     padding: 0 5rem;
   }
 
-  .pagination-nav__label,
-  .pagination-nav__sublabel {
-    font-size: 12rem;
-  }
-
   .pagination-nav__link {
     padding: 10rem;
-  }
-
-  .anchor {
-    font-size: 12rem;
-  }
-
-  .hash-link {
-    font-size: 10rem;
-  }
-
-  .container table td,
-  .container thead th {
-    font-size: 12rem;
-    padding: 3rem 5rem;
-  }
-
-  .markdown h1 {
-    font-size: 20rem;
-    margin: 10rem 0;
-  }
-
-  .markdown h2 {
-    font-size: 18rem;
-    margin: 10rem 0;
-  }
-
-  .markdown h3 {
-    font-size: 16rem;
-    margin: 10rem 0;
-  }
-
-  .markdown p {
-    font-size: 14rem;
-    line-height: 120%;
-    margin: 10rem 0;
-  }
-
-  .token-line>* {
-    font-size: 10rem;
-  }
-
-  .clean-btn {
-    font-size: 12rem !important;
-  }
-
-  .theme-edit-this-page {
-    font-size: 12rem;
   }
 
   .tocCollapsibleButton_node_modules-\@docusaurus-theme-classic-lib-theme-TOCCollapsible-CollapseButton-styles-module {
@@ -397,29 +289,139 @@ li {
   .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module {
     --docusaurus-details-summary-arrow-size: 6rem !important;
   }
-}
 
-.markdown {
-  /* h1 margin-bottom */
-  --ifm-h1-vertical-rhythm-bottom: 0.55;
-}
+  /* 字体size */
+  :root {
+    --ifm-h1-font-size: 20rem;
+    --ifm-h2-font-size: 15rem;
+    --ifm-h3-font-size: 12.5rem;
+    --ifm-h4-font-size: 10rem;
+    --ifm-h5-font-size: 8.75rem;
+    --ifm-h6-font-size: 8.5rem;
+    --ifm-list-left-padding: 20rem;
+    --ifm-list-margin: 10rem;
+    --ifm-list-item-margin: 2.5rem;
+    --ifm-list-paragraph-margin: 10rem;
+    --ifm-table-cell-padding: 7.5rem;
+    --ifm-global-spacing: 10rem;
+    --ifm-code-padding-horizontal: 10rem;
+    --ifm-code-padding-vertical: 10rem;
+    --ifm-pre-padding: 10rem;
+    --ifm-image-alignment-padding: 12.5rem;
+    --ifm-leading: cale(var(--ifm-leading-desktop) * 10rem);
+    --ifm-hr-margin-vertical: 15rem;
+    --ifm-avatar-intro-margin: 10rem;
+    --ifm-avatar-photo-size: 30rem;
+    --ifm-breadcrumb-border-radius: 10rem;
+    --ifm-breadcrumb-spacing: 5rem;
+    --ifm-breadcrumb-padding-horizontal: 8rem;
+    --ifm-breadcrumb-padding-vertical: 4rem;
+    --ifm-breadcrumb-separator-size: 5rem;
+    --ifm-button-padding-horizontal: 15rem;
+    --ifm-button-padding-vertical: 3.75rem;
+    --ifm-toc-padding-vertical: 5rem;
+    --ifm-toc-padding-horizontal: 5rem;
+    --ifm-footer-link-horizontal-spacing: 5rem;
+    --ifm-footer-logo-max-width: min(300rem, 90vw);
+    --ifm-menu-link-padding-horizontal: 7.5rem;
+    --ifm-navbar-item-padding-vertical: 2.5rem;
+    --ifm-pagination-font-size: 10rem;
+    --ifm-pills-spacing: 1.25rem;
+    --ifm-tabs-padding-horizontal: 10rem;
+    --ifm-tabs-padding-vertical: 10rem;
+  }
 
-.markdown li {
-  font-size: 18px;
-}
+  .markdown table th,
+  .markdown table td {
+    font-size: 10rem;
+  }
 
-.markdown h1:first-child {
-  --ifm-h1-font-size: 2.5rem;
-}
+  .markdown>h1 {
+    font-size: 20rem;
+    margin: 10rem 0;
+  }
 
-/* 字体size */
-:root {
-  --ifm-h1-font-size: 2rem;
-  --ifm-h2-font-size: 1.5rem;
-  --ifm-h3-font-size: 1.25rem;
-  --ifm-h4-font-size: 1rem;
-  --ifm-h5-font-size: 0.875rem;
-  --ifm-h6-font-size: 0.85rem;
+  .markdown>p {
+    font-size: 12rem;
+    margin: 5rem 0;
+  }
+
+  .markdown>h2 {
+    font-size: 16rem;
+    margin: 8rem 0;
+  }
+
+  .markdown>h3 {
+    font-size: 14rem;
+    margin: 5rem 0;
+  }
+
+  .markdown>ul>li {
+    line-height: 120%;
+    margin-bottom: 10rem;
+    font-size: 12rem;
+  }
+
+  .breadcrumbs {
+    margin: 10rem 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .breadcrumbs>li>a>svg {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .breadcrumbs>li>span {
+    font-size: 12rem;
+  }
+
+  .breadcrumbs__item {
+    display: flex;
+    align-items: center;
+  }
+
+  .breadcrumbs__link {
+    font-size: 12rem;
+  }
+
+  .breadcrumbs__item::after {
+    width: 10rem !important;
+    height: 10rem !important;
+  }
+
+  .table-of-contents__link {
+    margin: 5rem 0;
+
+  }
+
+  .clean-btn {
+    font-size: 18rem !important;
+  }
+
+  .theme-edit-this-page {
+    font-size: 12rem;
+  }
+
+  .menu__link {
+    font-size: 16rem;
+    margin: 8rem 0;
+  }
+
+  .menu__link[tabindex='0'] {
+    font-size: 12rem;
+    margin: 3rem 0;
+  }
+
+  .markdown {
+    --ifm-h1-vertical-rhythm-bottom: 5.5;
+  }
+
+  .markdown h1:first-child {
+    --ifm-h1-font-size: 25rem;
+  }
+
 }
 
 strong {
