@@ -217,10 +217,6 @@ li {
     margin-right: 10rem;
   }
 
-  .markdown {
-    padding: 15rem;
-  }
-
   .margin-top--lg {
     width: 100%;
   }
@@ -393,7 +389,6 @@ li {
 
   .table-of-contents__link {
     margin: 5rem 0;
-
   }
 
   .clean-btn {
