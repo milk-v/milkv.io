@@ -1,0 +1,15 @@
+.dedicateUl {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.dedicateUl>li {
+    margin-right: 1rem;
+}
+
+.dedicateUl>li>a>img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}

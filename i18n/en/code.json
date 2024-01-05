@@ -1196,5 +1196,9 @@
   "Boards": {
     "message": "Extensive Range of Expansion Boards",
     "description": " "
+  },
+  "docs.contributors": {
+    "description": "Contributors",
+    "message": "Contributors"
   }
 }
