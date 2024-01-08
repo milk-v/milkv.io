@@ -8,7 +8,7 @@ sidebar_position: 30
 Swap, also known as virtual RAM, is used to support storing data in hard disk when physical memory (RAM) is full. Sometimes Swap is also used in parallel to increase cache capacity even if the physical memory is not used up yet.
 
 :::caution
-This may cause wear and tear on your microSD card leading to a shorter drive lifespan! It is strongly recommended to enable swap functionality only when there is insufficient memory available!
+This may cause wear and tear on your microSD card leading to a shorter drive lifespan! It is strongly recommended to enable swap functionality **only when there is insufficient memory available**!
 :::
 
 :::tip
