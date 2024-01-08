@@ -1,9 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Layout from '@theme/Layout';
 import styles from './index.module.css'
-import Translate from '@docusaurus/Translate';
-
-import Footer from "../../components/Footer"
 import MetaData from "../../components/MetaData"
 
 import gsap from 'gsap';
@@ -100,7 +97,6 @@ export default () => {
             <Layout>
                 <MetaData page='about' />
                 <AboutUs />
-                <Footer />
             </Layout>
         </>
     )

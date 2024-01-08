@@ -4,7 +4,6 @@ import styles from './index.module.css';
 
 import BuyPop from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
-import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
 import MetaData from "../../components/MetaData"
 
@@ -160,7 +159,6 @@ export default () => {
                 <ContactUs product='mars' />
                 <ContactBar product='mars' />
             </div>
-            <Footer></Footer>
         </Layout>
     )
 }

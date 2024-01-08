@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import Layout from '@theme/Layout';
-
 import Head from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
-import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
-
 import cCss from "./center.module.css"
 import Translate from '@docusaurus/Translate';
 import MetaData from "../../components/MetaData"
@@ -193,8 +190,7 @@ export default function () {
     <>
       <Layout>
         <MetaData page='pioneer' />
-        <Center></Center>
-        <Footer></Footer>
+        <Center />
       </Layout>
     </>
   )

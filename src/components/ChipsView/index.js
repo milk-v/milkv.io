@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import Footer from "@site/src/components/Footer"
 // import ContactBar from "@site/src/components/ContactBar"
 // import MetaData from "@site/src/components/MetaData"
 import SupportUs from "@site/src/components/SupportUs"
@@ -384,7 +383,6 @@ export default (props) => {
                 <img src="/chips/backtop.svg" />
             </div>
             <SupportUs />
-            <Footer />
         </Layout>
     )
 }

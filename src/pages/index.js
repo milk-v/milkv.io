@@ -4,10 +4,8 @@ import Layout from '@theme/Layout';
 import Translate from '@docusaurus/Translate';
 import styles from './index.module.css';
 import { useHistory } from '@docusaurus/router';
-
 import BuyPop from "../components/BuyPop"
 import SupportUs from "../components/SupportUs"
-import Footer from "../components/Footer"
 import ContactBar from "../components/ContactBar"
 import MetaData from "../components/MetaData"
 
@@ -297,7 +295,6 @@ export default function Home() {
       <Layout>
         <MetaData page='home' />
         <Home_web />
-        <Footer></Footer>
       </Layout>
     </>
   );
