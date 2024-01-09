@@ -14,7 +14,7 @@ Please fasten the latch when you finish the installation.
 
 ### PCIe support list
 
-Please check the [PCIe Support List](https://github.com/milkv-pioneer/hardware/blob/main/pioneer_pcie_list.pdf)
+Please check the [PCIe Support List](https://github.com/milkv-pioneer/pioneer-files/blob/main/hardware/pioneer_pcie_list.pdf)
 
 ---------------------------------
 ## M.2 E-Key Expansion Card
