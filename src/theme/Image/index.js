@@ -7,7 +7,9 @@ import clsx from 'clsx';
 const Image = (props) => {
     const { src, minWidth, maxWidth, align } = props
     let alignment
-
+    if (!src) {
+        throw new Error('src是必填属性，请填写图片路径');
+    }
     switch (align) {
         case 'center':
             alignment = styles.doc_img_center

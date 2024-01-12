@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import Layout from '@theme/Layout';
 import styles from './index.module.css'
 import Translate from '@docusaurus/Translate';
-
 import BuyPop from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
-import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
 import MetaData from "../../components/MetaData"
 
@@ -232,7 +230,6 @@ export default () => {
                     <ContactUs product='vega' />
                     <ContactBar product='vega' />
                 </div>
-                <Footer></Footer>
             </Layout>
         </>
     )

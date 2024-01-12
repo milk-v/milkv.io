@@ -242,6 +242,7 @@ const sidebars = {
       items: [
         'vega/getting-started/boot',
         'vega/getting-started/setup',
+        'vega/getting-started/buildroot-sdk',
       ],
     },
   ],

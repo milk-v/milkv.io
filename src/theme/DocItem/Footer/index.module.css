@@ -1,0 +1,28 @@
+.dedicateUl {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.dedicateUl>li {
+    margin-right: 1rem;
+}
+
+.dedicateUl>li>a>img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 750px) {
+
+    .dedicateUl>li {
+        margin-right: 5rem;
+    }
+
+    .dedicateUl>li>a>img {
+        width: 30rem;
+        height: 30rem;
+        border-radius: 50%;
+    }
+}

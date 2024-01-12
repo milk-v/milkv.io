@@ -3,7 +3,6 @@ import Layout from '@theme/Layout';
 
 import BuyPop from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
-import Footer from "../../components/Footer"
 import ContactBar from "../../components/ContactBar"
 import MetaData from "../../components/MetaData"
 import Link from '@docusaurus/Link';
@@ -157,7 +156,7 @@ function DetailsPage() {
                     1x SD NAND on board</td>
                   <td colSpan="2">1x microSD connector or
                     1x SD NAND on board</td>
-                  <td colSpan="2">1x microSD connector 
+                  <td colSpan="2">1x microSD connector
                     1x eMMC Pad on board</td>
                 </tr>
                 <tr>
@@ -174,8 +173,8 @@ function DetailsPage() {
                   <td colSpan="2">1x 16P FPC connector
                     (MIPI CSI 2-lane)</td>
                   <td colSpan="2">1x 16P FPC connector
-                    (MIPI CSI 2-lane), 
-                    <font color='#2d88c9'>1x 15P FPC connector (MIPI CSI 2-lane)</font></td>                    
+                    (MIPI CSI 2-lane),
+                    <font color='#2d88c9'>1x 15P FPC connector (MIPI CSI 2-lane)</font></td>
                 </tr>
                 <tr>
                   <td>Sensor Support</td>
@@ -187,8 +186,8 @@ function DetailsPage() {
                   <td>DSI</td>
                   <td colSpan="2">N/A</td>
                   <td colSpan="2">N/A</td>
-                  <td colSpan="2"><font color='#2d88c9'>Via GPIO Header (MIPI DSI 4-lane)</font></td>                    
-                </tr>                
+                  <td colSpan="2"><font color='#2d88c9'>Via GPIO Header (MIPI DSI 4-lane)</font></td>
+                </tr>
                 <tr>
                   <td>Ethernet</td>
                   <td colSpan="2">100Mbps ethernet with PHY</td>
@@ -200,7 +199,7 @@ function DetailsPage() {
                   <td colSpan="2">N/A</td>
                   <td colSpan="2">N/A</td>
                   <td colSpan="2">WI-FI6/BT5 onboard</td>
-                </tr>                
+                </tr>
                 <tr>
                   <td>Audio</td>
                   <td colSpan="2">N/A</td>
@@ -235,10 +234,10 @@ function DetailsPage() {
                   <td>Others</td>
                   <td colSpan="2">N/A</td>
                   <td colSpan="2">N/A</td>
-                  <td colSpan="2">1x BOOT swich, 
-                  1x Recovery Key, 
-                  1x RST Key </td>
-                </tr>                
+                  <td colSpan="2">1x BOOT swich,
+                    1x Recovery Key,
+                    1x RST Key </td>
+                </tr>
               </tbody>
             </table>
             <h3>
@@ -301,7 +300,6 @@ export default function () {
       <Layout>
         <MetaData page='duo' />
         <DetailsPage></DetailsPage>
-        <Footer></Footer>
       </Layout>
     </>
   )

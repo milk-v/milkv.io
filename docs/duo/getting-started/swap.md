@@ -3,15 +3,19 @@ sidebar_label: 'Enable Swap'
 sidebar_position: 30
 ---
 
-# What is Swap
+## 1. What is Swap
 
 Swap, also known as virtual RAM, is used to support storing data in hard disk when physical memory (RAM) is full. Sometimes Swap is also used in parallel to increase cache capacity even if the physical memory is not used up yet.
 
-# How to enable Swap on Duo
-
 :::caution
-This may cause wear and tear on your microSD card leading to a shorter drive lifespan! It is strongly recommended to enable swap functionality only when there is insufficient memory available!
+This may cause wear and tear on your microSD card leading to a shorter drive lifespan! It is strongly recommended to enable swap functionality **only when there is insufficient memory available**!
 :::
+
+:::tip
+The Duo 256M memory is relatively large, so the default firmware does not add a Swap partition and does not support the Swap function.
+:::
+
+## 2. How to enable Swap on Duo
 
 Use the latest system image
 
@@ -31,16 +35,15 @@ Mem:          28.8M       13.6M        9.1M       76.0K        6.1M       12.4M
 Swap:        256.0M           0      256.0M
 ```
 
-
-# How to increase the size of the Swap partition
+## 3. How to increase the size of the Swap partition
 
 The default firmware size of the Swap partition is `256M`. There are two methods to increase the Swap partition size
 
-## 1. Modify SDK and recompile to generate a new firmware
+### 1). Modify SDK and recompile to generate a new firmware
 
 You can modify the value of this [size](https://github.com/milkv-duo/duo-buildroot-sdk/blob/develop/milkv/genimage-milkv-duo.cfg#L36), and then recompile to generate the firmware
 
-## 2. Directly modify using the fdisk command in Duo
+### 2). Directly modify using the fdisk command in Duo
 
 By connecting to Duo through a serial cable or SSH, you can use the `fdisk` command to modify it. The principle involves deleting the existing swap partition and creating a new one with the specified size
 
@@ -50,7 +53,7 @@ Any modifications to the partitions can potentially lead to data loss. Before pe
 
 The following is the step-by-step command-line interactive method using `fdisk`. If you're not familiar with this method, a script-based approach is provided later, which can be executed once to complete the modification
 
-### The command-line interactive mode of fdisk
+#### The command-line interactive mode of fdisk
 
 Entering the `fdisk` command will take you into the command-line interactive mode of `fdisk`
 
@@ -112,7 +115,7 @@ swapon /dev/mmcblk0p3
 ```
 Then run the command `free -h` to check if the swap has been enabled (1G, which is equivalent to 1024M)
 
-### The script-based approach for fdisk
+#### The script-based approach for fdisk
 
 Create a script file named `swap_resize.sh` in Duo, or create it on your PC and then upload it to Duo
 

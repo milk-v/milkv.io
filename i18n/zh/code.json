@@ -1070,5 +1070,9 @@
   "Boards": {
     "message": "丰富的可拓展底板",
     "description": " "
+  },
+  "docs.contributors": {
+    "description": "Contributors",
+    "message": "贡献者"
   }
 }

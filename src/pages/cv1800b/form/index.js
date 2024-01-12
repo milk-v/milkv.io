@@ -5,7 +5,6 @@ import Layout from '@theme/Layout';
 import axios from "axios";
 
 import Agreement from '../../../components/Agreement'
-import Footer from "../../../components/Footer"
 
 import Translate from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -635,7 +634,6 @@ export default () => {
                     </div>
                 </div>
                 <Agreement dis={popflag} type={lang} agree={agreeFlag} setAgreeFlag={setAgreeFlag} setPopflag={setPopflag} />
-                <Footer></Footer>
             </Layout>
         </>
     )
