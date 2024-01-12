@@ -3,6 +3,9 @@ sidebar_label: '🌍 Overview'
 sidebar_position: 1
 ---
 
+
+# Milk-V Duo
+
 # Duo series 
 
 # Revision history
@@ -19,31 +22,29 @@ Milk-V Duo is an ultra-compact embedded development platform based on the CV1800
 
 The Milk-V Duo 256M is an upgraded version of Duo with a memory boost to 256M, catering to applications demanding larger memory capacities. It features the SG2002 computing series chip, elevating computational power to 1.0TOPS@INT8. It enables seamless switching between RISC-V/ARM architectures and supports simultaneous operation of dual systems. Additionally, it includes an array of rich GPIO interfaces such as SPI, UART, suitable for a wide range of hardware development in edge intelligent monitoring, including IP cameras, smart peephole locks, visual doorbells, and more.
 
-  
-![duo](/docs/duo/duo-v1.2.png)
-
 # Specification
-|                | Duo                                                     | Duo 256M                                                | Duo S                                                                         |
-| -------------- | ------------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| SoC            | CVITEK CV1800B                                          | SG2002                                                  | SG2000                                                                        |
-| RISC-V CPU     | C906@1Ghz + C906@700MHz                                 | C906@1Ghz + C906@700MHz                                 | C906@1Ghz + C906@700MHz                                                       |
-| Arm CPU        | N/A                                                     | 1 x Cortex-A53@1GHz                                     | 1 x Cortex-A53@1GHz                                                           |
-| MCU            | 8051@8KB SRAM                                           | 8051@6KB SRAM                                           | 8051@6KB SRAM                                                                 |
-| TPU            | 0.5TOPS@INT8                                            | 1Top@INT8                                               | 0.5Top@INT8                                                                   |
-| Storage        | 1 x microSD connector or 1x SD NAND on board            | 1 x microSD connector or 1x SD NAND on board            | 1 x microSD connector, 1x eMMC Pad on board                                   |
-| Memory         | SIP DRAM 64MB                                           | SIP DRAM 256MB                                          | SIP DRAM 512MB                                                                |
-| USB            | 1 x Type-C for power and data, USB Pads available       | 1 x Type-C for power and data, USB Pads available       | 1 x Type-C for power and data or 1x USB 2.0 A Port HOST                       |
-| CSI            | 1 x 16P FPC connector (MIPI CSI 2-lane)                 | 1 x 16P FPC connector (MIPI CSI 2-lane)                 | 1x 16P FPC connector (MIPI CSI 2-lane),1x 15P FPC connector (MIPI CSI 2-lane) |
-| Sensor Support | 4M @ 25fps                                              | 5M @ 30fps                                              | 5M @ 30fps                                                                    |
-| Ethernet       | 100Mbps ethernet with PHY                               | 100Mbps ethernet with PHY                               | 100Mbps ethernet port(RJ45) onboard                                           |
-| Wireless       | N/A                                                     | N/A                                                     | WIFI6 / BT5.4 onboard                                                         |
-| Audio          | N/A                                                     | Via GPIO Pads                                           | Via GPIO Header                                                               |
-| Display        | N/A                                                     | N/A                                                     | Via GPIO Header (MIPI DSI 4-lane)                                             |
-| GPIO           | up to 26 Pins available for general purpose I/O（GPIO） | up to 26 Pins available for general purpose I/O（GPIO） | Up to 39x GPIO Pin (Via 2x 26Pin GPIO Header)                                 |
-| Power          | 5V/1A                                                   | 5V/1A                                                   | 5V/1A                                                                         |
-| OS Support     | Buildroot, RTOS                                         | Buildroot, RTOS                                         | Buildroot, RTOS                                                               |
-| Size           | 21mm*51mm                                               | 21mm*51mm                                               | 43mm x 43mm                                                                   |
-| Others         | N/A                                                     | N/A                                                     | 1x BOOT swich, 1x Recovery Key, 1x RST Key                                    |
+|                | Duo                                                                       | Duo 256M                                                                  | Duo S                                                                         |
+| -------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Overview       | <Image src='/docs/duo/duo-v1.2-top.webp' maxWidth='70%' align='center' /> | <Image src='/docs/duo/duo256m-v1.0.webp' maxWidth='75%' align='center' /> | <Image src='/docs/duo/duos-x1.0.webp' maxWidth='70%' align='center' />        |
+| SoC            | CVITEK CV1800B                                                            | SG2002                                                                    | SG2000                                                                        |
+| RISC-V CPU     | C906@1Ghz + C906@700MHz                                                   | C906@1Ghz + C906@700MHz                                                   | C906@1Ghz + C906@700MHz                                                       |
+| Arm CPU        | N/A                                                                       | 1 x Cortex-A53@1GHz                                                       | 1 x Cortex-A53@1GHz                                                           |
+| MCU            | 8051@8KB SRAM                                                             | 8051@6KB SRAM                                                             | 8051@6KB SRAM                                                                 |
+| TPU            | 0.5TOPS@INT8                                                              | 1Top@INT8                                                                 | 0.5Top@INT8                                                                   |
+| Storage        | 1 x microSD connector or 1x SD NAND on board                              | 1 x microSD connector or 1x SD NAND on board                              | 1 x microSD connector, 1x eMMC Pad on board                                   |
+| Memory         | SIP DRAM 64MB                                                             | SIP DRAM 256MB                                                            | SIP DRAM 512MB                                                                |
+| USB            | 1 x Type-C for power and data, USB Pads available                         | 1 x Type-C for power and data, USB Pads available                         | 1 x Type-C for power and data or 1x USB 2.0 A Port HOST                       |
+| CSI            | 1 x 16P FPC connector (MIPI CSI 2-lane)                                   | 1 x 16P FPC connector (MIPI CSI 2-lane)                                   | 1x 16P FPC connector (MIPI CSI 2-lane),1x 15P FPC connector (MIPI CSI 2-lane) |
+| Sensor Support | 4M @ 25fps                                                                | 5M @ 30fps                                                                | 5M @ 30fps                                                                    |
+| Ethernet       | 100Mbps ethernet with PHY                                                 | 100Mbps ethernet with PHY                                                 | 100Mbps ethernet port(RJ45) onboard                                           |
+| Wireless       | N/A                                                                       | N/A                                                                       | WIFI6 / BT5.4 onboard                                                         |
+| Audio          | N/A                                                                       | Via GPIO Pads                                                             | Via GPIO Header                                                               |
+| Display        | N/A                                                                       | N/A                                                                       | Via GPIO Header (MIPI DSI 4-lane)                                             |
+| GPIO           | up to 26 Pins available for general purpose I/O（GPIO）                   | up to 26 Pins available for general purpose I/O（GPIO）                   | Up to 39x GPIO Pin (Via 2x 26Pin GPIO Header)                                 |
+| Power          | 5V/1A                                                                     | 5V/1A                                                                     | 5V/1A                                                                         |
+| OS Support     | Buildroot, RTOS                                                           | Buildroot, RTOS                                                           | Buildroot, RTOS                                                               |
+| Size           | 21mm*51mm                                                                 | 21mm*51mm                                                                 | 43mm x 43mm                                                                   |
+| Others         | N/A                                                                       | N/A                                                                       | 1x BOOT swich, 1x Recovery Key, 1x RST Key                                    |
 
 
 # Features 
