@@ -4,17 +4,10 @@
 
 .bgBox {
     width: 100%;
-    height: 1000px;
+    overflow: hidden;
     background: url(/static/icons/mdHome-image.svg) no-repeat;
     background-size: 100%;
     position: relative;
-}
-
-._title {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .products_ul>li {
@@ -83,17 +76,18 @@
 
 .products_ul {
     padding: 0;
-    width: 90%;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
 }
 
 .products_ul>li {
     margin-top: 0 !important;
+    transition: .3s;
+}
+
+._title>h2 {
+    text-align: center;
 }
 
 @media screen and (min-width: 1850px) {
@@ -102,6 +96,7 @@
         font-size: 46px;
         line-height: 120%;
         color: #FFFFFF;
+        margin: 100px 0;
     }
 
     .pNameBox {
@@ -109,8 +104,8 @@
     }
 
     .products_ul {
-        width: 80%;
-        top: 35%;
+        max-width: 1400px;
+        margin: 100px auto 50px;
     }
 
     .on {
@@ -125,8 +120,8 @@
     }
 
     .products_ul>li {
-        width: 32%;
-        min-height: 550px;
+        max-height: 600px;
+        aspect-ratio: 2/2.45;
         padding-bottom: 50px;
         border-radius: 15px;
         list-style: none;
@@ -149,6 +144,10 @@
         line-height: 120%;
         color: #303131;
     }
+
+    .bgBox {
+        min-height: 1200px;
+    }
 }
 
 @media screen and (max-width: 1850px) and (min-width: 1400px) {
@@ -157,13 +156,7 @@
         font-size: 36px;
         line-height: 120%;
         color: #FFFFFF;
-    }
-
-    ._title {
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
+        margin: 100px 0;
     }
 
     .pNameBox {
@@ -172,19 +165,17 @@
 
     .products_ul {
         width: 90%;
-        top: 20%;
+        margin: 50px auto;
+        gap: 20px;
     }
 
-
     .products_ul>li {
-        width: 32%;
-        min-height: 400px;
+        aspect-ratio: 2/2.45;
         padding-bottom: 30px;
         border-radius: 15px;
         list-style: none;
         background-color: #fff;
     }
-
 
     .pName>h2 {
         margin: 0 !important;
@@ -201,6 +192,10 @@
         font-size: 13px;
         line-height: 120%;
         color: #303131;
+    }
+
+    .bgBox {
+        min-height: 1000px;
     }
 }
 
@@ -211,16 +206,10 @@
 
     ._title>h2 {
         font-weight: 600;
-        font-size: 26px;
+        font-size: 32px;
         line-height: 120%;
         color: #FFFFFF;
-    }
-
-    ._title {
-        position: absolute;
-        top: 5%;
-        left: 50%;
-        transform: translateX(-50%);
+        margin: 80px 0;
     }
 
     .pNameBox {
@@ -229,19 +218,18 @@
 
     .products_ul {
         width: 90%;
-        top: 13%;
+        margin: 80px auto 40px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
     }
 
-
     .products_ul>li {
-        width: 32%;
         min-height: 400px;
         padding-bottom: 30px;
         border-radius: 15px;
         list-style: none;
         background-color: #fff;
     }
-
 
     .pName>h2 {
         margin: 0 !important;
@@ -259,6 +247,10 @@
         line-height: 120%;
         color: #303131;
     }
+
+    .bgBox {
+        min-height: 600px;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -268,7 +260,7 @@
 
     ._title>h2 {
         font-weight: 600;
-        font-size: 20rem;
+        font-size: 24rem;
         white-space: nowrap;
         line-height: 120%;
         color: #FFFFFF;
@@ -276,7 +268,7 @@
 
     ._title {
         position: absolute;
-        top: 5%;
+        top: 2%;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -286,10 +278,13 @@
     }
 
     .products_ul {
+        position: static;
         width: 90%;
-        top: 13%;
+        transform: none;
+        grid-template-columns: 1fr;
+        gap: 5rem;
+        margin: 100rem auto 20rem;
     }
-
 
     .products_ul>li {
         width: 100%;
@@ -300,7 +295,6 @@
         list-style: none;
         background-color: #fff;
     }
-
 
     .pName>h2 {
         margin: 0 !important;
@@ -319,7 +313,7 @@
         color: #303131;
     }
 
-    .products_ul {
-        flex-direction: column;
+    .bgBox {
+        height: auto;
     }
 }
