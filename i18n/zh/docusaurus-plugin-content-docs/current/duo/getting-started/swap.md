@@ -41,7 +41,10 @@ Swap:        256.0M           0      256.0M
 
 ### 1. 修改SDK配置，重新编译生成新固件
 
-您可以修改这个 [size](https://github.com/milkv-duo/duo-buildroot-sdk/blob/develop/milkv/genimage-milkv-duo.cfg#L36) 的值，然后重新编译生成固件
+您可以修改制作镜像的配置文件中 Swap 分区的大小，然后重新编译生成固件，各个固件对应的配置文件链接如下：
+
+[milkv-duo](https://github.com/milkv-duo/duo-buildroot-sdk/blob/develop/device/milkv-duo/genimage.cfg#L36)
+[milkv-duo-lite](https://github.com/milkv-duo/duo-buildroot-sdk/blob/develop/device/milkv-duo-lite/genimage.cfg#L36)
 
 ### 2. 在Duo中直接用fdisk命令修改
 
