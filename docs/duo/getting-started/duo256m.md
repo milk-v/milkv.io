@@ -17,6 +17,10 @@ The chip also incorporates a self-developed TPU, delivering 1.0 TOPS of computin
 
 The chip integrates an 8-bit MCU subsystem, replacing the typical external MCU to achieve cost-saving and power efficiency goals.
 
+## SG2002 Public Preliminary Datasheet
+
+We have open sourced the Public Preliminary Datasheet and TRM of SG2002 to GitHub. please [check it out](https://github.com/milkv-duo/duo-files/tree/main/duo-256M/datasheet).
+
 ## Buy the SG2002 Chips
 
-Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy samples of the CV1800B chip from our distributor [online store](https://arace.tech/products/sophon-cv1800b-5pcs) directly. For volume order, please contact [Milk-V Sales Team](mailto:sales@milkv.io) for the qoutation.
+Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy samples of the SG2002 chip from our distributor [online store](https://arace.tech/products/sophon-cv1800b-5pcs) directly. For volume order, please contact [Milk-V Sales Team](mailto:sales@milkv.io) for the qoutation.
