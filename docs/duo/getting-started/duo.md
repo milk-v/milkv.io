@@ -1,10 +1,16 @@
 ---
-sidebar_label: 'CV1800B'
+sidebar_label: 'Duo(CV1800B)'
 sidebar_position: 0
 ---
 
-# CV1800B
+# Duo
+
+ <Image src='/docs/duo/duo-v1.2.png' maxWidth='60%' align='center' />
+
+ Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators.  
+
 ## Introduction of CV1800B
+
 CV1800B is a high-performance, low-power chip for residential consumer surveillance IP cameras, home intelligence and many other products, integrated with H.264/H.265 video compression encoder and ISP; supports digital broad dynamic, 3D noise reduction, defogging, lens distortion correction and other image enhancement and correction algorithms, providing customers with professional-grade video image quality.   
 
 The chip integrates self-developed intelligent reference solutions (human detection, area detection, motion detection), built-in DDR and complete peripherals and peripherals, providing a highly integrated and simple solution to support customer product development and mass production.   

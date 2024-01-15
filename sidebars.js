@@ -17,7 +17,8 @@ const sidebars = {
         slug: '/duo/getting-started'
       },
       items: [
-        'duo/getting-started/cv1800b',
+        'duo/getting-started/duo',
+        'duo/getting-started/duo256m',
         'duo/getting-started/boot',
         'duo/getting-started/setup',
         'duo/getting-started/swap',
