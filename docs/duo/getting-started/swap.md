@@ -43,6 +43,11 @@ The default firmware size of the Swap partition is `256M`. There are two methods
 
 You can modify the value of this [size](https://github.com/milkv-duo/duo-buildroot-sdk/blob/develop/milkv/genimage-milkv-duo.cfg#L36), and then recompile to generate the firmware
 
+You can modify the size of the Swap partition in the configuration file used to create the image, and then recompile and generate firmware. The configuration file links corresponding to each firmware are as follows:
+
+[milkv-duo](https://github.com/milkv-duo/duo-buildroot-sdk/blob/develop/device/milkv-duo/genimage.cfg#L36)
+[milkv-duo-lite](https://github.com/milkv-duo/duo-buildroot-sdk/blob/develop/device/milkv-duo-lite/genimage.cfg#L36)
+
 ### 2). Directly modify using the fdisk command in Duo
 
 By connecting to Duo through a serial cable or SSH, you can use the `fdisk` command to modify it. The principle involves deleting the existing swap partition and creating a new one with the specified size
