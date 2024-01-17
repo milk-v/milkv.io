@@ -224,7 +224,7 @@ export default () => {
                                 </tr>
                                 <tr>
                                     <td>Wireless</td>
-                                    <td colSpan="2">WI-FI6/BT5 onboard</td>
+                                    <td colSpan="2"><font color='#2d88c9'>Optional WI-FI6/BT5 onboard</font></td>
                                     <td colSpan="2">N/A</td>
                                     <td colSpan="2">N/A</td>
                                 </tr>
@@ -268,13 +268,13 @@ export default () => {
                                 </tr>
                             </tbody>
                         </table>
-                        <h3>
+                        {/* <h3>
                             <Translate id='duo.info.text.pinOut' />
                         </h3>
                         <h4>
                             - Duo / Duo 256S
                         </h4>
-                        <img src='/duo/duo-pinout.webp' className={styles_duo.duo_pinout} />
+                        <img src='/duo/duo-pinout.webp' className={styles_duo.duo_pinout} alt='Pin Out' /> */}
                         {/* <h3><Translate id='duo.info.text.Documents' /></h3> */}
                     </div>
                 </div>
