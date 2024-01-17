@@ -225,7 +225,7 @@ run updatefreeloader
 ```
 这里一定要等待烧录完成，待出现命令行提示符 `=>` 后，说明烧录完成。烧录完 `freeloader.bin` 后，需要重新上电，再快速输入 `asd` 进入 u-boot 的终端，继续烧录内核和文件系统。
 
-## 烧录内核和文件系统
+### 烧录内核和文件系统
 
 同样，将要烧录的 kernel.bin 和 ubifs.img 两个镜像文件，放到 `tftp` 目录下，在 u-boot 的终端中，与上面一样，配置 TFTP 相关 IP:
 ```

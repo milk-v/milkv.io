@@ -223,7 +223,7 @@ run updatefreeloader
 ```
 You must wait for the burning to be completed here. When the command line prompt `=>` appears, the burning is completed. After burning `freeloader.bin`, you need to power on again, quickly enter `asd` to enter the u-boot terminal, and continue burning the kernel and file system.
 
-## Burn kernel and file system
+### Burn kernel and file system
 
 Similarly, place the two image files kernel.bin and ubifs.img to be burned in the `tftp` directory. In the u-boot terminal, configure the TFTP-related IP as above:
 ```
