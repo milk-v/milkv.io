@@ -1119,7 +1119,7 @@ a {
     }
 
     .duo_techspec_table>tbody>tr>td {
-        padding: 20px 0;
+        padding: 20px;
         padding-left: 50px;
         font-size: 32px;
     }
@@ -1958,7 +1958,7 @@ a {
     }
 
     .duo_techspec_table>tbody>tr>td {
-        padding: 20px 0;
+        padding: 20px;
         padding-left: 30px;
         font-size: 24px;
     }
@@ -2789,7 +2789,7 @@ a {
     }
 
     .duo_techspec_table>tbody>tr>td {
-        padding: 20px 0;
+        padding: 20px;
         padding-left: 30px;
         font-size: 18px;
     }
@@ -3614,7 +3614,7 @@ a {
     }
 
     .duo_techspec_table>tbody>tr>td {
-        padding: 15px 0;
+        padding: 15px;
         padding-left: 20px;
         font-size: 14px;
     }
@@ -4475,7 +4475,7 @@ a {
     }
 
     .duo_techspec_table>tbody>tr>td {
-        padding: 15rem 0;
+        padding: 15rem;
         padding-left: 20rem;
         font-size: 14rem;
     }
