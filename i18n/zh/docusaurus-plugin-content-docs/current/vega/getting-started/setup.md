@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Setting Up'
+sidebar_label: '设置'
 sidebar_position: 20
 ---
 
@@ -12,7 +12,7 @@ Milk-V Vega offers multiple connection and management methods:
 - JTAG
 
 
-## WEB 
+## WEB
 
 To connect to the WEB management interface, place **your device in the same network segment as Milk-V Vega**.
 
@@ -71,26 +71,26 @@ USERNAME: root
 PASSWORD: milkv
 ~~~
 
-## Serial Console
+## 串口
 
-The Vega integrates a USB to serial port chip. You only need to use a Type-C data cable to connect the Type-C interface of the computer and Vega.
+Vega 主板集成了 USB 转串口芯片，您只需使用一根 Type-C 数据线连接电脑和 Vega 的 Type-C 接口即可。
 
 :::tip
-You only need to connect the serial port when burning the system or debugging the device through the command line. You do not need to connect it when using Vega normally.
+只有在烧录系统或者需要通过命令行来调试设备时才需要连接串口，正常使用 Vega 时不需要连接。
 :::
 
-### Using serial port in Linux
+### Linux 环境下的串口配置
 
-In a Linux environment such as Ubuntu system, you can use Vege's integrated serial port without installing a driver. You can use the `lsusb` command to check whether it has been recognized normally under Ubuntu:
+Linux 环境下比如 Ubuntu 系统，不需要安装驱动即可使用 Vege 集成的串口，通过 `lsusb` 命令可以查看 Ubuntu 下是否已经正常识别：
 ```bash
 $ lsusb
 Bus 001 Device 013: ID 0403:6010 Future Technology Devices International, Ltd FT2232C/D/H Dual UART/FIFO IC
 ```
-In addition, if you look under `/dev/`, two devices `/dev/ttyUSB0` and `/dev/ttyUSB1` will appear:
+另外，查看 `/dev/` 下，会出现 `/dev/ttyUSB0` 和 `/dev/ttyUSB1` 两个设备:
 ```bash
 $ ls /dev/ttyUSB*
 /dev/ttyUSB0  /dev/ttyUSB1
 ```
-The `ttyUSB0` is a serial port device, and you can configure the connection with tools such as `minicom`.
+其中 `ttyUSB0` 是串口设备，您可以配置 `minicom` 等工具连接。
 
-*`ttyUSB1` is the JTAG debugging interface, not used yet*
+*`ttyUSB1` 是 JTAG 调试接口，暂未用到*
