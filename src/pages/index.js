@@ -45,6 +45,25 @@ const Duo_module = (props) => {
     <>
       <BuyPop flag={duo} module={duoStart} type='duo' />
       <div className={styles.info_module}>
+        <div className={styles.view_mian}>
+          <div className={styles.left}>
+            <h2>Milk-V Duo</h2>
+            <p>Series</p>
+          </div>
+          <div className={styles.right}>
+            <div className={styles.right_img}>
+              <img src='/home/home-dous-view.webp' alt='Duo S' />
+            </div>
+            <div className={styles.right_text}>
+              <h2>Milk-V Duo S</h2>
+              <p>Dual cores up to 1GHz (optional RISC-V / ARM), up to 512MB of memory, and a 1TOPS@INT8 TPU.  It integrates wireless capabilities with WI-FI 6/BT 5, and comes equipped with a USB 2.0 HOST interface and a 100Mbps Ethernet port for user convenience. Supporting dual cameras (2x MIPI CSI 2-lane) and MIPI video output (MIPI DSI 4-lane).</p>
+              <div className={styles.learnMore_use}>
+                <Link href='/duo-s'><Translate id='homepage.corporations.marslearnmore' /></Link>
+                <div className={styles.buy_button} onClick={() => { setDuo(true) }}><Translate id='homepage.corporations.marsbuynow' /></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className={styles.main_module}>
           <div className={styles.left_title}>
             <h2>Milk-V Duo</h2>
