@@ -133,6 +133,10 @@ const config = {
                 to: '/duo',
               },
               {
+                label: 'Duo S',
+                to: '/duo-s',
+              },
+              {
                 label: 'Pioneer',
                 to: '/pioneer'
               },

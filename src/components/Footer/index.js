@@ -47,6 +47,7 @@ export default () => {
                                 <li>
                                     <p className={styles.line_name}>Products</p>
                                     <Link to='/duo'>Milk-V Duo</Link>
+                                    <Link to='/duo-s'>Milk-V Duo S</Link>
                                     <Link to='/pioneer'>Milk-V Pioneer</Link>
                                     <Link to='/mars'>Milk-V Mars</Link>
                                     <Link to='/mars-cm'>Milk-V Mars CM</Link>
