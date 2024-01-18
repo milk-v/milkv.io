@@ -19,6 +19,7 @@ const sidebars = {
       items: [
         'duo/getting-started/duo',
         'duo/getting-started/duo256m',
+        'duo/getting-started/duos',
         'duo/getting-started/boot',
         'duo/getting-started/setup',
         'duo/getting-started/swap',
