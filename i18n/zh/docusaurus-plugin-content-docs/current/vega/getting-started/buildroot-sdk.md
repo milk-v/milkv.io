@@ -142,3 +142,117 @@ appendWindowsPath = false
 然后需要使用 `wsl.exe --reboot` 重新启动 WSL。再运行 `./build.sh` 脚本或分步编译命令。
 
 要恢复 `/etc/wsl.conf` 文件中的此更改，请将 `appendWindowsPath` 设置为 `true`。 要重新启动 WSL，您可以使用 Windows PowerShell 命令 `wsl.exe --shutdown`，然后使用`wsl.exe`，之后 Windows 环境变量在 $PATH 中再次可用。
+
+## 四、镜像烧录
+
+镜像的烧录，需要通过串口输入命令进行操作，串口的使用请参考[这里](https://milkv.io/zh/docs/vega/getting-started/setup#串口)。
+
+将 SDK 编译生成的三个镜像文件烧录到 Vega 设备中，需要使用 TFTP 环境。
+
+### Ubuntu 22.04 中安装 TFTP 服务
+
+安装 tftp 服务:
+```bash
+sudo apt update
+sudo apt install tftpd-hpa
+```
+
+编辑配置文件:
+```
+sudo vi /etc/default/tftpd-hpa
+```
+修改 `TFTP_DIRECTORY` 为镜像文件存放目录，比如用户目录下的 `tftp` 目录:
+```
+TFTP_USERNAME="tftp"
+TFTP_DIRECTORY="/home/xxx/tftp"
+TFTP_ADDRESS=":69"
+TFTP_OPTIONS="--secure"
+```
+
+在用户目录下创建 tftp 目录，用于存放需要通过 tftp 服务传输的文件:
+```bash
+mkdir /home/xxx/tftp
+```
+
+重启 tftp 服务：
+```bash
+sudo systemctl restart tftpd-hpa
+```
+
+在设备的 u-boot 命令行中，测试主机 Ubuntu 中的 tftp 服务是否工作正常:
+
+- 配置当前设备要使用的 IP 和 tftp 服务器的 IP:
+  ```
+  setenv ipaddr 192.168.2.2222;setenv serverip 192.168.2.66
+  ```
+- ping 主机:
+  ```
+  ping 192.168.77.176
+  ```
+  如果能 ping 通，则 Ubuntu 上的 tftp 服务正常。
+
+### 烧录 Loader
+
+将 `freeloader.bin` 放在 tftp 目录下，Vega 设备上电后，在串口中看到如下提示后，快速输入 `asd` 进入 u-boot 的终端：
+
+```
+U-Boot 2020.07-rc2 (Jan 12 2024 - 16:32:24 +0800)
+
+CPU:   rv64imafdc
+Model: nuclei,ux600fd
+DRAM:  240 MiB
+Board: Initialized
+NAND:  128 MiB
+Loading Environment from SPI Flash... SF: Detected w25q32 with page size 256 Bytes, erase size 4 KiB, total 4 MiB
+OK
+In:    console
+Out:   console
+Err:   console
+Net:   xy1000_eth
+Press asd to abort autoboot in 2 seconds
+=>
+```
+
+将与 TFTP 服务器在同一网段的网线接到 Vega 的任意端口，在串口的 u-boot 终端中配置 Vega 的 IP 和 TFTP 服务器的 IP，比如 TFTP 服务器的 IP 是 `192.168.2.66`，Vega 的 IP 配置为 `192.168.2.222`，命令如下:
+
+```
+setenv ipaddr 192.168.2.222;setenv serverip 192.168.2.66
+```
+
+烧录 `freeloader.bin`:
+```
+run updatefreeloader
+```
+这里一定要等待烧录完成，待出现命令行提示符 `=>` 后，说明烧录完成。烧录完 `freeloader.bin` 后，需要重新上电，再快速输入 `asd` 进入 u-boot 的终端，继续烧录内核和文件系统。
+
+### 烧录内核和文件系统
+
+同样，将要烧录的 kernel.bin 和 ubifs.img 两个镜像文件，放到 `tftp` 目录下，在 u-boot 的终端中，与上面一样，配置 TFTP 相关 IP:
+```
+setenv ipaddr 192.168.2.222;setenv serverip 192.168.2.66
+```
+
+烧录 `kernel.bin`：
+```
+run updateos_nand
+```
+
+烧录 `ubifs.img`：
+```
+run updateubifs_boot
+```
+
+设置启动命令：
+```
+setenv bootcmd run bootcmd_ubifs_boot
+```
+
+保存环境变量：
+```
+saveenv
+```
+
+启动：
+```
+boot
+```
