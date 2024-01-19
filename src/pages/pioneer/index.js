@@ -31,7 +31,6 @@ function Center() {
         </div>
       </div>
       <div className={cCss.startbox}>
-        <div className={cCss.title}><Translate id='line.title.Specification' /></div>
         <div className={cCss.power}>
           <div className={cCss.power1}>
             <h2><Translate id='pioneer.page.Specification.text1' /></h2>
@@ -59,9 +58,118 @@ function Center() {
             </div>
           </div>
         </div>
-        <div className={cCss.title}>Pioneer Board</div>
-        <div className={cCss.RichImg}></div>
-        <div className={cCss.title}>Pioneer Box</div>
+        <div className={cCss.newTab}>
+          <h3>Pioneer Board</h3>
+          <img src='/pioneer/new-board-info.webp' alt='Pioneer Board' />
+          <ul className={cCss.tab_info}>
+            <li>
+              <p>
+                <span>1</span>
+                <span>SOPHON SG2042</span>
+              </p>
+              <p>
+                <span>2</span>
+                <span>PCIe Switch(ASM2824)</span>
+              </p>
+              <p>
+                <span>3</span>
+                <span>DDR4 DIMM Slot</span>
+              </p>
+              <p>
+                <span>4</span>
+                <span>SD Card Slot</span>
+              </p>
+              <p>
+                <span>5</span>
+                <span>2.5GbE Ethernet Port</span>
+              </p>
+              <p>
+                <span>6</span>
+                <span>USB3</span>
+              </p>
+              <p>
+                <span>7</span>
+                <span>PCIe 4.0 x16</span>
+              </p>
+              <p>
+                <span>8</span>
+                <span>M.2 E Key (PCIe 3.0 x1 + USB 2.0)</span>
+              </p>
+              <p>
+                <span>9</span>
+                <span>M.2 M Key (PCIe 3.0 x4)</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span>10</span>
+                <span>PCIe 4.0 x8</span>
+              </p>
+              <p>
+                <span>11</span>
+                <span>MCU(for Power-up control)</span>
+              </p>
+              <p>
+                <span>12</span>
+                <span>SATA3 6Gbps</span>
+              </p>
+              <p>
+                <span>13</span>
+                <span>24P ATX Power Supply Connector</span>
+              </p>
+              <p>
+                <span>14</span>
+                <span>LPC</span>
+              </p>
+              <p>
+                <span>15</span>
+                <span>LPC</span>
+              </p>
+              <p>
+                <span>16</span>
+                <span>Pin for Start, Power off, etc.</span>
+              </p>
+              <p>
+                <span>17</span>
+                <span>CPU FAN Connectors</span>
+              </p>
+              <p>
+                <span>18</span>
+                <span>GPIO</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span>19</span>
+                <span>UART</span>
+              </p>
+              <p>
+                <span>20</span>
+                <span>SPIF</span>
+              </p>
+              <p>
+                <span>21</span>
+                <span>JTAG</span>
+              </p>
+              <p>
+                <span>22</span>
+                <span>USB</span>
+              </p>
+              <p>
+                <span>23</span>
+                <span>SG2042 & MCU Debug</span>
+              </p>
+              <p>
+                <span>24</span>
+                <span>MCU Programming and Debugging Pin</span>
+              </p>
+              <p>
+                <span>25</span>
+                <span>eMMC Module Connector</span>
+              </p>
+            </li>
+          </ul>
+        </div>
         <div className={cCss.pionBox}>
           <div className={cCss.pionBox_1}>
             <div className={cCss.pionBox_1_img}></div>
@@ -120,7 +228,6 @@ function Center() {
           <img src='/pioneer/support-icon6.webp' />
           <img src='/pioneer/support-icon7.webp' />
         </div>
-        <div className={cCss.title}><Translate id='pioneer.page.title.minText2' /></div>
         <div className={cCss.bannerBox}>
           <div className={cCss.bannerimg1}>
             <div className={cCss.bannerimg1_1}></div>
