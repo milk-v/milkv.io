@@ -33,14 +33,14 @@ opencv-mobile 已经在 Milk-V Duo/Duo256M/DuoS 上支持硬件加速 JPG 解码
 
 ### 下载适配 Milk-V Duo 的预编译包
 
-opencv-mobile 的 release 链接:
+opencv-mobile 的 release 链接：
 [https://github.com/nihui/opencv-mobile/releases](https://github.com/nihui/opencv-mobile/releases)
 
-下载当前最新的 Milk-V Duo 的预编译包: [opencv-mobile-4.9.0-milkv-duo.zip](https://github.com/nihui/opencv-mobile/releases/latest/download/opencv-mobile-4.9.0-milkv-duo.zip)
+下载当前最新的 Milk-V Duo 的预编译包：[opencv-mobile-4.9.0-milkv-duo.zip](https://github.com/nihui/opencv-mobile/releases/latest/download/opencv-mobile-4.9.0-milkv-duo.zip)
 
-### 新建应用程序目录
+### 新建测试程序目录
 
-新建目录 picture-resize 并进入该目录:
+新建目录 `picture-resize` 并进入该目录：
 ```bash
 mkdir picture-resize
 cd picture-resize
@@ -53,13 +53,13 @@ unzip ../opencv-mobile-4.9.0-milkv-duo.zip
 
 ### 创建代码文件
 
-新建一个名为 `main.cpp` 的文件
+新建一个名为 `main.cpp` 的文件：
 
 ```bash
 vi main.cpp
 ```
 
-添加如下内容:
+添加如下内容：
 ```cpp
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
@@ -81,12 +81,12 @@ int main()
 
 ### 创建 CMakeLists.txt
 
-使用 cmake 方式来编译，需要创建 CMakeLists.txt 文件
+使用 cmake 方式来编译，需要创建 CMakeLists.txt 文件：
 ```bash
 vi CMakeLists.txt
 ```
 
-内容如下:
+内容如下：
 ```makefile
 project(opencv-mobile-test)
 cmake_minimum_required(VERSION 3.5)
@@ -106,12 +106,12 @@ add_executable(opencv-mobile-test main.cpp)
 target_link_libraries(opencv-mobile-test ${OpenCV_LIBS})
 ```
 
-其中有三个变量需要注意一下，根据自己的文件路径来配置
-- OpenCV_DIR：前面解压到当前目录的预编译包对应的目录，注意路径中的版本号
-- CMAKE_C_COMPILER：交叉编译工具链中 gcc 的路径
-- CMAKE_CXX_COMPILER：交叉编译工具链中 g++ 的路径
+其中有三个变量需要注意一下，根据自己的文件路径来配置：
+- **OpenCV_DIR**：前面解压到当前目录的预编译包对应的目录，注意路径中的版本号
+- **CMAKE_C_COMPILER**：交叉编译工具链中 gcc 的路径
+- **CMAKE_CXX_COMPILER**：交叉编译工具链中 g++ 的路径
 
-交叉编译工具链的下载链接：[host-tools.tar.gz](https://sophon-file.sophon.cn/sophon-prod-s3/drive/23/03/07/16/host-tools.tar.gz)。可以通过 wget 命令下载后解压:
+交叉编译工具链的下载链接：[host-tools.tar.gz](https://sophon-file.sophon.cn/sophon-prod-s3/drive/23/03/07/16/host-tools.tar.gz)。可以通过 wget 命令下载后解压：
 ```bash
 wget https://sophon-file.sophon.cn/sophon-prod-s3/drive/23/03/07/16/host-tools.tar.gz
 tar -xf host-tools.tar.gz 
@@ -121,7 +121,7 @@ tar -xf host-tools.tar.gz
 
 ### 编译
 
-cmake 方式编译会创建一些中间目录和文件，所以我们新建一个 build 目录并进入该目录来完成编译:
+cmake 方式编译会创建一些中间目录和文件，所以我们新建一个 build 目录并进入该目录来完成编译：
 ```bash
 mkdir build
 cd build
@@ -141,7 +141,7 @@ $ ls
 CMakeCache.txt  CMakeFiles  cmake_install.cmake  Makefile  opencv-mobile-test
 ```
 
-此时目录的结构如下:
+此时目录的结构如下：
 ```
 picture-resize/                     # 测试程序根目录
 ├── build                           # 编译输出目录
@@ -151,7 +151,7 @@ picture-resize/                     # 测试程序根目录
 └── opencv-mobile-4.9.0-milkv-duo/  # opencv-mobile 预编译库目录
 ```
 
-把生成的 `opencv-mobile-test` 程序通过 `scp` 命令传送到 Duo 中:
+把生成的 `opencv-mobile-test` 程序通过 `scp` 命令传送到 Duo 中：
 ```bash
 scp opencv-mobile-test root@192.168.42.1:/root/
 ```
@@ -163,7 +163,7 @@ scp in.jpg root@192.168.42.1:/root/
 
 ### 在 Duo 中运行测试程序
 
-通过串口或者 ssh 登陆到 Duo 的终端，进入 /root/ 目录
+通过串口或者 ssh 登陆到 Duo 的终端，进入 /root/ 目录：
 ```bash
 cd /root/
 ```
@@ -205,10 +205,10 @@ opencv-mobile 已经支持 Milk-V Duo 中的硬件加速 JPG 解码
 
 验证 JPG 硬件加速实际效果的方法，可以同样使用前面的缩放 jpg 文件为 200x200 的示例程序，分别使用不带 JPG 硬件加速的 opencv-mobile 预编译包和带 JPG 硬件加速的预编译包来生成测试程序，通过其在 Duo 上运行的时间来做对比。
 
-不带 JPG 硬件加速的预编译包: [opencv-mobile-4.8.0-milkv-duo.zip
+不带 JPG 硬件加速的预编译包：[opencv-mobile-4.8.0-milkv-duo.zip
 ](https://github.com/nihui/opencv-mobile/releases/download/v19/opencv-mobile-4.8.0-milkv-duo.zip)
 
-带 JPG 硬件加速的预编译包: [opencv-mobile-4.9.0-milkv-duo.zip
+带 JPG 硬件加速的预编译包：[opencv-mobile-4.9.0-milkv-duo.zip
 ](https://github.com/nihui/opencv-mobile/releases/latest/download/opencv-mobile-4.9.0-milkv-duo.zip)
 
 使用两个预编译包，分别编译出 `opencv-mobile-test` 转送到 Duo 中运行，我这里是在 Duo-256M 中测试的，`in.jpg` 使用的是一张分辨率为 3000x3000 大小为 3.2M 的 jpg 图片。 
@@ -240,7 +240,7 @@ opencv-mobile 现已支持 Milk-V Duo/Duo256M/DuoS MIPI CSI 摄像头和 VPSS �
 
 ### 调用示例
 
-- 用 cv::VideoCapture 打开摄像头，设置分辨率320x240
+- 用 cv::VideoCapture 打开摄像头，设置分辨率 320x240
 - 每隔 1 秒获取1帧图像
 - 关闭摄像头
 - 最后把 9 张图拼接在一起保存
@@ -296,7 +296,13 @@ int main()
 }
 ```
 
-同样，参考前面 [快速开始](#快速开始) 中的方法，将其他编译后传送到 Duo 中执行：
+同样，参考前面 [快速开始](#一快速开始) 中的方法，将其他编译后传送到 Duo 中执行 `./opencv-mobile-test` 命令：
+
+:::tip
+- Duo 上电前需要连接好摄像头
+- 命令执行时，可以转动摄像头方向以捕捉不同的画面，直到程序运行结束
+:::
+
 ```
 [root@milkv-duo]~# ./opencv-mobile-test 
 this device is not whitelisted for jpeg encoder rkmpp
@@ -356,7 +362,7 @@ scp root@192.168.42.1:/root/out.jpg .
 
 ### 一些实现细节和限制
 
-#### 运行时加载 cvi-mmf 动态库  
+#### 运行时加载 cvi-mmf 动态库
 
 为了减少编译耦合，opencv-mobile 中采用运行时 dlopen/dlsym 方式加载 libsys libvpu libae libawb libisp libcvi_bin libsns_gc2083，即便编译时候缺库依然兼容可用。
 
@@ -398,8 +404,3 @@ isp_err_chk:6343(): CSIBDG_A CH0 frm height less than setting(1080)
 1. [opencv-mobile 现已支持 milkv-duo/duo256m MIPI CSI 摄像头和vpss硬件加速](https://zhuanlan.zhihu.com/p/677764814)
 2. [opencv-mobile 现已支持 milkv-duo cvi-mmf 硬件加速 JPG 解码](https://zhuanlan.zhihu.com/p/673940312)
 3. [opencv-mobile (迷你版opencv库)在 milkv-duo 上的移植和应用](https://zhuanlan.zhihu.com/p/653359280)
-
-
-
-
-
