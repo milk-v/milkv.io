@@ -1212,20 +1212,19 @@
     }
 
     .causality {
-        width: 40%;
+        font-size: 14rem;
     }
 
-    .causality_data {
-        width: 58%;
-    }
-
-    .causality,
     .causality_data {
         font-size: 12rem;
     }
 
+    .causality_data {
+        margin-left: 30rem;
+    }
+
     .causality_data>li {
-        margin-top: 35rem;
+        margin-top: 5rem;
     }
 
     .scenarios {

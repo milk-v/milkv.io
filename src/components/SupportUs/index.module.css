@@ -547,11 +547,14 @@
     }
 
     .info_left {
+        width: 100%;
         margin-bottom: 30rem;
     }
 
     .info_left>div {
+        text-align: left;
         margin-bottom: 15rem;
+        width: 100%;
     }
 
     .info_left p {
