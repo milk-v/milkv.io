@@ -159,7 +159,9 @@ scp opencv-mobile-test root@192.168.42.1:/root/
 ```bash
 scp in.jpg root@192.168.42.1:/root/
 ```
-![opencv-mobile-in](/docs/duo/opencv-mobile-in.jpg)
+
+`in.jpg`：
+<Image src='/docs/duo/opencv-mobile-in.jpg' minWidth='100%' maxWidth='100%' align='center' />
 
 ### 在 Duo 中运行测试程序
 
@@ -203,6 +205,8 @@ opencv-mobile 已经支持 Milk-V Duo 中的硬件加速 JPG 解码
 3. 支持 EXIF 自动旋转，支持直接解码为 grayscale
 4. 加速了 5~11 倍！
 
+### 测试示例
+
 验证 JPG 硬件加速实际效果的方法，可以同样使用前面的缩放 jpg 文件为 200x200 的示例程序，分别使用不带 JPG 硬件加速的 opencv-mobile 预编译包和带 JPG 硬件加速的预编译包来生成测试程序，通过其在 Duo 上运行的时间来做对比。
 
 不带 JPG 硬件加速的预编译包：[opencv-mobile-4.8.0-milkv-duo.zip
@@ -228,6 +232,82 @@ sys	0m 0.14s
 ```
 可以看到，不带 JPG 硬件加速时运行时间为 `2.56s`，带 JPG 硬件加速时运行时间只有 `0.37s`，速度提高了约 `6.92` 倍。
 
+### 一些实现细节和限制
+
+#### 运行时加载 cvi-mmf 动态库
+
+为了减少编译耦合，opencv-mobile 中采用运行时 dlopen/dlsym 方式加载 libsys libvpu libae libawb libisp libcvi_bin libsns_gc2083，即便编译时候缺库依然兼容可用。
+
+这种方式也能自动适配后期系统库升级。
+
+#### 白名单
+
+优化代码在 Milk-V Duo / Milk-V Duo-256M 上做了验证测试。
+
+加载 cvi-mmf 库时，额外判断 /proc/device-tree/model 是否为 Milk-V Duo 设备，在其他设备上能自动退回到无优化的版本。
+
+#### 避免特殊分辨率
+
+测试中发现对于超小 (2x2) 和超大 (4096x4096) 分辨率，经常发生图片损坏或内容错乱，编码错误，甚至内存不足被 kill。
+
+因此针对以下特殊情况，会自动回退到无优化的版本：
+
+- w 或 h 不是 2 倍数
+- w 或 h 小于 8
+
+#### 解码过程和vpss对齐的坑
+
+1. 读 jpg 文件到内存中
+2. 解析 jpg 头部，获得 w h 通道数 采样方法 EXIF 等信息
+3. cvi-mmf 准备3个 vbuffer，用于解码后的 vb，旋转后的vb，转 BGR 后的 vb
+4. vdec 解码到 yuv444/yuv422/yuv420/y
+5. vpss 做旋转并 yuv 转换到 nv12
+6. vpss 做 nv12 转换到 bgr
+
+其中，**测试发现 vpss 对数据对齐要求较高，会发生 vdec 解码的数据是 64bytes 对齐，而 vpss 需要数据是 128bytes 对齐**。
+
+在一些非128倍数的尺寸下会发生解码失败或解码后图片数据错误的问题：
+
+![opencv-mobile](/docs/duo/opencv-mobile_02.webp)
+
+于是在 vdec->vpss 中间做了 hack，在 vdec 解码后 vpss 处理前重新设置 phyaddr 值和重新 memmove UV 通道数据，以便满足 vpss 的对齐需求。
+
+如果是解码到 grayscale，则 vpss 直接将 yuv 视作y处理，能加速旋转。
+
+总体看来，jpg 解码过程比编码复杂很多，要考虑的情况也更多。
+
+#### 8种旋转方向
+
+vdec 只能配置输出 flip/mirror，搭配 vpss 只能做 90/180/270 的旋转，可以复合出8种旋转方向。
+
+**由于 vpss 只能对 nv12 的数据旋转，yuv444 解码后的 uv 通道会无法避免的下采样，这对图片质量是有损的**。
+
+**不支持 yuv422 垂直和 progressive**。
+
+测试中发现 yuv422 水平的 jpg 可以正常解码，而 yuv422 垂直的 jpg，vdec 解码出的是错误的，这类 jpg 会自动退回到软件解码。
+
+此外，也不支持 progressive jpg。
+
+#### 性能测试
+
+测试预先读取图片，反复调用 cv::imdecode() 进行JPG解码，排除文件读写的干扰，统计最快耗时。
+
+测试分辨率为 720p 的 YUV444 YUV422 YUV420 GRAY 四种颜色空间的 jpg 文件，并联合测试依据 EXIF 旋转90度的解码过程。
+
+测试分别解码为 BGR 和 grayscale 的 cv::Mat。
+
+分别在 Milk-V Duo 和 Milk-V Duo-256M 上测试。
+
+测试结果表明 cvi-mmf 硬件加速 JPG 解码提升巨大。
+
+![opencv-mobile](/docs/duo/opencv-mobile_03.webp)
+
+![opencv-mobile](/docs/duo/opencv-mobile_04.webp)
+
+![opencv-mobile](/docs/duo/opencv-mobile_05.webp)
+
+![opencv-mobile](/docs/duo/opencv-mobile_06.webp)
+
 ## 三、VPSS 硬件加速测试
 
 opencv-mobile 现已支持 Milk-V Duo/Duo256M/DuoS MIPI CSI 摄像头和 VPSS 硬件加速。
@@ -238,7 +318,7 @@ opencv-mobile 现已支持 Milk-V Duo/Duo256M/DuoS MIPI CSI 摄像头和 VPSS �
 - 无需修改代码，调用 cv::VideoCapture 便自动支持，支持设置分辨率
 - 暂时只支持 Milk-V 官方搭配的 GC2083 摄像头
 
-### 调用示例
+### 测试示例
 
 - 用 cv::VideoCapture 打开摄像头，设置分辨率 320x240
 - 每隔 1 秒获取1帧图像

@@ -159,7 +159,10 @@ Then transfer a `jpg` picture with a size of `1024x1024` for testing to Duo:
 ```bash
 scp in.jpg root@192.168.42.1:/root/
 ```
-![opencv-mobile-in](/docs/duo/opencv-mobile-in.jpg)
+
+`in.jpg`：
+
+<Image src='/docs/duo/opencv-mobile-in.jpg' minWidth='100%' maxWidth='100%' align='center' />
 
 ### Run the test program in Duo
 
@@ -203,6 +206,8 @@ opencv-mobile already supports hardware-accelerated JPG decoding in Milk-V Duo
 3. Supports EXIF auto-rotation and direct decoding to grayscale
 4. Speeded up by 5~11 times!
 
+### Test example
+
 To verify the actual effect of JPG hardware acceleration, you can also use the previous sample program that scales the jpg file to 200x200, and use the opencv-mobile precompiled package without JPG hardware acceleration and the precompiled package with JPG hardware acceleration to generate test programs, compare by its running time on Duo.
 
 Pre-compiled package without JPG hardware acceleration: [opencv-mobile-4.8.0-milkv-duo.zip
@@ -227,6 +232,82 @@ user	0m 0.13s
 sys	0m 0.14s
 ```
 It can be seen that the running time without JPG hardware acceleration is `2.56s`, and the running time with JPG hardware acceleration is only `0.37s`, which is about `6.92` times.
+
+### Some details and limitations
+
+#### Load cvi-mmf dynamic library at runtime
+
+In order to reduce compilation coupling, opencv-mobile uses the runtime dlopen/dlsym method to load libsys libvpu libae libawb libisp libcvi_bin libsns_gc2083. Even if the library is missing during compilation, it is still compatible and available.
+
+This method can also automatically adapt to later system library upgrades.
+
+#### Whitelist
+
+The optimized code was verified and tested on Milk-V Duo / Milk-V Duo-256M.
+
+When loading the cvi-mmf library, it is additionally determined whether /proc/device-tree/model is a Milk-V Duo device, and can automatically fall back to the non-optimized version on other devices.
+
+#### Avoid special resolutions
+
+During the test, it was found that for ultra-small (2x2) and ultra-large (4096x4096) resolutions, pictures often get damaged or the content is garbled, encoding errors occur, and even the device is killed due to insufficient memory.
+
+Therefore, for the following special circumstances, it will automatically fall back to the non-optimized version:
+
+- w or h is not a multiple of 2
+- w or h is less than 8
+
+#### Pitfalls in the decoding process and vpss alignment
+
+1. Read jpg file into memory
+2. Parse the jpg header and obtain w h channel number sampling method EXIF and other information
+3. cvi-mmf prepares 3 vbuffers for decoded vb, rotated vb, and BGR-converted vb
+4. vdec decodes to yuv444/yuv422/yuv420/y
+5. vpss does the rotation and yuv converts to nv12
+6. vpss does nv12 to bgr conversion
+
+Among them, the ** test found that vpss has higher requirements for data alignment. It will happen that the data decoded by vdec is 64bytes aligned, while vpss requires the data to be 128bytes aligned**.
+
+In some sizes that are not multiples of 128, decoding failure or decoded image data errors may occur:
+
+![opencv-mobile](/docs/duo/opencv-mobile_02.webp)
+
+So I made a hack in the middle of vdec->vpss. After vdec decoding and before vpss processing, I reset the phyaddr value and re-memmove the UV channel data to meet the alignment requirements of vpss.
+
+If it is decoded to grayscale, vpss will directly treat yuv as y, which can accelerate the rotation.
+
+Overall, the jpg decoding process is much more complicated than encoding, and there are more situations to consider.
+
+#### 8 rotation directions
+
+vdec can only be configured to output flip/mirror, and with vpss it can only do 90/180/270 rotation, and can combine 8 rotation directions.
+
+**Since vpss can only rotate nv12 data, the uv channel decoded by yuv444 will inevitably be downsampled, which is detrimental to the picture quality**.
+
+**Yuv422 vertical and progressive are not supported**.
+
+During the test, it was found that yuv422 horizontal jpg can be decoded normally, but yuv422 vertical jpg is decoded incorrectly by vdec. This type of jpg will automatically fall back to software decoding.
+
+Additionally, progressive jpgs are not supported.
+
+#### Performance Testing
+
+The test reads the image in advance and repeatedly calls cv::imdecode() to decode JPG to eliminate interference from file reading and writing, and the fastest time-consuming statistics are obtained.
+
+Test jpg files in four color spaces of YUV444 YUV422 YUV420 GRAY with a resolution of 720p, and jointly test the decoding process of rotating 90 degrees according to EXIF.
+
+Test cv::Mat decoded to BGR and grayscale respectively.
+
+Tested on Milk-V Duo and Milk-V Duo-256M.
+
+Test results show that cvi-mmf hardware-accelerated JPG decoding has greatly improved.
+
+![opencv-mobile](/docs/duo/opencv-mobile_03.webp)
+
+![opencv-mobile](/docs/duo/opencv-mobile_04.webp)
+
+![opencv-mobile](/docs/duo/opencv-mobile_05.webp)
+
+![opencv-mobile](/docs/duo/opencv-mobile_06.webp)
 
 ## 3. VPSS hardware acceleration test
 
