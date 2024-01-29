@@ -19,99 +19,99 @@ Below is the list of the Cvitek CV180x / CV181x MMF SDK Reference Documentation 
 <tbody>
 	<tr>
     <td>CIPHER API 参考</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/CIPHER_API_Reference/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/CIPHER_API_Reference/build/CIPHERAPIReference_zh.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/CIPHER_API_Reference/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/CIPHER_API_Reference/build/CIPHERAPIReference_zh.pdf">pdf</a></td>
     <td>CIPHER API Reference</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/CIPHER_API_Reference/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/CIPHER_API_Reference/build/CIPHERAPIReference_en.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/CIPHER_API_Reference/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/CIPHER_API_Reference/build/CIPHERAPIReference_en.pdf">pdf</a></td>
   </tr>
   <tr>
     <td>IVE软件开发指南</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/IVEAPI_Reference/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/IVEAPI_Reference/build/IVEAPIReference_zh.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/IVEAPI_Reference/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/IVEAPI_Reference/build/IVEAPIReference_zh.pdf">pdf</a></td>
     <td>IVE API Reference</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/IVE_API_Reference/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/IVE_API_Reference/build/IVEAPIReference_en.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/IVE_API_Reference/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/IVE_API_Reference/build/IVEAPIReference_en.pdf">pdf</a></td>
   </tr>
   <tr>
     <td>LDC_调试指南</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/LDC_Debugging_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/LDC_Debugging_Guide/build/LDCDebuggingGuide_zh.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/LDC_Debugging_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/LDC_Debugging_Guide/build/LDCDebuggingGuide_zh.pdf">pdf</a></td>
     <td>LDC Debugging Guide</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/LDC_Debugging_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/LDC_Debugging_Guide/build/LDCDebuggingGuide_en.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/LDC_Debugging_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/LDC_Debugging_Guide/build/LDCDebuggingGuide_en.pdf">pdf</a></td>
   </tr>
   <tr>
     <td>MIPI使用指南</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/MIPI_User_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/MIPI_User_Guide/build/MIPIUserGuide_zh.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/MIPI_User_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/MIPI_User_Guide/build/MIPIUserGuide_zh.pdf">pdf</a></td>
     <td>MIPI User Guide</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/MIPI_User_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/MIPI_User_Guide/build/MIPIUserGuide_en.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/MIPI_User_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/MIPI_User_Guide/build/MIPIUserGuide_en.pdf">pdf</a></td>
   </tr>
   <tr>
     <td>MIPI屏幕时钟时序计算器</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Clock_Timing_Calculator_for_MIPI_Panels/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Clock_Timing_Calculator_for_MIPI_Panels/build/ClockTimingCalculatorforMIPIPanels_zh.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Clock_Timing_Calculator_for_MIPI_Panels/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Clock_Timing_Calculator_for_MIPI_Panels/build/ClockTimingCalculatorforMIPIPanels_zh.pdf">pdf</a></td>
     <td>Clock Timing Calculator for MIPI Panels</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Clock_Timing_Calculator_for_MIPI_Panels/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Clock_Timing_Calculator_for_MIPI_Panels/build/ClockTimingCalculatorforMIPIPanels_en.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Clock_Timing_Calculator_for_MIPI_Panels/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Clock_Timing_Calculator_for_MIPI_Panels/build/ClockTimingCalculatorforMIPIPanels_en.pdf">pdf</a></td>
   </tr>
   <tr>
     <td>Sensor调试指南</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Sensor_Debugging_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Sensor_Debugging_Guide/build/SensorDebuggingGuide_zh.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Sensor_Debugging_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Sensor_Debugging_Guide/build/SensorDebuggingGuide_zh.pdf">pdf</a></td>
     <td>Sensor Debugging Guide</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Sensor_Debugging_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Sensor_Debugging_Guide/build/SensorDebuggingGuide_en.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Sensor_Debugging_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Sensor_Debugging_Guide/build/SensorDebuggingGuide_en.pdf">pdf</a></td>
   </tr>
   <tr>
     <td>开机画面使用指南</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Startup_Screen_User_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Startup_Screen_User_Guide/build/StartupScreenUserGuide_zh.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Startup_Screen_User_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Startup_Screen_User_Guide/build/StartupScreenUserGuide_zh.pdf">pdf</a></td>
     <td>Startup Screen User Guide</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Startup_Screen_User_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Startup_Screen_User_Guide/build/StartupScreenUserGuide_en.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Startup_Screen_User_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Startup_Screen_User_Guide/build/StartupScreenUserGuide_en.pdf">pdf</a></td>
   </tr>
   <tr>
     <td>MMF媒体软件开发指南</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Media_Processing_Software_Development_Reference/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Media_Processing_Software_Development_Reference/build/MediaProcessingSoftwareDevelopmentReference_zh.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Media_Processing_Software_Development_Reference/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Media_Processing_Software_Development_Reference/build/MediaProcessingSoftwareDevelopmentReference_zh.pdf">pdf</a></td>
     <td>Media Processing Software Development Reference</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Media_Processing_Software_Development_Reference/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Media_Processing_Software_Development_Reference/build/MediaProcessingSoftwareDevelopmentReference_en.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Media_Processing_Software_Development_Reference/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Media_Processing_Software_Development_Reference/build/MediaProcessingSoftwareDevelopmentReference_en.pdf">pdf</a></td>
   </tr>
   <tr>
     <td>屏幕对接使用指南</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Screen_Docking_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Screen_Docking_Guide/build/ScreenDockingGuide_zh.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Screen_Docking_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Screen_Docking_Guide/build/ScreenDockingGuide_zh.pdf">pdf</a></td>
     <td>Screen Docking Guide</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Screen_Docking_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Screen_Docking_Guide/build/ScreenDockingGuide_en.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Screen_Docking_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Screen_Docking_Guide/build/ScreenDockingGuide_en.pdf">pdf</a></td>
   </tr>
   <tr>
     <td>芯片码率控制使用说明</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Bit_Rate_Control_Application_Notes/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Bit_Rate_Control_Application_Notes/build/BitRateControlApplicationNotes_zh.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Bit_Rate_Control_Application_Notes/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Bit_Rate_Control_Application_Notes/build/BitRateControlApplicationNotes_zh.pdf">pdf</a></td>
     <td>Bit Rate Control Application Notes</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Bit_Rate_Control_Application_Notes/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Bit_Rate_Control_Application_Notes/build/BitRateControlApplicationNotes_en.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Bit_Rate_Control_Application_Notes/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Bit_Rate_Control_Application_Notes/build/BitRateControlApplicationNotes_en.pdf">pdf</a></td>
   </tr>
   <tr>
     <td>智能编码使用指南</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Smart_Coding_User_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Smart_Coding_User_Guide/build/SmartCodingUserGuide_zh.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Smart_Coding_User_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Smart_Coding_User_Guide/build/SmartCodingUserGuide_zh.pdf">pdf</a></td>
     <td>Smart Coding User Guide</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Smart_Coding_User_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Smart_Coding_User_Guide/build/SmartCodingUserGuide_en.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Smart_Coding_User_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Smart_Coding_User_Guide/build/SmartCodingUserGuide_en.pdf">pdf</a></td>
   </tr>
   <tr>
     <td>音频质量调试指南</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Audio_Quality_Tuning_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MMF/Audio_Quality_Tuning_Guide/build/AudioQualityTuningGuide_zh.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Audio_Quality_Tuning_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Audio_Quality_Tuning_Guide/build/AudioQualityTuningGuide_zh.pdf">pdf</a></td>
     <td>Audio Quality (VQE_AEC) Tuning Guide</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Audio_Quality_Tuning_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MMF/Audio_Quality_Tuning_Guide/build/AudioQualityTuningGuide_en.pdf">pdf</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Audio_Quality_Tuning_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Audio_Quality_Tuning_Guide/build/AudioQualityTuningGuide_en.pdf">pdf</a></td>
   </tr>
   <tr>
     <td>SDK编译及使用说明</td>
@@ -232,6 +232,22 @@ Below is the list of the Cvitek CV180x / CV181x MMF SDK Reference Documentation 
     <td>PQ Tools User Guide</td>
     <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/ISP/PQ_Tools_User_Guide/build/html/3_Interface_and_Function_Description.html">html</a></td>
     <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/ISP/PQ_Tools_User_Guide/build/PQToolsUserGuide_en.pdf">pdf</a></td>
+  </tr>
+  <tr>
+    <td>MIPI 屏幕时钟时序计算器</td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Clock_Timing_Calculator_for_MIPI_Panels/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Clock_Timing_Calculator_for_MIPI_Panels/build/ClockTimingCalculatorforMIPIPanels_zh.pdf">pdf</a></td>
+    <td>Clock Timing Calculator for MIPI Panels</td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Clock_Timing_Calculator_for_MIPI_Panels/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Clock_Timing_Calculator_for_MIPI_Panels/build/ClockTimingCalculatorforMIPIPanels_en.pdf">pdf</a></td>
+  </tr>
+  <tr>
+    <td>量产烧写使用指南</td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/BSP/Production_Burning_User_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/BSP/Production_Burning_User_Guide/build/ProductionBurningUserGuide_zh.pdf">pdf</a></td>
+    <td>Production Burning User Guide</td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/BSP/Production_Burning_User_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/BSP/Production_Burning_User_Guide/build/ProductionBurningUserGuide_en.pdf">pdf</a></td>
   </tr>
 </tbody>
 </table>
