@@ -5,7 +5,7 @@ sidebar_position: 22
 # 内存
 
 ## DDR4支持列表
-请查看 [DDR4支持列表](https://github.com/milkv-pioneer/hardware/blob/main/pioneer_ddr_list.pdf)
+请查看 [DDR4支持列表](https://github.com/milkv-pioneer/pioneer-files/blob/main/hardware/pioneer_ddr_list.pdf)
 
 安装未包括在列表中的内存条可能会妨碍正常启动。 
 
