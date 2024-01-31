@@ -1,0 +1,1204 @@
+{
+  "theme.ErrorPageContent.title": {
+    "message": "This page crashed.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Try again",
+    "description": "The label of the button to try again when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Page Not Found",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "We could not find what you were looking for.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "note",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "danger",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "caution",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll back to top",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archive",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archive",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Blog list page navigation",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Newer Entries",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Older Entries",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Blog post page navigation",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Newer Post",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Older Post",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Switch between dark and light mode (currently {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "dark mode",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "light mode",
+    "description": "The name for the light color mode"
+  },
+  "theme.blog.post.plurals": {
+    "message": "One post|{count} posts",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} tagged with \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "View All Tags",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Docs pages navigation",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Previous",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Next",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "One doc tagged|{count} docs tagged",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} with \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Version: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "latest version",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Edit this page",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direct link to {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " on {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " by {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Last updated{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versions",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Close",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog recent posts navigation",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Copied",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copy code to clipboard",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Copy",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Toggle word wrap",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
+    "message": "Toggle the collapsible sidebar category '{label}'",
+    "description": "The ARIA label to toggle the collapsible sidebar category"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Main",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Languages",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "On this page",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Read More",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Read more about {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "One min read|{readingTime} min read",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Home page",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Docs sidebar",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Close navigation bar",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Back to main menu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Toggle navigation bar",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "See all {count} results"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "One document found|{count} documents found",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Search results for \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Search the documentation",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Type your search here",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Search",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Search by Algolia",
+    "description": "The ARIA label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "No results were found",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Fetching new results...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.SearchBar.label": {
+    "message": "Search",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "Clear the query",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "Cancel",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "Recent",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "No recent searches",
+    "description": "The text when no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "Save this search",
+    "description": "The label for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "Remove this search from history",
+    "description": "The label for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "Favorite",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "Remove this search from favorites",
+    "description": "The label for remove favorite search button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "Unable to fetch results",
+    "description": "The title for error screen of search modal"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "You might want to check your network connection.",
+    "description": "The help text for error screen of search modal"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "to select",
+    "description": "The explanatory text of the action for the enter key"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Enter key",
+    "description": "The ARIA label for the Enter key button that makes the selection"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "to navigate",
+    "description": "The explanatory text of the action for the Arrow up and Arrow down key"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "Arrow up",
+    "description": "The ARIA label for the Arrow up key button that makes the navigation"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "Arrow down",
+    "description": "The ARIA label for the Arrow down key button that makes the navigation"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "to close",
+    "description": "The explanatory text of the action for Escape key"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Escape key",
+    "description": "The ARIA label for the Escape key button that close the modal"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "Search by",
+    "description": "The text explain that the search is making by Algolia"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "No results for",
+    "description": "The text explains that there are no results for the following search"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "Try searching for",
+    "description": "The text for the suggested query when no results are found for the following search"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "Believe this query should return results?",
+    "description": "The text for the question where the user thinks there are missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "Let us know.",
+    "description": "The text for the link to report missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "Search docs",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Skip to main content",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
+  },
+  "homepage.text.title1": {
+    "message": "Why choose RISC-V？",
+    "description": "Home Page Title"
+  },
+  "homepage.text.title1.info": {
+    "message": "Milk-V is committed to providing high quality RISC-V products to developers, enterprises and consumers, and to promoting the development of the RISC-V hardware and software ecosystem. Milk-V will firmly support open source, and hopes that through its own efforts and those of the community, future RISC-V products will be as numerous and bright as the stars in the Milky Way.",
+    "description": "Home page title introduction"
+  },
+  "homepage.text.Duo.mpu": {
+    "message": "RISC-V Dual Core MPU",
+    "description": "Home Page Duo mpu"
+  },
+  "homepage.text.Duo.Price": {
+    "message": "Starting from $9",
+    "description": "Home Page Duo Price"
+  },
+  "homepage.text.debut": {
+    "message": "WORLD DEBUT",
+    "description": "Home Page debut"
+  },
+  "homepage.text.buy": {
+    "message": "Buy",
+    "description": "Home Page Buy"
+  },
+  "homepage.text.learnMore": {
+    "message": "Learn more",
+    "description": "Home Page learn more"
+  },
+  "homepage.text.Features1": {
+    "message": "Low power",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features2": {
+    "message": "Low cost",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features3": {
+    "message": "Open Standard",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features4": {
+    "message": "Modularizable",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features5": {
+    "message": "Simple",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features6": {
+    "message": "Small area",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features7": {
+    "message": "Fast",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features8": {
+    "message": "High performance",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Duo.SellingPoint1": {
+    "message": "Dual cores up to 1GHz",
+    "description": "Home Page Selling Point"
+  },
+  "homepage.text.Duo.SellingPoint2": {
+    "message": "Rich IO for UART, I2C, SPI, SDIO, ADC, and more",
+    "description": "Home Page Selling Point"
+  },
+  "homepage.text.pioneer.mpu": {
+    "message": "RISC-V Developer Motherboard / Workstation",
+    "description": "Home Page pioneer mpu"
+  },
+  "homepage.text.mars.mpu": {
+    "message": "The first Quad-Core RISC-V credit card size SBC",
+    "description": "Home Page mars mpu"
+  },
+  "contact.text.matrix": {
+    "message": "Join the Duo Matrix Chat channel to share your ideas with the developers all around the world.",
+    "description": "matrix"
+  },
+  "contact.text.WeChat": {
+    "message": "WeChat",
+    "description": "WeChat"
+  },
+  "contact.text.QQ": {
+    "message": "QQ Group",
+    "description": "QQ群"
+  },
+  "contact.text.join": {
+    "message": "join #milkv-",
+    "description": " #milkv-duo"
+  },
+  "online.buy": {
+    "message": "Online shop",
+    "description": "online buy"
+  },
+  "footer.text.home": {
+    "message": "Home",
+    "description": "footer text"
+  },
+  "footer.text.community": {
+    "message": "Community",
+    "description": "footer text"
+  },
+  "footer.text.docs": {
+    "message": "Docs",
+    "description": "footer text"
+  },
+  "footer.text.address": {
+    "message": "Address",
+    "description": "footer text"
+  },
+  "footer.text.address.info": {
+    "message": "L8-01, Block B, Bao Cube Jewelry City, 198 Xin'an 4th Road, Liutang Community, Xixiang Street, Bao'an District, Shenzhen, China",
+    "description": "footer text"
+  },
+  "footer.text.Subscribe": {
+    "message": "Subscribe",
+    "description": "footer Subscribe"
+  },
+  "Duo.text.title1": {
+    "message": "Meet",
+    "description": "Duo.text.title"
+  },
+  "Duo.text.title2": {
+    "message": "A RISC-V Computer",
+    "description": "Duo.text.title"
+  },
+  "Duo.text.title3": {
+    "message": "Low cost, low power consumption, high performance",
+    "description": "Duo.text.title"
+  },
+  "Duo.text.title4": {
+    "message": "Tax or shipping is not included",
+    "description": "Duo.text.title"
+  },
+  "Buy.now": {
+    "message": "Buy Now",
+    "description": "buy now"
+  },
+  "line.title.Specification": {
+    "message": "Specification",
+    "description": "Specification"
+  },
+  "line.title.size": {
+    "message": "Small size, big potentials",
+    "description": "size"
+  },
+  "line.title.TechSpecs": {
+    "message": "Tech Specs",
+    "description": "TechSpecs"
+  },
+  "info.text.powerful": {
+    "message": "More powerful than others",
+    "description": "powerful"
+  },
+  "info.text.CPU": {
+    "message": "RISC-V CPU up to",
+    "description": "Duo CPU"
+  },
+  "info.text.Vector": {
+    "message": "Vector Acceleration",
+    "description": "Duo Vector "
+  },
+  "info.text.Ethernet": {
+    "message": "10/100Mbps Ethernet via optional add-on board",
+    "description": "Duo Ethernet "
+  },
+  "info.text.Incredible": {
+    "message": "Incredible, it's a computer!",
+    "description": "Duo Incredible "
+  },
+  "info.text.MicroSD": {
+    "message": "MicroSD support",
+    "description": "Duo MicroSD "
+  },
+  "info.text.RAM": {
+    "message": "64MB RAM",
+    "description": "Duo RAM "
+  },
+  "info.text.support": {
+    "message": "Support Asymmetric multiprocessing",
+    "description": "Duo support "
+  },
+  "info.text.size.title1": {
+    "message": "Smart Door Lock",
+    "description": "Duo size title "
+  },
+  "info.text.size.title2": {
+    "message": "Intelligent Monitoring",
+    "description": "Duo size title "
+  },
+  "info.text.size.title3": {
+    "message": "Smart Street Light",
+    "description": "Duo size title "
+  },
+  "info.text.size.title4": {
+    "message": "Traffic Monitoring",
+    "description": "Duo size title "
+  },
+  "info.text.size.title5": {
+    "message": "Pedestrian Detection",
+    "description": "Duo size title "
+  },
+  "duo.info.text.Introduction": {
+    "message": "Introduction",
+    "description": "Duo 简介"
+  },
+  "duo.info.text.Introduction.max": {
+    "message": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost and high-performance platform for professionals, industrial ODMs, AIOT enthusiasts, DIY enthusiasts and creators.Duo 256M is an upgraded version of Duo designed with SG2002 as the main controller, with an upgraded memory of 256M to support the standard Linux system and applications, which can meet the application needs with high memory requirements and large storage capacity. Duo 256M is an upgraded version of Duo designed with SG2002 as the host controller, which supports standard Linux system and applications.",
+    "description": "Duo 简介"
+  },
+  "duo.info.text.Hardware": {
+    "message": "Hardware",
+    "description": "Duo Hardware"
+  },
+  "duo.info.text.Documents": {
+    "message": "Documents",
+    "description": "Duo Documents"
+  },
+  "duo.info.text.pinOut": {
+    "message": "Pin Out",
+    "description": "Duo Documents"
+  },
+  "duo.Hardware.info1": {
+    "message": "Dual RV64 Core up to 1GHz",
+    "description": "Duo Hardware"
+  },
+  "duo.Hardware.info2": {
+    "message": "Provides 10/100Mbps Ethernet via optional add-on board",
+    "description": "Duo Hardware"
+  },
+  "duo.Hardware.info3": {
+    "message": "Technology supports running both Linux and RTOS",
+    "description": "Duo Hardware"
+  },
+  "pioneer.page.title": {
+    "message": "Make native RISC-V development possible",
+    "description": "pioneer page title"
+  },
+  "pioneer.page.Specification.text1": {
+    "message": "Powered by SOPHON SG2042",
+    "description": "pioneer Specification"
+  },
+  "pioneer.page.Specification.text2": {
+    "message": "64 Core RISC-V CPU",
+    "description": "pioneer Specification"
+  },
+  "pioneer.page.Box.text1": {
+    "message": "equipped with",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text2": {
+    "message": "Graphic Card",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text3": {
+    "message": "Network Card",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text4": {
+    "message": "Power",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text5": {
+    "message": "Cooler",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.title.minText1": {
+    "message": "Software Support",
+    "description": "pioneer min Text"
+  },
+  "pioneer.page.title.minText2": {
+    "message": "Really Useful",
+    "description": "pioneer min Text"
+  },
+  "pioneer.page.really1": {
+    "message": "Workstation",
+    "description": "pioneer min Text"
+  },
+  "pioneer.page.info": {
+    "message": "Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard mATX form factor. With PC-like interfaces and PC industrial compability, Pioneer provides native RISC-V development environment and RISC-V desktop experience. It is the first choice for RISC-V developers and hardware pioneers to experience the cutting edge technology of RISC-V. Embrace RISC-V, embrace the future.",
+    "description": "pioneer info"
+  },
+  "mars.page.title": {
+    "message": "Embarking on the RISC-V Cosmic Journey",
+    "description": "mars title"
+  },
+  "mars.page.info1": {
+    "message": "The first RISC-V credit card size SBC",
+    "description": "mars info"
+  },
+  "mars.page.info2": {
+    "message": "RISC-V is an open standard instruction set architecture (ISA) based on established reduced instruction set computer (RISC) principles.",
+    "description": "mars info"
+  },
+  "mars.page.info3": {
+    "message": "(quad-core up to 1.5GHz)",
+    "description": "mars info"
+  },
+  "mars.page.info4": {
+    "message": "One key to switch uart serial download mode",
+    "description": "mars info"
+  },
+  "mars.page.info5": {
+    "message": "(press and hold before powering on - uart serial download mode)",
+    "description": "mars info"
+  },
+  "mars.page.info6": {
+    "message": "Support PoE",
+    "description": "mars info"
+  },
+  "mars.page.info7": {
+    "message": "network cable power",
+    "description": "mars info"
+  },
+  "mars.page.info8": {
+    "message": "Support WI-FI / BT module",
+    "description": "mars info"
+  },
+  "mars.page.info9": {
+    "message": "Classic look",
+    "description": "mars info"
+  },
+  "mars.page.info10": {
+    "message": "Adapted to Raspberry Pi 3B case",
+    "description": "mars info"
+  },
+  "mars.tech.info": {
+    "message": "Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. This four-core device supports a plug-and-play eMMC module, as well as up to 8GB of LPDDR4 memory. The board is equipped with three USB 3.0 ports, one USB 2.0 port, an HDMI 2.0 port that supports 4K resolution, an RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO.",
+    "description": "mars tech"
+  },
+  "mars": {
+    "message": "Mars",
+    "description": "mars Name"
+  },
+  "duo": {
+    "message": "Duo",
+    "description": "duo Name"
+  },
+  "pioneer": {
+    "message": "Pioneer",
+    "description": "pioneer Name"
+  },
+  "contact.title": {
+    "message": "GET IN TOUCH",
+    "description": "contact title"
+  },
+  "contact.title.info": {
+    "message": "Having questions? Get in touch with us to resolve!",
+    "description": "contact info"
+  },
+  "contact.title.Sales": {
+    "message": "Sales Department",
+    "description": "contact info"
+  },
+  "contact.title.Development": {
+    "message": "Development Department",
+    "description": "contact info"
+  },
+  "contact.title.support": {
+    "message": "Customer Support Department",
+    "description": "contact info"
+  },
+  "contact.title.sendMessage": {
+    "message": "Send a message",
+    "description": "contact sendMessage"
+  },
+  "contact.title.name": {
+    "message": "Name",
+    "description": "name"
+  },
+  "contact.title.email": {
+    "message": "Email",
+    "description": "email"
+  },
+  "contact.title.subject": {
+    "message": "Subject",
+    "description": "subject"
+  },
+  "contact.title.message": {
+    "message": "Message",
+    "description": "message"
+  },
+  "contact.title.send": {
+    "message": "Send",
+    "description": "send"
+  },
+  "contact.send.res": {
+    "message": "Send successfully",
+    "description": "send"
+  },
+  "contact.send.res.info": {
+    "message": "Please do not send duplicate",
+    "description": "send"
+  },
+  "contact.send.err": {
+    "message": "Sending failure",
+    "description": "send"
+  },
+  "contact.send.err.info": {
+    "message": "The server is abnormal, it is being fixed, please try again later",
+    "description": "send"
+  },
+  "contact.send.close": {
+    "message": "Close",
+    "description": "send"
+  },
+  "Donation.title": {
+    "message": "Donation Application Form",
+    "description": "Donation"
+  },
+  "Donation.title.Information": {
+    "message": "Donation Application Form",
+    "description": "Donation"
+  },
+  "Donation.title.Information.Organization": {
+    "message": "Organization/Affiliation (if applicable)",
+    "description": "Donation"
+  },
+  "Donation.title.Information.web": {
+    "message": "Website (if applicable)",
+    "description": "Donation"
+  },
+  "Donation.title.Project": {
+    "message": "Project Information",
+    "description": "Project"
+  },
+  "Donation.title.Project.name": {
+    "message": "Project Name",
+    "description": "Project"
+  },
+  "Donation.title.Project.Description": {
+    "message": "Project Description",
+    "description": "Project"
+  },
+  "Donation.title.Shipping": {
+    "message": "Shipping Information",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.Country": {
+    "message": "Country of Residence",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.Phone": {
+    "message": "Phone Number",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.Phone.process": {
+    "message": "Your phone number will be used solely for communication related to the donation process. We respect your privacy and will ensure the confidentiality of your contact information.",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.addess": {
+    "message": "Shipping Address",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.addess.process": {
+    "message": "Please note that your shipping address will be used solely for the purpose of delivering the donated hardware. We value your privacy and will handle your information with utmost care.",
+    "description": "Shipping"
+  },
+  "cv1800b.title": {
+    "message": "CV1800B Manual Confidentiality Agreement",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.Applicant": {
+    "message": "Select Your Applicant Type",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.Applicant.Individual": {
+    "message": "Individual",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.Applicant.Schools": {
+    "message": "Schools or research institutions",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.Applicant.corporations": {
+    "message": "For-profit organizations or corporations",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.lang": {
+    "message": "Select the language of the document (Chinese or English)",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.file": {
+    "message": "Please fill in the following information",
+    "description": "cv1800b"
+  },
+  "cv1800b.Individual.Purpose": {
+    "message": "Purpose",
+    "description": "cv1800b"
+  },
+  "cv1800b.Individual.Proof": {
+    "message": "Proof of identity",
+    "description": "cv1800b"
+  },
+  "cv1800b.Individual.Proof.info": {
+    "message": "(ID card, work card, business card, etc.)",
+    "description": "cv1800b"
+  },
+  "cv1800b.Individual.file.info": {
+    "message": "File size limit: 1 MB. Accepted formats: png, jpg, webp, pdf",
+    "description": "cv1800b"
+  },
+  "Submit": {
+    "message": "Submit",
+    "description": "Submit"
+  },
+  "cv1800b.phone.correct": {
+    "message": "Please fill in the correct format of the phone number",
+    "description": "cv1800b"
+  },
+  "cv1800b.email.correct": {
+    "message": "Please fill in the correct format of e-mail",
+    "description": "cv1800b"
+  },
+  "cv1800b.Schools.name": {
+    "message": "Applicant Name",
+    "description": "cv1800b"
+  },
+  "cv1800b.Schools.Organization.name": {
+    "message": "Your Organization Name",
+    "description": "cv1800b"
+  },
+  "cv1800b.Schools.Certification": {
+    "message": "Organizational Certification",
+    "description": "cv1800b"
+  },
+  "cv1800b.Schools.Certification.info": {
+    "message": "(Authorization letter, photo of office location, work card, etc.)",
+    "description": "cv1800b"
+  },
+  "cv1800b.Schools.Project.Details": {
+    "message": "Project Details",
+    "description": "cv1800b"
+  },
+  "cv1800b.corporations.id": {
+    "message": "(work card, business card, etc.)",
+    "description": "cv1800b"
+  },
+  "cv1800b.corporations.Businessemail": {
+    "message": "Business Email",
+    "description": "cv1800b"
+  },
+  "cv1800b.corporations.BusinessAddress": {
+    "message": "Business Address",
+    "description": "cv1800b"
+  },
+  "cv1800b.corporations.name": {
+    "message": "Name of organization or company",
+    "description": "cv1800b"
+  },
+  "cv1800b.corporations.Registration": {
+    "message": "Business Registration Number",
+    "description": "cv1800b"
+  },
+  "homepage.corporations.Documentstitle": {
+    "message": "Milk-V Documents",
+    "description": "homepage documents"
+  },
+  "homepage.corporations.Documentswords": {
+    "message": "View our documentation for technical support",
+    "description": "homepage documents"
+  },
+  "homepage.corporations.CommunityBotton": {
+    "message": "Milk-V Community",
+    "description": "Milk-V Community booton"
+  },
+  "homepage.corporations.WhyRVBotton": {
+    "message": "Why RISC-V ?",
+    "description": "Why RISC-V ? booton"
+  },
+  "homepage.corporations.duo": {
+    "message": "Dual cores up to 1GHz (optional RISC-V / ARM), up to 256MB of memory, and a 1TOPS@INT8 TPU. Capable of running both Linux and RTOS simultaneously, with rich I/O interfaces.",
+    "description": "duo description"
+  },
+  "homepage.corporations.duolearnmore": {
+    "message": "Learn more",
+    "description": "duo Learn more"
+  },
+  "homepage.corporations.duobuynow": {
+    "message": "Buy Now",
+    "description": "duo buy"
+  },
+  "homepage.corporations.pioneer": {
+    "message": "Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard mATX form factor. It is the first choice for RISC-V developers and hardware pioneers to experience the cutting edge technology of RISC-V.",
+    "description": "pioneer description"
+  },
+  "homepage.corporations.pioneerlearnmore": {
+    "message": "Learn more",
+    "description": "pioneer Learn more"
+  },
+  "homepage.corporations.pioneerbuynow": {
+    "message": "Buy Now",
+    "description": "pioneer buy"
+  },
+  "homepage.corporations.marscm": {
+    "message": "The Mars Compute Module is a System on Module (SoM) based on a the StarFive JH7110 System on Chip (SoC). ",
+    "description": "mars cm"
+  },
+  "homepage.corporations.mars": {
+    "message": "Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. An RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO. ",
+    "description": "mars"
+  },
+  "homepage.corporations.marslearnmore": {
+    "message": "Learn more",
+    "description": "mars Learn more"
+  },
+  "homepage.corporations.marsbuynow": {
+    "message": "Buy Now",
+    "description": "mars buy now"
+  },
+  "homepage.corporations.meles": {
+    "message": "Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH1520. It is powered by a Quad Core RISC-V 64GCV C910, capable of running up to 2.0GHz. This SBC is packed with rich interfaces and boasts powerful computing and AI capabilities, making it an ideal RISC-V intelligent hardware platform for hobbyists, makers, engineers, teachers, and students.",
+    "description": "meles "
+  },
+  "homepage.corporations.melesbuynow": {
+    "message": "Buy Now",
+    "description": "meles buy"
+  },
+  "homepage.corporations.meleslearnmore": {
+    "message": "Learn more",
+    "description": "meles learn more"
+  },
+  "homepage.corporations.vega": {
+    "message": "Milk-V Vega is a compact and low-density box-style open-source 10 Gigabit network switch developed by Milk-V for the next generation of network architecture. It serves as a unified platform for various services such as broadband, voice, video, and surveillance.",
+    "description": "vega "
+  },
+  "homepage.corporations.vegabuynow": {
+    "message": "Buy Now",
+    "description": "vega buy"
+  },
+  "homepage.corporations.vegalearnmore": {
+    "message": "Learn more",
+    "description": "vega learn more"
+  },
+  "homepage.corporations.docslearnmore": {
+    "message": "Learn more",
+    "description": "docs learn more"
+  },
+  "homepage.corporations.joinus": {
+    "message": "Join Us to Share More",
+    "description": "Join Us to Share More"
+  },
+  "homepage.corporations.emailtitle_1": {
+    "message": "Having questions?",
+    "description": "Having questions?"
+  },
+  "homepage.corporations.emailtitle_2": {
+    "message": "Get in touch with us to resolve!",
+    "description": "Get in touch with us to resolve!"
+  },
+  "homepage.corporations.salesdepartment": {
+    "message": "Sales Department",
+    "description": "Sales Department"
+  },
+  "homepage.corporations.devdepartment": {
+    "message": "Development Department",
+    "description": "Development Department"
+  },
+  "homepage.corporations.customerdepartment": {
+    "message": "Customer Support Department",
+    "description": "Customer Support Department"
+  },
+  "homepage.corporations.emailto": {
+    "message": "This e-mail is to",
+    "description": "This e-mail is to"
+  },
+  "homepage.corporations.emailmessage": {
+    "message": "Message",
+    "description": "main message"
+  },
+  "homepage.corporations.companyname": {
+    "message": "Shenzhen MilkV Technology Co., Ltd",
+    "description": "footer company name"
+  },
+  "homepage.corporations.companyaddress_1": {
+    "message": "L8-01, Block B, Bao Cube Jewelry City, 198 Xin'an 4th Road, Liutang Community, Xixiang Street,Bao'an District,",
+    "description": "footer company address"
+  },
+  "homepage.corporations.companyaddress_2": {
+    "message": "Shenzhen, China",
+    "description": "footer company address"
+  },
+  "Send": {
+    "message": "Send",
+    "description": "Send"
+  },
+  "Embracing": {
+    "message": "Embracing RISC-V with Milk-V",
+    "description": " "
+  },
+  "overview": {
+    "message": "overview",
+    "description": " "
+  },
+  "BlockDiagram": {
+    "message": "Block Diagram",
+    "description": " "
+  },
+  "Applications": {
+    "message": "Applications",
+    "description": " "
+  },
+  "Documents": {
+    "message": "Documents",
+    "description": " "
+  },
+  "DesignResources": {
+    "message": "Design Resources",
+    "description": " "
+  },
+  "ChoosingUs": {
+    "message": "Choosing Us",
+    "description": " "
+  },
+  "ChoosingUs.item1.title": {
+    "message": "Authorized Distributor",
+    "description": " "
+  },
+  "ChoosingUs.item2.title": {
+    "message": "Tailored Solution Design",
+    "description": " "
+  },
+  "ChoosingUs.item3.title": {
+    "message": "Worry-Free After-sales Support",
+    "description": " "
+  },
+  "ChoosingUs.item1.info": {
+    "message": "Shenzhen MilkV Technology Co., Ltd. is an official authorized chip distributor for Beijing Crystal Vision Intelligent Technology Co., Ltd., offering a diverse range of chip models and delivering competitive pricing as a primary distributor.",
+    "description": " "
+  },
+  "ChoosingUs.item2.info": {
+    "message": "We have advanced capabilities in chip-based solutions, allowing us to create customized solutions tailored to your specific requirements.",
+    "description": " "
+  },
+  "ChoosingUs.item3.info": {
+    "message": "A Seasoned Team of Engineers Providing Technical Support: Comprehensive Solutions for Your Chip Design Challenges",
+    "description": " "
+  },
+  "SelectionMethod": {
+    "message": "FILTER BY",
+    "description": " "
+  },
+  "Startingfrom": {
+    "message": "Starting from",
+    "description": " "
+  },
+  "manykernels": {
+    "message": "Multiple Memory 0ptions Available for Selection",
+    "description": " "
+  },
+  "large": {
+    "message": "More Powerful than Others",
+    "description": " "
+  },
+  "DualCore": {
+    "message": "Dual Core RISC-V CPU up to",
+    "description": " "
+  },
+  "CV1800BDiagram": {
+    "message": "CV1800B Architecture Diagram",
+    "description": " "
+  },
+  "SG2002Diagram": {
+    "message": "SG2002 Architecture Diagram",
+    "description": " "
+  },
+  "architectures": {
+    "message": "Seamless switching between RISC-V and ARM architectures at the touch of a button",
+    "description": " "
+  },
+  "Dual-systeCapable": {
+    "message": "Dual-systeCapable of running dual operating systems concurrentlym Operation",
+    "description": " "
+  },
+  "chipOpen-source": {
+    "message": "All chip data is fully open-source",
+    "description": " "
+  },
+  "Interfaces": {
+    "message": "Interfaces compatible with Raspberry Pi, featuring a rich array of peripherals",
+    "description": " "
+  },
+  "AUDIO": {
+    "message": "Open AUDIO Interface",
+    "description": " "
+  },
+  "Lightweight": {
+    "message": "As Compact and Lightweight as Chewing Gum",
+    "description": " "
+  },
+  "Boards": {
+    "message": "Extensive Range of Expansion Boards",
+    "description": " "
+  },
+  "docs.contributors": {
+    "description": "Contributors",
+    "message": "Contributors"
+  }
+}
