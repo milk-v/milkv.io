@@ -1,181 +1,181 @@
 {
   "theme.ErrorPageContent.title": {
-    "message": "This page crashed.",
+    "message": "ページがクラッシュしました。",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Try again",
+    "message": "もう一度試す",
     "description": "The label of the button to try again when the page crashed"
   },
   "theme.NotFound.title": {
-    "message": "Page Not Found",
+    "message": "ページが見つかりません。",
     "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
-    "message": "We could not find what you were looking for.",
+    "message": "お探しのものは見つかりませんでした。",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
-    "description": "The 2nd paragraph of the 404 page"
+    "message": "リンクが切れている場合は、管理者へお知らせください。",
+    "description": "The 2nd paragraph of the 404 page" 
   },
   "theme.admonition.note": {
-    "message": "note",
+    "message": "備考",
     "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "tip",
+    "message": "ヒント",
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.danger": {
-    "message": "danger",
+    "message": "危険",
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "info",
+    "message": "情報",
     "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.caution": {
-    "message": "caution",
+    "message": "注意",
     "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Scroll back to top",
+    "message": "ページの先頭へ",
     "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
-    "message": "Archive",
+    "message": "アーカイブ",
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
-    "message": "Archive",
+    "message": "アーカイブ",
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Blog list page navigation",
+    "message": "ブログリスト並び替え",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Newer Entries",
+    "message": "新しい順",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Older Entries",
+    "message": "古い順",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Blog post page navigation",
+    "message": "ブログポスト並び替え",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Newer Post",
+    "message": "新しい順",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Older Post",
+    "message": "古い順",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Switch between dark and light mode (currently {mode})",
+    "message": "ダークモードとライトモードの切り替え(現在{mode})",
     "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "dark mode",
+    "message": "ダークモード",
     "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "light mode",
+    "message": "ライトモード",
     "description": "The name for the light color mode"
   },
   "theme.blog.post.plurals": {
-    "message": "One post|{count} posts",
+    "message": "ポスト|{count}個",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} tagged with \"{tagName}\"",
+    "message": "{nPosts}の投稿に\"{tagName}\"がつけられています。",
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "View All Tags",
+    "message": "全てのタグを見る",
     "description": "The label of the link targeting the tag list page"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Breadcrumbs",
+    "message": "パンくずリスト",
     "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.DocCard.categoryDescription": {
-    "message": "{count} items",
+    "message": "{count}項目",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Docs pages navigation",
+    "message": "ドキュメントページのナビゲーション",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
-    "message": "Previous",
+    "message": "前へ",
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "Next",
+    "message": "次へ",
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "One doc tagged|{count} docs tagged",
+    "message": "ドキュメントには|{count}つタグが付いています。",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} with \"{tagName}\"",
+    "message": "{nDocsTagged}に\"{tagName}\"があります。",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
-    "message": "Version: {versionLabel}"
+    "message": "バージョン: {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "message": "これは{siteTitle} {versionLabel}の未発表ドキュメントです。",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "message": "ドキュメント{siteTitle} {versionLabel}はもうメンテナンスされていません。",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "message": "新しいドキュメントが利用できます。{latestVersionLink} ({versionLabel})をご覧ください。",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "latest version",
+    "message": "最新バージョン",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.editThisPage": {
-    "message": "Edit this page",
+    "message": "このページを編集",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Direct link to {heading}",
+    "message": "{heading}への直リンク",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": " on {date}",
+    "message": "{date}",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " by {user}",
+    "message": " {user}によって",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Last updated{atDate}{byUser}",
+    "message": "最終更新:{atDate}、{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versions",
+    "message": "バージョン",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Tags:",
+    "message": "タグ:",
     "description": "The label alongside a tag list"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Close",
+    "message": "閉じる",
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.blog.sidebar.navAriaLabel": {
@@ -183,302 +183,302 @@
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.CodeBlock.copied": {
-    "message": "Copied",
+    "message": "コピーしました。",
     "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copy code to clipboard",
+    "message": "コードをクリップボードにコピー",
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.copy": {
-    "message": "Copy",
+    "message": "コピーする",
     "description": "The copy button label on code blocks"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Toggle word wrap",
+    "message": "ワードラップの切り替えs",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
-    "message": "Toggle the collapsible sidebar category '{label}'",
+    "message": "サイドバーのカテゴリ{label}の展開を切り替え",
     "description": "The ARIA label to toggle the collapsible sidebar category"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "Main",
+    "message": "メイン",
     "description": "The ARIA label for the main navigation"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Languages",
+    "message": "言語",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "On this page",
+    "message": "このページ",
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.blog.post.readMore": {
-    "message": "Read More",
+    "message": "もっと読む",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "Read more about {title}",
+    "message": "{title}についてもっと読む",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "One min read|{readingTime} min read",
+    "message": "読むのに1分|読むのに{readingTime}",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Home page",
+    "message": "ホームページ",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Collapse sidebar",
+    "message": "サイドバーを閉じる",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Collapse sidebar",
+    "message": "サイドバーを閉じる",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "Docs sidebar",
+    "message": "サイドバー",
     "description": "The ARIA label for the sidebar navigation"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Close navigation bar",
+    "message": "ナビゲーションバーを閉じる",
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Back to main menu",
+    "message": "← メインメニューに戻る",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Toggle navigation bar",
+    "message": "ナビゲーションバーを切り替える",
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Expand sidebar",
+    "message": "サイドバーを開く",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Expand sidebar",
+    "message": "サイドバーを開く",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.SearchBar.seeAll": {
-    "message": "See all {count} results"
+    "message": "{count}件の結果をすべて見る"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "One document found|{count} documents found",
+    "message": "1件のドキュメントが見つかりました|{count}件のドキュメントが見つかりました",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.existingResultsTitle": {
-    "message": "Search results for \"{query}\"",
+    "message": "\"{query}\"の検索結果",
     "description": "The search page title for non-empty query"
   },
   "theme.SearchPage.emptyResultsTitle": {
-    "message": "Search the documentation",
+    "message": "ドキュメントを検索",
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.inputPlaceholder": {
-    "message": "Type your search here",
+    "message": "探すものを入力",
     "description": "The placeholder for search page input"
   },
   "theme.SearchPage.inputLabel": {
-    "message": "Search",
+    "message": "検索",
     "description": "The ARIA label for search page input"
   },
   "theme.SearchPage.algoliaLabel": {
-    "message": "Search by Algolia",
+    "message": "Algoliaによる検索機能",
     "description": "The ARIA label for Algolia mention"
   },
   "theme.SearchPage.noResultsText": {
-    "message": "No results were found",
+    "message": "結果なし",
     "description": "The paragraph for empty search result"
   },
   "theme.SearchPage.fetchingNewResults": {
-    "message": "Fetching new results...",
+    "message": "新しい結果を取得中...",
     "description": "The paragraph for fetching new search results"
   },
   "theme.SearchBar.label": {
-    "message": "Search",
+    "message": "検索",
     "description": "The ARIA label and placeholder for search button"
   },
   "theme.SearchModal.searchBox.resetButtonTitle": {
-    "message": "Clear the query",
+    "message": "内容をクリア",
     "description": "The label and ARIA label for search box reset button"
   },
   "theme.SearchModal.searchBox.cancelButtonText": {
-    "message": "Cancel",
+    "message": "キャンセル",
     "description": "The label and ARIA label for search box cancel button"
   },
   "theme.SearchModal.startScreen.recentSearchesTitle": {
-    "message": "Recent",
+    "message": "最近",
     "description": "The title for recent searches"
   },
   "theme.SearchModal.startScreen.noRecentSearchesText": {
-    "message": "No recent searches",
+    "message": "最近の検索なし",
     "description": "The text when no recent searches"
   },
   "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
-    "message": "Save this search",
+    "message": "検索を保存",
     "description": "The label for save recent search button"
   },
   "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
-    "message": "Remove this search from history",
+    "message": "この検索を履歴から削除",
     "description": "The label for remove recent search button"
   },
   "theme.SearchModal.startScreen.favoriteSearchesTitle": {
-    "message": "Favorite",
+    "message": "お気に入り",
     "description": "The title for favorite searches"
   },
   "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
-    "message": "Remove this search from favorites",
+    "message": "お気に入りから削除",
     "description": "The label for remove favorite search button"
   },
   "theme.SearchModal.errorScreen.titleText": {
-    "message": "Unable to fetch results",
+    "message": "結果の取得に失敗しました。",
     "description": "The title for error screen of search modal"
   },
   "theme.SearchModal.errorScreen.helpText": {
-    "message": "You might want to check your network connection.",
+    "message": "ネットワーク接続をご確認ください。",
     "description": "The help text for error screen of search modal"
   },
   "theme.SearchModal.footer.selectText": {
-    "message": "to select",
+    "message": "選択",
     "description": "The explanatory text of the action for the enter key"
   },
   "theme.SearchModal.footer.selectKeyAriaLabel": {
-    "message": "Enter key",
+    "message": "エンターキー",
     "description": "The ARIA label for the Enter key button that makes the selection"
   },
   "theme.SearchModal.footer.navigateText": {
-    "message": "to navigate",
+    "message": "ナビゲート",
     "description": "The explanatory text of the action for the Arrow up and Arrow down key"
   },
   "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
-    "message": "Arrow up",
+    "message": "上矢印",
     "description": "The ARIA label for the Arrow up key button that makes the navigation"
   },
   "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
-    "message": "Arrow down",
+    "message": "下矢印",
     "description": "The ARIA label for the Arrow down key button that makes the navigation"
   },
   "theme.SearchModal.footer.closeText": {
-    "message": "to close",
+    "message": "閉じる",
     "description": "The explanatory text of the action for Escape key"
   },
   "theme.SearchModal.footer.closeKeyAriaLabel": {
-    "message": "Escape key",
+    "message": "エスケープキー",
     "description": "The ARIA label for the Escape key button that close the modal"
   },
   "theme.SearchModal.footer.searchByText": {
-    "message": "Search by",
+    "message": "検索",
     "description": "The text explain that the search is making by Algolia"
   },
   "theme.SearchModal.noResultsScreen.noResultsText": {
-    "message": "No results for",
+    "message": "の結果なし",
     "description": "The text explains that there are no results for the following search"
   },
   "theme.SearchModal.noResultsScreen.suggestedQueryText": {
-    "message": "Try searching for",
+    "message": "の検索試行",
     "description": "The text for the suggested query when no results are found for the following search"
   },
   "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
-    "message": "Believe this query should return results?",
+    "message": "この結果は適切ですか?",
     "description": "The text for the question where the user thinks there are missing results"
   },
   "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
-    "message": "Let us know.",
+    "message": "お知らせください。",
     "description": "The text for the link to report missing results"
   },
   "theme.SearchModal.placeholder": {
-    "message": "Search docs",
+    "message": "ドキュメントを検索",
     "description": "The placeholder of the input of the DocSearch pop-up modal"
   },
   "theme.common.skipToMainContent": {
-    "message": "Skip to main content",
+    "message": "メインコンテンツにスキップ",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "Tags",
+    "message": "タグ",
     "description": "The title of the tag list page"
   },
   "homepage.text.title1": {
-    "message": "Why choose RISC-V？",
+    "message": "RISC-Vを選ぶ理由",
     "description": "Home Page Title"
   },
   "homepage.text.title1.info": {
-    "message": "Milk-V is committed to providing high quality RISC-V products to developers, enterprises and consumers, and to promoting the development of the RISC-V hardware and software ecosystem. Milk-V will firmly support open source, and hopes that through its own efforts and those of the community, future RISC-V products will be as numerous and bright as the stars in the Milky Way.",
+    "message": "Milk-Vは、優れたRISC-V製品を開発者、企業、消費者に提供し、RISC-Vハードウェアとソフトウェア・エコシステムの発展を推進していきます。わが社とコミュニティの努力によって、将来のRISC-V製品が天の川銀河の星のように多く、明るくなるように。",
     "description": "Home page title introduction"
   },
   "homepage.text.Duo.mpu": {
-    "message": "RISC-V Dual Core MPU",
+    "message": "RISC-VのデュアルコアMPU",
     "description": "Home Page Duo mpu"
   },
   "homepage.text.Duo.Price": {
-    "message": "Starting from $9",
+    "message": "9ドルから",
     "description": "Home Page Duo Price"
   },
   "homepage.text.debut": {
-    "message": "WORLD DEBUT",
+    "message": "ワールドデビュー",
     "description": "Home Page debut"
   },
   "homepage.text.buy": {
-    "message": "Buy",
+    "message": "購入",
     "description": "Home Page Buy"
   },
   "homepage.text.learnMore": {
-    "message": "Learn more",
+    "message": "もっと見る",
     "description": "Home Page learn more"
   },
   "homepage.text.Features1": {
-    "message": "Low power",
+    "message": "低電力",
     "description": "Home Page Features"
   },
   "homepage.text.Features2": {
-    "message": "Low cost",
+    "message": "低価格",
     "description": "Home Page Features"
   },
   "homepage.text.Features3": {
-    "message": "Open Standard",
+    "message": "オープンスタンダード",
     "description": "Home Page Features"
   },
   "homepage.text.Features4": {
-    "message": "Modularizable",
+    "message": "モジュール化可能",
     "description": "Home Page Features"
   },
   "homepage.text.Features5": {
-    "message": "Simple",
+    "message": "シンプル",
     "description": "Home Page Features"
   },
   "homepage.text.Features6": {
-    "message": "Small area",
+    "message": "省スペース",
     "description": "Home Page Features"
   },
   "homepage.text.Features7": {
-    "message": "Fast",
+    "message": "高速",
     "description": "Home Page Features"
   },
   "homepage.text.Features8": {
-    "message": "High performance",
+    "message": "高パフォーマンス",
     "description": "Home Page Features"
   },
   "homepage.text.Duo.SellingPoint1": {
-    "message": "Dual cores up to 1GHz",
+    "message": "デュアルコア 最大1GHz",
     "description": "Home Page Selling Point"
   },
   "homepage.text.Duo.SellingPoint2": {
-    "message": "Rich IO for UART, I2C, SPI, SDIO, ADC, and more",
+    "message": "UART、I2C、SPI、SDIO、ADCなどの豊富なIO",
     "description": "Home Page Selling Point"
   },
   "homepage.text.pioneer.mpu": {
-    "message": "RISC-V Developer Motherboard / Workstation",
+    "message": "RISC-Vデベロッパー向けのマザーボード/ワークステーション",
     "description": "Home Page pioneer mpu"
   },
   "homepage.text.mars.mpu": {
-    "message": "The first Quad-Core RISC-V credit card size SBC",
+    "message": "初のクアッドコアを装備したカードサイズSBC",
     "description": "Home Page mars mpu"
   },
   "contact.text.matrix": {
-    "message": "Join the Duo Matrix Chat channel to share your ideas with the developers all around the world.",
+    "message": "Duo Matrixチャットチャンネルに参加して、世界中の開発者とアイデアを共有しましょう。",
     "description": "matrix"
   },
   "contact.text.WeChat": {
@@ -494,23 +494,23 @@
     "description": " #milkv-duo"
   },
   "online.buy": {
-    "message": "Online shop",
+    "message": "オンラインショップ",
     "description": "online buy"
   },
   "footer.text.home": {
-    "message": "Home",
+    "message": "ホーム",
     "description": "footer text"
   },
   "footer.text.community": {
-    "message": "Community",
+    "message": "コミュニティ",
     "description": "footer text"
   },
   "footer.text.docs": {
-    "message": "Docs",
+    "message": "ドキュメント",
     "description": "footer text"
   },
   "footer.text.address": {
-    "message": "Address",
+    "message": "住所",
     "description": "footer text"
   },
   "footer.text.address.info": {
@@ -518,63 +518,63 @@
     "description": "footer text"
   },
   "footer.text.Subscribe": {
-    "message": "Subscribe",
+    "message": "購読",
     "description": "footer Subscribe"
   },
   "Duo.text.title1": {
-    "message": "Meet",
+    "message": "満を持して登場。",
     "description": "Duo.text.title"
   },
   "Duo.text.title2": {
-    "message": "A RISC-V Computer",
+    "message": "RISC-Vのコンピューター",
     "description": "Duo.text.title"
   },
   "Duo.text.title3": {
-    "message": "Low cost, low power consumption, high performance",
+    "message": "低価格、低電力、高パフォーマンス。",
     "description": "Duo.text.title"
   },
   "Duo.text.title4": {
-    "message": "Tax or shipping is not included",
+    "message": "税と送料は含まれません。",
     "description": "Duo.text.title"
   },
   "Buy.now": {
-    "message": "Buy Now",
+    "message": "今すぐ購入",
     "description": "buy now"
   },
   "line.title.Specification": {
-    "message": "Specification",
+    "message": "スペック",
     "description": "Specification"
   },
   "line.title.size": {
-    "message": "Small size, big potentials",
+    "message": "小さな躰、大きな潜在力",
     "description": "size"
   },
   "line.title.TechSpecs": {
-    "message": "Tech Specs",
+    "message": "テクニカルスペック",
     "description": "TechSpecs"
   },
   "info.text.powerful": {
-    "message": "More powerful than others",
+    "message": "もっとパワフル。",
     "description": "powerful"
   },
   "info.text.CPU": {
-    "message": "RISC-V CPU up to",
+    "message": "RISC-V CPU最大",
     "description": "Duo CPU"
   },
   "info.text.Vector": {
-    "message": "Vector Acceleration",
+    "message": "ベクターアクセラレーション",
     "description": "Duo Vector "
   },
   "info.text.Ethernet": {
-    "message": "10/100Mbps Ethernet via optional add-on board",
+    "message": "アドオンボード経由での10/100Mbps Ethernetのサポート",
     "description": "Duo Ethernet "
   },
   "info.text.Incredible": {
-    "message": "Incredible, it's a computer!",
+    "message": "こんな顔して、コンピューター。",
     "description": "Duo Incredible "
   },
   "info.text.MicroSD": {
-    "message": "MicroSD support",
+    "message": "MicroSDサポート",
     "description": "Duo MicroSD "
   },
   "info.text.RAM": {
@@ -582,151 +582,151 @@
     "description": "Duo RAM "
   },
   "info.text.support": {
-    "message": "Support Asymmetric multiprocessing",
+    "message": "非同期マルチプロセッシング対応",
     "description": "Duo support "
   },
   "info.text.size.title1": {
-    "message": "Smart Door Lock",
+    "message": "小型ドアロック",
     "description": "Duo size title "
   },
   "info.text.size.title2": {
-    "message": "Intelligent Monitoring",
+    "message": "モニタリング",
     "description": "Duo size title "
   },
   "info.text.size.title3": {
-    "message": "Smart Street Light",
+    "message": "スマート街頭",
     "description": "Duo size title "
   },
   "info.text.size.title4": {
-    "message": "Traffic Monitoring",
+    "message": "トラフィックモニタリング",
     "description": "Duo size title "
   },
   "info.text.size.title5": {
-    "message": "Pedestrian Detection",
+    "message": "人の検出",
     "description": "Duo size title "
   },
   "duo.info.text.Introduction": {
-    "message": "Introduction",
+    "message": "概要",
     "description": "Duo 简介"
   },
   "duo.info.text.Introduction.max": {
-    "message": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost and high-performance platform for professionals, industrial ODMs, AIOT enthusiasts, DIY enthusiasts and creators.Duo 256M is an upgraded version of Duo designed with SG2002 as the main controller, with an upgraded memory of 256M to support the standard Linux system and applications, which can meet the application needs with high memory requirements and large storage capacity. Duo 256M is an upgraded version of Duo designed with SG2002 as the host controller, which supports standard Linux system and applications.",
+    "message": "Milk-V DuoはCV1800Bをベースにした超小型の組み込みプラットフォームです。LinuxとRTOSが実行可能で、プロフェッショナル、産業用ODM、AIoT、DIY、クリエイターに、高信頼で高費用対効果なプラットフォームを提供します。Duo 256M is an upgraded version of Duo designed with SG2002 as the main controller Duo 256MはSG2002をメインコントローラーに据えたDuoのアップグレードで、256MBのメモリーを備えており、スタンダードなLinuxシステムとアプリケーション、さらにより多くのメモリを必要とするアプリケーションに対応できます。",
     "description": "Duo 简介"
   },
   "duo.info.text.Hardware": {
-    "message": "Hardware",
+    "message": "ハードウェア",
     "description": "Duo Hardware"
   },
   "duo.info.text.Documents": {
-    "message": "Documents",
+    "message": "ドキュメント",
     "description": "Duo Documents"
   },
   "duo.info.text.pinOut": {
-    "message": "Pin Out",
+    "message": "ピン出力",
     "description": "Duo Documents"
   },
   "duo.Hardware.info1": {
-    "message": "Dual RV64 Core up to 1GHz",
+    "message": "デュアルRV64コア、最大1GHz",
     "description": "Duo Hardware"
   },
   "duo.Hardware.info2": {
-    "message": "Provides 10/100Mbps Ethernet via optional add-on board",
+    "message": "アドオンボード経由での10/100Mbps Ethernetのサポート",
     "description": "Duo Hardware"
   },
   "duo.Hardware.info3": {
-    "message": "Technology supports running both Linux and RTOS",
+    "message": "LinuxとRTOSの両方をサポート",
     "description": "Duo Hardware"
   },
   "pioneer.page.title": {
-    "message": "Make native RISC-V development possible",
+    "message": "RISC-Vのネイティブ開発を可能にする",
     "description": "pioneer page title"
   },
   "pioneer.page.Specification.text1": {
-    "message": "Powered by SOPHON SG2042",
+    "message": "SOPHON SG2042搭載",
     "description": "pioneer Specification"
   },
   "pioneer.page.Specification.text2": {
-    "message": "64 Core RISC-V CPU",
+    "message": "64コアRISC-V CPU",
     "description": "pioneer Specification"
   },
   "pioneer.page.Box.text1": {
-    "message": "equipped with",
+    "message": "装備",
     "description": "pioneer Box text"
   },
   "pioneer.page.Box.text2": {
-    "message": "Graphic Card",
+    "message": "グラフィックスボード",
     "description": "pioneer Box text"
   },
   "pioneer.page.Box.text3": {
-    "message": "Network Card",
+    "message": "ネットワークカード",
     "description": "pioneer Box text"
   },
   "pioneer.page.Box.text4": {
-    "message": "Power",
+    "message": "電源",
     "description": "pioneer Box text"
   },
   "pioneer.page.Box.text5": {
-    "message": "Cooler",
+    "message": "クーラー",
     "description": "pioneer Box text"
   },
   "pioneer.page.title.minText1": {
-    "message": "Software Support",
+    "message": "ソフトウェアサポート",
     "description": "pioneer min Text"
   },
   "pioneer.page.title.minText2": {
-    "message": "Really Useful",
+    "message": "可用的",
     "description": "pioneer min Text"
   },
   "pioneer.page.really1": {
-    "message": "Workstation",
+    "message": "ワークステーション",
     "description": "pioneer min Text"
   },
   "pioneer.page.info": {
-    "message": "Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard mATX form factor. With PC-like interfaces and PC industrial compability, Pioneer provides native RISC-V development environment and RISC-V desktop experience. It is the first choice for RISC-V developers and hardware pioneers to experience the cutting edge technology of RISC-V. Embrace RISC-V, embrace the future.",
+    "message": "Milk-V Pioneerは、SOPHON SG2042を搭載したMicroATXフォームファクタの開発者向けマザーボードです。PCのようなインターフェースとPC規格との互換性を持つPioneerは、ネイティブなRISC-V開発環境とRISC-Vデスクトップ体験を提供します。RISC-Vの開発者やハードウェアのパイオニアにとって、RISC-Vの最先端技術を体験できる最初の選択肢です。RISC-Vを迎え入れ、未来を迎え入れよう。",
     "description": "pioneer info"
   },
   "mars.page.title": {
-    "message": "Embarking on the RISC-V Cosmic Journey",
+    "message": "RISC-Vの宇宙の旅へ",
     "description": "mars title"
   },
   "mars.page.info1": {
-    "message": "The first RISC-V credit card size SBC",
+    "message": "初のRISC-Vを搭載したカードサイズSBC",
     "description": "mars info"
   },
   "mars.page.info2": {
-    "message": "RISC-V is an open standard instruction set architecture (ISA) based on established reduced instruction set computer (RISC) principles.",
+    "message": "RISC-Vは、Reduced Instruction Set Computer(RISC)に基づくオープン・スタンダードの命令セット・アーキテクチャ（ISA）です。",
     "description": "mars info"
   },
   "mars.page.info3": {
-    "message": "(quad-core up to 1.5GHz)",
+    "message": "(クアッドコア 最大1.5GHz)",
     "description": "mars info"
   },
   "mars.page.info4": {
-    "message": "One key to switch uart serial download mode",
+    "message": "ワンタッチでUARTシリアルダウンロードモードに",
     "description": "mars info"
   },
   "mars.page.info5": {
-    "message": "(press and hold before powering on - uart serial download mode)",
+    "message": "(押しながら電源投入でシリアルダウンロードモードになります)",
     "description": "mars info"
   },
   "mars.page.info6": {
-    "message": "Support PoE",
+    "message": "PoE対応",
     "description": "mars info"
   },
   "mars.page.info7": {
-    "message": "network cable power",
+    "message": "ネットワークケーブルからの電源",
     "description": "mars info"
   },
   "mars.page.info8": {
-    "message": "Support WI-FI / BT module",
+    "message": "Wi-Fi/BTモジュール対応",
     "description": "mars info"
   },
   "mars.page.info9": {
-    "message": "Classic look",
+    "message": "完成された外見",
     "description": "mars info"
   },
   "mars.page.info10": {
-    "message": "Adapted to Raspberry Pi 3B case",
+    "message": "Raspberry pi 3Bケースに対応",
     "description": "mars info"
   },
   "mars.tech.info": {
@@ -746,31 +746,31 @@
     "description": "pioneer Name"
   },
   "contact.title": {
-    "message": "GET IN TOUCH",
+    "message": "連絡先",
     "description": "contact title"
   },
   "contact.title.info": {
-    "message": "Having questions? Get in touch with us to resolve!",
+    "message": "質問がございますか?私たちにご連絡ください!",
     "description": "contact info"
   },
   "contact.title.Sales": {
-    "message": "Sales Department",
+    "message": "セールス部門",
     "description": "contact info"
   },
   "contact.title.Development": {
-    "message": "Development Department",
+    "message": "開発部門",
     "description": "contact info"
   },
   "contact.title.support": {
-    "message": "Customer Support Department",
+    "message": "カスタマーサポート部門",
     "description": "contact info"
   },
   "contact.title.sendMessage": {
-    "message": "Send a message",
+    "message": "メッセージを送る",
     "description": "contact sendMessage"
   },
   "contact.title.name": {
-    "message": "Name",
+    "message": "お名前",
     "description": "name"
   },
   "contact.title.email": {
@@ -778,35 +778,35 @@
     "description": "email"
   },
   "contact.title.subject": {
-    "message": "Subject",
+    "message": "題名",
     "description": "subject"
   },
   "contact.title.message": {
-    "message": "Message",
+    "message": "メッセージ",
     "description": "message"
   },
   "contact.title.send": {
-    "message": "Send",
+    "message": "送信",
     "description": "send"
   },
   "contact.send.res": {
-    "message": "Send successfully",
+    "message": "送信に成功しました。",
     "description": "send"
   },
   "contact.send.res.info": {
-    "message": "Please do not send duplicate",
+    "message": "何度も送らないでください。",
     "description": "send"
   },
   "contact.send.err": {
-    "message": "Sending failure",
+    "message": "送信に失敗しました。",
     "description": "send"
   },
   "contact.send.err.info": {
-    "message": "The server is abnormal, it is being fixed, please try again later",
+    "message": "サーバーに問題が発生しています。後でもう一度お試しください。",
     "description": "send"
   },
   "contact.send.close": {
-    "message": "Close",
+    "message": "閉じる",
     "description": "send"
   },
   "Donation.title": {
@@ -1090,115 +1090,115 @@
     "description": "Send"
   },
   "Embracing": {
-    "message": "Embracing RISC-V with Milk-V",
+    "message": "Milk-VでRISC-Vをつくる",
     "description": " "
   },
   "overview": {
-    "message": "overview",
+    "message": "概要",
     "description": " "
   },
   "BlockDiagram": {
-    "message": "Block Diagram",
+    "message": "ブロックダイアグラム",
     "description": " "
   },
   "Applications": {
-    "message": "Applications",
+    "message": "アプリケーション",
     "description": " "
   },
   "Documents": {
-    "message": "Documents",
+    "message": "ドキュメント",
     "description": " "
   },
   "DesignResources": {
-    "message": "Design Resources",
+    "message": "デザインリソース",
     "description": " "
   },
   "ChoosingUs": {
-    "message": "Choosing Us",
+    "message": "私達を選ぶ",
     "description": " "
   },
   "ChoosingUs.item1.title": {
-    "message": "Authorized Distributor",
+    "message": "正規代理店",
     "description": " "
   },
   "ChoosingUs.item2.title": {
-    "message": "Tailored Solution Design",
+    "message": "オーダーメイドのソリューション設計",
     "description": " "
   },
   "ChoosingUs.item3.title": {
-    "message": "Worry-Free After-sales Support",
+    "message": "あんしんのアフターサポート",
     "description": " "
   },
   "ChoosingUs.item1.info": {
-    "message": "Shenzhen MilkV Technology Co., Ltd. is an official authorized chip distributor for Beijing Crystal Vision Intelligent Technology Co., Ltd., offering a diverse range of chip models and delivering competitive pricing as a primary distributor.",
+    "message": "Shenzhen MilkV Technology Co., Ltd.は、北京クリスタルビジョンインテリジェントテクノロジー有限公司の公式認定チップ代理店であり、一次代理店として多様なチップモデルを提供し、競争力のある価格を実現しています。",
     "description": " "
   },
   "ChoosingUs.item2.info": {
-    "message": "We have advanced capabilities in chip-based solutions, allowing us to create customized solutions tailored to your specific requirements.",
+    "message": "当社はチップベースのソリューションにおいて高度な能力を有しており、お客様の特定の要件に合わせてカスタマイズされたソリューションを作成することができます。",
     "description": " "
   },
   "ChoosingUs.item3.info": {
-    "message": "A Seasoned Team of Engineers Providing Technical Support: Comprehensive Solutions for Your Chip Design Challenges",
+    "message": "経験豊富なエンジニアチームによる技術サポート:チップ設計の課題に対する包括的なソリューション",
     "description": " "
   },
   "SelectionMethod": {
-    "message": "FILTER BY",
+    "message": "フィルター",
     "description": " "
   },
   "Startingfrom": {
-    "message": "Starting from",
+    "message": "ここから始める",
     "description": " "
   },
   "manykernels": {
-    "message": "Multiple Memory 0ptions Available for Selection",
+    "message": "複数のメモリオプション",
     "description": " "
   },
   "large": {
-    "message": "More Powerful than Others",
+    "message": "ほかよりももっとパワフル。",
     "description": " "
   },
   "DualCore": {
-    "message": "Dual Core RISC-V CPU up to",
+    "message": "デュアルコアRISC-V 最大",
     "description": " "
   },
   "CV1800BDiagram": {
-    "message": "CV1800B Architecture Diagram",
+    "message": "CV1800B アーキテクチャダイアグラム",
     "description": " "
   },
   "SG2002Diagram": {
-    "message": "SG2002 Architecture Diagram",
+    "message": "SG2002 アーキテクチャダイアグラム",
     "description": " "
   },
   "architectures": {
-    "message": "Seamless switching between RISC-V and ARM architectures at the touch of a button",
+    "message": "ボタン1つでRISC-VとARMアーキテクチャをシームレスに切り替え可能",
     "description": " "
   },
   "Dual-systeCapable": {
-    "message": "Dual-systeCapable of running dual operating systems concurrentlym Operation",
+    "message": "ふたつのオペレーティングシステムを実行可能",
     "description": " "
   },
   "chipOpen-source": {
-    "message": "All chip data is fully open-source",
+    "message": "すべてのチップデータはオープンソース",
     "description": " "
   },
   "Interfaces": {
-    "message": "Interfaces compatible with Raspberry Pi, featuring a rich array of peripherals",
+    "message": "インターフェイスはRaspberry pi互換",
     "description": " "
   },
   "AUDIO": {
-    "message": "Open AUDIO Interface",
+    "message": "オープンオーディオインターフェイス",
     "description": " "
   },
   "Lightweight": {
-    "message": "As Compact and Lightweight as Chewing Gum",
+    "message": "チューインガム並にコンパクト",
     "description": " "
   },
   "Boards": {
-    "message": "Extensive Range of Expansion Boards",
+    "message": "豊富な拡張ボード",
     "description": " "
   },
   "docs.contributors": {
-    "description": "Contributors",
+    "description": "貢献者",
     "message": "Contributors"
   }
 }
