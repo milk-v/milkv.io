@@ -152,6 +152,29 @@
                     "file_format": "XLSX",
                     "file_size": "3.86 MB",
                     "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "duo_s_SCH_v1.1.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/duo_s_SCH_v1.1.pdf?raw=ture",
+                    "file_format": "PDF",
+                    "file_size": "399 KB",
+                    "file_date": "Jun 2,2024"
+                }
+            ],
+            "Datasheet": [
+                {
+                    "download_name": "SG2000_TRM_V1.0-alpha.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/datasheet/SG2000_Preliminary_Datasheet_V1.0-alpha_CN.pdf?raw=ture",
+                    "file_format": "PDF",
+                    "file_size": "7.6 MB",
+                    "file_date": "Jun 2,2024"
+                },
+                {
+                    "download_name": "SG2000_TRM_V1.0-alpha.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/datasheet/SG2000_TRM_V1.0-alpha.pdf?raw=ture",
+                    "file_format": "PDF",
+                    "file_size": "15.7 MB",
+                    "file_date": "Jun 2,2024"
                 }
             ]
         },
@@ -212,6 +235,29 @@
                     "file_format": "XLSX",
                     "file_size": "3.86 MB",
                     "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "duo_s_SCH_v1.1.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/hardware/duo_s_SCH_v1.1.pdf?raw=ture",
+                    "file_format": "PDF",
+                    "file_size": "399 KB",
+                    "file_date": "Jun 2,2024"
+                }
+            ],
+            "数据手册": [
+                {
+                    "download_name": "SG2000_TRM_V1.0-alpha.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/datasheet/SG2000_Preliminary_Datasheet_V1.0-alpha_CN.pdf?raw=ture",
+                    "file_format": "PDF",
+                    "file_size": "7.6 MB",
+                    "file_date": "Jun 2,2024"
+                },
+                {
+                    "download_name": "SG2000_TRM_V1.0-alpha.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-s/datasheet/SG2000_TRM_V1.0-alpha.pdf?raw=ture",
+                    "file_format": "PDF",
+                    "file_size": "15.7 MB",
+                    "file_date": "Jun 2,2024"
                 }
             ]
         },
@@ -370,6 +416,29 @@
                     "file_format": "PCB",
                     "file_size": "1.1 MB",
                     "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "duo-256m-v1.0-schematic.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/duo-256m-v1.0-schematic.pdf?raw=ture",
+                    "file_format": "PDF",
+                    "file_size": "246 KB",
+                    "file_date": "Jun 2,2024"
+                }
+            ],
+            "Datasheet": [
+                {
+                    "download_name": "SG2002_TRM_V1.0-alpha.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/datasheet/SG2002_TRM_V1.0-alpha.pdf?raw=ture",
+                    "file_size": "18.5 MB",
+                    "file_format": "PDF",
+                    "file_date": "Jun 2, 2024"
+                },
+                {
+                    "download_name": "SG2002_Preliminary_Datasheet_V1.0-alpha_CN.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/datasheet/SG2002_Preliminary_Datasheet_V1.0-alpha_CN.pdf?raw=ture",
+                    "file_size": "7.8 MB",
+                    "file_format": "PDF",
+                    "file_date": "Jun 2, 2024"
                 }
             ]
         },
@@ -409,26 +478,61 @@
                     "file_format": "PCB",
                     "file_size": "1.1 MB",
                     "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "duo-256m-v1.0-schematic.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/hardware/duo-256m-v1.0-schematic.pdf?raw=ture",
+                    "file_format": "PDF",
+                    "file_size": "246 KB",
+                    "file_date": "Jun 2,2024"
+                }
+            ],
+            "数据手册": [
+                {
+                    "download_name": "SG2002_TRM_V1.0-alpha.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/datasheet/SG2002_TRM_V1.0-alpha.pdf?raw=ture",
+                    "file_size": "18.5 MB",
+                    "file_format": "PDF",
+                    "file_date": "Jun 2, 2024"
+                },
+                {
+                    "download_name": "SG2002_Preliminary_Datasheet_V1.0-alpha_CN.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/datasheet/SG2002_Preliminary_Datasheet_V1.0-alpha_CN.pdf?raw=ture",
+                    "file_size": "7.8 MB",
+                    "file_format": "PDF",
+                    "file_date": "Jun 2, 2024"
                 }
             ]
         },
         "resources": {
             "Development Hardware": [
                 {
-                    "resources_name": "Duo",
+                    "resources_name": "Duo 256M",
                     "resources_url": "/docs/duo/overview",
                     "resources_img": "/chips/duo-view.webp",
                     "resources_info": "Milk-V Duo 256M is an ultra-compact embedded development platform based on the SG2002 chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators."
+                },
+                {
+                    "resources_name": "Lichee RVNano",
+                    "resources_url": "https://sipeed.com/licheerv-nano",
+                    "resources_img": "/chips/Nano.webp",
+                    "resources_info": "Lichee RVNano, open your geek heart. This is an exquisite small board only 2.54cm * 3.3cm in size, equivalent to the size of an SD card, you can carry a geek core with you as long as you want."
                 }
             ]
         },
         "resources_zh": {
             "硬件": [
                 {
-                    "resources_name": "Duo",
+                    "resources_name": "Duo 256M",
                     "resources_url": "/docs/duo/overview",
                     "resources_img": "/chips/duo-view.webp",
                     "resources_info": "Milk-V Duo 256M 是基于 SG2002 芯片的超紧凑型嵌入式开发平台。它可以运行 Linux 和 RTOS，为专业人士、工业 ODM、AIoT 发烧友、DIY 爱好者和创作者提供了一个可靠、低成本和高性能的平台。"
+                },
+                {
+                    "resources_name": "荔枝派 Nano",
+                    "resources_url": "https://sipeed.com/licheerv-nano",
+                    "resources_img": "/chips/Nano.webp",
+                    "resources_info": "荔枝派 Nano，开启你的极客之心。这是一款仅有2.54cm * 3.3cm大小的精致小板，相当于一张SD卡大小，只要您愿意，即可将一颗极客芯随身携带。"
                 }
             ]
         }
