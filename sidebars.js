@@ -43,6 +43,19 @@ const sidebars = {
         'duo/application-development/pinpong',
         {
           type: "category",
+          label: 'TDL SDK',
+          collapsed: false,
+          link: {
+            title: 'TDL SDK',
+            description: ' ',
+          },
+          items: [
+            'duo/application-development/tdl-sdk/tdl-sdk-introduction',
+            'duo/application-development/tdl-sdk/tdl-sdk-face-detection',
+          ],
+        },
+        {
+          type: "category",
           label: 'TPU',
           collapsed: false,
           link: {
