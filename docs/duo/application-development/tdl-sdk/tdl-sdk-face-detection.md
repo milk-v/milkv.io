@@ -3,7 +3,7 @@ sidebar_label: 'Face Detection'
 sidebar_position: 20
 ---
 
-## Face Detection
+# Face Detection
 
 The test program will pull the camera data, add the face detection algorithm, and use tools such as VLC to pull the stream in real time to view the effect.
 
@@ -93,7 +93,7 @@ If you are using USB Net(RNDIS), the address is:
 rtsp://192.168.42.1/h264
 ```
 
-<Image src='/docs/duo/duo-vlc-stream-setup.jpg' minWidth='40%' maxWidth='60%' align='center' />
+<Image src='/docs/duo/duo-vlc-stream-setup.jpg' minWidth='40%' maxWidth='60%' align='left' />
 
 If you are using the network port on the IO-Board or the network port integrated on DuoS, the IP address in the URL needs to be replaced with the IP of the network port (you can use the `ifconfig` command in the Duo terminal to view).
 
@@ -101,7 +101,7 @@ Click the `Show more options` option in the lower left corner, and you can set t
 
 After configuring, click `Play` to view the face detection effect of the camera.
 
-<Image src='/docs/duo/tdl-sdk/duo-tdl-sdk-face-detection.jpg' minWidth='50%' maxWidth='80%' align='center' />
+<Image src='/docs/duo/tdl-sdk/duo-tdl-sdk-face-detection.jpg' minWidth='50%' maxWidth='80%' align='left' />
 
 ### Generation of face detection model
 

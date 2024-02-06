@@ -3,7 +3,7 @@ sidebar_label: '人脸检测'
 sidebar_position: 20
 ---
 
-## 人脸检测
+# 人脸检测
 
 该测试程序会拉取摄像头数据，加入人脸检测算法，使用 VLC 等工具可以实时拉流查看效果。
 
@@ -92,7 +92,7 @@ face count: 0
 rtsp://192.168.42.1/h264
 ```
 
-<Image src='/docs/duo/duo-vlc-stream-setup.jpg' minWidth='40%' maxWidth='60%' align='center' />
+<Image src='/docs/duo/duo-vlc-stream-setup.jpg' minWidth='40%' maxWidth='60%' align='left' />
 
 如果使用的是底板 IO-Board 上的网口，或者 DuoS 上集成的网口，URL 中的 IP 地址需换成网口的 IP（可在 Duo 终端中使用 `ifconfig` 命令查看）。
 
@@ -100,9 +100,7 @@ rtsp://192.168.42.1/h264
 
 配置好之后，点击 `Play`，即可查看摄像头的人脸检测效果。
 
-![duo](/docs/duo/tdl-sdk/duo-tdl-sdk-face-detection.jpg)
-
-<Image src='/docs/duo/tdl-sdk/duo-tdl-sdk-face-detection.jpg' minWidth='50%' maxWidth='80%' align='center' />
+<Image src='/docs/duo/tdl-sdk/duo-tdl-sdk-face-detection.jpg' minWidth='50%' maxWidth='80%' align='left' />
 
 ### 人脸检测模型的生成
 
