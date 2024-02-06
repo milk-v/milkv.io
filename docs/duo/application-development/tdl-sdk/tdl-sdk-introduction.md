@@ -83,6 +83,10 @@ At present, TDL SDK includes motion detection, face detection, face recognition,
    ./compile_sample.sh clean
    ```
 
+## Example description
+
+For detailed descriptions and running methods of each example, please refer to the following chapters.
+
 ## Reference link
 
 [https://developer.sophgo.com/thread/556.html](https://developer.sophgo.com/thread/556.html)

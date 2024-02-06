@@ -83,6 +83,10 @@ Cvitek 所提供的 TDL（Turnkey Deep Learning）集成算法，用以缩短应
    ./compile_sample.sh clean
    ```
 
+## 示例说明
+
+各示例的详细说明及运行方法，请参考后面章节。
+
 ## 参考链接
 
 [https://developer.sophgo.com/thread/556.html](https://developer.sophgo.com/thread/556.html)
