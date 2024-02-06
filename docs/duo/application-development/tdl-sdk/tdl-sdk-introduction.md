@@ -3,7 +3,7 @@ sidebar_label: 'Introduction'
 sidebar_position: 10
 ---
 
-## Introduction
+# Introduction
 
 Cvitek provides TDL integration algorithms to reduce the time required for application development.
 

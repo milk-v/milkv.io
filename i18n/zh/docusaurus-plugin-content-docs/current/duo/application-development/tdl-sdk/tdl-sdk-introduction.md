@@ -3,7 +3,7 @@ sidebar_label: '简介'
 sidebar_position: 10
 ---
 
-## TDL SDK 简介
+# 简介
 
 Cvitek 所提供的 TDL（Turnkey Deep Learning）集成算法，用以缩短应用程序开发所需的时间。
 
