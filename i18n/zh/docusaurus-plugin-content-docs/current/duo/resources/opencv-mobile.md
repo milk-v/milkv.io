@@ -161,6 +161,7 @@ scp in.jpg root@192.168.42.1:/root/
 ```
 
 `in.jpg`：
+
 <Image src='/docs/duo/opencv-mobile-in.jpg' minWidth='100%' maxWidth='100%' align='center' />
 
 ### 在 Duo 中运行测试程序
