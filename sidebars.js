@@ -90,6 +90,7 @@ const sidebars = {
       },
       items: [
         'duo/resources/image-sdk',
+        'duo/resources/mainline',
         'duo/resources/mmf',
         'duo/resources/opencv-mobile',
         'duo/resources/xyzdims',
