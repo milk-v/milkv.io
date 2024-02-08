@@ -2,6 +2,7 @@
 sidebar_label: 'XYZdims: Duo running Linux(Arch Linux)'
 sidebar_position: 50
 ---
+
 # IoT: Milk-V Duo (RISC-V) eSBC running Linux
 
 XYZdims.com – a site focused on the integration of 3D-modeling, 3D-printing software & hardware.

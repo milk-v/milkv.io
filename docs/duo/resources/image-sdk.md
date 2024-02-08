@@ -2,10 +2,13 @@
 sidebar_label: 'Official Image and SDK '
 sidebar_position: 10
 ---
+
 # Official Image and SDK
 
 ## Image
+
 - **(Latest)** [milkv-duo-xxx.img.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/)  
+
     Root password: milkv  
     Login via RNDIS using ssh:  
     ~~~
@@ -31,8 +34,10 @@ sidebar_position: 10
 ## SDK
 
 ### Milk-V Duo Official buildroot SDK
+
 duo-buildroot-sdk [https://github.com/milkv-duo/duo-buildroot-sdk](https://github.com/milkv-duo/duo-buildroot-sdk)
 
 ### Milk-V Duo Official C/C++ examples
+
 duo-examples [https://github.com/milkv-duo/duo-examples](https://github.com/milkv-duo/duo-examples
 )

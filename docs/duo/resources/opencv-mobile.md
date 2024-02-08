@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'OpenCV-Mobile'
+sidebar_label: 'OpenCV Mobile'
 sidebar_position: 30
 ---
 
