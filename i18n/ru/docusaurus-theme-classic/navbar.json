@@ -36,7 +36,7 @@
     "description": "The alt text of navbar logo"
   },
   "item.label.Chips": {
-    "message": "Чипсы",
+    "message": "Чипы",
     "description": "Navbar item with label Chips"
   },
   "item.label.Mars CM": {
