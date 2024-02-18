@@ -26,7 +26,7 @@ export default () => {
                     </div>
                 </div>
                 <div className={styles.titleIcons}>
-                    <img src="/meles/iconThead.svg" />
+                    <img src="/meles/iconThead.svg" alt="平头哥" />
                     <div>
                         <h3>T-Head TH1520 SoC</h3>
                         <p>Quad Core RISC-V 64GCV C910, up to 2.0GHz</p>
@@ -38,17 +38,17 @@ export default () => {
                     <div className={styles.tHeadSoCLeft}>
                         <div className={styles.topBox}>
                             <h2>T-Head TH1520 SoC</h2>
-                            <img src="/meles/ptgLogo.svg" />
+                            <img src="/meles/ptgLogo.svg" alt="平头哥" />
                         </div>
-                        <img src="/meles/socchart.webp" />
+                        <img src="/meles/socchart.webp" alt="socchart" />
                     </div>
                     <div className={styles.tHeadSoCRight}>
                         <div className={styles.hzBox}>
-                            <img src="/mars/risc-v.svg" />
+                            <img src="/mars/risc-v.svg" alt="RISC-V" />
                             <p>Quad Core RISC-V 64GCV C910</p>
                             <h2 className={styles.shaodwText}><span>up to</span>2.0GHz</h2>
                         </div>
-                        <img src="/meles/over-meles-size.webp" />
+                        <img src="/meles/over-meles-size.webp" alt="Meles Size" />
                     </div>
                 </div>
                 <div className={styles.viaeoBox}>
@@ -58,48 +58,48 @@ export default () => {
                         <p>Support H.265/H.264/VP9/AVS2 and other multi-format video decoding, the highest resolution up to 4K@75fps.</p>
                         <p>Support JPEG codec, maximum resolution up to 32Kx32K.</p>
                         <div className={styles.icons4k}>
-                            <img src="/meles/over-meles-4kicons-01.svg" />
-                            <img src="/meles/over-meles-4kicons-02.svg" />
-                            <img src="/meles/over-meles-4kicons-03.svg" />
-                            <img src="/meles/over-meles-4kicons-04.svg" />
-                            <img src="/meles/over-meles-4kicons-05.svg" />
-                            <img src="/meles/over-meles-4kicons-06.svg" />
+                            <img src="/meles/over-meles-4kicons-01.svg" alt="H.264" />
+                            <img src="/meles/over-meles-4kicons-02.svg" alt="H.265" />
+                            <img src="/meles/over-meles-4kicons-03.svg" alt="JPEG 9" />
+                            <img src="/meles/over-meles-4kicons-04.svg" alt="VP9" />
+                            <img src="/meles/over-meles-4kicons-05.svg" alt="4K 40FPS" />
+                            <img src="/meles/over-meles-4kicons-06.svg" alt="4k 75FPS" />
                         </div>
                     </div>
                     <div className={styles.viaeoRight}>
                         <h2>Display,<br></br>More Than One Way</h2>
-                        <img src="/meles/over-meles-4k60fps.svg" />
+                        <img src="/meles/over-meles-4k60fps.svg" alt="4K 60FPS" />
                         <p>1x HDMI2.0</p>
                         <p>1x MIPI DSI 4-lane</p>
                     </div>
                 </div>
                 <ul className={styles.typeIcons}>
                     <li>
-                        <img src="/meles/over-melesicons-01.svg" />
+                        <img src="/meles/over-melesicons-01.svg" alt="4x USB3" />
                         <p>4x USB3</p>
                     </li>
                     <li>
-                        <img src="/meles/over-melesicons-02.svg" />
+                        <img src="/meles/over-melesicons-02.svg" alt="LPDDR4X 4266MHz" />
                         <p>LPDDR4X 4266MHz</p>
                     </li>
                     <li>
-                        <img src="/meles/over-melesicons-03.svg" />
+                        <img src="/meles/over-melesicons-03.svg" alt="Quad Core C910" />
                         <p>Quad Core C910</p>
                     </li>
                     <li>
-                        <img src="/meles/over-melesicons-04.svg" />
+                        <img src="/meles/over-melesicons-04.svg" alt="Support 1000Mbps ETH" />
                         <p>Support 1000Mbps ETH</p>
                     </li>
                     <li>
-                        <img src="/meles/over-melesicons-05.svg" />
+                        <img src="/meles/over-melesicons-05.svg" alt="Support WI-FI5" />
                         <p>Support WI-FI5</p>
                     </li>
                     <li>
-                        <img src="/meles/over-melesicons-06.svg" />
+                        <img src="/meles/over-melesicons-06.svg" alt="Support BT5" />
                         <p>Support BT5</p>
                     </li>
                     <li>
-                        <img src="/meles/over-melesicons-07.svg" />
+                        <img src="/meles/over-melesicons-07.svg" alt="40 Pin GPIO Header" />
                         <p>40 Pin GPIO Header</p>
                     </li>
                 </ul>
@@ -117,9 +117,9 @@ export default () => {
                                 <tr>
                                     <td className={styles.tdFlex}>
                                         <p>Support:</p>
-                                        <img src="/meles/over-meles-support01.svg" />
-                                        <img src="/meles/over-meles-support02.svg" />
-                                        <img src="/meles/over-meles-support03.svg" />
+                                        <img src="/meles/over-meles-support01.svg" alt="Caffe" />
+                                        <img src="/meles/over-meles-support02.svg" alt="ONNX" />
+                                        <img src="/meles/over-meles-support03.svg" alt="TensorFlow" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -146,45 +146,45 @@ export default () => {
                     <div className={styles.highBoxRight}>
                         <div className={styles.gpuTitle}>
                             <h2>GPU</h2>
-                            <h2>3D Graphics Acceleration Engine</h2>
+                            <h3>3D Graphics Acceleration Engine</h3>
                         </div>
                         <h2>3200Mpixel/sec@800MHz</h2>
                         <div className={styles.gpuIcons}>
-                            <img src="/meles/opengl-icon.webp" />
-                            <img src="/meles/opencl-icon.webp" />
-                            <img src="/meles/vulkan-icon.webp" />
+                            <img src="/meles/opengl-icon.webp" alt="OpenGL ES" />
+                            <img src="/meles/opencl-icon.webp" alt="OpenCL" />
+                            <img src="/meles/vulkan-icon.webp" alt="Vulkan" />
                         </div>
-                        <img src="/meles/GPU.webp" />
+                        <img src="/meles/GPU.webp" alt="GPU" />
                     </div>
                 </div>
                 <div className={styles.sizeBox}>
                     <div className={styles.sizeLeft}>
                         <h2>I Can See the World, Too.</h2>
-                        <img src="/meles/chart-left.webp" />
+                        <img src="/meles/chart-left.webp" alt="I Can See the World, Too." />
                         <div className={styles.shadowBox}></div>
                     </div>
                     <div className={styles.sizeRight}>
                         <h2>One-click Make Things Easy</h2>
-                        <img src="/meles/chart-right.webp" />
+                        <img src="/meles/chart-right.webp" alt="One-click Make Things Easy" />
                         <div className={styles.shadowBox}></div>
                     </div>
                 </div>
                 <ul className={styles.take_ul}>
                     <li>
                         <p>Medical Imaging</p>
-                        <img src="/meles/take-01.webp" />
+                        <img src="/meles/take-01.webp" alt="Medical Imaging" />
                     </li>
                     <li>
                         <p>Video Conference</p>
-                        <img src="/meles/take-02.webp" />
+                        <img src="/meles/take-02.webp" alt="Video Conference" />
                     </li>
                     <li>
                         <p>Home Robotics</p>
-                        <img src="/meles/take-03.webp" />
+                        <img src="/meles/take-03.webp" alt="Home Robotics" />
                     </li>
                     <li>
                         <p>Drones</p>
-                        <img src="/meles/take-04.webp" />
+                        <img src="/meles/take-04.webp" alt="Drones" />
                     </li>
                 </ul>
                 <h2 className={styles.title}><Translate id='line.title.TechSpecs' /></h2>

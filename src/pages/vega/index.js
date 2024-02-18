@@ -35,16 +35,16 @@ export default () => {
                         <p><span>●</span>Operating at 500MHz, the UX608 with TEE supports dual modes of Linux or UCOS.</p>
                         <p><span>●</span>It integrates 8 channels of Gigabit Ethernet PHY, along with 2 channels of 10 Gigabit SerDes and 4 channels of 1 Gigabit SerDes interfaces.</p>
                         <p><span>●</span>Flexible business port selection is supported, catering to various application scenarios.</p>
-                        <img src="/vega/FSL91030M.webp" className={styles.chipImage} />
+                        <img src="/vega/FSL91030M.webp" className={styles.chipImage} alt="FSL91030M" />
                     </div>
                     <div className={styles.flowchart}>
                         <div className={styles.flowchart_fsl}>
                             <h2>FSL1030M</h2>
-                            <img src="/vega/FSL1030M-info.webp" />
+                            <img src="/vega/FSL1030M-info.webp" alt="FSL1030M" />
                         </div>
                         <div className={styles.flowchart_uCore}>
                             <h2>UX608 uCore</h2>
-                            <img src="/vega/UX608-info.webp" />
+                            <img src="/vega/UX608-info.webp" alt="UX608 uCore" />
                         </div>
                     </div>
                     <div className={styles.specification}>
@@ -54,7 +54,7 @@ export default () => {
                                 <p><span>●</span>Supports standard 1U rack</p>
                                 <p><span>●</span>Two units can be installed on each layer</p>
                             </div>
-                            <img src="/vega/vega-side-view.webp" className={styles.side_view} />
+                            <img src="/vega/vega-side-view.webp" className={styles.side_view} alt="Vega Size" />
                         </div>
                         <div className={styles.specification_item}>
                             <div className={styles.size_text}>
@@ -62,7 +62,7 @@ export default () => {
                                 <p><span>●</span>Provides JTAG interface to facilitate underlying development</p>
                                 <p><span>●</span>Provides RS232 and I2C interfaces for easy access to other sensors</p>
                             </div>
-                            <img src="/vega/Development-icons.webp" className={styles.development_icons} />
+                            <img src="/vega/Development-icons.webp" className={styles.development_icons} alt="Development-friendly interface" />
                         </div>
                         <div className={styles.specification_item}>
                             <div className={styles.size_text}>
@@ -71,7 +71,7 @@ export default () => {
                                 <p><span>●</span>4x 1GbE SFP optical ports</p>
                                 <p><span>●</span>8x 1GbE RJ45 Ethernet ports</p>
                             </div>
-                            <img src="/vega/vega-rear-view.webp" className={styles.rear_view} />
+                            <img src="/vega/vega-rear-view.webp" className={styles.rear_view} alt="Suitable for various networking scenarios" />
                         </div>
                         <div className={styles.specification_item}>
                             <div className={styles.size_text}>
@@ -80,7 +80,7 @@ export default () => {
                                 <p><span>●</span>Open openSBI, u-boot, Linux kernel source code, provide cross-compile toolchain.</p>
                                 <p><span>●</span>Provide interface SDKs and APIs to flexibly realize business configurations.</p>
                             </div>
-                            <img src="/vega/source-icon.webp" className={styles.source_icon} />
+                            <img src="/vega/source-icon.webp" className={styles.source_icon} alt="Designed for Open Source" />
                         </div>
                     </div>
                     <div className={styles.specification_text}>
@@ -134,35 +134,35 @@ export default () => {
                         <ul className={styles.application_box}>
                             <li>
                                 <p>Smart City</p>
-                                <img src="/vega/smart-city.webp" />
+                                <img src="/vega/smart-city.webp" alt="Smart City" />
                             </li>
                             <li>
                                 <p>Superstore</p>
-                                <img src="/vega/superstore.webp" />
+                                <img src="/vega/superstore.webp" alt="Superstore" />
                             </li>
                             <li>
                                 <p>Factory</p>
-                                <img src="/vega/factory.webp" />
+                                <img src="/vega/factory.webp" alt="Factory" />
                             </li>
                             <li>
                                 <p>Smart Country</p>
-                                <img src="/vega/smart-country.webp" />
+                                <img src="/vega/smart-country.webp" alt="Smart Country" />
                             </li>
                             <li>
                                 <p>Intelligent Medical Care</p>
-                                <img src="/vega/intelligent-medical-care.webp" />
+                                <img src="/vega/intelligent-medical-care.webp" alt="Intelligent Medical Care" />
                             </li>
                             <li>
                                 <p>Business Park</p>
-                                <img src="/vega/business-park.webp" />
+                                <img src="/vega/business-park.webp" alt="Business Park" />
                             </li>
                             <li>
                                 <p>Teaching And Research</p>
-                                <img src="/vega/Teaching-and-research.webp" />
+                                <img src="/vega/Teaching-and-research.webp" alt="Teaching And Research" />
                             </li>
                             <li>
                                 <p>Smart Campus</p>
-                                <img src="/vega/smart-campus.webp" />
+                                <img src="/vega/smart-campus.webp" alt="Smart Campus" />
                             </li>
                         </ul>
                     </div>

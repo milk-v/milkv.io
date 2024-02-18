@@ -40,7 +40,7 @@ export default () => {
                             <p><span>●</span>Starfive JH7110 64-bit SoC with RV64GC, up to 1.5GHz</p>
                             <p><span>●</span>Integrated GPU with 3D Acceleration: IMG BXE-4-32</p>
                             <div className={styles.cpu}>
-                                <img src="/mars-cm/risc-v-white.svg" />
+                                <img src="/mars-cm/risc-v-white.svg" alt="RISC-V" />
                             </div>
                         </div>
                         <div className={styles.block_diagram}>
@@ -57,11 +57,11 @@ export default () => {
                                 <p><span>●</span>JPEG encoder/decoder</p>
                             </div>
                             <div className={styles.video_icons_info}>
-                                <img src="/meles/over-meles-4kicons-01.svg" />
-                                <img src="/meles/over-meles-4kicons-02.svg" />
-                                <img src="/meles/over-meles-4kicons-03.svg" />
-                                <img src="/meles/over-meles-4kicons-05.svg" />
-                                <img src="/meles/over-meles-4kicons-06.svg" />
+                                <img src="/meles/over-meles-4kicons-01.svg" alt="H.264" />
+                                <img src="/meles/over-meles-4kicons-02.svg" alt="H.265" />
+                                <img src="/meles/over-meles-4kicons-03.svg" alt="JPEG 9" />
+                                <img src="/meles/over-meles-4kicons-05.svg" alt="4K 40FPS" />
+                                <img src="/meles/over-meles-4kicons-06.svg" alt="4K 75FPS" />
                             </div>
                         </div>
                         <div className={styles.support_audio}>
@@ -92,7 +92,7 @@ export default () => {
                             <h2>PCIe Available</h2>
                             <p><span>●</span>1x PCIe 1-lane Host, Gen 2 (5Gbps)</p>
                             <p><span>●</span>Supports Multiple High-speed peripherals</p>
-                            <img src="/mars-cm/extended.webp" />
+                            <img src="/mars-cm/extended.webp" alt="PCIe Available" />
                         </div>
                         <div className={styles.memory}>
                             <h2>Memory</h2>
@@ -104,10 +104,10 @@ export default () => {
                         <div className={styles.os}>
                             <h2>Support OS</h2>
                             <div className={styles.support_os_icons}>
-                                <img src="/mars-cm/support-Ubuntu.webp" />
-                                <img src="/mars-cm/support-fedora.webp" />
-                                <img src="/mars-cm/support-opensuse.webp" />
-                                <img src="/mars-cm/support-debian.webp" />
+                                <img src="/mars-cm/support-Ubuntu.webp" alt="Ubuntu" />
+                                <img src="/mars-cm/support-fedora.webp" alt="Fedora" />
+                                <img src="/mars-cm/support-opensuse.webp" alt="OpenSUSE" />
+                                <img src="/mars-cm/support-debian.webp" alt="Debian" />
                             </div>
                         </div>
                     </div>
@@ -116,7 +116,7 @@ export default () => {
                             <h2>Board-to-board Connectors</h2>
                             <p><span>●</span>Easy Secondary Development</p>
                             <p><span>●</span>2x 100 Pin Connectors for IO Board</p>
-                            <img src="/mars-cm/marscm-connectors.webp" />
+                            <img src="/mars-cm/marscm-connectors.webp" alt="Board-to-board Connectors" />
                         </div>
                         <div className={styles.detail_info2}>
                             <h2>Onboard Gigabit Ethernet PHY</h2>
@@ -130,7 +130,7 @@ export default () => {
                         <div className={styles.detail_info4}>
                             <h2>Compatible with Classic IO Board</h2>
                             <p><span>●</span>CM4 IO Board</p>
-                            <img src="/mars-cm/cm4ioboard.webp" />
+                            <img src="/mars-cm/cm4ioboard.webp" alt="Compatible with Classic IO Board" />
                         </div>
                     </div>
                     <div className={styles.tabBox_tech}>

@@ -33,7 +33,7 @@ export default () => {
                         <h2><Translate id='mars.page.info1' /></h2>
                     </div>
                     <div className={styles.prodcuts02}>
-                        <img src='/mars/risc-v.svg' />
+                        <img src='/mars/risc-v.svg' alt='RISC-V' />
                         <p><Translate id='mars.page.info2' /></p>
                     </div>
                     <div className={styles.prodcuts03}>
@@ -61,10 +61,6 @@ export default () => {
                         <li className={styles.li02}>
                             <h2><Translate id='mars.page.info8' /></h2>
                             <p className={styles.titleMinP}>external M.2 E Key</p>
-                        </li>
-                        <li className={styles.li03}>
-                            {/* <h1><Translate id='mars.page.info9' /></h1>
-                            <p className={styles.titleMinP}><Translate id='mars.page.info10' /></p> */}
                         </li>
                     </ul>
                 </div>

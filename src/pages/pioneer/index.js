@@ -220,13 +220,13 @@ function Center() {
           </div>
         </div>
         <div className={cCss.support_ioc}>
-          <img src='/pioneer/support-icon1.webp' />
-          <img src='/pioneer/support-icon2.webp' />
-          <img src='/pioneer/support-icon3.webp' />
-          <img src='/pioneer/support-icon4.webp' />
-          <img src='/pioneer/support-icon5.webp' />
-          <img src='/pioneer/support-icon6.webp' />
-          <img src='/pioneer/support-icon7.webp' />
+          <img src='/pioneer/support-icon1.webp' alt='Support' />
+          <img src='/pioneer/support-icon2.webp' alt='Support' />
+          <img src='/pioneer/support-icon3.webp' alt='Support' />
+          <img src='/pioneer/support-icon4.webp' alt='Support' />
+          <img src='/pioneer/support-icon5.webp' alt='Support' />
+          <img src='/pioneer/support-icon6.webp' alt='Support' />
+          <img src='/pioneer/support-icon7.webp' alt='Support' />
         </div>
         <div className={cCss.bannerBox}>
           <div className={cCss.bannerimg1}>

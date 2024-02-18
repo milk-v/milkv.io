@@ -137,7 +137,7 @@ export default (props) => {
                         <h4>{jsonData[chipName][title_language]}</h4>
                         <Link to={jsonData[chipName].buy_link}><Translate id="homepage.corporations.duobuynow" /></Link>
                     </div>
-                    <img src={jsonData[chipName].front_view} />
+                    <img src={jsonData[chipName].front_view} alt="Front View" />
                 </div>
             </div>
             <div className={styles.table_separate}>
@@ -214,9 +214,10 @@ export default (props) => {
                                         top: `${x * -3}px`,
                                         left: `${y * -3}px`,
                                     }}
+                                    alt="Chip Views"
                                     src={jsonData[chipName].chip_view[imgurl]} />
                             </div>
-                            <img src={jsonData[chipName].chip_view[imgurl]} alt="" />
+                            <img src={jsonData[chipName].chip_view[imgurl]} alt="Chip Views" />
                         </div>
                         {/* <div className={styles.view_ul}>
                             {
@@ -238,7 +239,7 @@ export default (props) => {
             <div className={styles.chip_diagram}>
                 <div ref={chip_diagram}>
                     <h2><Translate id='BlockDiagram' /></h2>
-                    <img src={jsonData[chipName].diagram_url} alt="" className={styles.diagram_img} />
+                    <img src={jsonData[chipName].diagram_url} alt="Block Diagram" className={styles.diagram_img} />
                 </div>
                 <div ref={chip_hardware} className={styles.headModule}>
                     <h2 ><Translate id='duo.info.text.Hardware' /></h2>
@@ -265,7 +266,7 @@ export default (props) => {
                         {
                             jsonData[chipName].scenarios.map((item, key) => {
                                 return <li key={key}>
-                                    <img src={item.img_link} alt="" />
+                                    <img src={item.img_link} alt="Applications" />
                                     <p>{item[scenarios_language]}</p>
                                 </li>
                             })
@@ -338,7 +339,7 @@ export default (props) => {
                                 jsonData[chipName][curren_language][resources_filter[resources_filter_idx]].map((item, key) => {
                                     return (
                                         <div className={styles.board_info} key={key}>
-                                            <img src={item.resources_img} />
+                                            <img src={item.resources_img} alt="resources" />
                                             <div>
                                                 <Link to={item.resources_url} className={styles.info_t}>{item.resources_name}</Link>
                                                 <p className={styles.info_p}>{item.resources_info}</p>
@@ -354,21 +355,21 @@ export default (props) => {
                     <h2><Translate id='ChoosingUs' /></h2>
                     <div>
                         <div className={styles.choosing_item}>
-                            <img src="/chips/authorized.webp" />
+                            <img src="/chips/authorized.webp" alt="authorized" />
                             <div className={styles.text_l}>
                                 <h3><Translate id='ChoosingUs.item1.title' /></h3>
                                 <p><Translate id='ChoosingUs.item1.info' /></p>
                             </div>
                         </div>
                         <div className={styles.choosing_item}>
-                            <img src="/chips/design.webp" />
+                            <img src="/chips/design.webp" alt="design" />
                             <div className={styles.text_l}>
                                 <h3><Translate id='ChoosingUs.item2.title' /></h3>
                                 <p><Translate id='ChoosingUs.item2.info' /></p>
                             </div>
                         </div>
                         <div className={styles.choosing_item}>
-                            <img src="/chips/team.webp" />
+                            <img src="/chips/team.webp" alt="team" />
                             <div className={styles.text_l}>
                                 <h3><Translate id='ChoosingUs.item3.title' /></h3>
                                 <p><Translate id='ChoosingUs.item3.info' /></p>
@@ -380,7 +381,7 @@ export default (props) => {
             <div className={styles.toTop} style={{ display: `${scrollDirection ? 'block' : 'none'}` }} onClick={() => {
                 window.scrollTo({ top: 0, behavior: 'smooth' })
             }}>
-                <img src="/chips/backtop.svg" />
+                <img src="/chips/backtop.svg" alt="TOP" />
             </div>
             <SupportUs />
         </Layout>

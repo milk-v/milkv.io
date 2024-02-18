@@ -847,7 +847,7 @@ table td {
         font-size: 40px;
     }
 
-    .gpuTitle>h2 {
+    .gpuTitle>h3 {
         font-size: 24px;
     }
 
@@ -1245,7 +1245,7 @@ table td {
         line-height: 120%;
     }
 
-    .gpuTitle>h2 {
+    .gpuTitle>h3 {
         color: #FFF;
         font-size: 24px;
         font-style: normal;
@@ -1348,7 +1348,7 @@ table td {
         font-size: 40px;
     }
 
-    .gpuTitle>h2 {
+    .gpuTitle>h3 {
         font-size: 24px;
     }
 
@@ -1698,7 +1698,7 @@ table td {
         font-size: 20px;
     }
 
-    .gpuTitle>h2 {
+    .gpuTitle>h3 {
         font-size: 16px;
     }
 
@@ -2047,7 +2047,7 @@ table td {
         font-size: 16px;
     }
 
-    .gpuTitle>h2 {
+    .gpuTitle>h3 {
         font-size: 14px;
     }
 
@@ -2464,7 +2464,7 @@ table td {
         font-size: 16rem;
     }
 
-    .gpuTitle>h2 {
+    .gpuTitle>h3 {
         font-size: 14rem;
         margin: 0;
     }
