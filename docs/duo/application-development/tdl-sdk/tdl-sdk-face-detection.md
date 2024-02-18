@@ -102,9 +102,3 @@ Click the `Show more options` option in the lower left corner, and you can set t
 After configuring, click `Play` to view the face detection effect of the camera.
 
 <Image src='/docs/duo/tdl-sdk/duo-tdl-sdk-face-detection.jpg' minWidth='50%' maxWidth='80%' align='left' />
-
-### Generation of face detection model
-
-The generation method of the `*.cvimodel` model used in the above test
-
-Coming Soon...
