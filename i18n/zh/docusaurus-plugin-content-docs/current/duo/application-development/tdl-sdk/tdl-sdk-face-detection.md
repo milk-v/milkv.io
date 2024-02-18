@@ -101,9 +101,3 @@ rtsp://192.168.42.1/h264
 配置好之后，点击 `Play`，即可查看摄像头的人脸检测效果。
 
 <Image src='/docs/duo/tdl-sdk/duo-tdl-sdk-face-detection.jpg' minWidth='50%' maxWidth='80%' align='left' />
-
-### 人脸检测模型的生成
-
-上述测试中使用的 `*.cvimodel` 模型的生成方法
-
-Coming Soon...
