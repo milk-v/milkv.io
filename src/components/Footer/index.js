@@ -89,7 +89,7 @@ export default () => {
                     <div className={styles.footer_bottom_text}>
                         <p><Translate id='homepage.corporations.companyname' /></p>
                         <p>
-                            <Translate id='homepage.corporations.companyaddress_1' /><br></br><Translate id='homepage.corporations.companyaddress_2' />
+                            <Translate id='homepage.corporations.companyaddress_1' />
                         </p>
                     </div>
                 </div>

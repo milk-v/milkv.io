@@ -1078,11 +1078,7 @@
     "description": "footer company name"
   },
   "homepage.corporations.companyaddress_1": {
-    "message": "L8-01, Block B, Bao Cube Jewelry City, 198 Xin'an 4th Road, Liutang Community, Xixiang Street,Bao'an District,",
-    "description": "footer company address"
-  },
-  "homepage.corporations.companyaddress_2": {
-    "message": "Shenzhen, China",
+    "message": "1603, Block B, FengHuang Zhigu Building No.50 Tiezai Road, Xixiang, Baoan Shenzhen, 518102 China",
     "description": "footer company address"
   },
   "Send": {
@@ -1094,7 +1090,7 @@
     "description": " "
   },
   "overview": {
-    "message": "overview",
+    "message": "Overview",
     "description": " "
   },
   "BlockDiagram": {
