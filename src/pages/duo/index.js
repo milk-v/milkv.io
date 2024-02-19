@@ -56,8 +56,8 @@ function DetailsPage() {
             <div className={styles.right_view}>
               <p className={styles.max_title}><Translate id='large' /></p>
               <p className={styles.min_title}><Translate id='DualCore' /></p>
-              <img src='/duo/comparison-chart.webp' className={styles.chat256} />
-              <img src='/duo/1ghz.svg' className={styles.right_ghz} />
+              <img src='/duo/comparison-chart.webp' className={styles.chat256} alt='Comparison Chart' />
+              <img src='/duo/1ghz.svg' className={styles.right_ghz} alt='1GHz' />
             </div>
           </div>
           <div className={styles.chips_diagram}>
@@ -246,7 +246,7 @@ function DetailsPage() {
             <h4>
               - Duo / Duo 256M
             </h4>
-            <img src='/duo/duo-pinout.webp' className={styles.duo_pinout} />
+            <img src='/duo/duo-pinout.webp' className={styles.duo_pinout} alt='Pinout' />
             <h3><Translate id='duo.info.text.Documents' /></h3>
           </div>
           <div className={styles.document}>

@@ -145,5 +145,9 @@ Milk-V Duo S is an upgraded model of Duo, featuring an upgraded SG2000 main cont
 
 [How to build image](https://milkv.io/docs/duo/getting-started/buildroot-sdk)
 
+[Hardware Doc](https://github.com/milkv-duo/duo-files)
+
+[Chip datasheet](https://github.com/sophgo/sophgo-doc/releases)
+
 ## Support
 For support please post your issue on the [Milk-V Community Duo Category](https://community.milkv.io/c/duo/5).

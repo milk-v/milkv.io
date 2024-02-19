@@ -27,7 +27,7 @@ export default (props) => {
         'mars': {
             chinan_url: 'https://ewmmz.xet.tech/s/1As0hQ',
             arace_url: 'https://arace.tech/products/milk-v-mars',
-            // 
+            taobao_url: 'https://item.taobao.com/item.htm?id=756713087930&spm=a1z10.1-c.w4004-24811212567.10.4f40224fxDzN45'
         },
         'mars-cm': {
             chinan_url: 'https://ewmmz.xet.tech/s/4qfvPb',
@@ -38,8 +38,8 @@ export default (props) => {
             arace_url: 'https://arace.tech/products/milk-v-meles',
         },
         'vega': {
-            chinan_url: '',
-            arace_url: '',
+            taobao_url: 'https://item.taobao.com/item.htm?id=764856801789&spm=a1z10.1-c.w4004-24811212567.12.4f40224fxDzN45&skuId=5260392404476',
+            arace_url: 'https://arace.tech/products/milk-v-vega',
         },
     }
 

@@ -43,6 +43,20 @@ const sidebars = {
         'duo/application-development/pinpong',
         {
           type: "category",
+          label: 'TDL SDK',
+          collapsed: false,
+          link: {
+            title: 'TDL SDK',
+            description: ' ',
+          },
+          items: [
+            'duo/application-development/tdl-sdk/tdl-sdk-introduction',
+            'duo/application-development/tdl-sdk/tdl-sdk-face-detection',
+            'duo/application-development/tdl-sdk/tdl-sdk-yolov5',
+          ],
+        },
+        {
+          type: "category",
           label: 'TPU',
           collapsed: false,
           link: {
@@ -76,6 +90,7 @@ const sidebars = {
       },
       items: [
         'duo/resources/image-sdk',
+        'duo/resources/mainline',
         'duo/resources/mmf',
         'duo/resources/opencv-mobile',
         'duo/resources/xyzdims',

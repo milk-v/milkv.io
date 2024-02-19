@@ -2,7 +2,6 @@
     width: 100%;
     background: linear-gradient(194deg, #ECF7FF 0.01%, #FFF 100%);
     overflow: hidden;
-    text-align: center;
     display: inline-block;
 }
 
@@ -10,7 +9,6 @@
     margin: 0 auto;
     overflow: hidden;
 }
-
 
 .form_contexts>h2 {
     color: #333;
@@ -27,7 +25,6 @@
     align-items: flex-start;
     justify-content: space-between;
 }
-
 
 .info_left p {
     color: #333;
@@ -547,11 +544,14 @@
     }
 
     .info_left {
+        width: 100%;
         margin-bottom: 30rem;
     }
 
     .info_left>div {
+        text-align: left;
         margin-bottom: 15rem;
+        width: 100%;
     }
 
     .info_left p {
