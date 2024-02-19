@@ -1,0 +1,30 @@
+{
+  "item.label.Home": {
+    "message": "ホーム",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.Duo": {
+    "message": "Duo",
+    "description": "Navbar item with label Duo"
+  },
+  "item.label.Pioneer": {
+    "message": "Pioneer",
+    "description": "Navbar item with label Pioneer"
+  },
+  "item.label.Mars": {
+    "message": "Mars",
+    "description": "Navbar item with label Mars"
+  },
+  "item.label.Community": {
+    "message": "コミュニティ",
+    "description": "Navbar item with label Community"
+  },
+  "item.label.Docs": {
+    "message": "ドキュメント",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Products": {
+    "message": "製品",
+    "description": "Navbar item with label Docs"
+  }
+}

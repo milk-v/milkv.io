@@ -1,0 +1,1204 @@
+{
+  "theme.ErrorPageContent.title": {
+    "message": "ページがクラッシュしました。",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "もう一度試す",
+    "description": "The label of the button to try again when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "ページが見つかりません。",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "お探しのものは見つかりませんでした。",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "リンクが切れている場合は、管理者へお知らせください。",
+    "description": "The 2nd paragraph of the 404 page" 
+  },
+  "theme.admonition.note": {
+    "message": "備考",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "ヒント",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "危険",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "情報",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "注意",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "ページの先頭へ",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "アーカイブ",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "アーカイブ",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "ブログリスト並び替え",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "新しい順",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "古い順",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "ブログポスト並び替え",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "新しい順",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "古い順",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "ダークモードとライトモードの切り替え(現在{mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "ダークモード",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "ライトモード",
+    "description": "The name for the light color mode"
+  },
+  "theme.blog.post.plurals": {
+    "message": "ポスト|{count}個",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts}の投稿に\"{tagName}\"がつけられています。",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "全てのタグを見る",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "パンくずリスト",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count}項目",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "ドキュメントページのナビゲーション",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "前へ",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "次へ",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "ドキュメントには|{count}つタグが付いています。",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged}に\"{tagName}\"があります。",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "バージョン: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "これは{siteTitle} {versionLabel}の未発表ドキュメントです。",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "ドキュメント{siteTitle} {versionLabel}はもうメンテナンスされていません。",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "新しいドキュメントが利用できます。{latestVersionLink} ({versionLabel})をご覧ください。",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "最新バージョン",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "このページを編集",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "{heading}への直リンク",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": "{date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " {user}によって",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "最終更新:{atDate}、{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "バージョン",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "タグ:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "閉じる",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog recent posts navigation",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "コピーしました。",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "コードをクリップボードにコピー",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "コピーする",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "ワードラップの切り替えs",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
+    "message": "サイドバーのカテゴリ{label}の展開を切り替え",
+    "description": "The ARIA label to toggle the collapsible sidebar category"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "メイン",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "言語",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "このページ",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "もっと読む",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "{title}についてもっと読む",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "読むのに1分|読むのに{readingTime}",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "ホームページ",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "サイドバーを閉じる",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "サイドバーを閉じる",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "サイドバー",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "ナビゲーションバーを閉じる",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← メインメニューに戻る",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "ナビゲーションバーを切り替える",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "サイドバーを開く",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "サイドバーを開く",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "{count}件の結果をすべて見る"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "1件のドキュメントが見つかりました|{count}件のドキュメントが見つかりました",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "\"{query}\"の検索結果",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "ドキュメントを検索",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "探すものを入力",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "検索",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Algoliaによる検索機能",
+    "description": "The ARIA label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "結果なし",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "新しい結果を取得中...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.SearchBar.label": {
+    "message": "検索",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "内容をクリア",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "キャンセル",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "最近",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "最近の検索なし",
+    "description": "The text when no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "検索を保存",
+    "description": "The label for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "この検索を履歴から削除",
+    "description": "The label for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "お気に入り",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "お気に入りから削除",
+    "description": "The label for remove favorite search button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "結果の取得に失敗しました。",
+    "description": "The title for error screen of search modal"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "ネットワーク接続をご確認ください。",
+    "description": "The help text for error screen of search modal"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "選択",
+    "description": "The explanatory text of the action for the enter key"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "エンターキー",
+    "description": "The ARIA label for the Enter key button that makes the selection"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "ナビゲート",
+    "description": "The explanatory text of the action for the Arrow up and Arrow down key"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "上矢印",
+    "description": "The ARIA label for the Arrow up key button that makes the navigation"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "下矢印",
+    "description": "The ARIA label for the Arrow down key button that makes the navigation"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "閉じる",
+    "description": "The explanatory text of the action for Escape key"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "エスケープキー",
+    "description": "The ARIA label for the Escape key button that close the modal"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "検索",
+    "description": "The text explain that the search is making by Algolia"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "の結果なし",
+    "description": "The text explains that there are no results for the following search"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "の検索試行",
+    "description": "The text for the suggested query when no results are found for the following search"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "この結果は適切ですか?",
+    "description": "The text for the question where the user thinks there are missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "お知らせください。",
+    "description": "The text for the link to report missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "ドキュメントを検索",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "メインコンテンツにスキップ",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "タグ",
+    "description": "The title of the tag list page"
+  },
+  "homepage.text.title1": {
+    "message": "RISC-Vを選ぶ理由",
+    "description": "Home Page Title"
+  },
+  "homepage.text.title1.info": {
+    "message": "Milk-Vは、優れたRISC-V製品を開発者、企業、消費者に提供し、RISC-Vハードウェアとソフトウェア・エコシステムの発展を推進していきます。わが社とコミュニティの努力によって、将来のRISC-V製品が天の川銀河の星のように多く、明るくなるように。",
+    "description": "Home page title introduction"
+  },
+  "homepage.text.Duo.mpu": {
+    "message": "RISC-VのデュアルコアMPU",
+    "description": "Home Page Duo mpu"
+  },
+  "homepage.text.Duo.Price": {
+    "message": "9ドルから",
+    "description": "Home Page Duo Price"
+  },
+  "homepage.text.debut": {
+    "message": "ワールドデビュー",
+    "description": "Home Page debut"
+  },
+  "homepage.text.buy": {
+    "message": "購入",
+    "description": "Home Page Buy"
+  },
+  "homepage.text.learnMore": {
+    "message": "もっと見る",
+    "description": "Home Page learn more"
+  },
+  "homepage.text.Features1": {
+    "message": "低電力",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features2": {
+    "message": "低価格",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features3": {
+    "message": "オープンスタンダード",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features4": {
+    "message": "モジュール化可能",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features5": {
+    "message": "シンプル",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features6": {
+    "message": "省スペース",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features7": {
+    "message": "高速",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Features8": {
+    "message": "高パフォーマンス",
+    "description": "Home Page Features"
+  },
+  "homepage.text.Duo.SellingPoint1": {
+    "message": "デュアルコア 最大1GHz",
+    "description": "Home Page Selling Point"
+  },
+  "homepage.text.Duo.SellingPoint2": {
+    "message": "UART、I2C、SPI、SDIO、ADCなどの豊富なIO",
+    "description": "Home Page Selling Point"
+  },
+  "homepage.text.pioneer.mpu": {
+    "message": "RISC-Vデベロッパー向けのマザーボード/ワークステーション",
+    "description": "Home Page pioneer mpu"
+  },
+  "homepage.text.mars.mpu": {
+    "message": "初のクアッドコアを装備したカードサイズSBC",
+    "description": "Home Page mars mpu"
+  },
+  "contact.text.matrix": {
+    "message": "Duo Matrixチャットチャンネルに参加して、世界中の開発者とアイデアを共有しましょう。",
+    "description": "matrix"
+  },
+  "contact.text.WeChat": {
+    "message": "WeChat",
+    "description": "WeChat"
+  },
+  "contact.text.QQ": {
+    "message": "QQ Group",
+    "description": "QQ群"
+  },
+  "contact.text.join": {
+    "message": "join #milkv-",
+    "description": " #milkv-duo"
+  },
+  "online.buy": {
+    "message": "オンラインショップ",
+    "description": "online buy"
+  },
+  "footer.text.home": {
+    "message": "ホーム",
+    "description": "footer text"
+  },
+  "footer.text.community": {
+    "message": "コミュニティ",
+    "description": "footer text"
+  },
+  "footer.text.docs": {
+    "message": "ドキュメント",
+    "description": "footer text"
+  },
+  "footer.text.address": {
+    "message": "住所",
+    "description": "footer text"
+  },
+  "footer.text.address.info": {
+    "message": "L8-01, Block B, Bao Cube Jewelry City, 198 Xin'an 4th Road, Liutang Community, Xixiang Street, Bao'an District, Shenzhen, China",
+    "description": "footer text"
+  },
+  "footer.text.Subscribe": {
+    "message": "購読",
+    "description": "footer Subscribe"
+  },
+  "Duo.text.title1": {
+    "message": "満を持して登場。",
+    "description": "Duo.text.title"
+  },
+  "Duo.text.title2": {
+    "message": "RISC-Vのコンピューター",
+    "description": "Duo.text.title"
+  },
+  "Duo.text.title3": {
+    "message": "低価格、低電力、高パフォーマンス。",
+    "description": "Duo.text.title"
+  },
+  "Duo.text.title4": {
+    "message": "税と送料は含まれません。",
+    "description": "Duo.text.title"
+  },
+  "Buy.now": {
+    "message": "今すぐ購入",
+    "description": "buy now"
+  },
+  "line.title.Specification": {
+    "message": "スペック",
+    "description": "Specification"
+  },
+  "line.title.size": {
+    "message": "小さな躰、大きな潜在力",
+    "description": "size"
+  },
+  "line.title.TechSpecs": {
+    "message": "テクニカルスペック",
+    "description": "TechSpecs"
+  },
+  "info.text.powerful": {
+    "message": "もっとパワフル。",
+    "description": "powerful"
+  },
+  "info.text.CPU": {
+    "message": "RISC-V CPU最大",
+    "description": "Duo CPU"
+  },
+  "info.text.Vector": {
+    "message": "ベクターアクセラレーション",
+    "description": "Duo Vector "
+  },
+  "info.text.Ethernet": {
+    "message": "アドオンボード経由での10/100Mbps Ethernetのサポート",
+    "description": "Duo Ethernet "
+  },
+  "info.text.Incredible": {
+    "message": "こんな顔して、コンピューター。",
+    "description": "Duo Incredible "
+  },
+  "info.text.MicroSD": {
+    "message": "MicroSDサポート",
+    "description": "Duo MicroSD "
+  },
+  "info.text.RAM": {
+    "message": "64MB RAM",
+    "description": "Duo RAM "
+  },
+  "info.text.support": {
+    "message": "非同期マルチプロセッシング対応",
+    "description": "Duo support "
+  },
+  "info.text.size.title1": {
+    "message": "小型ドアロック",
+    "description": "Duo size title "
+  },
+  "info.text.size.title2": {
+    "message": "モニタリング",
+    "description": "Duo size title "
+  },
+  "info.text.size.title3": {
+    "message": "スマート街頭",
+    "description": "Duo size title "
+  },
+  "info.text.size.title4": {
+    "message": "トラフィックモニタリング",
+    "description": "Duo size title "
+  },
+  "info.text.size.title5": {
+    "message": "人の検出",
+    "description": "Duo size title "
+  },
+  "duo.info.text.Introduction": {
+    "message": "概要",
+    "description": "Duo 简介"
+  },
+  "duo.info.text.Introduction.max": {
+    "message": "Milk-V DuoはCV1800Bをベースにした超小型の組み込みプラットフォームです。LinuxとRTOSが実行可能で、プロフェッショナル、産業用ODM、AIoT、DIY、クリエイターに、高信頼で高費用対効果なプラットフォームを提供します。Duo 256M is an upgraded version of Duo designed with SG2002 as the main controller Duo 256MはSG2002をメインコントローラーに据えたDuoのアップグレードで、256MBのメモリーを備えており、スタンダードなLinuxシステムとアプリケーション、さらにより多くのメモリを必要とするアプリケーションに対応できます。",
+    "description": "Duo 简介"
+  },
+  "duo.info.text.Hardware": {
+    "message": "ハードウェア",
+    "description": "Duo Hardware"
+  },
+  "duo.info.text.Documents": {
+    "message": "ドキュメント",
+    "description": "Duo Documents"
+  },
+  "duo.info.text.pinOut": {
+    "message": "ピン出力",
+    "description": "Duo Documents"
+  },
+  "duo.Hardware.info1": {
+    "message": "デュアルRV64コア、最大1GHz",
+    "description": "Duo Hardware"
+  },
+  "duo.Hardware.info2": {
+    "message": "アドオンボード経由での10/100Mbps Ethernetのサポート",
+    "description": "Duo Hardware"
+  },
+  "duo.Hardware.info3": {
+    "message": "LinuxとRTOSの両方をサポート",
+    "description": "Duo Hardware"
+  },
+  "pioneer.page.title": {
+    "message": "RISC-Vのネイティブ開発を可能にする",
+    "description": "pioneer page title"
+  },
+  "pioneer.page.Specification.text1": {
+    "message": "SOPHON SG2042搭載",
+    "description": "pioneer Specification"
+  },
+  "pioneer.page.Specification.text2": {
+    "message": "64コアRISC-V CPU",
+    "description": "pioneer Specification"
+  },
+  "pioneer.page.Box.text1": {
+    "message": "装備",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text2": {
+    "message": "グラフィックスボード",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text3": {
+    "message": "ネットワークカード",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text4": {
+    "message": "電源",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.Box.text5": {
+    "message": "クーラー",
+    "description": "pioneer Box text"
+  },
+  "pioneer.page.title.minText1": {
+    "message": "ソフトウェアサポート",
+    "description": "pioneer min Text"
+  },
+  "pioneer.page.title.minText2": {
+    "message": "可用的",
+    "description": "pioneer min Text"
+  },
+  "pioneer.page.really1": {
+    "message": "ワークステーション",
+    "description": "pioneer min Text"
+  },
+  "pioneer.page.info": {
+    "message": "Milk-V Pioneerは、SOPHON SG2042を搭載したMicroATXフォームファクタの開発者向けマザーボードです。PCのようなインターフェースとPC規格との互換性を持つPioneerは、ネイティブなRISC-V開発環境とRISC-Vデスクトップ体験を提供します。RISC-Vの開発者やハードウェアのパイオニアにとって、RISC-Vの最先端技術を体験できる最初の選択肢です。RISC-Vを迎え入れ、未来を迎え入れよう。",
+    "description": "pioneer info"
+  },
+  "mars.page.title": {
+    "message": "RISC-Vの宇宙の旅へ",
+    "description": "mars title"
+  },
+  "mars.page.info1": {
+    "message": "初のRISC-Vを搭載したカードサイズSBC",
+    "description": "mars info"
+  },
+  "mars.page.info2": {
+    "message": "RISC-Vは、Reduced Instruction Set Computer(RISC)に基づくオープン・スタンダードの命令セット・アーキテクチャ（ISA）です。",
+    "description": "mars info"
+  },
+  "mars.page.info3": {
+    "message": "(クアッドコア 最大1.5GHz)",
+    "description": "mars info"
+  },
+  "mars.page.info4": {
+    "message": "ワンタッチでUARTシリアルダウンロードモードに",
+    "description": "mars info"
+  },
+  "mars.page.info5": {
+    "message": "(押しながら電源投入でシリアルダウンロードモードになります)",
+    "description": "mars info"
+  },
+  "mars.page.info6": {
+    "message": "PoE対応",
+    "description": "mars info"
+  },
+  "mars.page.info7": {
+    "message": "ネットワークケーブルからの電源",
+    "description": "mars info"
+  },
+  "mars.page.info8": {
+    "message": "Wi-Fi/BTモジュール対応",
+    "description": "mars info"
+  },
+  "mars.page.info9": {
+    "message": "完成された外見",
+    "description": "mars info"
+  },
+  "mars.page.info10": {
+    "message": "Raspberry pi 3Bケースに対応",
+    "description": "mars info"
+  },
+  "mars.tech.info": {
+    "message": "Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. This four-core device supports a plug-and-play eMMC module, as well as up to 8GB of LPDDR4 memory. The board is equipped with three USB 3.0 ports, one USB 2.0 port, an HDMI 2.0 port that supports 4K resolution, an RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO.",
+    "description": "mars tech"
+  },
+  "mars": {
+    "message": "Mars",
+    "description": "mars Name"
+  },
+  "duo": {
+    "message": "Duo",
+    "description": "duo Name"
+  },
+  "pioneer": {
+    "message": "Pioneer",
+    "description": "pioneer Name"
+  },
+  "contact.title": {
+    "message": "連絡先",
+    "description": "contact title"
+  },
+  "contact.title.info": {
+    "message": "質問がございますか?私たちにご連絡ください!",
+    "description": "contact info"
+  },
+  "contact.title.Sales": {
+    "message": "セールス部門",
+    "description": "contact info"
+  },
+  "contact.title.Development": {
+    "message": "開発部門",
+    "description": "contact info"
+  },
+  "contact.title.support": {
+    "message": "カスタマーサポート部門",
+    "description": "contact info"
+  },
+  "contact.title.sendMessage": {
+    "message": "メッセージを送る",
+    "description": "contact sendMessage"
+  },
+  "contact.title.name": {
+    "message": "お名前",
+    "description": "name"
+  },
+  "contact.title.email": {
+    "message": "Email",
+    "description": "email"
+  },
+  "contact.title.subject": {
+    "message": "題名",
+    "description": "subject"
+  },
+  "contact.title.message": {
+    "message": "メッセージ",
+    "description": "message"
+  },
+  "contact.title.send": {
+    "message": "送信",
+    "description": "send"
+  },
+  "contact.send.res": {
+    "message": "送信に成功しました。",
+    "description": "send"
+  },
+  "contact.send.res.info": {
+    "message": "何度も送らないでください。",
+    "description": "send"
+  },
+  "contact.send.err": {
+    "message": "送信に失敗しました。",
+    "description": "send"
+  },
+  "contact.send.err.info": {
+    "message": "サーバーに問題が発生しています。後でもう一度お試しください。",
+    "description": "send"
+  },
+  "contact.send.close": {
+    "message": "閉じる",
+    "description": "send"
+  },
+  "Donation.title": {
+    "message": "Donation Application Form",
+    "description": "Donation"
+  },
+  "Donation.title.Information": {
+    "message": "Donation Application Form",
+    "description": "Donation"
+  },
+  "Donation.title.Information.Organization": {
+    "message": "Organization/Affiliation (if applicable)",
+    "description": "Donation"
+  },
+  "Donation.title.Information.web": {
+    "message": "Website (if applicable)",
+    "description": "Donation"
+  },
+  "Donation.title.Project": {
+    "message": "Project Information",
+    "description": "Project"
+  },
+  "Donation.title.Project.name": {
+    "message": "Project Name",
+    "description": "Project"
+  },
+  "Donation.title.Project.Description": {
+    "message": "Project Description",
+    "description": "Project"
+  },
+  "Donation.title.Shipping": {
+    "message": "Shipping Information",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.Country": {
+    "message": "Country of Residence",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.Phone": {
+    "message": "Phone Number",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.Phone.process": {
+    "message": "Your phone number will be used solely for communication related to the donation process. We respect your privacy and will ensure the confidentiality of your contact information.",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.addess": {
+    "message": "Shipping Address",
+    "description": "Shipping"
+  },
+  "Donation.title.Shipping.addess.process": {
+    "message": "Please note that your shipping address will be used solely for the purpose of delivering the donated hardware. We value your privacy and will handle your information with utmost care.",
+    "description": "Shipping"
+  },
+  "cv1800b.title": {
+    "message": "CV1800B Manual Confidentiality Agreement",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.Applicant": {
+    "message": "Select Your Applicant Type",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.Applicant.Individual": {
+    "message": "Individual",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.Applicant.Schools": {
+    "message": "Schools or research institutions",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.Applicant.corporations": {
+    "message": "For-profit organizations or corporations",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.lang": {
+    "message": "Select the language of the document (Chinese or English)",
+    "description": "cv1800b"
+  },
+  "cv1800b.title.file": {
+    "message": "Please fill in the following information",
+    "description": "cv1800b"
+  },
+  "cv1800b.Individual.Purpose": {
+    "message": "Purpose",
+    "description": "cv1800b"
+  },
+  "cv1800b.Individual.Proof": {
+    "message": "Proof of identity",
+    "description": "cv1800b"
+  },
+  "cv1800b.Individual.Proof.info": {
+    "message": "(ID card, work card, business card, etc.)",
+    "description": "cv1800b"
+  },
+  "cv1800b.Individual.file.info": {
+    "message": "File size limit: 1 MB. Accepted formats: png, jpg, webp, pdf",
+    "description": "cv1800b"
+  },
+  "Submit": {
+    "message": "Submit",
+    "description": "Submit"
+  },
+  "cv1800b.phone.correct": {
+    "message": "Please fill in the correct format of the phone number",
+    "description": "cv1800b"
+  },
+  "cv1800b.email.correct": {
+    "message": "Please fill in the correct format of e-mail",
+    "description": "cv1800b"
+  },
+  "cv1800b.Schools.name": {
+    "message": "Applicant Name",
+    "description": "cv1800b"
+  },
+  "cv1800b.Schools.Organization.name": {
+    "message": "Your Organization Name",
+    "description": "cv1800b"
+  },
+  "cv1800b.Schools.Certification": {
+    "message": "Organizational Certification",
+    "description": "cv1800b"
+  },
+  "cv1800b.Schools.Certification.info": {
+    "message": "(Authorization letter, photo of office location, work card, etc.)",
+    "description": "cv1800b"
+  },
+  "cv1800b.Schools.Project.Details": {
+    "message": "Project Details",
+    "description": "cv1800b"
+  },
+  "cv1800b.corporations.id": {
+    "message": "(work card, business card, etc.)",
+    "description": "cv1800b"
+  },
+  "cv1800b.corporations.Businessemail": {
+    "message": "Business Email",
+    "description": "cv1800b"
+  },
+  "cv1800b.corporations.BusinessAddress": {
+    "message": "Business Address",
+    "description": "cv1800b"
+  },
+  "cv1800b.corporations.name": {
+    "message": "Name of organization or company",
+    "description": "cv1800b"
+  },
+  "cv1800b.corporations.Registration": {
+    "message": "Business Registration Number",
+    "description": "cv1800b"
+  },
+  "homepage.corporations.Documentstitle": {
+    "message": "Milk-V Documents",
+    "description": "homepage documents"
+  },
+  "homepage.corporations.Documentswords": {
+    "message": "View our documentation for technical support",
+    "description": "homepage documents"
+  },
+  "homepage.corporations.CommunityBotton": {
+    "message": "Milk-V Community",
+    "description": "Milk-V Community booton"
+  },
+  "homepage.corporations.WhyRVBotton": {
+    "message": "Why RISC-V ?",
+    "description": "Why RISC-V ? booton"
+  },
+  "homepage.corporations.duo": {
+    "message": "Dual cores up to 1GHz (optional RISC-V / ARM), up to 256MB of memory, and a 1TOPS@INT8 TPU. Capable of running both Linux and RTOS simultaneously, with rich I/O interfaces.",
+    "description": "duo description"
+  },
+  "homepage.corporations.duolearnmore": {
+    "message": "Learn more",
+    "description": "duo Learn more"
+  },
+  "homepage.corporations.duobuynow": {
+    "message": "Buy Now",
+    "description": "duo buy"
+  },
+  "homepage.corporations.pioneer": {
+    "message": "Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard mATX form factor. It is the first choice for RISC-V developers and hardware pioneers to experience the cutting edge technology of RISC-V.",
+    "description": "pioneer description"
+  },
+  "homepage.corporations.pioneerlearnmore": {
+    "message": "Learn more",
+    "description": "pioneer Learn more"
+  },
+  "homepage.corporations.pioneerbuynow": {
+    "message": "Buy Now",
+    "description": "pioneer buy"
+  },
+  "homepage.corporations.marscm": {
+    "message": "The Mars Compute Module is a System on Module (SoM) based on a the StarFive JH7110 System on Chip (SoC). ",
+    "description": "mars cm"
+  },
+  "homepage.corporations.mars": {
+    "message": "Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. An RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO. ",
+    "description": "mars"
+  },
+  "homepage.corporations.marslearnmore": {
+    "message": "Learn more",
+    "description": "mars Learn more"
+  },
+  "homepage.corporations.marsbuynow": {
+    "message": "Buy Now",
+    "description": "mars buy now"
+  },
+  "homepage.corporations.meles": {
+    "message": "Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH1520. It is powered by a Quad Core RISC-V 64GCV C910, capable of running up to 2.0GHz. This SBC is packed with rich interfaces and boasts powerful computing and AI capabilities, making it an ideal RISC-V intelligent hardware platform for hobbyists, makers, engineers, teachers, and students.",
+    "description": "meles "
+  },
+  "homepage.corporations.melesbuynow": {
+    "message": "Buy Now",
+    "description": "meles buy"
+  },
+  "homepage.corporations.meleslearnmore": {
+    "message": "Learn more",
+    "description": "meles learn more"
+  },
+  "homepage.corporations.vega": {
+    "message": "Milk-V Vega is a compact and low-density box-style open-source 10 Gigabit network switch developed by Milk-V for the next generation of network architecture. It serves as a unified platform for various services such as broadband, voice, video, and surveillance.",
+    "description": "vega "
+  },
+  "homepage.corporations.vegabuynow": {
+    "message": "Buy Now",
+    "description": "vega buy"
+  },
+  "homepage.corporations.vegalearnmore": {
+    "message": "Learn more",
+    "description": "vega learn more"
+  },
+  "homepage.corporations.docslearnmore": {
+    "message": "Learn more",
+    "description": "docs learn more"
+  },
+  "homepage.corporations.joinus": {
+    "message": "Join Us to Share More",
+    "description": "Join Us to Share More"
+  },
+  "homepage.corporations.emailtitle_1": {
+    "message": "Having questions?",
+    "description": "Having questions?"
+  },
+  "homepage.corporations.emailtitle_2": {
+    "message": "Get in touch with us to resolve!",
+    "description": "Get in touch with us to resolve!"
+  },
+  "homepage.corporations.salesdepartment": {
+    "message": "Sales Department",
+    "description": "Sales Department"
+  },
+  "homepage.corporations.devdepartment": {
+    "message": "Development Department",
+    "description": "Development Department"
+  },
+  "homepage.corporations.customerdepartment": {
+    "message": "Customer Support Department",
+    "description": "Customer Support Department"
+  },
+  "homepage.corporations.emailto": {
+    "message": "This e-mail is to",
+    "description": "This e-mail is to"
+  },
+  "homepage.corporations.emailmessage": {
+    "message": "Message",
+    "description": "main message"
+  },
+  "homepage.corporations.companyname": {
+    "message": "Shenzhen MilkV Technology Co., Ltd",
+    "description": "footer company name"
+  },
+  "homepage.corporations.companyaddress_1": {
+    "message": "L8-01, Block B, Bao Cube Jewelry City, 198 Xin'an 4th Road, Liutang Community, Xixiang Street,Bao'an District,",
+    "description": "footer company address"
+  },
+  "homepage.corporations.companyaddress_2": {
+    "message": "Shenzhen, China",
+    "description": "footer company address"
+  },
+  "Send": {
+    "message": "Send",
+    "description": "Send"
+  },
+  "Embracing": {
+    "message": "Milk-VでRISC-Vをつくる",
+    "description": " "
+  },
+  "overview": {
+    "message": "概要",
+    "description": " "
+  },
+  "BlockDiagram": {
+    "message": "ブロックダイアグラム",
+    "description": " "
+  },
+  "Applications": {
+    "message": "アプリケーション",
+    "description": " "
+  },
+  "Documents": {
+    "message": "ドキュメント",
+    "description": " "
+  },
+  "DesignResources": {
+    "message": "デザインリソース",
+    "description": " "
+  },
+  "ChoosingUs": {
+    "message": "私達を選ぶ",
+    "description": " "
+  },
+  "ChoosingUs.item1.title": {
+    "message": "正規代理店",
+    "description": " "
+  },
+  "ChoosingUs.item2.title": {
+    "message": "オーダーメイドのソリューション設計",
+    "description": " "
+  },
+  "ChoosingUs.item3.title": {
+    "message": "あんしんのアフターサポート",
+    "description": " "
+  },
+  "ChoosingUs.item1.info": {
+    "message": "Shenzhen MilkV Technology Co., Ltd.は、北京クリスタルビジョンインテリジェントテクノロジー有限公司の公式認定チップ代理店であり、一次代理店として多様なチップモデルを提供し、競争力のある価格を実現しています。",
+    "description": " "
+  },
+  "ChoosingUs.item2.info": {
+    "message": "当社はチップベースのソリューションにおいて高度な能力を有しており、お客様の特定の要件に合わせてカスタマイズされたソリューションを作成することができます。",
+    "description": " "
+  },
+  "ChoosingUs.item3.info": {
+    "message": "経験豊富なエンジニアチームによる技術サポート:チップ設計の課題に対する包括的なソリューション",
+    "description": " "
+  },
+  "SelectionMethod": {
+    "message": "フィルター",
+    "description": " "
+  },
+  "Startingfrom": {
+    "message": "ここから始める",
+    "description": " "
+  },
+  "manykernels": {
+    "message": "複数のメモリオプション",
+    "description": " "
+  },
+  "large": {
+    "message": "ほかよりももっとパワフル。",
+    "description": " "
+  },
+  "DualCore": {
+    "message": "デュアルコアRISC-V 最大",
+    "description": " "
+  },
+  "CV1800BDiagram": {
+    "message": "CV1800B アーキテクチャダイアグラム",
+    "description": " "
+  },
+  "SG2002Diagram": {
+    "message": "SG2002 アーキテクチャダイアグラム",
+    "description": " "
+  },
+  "architectures": {
+    "message": "ボタン1つでRISC-VとARMアーキテクチャをシームレスに切り替え可能",
+    "description": " "
+  },
+  "Dual-systeCapable": {
+    "message": "ふたつのオペレーティングシステムを実行可能",
+    "description": " "
+  },
+  "chipOpen-source": {
+    "message": "すべてのチップデータはオープンソース",
+    "description": " "
+  },
+  "Interfaces": {
+    "message": "インターフェイスはRaspberry pi互換",
+    "description": " "
+  },
+  "AUDIO": {
+    "message": "オープンオーディオインターフェイス",
+    "description": " "
+  },
+  "Lightweight": {
+    "message": "チューインガム並にコンパクト",
+    "description": " "
+  },
+  "Boards": {
+    "message": "豊富な拡張ボード",
+    "description": " "
+  },
+  "docs.contributors": {
+    "description": "貢献者",
+    "message": "Contributors"
+  }
+}
