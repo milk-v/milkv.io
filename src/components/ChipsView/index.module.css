@@ -43,6 +43,14 @@
     line-height: normal;
     border-radius: 50px;
     border: 1px solid #000;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.title_l_t>a:hover {
+    background-color: #2d88c9;
+    border-color: #2d88c9;
+    color: #fff;
 }
 
 .chip_view img {
