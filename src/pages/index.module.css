@@ -135,6 +135,7 @@
 }
 
 .info_module {
+    position: relative;
     overflow: hidden;
 }
 
@@ -391,6 +392,46 @@
     cursor: pointer;
 }
 
+.chips_title {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    color: #111;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 3.2px;
+}
+
+.chips_learn {
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #111;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 50px;
+    border: 1px solid #111;
+    transition: .3s;
+    white-space: nowrap;
+}
+
+.chips_learn:hover {
+    color: #fff;
+    background-color: #2D88C9;
+    border-color: #2D88C9;
+    text-decoration: none;
+}
+
 @media screen and (min-width: 1950px) {
     .header_title {
         width: 1920px;
@@ -541,6 +582,18 @@
     .chips_list>li>a {
         font-size: 22px;
         margin-top: 50px;
+    }
+
+    .chips_title {
+        font-size: 48px;
+    }
+
+    .chips_learn {
+        width: 188px;
+        height: 58px;
+        padding: 5px 45px;
+        gap: 10px;
+        font-size: 18px;
     }
 }
 
@@ -700,6 +753,20 @@
         font-size: 20px;
         margin-top: 40px;
     }
+
+    .chips_title {
+        font-size: 32px;
+        top: 5%;
+    }
+
+    .chips_learn {
+        width: 165px;
+        height: 50px;
+        padding: 5px 45px;
+        gap: 10px;
+        font-size: 18px;
+        bottom: 12%;
+    }
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1000px) {
@@ -854,6 +921,20 @@
     .chips_list>li>a {
         font-size: 18px;
         margin-top: 30px;
+    }
+
+    .chips_title {
+        font-size: 22px;
+        top: 0%;
+    }
+
+    .chips_learn {
+        width: 130px;
+        height: 45px;
+        padding: 5px 45px;
+        gap: 10px;
+        font-size: 16px;
+        bottom: 10%;
     }
 }
 
@@ -1011,6 +1092,21 @@
     .chips_list>li>a {
         font-size: 14px;
         margin-top: 20px;
+    }
+
+    .chips_title {
+        font-size: 18px;
+        line-height: 120%;
+        top: 5%;
+        white-space: nowrap;
+    }
+
+    .chips_learn {
+        width: 100px;
+        height: 30px;
+        gap: 10px;
+        font-size: 12px;
+        bottom: 10%;
     }
 }
 
@@ -1220,5 +1316,19 @@
         height: 100%;
         width: 0px;
         background-color: #B1B1B1;
+    }
+
+    .chips_title {
+        font-size: 15rem;
+        line-height: 120%;
+        top: 4%;
+        white-space: nowrap;
+    }
+
+    .chips_learn {
+        width: 100rem;
+        height: 30rem;
+        font-size: 12rem;
+        bottom: 5%;
     }
 }

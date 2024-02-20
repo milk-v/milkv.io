@@ -15,6 +15,7 @@ const Chips_module = () => {
   return (
     <>
       <div className={styles.info_module}>
+        <h2 className={styles.chips_title}>Buying RISC-V Chips from Milk-V</h2>
         <div className={styles.main_module}>
           <ul className={styles.chips_list}>
             <li className={styles.right_line}>
@@ -31,6 +32,7 @@ const Chips_module = () => {
             </li>
           </ul>
         </div>
+        <Link className={styles.chips_learn} to='/chips' >Learn More</Link>
       </div>
     </>
   )
