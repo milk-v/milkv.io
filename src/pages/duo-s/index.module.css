@@ -271,6 +271,7 @@
 .info_list4>div:last-child {
     height: 100%;
     width: 29%;
+    border: 1px solid #3886FF;
 }
 
 .info_list4>div:last-child>p {
@@ -327,6 +328,7 @@
     width: 32.5%;
     height: 100%;
     background-size: 100% !important;
+    position: relative;
 }
 
 .info_list5>div>p {
@@ -336,6 +338,21 @@
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
+}
+
+.info_list5>div>span {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #C8C8C8;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    white-space: nowrap;
 }
 
 .info_list5>div:nth-child(1) {
@@ -682,6 +699,12 @@
         font-size: 26px;
         margin-top: 40px;
     }
+
+    .info_list5>div>span {
+        width: 80%;
+        font-size: 12px;
+        white-space: wrap;
+    }
 }
 
 @media screen and (max-width: 1050px) and (min-width: 750px) {
@@ -798,6 +821,12 @@
     .info_list5>div>p {
         font-size: 22px;
         margin-top: 20px;
+    }
+
+    .info_list5>div>span {
+        width: 80%;
+        font-size: 12px;
+        white-space: wrap;
     }
 }
 

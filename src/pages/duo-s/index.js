@@ -28,7 +28,7 @@ export default () => {
                             <h2>Milk-V DUO S</h2>
                             <p>All-around Powerful</p>
                             <div className={styles.buy_btn} onClick={() => setDuo2(buy => !buy)}><Translate id='Buy.now' /></div>
-                            <span>*Tax or shipping is not included </span>
+                            {/* <span>*Tax or shipping is not included </span> */}
                         </div>
                         <img src="/duo-s/duo-s-front.webp" alt='Milk-V DUO S' />
                     </div>
@@ -114,8 +114,9 @@ export default () => {
                     </div>
                     <div className={styles.info_list5}>
                         <div>
-                            <p>Pushbutton Switching<br />
-                                RISC-V / ARM Boot</p>
+                            <p>Hardware Switch for<br />
+                                ARM / RISC-V Boot select</p>
+                            <span>Note: Arm A53@1GHz and C906@1GHz can't run simultaneously</span>
                         </div>
                         <div>
                             <p> Runs Linux and RTOS <br /> Simultaneously</p>
@@ -180,8 +181,8 @@ export default () => {
                                 </tr>
                                 <tr>
                                     <td>Storage</td>
-                                    <td colSpan="2">1x microSD connector
-                                        1x eMMC Pad on board</td>
+                                    <td colSpan="2">1x microSD connector<br />
+                                        <font color='#2d88c9'> 1x eMMC Pad on board</font></td>
                                     <td colSpan="2">1x microSD connector or
                                         1x SD NAND on board</td>
                                     <td colSpan="2">1x microSD connector or
@@ -260,9 +261,9 @@ export default () => {
                                 </tr>
                                 <tr>
                                     <td>Others</td>
-                                    <td colSpan="2">1x BOOT swich,
+                                    <td colSpan="2">1x Boot Switch,
                                         1x Recovery Key,
-                                        1x RST Key </td>
+                                        1x Reset Key </td>
                                     <td colSpan="2">N/A</td>
                                     <td colSpan="2">N/A</td>
                                 </tr>
