@@ -28,7 +28,8 @@ export default () => {
                             <h2>Milk-V DUO S</h2>
                             <p>All-around Powerful</p>
                             <div className={styles.buy_btn} onClick={() => setDuo2(buy => !buy)}><Translate id='Buy.now' /></div>
-                            {/* <span>*Tax or shipping is not included </span> */}
+                            <h3><Translate id='Startingfrom' /> <span>$9.9</span></h3>
+                            <span>*Tax or shipping is not included </span>
                         </div>
                         <img src="/duo-s/duo-s-front.webp" alt='Milk-V DUO S' />
                     </div>
@@ -101,8 +102,7 @@ export default () => {
                                 <div>
                                     <img src="/duo-s/display.svg" />
                                     <div>
-                                        <p>MIPI DSI(4-lane)</p>
-                                        <span>Support 5M@30FPS Video Output</span>
+                                        <p>Video Output via MIPI DSI(4-lane)</p>
                                     </div>
                                 </div>
                             </div>
@@ -190,7 +190,8 @@ export default () => {
                                 </tr>
                                 <tr>
                                     <td>USB</td>
-                                    <td colSpan="2">1 x Type-C for power and data,
+                                    <td colSpan="2">
+                                        1 x Type-C for power and data,
                                         USB Pads available</td>
                                     <td colSpan="2">1 x Type-C for power and data, USB Pads available</td>
                                     <td colSpan="2">1 x Type-C for power and data or <font color='#2d88c9'>1x USB 2.0 A Port HOST</font></td>

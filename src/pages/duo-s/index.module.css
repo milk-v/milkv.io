@@ -367,6 +367,26 @@
     background: url(/static/duo-s/sdk.webp) no-repeat;
 }
 
+.left_t>h3 {
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 0;
+}
+
+.left_t>h3>span {
+    background: linear-gradient(180deg, #02F4A5 -7%, #02DAF4 109%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
 @media screen and (min-width: 1950px) {
     .flex_head {
         width: 1920px;
@@ -392,7 +412,7 @@
     }
 
     .left_t>span {
-        font-size: 30px;
+        font-size: 14px;
         margin-top: 10px;
     }
 
@@ -473,6 +493,11 @@
         font-size: 42px;
         margin-top: 50px;
     }
+
+    .left_t>h3 {
+        font-size: 36px;
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
@@ -500,7 +525,7 @@
     }
 
     .left_t>span {
-        font-size: 20px;
+        font-size: 14px;
         margin-top: 10px;
     }
 
@@ -583,6 +608,11 @@
         font-size: 34px;
         margin-top: 50px;
     }
+
+    .left_t>h3 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1050px) {
@@ -612,7 +642,7 @@
     }
 
     .left_t>span {
-        font-size: 16px;
+        font-size: 14px;
         margin-top: 10px;
     }
 
@@ -704,6 +734,11 @@
         width: 80%;
         font-size: 12px;
         white-space: wrap;
+    }
+
+    .left_t>h3 {
+        font-size: 22px;
+        margin-top: 20px;
     }
 }
 
@@ -827,6 +862,11 @@
         width: 80%;
         font-size: 12px;
         white-space: wrap;
+    }
+
+    .left_t>h3 {
+        font-size: 22px;
+        margin-top: 20px;
     }
 }
 
@@ -994,5 +1034,10 @@
     .info_list5>div>p {
         font-size: 28rem;
         margin-top: 20rem;
+    }
+
+    .left_t>h3 {
+        font-size: 18rem;
+        margin-top: 5rem;
     }
 }
