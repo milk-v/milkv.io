@@ -115,7 +115,7 @@ export default () => {
                     <div className={styles.info_list5}>
                         <div>
                             <p>Hardware Switch for<br />
-                                ARM / RISC-V Boot select</p>
+                                ARM / RISC-V Boot Select</p>
                             <span>Note: Arm A53@1GHz and C906@1GHz can't run simultaneously</span>
                         </div>
                         <div>
@@ -192,7 +192,7 @@ export default () => {
                                     <td>USB</td>
                                     <td colSpan="2">
                                         1 x Type-C for power and data or <font color='#2d88c9'>1x USB 2.0 A Port HOST</font><br />
-                                        <span style={{ color: 'red' }} className={styles.note_red}>Note: Switching via Terminal Command</span>
+                                        <p style={{ color: 'red', lineHeight: "120%" }} className={styles.note_red}>Note: Cannot be used at the same time, supports switching via terminal commands</p>
                                     </td>
                                     <td colSpan="2">1 x Type-C for power and data, USB Pads available</td>
                                     <td colSpan="2">1 x Type-C for power and data, USB Pads available</td>
@@ -281,6 +281,6 @@ export default () => {
                 <ContactUs product='duo' />
                 <ContactBar product='duo' />
             </div>
-        </Layout>
+        </Layout >
     )
 }

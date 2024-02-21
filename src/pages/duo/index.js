@@ -10,6 +10,7 @@ import chips_s from '@site/src/components/ChipsView/index.module.css'
 import styles from "./details.module.css"
 import Translate from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import styles_s from '../duo-s/index.module.css'
 
 const download_data = require("@site/src/jsonFiles/downloadData.json")
 
@@ -156,15 +157,19 @@ function DetailsPage() {
                     1x SD NAND on board</td>
                   <td colSpan="2">1x microSD connector or
                     1x SD NAND on board</td>
-                    <td colSpan="2">1x microSD connector<br />
-                       <font color='#2d88c9'> 1x eMMC Pad on board</font></td>
+                  <td colSpan="2">1x microSD connector<br />
+                    <font color='#2d88c9'> 1x eMMC Pad on board</font></td>
                 </tr>
                 <tr>
                   <td>USB</td>
                   <td colSpan="2">1 x Type-C for power and data,
                     USB Pads available</td>
                   <td colSpan="2">1 x Type-C for power and data, USB Pads available</td>
-                  <td colSpan="2">1 x Type-C for power and data or <font color='#2d88c9'>1x USB 2.0 A Port HOST</font></td>
+                  <td colSpan="2">
+                    1 x Type-C for power and data or <font color='#2d88c9'>1x USB 2.0 A Port HOST</font>
+                    <br />
+                    <p style={{ color: 'red', lineHeight: '120%' }} className={styles_s.note_red}>Note: Cannot be used at the same time, supports switching via terminal commands</p>
+                  </td>
                 </tr>
                 <tr>
                   <td>CSI</td>
