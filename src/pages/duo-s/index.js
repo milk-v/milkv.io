@@ -190,10 +190,9 @@ export default () => {
                                 </tr>
                                 <tr>
                                     <td>USB</td>
-                                    <td colSpan="2">1 x Type-C for power and data,
-                                        USB Pads available</td>
-                                    <td colSpan="2">1 x Type-C for power and data, USB Pads available</td>
                                     <td colSpan="2">1 x Type-C for power and data or <font color='#2d88c9'>1x USB 2.0 A Port HOST</font></td>
+                                    <td colSpan="2">1 x Type-C for power and data, USB Pads available</td>
+                                    <td colSpan="2">1 x Type-C for power and data, USB Pads available</td>
                                 </tr>
                                 <tr>
                                     <td>CSI</td>
