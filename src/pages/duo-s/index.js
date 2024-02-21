@@ -191,10 +191,11 @@ export default () => {
                                 <tr>
                                     <td>USB</td>
                                     <td colSpan="2">
-                                        1 x Type-C for power and data,
-                                        USB Pads available</td>
+                                        1 x Type-C for power and data or <font color='#2d88c9'>1x USB 2.0 A Port HOST</font><br />
+                                        <span style={{ color: 'red' }} className={styles.note_red}>Note: Switching via Terminal Command</span>
+                                    </td>
                                     <td colSpan="2">1 x Type-C for power and data, USB Pads available</td>
-                                    <td colSpan="2">1 x Type-C for power and data or <font color='#2d88c9'>1x USB 2.0 A Port HOST</font></td>
+                                    <td colSpan="2">1 x Type-C for power and data, USB Pads available</td>
                                 </tr>
                                 <tr>
                                     <td>CSI</td>
@@ -270,13 +271,10 @@ export default () => {
                                 </tr>
                             </tbody>
                         </table>
-                        {/* <h3>
+                        <h3>
                             <Translate id='duo.info.text.pinOut' />
                         </h3>
-                        <h4>
-                            - Duo / Duo 256S
-                        </h4>
-                        <img src='/duo/duo-pinout.webp' className={styles_duo.duo_pinout} alt='Pin Out' /> */}
+                        <img src='/duo-s/duos-pinout.webp' className={styles_duo.duo_pinout} alt='Pin Out' />
                         {/* <h3><Translate id='duo.info.text.Documents' /></h3> */}
                     </div>
                 </div>

@@ -156,8 +156,8 @@ function DetailsPage() {
                     1x SD NAND on board</td>
                   <td colSpan="2">1x microSD connector or
                     1x SD NAND on board</td>
-                  <td colSpan="2">1x microSD connector
-                    1x eMMC Pad on board</td>
+                    <td colSpan="2">1x microSD connector<br />
+                       <font color='#2d88c9'> 1x eMMC Pad on board</font></td>
                 </tr>
                 <tr>
                   <td>USB</td>
@@ -198,7 +198,7 @@ function DetailsPage() {
                   <td>Wireless</td>
                   <td colSpan="2">N/A</td>
                   <td colSpan="2">N/A</td>
-                  <td colSpan="2">WI-FI6/BT5 onboard</td>
+                  <td colSpan="2">Optional WI-FI6/BT5 onboard</td>
                 </tr>
                 <tr>
                   <td>Audio</td>
@@ -234,9 +234,9 @@ function DetailsPage() {
                   <td>Others</td>
                   <td colSpan="2">N/A</td>
                   <td colSpan="2">N/A</td>
-                  <td colSpan="2">1x BOOT swich,
+                  <td colSpan="2">1x BOOT Switch,
                     1x Recovery Key,
-                    1x RST Key </td>
+                    1x Reset Key </td>
                 </tr>
               </tbody>
             </table>
