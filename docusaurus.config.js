@@ -13,7 +13,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh', 'ru'],
+    locales: ['en', 'zh', 'ru', 'ja'],
   },
   plugins: [
     [
@@ -131,6 +131,10 @@ const config = {
               {
                 label: 'Duo',
                 to: '/duo',
+              },
+              {
+                label: 'Duo S',
+                to: '/duo-s',
               },
               {
                 label: 'Pioneer',

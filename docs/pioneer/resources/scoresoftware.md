@@ -1,8 +1,8 @@
 ---
-sidebar_label: 'SG2042 Running score software usage documentation'
+sidebar_label: 'SG2042 Running benchmark software usage documentation'
 sidebar_position: 20
 ---
-# SG2042 Running score software usage documentation
+# SG2042 Running benchmark software usage documentation
 This document is about the installation and use of SG2042 scoring software. It contains a total of two items, which are for CPU performance testing, including a total of five items, namely spec2017, spec2006, core-core latency, Uniex-bench, coremark; And for memory and IO performance runs a total of two items, namely stream and fio.
 
 ## CPU Performance Testing
