@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import styles from './index.module.css'
 import ContactUs from "../../components/ContactUs"
+// import SupportUs from "../../components/SupportUs"
 
 
 export default () => {
@@ -16,15 +17,15 @@ export default () => {
             <div className={styles.guarantee}>
                 <ul>
                     <li>
-                        <img src="/chips/fae.svg" alt="" />
+                        <img src="/chips/fae.svg" alt="Professional FAE Support" />
                         <p>Professional FAE Support</p>
                     </li>
                     <li className={styles.center_lines}>
-                        <img src="/chips/authenticity.svg" alt="" />
+                        <img src="/chips/authenticity.svg" alt="Authenticity Guarantee" />
                         <p>Authenticity Guarantee</p>
                     </li>
                     <li>
-                        <img src="/chips/supply.svg" alt="" />
+                        <img src="/chips/supply.svg" alt="Large-scale Supply" />
                         <p>Large-scale Supply</p>
                     </li>
                 </ul>
@@ -85,6 +86,6 @@ export default () => {
                 </ul>
             </div>
         </div>
-        <ContactUs product='duo' />
+        <ContactUs product='home' />
     </Layout>
 }

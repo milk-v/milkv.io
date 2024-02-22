@@ -366,9 +366,12 @@
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
     .cUs {
         width: 1440px !important;
-        height: 700px !important;
         overflow: hidden;
         margin: 100px auto;
+    }
+
+    .banner_contact {
+        height: 500px;
     }
 
     .maxtitle {
@@ -473,8 +476,7 @@
 
 @media screen and (max-width: 1450px) and (min-width: 1050px) {
     .cUs {
-        width: 1000px !important;
-        height: 600px !important;
+        width: 90% !important;
         margin: 0 auto;
         overflow: hidden;
     }
@@ -484,6 +486,10 @@
         font-weight: 500;
         font-size: 40px;
         margin: 20px auto 20px;
+    }
+
+    .banner_contact {
+        height: 400px;
     }
 
     .touchForm {
@@ -593,9 +599,13 @@
 @media screen and (max-width: 1050px) and (min-width: 750px) {
     .cUs {
         width: 740px !important;
-        height: 480px !important;
+        height: 530px !important;
         overflow: hidden;
         margin: 0 auto 50px;
+    }
+
+    .banner_contact {
+        height: 350px;
     }
 
     .maxtitle {
@@ -728,6 +738,10 @@
         width: 0;
     }
 
+    .banner_contact {
+        height: 400rem;
+    }
+
     .touchBox {
         margin-top: 20rem;
     }
@@ -757,6 +771,12 @@
         text-align: center;
         margin-top: 10rem;
         margin-bottom: 15rem;
+    }
+
+    .textLeft {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 15rem;
     }
 
     .touchForm {
@@ -875,5 +895,49 @@
         color: #fff;
         border-radius: 10rem;
         cursor: pointer;
+    }
+
+
+    .banner_items>img {
+        margin-top: 40rem;
+    }
+
+    .banner_items>p {
+        font-size: 12rem;
+    }
+
+    .banner_items>h2 {
+        color: #fff;
+        font-family: "Roboto Condensed";
+        font-size: 20rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+    }
+
+    .on5_bottom {
+        margin: 30px auto 30px;
+    }
+
+    .on5_bottom>a {
+        width: 150px;
+        height: 45px;
+        padding: 5px 45px;
+        font-size: 12rem;
+    }
+
+    .email_list {
+        align-items: flex-start !important;
+        margin-bottom: 10rem;
+    }
+
+    .flex_inputs {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .flex_inputs>label {
+        width: 100% !important;
+        margin-bottom: 10rem;
     }
 }

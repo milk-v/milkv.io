@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './index.module.css';
+import styles_s from '../SupportUs/index.module.css';
 import axios from 'axios';
 import Translate from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -9,6 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import clsx from 'clsx';
 
 export default (props) => {
     const { product } = props;
@@ -22,6 +24,8 @@ export default (props) => {
     const [flag, setFlag] = useState(false)
     const [flag2, setFlag2] = useState(false)
     const [formBtn, setFormBtn] = useState(false)
+    const [index, setIndex] = useState('sales')
+    const [url, setUrl] = useState('https://submit-form.com/ft1cVox2')
 
     useEffect(() => {
         if (flag) {
@@ -30,6 +34,37 @@ export default (props) => {
             document.documentElement.style.overflow = 'auto'
         }
     }, [flag, flag2])
+
+    const emailData = [
+        {
+            email: <Translate id='homepage.corporations.salesdepartment' />,
+            value: 'sales',
+            url: 'https://submit-form.com/ft1cVox2',
+        },
+        {
+            email: <Translate id='homepage.corporations.devdepartment' />,
+            value: 'dev',
+            url: 'https://submit-form.com/mvqV3NLt',
+        },
+        {
+            email: <Translate id='homepage.corporations.customerdepartment' />,
+            value: 'support',
+            url: 'https://submit-form.com/zyL1ZT1C',
+        },
+    ]
+    const ele = emailData.map((item, key) => {
+        return (
+            <label key={key}>
+                <input type='radio' name='email' value={item.value} checked={index === item.value} onChange={(e) => {
+                    setIndex(e.target.value)
+                    if (e.target.checked) {
+                        setUrl(item.url)
+                    }
+                }} />
+                <span>{item.email}</span>
+            </label>
+        )
+    })
 
 
     const handleSubmit = (event) => {
@@ -54,10 +89,10 @@ export default (props) => {
             'vega': 'https://submit-form.com/CAMdDUGu',
         };
 
-        const url = productsUrls[product] || null;
+        const _url = productsUrls[product] || url;
         event.preventDefault();
         setFormBtn(true)
-        axios.get(`${url}?product=${product}&name=${userName}&email=${userEmail}&subject=${subject}&message=${message}&_email.subject=${msg}&_email.from=${userName}`)
+        axios.get(`${_url}?product=${product}&name=${userName}&email=${userEmail}&subject=${subject}&message=${message}&_email.subject=${msg}&_email.from=${userName}`)
             .then((response) => {
                 setFlag(true)
                 setFormBtn(false)
@@ -72,7 +107,7 @@ export default (props) => {
         <>
             <div className={styles.contactMain}>
                 <div className={styles.cUs}>
-                    <h2 className={styles.maxtitle}>
+                    <h2 className={styles.maxtitle} >
                         <Translate id='homepage.corporations.emailtitle_1' /><br></br>
                         <Translate id='homepage.corporations.emailtitle_2' />
                     </h2>
@@ -127,7 +162,7 @@ export default (props) => {
                                 </div>
                                 <div>
                                     <h3><Translate id='contact.title.support' /></h3>
-                                    <a className={styles.fromA} href={`mailto:${product}@milkv.io`} >{`${product}@milkv.io`}</a>
+                                    <a className={styles.fromA} href={`mailto:${product === 'chips' ? 'support' : product}@milkv.io`} >{`${product === 'chips' ? 'support' : product}@milkv.io`}</a>
                                 </div>
                             </div>
                             <div className={styles.touchBox}>
@@ -135,6 +170,12 @@ export default (props) => {
                                 <form className={styles.touchForm} onSubmit={handleSubmit}>
                                     <input type="hidden" name="_email.subject" value={hiddenmsg} />
                                     <input type="hidden" name="_email.from" value={userName} />
+                                    <h2 style={{ display: `${product === 'home' ? 'block' : 'none'}` }}>
+                                        <Translate id='homepage.corporations.emailto' />
+                                    </h2>
+                                    <div className={clsx(styles_s.emailRadio, styles.email_list)} style={{ display: `${product === 'home' ? 'flex' : 'none'}` }}>
+                                        {ele}
+                                    </div>
                                     <div className={styles.flex_inputs}>
                                         <label>
                                             {/* <p><Translate id='contact.title.name' /></p> */}
