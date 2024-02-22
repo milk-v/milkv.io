@@ -55,6 +55,12 @@ export default () => {
                                     <Link to='/vega'>Milk-V Vega</Link>
                                 </li>
                                 <li>
+                                    <p className={styles.line_name}>Chips</p>
+                                    <Link to='/chips/cv1800b'>CV1800B</Link>
+                                    <Link to='/chips/sg2000'>SG2000</Link>
+                                    <Link to='/chips/sg2002'>SG2002</Link>
+                                </li>
+                                <li>
                                     <p className={styles.line_name}>Docs</p>
                                     <Link to='/docs'>Home</Link>
                                     <Link to='/docs/duo/overview'>Duo Docs</Link>
@@ -80,7 +86,7 @@ export default () => {
                                     </Link>
                                     <Link to='' className={styles.we}>
                                         <img src="/components/wechatmin.svg" className={styles.wechat_min} />
-                                        <p>Wechat Public</p>
+                                        <p>Wechat</p>
                                         <img src='/components/WeChat.webp' className={styles.wechat} />
                                     </Link>
                                 </li>
