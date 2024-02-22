@@ -41,6 +41,18 @@ export default (props) => {
             taobao_url: 'https://item.taobao.com/item.htm?id=764856801789&spm=a1z10.1-c.w4004-24811212567.12.4f40224fxDzN45&skuId=5260392404476',
             arace_url: 'https://arace.tech/products/milk-v-vega',
         },
+        'cv1800b': {
+            taobao_url: 'https://item.taobao.com/item.htm?id=748015537624&skuId=5330447539309&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA',
+            arace_url: 'https://arace.tech/products/sophon-cv1800b-5pcs',
+        },
+        'sg2000': {
+            taobao_url: 'https://item.taobao.com/item.htm?id=748015537624&skuId=5258773672599&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA',
+            arace_url: 'https://arace.tech/products/sophon-cv1800b-5pcs',
+        },
+        'sg2002': {
+            taobao_url: 'https://item.taobao.com/item.htm?id=748015537624&skuId=5258773672598&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA',
+            arace_url: 'https://arace.tech/products/sophon-cv1800b-5pcs',
+        },
     }
 
     const buyElement = Object.keys(buy_info[type]).map((item, index) => {

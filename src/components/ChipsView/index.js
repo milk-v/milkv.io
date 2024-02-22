@@ -9,6 +9,7 @@ import { useLocation } from "@docusaurus/router";
 import Translate from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 const jsonData = require('../../jsonFiles/chips.json');
+import BuyPop from "../BuyPop"
 
 export default (props) => {
     const { chipName } = props
@@ -32,6 +33,7 @@ export default (props) => {
     const chip_resources = useRef(null)
     const chip_agency = useRef(null)
 
+    const [duo2, setDuo2] = useState(false)
 
     const [tidx, setTidx] = useState(0)
     const [scrollDirection, setScrollDirection] = useState();
@@ -127,12 +129,15 @@ export default (props) => {
             ref: chip_agency,
         }
     ]
-
+    const duoStart = () => {
+        setDuo2(false)
+    }
     useEffect(() => {
         console.log(pathname);
     }, [pathname])
     return (
         <Layout>
+            <BuyPop flag={duo2} module={duoStart} type={chipName} />
             <div className={styles.tabs_hied}>
                 <div className={styles.tab_card}>
                     <Link to='/'>Home</Link><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -148,7 +153,7 @@ export default (props) => {
                 <div className={styles.chip_title}>
                     <div className={styles.title_l_t}>
                         <h4>{jsonData[chipName][title_language]}</h4>
-                        <Link to={jsonData[chipName].buy_link}><Translate id="homepage.corporations.duobuynow" /></Link>
+                        <Link style={{ cursor: 'pointer' }} onClick={() => setDuo2(buy => !buy)}><Translate id="homepage.corporations.duobuynow" /></Link>
                     </div>
                     <img src={jsonData[chipName].front_view} alt="Front View" />
                 </div>
