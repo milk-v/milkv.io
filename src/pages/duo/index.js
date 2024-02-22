@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 
 import BuyPop from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
-import ContactBar from "../../components/ContactBar"
+// import ContactBar from "../../components/ContactBar"
 import MetaData from "../../components/MetaData"
 import Link from '@docusaurus/Link';
 import chips_s from '@site/src/components/ChipsView/index.module.css'
@@ -288,7 +288,7 @@ function DetailsPage() {
           </div>
         </div>
         <ContactUs product='duo' />
-        <ContactBar product='duo' />
+        {/* <ContactBar product='duo' /> */}
       </div>
     </>
   )
