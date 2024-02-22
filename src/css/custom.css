@@ -139,6 +139,52 @@ li {
 }
 
 
+strong {
+  color: #2d88c9;
+}
+
+/* 字体 */
+@font-face {
+  font-family: Roboto;
+  src: url(/static/ttf/Roboto-Regular-14.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(/static/ttf/Inter.ttf);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.swiper-pagination {
+  bottom: -7px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #ccc !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 750px) {
+  .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #ccc !important;
+  }
+
+  .swiper-pagination {
+    bottom: 0px !important;
+  }
+
+}
+
 @media screen and (max-width: 750px) {
   html {
     width: 100%;
@@ -415,31 +461,4 @@ li {
     --ifm-h1-font-size: 25rem;
   }
 
-}
-
-strong {
-  color: #2d88c9;
-}
-
-/* 字体 */
-@font-face {
-  font-family: Roboto;
-  src: url(/static/ttf/Roboto-Regular-14.ttf);
-}
-
-@font-face {
-  font-family: Inter;
-  src: url(/static/ttf/Inter.ttf);
-}
-
-.hidden {
-  display: none !important;
-}
-
-.swiper-pagination-bullet {
-  background-color: #ccc !important;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #fff !important;
 }

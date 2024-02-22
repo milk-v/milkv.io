@@ -32,7 +32,7 @@ const Chips_module = () => {
             </li>
           </ul>
         </div>
-        {/* <Link className={styles.chips_learn} to='/chips' >Learn More</Link> */}
+        <Link className={styles.chips_learn} to='/chips' >Learn More</Link>
       </div>
     </>
   )

@@ -166,7 +166,7 @@ export default (props) => {
                                 </div>
                                 <div>
                                     <h3><Translate id='contact.title.support' /></h3>
-                                    <a className={styles.fromA} href={`mailto:${product === 'chips' ? 'support' : product}@milkv.io`} >{`${product === 'chips' ? 'support' : product}@milkv.io`}</a>
+                                    <a className={styles.fromA} href={`mailto:${product === 'home' ? 'support' : product}@milkv.io`} >{`${product === 'home' ? 'support' : product}@milkv.io`}</a>
                                 </div>
                             </div>
                             <div className={styles.touchBox}>
