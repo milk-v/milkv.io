@@ -2,6 +2,7 @@ import React from "react";
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import styles from './index.module.css'
+import ContactUs from "../../components/ContactUs"
 
 
 export default () => {
@@ -52,17 +53,38 @@ export default () => {
                 <div className={styles.buy_cards}>
                     <h2>Buy Samples</h2>
                     <div className={styles.buy_card_item}>
-                        <div>
+                        <Link to='https://item.taobao.com/item.htm?id=748015537624&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA'>
                             <img src="/chips/taobao.svg" alt="淘宝" />
                             <p>淘宝</p>
-                        </div>
-                        <div>
+                        </Link>
+                        <Link to='https://arace.tech/products/sophon-cv1800b-5pcs'>
                             <img src="/chips/arace.svg" alt="Arace" />
                             <p>Arace</p>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
+            <div className={styles.choosing}>
+                <h2>Why Choosing Us</h2>
+                <ul>
+                    <li>
+                        <img src="/chips/authorized.webp" alt="Authorized" />
+                        <h4>Official Authorized Distributor</h4>
+                        <p>Shenzhen MilkV Technology Co., Ltd. is an official authorized chip distributor for SOPHGO, Cvitek , offering a diverse range of chip models and delivering competitive pricing as a primary distributor.</p>
+                    </li>
+                    <li>
+                        <img src="/chips/custom.webp" alt="Custom" />
+                        <h4>Custom Solutions Support</h4>
+                        <p>We have mature PCBA solutions and extensive product design experience, offering customized solutions tailored to your unique needs.</p>
+                    </li>
+                    <li>
+                        <img src="/chips/team.webp" alt="Team" />
+                        <h4>Worry-Free After-sales Support</h4>
+                        <p>Experienced engineering teams provide technical support: offering comprehensive solutions for your needs.</p>
+                    </li>
+                </ul>
+            </div>
         </div>
+        <ContactUs product='duo' />
     </Layout>
 }
