@@ -404,6 +404,45 @@
     margin: 0;
 }
 
+.tabs_hied {
+    position: sticky;
+    top: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+
+.tab_card {
+    width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.tab_card a {
+    color: #999;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.tab_card a:hover {
+    color: #2D88C9;
+}
+
+.tab_card>span>a {
+    color: #2D88C9;
+}
+
+
 @media screen and (min-width: 1950px) {
 
     .chip_diagram,
@@ -491,7 +530,7 @@
     }
 
     .table_separate {
-        top: 60px;
+        top: 120px;
         height: 64px;
     }
 
@@ -584,6 +623,11 @@
     .certificate>div>h2 {
         margin-bottom: 50px;
     }
+
+    .tab_card {
+        width: 1240px;
+    }
+
 }
 
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
@@ -673,7 +717,7 @@
     }
 
     .table_separate {
-        top: 60px;
+        top: 120px;
         height: 60px;
     }
 
@@ -766,6 +810,10 @@
     .certificate>div>h2 {
         margin-bottom: 50px;
     }
+
+    .tab_card {
+        width: 1200px;
+    }
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1000px) {
@@ -855,7 +903,7 @@
     }
 
     .table_separate {
-        top: 60px;
+        top: 120px;
         height: 50px;
     }
 
@@ -948,6 +996,10 @@
 
     .certificate>div>h2 {
         margin-bottom: 40px;
+    }
+
+    .tab_card {
+        width: 950px;
     }
 }
 
@@ -1048,7 +1100,7 @@
     }
 
     .table_separate {
-        top: 60px;
+        top: 120px;
         height: 45px;
     }
 
@@ -1141,6 +1193,10 @@
 
     .certificate>div>h2 {
         margin-bottom: 40px;
+    }
+
+    .tab_card {
+        width: 700px;
     }
 }
 
@@ -1409,5 +1465,14 @@
 
     .text_l>p {
         font-size: 14rem;
+    }
+
+    .tab_card {
+        width: 350rem;
+    }
+
+    .tabs_hied {
+        position: sticky;
+        top: 48rem;
     }
 }

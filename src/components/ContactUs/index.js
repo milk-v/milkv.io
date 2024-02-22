@@ -9,7 +9,7 @@ import Link from '@docusaurus/Link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import clsx from 'clsx';
 
 export default (props) => {
@@ -115,7 +115,11 @@ export default (props) => {
                         <div className={styles.banner_contact}>
                             <Swiper
                                 pagination={{ clickable: true }}
-                                modules={[Pagination]}
+                                modules={[Pagination, Autoplay]}
+                                autoplay={{
+                                    pauseOnMouseEnter: true,
+                                    delay: 3000,
+                                }}
                                 className="mySwiper"
                             >
                                 <SwiperSlide>
