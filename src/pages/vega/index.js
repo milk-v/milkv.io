@@ -4,7 +4,7 @@ import styles from './index.module.css'
 import Translate from '@docusaurus/Translate';
 import BuyPop from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
-import ContactBar from "../../components/ContactBar"
+// import ContactBar from "../../components/ContactBar"
 import MetaData from "../../components/MetaData"
 
 
@@ -228,7 +228,7 @@ export default () => {
                         </table>
                     </div>
                     <ContactUs product='vega' />
-                    <ContactBar product='vega' />
+                    {/* <ContactBar product='vega' /> */}
                 </div>
             </Layout>
         </>

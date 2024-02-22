@@ -667,6 +667,11 @@
     .right_text>p {
         font-size: 22px;
         margin: 30px 0 70px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
     }
 
     .right_text>.learnMore_use>a {
@@ -840,6 +845,11 @@
     .right_text>p {
         font-size: 16px;
         margin: 0px 0 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
     }
 
     .right_text>.learnMore_use>a {
@@ -1010,6 +1020,11 @@
     .right_text>p {
         font-size: 12px;
         margin: 0px 0 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
     }
 
     .right_text>.learnMore_use>a {
@@ -1199,6 +1214,11 @@
     .right_text>p {
         font-size: 12rem;
         margin: 0rem 0 20rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
     }
 
     .right_text>.learnMore_use>a {

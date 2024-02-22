@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Layout from '@theme/Layout';
 import Head from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
-import ContactBar from "../../components/ContactBar"
+// import ContactBar from "../../components/ContactBar"
 import cCss from "./center.module.css"
 import Translate from '@docusaurus/Translate';
 import MetaData from "../../components/MetaData"
@@ -286,7 +286,7 @@ function Center() {
         </div>
       </div>
       <ContactUs product='pioneer' />
-      <ContactBar product='pioneer' />
+      {/* <ContactBar product='pioneer' /> */}
     </div>
   )
 }

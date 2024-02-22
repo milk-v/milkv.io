@@ -1,42 +1,29 @@
 .flexBox {
     width: 100%;
     display: flex;
-    justify-content: center;
     margin-bottom: 100px;
 }
 
-.flexBox>div {
-    width: 50%;
-    padding: 0 30px;
-}
-
 .textLeft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
 }
 
-.textLeft::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 1px;
-    height: 100%;
-    background-color: #2D88C9;
-}
-
-.textLeft>h2 {
+.textLeft h2 {
     font-weight: 600;
     line-height: 120%;
-    color: #FFFFFF;
+    color: #333;
 }
 
-.textLeft>h3 {
+.textLeft h3 {
     font-weight: 700;
     line-height: 120%;
-    color: #FFFFFF;
+    color: #333;
 }
 
-.textLeft>a {
+.textLeft a {
     font-weight: 700;
     line-height: 120%;
     color: #2D88C9;
@@ -45,7 +32,7 @@
 .touchBox>h2 {
     font-weight: 700;
     line-height: 120%;
-    color: #FFFFFF;
+    color: #333;
 }
 
 .touchForm {
@@ -68,7 +55,7 @@
 
 .touchForm label>input {
     outline: none;
-    background-color: #1a1a1a;
+    background-color: transparent;
     border: none;
     border-bottom: 1px solid #ccc;
     border-radius: 0;
@@ -77,7 +64,7 @@
 }
 
 .touchForm label>textarea {
-    background-color: #1a1a1a;
+    background-color: transparent;
     border: 1px solid #ccc;
     border-radius: 0;
     color: #fff;
@@ -94,7 +81,6 @@
     width: 130px;
     height: 35px;
     border: 1px solid #ccc;
-    background-color: #1a1a1a;
     color: #FFF;
     position: absolute;
     right: 0;
@@ -189,38 +175,116 @@
     }
 }
 
+.contactMain {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(194deg, #ECF7FF 0.01%, #FFF 100%);
+}
+
+.maxtitle {
+    text-align: left;
+    color: #333;
+}
+
+.input_contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner_contact {
+    margin-right: 5%;
+    border-radius: 15px;
+    background-color: #1c1c1c;
+}
+
+.banner_items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.banner_items>img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.banner_items>p {
+    color: #767676;
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.on5_bottom>a {
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+}
+
+.flex_inputs {
+    display: flex;
+}
+
+.touchForm>.flex_inputs>label {
+    width: 30%;
+}
+
+.touchForm>.flex_inputs>label>input {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.touchForm>label>.message_area {
+    border-color: #000;
+    color: #000;
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+}
+
+.touchBtn {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
 @media screen and (min-width: 1950px) {
     .cUs {
         width: 1920px !important;
-        height: 700px !important;
         overflow: hidden;
         margin: 100px auto;
-        background-color: #1a1a1a;
     }
 
     .maxtitle {
         font-weight: 500;
         font-size: 68px;
-        color: #fff;
         margin: 20px auto 40px;
-        text-align: center;
     }
 
     .touchForm {
         padding-bottom: 50px;
     }
 
-    .textLeft>h2 {
+    .textLeft h2 {
         margin-bottom: 60px;
         font-size: 30px;
     }
 
-    .textLeft>h3 {
+    .textLeft h3 {
         margin-bottom: 10px;
         font-size: 23px;
     }
 
-    .textLeft>a {
+    .textLeft a {
         display: block;
         margin-bottom: 30px;
         font-size: 23px;
@@ -230,7 +294,6 @@
         font-size: 23px;
         margin-bottom: 60px;
     }
-
 
     .touchForm>div>label {
         margin-bottom: 20px;
@@ -254,6 +317,49 @@
     .touchForm label>p {
         font-size: 20px;
         margin-bottom: 10px;
+    }
+
+    .contactMain {
+        margin: 50px 0;
+    }
+
+    .banner_contact {
+        margin-right: 5%;
+        width: 28%;
+    }
+
+    .banner_items>img {
+        margin-top: 100px;
+    }
+
+    .banner_items>p {
+        font-size: 20px;
+    }
+
+    .on5_bottom {
+        margin: 50px auto 30px;
+    }
+
+    .on5_bottom>a {
+        width: 178px;
+        height: 51px;
+        padding: 5px 45px;
+    }
+
+    .textLeft>div {
+        margin-right: 100px;
+    }
+
+    .touchBox {
+        margin-top: 150px;
+    }
+
+    .flex_inputs {
+        margin-bottom: 50px;
+    }
+
+    .touchForm>.flex_inputs>label>input {
+        margin-right: 10px;
     }
 }
 
@@ -263,32 +369,29 @@
         height: 700px !important;
         overflow: hidden;
         margin: 100px auto;
-        background-color: #1a1a1a;
     }
 
     .maxtitle {
         font-weight: 500;
         font-size: 68px;
-        color: #fff;
         margin: 20px auto 40px;
-        text-align: center;
     }
 
     .touchForm {
         padding-bottom: 50px;
     }
 
-    .textLeft>h2 {
+    .textLeft h2 {
         margin-bottom: 60px;
         font-size: 30px;
     }
 
-    .textLeft>h3 {
+    .textLeft h3 {
         margin-bottom: 10px;
         font-size: 23px;
     }
 
-    .textLeft>a {
+    .textLeft a {
         display: block;
         margin-bottom: 30px;
         font-size: 23px;
@@ -323,13 +426,55 @@
         font-size: 20px;
         margin-bottom: 10px;
     }
+
+    .contactMain {
+        margin: 30px 0;
+    }
+
+    .banner_contact {
+        margin-right: 5%;
+        width: 28%;
+    }
+
+    .banner_items>img {
+        margin-top: 40px;
+    }
+
+    .banner_items>p {
+        font-size: 16px;
+    }
+
+    .on5_bottom {
+        margin: 50px auto 30px;
+    }
+
+    .on5_bottom>a {
+        width: 178px;
+        height: 51px;
+        padding: 5px 45px;
+    }
+
+    .textLeft>div {
+        margin-right: 100px;
+    }
+
+    .touchBox {
+        margin-top: 50px;
+    }
+
+    .flex_inputs {
+        margin-bottom: 30px;
+    }
+
+    .touchForm>.flex_inputs>label>input {
+        margin-right: 10px;
+    }
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1050px) {
     .cUs {
         width: 1000px !important;
         height: 600px !important;
-        background-color: #1a1a1a;
         margin: 0 auto;
         overflow: hidden;
     }
@@ -337,9 +482,7 @@
     .maxtitle {
         width: 1000px;
         font-weight: 500;
-        font-size: 50px;
-        color: #fff;
-        text-align: center;
+        font-size: 40px;
         margin: 20px auto 20px;
     }
 
@@ -347,17 +490,17 @@
         padding-bottom: 50px;
     }
 
-    .textLeft>h2 {
+    .textLeft h2 {
         margin-bottom: 40px;
         font-size: 24px;
     }
 
-    .textLeft>h3 {
+    .textLeft h3 {
         margin-bottom: 10px;
         font-size: 18px;
     }
 
-    .textLeft>a {
+    .textLeft a {
         margin-bottom: 30px;
         font-size: 18px;
     }
@@ -394,6 +537,57 @@
         margin-bottom: 10px;
     }
 
+    .contactMain {
+        margin: 30px 0;
+    }
+
+    .banner_contact {
+        margin-right: 3%;
+        width: 28%;
+    }
+
+    .banner_items>img {
+        margin-top: 40px;
+    }
+
+    .banner_items>p {
+        font-size: 16px;
+    }
+
+    .banner_items>h2 {
+        color: #fff;
+        font-family: "Roboto Condensed";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+    }
+
+    .on5_bottom {
+        margin: 30px auto 30px;
+    }
+
+    .on5_bottom>a {
+        width: 150px;
+        height: 45px;
+        padding: 5px 45px;
+    }
+
+    .textLeft>div {
+        margin-right: 100px;
+    }
+
+    .touchBox {
+        margin-top: 20px;
+    }
+
+    .flex_inputs {
+        margin-bottom: 20px;
+    }
+
+    .touchForm>.flex_inputs>label>input {
+        margin-right: 10px;
+    }
 }
 
 @media screen and (max-width: 1050px) and (min-width: 750px) {
@@ -402,14 +596,11 @@
         height: 480px !important;
         overflow: hidden;
         margin: 0 auto 50px;
-        background-color: #1a1a1a;
     }
 
     .maxtitle {
         font-weight: 500;
-        font-size: 40px;
-        text-align: center;
-        color: #fff;
+        font-size: 32px;
         margin-top: 10px;
     }
 
@@ -417,17 +608,17 @@
         padding-bottom: 50px;
     }
 
-    .textLeft>h2 {
+    .textLeft h2 {
         margin-bottom: 40px;
         font-size: 18px;
     }
 
-    .textLeft>h3 {
+    .textLeft h3 {
         margin-bottom: 10px;
         font-size: 14px;
     }
 
-    .textLeft>a {
+    .textLeft a {
         margin-bottom: 30px;
         font-size: 14px;
     }
@@ -474,6 +665,62 @@
         right: 0;
         bottom: 0;
     }
+
+    .contactMain {
+        margin: 30px 0;
+    }
+
+    .banner_contact {
+        margin-right: 3%;
+        width: 28%;
+    }
+
+    .banner_items>img {
+        margin-top: 40px;
+    }
+
+    .banner_items>p {
+        font-size: 12 px;
+    }
+
+    .banner_items>h2 {
+        color: #fff;
+        font-family: "Roboto Condensed";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+    }
+
+    .on5_bottom {
+        margin: 30px auto 30px;
+    }
+
+    .on5_bottom>a {
+        width: 150px;
+        height: 45px;
+        padding: 5px 45px;
+    }
+
+    .textLeft>div {
+        margin-right: 100px;
+    }
+
+    .touchBox {
+        margin-top: 20px;
+    }
+
+    .input_contact {
+        overflow: hidden;
+    }
+
+    .flex_inputs {
+        margin-bottom: 20px;
+    }
+
+    .touchForm>.flex_inputs>label>input {
+        margin-right: 10px;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -502,14 +749,12 @@
         width: 340rem !important;
         overflow: hidden;
         margin: 0 auto 0rem;
-        background-color: #1a1a1a;
     }
 
     .maxtitle {
         font-weight: 500;
         font-size: 35rem;
         text-align: center;
-        color: #fff;
         margin-top: 10rem;
         margin-bottom: 15rem;
     }
@@ -518,18 +763,18 @@
         padding-bottom: 50rem;
     }
 
-    .textLeft>h2 {
+    .textLeft h2 {
         text-align: center;
         margin-bottom: 40rem;
         font-size: 18rem;
     }
 
-    .textLeft>h3 {
+    .textLeft h3 {
         margin-bottom: 5rem;
         font-size: 14rem;
     }
 
-    .textLeft>a {
+    .textLeft a {
         margin-bottom: 20rem;
         display: block;
         font-size: 14rem;

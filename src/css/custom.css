@@ -435,3 +435,11 @@ strong {
 .hidden {
   display: none !important;
 }
+
+.swiper-pagination-bullet {
+  background-color: #ccc !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
