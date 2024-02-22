@@ -21,7 +21,6 @@ function DetailsPage() {
   const currentLanguage = useBaseUrl('/');
   const curren_language = currentLanguage === '/zh/' ? 'duo_zh' : 'duo'
 
-  console.log(download_data[curren_language]);
   const duoStart = () => {
     setDuo2(false)
   }
