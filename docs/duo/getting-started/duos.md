@@ -30,7 +30,7 @@ Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy sam
 <div className='gpio_style'>
 
 | SPI      | PWM  | I2C               | UART     | NAME  | PIN                              | PIN                             | NAME | UART               | PWM  | SPI     | JTAG      |
-|----------|------|-------------------|----------|-------|:--------------------------------:|:-------------------------------:|------|--------------------|------|---------|-----------|
+|:---------|:-----|:------------------|:---------|------:|:--------------------------------:|:-------------------------------:|:-----|:-------------------|:-----|:--------|:----------|
 |          |      |                   |          | 3V3   | <div className='orange'>1</div>  | <div className='red'>2</div>    | VSYS |                    |      |         |           |
 |          | PWM3 | I2C3_SDA/I2C4_SCL |          | B20   | <div className='green'>3</div>   | <div className='red'>4</div>    | VSYS |                    |      |         |           |
 |          |      | I2C3_SCL/I2C4_SDA |          | B21   | <div className='green'>5</div>   | <div className='black'>6</div>  | GND  |                    |      |         |           |
@@ -48,6 +48,8 @@ Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy sam
 
 </div>
 
+GPIO on `Header J3` use 3.3V logic levels.
+
 *GND\*: Pin 9 is a low-level GPIO in the V1.1 version of the hardware, and is GND in the V1.2 version and later.*
 
 ### Header J4
@@ -55,7 +57,7 @@ Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy sam
 <div className='gpio_style'>
 
 | PWM   | I2C               | UART     | NAME | PIN                             | PIN                              | NAME        | I2C      | PWM   | SD      | SPI       |
-|:------|:------------------|:---------|:----:|:-------------------------------:|:--------------------------------:|:-----------:|:---------|:------|:--------|:----------|
+|:------|:------------------|:---------|-----:|:-------------------------------:|:--------------------------------:|:------------|:---------|:------|:--------|:----------|
 |       |                   |          | VSYS | <div className='red'>52</div>   | <div className='blue'>51</div>   | AUDIO_OUT_R |          |       |         |           |
 | PWM12 | I2C4_SCL          | UART3_TX | B1   | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |          |       |         |           |
 | PWM13 | I2C4_SDA          | UART3_RX | B2   | <div className='green'>48</div> | <div className='blue'>47</div>   | AUDIO_IN_R  |          |       |         |           |
@@ -71,3 +73,5 @@ Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy sam
 | PWM11 | I2C2_SCL          |          | C15  | <div className='green'>28</div> | <div className='green'>27</div>  | C13         |          | PWM15 |         |           |
 
 </div>
+
+GPIO E0/E1/E2 on `Header J4` use 3.3V logic levels, other GPIOs use 1.8V logic levels.
