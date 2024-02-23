@@ -23,6 +23,7 @@ export default (props) => {
         'pioneer': {
             crowdSupply_url: 'https://www.crowdsupply.com/milkv/milk-v-pioneer',
             arace_url: 'https://arace.tech/collections/milk-v-pioneer',
+            mouser_url: 'https://www.mouser.com/c/embedded-solutions/computing/?m=Milk-V'
         },
         'mars': {
             chinan_url: 'https://ewmmz.xet.tech/s/1As0hQ',
@@ -62,6 +63,7 @@ export default (props) => {
             'other_url': '/components/other.svg',
             'arace_url': '/icons/arace.svg',
             'taobao_url': '/components/taobao.svg',
+            'mouser_url': '/components/mouser-logo.webp'
         }
         const text_data = {
             'chinan_url': "小鹅通",
@@ -69,6 +71,7 @@ export default (props) => {
             'other_url': 'Other countries and regions',
             'arace_url': 'Arace Tech',
             'taobao_url': '淘宝',
+            'mouser_url': 'Mouser'
         }
         return (
             <a
