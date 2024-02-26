@@ -961,10 +961,14 @@
         min-height: 385rem;
     }
 
+    .left_t_audio {
+        justify-content: flex-start;
+    }
+
     .info_list4>div:first-child {
-        min-height: 250rem;
-        background-size: 200%;
-        background-position: 80%;
+        min-height: 450rem;
+        background-size: 170%;
+        background-position: 100% 100%;
     }
 
     .info_list4>div:last-child {
