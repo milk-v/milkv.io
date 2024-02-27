@@ -25,6 +25,7 @@ const sidebars = {
         'duo/getting-started/swap',
         'duo/getting-started/buildroot-sdk',
         'duo/getting-started/rtoscore',
+        'duo/getting-started/arduino',
       ],
     },
     {
