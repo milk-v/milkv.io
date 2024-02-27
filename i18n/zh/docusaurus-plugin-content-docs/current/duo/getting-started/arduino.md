@@ -25,7 +25,7 @@ Arduino IDE 支持 Windows、Linux、macOS 三种操作系统，根据您使用�
 https://github.com/milkv-duo/duo-arduino/releases/download/V1.0.0/package_cv180x_index.json
 ```
 
-<Image src='/docs/duo/arduino/duo-arduino-01_zh.jpg' minWidth='40%' maxWidth='80%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-01_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
 最新的 json 文件地址请到 [Releases](https://github.com/milkv-duo/duo-arduino/releases) 中下载。
 
@@ -33,7 +33,7 @@ https://github.com/milkv-duo/duo-arduino/releases/download/V1.0.0/package_cv180x
 
 配置好之后在 ``工具`` 菜单中选择 ``开发板``，打开 ``开发板管理器``，搜索 *CV180*，点击 ``安装``。
 
-<Image src='/docs/duo/arduino/duo-arduino-02_zh.jpg' minWidth='40%' maxWidth='80%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-02_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
 到此 Arduino IDE 中 Duo 的开发环境已安装完成，下面就可以进行代码编写测试了。
 
@@ -60,15 +60,15 @@ reboot
 
 在 Arduino IDE 主界面点击 ``选择开发板``，再点击 ``选择其他开发板和接口......``
 
-<Image src='/docs/duo/arduino/duo-arduino-04_zh.jpg' minWidth='40%' maxWidth='80%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-04_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
 搜索 "duo"，Duo 选择 ``Duo Dev Module``，Duo256M 选择 ``Duo256 Dev Module``，端口中选择对应的串口后点确定。
 
-<Image src='/docs/duo/arduino/duo-arduino-05_zh.jpg' minWidth='40%' maxWidth='80%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-05_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
 在 Arduino IDE 的 ``文件`` 菜单中依次打开 ``示例`` > ``01.Basics`` > ``Blink`` 测试程序，该程序功能实现的是 Arduino 设备板载 LED 闪烁，Duo 中也是支持的，我们直接点 ``上传`` 按钮进行测试：
 
-<Image src='/docs/duo/arduino/duo-arduino-06_zh.jpg' minWidth='40%' maxWidth='80%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-06_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
 此时，可以看到 Duo 板载的 LED 间隔1秒闪烁。
 
@@ -76,7 +76,9 @@ reboot
 
 ### GPIO 使用示例
 
-该程序实现将 Duo 物理引脚 20 间隔1秒循环输出高低电平，通过外接 LED 来观察现象，连接方法如下：
+该程序实现将 Duo 物理引脚 20 间隔1秒循环输出高低电平，通过外接 LED 来观察现象。
+
+连接方法如下，LED 负极接 Duo 的地(比如引脚18)，正极串接一个 1K 电阻后，连接到引脚20：
 
 <Image src='/docs/duo/arduino/duo-arduino-07.png' minWidth='40%' maxWidth='100%' align='left' />
 
@@ -298,5 +300,7 @@ void onRequest(void(*)(void));
 ```
 
 </details>
+
+<br>
 
 其他功能接口以及在 Duo 中的用法，后续会陆续更新，您也可以先参考 [Arduino 官方文档](https://www.arduino.cc/reference/en/)。
