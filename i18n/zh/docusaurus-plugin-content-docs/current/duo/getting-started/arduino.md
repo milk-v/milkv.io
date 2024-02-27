@@ -301,6 +301,6 @@ void onRequest(void(*)(void));
 
 </details>
 
-<br>
+<br />
 
 其他功能接口以及在 Duo 中的用法，后续会陆续更新，您也可以先参考 [Arduino 官方文档](https://www.arduino.cc/reference/en/)。

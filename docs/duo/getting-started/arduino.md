@@ -299,6 +299,6 @@ void onRequest(void(*)(void));
 
 </details>
 
-<br>
+<br />
 
 Other functional interfaces and their usage in Duo will be updated in the future. You can also refer to [Arduino official documentation](https://www.arduino.cc/reference/en/) first.
