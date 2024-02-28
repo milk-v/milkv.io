@@ -56,6 +56,8 @@ reboot
 
 At this time, there will be an additional serial device in the "Port" of the "Device Manager" of the computer.
 
+<Image src='/docs/duo/arduino/duo-arduino-03.jpg' minWidth='40%' maxWidth='60%' align='left' />
+
 On the main interface of Arduino IDE, click ``Select Board``, and then click ``Select other board and port...``
 
 <Image src='/docs/duo/arduino/duo-arduino-04.jpg' minWidth='40%' maxWidth='100%' align='left' />
@@ -78,7 +80,7 @@ This program implements Duo physical pin 20 to output high and low levels cyclic
 
 The connection method is as follows. The negative pole of the LED is connected to the ground of the Duo (for example, pin 18), and the positive pole is connected in series with a 1K resistor and then connected to pin 20:
 
-<Image src='/docs/duo/arduino/duo-arduino-07.png' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-07.png' minWidth='40%' maxWidth='70%' align='left' />
 
 test program:
 

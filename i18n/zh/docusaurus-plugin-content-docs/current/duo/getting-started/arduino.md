@@ -80,7 +80,7 @@ reboot
 
 连接方法如下，LED 负极接 Duo 的地(比如引脚18)，正极串接一个 1K 电阻后，连接到引脚20：
 
-<Image src='/docs/duo/arduino/duo-arduino-07.png' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-07.png' minWidth='40%' maxWidth='70%' align='left' />
 
 测试程序：
 
