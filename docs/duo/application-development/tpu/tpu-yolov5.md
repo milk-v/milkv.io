@@ -94,6 +94,10 @@ In addition, this file also needs to be modified:
 ```
 C:\Users\Carbon\anaconda3\envs\duotpu\Lib\site-packages\torch\nn\modules\upsampling.py
 ```
+When using conda on linux the file is located at:
+```
+~/anaconda3/envs/duotpu/lib/python3.9/site-packages/torch/nn/modules/upsampling.py
+```
 Make the following changes around line 153
 
 ![duo](/docs/duo/tpu/duo-tpu-yolo5_02.png)
