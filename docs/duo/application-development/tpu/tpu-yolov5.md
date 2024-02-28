@@ -86,7 +86,7 @@ model.model[-1].export = True
 torch.jit.trace(model, torch.rand(1, 3, 640, 640), strict=False).save('./yolov5n_jit.pt')
 ```
 
-Then find the `yolov5-master/models/yolo.py` file, comment the code from lines 63 to 79, and add the code `return x` on line 80, as shown below:
+Then find the `yolov5-master/models/yolo.py` file, comment the code from lines 98 to 114, and add the code `return x` on line 115, as shown below:
 
 ![duo](/docs/duo/tpu/duo-tpu-yolo5_01.png)
 
