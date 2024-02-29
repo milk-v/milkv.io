@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Layout from '@theme/Layout';
 import BuyPop from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
-import ContactBar from "../../components/ContactBar"
 import MetaData from "../../components/MetaData"
 import Link from '@docusaurus/Link';
 import styles from "./index.module.css"
@@ -279,7 +278,6 @@ export default () => {
                     </div>
                 </div>
                 <ContactUs product='duo' />
-                <ContactBar product='duo' />
             </div>
         </Layout >
     )
