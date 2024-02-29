@@ -951,6 +951,7 @@
 
     .info_list2>div:last-child {
         min-height: 250rem;
+        background-color: transparent;
     }
 
     .info_list3>div {
