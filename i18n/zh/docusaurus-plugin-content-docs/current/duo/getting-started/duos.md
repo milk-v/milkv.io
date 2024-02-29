@@ -7,35 +7,35 @@ sidebar_position: 3
 
 <Image src='/docs/duo/duos/duos-v1.1.webp' maxWidth='70%' align='center' />
 
-Milk-V Duo S is an upgraded model of Duo, featuring an upgraded SG2000 main controller with a larger 512MB memory and expanded IO capabilities. It integrates wireless capabilities with WI-FI 6/BT 5, and comes equipped with a USB 2.0 HOST interface and a 100Mbps Ethernet port for user convenience. Supporting dual cameras (2x MIPI CSI 2-lane) and MIPI video output (MIPI DSI 4-lane), it allows for versatile applications. The device also supports switching between RISC-V and ARM boot through a switch. With enhanced functionality, Duo S is better suited for a variety of scenarios with more complex project development requirements.
+Milk-V DuoS 是 Duo 的升级型号，升级了 SG2000 主控，拥有更大的内存（512MB）和更多的 IO 接口。 它集成了 WI-FI 6/BT 5 无线功能，并配备 USB 2.0 HOST 接口和 100Mbps 以太网端口，方便用户使用。 它支持双摄像头（2x MIPI CSI 2 通道）和 MIPI 视频输出（MIPI DSI 4 通道），可实现多种应用。 DuoS 还支持通过开关在 RISC-V 和 ARM 启动之间切换。 通过性能和接口的增强，DuoS 更适合各种场景和更复杂的项目开发需求。
 
-## Introduction of SG2000
+## SG2000 简介
 
-SG2000 is a high-performance, low-power chip designed for various product fields such as edge intelligent surveillance IP cameras, local facial recognition attendance machines, and smart home devices. It integrates H.264/H.265 video compression and decoding and ISP capabilities. It supports various image enhancement and correction algorithms like HDR wide dynamic range, 3D noise reduction, defogging, and lens distortion correction, providing customers with professional-grade video image quality.
+SG2000 是一款高性能、低功耗芯片，专为智能监控 IP 摄像机、本地面部识别考勤机、智能家居设备等各种产品领域而设计。 它集成了 H.264/H.265 视频压缩解码和 ISP 能力。 支持 HDR 宽动态、3D 降噪、去雾、镜头畸变校正等多种图像增强和校正算法，为客户提供专业级的视频图像质量。
 
-The chip also integrates an in-house TPU, delivering approximately 0.5TOPS of computing power under INT8 operations. The specially designed TPU scheduling engine efficiently provides high-bandwidth data flow for tensor processing unit cores. It also offers users a powerful deep learning model compiler and software SDK development kit. Mainstream deep learning frameworks such as Caffe, Pytorch, ONNX, MXNet, and TensorFlow (Lite) can be easily ported to this platform.
+该芯片还集成了内部 TPU，在 INT8 运算下可提供约 0.5TOPS 的计算能力。专门设计的 TPU 调度引擎高效地为张量处理单元核心提供高带宽数据流。它还为用户提供了强大的深度学习模型编译器和软件 SDK 开发套件。 Caffe、Pytorch、ONNX、MXNet、TensorFlow（Lite）等主流深度学习框架都可以轻松移植到该平台。
 
-## SG2000 Public Preliminary Datasheet
+## SG2000 数据手册
 
-We have open sourced the Public Preliminary Datasheet and TRM of SG2000 to GitHub. please [check it out](https://github.com/milkv-duo/duo-files/tree/main/duo-s/datasheet).
+我们已将 SG2000 的数据手册和 TRM 开源到GitHub。请 [查看](https://github.com/milkv-duo/duo-files/tree/main/duo-s/datasheet)。
 
-## Buy the SG2000 Chips
+## 购买 SG2000 芯片
 
-Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy samples of the SG2002 chip from our distributor [online store](https://arace.tech/products/sophon-cv1800b-5pcs) directly. For volume order, please contact [Milk-V Sales Team](mailto:sales@milkv.io) for the qoutation.
+Milk-V 是 SG2002 芯片的全球授权经销商。您可以直接从我们的经销商 [Arace](https://arace.tech/products/sophon-cv1800b-5pcs) 购买 SG2002 芯片的样品。如需批量订购，请联系 [Milk-V 销售团队](mailto:sales@milkv.io) 获取报价。
 
-## DuoS usage tips
+## DuoS 启动
 
-### RISC-V and ARM switching
+### RISC-V 与 ARM 切换
 
-The large core of DuoS can choose to use RISC-V or ARM processor, which can be set through the switch on the board. If you find that DuoS cannot start normally during use, please first check whether the switch is consistent with the firmware used.
+DuoS 的大核可以选择使用 RISC-V 或者 ARM，可以通过主板上的切换开关来设置，如果您在使用中发现 DuoS 不能正常启动，请先检查该切换开关和使用的固件是否一致。
 
 <Image src='/docs/duo/duos/duos-arm-riscv-switch.webp' maxWidth='70%' align='center' />
 
-## DuoS GPIO Pinout
+## DuoS GPIO 引脚分配
 
 <Image src='/docs/duo/duos/duos-pinout-v1.1.webp' maxWidth='50%' align='center' />
 
-### Header J3
+### 排针 J3
 
 <div className='gpio_style'>
 
@@ -58,11 +58,11 @@ The large core of DuoS can choose to use RISC-V or ARM processor, which can be s
 
 </div>
 
-GPIO on `Header J3` use 3.3V logic levels.
+`排针 J3` 上的 GPIO 使用 3.3V 逻辑电平。
 
-*GND\*: Pin 9 is a low-level GPIO in the V1.1 version of the hardware, and is GND in the V1.2 version and later.*
+*GND\*：引脚 9 在 V1.1 版本硬件中是一个低电平的 GPIO，在 V1.2 及更高版本硬件中为 GND。*
 
-### Header J4
+### 排针 J4
 
 <div className='gpio_style'>
 
@@ -84,4 +84,4 @@ GPIO on `Header J3` use 3.3V logic levels.
 
 </div>
 
-GPIO E0/E1/E2 on `Header J4` use 3.3V logic levels, other GPIOs use 1.8V logic levels.
+`排针 J4` 上的 GPIO E0/E1/E2 使用 3.3V 逻辑电平，其他 GPIO 使用 1.8V 逻辑电平。
