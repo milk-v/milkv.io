@@ -380,10 +380,10 @@ export default (props) => {
                             </div>
                         </div>
                         <div className={styles.choosing_item}>
-                            <img src="/chips/design.webp" alt="design" />
+                            <img src="/chips/custom.webp" alt="design" />
                             <div className={styles.text_l}>
-                                <h3><Translate id='ChoosingUs.item2.title' /></h3>
-                                <p><Translate id='ChoosingUs.item2.info' /></p>
+                                <h3>Custom Solutions Support</h3>
+                                <p>We have mature PCBA solutions and extensive product design experience, offering customized solutions tailored to your unique needs.</p>
                             </div>
                         </div>
                         <div className={styles.choosing_item}>
