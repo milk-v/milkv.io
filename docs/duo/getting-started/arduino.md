@@ -252,6 +252,65 @@ receive 1 bytes
 
 ### SPI Usage Example
 
+#### SPI loopback test
+
+The hardware connection is as follows. Short-circuit the MOSI and MISO of the SPI, that is, pin 10 and pin 11, and then connect the serial port to the computer according to the method in the UART example above to view the printing information.
+
+<Image src='/docs/duo/arduino/duo-arduino-10.jpg' minWidth='40%' maxWidth='60%' align='left' />
+
+Test code:
+```C
+#include <SPI.h>
+
+char str[]="hello world\n";
+void setup() {
+  // put your setup code here, to run once:
+  Serial2.begin(115200);
+  SPI.begin();
+}
+
+byte i = 0;
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  // digitalWrite(12, 1);
+  SPI.beginTransaction(SPISettings());
+  Serial2.printf("transfer %c\n\r", str[i]);
+  char out = SPI.transfer(str[i++]);        // spi loop back
+  SPI.endTransaction();
+  Serial2.printf("receive %x \n\r", out);
+  i %= 12;
+}
+```
+
+Test Results:
+```
+receive a
+transfer h
+receive 68
+transfer e
+receive 65
+transfer l
+receive 6c
+transfer l
+receive 6c
+transfer o
+receive 6f
+transfer  
+receive 20
+transfer w
+receive 77
+transfer o
+receive 6f
+transfer r
+receive 72
+transfer l
+receive 6c
+transfer d
+receive 64
+transfer
+```
+
 ### PWM Usage Example
 
 ### ADC Usage Example

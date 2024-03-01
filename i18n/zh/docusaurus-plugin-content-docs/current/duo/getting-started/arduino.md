@@ -254,6 +254,65 @@ receive 1 bytes
 
 ### SPI 使用示例
 
+#### SPI 回环测试
+
+硬件连接如下，将 SPI 的 MOSI 和 MISO 短接，也就是引脚 10 和引脚 11，再按上述 UART 示例中的方法连接串口到电脑上查看打印信息。
+
+<Image src='/docs/duo/arduino/duo-arduino-10.jpg' minWidth='40%' maxWidth='60%' align='left' />
+
+测试代码：
+```C
+#include <SPI.h>
+
+char str[]="hello world\n";
+void setup() {
+  // put your setup code here, to run once:
+  Serial2.begin(115200);
+  SPI.begin();
+}
+
+byte i = 0;
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  // digitalWrite(12, 1);
+  SPI.beginTransaction(SPISettings());
+  Serial2.printf("transfer %c\n\r", str[i]);
+  char out = SPI.transfer(str[i++]);        // spi loop back
+  SPI.endTransaction();
+  Serial2.printf("receive %x \n\r", out);
+  i %= 12;
+}
+```
+
+运行结果：
+```
+receive a 
+transfer h
+receive 68 
+transfer e
+receive 65 
+transfer l
+receive 6c 
+transfer l
+receive 6c 
+transfer o
+receive 6f 
+transfer  
+receive 20 
+transfer w
+receive 77 
+transfer o
+receive 6f 
+transfer r
+receive 72 
+transfer l
+receive 6c 
+transfer d
+receive 64 
+transfer
+```
+
 ### PWM 使用示例
 
 ### ADC 使用示例
