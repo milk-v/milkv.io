@@ -148,7 +148,7 @@ UART 串口默认使用的是物理引脚 `6/7` 上的 `UART3`，在调试 Ardui
 
 连接方法如下，电脑端可使用 USB 转 TTL 串口线，逻辑电平为 3.3V，波特率为 115200，串口线的 RX 连接 Duo 的 6 脚 UART3_TX，串口线的 TX 连接 Duo 的 7 脚 UART3_RX，串口线的 GND 连接 Duo 的任意 GND 比如引脚 3：
 
-<Image src='/docs/duo/arduino/duo-arduino-08.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-08.jpg' minWidth='40%' maxWidth='90%' align='left' />
 
 测试程序：
 ```C

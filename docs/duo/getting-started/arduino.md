@@ -148,7 +148,7 @@ The UART serial port uses `UART3` on physical pin `6/7` by default. When debuggi
 
 The connection method is as follows. The computer can use a USB to TTL serial port cable. The logic level is 3.3V and the baud rate is 115200. The RX of the serial port cable is connected to the PIN 6 UART3_TX of the Duo. The TX of the serial port cable is connected to the PIN 7 UART3_RX of the Duo. The serial port The GND of the line is connected to any GND of the Duo, such as pin 3:
 
-<Image src='/docs/duo/arduino/duo-arduino-08.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-08.jpg' minWidth='40%' maxWidth='90%' align='left' />
 
 test code:
 ```C
