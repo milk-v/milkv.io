@@ -72,7 +72,38 @@ reboot
 
 此时，可以看到 Duo 板载的 LED 间隔1秒闪烁。
 
-## 二、代码示例
+## 二、Duo Arduino 引脚资源分配
+
+### Duo
+
+| SPI       | PWM   | I2C      | UART     | GPIO | PIN NAME | PIN                             | PIN                              | PIN NAME | GPIO | ADC  |
+|-----------|-------|----------|----------|:----:|---------:|:-------------------------------:|:--------------------------------:|----------|:----:|------|
+|           |       | I2C0_SCL |          | 1    | GP0      | <div className='green'>1</div>  | <div className='red'>40</div>    | VBUS     |      |      |
+|           |       | I2C0_SDA |          | 2    | GP1      | <div className='green'>2</div>  | <div className='red'>39</div>    | VSYS     |      |      |
+|           |       |          |          |      | GND      | <div className='black'>3</div>  | <div className='black'>38</div>  | GND      |      |      |
+|           | PWM10 |          |          |      | GP2      | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN   |      |      |
+|           | PWM11 |          |          |      | GP3      | <div className='green'>5</div>  | <div className='red'>36</div>    | 3V3(OUT) |      |      |
+|           |       |          | UART3_TX |      | GP4      | <div className='green'>6</div>  | <div className='gray'>35</div>   |          |      |      |
+|           |       |          | UART3_RX |      | GP5      | <div className='green'>7</div>  | <div className='gray'>34</div>   |          |      |      |
+|           |       |          |          |      | GND      | <div className='black'>8</div>  | <div className='black'>33</div>  | GND      |      |      |
+| SPI2_SCK  |       |          |          |      | GP6      | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27     |      |      |
+| SPI2_MOSI |       |          |          |      | GP7      | <div className='green'>10</div> | <div className='green'>31</div>  | GP26     |      | ADC1 |
+| SPI2_MISO |       |          |          |      | GP8      | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |      |      |
+| SPI2_CSn  |       |          |          |      | GP9      | <div className='green'>12</div> | <div className='green'>29</div>  | GP22     |      |      |
+|           |       |          |          |      | GND      | <div className='black'>13</div> | <div className='black'>28</div>  | GND      |      |      |
+|           |       | I2C1_SDA |          | 14   | GP10     | <div className='green'>14</div> | <div className='green'>27</div>  | GP21     | 27   |      |
+|           |       | I2C1_SCL |          | 15   | GP11     | <div className='green'>15</div> | <div className='green'>26</div>  | GP20     | 26   |      |
+|           |       |          |          |      | GP12     | <div className='green'>16</div> | <div className='green'>25</div>  | GP19     | 25   |      |
+|           |       |          |          |      | GP13     | <div className='green'>17</div> | <div className='green'>24</div>  | GP18     | 24   |      |
+|           |       |          |          |      | GND      | <div className='black'>18</div> | <div className='black'>23</div>  | GND      |      |      |
+|           |       |          |          | 19   | GP14     | <div className='green'>19</div> | <div className='green'>22</div>  | GP17     | 22   |      |
+|           |       |          |          | 20   | GP15     | <div className='green'>20</div> | <div className='green'>21</div>  | GP16     | 21   |      |
+|           |       |          |          |      |          | &nbsp;                          |                                  |          |      |      |
+|           |       |          |          | 0    |          | <div className='blue'>LED</div> |                                  |          |      |      |
+
+### Duo256M
+
+## 三、代码示例
 
 ### GPIO 使用示例
 
@@ -80,7 +111,7 @@ reboot
 
 连接方法如下，LED 负极接 Duo 的地(比如引脚18)，正极串接一个 1K 电阻后，连接到引脚20：
 
-<Image src='/docs/duo/arduino/duo-arduino-07.png' minWidth='40%' maxWidth='70%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-07.png' minWidth='40%' maxWidth='60%' align='left' />
 
 测试程序：
 
@@ -89,7 +120,7 @@ reboot
 
 // the setup function runs once when you press reset or power the board
 void setup() {
-  pinMode(TEST_PIN, OUTPUT);	
+  pinMode(TEST_PIN, OUTPUT);
 }
 
 // the loop function runs over and over again forever
@@ -106,21 +137,59 @@ void loop() {
 - TEST_PIN 配置为 0 可以测试 Duo 板载 LED。
 :::
 
+### UART 使用示例
+
+#### 串口输出
+
+UART 串口默认使用的是物理引脚 `6/7` 上的 `UART3`，在调试 Arduino 程序时，可以通过该串口打印调试信息。
+
+连接方法如下，电脑端可使用 USB 转 TTL 串口线，逻辑电平为 3.3V，波特率为 115200，串口线的 RX 连接 Duo 的 6 脚 UART3_TX，串口线的 TX 连接 Duo 的 7 脚 UART3_RX，串口线的 GND 连接 Duo 的任意 GND 比如引脚 3：
+
+<Image src='/docs/duo/arduino/duo-arduino-08.jpg' minWidth='40%' maxWidth='60%' align='left' />
+
+测试程序：
+```C
+void setup() {
+  Serial.begin(115200);
+}
+
+void loop() {
+  Serial.printf("hello world\r\n");
+  delay(1000);
+}
+```
+
+运行后可以在电脑串口工具看到间隔1秒打印"hello world"字符串：
+```
+hello world
+hello world
+```
+
+另外，该默认串口使用的是 Duo 的 UART3 接口，所以程序中也可以使用 Serial3：
+```C
+void setup() {
+  Serial3.begin(115200);
+}
+
+void loop() {
+  Serial3.printf("hello world\r\n");
+  delay(1000);
+}
+```
+
 ### I2C 使用示例
 
 ### SPI 使用示例
-
-### UART 使用示例
 
 ### PWM 使用示例
 
 ### ADC 使用示例
 
-## 三、Demo和项目说明
+## 四、Demo和项目说明
 
 Coming Soon ...
 
-## 四、Arduino APIs
+## 五、Arduino APIs
 
 ### Digital I/O
 

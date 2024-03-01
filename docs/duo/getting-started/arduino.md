@@ -72,7 +72,38 @@ Open the ``Examples`` > ``01.Basics`` > ``Blink`` test program in the ``File`` m
 
 At this time, you can see the LED on the Duo board blinking at intervals of 1 second.
 
-## 2. Code example
+## 2. Duo Arduino pin resource
+
+### Duo
+
+| SPI       | PWM   | I2C      | UART     | GPIO | PIN NAME | PIN                             | PIN                              | PIN NAME | GPIO | ADC  |
+|-----------|-------|----------|----------|:----:|---------:|:-------------------------------:|:--------------------------------:|----------|:----:|------|
+|           |       | I2C0_SCL |          | 1    | GP0      | <div className='green'>1</div>  | <div className='red'>40</div>    | VBUS     |      |      |
+|           |       | I2C0_SDA |          | 2    | GP1      | <div className='green'>2</div>  | <div className='red'>39</div>    | VSYS     |      |      |
+|           |       |          |          |      | GND      | <div className='black'>3</div>  | <div className='black'>38</div>  | GND      |      |      |
+|           | PWM10 |          |          |      | GP2      | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN   |      |      |
+|           | PWM11 |          |          |      | GP3      | <div className='green'>5</div>  | <div className='red'>36</div>    | 3V3(OUT) |      |      |
+|           |       |          | UART3_TX |      | GP4      | <div className='green'>6</div>  | <div className='gray'>35</div>   |          |      |      |
+|           |       |          | UART3_RX |      | GP5      | <div className='green'>7</div>  | <div className='gray'>34</div>   |          |      |      |
+|           |       |          |          |      | GND      | <div className='black'>8</div>  | <div className='black'>33</div>  | GND      |      |      |
+| SPI2_SCK  |       |          |          |      | GP6      | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27     |      |      |
+| SPI2_MOSI |       |          |          |      | GP7      | <div className='green'>10</div> | <div className='green'>31</div>  | GP26     |      | ADC1 |
+| SPI2_MISO |       |          |          |      | GP8      | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |      |      |
+| SPI2_CSn  |       |          |          |      | GP9      | <div className='green'>12</div> | <div className='green'>29</div>  | GP22     |      |      |
+|           |       |          |          |      | GND      | <div className='black'>13</div> | <div className='black'>28</div>  | GND      |      |      |
+|           |       | I2C1_SDA |          | 14   | GP10     | <div className='green'>14</div> | <div className='green'>27</div>  | GP21     | 27   |      |
+|           |       | I2C1_SCL |          | 15   | GP11     | <div className='green'>15</div> | <div className='green'>26</div>  | GP20     | 26   |      |
+|           |       |          |          |      | GP12     | <div className='green'>16</div> | <div className='green'>25</div>  | GP19     | 25   |      |
+|           |       |          |          |      | GP13     | <div className='green'>17</div> | <div className='green'>24</div>  | GP18     | 24   |      |
+|           |       |          |          |      | GND      | <div className='black'>18</div> | <div className='black'>23</div>  | GND      |      |      |
+|           |       |          |          | 19   | GP14     | <div className='green'>19</div> | <div className='green'>22</div>  | GP17     | 22   |      |
+|           |       |          |          | 20   | GP15     | <div className='green'>20</div> | <div className='green'>21</div>  | GP16     | 21   |      |
+|           |       |          |          |      |          | &nbsp;                          |                                  |          |      |      |
+|           |       |          |          | 0    |          | <div className='blue'>LED</div> |                                  |          |      |      |
+
+### Duo256M
+
+## 3. Code example
 
 ### GPIO Usage Example
 
@@ -82,14 +113,13 @@ The connection method is as follows. The negative pole of the LED is connected t
 
 <Image src='/docs/duo/arduino/duo-arduino-07.png' minWidth='40%' maxWidth='70%' align='left' />
 
-test program:
-
+test code:
 ```C
 #define TEST_PIN 20  //0,1,2,14,15,19,20,21,22,24,25,26,27
 
 // the setup function runs once when you press reset or power the board
 void setup() {
-  pinMode(TEST_PIN, OUTPUT);	
+  pinMode(TEST_PIN, OUTPUT);
 }
 
 // the loop function runs over and over again forever
@@ -106,21 +136,59 @@ void loop() {
 - Configuring TEST_PIN to 0 enables testing of the Duo onboard LED.
 :::
 
+### UART Usage Example
+
+#### UART Serial port
+
+The UART serial port uses `UART3` on physical pin `6/7` by default. When debugging the Arduino program, you can print debugging information through this serial port.
+
+The connection method is as follows. The computer can use a USB to TTL serial port cable. The logic level is 3.3V and the baud rate is 115200. The RX of the serial port cable is connected to the PIN 6 UART3_TX of the Duo. The TX of the serial port cable is connected to the PIN 7 UART3_RX of the Duo. The serial port The GND of the line is connected to any GND of the Duo, such as pin 3:
+
+<Image src='/docs/duo/arduino/duo-arduino-08.jpg' minWidth='40%' maxWidth='60%' align='left' />
+
+test code:
+```C
+void setup() {
+  Serial.begin(115200);
+}
+
+void loop() {
+  Serial.printf("hello world\r\n");
+  delay(1000);
+}
+```
+
+After running, you can see the "hello world" string printed every 1 second in the computer serial port tool:
+```
+hello world
+hello world
+```
+
+In addition, the default serial port uses Duo's UART3 interface, so `Serial3` can also be used in the program:
+```C
+void setup() {
+  Serial3.begin(115200);
+}
+
+void loop() {
+  Serial3.printf("hello world\r\n");
+  delay(1000);
+}
+```
+
 ### I2C Usage Example
 
 ### SPI Usage Example
-
-### UART Usage Example
 
 ### PWM Usage Example
 
 ### ADC Usage Example
 
-## 3. Demo and Projects
+## 4. Demo and Projects
 
 Coming Soon ...
 
-## 4. Arduino APIs
+## 5. Arduino APIs
 
 ### Digital I/O
 
