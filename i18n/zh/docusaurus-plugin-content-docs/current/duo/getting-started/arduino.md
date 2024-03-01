@@ -76,6 +76,8 @@ reboot
 
 ### Duo
 
+<div className='gpio_style'>
+
 | SPI       | PWM   | I2C      | UART     | GPIO | PIN NAME | PIN                             | PIN                              | PIN NAME | GPIO | ADC  |
 |-----------|-------|----------|----------|:----:|---------:|:-------------------------------:|:--------------------------------:|----------|:----:|------|
 |           |       | I2C0_SCL |          | 1    | GP0      | <div className='green'>1</div>  | <div className='red'>40</div>    | VBUS     |      |      |
@@ -100,6 +102,8 @@ reboot
 |           |       |          |          | 20   | GP15     | <div className='green'>20</div> | <div className='green'>21</div>  | GP16     | 21   |      |
 |           |       |          |          |      |          | &nbsp;                          |                                  |          |      |      |
 |           |       |          |          | 0    |          | <div className='blue'>LED</div> |                                  |          |      |      |
+
+</div>
 
 ### Duo256M
 
