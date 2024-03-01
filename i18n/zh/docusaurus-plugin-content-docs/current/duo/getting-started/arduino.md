@@ -78,30 +78,30 @@ reboot
 
 <div className='gpio_style'>
 
-| SPI       | PWM   | I2C      | UART     | GPIO | PIN NAME | PIN                             | PIN                              | PIN NAME | GPIO | ADC  |
-|-----------|-------|----------|----------|:----:|---------:|:-------------------------------:|:--------------------------------:|----------|:----:|------|
-|           |       | I2C0_SCL |          | 1    | GP0      | <div className='green'>1</div>  | <div className='red'>40</div>    | VBUS     |      |      |
-|           |       | I2C0_SDA |          | 2    | GP1      | <div className='green'>2</div>  | <div className='red'>39</div>    | VSYS     |      |      |
-|           |       |          |          |      | GND      | <div className='black'>3</div>  | <div className='black'>38</div>  | GND      |      |      |
-|           | PWM10 |          |          |      | GP2      | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN   |      |      |
-|           | PWM11 |          |          |      | GP3      | <div className='green'>5</div>  | <div className='red'>36</div>    | 3V3(OUT) |      |      |
-|           |       |          | UART3_TX |      | GP4      | <div className='green'>6</div>  | <div className='gray'>35</div>   |          |      |      |
-|           |       |          | UART3_RX |      | GP5      | <div className='green'>7</div>  | <div className='gray'>34</div>   |          |      |      |
-|           |       |          |          |      | GND      | <div className='black'>8</div>  | <div className='black'>33</div>  | GND      |      |      |
-| SPI2_SCK  |       |          |          |      | GP6      | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27     |      |      |
-| SPI2_MOSI |       |          |          |      | GP7      | <div className='green'>10</div> | <div className='green'>31</div>  | GP26     |      | ADC1 |
-| SPI2_MISO |       |          |          |      | GP8      | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |      |      |
-| SPI2_CSn  |       |          |          |      | GP9      | <div className='green'>12</div> | <div className='green'>29</div>  | GP22     |      |      |
-|           |       |          |          |      | GND      | <div className='black'>13</div> | <div className='black'>28</div>  | GND      |      |      |
-|           |       | I2C1_SDA |          | 14   | GP10     | <div className='green'>14</div> | <div className='green'>27</div>  | GP21     | 27   |      |
-|           |       | I2C1_SCL |          | 15   | GP11     | <div className='green'>15</div> | <div className='green'>26</div>  | GP20     | 26   |      |
-|           |       |          |          |      | GP12     | <div className='green'>16</div> | <div className='green'>25</div>  | GP19     | 25   |      |
-|           |       |          |          |      | GP13     | <div className='green'>17</div> | <div className='green'>24</div>  | GP18     | 24   |      |
-|           |       |          |          |      | GND      | <div className='black'>18</div> | <div className='black'>23</div>  | GND      |      |      |
-|           |       |          |          | 19   | GP14     | <div className='green'>19</div> | <div className='green'>22</div>  | GP17     | 22   |      |
-|           |       |          |          | 20   | GP15     | <div className='green'>20</div> | <div className='green'>21</div>  | GP16     | 21   |      |
-|           |       |          |          |      |          | &nbsp;                          |                                  |          |      |      |
-|           |       |          |          | 0    |          | <div className='blue'>LED</div> |                                  |          |      |      |
+| SPI       | PWM   | I2C      | UART     | GPIO | NAME | PIN                             | PIN                              | NAME     | GPIO | ADC  |
+|-----------|-------|----------|----------|:----:|-----:|:-------------------------------:|:--------------------------------:|----------|:----:|------|
+|           |       | I2C0_SCL |          | 1    | GP0  | <div className='green'>1</div>  | <div className='red'>40</div>    | VBUS     |      |      |
+|           |       | I2C0_SDA |          | 2    | GP1  | <div className='green'>2</div>  | <div className='red'>39</div>    | VSYS     |      |      |
+|           |       |          |          |      | GND  | <div className='black'>3</div>  | <div className='black'>38</div>  | GND      |      |      |
+|           | PWM10 |          |          |      | GP2  | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN   |      |      |
+|           | PWM11 |          |          |      | GP3  | <div className='green'>5</div>  | <div className='red'>36</div>    | 3V3(OUT) |      |      |
+|           |       |          | UART3_TX |      | GP4  | <div className='green'>6</div>  | <div className='gray'>35</div>   |          |      |      |
+|           |       |          | UART3_RX |      | GP5  | <div className='green'>7</div>  | <div className='gray'>34</div>   |          |      |      |
+|           |       |          |          |      | GND  | <div className='black'>8</div>  | <div className='black'>33</div>  | GND      |      |      |
+| SPI2_SCK  |       |          |          |      | GP6  | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27     |      |      |
+| SPI2_MOSI |       |          |          |      | GP7  | <div className='green'>10</div> | <div className='green'>31</div>  | GP26     |      | ADC1 |
+| SPI2_MISO |       | I2C1_SDA |          |      | GP8  | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |      |      |
+| SPI2_CSn  |       | I2C1_SCL |          |      | GP9  | <div className='green'>12</div> | <div className='green'>29</div>  | GP22     |      |      |
+|           |       |          |          |      | GND  | <div className='black'>13</div> | <div className='black'>28</div>  | GND      |      |      |
+|           |       |          |          | 14   | GP10 | <div className='green'>14</div> | <div className='green'>27</div>  | GP21     | 27   |      |
+|           |       |          |          | 15   | GP11 | <div className='green'>15</div> | <div className='green'>26</div>  | GP20     | 26   |      |
+|           |       |          |          |      | GP12 | <div className='green'>16</div> | <div className='green'>25</div>  | GP19     | 25   |      |
+|           |       |          |          |      | GP13 | <div className='green'>17</div> | <div className='green'>24</div>  | GP18     | 24   |      |
+|           |       |          |          |      | GND  | <div className='black'>18</div> | <div className='black'>23</div>  | GND      |      |      |
+|           |       |          |          | 19   | GP14 | <div className='green'>19</div> | <div className='green'>22</div>  | GP17     | 22   |      |
+|           |       |          |          | 20   | GP15 | <div className='green'>20</div> | <div className='green'>21</div>  | GP16     | 21   |      |
+|           |       |          |          |      |      | &nbsp;                          |                                  |          |      |      |
+|           |       |          |          | 0    |      | <div className='blue'>LED</div> |                                  |          |      |      |
 
 </div>
 
@@ -118,7 +118,6 @@ reboot
 <Image src='/docs/duo/arduino/duo-arduino-07.png' minWidth='40%' maxWidth='60%' align='left' />
 
 测试程序：
-
 ```C
 #define TEST_PIN 20  //0,1,2,14,15,19,20,21,22,24,25,26,27
 
@@ -182,6 +181,76 @@ void loop() {
 ```
 
 ### I2C 使用示例
+
+#### I2C0 向 I2C1 发送数据
+
+硬件连接如下，将 I2C0 和 I2C1 的 SDA 和 SCL 引脚对应连接，再按上述 UART 示例中的方法连接串口到电脑上查看打印信息。
+
+<Image src='/docs/duo/arduino/duo-arduino-09.jpg' minWidth='40%' maxWidth='60%' align='left' />
+
+测试代码：
+```C
+#include <Wire.h>
+
+void receive(int a) {
+  Serial.printf("receive %d bytes\n\r", a);
+  while(a--) {
+    Serial.printf("%d \n\r", Wire1.read());
+  }
+}
+
+void setup() {
+  Serial.begin(115200);
+
+  Wire1.begin(0x50);
+  Wire1.onReceive(receive);
+
+  Wire.begin();
+  Serial.printf("test slave\n\r");
+  Wire1.print();
+}
+
+byte val = 0;
+
+void loop() {
+  Wire.beginTransmission(0x50);         // Transmit to device number 0x50
+  Serial.printf("send %d \n\r", ++val);
+  Wire.write(val);                      // Sends value byte
+  Wire.endTransmission();               // Stop transmitting
+  Wire1.onService();
+  delay(1000);
+}
+```
+
+测试结果：
+```
+test slave
+Wire1: 1
+[iic_dump_register]: ===dump start
+IC_CON = 0x22
+IC_TAR = 0x55
+IC_SAR = 0x50
+IC_SS_SCL_HCNT = 0x1ab
+IC_SS_SCL_LCNT = 0x1f3
+IC_ENABLE = 0x1
+IC_STATUS = 0x6
+IC_INTR_MASK = 0x224
+IC_INTR_STAT = 0
+IC_RAW_INTR_STAT = 0x10
+[iic_dump_register]: ===dump end
+send 1
+receive 1 bytes
+1
+send 2
+receive 1 bytes
+2
+send 3
+receive 1 bytes
+3
+send 4
+receive 1 bytes
+4
+```
 
 ### SPI 使用示例
 
