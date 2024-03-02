@@ -22,7 +22,7 @@ Arduino IDE 支持 Windows、Linux、macOS 三种操作系统，根据您使用�
 打开 Arduino IDE，在 ``文件`` 菜单中选择 ``首选项``，在 ``设置`` 标签中的 ``其他开发板管理器地址`` 内添加 Duo 的配置文件地址：
 
 ```
-https://github.com/milkv-duo/duo-arduino/releases/download/V1.0.0/package_cv180x_index.json
+https://github.com/milkv-duo/duo-arduino/releases/download/V1.0.0/package_sg200x_index.json
 ```
 
 <Image src='/docs/duo/arduino/duo-arduino-01_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
@@ -267,7 +267,7 @@ receive 1 bytes
 char str[]="hello world\n";
 void setup() {
   // put your setup code here, to run once:
-  Serial2.begin(115200);
+  Serial.begin(115200);
   SPI.begin();
 }
 
@@ -277,10 +277,10 @@ void loop() {
   // put your main code here, to run repeatedly:
   // digitalWrite(12, 1);
   SPI.beginTransaction(SPISettings());
-  Serial2.printf("transfer %c\n\r", str[i]);
+  Serial.printf("transfer %c\n\r", str[i]);
   char out = SPI.transfer(str[i++]);        // spi loop back
   SPI.endTransaction();
-  Serial2.printf("receive %x \n\r", out);
+  Serial.printf("receive %x \n\r", out);
   i %= 12;
 }
 ```

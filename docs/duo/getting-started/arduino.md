@@ -22,7 +22,7 @@ Arduino IDE supports three operating systems: Windows, Linux, and macOS. Accordi
 Open Arduino IDE, select ``Preferences`` in the ``File`` menu, and add the Duo configuration file address in the ``Additional boards manager URLs`` in the ``Settings`` tab:
 
 ```
-https://github.com/milkv-duo/duo-arduino/releases/download/V1.0.0/package_cv180x_index.json
+https://github.com/milkv-duo/duo-arduino/releases/download/V1.0.0/package_sg200x_index.json
 ```
 
 <Image src='/docs/duo/arduino/duo-arduino-01.jpg' minWidth='40%' maxWidth='100%' align='left' />
@@ -265,7 +265,7 @@ Test code:
 char str[]="hello world\n";
 void setup() {
   // put your setup code here, to run once:
-  Serial2.begin(115200);
+  Serial.begin(115200);
   SPI.begin();
 }
 
@@ -275,10 +275,10 @@ void loop() {
   // put your main code here, to run repeatedly:
   // digitalWrite(12, 1);
   SPI.beginTransaction(SPISettings());
-  Serial2.printf("transfer %c\n\r", str[i]);
+  Serial.printf("transfer %c\n\r", str[i]);
   char out = SPI.transfer(str[i++]);        // spi loop back
   SPI.endTransaction();
-  Serial2.printf("receive %x \n\r", out);
+  Serial.printf("receive %x \n\r", out);
   i %= 12;
 }
 ```
