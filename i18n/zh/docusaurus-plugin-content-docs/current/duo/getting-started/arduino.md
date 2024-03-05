@@ -107,6 +107,35 @@ reboot
 
 ### Duo256M
 
+<div className='gpio_style'>
+
+| SPI       | PWM  | I2C      | UART     | GPIO | NAME | PIN                             | PIN                              | NAME     | GPIO | ADC  |
+|-----------|------|----------|----------|:----:|-----:|:-------------------------------:|:--------------------------------:|----------|:----:|------|
+|           |      |          |          | 1    | GP0  | <div className='green'>1</div>  | <div className='red'>40</div>    | VBUS     |      |      |
+|           |      |          |          | 2    | GP1  | <div className='green'>2</div>  | <div className='red'>39</div>    | VSYS     |      |      |
+|           |      |          |          |      | GND  | <div className='black'>3</div>  | <div className='black'>38</div>  | GND      |      |      |
+|           | PWM7 |          |          |      | GP2  | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN   |      |      |
+|           | PWM6 |          |          |      | GP3  | <div className='green'>5</div>  | <div className='red'>36</div>    | 3V3(OUT) |      |      |
+|           |      |          | UART3_TX |      | GP4  | <div className='green'>6</div>  | <div className='gray'>35</div>   |          |      |      |
+|           |      |          | UART3_RX |      | GP5  | <div className='green'>7</div>  | <div className='gray'>34</div>   |          |      |      |
+|           |      |          |          |      | GND  | <div className='black'>8</div>  | <div className='black'>33</div>  | GND      |      |      |
+| SPI2_SCK  |      | I2C3_SDA |          |      | GP6  | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27     |      |      |
+| SPI2_MOSI |      | I2C3_SCL |          |      | GP7  | <div className='green'>10</div> | <div className='green'>31</div>  | GP26     |      | ADC1 |
+| SPI2_MISO |      | I2C1_SDA |          |      | GP8  | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |      |      |
+| SPI2_CSn  |      | I2C1_SCL |          |      | GP9  | <div className='green'>12</div> | <div className='green'>29</div>  | GP22     |      |      |
+|           |      |          |          |      | GND  | <div className='black'>13</div> | <div className='black'>28</div>  | GND      |      |      |
+|           |      | I2C2_SDA |          | 14   | GP10 | <div className='green'>14</div> | <div className='green'>27</div>  | GP21     | 27   |      |
+|           |      | I2C2_SCL |          | 15   | GP11 | <div className='green'>15</div> | <div className='green'>26</div>  | GP20     | 26   |      |
+|           |      |          |          |      | GP12 | <div className='green'>16</div> | <div className='green'>25</div>  | GP19     | 25   |      |
+|           |      |          |          |      | GP13 | <div className='green'>17</div> | <div className='green'>24</div>  | GP18     | 24   |      |
+|           |      |          |          |      | GND  | <div className='black'>18</div> | <div className='black'>23</div>  | GND      |      |      |
+|           |      |          |          | 19   | GP14 | <div className='green'>19</div> | <div className='green'>22</div>  | GP17     | 22   |      |
+|           |      |          |          | 20   | GP15 | <div className='green'>20</div> | <div className='green'>21</div>  | GP16     | 21   |      |
+|           |      |          |          |      |      | &nbsp;                          |                                  |          |      |      |
+|           |      |          |          | 0    |      | <div className='blue'>LED</div> |                                  |          |      |      |
+
+</div>
+
 ## 三、代码示例
 
 ### GPIO 使用示例
@@ -192,6 +221,8 @@ Duo 和 Duo256M 的 I2C 接口资源不同，需对照前面的引脚分配图�
 
 <Image src='/docs/duo/arduino/duo-arduino-09.jpg' minWidth='40%' maxWidth='60%' align='left' />
 
+Duo 中 `Wire` 函数默认映射为 I2C0，也就是 `Wire` 等价与 `Wire0`。
+
 测试代码：
 ```C
 #include <Wire.h>
@@ -230,6 +261,81 @@ void loop() {
 ```
 test slave
 Wire1: 1
+[iic_dump_register]: ===dump start
+IC_CON = 0x22
+IC_TAR = 0x55
+IC_SAR = 0x50
+IC_SS_SCL_HCNT = 0x1ab
+IC_SS_SCL_LCNT = 0x1f3
+IC_ENABLE = 0x1
+IC_STATUS = 0x6
+IC_INTR_MASK = 0x224
+IC_INTR_STAT = 0
+IC_RAW_INTR_STAT = 0x10
+[iic_dump_register]: ===dump end
+send 1
+receive 1 bytes
+1
+send 2
+receive 1 bytes
+2
+send 3
+receive 1 bytes
+3
+send 4
+receive 1 bytes
+4
+```
+
+#### I2C1 向 I2C2 发送数据 (Duo256M)
+
+:::tip
+注意，Duo256M 没有 I2C0。
+:::
+
+硬件连接如下，将 I2C1 和 I2C2 的 SDA 和 SCL 引脚对应连接，再按上述 UART 示例中的方法连接串口到电脑上查看打印信息。
+
+<Image src='/docs/duo/arduino/duo-arduino-11.jpg' minWidth='40%' maxWidth='60%' align='left' />
+
+Duo256M 中 `Wire` 函数默认映射为 I2C1，也就是 `Wire` 等价与 `Wire1`。
+
+测试代码：
+```C
+#include <Wire.h>
+
+void receive(int a) {
+  Serial.printf("receive %d bytes\n\r", a);
+  while(a--) {
+    Serial.printf("%d \n\r", Wire2.read());
+  }
+}
+
+void setup() {
+  Serial.begin(115200);
+
+  Wire2.begin(0x50);
+  Wire2.onReceive(receive);
+
+  Wire.begin();
+  Serial.printf("test slave\n\r");
+  Wire2.print();
+}
+
+byte val = 0;
+
+void loop() {
+  Wire.beginTransmission(0x50);         // Transmit to device number 0x50
+  Serial.printf("send %d \n\r", ++val);
+  Wire.write(val);                      // Sends value byte
+  Wire.endTransmission();               // Stop transmitting
+  Wire2.onService();
+  delay(1000);
+}
+
+测试结果：
+```
+test slave
+Wire2: 1
 [iic_dump_register]: ===dump start
 IC_CON = 0x22
 IC_TAR = 0x55

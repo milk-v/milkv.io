@@ -31,6 +31,45 @@ DuoS 的大核可以选择使用 RISC-V 或者 ARM，可以通过主板上的切
 
 <Image src='/docs/duo/duos/duos-arm-riscv-switch.webp' maxWidth='70%' align='center' />
 
+### USB Type A 接口的使用
+
+DuoS USB Type A 接口与 Type C 接口的 USB 功能是二选一的，不可以同时使用。默认固件配置的是 Type C 口的 USB 网口(RNDIS)功能，如果需要切换为 Type A 口的 USB 2.0 HOST 口接 U 盘等设备使用，需要执行以下命令：
+
+~~~
+ln -sf /mnt/system/usb-host.sh /mnt/system/usb.sh
+sync
+~~~
+然后执行 `reboot` 命令或重新上电使其生效。
+
+比如 USB A 口接入 U 盘后，可以用 `ls /dev/sd*` 查看是否有检测到设备。
+
+挂载到系统中查看 U 盘中的内容(以/dev/sda1为例)：
+```
+mkdir /mnt/udisk
+mount /dev/sda1 /mnt/udisk
+```
+查看 `/mnt/udisk` 目录中的内容是否符合预期：
+```
+ls /mnt/udisk
+```
+
+卸载U盘的命令：
+```
+umount /mnt/udisk
+```
+
+想恢复 Type C 口 的 USB 网卡(RNDIS)功能时，执行：
+~~~
+rm /mnt/system/usb.sh
+ln -sf /mnt/system/usb-rndis.sh /mnt/system/usb.sh
+sync
+~~~
+然后执行 `reboot` 命令或重新上电使其生效。
+
+:::tip
+DuoS 有板载以太网接口，所以 Type C 口的 USB 网口(RNDIS)可以不用，一直保持切换为 A 口的 USB 2.0 Host 功能。
+:::
+
 ## DuoS GPIO 引脚分配
 
 <Image src='/docs/duo/duos/duos-pinout-v1.1.webp' maxWidth='50%' align='center' />

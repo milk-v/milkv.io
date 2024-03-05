@@ -31,6 +31,45 @@ The large core of DuoS can choose to use RISC-V or ARM processor, which can be s
 
 <Image src='/docs/duo/duos/duos-arm-riscv-switch.webp' maxWidth='70%' align='center' />
 
+### Usage of USB Type A interface
+
+The USB functions of the DuoS USB Type A interface and Type C interface are optional and cannot be used at the same time. The default firmware is configured with the USB network port (RNDIS) function of the Type C port. If you need to switch to the USB 2.0 HOST port of the Type A port for use with USB flash drives and other devices, you need to execute the following command:
+
+~~~
+ln -sf /mnt/system/usb-host.sh /mnt/system/usb.sh
+sync
+~~~
+Then execute the `reboot` command or power on again to make it take effect.
+
+For example, after connecting a USB flash drive to the USB A port, you can use `ls /dev/sd*` to check whether the device is detected.
+
+Mount it to the system to view the contents of the USB flash drive (take /dev/sda1 as an example):
+```
+mkdir /mnt/udisk
+mount /dev/sda1 /mnt/udisk
+```
+Check whether the contents of the `/mnt/udisk` directory are as expected:
+```
+ls /mnt/udisk
+```
+
+Command to uninstall USB flash drive:
+```
+umount /mnt/udisk
+```
+
+When you want to restore the USB network (RNDIS) function of the Type C port, execute:
+~~~
+rm /mnt/system/usb.sh
+ln -sf /mnt/system/usb-rndis.sh /mnt/system/usb.sh
+sync
+~~~
+Then execute the `reboot` command or power on again to make it take effect.
+
+:::tip
+DuoS has an onboard Ethernet interface, so the USB network port (RNDIS) of the Type C port can be used without switching to the USB 2.0 Host function of the A port.
+:::
+
 ## DuoS GPIO Pinout
 
 <Image src='/docs/duo/duos/duos-pinout-v1.1.webp' maxWidth='50%' align='center' />
