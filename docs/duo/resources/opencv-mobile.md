@@ -166,6 +166,10 @@ scp in.jpg root@192.168.42.1:/root/
 
 ### Run the test program in Duo
 
+:::caution
+For Duo firmware, please temporarily use the version [V1.0.8](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.0.8)
+:::
+
 Log in to the Duo terminal through the serial port or ssh and enter the /root/ directory:
 ```bash
 cd /root/

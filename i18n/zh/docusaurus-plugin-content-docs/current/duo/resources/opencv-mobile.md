@@ -166,6 +166,10 @@ scp in.jpg root@192.168.42.1:/root/
 
 ### 在 Duo 中运行测试程序
 
+:::caution
+Duo 的固件请暂时使用 [V1.0.8](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.0.8) 的版本
+:::
+
 通过串口或者 ssh 登陆到 Duo 的终端，进入 /root/ 目录：
 ```bash
 cd /root/

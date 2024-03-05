@@ -182,7 +182,11 @@ void loop() {
 
 ### I2C Usage Example
 
-#### I2C0 sends data to I2C1
+:::caution
+The I2C interface resources of Duo and Duo256M are different and need to be used according to the previous pin resource diagram.
+:::
+
+#### I2C0 sends data to I2C1 (Duo)
 
 The hardware connection is as follows. Connect the SDA and SCL pins of I2C0 and I2C1 correspondingly, and then connect the serial port to the computer to view the printing information according to the method in the UART example above.
 
