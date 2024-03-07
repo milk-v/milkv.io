@@ -11,7 +11,7 @@ Duo 的 CPU 采用双核设计，大核上跑的是 Linux 系统，小核上跑�
 
 ## 核间通信样例
 
-Duo 大核与小核间通信是通过 mailbox 机制实现的，最新的镜像已经在大核的 Linux 内核中添加了 mailbox 驱动，小核 FreeRTOS 代码中也实现了相关功能，请使用 [V1.0.6](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.0.6) 或者 [更新的镜像](https://github.com/milkv-duo/duo-buildroot-sdk/releases) 测试。
+Duo 大核与小核间通信是通过 mailbox 机制实现的，最新的镜像已经在大核的 Linux 内核中添加了 mailbox 驱动，小核 FreeRTOS 代码中也实现了相关功能，请使用 [V1.0.9](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.0.9) 或者 [更新的镜像](https://github.com/milkv-duo/duo-buildroot-sdk/releases) 测试。
 
 ### 通过大核控制小核点亮 LED
 
