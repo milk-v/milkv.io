@@ -23,53 +23,6 @@ We have open sourced the Public Preliminary Datasheet and TRM of SG2000 to GitHu
 
 Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy samples of the SG2002 chip from our distributor [online store](https://arace.tech/products/sophon-cv1800b-5pcs) directly. For volume order, please contact [Milk-V Sales Team](mailto:sales@milkv.io) for the qoutation.
 
-## DuoS usage tips
-
-### RISC-V and ARM switching
-
-The large core of DuoS can choose to use RISC-V or ARM processor, which can be set through the switch on the board. If you find that DuoS cannot start normally during use, please first check whether the switch is consistent with the firmware used.
-
-<Image src='/docs/duo/duos/duos-arm-riscv-switch.webp' maxWidth='70%' align='center' />
-
-### Usage of USB Type A interface
-
-The USB functions of the DuoS USB Type A interface and Type C interface are optional and cannot be used at the same time. The default firmware is configured with the USB network port (RNDIS) function of the Type C port. If you need to switch to the USB 2.0 HOST port of the Type A port for use with USB flash drives and other devices, you need to execute the following command:
-
-~~~
-ln -sf /mnt/system/usb-host.sh /mnt/system/usb.sh
-sync
-~~~
-Then execute the `reboot` command or power on again to make it take effect.
-
-For example, after connecting a USB flash drive to the USB A port, you can use `ls /dev/sd*` to check whether the device is detected.
-
-Mount it to the system to view the contents of the USB flash drive (take /dev/sda1 as an example):
-```
-mkdir /mnt/udisk
-mount /dev/sda1 /mnt/udisk
-```
-Check whether the contents of the `/mnt/udisk` directory are as expected:
-```
-ls /mnt/udisk
-```
-
-Command to uninstall USB flash drive:
-```
-umount /mnt/udisk
-```
-
-When you want to restore the USB network (RNDIS) function of the Type C port, execute:
-~~~
-rm /mnt/system/usb.sh
-ln -sf /mnt/system/usb-rndis.sh /mnt/system/usb.sh
-sync
-~~~
-Then execute the `reboot` command or power on again to make it take effect.
-
-:::tip
-DuoS has an onboard Ethernet interface, so the USB network port (RNDIS) of the Type C port can be used without switching to the USB 2.0 Host function of the A port.
-:::
-
 ## DuoS GPIO Pinout
 
 <Image src='/docs/duo/duos/duos-pinout-v1.1.webp' maxWidth='50%' align='center' />
@@ -124,3 +77,83 @@ GPIO on `Header J3` use 3.3V logic levels.
 </div>
 
 GPIO E0/E1/E2 on `Header J4` use 3.3V logic levels, other GPIOs use 1.8V logic levels.
+
+## DuoS usage tips
+
+### RISC-V and ARM switching
+
+The large core of DuoS can choose to use RISC-V or ARM processor, which can be set through the switch on the board. If you find that DuoS cannot start normally during use, please first check whether the switch is consistent with the firmware used.
+
+<Image src='/docs/duo/duos/duos-arm-riscv-switch.webp' maxWidth='70%' align='center' />
+
+If the debug serial port is connected, you can see in the first line of the boot log that starting with `C` means starting from the RISC-V core, and starting with `B` means starting from the ARM core.
+
+- RISC-V:
+  ```
+  C.SCS/0/0.C.SCS/0/0.WD.URPL.USBI.USBW
+  ```
+- ARM:
+  ```
+  B.SCS/0/0.WD.URPL.B.SCS/0/0.WD.URPL.USBI.USBW
+  ```
+
+### Usage of USB Type A interface
+
+The USB functions of the DuoS USB Type A interface and Type C interface are optional and cannot be used at the same time. The default firmware is configured with the USB network port (RNDIS) function of the Type C port. If you need to switch to the USB 2.0 HOST port of the Type A port for use with USB flash drives and other devices, you need to execute the following command:
+
+~~~
+ln -sf /mnt/system/usb-host.sh /mnt/system/usb.sh
+sync
+~~~
+Then execute the `reboot` command or power on again to make it take effect.
+
+For example, after connecting a USB flash drive to the USB A port, you can use `ls /dev/sd*` to check whether the device is detected.
+
+Mount it to the system to view the contents of the USB flash drive (take /dev/sda1 as an example):
+```
+mkdir /mnt/udisk
+mount /dev/sda1 /mnt/udisk
+```
+Check whether the contents of the `/mnt/udisk` directory are as expected:
+```
+ls /mnt/udisk
+```
+
+Command to uninstall USB flash drive:
+```
+umount /mnt/udisk
+```
+
+When you want to restore the USB network (RNDIS) function of the Type C port, execute:
+~~~
+rm /mnt/system/usb.sh
+ln -sf /mnt/system/usb-rndis.sh /mnt/system/usb.sh
+sync
+~~~
+Then execute the `reboot` command or power on again to make it take effect.
+
+:::tip
+DuoS has an onboard Ethernet interface, so the USB network port (RNDIS) of the Type C port can be used without switching to the USB 2.0 Host function of the A port.
+:::
+
+### UART Serial Console
+
+Connect USB to TTL serial cable as shown below. Do not connect the red wire.
+
+| Milk-V DouS | \<---> | USB to TTL |
+| ----------- | ------ | ---------- |
+| GND (pin 6) | \<---> | Black wire |
+| TX (pin  8) | \<---> | White wire |
+| RX (pin 10) | \<---> | Green wire |
+
+<Image src='/docs/duo/duos/duos-serial-port.webp' maxWidth='100%' align='center' />
+
+The default serial setting for Duo u-boot and kernel console is:
+
+```
+   baudrate: 115200
+   data bit: 8
+   stop bit: 1
+   parity  : none
+   flow control: none
+```

@@ -137,15 +137,13 @@ USB-TTL模块的每个针脚定义如下：
 
 ### 连接
 
-如下图所示，连接USB到TTL串口模块。 不要连接红线.
+如下图所示，连接USB到TTL串口模块，不要连接红线。
 
-
-| Milk-V Dou   | \<---> | USB to TTL |
-| ------------ | ------ | ---------- |
-| TX (pin 16)  | \<---> | White wire |
-| RX (pin 17)  | \<---> | Green wire |
-| GND (pin 18) | \<---> | Black wire |
-
+| Milk-V Dou   | \<---> | USB 转 TTL 串口 |
+| ------------ | ------ | -------------- |
+| TX (pin 16)  | \<---> | 白色线          |
+| RX (pin 17)  | \<---> | 绿色线          |
+| GND (pin 18) | \<---> | 黑色线          |
 
 ![duo-serial](/docs/duo/duo-serial.jpg)
 
@@ -158,5 +156,3 @@ Duo u-boot和内核控制台的默认串行设置是：
    parity  : none
    flow control: none
 ```
-
-## sysroot
