@@ -38,7 +38,6 @@
    display: flex;
    align-items: flex-start;
    cursor: pointer;
-   transition: .3s;
 }
 
 .agent_official {
@@ -51,9 +50,7 @@
 }
 
 .agents>li:hover {
-   transform: translateY(-5px);
-   box-shadow: 0 1.324px 2.649px -.662px #0000001f, 0 2.649px 3.311px 0 #00000014, 0 .662px 6.622px 0 #0000000d;
-   background-color: skyblue;
+   border: 2px solid #2D88C9;
 }
 
 .agent_br {
