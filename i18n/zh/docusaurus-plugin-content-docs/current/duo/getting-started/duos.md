@@ -23,14 +23,6 @@ SG2000 是一款高性能、低功耗芯片，专为智能监控 IP 摄像机、
 
 Milk-V 是 SG2002 芯片的全球授权经销商。您可以直接从我们的经销商 [Arace](https://arace.tech/products/sophon-cv1800b-5pcs) 购买 SG2002 芯片的样品。如需批量订购，请联系 [Milk-V 销售团队](mailto:sales@milkv.io) 获取报价。
 
-## DuoS 注意事项
-
-### RISC-V 与 ARM 切换
-
-DuoS 的大核可以选择使用 RISC-V 或者 ARM，可以通过主板上的切换开关来设置，如果您在使用中发现 DuoS 不能正常启动，请先检查该切换开关和使用的固件是否一致。
-
-<Image src='/docs/duo/duos/duos-arm-riscv-switch.webp' maxWidth='70%' align='center' />
-
 ## DuoS GPIO 引脚分配
 
 <Image src='/docs/duo/duos/duos-pinout-v1.1.webp' maxWidth='50%' align='center' />
@@ -85,3 +77,83 @@ DuoS 的大核可以选择使用 RISC-V 或者 ARM，可以通过主板上的切
 </div>
 
 `排针 J4` 上的 GPIO E0/E1/E2 使用 3.3V 逻辑电平，其他 GPIO 使用 1.8V 逻辑电平。
+
+## DuoS 注意事项
+
+### RISC-V 与 ARM 切换
+
+DuoS 的大核可以选择使用 RISC-V 或者 ARM，可以通过主板上的切换开关来设置，如果您在使用中发现 DuoS 不能正常启动，请先检查该切换开关和使用的固件是否一致。
+
+<Image src='/docs/duo/duos/duos-arm-riscv-switch.webp' maxWidth='70%' align='center' />
+
+如果连接了调试串口，可以在第一行开机日志中看到，以 `C` 开头时代表从 RISC-V 核启动，以 `B` 开头时代表从 ARM 核启动。
+
+- RISC-V:
+  ```
+  C.SCS/0/0.C.SCS/0/0.WD.URPL.USBI.USBW
+  ```
+- ARM:
+  ```
+  B.SCS/0/0.WD.URPL.B.SCS/0/0.WD.URPL.USBI.USBW
+  ```
+
+### USB Type A 接口的使用
+
+DuoS USB Type A 接口与 Type C 接口的 USB 功能是二选一的，不可以同时使用。默认固件配置的是 Type C 口的 USB 网口(RNDIS)功能，如果需要切换为 Type A 口的 USB 2.0 HOST 口接 U 盘等设备使用，需要执行以下命令：
+
+~~~
+ln -sf /mnt/system/usb-host.sh /mnt/system/usb.sh
+sync
+~~~
+然后执行 `reboot` 命令或重新上电使其生效。
+
+比如 USB A 口接入 U 盘后，可以用 `ls /dev/sd*` 查看是否有检测到设备。
+
+挂载到系统中查看 U 盘中的内容(以/dev/sda1为例)：
+```
+mkdir /mnt/udisk
+mount /dev/sda1 /mnt/udisk
+```
+查看 `/mnt/udisk` 目录中的内容是否符合预期：
+```
+ls /mnt/udisk
+```
+
+卸载U盘的命令：
+```
+umount /mnt/udisk
+```
+
+想恢复 Type C 口 的 USB 网卡(RNDIS)功能时，执行：
+~~~
+rm /mnt/system/usb.sh
+ln -sf /mnt/system/usb-rndis.sh /mnt/system/usb.sh
+sync
+~~~
+然后执行 `reboot` 命令或重新上电使其生效。
+
+:::tip
+DuoS 有板载以太网接口，所以 Type C 口的 USB 网口(RNDIS)可以不用，一直保持切换为 A 口的 USB 2.0 Host 功能。
+:::
+
+### UART 串口控制台
+
+如下图所示，连接USB到TTL串口模块，不要连接红线。
+
+| Milk-V DouS | \<---> | USB 转 TTL 串口 |
+| ----------- | ------ | -------------- |
+| GND (pin 6) | \<---> | 黑色线          |
+| TX (pin  8) | \<---> | 白色线          |
+| RX (pin 10) | \<---> | 绿色线          |
+
+<Image src='/docs/duo/duos/duos-serial-port.webp' maxWidth='100%' align='center' />
+
+Duo u-boot 和内核控制台的默认串行设置是：
+
+```
+   baudrate: 115200
+   data bit: 8
+   stop bit: 1
+   parity  : none
+   flow control: none
+```

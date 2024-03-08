@@ -11,7 +11,7 @@ Duo's CPU adopts a dual-core design. The big core runs the Linux system, and the
 
 ## Inter-core communication example
 
-The communication between the Duo big core and the small core is realized through the mailbox module. The latest image has added the mailbox driver to the Linux kernel of the big core. Related functions are also implemented in the FreeRTOS code of the small core. Please use [V1.0.6]( https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.0.6) or [latest image](https://github.com/milkv-duo/duo-buildroot-sdk/releases) test.
+The communication between the Duo big core and the small core is realized through the mailbox module. The latest image has added the mailbox driver to the Linux kernel of the big core. Related functions are also implemented in the FreeRTOS code of the small core. Please use [V1.0.9]( https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.0.9) or [latest image](https://github.com/milkv-duo/duo-buildroot-sdk/releases) test.
 
 ### Big core controls small core to light up LED
 

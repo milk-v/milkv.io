@@ -162,5 +162,3 @@ The default serial setting for Duo u-boot and kernel console is:
    parity  : none
    flow control: none
 ```
-
-## sysroot
