@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Layout from '@theme/Layout';
 import styles from './index.module.css'
 import BuyPop from "../../components/BuyPop"
@@ -6,29 +6,22 @@ import ContactUs from "../../components/ContactUs"
 // import ContactBar from "../../components/ContactBar"
 import Translate from '@docusaurus/Translate';
 import MetaData from "../../components/MetaData"
-
+import Link from '@docusaurus/Link';
 
 export default () => {
-    const [marscm, setMarscm] = useState(false)
-
-    const mars2Start = () => {
-        setMarscm(false)
-    }
-
 
     return (
         <>
             <Layout>
                 <MetaData page='marscm' />
-                <BuyPop flag={marscm} module={mars2Start} type='mars-cm' />
                 <div className={styles.header_page}>
                     <div className={styles.title_content}>
                         <div className={styles.leftTitle}>
                             <h2><span>Milk-V Mars</span> CM</h2>
                             <p>A RISC-V Compute Module in compatible form factor</p>
-                            <div className={styles.btnbuy} onClick={() => setMarscm(buy => !buy)}>
+                            <Link to='#buy' className={styles.btnbuy}>
                                 <Translate id='Buy.now' />
-                            </div>
+                            </Link>
                         </div>
                         <img src="/mars-cm/marscm-bevel.webp" alt="Mars CM oblique angle diagram" />
                     </div>
@@ -226,6 +219,7 @@ export default () => {
                             </tbody>
                         </table>
                     </div>
+                    <BuyPop type='mars-cm' />
                     <ContactUs product='mars' />
                     {/* <ContactBar product='mars' /> */}
                 </div>

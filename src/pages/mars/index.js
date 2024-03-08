@@ -1,31 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
-
 import BuyPop from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
 // import ContactBar from "../../components/ContactBar"
 import MetaData from "../../components/MetaData"
-
+import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
 
 export default () => {
-    const [mars2, setmars2] = useState(false)
-
-    const mars2Start = () => {
-        setmars2(false)
-    }
-
     return (
         <Layout>
             <MetaData page='mars' />
-            <BuyPop flag={mars2} module={mars2Start} type='mars' />
             <div className={styles.marsBox}>
                 <div className={styles.headImage}>
                     <div className={styles.titleBox}>
                         <h2>Milk-V <Translate id='mars' /></h2>
                         <p><Translate id='mars.page.title' /></p>
-                        <div className={styles.btnbuy} onClick={() => setmars2(buy => !buy)}><Translate id='Buy.now' /></div>
+                        <Link to='#buy' className={styles.btnbuy}><Translate id='Buy.now' /></Link>
                     </div>
                 </div>
                 <div className={styles.prodcuts}>
@@ -150,8 +142,8 @@ export default () => {
                             <td>2 Pin 5V slot for FAN</td>
                         </tr>
                     </tbody>
-
                 </table>
+                <BuyPop type='mars' />
                 <ContactUs product='mars' />
                 {/* <ContactBar product='mars' /> */}
             </div>

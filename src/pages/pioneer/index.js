@@ -1,23 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from '@theme/Layout';
-import Head from "../../components/BuyPop"
+import BuyPop from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
 // import ContactBar from "../../components/ContactBar"
 import cCss from "./center.module.css"
 import Translate from '@docusaurus/Translate';
 import MetaData from "../../components/MetaData"
-
+import Link from '@docusaurus/Link';
 
 function Center() {
-  const [pionner, setPionner] = useState(false)
-
-  const pStart = () => {
-    setPionner(false)
-  }
-
   return (
     <div className={cCss.centerBox}>
-      <Head flag={pionner} module={pStart} type='pioneer' />
       <div className={cCss.bigimg}>
         <div className={cCss.center_Box}>
           <div className={cCss.pagBox}></div>
@@ -25,7 +18,7 @@ function Center() {
             <h2>Milk-V <Translate id='pioneer' /></h2>
             <p><Translate id='pioneer.page.title' /></p>
             <div className={cCss.buy}>
-              <div className={cCss.btnbuy} onClick={() => setPionner(buy => !buy)}><Translate id='Buy.now' /></div>
+              <Link className={cCss.btnbuy} to='#buy'><Translate id='Buy.now' /></Link>
             </div>
           </div>
         </div>
@@ -285,6 +278,7 @@ function Center() {
           </div>
         </div>
       </div>
+      <BuyPop type='pioneer' />
       <ContactUs product='pioneer' />
       {/* <ContactBar product='pioneer' /> */}
     </div>

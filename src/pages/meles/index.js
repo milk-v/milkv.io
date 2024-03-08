@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Layout from '@theme/Layout';
 import styles from './index.module.css'
 import BuyPop from "../../components/BuyPop"
@@ -6,24 +6,19 @@ import ContactUs from "../../components/ContactUs"
 // import ContactBar from "../../components/ContactBar"
 import Translate from '@docusaurus/Translate';
 import MetaData from "../../components/MetaData"
+import Link from '@docusaurus/Link';
 
 export default () => {
-    const [meles, setMeles] = useState(false)
-
-    const mars2Start = () => {
-        setMeles(false)
-    }
     return (
         <Layout>
             <MetaData page='meles' />
-            <BuyPop flag={meles} module={mars2Start} type='meles' />
             <div className={styles.melesHead}>
                 <div className={styles.titleBox}>
                     <h2>Milk-V <span>Meles</span></h2>
                     <p>Embarking on the RISC-V Cosmic Journey</p>
-                    <div className={styles.btnbuy} onClick={() => setMeles(buy => !buy)}>
+                    <Link className={styles.btnbuy} to='#buy'>
                         <Translate id='Buy.now' />
-                    </div>
+                    </Link>
                 </div>
                 <div className={styles.titleIcons}>
                     <img src="/meles/iconThead.svg" alt="平头哥" />
@@ -282,8 +277,8 @@ export default () => {
                         </tr>
                     </tbody>
                     {/* colspan rowspan */}
-
                 </table>
+                <BuyPop type='meles' />
                 <ContactUs product='meles' />
                 {/* <ContactBar product='meles' /> */}
             </div>

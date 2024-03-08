@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Layout from '@theme/Layout';
 import styles from './index.module.css'
 import Translate from '@docusaurus/Translate';
@@ -6,26 +6,20 @@ import BuyPop from "../../components/BuyPop"
 import ContactUs from "../../components/ContactUs"
 // import ContactBar from "../../components/ContactBar"
 import MetaData from "../../components/MetaData"
-
+import Link from '@docusaurus/Link';
 
 export default () => {
-    const [vega, setvega] = useState(false)
-
-    const mars2Start = () => {
-        setvega(false)
-    }
     return (
         <>
             <Layout>
                 <MetaData page='vega' />
-                <BuyPop flag={vega} module={mars2Start} type='vega' />
                 <div className={styles.header_title}>
                     <div className={styles.title_content}>
                         <h1>Milk-V Vega</h1>
                         <p>RISC-V Open Source 10 Gigabit Network Switch</p>
-                        <div className={styles.btnbuy} onClick={() => setvega(buy => !buy)}>
+                        <Link to='#buy' className={styles.btnbuy} >
                             <Translate id='Buy.now' />
-                        </div>
+                        </Link>
                     </div>
                 </div>
                 <div className={styles.black}>
@@ -227,6 +221,7 @@ export default () => {
                             </tbody>
                         </table>
                     </div>
+                    <BuyPop type='vega' />
                     <ContactUs product='vega' />
                     {/* <ContactBar product='vega' /> */}
                 </div>

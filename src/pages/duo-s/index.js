@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Layout from '@theme/Layout';
 import BuyPop from "../../components/BuyPop"
@@ -7,26 +7,19 @@ import MetaData from "../../components/MetaData"
 import Link from '@docusaurus/Link';
 import styles from "./index.module.css"
 import Translate from '@docusaurus/Translate';
-
 import styles_duo from '@site/src/pages/duo/details.module.css'
 
 
 export default () => {
-    const [duo2, setDuo2] = useState(false)
-    const duoStart = () => {
-        setDuo2(false)
-    }
-
     return (
         <Layout>
-            <BuyPop flag={duo2} module={duoStart} type='duo' />
             <div className={styles.content}>
                 <div className={styles.content_head}>
                     <div className={styles.flex_head}>
                         <div className={styles.left_t}>
                             <h2>Milk-V DUO S</h2>
                             <p>All-around Powerful</p>
-                            <div className={styles.buy_btn} onClick={() => setDuo2(buy => !buy)}><Translate id='Buy.now' /></div>
+                            <Link to='#buy' className={styles.buy_btn} ><Translate id='Buy.now' /></Link>
                             <h3><Translate id='Startingfrom' /> <span>$9.9</span></h3>
                             <span>*Tax or shipping is not included </span>
                         </div>
@@ -277,6 +270,7 @@ export default () => {
                         {/* <h3><Translate id='duo.info.text.Documents' /></h3> */}
                     </div>
                 </div>
+                <BuyPop type='duo' />
                 <ContactUs product='duo' />
             </div>
         </Layout >

@@ -15,19 +15,13 @@ import styles_s from '../duo-s/index.module.css'
 const download_data = require("@site/src/jsonFiles/downloadData.json")
 
 function DetailsPage() {
-  const [duo2, setDuo2] = useState(false)
   const [down_filter_idx, setDown_filter_idx] = useState(0)
 
   const currentLanguage = useBaseUrl('/');
   const curren_language = currentLanguage === '/zh/' ? 'duo_zh' : 'duo'
 
-  const duoStart = () => {
-    setDuo2(false)
-  }
-
   return (
     <>
-      <BuyPop flag={duo2} module={duoStart} type='duo' />
       <div style={{
         position: "relative",
         width: '100%',
@@ -41,7 +35,7 @@ function DetailsPage() {
           <h2 className={styles.textLine}><Translate id='Duo.text.title2' /></h2>
           <p className={styles.low}><Translate id='Duo.text.title3' /></p>
           <h3 className={styles.starting}><Translate id='Startingfrom' /><span>$5</span></h3>
-          <div className={styles.btnbuy} onClick={() => setDuo2(buy => !buy)}><Translate id='Buy.now' /></div>
+          <Link href='#buy' className={styles.btnbuy} ><Translate id='Buy.now' /></Link>
           <p className={styles.tax}>(*<Translate id='Duo.text.title4' />)</p>
         </div>
         <div className={styles.rotateImg}></div>
@@ -291,6 +285,7 @@ function DetailsPage() {
             </div>
           </div>
         </div>
+        <BuyPop type='duo' />
         <ContactUs product='duo' />
         {/* <ContactBar product='duo' /> */}
       </div>

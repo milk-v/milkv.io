@@ -73,6 +73,8 @@
 
 .buy_btn:hover {
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+    text-decoration: none;
+    color: #fff;
 }
 
 .left_t>span {

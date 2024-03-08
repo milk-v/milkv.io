@@ -4,7 +4,6 @@ import Layout from '@theme/Layout';
 import Translate from '@docusaurus/Translate';
 import styles from './index.module.css';
 import { useHistory } from '@docusaurus/router';
-import BuyPop from "../components/BuyPop"
 import SupportUs from "../components/SupportUs"
 import ContactBar from "../components/ContactBar"
 import MetaData from "../components/MetaData"
@@ -39,13 +38,8 @@ const Chips_module = () => {
 }
 
 const Duo_module = (props) => {
-  const [duo, setDuo] = useState(false)
-  const duoStart = () => {
-    setDuo(false)
-  }
   return (
     <>
-      <BuyPop flag={duo} module={duoStart} type='duo' />
       <div className={styles.info_module}>
         <div className={styles.view_mian}>
           <div className={styles.left}>
@@ -61,7 +55,7 @@ const Duo_module = (props) => {
               <p>Dual cores up to 1GHz (optional RISC-V / ARM), up to 512MB of memory, and a 1TOPS@INT8 TPU.  It integrates wireless capabilities with WI-FI 6/BT 5, and comes equipped with a USB 2.0 HOST interface and a 100Mbps Ethernet port for user convenience. Supporting dual cameras (2x MIPI CSI 2-lane) and MIPI video output (MIPI DSI 4-lane).</p>
               <div className={styles.learnMore_use}>
                 <Link href='/duo-s'><Translate id='homepage.corporations.marslearnmore' /></Link>
-                <div className={styles.buy_button} onClick={() => { setDuo(true) }}><Translate id='homepage.corporations.marsbuynow' /></div>
+                <Link href='/duo-s#buy' className={styles.buy_button}><Translate id='homepage.corporations.marsbuynow' /></Link>
               </div>
             </div>
           </div>
@@ -78,7 +72,7 @@ const Duo_module = (props) => {
             <p className={styles.duo_info_p}><Translate id='homepage.corporations.duo' /></p>
             <div className={styles.learnMore_use}>
               <Link href='/duo'><Translate id='homepage.corporations.duolearnmore' /></Link>
-              <div className={styles.buy_button} onClick={() => { setDuo(true) }}><Translate id='homepage.corporations.duobuynow' /></div>
+              <Link href='/duo#buy' className={styles.buy_button} ><Translate id='homepage.corporations.duobuynow' /></Link>
             </div>
           </div>
           <div className={styles.right_img}>
@@ -97,13 +91,8 @@ const Duo_module = (props) => {
 }
 
 const Pionner_module = (props) => {
-  const [pioneer, setPionner] = useState(false)
-  const pionnerStart = () => {
-    setPionner(false)
-  }
   return (
     <>
-      <BuyPop flag={pioneer} module={pionnerStart} type='pioneer' />
       <div className={styles.info_module}>
         <div className={styles.main_module}>
           <div className={styles.left_title}>
@@ -111,7 +100,7 @@ const Pionner_module = (props) => {
             <p><Translate id='homepage.corporations.pioneer' /></p>
             <div className={styles.learnMore_use}>
               <Link href='/pioneer'><Translate id='homepage.corporations.pioneerlearnmore' /></Link>
-              <div className={styles.buy_button} onClick={() => { setPionner(true) }}><Translate id='homepage.corporations.pioneerbuynow' /></div>
+              <Link href='/pioneer#buy' className={styles.buy_button} ><Translate id='homepage.corporations.pioneerbuynow' /></Link>
             </div>
           </div>
           <div className={styles.right_img}>
@@ -130,18 +119,8 @@ const Pionner_module = (props) => {
 }
 
 const Mars_module = (props) => {
-  const [pioneer, setPionner] = useState(false)
-  const [marscm, setMarscm] = useState(false)
-  const pionnerStart = () => {
-    setPionner(false)
-  }
-  const cmStart = () => {
-    setMarscm(false)
-  }
   return (
     <>
-      <BuyPop flag={pioneer} module={pionnerStart} type='mars' />
-      <BuyPop flag={marscm} module={cmStart} type='mars-cm' />
       <div className={styles.info_module}>
         <div className={styles.view_mian}>
           <div className={styles.left}>
@@ -157,7 +136,7 @@ const Mars_module = (props) => {
               <p><Translate id='homepage.corporations.marscm' /></p>
               <div className={styles.learnMore_use}>
                 <Link href='/mars-cm'><Translate id='homepage.corporations.marslearnmore' /></Link>
-                <div className={styles.buy_button} onClick={() => { setMarscm(true) }}><Translate id='homepage.corporations.marsbuynow' /></div>
+                <Link href='/mars-cm#buy' className={styles.buy_button} ><Translate id='homepage.corporations.marsbuynow' /></Link>
               </div>
             </div>
           </div>
@@ -168,7 +147,7 @@ const Mars_module = (props) => {
             <p><Translate id='homepage.corporations.mars' /></p>
             <div className={styles.learnMore_use}>
               <Link href='/mars'><Translate id='homepage.corporations.marslearnmore' /></Link>
-              <div className={styles.buy_button} onClick={() => { setPionner(true) }}><Translate id='homepage.corporations.marsbuynow' /></div>
+              <Link href='/mars#buy' className={styles.buy_button} ><Translate id='homepage.corporations.marsbuynow' /></Link>
             </div>
           </div>
           <div className={styles.right_img}>
@@ -181,13 +160,8 @@ const Mars_module = (props) => {
 }
 
 const Meles_module = (props) => {
-  const [pioneer, setPionner] = useState(false)
-  const pionnerStart = () => {
-    setPionner(false)
-  }
   return (
     <>
-      <BuyPop flag={pioneer} module={pionnerStart} type='meles' />
       <div className={styles.info_module}>
         <div className={styles.main_module}>
           <div className={styles.left_title}>
@@ -195,7 +169,7 @@ const Meles_module = (props) => {
             <p><Translate id='homepage.corporations.meles' /></p>
             <div className={styles.learnMore_use}>
               <Link href='/meles'><Translate id='homepage.corporations.meleslearnmore' /></Link>
-              <div className={styles.buy_button} onClick={() => { setPionner(true) }}><Translate id='homepage.corporations.melesbuynow' /></div>
+              <Link href='/meles#buy' className={styles.buy_button}><Translate id='homepage.corporations.melesbuynow' /></Link>
             </div>
           </div>
           <div className={styles.right_img}>
@@ -208,13 +182,8 @@ const Meles_module = (props) => {
 }
 
 const Vega_module = (props) => {
-  const [pioneer, setPionner] = useState(false)
-  const pionnerStart = () => {
-    setPionner(false)
-  }
   return (
     <>
-      <BuyPop flag={pioneer} module={pionnerStart} type='vega' />
       <div className={styles.info_module}>
         <div className={styles.main_module}>
           <div className={styles.left_title}>
@@ -222,7 +191,7 @@ const Vega_module = (props) => {
             <p><Translate id='homepage.corporations.vega' /></p>
             <div className={styles.learnMore_use}>
               <Link href='/vega'><Translate id='homepage.corporations.vegalearnmore' /></Link>
-              <div className={styles.buy_button} onClick={() => { setPionner(true) }}><Translate id='homepage.corporations.vegabuynow' /></div>
+              <Link href='/vega#buy' className={styles.buy_button} ><Translate id='homepage.corporations.vegabuynow' /></Link>
             </div>
           </div>
           <div className={styles.right_img}>
