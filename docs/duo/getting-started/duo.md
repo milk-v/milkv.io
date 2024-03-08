@@ -30,7 +30,7 @@ Milk-V is the Authorised Global Distributor of the CV1800B chips. You can buy sa
 <div className='gpio_style'>
 
 | **JTAG** | **SPI**   | **SPI NOR**    | **SD**  | **PWM** | **I2C**  | **UART**   | **NAME** | **PIN**                         | **PIN**                          | **NAME** | **ADC**    | **SPI NOR**   | **SPI NAND** |
-|----------|-----------|----------------|---------|---------|----------|------------|---------:|--------------------------------:|----------------------------------|----------|------------|---------------|--------------|
+|:---------|:----------|:---------------|:--------|:--------|:---------|:-----------|---------:|:-------------------------------:|:--------------------------------:|:---------|:-----------|:--------------|:-------------|
 | JTAG_TDI |           |                |         |         | I2C0_SCL | UART1/2_TX | GP0      | <div className='green'>1</div>  | <div className='red'>40</div>    | VBUS     |            |               |              |
 | JTAG_TDO |           |                |         |         | I2C0_SDA | UART1/2_RX | GP1      | <div className='green'>2</div>  | <div className='red'>39</div>    | VSYS     |            |               |              |
 |          |           |                |         |         |          |            | GND      | <div className='black'>3</div>  | <div className='black'>38</div>  | GND      |            |               |              |
@@ -51,6 +51,5 @@ Milk-V is the Authorised Global Distributor of the CV1800B chips. You can buy sa
 |          |           |                |         |         |          |            | GND      | <div className='black'>18</div> | <div className='black'>23</div>  | GND      |            |               |              |
 |          |           |                |         |         |          |            | GP14     | <div className='green'>19</div> | <div className='green'>22</div>  | GP17     |            | SPINOR_CS_X   | SPINAND_CS   |
 |          |           |                |         |         |          |            | GP15     | <div className='green'>20</div> | <div className='green'>21</div>  | GP16     |            | SPINOR_MISO   | SPINAND_MISO |
-|          |           |                |         |         |          |            |          |                                 |                                  |          |            |               |              |
 
 </div>

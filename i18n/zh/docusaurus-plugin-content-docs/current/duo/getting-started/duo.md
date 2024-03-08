@@ -49,6 +49,5 @@ Milk-V 是 CV1800B 芯片的全球授权经销商。 您可以直接从我们的
 |          |           |                |         |         |          |            | GND      | <div className='black'>18</div> | <div className='black'>23</div>  | GND      |            |               |              |
 |          |           |                |         |         |          |            | GP14     | <div className='green'>19</div> | <div className='green'>22</div>  | GP17     |            | SPINOR_CS_X   | SPINAND_CS   |
 |          |           |                |         |         |          |            | GP15     | <div className='green'>20</div> | <div className='green'>21</div>  | GP16     |            | SPINOR_MISO   | SPINAND_MISO |
-|          |           |                |         |         |          |            |          |                                 |                                  |          |            |               |              |
 
 </div>
