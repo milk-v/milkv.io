@@ -13,7 +13,6 @@ import BuyPop from "../BuyPop"
 
 export default (props) => {
     const { chipName } = props
-    let { pathname } = useLocation();
     const currentLanguage = useBaseUrl('/');
     const curren_language = currentLanguage === '/zh/' ? 'resources_zh' : 'resources'
     const title_language = currentLanguage === '/zh/' ? 'title_zh' : 'title'
@@ -32,8 +31,6 @@ export default (props) => {
     const chip_doc = useRef(null)
     const chip_resources = useRef(null)
     const chip_agency = useRef(null)
-
-    const [duo2, setDuo2] = useState(false)
 
     const [tidx, setTidx] = useState(0)
     const [scrollDirection, setScrollDirection] = useState();
@@ -129,15 +126,9 @@ export default (props) => {
             ref: chip_agency,
         }
     ]
-    const duoStart = () => {
-        setDuo2(false)
-    }
-    useEffect(() => {
-        console.log(pathname);
-    }, [pathname])
+
     return (
         <Layout>
-            <BuyPop flag={duo2} module={duoStart} type={chipName} />
             <div className={styles.tabs_hied}>
                 <div className={styles.tab_card}>
                     <Link to='/'>Home</Link><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -153,7 +144,7 @@ export default (props) => {
                 <div className={styles.chip_title}>
                     <div className={styles.title_l_t}>
                         <h4>{jsonData[chipName][title_language]}</h4>
-                        <Link style={{ cursor: 'pointer' }} onClick={() => setDuo2(buy => !buy)}><Translate id="homepage.corporations.duobuynow" /></Link>
+                        <Link style={{ cursor: 'pointer' }} to="#buy"><Translate id="homepage.corporations.duobuynow" /></Link>
                     </div>
                     <img src={jsonData[chipName].front_view} alt="Front View" />
                 </div>
@@ -401,6 +392,7 @@ export default (props) => {
             }}>
                 <img src="/chips/backtop.svg" alt="TOP" />
             </div>
+            <BuyPop type={chipName} />
             <SupportUs />
         </Layout>
     )
