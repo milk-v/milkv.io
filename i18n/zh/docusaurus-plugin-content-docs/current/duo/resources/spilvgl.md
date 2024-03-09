@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'SPI Display LVGL'
-sidebar_position: 20
+sidebar_position: 60
 ---
 
 # 简介
@@ -168,3 +168,4 @@ make -j
 <Image src='/docs/duo/lvgl/duo-lvgl-fb-03.webp' maxWidth='100%' align='center' />
 
 测试结果为 FPS：100 左右。
+
