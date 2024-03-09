@@ -96,7 +96,7 @@ const sidebars = {
         'duo/resources/mmf',
         'duo/resources/opencv-mobile',
         'duo/resources/xyzdims',
-        'duo/resources/spilvgl.md',
+        'duo/resources/spilvgl',
       ],
     },
     {
