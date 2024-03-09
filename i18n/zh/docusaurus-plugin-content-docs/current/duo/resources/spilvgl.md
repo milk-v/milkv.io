@@ -73,6 +73,8 @@ CONFIG_FB_TFT_ST7789V=y
 
 接下来根据 Duo 的引脚位置参考，进行连线配置
 
+<div className='gpio_style'>
+
 | Duo 物理引脚       | ST7789V  | 
 |:------------------|:--------:|
 | PIN 38: GND       | GND      | 
@@ -82,7 +84,9 @@ CONFIG_FB_TFT_ST7789V=y
 | PIN 21: GP16      | RES      | 
 | PIN 22: GP17      | DC       | 
 | PIN 12: SPI2_CS_X | CS       | 
-| PIN 36: 3.3V(OUT) | BL       | 
+| PIN 36: 3.3V(OUT) | BL       |
+
+</div>
 
 注意该显示屏 BL 引脚是背光使能引脚，高电平背光亮。
 
@@ -177,7 +181,7 @@ chmod +x demo
 
 ### 更换 Demo 为 Benchmark 测试样例
 
-修改 `lv_conf.h` 中的宏定义，将 `LV_USE_DEMO_WIDGETS` 改为 `0，LV_USE_DEMO_BENCHMARK` 改为 1 后重新编译：
+修改 `lv_conf.h` 中的宏定义，将 `LV_USE_DEMO_WIDGETS` 改为 0，`LV_USE_DEMO_BENCHMARK` 改为 1 后重新编译：
 
 ```
 make clean
