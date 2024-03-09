@@ -43,7 +43,7 @@ If the current bootloader of your Mars can boot the Debian system normally, you 
 
 3. View SPI Flash partition information
    ```
-   cat /proc
+   cat /proc/mtd
    ```
    The output is as follows:
    ```
