@@ -25,11 +25,36 @@ git clone https://github.com/milkv-duo/duo-buildroot-sdk.git
 git clone https://github.com/milkv-duo/duo-lvgl-fb-demo.git
 ```
 
-进入 SDK 目录，并为 SDK 的内核打一个支持 ST7789V 芯片的补丁：
+进入 SDK 目录，并为 SDK 的内核打一个支持 ST7789V 芯片的补丁(该补丁在上面的 duo-lvgl-fb-demo.git 仓库中)：
 ```
 cd duo-buildroot-sdk
 git apply --reject ../duo-lvgl-fb-demo/duo-kernel-fb_st7789v.patch
 ```
+
+确认内核配置有打开 FB TFT 的支持：
+```
+CONFIG_FB=y
+CONFIG_FB_TFT=y
+CONFIG_FB_TFT_ST7789V=y
+```
+
+内核配置文件所在的位置：
+- Duo：
+  ```
+  build/boards/cv180x/cv1800b_milkv_duo_sd/linux/cvitek_cv1800b_milkv_duo_sd_defconfig
+  ```
+- Duo256M：
+  ```
+  build/boards/cv181x/cv1812cp_milkv_duo256m_sd/linux/cvitek_cv1812cp_milkv_duo256m_sd_defconfig
+  ```
+- DuoS SD：
+  ```
+  build/boards/cv181x/cv1813h_milkv_duos_sd/linux/cvitek_cv1813h_milkv_duos_sd_defconfig
+  ```
+- DuoS eMMC：
+  ```
+  build/boards/cv181x/cv1813h_milkv_duos_emmc/linux/cvitek_cv1813h_milkv_duos_emmc_defconfig
+  ```
 
 编译SD卡固件：
 
@@ -169,3 +194,8 @@ make -j
 
 测试结果为 FPS：100 左右。
 
+## 参考
+
+- [milk-v duo 交叉编译 LVGL](https://zhuanlan.zhihu.com/p/672633256)
+- [milk-v duo spi TFT 液晶屏 ST7789V 使用](https://zhuanlan.zhihu.com/p/672610362)
+- [【spi】Milk-V Duo点亮st7735](https://community.milkv.io/t/spi-milk-v-duo-st7735/625)
