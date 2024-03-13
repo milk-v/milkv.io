@@ -230,6 +230,10 @@
     border: 1px solid #FFF;
 }
 
+.on5_bottom>a:hover {
+    background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+}
+
 .flex_inputs {
     display: flex;
 }
