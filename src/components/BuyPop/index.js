@@ -144,7 +144,7 @@ export default (props) => {
                                 }
                             </ul>
                             : <div className={styles.comingsoon}>
-                                <img src='/components/comingsoon.svg' alt='Coming Soon' />
+                                <img src='/components/comingsoon-icon.svg' alt='Coming Soon' />
                             </div>
                     }
                 </div>
