@@ -5,9 +5,11 @@ sidebar_position: 22
 # 内存
 
 ## DDR4支持列表
-请查看 [DDR4支持列表](https://github.com/milkv-pioneer/pioneer-files/blob/main/hardware/pioneer_ddr_list.pdf)
+请查看 [DDR4支持列表](https://github.com/milkv-pioneer/pioneer-files/blob/main/hardware/sg2042_ddr_support_list.md)
 
 安装未包括在列表中的内存条可能会妨碍正常启动。 
+
+如果您使用了其他型号的内存条，请您将测试结果更新至[该文件](https://github.com/milkv-pioneer/pioneer-files/blob/main/hardware/sg2042_ddr_support_list.md)
 
 你可以与我们联系，购买原始支持DDR。
 ## 内存安装
