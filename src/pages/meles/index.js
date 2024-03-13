@@ -20,13 +20,13 @@ export default () => {
                         <Translate id='Buy.now' />
                     </Link>
                 </div>
-                <div className={styles.titleIcons}>
+                {/* <div className={styles.titleIcons}>
                     <img src="/meles/iconThead.svg" alt="平头哥" />
                     <div>
                         <h3>T-Head TH1520 SoC</h3>
                         <p>Quad Core RISC-V 64GCV C910, up to 2.0GHz</p>
                     </div>
-                </div>
+                </div> */}
             </div>
             <div className={styles.bgColor}>
                 <div className={styles.tHeadSoC}>
