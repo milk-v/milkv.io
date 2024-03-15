@@ -240,7 +240,21 @@ const sidebars = {
       label: '🏠 Home',
       href: '/docs',
     },
-    'meles/overview'
+    'meles/overview',
+    {
+      type: "category",
+      label: '🚀 Getting Started',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: '🚀 Getting Started',
+        description: 'Getting Started with Meles',
+        slug: '/meles/getting-started'
+      },
+      items: [
+        'meles/getting-started/setup',
+      ],
+    },
   ],
   vega: [
     {
