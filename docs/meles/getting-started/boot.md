@@ -34,8 +34,6 @@ You need to use the fasboot utility to burn the image into the eMMC.
 
 - Commands for installing the fasboot utility on Linux: `sudo apt-get install android-tools-adb`.
 
-- Download the system image from [meles image]().
-
 ## Write images
 
 Here are the steps on how to burn an image to an eMMC using the fasboot utility on a Linux system
