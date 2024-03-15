@@ -252,6 +252,7 @@ const sidebars = {
         slug: '/meles/getting-started'
       },
       items: [
+        'meles/getting-started/boot',
         'meles/getting-started/setup',
       ],
     },
