@@ -34,6 +34,19 @@ You need to use the fasboot utility to burn the image into the eMMC.
 
 - Commands for installing the fasboot utility on Linux: `sudo apt-get install android-tools-adb`.
 
+You will need to download the following three files:
+
+- u-boot-with-spl-singlerank.bin or u-boot-with-spl-dualrank.bin
+  - Choose according to the meles memory size, 4G choose u-boot-with-spl-singlerank.bin, 8G choose u-boot-with-spl-dualrank.bin
+- boot.ext
+- root-meles-20231210_134926.ext4
+
+Download the system image from [Meles Image File](https://github.com/milkv-meles/meles-images/releases/tag/v1.0.0).
+
 ## Write images
 
-Here are the steps on how to burn an image to an eMMC using the fasboot utility on a Linux system
+**Here are the steps on how to burn an image to an eMMC using the fasboot utility on a Linux system**
+
+First snap the EMMC into the slot on the back of the meles
+
+![Install-eMMC](/docs/meles/Install-emmc.webp)
