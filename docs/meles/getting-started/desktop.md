@@ -14,7 +14,7 @@ Login screen requires user name and password。
 - User Name: debian
 - password : debian
 
-![desktop-login](/docs/duo/login.webp)
+![desktop-login](/docs/meles/login.webp)
 
 ## Network Connection
 
@@ -27,10 +27,8 @@ Meles can be connected to the network via Ethernet and WIFI.
 
 - Status when the cable is not connected
 
-![ethernet-disconnect](/docs/duo/ethernet-disconnect.webp)
+![ethernet-disconnect](/docs/meles/ethernet-disconnect.webp)
 
 - Status when the network cable is connected
 
-![ethernet-connect](/docs/duo/ethernet-connect.webp)
-
-无线网络连接
+![ethernet-connect](/docs/meles/ethernet-connect.webp)
