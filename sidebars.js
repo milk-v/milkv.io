@@ -254,6 +254,7 @@ const sidebars = {
       items: [
         'meles/getting-started/boot',
         'meles/getting-started/setup',
+        'meles/getting-started/download',
       ],
     },
   ],
