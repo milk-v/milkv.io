@@ -81,7 +81,7 @@ $ fastboot flash root rootfs.ext4
 
 - The following figure represents a successful burn-in
 
-![Download Button](/docs/meles/DownloadButton.webp)
+![Write Success](/docs/meles/WriteSuccess.webp)
 
 ## Power on
 
