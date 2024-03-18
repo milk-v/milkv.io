@@ -255,6 +255,7 @@ const sidebars = {
         'meles/getting-started/boot',
         'meles/getting-started/setup',
         'meles/getting-started/download',
+        'meles/getting-started/desktop',
       ],
     },
   ],
