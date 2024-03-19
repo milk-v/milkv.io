@@ -268,6 +268,8 @@ const sidebars = {
         description: 'Desktop Usage with Meles',
         slug: '/meles/desktop-usage'
       },
+      items: [
+      ],
     },
   ],
   vega: [
