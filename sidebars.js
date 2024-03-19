@@ -300,6 +300,7 @@ const sidebars = {
       },
       items: [
         'meles/resources-download/image',
+        'meles/resources-download/hardware',
       ],
     },
   ],
