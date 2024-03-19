@@ -98,6 +98,6 @@ brcm_patchram_plus --enable_hci --no2bytes --tosleep 200000 --baudrate 115200 --
 
 ![enable-bt-5](/docs/meles/enable-bt-5.webp)
 
-- Execute `. /bt_enable.sh` to enable Bluetooth, the Bluetooth icon will be displayed in the upper right corner to indicate successful enablement.
+- Execute `./bt_enable.sh` to enable Bluetooth, the Bluetooth icon will be displayed in the upper right corner to indicate successful enablement.
 
 ![enable-bt-6](/docs/meles/enable-bt-6.webp)
