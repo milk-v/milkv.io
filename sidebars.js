@@ -269,6 +269,8 @@ const sidebars = {
         slug: '/meles/desktop-usage'
       },
       items: [
+        'meles/desktop-usage/desktop',
+        'meles/desktop-usage/desktop-login',
       ],
     },
   ],
