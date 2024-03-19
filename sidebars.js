@@ -274,6 +274,20 @@ const sidebars = {
         'meles/desktop-usage/bluetooth',
       ],
     },
+    {
+      type: "category",
+      label: '🧰 Resources Download',
+      collapsed: false,
+      link: {
+        type: "generated-index",
+        title: '🧰 Resources Download',
+        description: 'Meles Related Resources Download',
+        slug: '/meles/resources-download'
+      },
+      items: [
+        'meles/resources-download/image',
+      ],
+    },
   ],
   vega: [
     {

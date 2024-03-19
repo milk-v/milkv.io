@@ -16,7 +16,7 @@ sidebar_position: 10
  
 #### Optional
 - USB to TTL serial cable
-  - [Use Serial Console](./setup.md)。
+  - [Use Serial Console](./setup.md).
 - Ethernet cable
   - Meles supports Internet access via WIFI or Ethernet.
   - Ethernet cables are used to connect the Meles to the local network and the Internet.
@@ -41,7 +41,7 @@ You will need to download the following three files:
 - boot.ext
 - root-meles-20231210_134926.ext4
 
-Download the system image from [Meles Image File](https://github.com/milkv-meles/meles-images/releases/tag/v1.0.0).
+Download the system image from [Resources Download](../resources-download/image.md).
 
 ## Write images
 
