@@ -258,6 +258,20 @@ const sidebars = {
         'meles/getting-started/desktop',
       ],
     },
+    {
+      type: "category",
+      label: '🖥️ Desktop Usage',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: '🖥️ Desktop Usage',
+        description: 'Desktop Usage with Meles',
+        slug: '/meles/desktop-usage'
+      },
+      items: [
+        'meles/desktop-usage/boot',
+      ],
+    },
   ],
   vega: [
     {
