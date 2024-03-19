@@ -276,6 +276,20 @@ const sidebars = {
     },
     {
       type: "category",
+      label: '🐧 Low Level Development',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: '🐧 Low Level Development',
+        description: 'How to build u-boot, kernel and rootfs for meles',
+        slug: '/meles/low-level-development'
+      },
+      items: [
+        'meles/low-level-development/build',
+      ],
+    },
+    {
+      type: "category",
       label: '🧰 Resources Download',
       collapsed: false,
       link: {
