@@ -7,7 +7,7 @@ sidebar_position: 20
 
 ### Login screen requires user name and password。
 
-- **User Name: debian**
-- **password : debian**
+- User Name: **debian**
+- password : **debian**
 
 ![desktop-login](/docs/meles/login.webp)

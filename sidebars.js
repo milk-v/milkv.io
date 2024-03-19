@@ -271,6 +271,7 @@ const sidebars = {
       items: [
         'meles/desktop-usage/desktop',
         'meles/desktop-usage/desktop-login',
+        'meles/desktop-usage/cmdLine',
       ],
     },
   ],
