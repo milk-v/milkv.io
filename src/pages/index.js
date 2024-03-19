@@ -99,7 +99,7 @@ const Pionner_module = (props) => {
             <h2>Milk-V Pioneer</h2>
             <p><Translate id='homepage.corporations.pioneer' /></p>
             <div className={styles.learnMore_use}>
-              <Link href='/pioneer'><Translate id='homepage.corporations.pioneerlearnmore' /></Link>
+              <Link href='/pioneer' title='Pioneer Details'><Translate id='homepage.corporations.pioneerlearnmore' /></Link>
               <Link href='/pioneer#buy' className={styles.buy_button} ><Translate id='homepage.corporations.pioneerbuynow' /></Link>
             </div>
           </div>
@@ -270,7 +270,7 @@ const Home_web = () => {
             <h2><Translate id='homepage.corporations.Documentstitle' /></h2>
             <p><Translate id='homepage.corporations.Documentswords' /></p>
           </div>
-          <Link to='/docs' className={styles.docs_a}><Translate id='homepage.corporations.docslearnmore' /></Link>
+          <Link to='/docs' title='MilkV Docs' className={styles.docs_a}><Translate id='homepage.corporations.docslearnmore' /></Link>
         </div>
         <ContactBar product='home' />
         <SupportUs />
