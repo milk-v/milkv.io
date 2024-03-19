@@ -84,7 +84,7 @@ export default () => {
                                         <img src="/components/twitter.svg" alt="Twitter" />
                                         <p>Twitter</p>
                                     </Link>
-                                    <Link to='' className={styles.we}>
+                                    <Link to='/' className={styles.we}>
                                         <img src="/components/wechatmin.svg" alt="Wechat" className={styles.wechat_min} />
                                         <p>Wechat</p>
                                         <img src='/components/WeChat.webp' alt="WeChat" className={styles.wechat} />
