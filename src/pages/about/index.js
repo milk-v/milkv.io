@@ -35,35 +35,35 @@ const AboutUs = () => {
                         </p>
                         <ul className={styles.specificities}>
                             <li>
-                                <img src="/about/427320092.svg" />
+                                <img src="/about/427320092.svg" alt="Low Power" />
                                 <h2>Low Power</h2>
                             </li>
                             <li>
-                                <img src="/about/427320092-1.svg" />
+                                <img src="/about/427320092-1.svg" alt="Low Cost" />
                                 <h2>Low Cost</h2>
                             </li>
                             <li>
-                                <img src="/about/427320092-2.svg" />
+                                <img src="/about/427320092-2.svg" alt="Open Standard" />
                                 <h2>Open Standard</h2>
                             </li>
                             <li>
-                                <img src="/about/427320092-3.svg" />
+                                <img src="/about/427320092-3.svg" alt="Modularizable" />
                                 <h2>Modularizable</h2>
                             </li>
                             <li>
-                                <img src="/about/427320092-4.svg" />
+                                <img src="/about/427320092-4.svg" alt="Simple" />
                                 <h2>Simple</h2>
                             </li>
                             <li>
-                                <img src="/about/427320092-5.svg" />
+                                <img src="/about/427320092-5.svg" alt="Small Area" />
                                 <h2>Small Area</h2>
                             </li>
                             <li>
-                                <img src="/about/427320092-6.svg" />
+                                <img src="/about/427320092-6.svg" alt="Fast" />
                                 <h2>Fast</h2>
                             </li>
                             <li>
-                                <img src="/about/427320092-7.svg" />
+                                <img src="/about/427320092-7.svg" alt="High Performance" />
                                 <h2>High Performance</h2>
                             </li>
 

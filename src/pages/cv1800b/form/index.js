@@ -144,7 +144,7 @@ function Individual(props) {
                     <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.Individual.Proof' />:
                         <br></br><Translate id='cv1800b.Individual.Proof.info' /></span>
                     <label htmlFor='upload'>{upload}</label>
-                    <img src="/form/response.svg" style={{ display: `${flag ? 'block' : 'none'}` }} />
+                    <img src="/form/response.svg" style={{ display: `${flag ? 'block' : 'none'}` }} alt="response icon" />
                     <p style={{ display: `${!flag ? 'block' : 'none'}`, color: 'red' }} >*<Translate id='cv1800b.Individual.file.info' /></p>
                 </div>
                 <input type="file" id="upload" required onChange={handleFileChange} className={styles.upload} />
@@ -337,13 +337,13 @@ function Schools(props) {
                     <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.Individual.Proof' />:
                         <br></br><Translate id='cv1800b.Individual.Proof.info' /></span>
                     <label htmlFor='upload'>{upload}</label>
-                    <img src="/form/response.svg" style={{ display: `${flag ? 'block' : 'none'}` }} />
+                    <img src="/form/response.svg" style={{ display: `${flag ? 'block' : 'none'}` }} alt="response icon" />
                     <p style={{ display: `${!flag ? 'block' : 'none'}`, color: 'red' }} >*<Translate id='cv1800b.Individual.file.info' /></p>
                 </div>
                 <div className={styles.flexBox}>
                     <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.Schools.Certification' />:<br></br><Translate id='cv1800b.Schools.Certification.info' /></span>
                     <label htmlFor='upload2'>{upload2}</label>
-                    <img src="/form/response.svg" style={{ display: `${flag2 ? 'block' : 'none'}` }} />
+                    <img src="/form/response.svg" style={{ display: `${flag2 ? 'block' : 'none'}` }} alt="response icon" />
                     <p style={{ display: `${!flag2 ? 'block' : 'none'}`, color: 'red' }} >*<Translate id='cv1800b.Individual.file.info' /></p>
                 </div>
                 <input type="file" id="upload" required onChange={handleFileChange} className={styles.upload} />
@@ -522,7 +522,7 @@ function Corporations(props) {
                 <div className={styles.flexBox}>
                     <span><span style={{ color: 'red' }}>*</span><Translate id='cv1800b.Individual.Proof' />:<br></br><Translate id='cv1800b.corporations.id' /></span>
                     <label htmlFor='upload'>{upload}</label>
-                    <img src="/form/response.svg" style={{ display: `${flag ? 'block' : 'none'}` }} />
+                    <img src="/form/response.svg" style={{ display: `${flag ? 'block' : 'none'}` }} alt="response icon" />
                     <p style={{ display: `${!flag ? 'block' : 'none'}`, color: 'red' }} >*<Translate id='cv1800b.Individual.file.info' /></p>
                 </div>
                 <input type="file" id="upload" required onChange={handleFileChange} className={styles.upload} />

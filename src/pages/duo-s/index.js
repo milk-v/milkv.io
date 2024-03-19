@@ -50,20 +50,20 @@ export default () => {
                         <div>
                             <ul>
                                 <li>
-                                    <img src="/duo-s/wifi.svg" />
+                                    <img src="/duo-s/wifi.svg" alt="WI-FI6" />
                                     <p>WI-FI6</p>
                                 </li>
                                 <li>
-                                    <img src="/duo-s/bt5.svg" />
+                                    <img src="/duo-s/bt5.svg" alt="BT5" />
                                     <p>BT5</p>
                                 </li>
                                 <li>
-                                    <img src="/duo-s/ethernet.svg" />
+                                    <img src="/duo-s/ethernet.svg" alt="Ethernet" />
                                     <p>100Mbps<br />
                                         Ethernet Port</p>
                                 </li>
                                 <li>
-                                    <img src="/duo-s/camera.svg" />
+                                    <img src="/duo-s/camera.svg" alt="Dual-camera" />
                                     <p>Dual-camera</p>
                                 </li>
                             </ul>
@@ -88,11 +88,11 @@ export default () => {
                         <div>
                             <div className={styles.left_t_audio}>
                                 <div>
-                                    <img src="/duo-s/audio.svg" />
+                                    <img src="/duo-s/audio.svg" alt="Audio" />
                                     <span>Audio Output via GPIO Header</span>
                                 </div>
                                 <div>
-                                    <img src="/duo-s/display.svg" />
+                                    <img src="/duo-s/display.svg" alt="Video" />
                                     <div>
                                         <p>Video Output via MIPI DSI(4-lane)</p>
                                     </div>

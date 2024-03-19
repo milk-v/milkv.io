@@ -22,7 +22,7 @@ const Image = (props) => {
     }
 
     return <div className={clsx(alignment, styles.docs_img_d)}>
-        <img src={src} style={{ minWidth: minWidth, maxWidth: maxWidth, }} />
+        <img src={src} style={{ minWidth: minWidth, maxWidth: maxWidth, }} alt='Document Pictures' />
     </div>
 }
 

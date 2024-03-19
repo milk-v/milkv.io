@@ -81,13 +81,13 @@ export default () => {
                                 <li>
                                     <p className={styles.line_name}>Follow Us</p>
                                     <Link href="https://twitter.com/MilkV_Official" className={styles.twitter}>
-                                        <img src="/components/twitter.svg" />
+                                        <img src="/components/twitter.svg" alt="Twitter" />
                                         <p>Twitter</p>
                                     </Link>
                                     <Link to='' className={styles.we}>
-                                        <img src="/components/wechatmin.svg" className={styles.wechat_min} />
+                                        <img src="/components/wechatmin.svg" alt="Wechat" className={styles.wechat_min} />
                                         <p>Wechat</p>
-                                        <img src='/components/WeChat.webp' className={styles.wechat} />
+                                        <img src='/components/WeChat.webp' alt="WeChat" className={styles.wechat} />
                                     </Link>
                                 </li>
                             </ul>

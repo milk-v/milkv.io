@@ -57,7 +57,7 @@ export default () => {
                 <form className={styles.formBox} onSubmit={handleSubmit}>
                     <div className={styles.page}>
                         <div className={styles.title}>
-                            <img src='/form/icons-01.png' />
+                            <img src='/form/icons-01.png' alt='title' />
                             <h1><Translate id='Donation.title.Information' /></h1>
                         </div>
                         <div className={styles.inpBox}>
@@ -83,7 +83,7 @@ export default () => {
                     </div>
                     <div className={styles.page}>
                         <div className={styles.title}>
-                            <img src='/form/icons-03.png' />
+                            <img src='/form/icons-03.png' alt='title' />
                             <h1><Translate id='Donation.title.Project' /></h1>
                         </div>
                         <label>
@@ -105,7 +105,7 @@ export default () => {
                     </div>
                     <div className={styles.page}>
                         <div className={styles.title}>
-                            <img src='/form/icons-02.png' />
+                            <img src='/form/icons-02.png' alt='title' />
                             <h1><Translate id='Donation.title.Shipping' /></h1>
                         </div>
                         <label>

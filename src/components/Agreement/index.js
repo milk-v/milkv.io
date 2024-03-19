@@ -59,7 +59,7 @@ export default (props) => {
                 }
             }} >
                 <div className={styles.popBox}>
-                    <img src="/form/clear.svg" onClick={() => { setPopflag(false) }} />
+                    <img src="/form/clear.svg" onClick={() => { setPopflag(false) }} alt="clear" />
                     {
                         type === 'zh' ? zh : type === 'en' ? en : null
                     }
