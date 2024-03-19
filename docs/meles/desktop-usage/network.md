@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Open the Command Line'
+sidebar_label: 'Network Connection'
 sidebar_position: 40
 ---
 
