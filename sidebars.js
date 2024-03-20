@@ -274,6 +274,7 @@ const sidebars = {
         'meles/desktop-usage/bluetooth',
         'meles/desktop-usage/web-browser',
         'meles/desktop-usage/display',
+        'meles/desktop-usage/ssh',
       ],
     },
     {

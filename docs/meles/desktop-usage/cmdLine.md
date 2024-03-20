@@ -3,7 +3,7 @@ sidebar_label: 'Open the Command Line'
 sidebar_position: 30
 ---
 
-# Command Line Window
+# Open the Command Line
 
 You can open the command line terminal directly by clicking on the following icon or by using the shortcut `Ctrl + Alt + T` key combination
 
