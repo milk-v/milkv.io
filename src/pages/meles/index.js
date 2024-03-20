@@ -20,13 +20,6 @@ export default () => {
                         <Translate id='Buy.now' />
                     </Link>
                 </div>
-                {/* <div className={styles.titleIcons}>
-                    <img src="/meles/iconThead.svg" alt="平头哥" />
-                    <div>
-                        <h3>T-Head TH1520 SoC</h3>
-                        <p>Quad Core RISC-V 64GCV C910, up to 2.0GHz</p>
-                    </div>
-                </div> */}
             </div>
             <div className={styles.bgColor}>
                 <div className={styles.tHeadSoC}>
@@ -56,9 +49,9 @@ export default () => {
                             <img src="/meles/over-meles-4kicons-01.svg" alt="H.264" />
                             <img src="/meles/over-meles-4kicons-02.svg" alt="H.265" />
                             <img src="/meles/over-meles-4kicons-03.svg" alt="JPEG 9" />
-                            <img src="/meles/over-meles-4kicons-04.svg" alt="VP9" />
-                            <img src="/meles/over-meles-4kicons-05.svg" alt="4K 40FPS" />
-                            <img src="/meles/over-meles-4kicons-06.svg" alt="4k 75FPS" />
+                            <img src="/meles/over-meles-4kicons-04.webp" alt="VP9" />
+                            <img src="/meles/over-meles-4kicons-05.webp" alt="4K 40FPS" />
+                            <img src="/meles/over-meles-4kicons-06.webp" alt="4k 75FPS" />
                         </div>
                     </div>
                     <div className={styles.viaeoRight}>
@@ -113,7 +106,7 @@ export default () => {
                                     <td className={styles.tdFlex}>
                                         <p>Support:</p>
                                         <img src="/meles/over-meles-support01.svg" alt="Caffe" />
-                                        <img src="/meles/over-meles-support02.svg" alt="ONNX" />
+                                        <img src="/meles/over-meles-support02.webp" alt="ONNX" />
                                         <img src="/meles/over-meles-support03.svg" alt="TensorFlow" />
                                     </td>
                                 </tr>

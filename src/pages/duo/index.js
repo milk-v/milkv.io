@@ -38,7 +38,6 @@ function DetailsPage() {
           <Link href='#buy' className={styles.btnbuy} ><Translate id='Buy.now' /></Link>
           <p className={styles.tax}>(*<Translate id='Duo.text.title4' />)</p>
         </div>
-        <div className={styles.rotateImg}></div>
         <div className={styles.content_box}>
           <div className={styles.storage}>
             <div className={styles.left_view}>

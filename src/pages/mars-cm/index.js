@@ -53,8 +53,8 @@ export default () => {
                                 <img src="/meles/over-meles-4kicons-01.svg" alt="H.264" />
                                 <img src="/meles/over-meles-4kicons-02.svg" alt="H.265" />
                                 <img src="/meles/over-meles-4kicons-03.svg" alt="JPEG 9" />
-                                <img src="/meles/over-meles-4kicons-05.svg" alt="4K 40FPS" />
-                                <img src="/meles/over-meles-4kicons-06.svg" alt="4K 75FPS" />
+                                <img src="/meles/over-meles-4kicons-05.webp" alt="4K 40FPS" />
+                                <img src="/meles/over-meles-4kicons-06.webp" alt="4K 75FPS" />
                             </div>
                         </div>
                         <div className={styles.support_audio}>
