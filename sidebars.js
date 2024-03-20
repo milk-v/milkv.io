@@ -273,6 +273,7 @@ const sidebars = {
         'meles/desktop-usage/network',
         'meles/desktop-usage/bluetooth',
         'meles/desktop-usage/web-browser',
+        'meles/desktop-usage/display',
       ],
     },
     {
