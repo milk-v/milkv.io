@@ -93,7 +93,7 @@ export default () => {
                 </ul>
                 <div className={styles.highBox}>
                     <div className={styles.highBoxLeft}>
-                        <h2>High Computing Power, True AI</h2>
+                        <h2>High Computing Power</h2>
                         <table className={styles.highTable}>
                             <tbody>
                                 <tr>
