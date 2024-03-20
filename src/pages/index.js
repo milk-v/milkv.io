@@ -220,7 +220,7 @@ const Home_web = () => {
       if (!isPaused && window.innerWidth > 750) {
         setIndex(prevCount => (prevCount === 5 ? 0 : prevCount + 1));
       }
-    }, 3000);
+    }, 5000);
 
     return () => {
       clearInterval(timer);
