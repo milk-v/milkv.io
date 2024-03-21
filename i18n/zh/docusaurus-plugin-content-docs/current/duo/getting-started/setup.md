@@ -178,9 +178,9 @@ USB-TTL模块的每个针脚定义如下：
 Duo u-boot和内核控制台的默认串行设置是：
 
 ```
-   baudrate: 115200
-   data bit: 8
-   stop bit: 1
-   parity  : none
-   flow control: none
+baudrate: 115200
+data bit: 8
+stop bit: 1
+parity  : none
+flow control: none
 ```

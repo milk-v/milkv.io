@@ -78,7 +78,7 @@ Milk-V 是 SG2002 芯片的全球授权经销商。您可以直接从我们的�
 
 `排针 J4` 上的 GPIO E0/E1/E2 使用 3.3V 逻辑电平，其他 GPIO 使用 1.8V 逻辑电平。
 
-## DuoS 注意事项
+## DuoS 使用指引
 
 ### RISC-V 与 ARM 切换
 
@@ -151,9 +151,38 @@ DuoS 有板载以太网接口，所以 Type C 口的 USB 网口(RNDIS)可以不�
 Duo u-boot 和内核控制台的默认串行设置是：
 
 ```
-   baudrate: 115200
-   data bit: 8
-   stop bit: 1
-   parity  : none
-   flow control: none
+baudrate: 115200
+data bit: 8
+stop bit: 1
+parity  : none
+flow control: none
 ```
+
+### WIFI 配置
+
+#### 方法一
+
+编辑如下文件，替换 `ssid` 和 `psk` 为要连接的 WIFI 账号和密码：
+
+```python {6,7} title="/etc/wpa_supplicant.conf"
+ctrl_interface=/var/run/wpa_supplicant
+ap_scan=1
+update_config=1
+
+network={
+  ssid="wifi_test"
+  psk="12345678"
+  key_mgmt=WPA-PSK
+}
+```
+
+再执行如下命令：
+
+```bash
+wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
+```
+即可连接 WIFI，连接之后可以通过 `ifconfig` 或者 `ip a` 命令查看分配的 IP 地址。
+
+:::tip
+如果需要开机自动连网，可以把该命令放到 `/mnt/system/auto.sh` 文件中。
+:::

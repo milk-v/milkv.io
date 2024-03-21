@@ -183,9 +183,9 @@ Connect USB to TTL serial cable as shown below. Do not connect the red wire.
 The default serial setting for Duo u-boot and kernel console is:
 
 ```
-   baudrate: 115200
-   data bit: 8
-   stop bit: 1
-   parity  : none
-   flow control: none
+baudrate: 115200
+data bit: 8
+stop bit: 1
+parity  : none
+flow control: none
 ```

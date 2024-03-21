@@ -78,7 +78,7 @@ GPIO on `Header J3` use 3.3V logic levels.
 
 GPIO E0/E1/E2 on `Header J4` use 3.3V logic levels, other GPIOs use 1.8V logic levels.
 
-## DuoS usage tips
+## DuoS User Guide
 
 ### RISC-V and ARM switching
 
@@ -151,9 +151,38 @@ Connect USB to TTL serial cable as shown below. Do not connect the red wire.
 The default serial setting for Duo u-boot and kernel console is:
 
 ```
-   baudrate: 115200
-   data bit: 8
-   stop bit: 1
-   parity  : none
-   flow control: none
+baudrate: 115200
+data bit: 8
+stop bit: 1
+parity  : none
+flow control: none
 ```
+
+### WIFI configuration
+
+#### Method 1
+
+Edit the following file and replace `ssid` and `psk` with the WIFI account and password to be connected:
+
+```python {6,7} title="/etc/wpa_supplicant.conf"
+ctrl_interface=/var/run/wpa_supplicant
+ap_scan=1
+update_config=1
+
+network={
+  ssid="wifi_test"
+  psk="12345678"
+  key_mgmt=WPA-PSK
+}
+```
+
+Then execute the following command:
+
+```bash
+wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
+```
+You can connect to WIFI. After connecting, you can view the assigned IP address through the `ifconfig` or `ip a` command.
+
+:::tip
+If you need to automatically connect to the network at boot, you can put this command in the `/mnt/system/auto.sh` file.
+:::
