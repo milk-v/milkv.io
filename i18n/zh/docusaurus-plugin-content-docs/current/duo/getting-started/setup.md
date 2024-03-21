@@ -127,6 +127,27 @@ neko@milk-v:~
 ![rndis-ssh3](/docs/duo/rndis-ssh3.png)
 
 
+### 修改 RNDIS 的 IP 地址
+
+USB 网络 RNDIS 默认的 IP 地址是 `192.168.42.1`，如果您需要修改这个地址，比如同一台电脑接入多台 Duo 设备时，每一台 Duo 的 RNDIS IP 需要设置为不同，可以通过在 Duo 设备内修改该文件实现：
+
+```bash {8} showLineNumbers title="/mnt/system/usb-rndis.sh"
+#!/bin/sh
+
+/etc/uhubon.sh device >> /tmp/rndis.log 2>&1
+/etc/run_usb.sh probe rndis >> /tmp/rndis.log 2>&1
+/etc/run_usb.sh start rndis >> /tmp/rndis.log 2>&1
+
+sleep 0.5
+ifconfig usb0 192.168.42.1
+
+count=`ps | grep dnsmasq | grep -v grep | wc -l`
+if [ ${count} -lt 1 ] ;then
+  echo "/etc/init.d/S80dnsmasq start" >> /tmp/rndis.log 2>&1
+  /etc/init.d/S80dnsmasq start >> /tmp/rndis.log 2>&1
+fi
+```
+
 ## 串行控制台
 
 ### USB-TTL串口模块
