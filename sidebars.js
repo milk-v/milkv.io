@@ -323,13 +323,14 @@ const sidebars = {
       link: {
         type: 'generated-index',
         title: '🚀 Getting Started',
-        description: 'Getting Started with Mars',
+        description: 'Getting Started with Vega',
         slug: '/vega/getting-started'
       },
       items: [
         'vega/getting-started/boot',
         'vega/getting-started/setup',
         'vega/getting-started/buildroot-sdk',
+        'vega/getting-started/modulesupport',
       ],
     },
   ],
