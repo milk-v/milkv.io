@@ -132,7 +132,7 @@ There is no official driver for RNDIS. We need to install [HoRNDIS](https://josh
 
 ### Modify the IP address of RNDIS
 
-The default IP address of USB network RNDIS is `192.168.42.1`. If you need to modify this address, for example, when the same computer is connected to multiple Duo devices, the RNDIS IP of each Duo needs to be set to a different one. You can do this through the Duo device. Modify this file to achieve:
+The default IP address of USB network RNDIS is `192.168.42.1`. If you need to modify this address, for example, when the same computer is connected to multiple Duo devices, the RNDIS IP of each Duo needs to be set to a different one. This can be achieved by modifying the following two files in the Duo device:
 
 ```bash {8} showLineNumbers title="/mnt/system/usb-rndis.sh"
 #!/bin/sh
@@ -149,6 +149,13 @@ if [ ${count} -lt 1 ] ;then
   echo "/etc/init.d/S80dnsmasq start" >> /tmp/rndis.log 2>&1
   /etc/init.d/S80dnsmasq start >> /tmp/rndis.log 2>&1
 fi
+```
+
+```bash {2} showLineNumbers title="/etc/dnsmasq.conf"
+interface=usb0
+dhcp-range=192.168.42.2,192.168.42.242,1h
+dhcp-option=3
+dhcp-option=6
 ```
 
 ## Serial Console
