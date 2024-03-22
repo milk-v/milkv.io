@@ -319,7 +319,6 @@
 
     .side_view {
         width: 430px;
-        height: 230px;
     }
 
     .rear_view {
@@ -375,7 +374,6 @@
         right: 20px;
         bottom: 20px;
         width: 350px;
-        height: 50px;
     }
 
     .flowchart {
@@ -495,7 +493,6 @@
 
     .side_view {
         width: 430px;
-        height: 230px;
     }
 
     .rear_view {
@@ -552,7 +549,6 @@
         right: 20px;
         bottom: 20px;
         width: 350px;
-        height: 50px;
     }
 
     .flowchart {
@@ -661,7 +657,6 @@
 
     .side_view {
         width: calc(430px*.6);
-        height: calc(230px*.6);
     }
 
     .rear_view {
@@ -727,7 +722,6 @@
         right: 10px;
         bottom: 10px;
         width: calc(350px*.9*.7);
-        height: calc(50px*.9*.7);
     }
 
     .flowchart {
@@ -836,7 +830,6 @@
 
     .side_view {
         width: calc(430px*.9*.5);
-        height: calc(230px*.9*.5);
     }
 
     .rear_view {
@@ -902,7 +895,6 @@
         right: 5px;
         bottom: 5px;
         width: calc(350px*.9*.7*.8);
-        height: calc(50px*.9*.7*.8);
     }
 
     .flowchart {
@@ -1038,7 +1030,6 @@
 
     .side_view {
         width: calc(430rem*.9*.9);
-        height: calc(230rem*.9*.9);
     }
 
     .rear_view {
@@ -1097,7 +1088,6 @@
         display: block;
         margin: 50rem auto 0;
         width: calc(350rem*.9);
-        height: calc(50rem*.9);
     }
 
 

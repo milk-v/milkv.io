@@ -450,7 +450,6 @@
 
     .title_content>img {
         width: 586px;
-        height: 432px;
     }
 
     .leftTitle>h2 {
@@ -657,7 +656,6 @@
     .detail_info1>img {
         margin-top: 50px;
         width: calc(303px*1.333);
-        height: calc(127px*1.333);
     }
 
     .detail_info4>img {
@@ -707,7 +705,6 @@
     .PCIe>img {
         margin-top: 10px;
         width: calc(480px*1.333);
-        height: calc(205px*1.333);
     }
 }
 
@@ -772,7 +769,6 @@
 
     .title_content>img {
         width: 586px;
-        height: 432px;
     }
 
     .leftTitle>h2 {
@@ -979,7 +975,6 @@
     .detail_info1>img {
         margin-top: 50px;
         width: 303px;
-        height: 127px;
     }
 
     .detail_info4>img {
@@ -1025,7 +1020,6 @@
     .PCIe>img {
         margin-top: 10px;
         width: 480px;
-        height: 205px;
     }
 }
 
@@ -1085,7 +1079,6 @@
 
     .title_content>img {
         width: calc(586px*.9*.7);
-        height: calc(432px*.9*.7);
     }
 
     .leftTitle>h2 {
@@ -1292,7 +1285,6 @@
     .detail_info1>img {
         margin-top: 10px;
         width: calc(303px*.9*.7);
-        height: calc(127px*.9*.7);
     }
 
     .detail_info4>img {
@@ -1338,7 +1330,6 @@
     .PCIe>img {
         margin-top: 20px;
         width: calc(480px*.9*.7);
-        height: calc(205px*.9*.7);
     }
 }
 
@@ -1397,7 +1388,6 @@
 
     .title_content>img {
         width: calc(586px*.9*.7*.8);
-        height: calc(432px*.9*.7*.8);
     }
 
     .leftTitle>h2 {
@@ -1606,7 +1596,6 @@
     .detail_info1>img {
         margin-top: 15px;
         width: calc(303px*.9*.7*.8);
-        height: calc(127px*.9*.7*.8);
     }
 
     .detail_info4>img {
@@ -1652,7 +1641,6 @@
     .PCIe>img {
         margin-top: 20px;
         width: calc(480px*.9*.7*.8);
-        height: calc(205px*.9*.7*.8);
     }
 }
 
@@ -1710,7 +1698,6 @@
 
     .title_content>img {
         width: calc(586rem*.25);
-        height: calc(432rem*.25);
     }
 
     .leftTitle>h2 {
@@ -1926,7 +1913,6 @@
     .detail_info1>img {
         margin-top: 45rem;
         width: calc(303rem*.8);
-        height: calc(127rem*.8);
     }
 
     .detail_info4>img {
@@ -1983,6 +1969,5 @@
     .PCIe>img {
         margin-top: 20rem;
         width: calc(480rem*.7);
-        height: calc(205rem*.7);
     }
 }

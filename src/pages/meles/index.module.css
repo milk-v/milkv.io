@@ -800,7 +800,6 @@ table td {
         bottom: 0;
         left: 0;
         width: 629px;
-        height: 354px;
     }
 
     .highBox {
@@ -871,7 +870,6 @@ table td {
 
     .highBoxRight>img {
         width: calc(629px*1.333);
-        height: calc(354px*1.333);
     }
 
     .sizeBox {
@@ -1301,7 +1299,6 @@ table td {
         bottom: 0;
         left: 0;
         width: 629px;
-        height: 354px;
     }
 
     .highBox {
@@ -1372,7 +1369,6 @@ table td {
 
     .highBoxRight>img {
         width: 629px;
-        height: 354px;
     }
 
     .sizeBox {
@@ -1721,7 +1717,6 @@ table td {
 
     .highBoxRight>img {
         width: calc(629px*.8*.8);
-        height: calc(354px*.8*.8);
     }
 
     .tdFlex2>p {
