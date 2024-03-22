@@ -279,11 +279,11 @@ const sidebars = {
     },
     {
       type: "category",
-      label: '🔌Hardware Interface',
+      label: '🔌 Hardware Interface',
       collapsed: false,
       link: {
         type: 'generated-index',
-        title: '🔌Hardware Interface',
+        title: '🔌 Hardware Interface',
         description: 'Meles Related Hardware Interface Description',
         slug: '/meles/hardware-development'
       },
