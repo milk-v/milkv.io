@@ -279,6 +279,20 @@ const sidebars = {
     },
     {
       type: "category",
+      label: '🔌Hardware Interface',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: '🔌Hardware Interface',
+        description: 'Meles Related Hardware Interface Description',
+        slug: '/meles/hardware-development'
+      },
+      items: [
+        'meles/hardware-development/interface',
+      ],
+    },
+    {
+      type: "category",
       label: '🐧 Low Level Development',
       collapsed: false,
       link: {

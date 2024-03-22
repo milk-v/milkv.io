@@ -1,0 +1,9 @@
+{
+  "label": "🔌Hardware Interface",
+  "position": 50,
+  "link": {
+    "type": "generated-index",
+	"slug": "/meles/hardware-development",
+    "description": "Meles Related Hardware Interface Description"
+  }
+}
