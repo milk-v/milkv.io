@@ -325,7 +325,7 @@
     font-weight: lighter;
 }
 
-.vis_link>a {
+.vis_link>p {
     border-radius: 10px;
     border: 1px solid #000;
     display: flex;
@@ -553,7 +553,7 @@
         font-size: 32px;
     }
 
-    .vis_link>a {
+    .vis_link>p {
         width: 120px;
         height: 30px;
         padding: 10px;
@@ -728,7 +728,7 @@
         font-size: 24px;
     }
 
-    .vis_link>a {
+    .vis_link>p {
         width: 100px;
         height: 30px;
         padding: 10px;
@@ -903,7 +903,7 @@
         font-size: 20px;
     }
 
-    .vis_link>a {
+    .vis_link>p {
         width: 100px;
         height: 25px;
         font-size: 16px;
@@ -1079,7 +1079,7 @@
         font-size: 20px;
     }
 
-    .vis_link>a {
+    .vis_link>p {
         width: 90px;
         height: 25px;
         font-size: 14px;
@@ -1290,7 +1290,7 @@
         font-size: 20rem;
     }
 
-    .vis_link>a {
+    .vis_link>p {
         width: 80rem;
         height: 25rem;
         font-size: 12rem;

@@ -54,7 +54,7 @@ const Duo_module = (props) => {
               <h2>Milk-V Duo S</h2>
               <p>Dual cores up to 1GHz (optional RISC-V / ARM), up to 512MB of memory, and a 1TOPS@INT8 TPU.  It integrates wireless capabilities with WI-FI 6/BT 5, and comes equipped with a USB 2.0 HOST interface and a 100Mbps Ethernet port for user convenience. Supporting dual cameras (2x MIPI CSI 2-lane) and MIPI video output (MIPI DSI 4-lane).</p>
               <div className={styles.learnMore_use}>
-                <Link href='/duo-s'><Translate id='homepage.corporations.marslearnmore' /></Link>
+                <Link href='/duo-s' title='Duo S Details'><Translate id='homepage.corporations.marslearnmore' /></Link>
                 <Link href='/duo-s#buy' className={styles.buy_button}><Translate id='homepage.corporations.marsbuynow' /></Link>
               </div>
             </div>
@@ -65,13 +65,13 @@ const Duo_module = (props) => {
             <h2>Milk-V Duo</h2>
             <h3>Now Duo</h3>
             <div className={styles.vis_link}>
-              <Link>Duo</Link>
+              <p>Duo</p>
               |
-              <Link>Duo 256M</Link>
+              <p>Duo 256M</p>
             </div>
             <p className={styles.duo_info_p}><Translate id='homepage.corporations.duo' /></p>
             <div className={styles.learnMore_use}>
-              <Link href='/duo'><Translate id='homepage.corporations.duolearnmore' /></Link>
+              <Link href='/duo' title='Duo Details'><Translate id='homepage.corporations.duolearnmore' /></Link>
               <Link href='/duo#buy' className={styles.buy_button} ><Translate id='homepage.corporations.duobuynow' /></Link>
             </div>
           </div>
