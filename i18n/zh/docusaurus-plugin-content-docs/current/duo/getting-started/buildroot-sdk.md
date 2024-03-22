@@ -70,15 +70,9 @@ Usage:
 ./build.sh lunch        - Select a board to build
 ./build.sh [board]      - Build [board] directly, supported boards asfollows:
 milkv-duo
-milkv-duo-lite
 milkv-duo256m
-milkv-duo256m-lite
 ```
 最下边列出的是当前支持的目标版本列表。
-
-:::tip
-带 `lite` 后缀的为精简版，不包含 python，pip, pinpong 等库和应用包
-:::
 
 如提示中所示，有两种方法来编译目录版本。
 
@@ -87,9 +81,7 @@ milkv-duo256m-lite
 # ./build.sh lunch
 Select a target to build:
 1. milkv-duo
-2. milkv-duo-lite
-3. milkv-duo256m
-4. milkv-duo256m-lite
+2. milkv-duo256m
 Which would you like:
 ```
 
@@ -113,9 +105,7 @@ tar -xf host-tools.tar.gz -C /your/sdk/path/
 再依次输入如下命令完成分步编译，命令中的 `[board]` 和 `[config]` 替换为需要编译的版本，当前支持的 `board` 和对应的 `config` 如下：
 ```
 milkv-duo               cv1800b_milkv_duo_sd
-milkv-duo-lite          cv1800b_milkv_duo_sd
 milkv-duo256m           cv1812cp_milkv_duo256m_sd
-milkv-duo256m-lite      cv1812cp_milkv_duo256m_sd
 ```
 
 ```bash
@@ -191,13 +181,8 @@ docker exec -it duodocker /bin/bash -c "cd /home/work && cat /etc/issue && ./bui
 注意命令最后的 `./build.sh [board]` 和前面在 Ubuntu 22.04 中一键编译说明中的用法是一样的，直接 `./build.sh` 可以查看命令的使用方法，用 `./build.sh lunch` 可以调出交互选择菜单，用 `./build.sh [board]` 可以直接编译目标版本，`[board]` 可以替换为:
 ```
 milkv-duo
-milkv-duo-lite
 milkv-duo256m
-milkv-duo256m-lite
 ```
-:::tip
-带 `lite` 后缀的版本为精简版，不包含 python，pip, pinpong 等库和应用包
-:::
 
 命令中部分参数说明:
 - `duodocker` 运行的 Docker 名字, 与上一步中设置的名字要保持一致
@@ -236,9 +221,7 @@ root@8edea33c2239:/# cd /home/work/
 再依次输入如下命令完成分步编译，命令中的 `[board]` 和 `[config]` 替换为需要编译的版本，当前支持的 `board` 和对应的 `config` 如下：
 ```
 milkv-duo               cv1800b_milkv_duo_sd
-milkv-duo-lite          cv1800b_milkv_duo_sd
 milkv-duo256m           cv1812cp_milkv_duo256m_sd
-milkv-duo256m-lite      cv1812cp_milkv_duo256m_sd
 ```
 
 ```bash
@@ -329,3 +312,66 @@ appendWindowsPath = false
 然后需要使用 `wsl.exe --reboot` 重新启动 WSL。再运行 `./build.sh` 脚本或分步编译命令。
 
 要恢复 `/etc/wsl.conf` 文件中的此更改，请将 `appendWindowsPath` 设置为 `true`。 要重新启动 WSL，您可以使用 Windows PowerShell 命令 `wsl.exe --shutdown`，然后使用`wsl.exe`，之后 Windows 环境变量在 $PATH 中再次可用。
+
+## 四、Buildroot 添加应用包
+
+Buildroot 是一个轻量级的嵌入式 Linux 系统构建框架，其生成的系统没有像 Ubuntu 系统一样的 apt 包管理工具来下载和使用应用包。Duo 默认的 SDK 已经添加了一些常用的工具或命令，如果您需要添加自己的应用，需要对 SDK 做一些修改后重新编译生成所需的系统固件。
+
+以下介绍在 Buildroot 中添加应用包常用的几种方法。
+
+### 开启 Busybox 中的命令
+
+### 配置 Buildroot 中预置的应用包
+
+### 添加自己的应用包
+
+## 五、删除不需要的应用包
+
+如果你在自行编译固件的过程中，需要删除一些不需要的应用包来加快编译速度，可以在 Buildroot 的配置文件中将对应的包名删除，以 `milkv-duo` 目标为例，比如不需要编译 Python 相关的库，可以做如下修改后，重新编译生成固件即可。
+
+```diff title="buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig"
+diff --git a/buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig b/buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig
+index 2bc8cd5e3..e78901afb 100644
+--- a/buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig
++++ b/buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig
+@@ -330,25 +330,6 @@ BR2_PACKAGE_EVTEST=y
+ # BR2_PACKAGE_FCONFIG is not set
+ BR2_PACKAGE_FLASHROM_ARCH_SUPPORTS=y
+ 
+-BR2_PACKAGE_PYTHON3=y
+-BR2_PACKAGE_PYTHON3_PY_PYC=y
+-BR2_PACKAGE_PYTHON_LXML=y
+-BR2_PACKAGE_PYTHON_PIP=y
+-BR2_PACKAGE_PYTHON_SETUPTOOLS=y
+-BR2_PACKAGE_PYTHON3_SSL=y
+-
+-BR2_PACKAGE_PYTHON_SERIAL=y
+-BR2_PACKAGE_PYTHON_PILLOW=y
+-BR2_PACKAGE_PYTHON_SMBUS_CFFI=y
+-BR2_PACKAGE_PYTHON_SPIDEV=y
+-BR2_PACKAGE_PYTHON_MODBUS_TK=y
+-BR2_PACKAGE_PYTHON_EVDEV=y
+-BR2_PACKAGE_PYTHON_FREETYPE=y
+-
+-BR2_PACKAGE_PYTHON_PINPONG=y
+-
+-BR2_PACKAGE_PYTHON_PSUTIL=y
+-
+ #
+ # Compression and decompression
+ #
+```
+
+## 六、常见问题
+
+### Buildroot 编译出错排查方法
+
+SDK 中 Buildroot 默认开启了顶层并行编译以加快编译速度，但是编译出错时，不方便分析出错的日志，所以我们可以先在 config 文件中将其删除，待排解决了问题之后，再将其重新打开。
+
+以 milkv-duo 目标为例，在其配置文件中将该配置删除后，重新编译：
+
+```bash title="buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig"
+BR2_PER_PACKAGE_DIRECTORIES=y
+```
+
+编译出错时除了查看编译终端的出错信息，还可以查看 `build/br.log` 中的完整日志进行排查。

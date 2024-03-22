@@ -73,15 +73,9 @@ Usage:
 ./build.sh lunch        - Select a board to build
 ./build.sh [board]      - Build [board] directly, supported boards asfollows:
 milkv-duo
-milkv-duo-lite
 milkv-duo256m
-milkv-duo256m-lite
 ```
 Listed at the bottom is the list of currently supported target versions.
-
-:::tip
-Those with the `lite` suffix is a simplified version and does not include libraries and application packages such as python, pip, pinpong, etc.
-:::
 
 As shown in the prompt, there are two ways to compile the target version.
 
@@ -90,9 +84,7 @@ The first method is to execute `./build.sh lunch` to bring up the interactive me
 # ./build.sh lunch
 Select a target to build:
 1. milkv-duo
-2. milkv-duo-lite
-3. milkv-duo256m
-4. milkv-duo256m-lite
+2. milkv-duo256m
 Which would you like:
 ```
 
@@ -116,9 +108,7 @@ tar -xf host-tools.tar.gz -C /your/sdk/path/
 Then enter the following commands in sequence to complete the step-by-step compilation. Replace `[board]` and `[config]` in the command with the version that needs to be compiled. The currently supported `board` and corresponding `config` are as follows:
 ```
 milkv-duo               cv1800b_milkv_duo_sd
-milkv-duo-lite          cv1800b_milkv_duo_sd
 milkv-duo256m           cv1812cp_milkv_duo256m_sd
-milkv-duo256m-lite      cv1812cp_milkv_duo256m_sd
 ```
 
 ```bash
@@ -194,14 +184,8 @@ docker exec -it duodocker /bin/bash -c "cd /home/work && cat /etc/issue && ./bui
 Note that the `./build.sh [board]` at the end of the command is the same as the previous usage in the one-click compilation instructions in Ubuntu 22.04. Use `./build.sh` can see how to use the command, use `./ build.sh lunch` can bring up the interactive selection menu, use `./build.sh [board]` to directly compile the target version, `[board]` can be replaced with:
 ```
 milkv-duo
-milkv-duo-lite
 milkv-duo256m
-milkv-duo256m-lite
 ```
-
-:::tip
-Versions with the `lite` suffix is a simplified version and does not include libraries and application packages such as python, pip, pinpong, etc.
-:::
 
 Description of some parameters in the command:
 - `duodocker` The name of the running Docker must be consistent with the name set in the previous step.
@@ -240,9 +224,7 @@ root@8edea33c2239:/# cd /home/work/
 Then enter the following commands in sequence to complete the step-by-step compilation. Replace `[board]` and `[config]` in the command with the version that needs to be compiled. The currently supported `board` and corresponding `config` are as follows:
 ```
 milkv-duo               cv1800b_milkv_duo_sd
-milkv-duo-lite          cv1800b_milkv_duo_sd
 milkv-duo256m           cv1812cp_milkv_duo256m_sd
-milkv-duo256m-lite      cv1812cp_milkv_duo256m_sd
 ```
 
 ```bash
@@ -336,3 +318,66 @@ appendWindowsPath = false
 
 After that, you need to reboot the WSL with `wsl.exe --reboot`. Then you able to run the `./build.sh` script or the `build_all` line in the step-by-step compilation method.
 To rollback this change in `/etc/wsl.conf` file set `appendWindowsPath` as true. To reboot the WSL, can you use the Windows PowerShell command `wsl.exe --shutdown` then `wsl.exe`, after that the Windows environment variables become avaliable again in $PATH.
+
+## 4. Buildroot adds application package
+
+Buildroot is a lightweight embedded Linux system building tool. The system it generates does not have the apt package management tool like the Ubuntu system to download and use application packages. Duo's default SDK has added some commonly used tools or commands. If you need to add your own applications, you need to make some modifications to the SDK and recompile to generate the required system firmware.
+
+The following introduces several common methods for adding application packages in Buildroot.
+
+### Enable commands in Busybox
+
+### Configure application packages preset in Buildroot
+
+### Add your own application package
+
+## 5. Delete application packages
+
+If you need to delete some unnecessary application packages to speed up compilation when compiling the firmware by yourself, you can delete the corresponding package names in the Buildroot configuration file. Take the `milkv-duo` target as an example. For example, if you do not need To compile Python related libraries, you can make the following modifications and then recompile to generate firmware.
+
+```diff title="buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig"
+diff --git a/buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig b/buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig
+index 2bc8cd5e3..e78901afb 100644
+--- a/buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig
++++ b/buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig
+@@ -330,25 +330,6 @@ BR2_PACKAGE_EVTEST=y
+ # BR2_PACKAGE_FCONFIG is not set
+ BR2_PACKAGE_FLASHROM_ARCH_SUPPORTS=y
+ 
+-BR2_PACKAGE_PYTHON3=y
+-BR2_PACKAGE_PYTHON3_PY_PYC=y
+-BR2_PACKAGE_PYTHON_LXML=y
+-BR2_PACKAGE_PYTHON_PIP=y
+-BR2_PACKAGE_PYTHON_SETUPTOOLS=y
+-BR2_PACKAGE_PYTHON3_SSL=y
+-
+-BR2_PACKAGE_PYTHON_SERIAL=y
+-BR2_PACKAGE_PYTHON_PILLOW=y
+-BR2_PACKAGE_PYTHON_SMBUS_CFFI=y
+-BR2_PACKAGE_PYTHON_SPIDEV=y
+-BR2_PACKAGE_PYTHON_MODBUS_TK=y
+-BR2_PACKAGE_PYTHON_EVDEV=y
+-BR2_PACKAGE_PYTHON_FREETYPE=y
+-
+-BR2_PACKAGE_PYTHON_PINPONG=y
+-
+-BR2_PACKAGE_PYTHON_PSUTIL=y
+-
+ #
+ # Compression and decompression
+ #
+```
+
+## 6. Frequently Asked Questions
+
+### Buildroot troubleshooting method
+
+Buildroot in the SDK enables top-level parallel compilation by default to speed up compilation. However, when a compilation error occurs, it is inconvenient to analyze the error log, so we can delete it in the config file first, and then reopen it after the problem is solved.
+
+Taking the milkv-duo target as an example, delete the configuration in its configuration file and recompile:
+
+```bash title="buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig"
+BR2_PER_PACKAGE_DIRECTORIES=y
+```
+
+When a compilation error occurs, in addition to checking the error information of the compilation terminal, you can also check the complete log in `build/br.log` for troubleshooting.
