@@ -15,6 +15,32 @@ Power supply DC-5V
 
 The Meles offers a Gigabit Ethernet port. From the test results, the bandwidth is at least 930 Mbits/sec.
 
+### EMMC Socket on Board Interface Feature
+
+The high performance eMMC module is the best choice as the system storage for Meles. The eMMC module with 8GB/16GB/32GB/64GB/128GB is available.
+
+The eMMC Socket pin specification shows below.
+
+|   Name    | PIN  | PIN  |    Name     |
+| :-------: | :--: | :--: | :---------: |
+|   GND1    |  1   |  34  |    GND11    |
+|  EMMC_D5  |  2   |  33  |   EMMC_D6   |
+|   GND2    |  3   |  32  |    GND12    |
+|  EMMC_D4  |  4   |  31  |   EMMC_D7   |
+|   GND3    |  5   |  30  |    GND13    |
+|  EMMC_0   |  6   |  29  |   EMMC_D1   |
+|   GND4    |  7   |  28  |    GND14    |
+| EMMC_CLK  |  8   |  27  |   EMMC_D2   |
+|   GND5    |  9   |  26  |    GND15    |
+|  EMMC_D3  |  10  |  25  |  EMMC_CMD   |
+|   GND6    |  11  |  24  |    GND16    |
+| EMMC_RSTN |  12  |  23  | DVDD33_EMMC |
+|   GND7    |  13  |  22  | DVDD33_EMMC |
+|   GND8    |  14  |  21  | DVDD18_EMMC |
+| EMMC_RCLK |  15  |  20  | DVDD18_EMMC |
+|   GND9    |  16  |  19  |    GND17    |
+|   GND10   |  17  |  18  |    GND18    |
+
 ### 40 PIN GPIO
 
 The Meles is supplied with a 40pin pin GPIO cradle that is compatible with most sensor applications on the market.
