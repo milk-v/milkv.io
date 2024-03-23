@@ -90,9 +90,32 @@ The HDMI interface pin specification shows below.
 | 18   | VCC5V0_HDMI |
 | 19   | HDMI_HPD    |
 
+### DSI Interface
+
+### CSI Interface
+
 ### Audio Interface
 
 Meles is equipped with a standard 3.5mm jack. An audio lead is necessary to produce sound when there is not an HDMI cable. Audio can be played through speakers or headphones using jack. This requires you to use the Desktop volume control for configuration.
+
+### JTAG Interface
+
+Meles is equipped with a JTAG interface for internal debug.
+
+The JTAG interface pin specification shows below.
+
+| PIN# | Name       |
+| ---- | ---------- |
+| 1    | JTG_TMS    |
+| 2    | JTG_TD     |
+| 3    | JTG_TDO    |
+| 4    | JTG_TCLK   |
+| 5    | GND        |
+| 6    | AOUART_TXD |
+| 7    | GND        |
+| 8    | AOUART_RXD |
+| 9    | GND        |
+| 10   | GND        |
 
 ### 40 PIN GPIO
 
