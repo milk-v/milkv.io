@@ -15,6 +15,23 @@ Power supply DC-5V
 
 The Meles offers a Gigabit Ethernet port. From the test results, the bandwidth is at least 930 Mbits/sec.
 
+### TF Card Interface
+
+The TF card interface pin specification shows below.
+
+| PIN# | Name       |
+| ---- | ---------- |
+| 1    | SDIO0_DAT2 |
+| 2    | SDIO0_DAT3 |
+| 3    | SDIO0_CMD  |
+| 4    | VSD_3V3    |
+| 5    | SDIO0_CLK  |
+| 6    | GND        |
+| 7    | SDIO0_DAT0 |
+| 8    | SDIO0_DAT1 |
+| 9    | SDIO0_DETN |
+| 10   | GND        |
+
 ### EMMC Socket on Board Interface Feature
 
 The high performance eMMC module is the best choice as the system storage for Meles. The eMMC module with 8GB/16GB/32GB/64GB/128GB is available.
