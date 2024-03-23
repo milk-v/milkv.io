@@ -15,9 +15,9 @@ Power supply DC-5V
 
 The Meles offers a Gigabit Ethernet port. From the test results, the bandwidth is at least 930 Mbits/sec.
 
-### TF Card Interface
+### Micro SD Card Interface
 
-The TF card interface pin specification shows below.
+The Micro SD card interface pin specification shows below.
 
 | PIN# | Name       |
 | ---- | ---------- |
@@ -57,6 +57,34 @@ The eMMC Socket pin specification shows below.
 | EMMC_RCLK |  15  |  20  | DVDD18_EMMC |
 |   GND9    |  16  |  19  |    GND17    |
 |   GND10   |  17  |  18  |    GND18    |
+
+### HDMI Interface
+
+The Meles is equipped with one HDMI connector. As for HDMI, the maximum resolution is 4k@60Hz. Any HDMI monitor should work as a display for the Meles.
+
+The HDMI interface pin specification shows below.
+
+| PIN# | Name        |
+| ---- | ----------- |
+| 1    | HDMI_DATAP2 |
+| 2    | GND         |
+| 3    | HDMI_DATAN2 |
+| 4    | HDMI_DATAP1 |
+| 5    | GND         |
+| 6    | HDMI_DATAN1 |
+| 7    | HDMI_DATAP0 |
+| 8    | GND         |
+| 9    | HDMI_DATAN0 |
+| 10   | HDMI_CLKP   |
+| 11   | GND         |
+| 12   | HDMI_CLKN   |
+| 13   | HDMI_CEC    |
+| 14   | NC          |
+| 15   | HDMI_SCL    |
+| 16   | HDMI_SDA    |
+| 17   | GND         |
+| 18   | VCC5V0_HDMI |
+| 19   | HDMI_HPD    |
 
 ### 40 PIN GPIO
 
