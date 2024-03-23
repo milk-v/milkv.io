@@ -58,6 +58,10 @@ The eMMC Socket pin specification shows below.
 |   GND9    |  16  |  19  |    GND17    |
 |   GND10   |  17  |  18  |    GND18    |
 
+### USB Interface
+
+The Meles has four USB-A connectors. All are USB 3.0. It can be operated with any generic USB computer keyboard and mouse. It can also be used with USB storage, USB to MIDI converters, and almost any other USB capable device/component.
+
 ### HDMI Interface
 
 The Meles is equipped with one HDMI connector. As for HDMI, the maximum resolution is 4k@60Hz. Any HDMI monitor should work as a display for the Meles.
@@ -85,6 +89,10 @@ The HDMI interface pin specification shows below.
 | 17   | GND         |
 | 18   | VCC5V0_HDMI |
 | 19   | HDMI_HPD    |
+
+### Audio Interface
+
+Meles is equipped with a standard 3.5mm jack. An audio lead is necessary to produce sound when there is not an HDMI cable. Audio can be played through speakers or headphones using jack. This requires you to use the Desktop volume control for configuration.
 
 ### 40 PIN GPIO
 
