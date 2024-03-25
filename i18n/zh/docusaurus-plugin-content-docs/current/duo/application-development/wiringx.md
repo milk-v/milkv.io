@@ -661,3 +661,18 @@ make
 ```
 
 编译完成后，当前 `build` 目录下生成的 `libwiringx.so` 就是我们所需要的 wiringX 库。
+
+### 注意事项
+
+如果遇到编译报错，可以尝试更换 `cmake` 的版本，比如可以手动安装目前最新的 `3.27.6` 版本：
+
+```bash
+wget https://github.com/Kitware/CMake/releases/download/v3.27.6/cmake-3.27.6-linux-x86_64.sh
+chmod +x cmake-3.27.6-linux-x86_64.sh
+sudo sh cmake-3.27.6-linux-x86_64.sh --skip-license --prefix=/usr/local/
+```
+手动安装的 `cmake` 在 `/usr/local/bin` 中，此时用 `cmake --version` 命令查看其版本号, 应为：
+
+```
+cmake version 3.27.6
+```

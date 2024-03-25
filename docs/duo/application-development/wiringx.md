@@ -661,3 +661,18 @@ make
 ```
 
 After compilation is completed, the `libwiringx.so` generated in the current `build` directory is the wiringX library we need.
+
+### Points to Consider
+
+If you encounter compilation errors, you can try to change the version of `cmake`. For example, you can manually install the latest `3.27.6` version:
+
+```bash
+wget https://github.com/Kitware/CMake/releases/download/v3.27.6/cmake-3.27.6-linux-x86_64.sh
+chmod +x cmake-3.27.6-linux-x86_64.sh
+sudo sh cmake-3.27.6-linux-x86_64.sh --skip-license --prefix=/usr/local/
+```
+The manually installed `cmake` is in `/usr/local/bin`. At this time, use the `cmake --version` command to check its version number, which should be:
+
+```
+cmake version 3.27.6
+```
