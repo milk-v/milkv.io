@@ -283,12 +283,12 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'generated-index',
-        title: '🔌 Hardware Interface',
-        description: 'Meles Related Hardware Interface Description',
-        slug: '/meles/hardware-development'
+        title: '🔌 Hardware',
+        description: 'Hardware Introduction',
+        slug: '/meles/hardware'
       },
       items: [
-        'meles/hardware-development/interface',
+        'meles/hardware/meles-main-board',
       ],
     },
     {

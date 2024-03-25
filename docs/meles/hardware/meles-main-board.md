@@ -1,21 +1,69 @@
 ---
-sidebar_label: 'Hardware Interface Description'
+sidebar_label: 'Milk-V Meles Main board'
 sidebar_position: 50
 ---
 
-# Hardware Interface Description
+# Milk-V Meles Main board
 
-## Interface Overview
+## Hardware version
 
-### USB Type-C Power
+Meles comes with different versions. When you get the board, you need to know the hardware version like 'Meles V1.2', which is printed in the top side of the board.
 
-Power supply DC-5V
+## Power supply
 
-### Ethernet Port
+Meles uses the USB Type-C port for both power and communication.
 
-The Meles offers a Gigabit Ethernet port. From the test results, the bandwidth is at least 930 Mbits/sec.
+To power Meles standalone, you can use 5V/3A power adapter with USB Type-C port. You can use the USB PD/QC power adapter without worrying damaging the board because the PD/QC will detect that Meles only supports 5V, so the adapter will output 5V.
 
-### Micro SD Card Interface
+Meles can be powered from the PC/Laptop ports directly.
+
+When you use PoE function provided by Meles, you may power Meles by putting DC +5V directly to PIN#2 and PIN#4. GND pins lke PIN#6 and PIN#9 are also needed.
+
+## processor
+
+The T-HEAD TH1520 SoC used in Meles is a high-performance processor.
+
+* CPU
+    * RISC-V 64GCV C910*4@2.0GHz
+    * Each core contains 64KB I cache amd 64KB D Cache
+    * 1MB of Shared L2 Cache
+    * Support TEE and REE, configured during core booting
+    * Support multi-core debugging framework of custom and RISC-V compatible interface
+    * Independent power domain, supports DVFS
+* GPU
+    * OpenCL 1.1/1.2/2.0
+    * OpenGL ES 3.0/3.1/3.2
+    * Vulkan 1.1/1.2
+    * Android NN HAL
+* NPU
+    * Support 4TOPS@INT8, up to 1GHz
+    * Support TensorFlow, ONNX, Caffe
+    * Support CNN, RNN, DNN
+* Decode
+    * Real-time decoder, support H.265/H.264/VP9/8/7/6/AVS/AVS+/AVS2.0/VC1/MPEG4
+    * Supports H.264 BP/MP/HP@level 5.1 decoding, up to 4K resolution
+    * Supports H.265/HEVC Main Profile@level 5.1 decoding, up to 4K resolution
+    * Supports VP9 Profile-2 decoding, up to 4K resolution
+    * Supports AVS2.0 decoding, up to 4K resolution
+    * Supports VP6/7/8/AVS/AVS+/VC1/MPEG4 decoding, up to 1920x1080 resolution
+    * Decoding at 4K@75fps maximum
+* Encode
+    * Supports H.264 BP/MP/HP(level4.2) encoding, up to 4K resolution
+    * Supports H.265/HEVC Main Profile encoding, up to 4K resolution
+    * Only supports I-frames and P-frames
+    * Encoding at 4K@40fps maximum
+
+## Memory
+
+Meles's memory is LPDDR4x 4266MT/s. Meles is available in 4GB / 8GB /16GB memory options.
+
+## Ethernet
+
+Meles offers a Gigabit Ethernet port. From the test results, the bandwidth is at least 930 Mbits/sec.
+
+If you are interested in PoE (Power over Ethernet), you should try it on Meles.
+
+## Micro SD Card Interface
 
 The Micro SD card interface pin specification shows below.
 
@@ -32,7 +80,7 @@ The Micro SD card interface pin specification shows below.
 | 9    | SDIO0_DETN |
 | 10   | GND        |
 
-### EMMC Socket on Board Interface Feature
+## eMMC Socket on Board Interface Feature
 
 The high performance eMMC module is the best choice as the system storage for Meles. The eMMC module with 8GB/16GB/32GB/64GB/128GB is available.
 
@@ -58,11 +106,11 @@ The eMMC Socket pin specification shows below.
 |   GND9    |  16  |  19  |    GND17    |
 |   GND10   |  17  |  18  |    GND18    |
 
-### USB Interface
+## USB Interface
 
 The Meles has four USB-A connectors. All are USB 3.0. It can be operated with any generic USB computer keyboard and mouse. It can also be used with USB storage, USB to MIDI converters, and almost any other USB capable device/component.
 
-### HDMI Interface
+## HDMI Interface
 
 The Meles is equipped with one HDMI connector. As for HDMI, the maximum resolution is 4k@60Hz. Any HDMI monitor should work as a display for the Meles.
 
@@ -90,13 +138,46 @@ The HDMI interface pin specification shows below.
 | 18   | VCC5V0_HDMI |
 | 19   | HDMI_HPD    |
 
-### DSI Interface
+## DSI Interface
 
-### CSI Interface
+It is used for MIPI Display.
 
-### Audio Interface
+## CSI1 Interface
 
-Meles is equipped with a standard 3.5mm jack. An audio lead is necessary to produce sound when there is not an HDMI cable. Audio can be played through speakers or headphones using jack. This requires you to use the Desktop volume control for configuration.
+It is used for MIPI Camera.
+
+## CSI2 Interface
+
+It is used for MIPI Camera.
+
+## Audio Interface
+
+Meles is equipped with a standard 3.5mm jack. An audio lead is necessary to produce sound when there is no HDMI cable. Audio can be played through speakers or headphones using jack. This requires you to use the Desktop volume control for configuration.
+
+## PWM fan
+
+| PIN# | Name  |
+| ---- | ----- |
+| 1    | PWM   |
+| 2    | +5V   |
+
+## LED
+
+Meles has Power LED and User LED.
+
+Power LED is green. It is always on when Meles in given power.
+
+User LED is blue. It can be controlled by software. By default its blink status shows the running kernel.
+
+## Buttons
+
+Meles presents three buttons, Reset button, Download button and eMMC boot button.
+
+The Reset button serves as the hardware reset button. Short press the button to reboot the system.
+
+The Download button is for firmware flash/upgrade.
+
+The eMMC boot button is for eMMC booting first.
 
 ### JTAG Interface
 

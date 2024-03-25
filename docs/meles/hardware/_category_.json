@@ -3,7 +3,7 @@
   "position": 50,
   "link": {
     "type": "generated-index",
-	"slug": "/meles/hardware-development",
-    "description": "Meles Related Hardware Interface Description"
+	"slug": "/meles/hardware",
+    "description": "Hardware Introduction"
   }
 }
