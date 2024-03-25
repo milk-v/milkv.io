@@ -632,7 +632,7 @@ tar -xf host-tools.tar.gz
 
 由于交叉工具链中的 time 相关定义与 wiringX 中的定义稍有不同，添加如下两行修改：
 
-```diff {9.10}
+```diff {9,10}
 diff --git a/src/wiringx.c b/src/wiringx.c
 index 034674a..4171a75 100644
 --- a/src/wiringx.c

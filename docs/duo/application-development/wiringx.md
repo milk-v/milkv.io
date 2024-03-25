@@ -632,7 +632,7 @@ If you have ever compiled [duo-buildroot-sdk](https://github.com/milkv-duo/duo-b
 
 Since the time-related definitions in the cross toolchain are slightly different from those in wiringX, add the following two lines of modification:
 
-```diff {9.10}
+```diff {9,10}
 diff --git a/src/wiringx.c b/src/wiringx.c
 index 034674a..4171a75 100644
 --- a/src/wiringx.c
