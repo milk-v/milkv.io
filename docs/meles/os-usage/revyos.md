@@ -158,8 +158,6 @@ You can change the following settings in it.
 
 ## SSH
 
-Open a command line window according to [Open the Command Line](./cmdLine.md).
-
 - Check the status of the SSH service. Run the following command in a command line window
 
 ```
