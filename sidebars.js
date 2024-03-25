@@ -258,21 +258,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: '🖥️ OS Usage',
-      collapsed: false,
-      link: {
-        type: 'generated-index',
-        title: '🖥️ OS Usage',
-        description: 'OS Usage with Meles',
-        slug: '/meles/desktop-usage'
-      },
-      items: [
-        'meles/os-usage/revyos',
-      ],
-    },
-    {
-      type: "category",
-      label: '🔌 Hardware Interface',
+      label: '🔌 Hardware Introduction',
       collapsed: false,
       link: {
         type: 'generated-index',
@@ -282,6 +268,20 @@ const sidebars = {
       },
       items: [
         'meles/hardware/meles-main-board',
+      ],
+    },
+    {
+      type: "category",
+      label: '🖥️ OS Usage',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: '🖥️ OS Usage',
+        description: 'OS Usage with Meles',
+        slug: '/meles/os-usage'
+      },
+      items: [
+        'meles/os-usage/revyos',
       ],
     },
     {
