@@ -1,15 +1,15 @@
 ---
-sidebar_label: 'Milk-V Meles Main board'
+sidebar_label: 'Meles Main board'
 sidebar_position: 50
 ---
 
-# Milk-V Meles Main board
+# Meles Main board
 
-## Hardware version
+## Hardware Version
 
 Meles comes with different versions. When you get the board, you need to know the hardware version like 'Meles V1.2', which is printed in the top side of the board.
 
-## Power supply
+## Power Supply
 
 Meles uses the USB Type-C port for both power and communication.
 
@@ -19,7 +19,7 @@ Meles can be powered from the PC/Laptop ports directly.
 
 When you use PoE function provided by Meles, you may power Meles by putting DC +5V directly to PIN#2 and PIN#4. GND pins lke PIN#6 and PIN#9 are also needed.
 
-## processor
+## Processor
 
 The T-HEAD TH1520 SoC used in Meles is a high-performance processor.
 
@@ -154,7 +154,7 @@ It is used for MIPI Camera.
 
 Meles is equipped with a standard 3.5mm jack. An audio lead is necessary to produce sound when there is no HDMI cable. Audio can be played through speakers or headphones using jack. This requires you to use the Desktop volume control for configuration.
 
-## PWM fan
+## PWM Fan
 
 | PIN# | Name  |
 | ---- | ----- |
@@ -179,7 +179,7 @@ The Download button is for firmware flash/upgrade.
 
 The eMMC boot button is for eMMC booting first.
 
-### JTAG Interface
+## JTAG Interface
 
 Meles is equipped with a JTAG interface for internal debug.
 
@@ -198,7 +198,7 @@ The JTAG interface pin specification shows below.
 | 9    | GND        |
 | 10   | GND        |
 
-### 40 PIN GPIO
+## 40 PIN GPIO
 
 The Meles is supplied with a 40pin pin GPIO cradle that is compatible with most sensor applications on the market.
 
