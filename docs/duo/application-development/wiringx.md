@@ -15,7 +15,7 @@ This article will be divided into the following four parts to introduce how to d
 
 If you are already familiar with the usage of wiringX, you can directly refer to our sample code:  [duo-examples](https://github.com/milkv-duo/duo-examples)
 
-The wiringX pin numbering of Milk-V Duo is consistent with the pin name numbering of Duo. However, the LED control pin is not available on the 40-pin physical pinout, and its wiringX pin number is `25`
+The wiringX pin numbering of Milk-V Duo is consistent with the pin name numbering of Duo. However, the LED control pin is not available on the 40-pin physical pinout, and its wiringX pin number is `25`.
 
 <div className='gpio_style'>
 
@@ -46,9 +46,9 @@ The wiringX pin numbering of Milk-V Duo is consistent with the pin name numberin
 
 </div>
 
-Please note that many of Duo's pins have multipurpose functionality. When using `wiringX` to control the functions of each pin, it is important to confirm the current state of the pin to ensure it matches the desired functionality. If it doesn't, you can use the `duo-pinmux` command to switch it to the desired function
+Please note that many of Duo's pins have multipurpose functionality. When using `wiringX` to control the functions of each pin, it is important to confirm the current state of the pin to ensure it matches the desired functionality. If it doesn't, you can use the `duo-pinmux` command to switch it to the desired function.
 
-Please refer to the detailed usage instructions for more information：[pinmux](https://milkv.io/docs/duo/application-development/pinmux)
+Please refer to the detailed usage instructions for more information：[pinmux](https://milkv.io/docs/duo/application-development/pinmux).
 
 ## 1. wiringX APIs
 
@@ -58,7 +58,7 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 
 <summary>int wiringXSetup(char *name, ...)</summary>
 
-  To initialize the WiringX library for configuring and managing GPIO pins, the fixed syntax for Duo is as follows
+  To initialize the WiringX library for configuring and managing GPIO pins, the fixed syntax for Duo is as follows:
   ```
   wiringXSetup("duo", NULL)
   ```
@@ -70,7 +70,7 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 
 <summary>int wiringXValidGPIO(int pin)</summary>
 
-  To check if a GPIO pin is available,
+  To check if a GPIO pin is available.
 
 </details>
 
@@ -79,7 +79,7 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 
 <summary>void delayMicroseconds(unsigned int ms)</summary>
 
-  Delay for how many milliseconds
+  Delay for how many milliseconds.
 
 </details>
 
@@ -88,7 +88,7 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 
 <summary>int wiringXGC(void)</summary>
 
-  To release resources
+  To release resources.
 
 </details>
 
@@ -97,7 +97,7 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 
 <summary>char *wiringXPlatform(void)</summary>
 
-  Return platform information
+  Return platform information.
 
 </details>
 
@@ -108,7 +108,7 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 
 <summary>int pinMode(int pin, pinmode_t mode)</summary>
 
-  Set the working mode for the specified pin, where pin is the pin number, and mode can be
+  Set the working mode for the specified pin, where pin is the pin number, and mode can be:
   - PINMODE_INPUT input mode
   - PINMODE_OUTPUT output mode
   - PINMODE_INTERRUPT interrupt mode
@@ -120,7 +120,7 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 
 <summary>int digitalRead(int pin)</summary>
 
-  Read the input value of the specified pin, and the return value is HIGH or LOW
+  Read the input value of the specified pin, and the return value is HIGH or LOW.
 
 </details>
 
@@ -129,7 +129,7 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 
 <summary>int digitalWrite(int pin, enum digital_value_t value)</summary>
 
-  Set the output value for the specified pin, where value can be
+  Set the output value for the specified pin, where value can be:
   - HIGH high level
   - LOW low level
 
@@ -140,7 +140,7 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 
 <summary>int waitForInterrupt(int pin, int ms)</summary>
 
-  Wait for an interrupt to occur on pin, with a timeout of ms milliseconds  
+  Wait for an interrupt to occur on pin, with a timeout of ms milliseconds.
   *This function has been deprecated. It is recommended to use wiringXISR*
 
 </details>
@@ -150,7 +150,7 @@ Please refer to the detailed usage instructions for more information：[pinmux](
 
 <summary>int wiringXISR(int pin, enum isr_mode_t mode)</summary>
 
-Configure pin as an interrupt mode, with several modes for mode
+Configure pin as an interrupt mode, with several modes for mode:
 - ISR_MODE_RISING
 - ISR_MODE_FALLING
 - ISR_MODE_BOTH
@@ -164,7 +164,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>int wiringXI2CSetup(const char *dev, int addr)</summary>
 
-  Configure the I2C node and I2C address
+  Configure the I2C node and I2C address.
 
 </details>
 
@@ -173,7 +173,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>int wiringXI2CRead(int fd)</summary>
 
-  Read 1 byte of data
+  Read 1 byte of data.
 
 </details>
 
@@ -182,7 +182,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>int wiringXI2CReadReg8(int fd, int reg)</summary>
 
-  Read 1 byte of data from the reg register
+  Read 1 byte of data from the reg register.
 
 </details>
 
@@ -191,7 +191,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>int wiringXI2CReadReg16(int fd, int reg)</summary>
 
-  Read 2 bytes of data from the reg register
+  Read 2 bytes of data from the reg register.
 
 </details>
 
@@ -200,7 +200,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>int wiringXI2CWrite(int fd, int reg)</summary>
 
-  Write the address of the register reg
+  Write the address of the register reg.
 
 </details>
 
@@ -209,7 +209,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>int wiringXI2CWriteReg8(int fd, int reg, int value8)</summary>
 
-  Write the 8-bit data value8 to the register reg
+  Write the 8-bit data value8 to the register reg.
 
 </details>
 
@@ -218,7 +218,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>int wiringXI2CWriteReg16(int fd, int reg, int value16)</summary>
 
-  Write the 16-bit data value16 to the register reg
+  Write the 16-bit data value16 to the register reg.
 
 </details>
 
@@ -228,7 +228,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>int wiringXSPISetup(int channel, int speed)</summary>
 
-  Configure the channel (0 on Duo) and speed (default to 500000) of the SPI device
+  Configure the channel (0 on Duo) and speed (default to 500000) of the SPI device.
 
 </details>
 
@@ -236,7 +236,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>int wiringXSPIDataRW(int channel, unsigned char *data, int len)</summary>
 
-  The SPI bus writes data on the rising edge and reads data on the falling edge. Therefore, this function performs both read and write operations simultaneously, resulting in the read data overwriting the written data. Please be cautious when using it
+  The SPI bus writes data on the rising edge and reads data on the falling edge. Therefore, this function performs both read and write operations simultaneously, resulting in the read data overwriting the written data. Please be cautious when using it.
 
 </details>
 
@@ -244,7 +244,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>int wiringXSPIGetFd(int channel)</summary>
 
-  Get the file descriptor of the SPI device, with the channel defaulting to 0 on Duo
+  Get the file descriptor of the SPI device, with the channel defaulting to 0 on Duo.
 
 </details>
 
@@ -254,7 +254,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>int wiringXSerialOpen(const char *dev, struct wiringXSerial_t serial)</summary>
 
-  Open the serial port device, where `dev` is the device descriptor and `serial` is a structure that needs to be filled with serial port-related parameters. For more details, please refer to the [UART Usage Example](#UART-Usage-Example)
+  Open the serial port device, where `dev` is the device descriptor and `serial` is a structure that needs to be filled with serial port-related parameters. For more details, please refer to the [UART Usage Example](#UART-Usage-Example).
 
   ```c
   typedef struct wiringXSerial_t {
@@ -272,7 +272,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>void wiringXSerialClose(int fd)</summary>
 
-  Close the serial port
+  Close the serial port.
 
 </details>
 
@@ -280,7 +280,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>void wiringXSerialFlush(int fd)</summary>
 
-  Flush the buffer
+  Flush the buffer.
 
 </details>
 
@@ -288,7 +288,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>void wiringXSerialPutChar(int fd, unsigned char c)</summary>
 
-  Output a character
+  Output a character.
 
 </details>
 
@@ -296,7 +296,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>void wiringXSerialPuts(int fd, const char *s)</summary>
 
-  Output a string
+  Output a string.
 
 </details>
 
@@ -304,7 +304,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>void wiringXSerialPrintf(int fd, const char *message, ...)</summary>
 
-  Format output
+  Format output.
 
 </details>
 
@@ -312,7 +312,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>int wiringXSerialDataAvail(int fd)</summary>
 
-  Return the number of data received in the buffer
+  Return the number of data received in the buffer.
 
 </details>
 
@@ -320,7 +320,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 <summary>int wiringXSerialGetChar(int fd)</summary>
 
-  Read a character from the serial port device
+  Read a character from the serial port device.
 
 </details>
 
@@ -328,7 +328,7 @@ Configure pin as an interrupt mode, with several modes for mode
 
 ### GPIO Usage Example
 
-Here is an example of working with GPIO. It will toggle pin 20 on Duo every 1 second, pulling it high and then low. The physical pin number for pin 20 is `15` in the WiringX numbering system
+Here is an example of working with GPIO. It will toggle pin 20 on Duo every 1 second, pulling it high and then low. The physical pin number for pin 20 is `15` in the WiringX numbering system.
 
 ```c
 #include <stdio.h>
@@ -362,13 +362,13 @@ int main() {
     return 0;
 }
 ```
-After compiling and running it on Duo, you can use a multimeter or an oscilloscope to measure the state of pin 20 and verify if it matches the expected behavior
+After compiling and running it on Duo, you can use a multimeter or an oscilloscope to measure the state of pin 20 and verify if it matches the expected behavior.
 
-You can also use the onboard LED pin to verify the behavior. By observing the on/off state of the LED, you can intuitively determine if the program is executing correctly. The WiringX pin number for the LED is `25`. Simply modify the code mentioned above by replacing pin `15` with pin `25`. However, please note that the default firmware has a script to control LED blinking on startup, which needs to be disabled. You can refer to the example explanation for [blink](#blink) below for instructions on how to disable it
+You can also use the onboard LED pin to verify the behavior. By observing the on/off state of the LED, you can intuitively determine if the program is executing correctly. The WiringX pin number for the LED is `25`. Simply modify the code mentioned above by replacing pin `15` with pin `25`. However, please note that the default firmware has a script to control LED blinking on startup, which needs to be disabled. You can refer to the example explanation for [blink](#blink) below for instructions on how to disable it.
 
 ### I2C Usage Example
 
-Here is an example of I2C communication
+Here is an example of I2C communication:
 
 ```c
 #include <stdio.h>
@@ -403,7 +403,7 @@ int main(void)
 
 ### SPI Usage Example
 
-Here is an example of SPI communication
+Here is an example of SPI communication:
 
 ```c
 #include <stdio.h>
@@ -433,7 +433,7 @@ int main(void)
 
 ### UART Usage Example
 
-Here is an example of UART communication using UART4 on pins 4/5
+Here is an example of UART communication using UART4 on pins 4/5:
 
 ```c
 #include <stdio.h>
@@ -481,9 +481,9 @@ int main() {
 ```
 Testing Method:
 
-The RX of the USB to serial converter cable is connected to pin 4 (UART4_TX) of Duo, the TX of the serial cable is connected to pin 5 (UART4_RX) of Duo, and the GND of the serial cable is connected to the GND of Duo. On the computer, configure the COM port and parameters using a serial debugging tool
+The RX of the USB to serial converter cable is connected to pin 4 (UART4_TX) of Duo, the TX of the serial cable is connected to pin 5 (UART4_RX) of Duo, and the GND of the serial cable is connected to the GND of Duo. On the computer, configure the COM port and parameters using a serial debugging tool.
 
-The compiled executable of the above program is named `uart_test`. After uploading it to Duo via SSH and running it, you should be able to see the string `Duo Serial Test` received in the serial tool on your computer. If you send the string `Hello World` from the serial tool, you will also see the corresponding string received on the Duo's terminal. This confirms that the serial communication is functioning correctly
+The compiled executable of the above program is named `uart_test`. After uploading it to Duo via SSH and running it, you should be able to see the string `Duo Serial Test` received in the serial tool on your computer. If you send the string `Hello World` from the serial tool, you will also see the corresponding string received on the Duo's terminal. This confirms that the serial communication is functioning correctly.
 
 ![duo](/docs/duo/duo-wiringx-uart-test.png)
 
@@ -494,7 +494,7 @@ The compiled executable of the above program is named `uart_test`. After uploadi
 
 You can also use Ubuntu installed in a virtual machine, Ubuntu installed via WSL on Windows, or Ubuntu-based systems using Docker.
 
-- Install the tools that compile dependencies.
+- Install the tools that compile dependencies
   ```
   sudo apt-get install wget git make
   ```
@@ -512,12 +512,12 @@ You can also use Ubuntu installed in a virtual machine, Ubuntu installed via WSL
 
 - Compile testing  
 
-  Take hello-world as an example, enter the hello-world directory and execute make
+  Take hello-world as an example, enter the hello-world directory and execute make:
   ```
   cd hello-world
   make
   ```
-  After the compilation is successful, send the generated `helloworld` executable program to the Duo device through the network port or the RNDIS network. For example, the RNDIS method supported by the [default firmware](https://github.com/milkv-duo/duo-buildroot-sdk/releases), Duo’s IP is 192.168.42.1, the user name is `root`, and the password is `milkv`
+  After the compilation is successful, send the generated `helloworld` executable program to the Duo device through the network port or the RNDIS network. For example, the RNDIS method supported by the [default firmware](https://github.com/milkv-duo/duo-buildroot-sdk/releases), Duo’s IP is 192.168.42.1, the user name is `root`, and the password is `milkv`.
   ```
   scp helloworld root@192.168.42.1:/root/
   ```
@@ -574,3 +574,90 @@ mv /mnt/system/blink.sh_backup /mnt/system/blink.sh && sync
 
 This example code shows how to interface the Milk-V Duo with the popular BMP280 temperature and air pressure sensor manufactured by Bosch.
 
+## 5. Compile wiringX
+
+Duo firmware already contains the compiled wiringX library (/usr/lib/libwiringx.so) and can be used directly. If you need to compile the source code of wiringX to generate the library, you can compile it as follows.
+
+We compile it on an Ubuntu host or other Linux distribution.
+
+*Note: Part of Duo's wiringX code has not yet been integrated into the upstream wiringX repo. In actual use, please give priority to using the wiringX library in Duo firmware.
+
+### Download wiringX source code
+
+```
+git clone https://github.com/wiringX/wiringX.git
+```
+
+### Modify CMakeLists.txt
+
+Enter the code directory:
+```
+cd wiringX
+```
+
+The wiringX project is compiled using cmake. You need to modify CMakeLists.txt through `vi` or other editors to add the cross-compilation toolchain and compilation parameters:
+
+```diff {9-12}
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 8909393..6918181 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -17,6 +17,11 @@ set(CMAKE_EXE_LINKER_FLAGS " -Wl,-rpath=/usr/local/lib/,-rpath=/usr/lib/,-rpath=
+ set(CMAKE_SHARED_LINKER_FLAGS " -Wl,-rpath=/usr/local/lib/,-rpath=/usr/lib/,-rpath=/lib/")
+ set(CMAKE_MODULE_LINKER_FLAGS " -Wl,-rpath=/usr/local/lib/,-rpath=/usr/lib/,-rpath=/lib/")
+
++set(CMAKE_C_COMPILER "${CMAKE_CURRENT_SOURCE_DIR}/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc")
++set(CMAKE_CXX_COMPILER "${CMAKE_CURRENT_SOURCE_DIR}/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++")
++set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -mcpu=c906fdv -march=rv64imafdcv0p7xthead -mcmodel=medany -mabi=lp64d")
++set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64")
++
+ # Start uninstaller generator
+ function(WRITE_UNINSTALL_TARGET_SCRIPT)
+     # Create uninstall target template file, if it doesn't exist...
+```
+
+There are two variables that need to be noted and configured according to your own file path:
+- **CMAKE_C_COMPILER**: The path to gcc in the cross-compilation toolchain
+- **CMAKE_CXX_COMPILER**: path to g++ in the cross-compilation toolchain
+
+Download link for cross-compilation toolchain: [host-tools.tar.gz](https://sophon-file.sophon.cn/sophon-prod-s3/drive/23/03/07/16/host-tools.tar.gz). You can download and unzip it through the wget command:
+```bash
+wget https://sophon-file.sophon.cn/sophon-prod-s3/drive/23/03/07/16/host-tools.tar.gz
+tar -xf host-tools.tar.gz
+```
+
+If you have ever compiled [duo-buildroot-sdk](https://github.com/milkv-duo/duo-buildroot-sdk), the `host-tools` directory in its root directory is the directory of the cross toolchain. There is no need to re-download, you can directly modify the `CMAKE_CURRENT_SOURCE_DIR` field to specify the directory. Or create a soft link pointing to the directory.
+
+### Modify code
+
+Since the time-related definitions in the cross toolchain are slightly different from those in wiringX, add the following two lines of modification:
+
+```diff {9.10}
+diff --git a/src/wiringx.c b/src/wiringx.c
+index 034674a..4171a75 100644
+--- a/src/wiringx.c
++++ b/src/wiringx.c
+@@ -113,6 +113,9 @@ static struct spi_t spi[2] = {
+        } while(0)
+ #endif
+
++typedef time_t __time_t;
++typedef suseconds_t __suseconds_t;
++
+ /* Both the delayMicroseconds and the delayMicrosecondsHard
+    are taken from wiringPi */
+ static void delayMicrosecondsHard(unsigned int howLong) {
+```
+
+### Compile
+
+Compiling in cmake will create some intermediate directories and files, so we create a new build directory and enter this directory to complete the compilation:
+
+```bash
+mkdir build
+cd build
+cmake ..
+make
+```
+
+After compilation is completed, the `libwiringx.so` generated in the current `build` directory is the wiringX library we need.
