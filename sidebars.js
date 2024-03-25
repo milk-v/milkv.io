@@ -258,23 +258,16 @@ const sidebars = {
     },
     {
       type: "category",
-      label: '🖥️ Desktop Usage',
+      label: '🖥️ OS Usage',
       collapsed: false,
       link: {
         type: 'generated-index',
-        title: '🖥️ Desktop Usage',
-        description: 'Desktop Usage with Meles',
+        title: '🖥️ OS Usage',
+        description: 'OS Usage with Meles',
         slug: '/meles/desktop-usage'
       },
       items: [
-        'meles/desktop-usage/desktop',
-        'meles/desktop-usage/desktop-login',
-        'meles/desktop-usage/cmdLine',
-        'meles/desktop-usage/network',
-        'meles/desktop-usage/bluetooth',
-        'meles/desktop-usage/web-browser',
-        'meles/desktop-usage/display',
-        'meles/desktop-usage/ssh',
+        'meles/os-usage/revyos',
       ],
     },
     {
