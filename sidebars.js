@@ -309,9 +309,7 @@ const sidebars = {
         slug: '/meles/low-level-development'
       },
       items: [
-        'meles/low-level-development/build',
-        'meles/low-level-development/u-boot',
-        'meles/low-level-development/kernel',
+        'meles/low-level-development/build-revyos',
       ],
     },
     {
