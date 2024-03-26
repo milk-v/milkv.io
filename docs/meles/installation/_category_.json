@@ -1,0 +1,9 @@
+{
+  "label": "🖊️ Installation",
+  "position": 50,
+  "link": {
+    "type": "generated-index",
+	"slug": "/meles/installation",
+    "description": "Install an image"
+  }
+}

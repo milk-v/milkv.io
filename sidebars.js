@@ -286,6 +286,20 @@ const sidebars = {
     },
     {
       type: "category",
+      label: '🖊️ Installation',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: '🖊️ Installation',
+        description: 'Install an image',
+        slug: '/meles/installation'
+      },
+      items: [
+        'meles/installation/install-an-image-to-spi-nor-flash',
+      ],
+    },
+    {
+      type: "category",
       label: '🐧 Low Level Development',
       collapsed: false,
       link: {
