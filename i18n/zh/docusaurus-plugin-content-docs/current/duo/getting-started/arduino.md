@@ -31,7 +31,7 @@ https://github.com/milkv-duo/duo-arduino/releases/download/V1.0.0/package_sg200x
 
 如果之前有配置其他开发板地址，用逗号隔开，或者点地址栏右侧的图标调出窗口，按提示添加。
 
-配置好之后在 ``工具`` 菜单中选择 ``开发板``，打开 ``开发板管理器``，搜索 *CV180*，点击 ``安装``。
+配置好之后在 ``工具`` 菜单中选择 ``开发板``，打开 ``开发板管理器``，搜索 *SG200X*，点击 ``安装``。
 
 <Image src='/docs/duo/arduino/duo-arduino-02_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
