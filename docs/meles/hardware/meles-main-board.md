@@ -5,6 +5,24 @@ sidebar_position: 50
 
 # Meles Main board
 
+## Interface Description
+
+![meles-hardware-interface](/docs/meles/meles-hardware-interface.jpeg)
+
+| NO.  | Name                    | NO.  | Name             | NO.  | Name              |
+| ---- | ----------------------- | ---- | ---------------- | ---- | ----------------- |
+| 1    | SPI Nor Flash           | 11   | User LED         | 21   | MIPI CSI          |
+| 2    | 40-PIN Header           | 12   | USB-C Power      | 22   | Fan               |
+| 3    | External Antenna Socket | 13   | HDMI             | 23   | eMMC Socket       |
+| 4    | Internal Anternna       | 14   | PoE              | 24   | MicroSD Card Slot |
+| 5    | Wi-Fi5 / BT5.0          | 15   | Download Button  | 25   | JTAG              |
+| 6    | MIPI DSI                | 16   | USB 3.0 Host     |      |                   |
+| 7    | Soc TH1520              | 17   | eMMC Boot Button |      |                   |
+| 8    | MIPI CSI                | 18   | RAM              |      |                   |
+| 9    | Power LED               | 19   | Gigabit Ethernet |      |                   |
+| 10   | Reset Button            | 20   | Headphone        |      |                   |
+
+
 ## Hardware Version
 
 Meles comes with different versions. When you get the board, you need to know the hardware version like 'Meles V1.2', which is printed in the top side of the board.
