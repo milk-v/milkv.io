@@ -31,7 +31,7 @@ Please download the latest json file address from [Releases](https://github.com/
 
 If you have configured other development board addresses before, separate them with commas, or click the icon on the right side of the address bar to bring up the window, and follow the prompts to add them.
 
-After configuring, select ``Board`` in the ``Tools`` menu, open the ``Boards Manager``, search for *CV180*, and click ``Install``.
+After configuring, select ``Board`` in the ``Tools`` menu, open the ``Boards Manager``, search for *SG200X*, and click ``Install``.
 
 <Image src='/docs/duo/arduino/duo-arduino-02.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
