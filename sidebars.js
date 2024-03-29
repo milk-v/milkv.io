@@ -296,6 +296,7 @@ const sidebars = {
       },
       items: [
         'meles/installation/install-an-image-to-spi-nor-flash',
+        'meles/installation/install-an-image-to-microsd-card',
       ],
     },
     {
