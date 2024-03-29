@@ -29,6 +29,8 @@ Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy sam
 
 ### GPIO pin mapping
 
+<div className='gpio_style'>
+
 | GROUP | ADDR          | PORT  | CHIP      | NUM     | NAME     | START             |
 |:-----:|:-------------:|:-----:|:---------:|:-------:|:---------|:------------------|
 | gpio0 | gpio@03020000 | porta | gpiochip0 | 480-511 | XGPIOA   | 480 - XGPIOA[0]   |
@@ -36,6 +38,8 @@ Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy sam
 | gpio2 | gpio@03022000 | portc | gpiochip2 | 416-447 | XGPIOC   | 416 - XGPIOC[0]   |
 | gpio3 | gpio@03023000 | portd | gpiochip3 | 384-415 |          |                   |
 | gpio4 | gpio@05021000 | porte | gpiochip4 | 352-383 | PWR_GPIO | 352 - PWR_GPIO[0] |
+
+</div>
 
 ### Header J3
 
