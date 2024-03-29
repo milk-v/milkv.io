@@ -319,7 +319,7 @@ appendWindowsPath = false
 
 要恢复 `/etc/wsl.conf` 文件中的此更改，请将 `appendWindowsPath` 设置为 `true`。 要重新启动 WSL，您可以使用 Windows PowerShell 命令 `wsl.exe --shutdown`，然后使用`wsl.exe`，之后 Windows 环境变量在 $PATH 中再次可用。
 
-## 四、Buildroot 添加应用包
+## 四、添加应用包
 
 Buildroot 是一个轻量级的嵌入式 Linux 系统构建框架，其生成的系统没有像 Ubuntu 系统一样的 apt 包管理工具来下载和使用应用包。Duo 默认的 SDK 已经添加了一些常用的工具或命令，如果您需要添加自己的应用，需要对 SDK 做一些修改后重新编译生成所需的系统固件。
 

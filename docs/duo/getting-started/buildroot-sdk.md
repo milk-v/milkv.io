@@ -325,7 +325,7 @@ appendWindowsPath = false
 After that, you need to reboot the WSL with `wsl.exe --reboot`. Then you able to run the `./build.sh` script or the `build_all` line in the step-by-step compilation method.
 To rollback this change in `/etc/wsl.conf` file set `appendWindowsPath` as true. To reboot the WSL, can you use the Windows PowerShell command `wsl.exe --shutdown` then `wsl.exe`, after that the Windows environment variables become avaliable again in $PATH.
 
-## 4. Buildroot adds application package
+## 4. Add application packages
 
 Buildroot is a lightweight embedded Linux system building tool. The system it generates does not have the apt package management tool like the Ubuntu system to download and use application packages. Duo's default SDK has added some commonly used tools or commands. If you need to add your own applications, you need to make some modifications to the SDK and recompile to generate the required system firmware.
 
@@ -422,7 +422,7 @@ We can compile the SDK as a whole on the host (such as Ubuntu), and then go to t
 
 ### Add your own application package
 
-Compile and test your own application. The method of integrating it into the Buildroot project is not recommended. It is recommended to use method [duo-examples](https://github.com/milkv-duo/duo-examples/blob/main/README-zh.md).
+Compile and test your own application. The method of integrating it into the Buildroot project is not recommended. It is recommended to use method [duo-examples](https://github.com/milkv-duo/duo-examples).
 
 If you really need to compile your application in Buildroot package mode, you can refer to the configuration of the preset package in Buildroot to add it. Here are a few reference links:
 
