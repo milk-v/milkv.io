@@ -134,7 +134,7 @@ function Center() {
             <li>
               <p>
                 <span>19</span>
-                <span>UART</span>
+                <span>SCP UART</span>
               </p>
               <p>
                 <span>20</span>
