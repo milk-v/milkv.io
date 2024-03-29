@@ -33,6 +33,12 @@ SDK Directory Structure
 └── u-boot-2021.10      // u-boot source code
 ```
 
+:::tip
+The current SDK does not support the ARM core of Duo256M and DuoS. If you need to use the ARM core, you can temporarily refer to this repositories:
+
+duo-build: [https://github.com/milkv-duo/duo-build](https://github.com/milkv-duo/duo-build)
+:::
+
 # Build image
 
 Prepare the Compilation Environment. Using a local Ubuntu system, the officially supported compilation environment is `Ubuntu Jammy 22.04.x amd64` only!

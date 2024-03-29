@@ -33,6 +33,12 @@ SDK目录结构
 └── u-boot-2021.10      // 开源 uboot 代码
 ```
 
+:::tip
+当前 SDK 不支持 Duo256M 和 DuoS 的 ARM 核，如果需要使用 ARM 核，可以暂时参考这个仓库：
+
+duo-build: [https://github.com/milkv-duo/duo-build](https://github.com/milkv-duo/duo-build)
+:::
+
 # 编译镜像
 
 准备编译环境，使用本地的 Ubuntu 系统，官方支持的编译环境为 `Ubuntu Jammy 22.04.x amd64`。
