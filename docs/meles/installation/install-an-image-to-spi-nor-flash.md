@@ -40,12 +40,20 @@ $ wget https://github.com/milkv-meles/thead-bin/raw/main/image-writer/iw-single-
 
 ### Get essential images
 
-Download Meles Bootloader from here, https://github.com/revyos/thead-u-boot/releases.
+Download Meles Bootloader from here, https://github.com/milkv-meles/meles-images/releases.
+
+- 4GB DDR Meles: https://github.com/milkv-meles/meles-images/releases/download/v2024-0329/u-boot-with-spl-meles-4g.bin
+- 8GB DDR Meles: https://github.com/milkv-meles/meles-images/releases/download/v2024-0329/u-boot-with-spl-meles.bin
+
+```
+$ wget https://github.com/milkv-meles/meles-images/releases/download/v2024-0329/u-boot-with-spl-meles.bin
+$ wget https://github.com/milkv-meles/meles-images/releases/download/v2024-0329/u-boot-with-spl-meles-4g.bin
+```
 
 Download zero image.
 
 <pre>
-wget https://github.com/milkv-meles/thead-bin/raw/main/image-writer/zero-1m.img
+$ wget https://github.com/milkv-meles/thead-bin/raw/main/image-writer/zero-1m.img
 </pre>
 
 ### Boot Meles to download mode
@@ -103,13 +111,15 @@ Start to run image...
 
 #### Step 4: Download Bootloader to SPI Nor Flash
 
+Download bootloader to 8GB Meles.
+
 <pre>
-$ sudo cct download -u /dev/ttyUSB0 -d qspi0 -f ./u-boot-with-spl-dualrank-2020.01-g0e4f2294d0.bin -v checksum -r -t 1200
+$ sudo cct download -u /dev/ttyUSB0 -d qspi0 -f ./u-boot-with-spl-meles.bin -v checksum -r -t 1200
 Wait 
-Send file './u-boot-with-spl-dualrank-2020.01-g0e4f2294d0.bin' to 23:0 ...
-File ./u-boot-with-spl-dualrank-2020.01-g0e4f2294d0.bin download success.     
+Send file './u-boot-with-spl-meles.bin' to 23:0 ...
+File ./u-boot-with-spl-meles.bin download success.
 Start to verify data with method:[checksum]
-checksum value is: 0x4275088
+checksum value is: 0x428a844
 读出并校验成功!
 Start to run image...
 </pre>
