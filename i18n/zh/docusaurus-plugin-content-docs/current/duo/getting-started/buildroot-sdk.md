@@ -327,13 +327,109 @@ Buildroot 是一个轻量级的嵌入式 Linux 系统构建框架，其生成的
 
 ### 开启 Busybox 中的命令
 
+在使用 Buildroot 构建的系统中，部分基础命令由 busybox 提供，您可以查看 busybox 的配置文件中是否有您需要的命令，将其打开后重新编译即可，busybox 的配置文件位置在：
+
+```
+buildroot-2021.05/package/busybox/busybox.config
+```
+
+比如 timeout 命令，打开的方法：
+
+```diff {9,10}
+diff --git a/buildroot-2021.05/package/busybox/busybox.config b/buildroot-2021.05/package/busybox/busybox.config
+index d7d58f064..b268cd6f8 100644
+--- a/buildroot-2021.05/package/busybox/busybox.config
++++ b/buildroot-2021.05/package/busybox/busybox.config
+@@ -304,7 +304,7 @@ CONFIG_TEST=y
+ CONFIG_TEST1=y
+ CONFIG_TEST2=y
+ CONFIG_FEATURE_TEST_64=y
+-# CONFIG_TIMEOUT is not set
++CONFIG_TIMEOUT=y
+ CONFIG_TOUCH=y
+ # CONFIG_FEATURE_TOUCH_NODEREF is not set
+ CONFIG_FEATURE_TOUCH_SUSV3=y
+```
+
+参考该次提交: [busybox: add timeout command](https://github.com/milkv-duo/duo-buildroot-sdk/commit/2833c24f11bb48776094265b7b16cfde87f86083)
+
 ### 配置 Buildroot 中预置的应用包
+
+另外，Buildroot 中预置了大量的应用包，通过下载源码编译的方式来生成所需的程序，Buildroot 预置的应用包可以在 `buildroot-2021.05/package` 目录中查看。
+
+配置使用或者禁用某个应用包，是在目标板的配置文件中实现的，以 `milkv-duo` 目标为例，其 buildroot 配置文件是：
+```
+buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig
+```
+
+我们可以在宿主机（比如 Ubuntu）上整体编译过一次 SDK 后，到 Buildroot 编译目录中通过命令行菜单交互的方式来配置相关的应用包。
+
+1. 进入 Buildroot 编译目录
+
+   ```
+   cd buildroot-2021.05/output/milkv-duo_musl_riscv64
+   ```
+
+   可以使用 `make show-targets` 命令来查看当前已经使用的应用包：
+
+   ```
+   $ make show-targets
+   busybox coreutils dhcpcd dnsmasq dropbear duo-pinmux e2fsprogs evtest expat fio freetype gdb host-acl host-attr host-autoconf host-automake host-e2fsprogs host-fakeroot host-genimage host-libtool host-libzlib host-m4 host-makedevs host-mkpasswd host-patchelf host-pkgconf host-skeleton host-util-linux host-xz host-zlib htop ifupdown-scripts initscripts iperf3 json-c kmod libevent libffi libnl libopenssl libxml2 libxslt libzlib musl-compat-headers ncurses ntp openssl python-cffi python-evdev python-freetype python-lxml python-modbus-tk python-pillow python-pinpong python-pip python-psutil python-pycparser python-serial python-setuptools python-smbus-cffi python-spidev python3 skeleton skeleton-init-common skeleton-init-sysv spidev_test strace stress-ng tar toolchain toolchain-external toolchain-external-custom urandom-scripts util-linux wpa_supplicant zlib rootfs-ext2 rootfs-tar
+   ```
+
+2. 配置 Buildroot
+
+   执行 `make menuconfig` 命令，调出交互菜单：
+
+   <Image src='/docs/duo/buildroot/milkv-duo-buildroot-sdk-01.webp' maxWidth='100%' align='left' />
+
+   在 `Target packages` 中根据分类找到所需的应用包，如果不清楚应用包具体的位置，可以按 `/` 键搜索包名，比如我们要安装 `tar` 命令，由于搜索 `tar` 会出来太多其他无关内容，可以搜索 `package_tar`，可以看到，当前 `=n` 是禁用的状态，其位置为 `Target packages` 的 `System tools` 分类中，可以双击 `ESC` 键退回到主界面再进入到相应的位置，也可以按前面提示的数字直接进入到其所在的位置：
+
+   <Image src='/docs/duo/buildroot/milkv-duo-buildroot-sdk-02.webp' maxWidth='100%' align='left' />
+
+   按空格键选中：
+
+   <Image src='/docs/duo/buildroot/milkv-duo-buildroot-sdk-03.webp' maxWidth='100%' align='left' />
+
+   连续双击 `ESC` 键退出主界面，提示是否保存时，默认是 YES, 直接回车保存退出：
+
+   <Image src='/docs/duo/buildroot/milkv-duo-buildroot-sdk-04.webp' maxWidth='100%' align='left' />
+
+   执行 `make savedefconfig` 命令，将修改的配置保存到原始配置文件中，用 `git status` 命令确认一下，可以看到，原始配置文件已经被修改：
+
+   <Image src='/docs/duo/buildroot/milkv-duo-buildroot-sdk-05.webp' maxWidth='100%' align='left' />
+
+   此时回到 SDK 根目录重新编译即可。
+
+   :::tip
+   这里也可以比较一下编译目录中的旧配置文件和新配置文件的差异，把需要更改的部分直接手动修改到原始配置文件 `milkv-duo_musl_riscv64_defconfig` 中：
+   ```diff
+   diff -u .config.old .config
+   ```
+   :::
+
+   使用新编译的镜像启动后，在 Duo 设备上测试新加的命令，如果出现 `not found` 错误，可能是该包的 `.mk` 配置文件需要补充一下 gcc 的参数，主要是 `TARGET_CFLAGS` 和 `TARGET_LDFLAGS` 两个参数要加上，可以参考如下几个提交：
+
+   1. [buildroot: enable fio](https://github.com/milkv-duo/duo-buildroot-sdk/commit/6ebbd6e219d3efcd9b95086c75702f4f717e7f03#diff-1a84d28825d604f941100ff9b50ec8d63bf84535a3dd6f7e62c421a657e6556a)
+   2. [buildroot: enable spidev_test](https://github.com/milkv-duo/duo-buildroot-sdk/commit/84d6b72eb6c9ff467410376fc982b5ee4f8e3d1f#diff-d0fb4ce2e7555c5cc5399aeaa75e4bf5fd429f034f4d00457f450a994204b97f)
+   3. [buildroot: fix build parameter for coremark package](https://github.com/milkv-duo/duo-buildroot-sdk/commit/cdd4fabb6100f87a61ca7560def558cd9e38f91a)
 
 ### 添加自己的应用包
 
+编译测试自己的应用，不推荐集成到 Buildroot 工程中的方法。建议使用 [duo-examples](https://github.com/milkv-duo/duo-examples/blob/main/README-zh.md) 的方式。
+
+如果确实需要将自己的应用以 Buildroot package 方式编译，可以参考 Buildroot 中预置包的配置进行添加，以下是几个参考链接：
+
+1. [buildroot: add python-evdev required by the pinpong library](https://github.com/milkv-duo/duo-buildroot-sdk/commit/11caee79c7a48f7f6fd4a5d352ccf8976857d522)
+2. [buildroot: add python-freetype required by the pinpong library](https://github.com/milkv-duo/duo-buildroot-sdk/commit/165fc3c4c1adca1d1f635fd2069a5ad67d895c7c)
+
+主要参考 `buildroot-2021.05/package` 中添加的内容。
+
 ## 五、删除不需要的应用包
 
-如果你在自行编译固件的过程中，需要删除一些不需要的应用包来加快编译速度，可以在 Buildroot 的配置文件中将对应的包名删除，以 `milkv-duo` 目标为例，比如不需要编译 Python 相关的库，可以做如下修改后，重新编译生成固件即可。
+如果你在自行编译固件的过程中，需要删除一些不需要的应用包来加快编译速度，或者禁用一些不需要的包，可以采用上述打开 Buildroot 应用包的 `make menuconfig` 方式，禁用相关的包。
+
+也可以在 Buildroot 的配置文件中将对应的包名删除，以 `milkv-duo` 目标为例，比如不需要编译 Python 相关的库，可以做如下修改后，重新编译生成固件即可。
 
 ```diff title="buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig"
 diff --git a/buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig b/buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig
