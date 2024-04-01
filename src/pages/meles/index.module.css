@@ -2474,7 +2474,7 @@ table td {
     }
 
     .gpuIcons {
-        width: calc(242rem*.8*.8);
+        width: 135rem;
         right: 10rem;
         bottom: 10rem;
     }
