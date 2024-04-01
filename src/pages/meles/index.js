@@ -67,8 +67,8 @@ export default () => {
                         <p>4x USB3</p>
                     </li>
                     <li>
-                        <img src="/meles/over-melesicons-02.svg" alt="LPDDR4X 4266MHz" />
-                        <p>LPDDR4X 4266MHz</p>
+                        <img src="/meles/over-melesicons-02.svg" alt="LPDDR4X 4266MT/s" />
+                        <p>LPDDR4X 4266MT/s</p>
                     </li>
                     <li>
                         <img src="/meles/over-melesicons-03.svg" alt="Quad Core C910" />
@@ -80,7 +80,7 @@ export default () => {
                     </li>
                     <li>
                         <img src="/meles/over-melesicons-05.svg" alt="Support WI-FI5" />
-                        <p>Support WI-FI5</p>
+                        <p>Support WIFI5</p>
                     </li>
                     <li>
                         <img src="/meles/over-melesicons-06.svg" alt="Support BT5" />
