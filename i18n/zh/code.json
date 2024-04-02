@@ -908,7 +908,7 @@
     "message": "立即购买"
   },
   "homepage.corporations.meles": {
-    "message": "Milk-V Meles 是基于 TH1520 的信用卡大小的单板计算机（SBC）。它采用四核 RISC-V 64GCV C910，主频高达 2.0GHz。这款 SBC 配备了丰富的接口，拥有强大的计算和人工智能功能，是业余爱好者、制造商、工程师、教师和学生理想的 RISC-V 智能硬件平台。"
+    "message": "Milk-V Meles 是基于 TH1520 的信用卡大小的单板计算机（SBC）。它采用四核 RISC-V 64GCV C910，主频高达 1.85GHz。这款 SBC 配备了丰富的接口，拥有强大的计算和人工智能功能，是业余爱好者、制造商、工程师、教师和学生理想的 RISC-V 智能硬件平台。"
   },
   "homepage.corporations.melesbuynow": {
     "message": "立即购买"
