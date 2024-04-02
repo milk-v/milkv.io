@@ -34,7 +34,7 @@ export default () => {
                         <div className={styles.hzBox}>
                             <img src="/mars/risc-v.svg" alt="RISC-V" />
                             <p>Quad Core RISC-V 64GCV C910</p>
-                            <h2 className={styles.shaodwText}><span>up to</span>2.0GHz</h2>
+                            <h2 className={styles.shaodwText}><span>up to</span>1.85GHz</h2>
                         </div>
                         <img src="/meles/over-meles-size.webp" alt="Meles Size" />
                     </div>
@@ -176,13 +176,13 @@ export default () => {
                     </li>
                 </ul>
                 <h2 className={styles.title}><Translate id='line.title.TechSpecs' /></h2>
-                <p className={styles.moreP}>Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH1520. It is powered by a Quad Core RISC-V 64GCV C910, capable of running up to 2.0GHz. This SBC is packed with rich interfaces and boasts powerful computing and AI capabilities, making it an ideal RISC-V intelligent hardware platform for hobbyists, makers, engineers, teachers, and students.</p>
+                <p className={styles.moreP}>Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH1520. It is powered by a Quad Core RISC-V 64GCV C910, capable of running up to 1.85GHz. This SBC is packed with rich interfaces and boasts powerful computing and AI capabilities, making it an ideal RISC-V intelligent hardware platform for hobbyists, makers, engineers, teachers, and students.</p>
                 <h2 className={styles.headword}><Translate id='duo.info.text.Hardware' /></h2>
                 <table className={styles.tableBox}>
                     <tbody>
                         <tr>
                             <td className={styles.tabline}>SoC</td>
-                            <td className={styles.tabP}>TH1520, Quad Core RISC-V 64GCV C910, up to 2.0GHz</td>
+                            <td className={styles.tabP}>TH1520, Quad Core RISC-V 64GCV C910, up to 1.85GHz</td>
                         </tr>
                         <tr>
                             <td >Memory</td>
