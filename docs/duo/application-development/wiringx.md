@@ -568,11 +568,31 @@ Once you have finished testing the `blink` program implemented in C, if you want
 mv /mnt/system/blink.sh_backup /mnt/system/blink.sh && sync
 ```
 
+### [ADC](https://github.com/milkv-duo/duo-examples/tree/main/adc)
+
+#### [adcRead](https://github.com/milkv-duo/duo-examples/tree/main/adc)
+
+Reading the measured value of the ADC is divided into two versions: shell script and C language. After starting, select the ADC to be read according to the output prompts. After selection, the voltage value measured by the ADC will be printed in a loop.
+
 ### [I2C](https://github.com/milkv-duo/duo-examples/tree/main/i2c)
 
 #### [bmp280_i2c](https://github.com/milkv-duo/duo-examples/tree/main/i2c/bmp280_i2c)
 
 This example code shows how to interface the Milk-V Duo with the popular BMP280 temperature and air pressure sensor manufactured by Bosch.
+
+#### [vl53l0x](https://github.com/milkv-duo/duo-examples/tree/main/i2c/vl53l0x_i2c)
+
+Use the TOF distance sensor VL53L0X module via the I2C interface to read the measured distance.
+
+#### [ssd1306](https://github.com/milkv-duo/duo-examples/tree/main/i2c/ssd1306_i2c)
+
+Display strings on SSD1306 OLED display via I2C interface.
+
+### [SPI](https://github.com/milkv-duo/duo-examples/tree/main/spi)
+
+#### [max6675](https://github.com/milkv-duo/duo-examples/tree/main/spi/max6675_spi)
+
+Connect the K-type thermocouple measurement module MAX6675 through the SPI interface to measure the current temperature on the sensor.
 
 ## 5. Compile wiringX
 

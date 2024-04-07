@@ -568,11 +568,31 @@ mv /mnt/system/blink.sh /mnt/system/blink.sh_backup && sync
 mv /mnt/system/blink.sh_backup /mnt/system/blink.sh && sync
 ```
 
+### [ADC](https://github.com/milkv-duo/duo-examples/tree/main/adc)
+
+#### [adcRead](https://github.com/milkv-duo/duo-examples/tree/main/adc)
+
+读取 ADC 的测量值，分为 shell 脚本和C语言两个版本，启动后根据输出提示选择要读取的 ADC，选择后会循环打印 ADC 测量到的电压值。
+
 ### [I2C](https://github.com/milkv-duo/duo-examples/tree/main/i2c)
 
 #### [bmp280_i2c](https://github.com/milkv-duo/duo-examples/tree/main/i2c/bmp280_i2c)
 
 通过 I2C 接口连接温度气压传感器 BMP280，读取当前温度和气压值。
+
+#### [vl53l0x](https://github.com/milkv-duo/duo-examples/tree/main/i2c/vl53l0x_i2c)
+
+通过 I2C 接口使用 TOF 测距传感器 VL53L0X 模块，读取测量到的距离。
+
+#### [ssd1306](https://github.com/milkv-duo/duo-examples/tree/main/i2c/ssd1306_i2c)
+
+通过 I2C 接口在 SSD1306 OLED 显示屏上显示字符串。
+
+### [SPI](https://github.com/milkv-duo/duo-examples/tree/main/spi)
+
+#### [max6675](https://github.com/milkv-duo/duo-examples/tree/main/spi/max6675_spi)
+
+通过 SPI 接口连接K型热电偶测量模块 MAX6675，测量当前传感器上的温度。
 
 ## 五、编译 wiringX
 
