@@ -1,0 +1,49 @@
+.textBox {
+    position: relative;
+}
+
+.superscript {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline;
+    background-color: #2d88c9;
+    padding: 0.5rem 2rem;
+    border-radius: 0 .4rem 0 .4rem;
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.tippre {
+    background-color: #292d3e;
+    color: #bfc7cc;
+    border-radius: .4rem;
+    padding-top: 5rem;
+}
+
+@media screen and (max-width: 750px) {
+    .textBox {
+        margin: 10rem 0;
+    }
+
+    .superscript {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline;
+        background-color: #2d88c9;
+        padding: 5rem 10rem;
+        border-radius: none;
+        display: block;
+        color: #fff;
+        font-size: 12rem;
+    }
+
+    .tippre {
+        background-color: #292d3e;
+        color: #bfc7cc;
+        border-radius: .4rem;
+        padding-top: 30rem;
+    }
+}
