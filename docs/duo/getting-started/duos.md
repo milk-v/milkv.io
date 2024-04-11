@@ -199,3 +199,89 @@ You can connect to WIFI. After connecting, you can view the assigned IP address 
 :::tip
 If you need to automatically connect to the network at boot, you can put this command in the `/mnt/system/auto.sh` file.
 :::
+
+### eMMC version firmware burning
+
+The DuoS eMMC version does not have firmware burned and needs to be burned using a PC through the USB interface.
+
+:::tip
+Use the USB burning tool under Windows to support eMMC. The firmware version is [V1.1.0](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.1.0) or [latest version](https://github.com/milkv-duo/duo-buildroot-sdk/releases).
+:::
+
+#### Burning in Windows
+
+1. Install driver
+
+   Download the USB driver installation tool: [CviUsbDownloadInstallDriver.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.1.0/CviUsbDownloadInstallDriver.zip). After downloading, unzip and install.
+
+2. Download burning tool
+
+   Download the command line burning tool under Windows [CviBurn_v2.0_cli.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.1.0/CviBurn_v2.0_cli.zip ), unzip it after downloading.
+
+3. Download firmware
+
+   Download the latest version of DuoS eMMC firmware, currently [milkv-duos-emmc-v1.1.0-2024-0410.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/ Duo-V1.1.0/milkv-duos-emmc-v1.1.0-2024-0410.zip), you can create a new rom folder in the burning tool CviBurn_v2.0_cli directory, and extract the downloaded eMMC firmware compressed package to rom directory, the directory structure of the burning tool is as follows:
+
+   ```
+   └───CviBurn_v2.0_cli
+    │   cv_dl_magic.bin
+    │   usb_dl.exe
+    └───rom
+        │   boot.emmc
+        │   fip.bin
+        │   partition_emmc.xml
+        │   rootfs_ext4.emmc
+        |   ...
+   ```
+
+   In the Windows terminal, execute the burning command in the `CviBurn_v2.0_cli` directory:
+
+   ```
+   usb_dl.exe -s linux -c cv181x -i .\rom
+   ```
+
+   *You can also put the firmware in other directories and specify the corresponding directory through the -i parameter in the command. *
+
+   Displays message waiting for USB connection:
+
+   <Image src='/docs/duo/duos/duos-emmc-install-01.webp' maxWidth='100%' align='center' />
+
+   Use **Type-C data cable** to connect DuoS and PC (note, if DuoS currently has an SD card inserted, please remove the SD card first), DuoS will automatically power on and enter the burning mode, and the PC will display the burning status in real time. Recording progress:
+
+   ```
+   [INFO] Waiting for USB device connection: ---
+   [INFO] found usb device vid=0x3346 pid=0x1000
+   [INFO] downloading file: .\rom\boot.emmc
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 3384664/213100824(1%)
+   [INFO] downloading file: .\rom\rootfs_ext4.emmc
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 20161944/213100824(9%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 36939224/213100824(17%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 53716504/213100824(25%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 70493784/213100824(33%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 87271064/213100824(40%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 104048344/213100824(48%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 120825624/213100824(56%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 137602904/213100824(64%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 154380184/213100824(72%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 171157464/213100824(80%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 187934744/213100824(88%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 204712024/213100824(96%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 213100696/213100824(99%)
+   [INFO] USB download complete
+   ```
+
+   After the burning is completed, the DuoS will automatically restart. After booting, you will see the blue LED on the DuoS flashing, indicating that the system has started normally and the burning is successful.
