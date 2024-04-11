@@ -182,7 +182,6 @@ strong {
   .swiper-pagination {
     bottom: 0px !important;
   }
-
 }
 
 @media screen and (max-width: 750px) {
@@ -461,4 +460,35 @@ strong {
     --ifm-h1-font-size: 25rem;
   }
 
+  .markdown pre {
+    margin: 10rem 0;
+  }
+
+  .markdown pre>code>span {
+    font-size: 12rem;
+  }
+
+  code {
+    background-color: transparent !important;
+    padding: 0;
+  }
+
+  .markdown ol>li,
+  .markdown ol>li p {
+    font-size: 12rem;
+  }
+
+  .markdown .clean-btn span,
+  .markdown .clean-btn svg {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .markdown .alert {
+    font-size: 12rem;
+  }
+
+  .markdown .docs_img_d_src-theme-Image-index-module>img {
+    max-width: 100% !important;
+  }
 }
