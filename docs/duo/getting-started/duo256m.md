@@ -27,29 +27,49 @@ Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy sam
 
 ## Duo256M GPIO Pinout
 
+<Image src='/docs/duo/duo/duo-pinout-01.webp' maxWidth='50%' align='center' />
+
+### GPIO pin mapping
+
 <div className='gpio_style'>
 
-| **JTAG** | **SPI**  | **SPI NOR** | **SD**  | **PWM** | **I2C**  | **UART**   | **NAME** | **PIN**                         | **PIN**                          | **NAME**    | **ADC**    | **SPI NOR** | **SPI NAND** | **EMMC**  |
-|:---------|:---------|:------------|:--------|:--------|:---------|:-----------|---------:|:-------------------------------:|:--------------------------------:|:------------|:-----------|:------------|:-------------|:----------|
-| JTAG_TDI |          |             |         |         |          | UART1/2_TX | GP0      | <div className='green'>1</div>  | <div className='red'>40</div>    | VBUS        |            |             |              |           |
-| JTAG_TDO |          |             |         |         |          | UART1/2_RX | GP1      | <div className='green'>2</div>  | <div className='red'>39</div>    | VSYS        |            |             |              |           |
-|          |          |             |         |         |          |            | GND      | <div className='black'>3</div>  | <div className='black'>38</div>  | GND         |            |             |              |           |
-| JTAG_TMS |          |             |         | PWM7    |          | UART1_TX   | GP2      | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN      |            |             |              |           |
-| JTAG_TCK |          |             |         | PWM6    |          | UART1_RX   | GP3      | <div className='green'>5</div>  | <div className='green'>36</div>  | 3V3(OUT)    |            |             |              |           |
-|          |          | NOR1_HOLD   | SD1_D2  | PWM5    | I2C1_SCL | UART2/3_TX | GP4      | <div className='green'>6</div>  | <div className='gray'>35</div>   | Boot Switch |            |             |              |           |
-|          |          | NOR1_WP     | SD1_D1  | PWM6    | I2C1_SDA | UART2/3_RX | GP5      | <div className='green'>7</div>  | <div className='gray'>34</div>   | Audio Out   |            |             |              |           |
-|          |          |             |         |         |          |            | GND      | <div className='black'>8</div>  | <div className='black'>33</div>  | GND         |            |             |              |           |
-|          | SPI2_SCK | NOR1_SCK    | SD1_CLK | PWM9    | I2C3_SDA |            | GP6      | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27        | ADC2(1.8V) |             |              |           |
-|          | SPI2_SDO | NOR1_MOSI   | SD1_CMD | PWM8    | I2C3_SCL |            | GP7      | <div className='green'>10</div> | <div className='green'>31</div>  | GP26        | ADC1(1.8V) |             |              |           |
-|          | SPI2_SDI | NOR1_MISO   | SD1_D0  | PMW7    | I2C1_SDA | UART3_RTS  | GP8      | <div className='green'>11</div> | <div className='orange'>30</div> | RUN         |            |             |              |           |
-|          | SPI2_CS  | NOR1_CS     | SD1_D3  | PWM4    | I2C1_SCL | UART3_CTS  | GP9      | <div className='green'>12</div> | <div className='green'>29</div>  | GP22        |            |             |              |           |
-|          |          |             |         |         |          |            | GND      | <div className='black'>13</div> | <div className='black'>28</div>  | GND         |            |             |              |           |
-|          |          |             |         | PWM10   | I2C2_SDA |            | GP10     | <div className='green'>14</div> | <div className='green'>27</div>  | GP21        |            | NOR_HOLD    | NAND_HOLD    | EMMC_DAT2 |
-|          |          |             |         | PWM11   | I2C2_SCL |            | GP11     | <div className='green'>15</div> | <div className='green'>26</div>  | GP20        |            | NOR_WP      | NAND_WP      | EMMC_DAT3 |
-|          |          |             |         | PWM4    |          | UART0/1_TX | GP12     | <div className='green'>16</div> | <div className='green'>25</div>  | GP19        |            | NOR_MOSI    | NAND_MOSI    | EMMC_DAT0 |
-|          |          |             |         | PWM5    |          | UART0/1_RX | GP13     | <div className='green'>17</div> | <div className='green'>24</div>  | GP18        |            | NOR_SCK     | NAND_SCK     | EMMC_CLK  |
-|          |          |             |         |         |          |            | GND      | <div className='black'>18</div> | <div className='black'>23</div>  | GND         |            |             |              |           |
-|          |          |             |         |         |          |            | GP14     | <div className='green'>19</div> | <div className='green'>22</div>  | GP17        |            | NOR_CS      | NAND_CS      | EMMC_DAT1 |
-|          |          |             |         |         |          |            | GP15     | <div className='green'>20</div> | <div className='green'>21</div>  | GP16        |            | NOR_MISO    | NAND_MISO    | EMMC_CMD  |
+| GROUP | ADDR          | PORT  | CHIP      | NUM     | NAME     | START             |
+|:-----:|:-------------:|:-----:|:---------:|:-------:|:---------|:------------------|
+| gpio0 | gpio@03020000 | porta | gpiochip0 | 480-511 | XGPIOA   | 480 - XGPIOA[0]   |
+| gpio1 | gpio@03021000 | portb | gpiochip1 | 448-479 | XGPIOB   | 448 - XGPIOB[0]   |
+| gpio2 | gpio@03022000 | portc | gpiochip2 | 416-447 | XGPIOC   | 416 - XGPIOC[0]   |
+| gpio3 | gpio@03023000 | portd | gpiochip3 | 384-415 |          |                   |
+| gpio4 | gpio@05021000 | porte | gpiochip4 | 352-383 | PWR_GPIO | 352 - PWR_GPIO[0] |
 
 </div>
+
+<div className='gpio_style'>
+
+| JTAG     | SPI      | SPI NOR   | SD      | PWM   | I2C      | UART       | NUM | SG2002       | NAME | PIN                             | PIN                              | NAME        | NUM | SG2002      | ADC        | SPI NOR  | SPI NAND  | EMMC      |
+|:---------|:---------|:----------|:--------|:------|:---------|:-----------|:---:|:-------------|-----:|:-------------------------------:|:--------------------------------:|:------------|:---:|:------------|:-----------|:---------|:----------|:----------|
+| JTAG_TDI |          |           |         |       |          | UART1/2_TX | 508 | XGPIOA[28]   | GP0  | <div className='green'>1</div>  | <div className='red'>40</div>    | VBUS(5V)    |     |             |            |          |           |           |
+| JTAG_TDO |          |           |         |       |          | UART1/2_RX | 509 | XGPIOA[29]   | GP1  | <div className='green'>2</div>  | <div className='red'>39</div>    | VSYS(5V)    |     |             |            |          |           |           |
+|          |          |           |         |       |          |            |     |              | GND  | <div className='black'>3</div>  | <div className='black'>38</div>  | GND         |     |             |            |          |           |           |
+| JTAG_TMS |          |           |         | PWM7  |          | UART1_TX   | 499 | XGPIOA[19]   | GP2  | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN      |     |             |            |          |           |           |
+| JTAG_TCK |          |           |         | PWM6  |          | UART1_RX   | 498 | XGPIOA[18]   | GP3  | <div className='green'>5</div>  | <div className='green'>36</div>  | 3V3(OUT)    |     |             |            |          |           |           |
+|          |          | NOR1_HOLD | SD1_D2  | PWM5  | I2C1_SCL | UART2/3_TX | 371 | PWR_GPIO[19] | GP4  | <div className='green'>6</div>  | <div className='gray'>35</div>   | Boot Switch |     |             |            |          |           |           |
+|          |          | NOR1_WP   | SD1_D1  | PWM6  | I2C1_SDA | UART2/3_RX | 372 | PWR_GPIO[20] | GP5  | <div className='green'>7</div>  | <div className='gray'>34</div>   | Audio Out   |     |             |            |          |           |           |
+|          |          |           |         |       |          |            |     |              | GND  | <div className='black'>8</div>  | <div className='black'>33</div>  | GND         |     |             |            |          |           |           |
+|          | SPI2_SCK | NOR1_SCK  | SD1_CLK | PWM9  | I2C3_SDA |            | 375 | PWR_GPIO[23] | GP6  | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27        | 454 | XGPIOB[6]   | ADC2(1.8V) |          |           |           |
+|          | SPI2_SDO | NOR1_MOSI | SD1_CMD | PWM8  | I2C3_SCL |            | 374 | PWR_GPIO[22] | GP7  | <div className='green'>10</div> | <div className='green'>31</div>  | GP26        | 451 | XGPIOB[3]   | ADC1(1.8V) |          |           |           |
+|          | SPI2_SDI | NOR1_MISO | SD1_D0  | PMW7  | I2C1_SDA | UART3_RTS  | 373 | PWR_GPIO[21] | GP8  | <div className='green'>11</div> | <div className='orange'>30</div> | RUN         |     |             |            |          |           |           |
+|          | SPI2_CS  | NOR1_CS   | SD1_D3  | PWM4  | I2C1_SCL | UART3_CTS  | 370 | PWR_GPIO[18] | GP9  | <div className='green'>12</div> | <div className='green'>29</div>  | GP22        | 356 | PWR_GPIO[4] |            |          |           |           |
+|          |          |           |         |       |          |            |     |              | GND  | <div className='black'>13</div> | <div className='black'>28</div>  | GND         |     |             |            |          |           |           |
+|          |          |           |         | PWM10 | I2C2_SDA |            | 430 | XGPIOC[14]   | GP10 | <div className='green'>14</div> | <div className='green'>27</div>  | GP21        | 506 | XGPIOA[26]  |            | NOR_HOLD | NAND_HOLD | EMMC_DAT2 |
+|          |          |           |         | PWM11 | I2C2_SCL |            | 431 | XGPIOC[15]   | GP11 | <div className='green'>15</div> | <div className='green'>26</div>  | GP20        | 507 | XGPIOA[27]  |            | NOR_WP   | NAND_WP   | EMMC_DAT3 |
+|          |          |           |         | PWM4  |          | UART0/1_TX | 496 | XGPIOA[16]   | GP12 | <div className='green'>16</div> | <div className='green'>25</div>  | GP19        | 505 | XGPIOA[25]  |            | NOR_MOSI | NAND_MOSI | EMMC_DAT0 |
+|          |          |           |         | PWM5  |          | UART0/1_RX | 497 | XGPIOA[17]   | GP13 | <div className='green'>17</div> | <div className='green'>24</div>  | GP18        | 502 | XGPIOA[22]  |            | NOR_SCK  | NAND_SCK  | EMMC_CLK  |
+|          |          |           |         |       |          |            |     |              | GND  | <div className='black'>18</div> | <div className='black'>23</div>  | GND         |     |             |            |          |           |           |
+|          |          |           |         |       |          |            | 494 | XGPIOA[14]   | GP14 | <div className='green'>19</div> | <div className='green'>22</div>  | GP17        | 504 | XGPIOA[24]  |            | NOR_CS   | NAND_CS   | EMMC_DAT1 |
+|          |          |           |         |       |          |            | 495 | XGPIOA[15]   | GP15 | <div className='green'>20</div> | <div className='green'>21</div>  | GP16        | 503 | XGPIOA[23]  |            | NOR_MISO | NAND_MISO | EMMC_CMD  |
+|          |          |           |         |       |          |            |     |              |      | &nbsp;                          |                                  |             |     |             |            |          |           |           |
+|          |          |           |         |       |          |            | 354 | PWR_GPIO[2]  |      | <div className='blue'>LED</div> |                                  |             |     |             |            |          |           |           |
+
+</div>
+
+The logic level of `GP26` and `GP27` pins is 1.8V, and the logic level of other GPIO pins is 3.3V logic level.
