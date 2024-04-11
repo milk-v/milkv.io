@@ -41,17 +41,19 @@ Milk-V 是 SG2002 芯片的全球授权经销商。您可以直接从我们的�
 
 </div>
 
+### GPIO 引脚分布
+
 <div className='gpio_style'>
 
-| JTAG     | SPI      | SPI NOR   | SD      | PWM   | I2C      | UART       | NUM | SG2002       | NAME | PIN                             | PIN                              | NAME        | NUM | SG2002      | ADC        | SPI NOR  | SPI NAND  | EMMC      |
+| JTAG     | SPI      | SPI-NOR   | SD      | PWM   | I2C      | UART       | NUM | SG2002       | NAME | PIN                             | PIN                              | NAME        | NUM | SG2002      | ADC        | SPI-NOR  | SPI-NAND  | EMMC      |
 |:---------|:---------|:----------|:--------|:------|:---------|:-----------|:---:|:-------------|-----:|:-------------------------------:|:--------------------------------:|:------------|:---:|:------------|:-----------|:---------|:----------|:----------|
 | JTAG_TDI |          |           |         |       |          | UART1/2_TX | 508 | XGPIOA[28]   | GP0  | <div className='green'>1</div>  | <div className='red'>40</div>    | VBUS(5V)    |     |             |            |          |           |           |
 | JTAG_TDO |          |           |         |       |          | UART1/2_RX | 509 | XGPIOA[29]   | GP1  | <div className='green'>2</div>  | <div className='red'>39</div>    | VSYS(5V)    |     |             |            |          |           |           |
 |          |          |           |         |       |          |            |     |              | GND  | <div className='black'>3</div>  | <div className='black'>38</div>  | GND         |     |             |            |          |           |           |
 | JTAG_TMS |          |           |         | PWM7  |          | UART1_TX   | 499 | XGPIOA[19]   | GP2  | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN      |     |             |            |          |           |           |
 | JTAG_TCK |          |           |         | PWM6  |          | UART1_RX   | 498 | XGPIOA[18]   | GP3  | <div className='green'>5</div>  | <div className='green'>36</div>  | 3V3(OUT)    |     |             |            |          |           |           |
-|          |          | NOR1_HOLD | SD1_D2  | PWM5  | I2C1_SCL | UART2/3_TX | 371 | PWR_GPIO[19] | GP4  | <div className='green'>6</div>  | <div className='gray'>35</div>   | Boot Switch |     |             |            |          |           |           |
-|          |          | NOR1_WP   | SD1_D1  | PWM6  | I2C1_SDA | UART2/3_RX | 372 | PWR_GPIO[20] | GP5  | <div className='green'>7</div>  | <div className='gray'>34</div>   | Audio Out   |     |             |            |          |           |           |
+|          |          | NOR1_HOLD | SD1_D2  | PWM5  | I2C1_SCL | UART2/3_TX | 371 | PWR_GPIO[19] | GP4  | <div className='green'>6</div>  | <div className='gray'>35</div>   | Boot-Switch |     |             |            |          |           |           |
+|          |          | NOR1_WP   | SD1_D1  | PWM6  | I2C1_SDA | UART2/3_RX | 372 | PWR_GPIO[20] | GP5  | <div className='green'>7</div>  | <div className='gray'>34</div>   | Audio-Out   |     |             |            |          |           |           |
 |          |          |           |         |       |          |            |     |              | GND  | <div className='black'>8</div>  | <div className='black'>33</div>  | GND         |     |             |            |          |           |           |
 |          | SPI2_SCK | NOR1_SCK  | SD1_CLK | PWM9  | I2C3_SDA |            | 375 | PWR_GPIO[23] | GP6  | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27        | 454 | XGPIOB[6]   | ADC2(1.8V) |          |           |           |
 |          | SPI2_SDO | NOR1_MOSI | SD1_CMD | PWM8  | I2C3_SCL |            | 374 | PWR_GPIO[22] | GP7  | <div className='green'>10</div> | <div className='green'>31</div>  | GP26        | 451 | XGPIOB[3]   | ADC1(1.8V) |          |           |           |
