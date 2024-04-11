@@ -199,3 +199,89 @@ wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
 :::tip
 如果需要开机自动连网，可以把该命令放到 `/mnt/system/auto.sh` 文件中。
 :::
+
+### eMMC 版本固件烧录
+
+DuoS eMMC 版本出厂未烧录固件，需要使用 PC 通过 USB 接口烧录。
+
+:::tip
+使用 Windows 下的 USB 烧录工具支持 eMMC 固件版本为 [V1.1.0](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.1.0) 或[更新的版本](https://github.com/milkv-duo/duo-buildroot-sdk/releases)。
+:::
+
+#### Windows 环境下烧录
+
+1. 安装驱动
+
+   下载 USB 驱动安装工具：[CviUsbDownloadInstallDriver.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.1.0/CviUsbDownloadInstallDriver.zip)。下载后解压安装即可。
+
+2. 下载烧录工具
+
+   下载 Windows 下的命令行烧录工具 [CviBurn_v2.0_cli.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.1.0/CviBurn_v2.0_cli.zip)，下载后解压。
+
+3. 下载固件
+
+   下载 DuoS eMMC 最新版本的固件，当前是 [milkv-duos-emmc-v1.1.0-2024-0410.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.1.0/milkv-duos-emmc-v1.1.0-2024-0410.zip)，可以在烧录工具 CviBurn_v2.0_cli 目录下新建 rom 文件夹，并将下载好的 eMMC 固件压缩包解压到 rom 目录下，此时烧录工具的目录结构如下：
+
+   ```
+   └───CviBurn_v2.0_cli
+    │   cv_dl_magic.bin
+    │   usb_dl.exe
+    └───rom
+        │   boot.emmc
+        │   fip.bin
+        │   partition_emmc.xml
+        │   rootfs_ext4.emmc
+        |   ...
+   ```
+
+   在 Windows 的终端中，`CviBurn_v2.0_cli` 目录下执行烧录命令：
+
+   ```
+   usb_dl.exe -s linux -c cv181x -i .\rom
+   ```
+
+   *也可以把固件放到其他目录，通过命令中的 -i 参数指定到对应的目录即可。*
+
+   显示等待 USB 连接的信息：
+
+   <Image src='/docs/duo/duos/duos-emmc-install-01.webp' maxWidth='100%' align='center' />
+
+   用 **Type-C 数据线** 连接 DuoS 和 PC （注意，目前如果 DuoS 有插 SD 卡，请先将 SD 卡取下），DuoS 会自动上电进入烧录模式，PC 端会实时显示烧录进度：
+
+   ```
+   [INFO] Waiting for USB device connection: ---
+   [INFO] found usb device vid=0x3346 pid=0x1000
+   [INFO] downloading file: .\rom\boot.emmc
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 3384664/213100824(1%)
+   [INFO] downloading file: .\rom\rootfs_ext4.emmc
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 20161944/213100824(9%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 36939224/213100824(17%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 53716504/213100824(25%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 70493784/213100824(33%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 87271064/213100824(40%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 104048344/213100824(48%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 120825624/213100824(56%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 137602904/213100824(64%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 154380184/213100824(72%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 171157464/213100824(80%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 187934744/213100824(88%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 204712024/213100824(96%)
+   [INFO] CVI_USB_PROGRAM
+   [INFO] updated size: 213100696/213100824(99%)
+   [INFO] USB download complete
+   ```
+
+   烧录完成后，DuoS 会自动重启，开机后看到 DuoS 上的蓝色 LED 闪烁，说明系统已经正常启动，烧录成功。
