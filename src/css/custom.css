@@ -488,7 +488,24 @@ strong {
     font-size: 12rem;
   }
 
+  .markdown .gpio_style {
+    overflow: auto;
+  }
+
   .markdown .docs_img_d_src-theme-Image-index-module>img {
     max-width: 100% !important;
+  }
+
+  .title_node_modules-\@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module {
+    font-size: 16rem;
+    margin: 15rem 0 10rem;
+  }
+
+  .cardTitle_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module {
+    font-size: 14rem !important;
+  }
+
+  .cardDescription_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module {
+    font-size: 12rem !important;
   }
 }
