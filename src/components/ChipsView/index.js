@@ -392,7 +392,7 @@ export default (props) => {
             }}>
                 <img src="/chips/backtop.svg" alt="TOP" />
             </div>
-            <BuyPop type={chipName} />
+            <BuyPop type={chipName.toUpperCase()} />
             <SupportUs />
         </Layout>
     )

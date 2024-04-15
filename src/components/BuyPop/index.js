@@ -47,15 +47,15 @@ export default (props) => {
             taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=764856801789&skuId=5260392404476',
             arace_url: 'https://arace.tech/products/milk-v-vega',
         },
-        'cv1800b': {
+        'CV1800B': {
             taobao_url: 'https://item.taobao.com/item.htm?id=748015537624&skuId=5330447539309&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA',
             arace_url: 'https://arace.tech/products/sophon-cv1800b-5pcs',
         },
-        'sg2000': {
+        'SG2000': {
             taobao_url: 'https://item.taobao.com/item.htm?id=748015537624&skuId=5258773672599&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA',
             arace_url: 'https://arace.tech/products/sophon-cv1800b-5pcs',
         },
-        'sg2002': {
+        'SG2002': {
             taobao_url: 'https://item.taobao.com/item.htm?id=748015537624&skuId=5258773672598&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA',
             arace_url: 'https://arace.tech/products/sophon-cv1800b-5pcs',
         },
@@ -91,9 +91,9 @@ export default (props) => {
         'mars-cm': '/components/buy-marscm-view.webp',
         'meles': '/components/buy-meles-view.webp',
         'vega': '/components/buy-vega-view.webp',
-        'cv1800b': '/components/buy-cv1800b-view.webp',
-        'sg2000': '/components/buy-sg2000-view.webp',
-        'sg2002': '/components/buy-sg2002-view.webp',
+        'CV1800B': '/components/buy-cv1800b-view.webp',
+        'SG2000': '/components/buy-sg2000-view.webp',
+        'SG2002': '/components/buy-sg2002-view.webp',
     }
     function transformString(str) {
         const words = str.split('-');
