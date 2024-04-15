@@ -264,6 +264,12 @@
         "resources": {
             "Development Hardware": [
                 {
+                    "resources_name": "Duo S",
+                    "resources_url": "https://milkv.io/duo-s",
+                    "resources_img": "/chips/duos.webp",
+                    "resources_info": " The Milk-V Duo S is an upgraded version of the Duo, utilizing an upgraded SG2000 host controller with larger 512MB of RAM and expanded IO functions. Optional eMMC and WI-FI/BT, support switching ARM/RISC-V boot."
+                },
+                {
                     "resources_name": "Huashan Sect",
                     "resources_url": "https://www.hw100k.com/coursedetail?id=195",
                     "resources_img": "/chips/test-img.webp",
@@ -273,6 +279,12 @@
         },
         "resources_zh": {
             "硬件": [
+                {
+                    "resources_name": "Duo S",
+                    "resources_url": "https://milkv.io/duo-s",
+                    "resources_img": "/chips/duos.webp",
+                    "resources_info": " Milk-V Duo S 是 Duo 的升级版，采用了升级版 SG2000 主控，拥有更大的 512MB 内存，并扩展了 IO 功能。可选 eMMC 与 WI-FI/BT，支持一键切换 ARM/RISC-V 启动。"
+                },
                 {
                     "resources_name": "华山派",
                     "resources_url": "https://www.hw100k.com/coursedetail?id=195",
