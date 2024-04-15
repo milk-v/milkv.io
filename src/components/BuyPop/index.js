@@ -128,7 +128,7 @@ export default (props) => {
                                         } else if (item === 'chilli_url') {
                                             shipping_location = 'Australia'
                                         } else {
-                                            shipping_location = 'China'
+                                            shipping_location = 'China Mainland'
                                         }
                                         return <li key={key} onClick={() => { window.open(buy_info[type][item], '_blank') }}>
                                             <img src={image_data[item]} alt={text_data[item]} />
