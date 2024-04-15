@@ -426,7 +426,57 @@ transfer
 
 ### PWM 使用示例
 
+硬件连接如下，将 DUO 的 GP4 连接到 LED 负极。
+
+<Image src='/docs/duo/arduino/duo-arduino-12.jpg' minWidth='40%' maxWidth='60%' align='left' />
+
+测试代码：
+```C
+void setup() {
+  pinMode(6, OUTPUT);
+}
+
+void loop() {
+  for(int i = 128; i < 255; i++)
+  {
+    analogWrite(6,i);
+    delay(50);
+  }
+  for(int i = 255; i > 128; i--)
+  {
+    analogWrite(6,i);
+    delay(50);
+  }
+}
+```
+
+编译并烧录后能观察到LED灯呼吸效果。
+
 ### ADC 使用示例
+
+硬件连接如下，将 DUO 的 GP26 连接到电位器信号脚，其他两脚分别连接电源正极和负极。
+
+<Image src='/docs/duo/arduino/duo-arduino-13.jpg' minWidth='40%' maxWidth='60%' align='left' />
+
+测试代码：
+```C
+int adc_get_val = 0;
+
+void setup() {
+  pinMode(0,OUTPUT);
+}
+
+void loop() {
+  adc_get_val = analogRead(31);
+
+  digitalWrite(0,HIGH);
+  delay(adc_get_val);
+  digitalWrite(0,LOW);
+  delay(adc_get_val);
+}
+```
+
+编译并烧录后能观察到板载 LED 灯闪烁频率随电位器位置改变而改变。
 
 ## 四、Demo和项目说明
 

@@ -424,7 +424,57 @@ transfer
 
 ### PWM Usage Example
 
+The hardware connection is as follows. Connect the DUO's GP4 to the negative lead of the LED.
+
+<Image src='/docs/duo/arduino/duo-arduino-12.jpg' minWidth='40%' maxWidth='60%' align='left' />
+
+Test code:
+```C
+void setup() {
+  pinMode(6, OUTPUT);
+}
+
+void loop() {
+  for(int i = 128; i < 255; i++)
+  {
+    analogWrite(6,i);
+    delay(50);
+  }
+  for(int i = 255; i > 128; i--)
+  {
+    analogWrite(6,i);
+    delay(50);
+  }
+}
+```
+
+After compiling and burning, you can observe the LED light breathing effect.
+
 ### ADC Usage Example
+
+The hardware connection is as follows. Connect the GP26 of DUO to the signal pin of the potentiometer, and connect the other two pins to the positive and negative poles of the power supply respectively.
+
+<Image src='/docs/duo/arduino/duo-arduino-13.jpg' minWidth='40%' maxWidth='60%' align='left' />
+
+Test code:
+```C
+int adc_get_val = 0;
+
+void setup() {
+  pinMode(0,OUTPUT);
+}
+
+void loop() {
+  adc_get_val = analogRead(31);
+
+  digitalWrite(0,HIGH);
+  delay(adc_get_val);
+  digitalWrite(0,LOW);
+  delay(adc_get_val);
+}
+```
+
+After compiling and burning, you can observe that the flashing frequency of the onboard LED changes as the position of the potentiometer changes.
 
 ## 4. Demo and Projects
 
