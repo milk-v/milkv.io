@@ -93,9 +93,13 @@ Milk-V 是 SG2002 芯片的全球授权经销商。您可以直接从我们的�
 
 ### LED 引脚
 
-| NAME | SG2000     | NUM |
-|:----:|:----------:|:---:|
-| LED  | XGPIOA[29] | 509 |
+<div className='gpio_style'>
+
+| NAME                            | SG2000     | NUM |
+|:-------------------------------:|:----------:|:---:|
+| <div className='blue'>LED</div> | XGPIOA[29] | 509 |
+
+</div>
 
 ## DuoS 使用指引
 

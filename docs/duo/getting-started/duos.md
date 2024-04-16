@@ -93,9 +93,13 @@ GPIO on `Header J4` use 1.8V logic levels.
 
 ### LED PIN
 
-| NAME | SG2000     | NUM |
-|:----:|:----------:|:---:|
-| LED  | XGPIOA[29] | 509 |
+<div className='gpio_style'>
+
+| NAME                            | SG2000     | NUM |
+|:-------------------------------:|:----------:|:---:|
+| <div className='blue'>LED</div> | XGPIOA[29] | 509 |
+
+</div>
 
 ## DuoS User Guide
 
