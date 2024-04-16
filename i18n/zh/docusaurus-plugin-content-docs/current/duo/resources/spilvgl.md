@@ -31,7 +31,7 @@ cd duo-buildroot-sdk
 git apply --reject ../duo-lvgl-fb-demo/duo-kernel-fb_st7789v.patch
 ```
 
-确认内核配置有打开 FB TFT 的支持：
+确认内核配置有打开 FB TFT 的支持（最新的 Buildroot SDK 中默认都已经支持）：
 ```
 CONFIG_FB=y
 CONFIG_FB_TFT=y
@@ -66,31 +66,54 @@ CONFIG_FB_TFT_ST7789V=y
   ```
   ./build.sh milkv-duo256m
   ```
+- DuoS SD
+  ```
+  ./build.sh milkv-duos-sd
+  ```
+- DuoS eMMC
+  ```
+  ./build.sh milkv-duos-emmc
+  ```
 
 编译完后，将 out 目录中对应的 img 文件烧录到 TF 卡中。
 
 ### 硬件连接
 
-接下来根据 Duo 的引脚位置参考，进行连线配置
+接下来根据 Duo 的引脚位置参考，进行连线配置。注意该显示屏 BL 引脚是背光使能引脚，高电平背光亮。
+
+#### Duo 和 Duo256M
 
 <div className='gpio_style'>
 
-| Duo 物理引脚       | ST7789V  | 
-|:------------------|:--------:|
-| PIN 38: GND       | GND      | 
-| PIN 36: 3.3V(OUT) | VCC      | 
-| PIN 9:  SPI2_SCK  | SCL      | 
-| PIN 10: SPI2_SDO  | SDA      | 
-| PIN 21: GP16      | RES      | 
-| PIN 22: GP17      | DC       | 
-| PIN 12: SPI2_CS_X | CS       | 
-| PIN 36: 3.3V(OUT) | BL       |
+| Duo/Duo256M 物理引脚 | ST7789V  |
+|:-------------------|:--------:|
+| PIN 38: GND        | GND      |
+| PIN 36: 3.3V(OUT)  | VCC      |
+| PIN 9:  SPI2_SCK   | SCL      |
+| PIN 10: SPI2_SDO   | SDA      |
+| PIN 21: GP16       | RES      |
+| PIN 22: GP17       | DC       |
+| PIN 12: SPI2_CS_X  | CS       |
+| PIN 36: 3.3V(OUT)  | BL       |
 
 </div>
 
-注意该显示屏 BL 引脚是背光使能引脚，高电平背光亮。
-
 <Image src='/docs/duo/lvgl/duo-lvgl-fb-240x320.webp' maxWidth='90%' align='center' />
+
+#### DuoS
+
+| DuoS 物理引脚      | ST7789V  |
+|:------------------|:--------:|
+| PIN 25: GND       | GND      |
+| PIN 17: 3V3       | VCC      |
+| PIN 23: SPI3_SCK  | SCL      |
+| PIN 19: SPI3_SDO  | SDA      |
+| PIN 26: A28       | RES      |
+| PIN 22: A18       | DC       |
+| PIN 24: B16       | CS       |
+| PIN  1: 3V3       | BL       |
+
+<Image src='/docs/duo/lvgl/duos-lvgl-fb-240x320.webp' maxWidth='90%' align='center' />
 
 ### 测试屏显示是否正常
 
@@ -111,20 +134,20 @@ Duo 插入上面烧录好的 TF 卡，上电开机，通过串口终端或者 SS
 cat /dev/random > /dev/fb0
 ```
 
-白屏测试：
+清空屏幕(黑屏)：
 ```
 cat /dev/zero > /dev/fb0
 ```
 
-能正常显示花屏和白屏，说明屏可以正常使用了。
+能正常显示花屏和黑屏，说明屏可以正常使用了。
 
 ## LVGL 测试
 
 ### 下载 LVGL frame buffer demo 源码
 
-下载 lv_port_linux_frame_buffer 仓库源码, LVGL 已提供 Linux 的 fb 工程，该工程已通过 git submodule 子仓库形式集成了 lvgl 和 lvgl_drivers 两个子仓库。
+下载 `lv_port_linux_frame_buffer` 仓库源码, LVGL 已提供 Linux 的 fb 工程，该工程已通过 git submodule 子仓库形式集成了 lvgl 和 lvgl_drivers 两个子仓库。
 
-该仓库已整理后集成到了前面下载的 Duo LVGL Demo 代码中，并适配 Duo 和 该 SPI 显示屏，可以直接编译测试。
+该仓库已整理后集成到了前面下载的 Duo LVGL Demo 代码中，并适配 Duo 和该 SPI 显示屏，可以直接编译测试。
 
 ### 下载交叉编译工具链
 
@@ -132,13 +155,14 @@ cat /dev/zero > /dev/fb0
 ```
 git clone https://github.com/milkv-duo/host-tools.git
 ```
-也可以直接使用 SDK 中 host-tools 目录，二者是一样的。
+也可以直接使用 Buildroot SDK 中 host-tools 目录，二者是一样的。
 
 进入到工具链目录中 `export` 工具链到环境变量中：
 ```
 cd host-tools
 export PATH=$PATH:$(pwd)/gcc/riscv64-linux-musl-x86_64/bin
 ```
+
 验证工具链是否可用：
 ```
 riscv64-unknown-linux-musl-gcc -v
@@ -163,6 +187,7 @@ scp demo root@192.168.42.1:/root/
 ```
 ssh root@192.168.42.1
 ```
+
 为 demo 程序添加可执行权限：
 ```
 chmod +x demo
