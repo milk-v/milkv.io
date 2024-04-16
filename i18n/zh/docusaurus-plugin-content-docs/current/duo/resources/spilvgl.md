@@ -102,6 +102,8 @@ CONFIG_FB_TFT_ST7789V=y
 
 #### DuoS
 
+<div className='gpio_style'>
+
 | DuoS 物理引脚      | ST7789V  |
 |:------------------|:--------:|
 | PIN 25: GND       | GND      |
@@ -113,7 +115,9 @@ CONFIG_FB_TFT_ST7789V=y
 | PIN 24: B16       | CS       |
 | PIN  1: 3V3       | BL       |
 
-<Image src='/docs/duo/lvgl/duos-lvgl-fb-240x320.webp' maxWidth='90%' align='center' />
+</div>
+
+<Image src='/docs/duo/lvgl/duos-lvgl-fb-240x320.webp' maxWidth='60%' align='center' />
 
 ### 测试屏显示是否正常
 

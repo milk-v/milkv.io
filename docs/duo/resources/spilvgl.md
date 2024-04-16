@@ -102,6 +102,8 @@ Next, perform wiring configuration based on the Duo pin position reference. Note
 
 #### DuoS
 
+<div className='gpio_style'>
+
 | DuoS Pin          | ST7789V  |
 |:------------------|:--------:|
 | PIN 25: GND       | GND      |
@@ -113,7 +115,9 @@ Next, perform wiring configuration based on the Duo pin position reference. Note
 | PIN 24: B16       | CS       |
 | PIN  1: 3V3       | BL       |
 
-<Image src='/docs/duo/lvgl/duos-lvgl-fb-240x320.webp' maxWidth='90%' align='center' />
+</div>
+
+<Image src='/docs/duo/lvgl/duos-lvgl-fb-240x320.webp' maxWidth='60%' align='center' />
 
 ### Test screen display
 
