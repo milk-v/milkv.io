@@ -226,14 +226,14 @@ DuoS eMMC 版本出厂未烧录固件，需要使用 PC 通过 USB 接口烧录�
 
 2. 下载烧录工具
 
-   下载 Windows 下的命令行烧录工具 [CviBurn_v2.0_cli.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.1.0/CviBurn_v2.0_cli.zip)，下载后解压。
+   下载 Windows 下的命令行烧录工具 [CviBurn_v2.0_cli_windows.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.1.0/CviBurn_v2.0_cli_windows.zip)，下载后解压。
 
 3. 下载固件
 
-   下载 DuoS eMMC 最新版本的固件，当前是 [milkv-duos-emmc-v1.1.0-2024-0410.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.1.0/milkv-duos-emmc-v1.1.0-2024-0410.zip)，可以在烧录工具 CviBurn_v2.0_cli 目录下新建 rom 文件夹，并将下载好的 eMMC 固件压缩包解压到 rom 目录下，此时烧录工具的目录结构如下：
+   下载 DuoS eMMC 最新版本的固件，当前是 [milkv-duos-emmc-v1.1.0-2024-0410.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.1.0/milkv-duos-emmc-v1.1.0-2024-0410.zip)，可以在烧录工具 `CviBurn_v2.0_cli_windows` 目录下新建 rom 文件夹，并将下载好的 eMMC 固件压缩包解压到 rom 目录下，此时烧录工具的目录结构如下：
 
    ```
-   └───CviBurn_v2.0_cli
+   └───CviBurn_v2.0_cli_windows
     │   cv_dl_magic.bin
     │   usb_dl.exe
     └───rom
@@ -244,7 +244,7 @@ DuoS eMMC 版本出厂未烧录固件，需要使用 PC 通过 USB 接口烧录�
         |   ...
    ```
 
-   在 Windows 的终端中，`CviBurn_v2.0_cli` 目录下执行烧录命令：
+   在 Windows 的终端中，`CviBurn_v2.0_cli_windows` 目录下执行烧录命令：
 
    ```
    usb_dl.exe -s linux -c cv181x -i .\rom
