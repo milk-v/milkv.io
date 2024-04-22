@@ -27,7 +27,7 @@ Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy sam
 
 ## Duo256M GPIO Pinout
 
-<Image src='/docs/duo/duo/duo-pinout-01.webp' maxWidth='50%' align='center' />
+<Image src='/docs/duo/duo256m/duo256m-pinout-01.webp' maxWidth='50%' align='center' />
 
 ### GPIO pin mapping
 
@@ -75,3 +75,22 @@ Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy sam
 </div>
 
 The logic level of `GP26` and `GP27` pins is 1.8V, and the logic level of other GPIO pins is 3.3V logic level.
+
+## Duo256M User Guide
+
+### RISC-V and ARM switching
+
+The large core of Duo256M can choose to use RISC-V or ARM processor. The RISC-V core is used by default. You can switch to the ARM core by shorting physical pin 35 (Boot-Switch) and GND. If you find that Duo256M cannot start normally during use, please first check whether the core currently used is consistent with the firmware used.
+
+<Image src='/docs/duo/duo256m/duo256m-arm-riscv-switch.webp' maxWidth='50%' align='center' />
+
+If the debug serial port is connected, you can see in the first line of the boot log that starting with `C` means starting from the RISC-V core, and starting with `B` means starting from the ARM core.
+
+- RISC-V:
+  ```
+  C.SCS/0/0.C.SCS/0/0.WD.URPL.USBI.USBW
+  ```
+- ARM:
+  ```
+  B.SCS/0/0.WD.URPL.B.SCS/0/0.WD.URPL.USBI.USBW
+  ```

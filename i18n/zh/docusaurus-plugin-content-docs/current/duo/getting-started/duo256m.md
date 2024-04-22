@@ -25,7 +25,7 @@ Milk-V 是 SG2002 芯片的全球授权经销商。您可以直接从我们的�
 
 ## Duo256M GPIO 引脚分配
 
-<Image src='/docs/duo/duo/duo-pinout-01.webp' maxWidth='50%' align='center' />
+<Image src='/docs/duo/duo256m/duo256m-pinout-01.webp' maxWidth='50%' align='center' />
 
 ### GPIO 引脚映射
 
@@ -73,3 +73,22 @@ Milk-V 是 SG2002 芯片的全球授权经销商。您可以直接从我们的�
 </div>
 
 GP26 和 GP27 引脚逻辑电平为 1.8V, 其他 GPIO 逻辑电平均为 3.3V 逻辑电平。
+
+## Duo256M 使用指引
+
+### RISC-V 与 ARM 切换
+
+Duo256M 的大核可以选择使用 RISC-V 或者 ARM，默认使用的是 RISC-V 核，可以通过短接物理引脚 35（Boot-Switch）和 GND 来切换到 ARM 核。如果您在使用中发现 Duo256M 不能正常启动，请先检查当前使用的核与使用的固件是否一致。
+
+<Image src='/docs/duo/duo256m/duo256m-arm-riscv-switch.webp' maxWidth='50%' align='center' />
+
+如果连接了调试串口，可以在第一行开机日志中看到，以 `C` 开头时代表从 RISC-V 核启动，以 `B` 开头时代表从 ARM 核启动。
+
+- RISC-V:
+  ```
+  C.SCS/0/0.C.SCS/0/0.WD.URPL.USBI.USBW
+  ```
+- ARM:
+  ```
+  B.SCS/0/0.WD.URPL.B.SCS/0/0.WD.URPL.USBI.USBW
+  ```
