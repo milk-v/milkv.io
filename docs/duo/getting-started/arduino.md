@@ -476,6 +476,89 @@ void loop() {
 
 After compiling and burning, you can observe that the flashing frequency of the onboard LED changes as the position of the potentiometer changes.
 
+### MailBox Usage Example
+
+Compile and burn the following code into the small core Arduino. This program can read the information sent by the large core from the MailBox and print it to the serial port, for serial port wiring, please refer to the [UART Usage Example](#uart-usage-example) in this chapter.
+
+```C
+
+#include "mailbox.h"
+
+struct valid_t {
+  uint8_t linux_valid;
+  uint8_t rtos_valid;
+} __attribute__((packed));
+
+typedef union resv_t {
+  struct valid_t valid;
+  unsigned short mstime;  // 0 : noblock, -1 : block infinite
+} resv_t;
+
+typedef struct cmdqu_t cmdqu_t;
+/* cmdqu size should be 8 bytes because of mailbox buffer size */
+struct cmdqu_t {
+  uint8_t ip_id;
+  uint8_t cmd_id : 7;
+  uint8_t block : 1;
+  union resv_t resv;
+  unsigned int param_ptr;
+} __attribute__((packed)) __attribute__((aligned(0x8)));
+
+void showmsg(MailboxMsg msg) {
+  cmdqu_t *cmdq;
+  Serial.print("Get Msg: ");
+  Serial.println(*(msg.data), HEX);
+  cmdq = (cmdqu_t *)msg.data;
+  Serial.printf("cmdq->ip_id = %d\r\n", cmdq->ip_id);
+  Serial.printf("cmdq->cmd_id = %x\r\n", cmdq->cmd_id);
+  Serial.printf("cmdq->block = %d\r\n", cmdq->block);
+  Serial.printf("cmdq->para_ptr = %x\r\n", cmdq->param_ptr);
+  *(msg.data) = 0;
+}
+
+void setup() {
+  Serial.begin(115200);
+  mailbox_init(false);
+  mailbox_register(0, showmsg);
+  mailbox_enable_receive(0);
+  Serial.println("Mailbox Start");
+}
+
+void loop() {
+  
+}
+
+```
+
+Compile the test program [mailbox_test](https://github.com/milkv-duo/duo-examples/tree/main/mailbox-test) and run it on large-core Linux. The test program has been stored in the [duo-examples](https://github.com/milkv-duo/duo-examples) warehouse. You can refer to [README](https://github.com/milkv-duo/duo-examples/blob/main/README.md) for compilation.
+
+After running, the big core Linux output：
+
+```
+
+C906B: cmd.param_ptr = 0x2
+C906B: cmd.param_ptr = 0x3
+
+```
+
+Small core serial port printing：
+
+```
+
+Mailbox Start
+Get Msg: 19300
+cmdq->ip_id = 0
+cmdq->cmd_id = 13
+cmdq->block = 1
+cmdq->para_ptr = 2
+Get Msg: 19300
+cmdq->ip_id = 0
+cmdq->cmd_id = 13
+cmdq->block = 1
+cmdq->para_ptr = 3
+
+```
+
 ## 4. Demo and Projects
 
 Coming Soon ...

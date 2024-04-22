@@ -478,6 +478,89 @@ void loop() {
 
 编译并烧录后能观察到板载 LED 灯闪烁频率随电位器位置改变而改变。
 
+### MailBox 使用示例
+
+将如下代码编译并烧录到小核 Arduino 中，这段程序能够从 MailBox 中读取大核发来的信息并打印到串口,串口接线请参考本章[UART使用示例](#uart-使用示例)。
+
+```C
+
+#include "mailbox.h"
+
+struct valid_t {
+  uint8_t linux_valid;
+  uint8_t rtos_valid;
+} __attribute__((packed));
+
+typedef union resv_t {
+  struct valid_t valid;
+  unsigned short mstime;  // 0 : noblock, -1 : block infinite
+} resv_t;
+
+typedef struct cmdqu_t cmdqu_t;
+/* cmdqu size should be 8 bytes because of mailbox buffer size */
+struct cmdqu_t {
+  uint8_t ip_id;
+  uint8_t cmd_id : 7;
+  uint8_t block : 1;
+  union resv_t resv;
+  unsigned int param_ptr;
+} __attribute__((packed)) __attribute__((aligned(0x8)));
+
+void showmsg(MailboxMsg msg) {
+  cmdqu_t *cmdq;
+  Serial.print("Get Msg: ");
+  Serial.println(*(msg.data), HEX);
+  cmdq = (cmdqu_t *)msg.data;
+  Serial.printf("cmdq->ip_id = %d\r\n", cmdq->ip_id);
+  Serial.printf("cmdq->cmd_id = %x\r\n", cmdq->cmd_id);
+  Serial.printf("cmdq->block = %d\r\n", cmdq->block);
+  Serial.printf("cmdq->para_ptr = %x\r\n", cmdq->param_ptr);
+  *(msg.data) = 0;
+}
+
+void setup() {
+  Serial.begin(115200);
+  mailbox_init(false);
+  mailbox_register(0, showmsg);
+  mailbox_enable_receive(0);
+  Serial.println("Mailbox Start");
+}
+
+void loop() {
+  
+}
+
+```
+
+编译测试程序 [mailbox_test](https://github.com/milkv-duo/duo-examples/tree/main/mailbox-test) 并在大核 Linux 上运行，该测试程序已经存放在 [duo-examples](https://github.com/milkv-duo/duo-examples) 仓库中，可以参考 [README](https://github.com/milkv-duo/duo-examples/blob/main/README-zh.md) 进行编译。
+
+运行后，大核 Linux 输出：
+
+```
+
+C906B: cmd.param_ptr = 0x2
+C906B: cmd.param_ptr = 0x3
+
+```
+
+小核串口打印：
+
+```
+
+Mailbox Start
+Get Msg: 19300
+cmdq->ip_id = 0
+cmdq->cmd_id = 13
+cmdq->block = 1
+cmdq->para_ptr = 2
+Get Msg: 19300
+cmdq->ip_id = 0
+cmdq->cmd_id = 13
+cmdq->block = 1
+cmdq->para_ptr = 3
+
+```
+
 ## 四、Demo和项目说明
 
 Coming Soon ...
