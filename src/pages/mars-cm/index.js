@@ -67,7 +67,7 @@ export default () => {
                         <div className={styles.support_storage}>
                             <h2>Flexible Configuration of Storage Devices</h2>
                             <p><span>●</span>1x Nor Flash for boot (16M)</p>
-                            <p><span>●</span>Storage: 1x SDIO 2.0 (options to eMMC)</p>
+                            <p><span>●</span>Storage: 1x eMMC5.0/SD3.0 (options to 4GB/8GB eMMC)</p>
                             <div className={styles.tf_emmc}>
                                 <img src="/mars-cm/TF-card.svg" alt="TF Card" className={styles.tfcard} />
                                 <p>or</p>
