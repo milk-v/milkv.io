@@ -71,21 +71,21 @@ GPIO on `Header J3` use 3.3V logic levels.
 
 <div className='gpio_style' style={{ overflow :"auto"}} >
 
-| PWM   | I2C               | UART     | NUM | SG2000      | NAME     | PIN                             | PIN                              | NAME        | SG2000     | NUM | I2C      | PWM   | SD      | SPI       |
-|:------|:------------------|:---------|:---:|:------------|---------:|:-------------------------------:|:--------------------------------:|:------------|:-----------|:---:|:---------|:------|:--------|:----------|
-|       |                   |          |     |             | VSYS(5V) | <div className='red'>52</div>   | <div className='blue'>51</div>   | AUDIO_OUT_R |            |     |          |       |         |           |
-| PWM12 | I2C4_SCL          | UART3_TX | 499 | XGPIOB[1]   | B1       | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |            |     |          |       |         |           |
-| PWM13 | I2C4_SDA          | UART3_RX | 450 | XGPIOB[2]   | B2       | <div className='green'>48</div> | <div className='blue'>47</div>   | AUDIO_IN_R  |            |     |          |       |         |           |
-|       |                   |          | 451 | XGPIOB[3]   | B3       | <div className='green'>46</div> | <div className='blue'>45</div>   | AUDIO_IN_L  |            |     |          |       |         |           |
-| PWM10 | I2C2_SDA          |          | 354 | PWR_GPIO[2] | E2       | <div className='green'>44</div> | <div className='orange'>43</div> | 3V3         |            |     |          |       |         |           |
-| PWM9  | I2C2_SCL          | UART2_RX | 353 | PWR_GPIO[1] | E1       | <div className='green'>42</div> | <div className='green'>41</div>  | C18         | XGPIOC[18] | 434 | I2C1_SDA | PWM12 | SD1_CLK |           |
-| PWM8  |                   | UART2_TX | 352 | PWR_GPIO[0] | E0       | <div className='green'>40</div> | <div className='green'>39</div>  | C19         | XGPIOC[19] | 435 | I2C1_SCL | PWM13 | SD1_CMD |           |
-|       |                   |          |     |             | GND      | <div className='black'>38</div> | <div className='black'>37</div>  | GND         |            |     |          |       |         |           |
-| PWM14 | I2C1_SDA/I2C2_SDA |          | 436 | XGPIOC[20]  | C20      | <div className='green'>36</div> | <div className='green'>35</div>  | C16         | XGPIOC[16] | 432 | I2C1_SDA | PWM8  | SD1_D2  | SPI0_SCK  |
-| PWM15 | I2C1_SCL/I2C2_SCL |          | 437 | XGPIOC[21]  | C21      | <div className='green'>34</div> | <div className='green'>33</div>  | C17         | XGPIOC[17] | 433 | I2C1_SCL | PWM9  | SD1_D3  | SPI0_CS_X |
-|       |                   |          |     |             | GND      | <div className='black'>32</div> | <div className='black'>31</div>  | GND         |            |     |          |       |         |           |
-| PWM10 | I2C2_SDA          |          | 430 | XGPIOC[14]  | C14      | <div className='green'>30</div> | <div className='green'>29</div>  | C12         | XGPIOC[12] | 428 |          | PWM14 |         |           |
-| PWM11 | I2C2_SCL          |          | 431 | XGPIOC[15]  | C15      | <div className='green'>28</div> | <div className='green'>27</div>  | C13         | XGPIOC[13] | 429 |          | PWM15 |         |           |
+| PWM   | I2C               | UART     | MIPI DSI   | NUM | SG2000      | NAME     | PIN                             | PIN                              | NAME        | SG2000     | NUM | MIPI DSI   | I2C      | PWM   | SD      | SPI       |
+|:------|:------------------|:---------|:-----------|:---:|:------------|---------:|:-------------------------------:|:--------------------------------:|:------------|:-----------|:---:|:-----------|:---------|:------|:--------|:----------|
+|       |                   |          |            |     |             | VSYS(5V) | <div className='red'>52</div>   | <div className='blue'>51</div>   | AUDIO_OUT_R |            |     |            |          |       |         |           |
+| PWM12 | I2C4_SCL          | UART3_TX |            | 499 | XGPIOB[1]   | B1       | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |            |     |            |          |       |         |           |
+| PWM13 | I2C4_SDA          | UART3_RX |            | 450 | XGPIOB[2]   | B2       | <div className='green'>48</div> | <div className='blue'>47</div>   | AUDIO_IN_R  |            |     |            |          |       |         |           |
+|       |                   |          |            | 451 | XGPIOB[3]   | B3       | <div className='green'>46</div> | <div className='blue'>45</div>   | AUDIO_IN_L  |            |     |            |          |       |         |           |
+| PWM10 | I2C2_SDA          |          | LCD_RST    | 354 | PWR_GPIO[2] | E2       | <div className='green'>44</div> | <div className='orange'>43</div> | 3V3         |            |     |            |          |       |         |           |
+| PWM9  | I2C2_SCL          | UART2_RX | LCD_PWR_CT | 353 | PWR_GPIO[1] | E1       | <div className='green'>42</div> | <div className='green'>41</div>  | C18         | XGPIOC[18] | 434 | MIPI_TX_3N | I2C1_SDA | PWM12 | SD1_CLK |           |
+| PWM8  |                   | UART2_TX | LCD_PWM    | 352 | PWR_GPIO[0] | E0       | <div className='green'>40</div> | <div className='green'>39</div>  | C19         | XGPIOC[19] | 435 | MIPI_TX_3P | I2C1_SCL | PWM13 | SD1_CMD |           |
+|       |                   |          |            |     |             | GND      | <div className='black'>38</div> | <div className='black'>37</div>  | GND         |            |     |            |          |       |         |           |
+| PWM14 | I2C1_SDA/I2C2_SDA |          | MIPI_TX_2N | 436 | XGPIOC[20]  | C20      | <div className='green'>36</div> | <div className='green'>35</div>  | C16         | XGPIOC[16] | 432 | MIPI_TX_CN | I2C1_SDA | PWM8  | SD1_D2  | SPI0_SCK  |
+| PWM15 | I2C1_SCL/I2C2_SCL |          | MIPI_TX_2P | 437 | XGPIOC[21]  | C21      | <div className='green'>34</div> | <div className='green'>33</div>  | C17         | XGPIOC[17] | 433 | MIPI_TX_CP | I2C1_SCL | PWM9  | SD1_D3  | SPI0_CS_X |
+|       |                   |          |            |     |             | GND      | <div className='black'>32</div> | <div className='black'>31</div>  | GND         |            |     |            |          |       |         |           |
+| PWM10 | I2C2_SDA          |          | MIPI_TX_1N | 430 | XGPIOC[14]  | C14      | <div className='green'>30</div> | <div className='green'>29</div>  | C12         | XGPIOC[12] | 428 | MIPI_TX_0N |          | PWM14 |         |           |
+| PWM11 | I2C2_SCL          |          | MIPI_TX_1P | 431 | XGPIOC[15]  | C15      | <div className='green'>28</div> | <div className='green'>27</div>  | C13         | XGPIOC[13] | 429 | MIPI_TX_0P |          | PWM15 |         |           |
 
 </div>
 
