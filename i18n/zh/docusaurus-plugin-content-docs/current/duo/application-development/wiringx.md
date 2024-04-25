@@ -327,6 +327,30 @@ I2C 代码目录：[https://github.com/milkv-duo/duo-examples/tree/main/i2c](htt
 
 通过 I2C 接口在 SSD1306 OLED 显示屏上显示字符串。
 
+#### ADXL345 三轴加速度传感器
+
+源码：[https://github.com/milkv-duo/duo-examples/blob/main/i2c/adxl345_i2c](https://github.com/milkv-duo/duo-examples/blob/main/i2c/adxl345_i2c)
+
+通过 I2C 接口读取 ADXL345 获得的加速度数据，每 1s 读取一次，并将结果打印在屏幕上。
+
+#### LCM1602 显示屏
+
+源码：[https://github.com/milkv-duo/duo-examples/blob/main/i2c/lcm1602_i2c](https://github.com/milkv-duo/duo-examples/blob/main/i2c/lcm1602_i2c)
+
+通过 I2C 接口在 1602 LCD 屏幕上显示字符串。
+
+#### LCM2004 显示屏
+
+源码：[https://github.com/milkv-duo/duo-examples/blob/main/i2c/lcm2004_i2c](https://github.com/milkv-duo/duo-examples/blob/main/i2c/lcm2004_i2c)
+
+通过 I2C 接口在 2004 LCD 屏幕上显示字符串。
+
+#### TCS34725 颜色传感器
+
+源码：[https://github.com/milkv-duo/duo-examples/blob/main/i2c/tcs34725_i2c](https://github.com/milkv-duo/duo-examples/blob/main/i2c/tcs34725_i2c)
+
+通过 I2C 接口读取 TCS34725 颜色传感器，并将获得的数据输出。
+
 ### SPI
 
 SPI 代码目录：[https://github.com/milkv-duo/duo-examples/tree/main/spi](https://github.com/milkv-duo/duo-examples/tree/main/spi)
@@ -336,6 +360,12 @@ SPI 代码目录：[https://github.com/milkv-duo/duo-examples/tree/main/spi](htt
 源码：[https://github.com/milkv-duo/duo-examples/tree/main/spi/max6675_spi](https://github.com/milkv-duo/duo-examples/tree/main/spi/max6675_spi)
 
 通过 SPI 接口连接 K 型热电偶测量模块 MAX6675，测量当前传感器上的温度。
+
+#### RC522 RFID读写模块
+
+源码：[https://github.com/milkv-duo/duo-examples/tree/main/spi/rc522_spi](https://github.com/milkv-duo/duo-examples/tree/main/spi/rc522_spi)
+
+通过 SPI 接口连接 RC522 RFID 读写模块，读取卡片 ID 和类型并输出到屏幕。
 
 ## 四、编译 wiringX
 

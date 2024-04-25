@@ -328,6 +328,30 @@ Source code: [https://github.com/milkv-duo/duo-examples/tree/main/i2c/ssd1306_i2
 
 Display strings on SSD1306 OLED display via I2C interface.
 
+#### ADXL345 Three-axis acceleration sensor
+
+Source code: [https://github.com/milkv-duo/duo-examples/blob/main/i2c/adxl345_i2c](https://github.com/milkv-duo/duo-examples/blob/main/i2c/adxl345_i2c)
+
+Read the acceleration data obtained by ADXL345 through the I2C interface, read it every 1 second, and print the result on the screen.
+
+#### LCM1602 Display Moudle
+
+Source code: [https://github.com/milkv-duo/duo-examples/blob/main/i2c/lcm1602_i2c](https://github.com/milkv-duo/duo-examples/blob/main/i2c/lcm1602_i2c)
+
+Display strings on the 1602 LCD screen via the I2C interface.
+
+#### LCM2004 Display Moudle
+
+Source code: [https://github.com/milkv-duo/duo-examples/blob/main/i2c/lcm2004_i2c](https://github.com/milkv-duo/duo-examples/blob/main/i2c/lcm2004_i2c)
+
+Display string on 2004 LCD screen via I2C interface.
+
+#### TCS34725 Color sensor
+
+Source code: [https://github.com/milkv-duo/duo-examples/blob/main/i2c/tcs34725_i2c](https://github.com/milkv-duo/duo-examples/blob/main/i2c/tcs34725_i2c)
+
+Read the TCS34725 color sensor through the I2C interface and output the obtained data.
+
 ### SPI
 
 SPI source code directory: [https://github.com/milkv-duo/duo-examples/tree/main/spi](https://github.com/milkv-duo/duo-examples/tree/main/spi)
@@ -337,6 +361,12 @@ SPI source code directory: [https://github.com/milkv-duo/duo-examples/tree/main/
 Source code: [https://github.com/milkv-duo/duo-examples/tree/main/spi/max6675_spi](https://github.com/milkv-duo/duo-examples/tree/main/spi/max6675_spi)
 
 Connect the K-type thermocouple measurement module MAX6675 through the SPI interface to measure the current temperature on the sensor.
+
+#### RC522 Radio Frequency Identification Module
+
+Source code: [https://github.com/milkv-duo/duo-examples/tree/main/spi/rc522_spi](https://github.com/milkv-duo/duo-examples/tree/main/spi/rc522_spi)
+
+Connect the RC522 RFID read-write module via the SPI interface to read the card ID and type and output them to the screen.
 
 ## 4. Compile wiringX
 
