@@ -43,7 +43,7 @@ Mars 出厂时已经预置了一个初始的 Bootloader 程序，正常使用中
 
 3. 查看 SPI Flash 分区信息
    ```
-   cat /proc
+   cat /proc/mtd
    ```
    输出结果如下：
    ```

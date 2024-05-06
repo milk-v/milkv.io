@@ -43,53 +43,55 @@ Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy sam
 
 ### Header J3
 
+GPIO on `Header J3` use 3.3V logic levels.
+
 <div className='gpio_style' style={{ overflow :"auto"}} >
 
-| SPI      | PWM  | I2C               | UART     | NUM | SG2000     | NAME  | PIN                              | PIN                             | NAME     | SG2000     | NUM | UART               | PWM  | SPI     | JTAG      |
-|:---------|:-----|:------------------|:---------|:---:|:-----------|------:|:--------------------------------:|:-------------------------------:|:---------|:-----------|:---:|:-------------------|:-----|:--------|:----------|
-|          |      |                   |          |     |            | 3V3   | <div className='orange'>1</div>  | <div className='red'>2</div>    | VSYS(5V) |            |     |                    |      |         |           |
-|          | PWM3 | I2C3_SDA/I2C4_SCL |          | 468 | XGPIOB[20] | B20   | <div className='green'>3</div>   | <div className='red'>4</div>    | VSYS(5V) |            |     |                    |      |         |           |
-|          |      | I2C3_SCL/I2C4_SDA |          | 469 | XGPIOB[21] | B21   | <div className='green'>5</div>   | <div className='black'>6</div>  | GND      |            |     |                    |      |         |           |
-|          |      | I2C1_SCL          |          | 466 | XGPIOB[18] | B18   | <div className='green'>7</div>   | <div className='green'>8</div>  | A16      | XGPIOA[16] | 496 | UART0_TX/UART1_TX  | PWM4 |         |           |
-|          |      |                   |          |     |            | GND\* | <div className='black'>9</div>   | <div className='green'>10</div> | A17      | XGPIOA[17] | 497 | UART0_RX/UART1_RX  | PWM5 |         |           |
-|          | PWM1 | I2C1_SDA          | UART2_TX | 459 | XGPIOB[11] | B11   | <div className='green'>11</div>  | <div className='green'>12</div> | B19      | XGPIOB[19] | 467 | UART2_TX           | PWM2 |         |           |
-|          | PWM2 | I2C1_SCL          | UART2_RX | 460 | XGPIOB[12] | B12   | <div className='green'>13</div>  | <div className='black'>14</div> | GND      |            |     |                    |      |         |           |
-|          |      |                   | UART2_RX | 470 | XGPIOB[22] | B22   | <div className='green'>15</div>  | <div className='green'>16</div> | A20      | XGPIOA[20] | 500 |                    |      |         | JTAG_TRST |
-|          |      |                   |          |     |            | 3V3   | <div className='orange'>17</div> | <div className='green'>18</div> | A19      | XGPIOA[19] | 499 | UART1_TX/UART1_RTS | PWM7 |         | JTAG_TMS  |
-| SPI3_SDO | PWM3 | I2C2_SCL          |          | 461 | XGPIOB[13] | B13   | <div className='green'>19</div>  | <div className='black'>20</div> | GND      |            |     |                    |      |         |           |
-| SPI3_SDI |      | I2C2_SDA          |          | 462 | XGPIOB[14] | B14   | <div className='green'>21</div>  | <div className='green'>22</div> | A18      | XGPIOA[18] | 498 | UART1_RX/UART1_CTS | PWM6 |         | JTAG_TCK  |
-| SPI3_SCK |      |                   | UART2_TX | 463 | XGPIOB[15] | B15   | <div className='green'>23</div>  | <div className='green'>24</div> | B16      | XGPIOB[16] | 464 | UART2_RX           |      | SPI3_CS |           |
-|          |      |                   |          |     |            | GND   | <div className='black'>25</div>  | <div className='green'>26</div> | A28      | XGPIOA[28] | 508 | UART2_TX/UART1_TX  |      |         |           |
+| SPI      | PWM  | I2C      | UART     | NUM | SG2000     | NAME  | PIN                              | PIN                             | NAME     | SG2000     | NUM | UART               | PWM  | SPI     | JTAG      |
+|:---------|:-----|:---------|:---------|:---:|:-----------|------:|:--------------------------------:|:-------------------------------:|:---------|:-----------|:---:|:-------------------|:-----|:--------|:----------|
+|          |      |          |          |     |            | 3V3   | <div className='orange'>1</div>  | <div className='red'>2</div>    | VSYS(5V) |            |     |                    |      |         |           |
+|          | PWM3 | I2C4_SCL |          | 468 | XGPIOB[20] | B20   | <div className='green'>3</div>   | <div className='red'>4</div>    | VSYS(5V) |            |     |                    |      |         |           |
+|          |      | I2C4_SDA |          | 469 | XGPIOB[21] | B21   | <div className='green'>5</div>   | <div className='black'>6</div>  | GND      |            |     |                    |      |         |           |
+|          |      | I2C1_SCL |          | 466 | XGPIOB[18] | B18   | <div className='green'>7</div>   | <div className='green'>8</div>  | A16      | XGPIOA[16] | 496 | UART0_TX/UART1_TX  | PWM4 |         |           |
+|          |      |          |          |     |            | GND\* | <div className='black'>9</div>   | <div className='green'>10</div> | A17      | XGPIOA[17] | 497 | UART0_RX/UART1_RX  | PWM5 |         |           |
+|          | PWM1 | I2C1_SDA | UART2_TX | 459 | XGPIOB[11] | B11   | <div className='green'>11</div>  | <div className='green'>12</div> | B19      | XGPIOB[19] | 467 | UART2_TX           | PWM2 |         |           |
+|          | PWM2 | I2C1_SCL | UART2_RX | 460 | XGPIOB[12] | B12   | <div className='green'>13</div>  | <div className='black'>14</div> | GND      |            |     |                    |      |         |           |
+|          |      |          | UART2_RX | 470 | XGPIOB[22] | B22   | <div className='green'>15</div>  | <div className='green'>16</div> | A20      | XGPIOA[20] | 500 |                    |      |         | JTAG_TRST |
+|          |      |          |          |     |            | 3V3   | <div className='orange'>17</div> | <div className='green'>18</div> | A19      | XGPIOA[19] | 499 | UART1_TX/UART1_RTS | PWM7 |         | JTAG_TMS  |
+| SPI3_SDO | PWM3 | I2C2_SCL |          | 461 | XGPIOB[13] | B13   | <div className='green'>19</div>  | <div className='black'>20</div> | GND      |            |     |                    |      |         |           |
+| SPI3_SDI |      | I2C2_SDA |          | 462 | XGPIOB[14] | B14   | <div className='green'>21</div>  | <div className='green'>22</div> | A18      | XGPIOA[18] | 498 | UART1_RX/UART1_CTS | PWM6 |         | JTAG_TCK  |
+| SPI3_SCK |      |          | UART2_TX | 463 | XGPIOB[15] | B15   | <div className='green'>23</div>  | <div className='green'>24</div> | B16      | XGPIOB[16] | 464 | UART2_RX           |      | SPI3_CS |           |
+|          |      |          |          |     |            | GND   | <div className='black'>25</div>  | <div className='green'>26</div> | A28      | XGPIOA[28] | 508 | UART2_TX/UART1_TX  |      |         |           |
 
 </div>
-
-GPIO on `Header J3` use 3.3V logic levels.
 
 *GND\*: Pin 9 is a low-level GPIO in the V1.1 version of the hardware, and is GND in the V1.2 version and later.*
 
+NOTE: The I2C on the CSI camera connector J2 is I2C2, so when using the CSI camera on J2, I2C2 in the J3 pin header is not available.
+
 ### Header J4
+
+GPIO on `Header J4` use 1.8V logic levels.
 
 <div className='gpio_style' style={{ overflow :"auto"}} >
 
-| PWM   | I2C               | UART     | MIPI DSI   | NUM | SG2000      | NAME     | PIN                             | PIN                              | NAME        | SG2000     | NUM | MIPI DSI   | I2C      | PWM   | SD      | SPI       |
-|:------|:------------------|:---------|:-----------|:---:|:------------|---------:|:-------------------------------:|:--------------------------------:|:------------|:-----------|:---:|:-----------|:---------|:------|:--------|:----------|
-|       |                   |          |            |     |             | VSYS(5V) | <div className='red'>52</div>   | <div className='blue'>51</div>   | AUDIO_OUT_R |            |     |            |          |       |         |           |
-| PWM12 | I2C4_SCL          | UART3_TX |            | 499 | XGPIOB[1]   | B1       | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |            |     |            |          |       |         |           |
-| PWM13 | I2C4_SDA          | UART3_RX |            | 450 | XGPIOB[2]   | B2       | <div className='green'>48</div> | <div className='blue'>47</div>   | AUDIO_IN_R  |            |     |            |          |       |         |           |
-|       |                   |          |            | 451 | XGPIOB[3]   | B3       | <div className='green'>46</div> | <div className='blue'>45</div>   | AUDIO_IN_L  |            |     |            |          |       |         |           |
-| PWM10 | I2C2_SDA          |          | LCD_RST    | 354 | PWR_GPIO[2] | E2       | <div className='green'>44</div> | <div className='orange'>43</div> | 3V3         |            |     |            |          |       |         |           |
-| PWM9  | I2C2_SCL          | UART2_RX | LCD_PWR_CT | 353 | PWR_GPIO[1] | E1       | <div className='green'>42</div> | <div className='green'>41</div>  | C18         | XGPIOC[18] | 434 | MIPI_TX_3N | I2C1_SDA | PWM12 | SD1_CLK |           |
-| PWM8  |                   | UART2_TX | LCD_PWM    | 352 | PWR_GPIO[0] | E0       | <div className='green'>40</div> | <div className='green'>39</div>  | C19         | XGPIOC[19] | 435 | MIPI_TX_3P | I2C1_SCL | PWM13 | SD1_CMD |           |
-|       |                   |          |            |     |             | GND      | <div className='black'>38</div> | <div className='black'>37</div>  | GND         |            |     |            |          |       |         |           |
-| PWM14 | I2C1_SDA/I2C2_SDA |          | MIPI_TX_2N | 436 | XGPIOC[20]  | C20      | <div className='green'>36</div> | <div className='green'>35</div>  | C16         | XGPIOC[16] | 432 | MIPI_TX_CN | I2C1_SDA | PWM8  | SD1_D2  | SPI0_SCK  |
-| PWM15 | I2C1_SCL/I2C2_SCL |          | MIPI_TX_2P | 437 | XGPIOC[21]  | C21      | <div className='green'>34</div> | <div className='green'>33</div>  | C17         | XGPIOC[17] | 433 | MIPI_TX_CP | I2C1_SCL | PWM9  | SD1_D3  | SPI0_CS_X |
-|       |                   |          |            |     |             | GND      | <div className='black'>32</div> | <div className='black'>31</div>  | GND         |            |     |            |          |       |         |           |
-| PWM10 | I2C2_SDA          |          | MIPI_TX_1N | 430 | XGPIOC[14]  | C14      | <div className='green'>30</div> | <div className='green'>29</div>  | C12         | XGPIOC[12] | 428 | MIPI_TX_0N |          | PWM14 |         |           |
-| PWM11 | I2C2_SCL          |          | MIPI_TX_1P | 431 | XGPIOC[15]  | C15      | <div className='green'>28</div> | <div className='green'>27</div>  | C13         | XGPIOC[13] | 429 | MIPI_TX_0P |          | PWM15 |         |           |
+| PWM   | I2C      | UART     | MIPI DSI   | NUM | SG2000      | NAME     | PIN                             | PIN                              | NAME        | SG2000     | NUM | MIPI DSI   |
+|:------|:---------|:---------|:-----------|:---:|:------------|---------:|:-------------------------------:|:--------------------------------:|:------------|:-----------|:---:|:-----------|
+|       |          |          |            |     |             | VSYS(5V) | <div className='red'>52</div>   | <div className='blue'>51</div>   | AUDIO_OUT_R |            |     |            |
+| PWM12 | I2C4_SCL | UART3_TX |            | 499 | XGPIOB[1]   | B1       | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |            |     |            |
+| PWM13 | I2C4_SDA | UART3_RX |            | 450 | XGPIOB[2]   | B2       | <div className='green'>48</div> | <div className='blue'>47</div>   | AUDIO_IN_R  |            |     |            |
+|       |          |          |            | 451 | XGPIOB[3]   | B3       | <div className='green'>46</div> | <div className='blue'>45</div>   | AUDIO_IN_L  |            |     |            |
+| PWM10 | I2C2_SDA |          | LCD_RST    | 354 | PWR_GPIO[2] | E2       | <div className='green'>44</div> | <div className='orange'>43</div> | 3V3         |            |     |            |
+| PWM9  | I2C2_SCL | UART2_RX | LCD_PWR_CT | 353 | PWR_GPIO[1] | E1       | <div className='green'>42</div> | <div className='green'>41</div>  | C18         | XGPIOC[18] | 434 | MIPI_TX_3N |
+| PWM8  |          | UART2_TX | LCD_PWM    | 352 | PWR_GPIO[0] | E0       | <div className='green'>40</div> | <div className='green'>39</div>  | C19         | XGPIOC[19] | 435 | MIPI_TX_3P |
+|       |          |          |            |     |             | GND      | <div className='black'>38</div> | <div className='black'>37</div>  | GND         |            |     |            |
+|       |          |          | MIPI_TX_2N | 436 | XGPIOC[20]  | C20      | <div className='green'>36</div> | <div className='green'>35</div>  | C16         | XGPIOC[16] | 432 | MIPI_TX_CN |
+|       |          |          | MIPI_TX_2P | 437 | XGPIOC[21]  | C21      | <div className='green'>34</div> | <div className='green'>33</div>  | C17         | XGPIOC[17] | 433 | MIPI_TX_CP |
+|       |          |          |            |     |             | GND      | <div className='black'>32</div> | <div className='black'>31</div>  | GND         |            |     |            |
+|       |          |          | MIPI_TX_1N | 430 | XGPIOC[14]  | C14      | <div className='green'>30</div> | <div className='green'>29</div>  | C12         | XGPIOC[12] | 428 | MIPI_TX_0N |
+|       |          |          | MIPI_TX_1P | 431 | XGPIOC[15]  | C15      | <div className='green'>28</div> | <div className='green'>27</div>  | C13         | XGPIOC[13] | 429 | MIPI_TX_0P |
 
 </div>
-
-GPIO on `Header J4` use 1.8V logic levels.
 
 ### LED PIN
 
@@ -100,6 +102,17 @@ GPIO on `Header J4` use 1.8V logic levels.
 | <div className='blue'>LED</div> | XGPIOA[29] | 509 |
 
 </div>
+
+### Camera interface
+
+DuoS has two CSI camera connectors:
+
+- J1 is a 16 PIN 0.5mm pitch connector compatible with Duo and Duo256M cameras, and can directly use the [CAM-GC2083](https://milkv.io/docs/duo/camera/gc2083) camera.
+- J2 is a 15-pin 1.0mm pitch connector compatible with the Raspberry Pi camera interface. It currently supports the OV5647 camera used on the Raspberry Pi.
+
+<Image src='/docs/duo/duos/duos-camera-csi-port.webp' maxWidth='50%' align='center' />
+
+Note that the I2C used by the J1 interface is I2C3, and the I2C used by the J2 interface is I2C2. Please check the pin multiplexing configuration when using it.
 
 ## DuoS User Guide
 
@@ -247,7 +260,7 @@ Use the USB burning tool under Windows to support eMMC. The firmware version is 
    In the Windows terminal, execute the burning command in the `CviBurn_v2.0_cli_windows` directory:
 
    ```
-   usb_dl.exe -s linux -c cv181x -i .\rom
+   .\usb_dl.exe -s linux -c cv181x -i .\rom
    ```
 
    *You can also put the firmware in other directories and specify the corresponding directory through the -i parameter in the command. *
