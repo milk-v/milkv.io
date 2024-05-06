@@ -4,11 +4,12 @@ sidebar_position: 21
 ---
 
 # YOLOv5 Object Detection
-This program inference YOLOv5 model for object detection
+
+This program inference YOLOv5 model for object detection.
 
 ## Cross-Compile YOLO Program for PC
 
-- Duo256M YOLOv5 code location: [sample_yolov5.cpp](https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/blob/main/sample/cvi_yolo/sample_yolov5.cpp)
+Duo256M YOLOv5 code location: [sample_yolov5.cpp](https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/blob/main/sample/cvi_yolo/sample_yolov5.cpp)
 
 ### Compilation method
 
@@ -150,7 +151,7 @@ export LD_LIBRARY_PATH='/mnt/system/lib'
 ./sample_yolov5 ./yolov5_cv181x_int8_asym.cvimodel  000000000113.jpg 
 ```
 
-result
+result:
 ```bash
 [root@milkv-duo]~/data/test_make# ./sample_yolov5 ./yolov5_cv181x_int8_asym.cvim
 odel  000000000113.jpg 

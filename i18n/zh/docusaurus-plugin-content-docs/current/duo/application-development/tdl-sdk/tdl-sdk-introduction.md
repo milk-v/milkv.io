@@ -44,28 +44,62 @@ Cvitek 所提供的 TDL（Turnkey Deep Learning）集成算法，用以缩短应
 
 ## 编译
 
-1. 下载工具链
+TDL-SDK 程序需要在 PC 主机的 Linux 环境下进行交叉编译，比如 Ubuntu 22.04 系统。
+
+1. 下载交叉编译工具链
 
    ```bash
    wget https://sophon-file.sophon.cn/sophon-prod-s3/drive/23/03/07/16/host-tools.tar.gz
+   ```
+
+   解压工具链：
+   ```bash
    tar xvf host-tools.tar.gz
+   ```
+
+   进入工具链目录中将工具链的路径导出到环境变量中：
+   ```bash
    cd host-tools
    export PATH=$PATH:$(pwd)/gcc/riscv64-linux-musl-x86_64/bin
    ```
 
+   验证工具链是否可用：
+   ```
+   riscv64-unknown-linux-musl-gcc -v
+   ```
+   能够正常显示交叉编译工具链的版本信息，即工具链可用：
+   ```
+   $ riscv64-unknown-linux-musl-gcc -v
+   Using built-in specs.
+   COLLECT_GCC=riscv64-unknown-linux-musl-gcc
+   ...
+   Thread model: posix
+   Supported LTO compression algorithms: zlib
+   gcc version 10.2.0 (Xuantie-900 linux-5.10.4 musl gcc Toolchain V2.6.1 B-20220906)
+   ```
+
 2. 编译 cvitek-tdl-sdk
 
-   Duo:
-   ```bash
-   git clone https://github.com/milkv-duo/cvitek-tdl-sdk-cv180x.git
-   cd cvitek-tdl-sdk-cv180x
-   ```
+   下载 TDL-SDK 源码，Duo 和 Duo256M/DuoS 仓库有所不同：
 
-   Duo256M and DuoS:
-   ```bash
-   git clone https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x.git
-   cd cvitek-tdl-sdk-sg200x
-   ```
+   - Duo:
+     ```bash
+     git clone https://github.com/milkv-duo/cvitek-tdl-sdk-cv180x.git
+     cd cvitek-tdl-sdk-cv180x
+     ```
+
+   - Duo256M 和 DuoS:
+     ```bash
+     git clone https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x.git
+     cd cvitek-tdl-sdk-sg200x
+     ```
+
+     后续仓库代码如有更新，可以在代码目录中执行 `git pull` 拉取最新的代码，比如 Duo256M 和 DuoS：
+     ```bash
+     cd cvitek-tdl-sdk-sg200x
+     git pull
+     ```
+     拉取到最新代码后再继续编译。
 
    编译:
    ```

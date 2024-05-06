@@ -4,11 +4,11 @@ sidebar_position: 21
 ---
 
 # YOLOv5 目标检测
-该测试程序会推理 YOLOv5 模型实现目标检测， 结果仅以打印的形式输出
+该测试程序会推理 YOLOv5 模型实现目标检测， 结果仅以打印的形式输出。
 
 ## PC 端交叉编译 YOLO 程序
 
-- Duo256M YOLOv5 代码位置：[sample_yolov5.cpp](https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/blob/main/sample/cvi_yolo/sample_yolov5.cpp)
+Duo256M YOLOv5 代码位置：[sample_yolov5.cpp](https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/blob/main/sample/cvi_yolo/sample_yolov5.cpp)
 
 ### 编译方法
 
@@ -65,9 +65,9 @@ sidebar_position: 21
 
 #### TPU-MLIR 转换模型
 
-请参考 [TPU-MLIR 文档](https://github.com/sophgo/tpu-mlir) 配置好 TPU-MLIR 工作环境，参数解析请参考 [TPU-MLIR 文档](https://github.com/sophgo/tpu-mlir)
+请参考 [TPU-MLIR 文档](https://github.com/sophgo/tpu-mlir) 配置好 TPU-MLIR 工作环境，参数解析请参考 [TPU-MLIR 文档](https://github.com/sophgo/tpu-mlir)。
 
-具体实现步骤分三步
+具体实现步骤分三步：
 
 - `model_transform.py` 将 onnx 模型转化成 mlir 中间格式模型
 
@@ -97,11 +97,11 @@ model_transform.py \
 --mlir yolov5s.mlir
 ```
 
-转换成mlir文件之后，会生成一个yolov5s_in_f32.npz文件，该文件是模型的输入文件
+转换成 mlir 文件之后，会生成一个 `yolov5s_in_f32.npz` 文件，该文件是模型的输入文件。
 
 ##### MLIR 转 INT8 模型 (仅支持 INT8 量化模型)
 
-量化成 INT8 模型前需要运行 calibration.py，得到校准表，输入数据的数量根据情况准备 100~1000 张左右，这里演示准备了 100 张 COCO2017 的图片
+量化成 INT8 模型前需要运行 calibration.py，得到校准表，输入数据的数量根据情况准备 100~1000 张左右，这里演示准备了 100 张 COCO2017 的图片：
 
 ```bash
 run_calibration.py yolov5s.mlir \
@@ -110,7 +110,7 @@ run_calibration.py yolov5s.mlir \
 -o yolov5s_cali_table
 ```
 
-然后用校准表生成 int8 对称 cvimodel
+然后用校准表生成 int8 对称 cvimodel：
 
 ```bash
 model_deploy.py \
@@ -125,7 +125,7 @@ model_deploy.py \
 --model yolov5_cv181x_int8_sym.cvimodel
 ```
 
-编译完成后，会生成名为 yolov5_cv181x_int8_sym.cvimodel 的文件
+编译完成后，会生成名为 `yolov5_cv181x_int8_sym.cvimodel` 的文件。
 
 *（可选）生成 int8 非对称 cvimodel*
 
@@ -142,27 +142,27 @@ model_deploy.py \
 --model yolov5_cv181x_int8_asym.cvimodel
 ```
 
-编译完成后，会生成名为 yolov5_cv181x_int8_asym.cvimodel 的文件
+编译完成后，会生成名为 `yolov5_cv181x_int8_asym.cvimodel` 的文件。
 
 
 
 ## 板端推理
 
-将编译好的 [sample_yolov5](#pc-端交叉编译-yolo-程序)、[cvimodel](#获取-cvimodel)、要推理的 jpg 图片，拷贝到板端然后执行二进制程序
+将编译好的 [sample_yolov5](#pc-端交叉编译-yolo-程序)、[cvimodel](#获取-cvimodel)、要推理的 jpg 图片，拷贝到板端然后执行二进制程序：
 ```bash
 scp sample_yolov5 yolov5_cv181x_int8_asym.cvimodel 000000000113.jpg root@192.168.42.1:/root/
 ```
-要推理的图片如下:
+要推理的图片如下：
 
 ![duo-tdl-sdk-yolov5-detection.jpg](/docs/duo/tdl-sdk/duo-tdl-sdk-yolov5-detection.jpg)
 
-执行以下命令
+执行以下命令：
 
 ```bash
 export LD_LIBRARY_PATH='/mnt/system/lib'
 ./sample_yolov5 ./yolov5_cv181x_int8_asym.cvimodel  000000000113.jpg 
 ```
-推理结果如下
+推理结果如下：
 ```bash
 [root@milkv-duo]~/data/test_make# ./sample_yolov5 ./yolov5_cv181x_int8_asym.cvim
 odel  000000000113.jpg 
@@ -180,7 +180,7 @@ detect res: 256.286438 367.324158 303.713562 450.689941 0.598015 43
 detect res: 282.405457 93.188477 309.046570 121.621582 0.555912 41
 detect res: 281.694244 60.846092 309.968231 91.153908 0.520292 41
 ```
-此程序会推理 yolov5 模型检测图片内容，推理结果仅以打印输出， 输出解析为 `res: x y w h conf label`，分别为识别结果框左上角坐标`(x,y)`，识别结果框的宽和长`(w,h)`，识别结果的置信度`conf`，识别结果的物体标签`label`
+此程序会推理 yolov5 模型检测图片内容，推理结果仅以打印输出， 输出解析为 `res: x y w h conf label`，分别为识别结果框左上角坐标`(x,y)`，识别结果框的宽和长`(w,h)`，识别结果的置信度`conf`，识别结果的物体标签`label`：
 ```bash
 # 查阅 COCO2017 标签文件可以知道 
 0 person
