@@ -8,37 +8,28 @@ This program inference YOLOv5 model for object detection
 
 ## Cross-Compile YOLO Program for PC
 
-- Duo 256 YOLOv5 code location: [sample_yolov5.cpp](https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/blob/main/sample/cvi_yolo/sample_yolov5.cpp)
+- Duo256M YOLOv5 code location: [sample_yolov5.cpp](https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/blob/main/sample/cvi_yolo/sample_yolov5.cpp)
 
-### Compilation method:
-- Script compilation:
-  Refer to the previous section [Introduction](https://milkv.io/zh/docs/duo/application-development/tdl-sdk/tdl-sdk-introduction) for compiling the sample program using the provided methods.
+### Compilation method
 
-- Manual compilation:
-  - Open the cvitek-tdl-sdk-sg200x/sample/cvi_yolo directory
-    ```bash
-    cd cvitek-tdl-sdk-sg200x/sample/cvi_yolo
-    ```
-  - Compile YOLO series programs to obtain the sample_yolov5 binary file
-    ```bash
-    make KERNEL_ROOT=../../../cvitek-tdl-sdk-sg200x/sample MW_PATH=../../../cvitek-tdl-sdk-sg200x/sample/3rd/middleware/v2 TPU_PATH=../../../cvitek-tdl-sdk-sg200x/sample/3rd/tpu IVE_PATH=../../../cvitek-tdl-sdk-sg200x/sample/3rd/ive USE_TPU_IVE=ON  CHIP=CV180X SDK_VER=musl_riscv64 -j10
-    ```
-  - *(Optional) Delete the generated target binary files*
-    ```bash
-    make clean
-    ```
+Refer to the previous section [Introduction](https://milkv.io/zh/docs/duo/application-development/tdl-sdk/tdl-sdk-introduction) for compiling the sample program using the provided methods. After compilation is completed, the `sample_yolov5` program we need will be generated in the `sample/cvi_yolo/` directory.
 
 ## Obtain cvimodel
+
 You can either download precompiled yolov5s INT8 symmetric or asymmetric quantized cvimodel models directly, or manually convert the models as described in [Model Compilation](#model-compilation).
+
 ### Download Precompiled cvimodels
-- Duo 256
-```bash
-# INT8 symmetric model
-wget https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/raw/main/cvimodel/yolov5_cv181x_int8_sym.cvimodel
-# INT8 asymmetric model (commented out as it is optional)
-# wget https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/raw/main/cvimodel/yolov5_cv181x_int8_asym.cvimodel
-```
+
+- Duo256M
+  ```bash
+  # INT8 symmetric model
+  wget https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/raw/main/cvimodel/yolov5_cv181x_int8_sym.cvimodel
+  # INT8 asymmetric model (commented out as it is optional)
+  wget https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/raw/main/cvimodel/yolov5_cv181x_int8_asym.cvimodel
+  ```
+
 ### Model Compilation
+
 #### Export yolov5s.onnx Model
 
 - First, clone the YOLOv5 official repository. The repository link is: [ultralytics/yolov5\: YOLOv5 🚀 in PyTorch > ONNX > CoreML > TFLite](https://github.com/ultralytics/yolov5)

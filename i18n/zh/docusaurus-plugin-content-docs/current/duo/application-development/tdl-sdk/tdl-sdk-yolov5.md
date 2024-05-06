@@ -8,40 +8,28 @@ sidebar_position: 21
 
 ## PC 端交叉编译 YOLO 程序
 
-- Duo 256 YOLOv5 代码位置：[sample_yolov5.cpp](https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/blob/main/sample/cvi_yolo/sample_yolov5.cpp)
+- Duo256M YOLOv5 代码位置：[sample_yolov5.cpp](https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/blob/main/sample/cvi_yolo/sample_yolov5.cpp)
 
-### 编译方法:   
-- 脚本编译 参考上一章节[简介](https://milkv.io/zh/docs/duo/application-development/tdl-sdk/tdl-sdk-introduction)中的方法编译示例程序
+### 编译方法
 
-- 手动编译
-  - 打开cvitek-tdl-sdk-sg200x/sample/cvi_yolo目录
-     ```bash
-     cd cvitek-tdl-sdk-sg200x/sample/cvi_yolo
-     ```
-
-  - 编译yolo系列程序得到sample_yolov5二进制文件
-
-     ```bash
-     make KERNEL_ROOT=../../../cvitek-tdl-sdk-sg200x/sample MW_PATH=../../../cvitek-tdl-sdk-sg200x/sample/3rd/middleware/v2 TPU_PATH=../../../cvitek-tdl-sdk-sg200x/sample/3rd/tpu IVE_PATH=../../../cvitek-tdl-sdk-sg200x/sample/3rd/ive USE_TPU_IVE=ON  CHIP=CV180X SDK_VER=musl_riscv64 -j10
-     ```
-   
-  - *（可选）删除生成的目标二进制文件*
-
-     ```bash
-     make clean
-     ```
+参考上一章节 [简介](https://milkv.io/zh/docs/duo/application-development/tdl-sdk/tdl-sdk-introduction) 中的方法编译示例程序，编译完成后，会在 `sample/cvi_yolo/` 目录下生成我们需要的 `sample_yolov5` 程序。
 
 ## 获取 cvimodel
-你可以直接下载预编译好的 yolov5s int8 对称量化或者非对称量化 cvimodel 模型，亦可按照[模型编译](#模型编译)手动转换模型
+
+你可以直接下载预编译好的 yolov5s int8 对称量化或者非对称量化 cvimodel 模型，亦可按照[模型编译](#模型编译)手动转换模型。
+
 ### 下载预编译好的 cvimodel
-- Duo 256
-```bash
-# int8 对称模型
-wget https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/blob/main/cvimodel/yolov5_cv181x_int8_sym.cvimodel
-# int8 非对称模型
-# wget https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/blob/main/cvimodel/yolov5_cv181x_int8_asym.cvimodel
-```
-### 模型编译 
+
+- Duo256M
+  ```bash
+  # int8 对称模型
+  wget https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/raw/main/cvimodel/yolov5_cv181x_int8_sym.cvimodel
+  # int8 非对称模型
+  wget wget https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/raw/main/cvimodel/yolov5_cv181x_int8_asym.cvimodel
+  ```
+
+### 模型编译
+
 #### 导出 yolov5s.onnx 模型
 
 - 首先载 yolov5 官方仓库代码，地址如下: [ultralytics/yolov5\: YOLOv5 🚀 in PyTorch > ONNX > CoreML > TFLite](https://github.com/ultralytics/yolov5)
