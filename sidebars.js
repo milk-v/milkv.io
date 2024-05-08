@@ -109,6 +109,7 @@ const sidebars = {
       },
       items: [
         'duo/io-board/usb-ethernet-iob',
+        'duo/io-board/duos-poe-hat',
       ],
     },
     {
