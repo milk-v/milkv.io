@@ -561,9 +561,49 @@ cmdq->para_ptr = 3
 
 ```
 
-## 四、Demo和项目说明
+## 四、传感器示例
 
-Coming Soon ...
+### L9110H
+
+L9110H_test 代码目录：[https://github.com/milkv-duo/duo-arduino-examples/tree/master/L9110H_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/L9110H_test)
+
+直流电机驱动芯片L9110H的示例代码，按照代码注释内容接好线后烧录运行，电机会按照逐渐加速和减速、反向逐渐加速和减速循环运行。
+
+### LCD1602
+
+LCD1602_test 代码目录：[https://github.com/milkv-duo/duo-arduino-examples/tree/master/LCD1602_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/LCD1602_test)
+
+LCD1602 I2C 接口屏幕的示例代码，按代码注释接好线后烧录运行，屏幕显示字符串。
+
+### LCD2004
+
+LCD2004_test 代码目录：[https://github.com/milkv-duo/duo-arduino-examples/tree/master/LCD2004_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/LCD2004_test)
+
+LCD2004 I2C 接口屏幕的示例代码，按代码注释接好线后烧录运行，屏幕显示字符串。
+
+### Buzzer
+
+buzzer_test 代码目录：[https://github.com/milkv-duo/duo-arduino-examples/tree/master/buzzer_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/buzzer_test)
+
+蜂鸣器模块示例代码，按代码注释接线后烧录运行，蜂鸣器循环播放三种频率的蜂鸣声。
+
+### HC-SR04
+
+hc_sr04_test 代码目录：[https://github.com/milkv-duo/duo-arduino-examples/tree/master/hc_sr04_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/hc_sr04_test)
+
+HC-SR04 超声波测距传感器模块的示例代码，示例代码烧录运行后，开发板会向串口打印测量到的距离数据。
+
+### RC522
+
+rc522_test 代码目录：[https://github.com/milkv-duo/duo-arduino-examples/tree/master/rc522_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/rc522_test)
+
+RC522 RFID读写模块的示例代码，代码烧录运行后，开发板会循环检测是否读到ID卡，若检测到ID卡，则向串口打印卡片类型和卡号信息。
+
+### SSD1306
+
+ssd1306_test 代码目录：[https://github.com/milkv-duo/duo-arduino-examples/tree/master/ssd1306_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/ssd1306_test)
+
+SSD1306 OLED 屏幕模块的示例代码，按注释接线并烧录代码后，屏幕显示眼睛的动态动画。
 
 ## 五、Arduino APIs
 

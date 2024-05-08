@@ -559,9 +559,49 @@ cmdq->para_ptr = 3
 
 ```
 
-## 4. Demo and Projects
+## 4. Sensor examples
 
-Coming Soon ...
+### L9110H_test
+
+L9110H_test source:[https://github.com/milkv-duo/duo-arduino-examples/tree/master/L9110H_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/L9110H_test)
+
+For the example code of the DC motor driver chip L9110H, connect the wires according to the code comments and then burn and run. The motor will run in cycles of gradual acceleration and deceleration, and reverse gradual acceleration and deceleration.
+
+### LCD1602
+
+LCD1602_test source:[https://github.com/milkv-duo/duo-arduino-examples/tree/master/LCD1602_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/LCD1602_test)
+
+Example code for the LCD1602 I2C interface screen. Connect the wires according to the code comments and then burn and run. The screen will display a string.
+
+### LCD2004
+
+LCD2004_test source:[https://github.com/milkv-duo/duo-arduino-examples/tree/master/LCD2004_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/LCD2004_test)
+
+Example code for the LCD2004 I2C interface screen. Connect the wires according to the code comments and then burn and run. The screen will display a string.
+
+### Buzzer
+
+buzzer_test source:[https://github.com/milkv-duo/duo-arduino-examples/tree/master/buzzer_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/buzzer_test)
+
+Example code for the buzzer module, wired according to the code comments and burned to run. The buzzer plays three different frequencies of beeps in a loop.
+
+### HC-SR04
+
+hc_sr04_test source:[https://github.com/milkv-duo/duo-arduino-examples/tree/master/hc_sr04_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/hc_sr04_test)
+
+Example code for HC-SR04 ultrasonic distance measurement sensor module. After burning and running the example code, the board will print the measured distance data to the serial port.
+
+### RC522
+
+rc522_test source:[https://github.com/milkv-duo/duo-arduino-examples/tree/master/rc522_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/rc522_test)
+
+Example code for RC522 RFID read-write module. After burning and running the code, the board will loop to check if the ID card is read. If the ID card is detected, it will print the card type and card number information to the serial port.
+
+### SSD1306
+
+ssd1306_test source:[https://github.com/milkv-duo/duo-arduino-examples/tree/master/ssd1306_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/ssd1306_test)
+
+Example code for SSD1306 OLED screen module. After wiring according to comments and burning the code, the screen displays a dynamic animation of the eyes.
 
 ## 5. Arduino APIs
 
