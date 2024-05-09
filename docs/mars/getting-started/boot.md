@@ -2,7 +2,7 @@
 sidebar_label: 'Boot the Mars'
 sidebar_position: 10
 ---
-# Boot the Mars
+# Boot Mars from microSD card
 
 ## Prepare
 
@@ -15,10 +15,12 @@ sidebar_position: 10
   - HDMI cable
 
 ## Download images and tools
+
 - Download the system image from [Official Image](https://milkv.io/docs/mars/resources/image).
 - Download the flash tool, [balenaEtcher](https://etcher.balena.io/) or [Rufus](https://rufus.ie/en/).
 
-## Write images
+## Burn image
+
 Here are the steps for using balenaEtcher.
 
 - Click **Flash from file**
@@ -35,9 +37,9 @@ Here are the steps for using balenaEtcher.
 
 ## Power on
 
-Connect the Mars with a Type-C cable using an adapter (5V) and a HDMI cable to screen.
+Insert the microSD card with the burned firmware into the Mars microSD card slot. Use an adapter (5V) to connect Mars via a Type-C cable. Mars will automatically power on and the red power LED on the board will light up. After the system starts successfully, the green status LED on the board will flash.
 
-When the system boots up, the screen Mars is connected to will show the Debian desktop.
+If an HDMI monitor is connected, the Debian desktop will be displayed after booting.
 
 ## Troubleshooting
 

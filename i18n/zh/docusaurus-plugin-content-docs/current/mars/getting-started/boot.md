@@ -2,43 +2,45 @@
 sidebar_label: '启动 Mars'
 sidebar_position: 10
 ---
-# Boot the Mars
+# 从 microSD 卡启动 Mars
 
-## Prepare
+## 准备
 
-- Necessary
+- 必要的
   - Mars
-  - microSD or eMMC larger than 16GB
-  - Type-C cable
-- Optional
-  - USB to TTL serial cable
-  - HDMI cable
+  - 大于 16GB 的 microSD 卡
+  - Type-C 线
+- 可选的
+  - USB to TTL 串口模块
+  - HDMI 线
 
-## Download images and tools
-- Download the system image from [Official Image](https://milkv.io/docs/mars/resources/image).
-- Download the flash tool, [balenaEtcher](https://etcher.balena.io/) or [Rufus](https://rufus.ie/en/).
+## 下载镜像和工具
 
-## Write images
-Here are the steps for using balenaEtcher.
+- 下载 [官方镜像](https://milkv.io/docs/mars/resources/image)。
+- 下载镜像烧录工具 [balenaEtcher](https://etcher.balena.io/) 或 [Rufus](https://rufus.ie/en/)。
 
-- Click **Flash from file**
+## 烧录镜像
+
+以下是使用 BalenaEtcher 的步骤。
+
+- 点击 **Flash from file**
 
 ![etcher-step1](/docs/duo/etcher-step1.png)
 
-- Click **Select target**
+- 点击 **Select target**
 
 ![etcher-step2](/docs/duo/etcher-step2.png)
 
-- Click **Flash!**
+- 点击 **Flash!**
 
 ![etcher-step3](/docs/duo/etcher-step3.png)
 
-## Power on
+## 开机
 
-Connect the Mars with a Type-C cable using an adapter (5V) and a HDMI cable to screen.
+将烧录好固件的 microSD 卡插入 Mars 的 microSD 卡槽中。使用适配器 (5V) 通过 Type-C 线连接 Mars，Mars 会自动上电开机，板上的红色电源灯会亮起。待系统启动成功后，板上的绿色状态灯会闪烁。
 
-When the system boots up, the screen Mars is connected to will show the Debian desktop.
+如果有连接 HDMI 显示器，开机后会显示 Debian 桌面。
 
-## Troubleshooting
+## 故障排除
 
-If you have a problem, go to our [community](https://community.milkv.io/) and post to let us know.
+如果您有问题，请到我们的[社区](https://community.milkv.io/)发帖，让我们知道。
