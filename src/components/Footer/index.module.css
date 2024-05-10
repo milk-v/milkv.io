@@ -223,13 +223,13 @@
 
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
     .footer_content {
-        width: calc(1920px*.7);
+        width: 90%;
     }
 
     .footer_logo {
         width: calc(240px*.7);
         height: calc(70px*.7);
-        margin: 70px 0;
+        margin: 50px 0;
     }
 
     .footer_info {
@@ -295,7 +295,7 @@
 
 @media screen and (max-width: 1450px) and (min-width: 1000px) {
     .footer_content {
-        width: calc(1920px*.7*.7);
+        width: 90%;
     }
 
     .footer_logo {
@@ -374,13 +374,13 @@
 
 @media screen and (max-width: 1000px) and (min-width: 750px) {
     .footer_content {
-        width: calc(1920px*.7*.7*.75);
+        width: 90%;
     }
 
     .footer_logo {
         width: calc(240px*.7*.7*.75);
         height: calc(70px*.7*.7*.75);
-        margin: 50px 0;
+        margin: 20px 0;
     }
 
     .footer_info {
@@ -396,7 +396,7 @@
     }
 
     .footer_left>h2 {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 0;
     }
 
@@ -405,7 +405,7 @@
     }
 
     .subscribeEmail {
-        width: 200px;
+        width: 250px;
         height: 40px;
         margin-right: 10px;
         margin-left: 50px;
