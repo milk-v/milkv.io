@@ -16,7 +16,7 @@ sidebar_position: 10
 
 ## Download images and tools
 
-- Download the system image from [Official Image](https://milkv.io/docs/mars/resources/image).
+- Download the system image from [Official Image](https://milkv.io/docs/mars/getting-started/images#official-image).
 - Download the flash tool, [balenaEtcher](https://etcher.balena.io/) or [Rufus](https://rufus.ie/en/).
 
 ## Burn image

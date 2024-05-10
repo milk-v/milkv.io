@@ -16,7 +16,7 @@ sidebar_position: 10
 
 ## 下载镜像和工具
 
-- 下载 [官方镜像](https://milkv.io/docs/mars/resources/image)。
+- 下载 [官方镜像](https://milkv.io/zh/docs/mars/getting-started/images#%E5%AE%98%E6%96%B9%E9%95%9C%E5%83%8F)。
 - 下载镜像烧录工具 [balenaEtcher](https://etcher.balena.io/) 或 [Rufus](https://rufus.ie/en/)。
 
 ## 烧录镜像
