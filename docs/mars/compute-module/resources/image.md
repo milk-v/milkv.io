@@ -2,26 +2,30 @@
 sidebar_label: 'Official Image'
 sidebar_position: 40
 ---
-# Official Image
+# Images Download
 
-## Debain   
+## Official Image
 
-~~~
-login user: user  
-login password: milkv
-~~~
+### Debian
 
-[Download from Github](https://github.com/milkv-mars/mars-buildroot-sdk/releases/)
+Download from Github: [https://github.com/milkv-mars/mars-buildroot-sdk/releases/](https://github.com/milkv-mars/mars-buildroot-sdk/releases/)
 
+Images description:
 
-Images introduction:
+- Mars CM Lite (SD card) version image
+  ```
+  mars-cm_debian-desktop_sdk-v*_cm4-io-board_sdcard_v*.img.zip
+  ```
+  After downloading, refer to [Burn Image](https://milkv.io/docs/mars/getting-started/boot#burn-image) Burn the image to the microSD card. Then insert the microSD card into Mars and power it on.
 
-### Mars CM eMMC version image
+- Mars CM eMMC version image
+  ```
+  mars-cm_debian-desktop_sdk-v*_cm4-io-board_emmc_v*.img.zip
+  ```
+  After downloading, refer to [Mars CM eMMC version image burning](https://milkv.io/docs/mars/compute-module/boot#mars-cm-emmc-version-image-burning) chapter to burn the image into eMMC.
+
+The default username and password are:
 ```
-mars-cm_debian-desktop_sdk-v*_cm4-io-board_emmc_v*.img.zip
-```
-
-### Mars CM Lite (SD card) version image
-```
-mars-cm_debian-desktop_sdk-v*_cm4-io-board_sdcard_v*.img.zip
+User: user
+Password: milkv
 ```

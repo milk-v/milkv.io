@@ -7,23 +7,24 @@ sidebar_position: 45
 
 ## Official Image
 
-### Debain
+### Debian
 
 Download from Github: [https://github.com/milkv-mars/mars-buildroot-sdk/releases/](https://github.com/milkv-mars/mars-buildroot-sdk/releases/)
+
+Images description:
 
 - Mars SD card Image
   ```
   mars_debian-desktop_sdk-v*_sdcard_v*.img.zip
   ```
+  After downloading, refer to [Burn Image](https://milkv.io/docs/mars/getting-started/boot#burn-image) Burn the image to the microSD card. Then insert the microSD card into Mars and power it on.
 
 - Mars eMMC Image
   ```
   mars_debian-desktop_sdk-v*_emmc_v*.img.zip
   ```
 
-After downloading, refer to [Burn Image](https://milkv.io/docs/mars/getting-started/boot#burn-image) Burn the image to the microSD card.
-
-After burning, insert the microSD card into Mars and power it on. The default username and password are:
+The default username and password are:
 ```
 User: user
 Password: milkv

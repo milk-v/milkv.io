@@ -7,23 +7,24 @@ sidebar_position: 45
 
 ## 官方镜像
 
-### Debain
+### Debian
 
 下载链接：[https://github.com/milkv-mars/mars-buildroot-sdk/releases/](https://github.com/milkv-mars/mars-buildroot-sdk/releases/)
+
+镜像说明：
 
 - Mars SD 卡镜像
   ```
   mars_debian-desktop_sdk-v*_sdcard_v*.img.zip
   ```
+  下载后参考 [镜像烧录](https://milkv.io/zh/docs/mars/getting-started/boot#%E7%83%A7%E5%BD%95%E9%95%9C%E5%83%8F) 章节将镜像烧录到 microSD 卡中。然后将 microSD 卡插入 Mars 中上电开机。
 
 - Mars eMMC 镜像
   ```
   mars_debian-desktop_sdk-v*_emmc_v*.img.zip
   ```
 
-下载后参考 [镜像烧录](https://milkv.io/zh/docs/mars/getting-started/boot#%E7%83%A7%E5%BD%95%E9%95%9C%E5%83%8F) 章节将镜像烧录到 microSD 卡中。
-
-烧录后将 microSD 卡插入 Mars 中上电开机，默认的用户名和密码为：
+默认的用户名和密码为：
 ```
 用户: user
 密码: milkv

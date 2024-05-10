@@ -4,7 +4,7 @@ sidebar_position: 40
 ---
 # Official Image
 
-## Debain   
+## Debian
 
 ~~~
 login user: user  

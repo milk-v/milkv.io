@@ -4,7 +4,7 @@ sidebar_position: 40
 ---
 # 官方固件
 
-## Debain
+## Debian
 
 ~~~
 login user: user  
