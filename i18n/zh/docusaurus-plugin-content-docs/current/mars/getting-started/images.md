@@ -64,7 +64,7 @@ Mars SPI Flash 中出厂默认的 U-boot 固件暂时不支持引导 Ubuntu 镜�
 
 - 依次输入下列命令
 
-  ```
+  ```txt showLineNumbers
   sf probe
   load mmc 1:1 $kernel_addr_r /usr/lib/u-boot/starfive_visionfive2/u-boot-spl.bin.normal.out
   sf update $kernel_addr_r 0 $filesize
@@ -73,6 +73,7 @@ Mars SPI Flash 中出厂默认的 U-boot 固件暂时不支持引导 Ubuntu 镜�
   ```
 
   正常执行以上命令时效果如下：
+
   ```
   StarFive # sf probe
   SF: Detected gd25lq128 with page size 256 Bytes, erase size 4 KiB, total 16   MiB

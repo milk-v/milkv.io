@@ -64,7 +64,7 @@ The factory-default U-boot firmware in Mars SPI Flash does not currently support
 
 - Enter the following commands in sequence
 
-  ```
+  ```txt showLineNumbers
   sf probe
   load mmc 1:1 $kernel_addr_r /usr/lib/u-boot/starfive_visionfive2/u-boot-spl.bin.normal.out
   sf update $kernel_addr_r 0 $filesize
@@ -73,6 +73,7 @@ The factory-default U-boot firmware in Mars SPI Flash does not currently support
   ```
 
   When the above command is executed normally, the effect is as follows:
+
   ```
   StarFive # sf probe
   SF: Detected gd25lq128 with page size 256 Bytes, erase size 4 KiB, total 16   MiB
