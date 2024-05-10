@@ -11,6 +11,7 @@
    font-weight: 400;
    letter-spacing: 3.2px;
 }
+
 .flex_center {
    width: 100%;
    display: flex;
@@ -20,19 +21,23 @@
 .flex_center>img {
    display: block;
    width: 42%;
+   aspect-ratio: 454/305;
 }
 
 .agents {
    padding: 0;
    margin: 0;
    width: 55%;
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   display: flex;
+   align-items: center;
+   align-content: flex-start;
+   flex-wrap: wrap;
 }
 
 .agents>li {
    border-radius: 16px;
    background-color: #f5f5f5;
+   width: 30%;
    aspect-ratio: 250/120;
    display: flex;
    align-items: flex-start;
@@ -49,7 +54,7 @@
 }
 
 .agents>li:hover {
-   border: 2px solid #2D88C9;
+   box-shadow: 0px 0px 10px 0px #2D88C9;
 }
 
 .agent_br {
@@ -103,8 +108,8 @@
    }
 
    .agents {
-      gap: 20px 30px;
-      height: 100px;
+      height: 100%;
+      gap: 20px;
    }
 
    .agents>li {
@@ -133,7 +138,7 @@
    }
 
    .buy_center {
-      width: 1440px;
+      width: 90%;
       margin: 80px auto;
    }
 
@@ -172,8 +177,8 @@
    }
 
    .buy_center {
-      width: 950px;
-      margin: 50px auto;
+      width: 90%;
+      margin: 30px auto;
    }
 
    .buy_center>h2 {
@@ -182,11 +187,11 @@
    }
 
    .agents {
-      grid-template-columns: repeat(2, 1fr);
       gap: 10px;
    }
 
    .agents>li {
+      width: 48%;
       padding: 10px;
    }
 
@@ -211,8 +216,12 @@
    }
 
    .buy_center {
-      width: 90%;
+      width: 95%;
       margin: 30px auto;
+   }
+
+   .flex_center {
+      flex-direction: column;
    }
 
    .buy_center>h2 {
@@ -220,12 +229,18 @@
       margin-bottom: 30px;
    }
 
+   .flex_center>img {
+      width: 55%;
+   }
+
    .agents {
-      grid-template-columns: repeat(2, 1fr);
       gap: 10px;
+      width: 90%;
+      margin-top: 10px;
    }
 
    .agents>li {
+      width: 300px;
       padding: 8px;
    }
 
