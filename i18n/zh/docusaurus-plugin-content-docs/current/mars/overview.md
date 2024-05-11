@@ -9,11 +9,13 @@ Version 1.0
 
 -------------------------
 ## Introduction
+
 Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. This four-core device supports a plug-and-play eMMC module, as well as up to 8GB of LPDDR4 memory. The board is equipped with three USB 3.0 ports, one USB 2.0 port, an HDMI 2.0 port that supports 4K resolution, an RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO.  
   
 ![mars](/docs/mars/mars.webp)
 
 ## Specification
+
 | Milk-V Mars  | Specification                                       |
 | ------------ | --------------------------------------------------- |
 | SoC          | Starfive JH7110 64bit SoC with RV64GC, up to 1.5GHz |
@@ -54,7 +56,9 @@ Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of
 - Comes with a 40-pin GPIO interface
 
 ## Hardware
+
 ### SoC
+
 **Starfive JH7110** has the following 
 - RISC-V U74 quad-core and S7 monitor core with 2 MB L2 cache
 - Support Linux OS with kernel versions 5.10 and 5.15
@@ -78,6 +82,7 @@ Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of
 - Dedicated audio processing and sub-system
 
 #### GPU
+
 The GPU of JH7110 has the following 
 - IMG BXE-4-32 MC1 with work frequency up to 600 MHz (400 MHz by default)
 - Fully compliant with the following APIs:
@@ -106,21 +111,22 @@ The GPU of JH7110 has the following
     - Single-threaded firmware processor with a 2 KB instruction cache and a 2 KB data cache.
 
 ### Memory
+
 **Milk-V Mars** offers a choice of 2GB / 4GB / 8GB memory sizes.  
 The memory specification is LPDDR4 2800MT/s.
 
-### Camara for MIPI CSI 
+### Camara for MIPI CSI
+
 Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/mipicsi-support)
 
 ### Display for MIPI DSI
+
 Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/mipidsi-support)
 
 ### UVC Camera
+
 Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/uvccam-support)
 
 ### Support
+
 For support please post your issue on the [Milk-V Community Mars Category](https://community.milkv.io/c/mars).
-
-### Hardware schematics
-- [Hardware schematics](https://github.com/milkv-mars/Hardware/blob/main/Mars_hardware_schematics/Mars_V1.11_20230821.pdf)
-
