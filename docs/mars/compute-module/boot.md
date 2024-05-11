@@ -25,7 +25,8 @@ Taking the Raspberry Pi CM4 IO Board as an example, we will introduce how to bur
   - HDMI cable
 
 ### Download image and burning tools
-- Download the Debian system image: [Official Image](https://milkv.io/zh/docs/mars/compute-module/resources/image)
+
+- Download the Debian system image: [Official Image](https://milkv.io/zh/docs/mars/compute-module/resources/images)
 - Download the eMMC image burning tool: [UsbFlashTool](https://github.com/milkv-mars/mars-tools/blob/main/Mars-UsbFlashTool-v2.4-Windows.zip)
 
 ### Install driver for the burning tool
@@ -148,7 +149,8 @@ The Lite version does not come with eMMC and needs to burn the firmware to the S
   - HDMI cable
 
 ### Download image and burning tools
-- Download the Debian system image: [Official Image](https://milkv.io/zh/docs/mars/compute-module/resources/image)
+
+- Download the Debian system image: [Official Image](https://milkv.io/zh/docs/mars/compute-module/resources/images)
 - Download the burning tool: [balenaEtcher](https://etcher.balena.io/) or [Rufus](https://rufus.ie/en/)
 
 ### Burn image

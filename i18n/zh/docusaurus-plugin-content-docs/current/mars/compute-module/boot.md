@@ -25,7 +25,8 @@ Mars CM 采用核心板的设计方式，引脚与树莓派 CM4 兼容，可以�
   - HDMI 线
 
 ### 下载镜像和烧录工具
-- 下载 Debian 系统镜像: [官方镜像](https://milkv.io/zh/docs/mars/compute-module/resources/image)
+
+- 下载 Debian 系统镜像: [官方镜像](https://milkv.io/zh/docs/mars/compute-module/resources/images)
 - 下载 eMMC 镜像烧录工具 [UsbFlashTool](https://github.com/milkv-mars/mars-tools/blob/main/Mars-UsbFlashTool-v2.4-Windows.zip)
 
 ### 安装驱动
@@ -148,7 +149,8 @@ Lite 版本不带 eMMC，需要将固件烧录到 SD/TF 卡中，烧录方法跟
   - HDMI 线
 
 ### 下载镜像和烧录工具
-- 下载 Debian 系统镜像: [官方镜像](https://milkv.io/zh/docs/mars/compute-module/resources/image)
+
+- 下载 Debian 系统镜像: [官方镜像](https://milkv.io/zh/docs/mars/compute-module/resources/images)
 - 下载烧录工具: [balenaEtcher](https://etcher.balena.io/) or [Rufus](https://rufus.ie/en/)
 
 ### 镜像烧录

@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Official Image'
+sidebar_label: 'Images Download'
 sidebar_position: 40
 ---
 # Images Download

@@ -227,10 +227,10 @@ const sidebars = {
           collapsed: false,
           link: {
             type: 'doc',
-            id: 'mars/compute-module/resources/image',
+            id: 'mars/compute-module/resources/images',
           },
           items: [
-            'mars/compute-module/resources/image',
+            'mars/compute-module/resources/images',
           ],
         },
       ],
