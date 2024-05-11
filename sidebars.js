@@ -200,6 +200,7 @@ const sidebars = {
         'mars/getting-started/extendpartition',
         'mars/getting-started/bootloader',
         'mars/getting-started/images',
+        'mars/getting-started/hardware',
       ],
     },
     'mars/mipicsi-support',
@@ -221,6 +222,7 @@ const sidebars = {
         'mars/compute-module/setup',
         'mars/compute-module/extendpartition',
         'mars/compute-module/bootloader',
+        'mars/compute-module/hardware',
         {
           type: "category",
           label: '🧰 Resources',
