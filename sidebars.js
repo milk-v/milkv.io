@@ -97,6 +97,7 @@ const sidebars = {
         'duo/resources/opencv-mobile',
         'duo/resources/xyzdims',
         'duo/resources/spilvgl',
+        'duo/resources/third-party-img',
       ],
     },
     {
