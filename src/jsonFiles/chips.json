@@ -774,5 +774,231 @@
                 }
             ]
         }
+    },
+    "duo-module-01": {
+        "title": "duo-module-01",
+        "title_zh": "CV1800B 是面向民用消费监控 IP 摄像机、居家智能等多项产品领域而推出的高性能、低功耗芯片，集成了 H.264/H.265 视频压缩编码器和 ISP；支持数字宽动态、3D 降噪、除雾、镜头畸变校正等多种图像增强和矫正算法，为客户提供专业级的视频图像质量。",
+        "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
+        "front_view": "/chips/cv1800b/cv1800b-frontview.webp",
+        "chip_view": [
+            "/chips/cv1800b/cv1800B-01.webp",
+            "/chips/cv1800b/cv1800B-02.webp",
+            "/chips/cv1800b/cv1800B-03.webp"
+        ],
+        "chip_intro_text": [
+            "CV1800B is a high-performance, low-power consumption chip designed for various consumer monitoring IP cameras, home intelligence, and other products. It integrates an H.264/H.265 video compression encoder and ISP and supports various image enhancement and correction algorithms such as digital wide dynamic range, 3D noise reduction, defogging, and lens distortion correction to provide professional-grade video image quality to customers. The chip also integrates a self-developed intelligent reference design (human form detection, area detection, motion detection), built-in DDR, and complete peripherals and external devices, providing a high-integration and concise solution to facilitate customer product development and mass production. In addition, it also provides secure boot, secure update, and secure encryption and so on to provide a series of security solutions for users from development, mass production to product application. The chip integrates an 8-bit MCU subsystem, which can replace general external MCUs to achieve the goal of saving BOM cost and power consumption."
+        ],
+        "chip_intro_text_zh": [
+            "CV1800B是一款高性能、低功耗的芯片，专为各种消费级监控IP摄像头、家居智能等产品设计。它集成了H.264/H.265视频压缩编码器和ISP，支持数字宽动态范围、3D降噪、去雾和镜头畸变校正等多种图像增强和修正算法，为客户提供专业级视频图像质量。该芯片还集成了自主开发的智能参考设计（人体检测、区域检测、运动检测），内置DDR和完整的外围设备，为客户产品的开发和量产提供了高度集成和简洁的解决方案。此外，它还提供了安全启动、安全更新和安全加密等功能，为用户从开发、量产到产品应用提供了一系列安全解决方案。该芯片集成了8位MCU子系统，可以替代通用外部MCU，实现BOM成本和功耗的节约目标。"
+        ],
+        "diagram_url": "/chips/cv1800b/cv1800B-diagram.webp",
+        "hardware": {
+            "RISC-V CPU": [
+                "1 x C906@1GHz + 1 x C906@700MHz"
+            ],
+            "NPU": [
+                "0.5 TOPS@INT8"
+            ],
+            "Memory": [
+                "Sip DRAM 64M"
+            ],
+            "Video Module": [
+                "ISP 4M@25fps",
+                "MIPI 4L CSI",
+                "H.265/H.264 Decoding and Encoding"
+            ],
+            "Audio Module": [
+                "16bit Audio Codec"
+            ],
+            "Storage": [
+                "SPI-NOR, SPI-NAND, 2 x SDIO3.0"
+            ],
+            "Network": [
+                "10M/100M MAC PHY"
+            ],
+            "Security Module": [
+                "Secure boot/AES/SHA/Efuse"
+            ],
+            "Peripherals": [
+                "3 x ADC/4 x I2C/3 x SPI/5 x UART/4 x PWM/2 x SDIO 3.0/51 GPIOs"
+            ],
+            "Temperature Range": [
+                "-30℃～70℃"
+            ],
+            "Package Type": [
+                "QFN"
+            ],
+            "Package Dimensions": [
+                "7mmx7mmx0.9mm"
+            ],
+            "Pin Pitch": [
+                "0.35mm"
+            ],
+            "Total Pins": [
+                "68"
+            ]
+        },
+        "scenarios": [
+            {
+                "img_link": "/chips/scenarios1.webp",
+                "scenarios_name": "Intelligent door locks",
+                "scenarios_name_zh": "智能门锁"
+            },
+            {
+                "img_link": "/chips/scenarios2.webp",
+                "scenarios_name": "Video Conference",
+                "scenarios_name_zh": "视频会议"
+            },
+            {
+                "img_link": "/chips/scenarios3.webp",
+                "scenarios_name": "Industrial Internet of Things",
+                "scenarios_name_zh": "工业物联网"
+            },
+            {
+                "img_link": "/chips/scenarios4.webp",
+                "scenarios_name": "intelligent transport",
+                "scenarios_name_zh": "智慧城市"
+            }
+        ],
+        "downloads": {
+            "Hardware Design": [
+                {
+                    "download_name": "CV1800B-QFN68-38-Board-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-4L.DSN?raw=true",
+                    "file_format": "DSN",
+                    "file_size": "2.1 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-QFN68-38-Board-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-4L.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "362 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-QFN68-38-Board-GPIO-List",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-GPIO-List.xlsx?raw=true",
+                    "file_format": "XLSX",
+                    "file_size": "248 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-Sensor-Support-List ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-Sensor-Support-List%20.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "180 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-VI-Interface-Detailed-Scenario-Description ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B_VI%20Interface%20Detailed%20Scenario%20Description.xlsx?raw=true",
+                    "file_format": "XLSX",
+                    "file_size": "40.3 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-WiFi-Support-List ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B_WiFi%20Support%20List%20.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "164 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0008A-V01 ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/WDMB-0008A-V01.asc?raw=true",
+                    "file_format": "ASC",
+                    "file_size": "912 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0008A-V01 ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/WDMB-0008A-V01.pcb?raw=true",
+                    "file_format": "PCB",
+                    "file_size": "1.05 MB",
+                    "file_date": "Jun 5,2023"
+                }
+            ]
+        },
+        "downloads_zh": {
+            "硬件设计指南": [
+                {
+                    "download_name": "CV1800B-QFN68-38-Board-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-4L.DSN?raw=true",
+                    "file_format": "DSN",
+                    "file_size": "2.1 MB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-QFN68-38-Board-4L",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-4L.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "362 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-QFN68-38-Board-GPIO-List",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-QFN68-38-Board-GPIO-List.xlsx?raw=true",
+                    "file_format": "XLSX",
+                    "file_size": "248 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-Sensor-Support-List ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B-Sensor-Support-List%20.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "180 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-VI-Interface-Detailed-Scenario-Description ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B_VI%20Interface%20Detailed%20Scenario%20Description.xlsx?raw=true",
+                    "file_format": "XLSX",
+                    "file_size": "40.3 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "CV1800B-WiFi-Support-List ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/CV1800B_WiFi%20Support%20List%20.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "164 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0008A-V01 ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/WDMB-0008A-V01.asc?raw=true",
+                    "file_format": "ASC",
+                    "file_size": "912 KB",
+                    "file_date": "Jun 5,2023"
+                },
+                {
+                    "download_name": "WDMB-0008A-V01 ",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/WDMB-0008A-V01.pcb?raw=true",
+                    "file_format": "PCB",
+                    "file_size": "1.05 MB",
+                    "file_date": "Jun 5,2023"
+                }
+            ]
+        },
+        "resources": {
+            "Development Hardware": [
+                {
+                    "resources_name": "Duo",
+                    "resources_url": "/docs/duo/overview",
+                    "resources_img": "/chips/duo-view.webp",
+                    "resources_info": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators."
+                }
+            ]
+        },
+        "resources_zh": {
+            "硬件": [
+                {
+                    "resources_name": "Duo",
+                    "resources_url": "/docs/duo/overview",
+                    "resources_img": "/chips/duo-view.webp",
+                    "resources_info": "Milk-V Duo 是基于 CV1800B 芯片的超紧凑型嵌入式开发平台。它可以运行 Linux 和 RTOS，为专业人士、工业 ODM、AIoT 发烧友、DIY 爱好者和创作者提供了一个可靠、低成本和高性能的平台。"
+                }
+            ]
+        }
     }
 }

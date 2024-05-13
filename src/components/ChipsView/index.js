@@ -5,14 +5,14 @@ import Link from '@docusaurus/Link';
 // import MetaData from "@site/src/components/MetaData"
 import SupportUs from "@site/src/components/SupportUs"
 import styles from './index.module.css'
-import { useLocation } from "@docusaurus/router";
+// import { useLocation } from "@docusaurus/router";
 import Translate from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 const jsonData = require('../../jsonFiles/chips.json');
 import BuyPop from "../BuyPop"
 
 export default (props) => {
-    const { chipName } = props
+    const { chipName, children } = props
     const currentLanguage = useBaseUrl('/');
     const curren_language = currentLanguage === '/zh/' ? 'resources_zh' : 'resources'
     const title_language = currentLanguage === '/zh/' ? 'title_zh' : 'title'
@@ -144,7 +144,7 @@ export default (props) => {
                 <div className={styles.chip_title}>
                     <div className={styles.title_l_t}>
                         <h4>{jsonData[chipName][title_language]}</h4>
-                        <Link style={{ cursor: 'pointer' }} to="#buy"><Translate id="homepage.corporations.duobuynow" /></Link>
+                        {chipName === "duo-module-01" ? null : <Link style={{ cursor: 'pointer' }} to="#buy"><Translate id="homepage.corporations.duobuynow" /></Link>}
                     </div>
                     <img src={jsonData[chipName].front_view} alt="Front View" />
                 </div>
@@ -244,6 +244,8 @@ export default (props) => {
                         }
                     </div>
                 </div>
+                <>{children}</>
+
             </div>
             <div className={styles.chip_diagram}>
                 <div ref={chip_diagram}>
@@ -392,7 +394,7 @@ export default (props) => {
             }}>
                 <img src="/chips/backtop.svg" alt="TOP" />
             </div>
-            <BuyPop type={chipName.toUpperCase()} />
+            {chipName === "duo-module-01" ? null : <BuyPop type={chipName.toUpperCase()} />}
             <SupportUs />
         </Layout>
     )
