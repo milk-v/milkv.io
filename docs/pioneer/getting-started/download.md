@@ -19,7 +19,7 @@ Here is a summary of the files we have available for download
 
 - [Recommended memory stick datasheet](https://github.com/milkv-pioneer/pioneer-files/blob/main/hardware/Longsys_DDR4_RDIMM_32GB_2RX8_Specfication_RER432A032G7-WFS100_V1.1.pdf)
 
-- Pioneer Schematic (Coming soon...)
+- [Pioneer Schematic](https://github.com/milkv-pioneer/pioneer-files/blob/main/hardware/milk-v_pioneer_SCH_v1.2.pdf)
 
 ## Software
 
