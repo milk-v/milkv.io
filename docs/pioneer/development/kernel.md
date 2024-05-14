@@ -67,3 +67,46 @@ $ build_rv_fedora_kernel
 $ ls install/soc_mango/single_chip/bsp-rpms/
 kernel-6.1.80.riscv64.rpm  kernel-devel-6.1.80.riscv64.rpm  kernel-headers-6.1.80.riscv64.rpm
 ```
+
+### Install kernel
+
+Copy the generated packages to Pioneer.
+
+- on Ubuntu
+
+```bash
+$ sudo dpkg -i linux-image-6.1.80.deb
+```
+
+- on Fedora
+
+```bash
+$ sudo rpm -ivh --force kernel-6.1.80.riscv64.rpm
+```
+
+#### Check extlinux.conf
+
+```bash
+$ cat /boot/extlinux/extlinux.conf
+## /boot/extlinux/extlinux.conf
+
+default fedora_sophgo
+menu title linuxboot menu
+prompt 0
+timeout 50
+
+label fedora_sophgo
+	menu label Fedora Sophgo in SD
+	linux /vmlinuz-6.1.80
+	initrd /initramfs-6.1.80.img
+	append  console=ttyS0,115200 root=LABEL=ROOT rootfstype=ext4 rootwait rw earlycon selinux=0 LANG=en_US.UTF-8 nvme_core.io_timeout=600 nvme_core.admin_timeout=600 cma=512M swiotlb=65536
+```
+
+#### Check build time
+
+After installation and reboot, you can check the build time to see if the new kernel is used.
+
+```bash
+$ uname -a
+Linux fedora-riscv 6.1.80 #1 SMP Tue May 14 08:14:53 UTC 2024 riscv64 GNU/Linux
+```
