@@ -15,7 +15,7 @@ The Duo series CPU adopts a big-little core design, where the Arduino firmware r
 
 ### Install Arduino IDE
 
-Arduino IDE supports three operating systems: Windows, Linux, and macOS. According to the system you are using, go to [Arduino official website](https://www.arduino.cc/en/software) to download the corresponding installation package for installation. The current latest version is 2.3.2, and it is recommended to use version 1.8.X or above.
+Arduino IDE supports three operating systems: Windows, Linux, and macOS. According to the system you are using, go to [Arduino official website](https://www.arduino.cc/en/software) to download the corresponding installation package for installation. The current latest version is 2.3.2, and it is recommended to use the latest version.
    
 ### Add Duo to Arduino IDE
 

@@ -15,7 +15,7 @@ Duo 系列 CPU 采用大小核设计，Arduino 固件运行在小核中，大核
 
 ### 安装 Arduino IDE
 
-Arduino IDE 支持 Windows、Linux、macOS 三种操作系统，根据您使用的系统到 [Arduino官方网站](https://www.arduino.cc/en/software) 下载对应安装包进行安装，当前最新的版本为 2.3.2，建议使用1.8.X以上版本。
+Arduino IDE 支持 Windows、Linux、macOS 三种操作系统，根据您使用的系统到 [Arduino官方网站](https://www.arduino.cc/en/software) 下载对应安装包进行安装，当前最新的版本为 2.3.2，建议使用最新版本。
    
 ### Arduino IDE 中添加 Duo 开发板
 
