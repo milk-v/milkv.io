@@ -66,7 +66,7 @@ Search for "duo", select ``Duo Dev Module`` for Duo, select ``Duo256 Dev Module`
 
 <Image src='/docs/duo/arduino/duo-arduino-05.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
-Open the ``Examples`` > ``01.Basics`` > ``Blink`` test program in the ``File`` menu of the Arduino IDE. The function of this program is to blink the onboard LED of the Arduino device. In Duo It is also supported. Let’s just click the ``Upload`` button to test:
+Open the ``Examples`` > ``01.Basics`` > ``Blink`` test program in the ``File`` menu of the Arduino IDE. The function of this program is to blink the onboard LED of the Arduino device. In Duo It is also supported. You may need to install pyserial in order to upload, and then let’s just click the ``Upload`` button to test:
 
 <Image src='/docs/duo/arduino/duo-arduino-06.jpg' minWidth='40%' maxWidth='100%' align='left' />
 

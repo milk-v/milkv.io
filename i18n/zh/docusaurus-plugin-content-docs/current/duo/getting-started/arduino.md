@@ -66,7 +66,7 @@ reboot
 
 <Image src='/docs/duo/arduino/duo-arduino-05_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
-在 Arduino IDE 的 ``文件`` 菜单中依次打开 ``示例`` > ``01.Basics`` > ``Blink`` 测试程序，该程序功能实现的是 Arduino 设备板载 LED 闪烁，Duo 中也是支持的，我们直接点 ``上传`` 按钮进行测试：
+在 Arduino IDE 的 ``文件`` 菜单中依次打开 ``示例`` > ``01.Basics`` > ``Blink`` 测试程序，该程序功能实现的是 Arduino 设备板载 LED 闪烁，Duo 中也是支持的，你也许需要安装 pyserial 来支持上传功能，之后我们直接点 ``上传`` 按钮进行测试：
 
 <Image src='/docs/duo/arduino/duo-arduino-06_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
