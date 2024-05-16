@@ -97,6 +97,7 @@ const sidebars = {
         'duo/resources/opencv-mobile',
         'duo/resources/xyzdims',
         'duo/resources/spilvgl',
+        'duo/resources/third-party-img',
       ],
     },
     {
@@ -173,6 +174,20 @@ const sidebars = {
         'pioneer/resources/inferllm',
         'pioneer/resources/llvm',
         'pioneer/resources/zcc',
+      ],
+    },
+    {
+      type: "category",
+      label: '🛠️ Development',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: '🛠️ Development',
+        description: 'Development Guide',
+        slug: '/pioneer/development-guide'
+      },
+      items: [
+        'pioneer/development/kernel',
       ],
     },
     'pioneer/faq',

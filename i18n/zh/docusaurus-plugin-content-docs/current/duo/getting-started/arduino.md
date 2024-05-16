@@ -15,7 +15,7 @@ Duo 系列 CPU 采用大小核设计，Arduino 固件运行在小核中，大核
 
 ### 安装 Arduino IDE
 
-Arduino IDE 支持 Windows、Linux、macOS 三种操作系统，根据您使用的系统到 [Arduino官方网站](https://www.arduino.cc/en/software) 下载对应安装包进行安装，当前最新的版本为 2.3.2，建议使用1.8.X以上版本。
+Arduino IDE 支持 Windows、Linux、macOS 三种操作系统，根据您使用的系统到 [Arduino官方网站](https://www.arduino.cc/en/software) 下载对应安装包进行安装，当前最新的版本为 2.3.2，建议使用最新版本。
    
 ### Arduino IDE 中添加 Duo 开发板
 
@@ -66,7 +66,7 @@ reboot
 
 <Image src='/docs/duo/arduino/duo-arduino-05_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
-在 Arduino IDE 的 ``文件`` 菜单中依次打开 ``示例`` > ``01.Basics`` > ``Blink`` 测试程序，该程序功能实现的是 Arduino 设备板载 LED 闪烁，Duo 中也是支持的，我们直接点 ``上传`` 按钮进行测试：
+在 Arduino IDE 的 ``文件`` 菜单中依次打开 ``示例`` > ``01.Basics`` > ``Blink`` 测试程序，该程序功能实现的是 Arduino 设备板载 LED 闪烁，Duo 中也是支持的，你也许需要安装 pyserial 来支持上传功能，之后我们直接点 ``上传`` 按钮进行测试：
 
 <Image src='/docs/duo/arduino/duo-arduino-06_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
