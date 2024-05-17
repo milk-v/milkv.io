@@ -776,66 +776,75 @@
         }
     },
     "duo-module-01": {
-        "title": "duo-module-01",
-        "title_zh": "CV1800B 是面向民用消费监控 IP 摄像机、居家智能等多项产品领域而推出的高性能、低功耗芯片，集成了 H.264/H.265 视频压缩编码器和 ISP；支持数字宽动态、3D 降噪、除雾、镜头畸变校正等多种图像增强和矫正算法，为客户提供专业级的视频图像质量。",
+        "title": "The Duo Module 01 is a compact module with integrated SG2000, WI-FI6/BTDM5.4, and eMMC. It supports SMD mounting. Also it can greatly save product development time. It is the first choice for making products.",
+        "title_zh": "Duo Module 01 是一款集成了 SG2000、WI-FI6/BTDM5.4 和 eMMC 的紧凑型模块。它支持 SMD 贴片。此外，它还能大大节省产品开发时间。它是制作产品的首选。",
         "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
-        "front_view": "/chips/cv1800b/cv1800b-frontview.webp",
+        "front_view": "/duom01/duo-module-01-overview.webp",
         "chip_view": [
-            "/chips/cv1800b/cv1800B-01.webp",
-            "/chips/cv1800b/cv1800B-02.webp",
-            "/chips/cv1800b/cv1800B-03.webp"
+            "/duom01/duo-module-01-overview.webp"
         ],
         "chip_intro_text": [
-            "CV1800B is a high-performance, low-power consumption chip designed for various consumer monitoring IP cameras, home intelligence, and other products. It integrates an H.264/H.265 video compression encoder and ISP and supports various image enhancement and correction algorithms such as digital wide dynamic range, 3D noise reduction, defogging, and lens distortion correction to provide professional-grade video image quality to customers. The chip also integrates a self-developed intelligent reference design (human form detection, area detection, motion detection), built-in DDR, and complete peripherals and external devices, providing a high-integration and concise solution to facilitate customer product development and mass production. In addition, it also provides secure boot, secure update, and secure encryption and so on to provide a series of security solutions for users from development, mass production to product application. The chip integrates an 8-bit MCU subsystem, which can replace general external MCUs to achieve the goal of saving BOM cost and power consumption."
+            "The Duo Module 01 is a compact module with integrated SG2000, WI-FI6/BTDM5.4, and eMMC. It supports SMD mounting. Also it can greatly save product development time. It is the first choice for making products.",
+            "The SoC of Duo Module 01, the SG2000, has a built-in RV64GCV@1GHz / Cortex-A53@1Ghz (Selection by pin level), an RV64GC@700MHz core for real-time tasks, an 8051 core for low-power standby, and a 0.5 TOPS@INT8 TPU."
         ],
         "chip_intro_text_zh": [
-            "CV1800B是一款高性能、低功耗的芯片，专为各种消费级监控IP摄像头、家居智能等产品设计。它集成了H.264/H.265视频压缩编码器和ISP，支持数字宽动态范围、3D降噪、去雾和镜头畸变校正等多种图像增强和修正算法，为客户提供专业级视频图像质量。该芯片还集成了自主开发的智能参考设计（人体检测、区域检测、运动检测），内置DDR和完整的外围设备，为客户产品的开发和量产提供了高度集成和简洁的解决方案。此外，它还提供了安全启动、安全更新和安全加密等功能，为用户从开发、量产到产品应用提供了一系列安全解决方案。该芯片集成了8位MCU子系统，可以替代通用外部MCU，实现BOM成本和功耗的节约目标。"
+            "Duo Module 01 是一款集成了 SG2000、WI-FI6/BTDM5.4 和 eMMC 的紧凑型模块。它支持 SMD 贴片。此外，它还能大大节省产品开发时间。它是制作产品的首选。",
+            "Duo Module 01 的主控 SG2000 内置了一个 RV64GCV@1GHz / Cortex-A53@1Ghz(通过引脚电平选择)，一个用以处理实时任务的RV64GC@700MHz核心，一个用以低功耗待机的8051核心和0.5TOPS@INT8的TPU"
         ],
-        "diagram_url": "/chips/cv1800b/cv1800B-diagram.webp",
+        "diagram_url": "/duom01/duo-module-01-block.webp",
         "hardware": {
-            "RISC-V CPU": [
-                "1 x C906@1GHz + 1 x C906@700MHz"
+            "SoC": [
+                "SG2000"
             ],
-            "NPU": [
-                "0.5 TOPS@INT8"
+            "CPU": [
+                "1x RV64GCV C906@1GHz / Cortex-A53@1GHz(Selection by pin level) + 1x RV64GC C906@700MHz + 1x 8051 Core"
             ],
             "Memory": [
-                "Sip DRAM 64M"
+                "SIP DRAM 512M"
             ],
-            "Video Module": [
-                "ISP 4M@25fps",
-                "MIPI 4L CSI",
+            "TPU":[
+                "0.5TOPS@INT8 TPU"
+            ],
+            "Multimedia": [
+                "ISP 5M@30fps",
+                "2L MIPI DSI 5M@30fps",
+                "4L or 2L+2L MIPI CSI 5M@30fps",
                 "H.265/H.264 Decoding and Encoding"
             ],
-            "Audio Module": [
-                "16bit Audio Codec"
+            "Audio": [
+                "16bit Audio Codec",
+                "2 x I2S/PCM",
+                "1 x DMIC"
             ],
             "Storage": [
-                "SPI-NOR, SPI-NAND, 2 x SDIO3.0"
+                "8GB eMMC",
+                "1x SPI-NOR",
+                "1x SPI-NAND",
+                "1x SDIO3.0"
             ],
             "Network": [
-                "10M/100M MAC PHY"
+                "1x 10M/100M MAC PHY"
+            ],
+            "USB": [
+                "1x USB2.0 OTG"
+            ],
+            "Wireless": [
+                "Onboard WI-FI6/BTDM5.4"
             ],
             "Security Module": [
                 "Secure boot/AES/SHA/Efuse"
             ],
-            "Peripherals": [
-                "3 x ADC/4 x I2C/3 x SPI/5 x UART/4 x PWM/2 x SDIO 3.0/51 GPIOs"
-            ],
             "Temperature Range": [
-                "-30℃～70℃"
+                "0℃～60℃"
             ],
             "Package Type": [
-                "QFN"
+                "Stamp-hole"
             ],
             "Package Dimensions": [
-                "7mmx7mmx0.9mm"
-            ],
-            "Pin Pitch": [
-                "0.35mm"
+                "25mmx25mm"
             ],
             "Total Pins": [
-                "68"
+                "88"
             ]
         },
         "scenarios": [
