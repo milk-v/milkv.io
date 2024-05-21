@@ -992,20 +992,20 @@
         "resources": {
             "Development Hardware": [
                 {
-                    "resources_name": "Duo",
+                    "resources_name": "Duo Module with IOB",
                     "resources_url": "/docs/duo/overview",
-                    "resources_img": "/chips/duo-view.webp",
-                    "resources_info": "Milk-V Duo is an ultra-compact embedded development platform based on the CV1800B chip. It can run Linux and RTOS, providing a reliable, low-cost, and high-performance platform for professionals, industrial ODMs, AIoT enthusiasts, DIY hobbyists, and creators."
+                    "resources_img": "/duom01/duo-module-with-iob.webp",
+                    "resources_info": "The Milk-V Duo Module with IOB is an evaluation platform based on the Duo Module, integrating various commonly used interfaces. It allows enterprises, developers, and makers to quickly evaluate solutions related to the SG2000 using this device. The open-source baseboard design documentation provides a reliable reference for secondary development.                    "
                 }
             ]
         },
         "resources_zh": {
             "硬件": [
                 {
-                    "resources_name": "Duo",
+                    "resources_name": "Duo Module with IOB",
                     "resources_url": "/docs/duo/overview",
-                    "resources_img": "/chips/duo-view.webp",
-                    "resources_info": "Milk-V Duo 是基于 CV1800B 芯片的超紧凑型嵌入式开发平台。它可以运行 Linux 和 RTOS，为专业人士、工业 ODM、AIoT 发烧友、DIY 爱好者和创作者提供了一个可靠、低成本和高性能的平台。"
+                    "resources_img": "/duom01/duo-module-with-iob.webp",
+                    "resources_info": "Milk-V Duo Module with IOB 是基于 Duo Module 模组的评估平台，集成了多种常用接口，方便企业、开发者、创客通过该设备可以快速评估 SG2000 的相关方案。开源的底板设计资料为二次开发提供可靠的参考。"
                 }
             ]
         }
