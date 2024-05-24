@@ -39,7 +39,7 @@ duotpu                   C:\Users\Carbon\anaconda3\envs\duotpu
 
 Activate the newly installed 3.9.0 environment.
 ```
-(base) C:\Users\Carbon> activate duotpu
+(base) C:\Users\Carbon> conda activate duotpu
 ```
 
 Confirm that the activation is successful.
@@ -86,7 +86,7 @@ model.model[-1].export = True
 torch.jit.trace(model, torch.rand(1, 3, 640, 640), strict=False).save('./yolov5n_jit.pt')
 ```
 
-Then find the `yolov5-master/models/yolo.py` file, comment the code from lines 98 to 114, and add the code `return x` on line 115, as shown below:
+Then find the `yolov5-master/models/yolo.py` file, comment the code from lines 99 to 115, and add the code `return x` on line 116, as shown below:
 
 ![duo](/docs/duo/tpu/duo-tpu-yolo5_01.png)
 
@@ -122,6 +122,10 @@ conda env remove --name <envname>
 ## 2. Configure Docker development environment
 
 Refer to [here](https://milkv.io/docs/duo/application-development/tpu/tpu-docker). After configuring the Docker development environment, return here to continue the next step.
+
+:::Warning
+If you are using a configured Docker development environment, please make sure to follow the Docker configuration tutorial to execute command `source ./tpu-mlir/envsetup.sh` after starting Docker, otherwise errors may occur in subsequent steps.
+:::
 
 ## 3. Prepare the working directory in Docker
 
@@ -228,6 +232,11 @@ The command to convert MLIR model to INT8 model is as follows
  --model yolov5n_int8_fuse.cvimodel
  ```
 
+:::Tips
+If the development board you are using is not Duo, please replace the fifth line '-- chip cv180x' in the above command with the corresponding chip model.
+When using Duo 256M, it should be changed to ` -- chip cv181x`.
+:::
+
 Example of successful operation
 
 ![duo](/docs/duo/tpu/duo-tpu-yolo5_10.png)
@@ -249,9 +258,16 @@ Switch to the `/workspace` directory in the Docker terminal
 cd /workspace
 ```
 
-Download tpu-sdk
+Download tpu sdk, if you are using Duo, execute
 ```
-git clone https://github.com/milkv-duo/tpu-sdk.git
+git clone https://github.com/milkv-duo/tpu-sdk-cv180x.git
+mv ./tpu-sdk-cv180x ./tpu-sdk
+```
+
+Else,if you are using Duo 256M, execute
+```
+git clone https://github.com/milkv-duo/tpu-sdk-sg200x.git
+mv ./tpu-sdk-sg200x ./tpu-sdk
 ```
 
 ### Copy tpu-sdk and model files to Duo
