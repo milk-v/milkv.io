@@ -123,7 +123,7 @@ conda env remove --name <envname>
 
 Refer to [here](https://milkv.io/docs/duo/application-development/tpu/tpu-docker). After configuring the Docker development environment, return here to continue the next step.
 
-:::Warning
+:::warning
 If you are using a configured Docker development environment, please make sure to follow the Docker configuration tutorial to execute command `source ./tpu-mlir/envsetup.sh` after starting Docker, otherwise errors may occur in subsequent steps.
 :::
 
@@ -232,8 +232,8 @@ The command to convert MLIR model to INT8 model is as follows
  --model yolov5n_int8_fuse.cvimodel
  ```
 
-:::Tips
-If the development board you are using is not Duo, please replace the fifth line '-- chip cv180x' in the above command with the corresponding chip model.
+:::tip
+If the development board you are using is not Duo, please replace the fifth line `-- chip cv180x` in the above command with the corresponding chip model.
 When using Duo 256M, it should be changed to ` -- chip cv181x`.
 :::
 

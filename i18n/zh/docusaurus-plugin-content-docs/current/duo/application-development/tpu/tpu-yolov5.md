@@ -120,7 +120,7 @@ conda env remove --name <envname>
 
 参考 [这里](https://milkv.io/zh/docs/duo/application-development/tpu/tpu-docker) 配置好 Docker 开发环境后，再回到这里继续下一步
 
-:::Warning
+:::warning
 若您使用已经配置好的 Docker 开发环境，请您启动 Docker 后务必按照 Docker 配置教程执行 `source ./tpu-mlir/envsetup.sh` 命令，否则后续步骤可能报错。
 :::
 
@@ -225,7 +225,7 @@ Duo 开发板搭载的是 CV1800B 芯片，该芯片支持 **ONNX 系列** 和 *
  --model yolov5n_int8_fuse.cvimodel
  ```
 
-:::Tips
+:::tip
 如果您使用的开发板不是 Duo ，请将上述命令中第 5 行 `--chip cv180x` 更换为对应的芯片型号。
 使用 Duo 256M 时应更改为 `--chip cv181x`。
 :::
