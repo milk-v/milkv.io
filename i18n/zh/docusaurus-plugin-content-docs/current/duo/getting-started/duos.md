@@ -27,6 +27,7 @@ Milk-V 是 SG2002 芯片的全球授权经销商。您可以直接从我们的�
 
 <Image src='/docs/duo/duos/duos-pinout-v1.1.webp' maxWidth='50%' align='center' />
 
+
 ### GPIO 引脚映射
 
 <div className='gpio_style'>
@@ -220,8 +221,36 @@ wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
 即可连接 WIFI，连接之后可以通过 `ifconfig` 或者 `ip a` 命令查看分配的 IP 地址。
 
 :::tip
-如果需要开机自动连网，可以把该命令放到 `/mnt/system/auto.sh` 文件中。
+如果需要开机自动连网，可以把以下命令放到 `/mnt/system/auto.sh` 文件中。
 :::
+
+```bash
+interface="wlan0"
+max_attempts=100
+attempt=0
+log_file="/var/log/auto.sh.log"
+
+# Continuously attempt to detect if the interface exists, up to $max_attempts times
+echo "start auot.sh" > "$log_file"
+while [ $attempt -lt $max_attempts ]; do
+    # Check if the wlan0 interface exists
+    ip link show "$interface" > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        echo "$(date +'%Y-%m-%d %H:%M:%S') $interface interface exists, starting wpa_supplicant..." >> "$lo
+        wpa_supplicant -B -i "$interface" -c /etc/wpa_supplicant.conf >> "$log_file"
+        break  # Exit the loop if the interface is found
+    else
+        echo "$(date +'%Y-%m-%d %H:%M:%S') $interface interface not found, waiting..." >> "$log_file"
+        sleep 1  # Wait for 1 second before checking again
+        attempt=$((attempt + 1))  # Increment the attempt counter
+    fi
+done
+
+# If the maximum number of attempts is reached and the interface still not found, output an error message
+if [ $attempt -eq $max_attempts ]; then
+    echo "$(date +'%Y-%m-%d %H:%M:%S') Interface $interface not found after $max_attempts attempts" >> "$lo
+fi
+```
 
 ### eMMC 版本固件烧录
 
