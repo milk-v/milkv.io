@@ -9,6 +9,10 @@ sidebar_position: 40
 
 Refer to [here](https://milkv.io/docs/duo/application-development/tpu/tpu-docker). After configuring the Docker development environment, return here to continue the next step.
 
+:::warning
+If you are using a configured Docker development environment, please make sure to follow the Docker configuration tutorial to execute command `source ./tpu-mlir/envsetup.sh` after starting Docker, otherwise errors may occur in subsequent steps.
+:::
+
 ## 2. Prepare the working directory in Docker
 
 Create and enter the `resnet18` working directory, note that it is a directory at the same level as `tpu-mlir`.
@@ -18,7 +22,7 @@ Create and enter the `resnet18` working directory, note that it is a directory a
 
 Get the original model
 ```
-# wget https://github.com/onnx/models/raw/main/vision/classification/resnet/model/resnet18-v1-7.tar.gz
+# wget https://github.com/onnx/models/raw/main/validated/vision/classification/resnet/model/resnet18-v1-7.tar.gz
 ```
 Extract `resnet18-v1-7.tar.gz`
 ```
@@ -109,14 +113,19 @@ model_deploy.py \
  --test_reference resnet18_top_outputs.npz \
  --compare_all \
  --fuse_preprocess \
- --model resnet18_cv180x_int8_fuse.cvimodel
+ --model resnet18_int8_fuse.cvimodel
 ```
+
+:::tip
+If the development board you are using is not Duo, please replace the fifth line `-- chip cv180x` in the above command with the corresponding chip model.
+When using Duo 256M, it should be changed to ` -- chip cv181x`.
+:::
 
 Example of successful operation
 
 ![duo](/docs/duo/tpu/duo-tpu-resnet18_09.png)
 
-After compilation is completed, the `resnet18_cv180x_int8_fuse.cvimodel` file will be generated.
+After compilation is completed, the `resnet18_int8_fuse.cvimodel` file will be generated.
 
 ![duo](/docs/duo/tpu/duo-tpu-resnet18_10.png)
 
@@ -133,9 +142,16 @@ Switch to the `/workspace` directory in the Docker terminal
 cd /workspace
 ```
 
-Download tpu-sdk
+Download tpu sdk, if you are using Duo, execute
 ```
-git clone https://github.com/milkv-duo/tpu-sdk.git
+git clone https://github.com/milkv-duo/tpu-sdk-cv180x.git
+mv ./tpu-sdk-cv180x ./tpu-sdk
+```
+
+Else,if you are using Duo 256M, execute
+```
+git clone https://github.com/milkv-duo/tpu-sdk-sg200x.git
+mv ./tpu-sdk-sg200x ./tpu-sdk
 ```
 
 ### Copy tpu-sdk and model files to Duo
@@ -148,7 +164,7 @@ In the terminal of the Duo board, create a new directory `/mnt/tpu/`
 In the Docker terminal, copy `tpu-sdk` and model files to the Duo
 ```
 # scp -r /workspace/tpu-sdk root@192.168.42.1:/mnt/tpu/
-# scp /workspace/resnet18/work/resnet18_cv180x_int8_fuse.cvimodel root@192.168.42.1:/mnt/tpu/tpu-sdk/
+# scp /workspace/resnet18/work/resnet18_int8_fuse.cvimodel root@192.168.42.1:/mnt/tpu/tpu-sdk/
 ```
 
 ### Set environment variables
@@ -165,10 +181,10 @@ On the Duo board, perform Image Classification on the image
 
 ![duo](/docs/duo/tpu/duo-tpu-cat.jpg)
 
-Image classification using `resnet18_cv180x_int8_fuse.cvimodel` model:
+Image classification using `resnet18_int8_fuse.cvimodel` model:
 ```
 ./samples/bin/cvi_sample_classifier_fused_preprocess \
- ./resnet18_cv180x_int8_fuse.cvimodel \
+ ./resnet18_int8_fuse.cvimodel \
  ./samples/data/cat.jpg \
  ./samples/data/synset_words.txt
 ```

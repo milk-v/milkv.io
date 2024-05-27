@@ -9,6 +9,10 @@ sidebar_position: 35
 
 参考 [这里](https://milkv.io/zh/docs/duo/application-development/tpu/tpu-docker) 配置好 Docker 开发环境后，再回到这里继续下一步
 
+:::warning
+若您使用已经配置好的 Docker 开发环境，请您启动 Docker 后务必按照 Docker 配置教程执行 `source ./tpu-mlir/envsetup.sh` 命令，否则后续步骤可能报错。
+:::
+
 ## 2. 在 Docker 中准备工作目录
 
 创建并进入 `mobilenet_v2` 工作目录，注意是与 `tpu-mlir` 同级的目录
@@ -108,14 +112,19 @@ model_deploy.py \
  --chip cv180x \
  --quantize INT8 \
  --test_input ../image/cat.jpg \
- --model mobilenet_v2_cv1800_int8_asym.cvimodel
+ --model mobilenet_v2_int8_asym.cvimodel
 ```
+
+:::tip
+如果您使用的开发板不是 Duo ，请将上述命令中第 7 行 `--chip cv180x` 更换为对应的芯片型号。
+使用 Duo 256M 时应更改为 `--chip cv181x`。
+:::
 
 运行成功效果示例
 
 ![duo](/docs/duo/tpu/duo-tpu-mobilenetv2_09.png)
 
-编译完成后, 会生成名为 `mobilenet_v2_cv1800_int8_asym.cvimodel` 的文件
+编译完成后, 会生成名为 `mobilenet_v2_int8_asym.cvimodel` 的文件
 
 ![duo](/docs/duo/tpu/duo-tpu-mobilenetv2_10.png)
 
@@ -132,9 +141,16 @@ model_deploy.py \
 cd /workspace
 ```
 
-下载 tpu-sdk
+下载 tpu-sdk，如果您使用的是 Duo ，则执行
 ```
-git clone https://github.com/milkv-duo/tpu-sdk.git
+git clone https://github.com/milkv-duo/tpu-sdk-cv180x.git
+mv ./tpu-sdk-cv180x ./tpu-sdk
+```
+
+如果您使用的是 Duo 256M ,则执行
+```
+git clone https://github.com/milkv-duo/tpu-sdk-sg200x.git
+mv ./tpu-sdk-sg200x ./tpu-sdk
 ```
 
 ### 将开发工具包和模型文件拷贝到 Duo 开发板上
@@ -147,7 +163,7 @@ git clone https://github.com/milkv-duo/tpu-sdk.git
 在 Docker 的终端中，将 `tpu-sdk` 和模型文件拷贝到 Duo 开发板上
 ```
 # scp -r /workspace/tpu-sdk root@192.168.42.1:/mnt/tpu/
-# scp /workspace/mobilenet_v2/work/mobilenet_v2_cv1800_int8_asym.cvimodel root@192.168.42.1:/mnt/tpu/tpu-sdk/
+# scp /workspace/mobilenet_v2/work/mobilenet_v2_int8_asym.cvimodel root@192.168.42.1:/mnt/tpu/tpu-sdk/
 ```
 
 ### 设置环境变量
@@ -172,7 +188,7 @@ git clone https://github.com/milkv-duo/tpu-sdk.git
 
 查看 cvimodel info
 ```
-./bin/cvi_sample_model_info ../mobilenet_v2_cv1800_int8_asym.cvimodel
+./bin/cvi_sample_model_info ../mobilenet_v2_int8_asym.cvimodel
 ```
 
 ![duo](/docs/duo/tpu/duo-tpu-mobilenetv2_11.png)
@@ -180,7 +196,7 @@ git clone https://github.com/milkv-duo/tpu-sdk.git
 运行图像分类测试
 ```
 ./bin/cvi_sample_classifier_fused_preprocess \
- ../mobilenet_v2_cv1800_int8_asym.cvimodel \
+ ../mobilenet_v2_int8_asym.cvimodel \
  ./data/cat.jpg \
  ./data/synset_words.txt
 ```
