@@ -253,7 +253,7 @@ const Home_web = () => {
             <img src='/home/milkv-ubuntu.svg' alt='milkv docs' />
             <p>Milk-V & Ubuntu: Crafting Ubuntu as the Best OS for RISC-V</p>
           </div>
-          <Link to='https://canonical.com/blog/canonical-enables-ubuntu-on-milk-v-mars' title='MilkV Docs' className={styles.docs_a}><Translate id='homepage.corporations.docslearnmore' /></Link>
+          <Link to='https://canonical.com/blog/canonical-enables-ubuntu-on-milk-v-mars' className={styles.docs_a}><Translate id='homepage.corporations.docslearnmore' /></Link>
         </div>
         <ul className={styles.tab} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           {tabs.map((tab, idx) => (
