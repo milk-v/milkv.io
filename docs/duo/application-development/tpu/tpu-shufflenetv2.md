@@ -130,7 +130,7 @@ model_deploy.py \
 
 :::tip
 If the development board you are using is not Duo, please replace the seventh line `-- chip cv180x` in the above command with the corresponding chip model.
-When using Duo 256M, it should be changed to ` -- chip cv181x`.
+When using Duo 256M/Duo S , it should be changed to ` -- chip cv181x`.
 :::
 
 Example of successful operation
@@ -160,7 +160,7 @@ git clone https://github.com/milkv-duo/tpu-sdk-cv180x.git
 mv ./tpu-sdk-cv180x ./tpu-sdk
 ```
 
-Else,if you are using Duo 256M, execute
+Else,if you are using Duo 256M/Duo S , execute
 ```
 git clone https://github.com/milkv-duo/tpu-sdk-sg200x.git
 mv ./tpu-sdk-sg200x ./tpu-sdk

@@ -83,7 +83,7 @@ model_deploy.py \
 
 :::tip
 如果您使用的开发板不是 Duo ，请将上述命令中第 4 行 `--chip cv180x` 更换为对应的芯片型号。
-使用 Duo 256M 时应更改为 `--chip cv181x`。
+使用 Duo 256M/Duo S 时应更改为 `--chip cv181x`。
 :::
 
 运行成功效果示例
@@ -132,7 +132,7 @@ model_deploy.py \
 
 :::tip
 如果您使用的开发板不是 Duo ，请将上述命令中第 5 行 `--chip cv180x` 更换为对应的芯片型号。
-使用 Duo 256M 时应更改为 `--chip cv181x`。
+使用 Duo 256M/Duo S 时应更改为 `--chip cv181x`。
 :::
 
 运行成功效果示例
@@ -162,7 +162,7 @@ git clone https://github.com/milkv-duo/tpu-sdk-cv180x.git
 mv ./tpu-sdk-cv180x ./tpu-sdk
 ```
 
-如果您使用的是 Duo 256M ,则执行
+如果您使用的是 Duo 256M/Duo S ,则执行
 ```
 git clone https://github.com/milkv-duo/tpu-sdk-sg200x.git
 mv ./tpu-sdk-sg200x ./tpu-sdk
