@@ -116,7 +116,7 @@ DuoS 有两个 CSI 摄像头接连器：
 
 ### POE 接口
 
-<Image src='/docs/duo/duos/duos-poe-pinout.webp' maxWidth='70%' align='center' />
+<Image src='/docs/duo/duos/duos-poe-pinout.webp' maxWidth='50%' align='left' />
 
 | POE Pin | Description |
 |:-------:|:-----------:|

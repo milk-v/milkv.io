@@ -116,7 +116,7 @@ Note that the I2C used by the J1 interface is I2C3, and the I2C used by the J2 i
 
 ### POE Header
 
-<Image src='/docs/duo/duos/duos-poe-pinout.webp' maxWidth='70%' align='center' />
+<Image src='/docs/duo/duos/duos-poe-pinout.webp' maxWidth='50%' align='left' />
 
 | POE Pin | Description |
 |:-------:|:-----------:|
