@@ -41,6 +41,10 @@ sidebar_position: 10
 
 Duo 上的蓝色 LED 灯将闪烁。
 
+:::tip
+如果开机后蓝色 LED 未闪烁，说明系统没有正常运行，可能是烧录到 microSD 中的镜像有问题。您可以尝试用其他烧录软件重新烧录镜像，常用的烧录软件有 balenaEtcher，Rufus，Win32DiskImager 等。如果仍然不能正常启动，可以连接串口线，将开机后的日志发送绐我们分析。
+:::
+
 ## 故障排除
 
 如果您有问题，请到我们的[社区](https://community.milkv.io/)发帖，让我们知道。
