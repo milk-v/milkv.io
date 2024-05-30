@@ -114,6 +114,17 @@ DuoS 有两个 CSI 摄像头接连器：
 
 注意，J1 接口使用的 I2C 为 I2C3，J2 接口使用的 I2C 为 I2C2，使用时注意检查引脚复用配置。
 
+### POE 接口
+
+<Image src='/docs/duo/duos/duos-poe-pinout.webp' maxWidth='70%' align='center' />
+
+| POE Pin | Description |
+|:-------:|:-----------:|
+| 1       | VB-         |
+| 2       | VB+         |
+| 3       | VA-         |
+| 4       | VA+         |
+
 ## DuoS 使用指引
 
 ### RISC-V 与 ARM 切换
