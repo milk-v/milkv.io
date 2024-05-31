@@ -30,16 +30,18 @@ sidebar_position: 10
 
 ## Download images and tools
 
+##### Here are the steps to burn the image to EMMC boot, if you want to use SD boot click here: [Install an image to MicroSD Card](../installation/install-an-image-to-microsd-card.md).
+
 You need to use the fasboot utility to burn the image into the eMMC.
 
 - Commands for installing the fasboot utility on Linux: `sudo apt-get install android-tools-adb`.
 
 You will need to download the following three files:
 
-- u-boot-with-spl-singlerank.bin or u-boot-with-spl-dualrank.bin
-  - Choose according to the meles memory size, 4G choose u-boot-with-spl-singlerank.bin, 8G choose u-boot-with-spl-dualrank.bin
-- boot.ext
-- root-meles-20231210_134926.ext4
+- u-boot-with-spl-meles-4g.bin or u-boot-with-spl-meles.bin
+  - Choose according to the meles memory size, 4G choose u-boot-with-spl-meles-4g.bin, 8G choose u-boot-with-spl-meles.bin
+- boot-meles-20240417_155900.ext4
+- root-meles-20240417_155900.ext4
 
 Download the system image from [Resources Download](../resources-download/image.md).
 
@@ -68,15 +70,15 @@ Bus 001 Device 045: ID 2345:7654 T-HEAD USB download gadget
 ```
 
 - Execute the following command to start burning
-  - The `u-boot-with-spl.bin` file is divided into `u-boot-with-spl-singlerank.bin` and `u-boot-with-spl-dualrank.bin`, depending on the memory size of the meles you have.
-  - `4G` choose `u-boot-with-spl-singlerank.bin`, `8G` choose `u-boot-with-spl-dualrank.bin`
+  - The `u-boot-with-spl.bin` file is divided into `u-boot-with-spl-meles-4g.bin` and `u-boot-with-spl-meles.bin`, depending on the memory size of the meles you have.
+  - `4G` choose `u-boot-with-spl-meles-4g.bin`, `8G` choose `u-boot-with-spl-meles.bin`
 ```
-$ fastboot flash ram u-boot-with-spl.bin
+$ fastboot flash ram u-boot-with-spl-meles.bin
 $ fastboot reboot
 $ sleep 5
-$ fastboot flash uboot u-boot-with-spl.bin
-$ fastboot flash boot boot.ext4
-$ fastboot flash root rootfs.ext4
+$ fastboot flash uboot u-boot-with-spl-meles.bin
+$ fastboot boot-meles-20240417_155900.ext4
+$ fastboot root-meles-20240417_155900.ext4
 ```
 
 - The following figure represents a successful burn-in

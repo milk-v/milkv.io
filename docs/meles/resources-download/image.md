@@ -5,6 +5,6 @@ sidebar_position: 10
 
 # Official Image
 
-### v1.0.0
+### v2024-0417
 
-[Meles Image](https://github.com/milkv-meles/meles-images/releases/tag/v1.0.0).
+[Meles Image](https://github.com/milkv-meles/meles-images/releases/tag/v2024-0417).
