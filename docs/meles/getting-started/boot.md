@@ -30,8 +30,6 @@ sidebar_position: 10
 
 ## Download images and tools
 
-##### Here are the steps to burn the image to EMMC boot, if you want to use SD boot click here: [Install an image to MicroSD Card](../installation/install-an-image-to-microsd-card.md).
-
 You need to use the fasboot utility to burn the image into the eMMC.
 
 - Commands for installing the fasboot utility on Linux: `sudo apt-get install android-tools-adb`.
@@ -47,7 +45,7 @@ Download the system image from [Resources Download](../resources-download/image.
 
 ## Write images
 
-**Here are the steps on how to burn an image to an eMMC using the fasboot utility on a Linux system**
+#### Here are the steps on how to burn an image to an eMMC using the fasboot utility on a Linux system, If you want to boot with an SD card, click here: [Install an image to MicroSD Card](../installation/install-an-image-to-microsd-card.md).
 
 - First snap the EMMC into the slot on the back of the meles
 
