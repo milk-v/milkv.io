@@ -8,7 +8,7 @@ sidebar_position: 10
 ## Prepare
 
 - Necessary
-  - Duo
+  - Duo, Duo256M or DuoS
   - microSD card, larger than 1GB
   - Type-C cable
 - Optional
