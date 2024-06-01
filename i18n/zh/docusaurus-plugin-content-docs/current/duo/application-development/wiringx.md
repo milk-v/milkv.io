@@ -22,7 +22,7 @@ sidebar_position: 10
 
 Duo 和 Duo256M 的 wiringX 引脚序号, 与引脚名序号是一致的，蓝色 LED 控制引脚不在引出的 40PIN 物理引脚上，其 wiringX 的序号是`25`。
 
-<Image src='/docs/duo/duo/duo-pinout-01.webp' maxWidth='50%' align='center' />
+<Image src='/docs/duo/duo/duo-pinout-01.webp' maxWidth='50%' align='left' />
 
 <div className='gpio_style'>
 
@@ -57,7 +57,7 @@ Duo 和 Duo256M 的 wiringX 引脚序号, 与引脚名序号是一致的，蓝�
 
 DuoS 的 wiringX 引脚序号, 与物理引脚序号是一致的，蓝色 LED 控制引脚不在引出的 40PIN 物理引脚上，其 wiringX 的序号是 `0`。
 
-<Image src='/docs/duo/duos/duos-pinout-v1.1.webp' maxWidth='50%' align='center' />
+<Image src='/docs/duo/duos/duos-pinout-v1.1.webp' maxWidth='50%' align='left' />
 
 #### 排针 J3
 
@@ -83,8 +83,6 @@ DuoS 的 wiringX 引脚序号, 与物理引脚序号是一致的，蓝色 LED �
 
 </div>
 
-　
-
 *GND\*：引脚 9 在 DuoS V1.1 版本硬件中是一个低电平的 GPIO，在 V1.2 及更高版本硬件中为 GND。*
 
 #### 排针 J4
@@ -95,7 +93,7 @@ DuoS 的 wiringX 引脚序号, 与物理引脚序号是一致的，蓝色 LED �
 
 <div className='gpio_style' style={{ overflow :"auto"}} >
 
-| wiringX | PIN NAME | PIN#                            | PIN#                             | NAME        | wiringX |
+| wiringX | PIN NAME | PIN#                            | PIN#                             | PIN NAME    | wiringX |
 |:-------:|----------|:-------------------------------:|:--------------------------------:|:------------|:-------:|
 |         | VSYS(5V) | <div className='red'>52</div>   | <div className='blue'>51</div>   | AUDIO_OUT_R |         |
 | 50      | B1       | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |         |

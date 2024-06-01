@@ -55,7 +55,7 @@ The wiringX pin numbers of Duo and Duo256M are consistent with the pin name numb
 
 </div>
 
-### DuoS wiringX wiringX numbers
+### DuoS wiringX numbers
 
 The wiringX pin numbers of DuoS are consistent with the physical pin numbers. The blue LED control pin is not on the 40PIN physical pins, and its wiringX number is `0`.
 
@@ -85,8 +85,6 @@ GPIO on `Header J3` use 3.3V logic levels.
 
 </div>
 
-　
-
 *GND\*: Pin 9 is a low-level GPIO in the V1.1 version of the hardware, and is GND in the V1.2 version and later.*
 
 #### Header J4
@@ -97,7 +95,7 @@ Most of the pins on this header have dedicated functions, such as MIPI DSI signa
 
 <div className='gpio_style' style={{ overflow :"auto"}} >
 
-| wiringX | PIN NAME | PIN#                            | PIN#                             | NAME        | wiringX |
+| wiringX | PIN NAME | PIN#                            | PIN#                             | PIN NAME    | wiringX |
 |:-------:|----------|:-------------------------------:|:--------------------------------:|:------------|:-------:|
 |         | VSYS(5V) | <div className='red'>52</div>   | <div className='blue'>51</div>   | AUDIO_OUT_R |         |
 | 50      | B1       | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |         |
