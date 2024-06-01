@@ -9,7 +9,7 @@ sidebar_position: 05
 
 Duo 引脚可复用的功能请参考：[Duo GPIO 引脚分配](https://milkv.io/zh/docs/duo/getting-started/duo#duo-gpio-%E5%BC%95%E8%84%9A%E5%88%86%E9%85%8D)
 
-Duo256M 引脚可利用的功能请参考：[Duo256M GPIO 引脚分配](https://milkv.io/zh/docs/duo/getting-started/duo256m#duo256m-gpio-%E5%BC%95%E8%84%9A%E5%88%86%E9%85%8D)
+Duo256M 引脚可复用的功能请参考：[Duo256M GPIO 引脚分配](https://milkv.io/zh/docs/duo/getting-started/duo256m#duo256m-gpio-%E5%BC%95%E8%84%9A%E5%88%86%E9%85%8D)
 
 <div className='gpio_style'>
 
@@ -25,7 +25,7 @@ Duo256M 引脚可利用的功能请参考：[Duo256M GPIO 引脚分配](https://
 | GND      | <div className='black'>8</div>  |  <div className='black'>33</div> | GND      |
 | GP6      | <div className='green'>9</div>  |  <div className='green'>32</div> | GP27     |
 | GP7      | <div className='green'>10</div> |  <div className='green'>31</div> | GP26     |
-| GP8      | <div className='green'>21</div> | <div className='orange'>30</div> | RUN      |
+| GP8      | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |
 | GP9      | <div className='green'>12</div> |  <div className='green'>29</div> | GP22     |
 | GND      | <div className='black'>13</div> |  <div className='black'>28</div> | GND      |
 | GP10     | <div className='green'>14</div> |  <div className='green'>27</div> | GP21     |

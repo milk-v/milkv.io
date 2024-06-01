@@ -25,7 +25,7 @@ For Duo256M pin multiplexing function, please refer to: [Duo256M GPIO Pinout](ht
 | GND      | <div className='black'>8</div>  |  <div className='black'>33</div> | GND      |
 | GP6      | <div className='green'>9</div>  |  <div className='green'>32</div> | GP27     |
 | GP7      | <div className='green'>10</div> |  <div className='green'>31</div> | GP26     |
-| GP8      | <div className='green'>21</div> | <div className='orange'>30</div> | RUN      |
+| GP8      | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |
 | GP9      | <div className='green'>12</div> |  <div className='green'>29</div> | GP22     |
 | GND      | <div className='black'>13</div> |  <div className='black'>28</div> | GND      |
 | GP10     | <div className='green'>14</div> |  <div className='green'>27</div> | GP21     |
