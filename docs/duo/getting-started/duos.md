@@ -65,6 +65,8 @@ GPIO on `Header J3` use 3.3V logic levels.
 
 </div>
 
+　
+
 *GND\*: Pin 9 is a low-level GPIO in the V1.1 version of the hardware, and is GND in the V1.2 version and later.*
 
 NOTE: The I2C on the CSI camera connector J2 is I2C2, so when using the CSI camera on J2, I2C2 in the J3 pin header is not available.
@@ -93,7 +95,7 @@ GPIO on `Header J4` use 1.8V logic levels.
 
 </div>
 
-### LED PIN
+### Blue LED PIN
 
 <div className='gpio_style'>
 

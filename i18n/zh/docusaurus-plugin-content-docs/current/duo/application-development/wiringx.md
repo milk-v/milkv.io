@@ -14,11 +14,19 @@ sidebar_position: 10
 
 如果您对 wiringX 的使用方法已经非常熟悉,可以直接参考我们的样例代码: [duo-examples](https://github.com/milkv-duo/duo-examples)
 
-Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LED 控制引脚不在引出的 40PIN 物理引脚上，其 wiringX 的序号是`25`。
+注意，Duo 系列的很多引脚功能是复用的，在使用`wiringX`来控制 Duo/Duo256M/DuoS 各引脚的功能时，要先确认一下引脚当前的状态是不是自己需要的功能, 如果不是，可以用`duo-pinmux`命令来切换为所需功能。
+
+具体方法请参考: [引脚复用](https://milkv.io/zh/docs/duo/application-development/pinmux)。
+
+### Duo/Duo256M wiringX 引脚序号
+
+Duo 和 Duo256M 的 wiringX 引脚序号, 与引脚名序号是一致的，蓝色 LED 控制引脚不在引出的 40PIN 物理引脚上，其 wiringX 的序号是`25`。
+
+<Image src='/docs/duo/duo/duo-pinout-01.webp' maxWidth='50%' align='center' />
 
 <div className='gpio_style'>
 
-| wiringX | PIN NAME |              Pin#               |               Pin#               | PIN NAME | wiringX |
+| wiringX | PIN NAME |              PIN#               |               PIN#               | PIN NAME | wiringX |
 | ------- | -------- | :-----------------------------: | :------------------------------: | -------- | ------- |
 | 0       | GP0      | <div className='green'>1</div>  |  <div className='red'>40</div>   | VBUS     |         |
 | 1       | GP1      | <div className='green'>2</div>  |  <div className='red'>39</div>   | VSYS     |         |
@@ -45,9 +53,65 @@ Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LE
 
 </div>
 
-注意，Duo 的很多引脚功能是复用的，在使用`wiringX`来控制 Duo 各引脚的功能时，要先确认一下引脚当前的状态是不是自己需要的功能, 如果不是，可以用`duo-pinmux`命令来切换为所需功能。
+### DuoS wiringX 引脚序号
 
-具体方法请参考: [引脚复用](https://milkv.io/zh/docs/duo/application-development/pinmux)。
+DuoS 的 wiringX 引脚序号, 与物理引脚序号是一致的，蓝色 LED 控制引脚不在引出的 40PIN 物理引脚上，其 wiringX 的序号是 `0`。
+
+<Image src='/docs/duo/duos/duos-pinout-v1.1.webp' maxWidth='50%' align='center' />
+
+#### 排针 J3
+
+`排针 J3` 上的 GPIO 使用 3.3V 逻辑电平。
+
+<div className='gpio_style' style={{ overflow :"auto"}} >
+
+| wiringX | PIN NAME | PIN#                             | PIN#                            | PIN NAME | wiringX |
+|:-------:|:---------|:--------------------------------:|:-------------------------------:|:---------|:-------:|
+|         | 3V3      | <div className='orange'>1</div>  | <div className='red'>2</div>    | VSYS(5V) |         |
+| 3       | B20      | <div className='green'>3</div>   | <div className='red'>4</div>    | VSYS(5V) |         |
+| 5       | B21      | <div className='green'>5</div>   | <div className='black'>6</div>  | GND      |         |
+| 7       | B18      | <div className='green'>7</div>   | <div className='green'>8</div>  | A16      | 8       |
+|         | GND\*    | <div className='black'>9</div>   | <div className='green'>10</div> | A17      | 10      |
+| 11      | B11      | <div className='green'>11</div>  | <div className='green'>12</div> | B19      | 12      |
+| 13      | B12      | <div className='green'>13</div>  | <div className='black'>14</div> | GND      |         |
+| 15      | B22      | <div className='green'>15</div>  | <div className='green'>16</div> | A20      | 16      |
+|         | 3V3      | <div className='orange'>17</div> | <div className='green'>18</div> | A19      | 18      |
+| 19      | B13      | <div className='green'>19</div>  | <div className='black'>20</div> | GND      |         |
+| 21      | B14      | <div className='green'>21</div>  | <div className='green'>22</div> | A18      | 22      |
+| 23      | B15      | <div className='green'>23</div>  | <div className='green'>24</div> | B16      | 24      |
+|         | GND      | <div className='black'>25</div>  | <div className='green'>26</div> | A28      | 26      |
+
+</div>
+
+　
+
+*GND\*：引脚 9 在 DuoS V1.1 版本硬件中是一个低电平的 GPIO，在 V1.2 及更高版本硬件中为 GND。*
+
+#### 排针 J4
+
+`排针 J4` 上的 GPIO 使用 1.8V 逻辑电平。
+
+该排针上的大部分引脚都有其专用功能，如 MIPI DSI 信号，触摸屏信号以及音频信号，如非特殊需求，不建议使用该排针上的引脚做为 GPIO 使用。
+
+<div className='gpio_style' style={{ overflow :"auto"}} >
+
+| wiringX | PIN NAME | PIN#                            | PIN#                             | NAME        | wiringX |
+|:-------:|----------|:-------------------------------:|:--------------------------------:|:------------|:-------:|
+|         | VSYS(5V) | <div className='red'>52</div>   | <div className='blue'>51</div>   | AUDIO_OUT_R |         |
+| 50      | B1       | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |         |
+| 48      | B2       | <div className='green'>48</div> | <div className='blue'>47</div>   | AUDIO_IN_R  |         |
+| 46      | B3       | <div className='green'>46</div> | <div className='blue'>45</div>   | AUDIO_IN_L  |         |
+| 44      | E2       | <div className='green'>44</div> | <div className='orange'>43</div> | 3V3         |         |
+| 42      | E1       | <div className='green'>42</div> | <div className='green'>41</div>  | C18         | 41      |
+| 40      | E0       | <div className='green'>40</div> | <div className='green'>39</div>  | C19         | 39      |
+|         | GND      | <div className='black'>38</div> | <div className='black'>37</div>  | GND         |         |
+| 36      | C20      | <div className='green'>36</div> | <div className='green'>35</div>  | C16         | 35      |
+| 34      | C21      | <div className='green'>34</div> | <div className='green'>33</div>  | C17         | 33      |
+|         | GND      | <div className='black'>32</div> | <div className='black'>31</div>  | GND         |         |
+| 30      | C14      | <div className='green'>30</div> | <div className='green'>29</div>  | C12         | 29      |
+| 28      | C15      | <div className='green'>28</div> | <div className='green'>27</div>  | C13         | 27      |
+
+</div>
 
 ## 一、代码示范
 
