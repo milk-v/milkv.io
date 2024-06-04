@@ -41,6 +41,7 @@ export default (props) => {
             arace_url: 'https://arace.tech/products/milk-v-mars-cm',
         },
         'meles': {
+            taobao_url: 'https://item.taobao.com/item.htm?id=779272470113'
             // arace_url: 'https://arace.tech/products/milk-v-meles',
         },
         'vega': {
