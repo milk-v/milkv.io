@@ -1,89 +1,89 @@
 ---
-sidebar_label: 'Meles Main board'
+sidebar_label: 'Meles 开发板'
 sidebar_position: 50
 ---
 
-# Meles Main board
+# Meles 开发板
 
-## Interface Description
+## 接口描述
 
 ![meles-hardware-interface](/docs/meles/meles-hardware-interface.jpeg)
 
-| NO.  | Name                    | NO.  | Name             | NO.  | Name              |
+| 序号  | 名称                    | 序号  | 名称             | 序号  | 名称              |
 | ---- | ----------------------- | ---- | ---------------- | ---- | ----------------- |
-| 1    | SPI Nor Flash           | 11   | User LED         | 21   | MIPI CSI          |
-| 2    | 40-PIN Header           | 12   | USB-C Power      | 22   | Fan               |
-| 3    | External Antenna Socket | 13   | HDMI             | 23   | eMMC Socket       |
-| 4    | Internal Anternna       | 14   | PoE              | 24   | MicroSD Card Slot |
-| 5    | Wi-Fi5 / BT5.0          | 15   | Download Button  | 25   | JTAG              |
+| 1    | SPI Nor Flash           | 11   | 用户 LED         | 21   | MIPI CSI          |
+| 2    | 40-PIN GPIO 插头        | 12   | USB-C 供电      | 22   | 风扇               |
+| 3    | 外部天线插座             | 13   | HDMI             | 23   | eMMC 插槽       |
+| 4    | 内部天线                 | 14   | PoE              | 24   | MicroSD Card 卡槽 |
+| 5    | Wi-Fi5 / BT5.0          | 15   | 下载按钮  | 25   | JTAG              |
 | 6    | MIPI DSI                | 16   | USB 3.0 Host     |      |                   |
-| 7    | Soc TH1520              | 17   | eMMC Boot Button |      |                   |
+| 7    | Soc TH1520              | 17   | eMMC 启动按钮     |      |                   |
 | 8    | MIPI CSI                | 18   | RAM              |      |                   |
-| 9    | Power LED               | 19   | Gigabit Ethernet |      |                   |
-| 10   | Reset Button            | 20   | Headphone        |      |                   |
+| 9    | 电源 LED                 | 19   | 千兆网口 |      |                   |
+| 10   | Reset 按钮               | 20   | 耳机插孔           |      |                   |
 
 
-## Hardware Version
+## 硬件版本
 
-Meles comes with different versions. When you get the board, you need to know the hardware version like 'Meles V1.2', which is printed in the top side of the board.
+Meles有不同的版本。当您拿到电路板时，您可能需要知道硬件版本，它印刷在电路板的顶部，类似于“Meles V1.2”。
 
-## Power Supply
+## 供电
 
-Meles uses the USB Type-C port for both power and communication.
+Meles 使用 USB Type-C 端口供电和通信。
 
-To power Meles standalone, you can use 5V/3A power adapter with USB Type-C port. You can use the USB PD/QC power adapter without worrying damaging the board because the PD/QC will detect that Meles only supports 5V, so the adapter will output 5V.
+要为 Meles 独立供电，您可以使用带有 USB Type-C 端口的 5V/3A 电源适配器。您可以使用 USB PD/QC 电源适配器，而不用担心损坏电路板，因为 PD/QC 会检测到 Meles 只支持 5V ，因此适配器将输出 5V 。
 
-Meles can be powered from the PC/Laptop ports directly.
+Meles 可以直接使用 PC/笔记本电脑 USB 端口供电。
 
-When you use PoE function provided by Meles, you may power Meles by putting DC +5V directly to PIN#2 and PIN#4. GND pins lke PIN#6 and PIN#9 are also needed.
+当您使用 Meles 提供的 PoE 功能时，您可以通过将 DC +5V 直接连接到 PIN#2 和 PIN#4 来为 Meles 供电。除此之外，还需要连接 GND 引脚，比如 PIN#6 和 PIN#9 。
 
-## Processor
+## 处理器
 
-The T-HEAD TH1520 SoC used in Meles is a high-performance processor.
+Meles 中使用的 T-HEAD TH1520 SoC 是一款高性能处理器。
 
 * CPU
-    * RISC-V 64GCV C910*4@2.0GHz
-    * Each core contains 64KB I cache amd 64KB D Cache
-    * 1MB of Shared L2 Cache
-    * Support TEE and REE, configured during core booting
-    * Support multi-core debugging framework of custom and RISC-V compatible interface
-    * Independent power domain, supports DVFS
+    * RISC-V 64GCV C910*4 @2.0GHz
+    * 每个核包含 64KB I Cache 和 64KB D Cache
+    * 1MB 共享 L2 Cache
+    * 支持 TEE 和 REE, 可以在启动状态下配置
+    * 支持自定义和RISC-V兼容接口的多核调试框架
+    * 独立电源域，支持DVFS
 * GPU
     * OpenCL 1.1/1.2/2.0
     * OpenGL ES 3.0/3.1/3.2
     * Vulkan 1.1/1.2
     * Android NN HAL
 * NPU
-    * Support 4TOPS@INT8, up to 1GHz
-    * Support TensorFlow, ONNX, Caffe
-    * Support CNN, RNN, DNN
+    * 支持 4TOPS@INT8, 最高 1GHz
+    * 支持 TensorFlow, ONNX, Caffe
+    * 支持 CNN, RNN, DNN
 * Decode
-    * Real-time decoder, support H.265/H.264/VP9/8/7/6/AVS/AVS+/AVS2.0/VC1/MPEG4
-    * Supports H.264 BP/MP/HP@level 5.1 decoding, up to 4K resolution
-    * Supports H.265/HEVC Main Profile@level 5.1 decoding, up to 4K resolution
-    * Supports VP9 Profile-2 decoding, up to 4K resolution
-    * Supports AVS2.0 decoding, up to 4K resolution
-    * Supports VP6/7/8/AVS/AVS+/VC1/MPEG4 decoding, up to 1920x1080 resolution
-    * Decoding at 4K@75fps maximum
+    * Real-time decoder, 支持 H.265/H.264/VP9/8/7/6/AVS/AVS+/AVS2.0/VC1/MPEG4
+    * 支持 H.264 BP/MP/HP@level 5.1 解码, 最大支持 4K 分辨率
+    * 支持 H.265/HEVC Main Profile@level 5.1 解码, 最大支持 4K 分辨率
+    * 支持 VP9 Profile-2 解码, 最大支持 4K 分辨率
+    * 支持 AVS2.0 解码, 最大支持 4K 分辨率
+    * 支持 VP6/7/8/AVS/AVS+/VC1/MPEG4 解码, 最大分辨率 1920x1080
+    * 最大解码能力 4K@75fps
 * Encode
-    * Supports H.264 BP/MP/HP(level4.2) encoding, up to 4K resolution
-    * Supports H.265/HEVC Main Profile encoding, up to 4K resolution
-    * Only supports I-frames and P-frames
-    * Encoding at 4K@40fps maximum
+    * 支持 H.264 BP/MP/HP(level4.2) 编码, 最大支持 4K 分辨率
+    * 支持 H.265/HEVC Main Profile 编码, 最大支持 4K 分辨率
+    * 仅支持 I-frames and P-frames
+    * 最大编码能力 4K@40fps
 
-## Memory
+## 内存
 
-Meles's memory is LPDDR4x 4266MT/s. Meles is available in 4GB / 8GB /16GB memory options.
+Meles 内存规格为 LPDDR4x 4266MT/s，提供 4GB / 8GB / 16GB 三个内存大小的版本选择。
 
-## Ethernet
+## 网络
 
-Meles offers a Gigabit Ethernet port. From the test results, the bandwidth is at least 930 Mbits/sec.
+Meles提供千兆以太网端口。从测试结果来看，最大带宽至少为 930 Mbits/sec。
 
-If you are interested in PoE (Power over Ethernet), you should try it on Meles.
+如果您对PoE（以太网供电）感兴趣，您可以在 Meles 上尝试一下。
 
-## Micro SD Card Interface
+## Micro SD Card 接口
 
-The Micro SD card interface pin specification shows below.
+Micro SD 卡接口引脚定义如下所示。
 
 | PIN# | Name       |
 | ---- | ---------- |
@@ -98,13 +98,13 @@ The Micro SD card interface pin specification shows below.
 | 9    | SDIO0_DETN |
 | 10   | GND        |
 
-## eMMC Socket on Board Interface Feature
+## eMMC 接口
 
-The high performance eMMC module is the best choice as the system storage for Meles. The eMMC module with 8GB/16GB/32GB/64GB/128GB is available.
+高性能 eMMC 模块是 Meles 系统存储的最佳选择。我们提供 8GB/16GB/32GB/64GB/128GB 的 eMMC 模块供您选择。
 
-The eMMC Socket pin specification shows below.
+eMMC 插座引脚定义如下所示。
 
-|   Name    | PIN  | PIN  |    Name     |
+|   名称    | PIN  | PIN  |    名称     |
 | :-------: | :--: | :--: | :---------: |
 |   GND1    |  1   |  34  |    GND11    |
 |  EMMC_D5  |  2   |  33  |   EMMC_D6   |
@@ -124,15 +124,15 @@ The eMMC Socket pin specification shows below.
 |   GND9    |  16  |  19  |    GND17    |
 |   GND10   |  17  |  18  |    GND18    |
 
-## USB Interface
+## USB 接口
 
-The Meles has four USB-A connectors. All are USB 3.0. It can be operated with any generic USB computer keyboard and mouse. It can also be used with USB storage, USB to MIDI converters, and almost any other USB capable device/component.
+Meles 有四个 USB-A 连接器。所有都是 USB 3.0 规格。它可以支持任何通用的 USB 电脑键盘和鼠标。它还可以与 USB 存储器、USB 到 MIDI 转换器以及几乎任何其他具有 USB 功能的设备/组件一起使用。
 
-## HDMI Interface
+## HDMI 接口
 
-The Meles is equipped with one HDMI connector. As for HDMI, the maximum resolution is 4k@60Hz. Any HDMI monitor should work as a display for the Meles.
+Meles配备了一个HDMI连接器。支持的最大分辨率为 4k@60Hz，任何 HDMI 显示器都可以作为 Meles 的显示器。
 
-The HDMI interface pin specification shows below.
+HDMI 接口引脚定义如下所示。
 
 | PIN# | Name        |
 | ---- | ----------- |
@@ -156,54 +156,50 @@ The HDMI interface pin specification shows below.
 | 18   | VCC5V0_HDMI |
 | 19   | HDMI_HPD    |
 
-## DSI Interface
+## DSI 接口
 
-It is used for MIPI Display.
+DSI 接口可用于 MIPI 显示。
 
-## CSI1 Interface
+## CSI1/CSI2 接口
 
-It is used for MIPI Camera.
+DSI 接口可用于 MIPI 摄像头。
 
-## CSI2 Interface
+## 音频接口
 
-It is used for MIPI Camera.
+Meles 配备了一个标准的3.5毫米音频插孔。当没有 HDMI 电缆时，音频插孔是产生声音所必需的。可以使用插孔通过扬声器或耳机播放音频。这需要您使用桌面音量控制进行配置。
 
-## Audio Interface
+## 风扇
 
-Meles is equipped with a standard 3.5mm jack. An audio lead is necessary to produce sound when there is no HDMI cable. Audio can be played through speakers or headphones using jack. This requires you to use the Desktop volume control for configuration.
-
-## PWM Fan
-
-| PIN# | Name  |
+| PIN# | 名称  |
 | ---- | ----- |
 | 1    | PWM   |
 | 2    | +5V   |
 
 ## LED
 
-Meles has Power LED and User LED.
+Meles 有电源 LED 和用户 LED。
 
-Power LED is green. It is always on when Meles in given power.
+电源指示灯为绿色。当 Meles 通电时，它总是亮着的。
 
-User LED is blue. It can be controlled by software. By default its blink status shows the running kernel.
+用户指示灯为蓝色。它可以通过软件进行控制。默认情况下，当内核运行时它会一直闪烁。
 
-## Buttons
+## 按键
 
-Meles presents three buttons, Reset button, Download button and eMMC boot button.
+Meles 提供了三个按钮，重置按钮，下载按钮和 eMMC 启动按钮。
 
-The Reset button serves as the hardware reset button. Short press the button to reboot the system.
+Reset（重置）按钮用作硬件重置按钮。短按该按钮可重新启动系统。
 
-The Download button is for firmware flash/upgrade.
+下载按钮用于固件闪存/升级。
 
-The eMMC boot button is for eMMC booting first.
+eMMC 启动按钮用于设置首先从 eMMC 启动。
 
-## JTAG Interface
+## JTAG 调试接口
 
-Meles is equipped with a JTAG interface for internal debug.
+Meles 配备了用于内部调试的 JTAG 接口。
 
-The JTAG interface pin specification shows below.
+JTAG 接口引脚定义如下所示。
 
-| PIN# | Name       |
+| PIN# | 名称       |
 | ---- | ---------- |
 | 1    | JTG_TMS    |
 | 2    | JTG_TD     |
@@ -218,15 +214,15 @@ The JTAG interface pin specification shows below.
 
 ## 40 PIN GPIO
 
-The Meles is supplied with a 40pin pin GPIO cradle that is compatible with most sensor applications on the market.
+Meles 配备 40pin GPIO 接口，与市面上大多数传感器应用接口兼容。
 
-**_Hint:_ Actual compatibility is subject to use.**
+**_提示：_ 兼容性以实际使用为准。**
 
-- The Meles has a 40-pin expansion connector. Each pin is color coded.
+- Meles 有一个40针的扩展连接器。每类引脚使用不同颜色标记。
 
 <div className='gpio_style' style={{ overflow :"auto"}}>
 
-|  Function4   |    Function3     | Function2  | Function1  |   GPIO   |               Pin#               |              Pin#               |   GPIO    |                Function1                |  Function2  |  Function3  |   Function4   |
+|  功能4   |    功能3     | 功能2  | 功能1  |   GPIO   |               Pin#               |              Pin#               |   GPIO    |                功能1                |  功能2  |  功能3  |   功能4   |
 | :----------: | :--------------: | :--------: | :--------: | :------: | :------------------------------: | :-----------------------------: | :-------: | :-------------------------------------: | :---------: | :---------: | :-----------: |
 |              |                  |            |   +3.3V    |          | <div className='yellow'>1</div>  |  <div className='red'>2</div>   |           |                  +5.0V                  |             |             |               |
 |              |                  |            |  I2C1_SDA  | GPIO0_9  |  <div className='green'>3</div>  |  <div className='red'>4</div>   |           |                  +5.0V                  |             |             |               |

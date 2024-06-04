@@ -49,7 +49,7 @@ Milk-V Meles 是一款基于 TH1520 的信用卡大小的单板计算机（SBC�
 | TH1520 | 规格                                                                    |
 | ------ | -------------------------------------------------------------------------------- |
 | CPU    | RISC-V 64GCV C910*4@**2.0GHz**                                                   |
-|        | 每个核心包含 64KB I 缓存 和 64KB D 缓存                                 |
+|        | 每个核心包含 64KB I Cache 和 64KB D Cache                                 |
 |        | 1MB 共享 L2 缓存                                                           |
 |        | 支持 TEE 和 REE, 可以在启动状态下配置                              |
 |        | 支持自定义和RISC-V兼容接口的多核调试框架 |
@@ -58,7 +58,7 @@ Milk-V Meles 是一款基于 TH1520 的信用卡大小的单板计算机（SBC�
 |        | OpenGL ES 3.0/3.1/3.2                                                            |
 |        | Vulkan 1.1/1.2                                                                   |
 |        | Android NN HAL                                                                   |
-| NPU    | 支持 4TOPS@INT8, up to 1GHz                                                   |
+| NPU    | 支持 4TOPS@INT8, 最高 1GHz                                                   |
 |        | 支持 TensorFlow、ONNX、Caffe                                                  |
 |        | 支持 CNN、RNN、DNN                                                            |
 | Decode | Real-time decoder, 支持 H.265/H.264/VP9/8/7/6/AVS/AVS+/AVS2.0/VC1/MPEG4       |
@@ -74,7 +74,7 @@ Milk-V Meles 是一款基于 TH1520 的信用卡大小的单板计算机（SBC�
 |        | 最大编码能力 4K@40fps                                                     |
 
 ### 内存
-**Milk-V Meles** 提供 8GB / 16GB 两种内存大小。  
+**Milk-V Meles** 提供 4GB / 8GB / 16GB 三种内存大小。  
 内存规格 LPDDR4X 4266MT/s 。
 
 ## 支持
