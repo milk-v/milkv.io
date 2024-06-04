@@ -207,6 +207,10 @@ const config = {
                 label: 'CV1800B',
                 to: '/chips/cv1800b'
               },
+              {
+                label: 'SG2380',
+                to: '/chips/sg2380'
+              },
             ],
           },
           {
