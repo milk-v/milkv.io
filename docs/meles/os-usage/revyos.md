@@ -7,7 +7,7 @@ sidebar_position: 50
 
 Meles RevyOS is an easy to use desktop system. While working with Meles RevyOS, you will find that it performs well in audio, video, Internet, BT, AI, etc.
 
-Command prepended by $ means that the command may be executed by an unprivileged user. And command prepended by # means that the command may be executed by an privileged user. But the symbol, $ and #, are not part of the command.
+Command prepended by `$` means that the command may be executed by an unprivileged user. And command prepended by `#` means that the command may be executed by an privileged user. But the symbol, `$` and `#`, are not part of the command.
 
 ## Login
 

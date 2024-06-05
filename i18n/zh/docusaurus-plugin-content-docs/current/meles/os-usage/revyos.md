@@ -5,72 +5,72 @@ sidebar_position: 50
 
 # RevyOS
 
-Meles RevyOS is an easy to use desktop system. While working with Meles RevyOS, you will find that it performs well in audio, video, Internet, BT, AI, etc.
+Meles RevyOS 是一个易于使用的桌面系统。在使用 Meles RevyOS 时，您会发现它在音频、视频、互联网、BT、AI等方面表现良好。
 
-Command prepended by $ means that the command may be executed by an unprivileged user. And command prepended by # means that the command may be executed by an privileged user. But the symbol, $ and #, are not part of the command.
+以 `$` 开头的命令表示该命令可以由无特权用户执行。以 `#` 开头的命令意味着该命令可以由特权用户执行。但是符号 `$` 和 `#` 不是命令的一部分。
 
-## Login
+## 登录
 
-Login requires account and password。
+登录需要用户账户和密码。
 
 - User Name: **debian**
 - password : **debian**
 
 ![desktop-login](/docs/meles/login.webp)
 
-## Open Terminal
+## 打开终端
 
-You can open the command line terminal directly by clicking on the following icon or by using the shortcut `Ctrl + Alt + T` key combination.
+您可以通过单击以下图标或使用快捷键 “Ctrl+Alt+T” 打开命令行终端。
 
 ![cmd-line-1](/docs/meles/cmd-line-1.webp)
 
 ![cmd-line-2](/docs/meles/cmd-line-2.webp)
 
-- Enter the `sudo su` command to access `root` privileges, with the password: `debian`.
+- 输入 `sudo su` 命令并输入密码来使用 `root` 权限, 密码：`debian`.
 
 ![cmd-line-3](/docs/meles/cmd-line-3.webp)
 
-## Enternet connection
+## 网络连接
 
-Connect the network cable to the Meles' Ethernet port.
+首先连接网线到 Meles 的网口
 
-- Check status when the cable is not connected.
+- 当未连接网线时检查网络状态
 
 ![ethernet-disconnect](/docs/meles/ethernet-disconnect.webp)
 
-- Check tatus when the network cable is connected.
+- 当连接网线时检查网络状态
 
 ![ethernet-connect](/docs/meles/ethernet-connect.webp)
 
-## Wi-Fi connection
+## Wi-Fi 连接
 
-- Click the icon in the upper right corner to view the wireless network.
+- 单击右上角的图标以查看无线网络。
 
 ![wifi-connect-1](/docs/meles/wifi-connect-1.webp)
 
-- Enter the password and click 'Connect' to connect to the hotspot.
+- 输入密码，然后单击“连接”以连接到热点。
 
 ![wifi-connect-2](/docs/meles/wifi-connect-2.webp)
 
 ![wifi-connect-3](/docs/meles/wifi-connect-3.webp)
 
-## Bluetooth Connect
+## 蓝牙连接
 
-### Enable bluetooth
+### 打开蓝牙
 
-Bluetooth needs to be enabled by entering the following command at the command line.
+首先需要通过在命令行中输入以下命令来启用蓝牙。
 
-- Requires **`root`** privileges.
+- 需要以 **`root`** 权限执行。
 
-- Type the **`vi bt_enable.sh`** command to open a vim editor.
+- 键入 **`vi bt_enable.sh`** 命令来打开 vim 编辑器。
 
 ![enable-bt-1](/docs/meles/enable-bt-1.webp)
 
-- Press the **`i`** key to enter the input mode.
+- 按下 **`i`** 键进入输入模式。
 
 ![enable-bt-2](/docs/meles/enable-bt-2.webp)
 
-- Then type the following
+- 然后输入以下内容
 ```
 echo 509 > /sys/class/gpio/export
 echo out > /sys/class/gpio/gpio509/direction
@@ -84,81 +84,81 @@ brcm_patchram_plus --enable_hci --no2bytes --tosleep 200000 --baudrate 115200 --
 
 ![enable-bt-3](/docs/meles/enable-bt-3.webp)
 
-- After the content is entered, press the **`ESC`** key to enter the bottom line mode, then enter **`wq`** and press **`Enter`** to save and exit.
+- 输入内容后，按 **`ESC`** 键进入命令模式，然后输入 **`wq`** 并按 **`enter `** 键保存并退出。
 
 ![enable-bt-4](/docs/meles/enable-bt-4.webp)
 
-- Execute the **`chmod +x bt_enable.sh`** command
+- 执行 **`chmod +x bt_enable.sh`** 命令。
 
 ![enable-bt-5](/docs/meles/enable-bt-5.webp)
 
-- Execute **`./bt_enable.sh`** to enable Bluetooth and the Bluetooth icon will be displayed in the upper right corner.
+- 执行 **`./bt_enable.sh`** 以启用蓝牙，蓝牙图标将显示在右上角。
 
 ![enable-bt-6](/docs/meles/enable-bt-6.webp)
 
-- Click on the Bluetooth icon in the upper-right corner, the Enable Bluetooth window will pop up, and then click **`Enable Bluetooth`**.
+- 单击右上角的蓝牙图标，将弹出启用蓝牙窗口，然后单击 **`启用蓝牙`** 。
 
 ![enable-bt-7](/docs/meles/enable-bt-7.webp)
 
-- Bluetooth icon in the upper right corner becomes normal after being enabled.
+- 右上角的蓝牙图标在启用后变为正常。
 
 ![enable-bt-8](/docs/meles/enable-bt-8.webp)
 
-### Start connecting to remote Bluetooth device
+### 连接到蓝牙设备
 
-Once Bluetooth is enabled, you can start searching for and connecting to the Bluetooth device you want to connect to.
+启用蓝牙后，您可以开始搜索并连接到要连接的蓝牙设备。
 
-- Click on the Bluetooth icon in the upper right corner and select **`yes`** in the pop-up window.
+- 单击右上角的蓝牙图标，然后在弹出窗口中选择 **`是`** 。
 
 ![connect-bt-1](/docs/meles/connect-bt-1.webp)
 
-- Click **`search`** to start searching.
+- 点击 **`search`** 开始搜索。
 
 ![connect-bt-2](/docs/meles/connect-bt-2.webp)
 
-- When the search is complete, the relevant Bluetooth devices around you will appear.
+- 搜索完成后，您周围的相关蓝牙设备将显示在屏幕上。
 
 ![connect-bt-3](/docs/meles/connect-bt-3.webp)
 
-- Click on the Bluetooth device you want to connect to and it will automatically connect successfully.
+- 单击要连接的蓝牙设备，Meles 将自动连接。
 
 ![connect-bt-4](/docs/meles/connect-bt-4.webp)
 
-## Browser Use
+## 浏览器使用
 
-The Chromium browser is built-in and is available by clicking the browser icon at the bottom of the desktop.
+系统内置了 Chromium 浏览器，单击桌面底部的浏览器图标即可使用。
 
 ![browser-use-1](/docs/meles/browser-use-1.webp)
 
-- Once opened you can use the search engine.
+- 打开后，您可以使用搜索引擎。
 
 ![browser-use-2](/docs/meles/browser-use-2.webp)
 
-- Online videos can also be played.
+- 也可以播放在线视频。
 
 ![browser-use-3](/docs/meles/browser-use-3.webp)
 
-## Display Settings
+## 显示设置
 
-The display settings are only available when you are operating on the monitor.
+仅当您在显示器上操作时，显示设置才可用。
 
-### Applications-Settings-Display
+### 应用程序-设置-显示
 
-Click Applications in the upper left corner of the desktop.
+单击桌面左上角的“应用程序”。
 
 ![display-1](/docs/meles/display-1.webp)
 
-Select Settings, and then find the Display option in the Options section.
+选择“设置”，然后在“选项”部分中找到“显示”选项。
 
 ![display-2](/docs/meles/display-2.webp)
 
-You can change the following settings in it.
+您可以在其中更改以下设置。
 
 ![display-3](/docs/meles/display-3.webp)
 
 ## SSH
 
-- Check the status of the SSH service. Run the following command in a command line window
+- 要检查SSH服务的状态，请在命令行窗口中运行以下命令
 
 ```
 sudo service ssh status
@@ -166,34 +166,34 @@ sudo service ssh status
 
 ![ssh-1](/docs/meles/ssh-1.webp)
 
-- Enter the following command
+- 输入以下命令来建立 SSH 连接
 
 ```
 ssh [username]@[IP address]
 ```
 
-Example:
+比如：
 
 ```
 ssh milkv@192.168.2.180
 ```
 
-- You need to enter the user password to successfully connect to the Debian system. This is a basic SSH connection process. You can use other SSH options for more advanced connections.
+- 您需要输入用户密码才能成功连接到 Debian 系统。这是一个基本的 SSH 连接过程。您可以使用其他 SSH 软件进行更高级的连接。
 
 ![ssh-2](/docs/meles/ssh-2.webp)
 
-### Notice
+### 注意
 
-SSH is installed by default.
+SSH 是默认安装的。
 
-If the SSH service is not installed, you can use the following command to install it:
+如果未安装 SSH 服务，可以使用以下命令进行安装：
 
 ```
 sudo apt-get update
 sudo apt-get install ssh
 ```
 
-If the SSH service is not started or runs abnormally, run the following command to restart it:
+如果 SSH 服务未启动或运行异常，请运行以下命令重新启动它：
 
 ```
 sudo service sshd restart
