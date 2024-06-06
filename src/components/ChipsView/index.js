@@ -284,7 +284,7 @@ export default (props) => {
                         }
                     </ul>
                 </div>
-                <div ref={chip_doc} style={{ display: `${children ? 'none' : 'block'}` }}>
+                <div ref={chip_doc} >
                     <h2 ><Translate id='Documents' /></h2>
                     <div className={styles.download_link}>
                         <div className={styles.radio_input}>
