@@ -27,7 +27,7 @@ export default (props) => {
             chilli_url: 'https://shop.plati.ma/products/milk-v-duo-s-512m-1ghz-dual-core-risc-v-arm-sbc?_pos=4&_fid=86ada3723&_ss=c'
         },
         'duo-module-01': {
-           
+
         },
         'pioneer': {
             crowdSupply_url: 'https://www.crowdsupply.com/milkv/milk-v-pioneer',
@@ -61,7 +61,7 @@ export default (props) => {
             taobao_url: 'https://item.taobao.com/item.htm?id=748015537624&skuId=5258773672598&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA',
             arace_url: 'https://arace.tech/products/sophon-cv1800b-5pcs',
         },
-        'SG2380': {
+        'sg2380': {
             // arace_url: 'https://arace.tech/products/milk-v-meles',
         },
     }
@@ -100,6 +100,7 @@ export default (props) => {
         'cv1800b': '/components/buy-cv1800b-view.webp',
         'sg2000': '/components/buy-sg2000-view.webp',
         'sg2002': '/components/buy-sg2002-view.webp',
+        'sg2380': '/components/buy-sg2380-view.webp',
     }
 
     return (

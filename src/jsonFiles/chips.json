@@ -775,6 +775,143 @@
             ]
         }
     },
+    "sg2380": {
+        "title": "SG2380: A Revolutionary RISC-V Desktop Experience",
+        "title_zh": "SG2380： 革命性的 RISC-V 桌面体验",
+        "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
+        "front_view": "/chips/sg2380/sg2380-overview.webp",
+        "chip_view": [
+            "/chips/sg2380/sg2380-overview.webp"
+        ],
+        "chip_intro_text": [
+            "The first high-performance RISC-V processor designed for personal computing marks a new milestone in the adoption of open-source technology in the computing industry.",
+            "This intelligent processor combines high-performance RISC-V cores, desktop-grade GPU, and the advanced computing capabilities of TPU, meeting the demands of GenAI and multimedia applications. It ensures the smooth operation of complex models and algorithms without any hindrance.",
+            "With massive computing power, high bandwidth, and large capacity, it enables the fast and efficient execution of machine learning tasks such as natural language processing, image generation, and text generation, accelerating the adoption of local LLM across various industries."
+        ],
+        "chip_intro_text_zh": [
+            "首款为个人计算设计的高性能RISC-V处理器标志着开源技术在计算机行业采用的新里程碑。",
+            "该智能处理器结合了高性能的RISC-V核心、桌面级GPU和先进的TPU计算能力，满足了生成式AI和多媒体应用的需求，确保复杂模型和算法的顺畅运行。",
+            "凭借强大的计算能力、高带宽和大容量，它能够快速高效地执行自然语言处理、图像生成和文本生成等机器学习任务，加速本地大型语言模型在各行业的应用。"
+        ],
+        "diagram_url": "/chips/sg2380/SG2380-bd.webp",
+        "hardware": {
+            "CPU": [
+                "16-core SiFive P670 RISC-V 64bit CPU"
+            ],
+            "GPU": [
+                "Imagination AXT-16-512 GPU"
+            ],
+            "TPU": [
+                "SOPHON TPU, support 32 TOPs int8 and 16 TFLOPs fp16"
+            ],
+            "Memory": [
+                "256bit DDR interface, maximum capacity 128GB",
+                "Support LPDDR5 @6400Mbps, LPDDR4/LPDDR4x @4266Mbps",
+                "Support in–line ECC"
+            ],
+            "Multimedia Codec": [
+                "H.264/H.265/AV1/VP9 Decoder, support 4k@30fps",
+                "H.264/H.265 Encoder, support 4k@30fps"
+            ],
+            "Display and ISP": [
+                "HDMI 2.0",
+                "DP 1.4a or eDP 1.4b",
+                "DP 1.4a combo with USB 3.2 Gen2",
+                "MIPI DSI",
+                "MIPI CSI"
+            ],
+            "Hi-speed interface": [
+                "PCIe Gen4 x16",
+                "PCIe Gen3 x4 combo with 1-25Gbps Ethernet or 4x SATA 3.0",
+                "4x USB 3.2 Gen2, one of them combo with DP",
+                "2x Gigabit Ethernet"
+            ]
+        },
+        "scenarios": [
+            {
+                "img_link": "/chips/self-driving.webp",
+                "scenarios_name": "Self-driving",
+                "scenarios_name_zh": "自动驾驶"
+            },
+            {
+                "img_link": "/chips/smart-cockpit.webp",
+                "scenarios_name": "Smart Cockpit",
+                "scenarios_name_zh": "智慧座舱"
+            },
+            {
+                "img_link": "/chips/ai-robot.webp",
+                "scenarios_name": "AI Robot",
+                "scenarios_name_zh": "人工智能机器人"
+            },
+            {
+                "img_link": "/chips/deep-learning-computing-card.webp",
+                "scenarios_name": "Deep Learning Computing Card",
+                "scenarios_name_zh": "深度学习计算卡"
+            },
+            {
+                "img_link": "/chips/ai-nas.webp",
+                "scenarios_name": "AI NAS",
+                "scenarios_name_zh": "人工智能存储服务器"
+            },
+            {
+                "img_link": "/chips/android.webp",
+                "scenarios_name": "Android-based Applications",
+                "scenarios_name_zh": "安卓基础应用"
+            },
+            {
+                "img_link": "/chips/ai-pc.webp",
+                "scenarios_name": "AI PC",
+                "scenarios_name_zh": "人工智能个人计算机"
+            },
+            {
+                "img_link": "/chips/professional-display.webp",
+                "scenarios_name": "Professional Display",
+                "scenarios_name_zh": "专业显示"
+            }
+        ],
+        "downloads": {
+            "Product": [
+                {
+                    "download_name": "Product Brief",
+                    "download_url": "https://github.com/milkv-oasis/oasis-files/blob/main/sg2380/SG2380%20Product%20Brief%20V1.4.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "3.19 MB",
+                    "file_date": "Jun 4,2024"
+                }
+            ]
+        },
+        "downloads_zh": {
+            "产品相关": [
+                {
+                    "download_name": "Product Brief",
+                    "download_url": "https://github.com/milkv-oasis/oasis-files/blob/main/sg2380/SG2380%20Product%20Brief%20V1.4.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "3.19 MB",
+                    "file_date": "Jun 4,2024"
+                }
+            ]
+        },
+        "resources": {
+            "Development Hardware": [
+                {
+                    "resources_name": "Milk-V Oasis",
+                    "resources_url": "https://community.milkv.io/t/introducing-the-milk-v-oasis-with-sg2380-a-revolutionary-risc-v-desktop-experience/780",
+                    "resources_img": "/chips/sg2380/oasis-overview.webp",
+                    "resources_info": "The Milk-V Oasis—powered by the SG2380. This innovation marks the debut of a truly desktop-grade RISC-V PC in the convenient mini ITX form factor."
+                }
+            ]
+        },
+        "resources_zh": {
+            "硬件": [
+                {
+                    "resources_name": "Milk-V Oasis",
+                    "resources_url": "https://community.milkv.io/t/introducing-the-milk-v-oasis-with-sg2380-a-revolutionary-risc-v-desktop-experience/780",
+                    "resources_img": "/chips/sg2380/oasis-overview.webp",
+                    "resources_info": "搭载 SG2380 的 Milk-V Oasis标志着真正的桌面级 RISC-V PC 首次以便捷的 mini ITX 外形面世。"
+                }
+            ]
+        }
+    },
     "duo-module-01": {
         "title": "The Duo Module 01 is a compact module with integrated SG2000, WI-FI6/BTDM5.4, and eMMC. It supports SMD mounting. Also it can greatly save product development time. It is the first choice for making products.",
         "title_zh": "Duo Module 01 是一款集成了 SG2000、WI-FI6/BTDM5.4 和 eMMC 的紧凑型模块。它支持 SMD 贴片。此外，它还能大大节省产品开发时间。它是制作产品的首选。",
