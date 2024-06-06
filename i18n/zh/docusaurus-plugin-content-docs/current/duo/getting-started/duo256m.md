@@ -74,6 +74,37 @@ Milk-V 是 SG2002 芯片的全球授权经销商。您可以直接从我们的�
 
 GP26 和 GP27 引脚逻辑电平为 1.8V, 其他 GPIO 逻辑电平均为 3.3V 逻辑电平。
 
+### 摄像头接口
+
+Duo256M 摄像头接口使用的是 16 PIN 间距为 0.5mm 的连接器，可以直接使用 [CAM-GC2083](https://milkv.io/zh/docs/duo/camera/gc2083) 摄像头。
+
+#### 摄像头接口 FPC 线序
+
+<Image src='/docs/duo/duo/duo-camera-csi-port.webp' maxWidth='50%' align='left' />
+
+<div className='gpio_style'>
+
+| J1 | Description         |
+|:--:|:--------------------|
+| 1  | GND                 |
+| 2  | MIPI0_DN0           |
+| 3  | MIPI0_DP0           |
+| 4  | GND                 |
+| 5  | MIPI0_DN1           |
+| 6  | MIPI0_DP1           |
+| 7  | GND                 |
+| 8  | MIPI0_CKN           |
+| 9  | MIPI0_CKP           |
+| 10 | GND                 |
+| 11 | SENSOR_RSTN  (1.8V) |
+| 12 | SENSOR_CLK   (1.8V) |
+| 13 | I2C2_SCL     (1.8V) |
+| 14 | I2C2_SDA     (1.8V) |
+| 15 |                     |
+| 16 | 3V3                 |
+
+</div>
+
 ## Duo256M 使用指引
 
 ### RISC-V 与 ARM 切换
