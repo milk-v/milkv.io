@@ -1,0 +1,9 @@
+{
+  "label": "🖊️ 系统安装",
+  "position": 50,
+  "link": {
+    "type": "generated-index",
+	"slug": "/meles/installation",
+    "description": "安装镜像到储存介质"
+  }
+}

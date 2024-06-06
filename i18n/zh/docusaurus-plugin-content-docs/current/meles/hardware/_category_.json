@@ -1,0 +1,9 @@
+{
+  "label": "🔌 硬件介绍",
+  "position": 50,
+  "link": {
+    "type": "generated-index",
+	"slug": "/meles/hardware",
+    "description": "Meles 硬件介绍"
+  }
+}

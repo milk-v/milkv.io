@@ -93,7 +93,7 @@ Milk-V 是 SG2002 芯片的全球授权经销商。您可以直接从我们的�
 
 </div>
 
-### LED 引脚
+### 蓝色 LED 引脚
 
 <div className='gpio_style'>
 

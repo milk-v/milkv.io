@@ -8,7 +8,7 @@ sidebar_position: 10
 ## 准备
 
 - 必要的
-  - Duo
+  - Duo，Duo256M 或者 DuoS
   - 大于 1GB 的 microSD 卡
   - Type-C 数据线
 - 可选的

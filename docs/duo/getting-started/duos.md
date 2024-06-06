@@ -93,7 +93,7 @@ GPIO on `Header J4` use 1.8V logic levels.
 
 </div>
 
-### LED PIN
+### Blue LED PIN
 
 <div className='gpio_style'>
 
