@@ -171,11 +171,6 @@
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1000px) {
-   .buy_box {
-      margin-top: 50px;
-      margin-bottom: -30px;
-   }
-
    .buy_center {
       width: 90%;
       margin: 30px auto;
