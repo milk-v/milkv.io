@@ -59,6 +59,7 @@ export default () => {
                                     <Link to='/chips/cv1800b'>CV1800B</Link>
                                     <Link to='/chips/sg2000'>SG2000</Link>
                                     <Link to='/chips/sg2002'>SG2002</Link>
+                                    <Link to='/chips/sg2380'>SG2380</Link>
                                 </li>
                                 <li>
                                     <p className={styles.line_name}>Docs</p>
