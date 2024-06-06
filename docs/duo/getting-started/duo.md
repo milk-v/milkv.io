@@ -73,3 +73,34 @@ Milk-V is the Authorised Global Distributor of the CV1800B chips. You can buy sa
 |          |           |                |         |       |          |            | 440 | XGPIOC[24]   |      | <div className='blue'>LED</div> |                                  |          |             |     |            |               |              |
 
 </div>
+
+### Camera interface
+
+Duo camera uses a 16-pin connector with a distance of 0.5 mm, which can be directly used with the [CAM-GC2083](https://milkv.io/docs/duo/camera/gc2083) camera head.
+
+#### Connector FPC Definition
+
+<Image src='/docs/duo/duo/duo-camera-csi-port.webp' maxWidth='70%' align='left' />
+
+<div className='gpio_style'>
+
+| J1 | Description         |
+|:--:|:--------------------|
+| 1  | GND                 |
+| 2  | MIPI0_DN0           |
+| 3  | MIPI0_DP0           |
+| 4  | GND                 |
+| 5  | MIPI0_DN1           |
+| 6  | MIPI0_DP1           |
+| 7  | GND                 |
+| 8  | MIPI0_CKN           |
+| 9  | MIPI0_CKP           |
+| 10 | GND                 |
+| 11 | SENSOR_RSTN  (1.8V) |
+| 12 | SENSOR_CLK   (1.8V) |
+| 13 | I2C1_SCL     (1.8V) |
+| 14 | I2C1_SDA     (1.8V) |
+| 15 |                     |
+| 16 | 3V3                 |
+
+</div>

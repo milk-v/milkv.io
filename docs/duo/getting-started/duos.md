@@ -114,9 +114,60 @@ DuoS has two CSI camera connectors:
 
 Note that the I2C used by the J1 interface is I2C3, and the I2C used by the J2 interface is I2C2. Please check the pin multiplexing configuration when using it.
 
+#### J1 Connector FPC Definition
+
+<div className='gpio_style'>
+
+| J1 | Description         |
+|:--:|:--------------------|
+| 1  | GND                 |
+| 2  | MIPI0_DN0           |
+| 3  | MIPI0_DP0           |
+| 4  | GND                 |
+| 5  | MIPI0_DN1           |
+| 6  | MIPI0_DP1           |
+| 7  | GND                 |
+| 8  | MIPI0_CKN           |
+| 9  | MIPI0_CKP           |
+| 10 | GND                 |
+| 11 | SENSOR_RSTN0 (1.8V) |
+| 12 | SENSOR_CLK0  (1.8V) |
+| 13 | I2C3_SCL     (1.8V) |
+| 14 | I2C3_SDA     (1.8V) |
+| 15 |                     |
+| 16 | 3V3                 |
+
+</div>
+
+#### J2 Connector FPC Definition
+
+<div className='gpio_style'>
+
+| J2 | Description          |
+|:--:|:---------------------|
+| 1  | 3V3                  |
+| 2  | I2C2_SDA     (3.3V)  |
+| 3  | I2C2_SCL     (3.3V)  |
+| 4  | SENSOR_CLK1  (3.3V)  |
+| 5  | SENSOR_RSTN1 (3.3V)  |
+| 6  | GND                  |
+| 7  | MIPI0_DP5 (CAM1_CP)  |
+| 8  | MIPI0_DN5 (CAM1_CN)  |
+| 9  | GND                  |
+| 10 | MIPI0_DP4 (CAM1_DP1) |
+| 11 | MIPI0_DN4 (CAM1_DN1) |
+| 12 | GND                  |
+| 13 | MIPI0_DP3 (CAM1_DP0) |
+| 14 | MIPI0_DN3 (CAM1_DN0) |
+| 15 | GND                  |
+
+</div>
+
 ### POE Header
 
 <Image src='/docs/duo/duos/duos-poe-pinout.webp' maxWidth='50%' align='left' />
+
+<div className='gpio_style'>
 
 | POE Pin | Description |
 |:-------:|:-----------:|
@@ -124,6 +175,8 @@ Note that the I2C used by the J1 interface is I2C3, and the I2C used by the J2 i
 | 2       | VB+         |
 | 3       | VA-         |
 | 4       | VA+         |
+
+</div>
 
 ## DuoS User Guide
 
