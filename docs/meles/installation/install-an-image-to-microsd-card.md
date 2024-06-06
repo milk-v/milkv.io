@@ -21,7 +21,7 @@ Get Balena Etcher from webite, https://etcher.balena.io/.
 
 ## Get Meles MicroSD card image
 
-Download Meles MicroSD Card image. https://github.com/milkv-meles/meles-images/releases/download/v2024-0329/sdcard-meles-20240327_151758.img.gz
+Download Meles MicroSD Card image. https://github.com/milkv-meles/meles-images/releases/download/v2024-0417/sdcard-meles-20240417_155900.img.xz
 
 ## Write the image to MicroSD Card
 

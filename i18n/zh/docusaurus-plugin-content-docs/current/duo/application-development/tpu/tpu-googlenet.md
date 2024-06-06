@@ -7,7 +7,11 @@ sidebar_position: 37
 
 ## 1. 配置 Docker 开发环境
 
-参考 [这里](https://milkv.io/zh/docs/duo/application-development/tpu/tpu-docker) 配置好 Docker 开发环境后，再回到这里继续下一步
+参考 [这里](https://milkv.io/zh/docs/duo/application-development/tpu/tpu-docker) 配置好 Docker 开发环境后，再回到这里继续下一步。
+
+:::warning
+若您使用已经配置好的 Docker 开发环境，请您启动 Docker 后务必按照 Docker 配置教程执行 `source ./tpu-mlir/envsetup.sh` 命令，否则后续步骤可能报错。
+:::
 
 ## 2. 在 Docker 中准备工作目录
 
@@ -18,7 +22,7 @@ sidebar_position: 37
 
 获取原始模型
 ```
-wget https://github.com/onnx/models/raw/main/vision/classification/inception_and_googlenet/googlenet/model/googlenet-12.onnx
+wget https://media.githubusercontent.com/media/onnx/models/main/validated/vision/classification/inception_and_googlenet/googlenet/model/googlenet-12.onnx
 ```
 
 拷贝测试图片:
@@ -74,14 +78,19 @@ model_deploy.py \
  --chip cv180x \
  --test_input googlenet_in_f32.npz \
  --test_reference googlenet_top_outputs.npz \
- --model googlenet_cv180x_bf16.cvimodel
+ --model googlenet_bf16.cvimodel
 ```
+
+:::tip
+如果您使用的开发板不是 Duo ，请将上述命令中第 4 行 `--chip cv180x` 更换为对应的芯片型号。
+使用 Duo 256M/Duo S 时应更改为 `--chip cv181x`。
+:::
 
 运行成功效果示例
 
 ![duo](/docs/duo/tpu/duo-tpu-googlenet_07.png)
 
-编译完成后，会生成 `googlenet_cv180x_bf16.cvimodel` 文件
+编译完成后，会生成 `googlenet_bf16.cvimodel` 文件
 
 ![duo](/docs/duo/tpu/duo-tpu-googlenet_08.png)
 
@@ -118,14 +127,19 @@ model_deploy.py \
  --test_reference googlenet_top_outputs.npz \
  --compare_all \
  --fuse_preprocess \
- --model googlenet_cv180x_int8_fuse.cvimodel
+ --model googlenet_int8_fuse.cvimodel
 ```
+
+:::tip
+如果您使用的开发板不是 Duo ，请将上述命令中第 5 行 `--chip cv180x` 更换为对应的芯片型号。
+使用 Duo 256M/Duo S 时应更改为 `--chip cv181x`。
+:::
 
 运行成功效果示例
 
 ![duo](/docs/duo/tpu/duo-tpu-googlenet_11.png)
 
-编译完成后, 会生成名为 `googlenet_cv180x_int8_fuse.cvimodel` 的文件
+编译完成后, 会生成名为 `googlenet_int8_fuse.cvimodel` 的文件
 
 ![duo](/docs/duo/tpu/duo-tpu-googlenet_12.png)
 
@@ -142,9 +156,16 @@ model_deploy.py \
 cd /workspace
 ```
 
-下载 tpu-sdk
+下载 tpu-sdk，如果您使用的是 Duo ，则执行
 ```
-git clone https://github.com/milkv-duo/tpu-sdk.git
+git clone https://github.com/milkv-duo/tpu-sdk-cv180x.git
+mv ./tpu-sdk-cv180x ./tpu-sdk
+```
+
+如果您使用的是 Duo 256M/Duo S ,则执行
+```
+git clone https://github.com/milkv-duo/tpu-sdk-sg200x.git
+mv ./tpu-sdk-sg200x ./tpu-sdk
 ```
 
 ### 将开发工具包和模型文件拷贝到 Duo 开发板上
@@ -157,8 +178,8 @@ git clone https://github.com/milkv-duo/tpu-sdk.git
 在 Docker 的终端中，将 `tpu-sdk` 和模型文件拷贝到 Duo 开发板上
 ```
 # scp -r /workspace/tpu-sdk root@192.168.42.1:/mnt/tpu/
-# scp /workspace/googlenet/work/googlenet_cv180x_bf16.cvimodel root@192.168.42.1:/mnt/tpu/tpu-sdk/
-# scp /workspace/googlenet/work/googlenet_cv180x_int8_fuse.cvimodel root@192.168.42.1:/mnt/tpu/tpu-sdk/
+# scp /workspace/googlenet/work/googlenet_bf16.cvimodel root@192.168.42.1:/mnt/tpu/tpu-sdk/
+# scp /workspace/googlenet/work/googlenet_int8_fuse.cvimodel root@192.168.42.1:/mnt/tpu/tpu-sdk/
 ```
 
 ### 设置环境变量
@@ -175,10 +196,10 @@ git clone https://github.com/milkv-duo/tpu-sdk.git
 
 ![duo](/docs/duo/tpu/duo-tpu-cat.jpg)
 
-使用 `googlenet_cv180x_bf16.cvimodel` 模型进行图像分类
+使用 `googlenet_bf16.cvimodel` 模型进行图像分类
 ```
 ./samples/bin/cvi_sample_classifier_bf16 \
- ./googlenet_cv180x_bf16.cvimodel \
+ ./googlenet_bf16.cvimodel \
  ./samples/data/cat.jpg \
  ./samples/data/synset_words.txt
 ```
@@ -187,10 +208,10 @@ git clone https://github.com/milkv-duo/tpu-sdk.git
 
 ![duo](/docs/duo/tpu/duo-tpu-googlenet_13.png)
 
-使用 `googlenet_cv180x_int8_fuse.cvimodel` 模型进行图像分类
+使用 `googlenet_int8_fuse.cvimodel` 模型进行图像分类
 ```
 ./samples/bin/cvi_sample_classifier_fused_preprocess \
- ./googlenet_cv180x_int8_fuse.cvimodel \
+ ./googlenet_int8_fuse.cvimodel \
  ./samples/data/cat.jpg \
  ./samples/data/synset_words.txt
 ```

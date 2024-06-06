@@ -201,7 +201,10 @@ static int read_dht22_dat()
 
 int main()
 {
-    if (wiringXSetup("duo", NULL) == -1)
+    // Duo:     milkv_duo
+    // Duo256M: milkv_duo256m
+    // DuoS:    milkv_duos
+    if (wiringXSetup("milkv_duo", NULL) == -1)
     {
         wiringXGC();
         return -1;
@@ -392,26 +395,29 @@ int main()
 {
     long i;
 
-    if(wiringXSetup("duo", NULL) == -1) {
+    // Duo:     milkv_duo
+    // Duo256M: milkv_duo256m
+    // DuoS:    milkv_duos
+    if(wiringXSetup("milkv_duo", NULL) == -1) {
         wiringXGC();
         return -1;
     }
 
-    wiringXSetPWMPeriod(PWM_PIN, 20000000);  // 20ms
-    wiringXSetPWMDuty(PWM_PIN, 1500000);     // 1.5ms stop
-    wiringXSetPWMPolarity(PWM_PIN, 0);       // 0-normal, 1-inversed
+    wiringXPWMSetPeriod(PWM_PIN, 20000000);  // 20ms
+    wiringXPWMSetDuty(PWM_PIN, 1500000);     // 1.5ms stop
+    wiringXPWMSetPolarity(PWM_PIN, 0);       // 0-normal, 1-inversed
     wiringXPWMEnable(PWM_PIN, 1);            // 1-enable, 0-disable
 
     delayMicroseconds(1000000); // 1s
 
     for (i = 10000; i< 3000000; i += 10000) // 10 us 
     {
-        wiringXSetPWMDuty(PWM_PIN, i);
+        wiringXPWMSetDuty(PWM_PIN, i);
         printf("Duty: %ld\n", i);
         delayMicroseconds(50000); // 50ms
     }
 
-    wiringXSetPWMDuty(PWM_PIN, 1500000);    // 1.5ms stop
+    wiringXPWMSetDuty(PWM_PIN, 1500000);    // 1.5ms stop
 
     return 0;
 }

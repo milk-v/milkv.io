@@ -160,11 +160,7 @@ The HDMI interface pin specification shows below.
 
 It is used for MIPI Display.
 
-## CSI1 Interface
-
-It is used for MIPI Camera.
-
-## CSI2 Interface
+## CSI1/CSI2 Interface
 
 It is used for MIPI Camera.
 

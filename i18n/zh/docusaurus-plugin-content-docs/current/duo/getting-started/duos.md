@@ -93,7 +93,7 @@ Milk-V 是 SG2002 芯片的全球授权经销商。您可以直接从我们的�
 
 </div>
 
-### LED 引脚
+### 蓝色 LED 引脚
 
 <div className='gpio_style'>
 
@@ -113,6 +113,17 @@ DuoS 有两个 CSI 摄像头接连器：
 <Image src='/docs/duo/duos/duos-camera-csi-port.webp' maxWidth='50%' align='center' />
 
 注意，J1 接口使用的 I2C 为 I2C3，J2 接口使用的 I2C 为 I2C2，使用时注意检查引脚复用配置。
+
+### POE 接口
+
+<Image src='/docs/duo/duos/duos-poe-pinout.webp' maxWidth='50%' align='left' />
+
+| POE Pin | Description |
+|:-------:|:-----------:|
+| 1       | VB-         |
+| 2       | VB+         |
+| 3       | VA-         |
+| 4       | VA+         |
 
 ## DuoS 使用指引
 

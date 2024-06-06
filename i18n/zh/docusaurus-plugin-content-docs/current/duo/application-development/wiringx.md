@@ -14,11 +14,19 @@ sidebar_position: 10
 
 如果您对 wiringX 的使用方法已经非常熟悉,可以直接参考我们的样例代码: [duo-examples](https://github.com/milkv-duo/duo-examples)
 
-Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LED 控制引脚不在引出的 40PIN 物理引脚上，其 wiringX 的序号是`25`。
+注意，Duo 系列的很多引脚功能是复用的，在使用`wiringX`来控制 Duo/Duo256M/DuoS 各引脚的功能时，要先确认一下引脚当前的状态是不是自己需要的功能, 如果不是，可以用`duo-pinmux`命令来切换为所需功能。
+
+具体方法请参考: [引脚复用](https://milkv.io/zh/docs/duo/application-development/pinmux)。
+
+### Duo/Duo256M wiringX 引脚序号
+
+Duo 和 Duo256M 的 wiringX 引脚序号, 与引脚名序号是一致的，蓝色 LED 控制引脚不在引出的 40PIN 物理引脚上，其 wiringX 的序号是`25`。
+
+<Image src='/docs/duo/duo/duo-pinout-01.webp' maxWidth='50%' align='left' />
 
 <div className='gpio_style'>
 
-| wiringX | PIN NAME |              Pin#               |               Pin#               | PIN NAME | wiringX |
+| wiringX | PIN NAME |              PIN#               |               PIN#               | PIN NAME | wiringX |
 | ------- | -------- | :-----------------------------: | :------------------------------: | -------- | ------- |
 | 0       | GP0      | <div className='green'>1</div>  |  <div className='red'>40</div>   | VBUS     |         |
 | 1       | GP1      | <div className='green'>2</div>  |  <div className='red'>39</div>   | VSYS     |         |
@@ -30,7 +38,7 @@ Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LE
 |         | GND      | <div className='black'>8</div>  | <div className='black'>33</div>  | GND      |         |
 | 6       | GP6      | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27     | 27      |
 | 7       | GP7      | <div className='green'>10</div> | <div className='green'>31</div>  | GP26     | 26      |
-| 8       | GP8      | <div className='green'>21</div> | <div className='orange'>30</div> | RUN      |         |
+| 8       | GP8      | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |         |
 | 9       | GP9      | <div className='green'>12</div> | <div className='green'>29</div>  | GP22     | 22      |
 |         | GND      | <div className='black'>13</div> | <div className='black'>28</div>  | GND      |         |
 | 10      | GP10     | <div className='green'>14</div> | <div className='green'>27</div>  | GP21     | 21      |
@@ -45,9 +53,63 @@ Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LE
 
 </div>
 
-注意，Duo 的很多引脚功能是复用的，在使用`wiringX`来控制 Duo 各引脚的功能时，要先确认一下引脚当前的状态是不是自己需要的功能, 如果不是，可以用`duo-pinmux`命令来切换为所需功能。
+### DuoS wiringX 引脚序号
 
-具体方法请参考: [引脚复用](https://milkv.io/zh/docs/duo/application-development/pinmux)。
+DuoS 的 wiringX 引脚序号, 与物理引脚序号是一致的，蓝色 LED 控制引脚不在引出的 40PIN 物理引脚上，其 wiringX 的序号是 `0`。
+
+<Image src='/docs/duo/duos/duos-pinout-v1.1.webp' maxWidth='50%' align='left' />
+
+#### 排针 J3
+
+`排针 J3` 上的 GPIO 使用 3.3V 逻辑电平。
+
+<div className='gpio_style' style={{ overflow :"auto"}} >
+
+| wiringX | PIN NAME | PIN#                             | PIN#                            | PIN NAME | wiringX |
+|:-------:|:---------|:--------------------------------:|:-------------------------------:|:---------|:-------:|
+|         | 3V3      | <div className='orange'>1</div>  | <div className='red'>2</div>    | VSYS(5V) |         |
+| 3       | B20      | <div className='green'>3</div>   | <div className='red'>4</div>    | VSYS(5V) |         |
+| 5       | B21      | <div className='green'>5</div>   | <div className='black'>6</div>  | GND      |         |
+| 7       | B18      | <div className='green'>7</div>   | <div className='green'>8</div>  | A16      | 8       |
+|         | GND\*    | <div className='black'>9</div>   | <div className='green'>10</div> | A17      | 10      |
+| 11      | B11      | <div className='green'>11</div>  | <div className='green'>12</div> | B19      | 12      |
+| 13      | B12      | <div className='green'>13</div>  | <div className='black'>14</div> | GND      |         |
+| 15      | B22      | <div className='green'>15</div>  | <div className='green'>16</div> | A20      | 16      |
+|         | 3V3      | <div className='orange'>17</div> | <div className='green'>18</div> | A19      | 18      |
+| 19      | B13      | <div className='green'>19</div>  | <div className='black'>20</div> | GND      |         |
+| 21      | B14      | <div className='green'>21</div>  | <div className='green'>22</div> | A18      | 22      |
+| 23      | B15      | <div className='green'>23</div>  | <div className='green'>24</div> | B16      | 24      |
+|         | GND      | <div className='black'>25</div>  | <div className='green'>26</div> | A28      | 26      |
+
+</div>
+
+*GND\*：引脚 9 在 DuoS V1.1 版本硬件中是一个低电平的 GPIO，在 V1.2 及更高版本硬件中为 GND。*
+
+#### 排针 J4
+
+`排针 J4` 上的 GPIO 使用 1.8V 逻辑电平。
+
+该排针上的大部分引脚都有其专用功能，如 MIPI DSI 信号，触摸屏信号以及音频信号，如非特殊需求，不建议使用该排针上的引脚做为 GPIO 使用。
+
+<div className='gpio_style' style={{ overflow :"auto"}} >
+
+| wiringX | PIN NAME | PIN#                            | PIN#                             | PIN NAME    | wiringX |
+|:-------:|----------|:-------------------------------:|:--------------------------------:|:------------|:-------:|
+|         | VSYS(5V) | <div className='red'>52</div>   | <div className='blue'>51</div>   | AUDIO_OUT_R |         |
+| 50      | B1       | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |         |
+| 48      | B2       | <div className='green'>48</div> | <div className='blue'>47</div>   | AUDIO_IN_R  |         |
+| 46      | B3       | <div className='green'>46</div> | <div className='blue'>45</div>   | AUDIO_IN_L  |         |
+| 44      | E2       | <div className='green'>44</div> | <div className='orange'>43</div> | 3V3         |         |
+| 42      | E1       | <div className='green'>42</div> | <div className='green'>41</div>  | C18         | 41      |
+| 40      | E0       | <div className='green'>40</div> | <div className='green'>39</div>  | C19         | 39      |
+|         | GND      | <div className='black'>38</div> | <div className='black'>37</div>  | GND         |         |
+| 36      | C20      | <div className='green'>36</div> | <div className='green'>35</div>  | C16         | 35      |
+| 34      | C21      | <div className='green'>34</div> | <div className='green'>33</div>  | C17         | 33      |
+|         | GND      | <div className='black'>32</div> | <div className='black'>31</div>  | GND         |         |
+| 30      | C14      | <div className='green'>30</div> | <div className='green'>29</div>  | C12         | 29      |
+| 28      | C15      | <div className='green'>28</div> | <div className='green'>27</div>  | C13         | 27      |
+
+</div>
 
 ## 一、代码示范
 
@@ -64,7 +126,10 @@ Milk-V Duo 的 wiringX 引脚序号, 与 Duo 的引脚名序号是一致的，LE
 int main() {
     int DUO_GPIO = 15;
 
-    if(wiringXSetup("duo", NULL) == -1) {
+    // Duo:     milkv_duo
+    // Duo256M: milkv_duo256m
+    // DuoS:    milkv_duos
+    if(wiringXSetup("milkv_duo", NULL) == -1) {
         wiringXGC();
         return -1;
     }
@@ -111,7 +176,10 @@ int main(void)
     int fd_i2c;
     int data = 0;
 
-    if(wiringXSetup("duo", NULL) == -1) {
+    // Duo:     milkv_duo
+    // Duo256M: milkv_duo256m
+    // DuoS:    milkv_duos
+    if(wiringXSetup("milkv_duo", NULL) == -1) {
         wiringXGC();
         return -1;
     }
@@ -141,7 +209,10 @@ int main(void)
 {
     int fd_spi;
 
-    if(wiringXSetup("duo", NULL) == -1) {
+    // Duo:     milkv_duo
+    // Duo256M: milkv_duo256m
+    // DuoS:    milkv_duos
+    if(wiringXSetup("milkv_duo", NULL) == -1) {
         wiringXGC();
         return -1;
     }
@@ -173,7 +244,10 @@ int main() {
     int i;
     int fd;
 
-    if(wiringXSetup("duo", NULL) == -1) {
+    // Duo:     milkv_duo
+    // Duo256M: milkv_duo256m
+    // DuoS:    milkv_duos
+    if(wiringXSetup("milkv_duo", NULL) == -1) {
         wiringXGC();
         return -1;
     }
@@ -478,10 +552,19 @@ cmake version 3.27.6
 
 <summary>int wiringXSetup(char *name, ...)</summary>
 
-  初始化 WiringX 库，用于初始化 GPIO 引脚的配置和资源，对于Duo，固定写法为：
-  ```
-  wiringXSetup("duo", NULL)
-  ```
+  初始化 WiringX 库，用于初始化 GPIO 引脚的配置和资源：
+  - Duo
+    ```
+    wiringXSetup("milkv_duo", NULL)
+    ```
+  - Duo256M
+    ```
+    wiringXSetup("milkv_duo256m", NULL)
+    ```
+  - DuoS
+    ```
+    wiringXSetup("milkv_duos", NULL)
+    ```
 
 </details>
 
@@ -742,5 +825,77 @@ cmake version 3.27.6
 <summary>int wiringXSerialGetChar(int fd)</summary>
 
   从串口设备读取一个字符。
+
+</details>
+
+### PWM
+
+当前版本 wiringX 只支持 Duo 的 PWM，Duo256M 和 DuoS 后续会加入 PWM 的支持。
+
+- Duo PWM 引脚编号
+
+<div className='gpio_style'>
+
+| PWM | PIN NAME |              Pin#               |              Pin#                | PIN NAME |
+|:---:|:---------|:-------------------------------:|:--------------------------------:|----------|
+|     | GP0      | <div className='green'>1</div>  |    <div className='red'>40</div> | VBUS     |
+|     | GP1      | <div className='green'>2</div>  |    <div className='red'>39</div> | VSYS     |
+|     | GND      | <div className='black'>3</div>  |  <div className='black'>38</div> | GND      |
+| 10  | GP2      | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN   |
+| 11  | GP3      | <div className='green'>5</div>  |    <div className='red'>36</div> | 3V3(OUT) |
+| 5   | GP4      | <div className='green'>6</div>  |   <div className='gray'>35</div> |          |
+| 6   | GP5      | <div className='green'>7</div>  |   <div className='gray'>34</div> |          |
+|     | GND      | <div className='black'>8</div>  |  <div className='black'>33</div> | GND      |
+| 9   | GP6      | <div className='green'>9</div>  |  <div className='green'>32</div> | GP27     |
+| 8   | GP7      | <div className='green'>10</div> |  <div className='green'>31</div> | GP26     |
+| 7   | GP8      | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |
+| 4   | GP9      | <div className='green'>12</div> |  <div className='green'>29</div> | GP22     |
+|     | GND      | <div className='black'>13</div> |  <div className='black'>28</div> | GND      |
+|     | GP10     | <div className='green'>14</div> |  <div className='green'>27</div> | GP21     |
+|     | GP11     | <div className='green'>15</div> |  <div className='green'>26</div> | GP20     |
+| 4   | GP12     | <div className='green'>16</div> |  <div className='green'>25</div> | GP19     |
+| 5   | GP13     | <div className='green'>17</div> |  <div className='green'>24</div> | GP18     |
+|     | GND      | <div className='black'>18</div> |  <div className='black'>23</div> | GND      |
+|     | GP14     | <div className='green'>19</div> |  <div className='green'>22</div> | GP17     |
+|     | GP15     | <div className='green'>20</div> |  <div className='green'>21</div> | GP16     |
+
+</div>
+
+<details>
+
+<summary>wiringXPWMSetPeriod(int pin, long period)</summary>
+
+  设置 PWM 引脚的周期, pin 是引脚编号, period 单位为纳秒。
+
+</details>
+
+
+<details>
+
+<summary>int wiringXPWMSetDuty(int pin, long duty_cycle)</summary>
+
+  设置 PWM 引脚一个周期内高电平所占时间, duty_cycle 单位为纳秒。
+
+</details>
+
+
+<details>
+
+<summary>int wiringXPWMSetPolarity(int pin, int polarity)</summary>
+
+  设置 PWM 引脚极性，polarity 位为 0 或者 1：
+  - 0 正常
+  - 1 反转
+
+</details>
+
+
+<details>
+
+<summary>int wiringXPWMEnable(int pin, int enable)</summary>
+
+  使能或禁用 PWM 引脚输出，enable 输出为 0 或者 1：
+  - 0: 禁用
+  - 1: 使能
 
 </details>

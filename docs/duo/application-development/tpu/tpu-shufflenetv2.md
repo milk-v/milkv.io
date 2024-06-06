@@ -9,6 +9,10 @@ sidebar_position: 36
 
 Refer to [here](https://milkv.io/docs/duo/application-development/tpu/tpu-docker). After configuring the Docker development environment, return here to continue the next step.
 
+:::warning
+If you are using a configured Docker development environment, please make sure to follow the Docker configuration tutorial to execute command `source ./tpu-mlir/envsetup.sh` after starting Docker, otherwise errors may occur in subsequent steps.
+:::
+
 ## 2. Prepare the working directory in Docker
 
 Create and enter the `shufflenet_v2` working directory, note that it is a directory at the same level as `tpu-mlir`.
@@ -121,14 +125,19 @@ model_deploy.py \
  --quantize INT8 \
  --test_input ../image/cat.jpg \
  --tolerance 0.96,0.72 \
- --model shufflenet_v2_cv1800_int8_asym.cvimodel
+ --model shufflenet_v2_int8_asym.cvimodel
 ```
+
+:::tip
+If the development board you are using is not Duo, please replace the seventh line `-- chip cv180x` in the above command with the corresponding chip model.
+When using Duo 256M/Duo S , it should be changed to ` -- chip cv181x`.
+:::
 
 Example of successful operation
 
 ![duo](/docs/duo/tpu/duo-tpu-shufflenetv2_10.png)
 
-After compilation is completed, the `shufflenet_v2_cv1800_int8_asym.cvimodel` file will be generated.
+After compilation is completed, the `shufflenet_v2_int8_asym.cvimodel` file will be generated.
 
 ![duo](/docs/duo/tpu/duo-tpu-shufflenetv2_11.png)
 
@@ -145,9 +154,16 @@ Switch to the `/workspace` directory in the Docker terminal
 cd /workspace
 ```
 
-Download tpu-sdk
+Download tpu sdk, if you are using Duo, execute
 ```
-git clone https://github.com/milkv-duo/tpu-sdk.git
+git clone https://github.com/milkv-duo/tpu-sdk-cv180x.git
+mv ./tpu-sdk-cv180x ./tpu-sdk
+```
+
+Else,if you are using Duo 256M/Duo S , execute
+```
+git clone https://github.com/milkv-duo/tpu-sdk-sg200x.git
+mv ./tpu-sdk-sg200x ./tpu-sdk
 ```
 
 ### Copy tpu-sdk and model files to Duo
@@ -160,7 +176,7 @@ In the terminal of the Duo board, create a new directory `/mnt/tpu/`
 In the Docker terminal, copy `tpu-sdk` and model files to the Duo
 ```
 # scp -r /workspace/tpu-sdk root@192.168.42.1:/mnt/tpu/
-# scp /workspace/shufflenet_v2/work/shufflenet_v2_cv1800_int8_asym.cvimodel root@192.168.42.1:/mnt/tpu/tpu-sdk/
+# scp /workspace/shufflenet_v2/work/shufflenet_v2_int8_asym.cvimodel root@192.168.42.1:/mnt/tpu/tpu-sdk/
 ```
 
 ### Set environment variables
@@ -185,7 +201,7 @@ Enter the samples directory
 
 View cvimodel info
 ```
-./bin/cvi_sample_model_info ../shufflenet_v2_cv1800_int8_asym.cvimodel
+./bin/cvi_sample_model_info ../shufflenet_v2_int8_asym.cvimodel
 ```
 
 ![duo](/docs/duo/tpu/duo-tpu-shufflenetv2_12.png)
@@ -193,7 +209,7 @@ View cvimodel info
 Perform image classification test
 ```
 ./bin/cvi_sample_classifier_fused_preprocess \
- ../shufflenet_v2_cv1800_int8_asym.cvimodel \
+ ../shufflenet_v2_int8_asym.cvimodel \
  ./data/cat.jpg \
  ./data/synset_words.txt
 ```

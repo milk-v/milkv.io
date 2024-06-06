@@ -8,7 +8,7 @@ sidebar_position: 10
 ## Prepare
 
 - Necessary
-  - Duo
+  - Duo, Duo256M or DuoS
   - microSD card, larger than 1GB
   - Type-C cable
 - Optional
@@ -40,6 +40,10 @@ Here are the steps for using balenaEtcher.
 Connect the Duo with a Type-C cable using an adapter (5V) or computer USB.
 
 The blue LED on the Duo will blink.
+
+:::tip
+If the blue LED does not blink after booting, it means the system is not running properly, and there may be a problem with the image burned to the microSD. You can try to re-burn the image with other burning software, such as balenaEtcher, Rufus, Win32DiskImager, etc. If it still cannot boot normally, you can connect a serial cable and send the log after booting to us for analysis.
+:::
 
 ## Troubleshooting
 

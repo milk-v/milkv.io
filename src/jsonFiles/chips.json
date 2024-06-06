@@ -802,7 +802,7 @@
             "Memory": [
                 "SIP DRAM 512M"
             ],
-            "TPU":[
+            "TPU": [
                 "0.5TOPS@INT8 TPU"
             ],
             "Multimedia": [

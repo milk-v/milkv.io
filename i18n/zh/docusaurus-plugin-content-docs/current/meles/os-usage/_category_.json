@@ -1,0 +1,9 @@
+{
+  "label": "🖥️ 系统使用",
+  "position": 30,
+  "link": {
+    "type": "generated-index",
+	"slug": "/meles/os-usage",
+    "description": "Meles 系统使用"
+  }
+}

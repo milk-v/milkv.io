@@ -4,6 +4,7 @@ sidebar_position: 10
 ---
 
 # Introduction
+
 wiringX is a library that allows developers to control the GPIO of various platforms with generic and uniform functions. By using wiringX, the same code will run on all platforms supported by wiringX, natively.
 
 This article will be divided into the following four parts to introduce how to develop applications on Duo using wiringX:
@@ -15,7 +16,15 @@ This article will be divided into the following four parts to introduce how to d
 
 If you are already familiar with the usage of wiringX, you can directly refer to our sample code:  [duo-examples](https://github.com/milkv-duo/duo-examples)
 
-The wiringX pin numbering of Milk-V Duo is consistent with the pin name numbering of Duo. However, the LED control pin is not available on the 40-pin physical pinout, and its wiringX pin number is `25`.
+Please note that many pin functions of the Duo series are multiplexed. When using `wiringX` to control the functions of each pin, it is important to confirm the current state of the pin to ensure it matches the desired functionality. If it doesn't, you can use the `duo-pinmux` command to switch it to the desired function.
+
+Please refer to the detailed usage instructions for more information：[pinmux](https://milkv.io/docs/duo/application-development/pinmux).
+
+### Duo/Duo256M wiringX numbers
+
+The wiringX pin numbers of Duo and Duo256M are consistent with the pin name numbers. However, the blue LED control pin is not available on the 40-pin physical pinout, and its wiringX pin number is `25`.
+
+<Image src='/docs/duo/duo/duo-pinout-01.webp' maxWidth='50%' align='left' />
 
 <div className='gpio_style'>
 
@@ -31,7 +40,7 @@ The wiringX pin numbering of Milk-V Duo is consistent with the pin name numberin
 |         | GND      | <div className='black'>8</div>  | <div className='black'>33</div>  | GND      |         |
 | 6       | GP6      | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27     | 27      |
 | 7       | GP7      | <div className='green'>10</div> | <div className='green'>31</div>  | GP26     | 26      |
-| 8       | GP8      | <div className='green'>21</div> | <div className='orange'>30</div> | RUN      |         |
+| 8       | GP8      | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |         |
 | 9       | GP9      | <div className='green'>12</div> | <div className='green'>29</div>  | GP22     | 22      |
 |         | GND      | <div className='black'>13</div> | <div className='black'>28</div>  | GND      |         |
 | 10      | GP10     | <div className='green'>14</div> | <div className='green'>27</div>  | GP21     | 21      |
@@ -46,9 +55,63 @@ The wiringX pin numbering of Milk-V Duo is consistent with the pin name numberin
 
 </div>
 
-Please note that many of Duo's pins have multipurpose functionality. When using `wiringX` to control the functions of each pin, it is important to confirm the current state of the pin to ensure it matches the desired functionality. If it doesn't, you can use the `duo-pinmux` command to switch it to the desired function.
+### DuoS wiringX numbers
 
-Please refer to the detailed usage instructions for more information：[pinmux](https://milkv.io/docs/duo/application-development/pinmux).
+The wiringX pin numbers of DuoS are consistent with the physical pin numbers. The blue LED control pin is not on the 40PIN physical pins, and its wiringX number is `0`.
+
+<Image src='/docs/duo/duos/duos-pinout-v1.1.webp' maxWidth='50%' align='left' />
+
+#### Header J3
+
+GPIO on `Header J3` use 3.3V logic levels.
+
+<div className='gpio_style' style={{ overflow :"auto"}} >
+
+| wiringX | PIN NAME | PIN#                             | PIN#                            | PIN NAME | wiringX |
+|:-------:|:---------|:--------------------------------:|:-------------------------------:|:---------|:-------:|
+|         | 3V3      | <div className='orange'>1</div>  | <div className='red'>2</div>    | VSYS(5V) |         |
+| 3       | B20      | <div className='green'>3</div>   | <div className='red'>4</div>    | VSYS(5V) |         |
+| 5       | B21      | <div className='green'>5</div>   | <div className='black'>6</div>  | GND      |         |
+| 7       | B18      | <div className='green'>7</div>   | <div className='green'>8</div>  | A16      | 8       |
+|         | GND\*    | <div className='black'>9</div>   | <div className='green'>10</div> | A17      | 10      |
+| 11      | B11      | <div className='green'>11</div>  | <div className='green'>12</div> | B19      | 12      |
+| 13      | B12      | <div className='green'>13</div>  | <div className='black'>14</div> | GND      |         |
+| 15      | B22      | <div className='green'>15</div>  | <div className='green'>16</div> | A20      | 16      |
+|         | 3V3      | <div className='orange'>17</div> | <div className='green'>18</div> | A19      | 18      |
+| 19      | B13      | <div className='green'>19</div>  | <div className='black'>20</div> | GND      |         |
+| 21      | B14      | <div className='green'>21</div>  | <div className='green'>22</div> | A18      | 22      |
+| 23      | B15      | <div className='green'>23</div>  | <div className='green'>24</div> | B16      | 24      |
+|         | GND      | <div className='black'>25</div>  | <div className='green'>26</div> | A28      | 26      |
+
+</div>
+
+*GND\*: Pin 9 is a low-level GPIO in the V1.1 version of the hardware, and is GND in the V1.2 version and later.*
+
+#### Header J4
+
+GPIO on `Header J4` use 1.8V logic levels.
+
+Most of the pins on this header have dedicated functions, such as MIPI DSI signals, Touch Screen signals, and audio signals. If there is no special requirement, it is not recommended to use the pins on this header as GPIO.
+
+<div className='gpio_style' style={{ overflow :"auto"}} >
+
+| wiringX | PIN NAME | PIN#                            | PIN#                             | PIN NAME    | wiringX |
+|:-------:|----------|:-------------------------------:|:--------------------------------:|:------------|:-------:|
+|         | VSYS(5V) | <div className='red'>52</div>   | <div className='blue'>51</div>   | AUDIO_OUT_R |         |
+| 50      | B1       | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |         |
+| 48      | B2       | <div className='green'>48</div> | <div className='blue'>47</div>   | AUDIO_IN_R  |         |
+| 46      | B3       | <div className='green'>46</div> | <div className='blue'>45</div>   | AUDIO_IN_L  |         |
+| 44      | E2       | <div className='green'>44</div> | <div className='orange'>43</div> | 3V3         |         |
+| 42      | E1       | <div className='green'>42</div> | <div className='green'>41</div>  | C18         | 41      |
+| 40      | E0       | <div className='green'>40</div> | <div className='green'>39</div>  | C19         | 39      |
+|         | GND      | <div className='black'>38</div> | <div className='black'>37</div>  | GND         |         |
+| 36      | C20      | <div className='green'>36</div> | <div className='green'>35</div>  | C16         | 35      |
+| 34      | C21      | <div className='green'>34</div> | <div className='green'>33</div>  | C17         | 33      |
+|         | GND      | <div className='black'>32</div> | <div className='black'>31</div>  | GND         |         |
+| 30      | C14      | <div className='green'>30</div> | <div className='green'>29</div>  | C12         | 29      |
+| 28      | C15      | <div className='green'>28</div> | <div className='green'>27</div>  | C13         | 27      |
+
+</div>
 
 ## 1. Code example
 
@@ -65,7 +128,10 @@ Here is an example of working with GPIO. It will toggle pin 20 on Duo every 1 se
 int main() {
     int DUO_GPIO = 15;
 
-    if(wiringXSetup("duo", NULL) == -1) {
+    // Duo:     milkv_duo
+    // Duo256M: milkv_duo256m
+    // DuoS:    milkv_duos
+    if(wiringXSetup("milkv_duo", NULL) == -1) {
         wiringXGC();
         return -1;
     }
@@ -112,7 +178,10 @@ int main(void)
     int fd_i2c;
     int data = 0;
 
-    if(wiringXSetup("duo", NULL) == -1) {
+    // Duo:     milkv_duo
+    // Duo256M: milkv_duo256m
+    // DuoS:    milkv_duos
+    if(wiringXSetup("milkv_duo", NULL) == -1) {
         wiringXGC();
         return -1;
     }
@@ -142,7 +211,10 @@ int main(void)
 {
     int fd_spi;
 
-    if(wiringXSetup("duo", NULL) == -1) {
+    // Duo:     milkv_duo
+    // Duo256M: milkv_duo256m
+    // DuoS:    milkv_duos
+    if(wiringXSetup("milkv_duo", NULL) == -1) {
         wiringXGC();
         return -1;
     }
@@ -174,7 +246,10 @@ int main() {
     int i;
     int fd;
 
-    if(wiringXSetup("duo", NULL) == -1) {
+    // Duo:     milkv_duo
+    // Duo256M: milkv_duo256m
+    // DuoS:    milkv_duos
+    if(wiringXSetup("milkv_duo", NULL) == -1) {
         wiringXGC();
         return -1;
     }
@@ -479,10 +554,19 @@ cmake version 3.27.6
 
 <summary>int wiringXSetup(char *name, ...)</summary>
 
-  To initialize the WiringX library for configuring and managing GPIO pins, the fixed syntax for Duo is as follows:
-  ```
-  wiringXSetup("duo", NULL)
-  ```
+  To initialize the WiringX library for configuring and managing GPIO pins:
+  - Duo
+    ```
+    wiringXSetup("milkv_duo", NULL)
+    ```
+  - Duo256M
+    ```
+    wiringXSetup("milkv_duo256m", NULL)
+    ```
+  - DuoS
+    ```
+    wiringXSetup("milkv_duos", NULL)
+    ```
 
 </details>
 
@@ -742,5 +826,77 @@ Configure pin as an interrupt mode, with several modes for mode:
 <summary>int wiringXSerialGetChar(int fd)</summary>
 
   Read a character from the serial port device.
+
+</details>
+
+### PWM
+
+The current version of wiringX only supports Duo's PWM. Duo256M and DuoS will add PWM support later.
+
+- Duo PWM Pin Number
+
+<div className='gpio_style'>
+
+| PWM | PIN NAME |              Pin#               |              Pin#                | PIN NAME |
+|:---:|:---------|:-------------------------------:|:--------------------------------:|----------|
+|     | GP0      | <div className='green'>1</div>  |    <div className='red'>40</div> | VBUS     |
+|     | GP1      | <div className='green'>2</div>  |    <div className='red'>39</div> | VSYS     |
+|     | GND      | <div className='black'>3</div>  |  <div className='black'>38</div> | GND      |
+| 10  | GP2      | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN   |
+| 11  | GP3      | <div className='green'>5</div>  |    <div className='red'>36</div> | 3V3(OUT) |
+| 5   | GP4      | <div className='green'>6</div>  |   <div className='gray'>35</div> |          |
+| 6   | GP5      | <div className='green'>7</div>  |   <div className='gray'>34</div> |          |
+|     | GND      | <div className='black'>8</div>  |  <div className='black'>33</div> | GND      |
+| 9   | GP6      | <div className='green'>9</div>  |  <div className='green'>32</div> | GP27     |
+| 8   | GP7      | <div className='green'>10</div> |  <div className='green'>31</div> | GP26     |
+| 7   | GP8      | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |
+| 4   | GP9      | <div className='green'>12</div> |  <div className='green'>29</div> | GP22     |
+|     | GND      | <div className='black'>13</div> |  <div className='black'>28</div> | GND      |
+|     | GP10     | <div className='green'>14</div> |  <div className='green'>27</div> | GP21     |
+|     | GP11     | <div className='green'>15</div> |  <div className='green'>26</div> | GP20     |
+| 4   | GP12     | <div className='green'>16</div> |  <div className='green'>25</div> | GP19     |
+| 5   | GP13     | <div className='green'>17</div> |  <div className='green'>24</div> | GP18     |
+|     | GND      | <div className='black'>18</div> |  <div className='black'>23</div> | GND      |
+|     | GP14     | <div className='green'>19</div> |  <div className='green'>22</div> | GP17     |
+|     | GP15     | <div className='green'>20</div> |  <div className='green'>21</div> | GP16     |
+
+</div>
+
+<details>
+
+<summary>wiringXPWMSetPeriod(int pin, long period)</summary>
+
+  Set the period of the PWM pin, pin is the PWM pin number, period is in nanoseconds.
+
+</details>
+
+
+<details>
+
+<summary>int wiringXPWMSetDuty(int pin, long duty_cycle)</summary>
+
+  Set the high level time of the PWM pin in one cycle, duty_cycle is in nanoseconds.
+
+</details>
+
+
+<details>
+
+<summary>int wiringXPWMSetPolarity(int pin, int polarity)</summary>
+
+  Set the PWM pin polarity, the polarity is 0 or 1:
+  - 0 normal
+  - 1 inversed
+
+</details>
+
+
+<details>
+
+<summary>int wiringXPWMEnable(int pin, int enable)</summary>
+
+  Enable or disable PWM pin output, enable is 0 or 1:
+  - 0: disable
+  - 1: enable
 
 </details>

@@ -42,12 +42,12 @@ $ wget https://github.com/milkv-meles/thead-bin/raw/main/image-writer/iw-single-
 
 Download Meles Bootloader from here, https://github.com/milkv-meles/meles-images/releases.
 
-- 4GB DDR Meles: https://github.com/milkv-meles/meles-images/releases/download/v2024-0329/u-boot-with-spl-meles-4g.bin
-- 8GB DDR Meles: https://github.com/milkv-meles/meles-images/releases/download/v2024-0329/u-boot-with-spl-meles.bin
+- 4GB DDR Meles: https://github.com/milkv-meles/meles-images/releases/download/v2024-0417/u-boot-with-spl-meles-4g.bin
+- 8GB DDR Meles: https://github.com/milkv-meles/meles-images/releases/download/v2024-0417/u-boot-with-spl-meles.bin
 
 ```
-$ wget https://github.com/milkv-meles/meles-images/releases/download/v2024-0329/u-boot-with-spl-meles.bin
-$ wget https://github.com/milkv-meles/meles-images/releases/download/v2024-0329/u-boot-with-spl-meles-4g.bin
+$ wget https://github.com/milkv-meles/meles-images/releases/download/v2024-0417/u-boot-with-spl-meles-4g.bin
+$ wget https://github.com/milkv-meles/meles-images/releases/download/v2024-0417/u-boot-with-spl-meles.bin
 ```
 
 Download zero image.

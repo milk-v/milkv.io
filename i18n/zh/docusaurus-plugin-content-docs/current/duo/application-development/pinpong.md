@@ -25,7 +25,7 @@ pinpong 库是一套控制开源硬件主控板的 Python 库，基于 Firmata �
 |         | GND      | <div className='black'>8</div>  |  <div className='black'>33</div> | GND      |         |
 | 6       | GP6      | <div className='green'>9</div>  |  <div className='green'>32</div> | GP27     | 27      |
 | 7       | GP7      | <div className='green'>10</div> |  <div className='green'>31</div> | GP26     | 26      |
-| 8       | GP8      | <div className='green'>21</div> | <div className='orange'>30</div> | RUN      |         |
+| 8       | GP8      | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |         |
 | 9       | GP9      | <div className='green'>12</div> |  <div className='green'>29</div> | GP22     | 22      |
 |         | GND      | <div className='black'>13</div> |  <div className='black'>28</div> | GND      |         |
 | 10      | GP10     | <div className='green'>14</div> |  <div className='green'>27</div> | GP21     | 21      |

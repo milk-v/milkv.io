@@ -432,6 +432,15 @@
     text-decoration: none;
 }
 
+.ubuntu_milkv>div>p {
+    color: #FFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
 @media screen and (min-width: 1950px) {
     .header_title {
         width: 1920px;
@@ -536,6 +545,16 @@
         height: 310px;
         padding: 20px 150px;
         margin: 150px auto;
+    }
+
+    .ubuntu_milkv {
+        height: 160px;
+        padding: 0 45px;
+        margin: 100px auto;
+    }
+
+    .ubuntu_milkv>div>p {
+        font-size: 38px;
     }
 
     .docs_info>h2 {
@@ -772,6 +791,16 @@
         font-size: 18px;
         bottom: 12%;
     }
+
+    .ubuntu_milkv {
+        height: 150px;
+        padding: 0 45px;
+        margin: 80px auto;
+    }
+
+    .ubuntu_milkv>div>p {
+        font-size: 32px;
+    }
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1000px) {
@@ -945,6 +974,19 @@
         gap: 10px;
         font-size: 16px;
         bottom: 10%;
+    }
+
+    .ubuntu_milkv {
+        height: 120px;
+        padding: 0 30px;
+    }
+
+    .ubuntu_milkv>div>img {
+        width: 250px;
+    }
+
+    .ubuntu_milkv>div>p {
+        font-size: 22px;
     }
 }
 
@@ -1122,6 +1164,19 @@
         gap: 10px;
         font-size: 12px;
         bottom: 10%;
+    }
+
+    .ubuntu_milkv {
+        height: 100px;
+        padding: 0 20px;
+    }
+
+    .ubuntu_milkv>div>img {
+        width: 200px;
+    }
+
+    .ubuntu_milkv>div>p {
+        font-size: 18px;
     }
 }
 
@@ -1350,5 +1405,18 @@
         height: 30rem;
         font-size: 12rem;
         bottom: 5%;
+    }
+
+    .ubuntu_milkv {
+        height: 80rem;
+        padding: 0 20rem;
+    }
+
+    .ubuntu_milkv>div>img {
+        width: 150rem;
+    }
+
+    .ubuntu_milkv>div>p {
+        font-size: 12rem;
     }
 }

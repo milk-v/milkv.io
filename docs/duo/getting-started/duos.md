@@ -93,7 +93,7 @@ GPIO on `Header J4` use 1.8V logic levels.
 
 </div>
 
-### LED PIN
+### Blue LED PIN
 
 <div className='gpio_style'>
 
@@ -113,6 +113,17 @@ DuoS has two CSI camera connectors:
 <Image src='/docs/duo/duos/duos-camera-csi-port.webp' maxWidth='50%' align='center' />
 
 Note that the I2C used by the J1 interface is I2C3, and the I2C used by the J2 interface is I2C2. Please check the pin multiplexing configuration when using it.
+
+### POE Header
+
+<Image src='/docs/duo/duos/duos-poe-pinout.webp' maxWidth='50%' align='left' />
+
+| POE Pin | Description |
+|:-------:|:-----------:|
+| 1       | VB-         |
+| 2       | VB+         |
+| 3       | VA-         |
+| 4       | VA+         |
 
 ## DuoS User Guide
 

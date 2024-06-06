@@ -9,6 +9,10 @@ sidebar_position: 39
 
 Refer to [here](https://milkv.io/docs/duo/application-development/tpu/tpu-docker). After configuring the Docker development environment, return here to continue the next step.
 
+:::warning
+If you are using a configured Docker development environment, please make sure to follow the Docker configuration tutorial to execute command `source ./tpu-mlir/envsetup.sh` after starting Docker, otherwise errors may occur in subsequent steps.
+:::
+
 ## 2. Prepare the working directory in Docker
 
 Create and enter the `densenet121` working directory, note that it is a directory at the same level as `tpu-mlir`.
@@ -18,7 +22,7 @@ Create and enter the `densenet121` working directory, note that it is a director
 
 Get the original model
 ```
-# wget https://github.com/onnx/models/raw/main/vision/classification/densenet-121/model/densenet-12.tar.gz
+# wget https://media.githubusercontent.com/media/onnx/models/main/validated/vision/classification/densenet-121/model/densenet-12.tar.gz
 ```
 Extract `densenet-12.tar.gz`
 ```
@@ -109,14 +113,19 @@ model_deploy.py \
  --test_reference densenet121_top_outputs.npz \
  --compare_all \
  --fuse_preprocess \
- --model densenet121_cv180x_int8_fuse.cvimodel
+ --model densenet121_int8_fuse.cvimodel
 ```
+
+:::tip
+If the development board you are using is not Duo, please replace the fifth line `-- chip cv180x` in the above command with the corresponding chip model.
+When using Duo 256M/Duo S , it should be changed to ` -- chip cv181x`.
+:::
 
 Example of successful operation
 
 ![duo](/docs/duo/tpu/duo-tpu-densenet_09.png)
 
-After compilation is completed, the `densenet121_cv180x_int8_fuse.cvimodel` file will be generated.
+After compilation is completed, the `densenet121_int8_fuse.cvimodel` file will be generated.
 
 ![duo](/docs/duo/tpu/duo-tpu-densenet_10.png)
 
@@ -133,9 +142,16 @@ Switch to the `/workspace` directory in the Docker terminal
 cd /workspace
 ```
 
-Download tpu-sdk
+Download tpu sdk, if you are using Duo, execute
 ```
-git clone https://github.com/milkv-duo/tpu-sdk.git
+git clone https://github.com/milkv-duo/tpu-sdk-cv180x.git
+mv ./tpu-sdk-cv180x ./tpu-sdk
+```
+
+Else,if you are using Duo 256M/Duo S , execute
+```
+git clone https://github.com/milkv-duo/tpu-sdk-sg200x.git
+mv ./tpu-sdk-sg200x ./tpu-sdk
 ```
 
 ### Copy tpu-sdk and model files to Duo
@@ -148,7 +164,7 @@ In the terminal of the Duo board, create a new directory `/mnt/tpu/`
 In the Docker terminal, copy `tpu-sdk` and model files to the Duo
 ```
 # scp -r /workspace/tpu-sdk root@192.168.42.1:/mnt/tpu/
-# scp /workspace/densenet121/work/densenet121_cv180x_int8_fuse.cvimodel root@192.168.42.1:/mnt/tpu/tpu-sdk/
+# scp /workspace/densenet121/work/densenet121_int8_fuse.cvimodel root@192.168.42.1:/mnt/tpu/tpu-sdk/
 ```
 
 ### Set environment variables
@@ -165,10 +181,10 @@ On the Duo board, perform Image Classification on the image
 
 ![duo](/docs/duo/tpu/duo-tpu-cat.jpg)
 
-Image classification using `densenet121_cv180x_int8_fuse.cvimodel` model:
+Image classification using `densenet121_int8_fuse.cvimodel` model:
 ```
 ./samples/bin/cvi_sample_classifier_fused_preprocess \
- ./densenet121_cv180x_int8_fuse.cvimodel \
+ ./densenet121_int8_fuse.cvimodel \
  ./samples/data/cat.jpg \
  ./samples/data/synset_words.txt
 ```

@@ -45,7 +45,8 @@ export default (props) => {
             arace_url: 'https://arace.tech/products/milk-v-mars-cm',
         },
         'meles': {
-            // arace_url: 'https://arace.tech/products/milk-v-meles',
+            taobao_url: 'https://item.taobao.com/item.htm?id=779272470113',
+            arace_url: 'https://arace.tech/products/milk-v-meles-1'
         },
         'vega': {
             taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=764856801789&skuId=5260392404476',
@@ -62,6 +63,9 @@ export default (props) => {
         'sg2002': {
             taobao_url: 'https://item.taobao.com/item.htm?id=748015537624&skuId=5258773672598&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA',
             arace_url: 'https://arace.tech/products/sophon-cv1800b-5pcs',
+        },
+        'SG2380': {
+            // arace_url: 'https://arace.tech/products/milk-v-meles',
         },
     }
 
