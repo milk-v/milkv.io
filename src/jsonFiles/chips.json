@@ -950,13 +950,11 @@
             ],
             "Audio": [
                 "16bit Audio Codec",
-                "2 x I2S/PCM",
-                "1 x DMIC"
+                "1x 2CH Audio out",
+                "1x 2CH Audio in"
             ],
             "Storage": [
                 "8GB eMMC",
-                "1x SPI-NOR",
-                "1x SPI-NAND",
                 "1x SDIO3.0"
             ],
             "Network": [
@@ -1007,7 +1005,7 @@
             }
         ],
         "downloads": {
-            "Duo Module 01": [
+            "Hardware": [
                 {
                     "download_name": "Duo_Module_V1.1-BOT.dxf",
                     "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/Duo_Module_V1.1-BOT.dxf?raw=true",
@@ -1044,13 +1042,6 @@
                     "file_date": "Jun 6,2024"
                 },
                 {
-                    "download_name": "FOOTPRINT-STAMP_0R55_88.psm",
-                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/FOOTPRINT/STAMP_0R55_88.psm?raw=true",
-                    "file_format": "PSM",
-                    "file_size": "29 KB",
-                    "file_date": "Jun 6,2024"
-                },
-                {
                     "download_name": "2DFiles-dm01-bot.dxf",
                     "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/2d-files/dm01-bot.dxf?raw=true",
                     "file_format": "DXF",
@@ -1063,11 +1054,9 @@
                     "file_format": "DXF",
                     "file_size": "525 KB",
                     "file_date": "Jun 6,2024"
-                }
-            ],
-            "Duo Module 01 Evaluation Board": [
+                },
                 {
-                    "download_name": "DuoModule 01 Evaluation Board V1.1 Schematic.DSN",
+                    "download_name": "DuoModule 01 Evaluation Board V1.1 Schematic.dsn",
                     "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1%20Schematic.DSN?raw=true",
                     "file_format": "DSN",
                     "file_size": "1 MB",
@@ -1099,12 +1088,19 @@
                     "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1-top.dxf?raw=true",
                     "file_format": "DXF",
                     "file_size": "16.8 MB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "DuoModule 01 Evaluation Board V1.1-top.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1.brd?raw=true",
+                    "file_format": "BRD",
+                    "file_size": "9.6 MB",
                     "file_date": "Jun 6,2024"
                 }
             ]
         },
         "downloads_zh": {
-            "Duo Module 01": [
+            "硬件设计指南": [
                 {
                     "download_name": "Duo_Module_V1.1-BOT.dxf",
                     "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/Duo_Module_V1.1-BOT.dxf?raw=true",
@@ -1141,13 +1137,6 @@
                     "file_date": "Jun 6,2024"
                 },
                 {
-                    "download_name": "FOOTPRINT-STAMP_0R55_88.psm",
-                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/FOOTPRINT/STAMP_0R55_88.psm?raw=true",
-                    "file_format": "PSM",
-                    "file_size": "29 KB",
-                    "file_date": "Jun 6,2024"
-                },
-                {
                     "download_name": "2DFiles-dm01-bot.dxf",
                     "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/2d-files/dm01-bot.dxf?raw=true",
                     "file_format": "DXF",
@@ -1160,11 +1149,9 @@
                     "file_format": "DXF",
                     "file_size": "525 KB",
                     "file_date": "Jun 6,2024"
-                }
-            ],
-            "Duo Module 01 Evaluation Board": [
+                },
                 {
-                    "download_name": "DuoModule 01 Evaluation Board V1.1 Schematic.DSN",
+                    "download_name": "DuoModule 01 Evaluation Board V1.1 Schematic.dsn",
                     "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1%20Schematic.DSN?raw=true",
                     "file_format": "DSN",
                     "file_size": "1 MB",
@@ -1196,6 +1183,13 @@
                     "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1-top.dxf?raw=true",
                     "file_format": "DXF",
                     "file_size": "16.8 MB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "DuoModule 01 Evaluation Board V1.1-top.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1.brd?raw=true",
+                    "file_format": "BRD",
+                    "file_size": "9.6 MB",
                     "file_date": "Jun 6,2024"
                 }
             ]
