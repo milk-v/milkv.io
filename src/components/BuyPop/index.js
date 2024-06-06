@@ -27,10 +27,7 @@ export default (props) => {
             chilli_url: 'https://shop.plati.ma/products/milk-v-duo-s-512m-1ghz-dual-core-risc-v-arm-sbc?_pos=4&_fid=86ada3723&_ss=c'
         },
         'duo-module-01': {
-            arace_url: 'https://arace.tech/products/milkv-duo-s',
-            taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=770462822819&sku_properties=5919063:6536025',
-            banli_url: 'https://spotpear.cn/category/Milk-V.html',
-            chilli_url: 'https://shop.plati.ma/products/milk-v-duo-s-512m-1ghz-dual-core-risc-v-arm-sbc?_pos=4&_fid=86ada3723&_ss=c'
+           
         },
         'pioneer': {
             crowdSupply_url: 'https://www.crowdsupply.com/milkv/milk-v-pioneer',
@@ -94,7 +91,7 @@ export default (props) => {
         'home': '/components/buy-meles-view.webp',
         'duo': '/components/buy-duo-view.webp',
         'duo-s': '/components/buy-duo-view.webp',
-        'duo-module-01': '/components/buy-sg2002-view.webp',
+        'duo-module-01': '/components/duo-module-01-buy.webp',
         'pioneer': '/components/buy-pionner-view.webp',
         'mars': '/components/buy-mars-view.webp',
         'mars-cm': '/components/buy-marscm-view.webp',
