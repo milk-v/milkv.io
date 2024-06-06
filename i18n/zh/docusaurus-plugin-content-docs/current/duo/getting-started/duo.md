@@ -78,7 +78,7 @@ Duo 摄像头接口使用的是 16 PIN 间距为 0.5mm 的连接器，可以直�
 
 #### 摄像头接口 FPC 线序
 
-<Image src='/docs/duo/duo/duo-camera-csi-port.webp' maxWidth='70%' align='left' />
+<Image src='/docs/duo/duo/duo-camera-csi-port.webp' maxWidth='50%' align='left' />
 
 <div className='gpio_style'>
 

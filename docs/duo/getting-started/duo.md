@@ -80,7 +80,7 @@ Duo camera uses a 16-pin connector with a distance of 0.5 mm, which can be direc
 
 #### Connector FPC Definition
 
-<Image src='/docs/duo/duo/duo-camera-csi-port.webp' maxWidth='70%' align='left' />
+<Image src='/docs/duo/duo/duo-camera-csi-port.webp' maxWidth='50%' align='left' />
 
 <div className='gpio_style'>
 
