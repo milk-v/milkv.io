@@ -144,7 +144,7 @@ export default (props) => {
                 <div className={styles.chip_title}>
                     <div className={styles.title_l_t}>
                         <h4>{jsonData[chipName][title_language]}</h4>
-                        {chipName === "duo-module-01" ? null : <Link style={{ cursor: 'pointer' }} to="#buy"><Translate id="homepage.corporations.duobuynow" /></Link>}
+                        <Link style={{ cursor: 'pointer' }} to="#buy"><Translate id="homepage.corporations.duobuynow" /></Link>
                     </div>
                     <img src={jsonData[chipName].front_view} alt="Front View" />
                 </div>
