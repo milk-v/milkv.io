@@ -394,7 +394,7 @@ export default (props) => {
             }}>
                 <img src="/chips/backtop.svg" alt="TOP" />
             </div>
-            {chipName === "duo-module-01" ? null : <BuyPop type={chipName.toUpperCase()} />}
+            <BuyPop type={chipName} />
             <SupportUs />
         </Layout>
     )
