@@ -60,6 +60,9 @@ export default (props) => {
             taobao_url: 'https://item.taobao.com/item.htm?id=748015537624&skuId=5258773672598&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA',
             arace_url: 'https://arace.tech/products/sophon-cv1800b-5pcs',
         },
+        'SG2380': {
+            // arace_url: 'https://arace.tech/products/milk-v-meles',
+        },
     }
 
     const image_data = {
@@ -95,6 +98,7 @@ export default (props) => {
         'CV1800B': '/components/buy-cv1800b-view.webp',
         'SG2000': '/components/buy-sg2000-view.webp',
         'SG2002': '/components/buy-sg2002-view.webp',
+        'SG2380': '/components/buy-sg2380-view.webp',
     }
     function transformString(str) {
         const words = str.split('-');
