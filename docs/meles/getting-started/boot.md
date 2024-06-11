@@ -75,8 +75,8 @@ $ fastboot flash ram u-boot-with-spl-meles.bin
 $ fastboot reboot
 $ sleep 5
 $ fastboot flash uboot u-boot-with-spl-meles.bin
-$ fastboot boot-meles-20240417_155900.ext4
-$ fastboot root-meles-20240417_155900.ext4
+$ fastboot flash boot boot-meles-20240417_155900.ext4
+$ fastboot flash root root-meles-20240417_155900.ext4
 ```
 
 - The following figure represents a successful burn-in
