@@ -19,9 +19,13 @@ There is one MicroSD Card slot on Meles. Therefore Meles supports the following 
 
 Get Balena Etcher from webite, https://etcher.balena.io/.
 
+Get the decompression tool 7-Zip from GitHub, https://github.com/mcmilk/7-Zip-zstd/releases/download/v22.01-v1.5.5-R3/7z22.01-zstd-x64.exe
+
 ## Get Meles MicroSD card image
 
-Download Meles MicroSD Card image. https://github.com/milkv-meles/meles-images/releases/download/v2024-0417/sdcard-meles-20240417_155900.img.xz
+Download Meles MicroSD Card image. https://mirror.iscas.ac.cn/revyos/extra/images/meles/20240601/sdcard-meles-20240601_180943.img.zst
+
+You can use 7-Zip or other tools to extract the downloaded .zst compressed file to any directory.
 
 ## Write the image to MicroSD Card
 
