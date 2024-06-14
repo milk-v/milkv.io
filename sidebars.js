@@ -216,6 +216,7 @@ const sidebars = {
         'mars/getting-started/bootloader',
         'mars/getting-started/images',
         'mars/getting-started/hardware',
+        'mars/getting-started/third-party-img',
       ],
     },
     'mars/mipicsi-support',
