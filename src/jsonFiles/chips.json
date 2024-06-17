@@ -439,11 +439,11 @@
             ],
             "Datasheet": [
                 {
-                    "download_name": "SG2002_TRM_V1.0-alpha.pdf",
-                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/datasheet/SG2002_TRM_V1.0-alpha.pdf?raw=ture",
-                    "file_size": "18.5 MB",
+                    "download_name": "SG2002_trm_en.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/datasheet/sg2002_trm_en.pdf?raw=ture",
+                    "file_size": "7.6 MB",
                     "file_format": "PDF",
-                    "file_date": "Jun 2, 2024"
+                    "file_date": "Jun 17, 2024"
                 },
                 {
                     "download_name": "SG2002_Preliminary_Datasheet_V1.0-alpha_CN.pdf",
@@ -501,11 +501,11 @@
             ],
             "数据手册": [
                 {
-                    "download_name": "SG2002_TRM_V1.0-alpha.pdf",
-                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/datasheet/SG2002_TRM_V1.0-alpha.pdf?raw=ture",
-                    "file_size": "18.5 MB",
+                    "download_name": "SG2002_trm_cn.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-256M/datasheet/sg2002_trm_cn.pdf?raw=ture",
+                    "file_size": "9.9 MB",
                     "file_format": "PDF",
-                    "file_date": "Jun 2, 2024"
+                    "file_date": "Jun 17, 2024"
                 },
                 {
                     "download_name": "SG2002_Preliminary_Datasheet_V1.0-alpha_CN.pdf",
