@@ -104,3 +104,20 @@ Duo camera uses a 16-pin connector with a distance of 0.5 mm, which can be direc
 | 16 | 3V3                 |
 
 </div>
+
+## Hardware Docs
+
+### V1.2
+
+- Schematic: [duo-schematic-v1.2.pdf](https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-schematic-v1.2.pdf?raw=true)
+- SMD TOP: [duo-component-list-top-v1.2.pdf](https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-component-list-top-v1.2.pdf?raw=true)
+- SMD BOTTOM: [duo-component-list-bottom-v1.2.pdf](https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-component-list-bottom-v1.2.pdf?raw=true)
+- 2D dxf: [duo-mechanical-drawings-v1.1.zip](https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-mechanical-drawings-v1.1.zip?raw=true)
+
+### V1.1
+
+- Schematic: [duo-schematic-v1.1.pdf](https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-schematic-v1.1.pdf?raw=true)
+
+### Others
+
+[https://github.com/milkv-duo/duo-files/tree/main/duo/hardware](https://github.com/milkv-duo/duo-files/tree/main/duo/hardware)

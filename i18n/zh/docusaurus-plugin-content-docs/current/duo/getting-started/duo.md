@@ -102,3 +102,20 @@ Duo 摄像头接口使用的是 16 PIN 间距为 0.5mm 的连接器，可以直�
 | 16 | 3V3                 |
 
 </div>
+
+## 硬件资料
+
+### V1.2
+
+- 原理图：[duo-schematic-v1.2.pdf](https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-schematic-v1.2.pdf?raw=true)
+- 位号图（顶层）：[duo-component-list-top-v1.2.pdf](https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-component-list-top-v1.2.pdf?raw=true)
+- 位号图（底层）：[duo-component-list-bottom-v1.2.pdf](https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-component-list-bottom-v1.2.pdf?raw=true)
+- 2D dxf: [duo-mechanical-drawings-v1.1.zip](https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-mechanical-drawings-v1.1.zip?raw=true)
+
+### V1.1
+
+- 原理图：[duo-schematic-v1.1.pdf](https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-schematic-v1.1.pdf?raw=true)
+
+### 其他
+
+[https://github.com/milkv-duo/duo-files/tree/main/duo/hardware](https://github.com/milkv-duo/duo-files/tree/main/duo/hardware)

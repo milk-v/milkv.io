@@ -372,3 +372,9 @@ DuoS eMMC 版本出厂未烧录固件，需要使用 PC 通过 USB 接口烧录�
    ```
 
    烧录完成后，DuoS 会自动重启，开机后看到 DuoS 上的蓝色 LED 闪烁，说明系统已经正常启动，烧录成功。
+
+## 硬件资料
+
+### 其他
+
+[https://github.com/milkv-duo/duo-files/tree/main/duo-s](https://github.com/milkv-duo/duo-files/tree/main/duo-s)

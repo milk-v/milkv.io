@@ -123,3 +123,9 @@ Duo256M 的大核可以选择使用 RISC-V 或者 ARM，默认使用的是 RISC-
   ```
   B.SCS/0/0.WD.URPL.B.SCS/0/0.WD.URPL.USBI.USBW
   ```
+
+## 硬件资料
+
+### 其他
+
+[https://github.com/milkv-duo/duo-files/tree/main/duo-256M](https://github.com/milkv-duo/duo-files/tree/main/duo-256M)

@@ -125,3 +125,9 @@ If the debug serial port is connected, you can see in the first line of the boot
   ```
   B.SCS/0/0.WD.URPL.B.SCS/0/0.WD.URPL.USBI.USBW
   ```
+
+## Hardware Docs
+
+### Others
+
+[https://github.com/milkv-duo/duo-files/tree/main/duo-256M](https://github.com/milkv-duo/duo-files/tree/main/duo-256M)

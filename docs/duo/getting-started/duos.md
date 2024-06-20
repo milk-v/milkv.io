@@ -372,3 +372,9 @@ Use the USB burning tool under Windows to support eMMC. The firmware version is 
    ```
 
    After the burning is completed, the DuoS will automatically restart. After booting, you will see the blue LED on the DuoS flashing, indicating that the system has started normally and the burning is successful.
+
+## Hardware Docs
+
+### Others
+
+[https://github.com/milkv-duo/duo-files/tree/main/duo-s](https://github.com/milkv-duo/duo-files/tree/main/duo-s)
