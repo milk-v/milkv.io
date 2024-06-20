@@ -12,4 +12,5 @@ ISP 开发参考: [html](https://doc.sophgo.com/cvitek-develop-docs/master/docs_
 图像质量调试工具使用指南: [html](https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/ISP/PQ_Tools_User_Guide/build/html/index.html) | [pdf](https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/ISP/PQ_Tools_User_Guide/build/PQToolsUserGuide_zh.pdf)
 
 ## 下载
-- [PQ Tools](https://github.com/milkv-duo/accessories/blob/master/CAM-GC2083/Software/CviPQtool_20230306.zip)
+- [PQ Tools](https://github.com/milkv-duo/accessories/blob/master/CAM-GC2083/Software/CviPQtool_20230306.zip?raw=true)
+- [isp_tool_daemon.tar.gz](https://github.com/milkv-duo/accessories/blob/master/CAM-GC2083/Software/isp_tool_daemon.tar.gz?raw=true)
