@@ -154,41 +154,11 @@ Extract the downloaded `Mars-UsbFlashTool-*-Windows.zip` into the Windows system
 
 ### Upgrade Bootloader
 
-The first 5 steps of burning the bootloader are the same as the first 5 steps of installing the driver above.
-
-1. Connect the USB to TTL serial port cable to the 40 pin header on Mars, connect the USB to the PC and note down the serial port number
-
-   How to connect USB to serial cable: [Use Serial Console](https://milkv.io/docs/mars/getting-satrted/setup#use-serial-console)
-
-   ![mars](/docs/mars/mars-usb-flash-tool_02.png)
-
-   **Note: If any other serial port program is open and using the serial port, please exit the program to release the port and avoid occupying it.**
-
-2. Connect the PC and Mars using a USB 2.0 interface with a type A Male to Male USB data cable
-
-   ![mars](/docs/mars/usba2usba.jpg)
-
-   ![mars](/docs/mars/mars-usb-port-a.jpg)
-
-3. Press and hold the upgrade button on Mars, and then power on Mars through the Type C interface. At this time, Mars will enter the upgrade mode. You can release the upgrade button to continue the operation.
-
-   ![mars](/docs/mars/mars-upgrade-key.jpg)
-
-4. Run the `UsbFlashTool-*-Windows.exe` flashing program in the flashing tool directory
-
-   ![mars](/docs/mars/mars-usb-flash-tool_05.png)
-
-5. Set the serial port number in the `Serial Setting` on the right side to the serial port number noted in step 1
-
-   ![mars](/docs/mars/mars-usb-flash-tool_06.png)
-
-6. Select `Firmware` in `File Type`, then click `File Select` to select the `usbprog-mars-230510.out` in the `update` directory, then click `Load`, and wait for the message `Complete` to appear after loading
-
-   ![mars](/docs/mars/mars-usb-flash-tool_15.png)
+The first 6 steps of burning the bootloader are the same as the first 5 steps of installing the driver above.
 
 7. Flash the `SPL`
 
-   Click `File Select`, select the `SPL` firmware `u-boot-spl.bin.normal.out` to be burned, select `SPL` in `File Type`, select `FLASH` in `Memory Type`, Click `Load` to start burning firmware.
+   Click `File Select`, select the `SPL` firmware `mars_u-boot-spl.bin.normal.out` to be burned, select `SPL` in `File Type`, select `FLASH` in `Memory Type`, Click `Load` to start burning firmware.
 
    ![mars](/docs/mars/mars-usb-flash-tool_16.png)
 
@@ -198,7 +168,7 @@ The first 5 steps of burning the bootloader are the same as the first 5 steps of
 
 8. Flash the `U-BOOT`
 
-   Click `File Select`, select the `U-BOOT` firmware `visionfive2_fw_payload.img` to be burned, select `U-Boot` in `File Type`, select `FLASH` in `Memory Type`, and then click `Load` to start burning firmware.
+   Click `File Select`, select the `U-BOOT` firmware `mars_visionfive2_fw_payload.img` to be burned, select `U-Boot` in `File Type`, select `FLASH` in `Memory Type`, and then click `Load` to start burning firmware.
 
    ![mars](/docs/mars/mars-usb-flash-tool_18.png)
 
