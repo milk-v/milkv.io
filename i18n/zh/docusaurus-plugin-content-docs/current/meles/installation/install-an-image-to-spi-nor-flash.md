@@ -9,6 +9,8 @@ Meles 开发板上有一个 SPI nor Flash。它被用来存放 Bootloader，以�
 
 ## 通过串口为 SPI Nor Flash 烧写镜像
 
+当您更换了全新的 SPI Nor Flash 或者固件损坏时，您可能需要为其烧写镜像，这时您可以采用串口的方式烧录。
+
 ### 必要准备
 
 - Meles 和电源适配器
@@ -40,15 +42,7 @@ $ wget https://github.com/milkv-meles/thead-bin/raw/main/image-writer/iw-single-
 
 ### 下载镜像
 
-从以下链接下载 Meles 的 Bootloader， https://github.com/milkv-meles/meles-images/releases.
-
-- 4GB DDR Meles: https://github.com/milkv-meles/meles-images/releases/download/v2024-0417/u-boot-with-spl-meles-4g.bin
-- 8GB DDR Meles: https://github.com/milkv-meles/meles-images/releases/download/v2024-0417/u-boot-with-spl-meles.bin
-
-```
-$ wget https://github.com/milkv-meles/meles-images/releases/download/v2024-0417/u-boot-with-spl-meles-4g.bin
-$ wget https://github.com/milkv-meles/meles-images/releases/download/v2024-0417/u-boot-with-spl-meles.bin
-```
+首先您需要准备烧写用的镜像。若您的开发板是 8GB 版本，则您需要下载 ```u-boot-with-spl-meles.bin```。若您的开发板是 4GB 版本，则下载 ```u-boot-with-spl-meles-4g.bin```。这些文件可以在[官方镜像](../resources-download/image.md)章节找到。
 
 下载 zero 镜像文件。
 
@@ -186,4 +180,54 @@ Start to run image...
 
 #### 步骤 5: Meles 重新上电
 
-Meles 重新上电后，蓝色 LED 应为常亮状态。
+Meles 重新上电后，Soc 将直接进入下载模式，蓝色 LED 熄灭。
+
+## 通过 Fastboot 为 SPI Nor Flash 烧写镜像
+
+若 SPI Nor Flash 中存在可用的固件，在 Soc 进入下载模式时，可以通过 Fastboot 的方式烧录镜像。
+
+因为 TH1520 芯片没有在 Windows 下的驱动程序，以下步骤均需要在 Ubuntu 系统下执行。
+
+### 下载镜像和工具
+
+首先，您需要执行以下命令以安装 fastboot 实用程序
+
+```
+sudo apt-get install android-tools-adb
+sudo apt-get install fastboot
+```
+
+另外，您需要准备刷写使用的镜像文件。若您的开发板是 8GB 版本，则您需要下载 ```u-boot-with-spl-meles.bin```。若您的开发板是 4GB 版本，则下载 ```u-boot-with-spl-meles-4g.bin```。这些文件可以在[官方镜像](../resources-download/image.md)章节找到。
+
+### 写入镜像
+
+#### 步骤 1: 启动 Meles 到下载模式
+
+- Meles 关机并下电
+- 按住下载按钮
+- 插入 Type C 数据线让 Meles 上电
+- 松开下载按钮
+
+在 PC 端键入以下命令来查看设备:
+
+```
+$ lsusb | grep T-HEAD
+Bus 001 Device 045: ID 2345:7654 T-HEAD USB download gadget
+```
+
+此时执行 ```fastboot devices``` 命令，屏幕上返回 fastboot 设备号证明 fastboot 可用。
+
+#### 步骤 2: 写入镜像
+
+进入存放镜像文件的目录，执行下面的命令开始刷写：
+
+```
+fastboot flash ram u-boot-with-spl.bin
+fastboot reboot
+#这里等待 3-5 秒让开发板重启
+fastboot flash uboot u-boot-with-spl.bin
+```
+
+#### 步骤 3: Meles 重新上电
+
+Meles 重新上电后，若系统正常，蓝色 LED 应为常亮状态。

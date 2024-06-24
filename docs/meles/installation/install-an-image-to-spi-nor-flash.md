@@ -9,6 +9,8 @@ Meles has a SPI nor Flash on board. It contains the Bootloader and supports boot
 
 ## Install an image to SPI Nor Flash via UART port
 
+When you replace a new SPI Nor Flash or the firmware is damaged, you may need to burn an image for it. In this case, you can use the serial port to burn it.
+
 ### Requirements
 
 - Meles with proper power
@@ -40,15 +42,7 @@ $ wget https://github.com/milkv-meles/thead-bin/raw/main/image-writer/iw-single-
 
 ### Get essential images
 
-Download Meles Bootloader from here, https://github.com/milkv-meles/meles-images/releases.
-
-- 4GB DDR Meles: https://github.com/milkv-meles/meles-images/releases/download/v2024-0417/u-boot-with-spl-meles-4g.bin
-- 8GB DDR Meles: https://github.com/milkv-meles/meles-images/releases/download/v2024-0417/u-boot-with-spl-meles.bin
-
-```
-$ wget https://github.com/milkv-meles/meles-images/releases/download/v2024-0417/u-boot-with-spl-meles-4g.bin
-$ wget https://github.com/milkv-meles/meles-images/releases/download/v2024-0417/u-boot-with-spl-meles.bin
-```
+First you need to prepare the image for burning. If your Meles is the 8GB version, you need to download ```u-boot-with-spl-meles.bin```. If your Meles is the 4GB version, download ```u-boot-with-spl-meles-4g.bin```. These files can be found in the [Official Image](../resources-download/image.md) section.
 
 Download zero image.
 
@@ -186,4 +180,55 @@ Start to run image...
 
 #### Step 5: Power cycle Meles
 
-Power cycle Meles and the blue LED should be always off.
+Power cycle Meles and the Soc will go directly into download mode and the blue LED will go out.
+
+
+## Flashing images for SPI Nor Flash via Fastboot
+
+If there is available firmware in SPI Nor Flash, the image can be burned through Fastboot when the Soc enters download mode.
+
+Because the TH1520 chip does not have a driver under Windows, the following steps must be performed under the Ubuntu system.
+
+### Download images and tools
+
+First, you need to execute the following command to install the fastboot utility
+
+```
+sudo apt-get install android-tools-adb
+sudo apt-get install fastboot
+```
+
+In addition, you need to prepare the image file for flashing. If your Meles is the 8GB version, you need to download ```u-boot-with-spl-meles.bin```. If your Meles is the 4GB version, download ```u-boot-with-spl-meles-4g.bin```. These files can be found in the [Official Image](../resources-download/image.md) section.
+
+### Start to write
+
+#### Step 1: Launch Meles in download mode
+
+- Meles shuts down and powers off
+- Press and hold the download button
+- Plug in the Type C cable to power up Meles
+- Release the Download button
+
+Type the following command on the PC to view the device:
+
+```
+$ lsusb | grep T-HEAD
+Bus 001 Device 045: ID 2345:7654 T-HEAD USB download gadget
+```
+
+At this time, execute the ```fastboot devices``` command, and the fastboot device number will be returned on the screen, proving that fastboot is available.
+
+#### Step 2: Write
+
+Enter the directory where the image file is stored and execute the following command to start flashing:
+
+```
+fastboot flash ram u-boot-with-spl.bin
+fastboot reboot
+#Wait 3-5 seconds for Meles to reboot
+fastboot flash uboot u-boot-with-spl.bin
+```
+
+#### Step 3: Restart Meles
+
+After Meles is powered on again, if the system is normal, the blue LED should be always on.
