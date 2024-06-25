@@ -121,7 +121,6 @@ li {
   color: #2d88c9 !important;
 }
 
-
 .text_right {
   text-align: left;
   color: #2D88C9;
@@ -138,27 +137,13 @@ li {
   height: 80%;
 }
 
-
 strong {
   color: #2d88c9;
-}
-
-/* 字体 */
-@font-face {
-  font-family: Roboto;
-  src: url(/static/ttf/Roboto-Regular-14.ttf);
-}
-
-@font-face {
-  font-family: Inter;
-  src: url(/static/ttf/Inter.ttf);
 }
 
 .hidden {
   display: none !important;
 }
-
-
 
 .swiper-pagination-bullet {
   width: 12px !important;
@@ -516,4 +501,25 @@ strong {
   .cardDescription_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module {
     font-size: 12rem !important;
   }
+}
+
+/* 字体 */
+@font-face {
+  font-family: Roboto;
+  src: url(/static/ttf/Roboto-Regular-14.ttf);
+}
+
+@font-face {
+  font-family: Roboto2;
+  src: url(/static/ttf/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: Roboto3;
+  src: url(/static/ttf/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(/static/ttf/Inter.ttf);
 }
