@@ -972,6 +972,16 @@
             "Temperature Range": [
                 "0℃～60℃"
             ],
+            "Resource":[
+                "Up to 4x I2C",
+                "Up to 4x SPI",
+                "Up to 4x UART",
+                "Up to 12x PWM",
+                "Up to 3x ADC",
+                "Up to 1x SDIO",
+                "Up to 1x I2S",
+                "Up to 1x JTAG"
+            ],
             "Package Type": [
                 "Stamp-hole"
             ],
