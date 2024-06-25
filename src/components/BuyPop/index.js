@@ -1,11 +1,9 @@
 import React from 'react';
 import styles from './head.module.css'
 import Link from '@docusaurus/Link';
-import { useHistory } from '@docusaurus/router';
 
 export default (props) => {
     const { type } = props
-    const goto = useHistory()
 
     // chinan_url小鹅通
     // other_url 众筹
@@ -28,6 +26,9 @@ export default (props) => {
             banli_url: 'https://spotpear.cn/category/Milk-V.html',
             chilli_url: 'https://shop.plati.ma/products/milk-v-duo-s-512m-1ghz-dual-core-risc-v-arm-sbc?_pos=4&_fid=86ada3723&_ss=c'
         },
+        'duo-module-01': {
+
+        },
         'pioneer': {
             crowdSupply_url: 'https://www.crowdsupply.com/milkv/milk-v-pioneer',
             arace_url: 'https://arace.tech/collections/milk-v-pioneer',
@@ -48,19 +49,19 @@ export default (props) => {
             taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=764856801789&skuId=5260392404476',
             arace_url: 'https://arace.tech/products/milk-v-vega',
         },
-        'CV1800B': {
+        'cv1800b': {
             taobao_url: 'https://item.taobao.com/item.htm?id=748015537624&skuId=5330447539309&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA',
             arace_url: 'https://arace.tech/products/sophon-cv1800b-5pcs',
         },
-        'SG2000': {
+        'sg2000': {
             taobao_url: 'https://item.taobao.com/item.htm?id=748015537624&skuId=5258773672599&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA',
             arace_url: 'https://arace.tech/products/sophon-cv1800b-5pcs',
         },
-        'SG2002': {
+        'sg2002': {
             taobao_url: 'https://item.taobao.com/item.htm?id=748015537624&skuId=5258773672598&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA',
             arace_url: 'https://arace.tech/products/sophon-cv1800b-5pcs',
         },
-        'SG2380': {
+        'sg2380': {
             // arace_url: 'https://arace.tech/products/milk-v-meles',
         },
     }
@@ -90,32 +91,22 @@ export default (props) => {
         'home': '/components/buy-meles-view.webp',
         'duo': '/components/buy-duo-view.webp',
         'duo-s': '/components/buy-duo-view.webp',
+        'duo-module-01': '/components/duo-module-01-buy.webp',
         'pioneer': '/components/buy-pionner-view.webp',
         'mars': '/components/buy-mars-view.webp',
         'mars-cm': '/components/buy-marscm-view.webp',
         'meles': '/components/buy-meles-view.webp',
         'vega': '/components/buy-vega-view.webp',
-        'CV1800B': '/components/buy-cv1800b-view.webp',
-        'SG2000': '/components/buy-sg2000-view.webp',
-        'SG2002': '/components/buy-sg2002-view.webp',
-        'SG2380': '/components/buy-sg2380-view.webp',
+        'cv1800b': '/components/buy-cv1800b-view.webp',
+        'sg2000': '/components/buy-sg2000-view.webp',
+        'sg2002': '/components/buy-sg2002-view.webp',
+        'sg2380': '/components/buy-sg2380-view.webp',
     }
-    function transformString(str) {
-        const words = str.split('-');
-        let newStr
-        if (words.length > 1) {
-            newStr = words[0].charAt(0).toUpperCase() + words[0].slice(1) + ' ' + words[1].toUpperCase()
 
-        } else {
-            newStr = words[0].charAt(0).toUpperCase() + words[0].slice(1)
-        }
-        return newStr
-    }
-    let product_name = transformString(type)
     return (
         <div id='buy' className={styles.buy_box}>
             <div className={styles.buy_center}>
-                <h2>Buy Milk-V {product_name}</h2>
+                <h2>Buy Milk-V {type.toUpperCase()}</h2>
                 <div className={styles.flex_center}>
                     <img src={product_pictures[type]} alt={type} />
                     {

@@ -137,6 +137,10 @@ const config = {
                 to: '/duo-s',
               },
               {
+                label: 'Duo Module 01',
+                to: '/duo-module-01',
+              },
+              {
                 label: 'Pioneer',
                 to: '/pioneer'
               },
