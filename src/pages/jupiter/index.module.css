@@ -1148,11 +1148,15 @@
 
     .border4>div>p:first-child {
         font-size: 50rem;
-        margin-bottom: 0rem;
+        margin-top: 35rem;
     }
 
     .parametric_m>svg {
         height: 15rem;
+    }
+
+    .border4>div>p>svg {
+        height: 35rem;
     }
 
     .border4>div>p:last-child {
@@ -1236,11 +1240,11 @@
     .jupiter_table ul>li,
     .jupiter_table p,
     .jupiter_table td {
-        font-size: 14rem;
+        font-size: 16rem;
         margin: 10rem 0;
     }
 
     .tabBox_tech2 {
-        width: 340rem !important;
+        width: 350rem !important;
     }
 }
