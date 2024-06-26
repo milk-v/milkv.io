@@ -48,7 +48,7 @@ export default () => {
                                                 <path d="M6 0.5L0.226498 10.5L11.7735 10.5L6 0.5ZM5 9.5L5 36.5L7 36.5L7 9.5L5 9.5Z" fill="white" />
                                             </svg>
                                         </p>
-                                        <p className={styles.parametric_n}>computing power</p>
+                                        <p className={styles.parametric_n}>Single Core Computing Power<br /> compared to ARM A55</p>
                                     </li>
                                 </ol>
                             </div>
@@ -78,7 +78,7 @@ export default () => {
                                                 <path d="M12 0.0820312L0.452995 20.082L23.547 20.082L12 0.0820312ZM10 18.082L10 60.082L14 60.082L14 18.082L10 18.082Z" fill="white" />
                                             </svg>
                                         </p>
-                                        <p>SIMD parallel processing capability</p>
+                                        <p>SIMD parallel processing capability compared to Neon</p>
                                     </div>
 
                                 </div>
@@ -118,7 +118,7 @@ export default () => {
                         <div className={styles.center_items_4}>
                             <div className={styles.border10}>
                                 <p className={styles.info_title}>Built-in PCIe 2.0, 2-lane signaling </p>
-                                <p className={styles.info_text}>Supports standard PCIe accessories such as graphics cards, <font>PCIe to SATA</font>, etc.</p>
+                                <p className={styles.info_text}>Supports standard PCIe accessories such as  <font>graphics cards,PCIe to SATA</font>, etc.</p>
                             </div>
                             <div className={styles.border11}>
                                 <p className={styles.info_title}>Standard MiniITX form factor</p>
@@ -129,7 +129,8 @@ export default () => {
                             </div>
                         </div>
                         <div className={styles.border12}>
-                            <p className={styles.info_title}>Strong storage scalability</p>
+                            <p className={styles.info_title}> Strong Storage Scalability</p>
+                            <p className={styles.info_text}>Support:</p>
                             <ol>
                                 <li>
                                     <img src="/jupiter/ssd.webp" alt="NVMe SSD" />
@@ -170,7 +171,7 @@ export default () => {
             </div>
             <div className={clsx(styles_s.tabBox_tech, styles.tabBox_tech2)}>
                 <h2 className={styles_s.title}><Translate id='line.title.TechSpecs' /></h2>
-                <p className={styles_s.moreP}>Milk-V Jupiter is a Mini ITX device based on the Spacemit K1/M1, supporting Ubuntu. This device integrates a standard PCIe connector, supporting common PCIe devices such as graphics cards, PCIe to SATA adapters, and network cards. It features dual Gigabit Ethernet interfaces, onboard Wi-Fi 6/BT 5.2, and supports NVMe SSDs, making it an ideal choice for an entry-level RISC-V desktop.</p>
+                <p className={styles_s.moreP}>Milk-V Jupiter, powered by the Spacemit K1/M1 SoC, is the world's first Mini ITX device to support both RVA22 and RVV1.0. This device integrates a standard PCIe connector, supporting common PCIe devices such as graphics cards, PCIe to SATA adapters, and network cards. It features dual Gigabit Ethernet interfaces, onboard Wi-Fi 6/BT 5.2, and supports NVMe SSDs, making it an ideal choice for an entry-level RISC-V desktop.</p>
                 <h2 className={styles_s.headword}><Translate id='duo.info.text.Hardware' /></h2>
                 <table className={styles.jupiter_table}>
                     <tbody>
