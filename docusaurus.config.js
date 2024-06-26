@@ -156,6 +156,10 @@ const config = {
                 label: 'Vega',
                 to: '/vega'
               },
+              {
+                label: 'Jupiter',
+                to: '/jupiter'
+              },
             ],
           },
           {
