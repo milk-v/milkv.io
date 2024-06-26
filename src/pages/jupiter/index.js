@@ -170,7 +170,7 @@ export default () => {
             </div>
             <div className={clsx(styles_s.tabBox_tech, styles.tabBox_tech2)}>
                 <h2 className={styles_s.title}><Translate id='line.title.TechSpecs' /></h2>
-                <p className={styles_s.moreP}>Milk-V Vega offers comprehensive second-layer network protocol processing capabilities, including L2 bridging, L2 multicast, and storm suppression, among others. It supports VLAN functions based on streams, ports, protocols, and subnets. The device also provides support for STP, RSTP, and QinQ functionalities. Additionally, it includes features like defense against DOS attacks, black and white lists, and protocol packet filtering. Milk-V Vega facilitates filtering, link aggregation, OAM message transmission, and port protection functionalities. It further supports both ingress and egress ACL functionalities, as well as Ethernet synchronization and 1588 features.</p>
+                <p className={styles_s.moreP}>Milk-V Jupiter is a Mini ITX device based on the Spacemit K1/M1, supporting Ubuntu. This device integrates a standard PCIe connector, supporting common PCIe devices such as graphics cards, PCIe to SATA adapters, and network cards. It features dual Gigabit Ethernet interfaces, onboard Wi-Fi 6/BT 5.2, and supports NVMe SSDs, making it an ideal choice for an entry-level RISC-V desktop.</p>
                 <h2 className={styles_s.headword}><Translate id='duo.info.text.Hardware' /></h2>
                 <table className={styles.jupiter_table}>
                     <tbody>
