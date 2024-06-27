@@ -1,6 +1,7 @@
 import React from "react";
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Head from '@docusaurus/Head';
+import jupiter from "../../pages/jupiter";
 
 export default (props) => {
     const { page } = props
@@ -105,6 +106,17 @@ export default (props) => {
                 keywords: 'Milk-V,RISC-V,Meles,TH1520,平头哥,Quad Core,高性能,开发板,SBC',
             },
         },
+        jupiter: {
+            en: {
+                title: 'Milk-V Jupiter | RISC-V PC for Everyone',
+                description: "Milk-V Jupiter, powered by the Spacemit K1/M1 SoC, is the world's first Mini ITX device to support both RVA22 and RVV1.0. This device integrates a standard PCIe connector, supporting common PCIe devices such as graphics cards, PCIe to SATA adapters, and network cards. It features dual Gigabit Ethernet interfaces, onboard Wi-Fi 6/BT 5.2, and supports NVMe SSDs, making it an ideal choice for an entry-level RISC-V desktop.",
+            },
+            zh: {
+                title: 'Milk-V Jupiter | 触手可及的 RISC-V PC',
+                description: 'Milk-V Jupiter 是一款基于Spacemit K1/M1 的Mini ITX设备。该设备集成了标准PCIe Connector，支持常见PCIe设备，如显卡、PCIe转SATA、网卡；双Gigabit以太网接口；板载WI-FI6/BT5.2；支持NVMe SSD，是入门级 RISC-V Desktop 首选。',
+                keywords: 'Milk-V; Jupiter; Spacemit; K1; M1; MiniITX; RVA22; RVV1.0; 群芯闪耀; 进迭时空',
+            },
+        }
     }
 
 

@@ -13,7 +13,7 @@ import clsx from "clsx";
 export default () => {
 
     return <Layout>
-        <MetaData page='vega' />
+        <MetaData page='jupiter' />
         <main className={styles._main}>
             <div className={styles.jupiter_main}>
                 <div className={styles.jupiter_contexts}>
