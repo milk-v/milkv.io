@@ -36,7 +36,7 @@ SDK目录结构
 :::tip
 当前 SDK 不支持 Duo256M 和 DuoS 的 ARM 核，如果需要使用 ARM 核，可以暂时参考这个仓库：
 
-duo-build: [https://github.com/milkv-duo/duo-build](https://github.com/milkv-duo/duo-build)
+duo-build: [https://github.com/milkv-duo/duo-buildroot-sdk-v2](https://github.com/milkv-duo/duo-buildroot-sdk-v2)
 :::
 
 # 编译镜像
