@@ -22,7 +22,7 @@ Arduino IDE 支持 Windows、Linux、macOS 三种操作系统，根据您使用�
 打开 Arduino IDE，在 ``文件`` 菜单中选择 ``首选项``，在 ``设置`` 标签中的 ``其他开发板管理器地址`` 内添加 Duo 的配置文件地址：
 
 ```
-https://github.com/milkv-duo/duo-arduino/releases/download/V1.0.0/package_sg200x_index.json
+https://github.com/milkv-duo/duo-arduino/releases/download/config/package_sg200x_index.json
 ```
 
 <Image src='/docs/duo/arduino/duo-arduino-01_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />

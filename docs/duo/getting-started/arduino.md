@@ -22,7 +22,7 @@ Arduino IDE supports three operating systems: Windows, Linux, and macOS. Accordi
 Open Arduino IDE, select ``Preferences`` in the ``File`` menu, and add the Duo configuration file address in the ``Additional boards manager URLs`` in the ``Settings`` tab:
 
 ```
-https://github.com/milkv-duo/duo-arduino/releases/download/V1.0.0/package_sg200x_index.json
+https://github.com/milkv-duo/duo-arduino/releases/download/config/package_sg200x_index.json
 ```
 
 <Image src='/docs/duo/arduino/duo-arduino-01.jpg' minWidth='40%' maxWidth='100%' align='left' />
