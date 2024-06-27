@@ -302,6 +302,7 @@ const sidebars = {
       },
       items: [
         'meles/os-usage/revyos',
+        'meles/os-usage/ros2',
       ],
     },
     {
