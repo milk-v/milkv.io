@@ -63,6 +63,10 @@ export default (props) => {
         'SG2380': {
             // arace_url: 'https://arace.tech/products/milk-v-meles',
         },
+        'jupiter': {
+            taobao_url: 'https://milkv.taobao.com/',
+            jd_url: 'https://mall.jd.com/view_search-4943667.html',
+        },
     }
 
     const image_data = {
@@ -95,6 +99,7 @@ export default (props) => {
         'mars-cm': '/components/buy-marscm-view.webp',
         'meles': '/components/buy-meles-view.webp',
         'vega': '/components/buy-vega-view.webp',
+        'jupiter': '/components/buy-vega-view.webp',
         'CV1800B': '/components/buy-cv1800b-view.webp',
         'SG2000': '/components/buy-sg2000-view.webp',
         'SG2002': '/components/buy-sg2002-view.webp',

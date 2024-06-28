@@ -292,6 +292,7 @@ export default () => {
                     </tbody>
                 </table>
             </div>
+            <BuyPop type='jupiter' />
             <ContactUs product='vega' />
         </main>
     </Layout>
