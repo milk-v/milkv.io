@@ -1,14 +1,10 @@
 import React from "react";
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Head from '@docusaurus/Head';
-import jupiter from "../../pages/jupiter";
 
 export default (props) => {
     const { page } = props
     const currentLanguage = useBaseUrl('/');
-
-
-
     const metadata = {
         home: {
             en: {
@@ -118,7 +114,6 @@ export default (props) => {
             },
         }
     }
-
 
     const indexMetaData = currentLanguage === '/zh/' ? metadata[page].zh : metadata[page].en
     return (
