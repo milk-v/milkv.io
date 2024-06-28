@@ -123,8 +123,8 @@ export default () => {
                             <div className={styles.border11}>
                                 <p className={styles.info_title}>Standard MiniITX form factor</p>
                                 <ul className={styles.info_ul}>
-                                    <li>Supports hardware acceleration</li>
-                                    <li>Supports mainstream frameworks</li>
+                                    <li>Supports standard PC case</li>
+                                    <li>Supports standard PC ATX power supply</li>
                                 </ul>
                             </div>
                         </div>
@@ -256,7 +256,7 @@ export default () => {
                         <tr>
                             <td>Display</td>
                             <td>
-                                <p>1x Standard HDMI, up to 1920x1080@60Hz</p>
+                                <p>1x Standard HDMI, up to 1920x1440@60Hz</p>
                             </td>
                         </tr>
                         <tr>
