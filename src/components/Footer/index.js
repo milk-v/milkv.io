@@ -54,6 +54,7 @@ export default () => {
                                     <Link to='/mars-cm'>Mars CM</Link>
                                     <Link to='/meles'>Meles</Link>
                                     <Link to='/vega'>Vega</Link>
+                                    <Link to='/jupiter'>Jupiter</Link>
                                 </li>
                                 <li>
                                     <p className={styles.line_name}>Chips</p>
@@ -79,6 +80,7 @@ export default () => {
                                     <Link href='https://community.milkv.io/c/mars'>Mars Categories </Link>
                                     <Link href='https://community.milkv.io/c/meles'>Meles Categories </Link>
                                     <Link href='https://community.milkv.io/c/vega'>Vega Categories </Link>
+                                    <Link href='https://community.milkv.io/c/jupiter'>Jupiter Categories </Link>
                                 </li>
                                 <li>
                                     <p className={styles.line_name}>Follow Us</p>
