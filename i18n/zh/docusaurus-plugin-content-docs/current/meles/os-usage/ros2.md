@@ -44,7 +44,14 @@ RISC-V ROS 小车由以下几部分组成：
 
 更多关于 MicroROS 控制板的信息请查询[资料汇总](https://www.yahboom.com/study/MicroROS-Board)。
 
-### 启动机器人
+:::tip
+在后面的一些操作步骤里，您可能需要在 Meles 里输入用户名和密码，下面是默认的用户名和密码。
+
+用户名：openeuler
+密码：123456
+:::
+
+### 首次启动机器人
 
 拨动 MicroROS 控制板上的开关为 ROS 小车上电，上电后请等待 Meles 开机，时间大约为 2-3 分钟。
 
@@ -60,7 +67,7 @@ RISC-V ROS 小车由以下几部分组成：
 
 ![解锁底盘](/docs/meles/ros_car_gamepad_unlock.jpg)
 
-解锁底盘后，按下 X、Y、A、B 按键来控制云台方向，前后拨动左侧摇杆控制前进/后退，左右拨动右侧摇杆控制小车左转/右转。
+解锁底盘后，按下 ```X```、```Y```、```A```、```B``` 按键来控制云台方向，前后拨动左侧摇杆控制前进/后退，左右拨动右侧摇杆控制小车左转/右转。
 
 ![运动控制](/docs/meles/ros_car_gamepad_guide.jpg)
 
@@ -68,5 +75,95 @@ RISC-V ROS 小车由以下几部分组成：
 若您不能使用手柄控制小车，请您参考[## MicroROS 控制板固件烧录]章节烧录烧录并配置 MicroROS 控制板。
 :::
 
-Comming soon.... Not long time...
+### 关闭自启动脚本
+
+机器人开机默认启动连接代理、手柄控制和建图任务，若您想手动运行其他任务，可能需要关闭这些软件的自启动，防止程序之间的冲突。
+
+#### 使用桌面环境关闭
+
+若您使用键鼠和显示器，或者 VNC 来操作 ROS 小车，您可以直接使用桌面环境来关闭自启动脚本。
+
+在桌面左上角找到 ```Application```-```Settings```-```Sessions and Startup``` 。
+
+![Startup](/docs/meles/ros_car_startup_menu.jpg)
+
+在打开的页面里找到 ```Application Autostart``` 选项卡，其中的 ```myprogram``` 是 ROS 相关的启动项，取消勾选其前面的复选框来取消自启动。
+
+![CancelAutoStart](/docs/meles/ros_car_startup_set.jpg)
+
+#### 使用命令关闭
+
+若您使用 SSH 操作 ROS 小车，或者您不方便进入桌面环境，您可以使用命令的方式关闭自启动脚本。
+
+首先执行下面的命令，进入存放自启动项的目录，并列举其中的文件。
+
+```bash
+cd .config/autostart/
+ls
+```
+
+在正常情况下，您能看到如下三个文件。
+
+![CancelAutoStart](/docs/meles/ros_car_startup_conf.jpg)
+
+以 ```handle.desktop``` 为例，若您需要禁用该启动项，您需要执行
+
+```bash
+sudo nano ./handle.desktop
+```
+
+然后在文件的第5，6行开始处添加注释，然后按下 ```ctrl``` + ```O``` 键保存，```ctrl``` + ```X``` 键退出。
+
+![changeconf](/docs/meles/ros_car_startup_setconf.jpg)
+ 
+### 手柄和键盘控制
+
+如果您需要手动打开手柄或键盘控制，首先您需要打开代理程序并连接代理，执行下面的命令
+
+```
+sh ~/start_agent.sh
+```
+
+![changeconf](/docs/meles/ros_car_agent_node.jpg)
+
+:::tip
+若您启动代理以后，程序一直卡在前两行的位置，请您按下 MicroROS 控制板上的复位按键，以连接代理。
+:::
+
+#### 手柄控制
+
+打开两个终端执行下面的命令。
+
+终端1：
+
+```bash
+ros2 run joy joy_node
+```
+
+终端2：
+
+```bash
+ros2 run yahboomcar_ctrl yahboom_joy
+```
+
+在上面的代码成功运行后，先按下 R1 键解锁底盘。
+
+![解锁底盘](/docs/meles/ros_car_gamepad_unlock.jpg)
+
+解锁底盘后，按下 ```X```、```Y```、```A```、```B``` 按键来控制云台方向，前后拨动左侧摇杆控制前进/后退，左右拨动右侧摇杆控制小车左转/右转，按下 Start 键控制蜂鸣器蜂鸣声。
+
+![运动控制](/docs/meles/ros_car_gamepad_guide.jpg)
+
+#### 键盘控制
+
+打开一个终端，执行下面的命令，以使用键盘控制。
+
+```bash
+ros2 run yahboomcar_ctrl yahboom_keyboard
+```
+
+![键盘控制](/docs/meles/ros_car_keyboard_node.jpg)
+
+在键盘控制的节点打开以后，使用 ```u```、```i```、```o```、```j```、```k```、```l```、```,```、```.```、```/``` 按键来控制小车底盘的前后、转弯运动。
+
 
