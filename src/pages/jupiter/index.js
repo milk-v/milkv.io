@@ -121,7 +121,8 @@ export default () => {
                         </div>
                         <div className={styles.center_items_4}>
                             <div className={styles.border10}>
-                                <p className={styles.info_title}>Built-in PCIe 2.0, 2-lane signaling </p>
+                                <p className={styles.info_title}>PCIe X8 Connector Onboard</p>
+                                <p className={styles.info_text} style={{ marginBottom: '0' }}>Built-in PCIe 2.0,2-lane signaling</p>
                                 <p className={styles.info_text}>Supports standard PCIe accessories such as  <font>graphics cards,PCIe to SATA</font>, etc.</p>
                             </div>
                             <div className={styles.border11}>
@@ -212,17 +213,18 @@ export default () => {
                         <tr>
                             <td>Multimedia</td>
                             <td>
-                                <p>H.265/H.264/VP8/VP9/MPEG4/MPEG2 decoder 4K@60fpsmailto:4K@60fps</p>
-                                <p>H.265/H.264/VP8/VP9 encoder 4K@30fpsmailto:4K@30fps</p>
+                                <p>H.265/H.264/VP8/VP9/MPEG4/MPEG2 decoder 4K@60fps</p>
+                                <p>H.265/H.264/VP8/VP9 encoder 4K@30fps</p>
                                 <p>Support simultaneously processing encoding</p>
                                 <ul>
-                                    <li>OpenGL ES 1.1/3.2</li>
-                                    <li>EGL1.5</li>
+                                    <li>1080P@60fps and decoding</li>
+                                    <li>1080P@60fps</li>
                                 </ul>
-                                <p>Support simultaneously processing H264/H265 encoding</p>
+                                <p>Support simultaneously</p>
                                 <ul>
-                                    <li>Vulkan 1.3</li>
-                                    <li>2.OpenCL 3.0</li>
+                                    <li>processing H264/H265 encoding</li>
+                                    <li>1080P@30fps and H264/H265</li>
+                                    <li>decoding 4K@30fps</li>
                                 </ul>
                             </td>
                         </tr>
