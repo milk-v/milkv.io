@@ -50,6 +50,10 @@ sidebar_position: 10
 
 当系统启动后，Meles 连接的显示器将显示 Debian 桌面。
 
+:::warning
+请您先插入 HDMI 线再接入电源，否则可能造成没有显示输出的问题。
+:::
+
 ## 故障排除
 
 如果您遇到问题, 请到我们的 [社区](https://community.milkv.io/) 提问。

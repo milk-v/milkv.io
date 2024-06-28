@@ -50,6 +50,10 @@ Connect the Meles with a Type-C cable using an adapter (5V) and a HDMI cable to 
 
 When the system boots up, the screen Meles is connected to will show the Debian desktop.
 
+:::warning
+Please plug in the HDMI cable first and then plug in the power supply, otherwise there may be no display output.
+:::
+
 ## Troubleshooting
 
 If you have a problem, go to our [community](https://community.milkv.io/) and post to let us know.
