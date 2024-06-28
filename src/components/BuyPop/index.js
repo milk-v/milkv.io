@@ -104,7 +104,7 @@ export default (props) => {
         'mars-cm': '/components/buy-marscm-view.webp',
         'meles': '/components/buy-meles-view.webp',
         'vega': '/components/buy-vega-view.webp',
-        'jupiter': '/components/buy-vega-view.webp',
+        'jupiter': '/components/buy-jupiter-view.webp',
         'cv1800b': '/components/buy-cv1800b-view.webp',
         'sg2000': '/components/buy-sg2000-view.webp',
         'sg2002': '/components/buy-sg2002-view.webp',
