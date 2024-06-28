@@ -5,14 +5,14 @@ import Link from '@docusaurus/Link';
 // import MetaData from "@site/src/components/MetaData"
 import SupportUs from "@site/src/components/SupportUs"
 import styles from './index.module.css'
-import { useLocation } from "@docusaurus/router";
+// import { useLocation } from "@docusaurus/router";
 import Translate from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 const jsonData = require('../../jsonFiles/chips.json');
 import BuyPop from "../BuyPop"
 
 export default (props) => {
-    const { chipName } = props
+    const { chipName, children } = props
     const currentLanguage = useBaseUrl('/');
     const curren_language = currentLanguage === '/zh/' ? 'resources_zh' : 'resources'
     const title_language = currentLanguage === '/zh/' ? 'title_zh' : 'title'
@@ -133,8 +133,8 @@ export default (props) => {
                 <div className={styles.tab_card}>
                     <Link to='/'>Home</Link><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M7.78811 17.7955L14.9131 5.45467C15.0381 5.23816 15.2089 5.19241 15.4254 5.31741L16.0749 5.69241C16.2914 5.81741 16.3372 5.98816 16.2122 6.20467L9.08715 18.5455C8.96215 18.762 8.7914 18.8078 8.57489 18.6828L7.92537 18.3078C7.70886 18.1828 7.66311 18.012 7.78811 17.7955Z" fill="#999999" />
-                    </svg><Link to='/chips'>Chips</Link>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    </svg><Link to='/chips' style={{ display: `${children ? 'none' : 'block'}` }}>Chips</Link>
+                    <svg style={{ display: `${children ? 'none' : 'block'}` }} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M7.78811 17.7955L14.9131 5.45467C15.0381 5.23816 15.2089 5.19241 15.4254 5.31741L16.0749 5.69241C16.2914 5.81741 16.3372 5.98816 16.2122 6.20467L9.08715 18.5455C8.96215 18.762 8.7914 18.8078 8.57489 18.6828L7.92537 18.3078C7.70886 18.1828 7.66311 18.012 7.78811 17.7955Z" fill="#999999" />
                     </svg>
                     <span><Link>{chipName.toUpperCase()}</Link></span>
@@ -244,6 +244,8 @@ export default (props) => {
                         }
                     </div>
                 </div>
+                <>{children}</>
+
             </div>
             <div className={styles.chip_diagram}>
                 <div ref={chip_diagram}>
@@ -282,7 +284,7 @@ export default (props) => {
                         }
                     </ul>
                 </div>
-                <div ref={chip_doc}>
+                <div ref={chip_doc} >
                     <h2 ><Translate id='Documents' /></h2>
                     <div className={styles.download_link}>
                         <div className={styles.radio_input}>
@@ -392,7 +394,7 @@ export default (props) => {
             }}>
                 <img src="/chips/backtop.svg" alt="TOP" />
             </div>
-            <BuyPop type={chipName.toUpperCase()} />
+            <BuyPop type={chipName} />
             <SupportUs />
         </Layout>
     )

@@ -185,7 +185,7 @@ Power cycle Meles and the Soc will go directly into download mode and the blue L
 
 ## Flashing images for SPI Nor Flash via Fastboot
 
-If there is available firmware in SPI Nor Flash, the image can be burned through Fastboot when the Soc enters download mode.
+If there is available firmware in SPI Nor Flash, and Meles has an eMMC module installed，the image can be burned through Fastboot when the Soc enters download mode.
 
 Because the TH1520 chip does not have a driver under Windows, the following steps must be performed under the Ubuntu system.
 
