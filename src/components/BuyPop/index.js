@@ -18,7 +18,8 @@ export default (props) => {
             arace_url: 'https://arace.tech/collections/milk-v-duo',
             taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=707976817589&sku_properties=1627207:3750323',
             banli_url: 'https://spotpear.cn/category/Milk-V.html',
-            chilli_url: 'https://shop.plati.ma/collections/all?filter.p.vendor=Milk-V'
+            chilli_url: 'https://shop.plati.ma/collections/all?filter.p.vendor=Milk-V',
+            jd_url: 'https://ic-item.jd.com/10107640792852.html',
         },
         'duo-s': {
             arace_url: 'https://arace.tech/products/milkv-duo-s',
@@ -75,6 +76,7 @@ export default (props) => {
         'other_url': '/components/other.svg',
         'arace_url': '/components/arace.svg',
         'taobao_url': '/components/taobao.svg',
+        'jd_url': '/components/jd.webp',
         'mouser_url': '/components/mouser.svg',
         'banli_url': '/components/banli.svg',
         'chilli_url': '/components/platima.png',
@@ -85,6 +87,7 @@ export default (props) => {
         'other_url': 'Other countries and regions',
         'arace_url': 'Arace Tech',
         'taobao_url': '淘宝',
+        'jd_url': '京东',
         'mouser_url': 'Mouser',
         'banli_url': '斑梨电子',
         'chilli_url': 'Platima Tinkers',
@@ -119,7 +122,7 @@ export default (props) => {
                             <ul className={styles.agents}>
                                 {
                                     Object.keys(buy_info[type]).map((item, key) => {
-                                        let area = item === 'taobao_url' || item === 'banli_url' ? 'to China' : 'Worldwidely'
+                                        let area = item === 'jd_url' || item === 'taobao_url' || item === 'banli_url' ? 'to China' : 'Worldwidely'
 
                                         let shipping_location
                                         if (item === 'arace_url') {
