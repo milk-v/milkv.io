@@ -18,10 +18,14 @@ export default () => {
             <div className={styles.jupiter_main}>
                 <div className={styles.jupiter_contexts}>
                     <div className={styles.jupiter_head}>
-                        <img src="/jupiter/milkv-jupiter.webp" alt="Milk-V Jupiter" className={styles.jupiter_logo} />
-                        {/* 图片 */}
-
-                        <img src="/jupiter/jupiter-center-top.webp" alt="Milk-V Jupiter" className={styles.jupiter_center_top} />
+                        <div className={styles.jupiter_title}>
+                            <h1>Milk-V Jupiter</h1>
+                            <p>RISC-V PC for Everyone</p>
+                            <Link to='#buy' className={styles_s.btnbuy} >
+                                <Translate id='Buy.now' />
+                            </Link>
+                        </div>
+                        <img src="/jupiter/front-view.webp" alt="Milk-V Jupiter" className={styles.jupiter_center_top} />
                     </div>
                     <div className={styles.jupiter_center}>
                         <div className={styles.center_items}>
@@ -157,12 +161,12 @@ export default () => {
                                         PCIe to NVMe</p>
                                 </li>
                                 <li>
-                                    <img src="/jupiter/sd.webp" alt="SD Card" />
+                                    <img src="/jupiter/sd.webp" alt="MicroSD" />
                                     <p>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
                                             <circle cx="5" cy="5" r="4.5" fill="#E3784E" />
                                         </svg>
-                                        SD Card</p>
+                                        MicroSD</p>
                                 </li>
                             </ol>
                         </div>
@@ -293,7 +297,7 @@ export default () => {
                 </table>
             </div>
             <BuyPop type='jupiter' />
-            <ContactUs product='vega' />
+            <ContactUs product='jupiter' />
         </main>
     </Layout>
 }
