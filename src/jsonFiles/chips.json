@@ -911,5 +911,318 @@
                 }
             ]
         }
+    },
+    "duo-module-01": {
+        "title": "The Duo Module 01 is a compact module with integrated SG2000, WI-FI6/BTDM5.4, and eMMC. It supports SMD mounting. Also it can greatly save product development time. It is the first choice for making products.",
+        "title_zh": "Duo Module 01 是一款集成了 SG2000、WI-FI6/BTDM5.4 和 eMMC 的紧凑型模块。它支持 SMD 贴片。此外，它还能大大节省产品开发时间。它是制作产品的首选。",
+        "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
+        "front_view": "/duom01/duo-module-01-overview.webp",
+        "chip_view": [
+            "/duom01/duo-module-01-overview.webp"
+        ],
+        "chip_intro_text": [
+            "The Duo Module 01 is a compact module with integrated SG2000, WI-FI6/BTDM5.4, and eMMC. It supports SMD mounting. Also it can greatly save product development time. It is the first choice for making products.",
+            "The SoC of Duo Module 01, the SG2000, has a built-in RV64GCV@1GHz / Cortex-A53@1Ghz (Selection by pin level), an RV64GC@700MHz core for real-time tasks, an 8051 core for low-power standby, and a 0.5 TOPS@INT8 TPU."
+        ],
+        "chip_intro_text_zh": [
+            "Duo Module 01 是一款集成了 SG2000、WI-FI6/BTDM5.4 和 eMMC 的紧凑型模块。它支持 SMD 贴片。此外，它还能大大节省产品开发时间。它是制作产品的首选。",
+            "Duo Module 01 的主控 SG2000 内置了一个 RV64GCV@1GHz / Cortex-A53@1Ghz(通过引脚电平选择)，一个用以处理实时任务的RV64GC@700MHz核心，一个用以低功耗待机的8051核心和0.5TOPS@INT8的TPU"
+        ],
+        "diagram_url": "/duom01/duo-module-01-block.webp",
+        "hardware": {
+            "SoC": [
+                "SG2000"
+            ],
+            "CPU": [
+                "1x RV64GCV C906@1GHz / Cortex-A53@1GHz(Selection by pin level) + 1x RV64GC C906@700MHz + 1x 8051 Core"
+            ],
+            "Memory": [
+                "SIP DRAM 512M"
+            ],
+            "TPU": [
+                "0.5TOPS@INT8 TPU"
+            ],
+            "Multimedia": [
+                "ISP 5M@30fps",
+                "2L MIPI DSI 5M@30fps",
+                "4L or 2L+2L MIPI CSI 5M@30fps",
+                "H.265/H.264 Decoding and Encoding"
+            ],
+            "Audio": [
+                "16bit Audio Codec",
+                "1x 2CH Audio out",
+                "1x 2CH Audio in"
+            ],
+            "Storage": [
+                "8GB eMMC",
+                "1x SDIO3.0"
+            ],
+            "Network": [
+                "1x 10M/100M MAC PHY"
+            ],
+            "USB": [
+                "1x USB2.0 OTG"
+            ],
+            "Wireless": [
+                "Onboard WI-FI6/BTDM5.4"
+            ],
+            "Security Module": [
+                "Secure boot/AES/SHA/Efuse"
+            ],
+            "Temperature Range": [
+                "0℃～60℃"
+            ],
+            "Resource":[
+                "Up to 4x I2C",
+                "Up to 4x SPI",
+                "Up to 4x UART",
+                "Up to 12x PWM",
+                "Up to 3x ADC",
+                "Up to 1x SDIO",
+                "Up to 1x I2S",
+                "Up to 1x JTAG"
+            ],
+            "Package Type": [
+                "Stamp-hole"
+            ],
+            "Package Dimensions": [
+                "25mmx25mm"
+            ],
+            "Total Pins": [
+                "88"
+            ]
+        },
+        "scenarios": [
+            {
+                "img_link": "/chips/scenarios1.webp",
+                "scenarios_name": "Intelligent door locks",
+                "scenarios_name_zh": "智能门锁"
+            },
+            {
+                "img_link": "/chips/scenarios2.webp",
+                "scenarios_name": "Video Conference",
+                "scenarios_name_zh": "视频会议"
+            },
+            {
+                "img_link": "/chips/scenarios3.webp",
+                "scenarios_name": "Industrial Internet of Things",
+                "scenarios_name_zh": "工业物联网"
+            },
+            {
+                "img_link": "/chips/scenarios4.webp",
+                "scenarios_name": "intelligent transport",
+                "scenarios_name_zh": "智慧城市"
+            }
+        ],
+        "downloads": {
+            "Hardware": [
+                {
+                    "download_name": "Duo_Module_V1.1-BOT.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/Duo_Module_V1.1-BOT.dxf?raw=true",
+                    "file_format": "DXF",
+                    "file_size": "58.4 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "Duo_Module_V1.1-TOP.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/Duo_Module_V1.1-TOP.dxf?raw=true",
+                    "file_format": "DXF",
+                    "file_size": "393 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "Duo_Module_V1.1_ASSEMBLY-TOP.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/Duo_Module_V1.1_ASSEMBLY-TOP.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "142 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "Duo_Module_V1.1_Schematic.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/Duo_Module_V1.1_Schematic.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "737 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "FOOTPRINT-STAMP_0R55_88.dra",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/FOOTPRINT/STAMP_0R55_88.dra?raw=true",
+                    "file_format": "DRA",
+                    "file_size": "147 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "2DFiles-dm01-bot.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/2d-files/dm01-bot.dxf?raw=true",
+                    "file_format": "DXF",
+                    "file_size": "595 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "2DFiles-dm01-top.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/2d-files/dm01-top.dxf?raw=true",
+                    "file_format": "DXF",
+                    "file_size": "525 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "DuoModule 01 Evaluation Board V1.1 Schematic.dsn",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1%20Schematic.DSN?raw=true",
+                    "file_format": "DSN",
+                    "file_size": "1 MB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "duomodule 01 Evaluation Board v1.1 Schematic.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/duomodule%2001%20evaluation%20board%20v1.1%20Schematic.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "746 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "DuoModule 01 Evaluation Board V1.1-ass-top.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1-ass-top.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "58 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "DuoModule 01 Evaluation Board V1.1-bot.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1-bot.dxf?raw=true",
+                    "file_format": "DXF",
+                    "file_size": "37 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "DuoModule 01 Evaluation Board V1.1-top.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1-top.dxf?raw=true",
+                    "file_format": "DXF",
+                    "file_size": "16.8 MB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "DuoModule 01 Evaluation Board V1.1-top.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1.brd?raw=true",
+                    "file_format": "BRD",
+                    "file_size": "9.6 MB",
+                    "file_date": "Jun 6,2024"
+                }
+            ]
+        },
+        "downloads_zh": {
+            "硬件设计指南": [
+                {
+                    "download_name": "Duo_Module_V1.1-BOT.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/Duo_Module_V1.1-BOT.dxf?raw=true",
+                    "file_format": "DXF",
+                    "file_size": "58.4 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "Duo_Module_V1.1-TOP.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/Duo_Module_V1.1-TOP.dxf?raw=true",
+                    "file_format": "DXF",
+                    "file_size": "393 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "Duo_Module_V1.1_ASSEMBLY-TOP.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/Duo_Module_V1.1_ASSEMBLY-TOP.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "142 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "Duo_Module_V1.1_Schematic.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/Duo_Module_V1.1_Schematic.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "737 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "FOOTPRINT-STAMP_0R55_88.dra",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/FOOTPRINT/STAMP_0R55_88.dra?raw=true",
+                    "file_format": "DRA",
+                    "file_size": "147 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "2DFiles-dm01-bot.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/2d-files/dm01-bot.dxf?raw=true",
+                    "file_format": "DXF",
+                    "file_size": "595 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "2DFiles-dm01-top.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/duo-module-01/2d-files/dm01-top.dxf?raw=true",
+                    "file_format": "DXF",
+                    "file_size": "525 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "DuoModule 01 Evaluation Board V1.1 Schematic.dsn",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1%20Schematic.DSN?raw=true",
+                    "file_format": "DSN",
+                    "file_size": "1 MB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "duomodule 01 Evaluation Board v1.1 Schematic.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/duomodule%2001%20evaluation%20board%20v1.1%20Schematic.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "746 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "DuoModule 01 Evaluation Board V1.1-ass-top.pdf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1-ass-top.pdf?raw=true",
+                    "file_format": "PDF",
+                    "file_size": "58 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "DuoModule 01 Evaluation Board V1.1-bot.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1-bot.dxf?raw=true",
+                    "file_format": "DXF",
+                    "file_size": "37 KB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "DuoModule 01 Evaluation Board V1.1-top.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1-top.dxf?raw=true",
+                    "file_format": "DXF",
+                    "file_size": "16.8 MB",
+                    "file_date": "Jun 6,2024"
+                },
+                {
+                    "download_name": "DuoModule 01 Evaluation Board V1.1-top.dxf",
+                    "download_url": "https://github.com/milkv-duo/duo-files/blob/main/duo-module-01/evaluation-board/DuoModule%2001%20Evaluation%20Board%20V1.1.brd?raw=true",
+                    "file_format": "BRD",
+                    "file_size": "9.6 MB",
+                    "file_date": "Jun 6,2024"
+                }
+            ]
+        },
+        "resources": {
+            "Development Hardware": [
+                {
+                    "resources_name": "Duo Module 01 Evaluation Board",
+                    "resources_url": "/docs/duo/overview",
+                    "resources_img": "/duom01/duo-module-with-iob.webp",
+                    "resources_info": "The Milk-V Duo Module 01 Evaluation Board is an evaluation platform based on the Duo Module, integrating various commonly used interfaces. It allows enterprises, developers, and makers to quickly evaluate solutions related to the SG2000 using this device. The open-source baseboard design documentation provides a reliable reference for secondary development.                    "
+                }
+            ]
+        },
+        "resources_zh": {
+            "硬件": [
+                {
+                    "resources_name": "Duo Module 01 Evaluation Board",
+                    "resources_url": "/docs/duo/overview",
+                    "resources_img": "/duom01/duo-module-with-iob.webp",
+                    "resources_info": "Milk-V Duo Module 01 Evaluation Board 是基于 Duo Module 模组的评估平台，集成了多种常用接口，方便企业、开发者、创客通过该设备可以快速评估 SG2000 的相关方案。开源的底板设计资料为二次开发提供可靠的参考。"
+                }
+            ]
+        }
     }
 }

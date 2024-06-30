@@ -302,6 +302,7 @@ const sidebars = {
       },
       items: [
         'meles/os-usage/revyos',
+        'meles/os-usage/ros2',
       ],
     },
     {
@@ -317,6 +318,7 @@ const sidebars = {
       items: [
         'meles/installation/install-an-image-to-spi-nor-flash',
         'meles/installation/install-an-image-to-microsd-card',
+        'meles/installation/install-an-image-to-emmc',
       ],
     },
     {

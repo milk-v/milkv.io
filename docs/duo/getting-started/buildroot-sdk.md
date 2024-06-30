@@ -36,7 +36,7 @@ SDK Directory Structure
 :::tip
 The current SDK does not support the ARM core of Duo256M and DuoS. If you need to use the ARM core, you can temporarily refer to this repositories:
 
-duo-build: [https://github.com/milkv-duo/duo-build](https://github.com/milkv-duo/duo-build)
+duo-build: [https://github.com/milkv-duo/duo-buildroot-sdk-v2](https://github.com/milkv-duo/duo-buildroot-sdk-v2)
 :::
 
 # Build image

@@ -12,7 +12,7 @@ Meles 上有一个 MicroSD 卡插槽。因此，Meles 可以支持以 SPI Nor Fl
 ## 必要准备
 
 - Meles 和电源适配器
-- 带有 Bootloader 的 SPI Nor Flash，并焊接在开发板上s
+- 带有 Bootloader 的 SPI Nor Flash，并焊接在开发板上
 - 大于16GB，等级 class10 或更高的 MicroSD 卡
 - 运行 Windows、Linux 或 MacOS 的PC/笔记本电脑
 

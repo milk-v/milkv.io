@@ -184,7 +184,7 @@ Meles 重新上电后，Soc 将直接进入下载模式，蓝色 LED 熄灭。
 
 ## 通过 Fastboot 为 SPI Nor Flash 烧写镜像
 
-若 SPI Nor Flash 中存在可用的固件，在 Soc 进入下载模式时，可以通过 Fastboot 的方式烧录镜像。
+若 SPI Nor Flash 中存在可用的固件，且 Meles 安装有 eMMC 模块，在 Soc 进入下载模式时，可以通过 Fastboot 的方式烧录镜像。
 
 因为 TH1520 芯片没有在 Windows 下的驱动程序，以下步骤均需要在 Ubuntu 系统下执行。
 
