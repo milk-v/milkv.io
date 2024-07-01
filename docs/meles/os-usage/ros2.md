@@ -47,8 +47,8 @@ For more information about the MicroROS control board, please refer to [Data Sum
 :::tip
 In some of the following steps, you may need to enter your username and password in Meles. The following are the default username and password.
 
-User Name:openeuler
-Password:123456
+- User Name:openeuler
+- Password:123456
 :::
 
 ### First Boot of the Robot
@@ -72,7 +72,7 @@ After unlocking the chassis, press the ```X```, ```Y```, ```A```, and ```B``` bu
 ![move_ctl](/docs/meles/ros_car_gamepad_guide.jpg)
 
 :::tip
-If you cannot use the handle to control the car, please refer to the [## MicroROS control board firmware burning] section to burn and configure the MicroROS control board.
+If you cannot use the handle to control the car, please refer to the [MicroROS board firmware burning](https://milkv.io/docs/meles/os-usage/ros2#microros-board-firmware-burning) section to burn and configure the MicroROS control board.
 :::
 
 ### Disable auto-start script
@@ -124,7 +124,7 @@ If you need to manually enable gamepad or keyboard control, first you need to op
 sh ~/start_agent.sh
 ```
 
-![changeconf](/docs/meles/ros_car_agent_node.jpg)
+![agentnode](/docs/meles/ros_car_agent_node.jpg)
 
 :::tip
 If the program is stuck at the first two lines after you start the agent, press the reset button on the MicroROS control panel to connect to the agent.
@@ -165,3 +165,114 @@ ros2 run yahboomcar_ctrl yahboom_keyboard
 ![KeyboardControl](/docs/meles/ros_car_keyboard_node.jpg)
 
 After the keyboard-control node is opened, use the ```u```, ```i```, ```o```, ```j```, ```k```, ```l```, ```,```, ```.```, ```/``` keys to control the forward, backward and turning movements of the car chassis.
+
+### APP Control
+
+Please first download the apk file from [APP Download link](https://www.yahboom.com/public/download//MicroRos_Robot_pi5/ROS1_ROS2.apk). Currently, it only supports Android phones.
+
+If you have closed the three programs that are automatically started by the system, you need to open three terminals in Meles and execute the following three commands respectively to start the map building and agent programs.
+
+```
+sh ~/start_agent.sh
+ros2 launch yahboomcar_bringup yahboomcar_bringup_launch.py
+ros2 launch yahboomcar_nav map_gmapping_app_launch.xml
+```
+
+:::tip
+If there are only 3-4 lines of log output in the terminal after executing the first line of command ```sh ~/start_agent.sh```, please press the reset button on the MicroROS control board.
+:::
+
+After the APP is downloaded and installed, please connect to the car's WiFi first and turn off the mobile network connection on your phone.
+
+- SSID:MicroROS_AP
+- Password:12345678
+
+After the connection is complete, open the APP, enter the address ```10.42.0.1``` in the IP address bar, and click the ```Connect``` button in the lower right corner.
+
+![connect](/docs/meles/ros_car_app_en.jpg)
+
+After the connection is successful, you will see the radar point cloud data and control stick on the main page.
+
+![home](/docs/meles/ros_car_appmain_en.jpg)
+
+<!-- ### SLAM 建图和避障 -->
+
+## MicroROS board firmware burning
+
+### Get the burning tool and firmware
+
+First download and unzip the [MicroROS board firmware](https://www.yahboom.com/public/download//MicroRos_Robot_pi5/Factory-Firmware.rar) and [burning tool](https://www.yahboom.com/public/download//MicroRos_Robot_pi5/%E7%83%A7%E5%BD%95%E5%B7%A5%E5%85%B7.rar).
+
+We need to use the ```microROS_Robot_xxxx.bin``` firmware and the flashing tool in the ```flash_download_tool_3.9.5_0.zip``` compressed package.
+
+In addition, the CP2102 serial port chip driver is included in the compressed package of the burning tool. If your PC lacks the chip driver, please run the ```CP210xVCPInstaller_xxx.exe``` in the ```CP2102-Windows驱动文件.zip``` compressed package to install the driver.
+
+### Start burning
+
+First, use a Type C data cable to connect the MicroROS serial port to the PC. The serial port location is shown in the figure below.
+
+![Serial](/docs/meles/ros_car_microros_serial.jpg)
+
+Then follow the next three steps to put the MicroRO control board into download mode.
+
+- Press and hold the BOOT button
+- Press the RST button
+- Release the BOOT button
+
+![button](/docs/meles/ros_car_microros_down.jpg)
+
+Unzip all files in ```flash_download_tool_3.9.5_0.zip``` and run ```flash_download_tool_3.9.5.exe``` .
+
+In the new page, select the chip-type as ESP32-S3 and click OK.
+
+![chiptype](/docs/meles/ros_car_firmware_burn.jpg)
+
+Then select the firmware ```microROS_Robot_xxxx.bin``` you want to burn at position 1, and fill 0 for the burning position. Select the serial port corresponding to the MicroROS control board at position 2, and finally click 3 to start burning.
+
+![paraset](/docs/meles/ros_car_firmware_burnset.jpg)
+
+After the burning is successful, Finish is displayed.
+
+![finish](/docs/meles/ros_car_firmware_burnfinish.jpg)
+
+At this time, plug the data cable back into Meles and the burning is complete.
+
+### Configuration MicroROS Board
+
+After the burning is completed, the parameters of the MicroROS board need to be configured to ensure normal communication between the MicroROS board and Meles.
+
+First, run ```cat ~/.bashrc``` to confirm the DOMAIN_ID number.
+
+![bashrc](/docs/meles/ros_car_bashrc.jpg)
+
+And execute ```nano ~/config_robot.py```, edit the content at the end of the file, set ```robot.set_ros_domain_id()``` to the DOMAIN_ID number in ```.bashrc```, press ```ctrl```+```O``` to save, and press ```ctrl```+```X``` to exit.
+
+![configpy](/docs/meles/ros_car_configpy.jpg)
+
+Finally, execute ```python ~/config_robot.py``` to configure the MicroROS board.
+
+![success](/docs/meles/ros_car_config_success.jpg)
+
+## Install the image to Meles
+
+First, you need to go to the "资料汇总下载" section under the [Yahboom official website](https://www.yahboom.com/study/microROS-Milk-V) to obtain the image file.
+
+Unzip the compressed package in the folder "5、出厂镜像" to any location, and use the method in [Install an image to MicroSD Card](https://milkv.io/docs/meles/installation/install-an-image-to-microsd-card) to flash the image.
+
+:::tip
+If the system cannot boot after flashing, please try to change the burning software to ```Win32DiskImager```.
+:::
+
+## Appendix
+
+### ROS2 Relevant information
+
+ROS getting Started:https://www.oerv.wiki/robot/quick_start.html
+
+Install ROS2 on OpenEuler:https://www.oerv.wiki/robot/how_to_install.html
+
+ROS2 compilation environment installation:https://www.oerv.wiki/robot/compiler_and_service.html
+
+ROS2 common commands:https://www.oerv.wiki/robot/common_command.html
+
+Multi-machine communication example:https://www.oerv.wiki/robot/bestofpractice/01.html

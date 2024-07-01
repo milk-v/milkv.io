@@ -41,6 +41,10 @@ https://github.com/milkv-duo/duo-arduino/releases/download/config/package_sg200x
 
 目前，Duo 的 SD 卡系统需要烧录支持 Arduino 的固件，请在 [最新 Release](https://github.com/milkv-duo/duo-buildroot-sdk/releases) 的固件中下载前缀为 `arduino` 的固件。
 
+:::tip
+目前最新的可用 Arduino 固件版本为 [Duo-V1.09](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.0.9)。
+:::
+
 参考前面章节中的 [启动 Duo](https://milkv.io/zh/docs/duo/getting-started/boot) 安装好SD卡系统。
 
 使用 USB 线将 Duo 连接到电脑，Duo 会自动上电开机。

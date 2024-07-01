@@ -47,8 +47,8 @@ RISC-V ROS 小车由以下几部分组成：
 :::tip
 在后面的一些操作步骤里，您可能需要在 Meles 里输入用户名和密码，下面是默认的用户名和密码。
 
-用户名：openeuler
-密码：123456
+- 用户名：openeuler
+- 密码：123456
 :::
 
 ### 首次启动机器人
@@ -72,7 +72,7 @@ RISC-V ROS 小车由以下几部分组成：
 ![运动控制](/docs/meles/ros_car_gamepad_guide.jpg)
 
 :::tip
-若您不能使用手柄控制小车，请您参考[## MicroROS 控制板固件烧录]章节烧录烧录并配置 MicroROS 控制板。
+若您不能使用手柄控制小车，请您参考[MicroROS 控制板固件烧录](https://milkv.io/zh/docs/meles/os-usage/ros2#获取烧录工具和固件)章节烧录烧录并配置 MicroROS 控制板。
 :::
 
 ### 关闭自启动脚本
@@ -124,7 +124,7 @@ sudo nano ./handle.desktop
 sh ~/start_agent.sh
 ```
 
-![changeconf](/docs/meles/ros_car_agent_node.jpg)
+![agentnode](/docs/meles/ros_car_agent_node.jpg)
 
 :::tip
 若您启动代理以后，程序一直卡在前两行的位置，请您按下 MicroROS 控制板上的复位按键，以连接代理。
@@ -166,4 +166,113 @@ ros2 run yahboomcar_ctrl yahboom_keyboard
 
 在键盘控制的节点打开以后，使用 ```u```、```i```、```o```、```j```、```k```、```l```、```,```、```.```、```/``` 按键来控制小车底盘的前后、转弯运动。
 
+### APP 控制
 
+请首先从 [APP 下载地址](https://www.yahboom.com/public/download//MicroRos_Robot_pi5/ROS1_ROS2.apk)下载 apk 文件，目前仅支持安卓手机使用。
+
+若您关闭了系统自启动的三个程序，那么您需要在 Meles 中开启三个终端分别执行下面的三条命令来启动建图和代理程序。
+
+```
+sh ~/start_agent.sh
+ros2 launch yahboomcar_bringup yahboomcar_bringup_launch.py
+ros2 launch yahboomcar_nav map_gmapping_app_launch.xml
+```
+
+:::tip
+若您在执行完第一行指令 ```sh ~/start_agent.sh``` 后，终端只有 3-4 行日志输出，请按一下 MicroROS 控制板上的复位按键。
+:::
+
+APP 下载安装完成后，请首先连接小车 WiFi ，并关闭手机的移动网络连接。
+
+- WiFi 名称：MicroROS_AP
+- 密码：12345678
+
+连接完成后打开 APP ，在 IP 地址栏中输入地址 ```10.42.0.1``` ，并点击右下角的```连接```按钮。
+
+![连接](/docs/meles/ros_car_app_zh.jpg)
+
+连接成功后，您会在主界面上看到雷达点云数据和控制摇杆等。
+
+![主页](/docs/meles/ros_car_appmain_zh.jpg)
+
+<!-- ### SLAM 建图和避障 -->
+
+## MicroROS 控制板固件烧录
+
+### 获取烧录工具和固件
+
+首先下载并解压[扩展板固件](https://www.yahboom.com/public/download//MicroRos_Robot_pi5/Factory-Firmware.rar)和[烧录工具](https://www.yahboom.com/public/download//MicroRos_Robot_pi5/%E7%83%A7%E5%BD%95%E5%B7%A5%E5%85%B7.rar)。
+
+我们需要用到其中的 ```microROS_Robot_xxxx.bin``` 固件，```flash_download_tool_3.9.5_0.zip``` 压缩包中的烧录工具。
+
+另外，在烧录工具压缩包中，附有 CP2102 串口芯片的驱动，若您的 PC 上缺少该芯片的驱动，请您运行 ```CP2102-Windows驱动文件.zip``` 压缩包中的 ```CP210xVCPInstaller_xxx.exe``` 来安装驱动。
+
+### 开始烧录
+
+首先用 Type C 数据线将 MicroROS 串口接口和 PC 连接，串口接口位置如下图所示。
+
+![串口接口](/docs/meles/ros_car_microros_serial.jpg)
+
+再执行下面三个步骤让 MicroRO 控制板进入下载模式。
+
+- 按住 BOOT 按键
+- 按一下 RST 按键
+- 松开 BOOT 按键
+
+![按键介绍](/docs/meles/ros_car_microros_down.jpg)
+
+解压 ```flash_download_tool_3.9.5_0.zip``` 中的所有文件，并运行 ```flash_download_tool_3.9.5.exe``` 。
+
+在弹出的页面中，选择芯片型号为 ESP32-S3 ，并点击 OK 。
+
+![选择芯片型号](/docs/meles/ros_car_firmware_burn.jpg)
+
+然后在 1 位置处选择您要烧录的固件 ```microROS_Robot_xxxx.bin``` ，后面的烧录位置填 0 。在 2 位置处选择 MicroROS 控制板对应的串口，最后点击 3 开始烧录。
+
+![参数选择](/docs/meles/ros_car_firmware_burnset.jpg)
+
+烧录成功后显示 Finish 。
+
+![烧录结束](/docs/meles/ros_car_firmware_burnfinish.jpg)
+
+这时将数据线插回 Meles ，烧录完成。
+
+### 配置控制板
+
+在烧录完成后，需要对控制板的参数进行配置，以保证控制板和 Meles 之间通信正常。
+
+首先执行 ```cat ~/.bashrc``` ，确认其中的 DOMAIN_ID 号。
+
+![bashrc](/docs/meles/ros_car_bashrc.jpg)
+
+再执行 ```nano ~/config_robot.py``` ，编辑文件末尾位置的内容，将 ```robot.set_ros_domain_id()``` 设置成 ```.bashrc``` 中的 DOMAIN_ID 号，按 ```ctrl```+```O``` 保存，按 ```ctrl```+```X``` 退出。
+
+![configpy](/docs/meles/ros_car_configpy.jpg)
+
+最后执行 ```python ~/config_robot.py``` 来配置控制板。
+
+![配置成功](/docs/meles/ros_car_config_success.jpg)
+
+## 安装镜像到 Meles 
+
+首先，您需要到[亚博官网](https://www.yahboom.com/study/microROS-Milk-V)下的“资料汇总下载”板块获取镜像文件。
+
+解压文件夹“5、出厂镜像”中的压缩包到任意位置，使用[安装镜像到 MicroSD 卡](https://milkv.io/zh/docs/meles/installation/install-an-image-to-microsd-card)中的方法刷写镜像。
+
+:::tip
+若刷写后系统不能启动，请您尝试将烧录软件更换为 ```Win32DiskImager``` 。
+:::
+
+## 附录
+
+### ROS2 相关资料
+
+ROS 入门：https://www.oerv.wiki/robot/quick_start.html
+
+在 OpenEuler 上安装 ROS2 ：https://www.oerv.wiki/robot/how_to_install.html
+
+ROS2 编译环境安装：https://www.oerv.wiki/robot/compiler_and_service.html
+
+ROS2 常用命令：https://www.oerv.wiki/robot/common_command.html
+
+多机通信实例：https://www.oerv.wiki/robot/bestofpractice/01.html
