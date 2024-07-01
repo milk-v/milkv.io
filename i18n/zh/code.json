@@ -901,6 +901,9 @@
   "homepage.corporations.mars": {
     "message": "Milk-V Mars 是一款高性能 RISC-V 单板计算机 (SBC)，只有信用卡大小，采用 StarFive JH7110。它有一个支持 PoE（以太网供电）的 RJ45 以太网端口和一个用于 WIFI/BT 模块的 M.2 E-Key 插槽。它还包括一个 4 通道 MIPI CSI 和一个 2 通道 MIPI CSI，以及一个 40 引脚的 GPIO 座子。"
   },
+  "homepage.corporations.jupiter": {
+    "message": "Milk-V Jupiter 是一款基于Spacemit K1/M1 的Mini ITX设备。该设备集成了标准PCIe Connector，支持常见PCIe设备，如显卡、PCIe转SATA、网卡；双Gigabit以太网接口；板载WI-FI6/BT5.2；支持NVMe SSD，是入门级 RISC-V Desktop 首选。"
+  },
   "homepage.corporations.marslearnmore": {
     "message": "了解更多"
   },

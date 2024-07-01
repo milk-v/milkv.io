@@ -1419,4 +1419,14 @@
     .ubuntu_milkv>div>p {
         font-size: 12rem;
     }
+
+    .tab {
+        display: grid;
+        height: auto;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .learnMore_use {
+        gap: 0 10rem;
+    }
 }

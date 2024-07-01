@@ -1005,6 +1005,10 @@
     "message": "Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. An RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO. ",
     "description": "mars"
   },
+  "homepage.corporations.jupiter": {
+    "message": "Milk-V Jupiter, powered by the Spacemit K1/M1 SoC, is the world's first Mini ITX device to support both RVA22 and RVV1.0. This device integrates a standard PCIe connector, supporting common PCIe devices such as graphics cards, PCIe to SATA adapters, and network cards. It features dual Gigabit Ethernet interfaces, onboard Wi-Fi 6/BT 5.2, and supports NVMe SSDs, making it an ideal choice for an entry-level RISC-V desktop.",
+    "description": "jupiter"
+  },
   "homepage.corporations.marslearnmore": {
     "message": "Learn more",
     "description": "mars Learn more"
