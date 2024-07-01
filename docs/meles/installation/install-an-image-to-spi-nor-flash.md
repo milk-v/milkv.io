@@ -23,22 +23,22 @@ When you replace a new SPI Nor Flash or the firmware is damaged, you may need to
 
 Install yoctools
 
-<pre>
+```
 $ sudo pip install yoctools -U
-</pre>
+```
 
 Check version
 
-<pre>
+```
 $ yoc --version
 2.0.74
-</pre>
+```
 
 Get image writer, iw-single-line.bin
 
-<pre>
+```
 $ wget https://github.com/milkv-meles/thead-bin/raw/main/image-writer/iw-single-line.bin
-</pre>
+```
 
 ### Get essential images
 
@@ -46,9 +46,9 @@ First you need to prepare the image for burning. If your Meles is the 8GB versio
 
 Download zero image.
 
-<pre>
+```
 $ wget https://github.com/milkv-meles/thead-bin/raw/main/image-writer/zero-1m.img
-</pre>
+```
 
 ### Boot Meles to download mode
 
@@ -66,12 +66,16 @@ To boot Meles to download mode is simple:
 
 Run the following command. /dev/ttyUSB0 is the serial port on PC.
 
-<pre>
+```
 $ sudo cct list -u /dev/ttyUSB0
 Wait ..............
-</pre>
+```
 
-Just ignore the log and go to the Step 2.
+:::tip
+The log output "Wait ......" here means that the cct program is waiting for Meles to respond, and Meles will only respond at the moment of entering the download mode.
+
+Do not close the terminal, and ignore the printed logs and go directly to Step 2.
+:::
 
 #### Step 2: Boot Meles to download mode
 
@@ -82,17 +86,18 @@ Just ignore the log and go to the Step 2.
 - Release download button
 - Check device
 
-<pre>
+The terminal opened in Step 1 will now print a list of storage devices.
+```
 $ sudo cct list -u /dev/ttyUSB0
 Wait ............................
 Memory device list:
   dev = ram0   , size =    1.1MB
   dev = qspi0  , size =   16.0MB
-</pre>
+```
 
 #### Step 3: Download image writer to SRAM
 
-<pre>
+```
 $ sudo cct download -u /dev/ttyUSB0 -d ram0 -f ./iw-single-line.bin -v checksum -r
 Wait 
 Send file './iw-single-line.bin' to 2:0 ...
@@ -101,13 +106,13 @@ Start to verify data with method:[checksum]
 checksum value is: 0x880572
 读出并校验成功!
 Start to run image...
-</pre>
+```
 
 #### Step 4: Download Bootloader to SPI Nor Flash
 
 Download bootloader to 8GB Meles.
 
-<pre>
+```
 $ sudo cct download -u /dev/ttyUSB0 -d qspi0 -f ./u-boot-with-spl-meles.bin -v checksum -r -t 1200
 Wait 
 Send file './u-boot-with-spl-meles.bin' to 23:0 ...
@@ -116,7 +121,7 @@ Start to verify data with method:[checksum]
 checksum value is: 0x428a844
 读出并校验成功!
 Start to run image...
-</pre>
+```
 
 #### Step 5: Power cycle Meles
 
@@ -128,12 +133,16 @@ Power cycle Meles and the blue LED should be always on.
 
 Run the following command. Device /dev/ttyUSB0 is the serial port on PC.
 
-<pre>
+```
 $ sudo cct list -u /dev/ttyUSB0
 Wait ..............
-</pre>
+```
 
-Just ignore the log and go to the Step 2.
+:::tip
+The log output "Wait ......" here means that the cct program is waiting for Meles to respond, and Meles will only respond at the moment of entering the download mode.
+
+Do not close the terminal, and ignore the printed logs and go directly to Step 2.
+:::
 
 #### Step 2: Boot Meles to download mode
 
@@ -144,17 +153,18 @@ Just ignore the log and go to the Step 2.
 - Release download button
 - Check device
 
-<pre>
+The terminal opened in Step 1 will now print a list of storage devices.
+```
 $ sudo cct list -u /dev/ttyUSB0
 Wait ............................
 Memory device list:
   dev = ram0   , size =    1.1MB
   dev = qspi0  , size =   16.0MB
-</pre>
+```
 
 #### Step 3: Download image writer to SRAM
 
-<pre>
+```
 $ sudo cct download -u /dev/ttyUSB0 -d ram0 -f ./iw-single-line.bin -v checksum -r
 Wait 
 Send file './iw-single-line.bin' to 2:0 ...
@@ -163,11 +173,11 @@ Start to verify data with method:[checksum]
 checksum value is: 0x880572
 读出并校验成功!
 Start to run image...
-</pre>
+```
 
 #### Step 4: Download zero image to SPI Nor Flash
 
-<pre>
+```
 $ sudo cct download -u /dev/ttyUSB0 -d qspi0 -f ./zero-1m.img -v checksum -r -t 1200
 Wait 
 Send file './zero-1m.img' to 23:0 ...
@@ -176,7 +186,7 @@ Start to verify data with method:[checksum]
 checksum value is: 0x0
 读出并校验成功!
 Start to run image...
-</pre>
+```
 
 #### Step 5: Power cycle Meles
 
