@@ -67,7 +67,8 @@ export default (props) => {
         },
         'jupiter': {
             taobao_url: 'https://milkv.taobao.com/',
-            jd_url: 'https://mall.jd.com/view_search-4943667.html',
+            jd_url: 'https://item.jd.com/10108225846745.html',
+            arace_url: 'https://arace.tech/products/milk-v-jupiter-spacemit-m1-k1-octa-core-rva22-rvv1-0-risc-v-soc-2tops-miniitx',
         },
     }
 
