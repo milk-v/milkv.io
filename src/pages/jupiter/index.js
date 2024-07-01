@@ -57,9 +57,9 @@ export default () => {
                                 </ol>
                             </div>
                             <div className={styles.flex_column}>
-                                <div className={styles.border2}>
+                                <div className={styles.border2} >
                                     <p className={styles.info_title}>Smooth Desktop Experience</p>
-                                    <p className={styles.info_text}>Support optimised Ubuntu OS</p>
+                                    <p className={styles.info_text}>Support optimised Ubuntu / Fedora OS</p>
                                 </div>
                                 <div className={styles.border3}>
                                     <p className={styles.info_title}>Supports CASA OS</p>

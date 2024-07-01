@@ -1347,7 +1347,15 @@
     }
 
     .tabBox_tech2 {
-        width: 350rem !important;
+        width: 95% !important;
+    }
+
+    .jupiter_table {
+        overflow: hidden;
+    }
+
+    .jupiter_table td {
+        max-width: 250rem;
     }
 
     .jupiter_title>a {
