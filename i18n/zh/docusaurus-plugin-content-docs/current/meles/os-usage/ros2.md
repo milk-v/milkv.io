@@ -49,6 +49,11 @@ RISC-V ROS 小车由以下几部分组成：
 
 - 用户名：openeuler
 - 密码：123456
+
+另外，小车在启动后会自动建立一个无线 AP ，以方便您连接。
+
+- WiFi 名称：MicroROS_AP
+- 密码：12345678
 :::
 
 ### 首次启动机器人
@@ -73,6 +78,64 @@ RISC-V ROS 小车由以下几部分组成：
 
 :::tip
 若您不能使用手柄控制小车，请您参考[MicroROS 控制板固件烧录](https://milkv.io/zh/docs/meles/os-usage/ros2#获取烧录工具和固件)章节烧录烧录并配置 MicroROS 控制板。
+:::
+
+### 在 ROS 小车上使用 VNC
+
+在多数情况下，您可能不方便将 ROS 小车连接到显示器，这时可以使用 VNC 远程连接机器人桌面，来避免使用物理外设带来的麻烦。
+
+首先，您需要使用 SSH 或连接显示器和键鼠来打开一个终端用来执行命令。
+
+:::tip
+ROS 小车使用的 VNC 为 ```tigervnc``` ，默认安装在系统中。若您在后续步骤中发现您的系统中没有安装，则需要您执行 ```sudo yum install tigervnc-server``` 来进行安装。
+:::
+
+执行下面的命令为 VNC 设置连接密码，连续输入两次密码确认，输入 n 禁用 view-only 模式。
+
+```
+vncpasswd
+```
+
+![setpass](/docs/meles/ros_car_vnc_setpass.jpg)
+
+然后添加用户和编号，执行下面的命令，并在文件中修改 ```:2=openeuler``` ，如下图所示。当您编辑完文档，按下 ```ctrl``` + ```O``` 来保存，按下 ```ctrl``` + ```X``` 来退出编辑.
+
+```
+sudo nano /etc/tigervnc/vncserver.users
+```
+
+![setuser](/docs/meles/ros_car_vnc_userconf.jpg)
+
+接下来为 VNC 添加服务，执行下面的命令，在执行过程中可能需要您输入数次密码。
+
+```
+# 拷贝服务文件
+sudo cp /usr/lib/systemd/system/vncserver@.service /etc/systemd/system/vncserver@:2.service
+
+# 重新加载systemd
+systemctl daemon-reload
+
+# 设置开机自启并启动服务
+systemctl enable vncserver@:2.service
+systemctl start vncserver@:2.service
+```
+
+最后执行下面的命令验证 VNC 是否启动成功。
+
+```
+systemctl status vncserver@:2.service
+```
+
+正常情况下，终端输出如下图所示。
+
+![status](/docs/meles/ros_car_vnc_status.jpg)
+
+启动成功后，您可以使用任意的 VNC 客户端连接机器人。
+
+:::tip
+Tigervnc 的默认服务端口为 ```5902```，ROS 小车的默认 IP 地址为 ```10.42.0.1```。
+
+在连接 VNC 时请您使用正确的 IP 地址和端口号进行连接。
 :::
 
 ### 关闭自启动脚本

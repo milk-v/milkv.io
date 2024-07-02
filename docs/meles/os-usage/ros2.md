@@ -49,6 +49,11 @@ In some of the following steps, you may need to enter your username and password
 
 - User Name:openeuler
 - Password:123456
+
+In addition, the ROS car will automatically establish a wireless AP after starting up to facilitate your connection.
+
+- SSID:MicroROS_AP
+- Password:12345678
 :::
 
 ### First Boot of the Robot
@@ -73,6 +78,64 @@ After unlocking the chassis, press the ```X```, ```Y```, ```A```, and ```B``` bu
 
 :::tip
 If you cannot use the handle to control the car, please refer to the [MicroROS board firmware burning](https://milkv.io/docs/meles/os-usage/ros2#microros-board-firmware-burning) section to burn and configure the MicroROS control board.
+:::
+
+### Using VNC on the ROS Car
+
+In most cases, it may not be convenient for you to connect the ROS car to a monitor. In this case, you can use VNC to remotely connect to the robot desktop to avoid the trouble of using physical peripherals.
+
+First, you need to use SSH or connect a monitor and keyboard to open a terminal to execute commands.
+
+:::tip
+The VNC used by the ROS car is ```tigervnc```, which is installed in the system by default. If you find that your system is not installed, you need to execute ```sudo yum install tigervnc-server``` to install it.
+:::
+
+Run the following command to set a password for VNC connection, enter the password twice to confirm, and enter n to disable view-only mode.
+
+```
+vncpasswd
+```
+
+![setpass](/docs/meles/ros_car_vnc_setpass.jpg)
+
+Then add the user and number, execute the following command, and modify ```:2=openeuler``` in the file, as shown in the figure below. When you have finished edit, press ```ctrl``` + ```O``` to save, and ```ctrl``` + ```X``` to exit.
+
+```
+sudo nano /etc/tigervnc/vncserver.users
+```
+
+![setuser](/docs/meles/ros_car_vnc_userconf.jpg)
+
+Next, add a service for VNC and execute the following command. You may need to enter the password several times during the execution.
+
+```
+# Copy service files
+sudo cp /usr/lib/systemd/system/vncserver@.service /etc/systemd/system/vncserver@:2.service
+
+# Reload systemd
+systemctl daemon-reload
+
+# Set the system to start automatically and start the service
+systemctl enable vncserver@:2.service
+systemctl start vncserver@:2.service
+```
+
+Finally, execute the following command to verify whether VNC is started successfully.
+
+```
+systemctl status vncserver@:2.service
+```
+
+Under normal circumstances, the terminal output is as shown below.
+
+![status](/docs/meles/ros_car_vnc_status.jpg)
+
+After successful startup, you can use any VNC client to connect to the robot.
+
+:::tip
+The default service port of Tigervnc is ```5902```, and the default IP address of the ROS car is ```10.42.0.1```.
+
+When connecting to VNC, please use the correct IP address and port number.
 :::
 
 ### Disable auto-start script
