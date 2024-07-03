@@ -398,6 +398,20 @@ const sidebars = {
         'jupiter/getting-started/setup',
       ],
     },
+    {
+      type: "category",
+      label: '🖥️ App Development',
+      collapsed: false,
+      link: {
+        type: "generated-index",
+        title: '🖥️ App Development',
+        description: 'Application Development',
+        slug: '/jupiter/application-development'
+      },
+      items: [
+        'jupiter/application-development/helloworld',
+      ],
+    },
   ],
 };
 
