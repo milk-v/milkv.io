@@ -44,6 +44,10 @@ const config = {
             to: '/docs/meles/overview',
             from: ['/docs/meles'],
           },
+          {
+            to: '/docs/jupiter/overview',
+            from: ['/docs/jupiter'],
+          },
         ],
       },
     ],
@@ -195,6 +199,11 @@ const config = {
                 type: 'doc',
                 label: 'Vega',
                 docId: 'vega/overview',
+              },
+              {
+                type: 'doc',
+                label: 'Jupiter',
+                docId: 'jupiter/overview',
               },
             ],
           },

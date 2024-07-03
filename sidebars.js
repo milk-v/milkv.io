@@ -376,6 +376,29 @@ const sidebars = {
       ],
     },
   ],
+  jupiter: [
+    {
+      type: 'link',
+      label: '🏠 Home',
+      href: '/docs',
+    },
+    'jupiter/overview',
+    {
+      type: "category",
+      label: '🚀 Getting Started',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: '🚀 Getting Started',
+        description: 'Getting Started with Jupiter',
+        slug: '/jupiter/getting-started'
+      },
+      items: [
+        'jupiter/getting-started/boot',
+        'jupiter/getting-started/setup',
+      ],
+    },
+  ],
 };
 
 module.exports = sidebars;
