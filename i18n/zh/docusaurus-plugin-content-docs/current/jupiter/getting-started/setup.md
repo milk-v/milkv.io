@@ -1,7 +1,6 @@
 ---
-sidebar_label: 'Setting Up'
+sidebar_label: '常用设置'
 sidebar_position: 20
 ---
 
-# Set up the working environment
-
+# 常用设置

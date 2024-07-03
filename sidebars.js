@@ -396,6 +396,7 @@ const sidebars = {
       items: [
         'jupiter/getting-started/boot',
         'jupiter/getting-started/setup',
+        'jupiter/getting-started/resources',
       ],
     },
     {
