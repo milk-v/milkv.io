@@ -227,7 +227,7 @@ ros2 run yahboomcar_ctrl yahboom_keyboard
 
 ![键盘控制](/docs/meles/ros_car_keyboard_node.jpg)
 
-在键盘控制的节点打开以后，使用 ```u```、```i```、```o```、```j```、```k```、```l```、```,```、```.```、```/``` 按键来控制小车底盘的前后、转弯运动。
+在键盘控制的节点打开以后，使用 ```u```、```i```、```o```、```j```、```k```、```l```、```m```、```,```、```.``` 按键来控制小车底盘的前后、转弯运动。
 
 ### APP 控制
 
@@ -258,7 +258,96 @@ APP 下载安装完成后，请首先连接小车 WiFi ，并关闭手机的移�
 
 ![主页](/docs/meles/ros_car_appmain_zh.jpg)
 
-<!-- ### SLAM 建图和避障 -->
+### SLAM 建图
+
+首先打开一个终端，执行下面的命令，打开代理程序。
+
+```bash
+sh ~/start_agent.sh
+```
+
+![agentnode](/docs/meles/ros_car_agent_node.jpg)
+
+:::tip
+若您启动代理以后，程序一直卡在前两行的位置，请您按下 MicroROS 控制板上的复位按键。
+:::
+
+然后执行下面的命令启动处理底层数据的程序。
+
+```
+ros2 launch yahboomcar_bringup yahboomcar_bringup_launch.py
+```
+
+接下来启动 rviz 可视化建图、建图节点以及键盘控制的节点。
+
+```
+# 启动 rviz
+ros2 launch yahboomcar_nav display_launch.py
+
+# 启动建图节点
+ros2 launch yahboomcar_nav map_gmapping_launch.py
+
+# 启动键盘控制
+ros2 run yahboomcar_ctrl yahboom_keyboard
+```
+
+![建图](/docs/meles/ros_car_slam_build.jpg)
+
+接下来使用键盘控制小车缓慢走完需要建图的路径。
+
+在键盘控制的节点打开以后，使用 ```u```、```i```、```o```、```j```、```k```、```l```、```m```、```,```、```.``` 按键来控制小车底盘的前后、转弯运动。
+
+建图完成后，您需要执行下面的命令来保存地图，保存成功后，地图将被保存在 ```/home/openeuler/slam_ws/src/yahboomcar_nav/maps/yahboom_map.pgm``` 和 ```/home/openeuler/slam_ws/src/yahboomcar_nav/maps/yahboom_map.yaml``` 。
+
+```
+ros2 launch yahboomcar_nav save_map_launch.py
+```
+
+### 导航和避障
+
+在开始导航和避障之前，请您先按照 SLAM 建图的步骤建图并保存地图。
+
+首先您需要打开代理程序。
+
+```bash
+sh ~/start_agent.sh
+```
+
+![agentnode](/docs/meles/ros_car_agent_node.jpg)
+
+:::tip
+若您启动代理以后，程序一直卡在前两行的位置，请您按下 MicroROS 控制板上的复位按键。
+:::
+
+接下来启动处理底层数据的程序。
+
+```
+ros2 launch yahboomcar_bringup yahboomcar_bringup_launch.py
+```
+
+运行下面的命令来启动 rviz 和加载地图。
+
+```
+# 启动 rviz
+ros2 launch yahboomcar_nav display_launch.py
+
+# 加载地图
+LD_PRELOAD=/opt/ros/humble/lib/liblayers.so ros2 launch yahboomcar_nav navigation_dwb_launch.py
+```
+
+接下来您需要选中 rviz 界面上的 ```2D Pose Estimate``` 选项，并在地图中拖动，以确定机器人的初始位置和方向。
+
+![调整](/docs/meles/ros_car_guide_rviz.jpg)
+
+其中地图中玫红色线段代表当前机器人扫描到的地图边界，黑色部分代表已经建好的地图，用 ```2D Pose Estimate``` 选项使他们大致重合。
+
+![调整完成](/docs/meles/ros_car_guide_rvizfix.jpg)
+
+接下来就可以在地图中选点进行导航了，使用 ```2D Goal Pose``` 选项在地图中拖动来确定机器人要移动到的位置和方向。
+
+![导航](/docs/meles/ros_car_guide_s.jpg)
+
+随后机器人会开始规划路径并前往目标位置。
 
 ## MicroROS 控制板固件烧录
 

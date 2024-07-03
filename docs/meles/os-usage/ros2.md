@@ -190,7 +190,7 @@ sh ~/start_agent.sh
 ![agentnode](/docs/meles/ros_car_agent_node.jpg)
 
 :::tip
-If the program is stuck at the first two lines after you start the agent, press the reset button on the MicroROS control panel to connect to the agent.
+If the program is stuck at the first two lines after you start the agent, press the reset button on the MicroROS controllor to connect to the agent.
 :::
 
 #### Gamepad Control
@@ -227,7 +227,7 @@ ros2 run yahboomcar_ctrl yahboom_keyboard
 
 ![KeyboardControl](/docs/meles/ros_car_keyboard_node.jpg)
 
-After the keyboard-control node is opened, use the ```u```, ```i```, ```o```, ```j```, ```k```, ```l```, ```,```, ```.```, ```/``` keys to control the forward, backward and turning movements of the car chassis.
+After the keyboard-control node is opened, use the ```u```, ```i```, ```o```, ```j```, ```k```, ```l```, ```m``` , ```,```, ```.``` keys to control the forward, backward and turning movements of the car chassis.
 
 ### APP Control
 
@@ -258,7 +258,96 @@ After the connection is successful, you will see the radar point cloud data and 
 
 ![home](/docs/meles/ros_car_appmain_en.jpg)
 
-<!-- ### SLAM 建图和避障 -->
+### SLAM Mapping
+
+First open a terminal and execute the following command to open the agent program.
+
+```bash
+sh ~/start_agent.sh
+```
+
+![agentnode](/docs/meles/ros_car_agent_node.jpg)
+
+:::tip
+If the program is stuck at the first two lines after you start the agent, press the reset button on the MicroROS controllor.
+:::
+
+Then execute the following command to start the program that processes the underlying data.
+
+```
+ros2 launch yahboomcar_bringup yahboomcar_bringup_launch.py
+```
+
+Next, start rviz to visualize the map graph,mapping and keyboard-controlled nodes.
+
+```
+# Start rviz
+ros2 launch yahboomcar_nav display_launch.py
+
+# Start the mapping node
+ros2 launch yahboomcar_nav map_gmapping_launch.py
+
+# Enable keyboard control
+ros2 run yahboomcar_ctrl yahboom_keyboard
+```
+
+![mapping](/docs/meles/ros_car_slam_build.jpg)
+
+Next, use the keyboard to control the car to slowly complete the path that needs to be mapped.
+
+After the keyboard-controlled node is opened, use the ```u```, ```i```, ```o```, ```j```, ```k```, ```l```, ```m``` , ```,```, ```.``` keys to control the forward, backward and turning movements of the car chassis.
+
+After the map is built, you need to execute the following command to save the map. After successful saving, the map will be saved in ```/home/openeuler/slam_ws/src/yahboomcar_nav/maps/yahboom_map.pgm``` and ```/home/openeuler/slam_ws/src/yahboomcar_nav/maps/yahboom_map.yaml```.
+
+```
+ros2 launch yahboomcar_nav save_map_launch.py
+```
+
+### Navigation and obstacle avoidance
+
+Before you begin, please follow the SLAM mapping steps to build and save the map.
+
+First you need to turn on the agent.
+
+```bash
+sh ~/start_agent.sh
+```
+
+![agentnode](/docs/meles/ros_car_agent_node.jpg)
+
+:::tip
+If the program is stuck at the first two lines after you start the agent, press the reset button on the MicroROS controllor.
+:::
+
+Next, start the program that processes the underlying data.
+
+```
+ros2 launch yahboomcar_bringup yahboomcar_bringup_launch.py
+```
+
+Run the following command to start rviz and load the map.
+
+```
+# Start rviz
+ros2 launch yahboomcar_nav display_launch.py
+
+# Load map
+LD_PRELOAD=/opt/ros/humble/lib/liblayers.so ros2 launch yahboomcar_nav navigation_dwb_launch.py
+```
+
+Next you need to select the ```2D Pose Estimate``` option on the rviz interface and drag in the map to determine the initial position and orientation of the robot.
+
+![adjust](/docs/meles/ros_car_guide_rviz.jpg)
+
+The rose-red line in the map represents the map boundary currently scanned by the robot, and the black part represents the built map. Use the ```2D Pose Estimate``` option to make them roughly overlap.
+
+![finish](/docs/meles/ros_car_guide_rvizfix.jpg)
+
+Next, you can select points in the map for navigation, and use the ```2D Goal Pose``` option to drag in the map to determine the location and direction the robot should move to.
+
+![navigation](/docs/meles/ros_car_guide_s.jpg)
+
+The robot will then start planning a path and head to the target location.
 
 ## MicroROS board firmware burning
 
