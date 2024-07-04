@@ -11,7 +11,7 @@ sidebar_position: 20
 
 常见的 USB 转 TTL 线的引脚定义如下：
 
-![usb2ttl](/docs/mars/usb2ttl.png)
+<Image src='/docs/common/usb2ttl.webp' maxWidth='100%' align='left' />
 
 ### 连接串口
 

@@ -118,7 +118,7 @@ U-Boot: mars_visionfive2_fw_payload.img
 
 2. 用双公头 USB 数据线连接 PC 和 Mars 的 USB 2.0 接口
 
-   ![mars](/docs/mars/usba2usba.jpg)
+   <Image src='/docs/common/usba2usba.webp' maxWidth='60%' align='left' />
 
    ![mars](/docs/mars/mars-usb-port-a.jpg)
 
@@ -166,7 +166,7 @@ U-Boot: mars_visionfive2_fw_payload.img
 
 2. 用双公头 USB 数据线连接 PC 和 Mars 的 USB 2.0 接口
 
-   ![mars](/docs/mars/usba2usba.jpg)
+   <Image src='/docs/common/usba2usba.webp' maxWidth='60%' align='left' />
 
    ![mars](/docs/mars/mars-usb-port-a.jpg)
 

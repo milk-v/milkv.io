@@ -11,7 +11,7 @@ sidebar_position: 20
 
 USB 串口模块的引脚定义如下：
 
-![usb2ttl](/docs/meles/usb2ttl.png)
+<Image src='/docs/common/usb2ttl.webp' maxWidth='100%' align='left' />
 
 ### 连接
 
