@@ -5,3 +5,26 @@ sidebar_position: 70
 
 # Resource Download Summary
 
+## Operating system image
+
+Version Description:
+
+- The system image with the suffix `.img.zip` is a dedicated image for SD card booting, which can be burned to SD through tools such as balenaEtcher, Rufus, Win32DiskImager on the PC.
+
+- The system image with the suffix `.zip` is the flashing package used by the official tool `titanflasher` of Spacemit. It can be burned to an SD card through a card reader, or burned to an eMMC or SSD through a USB Type-C cable.
+
+### Bianbu OS
+
+Bianbu is an operating system officially launched by Spacemit that is deeply optimized for RISC-V architecture processors. It is built based on Ubuntu community source code and has versions such as Bianbu Desktop, Bianbu Minimal and Bianbu NAS.
+
+Download Link: [https://github.com/milkv-jupiter/jupiter-bianbu-build/releases](https://github.com/milkv-jupiter/jupiter-bianbu-build/releases)
+
+The default password for the `root` account in the Bianbu system is `bianbu`.
+
+### Ubuntu 23.10
+
+Based on Ubuntu 23.10 community source code, adapted to the Desktop system image of Milk-V Jupiter.
+
+Download Link: [https://github.com/milkv-jupiter/jupiter-ubuntu-build/releases](https://github.com/milkv-jupiter/jupiter-ubuntu-build/releases)
+
+The default password for the `root` account in Ubuntu is `bianbu`.

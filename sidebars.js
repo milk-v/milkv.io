@@ -410,7 +410,7 @@ const sidebars = {
         slug: '/jupiter/application-development'
       },
       items: [
-        'jupiter/application-development/helloworld',
+        'jupiter/application-development/gcc',
       ],
     },
   ],
