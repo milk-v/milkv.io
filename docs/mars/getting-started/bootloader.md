@@ -166,7 +166,7 @@ The first 5 steps of burning the bootloader are the same as the first 5 steps of
 
 2. Connect the PC and Mars using a USB 2.0 interface with a type A Male to Male USB data cable
 
-   ![mars](/docs/mars/usba2usba.jpg)
+   <Image src='/docs/common/usba2usba.webp' maxWidth='60%' align='left' />
 
    ![mars](/docs/mars/mars-usb-port-a.jpg)
 
