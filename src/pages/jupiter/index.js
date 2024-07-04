@@ -122,7 +122,7 @@ export default () => {
                         <div className={styles.center_items_4}>
                             <div className={styles.border10}>
                                 <p className={styles.info_title}>PCIe X8 Connector Onboard</p>
-                                <p className={styles.info_text} style={{ marginBottom: '0' }}>Built-in PCIe 2.0,2-lane signaling</p>
+                                <p className={styles.info_text} style={{ marginBottom: '0' }}>Built-in PCIe 2.1, 2-lane signaling</p>
                                 <p className={styles.info_text}>Supports standard PCIe accessories such as  <font>graphics cards,PCIe to SATA</font>, etc.</p>
                             </div>
                             <div className={styles.border11}>
@@ -275,7 +275,7 @@ export default () => {
                         <tr>
                             <td>PCIe</td>
                             <td>
-                                <p>1x PCIe x8 Slot (PCIe 2.0, 2-lane), Supports Graphic Cards and PCIe to SATA, etc.</p>
+                                <p>1x PCIe x8 Slot (PCIe 2.1, 2-lane), Supports Graphic Cards and PCIe to SATA, etc.</p>
                             </td>
                         </tr>
                         <tr>
