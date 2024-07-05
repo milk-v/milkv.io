@@ -68,11 +68,11 @@ Milk-V Jupiter 是一款基于 Spacemit K1/M1 的 Mini-ITX 设备。该设备集
     </tr>
     <tr>
         <td>其他</td>
-        <td>1x PWM 风扇接口 <br/> 1x RTC 电池座子(CR1220 规格) <br/> 1x 前面板控制与状态接口（支持 开关机 / 重启，支持状态灯 / 电源灯） <br/> 1x SoC Uart Debug(3P) <br/> 1x Debug(4P)</td>
+        <td>1x PWM 风扇接口 <br/> 1x RTC 电池连接器(CR1220 规格) <br/> 1x 前面板控制与状态接口（支持 开关机/重启/状态灯/电源灯） <br/> 1x SoC Uart Debug(3P) <br/> 1x Debug(4P)</td>
     </tr>
     <tr>
         <td>电源</td>
-        <td>1x 12V 直流电源插孔（55x25mm）<br/> 1x 标准 24 针 ATX 电源接 <br/> 1x Type-C PD 供电</td>
+        <td>1x 12V 直流电源插孔（55x25mm）<br/> 1x 标准 24 针 ATX 电源接口 <br/> 1x Type-C PD 供电</td>
     </tr>
     <tr>
         <td>操作系统</td>
@@ -83,7 +83,3 @@ Milk-V Jupiter 是一款基于 Spacemit K1/M1 的 Mini-ITX 设备。该设备集
         <td>170mm x 170 mm（标准Mini-ITX形态）</td>
     </tr>
 </table>
-
-## 硬件接口说明
-
-<Image src='/docs/jupiter/jupiter-interface.webp' maxWidth='100%' align='left' />

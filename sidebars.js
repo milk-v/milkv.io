@@ -394,6 +394,7 @@ const sidebars = {
         slug: '/jupiter/getting-started'
       },
       items: [
+        'jupiter/getting-started/hardware',
         'jupiter/getting-started/boot',
         'jupiter/getting-started/setup',
         'jupiter/getting-started/resources',
