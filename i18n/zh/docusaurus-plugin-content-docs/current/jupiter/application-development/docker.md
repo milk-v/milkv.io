@@ -48,7 +48,7 @@ REPOSITORY                           TAG             IMAGE ID       CREATED     
 harbor.spacemit.com/library/debian   unstable-slim   0b7da19f6d95   3 weeks ago   67.6MB
 ```
 
-### 运⾏ Docker
+### 运行 Docker
 
 从拉取的镜像中创建一个名为 debian 的容器：
 
@@ -56,13 +56,13 @@ harbor.spacemit.com/library/debian   unstable-slim   0b7da19f6d95   3 weeks ago 
 docker run -itd --name debian harbor.spacemit.com/library/debian:unstable-slim
 ```
 
-### 查看运⾏中的容器
+### 查看运行中的容器
 
 ```bash
 docker ps
 ```
 
-### 进⼊容器
+### 进入容器
 
 ```bash
 docker exec -it debian bash
@@ -82,7 +82,7 @@ docker ps -a
 exit
 ```
 
-### 停⽌容器
+### 停止容器
 
 使用 `docker ps -a` 查看容器的 ID，再将其停止：
 
@@ -90,7 +90,7 @@ exit
 docker stop be067d972b86
 ```
 
-### 重启停⽌的容器
+### 重启停止的容器
 
 ```bash
 docker restart be067d972b86
@@ -102,7 +102,7 @@ docker restart be067d972b86
 docker rm -f be067d972b86
 ```
 
-### 清理掉所有处于终⽌状态的容器
+### 清理掉所有处于终止状态的容器
 
 ```
 docker container prune
