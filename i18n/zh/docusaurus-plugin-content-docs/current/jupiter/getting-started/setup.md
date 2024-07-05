@@ -13,7 +13,7 @@ Jupiter 主板上有预留一个 UART 调试串口，可以查看系统的启动
 
 常见的 USB 转 TTL 串口线的引脚定义如下：
 
-<Image src='/docs/jupiter/usb2ttl.webp' maxWidth='100%' align='left' />
+<Image src='/docs/common/usb2ttl.webp' maxWidth='100%' align='left' />
 
 ### 连接串口
 

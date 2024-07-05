@@ -411,6 +411,7 @@ const sidebars = {
       },
       items: [
         'jupiter/application-development/gcc',
+        'jupiter/application-development/docker',
       ],
     },
   ],

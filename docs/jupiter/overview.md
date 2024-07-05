@@ -86,3 +86,4 @@ Milk-V Jupiter, powered by the Spacemit K1/M1 SoC, is the world's first Mini ITX
 
 ## Hardware Interface Descriptions
 
+<Image src='/docs/jupiter/jupiter-interface.webp' maxWidth='100%' align='left' />
