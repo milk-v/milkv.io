@@ -27,7 +27,7 @@ Jupiter 主板支持从 SD 卡，eMMC，SSD（M.2 NVMe）三种介质启动系�
 
 - 后缀为 `.zip` 的系统镜像包，可烧录到 SSD，eMMC 或 SD 卡中。
 
-  - 必须使用时迭官方烧录工具 `titanflasher` 烧录。
+  - 必须使用进迭官方烧录工具 `titanflasher` 烧录。
 
   - 烧录到 SSD 或 eMMC 时，必须通过 Type-C 线连接到 PC 上进行烧录。
 
@@ -54,10 +54,9 @@ Windows 版本安装中如有提示，请选择 `始终安装此驱动软件`。
 :::
 <Image src='/docs/jupiter/titanflasher-35.webp' maxWidth='100%' align='left' />
 
-
 ## 安装系统到 SD 卡
 
-SD 卡系统的启动优先级最高，启动所需要所有引导程序，u-boot，kernel，system 均存储在 SD 卡中。
+SD 卡系统的启动优先级最高，启动所需要的所有引导程序，u-boot，kernel，system 均存储在 SD 卡中。
 
 首先到资源下载页面下载 SD 卡对应的系统镜像包（后缀为 `.img.zip`）：[资源下载汇总](https://milkv.io/zh/docs/jupiter/getting-started/resources)。
 
@@ -65,23 +64,23 @@ SD 卡系统的启动优先级最高，启动所需要所有引导程序，u-boo
 
 将 SD 卡通过读卡器插到 PC 上。安装系统到 SD 中会清除 SD 卡中原有数据，**注意提前备份卡中的重要文件**。
 
-1. 运行 `titanflasher` 工具，选择"研发工具"
+1. 运行 `titanflasher` 工具，选择"研发工具"。
    <Image src='/docs/jupiter/titanflasher-01.webp' maxWidth='100%' align='left' />
-2. 选择 "卡启动"
+2. 选择 "卡启动"。
    <Image src='/docs/jupiter/titanflasher-02.webp' maxWidth='100%' align='left' />
-3. 点击 "选择SD卡"，选择目标 SD 卡
+3. 点击 "选择SD卡"，选择目标 SD 卡。
    <Image src='/docs/jupiter/titanflasher-03.webp' maxWidth='100%' align='left' />
-4. 点击 "选择刷机包"
+4. 点击 "选择刷机包"。
    <Image src='/docs/jupiter/titanflasher-04.webp' maxWidth='100%' align='left' />
-5. 点击 "本地镜像"，选择上面解压好的 `.img` SD 卡镜像
+5. 点击 "本地镜像"，选择上面解压好的 `.img` SD 卡镜像。
    <Image src='/docs/jupiter/titanflasher-05.webp' maxWidth='100%' align='left' />
-6. 选择"烧录启动卡"
+6. 选择"烧录启动卡"。
    <Image src='/docs/jupiter/titanflasher-06.webp' maxWidth='100%' align='left' />
-7. 点击"执行"
+7. 点击 "执行"。
    <Image src='/docs/jupiter/titanflasher-07.webp' maxWidth='100%' align='left' />
-8. 点击"确定"
+8. 点击 "确定"。
    <Image src='/docs/jupiter/titanflasher-08.webp' maxWidth='100%' align='left' />
-9. 开始烧录
+9. 开始烧录。
    <Image src='/docs/jupiter/titanflasher-09.webp' maxWidth='100%' align='left' />
 
 当烧录进度条显示为 100% 时烧录完成。将烧录好系统的 SD 卡插入 Jupiter 的 SD 卡槽中，上电开机，如果安装的是 Desktop 版本的系统，通过 HDMI 连接的显示器会显示开机 LOGO，系统启动完后会进入桌面。
@@ -135,7 +134,7 @@ SD 卡系统目前没有开机后自动扩容功能，请在开机后首先手�
 注意，`zip` 包下载后不需要解压。
 
 1. 用 Type-C 线将 Jupiter 的 Type-C 口连接到 PC 端。
-   <Image src='/docs/common/usba2typec.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/common/usba2typec.webp' maxWidth='50%' align='left' />
 
 2. 按住板上的烧录键（RECOVERY）或者短接 RECOVERY 排针，再绐 Jupiter 上电，会进入 USB 烧录模式。
    <Image src='/docs/jupiter/jupiter-recovery.webp' maxWidth='100%' align='left' />
@@ -187,13 +186,13 @@ fastboot reboot
 
 ### 使用第三方工具烧录 SD 卡镜像
 
-SD 卡系统镜像支持使用 balenaEtcher，Rufus，Win32DiskImager 等工具烧录，以 balenaEtcher 为例，烧录方法如下。
+SD 卡系统镜像支持使用 balenaEtcher，Rufus，Win32DiskImager 等工具烧录，以 `balenaEtcher` 为例，烧录方法如下。
 
 首先将 SD 卡通过读卡器插到 PC 上。安装系统到 SD 中会清除 SD 卡中原有数据，**注意提前备份卡中的重要文件**。
 
 到资源下载页面下载 SD 卡对应的系统镜像包（后缀为 `.img.zip`）：[资源下载汇总](https://milkv.io/zh/docs/jupiter/getting-started/resources)。
 
-下载后可以不解压，balenaEtcher 支持加载 zip 包。
+下载后可以不解压，`balenaEtcher` 支持加载 zip 包。
 
 1. 下载镜像烧录工具 [balenaEtcher](https://etcher.balena.io/)，并安装。
 2. 点击 `Flash from file` 选择下载好的 SD 卡镜像。
