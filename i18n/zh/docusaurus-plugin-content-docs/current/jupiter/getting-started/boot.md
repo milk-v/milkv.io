@@ -127,6 +127,10 @@ SD 卡系统目前没有开机后自动扩容功能，请在开机后首先手�
 
 系统镜像烧录到 SSD 或 eMMC 时，必须通过 Type-C 线连接到 PC 上进行烧录。
 
+:::tip
+烧录的优先级与启动的优先级一致，如果 SSD 和 eMMC 同时存在时，会烧录镜像到 SSD 中。当 SSD 和 eMMC 都不存在时，`titanflasher` 工具只会烧录 u-boot 等启动程序到 SPI Flash 中。
+:::
+
 首先到资源下载页面下载后缀为 `.zip`(非 `.img.zip`) 的系统镜像包：[资源下载汇总](https://milkv.io/zh/docs/jupiter/getting-started/resources)。
 
 ### 使用进迭 titanflasher 刷机工具

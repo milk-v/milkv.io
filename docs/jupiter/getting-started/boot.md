@@ -44,6 +44,10 @@ The following uses the Spacemit `titanflasher` tool as an example to introduce t
 
 `titanflasher` currently provides versions for both X86(X64) and Linux platforms.
 
+:::tip
+We are sorry that the titanflasher tool interface is currently only available in Chinese. The English version will be released later.
+:::
+
 download link: [https://github.com/milkv-jupiter/jupiter-tools/releases/tag/titanflasher](https://github.com/milkv-jupiter/jupiter-tools/releases/tag/titanflasher)
 
 If prompted during Windows installation, select `Install this driver software anyway`.
@@ -126,6 +130,10 @@ The following uses the `gparted` tool as an example to explain how to expand the
 ## Install OS to eMMC or SSD
 
 When burning the system image to SSD or eMMC, it must be connected to a PC via a Type-C cable for burning.
+
+:::tip
+The priority of burning is the same as the priority of booting. If both SSD and eMMC exist, the image will be burned to SSD. When neither SSD nor eMMC exists, the `titanflasher` tool will only burn u-boot to SPI Flash.
+:::
 
 First, go to the resource download page to download the system image package with the suffix `.zip` (not `.img.zip`): [Resource Download Summary](https://milkv.io/docs/jupiter/getting-started/resources)。
 
