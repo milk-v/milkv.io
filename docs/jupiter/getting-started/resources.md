@@ -28,3 +28,12 @@ Based on Ubuntu 23.10 community source code, adapted to the Desktop system image
 Download Link: [https://github.com/milkv-jupiter/jupiter-ubuntu-build/releases](https://github.com/milkv-jupiter/jupiter-ubuntu-build/releases)
 
 The default password for the `root` account in Ubuntu is `bianbu`.
+
+### Fedora 41
+
+Currently only SD card images are provided, download link: [https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/](https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/)
+
+Decompression command:
+```bash
+zstd -d xxx.img.zst
+```

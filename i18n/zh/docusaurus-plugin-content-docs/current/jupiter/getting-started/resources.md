@@ -28,3 +28,12 @@ Bianbu 系统的 `root` 账户默认密码为 `bianbu`。
 下载链接：[https://github.com/milkv-jupiter/jupiter-ubuntu-build/releases](https://github.com/milkv-jupiter/jupiter-ubuntu-build/releases)
 
 Ubuntu 系统的 `root` 账户默认密码为 `bianbu`。
+
+### Fedora 41
+
+目前只提供 SD 卡镜像，下载链接：[https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/](https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/)
+
+解压命令：
+```bash
+zstd -d xxx.img.zst
+```
