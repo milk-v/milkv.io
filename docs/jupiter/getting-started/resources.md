@@ -9,9 +9,11 @@ sidebar_position: 70
 
 Version Description:
 
-- The system image with the suffix `.img.zip` is a dedicated image for SD card booting, which can be burned to SD through tools such as balenaEtcher, Rufus, Win32DiskImager on the PC.
+- The system image with the suffix `.img.zip` is a dedicated image for SD card boot. It can be burned to the SD card through the official tool `titanflasher` of Spacemit, or through tools such as `balenaEtcher`, `Rufus`, `Win32DiskImager` on the PC.
 
 - The system image with the suffix `.zip` is the flashing package used by the official tool `titanflasher` of Spacemit. It can be burned to an SD card through a card reader, or burned to an eMMC or SSD through a USB Type-C cable.
+
+For OS iamge installation methods, please refer to: [Install OS Image](https://milkv.io/docs/jupiter/getting-started/boot).
 
 ### Bianbu OS
 
