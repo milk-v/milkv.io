@@ -26,7 +26,7 @@ export default () => {
                             </li>
                             <li>
                                 <img src="/duom01/btn.svg" />
-                                <p>BTDM5.4</p>
+                                <p>BTDM5</p>
                             </li>
                             <li>
                                 <img src="/duom01/wifi.svg" />
