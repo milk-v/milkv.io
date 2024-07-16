@@ -78,8 +78,14 @@ Usage:
 ./build.sh              - Show this menu
 ./build.sh lunch        - Select a board to build
 ./build.sh [board]      - Build [board] directly, supported boards asfollows:
-milkv-duo
-milkv-duo256m
+milkv-duo-sd
+milkv-duo-spinand
+milkv-duo-spinor
+milkv-duo256m-sd
+milkv-duo256m-spinand
+milkv-duo256m-spinor
+milkv-duos-emmc
+milkv-duos-sd
 ```
 Listed at the bottom is the list of currently supported target versions.
 
@@ -89,17 +95,23 @@ The first method is to execute `./build.sh lunch` to bring up the interactive me
 ```bash
 # ./build.sh lunch
 Select a target to build:
-1. milkv-duo
-2. milkv-duo256m
+1. milkv-duo-sd
+2. milkv-duo-spinand
+3. milkv-duo-spinor
+4. milkv-duo256m-sd
+5. milkv-duo256m-spinand
+6. milkv-duo256m-spinor
+7. milkv-duos-emmc
+8. milkv-duos-sd
 Which would you like:
 ```
 
-The second method is to put the name of the target version after the script and compile it directly. For example, if you need to compile the image of `milkv-duo`, the command is as follows:
+The second method is to put the name of the target version after the script and compile it directly. For example, if you need to compile the image of `milkv-duo-sd`, the command is as follows:
 ```bash
-# ./build.sh milkv-duo
+# ./build.sh milkv-duo-sd
 ```
 
-After a successful compilation, you can find the generated SD card burning image `milkv-duo-*-*.img` in the `out` directory.
+After a successful compilation, you can find the generated SD card burning image `milkv-duo-sd-*-*.img` in the `out` directory.
 
 *Note: The first compilation will automatically download the required toolchain, which is approximately 840MB in size. Once downloaded, it will be automatically extracted to the `host-tools` directory in the SDK directory. For subsequent compilations, if the `host-tools` directory is detected, the download will not be performed again*.
 
@@ -113,8 +125,14 @@ tar -xf host-tools.tar.gz -C /your/sdk/path/
 
 Then enter the following commands in sequence to complete the step-by-step compilation. Replace `[board]` and `[config]` in the command with the version that needs to be compiled. The currently supported `board` and corresponding `config` are as follows:
 ```
-milkv-duo               cv1800b_milkv_duo_sd
-milkv-duo256m           cv1812cp_milkv_duo256m_sd
+milkv-duo-sd             cv1800b_milkv_duo_sd
+milkv-duo-spinand        cv1800b_milkv_duo_spinand
+milkv-duo-spinor         cv1800b_milkv_duo_spinor
+milkv-duo256m-sd         cv1812cp_milkv_duo256m_sd
+milkv-duo256m-spinand    cv1812cp_milkv_duo256m_spinand
+milkv-duo256m-spinor     cv1812cp_milkv_duo256m_spinor
+milkv-duos-emmc          cv1813h_milkv_duos_emmc
+milkv-duos-sd            cv1813h_milkv_duos_sd
 ```
 
 ```bash
@@ -127,9 +145,9 @@ build_all
 pack_sd_image
 ```
 
-For example, if you need to compile the image of `milkv-duo`, the step-by-step compilation command is as follows:
+For example, if you need to compile the image of `milkv-duo-sd`, the step-by-step compilation command is as follows:
 ```bash
-source device/milkv-duo/boardconfig.sh
+source device/milkv-duo-sd/boardconfig.sh
 
 source build/milkvsetup.sh
 defconfig cv1800b_milkv_duo_sd
@@ -189,8 +207,14 @@ docker exec -it duodocker /bin/bash -c "cd /home/work && cat /etc/issue && ./bui
 
 Note that the `./build.sh [board]` at the end of the command is the same as the previous usage in the one-click compilation instructions in Ubuntu 22.04. Use `./build.sh` can see how to use the command, use `./ build.sh lunch` can bring up the interactive selection menu, use `./build.sh [board]` to directly compile the target version, `[board]` can be replaced with:
 ```
-milkv-duo
-milkv-duo256m
+milkv-duo-sd
+milkv-duo-spinand
+milkv-duo-spinor
+milkv-duo256m-sd
+milkv-duo256m-spinand
+milkv-duo256m-spinor
+milkv-duos-emmc
+milkv-duos-sd
 ```
 
 Description of some parameters in the command:
@@ -200,9 +224,9 @@ Description of some parameters in the command:
 - `cat /etc/issue` Displays the version number of the image used by Docker. It is currently Ubuntu 22.04.3 LTS and is used for debugging.
 - `./build.sh [board]` Execute one-click compilation script.
 
-For example, if you need to compile the image of `milkv-duo`, the command is as follows:
+For example, if you need to compile the image of `milkv-duo-sd`, the command is as follows:
 ```bash
-docker exec -it duodocker /bin/bash -c "cd /home/work && cat /etc/issue && ./build.sh milkv-duo"
+docker exec -it duodocker /bin/bash -c "cd /home/work && cat /etc/issue && ./build.sh milkv-duo-sd"
 ```
 
 After successful compilation, you can see the generated SD card burning image `[board]-*-*.img` in the `out` directory.
@@ -229,8 +253,14 @@ root@8edea33c2239:/# cd /home/work/
 
 Then enter the following commands in sequence to complete the step-by-step compilation. Replace `[board]` and `[config]` in the command with the version that needs to be compiled. The currently supported `board` and corresponding `config` are as follows:
 ```
-milkv-duo               cv1800b_milkv_duo_sd
-milkv-duo256m           cv1812cp_milkv_duo256m_sd
+milkv-duo-sd             cv1800b_milkv_duo_sd
+milkv-duo-spinand        cv1800b_milkv_duo_spinand
+milkv-duo-spinor         cv1800b_milkv_duo_spinor
+milkv-duo256m-sd         cv1812cp_milkv_duo256m_sd
+milkv-duo256m-spinand    cv1812cp_milkv_duo256m_spinand
+milkv-duo256m-spinor     cv1812cp_milkv_duo256m_spinor
+milkv-duos-emmc          cv1813h_milkv_duos_emmc
+milkv-duos-sd            cv1813h_milkv_duos_sd
 ```
 
 ```bash
@@ -243,9 +273,9 @@ build_all
 pack_sd_image
 ```
 
-For example, if you need to compile the image of `milkv-duo`, the step-by-step compilation command is as follows:
+For example, if you need to compile the image of `milkv-duo-sd`, the step-by-step compilation command is as follows:
 ```bash
-source device/milkv-duo/boardconfig.sh
+source device/milkv-duo-sd/boardconfig.sh
 
 source build/milkvsetup.sh
 defconfig cv1800b_milkv_duo_sd
@@ -260,7 +290,7 @@ Duo:      install/soc_cv1800b_milkv_duo_sd/[board].img
 Duo256M:  install/soc_cv1812cp_milkv_duo256m_sd/[board].img
 ```
 
-Generated firmware location: `install/soc_cv1800b_milkv_duo_sd/milkv-duo.img`.
+Generated firmware location: `install/soc_cv1800b_milkv_duo_sd/milkv-duo-sd.img`.
 
 After compilation is completed, you can use the `exit` command to exit the Docker environment:
 ```bash
@@ -363,9 +393,9 @@ Refer to this commit: [busybox: add timeout command](https://github.com/milkv-du
 
 In addition, a large number of application packages are preset in Buildroot. The required programs are generated by downloading the source code and compiling them. The preset application packages of Buildroot can be viewed in the `buildroot-2021.05/package` directory.
 
-Configuring to enable or disable an application package is implemented in the target board's configuration file. Taking the `milkv-duo` target as an example, its buildroot configuration file is:
+Configuring to enable or disable an application package is implemented in the target board's configuration file. Taking the `milkv-duo-sd` target as an example, its buildroot configuration file is:
 ```
-buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig
+buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig
 ```
 
 We can compile the SDK as a whole on the host (such as Ubuntu), and then go to the Buildroot compilation directory to configure the relevant application packages through command line menu interaction.
@@ -373,7 +403,7 @@ We can compile the SDK as a whole on the host (such as Ubuntu), and then go to t
 1. Enter the Buildroot compilation directory
 
    ```
-   cd buildroot-2021.05/output/milkv-duo_musl_riscv64
+   cd buildroot-2021.05/output/milkv-duo-sd_musl_riscv64
    ```
 
    You can use the `make show-targets` command to view the currently used application packages:
@@ -408,7 +438,7 @@ We can compile the SDK as a whole on the host (such as Ubuntu), and then go to t
    At this point, go back to the SDK root directory and recompile.
 
    :::tip
-   Here you can also compare the differences between the old configuration file and the new configuration file in the compilation directory, and manually modify the parts that need to be changed directly into the original configuration file `milkv-duo_musl_riscv64_defconfig`:
+   Here you can also compare the differences between the old configuration file and the new configuration file in the compilation directory, and manually modify the parts that need to be changed directly into the original configuration file `milkv-duo-sd_musl_riscv64_defconfig`:
    ```diff
    diff -u .config.old .config
    ```
@@ -435,13 +465,13 @@ Mainly refer to the content added in `buildroot-2021.05/package`.
 
 If you need to delete some unnecessary application packages to speed up compilation, or disable some unnecessary packages when compiling the firmware by yourself, you can use the `make menuconfig` method of opening the Buildroot application package mentioned above to disable related packages.
 
-You can also delete the corresponding package name in the Buildroot configuration file. Take the `milkv-duo` target as an example. For example, if you do not need to compile Python-related libraries, you can make the following modifications and recompile to generate firmware.
+You can also delete the corresponding package name in the Buildroot configuration file. Take the `milkv-duo-sd` target as an example. For example, if you do not need to compile Python-related libraries, you can make the following modifications and recompile to generate firmware.
 
-```diff title="buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig"
-diff --git a/buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig b/buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig
+```diff title="buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig"
+diff --git a/buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig b/buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig
 index 2bc8cd5e3..e78901afb 100644
---- a/buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig
-+++ b/buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig
+--- a/buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig
++++ b/buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig
 @@ -330,25 +330,6 @@ BR2_PACKAGE_EVTEST=y
  # BR2_PACKAGE_FCONFIG is not set
  BR2_PACKAGE_FLASHROM_ARCH_SUPPORTS=y
@@ -476,9 +506,9 @@ index 2bc8cd5e3..e78901afb 100644
 
 Buildroot in the SDK enables top-level parallel compilation by default to speed up compilation. However, when a compilation error occurs, it is inconvenient to analyze the error log, so we can delete it in the config file first, and then reopen it after the problem is solved.
 
-Taking the milkv-duo target as an example, delete the configuration in its configuration file and recompile:
+Taking the `milkv-duo-sd` target as an example, delete the configuration in its configuration file and recompile:
 
-```bash title="buildroot-2021.05/configs/milkv-duo_musl_riscv64_defconfig"
+```bash title="buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig"
 BR2_PER_PACKAGE_DIRECTORIES=y
 ```
 
