@@ -33,9 +33,4 @@ The default password for the `root` account in the Bianbu system is `bianbu`.
 
 ### Fedora 41 (by [Fedora-V Force](https://github.com/fedora-riscv))
 
-Currently only SD card images are provided, download link: [https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/](https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/)
-
-Decompression command:
-```bash
-zstd -d xxx.img.zst
-```
+Download link: [https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/](https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/)
