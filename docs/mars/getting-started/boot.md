@@ -37,7 +37,7 @@ Here are the steps for using balenaEtcher.
 
 ## Power on
 
-Insert the microSD card with the burned firmware into the Mars microSD card slot. Use an adapter (5V) to connect Mars via a Type-C cable. Mars will automatically power on and the red power LED on the board will light up. After the system starts successfully, the green status LED on the board will flash.
+Insert the microSD card with the burned firmware into the Mars microSD card slot. Then use https://wiki.ubuntu.com/RISC-V/Milk-V%20Mars to set it to boot the SD-card Use an adapter (5V) to connect Mars via a Type-C cable. Mars will automatically power on and the red power LED on the board will light up. After the system starts successfully, the green status LED on the board will flash.
 
 If an HDMI monitor is connected, the Debian desktop will be displayed after booting.
 
