@@ -15,14 +15,6 @@ Version Description:
 
 For OS iamge installation methods, please refer to: [Install OS Image](https://milkv.io/docs/jupiter/getting-started/boot).
 
-### Bianbu OS
-
-Bianbu is an operating system officially launched by Spacemit that is deeply optimized for RISC-V architecture processors. It is built based on Ubuntu community source code and has versions such as Bianbu Desktop, Bianbu Minimal and Bianbu NAS.
-
-Download Link: [https://github.com/milkv-jupiter/jupiter-bianbu-build/releases](https://github.com/milkv-jupiter/jupiter-bianbu-build/releases)
-
-The default password for the `root` account in the Bianbu system is `bianbu`.
-
 ### Ubuntu 23.10
 
 Based on Ubuntu 23.10 community source code, adapted to the Desktop system image of Milk-V Jupiter.
@@ -31,7 +23,15 @@ Download Link: [https://github.com/milkv-jupiter/jupiter-ubuntu-build/releases](
 
 The default password for the `root` account in Ubuntu is `bianbu`.
 
-### Fedora 41
+### Bianbu OS
+
+Bianbu is an operating system officially launched by Spacemit that is deeply optimized for RISC-V architecture processors. It is built based on Ubuntu community source code and has versions such as Bianbu Desktop, Bianbu Minimal and Bianbu NAS.
+
+Download Link: [https://github.com/milkv-jupiter/jupiter-bianbu-build/releases](https://github.com/milkv-jupiter/jupiter-bianbu-build/releases)
+
+The default password for the `root` account in the Bianbu system is `bianbu`.
+
+### Fedora 41 (by [Fedora-V Force](https://github.com/fedora-riscv))
 
 Currently only SD card images are provided, download link: [https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/](https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/)
 
