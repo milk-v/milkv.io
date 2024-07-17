@@ -83,3 +83,9 @@ Milk-V Jupiter, powered by the Spacemit K1/M1 SoC, is the world's first Mini ITX
         <td>170mm x 170 mm（Standard Mini-ITX）</td>
     </tr>
 </table>
+
+:::tip
+The differences between Spacemit M1 and K1 are as follows:
+- The M1 uses a package with better cooling performance and has a default frequency of **1.8GHz**.
+- The K1 has a default frequency of 1.6GHz.
+:::

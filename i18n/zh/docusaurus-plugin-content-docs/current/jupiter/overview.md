@@ -83,3 +83,9 @@ Milk-V Jupiter 是一款基于 Spacemit K1/M1 的 Mini-ITX 设备。该设备集
         <td>170mm x 170 mm（标准Mini-ITX形态）</td>
     </tr>
 </table>
+
+:::tip
+Spacemit M1 与 K1 的区别在于：
+- M1 采用更强散热性能的封装，默认频率为1.8GHz
+- K1 默认频率为1.6GHz
+:::
