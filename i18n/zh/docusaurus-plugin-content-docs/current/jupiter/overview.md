@@ -20,7 +20,7 @@ Milk-V Jupiter 是一款基于 Spacemit K1/M1 的 Mini-ITX 设备。该设备集
     </tr>
     <tr>
         <td>SoC</td>
-        <td>SPACEMIT K1/M1, Otca-core X60™(RV64GCVB), RVA22, RVV1.0</td>
+        <td>SPACEMIT K1/M1, Octa-core X60™(RV64GCVB), RVA22, RVV1.0</td>
     </tr>
     <tr>
         <td>AI算力</td>
