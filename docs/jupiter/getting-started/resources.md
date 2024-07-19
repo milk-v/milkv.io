@@ -21,7 +21,7 @@ Based on Ubuntu 23.10 community source code, adapted to the Desktop system image
 
 Download Link: [https://github.com/milkv-jupiter/jupiter-ubuntu-build/releases](https://github.com/milkv-jupiter/jupiter-ubuntu-build/releases)
 
-The default password for the `root` account in Ubuntu is `bianbu`.
+The default password for the `root` account in Ubuntu is `milkv`.
 
 ### Bianbu OS
 
@@ -29,8 +29,10 @@ Bianbu is an operating system officially launched by Spacemit that is deeply opt
 
 Download Link: [https://github.com/milkv-jupiter/jupiter-bianbu-build/releases](https://github.com/milkv-jupiter/jupiter-bianbu-build/releases)
 
-The default password for the `root` account in the Bianbu system is `bianbu`.
+The default password for the `root` account in the Bianbu system is `milkv`.
 
 ### Fedora 41 (by [Fedora-V Force](https://github.com/fedora-riscv))
 
 Download link: [https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/](https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/)
+
+The default password for the `root` account is `riscv`.

@@ -21,7 +21,7 @@ sidebar_position: 70
 
 下载链接：[https://github.com/milkv-jupiter/jupiter-ubuntu-build/releases](https://github.com/milkv-jupiter/jupiter-ubuntu-build/releases)
 
-Ubuntu 系统的 `root` 账户默认密码为 `bianbu`。
+Ubuntu 系统的 `root` 账户默认密码为 `milkv`。
 
 ### Bianbu 系统
 
@@ -29,8 +29,10 @@ Bianbu 是进迭官方推出的针对 RISC-V 架构的处理器做了深度优�
 
 下载链接：[https://github.com/milkv-jupiter/jupiter-bianbu-build/releases](https://github.com/milkv-jupiter/jupiter-bianbu-build/releases)
 
-Bianbu 系统的 `root` 账户默认密码为 `bianbu`。
+Bianbu 系统的 `root` 账户默认密码为 `milkv`。
 
 ### Fedora 41 (by [Fedora-V Force](https://github.com/fedora-riscv))
 
 下载链接：[https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/](https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/)
+
+系统 `root` 账户默认密码为 `riscv`。
