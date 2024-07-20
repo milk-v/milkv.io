@@ -40,7 +40,9 @@ If the eMMC jumper is shorted, the `SPI Flash` on the board will be disabled. In
 The Jupiter board will automatically power on after being powered by the method in the above `Power Interfaces`. There is no need to use the `Power Button` in `F_PANEL`. The function of the `Power Button` is to power off or power on again after powering off.
 :::
 
-<Image src='/docs/jupiter/jupiter-interface-f-panel.webp' maxWidth='100%' align='left' />
+<Image src='/docs/jupiter/jupiter-interface-f-panel-1.webp' maxWidth='100%' align='left' />
+
+<Image src='/docs/jupiter/jupiter-interface-f-panel-2.webp' maxWidth='100%' align='left' />
 
 ## F_AUDIO、F_USB2、FUSB3 Interfaces
 
@@ -58,6 +60,8 @@ The `F_AUDIO` audio interface on the Jupiter board is compatible with the AC'97 
 
 <Image src='/docs/jupiter/jupiter-interface-f-audio.webp' maxWidth='100%' align='left' />
 
+<div className='gpio_style'>
+
 | Description | PIN | PIN | Description |
 |:------------|:---:|:---:|:------------|
 | MIC_IN      | 1   | 2   | GND         |
@@ -66,11 +70,15 @@ The `F_AUDIO` audio interface on the Jupiter board is compatible with the AC'97 
 | NC          | 7   |     |             |
 | AUDIO_OUT_L | 9   | 10  | RET_L(NC)   |
 
+</div>
+
 ### F_USB2
 
 The `F_USB2` interface on the Jupiter board is compatible with the standard PC motherboard USB2.0 interface, and the pinout is defined as follows:
 
 <Image src='/docs/jupiter/jupiter-interface-f-usb2.webp' maxWidth='100%' align='left' />
+
+<div className='gpio_style'>
 
 | Description | PIN | PIN | Description |
 |:------------|:---:|:---:|:------------|
@@ -80,11 +88,15 @@ The `F_USB2` interface on the Jupiter board is compatible with the standard PC m
 | GND         | 7   | 8   | GND         |
 |             |     | 10  | GND         |
 
+</div>
+
 ### F_USB3
 
 The `F_USB3` interface on the Jupiter board is compatible with the standard PC motherboard USB3.0 interface, and the pin definitions are as follows:
 
 <Image src='/docs/jupiter/jupiter-interface-f-usb3.webp' maxWidth='100%' align='left' />
+
+<div className='gpio_style'>
 
 | Description | PIN | PIN | Description |
 |:------------|:---:|:---:|:------------|
@@ -98,3 +110,5 @@ The `F_USB3` interface on the Jupiter board is compatible with the standard PC m
 | P1-SSRX+    | 15  | 16  | P2-SSRX-    |
 | P1-SSRX-    | 17  | 18  | Vbus        |
 | Vbus        | 17  |     |             |
+
+</div>

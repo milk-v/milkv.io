@@ -40,7 +40,9 @@ Jupiter 主板功耗取决于所连接的外设功率和数量，需根据具体
 Jupiter 主板按上述`电源接口`中的方式供电后会自动开机，不需要使用 `F_PANEL` 中的`开关机键`，该`开关机键`的功能是关机或关机后再次开机。
 :::
 
-<Image src='/docs/jupiter/jupiter-interface-f-panel.webp' maxWidth='100%' align='left' />
+<Image src='/docs/jupiter/jupiter-interface-f-panel-1.webp' maxWidth='100%' align='left' />
+
+<Image src='/docs/jupiter/jupiter-interface-f-panel-2.webp' maxWidth='100%' align='left' />
 
 ## F_AUDIO、F_USB2、FUSB3 接口
 
@@ -58,6 +60,8 @@ Jupiter 主板上的 F_AUDIO 音频接口兼容 AC'97 前置音频接口，各�
 
 <Image src='/docs/jupiter/jupiter-interface-f-audio.webp' maxWidth='100%' align='left' />
 
+<div className='gpio_style'>
+
 | Description | PIN | PIN | Description |
 |:------------|:---:|:---:|:------------|
 | MIC_IN      | 1   | 2   | GND         |
@@ -66,11 +70,15 @@ Jupiter 主板上的 F_AUDIO 音频接口兼容 AC'97 前置音频接口，各�
 | NC          | 7   |     |             |
 | AUDIO_OUT_L | 9   | 10  | RET_L(NC)   |
 
+</div>
+
 ### F_USB2
 
 Jupiter 主板上的 F_USB2 接口兼容标准 PC 主板 USB2.0 接口，引脚定义如下：
 
 <Image src='/docs/jupiter/jupiter-interface-f-usb2.webp' maxWidth='100%' align='left' />
+
+<div className='gpio_style'>
 
 | Description | PIN | PIN | Description |
 |:------------|:---:|:---:|:------------|
@@ -80,11 +88,15 @@ Jupiter 主板上的 F_USB2 接口兼容标准 PC 主板 USB2.0 接口，引脚�
 | GND         | 7   | 8   | GND         |
 |             |     | 10  | GND         |
 
+</div>
+
 ### F_USB3
 
 Jupiter 主板上的 F_USB3 接口兼容标准 PC 主板 USB3.0 接口，引脚定义如下：
 
 <Image src='/docs/jupiter/jupiter-interface-f-usb3.webp' maxWidth='100%' align='left' />
+
+<div className='gpio_style'>
 
 | Description | PIN | PIN | Description |
 |:------------|:---:|:---:|:------------|
@@ -98,3 +110,5 @@ Jupiter 主板上的 F_USB3 接口兼容标准 PC 主板 USB3.0 接口，引脚�
 | P1-SSRX+    | 15  | 16  | P2-SSRX-    |
 | P1-SSRX-    | 17  | 18  | Vbus        |
 | Vbus        | 17  |     |             |
+
+</div>
