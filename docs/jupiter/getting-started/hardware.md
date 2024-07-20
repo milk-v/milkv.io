@@ -109,6 +109,6 @@ The `F_USB3` interface on the Jupiter board is compatible with the standard PC m
 | GND         | 13  | 14  | P2-SSRX+    |
 | P1-SSRX+    | 15  | 16  | P2-SSRX-    |
 | P1-SSRX-    | 17  | 18  | Vbus        |
-| Vbus        | 17  |     |             |
+| Vbus        | 19  |     |             |
 
 </div>

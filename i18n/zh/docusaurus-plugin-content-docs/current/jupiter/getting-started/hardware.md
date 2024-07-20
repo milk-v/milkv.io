@@ -109,6 +109,6 @@ Jupiter 主板上的 F_USB3 接口兼容标准 PC 主板 USB3.0 接口，引脚�
 | GND         | 13  | 14  | P2-SSRX+    |
 | P1-SSRX+    | 15  | 16  | P2-SSRX-    |
 | P1-SSRX-    | 17  | 18  | Vbus        |
-| Vbus        | 17  |     |             |
+| Vbus        | 19  |     |             |
 
 </div>
