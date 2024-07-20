@@ -31,3 +31,9 @@ The power consumption of the Jupiter board depends on the power and number of co
 The eMMC jumper on the board does not need to be short-circuited when we use it. The system image can be burned into the eMMC normally and run. At this time, the boot program in the `SPI Flash` will be used to load the system in the eMMC.
 
 If the eMMC jumper is shorted, the `SPI Flash` on the board will be disabled. In this scenario, you need to keep the eMMC jumper shorted when burning the system image and burn the bootloader into the eMMC as well.
+
+## F_PANEL Interface
+
+`F_PANEL` is the abbreviation of `Front Panel`, which is a set of jumpers used to connect the front panel of a standard PC case. It includes four groups of signals: the power button, the reset button, the power indicator LED, and the HDD LED.
+
+<Image src='/docs/jupiter/jupiter-interface-f-panel.webp' maxWidth='100%' align='left' />

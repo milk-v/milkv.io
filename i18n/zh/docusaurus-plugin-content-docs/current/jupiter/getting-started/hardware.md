@@ -31,3 +31,9 @@ Jupiter 主板功耗取决于所连接的外设功率和数量，需根据具体
 主板上的 eMMC 跳线，我们使用时不需要短接，是可以正常烧录系统镜像到 eMMC 中并运行的，此时会使用 `SPI Flash` 中的引导程序来加载 eMMC 中的系统。
 
 如果 eMMC 跳线短接，会禁用板上的 `SPI Flash`，这种场景下，需要在烧录系统镜像时也保持 eMMC 跳线短接，将引导程序也烧录到 eMMC 中。
+
+## F_PANEL 接口
+
+`F_PANEL` 是 `Front Panel` 的缩写，是一组用来连接标准 PC 机箱前面板的跳线，包含`开关机键`、`重启键`、`电源指示灯`、`硬盘状态灯`四组信号。
+
+<Image src='/docs/jupiter/jupiter-interface-f-panel.webp' maxWidth='100%' align='left' />
