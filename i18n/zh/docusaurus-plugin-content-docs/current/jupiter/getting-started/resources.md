@@ -31,6 +31,29 @@ Bianbu 是进迭官方推出的针对 RISC-V 架构的处理器做了深度优�
 
 Bianbu 系统的 `root` 账户默认密码为 `milkv`。
 
+- milkv-jupiter-bianbu-\*-desktop-\*.zip
+
+  Bianbu 桌面版本。
+
+- milkv-jupiter-bianbu-\*-minimal-\*.zip
+
+  Bianbu 命令行版本（无桌面）。
+
+- milkv-jupiter-bianbu-\*-nas-\*.zip
+
+  Bianbu NAS 版本，集成了开源 NAS 系统 `OpenMediaVault`。
+
+  开机后通过串口中执行 `ip a` 命令或者查看路由器后台等方式获取到 Jupiter 的 IP 地址，在 PC 的浏览器中通过该 IP 访问 `OpenMediaVault` 后台 Web 界面。
+
+  - 后台 Web 管理员账号： `admin`
+  - 密码： `openmediavault`
+
+- milkv-jupiter-bianbu-\*-kodbox-\*.zip
+
+  Bianbu Dodbox 版本集成了可道云 `Kodbox`。Kodbox 是一款轻量易用，安全可控的开源私有网盘系统。
+
+  开机后通过串口中执行 `ip a` 命令或者查看路由器后台等方式获取到 Jupiter 的 IP 地址，在 PC 的浏览器中通过该 IP 访问 `Kodbox` 后台 Web 界面，按照指导简单设置后即可使用。
+
 ### Fedora 41 (by [Fedora-V Force](https://github.com/fedora-riscv))
 
 下载链接：[https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/](https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/)
