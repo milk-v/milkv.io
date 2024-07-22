@@ -413,6 +413,24 @@ const sidebars = {
       items: [
         'jupiter/application-development/gcc',
         'jupiter/application-development/docker',
+        'jupiter/application-development/openmediavault',
+        'jupiter/application-development/dropbox',
+      ],
+    },
+    {
+      type: "category",
+      label: '🖥️ Build OS Images',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: '🖥️ Build OS Images',
+        description: 'Build OS Images for Jupiter',
+        slug: '/jupiter/build-os'
+      },
+      items: [
+        'jupiter/build-os/buildroot',
+        'jupiter/build-os/bianbu',
+        'jupiter/build-os/ubuntu',
       ],
     },
   ],
