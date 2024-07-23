@@ -236,6 +236,14 @@ Then execute the `reboot` command or power on again to make it take effect.
 DuoS has an onboard Ethernet interface, so the USB network port (RNDIS) of the Type C port can be used without switching to the USB 2.0 Host function of the A port.
 :::
 
+### Fixed ethernet port MAC address
+
+If you need to assign a fixed MAC address to the Ethernet port of DuoS, please execute the following command(**Replace the MAC address in the command with the MAC address you want to set, and please note that MAC addresses of different devices within the same network segment must not be duplicated**):
+```
+echo "pre-up ifconfig eth0 hw ether 78:01:B3:FC:E8:55" >> /etc/network/interfaces && sync
+```
+then reboot the board.
+
 ### UART Serial Console
 
 Connect USB to TTL serial cable as shown below. Do not connect the red wire.

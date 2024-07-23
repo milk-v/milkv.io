@@ -236,6 +236,14 @@ sync
 DuoS 有板载以太网接口，所以 Type C 口的 USB 网口(RNDIS)可以不用，一直保持切换为 A 口的 USB 2.0 Host 功能。
 :::
 
+### 固定网口 MAC 地址
+
+DuoS 以太网口 MAC 地址是随机分配的，这可能会导致每次重启之后，MAC 地址会变，路由器为网口分配的 IP 地址也会变，为了解决这个问题，可以使用如下命令配置一个固定的 MAC 地址(**替换命令中的 MAC 地址为你想使用的地址，另外注意在同一网段中，不能出现重复的 MAC 地址**)：
+```
+echo "pre-up ifconfig eth0 hw ether 78:01:B3:FC:E8:55" >> /etc/network/interfaces && sync
+```
+然后执行 reboot 命令或重新上电使其生效。
+
 ### UART 串口控制台
 
 如下图所示，连接USB到TTL串口模块，不要连接红线。
