@@ -35,6 +35,10 @@ Bianbu 系统的 `root` 账户默认密码为 `milkv`。
 
   Bianbu 桌面版本。
 
+  :::tip
+  桌面版本默认集成的 `pose-tracker` 和 `object-detection` 应用需要连接摄像头，当前硬件版本暂不支持。
+  :::
+
 - milkv-jupiter-bianbu-\*-minimal-\*.zip
 
   Bianbu 命令行版本（无桌面）。

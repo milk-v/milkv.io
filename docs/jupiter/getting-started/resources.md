@@ -35,6 +35,10 @@ The default password for the `root` account in the Bianbu system is `milkv`.
 
   Bianbu desktop version.
 
+  :::tip
+  The `pose-tracker` and `object-detection` applications integrated by default in the desktop require a camera connection, which is not supported by the current hardware version.
+  :::
+
 - milkv-jupiter-bianbu-\*-minimal-\*.zip
 
   Bianbu command line version (no desktop).
