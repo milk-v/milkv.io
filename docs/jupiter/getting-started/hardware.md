@@ -112,3 +112,18 @@ The `F_USB3` interface on the Jupiter board is compatible with the standard PC m
 | Vbus        | 19  |     |             |
 
 </div>
+
+## SATA power connector
+
+<Image src='/docs/jupiter/jupiter-interface-sata-power.webp' maxWidth='100%' align='left' />
+
+| PIN | Description |
+|:---:|:------------|
+| 1   | 5V          |
+| 2   | GND         |
+| 3   | GND         |
+| 4   | 12V         |
+
+Connector Specifications:
+
+<Image src='/docs/jupiter/jupiter-interface-sata-power-spec.webp' maxWidth='100%' align='left' />

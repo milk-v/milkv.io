@@ -112,3 +112,18 @@ Jupiter 主板上的 F_USB3 接口兼容标准 PC 主板 USB3.0 接口，引脚�
 | Vbus        | 19  |     |             |
 
 </div>
+
+## SATA 供电接口
+
+<Image src='/docs/jupiter/jupiter-interface-sata-power.webp' maxWidth='100%' align='left' />
+
+| PIN | Description |
+|:---:|:------------|
+| 1   | 5V          |
+| 2   | GND         |
+| 3   | GND         |
+| 4   | 12V         |
+
+连接器规格：
+
+<Image src='/docs/jupiter/jupiter-interface-sata-power-spec.webp' maxWidth='100%' align='left' />
