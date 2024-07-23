@@ -601,6 +601,12 @@ buzzer_test source:[https://github.com/milkv-duo/duo-arduino-examples/tree/maste
 
 Example code for the buzzer module, wired according to the code comments and burned to run. The buzzer plays three different frequencies of beeps in a loop.
 
+### Buzzer Play Wave
+
+buzzer_play_wave source:[https://github.com/milkv-duo/duo-arduino-examples/tree/master/buzzer_play_wave](https://github.com/milkv-duo/duo-arduino-examples/tree/master/buzzer_play_wave)
+
+Example code for the buzzer module, wired according to the code comments and burned to run. The buzzer first plays seven notes in the key of C major, and then plays "Two Tigers" in a loop.
+
 ### HC-SR04
 
 hc_sr04_test source:[https://github.com/milkv-duo/duo-arduino-examples/tree/master/hc_sr04_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/hc_sr04_test)

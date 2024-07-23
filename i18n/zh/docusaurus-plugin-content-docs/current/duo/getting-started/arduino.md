@@ -603,6 +603,12 @@ buzzer_test 代码目录：[https://github.com/milkv-duo/duo-arduino-examples/tr
 
 蜂鸣器模块示例代码，按代码注释接线后烧录运行，蜂鸣器循环播放三种频率的蜂鸣声。
 
+### Buzzer Play Wave
+
+buzzer_play_wave 代码目录：[https://github.com/milkv-duo/duo-arduino-examples/tree/master/buzzer_play_wave](https://github.com/milkv-duo/duo-arduino-examples/tree/master/buzzer_play_wave)
+
+蜂鸣器模块示例代码，按代码注释接线后烧录运行，蜂鸣器首先播放 C 大调 1-7 七个音调，然后循环播放“两只老虎”。
+
 ### HC-SR04
 
 hc_sr04_test 代码目录：[https://github.com/milkv-duo/duo-arduino-examples/tree/master/hc_sr04_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/hc_sr04_test)
