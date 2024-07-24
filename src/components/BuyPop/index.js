@@ -23,9 +23,10 @@ export default (props) => {
         },
         'duo-s': {
             arace_url: 'https://arace.tech/products/milkv-duo-s',
-            taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=770462822819&sku_properties=5919063:6536025',
+            taobao_url: 'https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-24811212567.16.4d92224f5Hci1u&id=770462822819&sku_properties=5919063:6536025',
             banli_url: 'https://spotpear.cn/category/Milk-V.html',
-            chilli_url: 'https://shop.plati.ma/products/milk-v-duo-s-512m-1ghz-dual-core-risc-v-arm-sbc?_pos=4&_fid=86ada3723&_ss=c'
+            chilli_url: 'https://shop.plati.ma/products/milk-v-duo-s-512m-1ghz-dual-core-risc-v-arm-sbc?_pos=4&_fid=86ada3723&_ss=c',
+            jd_url: 'https://ic-item.jd.com/10107306617970.html#crumb-wrap'
         },
         'duo-module-01': {
 
