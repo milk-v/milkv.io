@@ -98,6 +98,7 @@ const sidebars = {
         'duo/resources/xyzdims',
         'duo/resources/spilvgl',
         'duo/resources/third-party-img',
+        'duo/resources/upstream-status',
       ],
     },
     {
@@ -174,6 +175,7 @@ const sidebars = {
         'pioneer/resources/inferllm',
         'pioneer/resources/llvm',
         'pioneer/resources/zcc',
+        'pioneer/resources/upstream-status',
       ],
     },
     {
