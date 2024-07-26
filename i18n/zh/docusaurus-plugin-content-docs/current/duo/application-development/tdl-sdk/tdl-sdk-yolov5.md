@@ -87,7 +87,7 @@ Duo256M YOLOv5 代码位置：[sample_yolov5.cpp](https://github.com/milkv-duo/c
 model_transform.py \
 --model_name yolov5s \
 --model_def yolov5s.onnx \
---input_shapes [[1，3，640，640]] \
+--input_shapes [[1,3,640,640]] \
 --mean 0.0,0.0,0.0 \
 --scale 0.0039216,0.0039216,0.0039216 \
 --keep_aspect_ratio \
