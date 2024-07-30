@@ -117,12 +117,16 @@ The `F_USB3` interface on the Jupiter board is compatible with the standard PC m
 
 <Image src='/docs/jupiter/jupiter-interface-sata-power.webp' maxWidth='100%' align='left' />
 
+<div className='gpio_style'>
+
 | PIN | Description |
 |:---:|:------------|
 | 1   | 5V          |
 | 2   | GND         |
 | 3   | GND         |
 | 4   | 12V         |
+
+</div>
 
 Connector Specifications:
 
