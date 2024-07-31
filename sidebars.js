@@ -57,6 +57,7 @@ const sidebars = {
             'duo/application-development/tdl-sdk/tdl-sdk-yolov5',
             'duo/application-development/tdl-sdk/tdl-sdk-yolov6',
             'duo/application-development/tdl-sdk/tdl-sdk-yolov7',
+            'duo/application-development/tdl-sdk/tdl-sdk-yolov8'
           ],
         },
         {
