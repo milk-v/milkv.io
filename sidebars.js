@@ -422,11 +422,11 @@ const sidebars = {
     },
     {
       type: "category",
-      label: '🖥️ Build OS Images',
+      label: '🛠️ Build OS Images',
       collapsed: false,
       link: {
         type: 'generated-index',
-        title: '🖥️ Build OS Images',
+        title: '🛠️ Build OS Images',
         description: 'Build OS Images for Jupiter',
         slug: '/jupiter/build-os'
       },
