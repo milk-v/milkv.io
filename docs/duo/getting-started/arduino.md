@@ -42,7 +42,7 @@ At this point, the Duo development environment in Arduino IDE has been installed
 Currently, Duo's SD card system needs to burn firmware that supports Arduino. Please download the firmware with the prefix `arduino` from [Latest Release](https://github.com/milkv-duo/duo-buildroot-sdk/releases) firmware.
 
 :::tip
-The latest available Arduino firmware version is [Duo-V1.09](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.0.9).
+The latest available Arduino firmware version is [Duo-V1.1.2](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.1.2).
 :::
 
 Refer to [Boot the Duo](https://milkv.io/docs/duo/getting-started/boot) in the previous chapter to install the SD card system.
