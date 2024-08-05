@@ -63,3 +63,11 @@ Bianbu 系统的 `root` 账户默认密码为 `milkv`。
 下载链接：[https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/](https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/)
 
 系统 `root` 账户默认密码为 `riscv`。
+
+## 硬件资源下载 
+
+### V1.0
+- 原理图：[jupiter-sch-v1_0.pdf](https://github.com/milkv-jupiter/jupiter-files/blob/main/hardware/v1_0/jupiter-sch-v1_0.pdf)
+- 2d 文件：
+  - top面：[jupiter-2d-top-v1_0.pdf](https://github.com/milkv-jupiter/jupiter-files/blob/main/hardware/v1_0/jupiter-2d-top-v1_0.pdf)
+  - bot面：[jupiter-2d-bot-v1_0.pdf](https://github.com/milkv-jupiter/jupiter-files/blob/main/hardware/v1_0/jupiter-2d-bot-v1_0.pdf)

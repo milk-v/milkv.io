@@ -63,3 +63,11 @@ The default password for the `root` account in the Bianbu system is `milkv`.
 Download link: [https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/](https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/)
 
 The default password for the `root` account is `riscv`.
+
+## Hardware 
+
+### V1.0
+- Schematic: [jupiter-sch-v1_0.pdf](https://github.com/milkv-jupiter/jupiter-files/blob/main/hardware/v1_0/jupiter-sch-v1_0.pdf)
+- 2d files:
+  - top: [jupiter-2d-top-v1_0.pdf](https://github.com/milkv-jupiter/jupiter-files/blob/main/hardware/v1_0/jupiter-2d-top-v1_0.pdf)
+  - bot: [jupiter-2d-bot-v1_0.pdf](https://github.com/milkv-jupiter/jupiter-files/blob/main/hardware/v1_0/jupiter-2d-bot-v1_0.pdf)
