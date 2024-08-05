@@ -301,7 +301,7 @@ attempt=0
 log_file="/var/log/auto.sh.log"
 
 # Continuously attempt to detect if the interface exists, up to $max_attempts times
-echo "start auot.sh" > "$log_file"
+echo "start auto.sh" > "$log_file"
 while [ $attempt -lt $max_attempts ]; do
     # Check if the wlan0 interface exists
     ip link show "$interface" > /dev/null 2>&1
