@@ -27,8 +27,6 @@ https://github.com/milkv-duo/duo-arduino/releases/download/config/package_sg200x
 
 <Image src='/docs/duo/arduino/duo-arduino-01.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
-Please download the latest json file address from [Releases](https://github.com/milkv-duo/duo-arduino/releases).
-
 If you have configured other development board addresses before, separate them with commas, or click the icon on the right side of the address bar to bring up the window, and follow the prompts to add them.
 
 After configuring, select ``Board`` in the ``Tools`` menu, open the ``Boards Manager``, search for *SG200X*, and click ``Install``.

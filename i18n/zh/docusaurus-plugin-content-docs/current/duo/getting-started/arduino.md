@@ -27,8 +27,6 @@ https://github.com/milkv-duo/duo-arduino/releases/download/config/package_sg200x
 
 <Image src='/docs/duo/arduino/duo-arduino-01_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
-最新的 json 文件地址请到 [Releases](https://github.com/milkv-duo/duo-arduino/releases) 中下载。
-
 如果之前有配置其他开发板地址，用逗号隔开，或者点地址栏右侧的图标调出窗口，按提示添加。
 
 配置好之后在 ``工具`` 菜单中选择 ``开发板``，打开 ``开发板管理器``，搜索 *SG200X*，点击 ``安装``。
