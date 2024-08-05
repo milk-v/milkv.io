@@ -292,9 +292,7 @@ wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
 ```
 即可连接 WIFI，连接之后可以通过 `ifconfig` 或者 `ip a` 命令查看分配的 IP 地址。
 
-:::tip
-如果需要开机自动连网，可以把以下命令放到 `/mnt/system/auto.sh` 文件中。
-:::
+如果需要开机自动连接 WIFI，可以把以下命令放到 `/mnt/system/auto.sh` 文件中。
 
 ```bash
 interface="wlan0"
@@ -308,7 +306,7 @@ while [ $attempt -lt $max_attempts ]; do
     # Check if the wlan0 interface exists
     ip link show "$interface" > /dev/null 2>&1
     if [ $? -eq 0 ]; then
-        echo "$(date +'%Y-%m-%d %H:%M:%S') $interface interface exists, starting wpa_supplicant..." >> "$lo
+        echo "$(date +'%Y-%m-%d %H:%M:%S') $interface interface exists, starting wpa_supplicant..." >> "$log_file"
         wpa_supplicant -B -i "$interface" -c /etc/wpa_supplicant.conf >> "$log_file"
         break  # Exit the loop if the interface is found
     else
@@ -320,7 +318,7 @@ done
 
 # If the maximum number of attempts is reached and the interface still not found, output an error message
 if [ $attempt -eq $max_attempts ]; then
-    echo "$(date +'%Y-%m-%d %H:%M:%S') Interface $interface not found after $max_attempts attempts" >> "$lo
+    echo "$(date +'%Y-%m-%d %H:%M:%S') Interface $interface not found after $max_attempts attempts" >> "$log_file"
 fi
 ```
 

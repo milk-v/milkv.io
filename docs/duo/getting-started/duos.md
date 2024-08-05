@@ -291,9 +291,35 @@ wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
 ```
 You can connect to WIFI. After connecting, you can view the assigned IP address through the `ifconfig` or `ip a` command.
 
-:::tip
-If you need to automatically connect to the network at boot, you can put this command in the `/mnt/system/auto.sh` file.
-:::
+If you need to automatically connect to the WIFI when booting, you can put the following command in the `/mnt/system/auto.sh` file.
+
+```bash
+interface="wlan0"
+max_attempts=100
+attempt=0
+log_file="/var/log/auto.sh.log"
+
+# Continuously attempt to detect if the interface exists, up to $max_attempts times
+echo "start auot.sh" > "$log_file"
+while [ $attempt -lt $max_attempts ]; do
+    # Check if the wlan0 interface exists
+    ip link show "$interface" > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        echo "$(date +'%Y-%m-%d %H:%M:%S') $interface interface exists, starting wpa_supplicant..." >> "$log_file"
+        wpa_supplicant -B -i "$interface" -c /etc/wpa_supplicant.conf >> "$log_file"
+        break  # Exit the loop if the interface is found
+    else
+        echo "$(date +'%Y-%m-%d %H:%M:%S') $interface interface not found, waiting..." >> "$log_file"
+        sleep 1  # Wait for 1 second before checking again
+        attempt=$((attempt + 1))  # Increment the attempt counter
+    fi
+done
+
+# If the maximum number of attempts is reached and the interface still not found, output an error message
+if [ $attempt -eq $max_attempts ]; then
+    echo "$(date +'%Y-%m-%d %H:%M:%S') Interface $interface not found after $max_attempts attempts" >> "$log_file"
+fi
+```
 
 ### eMMC version firmware burning
 
