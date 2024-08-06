@@ -205,7 +205,7 @@ export default () => {
                                 <ul>
                                     <li>OpenGL ES 1.1/3.2</li>
                                     <li>EGL1.5</li>
-                                    <li>2.OpenCL 3.0</li>
+                                    <li>OpenCL 3.0</li>
                                     <li>Vulkan 1.3</li>
                                 </ul>
                             </td>
