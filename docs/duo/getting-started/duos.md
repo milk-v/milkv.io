@@ -326,7 +326,7 @@ fi
 The DuoS eMMC version does not have firmware burned and needs to be burned using a PC through the USB interface.
 
 :::tip
-Use the USB burning tool under Windows to support eMMC. The firmware version is [V1.1.0](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.1.0) or [latest version](https://github.com/milkv-duo/duo-buildroot-sdk/releases).
+Use the USB burning tool under Windows to support eMMC. The firmware version is [V1.1.2](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.1.2) or [latest version](https://github.com/milkv-duo/duo-buildroot-sdk/releases).
 :::
 
 #### Burning in Windows
@@ -341,7 +341,7 @@ Use the USB burning tool under Windows to support eMMC. The firmware version is 
 
 3. Download firmware
 
-   Download the latest version of DuoS eMMC firmware, currently [milkv-duos-emmc-v1.1.0-2024-0410.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.1.0/milkv-duos-emmc-v1.1.0-2024-0410.zip), you can create a new rom folder in the burning tool `CviBurn_v2.0_cli_windows` directory, and extract the downloaded eMMC firmware compressed package to rom directory, the directory structure of the burning tool is as follows:
+   Download the latest version of DuoS eMMC firmware, currently [milkv-duos-emmc-v1.1.2-2024-0801.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.1.2/milkv-duos-emmc-v1.1.2-2024-0801.zip), you can create a new rom folder in the burning tool `CviBurn_v2.0_cli_windows` directory, and extract the downloaded eMMC firmware compressed package to rom directory, the directory structure of the burning tool is as follows:
 
    ```
    └───CviBurn_v2.0_cli_windows
