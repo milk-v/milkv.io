@@ -500,7 +500,7 @@ index 2bc8cd5e3..e78901afb 100644
 
 SDK 中 Buildroot 默认开启了顶层并行编译以加快编译速度，但是编译出错时，不方便分析出错的日志，所以我们可以先在 config 文件中将其删除，待排解决了问题之后，再将其重新打开。
 
-以 `milkv-duo-sd` 目标为例，在其配置文件中将该配置删除后，重新编译：
+以 `milkv-duo-sd` 目标为例，在其配置文件中将该配置删除后，再删除 `buildroot-2021.05/output` 目录，重新编译：
 
 ```bash title="buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig"
 BR2_PER_PACKAGE_DIRECTORIES=y

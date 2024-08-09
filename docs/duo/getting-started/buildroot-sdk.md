@@ -506,7 +506,7 @@ index 2bc8cd5e3..e78901afb 100644
 
 Buildroot in the SDK enables top-level parallel compilation by default to speed up compilation. However, when a compilation error occurs, it is inconvenient to analyze the error log, so we can delete it in the config file first, and then reopen it after the problem is solved.
 
-Taking the `milkv-duo-sd` target as an example, delete the configuration in its configuration file and recompile:
+Take the `milkv-duo-sd` target as an example. After deleting the line in its configuration file, delete the `buildroot-2021.05/output` directory and recompile:
 
 ```bash title="buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig"
 BR2_PER_PACKAGE_DIRECTORIES=y
