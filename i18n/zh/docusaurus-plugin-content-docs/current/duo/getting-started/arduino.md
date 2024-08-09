@@ -70,11 +70,19 @@ reboot
 
 <Image src='/docs/duo/arduino/duo-arduino-05_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
-在 Arduino IDE 的 ``文件`` 菜单中依次打开 ``示例`` > ``01.Basics`` > ``Blink`` 测试程序，该程序功能实现的是 Arduino 设备板载 LED 闪烁，Duo 中也是支持的，你也许需要安装 pyserial 来支持上传功能，之后我们直接点 ``上传`` 按钮进行测试：
+在 Arduino IDE 的 ``文件`` 菜单中依次打开 ``示例`` > ``01.Basics`` > ``Blink`` 测试程序，该程序功能实现的是 Arduino 设备板载 LED 闪烁，Duo 中也是支持的，您也许需要安装 ```pyserial``` 来支持上传功能，之后我们直接点 ``上传`` 按钮进行测试：
 
 <Image src='/docs/duo/arduino/duo-arduino-06_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
 此时，可以看到 Duo 板载的 LED 间隔1秒闪烁。
+
+:::tip
+在编译下载代码之前，请确保您的计算机中安装了 ```python``` 环境，并正确的配置了环境变量，缺少 ```python``` 环境可能造成代码无法编译和下载。
+
+若您无法下载固件到开发板，请您首先检查 ```pyserial``` 是否安装，若没有安装，您可以执行 ```pip install pyserial``` 来安装。
+
+若您在安装 ```pyserial``` 后仍不能将代码上传到开发板，请检查您的计算机中是否安装了 ```serial``` ，同时安装 ```pyserial``` 和 ```serial``` 可能造成固件无法下载，请您执行 ```pip uninstall serial``` 将 ```serial``` 卸载。
+:::
 
 ## 二、Duo Arduino 引脚资源分配
 

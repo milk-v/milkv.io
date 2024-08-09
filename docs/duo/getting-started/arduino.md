@@ -70,11 +70,19 @@ Search for "duo", select ``Duo Dev Module`` for Duo, select ``Duo256 Dev Module`
 
 <Image src='/docs/duo/arduino/duo-arduino-05.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
-Open the ``Examples`` > ``01.Basics`` > ``Blink`` test program in the ``File`` menu of the Arduino IDE. The function of this program is to blink the onboard LED of the Arduino device. In Duo It is also supported. You may need to install pyserial in order to upload, and then let’s just click the ``Upload`` button to test:
+Open the ``Examples`` > ``01.Basics`` > ``Blink`` test program in the ``File`` menu of the Arduino IDE. The function of this program is to blink the onboard LED of the Arduino device. In Duo It is also supported. You may need to install ```pyserial``` in order to upload, and then let’s just click the ``Upload`` button to test:
 
 <Image src='/docs/duo/arduino/duo-arduino-06.jpg' minWidth='40%' maxWidth='100%' align='left' />
 
 At this time, you can see the LED on the Duo board blinking at intervals of 1 second.
+
+:::tip
+Before compiling and downloading the code, please make sure that you have installed the ```python``` environment on your computer and configured the environment variables correctly. The lack of the ```python``` environment may cause the code to fail to compile and download.
+
+If you cannot download the firmware to the Duo, please check whether ```pyserial``` is installed first. If not, you can execute ```pip install pyserial``` to install it.
+
+If you still cannot upload code to the Duo after installing ```pyserial```, please check whether ```serial``` is installed on your computer. Installing both ```pyserial``` and ```serial``` at the same time may cause the firmware to fail to download. Please run ```pip uninstall serial``` to uninstall ```serial```.
+:::
 
 ## 2. Duo Arduino pin resource
 

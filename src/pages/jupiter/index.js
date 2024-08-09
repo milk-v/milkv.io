@@ -183,7 +183,7 @@ export default () => {
                         <tr>
                             <td className={styles.tabline}>SoC</td>
                             <td className={styles.tabP}>
-                                <p>SPACEMIT K1/M1, Otca-core X60™(RV64GCVB), RVA22, RVV1.0</p>
+                                <p>SPACEMIT K1/M1, Octa-core X60™(RV64GCVB), RVA22, RVV1.0</p>
                             </td>
                         </tr>
                         <tr>
