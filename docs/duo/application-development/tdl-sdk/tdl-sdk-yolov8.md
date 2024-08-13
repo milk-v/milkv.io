@@ -7,6 +7,14 @@ sidebar_position: 21
 
 This test program will infer the yolov8 model to achieve target detection, and the results are only output in the form of printing.
 
+## Download the precompiled cvimodel
+
+```
+
+git clone https://github.com/zwyzwm/YOLOv8-Object-Detection.git
+
+```
+
 ## PC-side cross-compilation YOLO program
 
 Duo256M yolov8 code location: sample_yolov8.cpp
