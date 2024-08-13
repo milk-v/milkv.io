@@ -14,13 +14,13 @@ sidebar_position: 21
 
 ### 1.2 软件准备
 - 下载并安装 [balenaEtcher](https://etcher.balena.io/)
-- 下载 [图片](https://milkv.io/docs/pioneer/getting-started/download)  
- 在 [下载页面](https://milkv.io/docs/pioneer/getting-started/download) 中选择所需图像, 这里以Fedora 38为例。
+- 下载 [镜像](https://milkv.io/docs/pioneer/getting-started/download)  
+ 在 [下载页面](https://milkv.io/docs/pioneer/getting-started/download) 中选择所需镜像, 这里以Fedora 38为例。
 
 ![downloadpage](/docs/pioneer/downloadpage.png)
 ## 2. 将程序刻录到MicroSD卡上
 
-### 2.1 使用BalenaEtcher来刻录图像
+### 2.1 使用BalenaEtcher来刻录镜像
 a.点击Flash from file按钮，选择 
 fedora-disk-gnome-workstation_riscv64-f38-20230515-035559-milkv.raw.xz（以下简称**fedora38.raw.xz**），你要使用的。
 
