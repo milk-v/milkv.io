@@ -7,6 +7,14 @@ sidebar_position: 21
 
 该测试程序会推理 yolov8 模型实现目标检测， 结果仅以打印的形式输出。
 
+## 下载预编译好的 cvimodel
+
+```
+
+git clone https://github.com/zwyzwm/YOLOv8-Object-Detection.git
+
+```
+
 ## pc端交叉编译YOLO程序
 
 Duo256M yolov8 代码位置：sample_yolov8.cpp
@@ -22,7 +30,11 @@ Duo256M yolov8 代码位置：sample_yolov8.cpp
 #### 导出 yolov8.onnx 模型
 > - 下载 yolov8 官方仓库代码，地址如下: https://github.com/ultralytics
 
-`git clone https://github.com/ultralytics`
+```
+
+git clone https://github.com/ultralytics
+
+```
 
 > - 下载对应的 yolov8 模型文件
 
