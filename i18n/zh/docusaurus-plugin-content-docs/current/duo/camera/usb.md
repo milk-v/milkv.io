@@ -7,19 +7,11 @@ sidebar_position: 15
 
 按照分步编译的步骤进行编译镜像
 
-可参考
-
-https://milkv.io/zh/docs/duo/getting-started/buildroot-sdk#2%E5%88%86%E6%AD%A5%E7%BC%96%E8%AF%91
-
-
+可参考:https://milkv.io/zh/docs/duo/getting-started/buildroot-sdk#2%E5%88%86%E6%AD%A5%E7%BC%96%E8%AF%91
 
 ## 1.配置系统内核
 
-执行 `defconfig cv1813h_milkv_duos_sd` 命令后
-
-打开内核配置：
-
-`menuconfig_kernel`
+执行 `defconfig cv1813h_milkv_duos_sd` 命令后，在运行命令` menuconfig_kernel `打开内核配置。
 
 ![set-kernel](/docs/duo/set-kernel.webp)
 ```
@@ -45,13 +37,9 @@ Device Drivers --->
    `<*>`USB support --->
       [ * ]USB announce new devices
  ```     
-  搜索 CONFIG_VIDEOBUF2_VMALLOC 是否=y，CONFIG_USB_VIDEO_CLASS 是否=y
+以上配置完成后，搜索 CONFIG_VIDEOBUF2_VMALLOC 是否=y，CONFIG_USB_VIDEO_CLASS 是否=y
 
-回到终端
-
-确认原始配置文件被修改：
-
-`git status `
+回到终端，运行命令` git status `确认原始配置文件被修改。
 
 ```
 milkv@milkv-desktop:~/Desktop/test/duo-buildroot-sdk$ git status
@@ -67,7 +55,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 ```
 
- 复制到原始配置文件：
+复制到原始配置文件：
 
 提示： /path/to/ 中的路径是自己的目录路径，可pwd查看
 
@@ -82,26 +70,19 @@ cp /home/milkv/Desktop/test/duo-buildroot-sdk/linux_5.10/build/cv1813h_milkv_duo
 ```
 
 
-接着回到分步编译继续接下来的步骤即可
-
-
-
+接着回到分步编译继续接下来的步骤即可。
 
 ## 2.检测是否识别到usb摄像头设备
 
-milkv-duos开启，在登陆终端上
-将type-A接口设置为USB 2.0 HOST口：
+milkv-duos开启，在登陆终端上，将type-A接口设置为USB 2.0 HOST口：
 ```
 ln -sf /mnt/system/usb-host.sh /mnt/system/usb.sh
 
 sync
 ```
-可参考:
-https://milkv.io/zh/docs/duo/getting-started/duos#usb-type-a-%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%BD%BF%E7%94%A8
+可参考:https://milkv.io/zh/docs/duo/getting-started/duos#usb-type-a-%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%BD%BF%E7%94%A8
 
-查看是否连接usb摄像头:
-
-`lsusb`
+运行命令` lsusb `，查看是否连接usb摄像头:
 
 ```
 Bus 001 Device 001: ID 1d6b:0002
@@ -109,13 +90,10 @@ Bus 001 Device 003: ID 4c4a:4c55
 Bus 001 Device 002: ID 05e3:0608
 ```
 
+拔掉usb摄像头后，只剩下一个，则说明已连接。
 
-拔掉usb摄像头后，只剩下一个，则说明已连接
+运行命令` ls /dev `查看是否识别到设备命令：
 
-
-查看是否识别到设备命令：
-
-`ls /dev `
 ```
 [root@milkv-duo]~# ls /dev
 bus          cvi-vo       cvi_vc_enc0  fd         i2c-4      ptmx       ttyS0
@@ -132,24 +110,19 @@ cvi-vi       cvi_vc_dec8  cvitekadac   i2c-3      null       tty
 
 ```
 
-出现video0，则已识别
+出现video0，则已识别。
 
 ## 3.执行测试程序
 
-下载解压uvctest.zip，
-在解压文件的地方打开终端
-进行程序测试
+下载解压uvctest.zip，在解压文件的地方打开终端，进行程序测试。
 
 ![open-terminal](/docs/duo/open-terminal.webp)
 
-在duo-buildroot-sdk文件所在页面打开一个新的终端
-
-进入到duo-buildroot-sdk/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl- 的目录
+在duo-buildroot-sdk文件所在页面打开一个新的终端，进入到` duo-buildroot-sdk/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl- `的目录。
 
 ![query-path](/docs/duo/query-path.webp)
 
-回到解压文件的目录终端，
-执行命令：
+回到解压文件的目录终端，执行命令：
 
 提示： /path/to/中的路径是自己的目录路径，可pwd查看
 
@@ -162,13 +135,11 @@ CROSS_COMPILE=/path/to/riscv64-unknown-linux-musl- make /path/to/riscv64-unknown
 CROSS_COMPILE=/home/milkv/Desktop/test/duo-buildroot-sdk/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl- make /home/milkv/Desktop/test/duo-buildroot-sdk/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc -static -W -Wall -g -mcpu=c906fdv -march=rv64imafdcv0p7xthead -mcmodel=medany -mabi=lp64d -o uvctest uvctest.c
 ```
 
-
-
 ## 4.显示所拍照片
 
-提示:在此之前，将网线连接好
+提示:在此之前，将网线连接好！
 
-返回到登陆终端，显示网络接口地址：  `ip addr`
+返回到登陆终端，运行命令` ip addr `显示网络接口地址。  
 
 ```
 [root@milkv-duo]~# ip addr
@@ -186,20 +157,18 @@ CROSS_COMPILE=/home/milkv/Desktop/test/duo-buildroot-sdk/host-tools/gcc/riscv64-
        valid_lft forever preferred_lft forever
 ```
 
-复制 inet addr: xxx
+复制 inet addr: xxx，回到解压文件的目录终端，执行命令：
 
-回到解压文件的目录终端 ，
-执行命令：
-
-`scp uvctest root@xxx:/root`
+```
+scp uvctest root@xxx:/root`
+```
 
 提示：@xxx（xxx是复制的inet addr）
 
-回到登陆终端，usb 摄像头拍照： 
+回到登陆终端，运行命令` ./uvctest /dev/video0 `，让 usb 摄像头拍照。
 
-` ./uvctest /dev/video0`
+注意：./uvctest后面要打一个空格！
 
-注意：./uvctest后面要打一个空格
 ```
 [root@milkv-duo]~# ./uvctest /dev/video0
 step 0: cvi_uvc_create start
@@ -236,37 +205,33 @@ test complete
 
 ```
 
-复制图片xxxx.jpg
+复制图片xxxx.jpg。
 
-提示 xxxx.jpg是所拍图片，由当时拍摄时间组成为xxxx
+提示 xxxx.jpg是所拍图片，由当时拍摄时间组成为xxxx。
 
-返回解压文件的目录终端终端，
-执行命令：
+返回解压文件的目录终端终端，执行命令：
 
-`scp root@xxx:/root/xxxx.jpg .`
+```
+scp root@xxx:/root/xxxx.jpg .
 
+```
 
 (提示：在jpg后面要打一个空格和.)    
 
-对图片可读的权限：
+打开对图片可读的权限：
 
-`sudo chmod 644 xxxx.jpg`
+```
+sudo chmod 644 xxxx.jpg
+```
 
-查看图片信息：
+运行命令` file xxxx.jpg `查看图片信息。
 
-file xxxx.jpg
-
-打开文件管理器：
-
-`nautilus .`
-
-（提示：在nautilus后面要打一个空格）
+打开文件管理器，即可看见图片。
 
 ![view-picture](/docs/duo/view-picture.webp)
 
 
 
-即可看见图片
 
 
 
