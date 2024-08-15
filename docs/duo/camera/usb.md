@@ -7,22 +7,17 @@ sidebar_position: 15
 
 Compile the image according to the steps of distributed compilation
 
-For reference：
-
-https://milkv.io/docs/duo/getting-started/buildroot-sdk#2-step-by-step-compilation
+For reference：https://milkv.io/docs/duo/getting-started/buildroot-sdk#2-step-by-step-compilation
 
 
 
 ## 1.Configuring the system kernel
 
-After executing the `defconfig  cv1813h_milkv_duos_sd` command
-
-Open the kernel configuration：
-
-`menuconfig_kernel`
+After executing the command `defconfig cv1813h_milkv_duos_sd`, run the command `menuconfig_kernel` to open the kernel configuration
 
 ![set-kernel](/docs/duo/set-kernel.webp)
 
+```
 Device Drivers --->
      `<*>`Multimedia support --->
         Media core support --->
@@ -44,14 +39,10 @@ Device Drivers --->
 Device Drivers --->
     `<*>`USB support --->
         [ * ]USB announce new devices
-        
-  Search whether CONFIG_VIDEOBUF2_VMALLOC =y，CONFIG_USB_VIDEO_CLASS =y
+```        
+After the above configuration is completed, search whether CONFIG_VIDEOBUF2_VMALLOC = y, CONFIG_USB_VIDEO_CLASS = y 
 
-Back to the terminal
-
-Confirm that the original configuration file has been modified：
-
-`git status `
+Back in the terminal, run the command ` git status ` to confirm that the original configuration file has been modified.
 
 ```
 milkv@milkv-desktop:~/Desktop/test/duo-buildroot-sdk$ git status
@@ -66,8 +57,6 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 
 ```
-
-
 
 Copy to original configuration file：
 
@@ -85,38 +74,27 @@ cp /home/milkv/Desktop/test/duo-buildroot-sdk/linux_5.10/build/cv1813h_milkv_duo
 
 Then go back to the step-by-step compilation and continue with the next steps to compile.
 
-
-
 ## 2.Check whether the USB camera device is recognized
 
-milkv-duos open，on the login terminal
-
-Set the type-A port to USB 2.0 HOST port：
+milkv-duos open，on the login terminal,Set the type-A port to USB 2.0 HOST port：
 ```
 ln -sf /mnt/system/usb-host.sh /mnt/system/usb.sh
 
 sync
 ```
-For reference:
-https://milkv.io/docs/duo/getting-started/duos#usage-of-usb-type-a-interface
+For reference:https://milkv.io/docs/duo/getting-started/duos#usage-of-usb-type-a-interface
 
-Check if the USB camera is connected:
-
-
-`lsusb`
+Run the command `lsusb` to check whether the USB camera is connected:
 
 ```
 Bus 001 Device 001: ID 1d6b:0002
 Bus 001 Device 003: ID 4c4a:4c55
 Bus 001 Device 002: ID 05e3:0608
 ```
-After unplugging the USB camera, only one is left, which means it is connected
 
+After unplugging the USB camera, only one is left, which means it is connected.
 
-
-Check whether the device command is recognized：
-
-`ls /dev `
+Run the command `ls /dev` to check whether the device command is recognized:
 
 ```
 [root@milkv-duo]~# ls /dev
@@ -134,18 +112,15 @@ cvi-vi       cvi_vc_dec8  cvitekadac   i2c-3      null       tty
 
 ```
 
-If video0 appears, it has been recognized
+If video0 appears, it has been recognized.
+
 ## 3.Execute the test program
 
-Download and unzip uvctest.zip,
-Open the terminal where the file is unzipped,
-Conduct program testing
+Download and unzip uvctest.zip,Open the terminal where the file is unzipped,Conduct program testing.
 
 ![open-terminal](/docs/duo/open-terminal.webp)
 
-Open a new terminal on the page where the duo-buildroot-sdk file is located
-
-Enter the directory of duo-buildroot-sdk/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-
+Open a new terminal on the page where the duo-buildroot-sdk file is located and enter the directory of `duo-buildroot-sdk/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-`.
 
 ![query-path](/docs/duo/query-path.webp)
 
@@ -162,13 +137,11 @@ for example：
 CROSS_COMPILE=/home/milkv/Desktop/test/duo-buildroot-sdk/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl- make /home/milkv/Desktop/test/duo-buildroot-sdk/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc -static -W -Wall -g -mcpu=c906fdv -march=rv64imafdcv0p7xthead -mcmodel=medany -mabi=lp64d -o uvctest uvctest.c
 ```
 
-
-
 ## 4.Show photos taken
 
-Tip: Before doing this, connect the network cable
+Tip: Before doing this, connect the network cable!
 
-Return to the login terminal and display the network interface address：  `ip addr`
+Return to the login terminal and run the command `ip addr` to display the network interface address.
 
 ```
 [root@milkv-duo]~# ip addr
@@ -188,18 +161,16 @@ Return to the login terminal and display the network interface address：  `ip a
 
 copy inet addr: xxx
 
-Go back to the terminal where you extracted the file,
-Excuting an order：
-
-`scp uvctest root@xxx:/root`
+Go back to the terminal where you extracted the file,Excuting an order：
+```
+scp uvctest root@xxx:/root
+```
 
 Tip：@xxx（xxx is inet addr:）
 
-Return to the login terminal and take pictures with the USB camera： 
+Go back to the login terminal and run the command ` ./uvctest /dev/video0 ` to let the USB camera take pictures.
 
-` ./uvctest /dev/video0`
-
-Notice：There should be a space after ./uvctest
+Notice：There should be a space after ./uvctest!
 
 ```
 [root@milkv-duo]~# ./uvctest /dev/video0
@@ -237,37 +208,29 @@ test complete
 
 ```
 
-Copy picture xxxx.jpg
+Copy picture xxxx.jpg.
 
-Tip: xxxx.jpg is the picture taken, which is composed of the shooting time at that time and becomes xxxx
+Tip: xxxx.jpg is the picture taken, which is composed of the shooting time at that time and becomes xxxx .
 
-Return to the directory where the unzipped file is located. Terminal,
-Excuting an order：
-
-`scp root@xxx:/root/xxxx.jpg .`
-
+Return to the directory where the unzipped file is located. Terminal,Excuting an order：
+```
+scp root@xxx:/root/xxxx.jpg .
+```
 
 (Tip: Enter a space and . after the jpg.)   
 
 Readable permissions for images:
+```
+sudo chmod 644 xxxx.jpg
+```
 
-`sudo chmod 644 xxxx.jpg`
+Run the command ` file xxxx.jpg ` to view the image information.
 
-View picture information:
-
-file xxxx.jpg
-
-Open the file manager:
-
-`nautilus .`
-
-(Tip: put a space after nautilus)
+Open the file manager and you will see the image.
 
 ![view-picture](/docs/duo/view-picture.webp)
 
 
-
-You can see the picture
 
 
 
