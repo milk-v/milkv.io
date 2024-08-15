@@ -127,6 +127,18 @@ const sidebars = {
         'duo/camera/usb'
       ],
     },
+    {
+      type: "category",
+      label: 'Accessories',
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'duo/Accessories/Pico-ePaper-2.13',
+      },
+      items: [
+        'duo/Accessories/Pico-ePaper-2.13'
+      ],
+    },
   ],
   pioneer: [
     {

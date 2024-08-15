@@ -5,6 +5,19 @@ sidebar_position: 25
 
 # Use Pico-ePaper-2.13 display on Duo S
 
+## Hardware Wiring
+
+```
+VSYS —— 3.3V    CS —— PIN11
+ 
+GND —— GND      RST —— PIN13
+
+BUSY —— PIN46   DIN —— PIN19
+
+DC —— PIN50     CLK —— PIN23
+
+```
+
 ## Build the operating environment
 
 Reference:` https://github.com/milkv-duo/duo-examples `

@@ -5,6 +5,18 @@ sidebar_position: 25
 
 # 在 Duo S 上使用 Pico-ePaper-2.13 显示屏
 
+## 硬件接线
+
+```
+VSYS —— 3.3V    CS —— PIN11
+ 
+GND —— GND      RST —— PIN13
+
+BUSY —— PIN46   DIN —— PIN19
+
+DC —— PIN50     CLK —— PIN23
+
+```
 ## 构建运行环境
 
 参考:` https://github.com/milkv-duo/duo-examples `
