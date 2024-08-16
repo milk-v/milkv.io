@@ -69,7 +69,7 @@ export default () => {
                 <li>
                     <p>Dimensions
                     </p>
-                    <p>XXXXX</p>
+                    <p>315*233*25mm</p>
                 </li>
             </ol>
         </main>
