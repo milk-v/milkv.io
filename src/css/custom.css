@@ -523,3 +523,8 @@ strong {
   font-family: Inter;
   src: url(/static/ttf/Inter.ttf);
 }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(/static/ttf/OpenSans-Regular.ttf);
+}
