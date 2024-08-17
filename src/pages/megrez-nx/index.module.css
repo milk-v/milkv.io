@@ -1,0 +1,117 @@
+.megreznx_main {
+    background-color: #1f1f1f;
+}
+
+.megreznx_gpu {
+    margin-bottom: 0 !important;
+}
+
+.black_text>span {
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1950px) {
+    .megreznx_main {
+        padding-bottom: 100px;
+    }
+
+    .size_view {
+        width: 300px !important;
+    }
+
+    .margin_size {
+        margin: 40px 0;
+    }
+
+    .black_text {
+        margin: 40px 0;
+    }
+
+    .black_text>span {
+        font-size: 32px;
+    }
+
+    .onboard {
+        margin-bottom: 27px !important;
+    }
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1450px) {
+    .megreznx_main {
+        padding-bottom: 100px;
+    }
+
+    .size_view {
+        width: 300px !important;
+    }
+
+    .margin_size {
+        margin: 40px 0;
+    }
+
+    .black_text {
+        margin: 40px 0;
+    }
+
+    .black_text>span {
+        font-size: 32px;
+    }
+
+    .onboard {
+        margin-bottom: 27px !important;
+    }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 1000px) {
+    .megreznx_main {
+        padding-bottom: 80px;
+    }
+
+    .size_view {
+        width: 50% !important;
+        transform: translateX(60px) !important;
+    }
+
+    .margin_size {
+        margin: 30px 0;
+    }
+
+    .black_text {
+        margin: 30px 0;
+    }
+
+    .black_text>span {
+        font-size: 32px;
+    }
+
+    .onboard {
+        margin-bottom: 15px !important;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 750px) {
+    .megreznx_main {
+        padding-bottom: 60px;
+    }
+
+    .size_view {
+        width: 50% !important;
+        transform: translateX(20%) !important;
+    }
+
+    .margin_size {
+        margin: 30px 0;
+    }
+
+    .black_text {
+        margin: 20px 0;
+    }
+
+    .black_text>span {
+        font-size: 24px;
+    }
+
+    .onboard {
+        margin-bottom: 15px !important;
+    }
+}
