@@ -275,12 +275,35 @@ const Home_web = () => {
         </div>
       </div>
       <div className={styles.black_shore}>
-        <div className={clsx(styles.docs_link, styles.ubuntu_milkv)}>
-          <div>
-            <img src='/home/milkv-ubuntu.svg' alt='milkv docs' />
-            <p>Milk-V & Ubuntu: Crafting Ubuntu as the Best OS for RISC-V</p>
-          </div>
-          <Link to='https://canonical.com/blog/canonical-enables-ubuntu-on-milk-v-mars' className={styles.docs_a}><Translate id='homepage.corporations.docslearnmore' /></Link>
+        <div className={styles.new_products}>
+          <p>5 Leading New RISC-V Products Coming Soon</p>
+          <ol>
+            <li>
+              <img src='/home/megrez.webp' alt='Milk-V Megrez' />
+              <p>Milk-V Megrez</p>
+              <Link to="/megrez">Learn More</Link>
+            </li>
+            <li>
+              <img src='/home/jupiter-nx.webp' alt='Milk-V Jupiter NX' />
+              <p>Milk-V Jupiter NX</p>
+              <Link to="/jupiter-nx">Learn More</Link>
+            </li>
+            <li>
+              <img src='/home/megrez-nx.webp' alt='Milk-V Megrez NX' />
+              <p>Milk-V Megrez NX</p>
+              <Link to="megrez-nx">Learn More</Link>
+            </li>
+            <li>
+              <img src='/home/cluster08.webp' alt='Milk-V Cluster 08' />
+              <p>Milk-V Cluster 08</p>
+              <Link to="/cluster-08">Learn More</Link>
+            </li>
+            <li>
+              <img src='/home/ruyibook.webp' alt='RuyiBook' />
+              <p>RuyiBook</p>
+              <Link to="/ruyibook">Learn More</Link>
+            </li>
+          </ol>
         </div>
         <ul className={styles.tab} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           {tabs.map((tab, idx) => (

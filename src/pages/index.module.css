@@ -432,13 +432,56 @@
     text-decoration: none;
 }
 
-.ubuntu_milkv>div>p {
+.new_products {
+    border-radius: 20px;
+    background-color: #2D88C9;
+    overflow: hidden;
+}
+
+.new_products>p {
     color: #FFF;
+    font-family: Roboto2;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.new_products>ol {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.new_products>ol>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.new_products>ol>li>img {
+    width: 100%;
+}
+
+.new_products>ol>li>p {
+    color: #000;
+    text-align: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 0;
+}
+
+.new_products>ol>li>a {
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid #000;
 }
 
 @media screen and (min-width: 1950px) {
@@ -547,16 +590,6 @@
         margin: 150px auto;
     }
 
-    .ubuntu_milkv {
-        height: 160px;
-        padding: 0 45px;
-        margin: 100px auto;
-    }
-
-    .ubuntu_milkv>div>p {
-        font-size: 38px;
-    }
-
     .docs_info>h2 {
         font-size: 48px;
         margin-bottom: 20px;
@@ -613,6 +646,38 @@
         padding: 5px 45px;
         gap: 10px;
         font-size: 18px;
+    }
+
+    .new_products {
+        width: 1920px;
+        margin: 60px auto;
+        padding: 0 45px;
+    }
+
+    .new_products>p {
+        font-size: 38px;
+        margin: 50px 0;
+    }
+
+    .new_products>ol {
+        gap: 35px;
+        margin-bottom: 50px;
+    }
+
+    .new_products>ol>li {
+        padding: 30px 0;
+    }
+
+    .new_products>ol>li>p {
+        font-size: 28px;
+        margin: 10px 0 30px;
+    }
+
+    .new_products>ol>li>a {
+        width: 142px;
+        height: 38px;
+        padding: 5px 45px;
+        gap: 10px;
     }
 }
 
@@ -792,14 +857,36 @@
         bottom: 12%;
     }
 
-    .ubuntu_milkv {
-        height: 150px;
+    .new_products {
+        width: calc(1920px*.7);
+        margin: 60px auto;
         padding: 0 45px;
-        margin: 80px auto;
     }
 
-    .ubuntu_milkv>div>p {
-        font-size: 32px;
+    .new_products>p {
+        font-size: 30px;
+        margin: 40px 0;
+    }
+
+    .new_products>ol {
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    .new_products>ol>li {
+        padding: 20px 0;
+    }
+
+    .new_products>ol>li>p {
+        font-size: 24px;
+        margin: 10px 0 30px;
+    }
+
+    .new_products>ol>li>a {
+        width: 142px;
+        height: 38px;
+        padding: 5px 45px;
+        gap: 10px;
     }
 }
 
@@ -976,17 +1063,38 @@
         bottom: 10%;
     }
 
-    .ubuntu_milkv {
-        height: 120px;
-        padding: 0 30px;
+    .new_products {
+        width: calc(1920px*.7*.7);
+        margin: 60px auto;
+        padding: 0 45px;
     }
 
-    .ubuntu_milkv>div>img {
-        width: 250px;
+    .new_products>p {
+        font-size: 30px;
+        margin: 40px 0;
     }
 
-    .ubuntu_milkv>div>p {
-        font-size: 22px;
+    .new_products>ol {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    .new_products>ol>li {
+        padding: 20px 0;
+    }
+
+    .new_products>ol>li>p {
+        font-size: 24px;
+        margin: 10px 0 30px;
+    }
+
+    .new_products>ol>li>a {
+        width: 142px;
+        height: 38px;
+        padding: 5px 45px;
+        gap: 10px;
     }
 }
 
@@ -1166,17 +1274,38 @@
         bottom: 10%;
     }
 
-    .ubuntu_milkv {
-        height: 100px;
+    .new_products {
+        width: calc(1920px*.7*.7*.75);
+        margin: 60px auto;
         padding: 0 20px;
     }
 
-    .ubuntu_milkv>div>img {
-        width: 200px;
+    .new_products>p {
+        font-size: 24px;
+        margin: 30px 0;
     }
 
-    .ubuntu_milkv>div>p {
-        font-size: 18px;
+    .new_products>ol {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .new_products>ol>li {
+        padding: 20px 0;
+    }
+
+    .new_products>ol>li>p {
+        font-size: 20px;
+        margin: 10px 0 30px;
+    }
+
+    .new_products>ol>li>a {
+        width: 130px;
+        height: 38px;
+        padding: 5px 45px;
+        gap: 10px;
     }
 }
 
@@ -1407,19 +1536,6 @@
         bottom: 5%;
     }
 
-    .ubuntu_milkv {
-        height: 80rem;
-        padding: 0 20rem;
-    }
-
-    .ubuntu_milkv>div>img {
-        width: 150rem;
-    }
-
-    .ubuntu_milkv>div>p {
-        font-size: 12rem;
-    }
-
     .tab {
         display: grid;
         height: auto;
@@ -1428,5 +1544,40 @@
 
     .learnMore_use {
         gap: 0 10rem;
+    }
+
+    .new_products {
+        width: 95%;
+        margin: 30rem auto;
+        padding: 0 10rem;
+    }
+
+    .new_products>p {
+        font-size: 24rem;
+        margin: 20rem 0;
+    }
+
+    .new_products>ol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        margin-bottom: 30rem;
+    }
+
+    .new_products>ol>li {
+        padding: 20rem 0;
+    }
+
+    .new_products>ol>li>p {
+        font-size: 18rem;
+        margin: 10rem 0 20rem;
+    }
+
+    .new_products>ol>li>a {
+        width: 130rem;
+        height: 38rem;
+        padding: 5rem 45rem;
+        gap: 10rem;
+        font-size: 15rem;
     }
 }
