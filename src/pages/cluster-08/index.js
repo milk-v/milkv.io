@@ -2,8 +2,8 @@ import React from "react";
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
 import styles_s from '@site/src/pages/megrez/index.module.css';
-import styles_j from '@site/src/pages/jupiter-nx/index.module.css';
 import clsx from "clsx";
+import Subscribe from "@site/src/components/Subscribe";
 
 export default () => {
     return <Layout>
@@ -13,6 +13,7 @@ export default () => {
                 <p className={styles_s.pr_info}>Full Stack RISC-V Cluster</p>
             </div>
             <div className={styles.c_content}>
+                <Subscribe product='cluster-08' />
                 <div className={styles.flex_item}>
                     <div className={styles.contexts_module1}>
                         <div className={styles.contexts1}></div>

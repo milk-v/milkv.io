@@ -4,6 +4,7 @@ import styles from './index.module.css';
 import styles_s from '@site/src/pages/megrez/index.module.css';
 import styles_j from '@site/src/pages/jupiter-nx/index.module.css';
 import clsx from "clsx";
+import Subscribe from "@site/src/components/Subscribe";
 
 export default () => {
     return <Layout>
@@ -12,6 +13,7 @@ export default () => {
                 <h1 className={styles_s.pr_name}>Milk-V Megrez NX</h1>
                 <p className={styles_s.pr_info}>Comparable to NVIDIA Jetson Xavier NX</p>
             </div>
+            <Subscribe product='megrez-nx' />
             <div className={styles_j.j_content}>
                 <div className={styles_j.content_item}>
                     <p className={styles_j.feature_title}>Compatible with Jetson Xavier NX Baseboard

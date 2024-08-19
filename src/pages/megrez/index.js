@@ -3,14 +3,8 @@ import Layout from '@theme/Layout';
 import styles from './index.module.css';
 import styles_s from '@site/src/pages/jupiter/index.module.css';
 import styles_v from '@site/src/pages/vega/index.module.css';
-import Translate from '@docusaurus/Translate';
-import BuyPop from "../../components/BuyPop"
-import ContactUs from "../../components/ContactUs"
-// import ContactBar from "../../components/ContactBar"
-import MetaData from "../../components/MetaData"
-import Link from '@docusaurus/Link';
 import clsx from "clsx";
-
+import Subscribe from "@site/src/components/Subscribe";
 
 export default () => {
     return <Layout>
@@ -19,6 +13,7 @@ export default () => {
                 <h1 className={styles.pr_name}>Milk-V Megrez</h1>
                 <p className={styles.pr_info}>Another RISC-V AI PC Milestone</p>
             </div>
+            <Subscribe product='megrez' />
             <div className={clsx(styles_v.tabBox_tech, styles_s.tabBox_tech2)}>
                 <table className={styles_s.jupiter_table}>
                     <tbody>

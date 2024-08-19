@@ -1,0 +1,223 @@
+.subscribe_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe_box>img {
+    border-radius: 20px;
+}
+
+.subscribe_form>p {
+    color: #FFF;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 0;
+}
+
+.subForm {
+    flex: 1;
+}
+
+.subForm>input {
+    width: 100%;
+    color: #B1B1B1;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+}
+
+.subForm>button {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 66px;
+    background-color: #E1116A;
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    border: none;
+}
+
+@media screen and (min-width: 1950px) {
+    .subscribe_box {
+        gap: 70px;
+        margin-bottom: 100px;
+    }
+
+    .subscribe_box>img {
+        width: 640px;
+    }
+
+    .subscribe_form {
+        width: 730px;
+    }
+
+    .subscribe_form>p {
+        font-size: 43px;
+    }
+
+    .subForm>input {
+        margin: 20px 0;
+        height: 88px;
+        padding-left: 30px;
+        font-size: 32px;
+    }
+
+    .subForm>button {
+        height: 63px;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 66px;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1450px) {
+    .subscribe_box {
+        gap: 70px;
+        margin-bottom: 80px;
+    }
+
+    .subscribe_box>img {
+        width: 640px;
+    }
+
+    .subscribe_form {
+        width: 730px;
+    }
+
+    .subscribe_form>p {
+        font-size: 38px;
+    }
+
+    .subForm>input {
+        margin: 20px 0;
+        height: 88px;
+        padding-left: 30px;
+        font-size: 30px;
+    }
+
+    .subForm>button {
+        height: 63px;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 66px;
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 1000px) {
+    .subscribe_box {
+        gap: 49px;
+        margin-bottom: 60px;
+    }
+
+    .subscribe_box>img {
+        width: calc(640px*.7);
+    }
+
+    .subscribe_form {
+        width: calc(730px*.7);
+    }
+
+    .subscribe_form>p {
+        font-size: 26px;
+    }
+
+    .subForm>input {
+        margin: 20px 0;
+        height: 70px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .subForm>button {
+        height: 60px;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 66px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 750px) {
+    .subscribe_box {
+        gap: 50px;
+        margin-bottom: 40px;
+    }
+
+    .subscribe_box>img {
+        width: calc(640px*.55);
+    }
+
+    .subscribe_form {
+        width: calc(730px*.55);
+    }
+
+    .subscribe_form>p {
+        font-size: 20px;
+    }
+
+    .subForm>input {
+        margin: 15px 0;
+        height: 60px;
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    .subForm>button {
+        height: 50px;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 50px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .subscribe_box {
+        flex-direction: column;
+        margin-bottom: 40rem;
+        gap: 20rem;
+    }
+
+    .subscribe_box>img {
+        width: 100%;
+    }
+
+    .subscribe_form {
+        width: 100%;
+    }
+
+    .subscribe_form>p {
+        font-size: 20rem;
+    }
+
+    .subForm>input {
+        margin: 15rem 0;
+        height: 60rem;
+        padding-left: 20rem;
+        font-size: 16rem;
+    }
+
+    .subForm>button {
+        height: 50rem;
+        padding: 10rem;
+        gap: 10rem;
+        border-radius: 50rem;
+        font-size: 16rem;
+    }
+}

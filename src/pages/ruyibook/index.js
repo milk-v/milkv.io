@@ -2,7 +2,7 @@ import React from "react";
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
 import styles_s from '@site/src/pages/megrez/index.module.css';
-
+import Subscribe from "@site/src/components/Subscribe";
 
 export default () => {
     return <Layout>
@@ -12,6 +12,7 @@ export default () => {
                 <p className={styles_s.pr_info} style={{ color: '#000' }}>The world's first laptop powered by a open-source RISC-V processor
                 </p>
             </div>
+            <Subscribe product='ruyibook' theme='black' />
             <div className={styles.view_mian}>
                 <img src="/ruyibook/ruyibook-view1.webp" alt="Front View" />
                 <div>

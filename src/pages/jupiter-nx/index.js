@@ -2,7 +2,7 @@ import React from "react";
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
 import styles_s from '@site/src/pages/megrez/index.module.css';
-import clsx from "clsx";
+import Subscribe from "@site/src/components/Subscribe";
 
 export default () => {
     return <Layout>
@@ -12,6 +12,7 @@ export default () => {
                 <p className={styles_s.pr_info} style={{ color: '#000' }}>Replace your Jetson NANO</p>
             </div>
             <div className={styles.j_content}>
+                <Subscribe product='jupiter-nx' theme='black' />
                 <div className={styles.content_item}>
                     <p className={styles.feature_title}>Compatible with Jetson NANO<br /> Baseboard
                     </p>
