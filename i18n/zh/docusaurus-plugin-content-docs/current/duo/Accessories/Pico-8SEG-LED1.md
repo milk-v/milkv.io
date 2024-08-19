@@ -21,7 +21,7 @@ DIN —— PIN19
 
 参考：https://github.com/milkv-duo/duo-examples
 
-## 编译 C
+## 编译 c
 
 ```
 

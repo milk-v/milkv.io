@@ -21,7 +21,7 @@ DIN —— PIN19
 
 Reference: https://github.com/milkv-duo/duo-examples
 
-## Compile C
+## Compile c
 
 ```
 
