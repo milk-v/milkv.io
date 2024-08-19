@@ -22,6 +22,10 @@
 }
 
 @media screen and (min-width: 1950px) {
+    .m_width {
+        width: 1440px !important;
+    }
+
     .pr_title {
         margin: 160px 0 100px;
     }
@@ -36,6 +40,10 @@
 }
 
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
+    .m_width {
+        width: 1440px !important;
+    }
+
     .pr_title {
         margin: 130px 0 80px;
     }

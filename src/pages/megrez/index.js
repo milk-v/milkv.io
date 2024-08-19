@@ -14,7 +14,7 @@ export default () => {
                 <p className={styles.pr_info}>Another RISC-V AI PC Milestone</p>
             </div>
             <Subscribe product='megrez' />
-            <div className={clsx(styles_v.tabBox_tech, styles_s.tabBox_tech2)}>
+            <div className={clsx(styles_v.tabBox_tech, styles_s.tabBox_tech2, styles.m_width)}>
                 <table className={styles_s.jupiter_table}>
                     <tbody>
                         <tr>
