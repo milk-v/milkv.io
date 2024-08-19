@@ -86,10 +86,9 @@ export default () => {
                     </div>
                 </div>
                 <div className={styles.ai}>
-                    <p>
+                    <p className={styles.feature_title}>
                         Half the price,
-                        <br />
-                        4 times the AI performance
+                        <font color="#0085FF">4 times the AI performance</font>
                     </p>
                     <img src="/jupiter-nx/chart.webp" alt="Half the price, 4 times the AI performance" />
                 </div>
