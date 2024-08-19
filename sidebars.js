@@ -138,7 +138,7 @@ const sidebars = {
       },
       items: [
         
-        'duo/Accessories/Pico-8SEG-LED',
+        'duo/Accessories/Pico-8SEG-LED'
       ],
     },
   ],
