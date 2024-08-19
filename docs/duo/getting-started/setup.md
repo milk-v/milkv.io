@@ -9,6 +9,10 @@ sidebar_position: 20
 
 We have enabled RNDIS and DHCP on the system by default in order to use USB network.
 
+:::tip
+`V1.1.2` and later firmware have replaced RNDIS with the more compatible `USB-NCM` as the USB virtual network, which can be used without drivers on Windows, Linux, and macOS. If your Windows system version is older, you may need to manually install the USB-NCM driver. Just select `UsbNcm Host Device` instead of `USB RNDIS Adapter` in step 7 of the following steps. The other steps are the same.
+:::
+
 ### Windows
 
 1. Connect the Duo to the computer via Type-C cable

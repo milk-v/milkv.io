@@ -7,7 +7,11 @@ sidebar_position: 20
 
 ## USBnet 设置
 
-为了使用USB网络，我们在系统上默认启用了RNDIS和DHCP。
+为了使用 USB 网络，我们在系统上默认启用了 RNDIS 和 DHCP。
+
+:::tip
+`V1.1.2` 以及之后的固件已将 RNDIS 替换为兼容性更好的 `USB-NCM` 做为 USB 虚拟网络，在 Windows，Linux，macOS 上均可免驱使用。如果您的 Windows 系统版本比较旧，可能需要您手动安装 USB-NCM 的驱动，只需在如下步骤中的第 7 步选择 `UsbNcm Host Device`，而不是 `USB RNDIS Adapter`，其他步骤一样。
+:::
 
 ### Windows
 
@@ -17,7 +21,7 @@ sidebar_position: 20
 
 ![rndis-step1](/docs/duo/rndis-step1.png)
 
-3. 选择 "RNDIS "并右键单击以更新驱动程序。
+3. 选择 "RNDIS" 并右键单击以更新驱动程序。
 
 ![rndis-step2](/docs/duo/rndis-step2.png)
 
@@ -55,9 +59,9 @@ sidebar_position: 20
 
 ### Linux
 
-一般来说，Linux可以使用RNDIS而无需配置。
+一般来说，Linux 可以使用 RNDIS 而无需配置。
 
-你可以使用命令ip来检查usb0网络。
+你可以使用命令 ip 来检查 usb0 网络。
 
 ```
 neko@milk-v:~ sudo dmesg | grep usb0
