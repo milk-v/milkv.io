@@ -294,7 +294,7 @@ const Home_web = () => {
               <Link to="megrez-nx">Learn More</Link>
             </li>
             <li>
-              <img src='/home/cluster08.webp' alt='Milk-V Cluster 08' />
+              <img src='/home/cluster-08.webp' alt='Milk-V Cluster 08' />
               <p>Milk-V Cluster 08</p>
               <Link to="/cluster-08">Learn More</Link>
             </li>
