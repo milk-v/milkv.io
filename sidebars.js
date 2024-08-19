@@ -136,7 +136,8 @@ const sidebars = {
         id: 'duo/Accessories/Pico-ePaper-2.13',
       },
       items: [
-        'duo/Accessories/Pico-ePaper-2.13'
+        'duo/Accessories/Pico-ePaper-2.13',
+        'duo/Accessories/Pico-8SEG-LED'
       ],
     },
   ],
