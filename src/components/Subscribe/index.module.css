@@ -191,8 +191,10 @@
 @media screen and (max-width: 750px) {
     .subscribe_box {
         flex-direction: column;
+        margin: 0 auto;
         margin-bottom: 40rem;
         gap: 20rem;
+        width: 350rem;
     }
 
     .subscribe_box>img {
