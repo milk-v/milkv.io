@@ -11,7 +11,7 @@ export default () => {
         <main className={styles.__main}>
             <div className={styles.pr_title}>
                 <h1 className={styles.pr_name}>Milk-V Megrez</h1>
-                <p className={styles.pr_info}>Another RISC-V AI PC Milestone</p>
+                <p className={styles.pr_info}>New RISC-V AI PC Milestone</p>
             </div>
             <Subscribe product='megrez' />
             <div className={clsx(styles_v.tabBox_tech, styles_s.tabBox_tech2, styles.m_width)}>
@@ -117,7 +117,7 @@ export default () => {
                             <td>Power</td>
                             <td>
                                 <p>1x Standard 24-Pin ATX Power Supply Interface</p>
-                                <p>1x 12V DC Power Jack(55x25mm)</p>
+                                <p>1x 12V DC Power Jack(5.5x2.5mm)</p>
                             </td>
                         </tr>
                         <tr>
