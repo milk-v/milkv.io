@@ -76,7 +76,7 @@ export default () => {
                         <tr>
                             <td>Ethernet</td>
                             <td>
-                                <p>12x Gigabit Ethernet Port</p>
+                                <p>1x Gigabit Ethernet Port</p>
                             </td>
                         </tr>
                         <tr>
