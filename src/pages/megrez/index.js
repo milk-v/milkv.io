@@ -26,7 +26,7 @@ export default () => {
                         <tr>
                             <td>CPU</td>
                             <td>
-                                <p>4-Core SIFIVE P550(RISC-V RV64CG)@1.6GHz</p>
+                                <p>4-Core SIFIVE P550(RISC-V RV64GC)@1.6GHz</p>
                             </td>
                         </tr>
                         <tr>
