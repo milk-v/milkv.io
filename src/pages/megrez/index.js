@@ -56,7 +56,7 @@ export default () => {
                             <td>Storage</td>
                             <td>
                                 <p>1x SPI Flash for boot</p>
-                                <p>1x M.2 M Key Connector for M.2 NVMe SSD (PCIe 2.0 x2)</p>
+                                <p>1x M.2 M Key Connector for M.2 SATA SSD(SATA3)</p>
                                 <p>1x eMMC Connector</p>
                                 <p>1x microSD Card Slot</p>
                             </td>
