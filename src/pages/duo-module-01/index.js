@@ -55,35 +55,35 @@ export default () => {
                             <p className={clsx(styles.ov_title)}>Compatible with Duo / DuoS Software Ecosystem</p>
                             <ol>
                                 <li>
-                                    <img src="/duom01/software1.webp" />
-                                    <p>Builtroot</p>
+                                    <img src="/duom01/software1.webp" alt="Buildroot" />
+                                    <p>Buildroot</p>
                                 </li>
                                 <li>
-                                    <img src="/duom01/software2.webp" />
+                                    <img src="/duom01/software2.webp" alt="Arduino IDE" />
                                     <p>Arduino IDE</p>
                                 </li>
                                 <li>
-                                    <img src="/duom01/software3.webp" />
+                                    <img src="/duom01/software3.webp" alt="Peripherals" />
                                     <p>Peripherals</p>
                                 </li>
                                 <li>
-                                    <img src="/duom01/software4.webp" />
+                                    <img src="/duom01/software4.webp" alt="Resources from Community" />
                                     <p>Resources from Community</p>
                                 </li>
                                 <li>
-                                    <img src="/duom01/software5.webp" />
+                                    <img src="/duom01/software5.webp"  alt="Ubuntu" />
                                     <p>Ubuntu</p>
                                 </li>
                                 <li>
-                                    <img src="/duom01/software6.webp" />
+                                    <img src="/duom01/software6.webp" alt="Debian" />
                                     <p>Debian</p>
                                 </li>
                                 <li>
-                                    <img src="/duom01/software7.webp" />
+                                    <img src="/duom01/software7.webp" alt="AliOS" />
                                     <p>AliOS</p>
                                 </li>
                                 <li>
-                                    <img src="/duom01/software8.webp" />
+                                    <img src="/duom01/software8.webp" alt="RT-Thread" />
                                     <p>RT-Thread</p>
                                 </li>
                             </ol>
