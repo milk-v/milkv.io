@@ -1200,5 +1200,61 @@
   "docs.contributors": {
     "description": "Contributors",
     "message": "Contributors"
+  },
+  "page.duo01.text1": {
+    "message": "Built-in Main Functions",
+    "description": " "
+  },
+  "page.duo01.text2": {
+    "message": "'Five' Core",
+    "description": " "
+  },
+  "page.duo01.text3": {
+    "message": "Compact size",
+    "description": " "
+  },
+  "page.duo01.text4": {
+    "message": "Compatible with Duo / DuoS Software Ecosystem",
+    "description": " "
+  },
+  "page.duo01.text5": {
+    "message": "Design Documentation Open Source",
+    "description": " "
+  },
+  "page.duo01.text6": {
+    "message": "Easily design your own baseboards",
+    "description": " "
+  },
+  "page.duo01.text7": {
+    "message": "Simple package design",
+    "description": " "
+  },
+  "page.duo01.text8": {
+    "message": "Minimum of two layers of boards",
+    "description": " "
+  },
+  "page.duo01.text9": {
+    "message": "Supports customized firmware (burning to eMMC)",
+    "description": " "
+  },
+  "page.duo01.text10": {
+    "message": "Simple Production Process",
+    "description": " "
+  },
+  "page.duo01.text11": {
+    "message": "Supports SMD to Baseboard",
+    "description": " "
+  },
+  "page.duo01.text12": {
+    "message": "Evaluation Boards Available",
+    "description": " "
+  },
+  "page.duo01.text13": {
+    "message": "Open source Reference Design",
+    "description": " "
+  },
+  "page.duo01.text14": {
+    "message": "Complete Compliance Certification",
+    "description": " "
   }
 }

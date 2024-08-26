@@ -1074,5 +1074,61 @@
   "docs.contributors": {
     "description": "Contributors",
     "message": "贡献者"
+  },
+  "page.duo01.text1": {
+    "message": "核心功能全集成",
+    "description": " "
+  },
+  "page.duo01.text2": {
+    "message": "'五核'异构",
+    "description": " "
+  },
+  "page.duo01.text3": {
+    "message": "超小尺寸",
+    "description": " "
+  },
+  "page.duo01.text4": {
+    "message": "兼容 Duo/Duo S 软硬件生态",
+    "description": " "
+  },
+  "page.duo01.text5": {
+    "message": "设计资料全开源",
+    "description": " "
+  },
+  "page.duo01.text6": {
+    "message": "底板设计简单",
+    "description": " "
+  },
+  "page.duo01.text7": {
+    "message": "封装简单",
+    "description": " "
+  },
+  "page.duo01.text8": {
+    "message": "底板最简只需两层板",
+    "description": " "
+  },
+  "page.duo01.text9": {
+    "message": "支持定制化固件（预烧录至eMMC中）",
+    "description": " "
+  },
+  "page.duo01.text10": {
+    "message": "轻松地生产",
+    "description": " "
+  },
+  "page.duo01.text11": {
+    "message": "支持作为贴片元件使用",
+    "description": " "
+  },
+  "page.duo01.text12": {
+    "message": "提供评估板",
+    "description": " "
+  },
+  "page.duo01.text13": {
+    "message": "开放参考设计",
+    "description": " "
+  },
+  "page.duo01.text14": {
+    "message": "完善的合规性认证",
+    "description": " "
   }
 }
