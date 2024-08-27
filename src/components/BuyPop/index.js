@@ -87,7 +87,7 @@ export default (props) => {
     const text_data = {
         'crowdSupply_url': 'Crowd Supply',
         'other_url': 'Other countries and regions',
-        'arace_url': 'Arace Tech',
+        'arace_url': 'ARACE',
         'taobao_url': '淘宝',
         'jd_url': '京东',
         'mouser_url': 'Mouser',
@@ -99,7 +99,7 @@ export default (props) => {
     const product_pictures = {
         'home': '/components/buy-meles-view.webp',
         'duo': '/components/buy-duo-view.webp',
-        'duo-s': '/components/buy-duo-view.webp',
+        'duo-s': '/components/buy-duos-view.webp',
         'duo-module-01': '/components/duo-module-01-buy.webp',
         'pioneer': '/components/buy-pionner-view.webp',
         'mars': '/components/buy-mars-view.webp',
