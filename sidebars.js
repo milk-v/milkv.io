@@ -55,6 +55,7 @@ const sidebars = {
             'duo/application-development/tdl-sdk/tdl-sdk-introduction',
             'duo/application-development/tdl-sdk/tdl-sdk-face-detection',
             'duo/application-development/tdl-sdk/tdl-sdk-yolov5',
+            'duo/application-development/tdl-sdk/tdl-sdk-yolov8',
           ],
         },
         {
@@ -128,6 +129,20 @@ const sidebars = {
         'duo/camera/usb'
       ],
     },
+    {
+      type: "category",
+      label: 'Accessories',
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'duo/Accessories/TFT-ST7789',
+      },
+      items: [
+        'duo/Accessories/TFT-ST7789',
+        'duo/Accessories/Pico-ePaper-2.13',
+      ],
+    },
+     
   ],
   pioneer: [
     {
