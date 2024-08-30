@@ -128,6 +128,18 @@ const sidebars = {
         'duo/camera/usb'
       ],
     },
+    {
+      type: "category",
+      label: 'Accessories',
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'duo/Accessories/Pico-8SEG-LED',
+      },
+      items: [
+        'duo/Accessories/Pico-8SEG-LED',
+      ],
+    },
   ],
   pioneer: [
     {
