@@ -25,6 +25,16 @@ We have open sourced the Public Preliminary Datasheet and TRM of SG2002 to GitHu
 
 Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy samples of the SG2002 chip from our distributor [online store](https://arace.tech/products/sophon-cv1800b-5pcs) directly. For volume order, please contact [Milk-V Sales Team](mailto:sales@milkv.io) for the qoutation.
 
+## Getting Started
+
+### Installing the system
+
+Please refer to the [Start Up](https://milkv.io/docs/duo/getting-started/boot) section.
+
+### USB Network Usage
+
+Please refer to the [Setup](https://milkv.io/docs/duo/getting-started/setup) section.
+
 ## Duo256M GPIO Pinout
 
 <Image src='/docs/duo/duo256m/duo256m-pinout-01.webp' maxWidth='50%' align='center' />
@@ -108,6 +118,44 @@ Duo256M camera uses a 16-pin connector with a distance of 0.5 mm, which can be d
 </div>
 
 ## Duo256M User Guide
+
+### UART Serial Console
+
+Duo256M has a reserved UART debug serial port, which can be used to view the system startup log, or to log in to the console after the system starts and execute some terminal commands.
+
+#### USB-TTL Serial Cable
+
+The serial port level of Duo series is 3.3V.
+
+The pin definitions of common USB to TTL serial cables are as follows:
+
+<Image src='/docs/common/usb2ttl.webp' maxWidth='100%' align='left' />
+
+#### Connection
+
+Connect the USB to TTL serial cable as shown below, leaving the red wire unconnected.
+
+<div className='gpio_style'>
+
+| Milk-V Duo256M | \<---> | USB to TTL |
+| -------------- | ------ | ---------- |
+| TX (pin 16)    | \<---> | White wire |
+| RX (pin 17)    | \<---> | Green wire |
+| GND (pin 18)   | \<---> | Black wire |
+
+</div>
+
+<Image src='/docs/duo/duos/duos-serial-port.webp' maxWidth='100%' align='left' />
+
+The default serial port parameters of Duo256M are as follows:
+
+```
+baudrate: 115200
+data bit: 8
+stop bit: 1
+parity  : none
+flow control: none
+```
 
 ### RISC-V and ARM switching
 

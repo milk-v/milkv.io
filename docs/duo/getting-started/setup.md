@@ -23,43 +23,43 @@ If your Windows system is older, you need to manually install the CDC-NCM driver
 
 2. The `CDC NCM` device appears in the Device Manager with a yellow exclamation mark indicating that the driver is not installed.
 
-<Image src='/docs/duo/duo-usb-ncm_01.webp' maxWidth='80%' align='center' />
+<Image src='/docs/duo/duo-usb-ncm_01.webp' maxWidth='80%' align='left' />
 
-1. Select `CDC NCM` and right-click to select `Update Driver`.
+3. Select `CDC NCM` and right-click to select `Update Driver`.
 
-<Image src='/docs/duo/duo-usb-ncm_02.webp' maxWidth='80%' align='center' />
+<Image src='/docs/duo/duo-usb-ncm_02.webp' maxWidth='80%' align='left' />
 
 4. Select `Browse my computer for drivers`.
 
-<Image src='/docs/duo/duo-usb-ncm_03.webp' maxWidth='80%' align='center' />
+<Image src='/docs/duo/duo-usb-ncm_03.webp' maxWidth='80%' align='left' />
 
 5. Select `Let me pick from a list of available drivers on my computer`.
 
-<Image src='/docs/duo/duo-usb-ncm_04.webp' maxWidth='80%' align='center' />
+<Image src='/docs/duo/duo-usb-ncm_04.webp' maxWidth='80%' align='left' />
 
 6. Select `Network Adapters`.
 
-<Image src='/docs/duo/duo-usb-ncm_05.webp' maxWidth='80%' align='center' />
+<Image src='/docs/duo/duo-usb-ncm_05.webp' maxWidth='80%' align='left' />
 
-1. Select `Microsoft` in `Manufacturer` and `UsbNcm Host Device` in `Model`.
+7. Select `Microsoft` in `Manufacturer` and `UsbNcm Host Device` in `Model`.
 
-<Image src='/docs/duo/duo-usb-ncm_06.webp' maxWidth='80%' align='center' />
+<Image src='/docs/duo/duo-usb-ncm_06.webp' maxWidth='80%' align='left' />
 
 8. Ignore the warning message.
 
-<Image src='/docs/duo/duo-usb-ncm_07.webp' maxWidth='80%' align='center' />
+<Image src='/docs/duo/duo-usb-ncm_07.webp' maxWidth='80%' align='left' />
 
 9. The driver was installed successfully.
 
-<Image src='/docs/duo/duo-usb-ncm_08.webp' maxWidth='80%' align='center' />
+<Image src='/docs/duo/duo-usb-ncm_08.webp' maxWidth='80%' align='left' />
 
-1. Check `Network Adapter`, `UsbNcm Host Device` is displayed normally.
+10. Check `Network Adapter`, `UsbNcm Host Device` is displayed normally.
 
-<Image src='/docs/duo/duo-usb-ncm_09.webp' maxWidth='80%' align='center' />
+<Image src='/docs/duo/duo-usb-ncm_09.webp' maxWidth='80%' align='left' />
 
 11. Use the `ping` command to test.
 
-<Image src='/docs/duo/duo-usb-ncm_10.webp' maxWidth='80%' align='center' />
+<Image src='/docs/duo/duo-usb-ncm_10.webp' maxWidth='80%' align='left' />
 
 ### Linux & macOS
 
@@ -83,11 +83,11 @@ rtt min/avg/max/mdev = 2.003/2.081/2.132/0.059 ms
 
 1. Open the terminal and enter `ssh root@192.168.42.1`. The following prompt will appear for the first connection. Just enter `yes`.
 
-<Image src='/docs/duo/duo-usb-ncm_ssh_01.webp' maxWidth='80%' align='center' />
+<Image src='/docs/duo/duo-usb-ncm_ssh_01.webp' maxWidth='80%' align='left' />
 
 2. Enter the password `milkv` (the password will not be displayed) and log in successfully.
 
-<Image src='/docs/duo/duo-usb-ncm_ssh_02.webp' maxWidth='80%' align='center' />
+<Image src='/docs/duo/duo-usb-ncm_ssh_02.webp' maxWidth='80%' align='left' />
 
 ### Modify the IP address of the USB network
 
@@ -118,36 +118,4 @@ interface=usb0
 dhcp-range=192.168.42.2,192.168.42.242,1h
 dhcp-option=3
 dhcp-option=6
-```
-
-## UART Serial Console
-
-### USB to TTL serial cable
-
-Each pin of a USB-to-TTL cable is defined as follows:
-
-![usb2ttl](/docs/duo/usb2ttl.jpg)
-
-### Connection
-
-Connect USB to TTL serial cable as shown below. Do not connect the red wire.
-
-
-| Milk-V Duo   | \<---> | USB to TTL |
-| ------------ | ------ | ---------- |
-| TX (pin 16)  | \<---> | White wire |
-| RX (pin 17)  | \<---> | Green wire |
-| GND (pin 18) | \<---> | Black wire |
-
-
-![duo-serial](/docs/duo/duo-serial.jpg)
-
-The default serial setting for Duo u-boot and kernel console is:
-
-```
-baudrate: 115200
-data bit: 8
-stop bit: 1
-parity  : none
-flow control: none
 ```
