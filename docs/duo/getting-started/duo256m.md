@@ -145,7 +145,7 @@ Connect the USB to TTL serial cable as shown below, leaving the red wire unconne
 
 </div>
 
-<Image src='/docs/duo/duos/duos-serial-port.webp' maxWidth='100%' align='left' />
+<Image src='/docs/duo/duo/duo-duo256m-serial-port.webp' maxWidth='100%' align='left' />
 
 The default serial port parameters of Duo256M are as follows:
 
