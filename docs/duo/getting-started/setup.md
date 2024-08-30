@@ -81,6 +81,8 @@ rtt min/avg/max/mdev = 2.003/2.081/2.132/0.059 ms
 
 ## SSH
 
+### Windows
+
 1. Open the terminal and enter `ssh root@192.168.42.1`. The following prompt will appear for the first connection. Just enter `yes`.
 
    <Image src='/docs/duo/duo-usb-ncm_ssh_01.webp' maxWidth='80%' align='left' />
@@ -88,6 +90,8 @@ rtt min/avg/max/mdev = 2.003/2.081/2.132/0.059 ms
 2. Enter the password `milkv` (the password will not be displayed) and log in successfully.
 
    <Image src='/docs/duo/duo-usb-ncm_ssh_02.webp' maxWidth='80%' align='left' />
+
+## Others
 
 ### Modify the IP address of the USB network
 

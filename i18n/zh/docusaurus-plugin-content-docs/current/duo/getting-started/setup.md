@@ -81,6 +81,8 @@ rtt min/avg/max/mdev = 2.003/2.081/2.132/0.059 ms
 
 ## SSH
 
+### Windows
+
 1. 打开终端，输入 `ssh root@192.168.42.1`, 首次连接会有如下提示，直接输入 `yes`。
 
    <Image src='/docs/duo/duo-usb-ncm_ssh_01.webp' maxWidth='80%' align='left' />
@@ -88,6 +90,8 @@ rtt min/avg/max/mdev = 2.003/2.081/2.132/0.059 ms
 2. 输入密码 `milkv` (密码将不会显示)，登陆成功。
 
    <Image src='/docs/duo/duo-usb-ncm_ssh_02.webp' maxWidth='80%' align='left' />
+
+## 其他
 
 ### 修改 USB 网络的 IP 地址
 
