@@ -23,43 +23,43 @@ CDC-NCM 在 Linux，macOS，以及最新的 Windows 系统上都免驱的，您�
 
 2. `CDC NCM` 设备出现在设备管理器中，显示为黄色的感叹号表示未安装驱动。
 
-<Image src='/docs/duo/duo-usb-ncm_01_zh.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_01_zh.webp' maxWidth='80%' align='left' />
 
 3. 选择 `CDC NCM` 后右键选择 `更新驱动程序`。
 
-<Image src='/docs/duo/duo-usb-ncm_02_zh.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_02_zh.webp' maxWidth='80%' align='left' />
 
 4. 选择 `浏览我的电脑以查找驱动程序`。
 
-<Image src='/docs/duo/duo-usb-ncm_03_zh.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_03_zh.webp' maxWidth='80%' align='left' />
 
 5. 选择 `让我从计算机上的可用驱动程序列表中选取`。
 
-<Image src='/docs/duo/duo-usb-ncm_04_zh.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_04_zh.webp' maxWidth='80%' align='left' />
 
 6. 选择 `网络适配器`。
 
-<Image src='/docs/duo/duo-usb-ncm_05_zh.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_05_zh.webp' maxWidth='80%' align='left' />
 
 7. 在 `厂商` 中选择 `Microsoft`，`型号` 中选择 `UsbNcm Host Device`。
 
-<Image src='/docs/duo/duo-usb-ncm_06_zh.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_06_zh.webp' maxWidth='80%' align='left' />
 
 8. 忽略警告信息。
 
-<Image src='/docs/duo/duo-usb-ncm_07_zh.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_07_zh.webp' maxWidth='80%' align='left' />
 
 9. 驱动程序安装成功。
 
-<Image src='/docs/duo/duo-usb-ncm_08_zh.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_08_zh.webp' maxWidth='80%' align='left' />
 
 10. 检查 `网络适配器`，`UsbNcm Host Device` 已经正常显示。
 
-<Image src='/docs/duo/duo-usb-ncm_09_zh.webp' maxWidth='80%' align='left' />
+    <Image src='/docs/duo/duo-usb-ncm_09_zh.webp' maxWidth='80%' align='left' />
 
 11. 使用 `ping` 命令测试。
 
-<Image src='/docs/duo/duo-usb-ncm_10_zh.webp' maxWidth='80%' align='left' />
+    <Image src='/docs/duo/duo-usb-ncm_10.webp' maxWidth='80%' align='left' />
 
 ### Linux & macOS
 
@@ -83,11 +83,11 @@ rtt min/avg/max/mdev = 2.003/2.081/2.132/0.059 ms
 
 1. 打开终端，输入 `ssh root@192.168.42.1`, 首次连接会有如下提示，直接输入 `yes`。
 
-<Image src='/docs/duo/duo-usb-ncm_ssh_01.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_ssh_01.webp' maxWidth='80%' align='left' />
 
 2. 输入密码 `milkv` (密码将不会显示)，登陆成功。
 
-<Image src='/docs/duo/duo-usb-ncm_ssh_02.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_ssh_02.webp' maxWidth='80%' align='left' />
 
 ### 修改 USB 网络的 IP 地址
 

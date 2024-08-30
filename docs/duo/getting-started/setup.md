@@ -23,43 +23,43 @@ If your Windows system is older, you need to manually install the CDC-NCM driver
 
 2. The `CDC NCM` device appears in the Device Manager with a yellow exclamation mark indicating that the driver is not installed.
 
-<Image src='/docs/duo/duo-usb-ncm_01.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_01.webp' maxWidth='80%' align='left' />
 
 3. Select `CDC NCM` and right-click to select `Update Driver`.
 
-<Image src='/docs/duo/duo-usb-ncm_02.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_02.webp' maxWidth='80%' align='left' />
 
 4. Select `Browse my computer for drivers`.
 
-<Image src='/docs/duo/duo-usb-ncm_03.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_03.webp' maxWidth='80%' align='left' />
 
 5. Select `Let me pick from a list of available drivers on my computer`.
 
-<Image src='/docs/duo/duo-usb-ncm_04.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_04.webp' maxWidth='80%' align='left' />
 
 6. Select `Network Adapters`.
 
-<Image src='/docs/duo/duo-usb-ncm_05.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_05.webp' maxWidth='80%' align='left' />
 
 7. Select `Microsoft` in `Manufacturer` and `UsbNcm Host Device` in `Model`.
 
-<Image src='/docs/duo/duo-usb-ncm_06.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_06.webp' maxWidth='80%' align='left' />
 
 8. Ignore the warning message.
 
-<Image src='/docs/duo/duo-usb-ncm_07.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_07.webp' maxWidth='80%' align='left' />
 
 9. The driver was installed successfully.
 
-<Image src='/docs/duo/duo-usb-ncm_08.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_08.webp' maxWidth='80%' align='left' />
 
 10. Check `Network Adapter`, `UsbNcm Host Device` is displayed normally.
 
-<Image src='/docs/duo/duo-usb-ncm_09.webp' maxWidth='80%' align='left' />
+    <Image src='/docs/duo/duo-usb-ncm_09.webp' maxWidth='80%' align='left' />
 
 11. Use the `ping` command to test.
 
-<Image src='/docs/duo/duo-usb-ncm_10.webp' maxWidth='80%' align='left' />
+    <Image src='/docs/duo/duo-usb-ncm_10.webp' maxWidth='80%' align='left' />
 
 ### Linux & macOS
 
@@ -83,11 +83,11 @@ rtt min/avg/max/mdev = 2.003/2.081/2.132/0.059 ms
 
 1. Open the terminal and enter `ssh root@192.168.42.1`. The following prompt will appear for the first connection. Just enter `yes`.
 
-<Image src='/docs/duo/duo-usb-ncm_ssh_01.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_ssh_01.webp' maxWidth='80%' align='left' />
 
 2. Enter the password `milkv` (the password will not be displayed) and log in successfully.
 
-<Image src='/docs/duo/duo-usb-ncm_ssh_02.webp' maxWidth='80%' align='left' />
+   <Image src='/docs/duo/duo-usb-ncm_ssh_02.webp' maxWidth='80%' align='left' />
 
 ### Modify the IP address of the USB network
 
