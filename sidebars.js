@@ -22,7 +22,6 @@ const sidebars = {
         'duo/getting-started/duos',
         'duo/getting-started/boot',
         'duo/getting-started/setup',
-        'duo/getting-started/swap',
         'duo/getting-started/buildroot-sdk',
         'duo/getting-started/rtoscore',
         'duo/getting-started/8051core',
