@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Duo S (SG2000)'
+sidebar_label: 'Duo S(SG2000)'
 sidebar_position: 3
 ---
 

@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Duo (CV1800B)'
+sidebar_label: 'Duo(CV1800B)'
 sidebar_position: 0
 ---
 

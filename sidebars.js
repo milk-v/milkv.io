@@ -20,7 +20,6 @@ const sidebars = {
         'duo/getting-started/duo',
         'duo/getting-started/duo256m',
         'duo/getting-started/duos',
-        'duo/getting-started/duomodule01',
         'duo/getting-started/boot',
         'duo/getting-started/setup',
         'duo/getting-started/buildroot-sdk',

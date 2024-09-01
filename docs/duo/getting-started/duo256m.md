@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Duo 256M (SG2002)'
+sidebar_label: 'Duo256M(SG2002)'
 sidebar_position: 1
 ---
 
