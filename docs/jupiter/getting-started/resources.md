@@ -39,6 +39,25 @@ The default password for the `root` account in the Bianbu system is `milkv`.
   The `pose-tracker` and `object-detection` applications integrated by default in the desktop require a camera connection, which is not supported by the current hardware version.
   :::
 
+  The desktop version of the firmware exceeds the 2G size limit set by github, so it is compressed and uploaded in two packages with suffixes `001` and `002`. After downloading these two packages, you need to decompress them into a complete firmware package. In the graphical interface of Windows or Linux, right-click the `.001` file and use tools such as 7zip or winrar to decompress it. These tools generally support decompression in volumes. If you decompress in the Linux command line, please refer to the following decompression command in the Ubuntu system:
+
+  - Install the 7zip tool:
+    ```
+    sudo apt install p7zip-full
+    ```
+
+  - SD card version firmware:
+    ```
+    7za x milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.img.zip.001
+    ```
+    The full firmware package after extraction is: `milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.img.zip`
+
+  - eMMC and SSD version firmware:
+    ```
+    7za x milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.zip.001
+    ```
+    The full firmware package after extraction is: `milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.zip`
+
 - milkv-jupiter-bianbu-\*-minimal-\*.zip
 
   Bianbu command line version (no desktop).

@@ -39,6 +39,25 @@ Bianbu 系统的 `root` 账户默认密码为 `milkv`。
   桌面版本默认集成的 `pose-tracker` 和 `object-detection` 应用需要连接摄像头，当前硬件版本暂不支持。
   :::
 
+  Desktop 版本的固件超过了 github 所限制的 2G 大小，所以采用了分卷压缩的方式分成了两个包上传，后缀为 `001` 和 `002`，将这两个包下载后，需要先解压为一个完整的固件包。在 Windows 或 Linux 的图形界面中，在 `.001` 文件右键直接使用 7zip 或者 winrar 等工具直接解压即可，这类工具一般都支持分卷解压缩。如果是在 Linux 命令行中解压，请参考如下在 Ubuntu 系统中的解压命令：
+
+  - 安装 7zip 工具：
+    ```
+    sudo apt install p7zip-full
+    ```
+
+  - SD 卡版本固件：
+    ```
+    7za x milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.img.zip.001
+    ```
+    解压后的完整固件包为：`milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.img.zip`
+
+  - eMMC 和 SSD 版本固件：
+    ```
+    7za x milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.zip.001
+    ```
+    解压后的完整固件包为：`milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.zip`
+
 - milkv-jupiter-bianbu-\*-minimal-\*.zip
 
   Bianbu 命令行版本（无桌面）。
