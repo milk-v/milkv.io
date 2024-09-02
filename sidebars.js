@@ -436,6 +436,21 @@ const sidebars = {
         'jupiter/build-os/ubuntu',
       ],
     },
+    {
+      type: "category",
+      label: 'Development-Guide',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: 'Development-Guide',
+        description: 'Development Guide',
+        slug: '/jupiter/Development-Guide'
+      },
+      items: [
+        'jupiter/Development-Guide/Kernel-compilation',
+        
+      ],
+    },
   ],
 };
 
