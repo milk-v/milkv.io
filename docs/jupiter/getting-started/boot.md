@@ -44,10 +44,6 @@ The following uses the Spacemit `titanflasher` tool as an example to introduce t
 
 `titanflasher` currently provides versions for both X86(X64) and Linux platforms.
 
-:::tip
-We are sorry that the titanflasher tool interface is currently only available in Chinese. The English version will be released later.
-:::
-
 download link: [https://github.com/milkv-jupiter/jupiter-tools/releases/tag/titanflasher](https://github.com/milkv-jupiter/jupiter-tools/releases/tag/titanflasher)
 
 If prompted during Windows installation, select `Install this driver software anyway`.
@@ -56,7 +52,7 @@ If prompted during Windows installation, select `Install this driver software an
 :::tip
 When using the `titanflasher` tool to flash the firmware, the firmware will be unzipped to its workspace. Please check `Automatically clean up` in `Settings`, or manually delete unused files in the workspace directory to avoid cache files taking up too much system space after multiple flashes.
 :::
-<Image src='/docs/jupiter/titanflasher-35.webp' maxWidth='100%' align='left' />
+<Image src='/docs/jupiter/titanflasher-35-en.webp' maxWidth='100%' align='left' />
 
 ## Install OS to the SD card
 
@@ -69,23 +65,23 @@ After downloading, unzip it into a `.img` file.
 Insert the SD card into the PC through the card reader. Installing the system to the SD card will clear the original data in the SD card, so **note to back up important files in the card in advance**.
 
 1. Run the `titanflasher` tool and select "Development Tools".
-   <Image src='/docs/jupiter/titanflasher-01.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-01-en.webp' maxWidth='100%' align='left' />
 2. Select Card Startup.
-   <Image src='/docs/jupiter/titanflasher-02.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-02-en.webp' maxWidth='100%' align='left' />
 3. Click "Select SD Card" to select the target SD card.
-   <Image src='/docs/jupiter/titanflasher-03.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-03-en.webp' maxWidth='100%' align='left' />
 4. Click "Select Flash Package".
-   <Image src='/docs/jupiter/titanflasher-04.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-04-en.webp' maxWidth='100%' align='left' />
 5. Click "Local Image" and select the unzipped `.img` SD card image.
-   <Image src='/docs/jupiter/titanflasher-05.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-05-en.webp' maxWidth='100%' align='left' />
 6. Select "Burn Starter Card".
-   <Image src='/docs/jupiter/titanflasher-06.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-06-en.webp' maxWidth='100%' align='left' />
 7. Click "Execute".
-   <Image src='/docs/jupiter/titanflasher-07.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-07-en.webp' maxWidth='100%' align='left' />
 8. Click "OK".
-   <Image src='/docs/jupiter/titanflasher-08.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-08-en.webp' maxWidth='100%' align='left' />
 9. Start burning.
-   <Image src='/docs/jupiter/titanflasher-09.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-09-en.webp' maxWidth='100%' align='left' />
 
 When the burning progress bar shows 100%, the burning is complete. Insert the SD card with the burned system into the SD card slot of Jupiter, power on, and if the Desktop version of the system is installed, the display connected via HDMI will display the startup LOGO, and the system will enter the desktop after startup.
 
@@ -148,19 +144,19 @@ Note that you do not need to unzip the zip package after downloading it.
    <Image src='/docs/jupiter/jupiter-recovery.webp' maxWidth='100%' align='left' />
 
 3. Open the titanflasher tool, select `Development Tools`, and then select `Standalone Flashing`.
-   <Image src='/docs/jupiter/titanflasher-30.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-30-en.webp' maxWidth='100%' align='left' />
 
 4. Click `Scan Devices` and select the identified `dfu-device`.
-   <Image src='/docs/jupiter/titanflasher-31.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-31-en.webp' maxWidth='100%' align='left' />
 
 5. Click `Select Flash File`, select the zip system image, the tool will decompress it first, please wait for a while. If you need to restart automatically after the flash is completed, you can check `Auto-start after flashing`.
-   <Image src='/docs/jupiter/titanflasher-32.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-32-en.webp' maxWidth='100%' align='left' />
 
 6. Click `Start Flashing` to start burning.
-   <Image src='/docs/jupiter/titanflasher-33.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-33-en.webp' maxWidth='100%' align='left' />
 
 7. It will show that 100% of the burning is completed. You can power off and restart the board to enter the system.
-   <Image src='/docs/jupiter/titanflasher-34.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-34-en.webp' maxWidth='100%' align='left' />
 
 ### Using fastboot
 
