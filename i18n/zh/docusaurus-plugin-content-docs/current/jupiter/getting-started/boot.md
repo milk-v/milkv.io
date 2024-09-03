@@ -33,10 +33,6 @@ Jupiter 主板支持从 SD 卡，eMMC，SSD（M.2 NVMe）三种介质启动系�
 
   - 烧录到 SD 卡时，必须将 SD 卡通过读卡器插到 PC 上进行烧录。
 
-    :::tip
-    当前 titanflasher 工具还有点小问题，请先不要使用 titanflasher 烧录 `.zip` 镜像包到 SD 卡。
-    :::
-
 
 以下以使用进迭 `titanflasher` 工具为分例，分别介绍烧录到 SD 卡，SSD，和 eMMC 中的方法。
 

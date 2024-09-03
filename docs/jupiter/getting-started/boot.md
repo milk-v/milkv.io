@@ -33,16 +33,13 @@ Currently, Jupiter's image package formats mainly include the following two form
 
   - When burning to an SD card, the SD card must be inserted into the PC through a card reader for burning.
 
-    :::tip
-    Currently, the titanflasher tool still has some minor issues. Please do not use titanflasher to burn the `.zip` image package to the SD card yet.
-    :::
-
-
 The following uses the Spacemit `titanflasher` tool as an example to introduce the methods of burning to SD card, SSD, and eMMC respectively.
 
 ## Download and install the `titanflasher` tool
 
 `titanflasher` currently provides versions for both X86(X64) and Linux platforms.
+
+Sorry, the Linux version does not support English interface yet.
 
 download link: [https://github.com/milkv-jupiter/jupiter-tools/releases/tag/titanflasher](https://github.com/milkv-jupiter/jupiter-tools/releases/tag/titanflasher)
 
@@ -50,7 +47,7 @@ If prompted during Windows installation, select `Install this driver software an
 <Image src='/docs/jupiter/titanflasher-20-en.webp' maxWidth='100%' align='left' />
 
 :::tip
-When using the `titanflasher` tool to flash the firmware, the firmware will be unzipped to its workspace. Please check `Automatically clean up` in `Settings`, or manually delete unused files in the workspace directory to avoid cache files taking up too much system space after multiple flashes.
+When using the `titanflasher` tool to flash the firmware, the firmware will be unzipped to its workspace. Please check `Auto Clean` in `Settings`, or manually delete unused files in the workspace directory to avoid cache files taking up too much system space after multiple flashes.
 :::
 <Image src='/docs/jupiter/titanflasher-35-en.webp' maxWidth='100%' align='left' />
 
@@ -64,19 +61,19 @@ After downloading, unzip it into a `.img` file.
 
 Insert the SD card into the PC through the card reader. Installing the system to the SD card will clear the original data in the SD card, so **note to back up important files in the card in advance**.
 
-1. Run the `titanflasher` tool and select "Development Tools".
+1. Run the `titanflasher` tool and select "Dev Tools".
    <Image src='/docs/jupiter/titanflasher-01-en.webp' maxWidth='100%' align='left' />
-2. Select Card Startup.
+2. Select "SDcard Boot Disk".
    <Image src='/docs/jupiter/titanflasher-02-en.webp' maxWidth='100%' align='left' />
-3. Click "Select SD Card" to select the target SD card.
+3. Click "Select Storage" to select the target SD card.
    <Image src='/docs/jupiter/titanflasher-03-en.webp' maxWidth='100%' align='left' />
-4. Click "Select Flash Package".
+4. Click "Select File".
    <Image src='/docs/jupiter/titanflasher-04-en.webp' maxWidth='100%' align='left' />
-5. Click "Local Image" and select the unzipped `.img` SD card image.
+5. Click "Local File" and select the unzipped `.img` SD card image.
    <Image src='/docs/jupiter/titanflasher-05-en.webp' maxWidth='100%' align='left' />
-6. Select "Burn Starter Card".
+6. Select "Boot Card".
    <Image src='/docs/jupiter/titanflasher-06-en.webp' maxWidth='100%' align='left' />
-7. Click "Execute".
+7. Click "Start".
    <Image src='/docs/jupiter/titanflasher-07-en.webp' maxWidth='100%' align='left' />
 8. Click "OK".
    <Image src='/docs/jupiter/titanflasher-08-en.webp' maxWidth='100%' align='left' />
@@ -143,13 +140,13 @@ Note that you do not need to unzip the zip package after downloading it.
 2. Press and hold the RECOVERY button on the board or short the RECOVERY pins, then power on Jupiter to enter USB burning mode.
    <Image src='/docs/jupiter/jupiter-recovery.webp' maxWidth='100%' align='left' />
 
-3. Open the titanflasher tool, select `Development Tools`, and then select `Standalone Flashing`.
+3. Open the titanflasher tool, select `Dev Tools`, and then select `USB Download`.
    <Image src='/docs/jupiter/titanflasher-30-en.webp' maxWidth='100%' align='left' />
 
 4. Click `Scan Devices` and select the identified `dfu-device`.
    <Image src='/docs/jupiter/titanflasher-31-en.webp' maxWidth='100%' align='left' />
 
-5. Click `Select Flash File`, select the zip system image, the tool will decompress it first, please wait for a while. If you need to restart automatically after the flash is completed, you can check `Auto-start after flashing`.
+5. Click `Select Zip File`, select the zip system image, the tool will decompress it first, please wait for a while. If you need to restart automatically after the flash is completed, you can check `Reboot After Flashing`.
    <Image src='/docs/jupiter/titanflasher-32-en.webp' maxWidth='100%' align='left' />
 
 6. Click `Start Flashing` to start burning.
