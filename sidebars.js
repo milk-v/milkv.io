@@ -417,7 +417,6 @@ const sidebars = {
         'jupiter/application-development/gcc',
         'jupiter/application-development/docker',
         'jupiter/application-development/openmediavault',
-        'jupiter/application-development/kodbox',
       ],
     },
     {
