@@ -15,7 +15,7 @@ The onboard SPI Flash can also boot the system, but due to its small capacity, i
 
 ## System Image Description
 
-Currently, Jupiter's image package formats mainly include the following two formats. Pay attention to the difference when installing the system.
+Currently, Jupiter's image package formats mainly have the following two formats, with the suffixes of `.img.zip` and `.zip` respectively. Pay attention to the difference when installing the system.
 
 - The system image package with the suffix `.img.zip` is a dedicated image package for SD cards.
 
