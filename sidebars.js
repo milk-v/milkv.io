@@ -444,10 +444,10 @@ const sidebars = {
         type: 'generated-index',
         title: 'Development-Guide',
         description: 'Development Guide',
-        slug: '/jupiter/Development-Guide'
+        slug: '/jupiter/development-guide'
       },
       items: [
-        'jupiter/Development-Guide/Kernel-compilation',
+        'jupiter/development-guide/kernel-compilation',
         
       ],
     },
