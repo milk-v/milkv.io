@@ -21,7 +21,7 @@ We have open sourced the Public Preliminary Datasheet and TRM of SG2000 to GitHu
 
 ## Buy the SG2000 Chips
 
-Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy samples of the SG2002 chip from our distributor [online store](https://arace.tech/products/sophon-cv1800b-5pcs) directly. For volume order, please contact [Milk-V Sales Team](mailto:sales@milkv.io) for the qoutation.
+Milk-V is the Authorised Global Distributor of the SG2000 chips. You can buy samples of the SG2000 chip from our distributor [online store](https://arace.tech/products/sophon-cv1800b-5pcs) directly. For volume order, please contact [Milk-V Sales Team](mailto:sales@milkv.io) for the qoutation.
 
 ## Getting Started
 

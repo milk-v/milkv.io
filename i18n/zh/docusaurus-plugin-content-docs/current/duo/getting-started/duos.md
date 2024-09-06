@@ -21,7 +21,7 @@ SG2000 是一款高性能、低功耗芯片，专为智能监控 IP 摄像机、
 
 ## 购买 SG2000 芯片
 
-Milk-V 是 SG2002 芯片的全球授权经销商。您可以直接从我们的经销商 [Arace](https://arace.tech/products/sophon-cv1800b-5pcs) 购买 SG2002 芯片的样品。如需批量订购，请联系 [Milk-V 销售团队](mailto:sales@milkv.io) 获取报价。
+Milk-V 是 SG2000 芯片的全球授权经销商。您可以直接从我们的经销商 [Arace](https://arace.tech/products/sophon-cv1800b-5pcs) 购买 SG2000 芯片的样品。如需批量订购，请联系 [Milk-V 销售团队](mailto:sales@milkv.io) 获取报价。
 
 ## 上手指南
 
