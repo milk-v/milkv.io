@@ -180,14 +180,15 @@ cd duo-buildroot-sdk
 ### 拉取 Docker 镜像并运行
 
 ```bash
-docker run -itd --name duodocker -v $(pwd):/home/work milkvtech/milkv-duo:latest /bin/bash
+docker run --privileged -itd --name duodocker -v $(pwd):/home/work milkvtech/milkv-duo:latest /bin/bash
 ```
 
 命令中部分参数说明:
-- `duodocker` docker 运行时名字，可以使用自己想用的名字
-- `$(pwd)` 当前目录，这里是上一步 cd 到的 duo-buildroot-sdk 目录
-- `-v $(pwd):/home/work`  将当前的代码目录绑定到 Docker 镜像里的 /home/work 目录
-- `milkvtech/milkv-duo:latest` Milk-V 提供的 Docker 镜像，第一次会自动从 hub.docker.com 下载
+- `--privileged` 以特权模式启动容器。
+- `duodocker` docker 运行时名字，可以使用自己想用的名字。
+- `$(pwd)` 当前目录，这里是上一步 cd 到的 duo-buildroot-sdk 目录。
+- `-v $(pwd):/home/work`  将当前的代码目录绑定到 Docker 镜像里的 /home/work 目录。
+- `milkvtech/milkv-duo:latest` Milk-V 提供的 Docker 镜像，第一次会自动从 hub.docker.com 下载。
 
 Docker 运行成功后，可以用 `docker ps -a` 命令查看运行状态：
 ```bash
@@ -195,6 +196,10 @@ $ docker ps -a
 CONTAINER ID   IMAGE                        COMMAND       CREATED       STATUS       PORTS     NAMES
 8edea33c2239   milkvtech/milkv-duo:latest   "/bin/bash"   2 hours ago   Up 2 hours             duodocker
 ```
+
+:::tip
+如果 Docker 服务器上的镜像有更新，可以使用 `docker pull milkvtech/milkv-duo:latest` 命令来同步最新的镜像。
+:::
 
 ### 1. 使用 Docker 一键编译
 
