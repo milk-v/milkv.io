@@ -447,7 +447,7 @@ const sidebars = {
       },
       items: [
         'jupiter/development-guide/kernel-compilation',
-        
+        'jupiter/development-guide/coredump',
       ],
     },
   ],
