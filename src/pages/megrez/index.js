@@ -26,7 +26,7 @@ export default () => {
                         <tr>
                             <td>CPU</td>
                             <td>
-                                <p>4-Core SIFIVE P550(RISC-V RV64CG)@1.6GHz</p>
+                                <p>4-Core SIFIVE P550(RISC-V RV64GC)@1.6GHz</p>
                             </td>
                         </tr>
                         <tr>
@@ -56,7 +56,7 @@ export default () => {
                             <td>Storage</td>
                             <td>
                                 <p>1x SPI Flash for boot</p>
-                                <p>1x M.2 M Key Connector for M.2 NVMe SSD (PCIe 2.0 x2)</p>
+                                <p>1x M.2 for SATA SSD(SATA3 6GB/s)</p>
                                 <p>1x eMMC Connector</p>
                                 <p>1x microSD Card Slot</p>
                             </td>
@@ -76,7 +76,7 @@ export default () => {
                         <tr>
                             <td>Ethernet</td>
                             <td>
-                                <p>12x Gigabit Ethernet Port</p>
+                                <p>2x Gigabit Ethernet Port</p>
                             </td>
                         </tr>
                         <tr>

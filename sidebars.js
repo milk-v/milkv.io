@@ -20,9 +20,9 @@ const sidebars = {
         'duo/getting-started/duo',
         'duo/getting-started/duo256m',
         'duo/getting-started/duos',
+        'duo/getting-started/duo-module-01',
         'duo/getting-started/boot',
         'duo/getting-started/setup',
-        'duo/getting-started/swap',
         'duo/getting-started/buildroot-sdk',
         'duo/getting-started/rtoscore',
         'duo/getting-started/8051core',
@@ -417,7 +417,6 @@ const sidebars = {
         'jupiter/application-development/gcc',
         'jupiter/application-development/docker',
         'jupiter/application-development/openmediavault',
-        'jupiter/application-development/kodbox',
       ],
     },
     {

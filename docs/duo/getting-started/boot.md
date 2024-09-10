@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'Boot the Duo'
+sidebar_label: 'Start Up'
 sidebar_position: 10
 ---
 
-# Boot Duo from microSD card
+# Boot from microSD card
 
 ## Prepare
 

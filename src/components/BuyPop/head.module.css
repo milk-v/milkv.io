@@ -202,6 +202,16 @@
    .agent_info>a {
       font-size: 14px;
    }
+
+   .flex_center {
+      gap: 30px;
+      justify-content: flex-start;
+   }
+
+   .flex_center>img {
+      width: calc(600px*.7);
+      height: calc(380px*.7);
+   }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 750px) {

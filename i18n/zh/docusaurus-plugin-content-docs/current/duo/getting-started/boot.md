@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'Duo 启动'
+sidebar_label: '启动'
 sidebar_position: 10
 ---
 
-# 从 microSD 卡启动 Duo
+# 从 microSD 卡启动
 
 ## 准备
 

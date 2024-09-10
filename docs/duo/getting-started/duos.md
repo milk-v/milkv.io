@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Duo S(SG2000)'
+sidebar_label: 'Duo S (SG2000)'
 sidebar_position: 3
 ---
 
@@ -21,7 +21,23 @@ We have open sourced the Public Preliminary Datasheet and TRM of SG2000 to GitHu
 
 ## Buy the SG2000 Chips
 
-Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy samples of the SG2002 chip from our distributor [online store](https://arace.tech/products/sophon-cv1800b-5pcs) directly. For volume order, please contact [Milk-V Sales Team](mailto:sales@milkv.io) for the qoutation.
+Milk-V is the Authorised Global Distributor of the SG2000 chips. You can buy samples of the SG2000 chip from our distributor [online store](https://arace.tech/products/sophon-cv1800b-5pcs) directly. For volume order, please contact [Milk-V Sales Team](mailto:sales@milkv.io) for the qoutation.
+
+## Getting Started
+
+### Installing the system
+
+- Boot from SD card
+  
+  Please refer to the [Start Up](https://milkv.io/docs/duo/getting-started/boot) section.
+
+- Boot from eMMC
+  
+  Please refer to: [eMMC version firmware burning](https://milkv.io/docs/duo/getting-started/duos#emmc-version-firmware-burning) section.
+
+### USB Network Usage
+
+Please refer to the [Setup](https://milkv.io/docs/duo/getting-started/setup) section.
 
 ## DuoS GPIO Pinout
 
@@ -246,7 +262,21 @@ then reboot the board.
 
 ### UART Serial Console
 
-Connect USB to TTL serial cable as shown below. Do not connect the red wire.
+DuoS has a reserved UART debug serial port, which can be used to view the system startup log, or to log in to the console after the system starts and execute some terminal commands.
+
+#### USB-TTL Serial Cable
+
+The serial port level of Duo series is 3.3V.
+
+The pin definitions of common USB to TTL serial cables are as follows:
+
+<Image src='/docs/common/usb2ttl.webp' maxWidth='100%' align='left' />
+
+#### Connection
+
+Connect the USB to TTL serial cable as shown below, leaving the red wire unconnected.
+
+<div className='gpio_style'>
 
 | Milk-V DouS | \<---> | USB to TTL |
 | ----------- | ------ | ---------- |
@@ -254,9 +284,11 @@ Connect USB to TTL serial cable as shown below. Do not connect the red wire.
 | TX (pin  8) | \<---> | White wire |
 | RX (pin 10) | \<---> | Green wire |
 
-<Image src='/docs/duo/duos/duos-serial-port.webp' maxWidth='100%' align='center' />
+</div>
 
-The default serial setting for Duo u-boot and kernel console is:
+<Image src='/docs/duo/duos/duos-serial-port.webp' maxWidth='100%' align='left' />
+
+The default serial port parameters of DuoS are as follows:
 
 ```
 baudrate: 115200

@@ -15,79 +15,45 @@ The onboard SPI Flash can also boot the system, but due to its small capacity, i
 
 ## System Image Description
 
-Currently, Jupiter's image package formats mainly include the following two formats. Pay attention to the difference when installing the system.
+Currently, Jupiter's image package formats mainly have the following two formats, with the suffixes of `.img.zip` and `.zip` respectively. Pay attention to the difference when installing the system.
 
 - The system image package with the suffix `.img.zip` is a dedicated image package for SD cards.
 
+  - Supports burning with tools such as `balenaEtcher`, `Rufus`, `Win32DiskImager`, etc. In Linux, you can use the `dd` command to burn. Some of these tools support burning zip packages directly, while some need to be decompressed into `.img` files before burning. Please try it yourself.
+
   - The SD card must be inserted into the PC through a card reader for burning.
 
-  - Supports burning using the Spacemit official burning tool `titanflasher` (need to be unzipped to a `.img` file before burning).
+- The system image package with the suffix `.zip` can be burned to SSD or eMMC.
 
-  - It also supports burning with tools such as `balenaEtcher`, `Rufus`, `Win32DiskImager`, etc. In Linux, you can use the `dd` command to burn. Some of these tools support burning zip packages directly, while some need to be decompressed into `.img` files before burning. Please try it yourself. For the method of burning with `balenaEtcher`, please refer to the section at the end of the page.
-
-- The system image package with the suffix `.zip` can be burned to SSD, eMMC or SD card.
-
-  - Must use Spacemit official flashing tool `titanflasher` to flash.
+  - It is recommended to use Spacemit official flashing tool `titanflasher` to flash.
 
   - When burning to SSD or eMMC, you must connect to the PC via a Type-C cable for burning.
 
-  - When burning to an SD card, the SD card must be inserted into the PC through a card reader for burning.
-
-    :::tip
-    Currently, the titanflasher tool still has some minor issues. Please do not use titanflasher to burn the `.zip` image package to the SD card yet.
-    :::
-
-
-The following uses the Spacemit `titanflasher` tool as an example to introduce the methods of burning to SD card, SSD, and eMMC respectively.
-
-## Download and install the `titanflasher` tool
-
-`titanflasher` currently provides versions for both X86(X64) and Linux platforms.
-
-:::tip
-We are sorry that the titanflasher tool interface is currently only available in Chinese. The English version will be released later.
-:::
-
-download link: [https://github.com/milkv-jupiter/jupiter-tools/releases/tag/titanflasher](https://github.com/milkv-jupiter/jupiter-tools/releases/tag/titanflasher)
-
-If prompted during Windows installation, select `Install this driver software anyway`.
-<Image src='/docs/jupiter/titanflasher-20-en.webp' maxWidth='100%' align='left' />
-
-:::tip
-When using the `titanflasher` tool to flash the firmware, the firmware will be unzipped to its workspace. Please check `Automatically clean up` in `Settings`, or manually delete unused files in the workspace directory to avoid cache files taking up too much system space after multiple flashes.
-:::
-<Image src='/docs/jupiter/titanflasher-35.webp' maxWidth='100%' align='left' />
+The following describes the methods for burning to SD card, SSD and eMMC respectively.
 
 ## Install OS to the SD card
 
+:::tip
 The SD card OS has the highest startup priority. All boot programs required for startup, including u-boot, kernel, and system, are stored in the SD card.
+:::
+
+Taking the `balenaEtcher` tool as an example, the burning method is as follows.
 
 First, go to the resource download page to download the system image package for the SD card (the suffix is ​​`.img.zip`):[Resource Download Summary](https://milkv.io/docs/jupiter/getting-started/resources)。
 
-After downloading, unzip it into a `.img` file.
+After downloading, you can decompress it into a `.img` file and then burn it. You can also use it without unzipping, `balenaEtcher` supports loading zip packages.
 
 Insert the SD card into the PC through the card reader. Installing the system to the SD card will clear the original data in the SD card, so **note to back up important files in the card in advance**.
 
-1. Run the `titanflasher` tool and select "Development Tools".
-   <Image src='/docs/jupiter/titanflasher-01.webp' maxWidth='100%' align='left' />
-2. Select Card Startup.
-   <Image src='/docs/jupiter/titanflasher-02.webp' maxWidth='100%' align='left' />
-3. Click "Select SD Card" to select the target SD card.
-   <Image src='/docs/jupiter/titanflasher-03.webp' maxWidth='100%' align='left' />
-4. Click "Select Flash Package".
-   <Image src='/docs/jupiter/titanflasher-04.webp' maxWidth='100%' align='left' />
-5. Click "Local Image" and select the unzipped `.img` SD card image.
-   <Image src='/docs/jupiter/titanflasher-05.webp' maxWidth='100%' align='left' />
-6. Select "Burn Starter Card".
-   <Image src='/docs/jupiter/titanflasher-06.webp' maxWidth='100%' align='left' />
-7. Click "Execute".
-   <Image src='/docs/jupiter/titanflasher-07.webp' maxWidth='100%' align='left' />
-8. Click "OK".
-   <Image src='/docs/jupiter/titanflasher-08.webp' maxWidth='100%' align='left' />
-9. Start burning.
-   <Image src='/docs/jupiter/titanflasher-09.webp' maxWidth='100%' align='left' />
+1. Download the image burning tool [balenaEtcher](https://etcher.balena.io/) and install it.
+2. Click `Flash from file` and select the downloaded SD card image.
+   <Image src='/docs/common/etcher-step1.webp' maxWidth='100%' align='left' />
+3. Click `Select target` to select the SD card.
+   <Image src='/docs/common/etcher-step2.webp' maxWidth='100%' align='left' />
+4. Click `Flash!` to start flashing.
+   <Image src='/docs/common/etcher-step3.webp' maxWidth='100%' align='left' />
 
-When the burning progress bar shows 100%, the burning is complete. Insert the SD card with the burned system into the SD card slot of Jupiter, power on, and if the Desktop version of the system is installed, the display connected via HDMI will display the startup LOGO, and the system will enter the desktop after startup.
+After the burning is complete, insert the SD card into the Jupiter board and start the system. The SD card system currently does not have the function of automatically expanding the capacity after startup. After the first startup, please expand the system partition according to the method in the previous section.
 
 ### System partition expansion
 
@@ -137,9 +103,25 @@ The priority of burning is the same as the priority of booting. If both SSD and 
 
 First, go to the resource download page to download the system image package with the suffix `.zip` (not `.img.zip`): [Resource Download Summary](https://milkv.io/docs/jupiter/getting-started/resources)。
 
-### Use titanflasher flash tool
-
 Note that you do not need to unzip the zip package after downloading it.
+
+### Download and install the `titanflasher` tool
+
+To burn the system to SSD or eMMC, it is recommended to use the official tool `titanflasher` from Titan. Currently, versions for both X86 (X64) and Linux platforms are provided.
+
+Sorry, the Linux version does not support English interface yet.
+
+download link: [https://github.com/milkv-jupiter/jupiter-tools/releases/tag/titanflasher](https://github.com/milkv-jupiter/jupiter-tools/releases/tag/titanflasher)
+
+If prompted during Windows installation, select `Install this driver software anyway`.
+<Image src='/docs/jupiter/titanflasher-20-en.webp' maxWidth='100%' align='left' />
+
+:::tip
+When using the `titanflasher` tool to flash the firmware, the firmware will be unzipped to its workspace. Please check `Auto Clean` in `Settings`, or manually delete unused files in the workspace directory to avoid cache files taking up too much system space after multiple flashes.
+:::
+<Image src='/docs/jupiter/titanflasher-35-en.webp' maxWidth='100%' align='left' />
+
+### Use titanflasher flash tool
 
 1. Use a Type-C cable to connect the Type-C port of Jupiter to the PC.
    <Image src='/docs/common/usba2typec.webp' maxWidth='50%' align='left' />
@@ -147,20 +129,20 @@ Note that you do not need to unzip the zip package after downloading it.
 2. Press and hold the RECOVERY button on the board or short the RECOVERY pins, then power on Jupiter to enter USB burning mode.
    <Image src='/docs/jupiter/jupiter-recovery.webp' maxWidth='100%' align='left' />
 
-3. Open the titanflasher tool, select `Development Tools`, and then select `Standalone Flashing`.
-   <Image src='/docs/jupiter/titanflasher-30.webp' maxWidth='100%' align='left' />
+3. Open the titanflasher tool, select `Dev Tools`, and then select `USB Download`.
+   <Image src='/docs/jupiter/titanflasher-30-en.webp' maxWidth='100%' align='left' />
 
 4. Click `Scan Devices` and select the identified `dfu-device`.
-   <Image src='/docs/jupiter/titanflasher-31.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-31-en.webp' maxWidth='100%' align='left' />
 
-5. Click `Select Flash File`, select the zip system image, the tool will decompress it first, please wait for a while. If you need to restart automatically after the flash is completed, you can check `Auto-start after flashing`.
-   <Image src='/docs/jupiter/titanflasher-32.webp' maxWidth='100%' align='left' />
+5. Click `Select Zip File`, select the zip system image, the tool will decompress it first, please wait for a while. If you need to restart automatically after the flash is completed, you can check `Reboot After Flashing`.
+   <Image src='/docs/jupiter/titanflasher-32-en.webp' maxWidth='100%' align='left' />
 
 6. Click `Start Flashing` to start burning.
-   <Image src='/docs/jupiter/titanflasher-33.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-33-en.webp' maxWidth='100%' align='left' />
 
 7. It will show that 100% of the burning is completed. You can power off and restart the board to enter the system.
-   <Image src='/docs/jupiter/titanflasher-34.webp' maxWidth='100%' align='left' />
+   <Image src='/docs/jupiter/titanflasher-34-en.webp' maxWidth='100%' align='left' />
 
 ### Using fastboot
 
@@ -189,25 +171,3 @@ fastboot flash rootfs rootfs.ext4
 sleep 2
 fastboot reboot
 ```
-
-## Others
-
-### Use 3rd tools to burn SD card images
-
-SD card system image can be burned using tools such as balenaEtcher, Rufus, Win32DiskImager, etc. Taking `balenaEtcher` as an example, the burning method is as follows.
-
-First, insert the SD card into the PC through the card reader. Installing the system to the SD card will clear the original data in the SD card, so **note to back up important files in the card in advance**.
-
-Go to the resource download page to download the system image package for the SD card (suffix is ​​`.img.zip`): [Resource download summary](https://milkv.io/docs/jupiter/getting-started/resources)。
-
-You don't need to decompress the file after downloading. `balenaEtcher` supports loading zip packages.
-
-1. Download the image burning tool [balenaEtcher](https://etcher.balena.io/) and install it.
-2. Click `Flash from file` and select the downloaded SD card image.
-   <Image src='/docs/common/etcher-step1.webp' maxWidth='100%' align='left' />
-3. Click `Select target` to select the SD card.
-   <Image src='/docs/common/etcher-step2.webp' maxWidth='100%' align='left' />
-4. Click `Flash!` to start flashing.
-   <Image src='/docs/common/etcher-step3.webp' maxWidth='100%' align='left' />
-
-After the burning is complete, insert the SD card into the Jupiter board and start the system. The SD card system currently does not have the function of automatically expanding the capacity after startup. After the first startup, please expand the system partition according to the method in the previous section.

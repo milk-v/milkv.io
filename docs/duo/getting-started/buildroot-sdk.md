@@ -183,10 +183,11 @@ cd duo-buildroot-sdk
 ### Pull the Docker image and run
 
 ```bash
-docker run -itd --name duodocker -v $(pwd):/home/work milkvtech/milkv-duo:latest /bin/bash
+docker run --privileged -itd --name duodocker -v $(pwd):/home/work milkvtech/milkv-duo:latest /bin/bash
 ```
 
 Description of some parameters in the command:
+- `--privileged` starts the container in privileged mode.
 - `duodocker` Docker name, you can use the name you want to use.
 - `$(pwd)` The current directory, here is the duo-buildroot-sdk directory that was 'cd' to in the previous step.
 - `-v $(pwd):/home/work`  Bind the current code directory to the /home/work directory in the Docker image.
@@ -198,6 +199,10 @@ $ docker ps -a
 CONTAINER ID   IMAGE                        COMMAND       CREATED       STATUS       PORTS     NAMES
 8edea33c2239   milkvtech/milkv-duo:latest   "/bin/bash"   2 hours ago   Up 2 hours             duodocker
 ```
+
+:::tip
+If the image on the Docker server is updated, you can use the `docker pull milkvtech/milkv-duo:latest` command to synchronize the latest image.
+:::
 
 ### 1). One-click compilation using Docker
 

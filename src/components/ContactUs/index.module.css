@@ -496,7 +496,7 @@
     .maxtitle {
         font-weight: 500;
         font-size: 36px;
-        margin: 20px auto 20px;
+        margin: 20px auto;
     }
 
     .touchForm {
@@ -522,7 +522,6 @@
         font-size: 23px;
         margin-bottom: 40px;
     }
-
 
     .touchForm>div>label {
         margin-bottom: 20px;
@@ -551,7 +550,7 @@
     }
 
     .contactMain {
-        margin: 30px 0;
+        padding: 30px 0;
     }
 
     .banner_contact {

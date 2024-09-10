@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Duo S(SG2000)'
+sidebar_label: 'Duo S (SG2000)'
 sidebar_position: 3
 ---
 
@@ -21,7 +21,23 @@ SG2000 是一款高性能、低功耗芯片，专为智能监控 IP 摄像机、
 
 ## 购买 SG2000 芯片
 
-Milk-V 是 SG2002 芯片的全球授权经销商。您可以直接从我们的经销商 [Arace](https://arace.tech/products/sophon-cv1800b-5pcs) 购买 SG2002 芯片的样品。如需批量订购，请联系 [Milk-V 销售团队](mailto:sales@milkv.io) 获取报价。
+Milk-V 是 SG2000 芯片的全球授权经销商。您可以直接从我们的经销商 [Arace](https://arace.tech/products/sophon-cv1800b-5pcs) 购买 SG2000 芯片的样品。如需批量订购，请联系 [Milk-V 销售团队](mailto:sales@milkv.io) 获取报价。
+
+## 上手指南
+
+### 安装系统
+
+- 从 SD 卡启动
+  
+  请参考：[启动](https://milkv.io/zh/docs/duo/getting-started/boot) 章节。
+
+- 从 eMMC 启动
+  
+  请参考：[eMMC 版本固件烧录](https://milkv.io/zh/docs/duo/getting-started/duos#emmc-%E7%89%88%E6%9C%AC%E5%9B%BA%E4%BB%B6%E7%83%A7%E5%BD%95) 章节。
+
+### USB 网络的使用
+
+请参考：[设置](https://milkv.io/zh/docs/duo/getting-started/setup) 章节。
 
 ## DuoS GPIO 引脚分配
 
@@ -247,7 +263,21 @@ echo "pre-up ifconfig eth0 hw ether 78:01:B3:FC:E8:55" >> /etc/network/interface
 
 ### UART 串口控制台
 
-如下图所示，连接USB到TTL串口模块，不要连接红线。
+DuoS 主板上有预留 UART 调试串口，可以查看系统的启动日志，也可以在系统启动后登陆到控制台，执行一些终端命令。
+
+#### USB-TTL 串口线
+
+Duo 系列调试串口电平为 3.3V。
+
+常见的 USB 转 TTL 串口线的引脚定义如下：
+
+<Image src='/docs/common/usb2ttl.webp' maxWidth='100%' align='left' />
+
+#### 连接串口
+
+如下图所示，连接 USB 到 TTL 串口线，不要连接红线。
+
+<div className='gpio_style'>
 
 | Milk-V DouS | \<---> | USB 转 TTL 串口 |
 | ----------- | ------ | -------------- |
@@ -255,9 +285,11 @@ echo "pre-up ifconfig eth0 hw ether 78:01:B3:FC:E8:55" >> /etc/network/interface
 | TX (pin  8) | \<---> | 白色线          |
 | RX (pin 10) | \<---> | 绿色线          |
 
-<Image src='/docs/duo/duos/duos-serial-port.webp' maxWidth='100%' align='center' />
+</div>
 
-Duo u-boot 和内核控制台的默认串行设置是：
+<Image src='/docs/duo/duos/duos-serial-port.webp' maxWidth='100%' align='left' />
+
+DuoS 默认的串口参数如下：
 
 ```
 baudrate: 115200

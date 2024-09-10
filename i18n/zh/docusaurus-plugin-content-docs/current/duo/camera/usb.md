@@ -136,15 +136,11 @@ cvi-vi       cvi_vc_dec8  cvitekadac   i2c-3      null       tty
 
 ## 3.执行测试程序
 
-下载解压uvctest.zip，
-在解压文件的地方打开终端
-进行程序测试
+下载解压[uvctest.zip](https://github.com/milkv-duo/duo-files/blob/main/common/uvctest.zip),在解压文件的地方打开终端,进行程序测试
 
 ![open-terminal](/docs/duo/open-terminal.webp)
 
-在duo-buildroot-sdk文件所在页面打开一个新的终端
-
-进入到duo-buildroot-sdk/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl- 的目录
+在duo-buildroot-sdk文件所在页面打开一个新的终端,进入到duo-buildroot-sdk/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl- 的目录
 
 ![query-path](/docs/duo/query-path.webp)
 
@@ -188,8 +184,7 @@ CROSS_COMPILE=/home/milkv/Desktop/test/duo-buildroot-sdk/host-tools/gcc/riscv64-
 
 复制 inet addr: xxx
 
-回到解压文件的目录终端 ，
-执行命令：
+回到解压文件的目录终端，执行命令：
 
 `scp uvctest root@xxx:/root`
 
@@ -256,17 +251,12 @@ test complete
 
 file xxxx.jpg
 
-打开文件管理器：
-
-`nautilus .`
-
-（提示：在nautilus后面要打一个空格）
+打开文件管理器，找到图片
 
 ![view-picture](/docs/duo/view-picture.webp)
 
 
 
-即可看见图片
 
 
 
