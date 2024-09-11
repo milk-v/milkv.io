@@ -254,10 +254,16 @@ DuoS has an onboard Ethernet interface, so the USB network port (RNDIS) of the T
 
 ### Fixed ethernet port MAC address
 
-If you need to assign a fixed MAC address to the Ethernet port of DuoS, please execute the following command(**Replace the MAC address in the command with the MAC address you want to set, and please note that MAC addresses of different devices within the same network segment must not be duplicated**):
+If you need to assign a fixed MAC address to the Ethernet port of DuoS, please execute the following command:
+
+:::tip
+**Replace the MAC address in the command with the MAC address you want to set, and please note that MAC addresses of different devices within the same network segment must not be duplicated**
+:::
+
 ```
 echo "pre-up ifconfig eth0 hw ether 78:01:B3:FC:E8:55" >> /etc/network/interfaces && sync
 ```
+
 then reboot the board.
 
 ### UART Serial Console
@@ -352,6 +358,20 @@ if [ $attempt -eq $max_attempts ]; then
     echo "$(date +'%Y-%m-%d %H:%M:%S') Interface $interface not found after $max_attempts attempts" >> "$log_file"
 fi
 ```
+
+### Fixed WIFI MAC address
+
+DuoS WIFI MAC address is randomly assigned. If you need to assign a fixed MAC address to the WIFI of DuoS, please execute the following command::
+
+:::tip
+**Replace the MAC address in the command with the MAC address you want to set, and please note that MAC addresses of different devices within the same network segment must not be duplicated**
+:::
+
+```bash
+echo "MAC_ADDR=11:22:33:44:55:66" > /mnt/system/firmware/aic8800/rwnx_settings.ini && sync
+```
+
+then reboot the board.
 
 ### eMMC version firmware burning
 
