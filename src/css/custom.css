@@ -501,6 +501,28 @@ strong {
   .cardDescription_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module {
     font-size: 12rem !important;
   }
+
+  /* 搜索栏 font-size */
+  .DocSearch-Cancel,
+  .DocSearch-Hit-path,
+  .DocSearch-Label {
+    font-size: 10rem !important;
+  }
+
+  .DocSearch-Hit-source,
+  .DocSearch-Hit-title,
+  .DocSearch-Input {
+    font-size: 14rem !important;
+  }
+
+  .DocSearch-Hit-content-wrapper {
+    line-height: 12rem !important;
+  }
+
+  /* 404 font-size */
+  .hero__title {
+    font-size: 14rem;
+  }
 }
 
 /* 字体 */
