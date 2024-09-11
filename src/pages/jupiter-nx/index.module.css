@@ -73,26 +73,8 @@
     margin: 0 auto;
 }
 
-.content_main>div>.feature_cpu {
-    background: url(/static/jupiter-nx/view8.webp) no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
 .view5 {
     width: 100%;
-}
-
-.content_main>div>.feature_view7 {
-    background: url(/static/jupiter-nx/view7.webp) no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.content_main>div>.feature_view9 {
-    background: url(/static/jupiter-nx/view9.webp) no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
 }
 
 .ai {
