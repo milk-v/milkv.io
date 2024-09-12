@@ -29,7 +29,8 @@ export default (props) => {
             jd_url: 'https://ic-item.jd.com/10107306617970.html#crumb-wrap'
         },
         'duo-module-01': {
-
+            arace_url: 'https://arace.tech/products/milk-v-duo-module-01',
+            taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=828155295674'
         },
         'pioneer': {
             crowdSupply_url: 'https://www.crowdsupply.com/milkv/milk-v-pioneer',
