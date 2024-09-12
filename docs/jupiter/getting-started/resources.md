@@ -48,15 +48,15 @@ The default password for the `root` account in the Bianbu system is `milkv`.
 
   - SD card version firmware:
     ```
-    7za x milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.img.zip.001
+    7za x milkv-jupiter-bianbu-xxx.img.zip.001
     ```
-    The full firmware package after extraction is: `milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.img.zip`
+    The full firmware package after extraction is: `milkv-jupiter-bianbu-xxx.img.zip`
 
   - eMMC and SSD version firmware:
     ```
-    7za x milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.zip.001
+    7za x milkv-jupiter-bianbu-xxx.zip.001
     ```
-    The full firmware package after extraction is: `milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.zip`
+    The full firmware package after extraction is: `milkv-jupiter-bianbu-xxx.zip`
 
 - milkv-jupiter-bianbu-\*-minimal-\*.zip
 

@@ -48,15 +48,15 @@ Bianbu 系统的 `root` 账户默认密码为 `milkv`。
 
   - SD 卡版本固件：
     ```
-    7za x milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.img.zip.001
+    7za x milkv-jupiter-bianbu-xxx.img.zip.001
     ```
-    解压后的完整固件包为：`milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.img.zip`
+    解压后的完整固件包为：`milkv-jupiter-bianbu-xxx.img.zip`
 
   - eMMC 和 SSD 版本固件：
     ```
-    7za x milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.zip.001
+    7za x milkv-jupiter-bianbu-xxx.zip.001
     ```
-    解压后的完整固件包为：`milkv-jupiter-bianbu-23.10-desktop-k1-v1.0.14-release-2024-0831.zip`
+    解压后的完整固件包为：`milkv-jupiter-bianbu-xxx.zip`
 
 - milkv-jupiter-bianbu-\*-minimal-\*.zip
 
