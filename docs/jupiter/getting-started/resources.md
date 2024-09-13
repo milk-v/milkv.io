@@ -9,9 +9,9 @@ sidebar_position: 70
 
 Version Description:
 
-- The system image with the suffix `.img.zip` is a dedicated image for SD card booting. It can be burned to SD through tools such as `balenaEtcher`, `Rufus`, `Win32DiskImager` on PC. It can also be burned to SD card through the official tool `titanflasher`.
+- The system image with the suffix `.img.zip` is a dedicated image for SD card booting. It can be burned to SD through tools such as `balenaEtcher`, `Rufus`, `Win32DiskImager` on PC.
 
-- The system image with the suffix `.zip` is the flashing package used by the official tool `titanflasher` of Spacemit. It can be burned to an SD card through a card reader, or burned to an eMMC or SSD through a USB Type-C cable.
+- The system image with the suffix `.zip` is an image for SSD and eMMC. You can use the official tool `titanflasher` to burn it to eMMC or SSD through a USB Type-C cable.
 
 For OS iamge installation methods, please refer to: [Install OS Image](https://milkv.io/docs/jupiter/getting-started/boot).
 

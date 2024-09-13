@@ -9,9 +9,9 @@ sidebar_position: 70
 
 版本说明：
 
-- 后缀为 `.img.zip` 的系统镜像为 SD 卡启动专用镜像，可以通过 PC 上的 `balenaEtcher`，`Rufus`，`Win32DiskImager` 等工具烧录到 SD 中。也可以通过进迭官方工具 `titanflasher` 烧录到 SD 卡中。
+- 后缀为 `.img.zip` 的系统镜像为 SD 卡启动专用镜像，可以通过 PC 上的 `balenaEtcher`，`Rufus`，`Win32DiskImager` 等工具烧录到 SD 卡中。
 
-- 后缀为 `.zip` 的系统镜像为进迭官方工具 `titanflasher` 使用的刷机包，可以通过读卡器烧录到 SD 卡中，也可以通过 USB Type-C 线烧录到 eMMC 或者 SSD 固态硬盘中。
+- 后缀为 `.zip` 的系统镜像为 SSD 和 eMMC 的镜像，可以使用进迭官方工具 `titanflasher` 通过 USB Type-C 线烧录到 eMMC 或者 SSD 固态硬盘中。
 
 操作系统的安装方法请参考：[安装操作系统](https://milkv.io/zh/docs/jupiter/getting-started/boot)。
 
