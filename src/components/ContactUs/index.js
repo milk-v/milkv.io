@@ -87,7 +87,8 @@ export default (props) => {
             'mars': 'https://submit-form.com/8WXCfzfP',
             'meles': 'https://submit-form.com/pWzoLWYI',
             'vega': 'https://submit-form.com/CAMdDUGu',
-            'jupiter': 'https://submit-form.com/5jvw5ACDK'
+            'jupiter': 'https://submit-form.com/5jvw5ACDK',
+            'jupiter-nx': 'https://submit-form.com/xry1fvOuo'
         };
 
         const _url = productsUrls[product] || url;

@@ -236,7 +236,7 @@ export default () => {
                 </table>
             </div>
             <BuyPop type='jupiter-nx' />
-            <ContactUs product='jupiter' />
+            <ContactUs product='jupiter-nx' />
         </main>
     </Layout>
 }
