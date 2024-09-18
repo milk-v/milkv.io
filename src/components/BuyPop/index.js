@@ -72,6 +72,7 @@ export default (props) => {
             jd_url: 'https://item.jd.com/10108225846745.html',
             arace_url: 'https://arace.tech/products/milk-v-jupiter-spacemit-m1-k1-octa-core-rva22-rvv1-0-risc-v-soc-2tops-miniitx',
         },
+        'jupiter-nx': {}
     }
 
     const image_data = {
@@ -108,6 +109,7 @@ export default (props) => {
         'meles': '/components/buy-meles-view.webp',
         'vega': '/components/buy-vega-view.webp',
         'jupiter': '/components/buy-jupiter-view.webp',
+        'jupiter-nx': '/components/buy-jupiternx-view.webp',
         'cv1800b': '/components/buy-cv1800b-view.webp',
         'sg2000': '/components/buy-sg2000-view.webp',
         'sg2002': '/components/buy-sg2002-view.webp',
