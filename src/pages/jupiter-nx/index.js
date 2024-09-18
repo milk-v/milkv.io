@@ -113,7 +113,7 @@ export default () => {
 
                     <div className={styles.right_item3}>
                         <p className={styles.items_title}>Dedicated AI algorithm deployment tool — Spacengine™</p>
-                        <p className={styles.items_info}>Spacengine™ utilizes SpacemiT's advanced AI instructions and quantization technology to deeply optimize the self-developed RISC-V series chips, significantly boosting the inference performance of common algorithm models on Milk-V Jupiter.</p>
+                        <p className={styles.items_info}>Spacengine™ utilizes SpacemiT's advanced AI instructions and quantization technology to deeply optimize the self-developed RISC-V series chips, significantly boosting the inference performance of common algorithm models on Milk-V Jupiter NX.</p>
                         <img src="/jupiter-nx/chat3.webp" alt="chat" />
                         <img src="/jupiter-nx/chat4.webp" alt="chat" />
                     </div>
