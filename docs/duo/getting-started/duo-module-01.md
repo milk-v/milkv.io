@@ -271,6 +271,8 @@ Note that the I2C used by the J1 interface is I2C3, and the I2C used by the J2 i
 | 1       | MIC IN      |
 | 2       | GND         |
 
+</div>
+
 ## Duo Module 01 EVB User Guide
 
 ### RISC-V and ARM switching
