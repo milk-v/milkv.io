@@ -216,7 +216,7 @@ DuoS 的大核可以选择使用 RISC-V 或者 ARM，可以通过主板上的切
 
 ### USB Type A 接口的使用
 
-DuoS USB Type A 接口与 Type C 接口的 USB 功能是二选一的，不可以同时使用。默认固件配置的是 Type C 口的 USB 网口(RNDIS)功能，如果需要切换为 Type A 口的 USB 2.0 HOST 口接 U 盘等设备使用，需要执行以下命令：
+DuoS USB Type A 接口与 Type C 接口的 USB 功能是二选一的，不可以同时使用。默认固件配置的是 Type C 口的 USB 网口(USB-NCM)功能，如果需要切换为 Type A 口的 USB 2.0 HOST 口接 U 盘等设备使用，需要执行以下命令：
 
 ~~~
 ln -sf /mnt/system/usb-host.sh /mnt/system/usb.sh
@@ -241,16 +241,16 @@ ls /mnt/udisk
 umount /mnt/udisk
 ```
 
-想恢复 Type C 口 的 USB 网卡(RNDIS)功能时，执行：
+想恢复 Type C 口 的 USB 网卡(USB-NCM)功能时，执行：
 ~~~
 rm /mnt/system/usb.sh
-ln -sf /mnt/system/usb-rndis.sh /mnt/system/usb.sh
+ln -sf /mnt/system/usb-ncm.sh /mnt/system/usb.sh
 sync
 ~~~
 然后执行 `reboot` 命令或重新上电使其生效。
 
 :::tip
-DuoS 有板载以太网接口，所以 Type C 口的 USB 网口(RNDIS)可以不用，一直保持切换为 A 口的 USB 2.0 Host 功能。
+DuoS 有板载以太网接口，所以 Type C 口的 USB 网口(USB-NCM)可以不用，一直保持切换为 A 口的 USB 2.0 Host 功能。
 :::
 
 ### 固定网口 MAC 地址

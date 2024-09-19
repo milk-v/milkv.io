@@ -24,7 +24,7 @@ Duo USB&Ethernet IO-Board 通过添加4个USB端口、1个RJ45网络端口、1�
 
 ### 使用 Duo IO-Board
 
-请注意，当Duo插在IO-Board底板上使用时，USB网络(RNDIS)功能是失效的，请使用底板上的RJ45以太网接口。
+请注意，当Duo插在IO-Board底板上使用时，USB网络(USB-NCM)功能是失效的，请使用底板上的RJ45以太网接口。
 
 底板上的网口MAC地址是随机分配的，这可能会导致每次重启之后，MAC地址会变，路由器为网口分配的ip地址也会变，为了解决这个问题，可以使用如下命令配置一个固定的MAC地址(**替换命令中的MAC地址为你想使用的地址，另外注意在同一网段中，不能出现重复的MAC地址**)：
 ```
@@ -56,10 +56,10 @@ ls /mnt/udisk
 umount /mnt/udisk
 ```
 
-在不使用IO-Board底板时，想恢复USB网卡(RNDIS)功能，执行：
+在不使用 IO-Board 底板时，想恢复 USB 网卡(USB-NCM)功能，执行：
 ~~~
 rm /mnt/system/usb.sh
-ln -sf /mnt/system/usb-rndis.sh /mnt/system/usb.sh
+ln -sf /mnt/system/usb-ncm.sh /mnt/system/usb.sh
 sync
 ~~~
 然后执行 reboot 命令或重新上电使其生效。

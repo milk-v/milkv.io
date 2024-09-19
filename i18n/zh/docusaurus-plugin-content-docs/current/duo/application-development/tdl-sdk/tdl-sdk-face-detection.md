@@ -87,7 +87,7 @@ face count: 0
 
 打开 `VLC media player`，点击左上角 `Media`，选择 `Open Network Stream`，输入 URL。
 
-如果使用的是 USB Net(RNDIS)，地址为：
+如果使用的是 USB Net(USB-NCM)，地址为：
 ```
 rtsp://192.168.42.1/h264
 ```

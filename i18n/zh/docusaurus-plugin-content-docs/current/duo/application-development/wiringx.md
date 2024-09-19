@@ -318,7 +318,7 @@ int main() {
   cd hello-world
   make
   ```
-  编译成功后将生成的`helloworld`可执行程序通过网口或者RNDIS网络等方式传送到 Duo 设备中，比如[默认固件](https://github.com/milkv-duo/duo-buildroot-sdk/releases)支持的 RNDIS 方式，Duo 的 IP 为`192.168.42.1`，用户名是`root`，密码是`milkv`。
+  编译成功后将生成的`helloworld`可执行程序通过网口或者USB网络等方式传送到 Duo 设备中，比如[默认固件](https://github.com/milkv-duo/duo-buildroot-sdk/releases)支持的 USB-NCM 方式，Duo 的 IP 为`192.168.42.1`，用户名是`root`，密码是`milkv`。
   ```
   scp helloworld root@192.168.42.1:/root/
   ```
