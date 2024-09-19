@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # Duo Module 01
 
-<Image src='/docs/duo/dm01/size-view.webp' maxWidth='70%' align='center' />
+<Image src='/docs/duo/dm01/size-view.webp' maxWidth='30%' align='center' />
 
 Duo Module 01 是一款集成了 SG2000、WI-FI6/BTDM5.4 和 eMMC 的紧凑型模块。它支持 SMD 贴片。此外，它还能大大节省产品开发时间。它是制作产品的首选。
 
@@ -69,7 +69,7 @@ Coming soon...
 
 ## Duo Module 01 评估板引脚分配
 
-<Image src='/docs/duo/dm01/dm01-evb-pinout.webp' maxWidth='70%' align='center' />
+<Image src='/docs/duo/dm01/dm01-evb-pinout.webp' maxWidth='70%' align='left' />
 
 ### 26 PIN 排针
 
@@ -112,7 +112,7 @@ Duo Module 01 评估板有两个 CSI 摄像头接连器：
 - J8 是 16 PIN 间距为 0.5mm 与 Duo 和 Duo256M 摄像头兼容的连接器，可以直接使用 [CAM-GC2083](https://milkv.io/zh/docs/duo/camera/gc2083) 摄像头。
 - J10 是 15 PIN 间距为 1.0mm 与树莓派摄像头接口兼容的连接器，目前可以支持在树莓派上使用的 OV5647 摄像头。
 
-<Image src='/docs/duo/dm01/dm01-evb-csi.webp' maxWidth='70%' align='center' />
+<Image src='/docs/duo/dm01/dm01-evb-csi.webp' maxWidth='70%' align='left' />
 
 注意，J8 接口使用的 I2C 为 I2C3，J10 接口使用的 I2C 为 I2C2，使用时注意检查引脚复用配置。
 
@@ -279,7 +279,7 @@ Duo Module 01 评估板有两个 CSI 摄像头接连器：
 
 Duo Module 01 的大核可以选择使用 RISC-V 或者 ARM，可以通过评估板上的切换开关来设置，如果您在使用中发现评估板不能正常启动，请先检查该切换开关和使用的固件是否一致。
 
-<Image src='/docs/duo/dm01/dm01-evb-switch.webp' maxWidth='70%' align='center' />
+<Image src='/docs/duo/dm01/dm01-evb-switch.webp' maxWidth='70%' align='left' />
 
 如果连接了调试串口，可以在第一行开机日志中看到，以 `C` 开头时代表从 RISC-V 核启动，以 `B` 开头时代表从 ARM 核启动。
 
@@ -495,7 +495,7 @@ Duo Module 01 eMMC 版本出厂未烧录固件，需要使用 PC 通过 USB 接�
 
    显示等待 USB 连接的信息：
 
-   <Image src='/docs/duo/duos/duos-emmc-install-01.webp' maxWidth='100%' align='center' />
+   <Image src='/docs/duo/duos/duos-emmc-install-01.webp' maxWidth='100%' align='left' />
 
    用 **Type-C 数据线** 连接评估板 和 PC （注意，目前如果评估板有插 SD 卡，请先将 SD 卡取下），评估板会自动上电进入烧录模式，PC 端会实时显示烧录进度：
 

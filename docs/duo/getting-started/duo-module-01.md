@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # Duo Module 01
 
-<Image src='/docs/duo/dm01/size-view.webp' maxWidth='70%' align='center' />
+<Image src='/docs/duo/dm01/size-view.webp' maxWidth='30%' align='center' />
 
 The Duo Module 01 is a compact module with integrated SG2000, WI-FI6/BTDM5.4, and eMMC. It supports SMD mounting. Also it can greatly save product development time. It is the first choice for making products.
 
@@ -69,7 +69,7 @@ Comming soon...
 
 ## DuoModule 01 EVB GPIO Pinout
 
-<Image src='/docs/duo/dm01/dm01-evb-pinout.webp' maxWidth='70%' align='center' />
+<Image src='/docs/duo/dm01/dm01-evb-pinout.webp' maxWidth='70%' align='left' />
 
 ### 26 PIN Header
 
@@ -112,7 +112,7 @@ Duo Module 01 EVB has two CSI camera connectors:
 - J8 is a 16 PIN 0.5mm pitch connector compatible with Duo and Duo256M cameras, and can directly use the [CAM-GC2083](https://milkv.io/docs/duo/camera/gc2083) camera.
 - J10 is a 15-pin 1.0mm pitch connector compatible with the Raspberry Pi camera interface. It currently supports the OV5647 camera used on the Raspberry Pi.
 
-<Image src='/docs/duo/dm01/dm01-evb-csi.webp' maxWidth='70%' align='center' />
+<Image src='/docs/duo/dm01/dm01-evb-csi.webp' maxWidth='70%' align='left' />
 
 Note that the I2C used by the J1 interface is I2C3, and the I2C used by the J2 interface is I2C2. Please check the pin multiplexing configuration when using it.
 
@@ -279,7 +279,7 @@ Note that the I2C used by the J1 interface is I2C3, and the I2C used by the J2 i
 
 The large core of `Duo Module 01 EVB` can choose to use RISC-V or ARM processor, which can be set through the switch on the board. If you find that `Duo Module 01 EVB` cannot start normally during use, please first check whether the switch is consistent with the firmware used.
 
-<Image src='/docs/duo/dm01/dm01-evb-switch.webp' maxWidth='70%' align='center' />
+<Image src='/docs/duo/dm01/dm01-evb-switch.webp' maxWidth='70%' align='left' />
 
 If the debug serial port is connected, you can see in the first line of the boot log that starting with `C` means starting from the RISC-V core, and starting with `B` means starting from the ARM core.
 
@@ -496,7 +496,7 @@ Use the USB burning tool under Windows to support eMMC. The firmware version is 
 
    Displays message waiting for USB connection:
 
-   <Image src='/docs/duo/duos/duos-emmc-install-01.webp' maxWidth='100%' align='center' />
+   <Image src='/docs/duo/duos/duos-emmc-install-01.webp' maxWidth='100%' align='left' />
 
    Use **Type-C data cable** to connect EVB and PC (note, if EVB currently has an SD card inserted, please remove the SD card first), EVB will automatically power on and enter the burning mode, and the PC will display the burning status in real time. Recording progress:
 
