@@ -54,7 +54,12 @@ The following describes the compilation methods in the two environments.
 Install the packages that compile dependencies:
 
 ```bash
-sudo apt install -y pkg-config build-essential ninja-build automake autoconf libtool wget curl git gcc libssl-dev bc slib squashfs-tools android-sdk-libsparse-utils jq python3-distutils scons parallel tree python3-dev python3-pip device-tree-compiler ssh cpio fakeroot libncurses5 flex bison libncurses5-dev genext2fs rsync unzip dosfstools mtools tcl openssh-client cmake expect
+sudo apt install -y pkg-config build-essential ninja-build automake autoconf libtool wget curl git gcc libssl-dev bc slib squashfs-tools android-sdk-libsparse-utils jq python3-distutils scons parallel tree python3-dev python3-pip device-tree-compiler ssh cpio fakeroot libncurses5 flex bison libncurses5-dev genext2fs rsync unzip dosfstools mtools tcl openssh-client cmake expect python-is-python3
+```
+
+For [duo-buildroot-sdk-v2](https://github.com/milkv-duo/duo-buildroot-sdk-v2), you also need to install the following tool packages:
+```bash
+sudo pip install jinja2
 ```
 
 ### Get SDK Source Code
