@@ -5,14 +5,11 @@ sidebar_position: 1
 
 # Mars
 
-Version 1.0 
-
--------------------------
 ## Introduction
 
-Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. This four-core device supports a plug-and-play eMMC module, as well as up to 8GB of LPDDR4 memory. The board is equipped with three USB 3.0 ports, one USB 2.0 port, an HDMI 2.0 port that supports 4K resolution, an RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO.  
+Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. This four-core device supports a plug-and-play eMMC module, as well as up to 8GB of LPDDR4 memory. The board is equipped with three USB 3.0 ports, one USB 2.0 port, an HDMI 2.0 port that supports 4K resolution, an RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI DSI and a 2-lane MIPI CSI, along with a 40-pin GPIO.  
   
-![mars](/docs/mars/mars.webp)
+<Image src='/docs/mars/mars.webp' maxWidth='100%' align='left' />
 
 ## Specification
 
@@ -115,17 +112,9 @@ The GPU of JH7110 has the following
 **Milk-V Mars** offers a choice of 2GB / 4GB / 8GB memory sizes.  
 The memory specification is LPDDR4 2800MT/s.
 
-### Camara for MIPI CSI
+### Peripheral support list
 
-Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/mipicsi-support)
-
-### Display for MIPI DSI
-
-Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/mipidsi-support)
-
-### UVC Camera
-
-Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/uvccam-support)
+Mars peripheral support list：[https://milkv.io/docs/mars/support-list](https://milkv.io/docs/mars/support-list)。
 
 ### Support
 For support please post your issue on the [Milk-V Community Mars Category](https://community.milkv.io/c/mars).

@@ -236,9 +236,7 @@ const sidebars = {
         'mars/getting-started/third-party-img',
       ],
     },
-    'mars/mipicsi-support',
-    'mars/mipidsi-support',
-    'mars/uvccam-support',
+    'mars/support-list',
     {
       type: "category",
       label: '🔳 Compute Module',
