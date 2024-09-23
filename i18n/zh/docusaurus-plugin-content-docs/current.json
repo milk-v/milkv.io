@@ -27,6 +27,10 @@
     "message": "TPU",
     "description": "The label for category TPU in sidebar duo"
   },
+  "sidebar.duo.category.🛠️ Low-level Development": {
+    "message": "🛠️ 底层开发",
+    "description": "The label for category 🛠️ Low-level Development in sidebar duo"
+  },
   "sidebar.duo.category.🧰 Resources": {
     "message": "🧰 资源",
     "description": "The label for category 🧰 Resources in sidebar duo"

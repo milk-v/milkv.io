@@ -82,6 +82,20 @@ const sidebars = {
     },
     {
       type: "category",
+      label: '🛠️ Low-level Development',
+      collapsed: false,
+      link: {
+        type: "generated-index",
+        title: '🛠️ Low-level Development',
+        description: 'Low-level Development',
+        slug: '/duo/low-level-dev'
+      },
+      items: [
+        'duo/low-level-dev/mipi-dsi',
+      ],
+    },
+    {
+      type: "category",
       label: '🧰 Resources',
       collapsed: false,
       link: {
