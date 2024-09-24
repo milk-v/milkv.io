@@ -60,7 +60,7 @@ const sidebars = {
         {
           type: "category",
           label: 'TPU',
-          collapsed: false,
+          collapsed: true,
           link: {
             title: 'TPU',
             description: ' ',
@@ -77,7 +77,19 @@ const sidebars = {
             'duo/application-development/tpu/tpu-resnet18',
           ],
         },
-        'duo/application-development/sensor-demo',
+        {
+          type: "category",
+          label: 'Sensor Demo',
+          collapsed: false,
+          link: {
+            title: 'Sensor Demo',
+            description: ' ',
+          },
+          items: [
+            'duo/application-development/sensor-demo/dht22',
+            'duo/application-development/sensor-demo/df9gms180',
+          ],
+        },
       ],
     },
     {
