@@ -23,7 +23,7 @@ DHT22 温湿度传感器是一款多功能且经济高效的传感器，用于�
 
 DHT22 模块共有 3 个引脚。而 DHT22 裸骨传感器有 4 个引脚。如果我们考虑三个引脚中的模块，其中两个是电源引脚，一个是数据引脚。如果我们查看 4 针传感器，则额外的针是 NC 针，它没有任何功能。模块和传感器的引脚图如下所示。
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_10.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_10.webp' maxWidth='50%' align='left' />
 
 DATA 用于 1-Wire 通信的数据引脚。
 
@@ -37,13 +37,13 @@ Not Used 在此传感器中，未使用此引脚。
 
 除传感器外，DHT22 模块在 PCB 上仅包含两个组件。一个上拉电阻和一个去耦电容，DHT22 模块的零件标记如下所示。
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_11.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_11.webp' maxWidth='50%' align='left' />
 
 ### DHT22 模块电路图
 
 DHT22 温湿度传感器模块完整原理图如下图：
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_12.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_12.webp' maxWidth='50%' align='left' />
 
 DHT22 模块的原理图如上所示。如前所述，董事会只有几名成员。VCC 和 GND 引脚直接连接到 DHT22，上拉电阻连接到 DATA 引脚。钽电容和多层电容提供足够的滤波。作为电源指示，在某些 PCB 中，您可以找到 LED 指示灯，但对于大多数电路板来说，LED 是不存在的。
 
@@ -73,11 +73,11 @@ DHT22 传感器使用专有的单总线通信协议，可以通过计算的定�
 
 如果您使用的是原装 DHT22 传感器，那么它里面会有一个NTC热敏电阻和传感器模块，但是您在市场上可以找到的大多数传感器大多是非原装零件，并且在里面您会发现一个小传感器，您可以在下图中看到。
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_13.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_13.webp' maxWidth='50%' align='left' />
 
 湿度传感元件由夹在两个电极之间的保湿基板组成。当基材吸收水分时，两个电极之间的电阻会降低。两个电极之间的电阻变化与相对湿度成正比。较高的相对湿度会降低电极之间的电阻，而较低的相对湿度会增加电极之间的电阻。这种电阻变化是通过板载 MCU 的 ADC 测量的，并计算出相对湿度。
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_14.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_14.webp' maxWidth='50%' align='left' />
 
 每个 DHT22 元件都经过实验室严格校准，湿度校准极其准确。校准系数作为程序存储在 OTP 存储器中，供传感器内部信号检测过程使用。
 
@@ -87,7 +87,7 @@ DHT22 传感器使用专有的单总线通信协议，可以通过计算的定�
 
 当 MCU 发送启动信号 DHT 从低功耗模式变为运行模式，并将所有 40 位数据转储给微控制器，微控制器读取数据并根据二进制数据计算温度和湿度。
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_15.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_15.webp' maxWidth='50%' align='left' />
 
 上图显示了数据通信如何与微控制器和 DHT22 一起工作。
 
@@ -97,11 +97,11 @@ DHT22：红线接 3V3(OUT)，黑线接地，绿线接 GP15。
 
 电路图如下所示：黑色圆圈表示 DHT22。
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_01.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_01.webp' maxWidth='50%' align='left' />
 
 DHT22 接好后应该是这样的：
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_16.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_16.webp' maxWidth='50%' align='left' />
 
 ## 二、示例代码
 
@@ -317,7 +317,7 @@ Hello, World!
 
 ## 四、运行程序
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_19.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_19.webp' maxWidth='50%' align='left' />
 
 接下来开始编译，进入该目录直接执行 make 即可：
 ```
@@ -326,8 +326,8 @@ make it
 ```
 make 报错 source 一下即可。编译成功后得到 dht22 可执行程序。如下图所示。
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_17.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_17.webp' maxWidth='50%' align='left' />
 
 然后把 dht22 上传到开发板 root 路径下，输入`./dht22`即可运行。运行成功截图如下：
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_18.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_18.webp' maxWidth='50%' align='left' />

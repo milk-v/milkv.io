@@ -225,4 +225,4 @@ make 报错 source 一下即可。编译成功后得到 df9gms 可执行程序�
 
 然后把 df9gms 上传到开发板root路径下，输入 ./df9gms 即可运行。运行成功截图如下：
 
-<Image src='/docs/duo/sensor-demo/df9gms180/df9gms180_08.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/df9gms180/df9gms180_09.webp' maxWidth='50%' align='left' />

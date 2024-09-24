@@ -22,7 +22,7 @@ The DHT22 Temperature and Humidity Sensor is a versatile and cost-effective sens
 
 The DHT22 module has a total of 3 pins, while the DHT22 bare sensor has 4 pins. When considering the module with three pins, two are power pins, and one is the data pin. For the 4-pin sensor, the additional pin is an NC (No Connection) pin with no specific function. The pinout for both the module and the sensor is as follows:
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_10.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_10.webp' maxWidth='50%' align='left' />
 
 \- DATA: Data pin for 1-Wire communication.
 
@@ -36,13 +36,13 @@ The DHT22 module has a total of 3 pins, while the DHT22 bare sensor has 4 pins. 
 
 Apart from the sensor, the DHT22 module on the PCB includes only two components: a pull-up resistor and a decoupling capacitor. The component markings for the DHT22 module are as follows.
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_11.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_11.webp' maxWidth='50%' align='left' />
 
 ### DHT22 Module Circuit Diagram
 
 The complete schematic diagram of the DHT22 Temperature and Humidity Sensor module is shown in the diagram below.
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_12.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_12.webp' maxWidth='50%' align='left' />
 
 The schematic diagram of the DHT22 module is as shown above. As mentioned earlier, the board has only a few components. The VCC and GND pins are directly connected to the DHT22 sensor, and the pull-up resistor is connected to the DATA pin. Tantalum and multi-layer capacitors provide sufficient filtering. In some PCBs, you may find an LED indicator as a power indicator, but for most circuit boards, the LED is not present.
 
@@ -72,11 +72,11 @@ A: The DHT22 sensor uses a proprietary single-wire communication protocol that s
 
 If you are using an original DHT22 sensor, it contains an NTC thermistor and a sensor module. However, most sensors available in the market are non-original parts and contain a small sensor, as shown in the image below.
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_13.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_13.webp' maxWidth='50%' align='left' />
 
 The humidity sensing element consists of a moisture-absorbing substrate sandwiched between two electrodes. As the substrate absorbs moisture, the resistance between the two electrodes decreases. The resistance change between the electrodes is proportional to the relative humidity. Higher relative humidity decreases the resistance between the electrodes, while lower relative humidity increases the resistance. This resistance change is measured by the onboard MCU's ADC and used to calculate relative humidity.
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_14.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_14.webp' maxWidth='50%' align='left' />
 
 Each DHT22 component undergoes rigorous calibration in the laboratory, with extremely accurate humidity calibration. Calibration coefficients are stored as programs in OTP memory for use in the sensor's internal signal detection process.
 
@@ -86,7 +86,7 @@ A single-wire communication protocol is used to communicate with the DHT22 and t
 
 When the MCU sends the start signal, the DHT changes from low-power mode to running mode and dumps all 40 bits of data to the microcontroller. The microcontroller reads the data and calculates temperature and humidity based on the binary data.
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_15.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_15.webp' maxWidth='50%' align='left' />
 
 The image above shows how data communication works with the microcontroller and DHT22.
 
@@ -96,11 +96,11 @@ DHT22: Red wire to 3V3 (OUT), black wire to ground, green wire to GP15.
 
 The circuit diagram is as follows: The black circle represents the DHT22.
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_01.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_01.webp' maxWidth='50%' align='left' />
 
 DHT22 should be connected as follows:
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_16.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_16.webp' maxWidth='50%' align='left' />
 
 ## Example Code:
 GitHub link: https://github.com/milkv-duo/duo-examples
@@ -305,7 +305,7 @@ You can also use Ubuntu installed in a virtual machine, Ubuntu installed via WSL
 
 ## Operation Procedure
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_19.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_19.webp' maxWidth='50%' align='left' />
 
 Next, compile it. Taking dht22 as an example, enter the directory of the example and simply execute make
 
@@ -315,8 +315,8 @@ make it
 ```
 Make an error report and source it. After compiling successfully, you will get the df9gms executable program. As shown in the figure below.
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_17.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_17.webp' maxWidth='50%' align='left' />
 
 Then upload df9gms to the root path of the development board, and enter``` ./dht22``` to run it. The screenshot of successful running is shown below
 
-<Image src='/docs/duo/duo/sensor-demo/dht22/dht22_18.webp' maxWidth='50%' align='left' />
+<Image src='/docs/duo/sensor-demo/dht22/dht22_18.webp' maxWidth='50%' align='left' />
