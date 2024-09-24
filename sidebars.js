@@ -132,8 +132,10 @@ const sidebars = {
       label: '🔌 IO Boards',
       collapsed: false,
       link: {
-        type: 'doc',
-        id: 'duo/io-board/usb-ethernet-iob',
+        type: "generated-index",
+        title: '🔌 IO Boards',
+        description: 'Duo Series IOB',
+        slug: 'duo/io-board/'
       },
       items: [
         'duo/io-board/usb-ethernet-iob',
