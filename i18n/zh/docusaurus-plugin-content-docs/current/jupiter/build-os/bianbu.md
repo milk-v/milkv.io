@@ -1,9 +1,11 @@
 ---
-sidebar_label: '构建 Bianbu OS'
+sidebar_label: '构建 Bianbu OS 1.0'
 sidebar_position: 20
 ---
 
-# Bianbu 1.0 ROOTFS 制作
+# Bianbu 1.0 镜像制作
+
+Bianbu 1.0 镜像基本 Ubuntu 23.10 版本生成。
 
 ## 环境要求
 
@@ -315,3 +317,136 @@ mke2fs -d $TARGET_ROOTFS -L rootfs -t ext4 -N 524288 -U $UUID_ROOTFS rootfs.ext4
 ```
 
 此时，在当前目录可以看到两个分区镜像，`bootfs.ext4` 和 `rootfs.ext4`，可使用 fastboot 烧写到板子中。
+
+## 生成 SD 卡镜像
+
+下面介绍如何基于上述 Docker 环境在宿主机上使用 genimage 制作 SD 卡镜像。
+
+### 1. 安装依赖
+
+```bash
+echo 'tzdata tzdata/Areas select Asia' | debconf-set-selections
+echo 'tzdata tzdata/Zones/Asia select Shanghai' | debconf-set-selections
+DEBIAN_FRONTEND=noninteractive apt-get -y install wget python3 genimage
+```
+
+### 2. 拷贝固件依赖的文件
+
+```bash
+export TMP=pack_dir
+mkdir -p $TMP/factory/
+cp $TARGET_ROOTFS/usr/lib/u-boot/spacemit/bootinfo_emmc.bin $TMP/factory
+cp $TARGET_ROOTFS/usr/lib/u-boot/spacemit/bootinfo_sd.bin $TMP/factory
+cp $TARGET_ROOTFS/usr/lib/u-boot/spacemit/bootinfo_spinand.bin $TMP/factory
+cp $TARGET_ROOTFS/usr/lib/u-boot/spacemit/bootinfo_spinor.bin $TMP/factory
+cp $TARGET_ROOTFS/usr/lib/u-boot/spacemit/FSBL.bin $TMP/factory
+cp $TARGET_ROOTFS/usr/lib/u-boot/spacemit/u-boot.itb $TMP
+cp $TARGET_ROOTFS/usr/lib/u-boot/spacemit/env.bin $TMP
+cp $TARGET_ROOTFS/usr/lib/riscv64-linux-gnu/opensbi/generic/fw_dynamic.itb $TMP
+cp bootfs.ext4 $TMP
+cp rootfs.ext4 $TMP
+```
+
+### 3. 下载参考分区表
+
+```bash
+wget -P $TMP https://gitee.com/bianbu/firmware-config/raw/main/partition_universal.json
+```
+
+### 4. 下载生成 genimage.cfg 的脚本，并生成 genimage.cfg
+
+```bash
+wget -P $TMP https://gitee.com/bianbu-linux/scripts/raw/bl-v1.0.y/gen_imgcfg.py
+```
+```bash
+python3 $TMP/gen_imgcfg.py -i $TMP/partition_universal.json -n bianbu-custom.sdcard -o $TMP/genimage.cfg
+```
+
+### 5. 生成 SD 卡镜像
+
+```bash
+ROOTPATH_TMP="$(mktemp -d)"
+GENIMAGE_TMP="$(mktemp -d)"
+```
+```bash
+genimage \
+    --config "$TMP/genimage.cfg" \
+    --rootpath "$ROOTPATH_TMP" \
+    --tmppath "$GENIMAGE_TMP" \
+    --inputpath "$TMP" \
+    --outputpath "."
+```
+
+当看到以下信息时，说明打包成功。
+
+```
+INFO: hdimage(bianbu-custom): adding partition 'bootinfo' from 'factory/bootinfo_sd.bin' ...
+INFO: hdimage(bianbu-custom): adding partition 'fsbl' (in MBR) from 'factory/FSBL.bin' ...
+INFO: hdimage(bianbu-custom): adding partition 'env' (in MBR) from 'env.bin' ...
+INFO: hdimage(bianbu-custom): adding partition 'opensbi' (in MBR) from 'fw_dynamic.itb' ...
+INFO: hdimage(bianbu-custom): adding partition 'uboot' (in MBR) from 'u-boot.itb' ...
+INFO: hdimage(bianbu-custom): adding partition 'bootfs' (in MBR) from 'bootfs.ext4' ...
+INFO: hdimage(bianbu-custom): adding partition 'rootfs' (in MBR) from 'rootfs.ext4' ...
+INFO: hdimage(bianbu-custom): adding partition '[MBR]' ...
+INFO: hdimage(bianbu-custom): adding partition '[GPT header]' ...
+INFO: hdimage(bianbu-custom): adding partition '[GPT array]' ...
+INFO: hdimage(bianbu-custom): adding partition '[GPT backup]' ...
+INFO: hdimage(bianbu-custom): writing GPT
+INFO: hdimage(bianbu-custom): writing protective MBR
+INFO: hdimage(bianbu-custom): writing MBR
+INFO: cmd: "rm -rf "/tmp/tmp.rX4fZ39DKG"/*" (stderr):
+```
+
+`bianbu-custom.sdcard` 就是生成的 SD 镜像。
+
+## 生成 eMMC/SSD 镜像
+
+下面介绍如何基于上述 Docker 环境在宿主机上制作 eMMC/SSD 的镜像，该镜像为 zip 包，需要使用 Titan 工具刷入 eMMC 或者 SSD 固态硬盘，具体刷机方法请参考：[Milk-V Jupiter 安装操作系统](https://milkv.io/zh/docs/jupiter/getting-started/boot)。
+
+### 1. 安装依赖
+
+```bash
+apt-get -y install zip
+```
+
+### 2. 拷贝固件依赖的文件
+
+先将前面制作 SD 卡镜像时使用的临时目录 pack_dir 删除：
+
+```bash
+rm -rf pack_dir
+```
+
+```bash
+export TMP=pack_dir
+mkdir -p $TMP/factory/
+cp $TARGET_ROOTFS/usr/lib/u-boot/spacemit/bootinfo_emmc.bin $TMP/factory
+cp $TARGET_ROOTFS/usr/lib/u-boot/spacemit/bootinfo_sd.bin $TMP/factory
+cp $TARGET_ROOTFS/usr/lib/u-boot/spacemit/bootinfo_spinand.bin $TMP/factory
+cp $TARGET_ROOTFS/usr/lib/u-boot/spacemit/bootinfo_spinor.bin $TMP/factory
+cp $TARGET_ROOTFS/usr/lib/u-boot/spacemit/FSBL.bin $TMP/factory
+cp $TARGET_ROOTFS/usr/lib/u-boot/spacemit/u-boot.itb $TMP
+cp $TARGET_ROOTFS/usr/lib/u-boot/spacemit/env.bin $TMP
+cp $TARGET_ROOTFS/usr/lib/riscv64-linux-gnu/opensbi/generic/fw_dynamic.itb $TMP
+cp bootfs.ext4 $TMP
+cp rootfs.ext4 $TMP
+```
+
+### 3. 下载参考分区表
+
+```bash
+wget -P $TMP https://gitee.com/bianbu/firmware-config/raw/main/fastboot.yaml
+wget -P $TMP https://gitee.com/bianbu/firmware-config/raw/main/partition_2M.json
+wget -P $TMP https://gitee.com/bianbu/firmware-config/raw/main/partition_flash.json
+wget -P $TMP https://gitee.com/bianbu/firmware-config/raw/main/partition_universal.json
+```
+
+### 4. 打包
+
+```bash
+cd $TMP
+zip -r ../bianbu-custom.zip *
+cd ..
+```
+
+生成的 `bianbu-custom.zip` 包就是 eMMC/SSD 镜像。

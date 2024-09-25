@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Build Bianbu OS'
+sidebar_label: 'Build Bianbu OS 1.0'
 sidebar_position: 20
 ---
 
