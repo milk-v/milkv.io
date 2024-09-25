@@ -22,7 +22,7 @@ Arduino IDE supports three operating systems: Windows, Linux, and macOS. Accordi
 Open Arduino IDE, select ``Preferences`` in the ``File`` menu, and add the Duo configuration file address in the ``Additional boards manager URLs`` in the ``Settings`` tab:
 
 ```
-https://github.com/milkv-duo/duo-arduino/releases/download/config/package_sg200x_index.json
+https://github.com/kubuds/sophgo-arduino/releases/download/v0.2.5/package_sg200x_index.json
 ```
 
 <Image src='/docs/duo/arduino/duo-arduino-01.jpg' minWidth='40%' maxWidth='100%' align='left' />
@@ -41,9 +41,11 @@ Currently, Duo's SD card system needs to burn firmware that supports Arduino. Pl
 
 :::tip
 The latest available Arduino firmware version is [Duo-V1.1.2](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.1.2).
+
+DuoS does not currently provide a ready-to-use Arduino version of the firmware. Please go to [Buildroot SDK](https://milkv.io/zh/docs/duo/getting-started/buildroot-sdk) , clone it and switch to the arduino branch to compile.
 :::
 
-Refer to [Boot the Duo](https://milkv.io/docs/duo/getting-started/boot) in the previous chapter to install the SD card system.
+Refer to [Boot the Duo](https://milkv.io/docs/duo/getting-started/boot) in the previous chapter to install the system.
 
 Use a USB cable to connect Duo to your computer, and Duo will automatically power on.
 
@@ -146,6 +148,60 @@ If you still cannot upload code to the Duo after installing ```pyserial```, plea
 
 </div>
 
+### DuoS
+
+GPIO on `Header J3` (RJ45 Port side) use 3.3V logic levels.
+
+<div className='gpio_style' style={{ overflow :"auto"}} >
+
+| SPI      | PWM  | I2C      | UART     | NUM | SG2000     | NAME  | PIN                              | PIN                             | NAME     | SG2000     | NUM | UART               | PWM  | SPI     | JTAG      |
+|:---------|:-----|:---------|:---------|:---:|:-----------|------:|:--------------------------------:|:-------------------------------:|:---------|:-----------|:---:|:-------------------|:-----|:--------|:----------|
+|          |      |          |          |     |            | 3V3   | <div className='orange'>1</div>  | <div className='red'>2</div>    | VSYS(5V) |            |     |                    |      |         |           |
+|          | PWM3 | I2C4_SCL |          | 468 | XGPIOB[20] | B20   | <div className='green'>3</div>   | <div className='red'>4</div>    | VSYS(5V) |            |     |                    |      |         |           |
+|          |      | I2C4_SDA |          | 469 | XGPIOB[21] | B21   | <div className='green'>5</div>   | <div className='black'>6</div>  | GND      |            |     |                    |      |         |           |
+|          |      | I2C1_SCL |          | 466 | XGPIOB[18] | B18   | <div className='green'>7</div>   | <div className='green'>8</div>  | A16      | XGPIOA[16] | 496 | UART0_TX/UART1_TX  | PWM4 |         |           |
+|          |      |          |          |     |            | GND\* | <div className='black'>9</div>   | <div className='green'>10</div> | A17      | XGPIOA[17] | 497 | UART0_RX/UART1_RX  | PWM5 |         |           |
+|          | PWM1 | I2C1_SDA | UART2_TX | 459 | XGPIOB[11] | B11   | <div className='green'>11</div>  | <div className='green'>12</div> | B19      | XGPIOB[19] | 467 | UART2_TX           | PWM2 |         |           |
+|          | PWM2 | I2C1_SCL | UART2_RX | 460 | XGPIOB[12] | B12   | <div className='green'>13</div>  | <div className='black'>14</div> | GND      |            |     |                    |      |         |           |
+|          |      |          | UART2_RX | 470 | XGPIOB[22] | B22   | <div className='green'>15</div>  | <div className='green'>16</div> | A20      | XGPIOA[20] | 500 |                    |      |         | JTAG_TRST |
+|          |      |          |          |     |            | 3V3   | <div className='orange'>17</div> | <div className='green'>18</div> | A19      | XGPIOA[19] | 499 | UART1_TX/UART1_RTS | PWM7 |         | JTAG_TMS  |
+| SPI3_SDO | PWM3 | I2C2_SCL |          | 461 | XGPIOB[13] | B13   | <div className='green'>19</div>  | <div className='black'>20</div> | GND      |            |     |                    |      |         |           |
+| SPI3_SDI |      | I2C2_SDA |          | 462 | XGPIOB[14] | B14   | <div className='green'>21</div>  | <div className='green'>22</div> | A18      | XGPIOA[18] | 498 | UART1_RX/UART1_CTS | PWM6 |         | JTAG_TCK  |
+| SPI3_SCK |      |          | UART2_TX | 463 | XGPIOB[15] | B15   | <div className='green'>23</div>  | <div className='green'>24</div> | B16      | XGPIOB[16] | 464 | UART2_RX           |      | SPI3_CS |           |
+|          |      |          |          |     |            | GND   | <div className='black'>25</div>  | <div className='green'>26</div> | A28      | XGPIOA[28] | 508 | UART2_TX/UART1_TX  |      |         |           |
+
+</div>
+
+*GND\*: Pin 9 is a low-level GPIO in the V1.1 version of the hardware, and is GND in the V1.2 version and later.*
+
+NOTE: The I2C on the CSI camera connector J2 is I2C2, so when using the CSI camera on J2, I2C2 in the J3 pin header is not available.
+
+GPIO on `Header J4`(USB-A Port side) use 1.8V logic levels.
+
+<div className='gpio_style' style={{ overflow :"auto"}} >
+
+| PWM   | I2C      | UART     | MIPI DSI   | NUM | SG2000      | NAME     | PIN                             | PIN                              | NAME        | SG2000     | NUM | MIPI DSI   |
+|:------|:---------|:---------|:-----------|:---:|:------------|---------:|:-------------------------------:|:--------------------------------:|:------------|:-----------|:---:|:-----------|
+|       |          |          |            |     |             | VSYS(5V) | <div className='red'>52</div>   | <div className='blue'>51</div>   | AUDIO_OUT_R |            |     |            |
+| PWM12 | I2C4_SCL | UART3_TX |            | 449 | XGPIOB[1]   | B1       | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |            |     |            |
+| PWM13 | I2C4_SDA | UART3_RX |            | 450 | XGPIOB[2]   | B2       | <div className='green'>48</div> | <div className='blue'>47</div>   | AUDIO_IN_R  |            |     |            |
+|       |          |          |            | 451 | XGPIOB[3]   | B3       | <div className='green'>46</div> | <div className='blue'>45</div>   | AUDIO_IN_L  |            |     |            |
+| PWM10 | I2C2_SDA |          | LCD_RST    | 354 | PWR_GPIO[2] | E2       | <div className='green'>44</div> | <div className='orange'>43</div> | 3V3         |            |     |            |
+| PWM9  | I2C2_SCL | UART2_RX | LCD_PWR_CT | 353 | PWR_GPIO[1] | E1       | <div className='green'>42</div> | <div className='green'>41</div>  | C18         | XGPIOC[18] | 434 | MIPI_TX_3N |
+| PWM8  |          | UART2_TX | LCD_PWM    | 352 | PWR_GPIO[0] | E0       | <div className='green'>40</div> | <div className='green'>39</div>  | C19         | XGPIOC[19] | 435 | MIPI_TX_3P |
+|       |          |          |            |     |             | GND      | <div className='black'>38</div> | <div className='black'>37</div>  | GND         |            |     |            |
+|       |          |          | MIPI_TX_2N | 436 | XGPIOC[20]  | C20      | <div className='green'>36</div> | <div className='green'>35</div>  | C16         | XGPIOC[16] | 432 | MIPI_TX_CN |
+|       |          |          | MIPI_TX_2P | 437 | XGPIOC[21]  | C21      | <div className='green'>34</div> | <div className='green'>33</div>  | C17         | XGPIOC[17] | 433 | MIPI_TX_CP |
+|       |          |          |            |     |             | GND      | <div className='black'>32</div> | <div className='black'>31</div>  | GND         |            |     |            |
+|       |          |          | MIPI_TX_1N | 430 | XGPIOC[14]  | C14      | <div className='green'>30</div> | <div className='green'>29</div>  | C12         | XGPIOC[12] | 428 | MIPI_TX_0N |
+|       |          |          | MIPI_TX_1P | 431 | XGPIOC[15]  | C15      | <div className='green'>28</div> | <div className='green'>27</div>  | C13         | XGPIOC[13] | 429 | MIPI_TX_0P |
+
+</div>
+
+:::warning
+In DuoS, SPI, I2C1/2, and ADC are temporarily unavailable. Please wait for subsequent software updates.
+:::
+
 ## 3. Code example
 
 ### GPIO Usage Example
@@ -184,6 +240,10 @@ void loop() {
 #### UART Serial port
 
 The UART serial port uses `UART3` on physical pin `6/7` by default. When debugging the Arduino program, you can print debugging information through this serial port.
+
+:::tip
+If you are using a DuoS board, `UART3` is mapped to the `50/48` pins by default. Because the `50/48` pins use 1.8V level, it may be inconvenient to use. It is recommended that you use `UART2` instead.
+:::
 
 The connection method is as follows. The computer can use a USB to TTL serial port cable. The logic level is 3.3V and the baud rate is 115200. The RX of the serial port cable is connected to the PIN 6 UART3_TX of the Duo. The TX of the serial port cable is connected to the PIN 7 UART3_RX of the Duo. The serial port The GND of the line is connected to any GND of the Duo, such as pin 3:
 
