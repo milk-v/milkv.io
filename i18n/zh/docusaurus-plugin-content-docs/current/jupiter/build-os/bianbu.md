@@ -5,7 +5,7 @@ sidebar_position: 20
 
 # Bianbu 1.0 镜像制作
 
-Bianbu 1.0 镜像基本 Ubuntu 23.10 版本生成。
+Bianbu 1.0 镜像基于 Ubuntu 23.10 版本制作。
 
 ## 环境要求
 
@@ -98,8 +98,6 @@ export BASE_ROOTFS_URL=https://archive.spacemit.com/bianbu-base/bianbu-base-23.1
 ```
 ```bash
 export BASE_ROOTFS=$(basename "$BASE_ROOTFS_URL")
-```
-```bash
 export TARGET_ROOTFS=rootfs
 ```
 
@@ -213,9 +211,18 @@ chroot $TARGET_ROOTFS /bin/bash -c "DEBIAN_FRONTEND=noninteractive apt-get -y --
 
 不同变体有不同的元包：
 
-- Minimal：bianbu-minimal
-- Dekstop：bianbu-desktop bianbu-desktop-zh bianbu-desktop-en bianbu-desktop-minimal-en bianbu-standard bianbu-development
-- NAS：bianbu-nas
+- Minimal
+  ```
+  bianbu-minimal
+  ```
+- Dekstop
+  ```
+  bianbu-desktop bianbu-desktop-zh bianbu-desktop-en bianbu-desktop-minimal-en bianbu-standard bianbu-development
+  ```
+- NAS
+  ```
+  bianbu-nas
+  ```
 
 这里以制作最小的 minimal 变体为例：
 
@@ -290,8 +297,6 @@ mount | grep "$TARGET_ROOTFS/dev" > /dev/null && umount -l $TARGET_ROOTFS/dev
 
 ```bash
 UUID_BOOTFS=$(uuidgen)
-```
-```bash
 UUID_ROOTFS=$(uuidgen)
 ```
 ```bash
@@ -315,6 +320,8 @@ mv $TARGET_ROOTFS/boot/* bootfs
 mke2fs -d bootfs -L bootfs -t ext4 -U $UUID_BOOTFS bootfs.ext4 "256M"
 mke2fs -d $TARGET_ROOTFS -L rootfs -t ext4 -N 524288 -U $UUID_ROOTFS rootfs.ext4 "2048M"
 ```
+
+如果前面元包用的是 Desktop 版本，rootfs 会较大，需要将命令中 rootfs.ext4 的空间调大，比如 "9216M"。
 
 此时，在当前目录可以看到两个分区镜像，`bootfs.ext4` 和 `rootfs.ext4`，可使用 fastboot 烧写到板子中。
 
