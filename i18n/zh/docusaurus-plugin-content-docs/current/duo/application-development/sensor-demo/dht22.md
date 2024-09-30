@@ -296,12 +296,12 @@ source envsetup.sh
 cd hello-world
 make
 ```
-编译成功后将生成的 helloworld 可执行程序通过网口或者 USB 网络等方式传送到 Duo 设备中，比如[默认固件](https://github.com/milkv-duo/duo-buildroot-sdk/releases)支持的 USB-NCM 方式，Duo 的 IP 为192.168.42.1，用户名是 root，密码是 milkv
+编译成功后将生成的 helloworld 可执行程序通过网口或者 USB 网络等方式传送到 Duo 设备中，比如[默认固件](https://github.com/milkv-duo/duo-buildroot-sdk/releases)支持的 USB-NCM 方式，Duo 的 IP 为 192.168.42.1，用户名是 root，密码是 milkv
 
 ```
 scp helloworld root@192.168.42.1:/root/
 ```
-发送成功后，在 ssh 或者串口登陆的终端中运行 `./helloworld`，会打印 Hello, World!
+发送成功后，在 ssh 或者串口登陆的终端中运行 `./helloworld`，会打印 `Hello, World!`
 
 ```
 [root@milkv\]~# ./helloworld
