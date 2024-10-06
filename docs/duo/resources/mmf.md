@@ -234,14 +234,6 @@ Below is the list of the Cvitek CV180x / CV181x MMF SDK Reference Documentation 
     <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/ISP/PQ_Tools_User_Guide/build/PQToolsUserGuide_en.pdf">pdf</a></td>
   </tr>
   <tr>
-    <td>MIPI 屏幕时钟时序计算器</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Clock_Timing_Calculator_for_MIPI_Panels/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/MPI/Clock_Timing_Calculator_for_MIPI_Panels/build/ClockTimingCalculatorforMIPIPanels_zh.pdf">pdf</a></td>
-    <td>Clock Timing Calculator for MIPI Panels</td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Clock_Timing_Calculator_for_MIPI_Panels/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/MPI/Clock_Timing_Calculator_for_MIPI_Panels/build/ClockTimingCalculatorforMIPIPanels_en.pdf">pdf</a></td>
-  </tr>
-  <tr>
     <td>量产烧写使用指南</td>
     <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/BSP/Production_Burning_User_Guide/build/html/index.html">html</a></td>
     <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/BSP/Production_Burning_User_Guide/build/ProductionBurningUserGuide_zh.pdf">pdf</a></td>
