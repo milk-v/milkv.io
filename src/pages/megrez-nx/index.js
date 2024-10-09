@@ -64,11 +64,11 @@ export default () => {
                         <div>
                             <p className={styles_j.feature_title}>All in Megrez NX</p>
                             <p className={styles_j.feature_introduce}>
-                                WIFI5/BT5 Onboard
+                                WIFI6 / BT5.2 Onboard
                                 <br />
                                 eMMC Onboard
                             </p>
-                            <img src="/jupiter-nx/view3.webp" alt="All in Megrez NX" className={clsx(styles_j.view3, styles.onboard)} />
+                            <img src="/megrez-nx/view4.webp" alt="All in Megrez NX" className={clsx(styles_j.view3, styles.onboard)} />
                         </div>
                         <div>
                             <p className={styles_j.feature_title}>Video Encoding
