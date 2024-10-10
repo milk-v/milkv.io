@@ -378,7 +378,7 @@ echo "MAC_ADDR=11:22:33:44:55:66" > /mnt/system/firmware/aic8800/rwnx_settings.i
 DuoS eMMC 版本出厂未烧录固件，需要使用 PC 通过 USB 接口烧录。
 
 :::tip
-使用 Windows 下的 USB 烧录工具支持 eMMC 固件版本为 [V1.1.2](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.1.2) 或[更新的版本](https://github.com/milkv-duo/duo-buildroot-sdk/releases)。
+使用 Windows 下的 USB 烧录工具支持 eMMC 固件版本为 [V1.1.3](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/v1.1.3) 或[更新的版本](https://github.com/milkv-duo/duo-buildroot-sdk/releases)。
 :::
 
 #### Windows 环境下烧录
@@ -393,7 +393,7 @@ DuoS eMMC 版本出厂未烧录固件，需要使用 PC 通过 USB 接口烧录�
 
 3. 下载固件
 
-   下载 DuoS eMMC 最新版本的固件，当前是 [milkv-duos-emmc-v1.1.2-2024-0801.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.1.2/milkv-duos-emmc-v1.1.2-2024-0801.zip)，可以在烧录工具 `CviBurn_v2.0_cli_windows` 目录下新建 rom 文件夹，并将下载好的 eMMC 固件压缩包解压到 rom 目录下，此时烧录工具的目录结构如下：
+   下载 DuoS eMMC 最新版本的固件，当前是 [milkv-duos-emmc-v1.1.3-2024-0930.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/v1.1.3/milkv-duos-emmc-v1.1.3-2024-0930.zip)，可以在烧录工具 `CviBurn_v2.0_cli_windows` 目录下新建 rom 文件夹，并将下载好的 eMMC 固件压缩包解压到 rom 目录下，此时烧录工具的目录结构如下：
 
    ```
    └───CviBurn_v2.0_cli_windows
@@ -419,7 +419,15 @@ DuoS eMMC 版本出厂未烧录固件，需要使用 PC 通过 USB 接口烧录�
 
    <Image src='/docs/duo/duos/duos-emmc-install-01.webp' maxWidth='100%' align='center' />
 
-   用 **Type-C 数据线** 连接 DuoS 和 PC （注意，目前如果 DuoS 有插 SD 卡，请先将 SD 卡取下），DuoS 会自动上电进入烧录模式，PC 端会实时显示烧录进度：
+   按住 DuoS 上的 recovery 按键，再用 **Type-C 数据线** 连接 DuoS 和 PC 。
+
+   :::warning
+   目前如果 DuoS 有插 SD 卡，请先将 SD 卡取下。
+   :::
+
+   <Image src='/docs/duo/duos/duos-emmc-install-02.jpg' maxWidth='100%' align='center' />
+   
+   松开 recovery 按键， DuoS 会上电并进入烧录模式，PC 端会实时显示烧录进度：
 
    ```
    [INFO] Waiting for USB device connection: ---
