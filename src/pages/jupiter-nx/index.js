@@ -77,15 +77,14 @@ export default () => {
 
                     <div className={styles.left_item6}>
                         <p className={styles.items_title}>PCIe Gen2</p>
-                        <p className={styles.items_info}>1x 2-lane  +  2x 1-lane</p>
+                        <p className={styles.items_info}>1x 2-lane  +  1x 1-lane</p>
                     </div>
 
                     <div className={styles.left_item7}>
                         <p className={styles.items_title}>All in Jupiter NX</p>
-                        <p className={styles.items_info}>WIFI5/BT5 Onboard; Optional eMMC Onboard</p>
+                        <p className={styles.items_info}>WIFI6/BT5.2 Onboard; Optional eMMC Onboard</p>
                         <img src="/jupiter-nx/all-in.webp" alt="All in Jupiter NX" />
                     </div>
-
                 </div>
                 <div className={styles.right_main}>
                     <div className={styles.right_item1}>
@@ -203,7 +202,7 @@ export default () => {
                         <tr>
                             <td>USB</td>
                             <td>
-                                <p>1x USB3 OTG (Combo with 1-lane PCIe Gen2)</p>
+                                <p>1x USB3 (Combo with 1-lane PCIe Gen2)</p>
                                 <p>1x USB2 OTG</p>
                                 <p>1x USB2 HOST</p>
                             </td>
@@ -211,14 +210,21 @@ export default () => {
                         <tr>
                             <td>Wireless</td>
                             <td>
-                                <p>WIFI5/BT5 Onboard</p>
+                                <p>WIFI6 / BT5.2 Onboard</p>
                             </td>
                         </tr>
                         <tr>
-                            <td>Camera</td>
+                            <td>Video Output</td>
                             <td>
                                 <p>1x HDMI Interface, up to 1920x1440@60FPS</p>
                                 <p>1x MIPI DSI 4-lane</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Video Input</td>
+                            <td>
+                                <p>1x MIPI CSI 4-lane</p>
+                                <p>2x MIPI CSI 2-lane</p>
                             </td>
                         </tr>
                         <tr>
