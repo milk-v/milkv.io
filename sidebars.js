@@ -268,6 +268,7 @@ const sidebars = {
         'mars/compute-module/extendpartition',
         'mars/compute-module/bootloader',
         'mars/compute-module/hardware',
+        'mars/compute-module/update-eeprom',
         {
           type: "category",
           label: '🧰 Resources',
