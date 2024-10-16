@@ -5,7 +5,7 @@ sidebar_position: 05
 
 # MIPI DSI Screen Development
 
-`DuoS` and `Duo Module 01` support screens with MIPI DSI interface.
+`DuoS` and `Duo Module 01` support screens with MIPI DSI interface. The maximum output resolution is 1920x1080 (1080P@60fps RGB24-bit).
 
 ## Adding a New Screen
 

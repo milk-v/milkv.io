@@ -5,7 +5,7 @@ sidebar_position: 05
 
 # MIPI DSI 接口屏幕调试
 
-DuoS 和 Duo Module 01 模组支持 MIPI DSI 接口的屏幕。
+DuoS 和 Duo Module 01 模组支持 MIPI DSI 接口的屏幕。最大输出分辨率为 1920x1080 （1080P@60fps RGB24-bit）。
 
 ## 添加新的屏幕
 
