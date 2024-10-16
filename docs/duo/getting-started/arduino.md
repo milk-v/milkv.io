@@ -25,13 +25,13 @@ Open Arduino IDE, select ``Preferences`` in the ``File`` menu, and add the Duo c
 https://github.com/kubuds/sophgo-arduino/releases/download/v0.2.5/package_sg200x_index.json
 ```
 
-<Image src='/docs/duo/arduino/duo-arduino-01.jpg' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-01.webp' minWidth='40%' maxWidth='100%' align='left' />
 
 If you have configured other development board addresses before, separate them with commas, or click the icon on the right side of the address bar to bring up the window, and follow the prompts to add them.
 
 After configuring, select ``Board`` in the ``Tools`` menu, open the ``Boards Manager``, search for *SG200X*, and click ``Install``.
 
-<Image src='/docs/duo/arduino/duo-arduino-02.jpg' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-02.webp' minWidth='40%' maxWidth='100%' align='left' />
 
 At this point, the Duo development environment in Arduino IDE has been installed. Now you can write and test the code.
 
@@ -60,19 +60,19 @@ reboot
 
 At this time, there will be an additional serial device in the "Port" of the "Device Manager" of the computer.
 
-<Image src='/docs/duo/arduino/duo-arduino-03.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-03.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 On the main interface of Arduino IDE, click ``Select Board``, and then click ``Select other board and port...``
 
-<Image src='/docs/duo/arduino/duo-arduino-04.jpg' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-04.webp' minWidth='40%' maxWidth='100%' align='left' />
 
 Search for "duo", select ``Duo Dev Module`` for Duo, select ``Duo256 Dev Module`` for Duo256M, select the corresponding serial port in the port and click OK.
 
-<Image src='/docs/duo/arduino/duo-arduino-05.jpg' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-05.webp' minWidth='40%' maxWidth='100%' align='left' />
 
 Open the ``Examples`` > ``01.Basics`` > ``Blink`` test program in the ``File`` menu of the Arduino IDE. The function of this program is to blink the onboard LED of the Arduino device. In Duo It is also supported. You may need to install ```pyserial``` in order to upload, and then let’s just click the ``Upload`` button to test:
 
-<Image src='/docs/duo/arduino/duo-arduino-06.jpg' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-06.webp' minWidth='40%' maxWidth='100%' align='left' />
 
 At this time, you can see the LED on the Duo board blinking at intervals of 1 second.
 
@@ -247,7 +247,7 @@ If you are using a DuoS board, `UART3` is mapped to the `50/48` pins by default.
 
 The connection method is as follows. The computer can use a USB to TTL serial port cable. The logic level is 3.3V and the baud rate is 115200. The RX of the serial port cable is connected to the PIN 6 UART3_TX of the Duo. The TX of the serial port cable is connected to the PIN 7 UART3_RX of the Duo. The serial port The GND of the line is connected to any GND of the Duo, such as pin 3:
 
-<Image src='/docs/duo/arduino/duo-arduino-08.jpg' minWidth='40%' maxWidth='90%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-08.webp' minWidth='40%' maxWidth='90%' align='left' />
 
 test code:
 ```C
@@ -289,7 +289,7 @@ The I2C interface resources of Duo and Duo256M are different and need to be used
 
 The hardware connection is as follows. Connect the SDA and SCL pins of I2C0 and I2C1 correspondingly, and then connect the serial port to the computer to view the printing information according to the method in the UART example above.
 
-<Image src='/docs/duo/arduino/duo-arduino-09.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-09.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 The `Wire` function in Duo is mapped to I2C0 by default, that is, `Wire` is equivalent to `Wire0`.
 
@@ -363,7 +363,7 @@ Note that Duo256M does not have I2C0.
 
 The hardware connection is as follows. Connect the SDA and SCL pins of I2C1 and I2C2 correspondingly, and then connect the serial port to the computer to view the printing information according to the method in the UART example above.
 
-<Image src='/docs/duo/arduino/duo-arduino-11.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-11.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 The `Wire` function in Duo256M is mapped to I2C1 by default, that is, `Wire` is equivalent to `Wire1`.
 
@@ -437,7 +437,7 @@ receive 1 bytes
 
 The hardware connection is as follows. Short-circuit the MOSI and MISO of the SPI, that is, pin 10 and pin 11, and then connect the serial port to the computer according to the method in the UART example above to view the printing information.
 
-<Image src='/docs/duo/arduino/duo-arduino-10.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-10.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 Test code:
 ```C
@@ -496,7 +496,7 @@ transfer
 
 The hardware connection is as follows. Connect the DUO's GP4 to the negative lead of the LED.
 
-<Image src='/docs/duo/arduino/duo-arduino-12.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-12.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 Test code:
 ```C
@@ -528,7 +528,7 @@ Please pay attention to the allocation of PWM resources when using PWM. The same
 
 The hardware connection is as follows. Connect the GP26 of DUO to the signal pin of the potentiometer, and connect the other two pins to the positive and negative poles of the power supply respectively.
 
-<Image src='/docs/duo/arduino/duo-arduino-13.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-13.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 Test code:
 ```C

@@ -25,13 +25,13 @@ Arduino IDE 支持 Windows、Linux、macOS 三种操作系统，根据您使用�
 https://github.com/kubuds/sophgo-arduino/releases/download/v0.2.5/package_sg200x_index.json
 ```
 
-<Image src='/docs/duo/arduino/duo-arduino-01_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-01_zh.webp' minWidth='40%' maxWidth='100%' align='left' />
 
 如果之前有配置其他开发板地址，用逗号隔开，或者点地址栏右侧的图标调出窗口，按提示添加。
 
 配置好之后在 ``工具`` 菜单中选择 ``开发板``，打开 ``开发板管理器``，搜索 *SG200X*，点击 ``安装``。
 
-<Image src='/docs/duo/arduino/duo-arduino-02_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-02_zh.webp' minWidth='40%' maxWidth='100%' align='left' />
 
 到此 Arduino IDE 中 Duo 的开发环境已安装完成，下面就可以进行代码编写测试了。
 
@@ -60,19 +60,19 @@ reboot
 
 此时查看电脑的 ``设备管理器`` 的 ``端口`` 中会多出一个串口设备：
 
-<Image src='/docs/duo/arduino/duo-arduino-03_zh.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-03_zh.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 在 Arduino IDE 主界面点击 ``选择开发板``，再点击 ``选择其他开发板和接口......``
 
-<Image src='/docs/duo/arduino/duo-arduino-04_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-04_zh.webp' minWidth='40%' maxWidth='100%' align='left' />
 
 搜索 "duo"，Duo 选择 ``Duo Dev Module``，Duo256M 选择 ``Duo256 Dev Module``，端口中选择对应的串口后点确定。
 
-<Image src='/docs/duo/arduino/duo-arduino-05_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-05_zh.webp' minWidth='40%' maxWidth='100%' align='left' />
 
 在 Arduino IDE 的 ``文件`` 菜单中依次打开 ``示例`` > ``01.Basics`` > ``Blink`` 测试程序，该程序功能实现的是 Arduino 设备板载 LED 闪烁，Duo 中也是支持的，您也许需要安装 ```pyserial``` 来支持上传功能，之后我们直接点 ``上传`` 按钮进行测试：
 
-<Image src='/docs/duo/arduino/duo-arduino-06_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-06_zh.webp' minWidth='40%' maxWidth='100%' align='left' />
 
 此时，可以看到 Duo 板载的 LED 间隔1秒闪烁。
 
@@ -247,7 +247,7 @@ UART 串口默认使用的是物理引脚 `6/7` 上的 `UART3`，在调试 Ardui
 
 连接方法如下，电脑端可使用 USB 转 TTL 串口线，逻辑电平为 3.3V，波特率为 115200，串口线的 RX 连接 Duo 的 UART3_TX，串口线的 TX 连接 Duo 的 UART3_RX，串口线的 GND 连接 Duo 的任意 GND 比如引脚 3：
 
-<Image src='/docs/duo/arduino/duo-arduino-08.jpg' minWidth='40%' maxWidth='90%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-08.webp' minWidth='40%' maxWidth='90%' align='left' />
 
 测试程序：
 ```C
@@ -289,7 +289,7 @@ Duo、Duo256M 和 DuoS 的 I2C 接口资源不同，需对照前面的引脚分�
 
 硬件连接如下，将 I2C0 和 I2C1 的 SDA 和 SCL 引脚对应连接，再按上述 UART 示例中的方法连接串口到电脑上查看打印信息。
 
-<Image src='/docs/duo/arduino/duo-arduino-09.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-09.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 Duo 中 `Wire` 函数默认映射为 I2C0，也就是 `Wire` 等价与 `Wire0`。
 
@@ -365,7 +365,7 @@ receive 1 bytes
 
 硬件连接如下，将 I2C1 和 I2C2 的 SDA 和 SCL 引脚对应连接，再按上述 UART 示例中的方法连接串口到电脑上查看打印信息。
 
-<Image src='/docs/duo/arduino/duo-arduino-11.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-11.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 Duo256M 中 `Wire` 函数默认映射为 I2C1，也就是 `Wire` 等价与 `Wire1`。
 
@@ -439,7 +439,7 @@ receive 1 bytes
 
 硬件连接如下，将 SPI 的 MOSI 和 MISO 短接，也就是引脚 10 和引脚 11，再按上述 UART 示例中的方法连接串口到电脑上查看打印信息。
 
-<Image src='/docs/duo/arduino/duo-arduino-10.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-10.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 测试代码：
 ```C
@@ -498,7 +498,7 @@ transfer
 
 硬件连接如下，将 DUO 的 GP4 连接到 LED 负极。
 
-<Image src='/docs/duo/arduino/duo-arduino-12.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-12.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 测试代码：
 ```C
@@ -530,7 +530,7 @@ void loop() {
 
 硬件连接如下，将 DUO 的 GP26 连接到电位器信号脚，其他两脚分别连接电源正极和负极。
 
-<Image src='/docs/duo/arduino/duo-arduino-13.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-13.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 测试代码：
 ```C
