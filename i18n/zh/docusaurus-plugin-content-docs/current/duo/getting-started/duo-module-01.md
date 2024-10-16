@@ -537,6 +537,23 @@ Duo Module 01 eMMC 版本出厂未烧录固件，需要使用 PC 通过 USB 接�
 
    烧录完成后，评估板会自动重启，开机后看到评估板上的蓝色 LED 闪烁，说明系统已经正常启动，烧录成功。
 
+:::tip
+如果需要将 eMMC 恢复到初始状态，请参考以下命令清除 eMMC 数据（请提前备份好eMMC中的重要文件）：
+
+- 解除 readonly
+  ```
+  echo 0 > /sys/block/mmcblk0boot0/force_ro
+  echo 0 > /sys/block/mmcblk0boot1/force_ro
+  ```
+- 擦除
+  ```
+  dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1M count=4
+  dd if=/dev/zero of=/dev/mmcblk0boot1 bs=1M count=4
+  ```
+:::
+
 ## 硬件资料
 
 ### 其他
+
+[https://github.com/milkv-duo/duo-files/tree/main/duo-module-01](https://github.com/milkv-duo/duo-files/tree/main/duo-module-01)
