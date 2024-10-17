@@ -538,7 +538,8 @@ Use the USB burning tool under Windows to support eMMC. The firmware version is 
 
    After the burning is completed, the EVB will automatically restart. After booting, you will see the blue LED on the DuoS flashing, indicating that the system has started normally and the burning is successful.
 
-:::tip
+### eMMC Erase
+
 If you need to restore the eMMC to its initial state, please refer to the following command to clear the eMMC data (please back up important files in the eMMC in advance):
 
 - Unlock readonly
@@ -551,7 +552,6 @@ If you need to restore the eMMC to its initial state, please refer to the follow
   dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1M count=4
   dd if=/dev/zero of=/dev/mmcblk0boot1 bs=1M count=4
   ```
-:::
 
 ## Hardware Docs
 

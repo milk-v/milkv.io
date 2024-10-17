@@ -467,7 +467,8 @@ DuoS eMMC 版本出厂未烧录固件，需要使用 PC 通过 USB 接口烧录�
 
    烧录完成后，DuoS 会自动重启，开机后看到 DuoS 上的蓝色 LED 闪烁，说明系统已经正常启动，烧录成功。
 
-:::tip
+### eMMC 擦除
+
 如果需要将 eMMC 恢复到初始状态，请参考以下命令清除 eMMC 数据（请提前备份好eMMC中的重要文件）：
 
 - 解除 readonly
@@ -480,7 +481,6 @@ DuoS eMMC 版本出厂未烧录固件，需要使用 PC 通过 USB 接口烧录�
   dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1M count=4
   dd if=/dev/zero of=/dev/mmcblk0boot1 bs=1M count=4
   ```
-:::
 
 ## 硬件资料
 
