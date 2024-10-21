@@ -215,16 +215,15 @@ export default () => {
                             <td>
                                 <p>H.265/H.264/VP8/VP9/MPEG4/MPEG2 decoder 4K@60fps</p>
                                 <p>H.265/H.264/VP8/VP9 encoder 4K@30fps</p>
-                                <p>Support simultaneously processing encoding</p>
+                                <p>Support simultaneously processing</p>
                                 <ul>
-                                    <li>1080P@60fps and decoding</li>
-                                    <li>1080P@60fps</li>
+                                    <li>encoding 1080P@60fps </li>
+                                    <li>decoding 1080P@60fps</li>
                                 </ul>
-                                <p>Support simultaneously</p>
+                                <p>Support simultaneously processing </p>
                                 <ul>
-                                    <li>processing H264/H265 encoding</li>
-                                    <li>1080P@30fps and H264/H265</li>
-                                    <li>decoding 4K@30fps</li>
+                                    <li>H264/H265 encoding 1080P@30fps</li>
+                                    <li>H264/H265 decoding 4K@30fps</li>
                                 </ul>
                             </td>
                         </tr>
