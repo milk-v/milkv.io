@@ -45,7 +45,7 @@ export default () => {
                                         <p className={styles.parametric_m}>2.0 TOPS</p>
                                         <p className={styles.parametric_n}>AI computing power</p>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <p className={styles.parametric_m}>
                                             30%
                                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="37" viewBox="0 0 12 37" fill="none">
@@ -53,7 +53,7 @@ export default () => {
                                             </svg>
                                         </p>
                                         <p className={styles.parametric_n}>Single Core Computing Power<br /> compared to ARM A55</p>
-                                    </li>
+                                    </li> */}
                                 </ol>
                             </div>
                             <div className={styles.flex_column}>
