@@ -199,6 +199,10 @@
     "message": "🏠 主页",
     "description": "The label for link 🏠 Home in sidebar vega, linking to /docs"
   },
+  "sidebar.vega.category.🚀 Getting Started": {
+    "message": "🚀 入门指南",
+    "description": "The label for 🚀 Getting Started in sidebar vega"
+  },
   "sidebar.jupiter.link.🏠 Home": {
     "message": "🏠 主页",
     "description": "The label for link 🏠 Home in sidebar meles, linking to /docs"
@@ -212,3 +216,4 @@
     "description": "The label for category 🖥️ App Development in sidebar jupiter"
   }
 }
+
