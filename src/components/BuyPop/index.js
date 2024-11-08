@@ -30,7 +30,8 @@ export default (props) => {
         },
         'duo-module-01': {
             arace_url: 'https://arace.tech/products/milk-v-duo-module-01',
-            taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=828155295674'
+            taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=828155295674',
+            chilli_url: 'https://shop.plati.ma/products/milk-v-duo-module-01?_pos=5&_fid=2ba550543&_ss=c'
         },
         'pioneer': {
             crowdSupply_url: 'https://www.crowdsupply.com/milkv/milk-v-pioneer',
