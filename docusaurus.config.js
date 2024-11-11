@@ -51,6 +51,13 @@ const config = {
         ],
       },
     ],
+    [
+      "@docusaurus/plugin-google-gtag",
+      {
+        trackingID: "G-N9XGGB0XBN",
+        anonymizeIP: true,
+      },
+    ],
   ],
   presets: [
     [
@@ -167,6 +174,31 @@ const config = {
               {
                 label: 'Jupiter',
                 to: '/jupiter'
+              },
+              {
+                label: 'Jupiter NX',
+                to: '/jupiter-nx',
+                className: 'new_product',
+              },
+              {
+                label: 'Cluster 08',
+                to: '/cluster-08',
+                className: 'new_product',
+              },
+              {
+                label: 'Megrez',
+                to: '/megrez',
+                className: 'new_product',
+              },
+              {
+                label: 'Megrez NX',
+                to: '/megrez-nx',
+                className: 'new_product',
+              },
+              {
+                label: 'RuyiBook',
+                to: '/ruyibook',
+                className: 'new_product',
               },
             ],
           },

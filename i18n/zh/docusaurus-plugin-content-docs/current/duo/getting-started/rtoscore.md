@@ -136,7 +136,7 @@ int main()
    make
    ```
 
-编译成功后将生成的 `mailbox_test` 测试程序通过网口或者 USB网络(RNDIS) 等方式传送到 Duo 设备中，比如 USB 网络方式，Duo 的 IP 为 `192.168.42.1`，用户名是 `root`，密码是 `milkv`
+编译成功后将生成的 `mailbox_test` 测试程序通过网口或者 USB网络(USB-NCM) 等方式传送到 Duo 设备中，比如 USB 网络方式，Duo 的 IP 为 `192.168.42.1`，用户名是 `root`，密码是 `milkv`
 ```
 $ scp mailbox_test root@192.168.42.1:/root/
 ```

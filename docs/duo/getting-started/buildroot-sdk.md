@@ -54,7 +54,12 @@ The following describes the compilation methods in the two environments.
 Install the packages that compile dependencies:
 
 ```bash
-sudo apt install -y pkg-config build-essential ninja-build automake autoconf libtool wget curl git gcc libssl-dev bc slib squashfs-tools android-sdk-libsparse-utils jq python3-distutils scons parallel tree python3-dev python3-pip device-tree-compiler ssh cpio fakeroot libncurses5 flex bison libncurses5-dev genext2fs rsync unzip dosfstools mtools tcl openssh-client cmake expect
+sudo apt install -y pkg-config build-essential ninja-build automake autoconf libtool wget curl git gcc libssl-dev bc slib squashfs-tools android-sdk-libsparse-utils jq python3-distutils scons parallel tree python3-dev python3-pip device-tree-compiler ssh cpio fakeroot libncurses5 flex bison libncurses5-dev genext2fs rsync unzip dosfstools mtools tcl openssh-client cmake expect python-is-python3
+```
+
+For [duo-buildroot-sdk-v2](https://github.com/milkv-duo/duo-buildroot-sdk-v2), you also need to install the following tool packages:
+```bash
+sudo pip install jinja2
 ```
 
 ### Get SDK Source Code
@@ -183,10 +188,11 @@ cd duo-buildroot-sdk
 ### Pull the Docker image and run
 
 ```bash
-docker run -itd --name duodocker -v $(pwd):/home/work milkvtech/milkv-duo:latest /bin/bash
+docker run --privileged -itd --name duodocker -v $(pwd):/home/work milkvtech/milkv-duo:latest /bin/bash
 ```
 
 Description of some parameters in the command:
+- `--privileged` starts the container in privileged mode.
 - `duodocker` Docker name, you can use the name you want to use.
 - `$(pwd)` The current directory, here is the duo-buildroot-sdk directory that was 'cd' to in the previous step.
 - `-v $(pwd):/home/work`  Bind the current code directory to the /home/work directory in the Docker image.
@@ -198,6 +204,10 @@ $ docker ps -a
 CONTAINER ID   IMAGE                        COMMAND       CREATED       STATUS       PORTS     NAMES
 8edea33c2239   milkvtech/milkv-duo:latest   "/bin/bash"   2 hours ago   Up 2 hours             duodocker
 ```
+
+:::tip
+If the image on the Docker server is updated, you can use the `docker pull milkvtech/milkv-duo:latest` command to synchronize the latest image.
+:::
 
 ### 1). One-click compilation using Docker
 

@@ -3,23 +3,23 @@ sidebar_label: '设置'
 sidebar_position: 20
 ---
 
-# Set up the working environment
+# 设置工作环境
 
-Milk-V Vega offers multiple connection and management methods:
-- WEB (Backend administration interface)
-- SSH/Telnet (Manual activation required)
+Milk-V Vega 提供多种连接和管理方法：
+
+- WEB（后端管理界面）
+- SSH/Telnet（需要手动激活）
 - UART
 - JTAG
 
 
 ## WEB
 
-To connect to the WEB management interface, place **your device in the same network segment as Milk-V Vega**.
+要连接到 WEB 管理界面，请将**您的设备与 Milk-V Vega 放在同一网段**。
 
-We recommend using an Ethernet cable to directly connect your device to Milk-V Vega.
+我们建议使用以太网电缆将您的设备(例如PC)直接连接到 Milk-V Vega。
 
-After the connection, configure the device's Ethernet as follows:
-
+连接后，配置设备(例如PC)静态 IP，如下所示：
 
 ~~~
 IP Address: 192.168.40.1
@@ -28,18 +28,18 @@ Default gateway:NULL
 ~~~
 
 :::caution
-IP Address must not be 192.168.40.253
+IP 地址不能是 192.168.40.253
 :::
 
-After waiting for the settings to take effect, your device will be able to connect to Milk-V Vega.
+等待设置生效后，您的设备就可以连接到 Milk-V Vega。
 
-By default, you can check the connection to Milk-V Vega using the command **ping 192.168.40.253**.
+默认情况下，您可以使用命令 **ping 192.168.40.253** 检查与 Milk-V Vega 的连接。
 
-Once everything is ready, open your browser and go to **192.168.40.253**, then enter the default username and password to access the WEB management interface.
+一切准备就绪后，打开浏览器，输入 **192.168.40.253**，输入默认的用户名和密码，即可进入WEB管理界面。
 
 ~~~
-USERNAME: admin
-PASSWORD: admin
+账户: admin
+密码: admin
 ~~~
 
 ![WEB](/docs/vega/webcotrol.webp)
@@ -47,28 +47,28 @@ PASSWORD: admin
 ## SSH/Telnet
 
 :::caution
-Enabling SSH/Telnet may increase your network security risk. Please use it cautiously.
+启用 S​​SH/Telnet 可能会增加您的网络安全风险，请谨慎使用。
 :::
 
-For the security of network devices, Milk-V Vega defaults to closing SSH and Telnet connections. To enable them, follow these steps:
+为了网络设备的安全，Milk-V Vega 默认关闭 SSH 和 Telnet 连接。要启用它们，请按照以下步骤操作：
 
-Navigate to **WEB management -> Access Control -> Enable Terminal Configure**.
+进入 **WEB management -> Access Control -> Enable Terminal Configure**。
 
-You can enable SSH and Telnet from there.
+您可以从那里启用 SSH 和 Telnet。
 
 ![Access Control](/docs/vega/ssh-telnet.webp)
 
-Once everything is ready, use a terminal connection tool and enter the following command:
+一切准备就绪后，使用终端连接工具并输入以下命令：
 
 ~~~
 $ssh root@192.168.40.253
 ~~~
 
-Log in using the default username and password:
+使用默认用户名和密码登录：
 
 ~~~
-USERNAME: root
-PASSWORD: milkv
+用户: root
+密码: milkv
 ~~~
 
 ## 串口
@@ -93,4 +93,23 @@ $ ls /dev/ttyUSB*
 ```
 其中 `ttyUSB0` 是串口设备，您可以配置 `minicom` 等工具连接。
 
-*`ttyUSB1` 是 JTAG 调试接口，暂未用到*
+串口的默认的参数如下：
+
+```
+baudrate: 115200
+data bit: 8
+stop bit: 1
+parity  : none
+flow control: none
+```
+
+使用默认用户名和密码登录：
+
+~~~
+用户: root
+密码: milkv
+~~~
+
+### JTAG
+
+`ttyUSB1` 是 JTAG 调试接口，使用方法后续更新。

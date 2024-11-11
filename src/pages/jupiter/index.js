@@ -45,7 +45,7 @@ export default () => {
                                         <p className={styles.parametric_m}>2.0 TOPS</p>
                                         <p className={styles.parametric_n}>AI computing power</p>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <p className={styles.parametric_m}>
                                             30%
                                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="37" viewBox="0 0 12 37" fill="none">
@@ -53,7 +53,7 @@ export default () => {
                                             </svg>
                                         </p>
                                         <p className={styles.parametric_n}>Single Core Computing Power<br /> compared to ARM A55</p>
-                                    </li>
+                                    </li> */}
                                 </ol>
                             </div>
                             <div className={styles.flex_column}>
@@ -215,16 +215,15 @@ export default () => {
                             <td>
                                 <p>H.265/H.264/VP8/VP9/MPEG4/MPEG2 decoder 4K@60fps</p>
                                 <p>H.265/H.264/VP8/VP9 encoder 4K@30fps</p>
-                                <p>Support simultaneously processing encoding</p>
+                                <p>Support simultaneously processing</p>
                                 <ul>
-                                    <li>1080P@60fps and decoding</li>
-                                    <li>1080P@60fps</li>
+                                    <li>encoding 1080P@60fps</li>
+                                    <li>decoding 1080P@60fps</li>
                                 </ul>
                                 <p>Support simultaneously</p>
                                 <ul>
-                                    <li>processing H264/H265 encoding</li>
-                                    <li>1080P@30fps and H264/H265</li>
-                                    <li>decoding 4K@30fps</li>
+                                    <li>H264/H265 encoding 1080P@30fps</li>
+                                    <li>H264/H265 decoding 4K@30fps</li>
                                 </ul>
                             </td>
                         </tr>

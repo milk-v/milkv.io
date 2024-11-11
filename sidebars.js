@@ -20,9 +20,9 @@ const sidebars = {
         'duo/getting-started/duo',
         'duo/getting-started/duo256m',
         'duo/getting-started/duos',
+        'duo/getting-started/duo-module-01',
         'duo/getting-started/boot',
         'duo/getting-started/setup',
-        'duo/getting-started/swap',
         'duo/getting-started/buildroot-sdk',
         'duo/getting-started/rtoscore',
         'duo/getting-started/8051core',
@@ -61,7 +61,7 @@ const sidebars = {
         {
           type: "category",
           label: 'TPU',
-          collapsed: false,
+          collapsed: true,
           link: {
             title: 'TPU',
             description: ' ',
@@ -78,7 +78,33 @@ const sidebars = {
             'duo/application-development/tpu/tpu-resnet18',
           ],
         },
-        'duo/application-development/sensor-demo',
+        {
+          type: "category",
+          label: 'Sensor Demo',
+          collapsed: false,
+          link: {
+            title: 'Sensor Demo',
+            description: ' ',
+          },
+          items: [
+            'duo/application-development/sensor-demo/dht22',
+            'duo/application-development/sensor-demo/df9gms180',
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: '🛠️ Low-level Development',
+      collapsed: false,
+      link: {
+        type: "generated-index",
+        title: '🛠️ Low-level Development',
+        description: 'Low-level Development',
+        slug: '/duo/low-level-dev'
+      },
+      items: [
+        'duo/low-level-dev/mipi-dsi',
       ],
     },
     {
@@ -107,8 +133,10 @@ const sidebars = {
       label: '🔌 IO Boards',
       collapsed: false,
       link: {
-        type: 'doc',
-        id: 'duo/io-board/usb-ethernet-iob',
+        type: "generated-index",
+        title: '🔌 IO Boards',
+        description: 'Duo Series IOB',
+        slug: 'duo/io-board/'
       },
       items: [
         'duo/io-board/usb-ethernet-iob',
@@ -140,7 +168,7 @@ const sidebars = {
       items: [
         'duo/Accessories/ST7789',
         'duo/Accessories/Pico-ePaper-2.13',
-        
+        'duo/Accessories/Pico-8SEG-LED',
       ],
     },
   ],
@@ -237,9 +265,7 @@ const sidebars = {
         'mars/getting-started/third-party-img',
       ],
     },
-    'mars/mipicsi-support',
-    'mars/mipidsi-support',
-    'mars/uvccam-support',
+    'mars/support-list',
     {
       type: "category",
       label: '🔳 Compute Module',
@@ -257,6 +283,7 @@ const sidebars = {
         'mars/compute-module/extendpartition',
         'mars/compute-module/bootloader',
         'mars/compute-module/hardware',
+        'mars/compute-module/update-eeprom',
         {
           type: "category",
           label: '🧰 Resources',
@@ -432,7 +459,6 @@ const sidebars = {
         'jupiter/application-development/gcc',
         'jupiter/application-development/docker',
         'jupiter/application-development/openmediavault',
-        'jupiter/application-development/kodbox',
       ],
     },
     {
@@ -449,6 +475,21 @@ const sidebars = {
         'jupiter/build-os/buildroot',
         'jupiter/build-os/bianbu',
         'jupiter/build-os/ubuntu',
+      ],
+    },
+    {
+      type: "category",
+      label: 'Development-Guide',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: 'Development-Guide',
+        description: 'Development Guide',
+        slug: '/jupiter/development-guide'
+      },
+      items: [
+        'jupiter/development-guide/kernel-compilation',
+        'jupiter/development-guide/coredump',
       ],
     },
   ],

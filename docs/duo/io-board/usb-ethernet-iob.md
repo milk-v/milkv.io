@@ -22,7 +22,7 @@ This expansion board can improve the development efficiency of Duo and facilitat
 Before using it, please make sure you are using the [latest image](https://milkv.io/docs/duo/resources/image-sdk).
 
 ### Use the IO-Board
-Note that when using the IO-Board, the USB network (RNDIS) is not available, Please use the Ethernet interface on the IO-Board.
+Note that when using the IO-Board, the USB network (USB-NCM) is not available, Please use the Ethernet interface on the IO-Board.
 
 If you need to assign a fixed MAC address to the Ethernet port of the IO-Board, please execute the following command(**Replace the MAC address in the command with the MAC address you want to set, and please note that MAC addresses of different devices within the same network segment must not be duplicated**):
 ```
@@ -54,9 +54,9 @@ The command to unmount a USB flash drive:
 umount /mnt/udisk
 ```
 
-To restore the functionality of the USB network (RNDIS) when not using the IO-Board, you can follow these steps:
+To restore the functionality of the USB network (USB-NCM) when not using the IO-Board, you can follow these steps:
 ```
-ln -sf /mnt/system/usb-rndis.sh /mnt/system/usb.sh
+ln -sf /mnt/system/usb-ncm.sh /mnt/system/usb.sh
 sync
 ```
 then reboot the board.

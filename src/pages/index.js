@@ -275,7 +275,7 @@ const Home_web = () => {
         </div>
       </div>
       <div className={styles.black_shore}>
-        <div className={styles.new_products}>
+        {/* <div className={styles.new_products}>
           <p>5 Leading New RISC-V Products Coming Soon</p>
           <ol>
             <li>
@@ -304,7 +304,7 @@ const Home_web = () => {
               <Link to="/ruyibook">Learn More</Link>
             </li>
           </ol>
-        </div>
+        </div> */}
         <ul className={styles.tab} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           {tabs.map((tab, idx) => (
             <li key={idx} className={index === tab.index ? styles.index : null} onClick={() => {

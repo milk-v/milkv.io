@@ -9,7 +9,7 @@ export default () => {
         <main className={styles.ruyibook_main}>
             <div className={styles_s.pr_title}>
                 <h1 className={styles_s.pr_name} style={{ color: '#000' }}>RuyiBook</h1>
-                <p className={styles_s.pr_info} style={{ color: '#000' }}>The world's first laptop powered by a open-source RISC-V processor
+                <p className={styles_s.pr_info} style={{ color: '#000' }}>The world's first laptop powered by a Xiangshan Nanhu RISC-V processor
                 </p>
             </div>
             <Subscribe product='ruyibook' theme='black' />

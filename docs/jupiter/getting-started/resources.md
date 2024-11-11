@@ -9,9 +9,9 @@ sidebar_position: 70
 
 Version Description:
 
-- The system image with the suffix `.img.zip` is a dedicated image for SD card booting. It can be burned to SD through tools such as `balenaEtcher`, `Rufus`, `Win32DiskImager` on PC. It can also be burned to SD card through the official tool `titanflasher`.
+- The system image with the suffix `.img.zip` is a dedicated image for SD card booting. It can be burned to SD through tools such as `balenaEtcher`, `Rufus`, `Win32DiskImager` on PC.
 
-- The system image with the suffix `.zip` is the flashing package used by the official tool `titanflasher` of Spacemit. It can be burned to an SD card through a card reader, or burned to an eMMC or SSD through a USB Type-C cable.
+- The system image with the suffix `.zip` is an image for SSD and eMMC. You can use the official tool `titanflasher` to burn it to eMMC or SSD through a USB Type-C cable.
 
 For OS iamge installation methods, please refer to: [Install OS Image](https://milkv.io/docs/jupiter/getting-started/boot).
 
@@ -38,6 +38,25 @@ The default password for the `root` account in the Bianbu system is `milkv`.
   :::tip
   The `pose-tracker` and `object-detection` applications integrated by default in the desktop require a camera connection, which is not supported by the current hardware version.
   :::
+
+  The desktop version of the firmware exceeds the 2G size limit set by github, so it is compressed and uploaded in two packages with suffixes `001` and `002`. After downloading these two packages, you need to decompress them into a complete firmware package. In the graphical interface of Windows or Linux, right-click the `.001` file and use tools such as 7zip or winrar to decompress it. These tools generally support decompression in volumes. If you decompress in the Linux command line, please refer to the following decompression command in the Ubuntu system:
+
+  - Install the 7zip tool:
+    ```
+    sudo apt install p7zip-full
+    ```
+
+  - SD card version firmware:
+    ```
+    7za x milkv-jupiter-bianbu-xxx.img.zip.001
+    ```
+    The full firmware package after extraction is: `milkv-jupiter-bianbu-xxx.img.zip`
+
+  - eMMC and SSD version firmware:
+    ```
+    7za x milkv-jupiter-bianbu-xxx.zip.001
+    ```
+    The full firmware package after extraction is: `milkv-jupiter-bianbu-xxx.zip`
 
 - milkv-jupiter-bianbu-\*-minimal-\*.zip
 

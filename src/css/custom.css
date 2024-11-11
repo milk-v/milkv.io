@@ -161,6 +161,23 @@ strong {
   }
 }
 
+/* 导航栏 New */
+.new_product {
+  position: relative;
+}
+
+.new_product::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  background: url(/static/components/new.svg) no-repeat;
+  background-size: 100%;
+  width: 36px;
+  height: 16px;
+}
+
 /* @media screen and (max-width: 1950px) and (min-width: 1450px) {}
 
 @media screen and (max-width: 1450px) and (min-width: 1000px) {} */
@@ -500,6 +517,28 @@ strong {
 
   .cardDescription_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module {
     font-size: 12rem !important;
+  }
+
+  /* 搜索栏 font-size */
+  .DocSearch-Cancel,
+  .DocSearch-Hit-path,
+  .DocSearch-Label {
+    font-size: 10rem !important;
+  }
+
+  .DocSearch-Hit-source,
+  .DocSearch-Hit-title,
+  .DocSearch-Input {
+    font-size: 14rem !important;
+  }
+
+  .DocSearch-Hit-content-wrapper {
+    line-height: 12rem !important;
+  }
+
+  /* 404 font-size */
+  .hero__title {
+    font-size: 14rem;
   }
 }
 

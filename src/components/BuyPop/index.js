@@ -29,7 +29,9 @@ export default (props) => {
             jd_url: 'https://ic-item.jd.com/10107306617970.html#crumb-wrap'
         },
         'duo-module-01': {
-
+            arace_url: 'https://arace.tech/products/milk-v-duo-module-01',
+            taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=828155295674',
+            chilli_url: 'https://shop.plati.ma/products/milk-v-duo-module-01?_pos=5&_fid=2ba550543&_ss=c'
         },
         'pioneer': {
             crowdSupply_url: 'https://www.crowdsupply.com/milkv/milk-v-pioneer',
@@ -87,7 +89,7 @@ export default (props) => {
     const text_data = {
         'crowdSupply_url': 'Crowd Supply',
         'other_url': 'Other countries and regions',
-        'arace_url': 'Arace Tech',
+        'arace_url': 'ARACE',
         'taobao_url': '淘宝',
         'jd_url': '京东',
         'mouser_url': 'Mouser',
@@ -99,7 +101,7 @@ export default (props) => {
     const product_pictures = {
         'home': '/components/buy-meles-view.webp',
         'duo': '/components/buy-duo-view.webp',
-        'duo-s': '/components/buy-duo-view.webp',
+        'duo-s': '/components/buy-duos-view.webp',
         'duo-module-01': '/components/duo-module-01-buy.webp',
         'pioneer': '/components/buy-pionner-view.webp',
         'mars': '/components/buy-mars-view.webp',

@@ -2,6 +2,7 @@ import React from "react";
 import ChipsView from "@site/src/components/ChipsView";
 import styles from './index.module.css';
 import clsx from "clsx";
+import Translate from '@docusaurus/Translate';
 
 export default () => {
 
@@ -10,7 +11,7 @@ export default () => {
             <div className={styles.overview_center}>
                 <div className={styles.module1}>
                     <div className={clsx(styles.b_green, styles.functions)}>
-                        <p className={clsx(styles.ov_title)}>Built-in Main Functions</p>
+                        <p className={clsx(styles.ov_title)}><Translate id="page.duo01.text1" /></p>
                         <ol>
                             <li>
                                 <img src="/duom01/soc.svg" />
@@ -41,49 +42,49 @@ export default () => {
                     <div className={styles.functions_right}>
                         <div className={styles.module1_top}>
                             <div className={clsx(styles.b_green, styles.module1_top_1)}>
-                                <p className={clsx(styles.ov_title)}>"Five Core"</p>
+                                <p className={clsx(styles.ov_title)}><Translate id="page.duo01.text2" /></p>
                                 <p className={clsx(styles.ov_title_)}>Built-in RV64GCV / Cortex-A53 with RV64GC, 8051<br />Built-in 0.5TOPS@INT8 TPU</p>
                                 <img src="/duom01/chip-view.webp" alt="Five Core" />
                             </div>
                             <div className={clsx(styles.b_green, styles.module1_top_2)}>
-                                <p className={clsx(styles.ov_title)}>Compact size</p>
+                                <p className={clsx(styles.ov_title)}><Translate id="page.duo01.text3" /></p>
                                 <p className={clsx(styles.ov_title_)}>25*25 mm(≈ 0.98inch)</p>
                                 <img src="/duom01/size-view.webp" alt="Size View" />
                             </div>
                         </div>
                         <div className={clsx(styles.b_green, styles.module_bottom)}>
-                            <p className={clsx(styles.ov_title)}>Compatible with Duo / DuoS Software Ecosystem</p>
+                            <p className={clsx(styles.ov_title)}><Translate id="page.duo01.text4" /></p>
                             <ol>
                                 <li>
-                                    <img src="/duom01/software1.webp" />
-                                    <p>Builtroot</p>
+                                    <img src="/duom01/software1.webp" alt="Buildroot" />
+                                    <p>Buildroot</p>
                                 </li>
                                 <li>
-                                    <img src="/duom01/software2.webp" />
+                                    <img src="/duom01/software2.webp" alt="Arduino IDE" />
                                     <p>Arduino IDE</p>
                                 </li>
                                 <li>
-                                    <img src="/duom01/software3.webp" />
+                                    <img src="/duom01/software3.webp" alt="Peripherals" />
                                     <p>Peripherals</p>
                                 </li>
                                 <li>
-                                    <img src="/duom01/software4.webp" />
+                                    <img src="/duom01/software4.webp" alt="Resources from Community" />
                                     <p>Resources from Community</p>
                                 </li>
                                 <li>
-                                    <img src="/duom01/software5.webp" />
+                                    <img src="/duom01/software5.webp"  alt="Ubuntu" />
                                     <p>Ubuntu</p>
                                 </li>
                                 <li>
-                                    <img src="/duom01/software6.webp" />
+                                    <img src="/duom01/software6.webp" alt="Debian" />
                                     <p>Debian</p>
                                 </li>
                                 <li>
-                                    <img src="/duom01/software7.webp" />
+                                    <img src="/duom01/software7.webp" alt="AliOS" />
                                     <p>AliOS</p>
                                 </li>
                                 <li>
-                                    <img src="/duom01/software8.webp" />
+                                    <img src="/duom01/software8.webp" alt="RT-Thread" />
                                     <p>RT-Thread</p>
                                 </li>
                             </ol>
@@ -92,7 +93,7 @@ export default () => {
                 </div>
                 <div className={styles.module2}>
                     <div className={clsx(styles.b_green)}>
-                        <p className={clsx(styles.ov_title)}>Design Documentation  Open Source</p>
+                        <p className={clsx(styles.ov_title)}><Translate id="page.duo01.text5" /></p>
                         <ol>
                             <li>
                                 <img src="/duom01/design1.webp" alt="2D Design Files" />
@@ -113,30 +114,30 @@ export default () => {
                         </ol>
                     </div>
                     <div className={clsx(styles.b_green)}>
-                        <p className={clsx(styles.ov_title)}>Easily design your own baseboards</p>
+                        <p className={clsx(styles.ov_title)}><Translate id="page.duo01.text6" /></p>
                         <div className={styles.line_design}>
                             <img src="/duom01/line-drawing.svg" alt="Line Drawing" />
                             <ul>
-                                <li>Simple package design</li>
-                                <li>Minimum of two layers of boards</li>
-                                <li>Supports customized firmware (burning to eMMC)</li>
+                                <li><Translate id="page.duo01.text7" /></li>
+                                <li><Translate id="page.duo01.text8" /></li>
+                                <li><Translate id="page.duo01.text9" /></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div className={styles.module3}>
                     <div className={clsx(styles.b_green, styles.take1)}>
-                        <p className={clsx(styles.ov_title)}>Simple Production Process</p>
-                        <p className={clsx(styles.ov_title_)}>Supports SMD to Baseboard</p>
+                        <p className={clsx(styles.ov_title)}><Translate id="page.duo01.text10" /></p>
+                        <p className={clsx(styles.ov_title_)}><Translate id="page.duo01.text11" /></p>
                         <img src="/duom01/scene1.webp" alt="Supports SMD to Baseboard" />
                     </div>
                     <div className={clsx(styles.b_green, styles.take2)}>
-                        <p className={clsx(styles.ov_title)}>Evaluation Boards Available</p>
-                        <p className={clsx(styles.ov_title_)}>Open source Reference Design</p>
+                        <p className={clsx(styles.ov_title)}><Translate id="page.duo01.text12" /></p>
+                        <p className={clsx(styles.ov_title_)}><Translate id="page.duo01.text13" /></p>
                         <img src="/duom01/right-view.webp" alt="Open source Reference Design" />
                     </div>
                     <div className={clsx(styles.b_green, styles.take3)}>
-                        <p className={clsx(styles.ov_title)}>Complete Compliance Certification</p>
+                        <p className={clsx(styles.ov_title)}><Translate id="page.duo01.text14" /></p>
                         <img src="/duom01/certification.webp" alt="Complete Compliance Certification" />
                     </div>
                 </div>

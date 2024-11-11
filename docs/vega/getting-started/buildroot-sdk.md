@@ -189,6 +189,14 @@ In the device's u-boot command line, test whether the tftp service in the host U
   ```
   If the ping is successful, the tftp service on Ubuntu is normal.
 
+  ```
+  => setenv ipaddr 192.168.2.234;setenv serverip 192.168.2.66
+  => ping 192.168.2.66
+  Using xy1000_eth device
+  host 192.168.2.66 is alive
+  =>
+  ```
+
 ### Burn Loader
 
 Place `freeloader.bin` in the tftp directory. After the Vega device is powered on, after seeing the following prompt in the serial port, quickly enter `asd` to enter the u-boot terminal:
