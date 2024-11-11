@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'yolov8 object detection '
+sidebar_label: 'YOLOv8 object detection '
 sidebar_position: 21
 ---
 
@@ -10,9 +10,7 @@ This test program will infer the yolov8 model to achieve target detection, and t
 ## Download the precompiled cvimodel
 
 ```
-
 git clone https://github.com/zwyzwm/YOLOv8-Object-Detection.git
-
 ```
 
 ## PC-side cross-compilation YOLO program
@@ -39,7 +37,6 @@ Take [yolov8n](https://github.com/ultralytics/assets/releases/download/v0.0.0/yo
 ```
 cd ultralytics
 wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
-
 ```
 
 > - Export the model of yolov8n.onnx
@@ -51,22 +48,18 @@ Download Python version above 3.8, PyTorch version above 2.0.1, it is best to us
 Activate (for example Python 3.8, torch2.0.1):
 
 ```
-
 conda create -n py3.8 python==3.8.2
 conda activate py3.8
 python -m venv .venv
 source .venv/bin/activate
 pip3 install --upgrade pip
 pip3 install torch==2.0.1
-
 ```
 
 Copy the yolo_export/yolov8_export.py code to the yolov8 repository
 
 ```
-
 python3 yolov8_export.py --weights ./yolov8n.pt --img-size 640 640
-
 ```
 
 Tip: When running this command, if an error similar to `ModuleNotFoundError: No module named 'x'` appears, just `pip install x`
@@ -86,12 +79,10 @@ Please refer to the [TPU-MLIR](https://github.com/sophgo/tpu-mlir) document to c
 After configuring the working environment, create a model_yolov8n directory in the same directory as this project and put the model and image files into it.
 
 ```
-
 mkdir model_yolov8n && cd model_yolov8n
 cp ${REGRESSION_PATH}/yolov8n.onnx .
 cp -rf ${REGRESSION_PATH}/dataset/COCO2017 .
 cp -rf ${REGRESSION_PATH}/image .
-
 ```
 
 Tip: just copy the three files yolov8n.onnx, COCO2017, and image to model_yolov8n
@@ -116,7 +107,6 @@ mlir + calibration_table ->model_deploy.py -> cvimodel
 
 
 ```
-
 model_transform.py \
 --model_name yolov8n \
 --model_def yolov8n.onnx \
@@ -126,7 +116,6 @@ model_transform.py \
 --keep_aspect_ratio \
 --pixel_format rgb \
 --mlir yolov8n.mlir
-
 ```
 
 After converting to mlir file, a `yolov8n.mlir` file will be generated.
@@ -136,18 +125,15 @@ After converting to mlir file, a `yolov8n.mlir` file will be generated.
 Before quantizing to INT8 model, you need to run calibration.py to get the calibration table. The number of input data should be about 100~1000 according to the situation. Here, 100 COCO2017 pictures are prepared for demonstration:
 
 ```
-
 run_calibration.py yolov8n.mlir \
 --dataset ./COCO2017 \
 --input_num 100 \
 -o yolov8n_cali_table
-
 ```
 
 Use calibration table to generate int8 symmetric cvimodel:
 
 ```
-
 model_deploy.py \
 --mlir yolov8n.mlir \
 --quant_input --quant_output \
@@ -155,7 +141,6 @@ model_deploy.py \
 --calibration_table yolov8n_cali_table \
 --processor cv181x \
 --model yolov8n_cv181x_int8_sym.cvimodel
-
 ```
 After the compilation is complete, a file named yolov8n_cv181x_int8_sym.cvimodel will be generated.
 
@@ -169,7 +154,6 @@ model_deploy.py \
 --calibration_table yolov8n_cali_table \
 --processor cv181x \
 --model yolov8n_cv181x_int8_asym.cvimodel
-
 ```
 After the compilation is complete, a file named yolov8n_cv181x_int8_asym.cvimodel will be generated.
 
@@ -184,7 +168,6 @@ Execute the following command:
 ```
 export LD_LIBRARY_PATH='/mnt/system/lib'
 ./sample_yolov8 ./yolov8n_cv181x_int8_sym.cvimodel 000000000632.jpg
-
 ```
 
 The effect is as follows:
@@ -208,5 +191,4 @@ image read,width:640
 image read,hidth:483
 objnum:4
 boxes=[[340.561,214.003,427.962,350.141,58,0.906066],[0.844345,279.573,401.244,477.67,59,0.894497],[181.399,124.6,241.393,227.863,58,0.680377],[245.295,229.886,349.774,318.173,56,0.562628],]
-
 ```
