@@ -320,7 +320,7 @@ You can also use Ubuntu installed in a virtual machine, Ubuntu installed via WSL
   ```
   After the compilation is successful, send the generated `helloworld` executable program to the Duo device through the network port or the USB network. For example, the USB-NCM method supported by the [default firmware](https://github.com/milkv-duo/duo-buildroot-sdk/releases), Duo’s IP is 192.168.42.1, the user name is `root`, and the password is `milkv`.
   ```
-  scp helloworld root@192.168.42.1:/root/
+  scp -O helloworld root@192.168.42.1:/root/
   ```
   After sending successfully, run `./helloworld` in the terminal logged in via ssh or serial port, and it will print `Hello, World!`
   ```
