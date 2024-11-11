@@ -163,9 +163,11 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'duo/Accessories/Pico-8SEG-LED',
+        id: 'duo/Accessories/ST7789',
       },
       items: [
+        'duo/Accessories/ST7789',
+        'duo/Accessories/Pico-ePaper-2.13',
         'duo/Accessories/Pico-8SEG-LED',
       ],
     },
