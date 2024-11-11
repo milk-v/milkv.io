@@ -27,6 +27,14 @@
     "message": "TPU",
     "description": "The label for category TPU in sidebar duo"
   },
+  "sidebar.duo.category.Sensor Demo": {
+    "message": "传感器示例",
+    "description": "The label for category Sensor Demo in sidebar duo"
+  },
+  "sidebar.duo.category.🛠️ Low-level Development": {
+    "message": "🛠️ 底层开发",
+    "description": "The label for category 🛠️ Low-level Development in sidebar duo"
+  },
   "sidebar.duo.category.🧰 Resources": {
     "message": "🧰 资源",
     "description": "The label for category 🧰 Resources in sidebar duo"
@@ -111,6 +119,78 @@
     "message": "🏠 主页",
     "description": "The label for link 🏠 Home in sidebar mars, linking to /docs"
   },
+  "sidebar.meles.category.🚀 Getting Started": {
+    "message": "🚀 快速开始",
+    "description": "The label for 🚀 Getting Started in sidebar meles"
+  },
+  "sidebar.meles.category.🚀 Getting Started.link.generated-index.title": {
+    "message": "🚀 快速开始",
+    "description": "The generated-index page title for category 🚀 Getting Started in sidebar meles"
+  },
+  "sidebar.meles.category.🚀 Getting Started.link.generated-index.description": {
+    "message": "开始使用 meles",
+    "description": "The generated-index page description for category 🚀 Getting Started in sidebar meles"
+  },
+  "sidebar.meles.category.🔌 Hardware Introduction": {
+    "message": "🔌 硬件介绍",
+    "description": "The label for 🔌 Hardware Introduction in sidebar meles"
+  },
+  "sidebar.meles.category.🔌 Hardware Introduction.link.generated-index.title": {
+    "message": "🔌 硬件介绍",
+    "description": "The generated-index page title for category 🔌 Hardware Introduction in sidebar meles"
+  },
+  "sidebar.meles.category.🔌 Hardware Introduction.link.generated-index.description": {
+    "message": "Meles 硬件资源介绍",
+    "description": "The generated-index page description for category 🔌 Hardware Introduction in sidebar meles"
+  },
+  "sidebar.meles.category.🖊️ Installation": {
+    "message": "🖊️ 镜像安装",
+    "description": "The label for 🖊️ Installation in sidebar meles"
+  },
+  "sidebar.meles.category.🖊️ Installation.link.generated-index.title": {
+    "message": "🖊️ 镜像安装",
+    "description": "The generated-index page title for category 🖊️ Installation in sidebar meles"
+  },
+  "sidebar.meles.category.🖊️ Installation.link.generated-index.description": {
+    "message": "安装镜像文件到储存介质",
+    "description": "The generated-index page description for category 🖊️ Installation in sidebar meles"
+  },
+  "sidebar.meles.category.🐧 Low Level Development": {
+    "message": "🐧 系统开发",
+    "description": "The label for 🐧 Low Level Development in sidebar meles"
+  },
+  "sidebar.meles.category.🐧 Low Level Development.link.generated-index.title": {
+    "message": "🐧 系统开发",
+    "description": "The generated-index page title for category 🐧 Low Level Development in sidebar meles"
+  },
+  "sidebar.meles.category.🐧 Low Level Development.link.generated-index.description": {
+    "message": "介绍如何为 Meles 编译 u-boot 、内核和文件系统",
+    "description": "The generated-index page description for category 🐧 Low Level Development in sidebar meles"
+  },
+  "sidebar.meles.category.🖥️ OS Usage": {
+    "message": "🖥️ 系统使用",
+    "description": "The label for 🖥️ OS Usage in sidebar meles"
+  },
+  "sidebar.meles.category.🖥️ OS Usage.link.generated-index.title": {
+    "message": "🖥️ 系统使用",
+    "description": "The generated-index page title for category 🖥️ OS Usage in sidebar meles"
+  },
+  "sidebar.meles.category.🖥️ OS Usage.link.generated-index.description": {
+    "message": "Meles 的系统使用教程",
+    "description": "The generated-index page description for category 🖥️ OS Usage in sidebar meles"
+  },
+  "sidebar.meles.category.🧰 Resources Download": {
+    "message": "🧰 资源下载",
+    "description": "The label for category 🧰 Resources in sidebar meles"
+  },
+  "sidebar.meles.category.🧰 Resources Download.link.generated-index.title": {
+    "message": "🧰 资源下载",
+    "description": "The generated-index page title for category 🧰 Resources Download in sidebar meles"
+  },
+  "sidebar.meles.category.🧰 Resources Download.link.generated-index.description": {
+    "message": "Meles 相关资源下载",
+    "description": "The generated-index page description for category 🧰 Resources Download in sidebar meles"
+  },
   "sidebar.meles.link.🏠 Home": {
     "message": "🏠 主页",
     "description": "The label for link 🏠 Home in sidebar meles, linking to /docs"
@@ -118,5 +198,22 @@
   "sidebar.vega.link.🏠 Home": {
     "message": "🏠 主页",
     "description": "The label for link 🏠 Home in sidebar vega, linking to /docs"
+  },
+  "sidebar.vega.category.🚀 Getting Started": {
+    "message": "🚀 入门指南",
+    "description": "The label for 🚀 Getting Started in sidebar vega"
+  },
+  "sidebar.jupiter.link.🏠 Home": {
+    "message": "🏠 主页",
+    "description": "The label for link 🏠 Home in sidebar meles, linking to /docs"
+  },
+  "sidebar.jupiter.category.🚀 Getting Started": {
+    "message": "🚀 入门指南",
+    "description": "The label for 🚀 Getting Started in sidebar jupiter"
+  },
+  "sidebar.jupiter.category.🖥️ App Development": {
+    "message": "🖥️ 应用开发",
+    "description": "The label for category 🖥️ App Development in sidebar jupiter"
   }
 }
+

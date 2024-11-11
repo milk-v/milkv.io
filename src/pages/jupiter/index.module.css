@@ -1,0 +1,1385 @@
+._main {
+    width: 100%;
+    background-color: #000;
+}
+
+.jupiter_main {
+    background: url(/static/jupiter/jupite-contexts.webp) no-repeat;
+    background-size: 100%;
+}
+
+.border1 {
+    background: url(/static/jupiter/border1.webp) no-repeat;
+    background-size: 100%;
+}
+
+.border2 {
+    background: url(/static/jupiter/border2.webp) no-repeat;
+    background-size: 100%;
+}
+
+.border3 {
+    background: url(/static/jupiter/border3.webp) no-repeat;
+    background-size: 100%;
+}
+
+.border4 {
+    background: url(/static/jupiter/border4.webp) no-repeat;
+    background-size: 100%;
+}
+
+.border5 {
+    background: url(/static/jupiter/border5.webp) no-repeat;
+    background-size: 100%;
+}
+
+.border6 {
+    background: url(/static/jupiter/border6.webp) no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.border7 {
+    width: 36.6%;
+    background: url(/static/jupiter/border7.webp) no-repeat;
+    background-size: 100%;
+}
+
+.border8 {
+    width: 28.2%;
+    background: url(/static/jupiter/border8.webp) no-repeat;
+    background-size: 100%;
+}
+
+.border9 {
+    width: 32.3%;
+    background: url(/static/jupiter/border9.webp) no-repeat;
+    background-size: 100%;
+}
+
+.border10 {
+    width: 49.3%;
+    background: url(/static/jupiter/border10.webp) no-repeat;
+    background-size: 100%;
+}
+
+.border11 {
+    width: 49.3%;
+    background: url(/static/jupiter/border11.webp) no-repeat;
+    background-size: 100%;
+}
+
+.border12 {
+    background: url(/static/jupiter/border12.webp) no-repeat;
+    background-size: 100%;
+}
+
+.jupiter_contexts {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.jupiter_center_top {
+    width: 100%;
+}
+
+.jupiter_center {
+    width: 100%;
+}
+
+.center_items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center_items>div {
+    height: 100%;
+}
+
+.flex_column {
+    width: 39.24%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex_column>div {
+    width: 100%;
+    flex: 1;
+}
+
+.max_vie {
+    width: 59.375%;
+}
+
+.info_title {
+    color: #FFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.info_ul>li,
+.info_text {
+    color: #FFF;
+    font-family: Roboto2;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.info_text>font {
+    font-weight: 600;
+}
+
+.info_ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.info_ul>li {
+    list-style: disc;
+}
+
+.border1_ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+}
+
+.parametric_m {
+    color: #FFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    text-align: center;
+}
+
+.parametric_n {
+    text-align: center;
+    color: #FFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.border4>div>p:first-child {
+    text-align: center;
+    color: #FFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.border4>div>p:last-child {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 100%;
+}
+
+.border5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_tops {
+    width: 80%;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto3;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 100%;
+    margin: 0;
+}
+
+.info_tops>font {
+    font-family: Roboto;
+}
+
+.border6>img,
+.border6>div {
+    position: absolute;
+}
+
+.border6>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.center_items_3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center_items_4 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center_items_4>div,
+.center_items_3>div {
+    height: 100%;
+}
+
+.border12>ol {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.border12>ol>li>img {
+    display: block;
+}
+
+.border12>ol>li>p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 0;
+}
+
+.jupiter_table {
+    width: 100%;
+    border: none;
+}
+
+.jupiter_table ul>li,
+.jupiter_table p,
+.jupiter_table td {
+    color: #f5f5f5;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.jupiter_table ul>li {
+    list-style: disc;
+}
+
+.jupiter_table tr:first-child {
+    border-top: none;
+}
+
+.jupiter_table td {
+    border: none;
+}
+
+.border4>div>p:last-child {
+    margin: 0;
+}
+
+.jupiter_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jupiter_head>img {
+    width: 70%;
+}
+
+.jupiter_title>h1 {
+    color: #FFF;
+    white-space: nowrap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 0;
+}
+
+.jupiter_title>p {
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.jupiter_title>a {
+    margin: 0;
+}
+
+@media screen and (min-width: 2560px) {
+    .jupiter_main {
+        width: 2560px;
+        margin: 0 auto 100px;
+        padding-bottom: 200px;
+    }
+
+    .jupiter_contexts {
+        width: 1920px;
+        margin: 0 auto;
+    }
+
+    .jupiter_head>.jupiter_logo {
+        width: 780px;
+        margin-top: 500px;
+        margin-bottom: 1000px;
+    }
+
+    .jupiter_center {
+        margin: 100px auto;
+    }
+
+    .jupiter_center>div {
+        margin: 20px 0;
+    }
+
+    .center_items {
+        height: 900px;
+        gap: 0 20px;
+    }
+
+    .flex_column {
+        gap: 20px 0;
+    }
+
+    .border12,
+    .center_items_4>div,
+    .center_items_3>div,
+    .flex_column>div,
+    .max_vie {
+        padding: 30px;
+    }
+
+    .info_title {
+        font-size: 54px;
+        margin-bottom: 20px;
+    }
+
+    .info_ul>li,
+    .info_text {
+        font-size: 32px;
+    }
+
+    .border1_ol {
+        gap: 50px 150px;
+        margin-top: 350px;
+    }
+
+    .parametric_m {
+        font-size: 70px;
+    }
+
+    .parametric_n {
+        font-size: 24px;
+    }
+
+    .border4>div {
+        margin-top: 30px;
+    }
+
+    .border4>div>p:first-child {
+        font-size: 100px;
+        margin-bottom: 10px;
+    }
+
+    .border4>div>p:first-child>svg {
+        margin-left: 10px;
+    }
+
+    .border4>div>p:last-child {
+        font-size: 22px;
+    }
+
+    .info_tops {
+        font-size: 50px;
+    }
+
+    .border6>div {
+        right: 50px;
+        bottom: 50px;
+        gap: 50px 0;
+    }
+
+    .border6>img {
+        right: 500px;
+        bottom: 50px;
+    }
+
+    .border6>img,
+    .border6>div>img {
+        width: 400px;
+        height: 200px;
+    }
+
+    .center_items_3 {
+        height: 535px;
+        gap: 0 20px;
+    }
+
+    .center_items_4 {
+        height: 560px;
+        gap: 0 20px;
+    }
+
+    .border12 {
+        height: 550px;
+    }
+
+    .border12>ol {
+        margin-top: 100px;
+        padding: 0 80px;
+    }
+
+    .border12>ol>li>img {
+        width: 300px;
+        margin-bottom: 40px;
+    }
+
+    .border12>ol>li>p {
+        gap: 0 10px;
+        font-size: 32px;
+    }
+
+    .tabline {
+        width: 420px;
+    }
+
+    .tabP {
+        width: 1500px;
+    }
+
+    .jupiter_table ul>li,
+    .jupiter_table p,
+    .jupiter_table td {
+        font-size: 38px;
+        margin: 30px 0;
+    }
+
+    .jupiter_head {
+        margin: 200px auto;
+    }
+
+    .jupiter_title>h1 {
+        font-size: 80px;
+    }
+
+    .jupiter_title>p {
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 2560px)and (min-width: 1950px) {
+    .jupiter_main {
+        width: 1920px;
+        margin: 0 auto 80px;
+        padding-bottom: 50px;
+    }
+
+    .jupiter_contexts {
+        width: 1500px;
+        margin: 0 auto;
+    }
+
+    .jupiter_head>.jupiter_logo {
+        width: 780px;
+        margin-top: 300px;
+        margin-bottom: 700px;
+    }
+
+    .jupiter_center {
+        margin: 100px auto;
+    }
+
+    .jupiter_center>div {
+        margin: 20px 0;
+    }
+
+    .center_items {
+        height: 710px;
+        gap: 0 20px;
+    }
+
+    .flex_column {
+        gap: 20px 0;
+    }
+
+    .border12,
+    .center_items_4>div,
+    .center_items_3>div,
+    .flex_column>div,
+    .max_vie {
+        padding: 25px;
+    }
+
+    .info_title {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .info_ul>li,
+    .info_text {
+        font-size: 24px;
+    }
+
+    .border1_ol {
+        gap: 50px 100px;
+        margin-top: 260px;
+    }
+
+    .parametric_m {
+        font-size: 50px;
+    }
+
+    .parametric_n {
+        font-size: 20px;
+    }
+
+    .border4>div {
+        margin-top: 0px;
+    }
+
+    .border4>div>p:first-child {
+        font-size: 90px;
+        margin-bottom: 10px;
+    }
+
+    .border4>div>p:first-child>svg {
+        margin-left: 10px;
+    }
+
+    .border4>div>p:last-child {
+        font-size: 22px;
+    }
+
+    .info_tops {
+        font-size: 40px;
+    }
+
+    .border6>div {
+        right: 50px;
+        bottom: 50px;
+        gap: 50px 0;
+    }
+
+    .border6>img {
+        right: 400px;
+        bottom: 50px;
+    }
+
+    .border6>img,
+    .border6>div>img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .center_items_3 {
+        height: 425px;
+        gap: 0 20px;
+    }
+
+    .center_items_4 {
+        height: 445px;
+        gap: 0 20px;
+    }
+
+    .border12 {
+        height: 550px;
+    }
+
+    .border12>ol {
+        margin-top: 60px;
+        padding: 0 80px;
+    }
+
+    .border12>ol>li>img {
+        width: 260px;
+        margin-bottom: 30px;
+    }
+
+    .border12>ol>li>p {
+        gap: 0 10px;
+        font-size: 26px;
+    }
+
+    .tabline {
+        width: 420px;
+    }
+
+    .tabP {
+        width: 1500px;
+    }
+
+    .jupiter_table ul>li,
+    .jupiter_table p,
+    .jupiter_table td {
+        font-size: 34px;
+        margin: 30px 0;
+    }
+
+    .jupiter_head {
+        margin: 200px auto;
+    }
+
+    .jupiter_title>h1 {
+        font-size: 80px;
+    }
+
+    .jupiter_title>p {
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1550px) {
+    .jupiter_main {
+        width: 1536px;
+        margin: 0 auto 0px;
+        padding-bottom: 50px;
+    }
+
+    .jupiter_contexts {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .jupiter_head>.jupiter_logo {
+        width: 580px;
+        margin-top: 250px;
+        margin-bottom: 500px;
+    }
+
+    .jupiter_center {
+        margin: 60px auto;
+    }
+
+    .jupiter_center>div {
+        margin: 20px 0;
+    }
+
+    .center_items {
+        height: calc(710px*.8);
+        gap: 0 20px;
+    }
+
+    .flex_column {
+        gap: 20px 0;
+    }
+
+    .border12,
+    .center_items_4>div,
+    .center_items_3>div,
+    .flex_column>div,
+    .max_vie {
+        padding: 25px;
+    }
+
+    .info_title {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .info_ul>li,
+    .info_text {
+        font-size: 20px;
+    }
+
+    .border1_ol {
+        gap: 50px 100px;
+        margin-top: 180px;
+    }
+
+    .parametric_m {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .parametric_n {
+        font-size: 18px;
+    }
+
+    .border4>div {
+        margin-top: 0px;
+    }
+
+    .border4>div>p:first-child {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .border4>div>p>svg {
+        width: 30px;
+        height: 50px;
+    }
+
+    .border4>div>p:first-child>svg {
+        margin-left: 10px;
+    }
+
+    .border4>div>p:last-child {
+        font-size: 18px;
+    }
+
+    .info_tops {
+        font-size: 30px;
+    }
+
+    .border6>div {
+        right: 30px;
+        bottom: 30px;
+        gap: 30px 0;
+    }
+
+    .border6>img {
+        right: 320px;
+        bottom: 30px;
+    }
+
+    .border6>img,
+    .border6>div>img {
+        width: 250px;
+        height: 125px;
+    }
+
+    .center_items_3 {
+        height: calc(425px*.8);
+        gap: 0 20px;
+    }
+
+    .center_items_4 {
+        height: calc(445px*.8);
+        gap: 0 20px;
+    }
+
+    .border12 {
+        height: 550px;
+    }
+
+    .border12>ol {
+        margin-top: 60px;
+        padding: 0 80px;
+    }
+
+    .border12>ol>li>img {
+        width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .border12>ol>li>p {
+        gap: 0 10px;
+        font-size: 22px;
+    }
+
+    .tabline {
+        width: 420px;
+    }
+
+    .tabP {
+        width: 1500px;
+    }
+
+    .jupiter_table ul>li,
+    .jupiter_table p,
+    .jupiter_table td {
+        font-size: 28px;
+        margin: 20px 0;
+    }
+
+    .jupiter_head {
+        margin: 150px auto;
+    }
+
+    .jupiter_title>h1 {
+        font-size: 60px;
+    }
+
+    .jupiter_title>p {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1550px) and (min-width: 1150px) {
+    .jupiter_main {
+        width: 1150px;
+        margin: 0 auto 50px;
+        padding-bottom: 50px;
+    }
+
+    .jupiter_contexts {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .jupiter_head>.jupiter_logo {
+        width: 300px;
+        margin-top: 200px;
+        margin-bottom: 400px;
+    }
+
+    .jupiter_center {
+        margin: 40px auto;
+    }
+
+    .jupiter_center>div {
+        margin: 20px 0;
+    }
+
+    .center_items {
+        height: calc(715px*.6);
+        gap: 0 20px;
+    }
+
+    .flex_column {
+        gap: 20px 0;
+    }
+
+    .border12,
+    .center_items_4>div,
+    .center_items_3>div,
+    .flex_column>div,
+    .max_vie {
+        padding: 25px;
+    }
+
+    .info_title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .info_ul>li,
+    .info_text {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .border1_ol {
+        gap: 20px 60px;
+        margin-top: 100px;
+    }
+
+    .parametric_m {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .parametric_n {
+        font-size: 18px;
+    }
+
+    .border4 .info_text {
+        margin-bottom: 5px;
+    }
+
+    .border4>div {
+        margin-top: 0px;
+    }
+
+    .border4>div>p:first-child {
+        font-size: 50px;
+        margin-bottom: 0px;
+    }
+
+    .border4>div>p>svg {
+        width: 30px;
+        height: 40px;
+    }
+
+    .border4>div>p:first-child>svg {
+        margin-left: 10px;
+    }
+
+    .border4>div>p:last-child {
+        font-size: 14px;
+    }
+
+    .info_tops {
+        font-size: 24px;
+    }
+
+    .border6>div {
+        right: 20px;
+        bottom: 20px;
+        gap: 20px 0;
+    }
+
+    .border6>img {
+        right: 240px;
+        bottom: 20px;
+    }
+
+    .border6>img,
+    .border6>div>img {
+        width: 200px;
+        height: 100px;
+    }
+
+    .center_items_3 {
+        height: calc(425px*.6);
+        gap: 0 20px;
+    }
+
+    .center_items_4 {
+        height: calc(445px*.6);
+        gap: 0 20px;
+    }
+
+    .border12>ol {
+        margin-top: 40px;
+    }
+
+    .border12>ol>li>img {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .border12>ol>li>p {
+        gap: 0 10px;
+        font-size: 18px;
+    }
+
+    .tabline {
+        width: 420px;
+    }
+
+    .tabP {
+        width: 1500px;
+    }
+
+    .jupiter_table ul>li,
+    .jupiter_table p,
+    .jupiter_table td {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+
+    .tabBox_tech2 {
+        width: 95% !important;
+    }
+
+    .jupiter_head {
+        margin: 100px auto;
+    }
+
+    .jupiter_title>h1 {
+        font-size: 42px;
+    }
+
+    .jupiter_title>p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1150px) and (min-width: 750px) {
+    .jupiter_main {
+        width: 1150px;
+        margin: 0 auto 50px;
+        padding-bottom: 50px;
+    }
+
+    .jupiter_contexts {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .jupiter_head>.jupiter_logo {
+        width: 300px;
+        margin-top: 200px;
+        margin-bottom: 400px;
+    }
+
+    .jupiter_center {
+        margin: 40px auto;
+    }
+
+    .jupiter_center>div {
+        margin: 20px 0;
+    }
+
+    .center_items {
+        height: calc(715px*.6);
+        gap: 0 20px;
+    }
+
+    .flex_column {
+        gap: 20px 0;
+    }
+
+    .border12,
+    .center_items_4>div,
+    .center_items_3>div,
+    .flex_column>div,
+    .max_vie {
+        padding: 25px;
+    }
+
+    .info_title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .info_ul>li,
+    .info_text {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .border1_ol {
+        gap: 20px 60px;
+        margin-top: 100px;
+    }
+
+    .parametric_m {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .parametric_n {
+        font-size: 18px;
+    }
+
+    .border4 .info_text {
+        margin-bottom: 5px;
+    }
+
+    .border4>div {
+        margin-top: 0px;
+    }
+
+    .border4>div>p:first-child {
+        font-size: 50px;
+        margin-bottom: 0px;
+    }
+
+    .border4>div>p>svg {
+        width: 30px;
+        height: 40px;
+    }
+
+    .border4>div>p:first-child>svg {
+        margin-left: 10px;
+    }
+
+    .border4>div>p:last-child {
+        font-size: 14px;
+    }
+
+    .info_tops {
+        font-size: 24px;
+    }
+
+    .border6>div {
+        right: 20px;
+        bottom: 20px;
+        gap: 20px 0;
+    }
+
+    .border6>img {
+        right: 240px;
+        bottom: 20px;
+    }
+
+    .border6>img,
+    .border6>div>img {
+        width: 200px;
+        height: 100px;
+    }
+
+    .center_items_3 {
+        height: calc(425px*.6);
+        gap: 0 20px;
+    }
+
+    .center_items_4 {
+        height: calc(445px*.6);
+        gap: 0 20px;
+    }
+
+    .border12>ol {
+        margin-top: 40px;
+    }
+
+    .border12>ol>li>img {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .border12>ol>li>p {
+        gap: 0 10px;
+        font-size: 18px;
+    }
+
+    .tabline {
+        width: 420px;
+    }
+
+    .tabP {
+        width: 1500px;
+    }
+
+    .jupiter_table ul>li,
+    .jupiter_table p,
+    .jupiter_table td {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+
+    .tabBox_tech2 {
+        width: 95% !important;
+    }
+
+    .jupiter_head {
+        margin: 100px auto;
+    }
+
+    .jupiter_title>h1 {
+        font-size: 42px;
+    }
+
+    .jupiter_title>p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .jupiter_main {
+        width: 350rem;
+        background: none;
+        margin: 0 auto 20rem;
+    }
+
+    .jupiter_contexts {
+        width: 350rem;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .jupiter_head>.jupiter_logo {
+        width: 280rem;
+        margin-top: 50rem;
+        margin-bottom: 400px;
+    }
+
+    .jupiter_center {
+        margin: 20rem auto;
+    }
+
+    .jupiter_center>div {
+        margin: 20rem 0;
+    }
+
+    .center_items {
+        width: 350rem;
+        gap: 20rem 0;
+        flex-direction: column;
+    }
+
+    .flex_column {
+        width: 100%;
+        gap: 20rem 0;
+        height: auto;
+    }
+
+    .border12,
+    .center_items_4>div,
+    .center_items_3>div,
+    .flex_column>div,
+    .max_vie {
+        padding: 20rem;
+        width: 100%;
+    }
+
+    .border1 {
+        padding-bottom: 10rem !important;
+    }
+
+    .flex_column>div {
+        aspect-ratio: 1100/650;
+        flex: none;
+    }
+
+    .info_title {
+        font-size: 18rem;
+        margin-bottom: 10rem;
+    }
+
+    .info_ul>li,
+    .info_text {
+        font-size: 14rem;
+        margin: 0;
+    }
+
+    .border1_ol {
+        gap: 20rem 60rem;
+        margin-top: 55rem;
+    }
+
+    .parametric_m {
+        font-size: 20rem;
+        margin-bottom: 5rem;
+    }
+
+    .parametric_n {
+        font-size: 12rem;
+    }
+
+    .border4 .info_text {
+        margin-bottom: 5rem;
+    }
+
+    .border4>div {
+        margin-top: 0;
+    }
+
+    .border4>div>p:first-child {
+        font-size: 50rem;
+        margin-top: 35rem;
+    }
+
+    .parametric_m>svg {
+        height: 15rem;
+    }
+
+    .border4>div>p>svg {
+        height: 35rem;
+    }
+
+    .border4>div>p:last-child {
+        font-size: 14rem;
+    }
+
+    .info_tops {
+        font-size: 20rem;
+    }
+
+    .border6 {
+        height: 280rem !important;
+    }
+
+    .border6>div {
+        right: 20rem;
+        bottom: 20rem;
+        gap: 10rem 0;
+    }
+
+    .border6>img {
+        right: 130rem;
+        bottom: 20rem;
+    }
+
+    .border6>img,
+    .border6>div>img {
+        width: 100rem;
+        height: 50rem;
+    }
+
+    .center_items_3 {
+        flex-direction: column;
+        gap: 20rem 0;
+    }
+
+    .center_items_4 {
+        flex-direction: column;
+        gap: 20rem 0;
+    }
+
+    .border7 {
+        aspect-ratio: 525/400;
+    }
+
+    .border8 {
+        aspect-ratio: 405/400;
+    }
+
+    .border9 {
+        aspect-ratio: 460/400;
+    }
+
+    .border11,
+    .border10 {
+        aspect-ratio: 710/420;
+    }
+
+    .border12 {
+        background: none;
+    }
+
+    .border12>ol {
+        margin-top: 40rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20rem;
+        padding: 0;
+    }
+
+    .border12>ol>li>img {
+        width: 150rem;
+        margin-bottom: 20rem;
+    }
+
+    .border12>ol>li>p {
+        gap: 0 10rem;
+        font-size: 18rem;
+    }
+
+    .jupiter_table ul>li,
+    .jupiter_table p,
+    .jupiter_table td {
+        font-size: 16rem;
+        margin: 10rem 0;
+    }
+
+    .tabBox_tech2 {
+        width: 95% !important;
+    }
+
+    .jupiter_table {
+        overflow: hidden;
+    }
+
+    .jupiter_table td {
+        max-width: 250rem;
+    }
+
+    .jupiter_title>a {
+        margin: 0 auto;
+    }
+
+    .jupiter_head {
+        width: 350rem;
+        margin: 20rem auto;
+        flex-direction: column;
+        gap: 10rem 0;
+    }
+
+    .jupiter_head>img {
+        width: 870%;
+    }
+
+    .jupiter_title>h1 {
+        font-size: 32rem;
+    }
+
+    .jupiter_title>p {
+        text-align: center;
+        font-size: 12rem;
+        margin-bottom: 10rem;
+    }
+}

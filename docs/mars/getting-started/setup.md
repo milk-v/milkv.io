@@ -11,7 +11,7 @@ sidebar_position: 20
 
 Each pin of a USB-to-TTL cable is defined as follows:
 
-![usb2ttl](/docs/mars/usb2ttl.png)
+<Image src='/docs/common/usb2ttl.webp' maxWidth='100%' align='left' />
 
 ### Connection
 

@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Duo(CV1800B)'
+sidebar_label: 'Duo (CV1800B)'
 sidebar_position: 0
 ---
 
@@ -22,6 +22,16 @@ CV1800B 是一款高性能、低功耗芯片，适用于住宅消费监控 IP �
 ## 购买 CV1800B 芯片
 
 Milk-V 是 CV1800B 芯片的全球授权经销商。 您可以直接从我们的经销商[在线商店](https://arace.tech/products/sophon-cv1800b-5pcs)购买 CV1800B 芯片的样品。如需批量订购，请联系[Milk-V 销售团队](mailto:sales@milkv.io) 获取报价。
+
+## 上手指南
+
+### 安装系统
+
+请参考：[启动](https://milkv.io/zh/docs/duo/getting-started/boot) 章节。
+
+### USB 网络的使用
+
+请参考：[设置](https://milkv.io/zh/docs/duo/getting-started/setup) 章节。
 
 ## Duo GPIO 引脚分配
 
@@ -102,3 +112,60 @@ Duo 摄像头接口使用的是 16 PIN 间距为 0.5mm 的连接器，可以直�
 | 16 | 3V3                 |
 
 </div>
+
+## Duo 使用指引
+
+### UART 串口控制台
+
+Duo 主板上有预留 UART 调试串口，可以查看系统的启动日志，也可以在系统启动后登陆到控制台，执行一些终端命令。
+
+#### USB-TTL 串口线
+
+Duo 系列调试串口电平为 3.3V。
+
+常见的 USB 转 TTL 串口线的引脚定义如下：
+
+<Image src='/docs/common/usb2ttl.webp' maxWidth='100%' align='left' />
+
+#### 连接串口
+
+如下图所示，连接 USB 到 TTL 串口线，不要连接红线。
+
+<div className='gpio_style'>
+
+| Milk-V Duo   | \<---> | USB 转 TTL 串口 |
+| ------------ | ------ | -------------- |
+| TX (pin 16)  | \<---> | 白色线          |
+| RX (pin 17)  | \<---> | 绿色线          |
+| GND (pin 18) | \<---> | 黑色线          |
+
+</div>
+
+<Image src='/docs/duo/duo/duo-duo256m-serial-port.webp' maxWidth='100%' align='left' />
+
+Duo 默认的串口参数如下：
+
+```
+baudrate: 115200
+data bit: 8
+stop bit: 1
+parity  : none
+flow control: none
+```
+
+## 硬件资料
+
+### V1.2
+
+- 原理图：[duo-schematic-v1.2.pdf](https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-schematic-v1.2.pdf?raw=true)
+- 位号图（顶层）：[duo-component-list-top-v1.2.pdf](https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-component-list-top-v1.2.pdf?raw=true)
+- 位号图（底层）：[duo-component-list-bottom-v1.2.pdf](https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-component-list-bottom-v1.2.pdf?raw=true)
+- 2D dxf: [duo-mechanical-drawings-v1.1.zip](https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-mechanical-drawings-v1.1.zip?raw=true)
+
+### V1.1
+
+- 原理图：[duo-schematic-v1.1.pdf](https://github.com/milkv-duo/duo-files/blob/main/duo/hardware/duo-schematic-v1.1.pdf?raw=true)
+
+### 其他
+
+[https://github.com/milkv-duo/duo-files/tree/main/duo/hardware](https://github.com/milkv-duo/duo-files/tree/main/duo/hardware)

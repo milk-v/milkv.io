@@ -156,6 +156,75 @@ You can change the following settings in it.
 
 ![display-3](/docs/meles/display-3.webp)
 
+## Setup VNC and AutoLogin
+
+First, make sure the development board is connected to the Internet.
+
+Then open the terminal and execute the following command to install x11vnc
+
+```
+sudo apt update
+sudo apt install x11vnc -y
+```
+
+After the installation is complete, execute the command ```x11vnc```. The output shown in the figure below proves that the installation is successful.
+
+![vnc-install](/docs/meles/vnc-installed.jpg)
+
+Set up the startup auto-start below.
+
+Execute the command ```nano ~/vnc_startup.sh``` in the terminal and enter the following content in the file:
+
+```
+while true
+do
+x11vnc
+done
+```
+
+After entering, press ```ctrl``` + ```o``` to save, and press ```ctrl``` + ```x``` to exit.
+
+Execute the following command to add execution permissions to the file:
+
+```
+chmod +x ~/vnc_startup.sh
+```
+
+Finally, set vnc to start automatically. Open the upper left corner application - settings - session and startup
+
+Add a vnc startup task in the 'application autostart' item on the page and fill in the task command with ```/home/debian/vnc_startup.sh```, as shown in the figure.
+
+![vnc-install](/docs/meles/vnc-startup.jpg)
+
+Next, set up automatic login.
+
+Execute the following command
+
+```
+sudo nano /etc/lightdm/lightdm.conf
+```
+
+Edit the ```autologin-user=``` and ```autologin-in-background=false``` lines.
+
+Uncomment and change the content to
+
+```
+autologin-user=debian
+autologin-in-background=True
+```
+
+![vnc-install](/docs/meles/lightdn-conf.jpg)
+
+When finished, press ```ctrl``` + ```o``` to save, and press ```ctrl``` + ```x``` to exit.
+
+Reboot finally.
+
+After meles is started, please query the IP address of meles on the router, open the VNC client, and set up the connection.
+
+![vnc-install](/docs/meles/vnc-connect.jpg)
+
+![vnc-install](/docs/meles/vnc-connected.jpg)
+
 ## SSH
 
 - Check the status of the SSH service. Run the following command in a command line window

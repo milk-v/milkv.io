@@ -156,6 +156,75 @@ brcm_patchram_plus --enable_hci --no2bytes --tosleep 200000 --baudrate 115200 --
 
 ![display-3](/docs/meles/display-3.webp)
 
+## 设置 VNC 和自动登录
+
+首先确保开发板已经联网。
+
+随后打开终端，执行以下命令，安装 x11vnc
+
+```
+sudo apt update
+sudo apt install x11vnc -y
+```
+
+安装完成后执行命令 ```x11vnc``` ，出现下图所示的输出证明安装成功。
+
+![vnc-install](/docs/meles/vnc-installed.jpg)
+
+下面设置开机自启动。
+
+在终端中执行命令 ```nano ~/vnc_startup.sh```，在文件中输入下列内容：
+
+```
+while true
+do
+x11vnc
+done
+```
+
+输入完成后按 ```ctrl``` + ```o``` 保存，按 ```ctrl``` + ```x``` 退出。
+
+执行下列命令给文件添加执行权限：
+
+```
+chmod +x ~/vnc_startup.sh
+```
+
+最后再设置 vnc 自启动，打开左上角 application - settings - session and startup
+
+在页面的 application autostart 项添加 vnc 启动任务，任务命令填写 ```/home/debian/vnc_startup.sh```，如图所示。
+
+![vnc-install](/docs/meles/vnc-startup.jpg)
+
+接下来设置自动登录。
+
+执行下列命令
+
+```
+sudo nano /etc/lightdm/lightdm.conf
+```
+
+编辑 ```autologin-user=``` 和 ```autologin-in-background=false``` 两行。
+
+取消注释，内容更改为
+
+```
+autologin-user=debian
+autologin-in-background=True
+```
+
+![vnc-install](/docs/meles/lightdn-conf.jpg)
+
+完成后按 ```ctrl``` + ```o``` 保存，按 ```ctrl``` + ```x``` 退出。
+
+最后重启。
+
+meles 启动后请在路由器上查询 meles 的 IP 地址，打开 VNC 客户端，设置连接。
+
+![vnc-install](/docs/meles/vnc-connect.jpg)
+
+![vnc-install](/docs/meles/vnc-connected.jpg)
+
 ## SSH
 
 - 要检查SSH服务的状态，请在命令行窗口中运行以下命令

@@ -102,9 +102,17 @@ $ ls /dev/ttyUSB*
 ```
 The `ttyUSB0` is a serial port device, and you can configure the connection with tools such as `minicom`.
 
+The default serial port parameters of Vega are as follows:
+
+```
+baudrate: 115200
+data bit: 8
+stop bit: 1
+parity  : none
+flow control: none
+```
+
 ~~~
-Milk-V Vega
-Serial baud rate: 115200
 USERNAME: root
 PASSWORD: milkv
 ~~~

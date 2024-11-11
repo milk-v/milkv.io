@@ -183,13 +183,21 @@ sudo systemctl restart tftpd-hpa
 
 - 配置当前设备要使用的 IP 和 tftp 服务器的 IP:
   ```
-  setenv ipaddr 192.168.2.2222;setenv serverip 192.168.2.66
+  setenv ipaddr 192.168.2.234;setenv serverip 192.168.2.66
   ```
 - ping 主机:
   ```
-  ping 192.168.77.176
+  ping 192.168.2.66
   ```
   如果能 ping 通，则 Ubuntu 上的 tftp 服务正常。
+
+  ```
+  => setenv ipaddr 192.168.2.234;setenv serverip 192.168.2.66
+  => ping 192.168.2.66
+  Using xy1000_eth device
+  host 192.168.2.66 is alive
+  =>
+  ```
 
 ### 烧录 Loader
 

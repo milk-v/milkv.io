@@ -247,11 +247,6 @@ select:focus {
         align-items: center;
     }
 
-    label>input[type="radio"] {
-        width: 47px;
-        height: 47px;
-    }
-
     .formBtn {
         display: block;
         margin: 0 auto;
@@ -399,11 +394,6 @@ select:focus {
         align-items: center;
     }
 
-    label>input[type="radio"] {
-        width: 47px;
-        height: 47px;
-    }
-
     .formBtn {
         display: block;
         margin: 0 auto;
@@ -544,11 +534,6 @@ select:focus {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-    }
-
-    label>input[type="radio"] {
-        width: 47px;
-        height: 47px;
     }
 
     .formBtn {

@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'Duo 启动'
+sidebar_label: '启动'
 sidebar_position: 10
 ---
 
-# 从 microSD 卡启动 Duo
+# 从 microSD 卡启动
 
 ## 准备
 
@@ -16,7 +16,7 @@ sidebar_position: 10
 
 ## 下载镜像和工具
 
-- 从[官方镜像和SDK](https://milkv.io/docs/duo/resources/image-sdk)下载系统镜像。
+- 从[官方镜像和SDK](https://milkv.io/zh/docs/duo/resources/image-sdk)下载系统镜像。
 - 下载镜像烧录工具 [balenaEtcher](https://etcher.balena.io/) 或 [Rufus](https://rufus.ie/en/)。
 
 ## 烧录镜像

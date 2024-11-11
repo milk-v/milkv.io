@@ -20,9 +20,9 @@ const sidebars = {
         'duo/getting-started/duo',
         'duo/getting-started/duo256m',
         'duo/getting-started/duos',
+        'duo/getting-started/duo-module-01',
         'duo/getting-started/boot',
         'duo/getting-started/setup',
-        'duo/getting-started/swap',
         'duo/getting-started/buildroot-sdk',
         'duo/getting-started/rtoscore',
         'duo/getting-started/8051core',
@@ -55,12 +55,13 @@ const sidebars = {
             'duo/application-development/tdl-sdk/tdl-sdk-introduction',
             'duo/application-development/tdl-sdk/tdl-sdk-face-detection',
             'duo/application-development/tdl-sdk/tdl-sdk-yolov5',
+            'duo/application-development/tdl-sdk/tdl-sdk-yolov8',
           ],
         },
         {
           type: "category",
           label: 'TPU',
-          collapsed: false,
+          collapsed: true,
           link: {
             title: 'TPU',
             description: ' ',
@@ -77,7 +78,33 @@ const sidebars = {
             'duo/application-development/tpu/tpu-resnet18',
           ],
         },
-        'duo/application-development/sensor-demo',
+        {
+          type: "category",
+          label: 'Sensor Demo',
+          collapsed: false,
+          link: {
+            title: 'Sensor Demo',
+            description: ' ',
+          },
+          items: [
+            'duo/application-development/sensor-demo/dht22',
+            'duo/application-development/sensor-demo/df9gms180',
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: '🛠️ Low-level Development',
+      collapsed: false,
+      link: {
+        type: "generated-index",
+        title: '🛠️ Low-level Development',
+        description: 'Low-level Development',
+        slug: '/duo/low-level-dev'
+      },
+      items: [
+        'duo/low-level-dev/mipi-dsi',
       ],
     },
     {
@@ -98,6 +125,7 @@ const sidebars = {
         'duo/resources/xyzdims',
         'duo/resources/spilvgl',
         'duo/resources/third-party-img',
+        'duo/resources/upstream-status',
       ],
     },
     {
@@ -105,8 +133,10 @@ const sidebars = {
       label: '🔌 IO Boards',
       collapsed: false,
       link: {
-        type: 'doc',
-        id: 'duo/io-board/usb-ethernet-iob',
+        type: "generated-index",
+        title: '🔌 IO Boards',
+        description: 'Duo Series IOB',
+        slug: 'duo/io-board/'
       },
       items: [
         'duo/io-board/usb-ethernet-iob',
@@ -124,6 +154,21 @@ const sidebars = {
       items: [
         'duo/camera/gc2083',
         'duo/camera/tuning',
+        'duo/camera/usb'
+      ],
+    },
+    {
+      type: "category",
+      label: 'Accessories',
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'duo/Accessories/ST7789',
+      },
+      items: [
+        'duo/Accessories/ST7789',
+        'duo/Accessories/Pico-ePaper-2.13',
+        'duo/Accessories/Pico-8SEG-LED',
       ],
     },
   ],
@@ -174,6 +219,7 @@ const sidebars = {
         'pioneer/resources/inferllm',
         'pioneer/resources/llvm',
         'pioneer/resources/zcc',
+        'pioneer/resources/upstream-status',
       ],
     },
     {
@@ -216,11 +262,10 @@ const sidebars = {
         'mars/getting-started/bootloader',
         'mars/getting-started/images',
         'mars/getting-started/hardware',
+        'mars/getting-started/third-party-img',
       ],
     },
-    'mars/mipicsi-support',
-    'mars/mipidsi-support',
-    'mars/uvccam-support',
+    'mars/support-list',
     {
       type: "category",
       label: '🔳 Compute Module',
@@ -238,6 +283,7 @@ const sidebars = {
         'mars/compute-module/extendpartition',
         'mars/compute-module/bootloader',
         'mars/compute-module/hardware',
+        'mars/compute-module/update-eeprom',
         {
           type: "category",
           label: '🧰 Resources',
@@ -301,6 +347,7 @@ const sidebars = {
       },
       items: [
         'meles/os-usage/revyos',
+        'meles/os-usage/ros2',
       ],
     },
     {
@@ -316,6 +363,7 @@ const sidebars = {
       items: [
         'meles/installation/install-an-image-to-spi-nor-flash',
         'meles/installation/install-an-image-to-microsd-card',
+        'meles/installation/install-an-image-to-emmc',
       ],
     },
     {
@@ -370,6 +418,78 @@ const sidebars = {
         'vega/getting-started/setup',
         'vega/getting-started/buildroot-sdk',
         'vega/getting-started/modulesupport',
+      ],
+    },
+  ],
+  jupiter: [
+    {
+      type: 'link',
+      label: '🏠 Home',
+      href: '/docs',
+    },
+    'jupiter/overview',
+    {
+      type: "category",
+      label: '🚀 Getting Started',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: '🚀 Getting Started',
+        description: 'Getting Started with Jupiter',
+        slug: '/jupiter/getting-started'
+      },
+      items: [
+        'jupiter/getting-started/hardware',
+        'jupiter/getting-started/boot',
+        'jupiter/getting-started/setup',
+        'jupiter/getting-started/resources',
+      ],
+    },
+    {
+      type: "category",
+      label: '🖥️ App Development',
+      collapsed: false,
+      link: {
+        type: "generated-index",
+        title: '🖥️ App Development',
+        description: 'Application Development',
+        slug: '/jupiter/application-development'
+      },
+      items: [
+        'jupiter/application-development/gcc',
+        'jupiter/application-development/docker',
+        'jupiter/application-development/openmediavault',
+      ],
+    },
+    {
+      type: "category",
+      label: '🛠️ Build OS Images',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: '🛠️ Build OS Images',
+        description: 'Build OS Images for Jupiter',
+        slug: '/jupiter/build-os'
+      },
+      items: [
+        'jupiter/build-os/buildroot',
+        'jupiter/build-os/bianbu',
+        'jupiter/build-os/ubuntu',
+      ],
+    },
+    {
+      type: "category",
+      label: 'Development-Guide',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: 'Development-Guide',
+        description: 'Development Guide',
+        slug: '/jupiter/development-guide'
+      },
+      items: [
+        'jupiter/development-guide/kernel-compilation',
+        'jupiter/development-guide/coredump',
       ],
     },
   ],

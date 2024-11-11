@@ -9,7 +9,7 @@ Version 1.0
 
 -------------------------
 ## Introduction
-Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH1520. It is powered by a Quad Core RISC-V 64GCV C910, capable of running up to 2.0GHz. This SBC is packed with rich interfaces and boasts powerful computing and AI capabilities, making it an ideal RISC-V intelligent hardware platform for hobbyists, makers, engineers, teachers, and students.
+Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH1520. It is powered by a Quad Core RISC-V 64GCV C910, capable of running up to 1.85GHz. This SBC is packed with rich interfaces and boasts powerful computing and AI capabilities, making it an ideal RISC-V intelligent hardware platform for hobbyists, makers, engineers, teachers, and students.
   
   
 ![meles](/docs/meles/meles.webp)
@@ -19,7 +19,7 @@ Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH
 ## Specification
 | Milk-V Meles | Specification                                                                          |
 | ------------ | -------------------------------------------------------------------------------------- |
-| SoC          | T-Head TH1520, Quad Core RISC-V 64GCV C910, up to 2.0GHz                               |
+| SoC          | T-Head TH1520, Quad Core RISC-V 64GCV C910, up to 1.85GHz                               |
 | Memory       | 8GB / 16GB LPDDR4X, 4266 MT/s                                                          |
 | Storage      | 1x eMMC Slot                                                                           |
 |              | 1x MicroSD Slot                                                                        |
@@ -48,7 +48,7 @@ Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH
 
 | TH1520 | Specification                                                                    |
 | ------ | -------------------------------------------------------------------------------- |
-| CPU    | RISC-V 64GCV C910*4@**2.0GHz**                                                   |
+| CPU    | RISC-V 64GCV C910*4@**1.85GHz**                                                   |
 |        | Each core contains 64KB I cache amd 64KB D Cache                                 |
 |        | 1MB of Shared L2 Cache                                                           |
 |        | Support TEE and REE, configured during core booting                              |

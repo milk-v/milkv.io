@@ -5,16 +5,13 @@ sidebar_position: 1
 
 # Mars
 
-Version 1.0 
+## 简介
 
--------------------------
-## Introduction
+Milk-V Mars 是一款高性能的 RISC-V 单板计算机（SBC），只有信用卡大小，基于 StarFive JH7110 设计。这个四核设备支持可拆卸的 eMMC 模块，以及高达 8GB 的 LPDDR4 内存。该板配备了三个USB 3.0 端口，一个 USB 2.0 端口，一个支持 4K 分辨率的 HDMI 2.0 端口，一个支持 PoE（以太网供电）的 RJ45 以太网端口，以及一个用于 WIFI/BT 模块的 E-Key 插槽。它还包括一个 2 Lane 的 MIPI CSI 和一个 4 Lane 的 MIPI DSI，以及一个 40 PIN 的 GPIO。
 
-Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. This four-core device supports a plug-and-play eMMC module, as well as up to 8GB of LPDDR4 memory. The board is equipped with three USB 3.0 ports, one USB 2.0 port, an HDMI 2.0 port that supports 4K resolution, an RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO.  
-  
-![mars](/docs/mars/mars.webp)
+<Image src='/docs/mars/mars.webp' maxWidth='100%' align='left' />
 
-## Specification
+## 规格
 
 | Milk-V Mars  | Specification                                       |
 | ------------ | --------------------------------------------------- |
@@ -42,7 +39,7 @@ Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of
 | Button       | 1x Recovery botton                                  |
 | Others       | 2 Pin 5V slot for FAN                               |
 
-## Features 
+## 特性
 
 - A 64-bit System-on-Chip (SoC) with RV64GC architecture, clocking up to 1.5GHz
 - Support for a removable eMMC module
@@ -55,7 +52,7 @@ Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of
 - Supports M.2 E-Key WIFI/BT module
 - Comes with a 40-pin GPIO interface
 
-## Hardware
+## 硬件
 
 ### SoC
 
@@ -110,23 +107,14 @@ The GPU of JH7110 has the following
 - Dedicated processor for B-Series core firmware execution
     - Single-threaded firmware processor with a 2 KB instruction cache and a 2 KB data cache.
 
-### Memory
+### 内存
 
-**Milk-V Mars** offers a choice of 2GB / 4GB / 8GB memory sizes.  
-The memory specification is LPDDR4 2800MT/s.
+**Milk-V Mars** 提供 2GB / 4GB / 8GB 内存大小选择。内存规格为 LPDDR4 2800MT/s。
 
-### Camara for MIPI CSI
+### 外设支持列表
 
-Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/mipicsi-support)
+Mars 外设支持列表：[https://milkv.io/zh/docs/mars/support-lists](https://milkv.io/zh/docs/mars/support-lists)。
 
-### Display for MIPI DSI
+### 支持
 
-Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/mipidsi-support)
-
-### UVC Camera
-
-Milk-V Mars supports the following [Here](https://milkv.io/docs/mars/uvccam-support)
-
-### Support
-
-For support please post your issue on the [Milk-V Community Mars Category](https://community.milkv.io/c/mars).
+如需支持，您可以在 [Milk-V Mars](https://community.milkv.io/c/mars) 社区发布您的问题。

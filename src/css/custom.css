@@ -121,7 +121,6 @@ li {
   color: #2d88c9 !important;
 }
 
-
 .text_right {
   text-align: left;
   color: #2D88C9;
@@ -138,27 +137,13 @@ li {
   height: 80%;
 }
 
-
 strong {
   color: #2d88c9;
-}
-
-/* 字体 */
-@font-face {
-  font-family: Roboto;
-  src: url(/static/ttf/Roboto-Regular-14.ttf);
-}
-
-@font-face {
-  font-family: Inter;
-  src: url(/static/ttf/Inter.ttf);
 }
 
 .hidden {
   display: none !important;
 }
-
-
 
 .swiper-pagination-bullet {
   width: 12px !important;
@@ -174,6 +159,23 @@ strong {
   .swiper-pagination {
     bottom: 0px !important;
   }
+}
+
+/* 导航栏 New */
+.new_product {
+  position: relative;
+}
+
+.new_product::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  background: url(/static/components/new.svg) no-repeat;
+  background-size: 100%;
+  width: 36px;
+  height: 16px;
 }
 
 /* @media screen and (max-width: 1950px) and (min-width: 1450px) {}
@@ -516,4 +518,52 @@ strong {
   .cardDescription_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module {
     font-size: 12rem !important;
   }
+
+  /* 搜索栏 font-size */
+  .DocSearch-Cancel,
+  .DocSearch-Hit-path,
+  .DocSearch-Label {
+    font-size: 10rem !important;
+  }
+
+  .DocSearch-Hit-source,
+  .DocSearch-Hit-title,
+  .DocSearch-Input {
+    font-size: 14rem !important;
+  }
+
+  .DocSearch-Hit-content-wrapper {
+    line-height: 12rem !important;
+  }
+
+  /* 404 font-size */
+  .hero__title {
+    font-size: 14rem;
+  }
+}
+
+/* 字体 */
+@font-face {
+  font-family: Roboto;
+  src: url(/static/ttf/Roboto-Regular-14.ttf);
+}
+
+@font-face {
+  font-family: Roboto2;
+  src: url(/static/ttf/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: Roboto3;
+  src: url(/static/ttf/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(/static/ttf/Inter.ttf);
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(/static/ttf/OpenSans-Regular.ttf);
 }

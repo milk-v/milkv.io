@@ -318,9 +318,9 @@ You can also use Ubuntu installed in a virtual machine, Ubuntu installed via WSL
   cd hello-world
   make
   ```
-  After the compilation is successful, send the generated `helloworld` executable program to the Duo device through the network port or the RNDIS network. For example, the RNDIS method supported by the [default firmware](https://github.com/milkv-duo/duo-buildroot-sdk/releases), Duo’s IP is 192.168.42.1, the user name is `root`, and the password is `milkv`.
+  After the compilation is successful, send the generated `helloworld` executable program to the Duo device through the network port or the USB network. For example, the USB-NCM method supported by the [default firmware](https://github.com/milkv-duo/duo-buildroot-sdk/releases), Duo’s IP is 192.168.42.1, the user name is `root`, and the password is `milkv`.
   ```
-  scp helloworld root@192.168.42.1:/root/
+  scp -O helloworld root@192.168.42.1:/root/
   ```
   After sending successfully, run `./helloworld` in the terminal logged in via ssh or serial port, and it will print `Hello, World!`
   ```
@@ -372,6 +372,12 @@ Once you have finished testing the `blink` program implemented in C, if you want
 ```
 mv /mnt/system/blink.sh_backup /mnt/system/blink.sh && sync
 ```
+
+### PWM
+
+Source code：[https://github.com/milkv-duo/duo-examples/tree/main/pwm](https://github.com/milkv-duo/duo-examples/tree/main/pwm)
+
+Set the PWM signal on a pin by manually entering the pin number and duty cycle. After running the program， please follow the prompts to enter the [pin number]:[duty] cycle to set the PWM signal on the corresponding pin, such as 3:500.
 
 ### ADC
 
@@ -854,6 +860,35 @@ The current version of wiringX only supports Duo's PWM. Duo256M and DuoS will ad
 |     | GND      | <div className='black'>13</div> |  <div className='black'>28</div> | GND      |
 |     | GP10     | <div className='green'>14</div> |  <div className='green'>27</div> | GP21     |
 |     | GP11     | <div className='green'>15</div> |  <div className='green'>26</div> | GP20     |
+| 4   | GP12     | <div className='green'>16</div> |  <div className='green'>25</div> | GP19     |
+| 5   | GP13     | <div className='green'>17</div> |  <div className='green'>24</div> | GP18     |
+|     | GND      | <div className='black'>18</div> |  <div className='black'>23</div> | GND      |
+|     | GP14     | <div className='green'>19</div> |  <div className='green'>22</div> | GP17     |
+|     | GP15     | <div className='green'>20</div> |  <div className='green'>21</div> | GP16     |
+
+</div>
+
+- Duo256M PWM Pin Number
+
+<div className='gpio_style'>
+
+| PWM | PIN NAME |              Pin#               |              Pin#                | PIN NAME |
+|:---:|:---------|:-------------------------------:|:--------------------------------:|----------|
+|     | GP0      | <div className='green'>1</div>  |    <div className='red'>40</div> | VBUS     |
+|     | GP1      | <div className='green'>2</div>  |    <div className='red'>39</div> | VSYS     |
+|     | GND      | <div className='black'>3</div>  |  <div className='black'>38</div> | GND      |
+| 7   | GP2      | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN   |
+| 6   | GP3      | <div className='green'>5</div>  |    <div className='red'>36</div> | 3V3(OUT) |
+| 5   | GP4      | <div className='green'>6</div>  |   <div className='gray'>35</div> |          |
+| 6   | GP5      | <div className='green'>7</div>  |   <div className='gray'>34</div> |          |
+|     | GND      | <div className='black'>8</div>  |  <div className='black'>33</div> | GND      |
+| 9   | GP6      | <div className='green'>9</div>  |  <div className='green'>32</div> | GP27     |
+| 8   | GP7      | <div className='green'>10</div> |  <div className='green'>31</div> | GP26     |
+| 7   | GP8      | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |
+| 4   | GP9      | <div className='green'>12</div> |  <div className='green'>29</div> | GP22     |
+|     | GND      | <div className='black'>13</div> |  <div className='black'>28</div> | GND      |
+| 10  | GP10     | <div className='green'>14</div> |  <div className='green'>27</div> | GP21     |
+| 11  | GP11     | <div className='green'>15</div> |  <div className='green'>26</div> | GP20     |
 | 4   | GP12     | <div className='green'>16</div> |  <div className='green'>25</div> | GP19     |
 | 5   | GP13     | <div className='green'>17</div> |  <div className='green'>24</div> | GP18     |
 |     | GND      | <div className='black'>18</div> |  <div className='black'>23</div> | GND      |

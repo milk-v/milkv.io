@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Duo S(SG2000)'
+sidebar_label: 'Duo S (SG2000)'
 sidebar_position: 3
 ---
 
@@ -21,11 +21,28 @@ SG2000 是一款高性能、低功耗芯片，专为智能监控 IP 摄像机、
 
 ## 购买 SG2000 芯片
 
-Milk-V 是 SG2002 芯片的全球授权经销商。您可以直接从我们的经销商 [Arace](https://arace.tech/products/sophon-cv1800b-5pcs) 购买 SG2002 芯片的样品。如需批量订购，请联系 [Milk-V 销售团队](mailto:sales@milkv.io) 获取报价。
+Milk-V 是 SG2000 芯片的全球授权经销商。您可以直接从我们的经销商 [Arace](https://arace.tech/products/sophon-cv1800b-5pcs) 购买 SG2000 芯片的样品。如需批量订购，请联系 [Milk-V 销售团队](mailto:sales@milkv.io) 获取报价。
+
+## 上手指南
+
+### 安装系统
+
+- 从 SD 卡启动
+  
+  请参考：[启动](https://milkv.io/zh/docs/duo/getting-started/boot) 章节。
+
+- 从 eMMC 启动
+  
+  请参考：[eMMC 版本固件烧录](https://milkv.io/zh/docs/duo/getting-started/duos#emmc-%E7%89%88%E6%9C%AC%E5%9B%BA%E4%BB%B6%E7%83%A7%E5%BD%95) 章节。
+
+### USB 网络的使用
+
+请参考：[设置](https://milkv.io/zh/docs/duo/getting-started/setup) 章节。
 
 ## DuoS GPIO 引脚分配
 
 <Image src='/docs/duo/duos/duos-pinout-v1.1.webp' maxWidth='50%' align='center' />
+
 
 ### GPIO 引脚映射
 
@@ -78,7 +95,7 @@ Milk-V 是 SG2002 芯片的全球授权经销商。您可以直接从我们的�
 | PWM   | I2C      | UART     | MIPI DSI   | NUM | SG2000      | NAME     | PIN                             | PIN                              | NAME        | SG2000     | NUM | MIPI DSI   |
 |:------|:---------|:---------|:-----------|:---:|:------------|---------:|:-------------------------------:|:--------------------------------:|:------------|:-----------|:---:|:-----------|
 |       |          |          |            |     |             | VSYS(5V) | <div className='red'>52</div>   | <div className='blue'>51</div>   | AUDIO_OUT_R |            |     |            |
-| PWM12 | I2C4_SCL | UART3_TX |            | 499 | XGPIOB[1]   | B1       | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |            |     |            |
+| PWM12 | I2C4_SCL | UART3_TX |            | 449 | XGPIOB[1]   | B1       | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |            |     |            |
 | PWM13 | I2C4_SDA | UART3_RX |            | 450 | XGPIOB[2]   | B2       | <div className='green'>48</div> | <div className='blue'>47</div>   | AUDIO_IN_R  |            |     |            |
 |       |          |          |            | 451 | XGPIOB[3]   | B3       | <div className='green'>46</div> | <div className='blue'>45</div>   | AUDIO_IN_L  |            |     |            |
 | PWM10 | I2C2_SDA |          | LCD_RST    | 354 | PWR_GPIO[2] | E2       | <div className='green'>44</div> | <div className='orange'>43</div> | 3V3         |            |     |            |
@@ -199,7 +216,7 @@ DuoS 的大核可以选择使用 RISC-V 或者 ARM，可以通过主板上的切
 
 ### USB Type A 接口的使用
 
-DuoS USB Type A 接口与 Type C 接口的 USB 功能是二选一的，不可以同时使用。默认固件配置的是 Type C 口的 USB 网口(RNDIS)功能，如果需要切换为 Type A 口的 USB 2.0 HOST 口接 U 盘等设备使用，需要执行以下命令：
+DuoS USB Type A 接口与 Type C 接口的 USB 功能是二选一的，不可以同时使用。默认固件配置的是 Type C 口的 USB 网口(USB-NCM)功能，如果需要切换为 Type A 口的 USB 2.0 HOST 口接 U 盘等设备使用，需要执行以下命令：
 
 ~~~
 ln -sf /mnt/system/usb-host.sh /mnt/system/usb.sh
@@ -224,21 +241,48 @@ ls /mnt/udisk
 umount /mnt/udisk
 ```
 
-想恢复 Type C 口 的 USB 网卡(RNDIS)功能时，执行：
+想恢复 Type C 口 的 USB 网卡(USB-NCM)功能时，执行：
 ~~~
 rm /mnt/system/usb.sh
-ln -sf /mnt/system/usb-rndis.sh /mnt/system/usb.sh
+ln -sf /mnt/system/usb-ncm.sh /mnt/system/usb.sh
 sync
 ~~~
 然后执行 `reboot` 命令或重新上电使其生效。
 
 :::tip
-DuoS 有板载以太网接口，所以 Type C 口的 USB 网口(RNDIS)可以不用，一直保持切换为 A 口的 USB 2.0 Host 功能。
+DuoS 有板载以太网接口，所以 Type C 口的 USB 网口(USB-NCM)可以不用，一直保持切换为 A 口的 USB 2.0 Host 功能。
 :::
+
+### 固定网口 MAC 地址
+
+DuoS 以太网口 MAC 地址是随机分配的，这可能会导致每次重启之后，路由器为网口分配的 IP 地址会变，为了解决这个问题，可以使用如下命令配置一个固定的 MAC 地址:
+
+:::tip
+**替换命令中的 MAC 地址为你想使用的地址，另外注意在同一网段中，不能出现重复的 MAC 地址**
+:::
+
+```
+echo "pre-up ifconfig eth0 hw ether 78:01:B3:FC:E8:55" >> /etc/network/interfaces && sync
+```
+然后执行 reboot 命令或重新上电使其生效。
 
 ### UART 串口控制台
 
-如下图所示，连接USB到TTL串口模块，不要连接红线。
+DuoS 主板上有预留 UART 调试串口，可以查看系统的启动日志，也可以在系统启动后登陆到控制台，执行一些终端命令。
+
+#### USB-TTL 串口线
+
+Duo 系列调试串口电平为 3.3V。
+
+常见的 USB 转 TTL 串口线的引脚定义如下：
+
+<Image src='/docs/common/usb2ttl.webp' maxWidth='100%' align='left' />
+
+#### 连接串口
+
+如下图所示，连接 USB 到 TTL 串口线，不要连接红线。
+
+<div className='gpio_style'>
 
 | Milk-V DouS | \<---> | USB 转 TTL 串口 |
 | ----------- | ------ | -------------- |
@@ -246,9 +290,11 @@ DuoS 有板载以太网接口，所以 Type C 口的 USB 网口(RNDIS)可以不�
 | TX (pin  8) | \<---> | 白色线          |
 | RX (pin 10) | \<---> | 绿色线          |
 
-<Image src='/docs/duo/duos/duos-serial-port.webp' maxWidth='100%' align='center' />
+</div>
 
-Duo u-boot 和内核控制台的默认串行设置是：
+<Image src='/docs/duo/duos/duos-serial-port.webp' maxWidth='100%' align='left' />
+
+DuoS 默认的串口参数如下：
 
 ```
 baudrate: 115200
@@ -283,16 +329,56 @@ wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
 ```
 即可连接 WIFI，连接之后可以通过 `ifconfig` 或者 `ip a` 命令查看分配的 IP 地址。
 
+如果需要开机自动连接 WIFI，可以把以下命令放到 `/mnt/system/auto.sh` 文件中。
+
+```bash
+interface="wlan0"
+max_attempts=100
+attempt=0
+log_file="/var/log/auto.sh.log"
+
+# Continuously attempt to detect if the interface exists, up to $max_attempts times
+echo "start auto.sh" > "$log_file"
+while [ $attempt -lt $max_attempts ]; do
+    # Check if the wlan0 interface exists
+    ip link show "$interface" > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        echo "$(date +'%Y-%m-%d %H:%M:%S') $interface interface exists, starting wpa_supplicant..." >> "$log_file"
+        wpa_supplicant -B -i "$interface" -c /etc/wpa_supplicant.conf >> "$log_file"
+        break  # Exit the loop if the interface is found
+    else
+        echo "$(date +'%Y-%m-%d %H:%M:%S') $interface interface not found, waiting..." >> "$log_file"
+        sleep 1  # Wait for 1 second before checking again
+        attempt=$((attempt + 1))  # Increment the attempt counter
+    fi
+done
+
+# If the maximum number of attempts is reached and the interface still not found, output an error message
+if [ $attempt -eq $max_attempts ]; then
+    echo "$(date +'%Y-%m-%d %H:%M:%S') Interface $interface not found after $max_attempts attempts" >> "$log_file"
+fi
+```
+
+### 固定 WIFI MAC 地址
+
+DuoS WIFI MAC 地址是随机分配的，这可能会导致每次重启之后，路由器为 WIFI 分配的 IP 地址会变，可以使用如下命令为 WIFI 配置一个固定的 MAC 地址：
+
 :::tip
-如果需要开机自动连网，可以把该命令放到 `/mnt/system/auto.sh` 文件中。
+**替换命令中的 MAC 地址为你想使用的地址，另外注意在同一网段中，不能出现重复的 MAC 地址**
 :::
+
+```bash
+echo "MAC_ADDR=11:22:33:44:55:66" > /mnt/system/firmware/aic8800/rwnx_settings.ini && sync
+```
+
+然后执行 reboot 命令或重新上电使其生效。
 
 ### eMMC 版本固件烧录
 
 DuoS eMMC 版本出厂未烧录固件，需要使用 PC 通过 USB 接口烧录。
 
 :::tip
-使用 Windows 下的 USB 烧录工具支持 eMMC 固件版本为 [V1.1.0](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.1.0) 或[更新的版本](https://github.com/milkv-duo/duo-buildroot-sdk/releases)。
+使用 Windows 下的 USB 烧录工具支持 eMMC 固件版本为 [V1.1.3](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/v1.1.3) 或[更新的版本](https://github.com/milkv-duo/duo-buildroot-sdk/releases)。
 :::
 
 #### Windows 环境下烧录
@@ -307,7 +393,7 @@ DuoS eMMC 版本出厂未烧录固件，需要使用 PC 通过 USB 接口烧录�
 
 3. 下载固件
 
-   下载 DuoS eMMC 最新版本的固件，当前是 [milkv-duos-emmc-v1.1.0-2024-0410.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.1.0/milkv-duos-emmc-v1.1.0-2024-0410.zip)，可以在烧录工具 `CviBurn_v2.0_cli_windows` 目录下新建 rom 文件夹，并将下载好的 eMMC 固件压缩包解压到 rom 目录下，此时烧录工具的目录结构如下：
+   下载 DuoS eMMC 最新版本的固件，当前是 [milkv-duos-emmc-v1.1.3-2024-0930.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/v1.1.3/milkv-duos-emmc-v1.1.3-2024-0930.zip)，可以在烧录工具 `CviBurn_v2.0_cli_windows` 目录下新建 rom 文件夹，并将下载好的 eMMC 固件压缩包解压到 rom 目录下，此时烧录工具的目录结构如下：
 
    ```
    └───CviBurn_v2.0_cli_windows
@@ -333,7 +419,15 @@ DuoS eMMC 版本出厂未烧录固件，需要使用 PC 通过 USB 接口烧录�
 
    <Image src='/docs/duo/duos/duos-emmc-install-01.webp' maxWidth='100%' align='center' />
 
-   用 **Type-C 数据线** 连接 DuoS 和 PC （注意，目前如果 DuoS 有插 SD 卡，请先将 SD 卡取下），DuoS 会自动上电进入烧录模式，PC 端会实时显示烧录进度：
+   按住 DuoS 上的 recovery 按键，再用 **Type-C 数据线** 连接 DuoS 和 PC 。
+
+   :::warning
+   目前如果 DuoS 有插 SD 卡，请先将 SD 卡取下。
+   :::
+
+   <Image src='/docs/duo/duos/duos-emmc-install-02.jpg' maxWidth='100%' align='center' />
+   
+   松开 recovery 按键， DuoS 会上电并进入烧录模式，PC 端会实时显示烧录进度：
 
    ```
    [INFO] Waiting for USB device connection: ---
@@ -372,3 +466,24 @@ DuoS eMMC 版本出厂未烧录固件，需要使用 PC 通过 USB 接口烧录�
    ```
 
    烧录完成后，DuoS 会自动重启，开机后看到 DuoS 上的蓝色 LED 闪烁，说明系统已经正常启动，烧录成功。
+
+### eMMC 擦除
+
+如果需要将 eMMC 恢复到初始状态，请参考以下命令清除 eMMC 数据（请提前备份好eMMC中的重要文件）：
+
+- 解除 readonly
+  ```
+  echo 0 > /sys/block/mmcblk0boot0/force_ro
+  echo 0 > /sys/block/mmcblk0boot1/force_ro
+  ```
+- 擦除
+  ```
+  dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1M count=4
+  dd if=/dev/zero of=/dev/mmcblk0boot1 bs=1M count=4
+  ```
+
+## 硬件资料
+
+### 其他
+
+[https://github.com/milkv-duo/duo-files/tree/main/duo-s](https://github.com/milkv-duo/duo-files/tree/main/duo-s)

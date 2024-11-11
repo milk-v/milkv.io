@@ -1,0 +1,235 @@
+.ruyibook_main {
+    background-color: #f8f8f8;
+}
+
+.view_mian {
+    width: 1440px;
+    margin: 0 auto var(--gap-value);
+    display: flex;
+    align-items: center;
+    gap: var(--gap-value);
+}
+
+.view_mian>div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-value);
+}
+
+.hardware_ol {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 3px solid #022334;
+    background: #FFF;
+}
+
+.hardware_ol>li {
+    width: 100%;
+    border-bottom: 1.5px solid #CECECE;
+    display: flex;
+}
+
+.hardware_ol>li:last-child {
+    border-bottom: none;
+}
+
+.hardware_ol>li>p {
+    color: #000;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 0;
+}
+
+.hardware_ol>li>p:first-child {
+    width: 16%;
+}
+
+@media screen and (min-width: 1950px) {
+    :root {
+        --gap-value: 20px;
+    }
+
+    .view_mian {
+        width: 1440px;
+        margin: 0 auto var(--gap-value);
+        gap: var(--gap-value);
+    }
+
+    .view_mian>img {
+        width: 620px;
+    }
+
+    .view_mian>div {
+        width: 800px;
+        gap: var(--gap-value);
+    }
+
+    .hardware_ol {
+        width: 1440px;
+        margin: 0 auto 100px;
+        padding: 44px 70px;
+    }
+
+    .hardware_ol>li {
+        padding: 25px 0;
+        gap: 30px;
+    }
+
+    .hardware_ol>li>p {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1450px) {
+    :root {
+        --gap-value: 20px;
+    }
+
+    .view_mian {
+        width: 1440px;
+        margin: 0 auto var(--gap-value);
+        gap: var(--gap-value);
+    }
+
+    .view_mian>img {
+        width: 620px;
+    }
+
+    .view_mian>div {
+        width: 800px;
+        gap: var(--gap-value);
+    }
+
+    .hardware_ol {
+        width: 1440px;
+        margin: 0 auto 100px;
+        padding: 44px 70px;
+    }
+
+    .hardware_ol>li {
+        padding: 25px 0;
+        gap: 30px;
+    }
+
+    .hardware_ol>li>p {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 1000px) {
+    :root {
+        --gap-value: 15px;
+    }
+
+    .view_mian {
+        width: calc(1440px*.7);
+        margin: 0 auto var(--gap-value);
+        gap: var(--gap-value);
+    }
+
+    .view_mian>img {
+        width: calc(620px*.7);
+    }
+
+    .view_mian>div {
+        width: calc(800px*.7);
+        gap: var(--gap-value);
+    }
+
+    .hardware_ol {
+        width: calc(1440px*.7);
+        margin: 0 auto 80px;
+        padding: 30px 50px;
+    }
+
+    .hardware_ol>li {
+        padding: 25px 0;
+        gap: 15px;
+    }
+
+    .hardware_ol>li>p {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 750px) {
+    :root {
+        --gap-value: 10px;
+    }
+
+    .view_mian {
+        width: calc(1440px*.55);
+        margin: 0 auto var(--gap-value);
+        gap: var(--gap-value);
+    }
+
+    .view_mian>img {
+        width: calc(620px*.55);
+    }
+
+    .view_mian>div {
+        width: calc(800px*.55);
+        gap: var(--gap-value);
+    }
+
+    .hardware_ol {
+        width: calc(1440px*.55);
+        margin: 0 auto 60px;
+        padding: 10px 20px;
+    }
+
+    .hardware_ol>li {
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    .hardware_ol>li>p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    :root {
+        --gap-value: 5rem;
+    }
+
+    .view_mian {
+        width: calc(1440rem*.25);
+        margin: 0 auto var(--gap-value);
+        gap: var(--gap-value);
+    }
+
+    .view_mian>img {
+        width: calc(620rem*.25);
+    }
+
+    .view_mian>div {
+        width: calc(800rem*.25);
+        gap: var(--gap-value);
+    }
+
+    .hardware_ol {
+        width: calc(1440rem*.25);
+        margin: 0 auto 30rem;
+        padding: 10rem 20rem;
+        border-width: 1.5rem;
+    }
+
+    .hardware_ol>li {
+        padding: 15rem 0;
+        gap: 15rem;
+    }
+
+    .hardware_ol>li>p {
+        font-size: 11rem;
+    }
+
+    .hardware_ol>li>p:first-child {
+        width: 20%;
+    }
+}

@@ -11,6 +11,7 @@ The Duo S PoE HAT expands the Milk-V Duo S with an audio interface and MIPI DSI 
 
 ## Specification
 
-- 1x 3.5mm Jack(audio in/out)
+- 1x 3.5mm Jack(audio out)
+- 2x 2P Connector for Audio in
 - 1x MIPI DSI Connector(MIPI DSI 4-lane)
 - 802.3af standard up to 12W

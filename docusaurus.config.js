@@ -44,7 +44,18 @@ const config = {
             to: '/docs/meles/overview',
             from: ['/docs/meles'],
           },
+          {
+            to: '/docs/jupiter/overview',
+            from: ['/docs/jupiter'],
+          },
         ],
+      },
+    ],
+    [
+      "@docusaurus/plugin-google-gtag",
+      {
+        trackingID: "G-N9XGGB0XBN",
+        anonymizeIP: true,
       },
     ],
   ],
@@ -137,6 +148,10 @@ const config = {
                 to: '/duo-s',
               },
               {
+                label: 'Duo Module 01',
+                to: '/duo-module-01',
+              },
+              {
                 label: 'Pioneer',
                 to: '/pioneer'
               },
@@ -155,6 +170,35 @@ const config = {
               {
                 label: 'Vega',
                 to: '/vega'
+              },
+              {
+                label: 'Jupiter',
+                to: '/jupiter'
+              },
+              {
+                label: 'Jupiter NX',
+                to: '/jupiter-nx',
+                className: 'new_product',
+              },
+              {
+                label: 'Cluster 08',
+                to: '/cluster-08',
+                className: 'new_product',
+              },
+              {
+                label: 'Megrez',
+                to: '/megrez',
+                className: 'new_product',
+              },
+              {
+                label: 'Megrez NX',
+                to: '/megrez-nx',
+                className: 'new_product',
+              },
+              {
+                label: 'RuyiBook',
+                to: '/ruyibook',
+                className: 'new_product',
               },
             ],
           },
@@ -187,6 +231,11 @@ const config = {
                 type: 'doc',
                 label: 'Vega',
                 docId: 'vega/overview',
+              },
+              {
+                type: 'doc',
+                label: 'Jupiter',
+                docId: 'jupiter/overview',
               },
             ],
           },

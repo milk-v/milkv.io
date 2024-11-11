@@ -318,7 +318,7 @@ int main() {
   cd hello-world
   make
   ```
-  编译成功后将生成的`helloworld`可执行程序通过网口或者RNDIS网络等方式传送到 Duo 设备中，比如[默认固件](https://github.com/milkv-duo/duo-buildroot-sdk/releases)支持的 RNDIS 方式，Duo 的 IP 为`192.168.42.1`，用户名是`root`，密码是`milkv`。
+  编译成功后将生成的`helloworld`可执行程序通过网口或者USB网络等方式传送到 Duo 设备中，比如[默认固件](https://github.com/milkv-duo/duo-buildroot-sdk/releases)支持的 USB-NCM 方式，Duo 的 IP 为`192.168.42.1`，用户名是`root`，密码是`milkv`。
   ```
   scp helloworld root@192.168.42.1:/root/
   ```
@@ -370,6 +370,12 @@ mv /mnt/system/blink.sh /mnt/system/blink.sh_backup && sync
 ```
 mv /mnt/system/blink.sh_backup /mnt/system/blink.sh && sync
 ```
+
+### PWM
+
+源码：[https://github.com/milkv-duo/duo-examples/tree/main/pwm](https://github.com/milkv-duo/duo-examples/tree/main/pwm)
+
+通过手动输入引脚号和占空比来设置引脚上的 PWM 信号。运行程序后请按提示输入 [引脚号]:[占空比] 以设置对应引脚上的 PWM 信号，比如 3:500 。
 
 ### ADC
 
@@ -853,6 +859,35 @@ cmake version 3.27.6
 |     | GND      | <div className='black'>13</div> |  <div className='black'>28</div> | GND      |
 |     | GP10     | <div className='green'>14</div> |  <div className='green'>27</div> | GP21     |
 |     | GP11     | <div className='green'>15</div> |  <div className='green'>26</div> | GP20     |
+| 4   | GP12     | <div className='green'>16</div> |  <div className='green'>25</div> | GP19     |
+| 5   | GP13     | <div className='green'>17</div> |  <div className='green'>24</div> | GP18     |
+|     | GND      | <div className='black'>18</div> |  <div className='black'>23</div> | GND      |
+|     | GP14     | <div className='green'>19</div> |  <div className='green'>22</div> | GP17     |
+|     | GP15     | <div className='green'>20</div> |  <div className='green'>21</div> | GP16     |
+
+</div>
+
+- Duo256M PWM 引脚编号
+
+<div className='gpio_style'>
+
+| PWM | PIN NAME |              Pin#               |              Pin#                | PIN NAME |
+|:---:|:---------|:-------------------------------:|:--------------------------------:|----------|
+|     | GP0      | <div className='green'>1</div>  |    <div className='red'>40</div> | VBUS     |
+|     | GP1      | <div className='green'>2</div>  |    <div className='red'>39</div> | VSYS     |
+|     | GND      | <div className='black'>3</div>  |  <div className='black'>38</div> | GND      |
+| 7   | GP2      | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN   |
+| 6   | GP3      | <div className='green'>5</div>  |    <div className='red'>36</div> | 3V3(OUT) |
+| 5   | GP4      | <div className='green'>6</div>  |   <div className='gray'>35</div> |          |
+| 6   | GP5      | <div className='green'>7</div>  |   <div className='gray'>34</div> |          |
+|     | GND      | <div className='black'>8</div>  |  <div className='black'>33</div> | GND      |
+| 9   | GP6      | <div className='green'>9</div>  |  <div className='green'>32</div> | GP27     |
+| 8   | GP7      | <div className='green'>10</div> |  <div className='green'>31</div> | GP26     |
+| 7   | GP8      | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |
+| 4   | GP9      | <div className='green'>12</div> |  <div className='green'>29</div> | GP22     |
+|     | GND      | <div className='black'>13</div> |  <div className='black'>28</div> | GND      |
+| 10  | GP10     | <div className='green'>14</div> |  <div className='green'>27</div> | GP21     |
+| 11  | GP11     | <div className='green'>15</div> |  <div className='green'>26</div> | GP20     |
 | 4   | GP12     | <div className='green'>16</div> |  <div className='green'>25</div> | GP19     |
 | 5   | GP13     | <div className='green'>17</div> |  <div className='green'>24</div> | GP18     |
 |     | GND      | <div className='black'>18</div> |  <div className='black'>23</div> | GND      |

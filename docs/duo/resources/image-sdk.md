@@ -10,7 +10,7 @@ sidebar_position: 10
 - **(Latest)** [milkv-duo-xxx.img.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/)  
 
     Root password: milkv  
-    Login via RNDIS using ssh:  
+    Login via USB-NCM network using ssh:  
     ~~~
     ssh root@192.168.42.1  
     ~~~

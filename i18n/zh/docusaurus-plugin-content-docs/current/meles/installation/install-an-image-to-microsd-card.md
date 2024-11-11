@@ -20,9 +20,13 @@ Meles 上有一个 MicroSD 卡插槽。因此，Meles 可以支持以 SPI Nor Fl
 
 从 Balena 官网获取烧录工具 BalenaEtcher， https://etcher.balena.io/.
 
+从 GitHub 获取解压工具 7-Zip，https://github.com/mcmilk/7-Zip-zstd/releases/download/v22.01-v1.5.5-R3/7z22.01-zstd-x64.exe
+
 ## 获取 Meles 的系统镜像
 
-从以下链接下载 Meles 的系统镜像， https://github.com/milkv-meles/meles-images/releases/download/v2024-0417/sdcard-meles-20240417_155900.img.xz
+从以下链接下载 Meles 的系统镜像， https://mirror.iscas.ac.cn/revyos/extra/images/meles/20240601/sdcard-meles-20240601_180943.img.zst
+
+您可以使用 7-Zip 解压工具解压下载到的 .zst 压缩文件到任意目录，也可以使用其他软件。
 
 ## 写入镜像到 MicroSD 卡
 

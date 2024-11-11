@@ -46,13 +46,15 @@ export default () => {
                                 </li>
                                 <li>
                                     <p className={styles.line_name}>Products</p>
-                                    <Link to='/duo'>Milk-V Duo</Link>
-                                    <Link to='/duo-s'>Milk-V Duo S</Link>
-                                    <Link to='/pioneer'>Milk-V Pioneer</Link>
-                                    <Link to='/mars'>Milk-V Mars</Link>
-                                    <Link to='/mars-cm'>Milk-V Mars CM</Link>
-                                    <Link to='/meles'>Milk-V Meles</Link>
-                                    <Link to='/vega'>Milk-V Vega</Link>
+                                    <Link to='/duo'>Duo</Link>
+                                    <Link to='/duo-s'>Duo S</Link>
+                                    <Link to='/duo-module-01'>Duo Module 01</Link>
+                                    <Link to='/pioneer'>Pioneer</Link>
+                                    <Link to='/mars'>Mars</Link>
+                                    <Link to='/mars-cm'>Mars CM</Link>
+                                    <Link to='/meles'>Meles</Link>
+                                    <Link to='/vega'>Vega</Link>
+                                    <Link to='/jupiter'>Jupiter</Link>
                                 </li>
                                 <li>
                                     <p className={styles.line_name}>Chips</p>
@@ -78,6 +80,7 @@ export default () => {
                                     <Link href='https://community.milkv.io/c/mars'>Mars Categories </Link>
                                     <Link href='https://community.milkv.io/c/meles'>Meles Categories </Link>
                                     <Link href='https://community.milkv.io/c/vega'>Vega Categories </Link>
+                                    <Link href='https://community.milkv.io/c/jupiter'>Jupiter Categories </Link>
                                 </li>
                                 <li>
                                     <p className={styles.line_name}>Follow Us</p>

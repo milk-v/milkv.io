@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Duo S(SG2000)'
+sidebar_label: 'Duo S (SG2000)'
 sidebar_position: 3
 ---
 
@@ -21,7 +21,23 @@ We have open sourced the Public Preliminary Datasheet and TRM of SG2000 to GitHu
 
 ## Buy the SG2000 Chips
 
-Milk-V is the Authorised Global Distributor of the SG2002 chips. You can buy samples of the SG2002 chip from our distributor [online store](https://arace.tech/products/sophon-cv1800b-5pcs) directly. For volume order, please contact [Milk-V Sales Team](mailto:sales@milkv.io) for the qoutation.
+Milk-V is the Authorised Global Distributor of the SG2000 chips. You can buy samples of the SG2000 chip from our distributor [online store](https://arace.tech/products/sophon-cv1800b-5pcs) directly. For volume order, please contact [Milk-V Sales Team](mailto:sales@milkv.io) for the qoutation.
+
+## Getting Started
+
+### Installing the system
+
+- Boot from SD card
+  
+  Please refer to the [Start Up](https://milkv.io/docs/duo/getting-started/boot) section.
+
+- Boot from eMMC
+  
+  Please refer to: [eMMC version firmware burning](https://milkv.io/docs/duo/getting-started/duos#emmc-version-firmware-burning) section.
+
+### USB Network Usage
+
+Please refer to the [Setup](https://milkv.io/docs/duo/getting-started/setup) section.
 
 ## DuoS GPIO Pinout
 
@@ -78,7 +94,7 @@ GPIO on `Header J4` use 1.8V logic levels.
 | PWM   | I2C      | UART     | MIPI DSI   | NUM | SG2000      | NAME     | PIN                             | PIN                              | NAME        | SG2000     | NUM | MIPI DSI   |
 |:------|:---------|:---------|:-----------|:---:|:------------|---------:|:-------------------------------:|:--------------------------------:|:------------|:-----------|:---:|:-----------|
 |       |          |          |            |     |             | VSYS(5V) | <div className='red'>52</div>   | <div className='blue'>51</div>   | AUDIO_OUT_R |            |     |            |
-| PWM12 | I2C4_SCL | UART3_TX |            | 499 | XGPIOB[1]   | B1       | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |            |     |            |
+| PWM12 | I2C4_SCL | UART3_TX |            | 449 | XGPIOB[1]   | B1       | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |            |     |            |
 | PWM13 | I2C4_SDA | UART3_RX |            | 450 | XGPIOB[2]   | B2       | <div className='green'>48</div> | <div className='blue'>47</div>   | AUDIO_IN_R  |            |     |            |
 |       |          |          |            | 451 | XGPIOB[3]   | B3       | <div className='green'>46</div> | <div className='blue'>45</div>   | AUDIO_IN_L  |            |     |            |
 | PWM10 | I2C2_SDA |          | LCD_RST    | 354 | PWR_GPIO[2] | E2       | <div className='green'>44</div> | <div className='orange'>43</div> | 3V3         |            |     |            |
@@ -199,7 +215,7 @@ If the debug serial port is connected, you can see in the first line of the boot
 
 ### Usage of USB Type A interface
 
-The USB functions of the DuoS USB Type A interface and Type C interface are optional and cannot be used at the same time. The default firmware is configured with the USB network port (RNDIS) function of the Type C port. If you need to switch to the USB 2.0 HOST port of the Type A port for use with USB flash drives and other devices, you need to execute the following command:
+The USB functions of the DuoS USB Type A interface and Type C interface are optional and cannot be used at the same time. The default firmware is configured with the USB network port (USB-NCM) function of the Type C port. If you need to switch to the USB 2.0 HOST port of the Type A port for use with USB flash drives and other devices, you need to execute the following command:
 
 ~~~
 ln -sf /mnt/system/usb-host.sh /mnt/system/usb.sh
@@ -224,21 +240,49 @@ Command to uninstall USB flash drive:
 umount /mnt/udisk
 ```
 
-When you want to restore the USB network (RNDIS) function of the Type C port, execute:
+When you want to restore the USB network (USB-NCM) function of the Type C port, execute:
 ~~~
 rm /mnt/system/usb.sh
-ln -sf /mnt/system/usb-rndis.sh /mnt/system/usb.sh
+ln -sf /mnt/system/usb-ncm.sh /mnt/system/usb.sh
 sync
 ~~~
 Then execute the `reboot` command or power on again to make it take effect.
 
 :::tip
-DuoS has an onboard Ethernet interface, so the USB network port (RNDIS) of the Type C port can be used without switching to the USB 2.0 Host function of the A port.
+DuoS has an onboard Ethernet interface, so the USB network port (USB-NCM) of the Type C port can be used without switching to the USB 2.0 Host function of the A port.
 :::
+
+### Fixed ethernet port MAC address
+
+If you need to assign a fixed MAC address to the Ethernet port of DuoS, please execute the following command:
+
+:::tip
+**Replace the MAC address in the command with the MAC address you want to set, and please note that MAC addresses of different devices within the same network segment must not be duplicated**
+:::
+
+```
+echo "pre-up ifconfig eth0 hw ether 78:01:B3:FC:E8:55" >> /etc/network/interfaces && sync
+```
+
+then reboot the board.
 
 ### UART Serial Console
 
-Connect USB to TTL serial cable as shown below. Do not connect the red wire.
+DuoS has a reserved UART debug serial port, which can be used to view the system startup log, or to log in to the console after the system starts and execute some terminal commands.
+
+#### USB-TTL Serial Cable
+
+The serial port level of Duo series is 3.3V.
+
+The pin definitions of common USB to TTL serial cables are as follows:
+
+<Image src='/docs/common/usb2ttl.webp' maxWidth='100%' align='left' />
+
+#### Connection
+
+Connect the USB to TTL serial cable as shown below, leaving the red wire unconnected.
+
+<div className='gpio_style'>
 
 | Milk-V DouS | \<---> | USB to TTL |
 | ----------- | ------ | ---------- |
@@ -246,9 +290,11 @@ Connect USB to TTL serial cable as shown below. Do not connect the red wire.
 | TX (pin  8) | \<---> | White wire |
 | RX (pin 10) | \<---> | Green wire |
 
-<Image src='/docs/duo/duos/duos-serial-port.webp' maxWidth='100%' align='center' />
+</div>
 
-The default serial setting for Duo u-boot and kernel console is:
+<Image src='/docs/duo/duos/duos-serial-port.webp' maxWidth='100%' align='left' />
+
+The default serial port parameters of DuoS are as follows:
 
 ```
 baudrate: 115200
@@ -283,16 +329,56 @@ wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
 ```
 You can connect to WIFI. After connecting, you can view the assigned IP address through the `ifconfig` or `ip a` command.
 
+If you need to automatically connect to the WIFI when booting, you can put the following command in the `/mnt/system/auto.sh` file.
+
+```bash
+interface="wlan0"
+max_attempts=100
+attempt=0
+log_file="/var/log/auto.sh.log"
+
+# Continuously attempt to detect if the interface exists, up to $max_attempts times
+echo "start auto.sh" > "$log_file"
+while [ $attempt -lt $max_attempts ]; do
+    # Check if the wlan0 interface exists
+    ip link show "$interface" > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        echo "$(date +'%Y-%m-%d %H:%M:%S') $interface interface exists, starting wpa_supplicant..." >> "$log_file"
+        wpa_supplicant -B -i "$interface" -c /etc/wpa_supplicant.conf >> "$log_file"
+        break  # Exit the loop if the interface is found
+    else
+        echo "$(date +'%Y-%m-%d %H:%M:%S') $interface interface not found, waiting..." >> "$log_file"
+        sleep 1  # Wait for 1 second before checking again
+        attempt=$((attempt + 1))  # Increment the attempt counter
+    fi
+done
+
+# If the maximum number of attempts is reached and the interface still not found, output an error message
+if [ $attempt -eq $max_attempts ]; then
+    echo "$(date +'%Y-%m-%d %H:%M:%S') Interface $interface not found after $max_attempts attempts" >> "$log_file"
+fi
+```
+
+### Fixed WIFI MAC address
+
+DuoS WIFI MAC address is randomly assigned. If you need to assign a fixed MAC address to the WIFI of DuoS, please execute the following command::
+
 :::tip
-If you need to automatically connect to the network at boot, you can put this command in the `/mnt/system/auto.sh` file.
+**Replace the MAC address in the command with the MAC address you want to set, and please note that MAC addresses of different devices within the same network segment must not be duplicated**
 :::
+
+```bash
+echo "MAC_ADDR=11:22:33:44:55:66" > /mnt/system/firmware/aic8800/rwnx_settings.ini && sync
+```
+
+then reboot the board.
 
 ### eMMC version firmware burning
 
 The DuoS eMMC version does not have firmware burned and needs to be burned using a PC through the USB interface.
 
 :::tip
-Use the USB burning tool under Windows to support eMMC. The firmware version is [V1.1.0](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.1.0) or [latest version](https://github.com/milkv-duo/duo-buildroot-sdk/releases).
+Use the USB burning tool under Windows to support eMMC. The firmware version is [V1.1.3](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/v1.1.3) or [latest version](https://github.com/milkv-duo/duo-buildroot-sdk/releases).
 :::
 
 #### Burning in Windows
@@ -307,7 +393,7 @@ Use the USB burning tool under Windows to support eMMC. The firmware version is 
 
 3. Download firmware
 
-   Download the latest version of DuoS eMMC firmware, currently [milkv-duos-emmc-v1.1.0-2024-0410.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.1.0/milkv-duos-emmc-v1.1.0-2024-0410.zip), you can create a new rom folder in the burning tool `CviBurn_v2.0_cli_windows` directory, and extract the downloaded eMMC firmware compressed package to rom directory, the directory structure of the burning tool is as follows:
+   Download the latest version of DuoS eMMC firmware, currently [milkv-duos-emmc-v1.1.3-2024-0930.zip](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/v1.1.3/milkv-duos-emmc-v1.1.3-2024-0930.zip), you can create a new rom folder in the burning tool `CviBurn_v2.0_cli_windows` directory, and extract the downloaded eMMC firmware compressed package to rom directory, the directory structure of the burning tool is as follows:
 
    ```
    └───CviBurn_v2.0_cli_windows
@@ -333,7 +419,15 @@ Use the USB burning tool under Windows to support eMMC. The firmware version is 
 
    <Image src='/docs/duo/duos/duos-emmc-install-01.webp' maxWidth='100%' align='center' />
 
-   Use **Type-C data cable** to connect DuoS and PC (note, if DuoS currently has an SD card inserted, please remove the SD card first), DuoS will automatically power on and enter the burning mode, and the PC will display the burning status in real time. Recording progress:
+   Press and hold the recovery button on the DuoS, and then connect the DuoS and PC using a **Type-C data cable**.
+
+   :::warning
+   Before doing this step, remove SD Card first!!
+   :::
+
+   <Image src='/docs/duo/duos/duos-emmc-install-02.jpg' maxWidth='100%' align='center' />
+   
+   Release the recovery button, DuoS will power on and enter the burning mode, and the PC will display the burning progress in real time:
 
    ```
    [INFO] Waiting for USB device connection: ---
@@ -372,3 +466,24 @@ Use the USB burning tool under Windows to support eMMC. The firmware version is 
    ```
 
    After the burning is completed, the DuoS will automatically restart. After booting, you will see the blue LED on the DuoS flashing, indicating that the system has started normally and the burning is successful.
+
+### eMMC Erase
+
+If you need to restore the eMMC to its initial state, please refer to the following command to clear the eMMC data (please back up important files in the eMMC in advance):
+
+- Unlock readonly
+  ```
+  echo 0 > /sys/block/mmcblk0boot0/force_ro
+  echo 0 > /sys/block/mmcblk0boot1/force_ro
+  ```
+- Erase
+  ```
+  dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1M count=4
+  dd if=/dev/zero of=/dev/mmcblk0boot1 bs=1M count=4
+  ```
+
+## Hardware Docs
+
+### Others
+
+[https://github.com/milkv-duo/duo-files/tree/main/duo-s](https://github.com/milkv-duo/duo-files/tree/main/duo-s)

@@ -270,7 +270,7 @@ export default () => {
                         {/* <h3><Translate id='duo.info.text.Documents' /></h3> */}
                     </div>
                 </div>
-                <BuyPop type='duo' />
+                <BuyPop type='duo-s' />
                 <ContactUs product='duo' />
             </div>
         </Layout >

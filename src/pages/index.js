@@ -181,7 +181,33 @@ const Meles_module = (props) => {
     </>
   )
 }
+const Jupiter_module = (props) => {
+  return (
+    <>
+      <div className={styles.info_module}>
+        <div className={styles.main_module}>
+          <div className={styles.left_title}>
+            <h2>Milk-V Jupiter</h2>
+            <p><Translate id='homepage.corporations.jupiter' /></p>
+            <div className={styles.learnMore_use}>
+              <Link href='/jupiter' title='Jupiter Details'><Translate id='homepage.corporations.pioneerlearnmore' /></Link>
+              <Link href='/jupiter#buy' className={styles.buy_button} ><Translate id='homepage.corporations.pioneerbuynow' /></Link>
+            </div>
+          </div>
+          <div className={styles.right_img}>
+            <img src='/home/home-jupiter-view.webp' alt='Jupiter' />
+          </div>
+        </div>
+        <div className={styles.grid_item1_module}>
 
+        </div>
+        <div className={styles.grid_item2_module}>
+
+        </div>
+      </div >
+    </>
+  )
+}
 const Vega_module = (props) => {
   return (
     <>
@@ -213,13 +239,14 @@ const Home_web = () => {
     { name: 'Mars', index: 2, element: <Mars_module /> },
     { name: 'Meles', index: 3, element: <Meles_module /> },
     { name: 'Vega', index: 4, element: <Vega_module /> },
-    { name: 'Chips', index: 5, element: <Chips_module /> },
+    { name: 'Jupiter', index: 5, element: <Jupiter_module /> },
+    { name: 'Chips', index: 6, element: <Chips_module /> },
   ];
 
   useEffect(() => {
     const timer = setInterval(() => {
       if (!isPaused && window.innerWidth > 750) {
-        setIndex(prevCount => (prevCount === 5 ? 0 : prevCount + 1));
+        setIndex(prevCount => (prevCount === 6 ? 0 : prevCount + 1));
       }
     }, 5000);
 
@@ -248,13 +275,36 @@ const Home_web = () => {
         </div>
       </div>
       <div className={styles.black_shore}>
-        <div className={clsx(styles.docs_link, styles.ubuntu_milkv)}>
-          <div>
-            <img src='/home/milkv-ubuntu.svg' alt='milkv docs' />
-            <p>Milk-V & Ubuntu: Crafting Ubuntu as the Best OS for RISC-V</p>
-          </div>
-          <Link to='https://canonical.com/blog/canonical-enables-ubuntu-on-milk-v-mars' className={styles.docs_a}><Translate id='homepage.corporations.docslearnmore' /></Link>
-        </div>
+        {/* <div className={styles.new_products}>
+          <p>5 Leading New RISC-V Products Coming Soon</p>
+          <ol>
+            <li>
+              <img src='/home/megrez.webp' alt='Milk-V Megrez' />
+              <p>Milk-V Megrez</p>
+              <Link to="/megrez">Learn More</Link>
+            </li>
+            <li>
+              <img src='/home/jupiter-nx.webp' alt='Milk-V Jupiter NX' />
+              <p>Milk-V Jupiter NX</p>
+              <Link to="/jupiter-nx">Learn More</Link>
+            </li>
+            <li>
+              <img src='/home/megrez-nx.webp' alt='Milk-V Megrez NX' />
+              <p>Milk-V Megrez NX</p>
+              <Link to="megrez-nx">Learn More</Link>
+            </li>
+            <li>
+              <img src='/home/cluster-08.webp' alt='Milk-V Cluster 08' />
+              <p>Milk-V Cluster 08</p>
+              <Link to="/cluster-08">Learn More</Link>
+            </li>
+            <li>
+              <img src='/home/ruyibook.webp' alt='RuyiBook' />
+              <p>RuyiBook</p>
+              <Link to="/ruyibook">Learn More</Link>
+            </li>
+          </ol>
+        </div> */}
         <ul className={styles.tab} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           {tabs.map((tab, idx) => (
             <li key={idx} className={index === tab.index ? styles.index : null} onClick={() => {

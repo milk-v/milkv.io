@@ -29,7 +29,7 @@ Select the desired image in the [Download page](https://milkv.io/docs/pioneer/ge
 ### 2.1 Use BalenaEtcher to burn the image
 
 a. Click on the Flash from file button and choose the 
-fedora-disk-gnome-workstation_riscv64-f38-20230515-035559-milkv.raw.xz (hereinafter referred to as **fedora38.raw.xz** ) you want to use.
+fedora-disk-gnome-workstation_livecd-f38-*.raw.xz (hereinafter referred to as **fedora38.raw.xz** ) you want to use.
 
 b. Click the Select target button and choose the microSD Card to write the fedora38.raw.xz to.
 
@@ -54,26 +54,3 @@ The installation wizard sets up the account password.
 ### 3.3 Done! Getting Started with Fedora 38
 
 ![fedora38](/docs/pioneer/fedora38.png)
-
-## 4. Boot from microSD Card & NVMe SSD
-
-Please complete sections 1-3 above before proceeding with this step
-The following steps are recommended for operation using the serial port
-
-Enter the account password to log in to the Fedora system
-
-![loginfedora38](/docs/pioneer/loginfedora.png)
-
-### 4.1 Use 'mv-rootfs.sh' to install the system to an NVMe SSD
-
-We have included the '[mv-rootfs.sh](https://milkv.io/docs/pioneer/getting-started/download)' script in /opt for easy configuration of your system to NVMe SSDs.
-
-Just refer to the following steps to run it.
-
-~~~
-[milkv@fedora-riscv ~]$ cd /opt
-[milkv@fedora-riscv opt]$ sudo ./mv-rootfs.sh
-~~~
-
-### 4.2 Reboot
-Reboot Pioneer to enable booting from SD cards and NVMe SSD

@@ -22,18 +22,16 @@ Arduino IDE 支持 Windows、Linux、macOS 三种操作系统，根据您使用�
 打开 Arduino IDE，在 ``文件`` 菜单中选择 ``首选项``，在 ``设置`` 标签中的 ``其他开发板管理器地址`` 内添加 Duo 的配置文件地址：
 
 ```
-https://github.com/milkv-duo/duo-arduino/releases/download/V1.0.0/package_sg200x_index.json
+https://github.com/kubuds/sophgo-arduino/releases/download/v0.2.5/package_sg200x_index.json
 ```
 
-<Image src='/docs/duo/arduino/duo-arduino-01_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
-
-最新的 json 文件地址请到 [Releases](https://github.com/milkv-duo/duo-arduino/releases) 中下载。
+<Image src='/docs/duo/arduino/duo-arduino-01_zh.webp' minWidth='40%' maxWidth='100%' align='left' />
 
 如果之前有配置其他开发板地址，用逗号隔开，或者点地址栏右侧的图标调出窗口，按提示添加。
 
 配置好之后在 ``工具`` 菜单中选择 ``开发板``，打开 ``开发板管理器``，搜索 *SG200X*，点击 ``安装``。
 
-<Image src='/docs/duo/arduino/duo-arduino-02_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-02_zh.webp' minWidth='40%' maxWidth='100%' align='left' />
 
 到此 Arduino IDE 中 Duo 的开发环境已安装完成，下面就可以进行代码编写测试了。
 
@@ -41,7 +39,13 @@ https://github.com/milkv-duo/duo-arduino/releases/download/V1.0.0/package_sg200x
 
 目前，Duo 的 SD 卡系统需要烧录支持 Arduino 的固件，请在 [最新 Release](https://github.com/milkv-duo/duo-buildroot-sdk/releases) 的固件中下载前缀为 `arduino` 的固件。
 
-参考前面章节中的 [启动 Duo](https://milkv.io/zh/docs/duo/getting-started/boot) 安装好SD卡系统。
+:::tip
+目前最新的可用 Arduino 固件版本为 [Duo-V1.1.2](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.1.2)。
+
+DuoS 暂时没有提供直接可用的 Arduino 版本固件，请移步 [Buildroot SDK](https://milkv.io/zh/docs/duo/getting-started/buildroot-sdk) ，克隆并切换到 arduino 分支进行编译。
+:::
+
+参考前面章节中的 [启动 Duo](https://milkv.io/zh/docs/duo/getting-started/boot) 安装好系统。
 
 使用 USB 线将 Duo 连接到电脑，Duo 会自动上电开机。
 
@@ -56,21 +60,29 @@ reboot
 
 此时查看电脑的 ``设备管理器`` 的 ``端口`` 中会多出一个串口设备：
 
-<Image src='/docs/duo/arduino/duo-arduino-03_zh.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-03_zh.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 在 Arduino IDE 主界面点击 ``选择开发板``，再点击 ``选择其他开发板和接口......``
 
-<Image src='/docs/duo/arduino/duo-arduino-04_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-04_zh.webp' minWidth='40%' maxWidth='100%' align='left' />
 
 搜索 "duo"，Duo 选择 ``Duo Dev Module``，Duo256M 选择 ``Duo256 Dev Module``，端口中选择对应的串口后点确定。
 
-<Image src='/docs/duo/arduino/duo-arduino-05_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-05_zh.webp' minWidth='40%' maxWidth='100%' align='left' />
 
-在 Arduino IDE 的 ``文件`` 菜单中依次打开 ``示例`` > ``01.Basics`` > ``Blink`` 测试程序，该程序功能实现的是 Arduino 设备板载 LED 闪烁，Duo 中也是支持的，你也许需要安装 pyserial 来支持上传功能，之后我们直接点 ``上传`` 按钮进行测试：
+在 Arduino IDE 的 ``文件`` 菜单中依次打开 ``示例`` > ``01.Basics`` > ``Blink`` 测试程序，该程序功能实现的是 Arduino 设备板载 LED 闪烁，Duo 中也是支持的，您也许需要安装 ```pyserial``` 来支持上传功能，之后我们直接点 ``上传`` 按钮进行测试：
 
-<Image src='/docs/duo/arduino/duo-arduino-06_zh.jpg' minWidth='40%' maxWidth='100%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-06_zh.webp' minWidth='40%' maxWidth='100%' align='left' />
 
 此时，可以看到 Duo 板载的 LED 间隔1秒闪烁。
+
+:::tip
+在编译下载代码之前，请确保您的计算机中安装了 ```python``` 环境，并正确的配置了环境变量，缺少 ```python``` 环境可能造成代码无法编译和下载。
+
+若您无法下载固件到开发板，请您首先检查 ```pyserial``` 是否安装，若没有安装，您可以执行 ```pip install pyserial``` 来安装。
+
+若您在安装 ```pyserial``` 后仍不能将代码上传到开发板，请检查您的计算机中是否安装了 ```serial``` ，同时安装 ```pyserial``` 和 ```serial``` 可能造成固件无法下载，请您执行 ```pip uninstall serial``` 将 ```serial``` 卸载。
+:::
 
 ## 二、Duo Arduino 引脚资源分配
 
@@ -85,18 +97,18 @@ reboot
 |           |       |          |          |      | GND  | <div className='black'>3</div>  | <div className='black'>38</div>  | GND      |      |      |
 |           | PWM10 |          |          |      | GP2  | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN   |      |      |
 |           | PWM11 |          |          |      | GP3  | <div className='green'>5</div>  | <div className='red'>36</div>    | 3V3(OUT) |      |      |
-|           |       |          | UART3_TX |      | GP4  | <div className='green'>6</div>  | <div className='gray'>35</div>   |          |      |      |
-|           |       |          | UART3_RX |      | GP5  | <div className='green'>7</div>  | <div className='gray'>34</div>   |          |      |      |
+|           | PWM5  |          | UART3_TX |      | GP4  | <div className='green'>6</div>  | <div className='gray'>35</div>   |          |      |      |
+|           | PWM6  |          | UART3_RX |      | GP5  | <div className='green'>7</div>  | <div className='gray'>34</div>   |          |      |      |
 |           |       |          |          |      | GND  | <div className='black'>8</div>  | <div className='black'>33</div>  | GND      |      |      |
-| SPI2_SCK  |       |          |          |      | GP6  | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27     |      |      |
-| SPI2_MOSI |       |          |          |      | GP7  | <div className='green'>10</div> | <div className='green'>31</div>  | GP26     |      | ADC1 |
-| SPI2_MISO |       | I2C1_SDA |          |      | GP8  | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |      |      |
-| SPI2_CSn  |       | I2C1_SCL |          |      | GP9  | <div className='green'>12</div> | <div className='green'>29</div>  | GP22     |      |      |
+| SPI2_SCK  | PWM9  |          |          |      | GP6  | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27     |      |      |
+| SPI2_MOSI | PWM8  |          |          |      | GP7  | <div className='green'>10</div> | <div className='green'>31</div>  | GP26     |      | ADC1 |
+| SPI2_MISO | PWM7  | I2C1_SDA |          |      | GP8  | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |      |      |
+| SPI2_CSn  | PWM4  | I2C1_SCL |          |      | GP9  | <div className='green'>12</div> | <div className='green'>29</div>  | GP22     |      |      |
 |           |       |          |          |      | GND  | <div className='black'>13</div> | <div className='black'>28</div>  | GND      |      |      |
 |           |       |          |          | 14   | GP10 | <div className='green'>14</div> | <div className='green'>27</div>  | GP21     | 27   |      |
 |           |       |          |          | 15   | GP11 | <div className='green'>15</div> | <div className='green'>26</div>  | GP20     | 26   |      |
-|           |       |          |          |      | GP12 | <div className='green'>16</div> | <div className='green'>25</div>  | GP19     | 25   |      |
-|           |       |          |          |      | GP13 | <div className='green'>17</div> | <div className='green'>24</div>  | GP18     | 24   |      |
+|           | PWM4  |          |          |      | GP12 | <div className='green'>16</div> | <div className='green'>25</div>  | GP19     | 25   |      |
+|           | PWM5  |          |          |      | GP13 | <div className='green'>17</div> | <div className='green'>24</div>  | GP18     | 24   |      |
 |           |       |          |          |      | GND  | <div className='black'>18</div> | <div className='black'>23</div>  | GND      |      |      |
 |           |       |          |          | 19   | GP14 | <div className='green'>19</div> | <div className='green'>22</div>  | GP17     | 22   |      |
 |           |       |          |          | 20   | GP15 | <div className='green'>20</div> | <div className='green'>21</div>  | GP16     | 21   |      |
@@ -109,32 +121,86 @@ reboot
 
 <div className='gpio_style'>
 
-| SPI       | PWM  | I2C      | UART     | GPIO | NAME | PIN                             | PIN                              | NAME     | GPIO | ADC  |
-|-----------|------|----------|----------|:----:|-----:|:-------------------------------:|:--------------------------------:|----------|:----:|------|
-|           |      |          |          | 1    | GP0  | <div className='green'>1</div>  | <div className='red'>40</div>    | VBUS     |      |      |
-|           |      |          |          | 2    | GP1  | <div className='green'>2</div>  | <div className='red'>39</div>    | VSYS     |      |      |
-|           |      |          |          |      | GND  | <div className='black'>3</div>  | <div className='black'>38</div>  | GND      |      |      |
-|           | PWM7 |          |          |      | GP2  | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN   |      |      |
-|           | PWM6 |          |          |      | GP3  | <div className='green'>5</div>  | <div className='red'>36</div>    | 3V3(OUT) |      |      |
-|           |      |          | UART3_TX |      | GP4  | <div className='green'>6</div>  | <div className='gray'>35</div>   |          |      |      |
-|           |      |          | UART3_RX |      | GP5  | <div className='green'>7</div>  | <div className='gray'>34</div>   |          |      |      |
-|           |      |          |          |      | GND  | <div className='black'>8</div>  | <div className='black'>33</div>  | GND      |      |      |
-| SPI2_SCK  |      | I2C3_SDA |          |      | GP6  | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27     |      |      |
-| SPI2_MOSI |      | I2C3_SCL |          |      | GP7  | <div className='green'>10</div> | <div className='green'>31</div>  | GP26     |      | ADC1 |
-| SPI2_MISO |      | I2C1_SDA |          |      | GP8  | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |      |      |
-| SPI2_CSn  |      | I2C1_SCL |          |      | GP9  | <div className='green'>12</div> | <div className='green'>29</div>  | GP22     |      |      |
-|           |      |          |          |      | GND  | <div className='black'>13</div> | <div className='black'>28</div>  | GND      |      |      |
-|           |      | I2C2_SDA |          | 14   | GP10 | <div className='green'>14</div> | <div className='green'>27</div>  | GP21     | 27   |      |
-|           |      | I2C2_SCL |          | 15   | GP11 | <div className='green'>15</div> | <div className='green'>26</div>  | GP20     | 26   |      |
-|           |      |          |          |      | GP12 | <div className='green'>16</div> | <div className='green'>25</div>  | GP19     | 25   |      |
-|           |      |          |          |      | GP13 | <div className='green'>17</div> | <div className='green'>24</div>  | GP18     | 24   |      |
-|           |      |          |          |      | GND  | <div className='black'>18</div> | <div className='black'>23</div>  | GND      |      |      |
-|           |      |          |          | 19   | GP14 | <div className='green'>19</div> | <div className='green'>22</div>  | GP17     | 22   |      |
-|           |      |          |          | 20   | GP15 | <div className='green'>20</div> | <div className='green'>21</div>  | GP16     | 21   |      |
-|           |      |          |          |      |      | &nbsp;                          |                                  |          |      |      |
-|           |      |          |          | 0    |      | <div className='blue'>LED</div> |                                  |          |      |      |
+| SPI       | PWM   | I2C      | UART     | GPIO | NAME | PIN                             | PIN                              | NAME     | GPIO | ADC  |
+|-----------|-------|----------|----------|:----:|-----:|:-------------------------------:|:--------------------------------:|----------|:----:|------|
+|           |       |          |          | 1    | GP0  | <div className='green'>1</div>  | <div className='red'>40</div>    | VBUS     |      |      |
+|           |       |          |          | 2    | GP1  | <div className='green'>2</div>  | <div className='red'>39</div>    | VSYS     |      |      |
+|           |       |          |          |      | GND  | <div className='black'>3</div>  | <div className='black'>38</div>  | GND      |      |      |
+|           | PWM7  |          |          |      | GP2  | <div className='green'>4</div>  | <div className='orange'>37</div> | 3V3_EN   |      |      |
+|           | PWM6  |          |          |      | GP3  | <div className='green'>5</div>  | <div className='red'>36</div>    | 3V3(OUT) |      |      |
+|           | PWM5  |          | UART3_TX |      | GP4  | <div className='green'>6</div>  | <div className='gray'>35</div>   |          |      |      |
+|           | PWM6  |          | UART3_RX |      | GP5  | <div className='green'>7</div>  | <div className='gray'>34</div>   |          |      |      |
+|           |       |          |          |      | GND  | <div className='black'>8</div>  | <div className='black'>33</div>  | GND      |      |      |
+| SPI2_SCK  | PWM9  | I2C3_SDA |          |      | GP6  | <div className='green'>9</div>  | <div className='green'>32</div>  | GP27     |      |      |
+| SPI2_MOSI | PWM8  | I2C3_SCL |          |      | GP7  | <div className='green'>10</div> | <div className='green'>31</div>  | GP26     |      | ADC1 |
+| SPI2_MISO | PWM7  | I2C1_SDA |          |      | GP8  | <div className='green'>11</div> | <div className='orange'>30</div> | RUN      |      |      |
+| SPI2_CSn  | PWM4  | I2C1_SCL |          |      | GP9  | <div className='green'>12</div> | <div className='green'>29</div>  | GP22     |      |      |
+|           |       |          |          |      | GND  | <div className='black'>13</div> | <div className='black'>28</div>  | GND      |      |      |
+|           | PWM10 | I2C2_SDA |          | 14   | GP10 | <div className='green'>14</div> | <div className='green'>27</div>  | GP21     | 27   |      |
+|           | PWM11 | I2C2_SCL |          | 15   | GP11 | <div className='green'>15</div> | <div className='green'>26</div>  | GP20     | 26   |      |
+|           | PWM4  |          |          |      | GP12 | <div className='green'>16</div> | <div className='green'>25</div>  | GP19     | 25   |      |
+|           | PWM5  |          |          |      | GP13 | <div className='green'>17</div> | <div className='green'>24</div>  | GP18     | 24   |      |
+|           |       |          |          |      | GND  | <div className='black'>18</div> | <div className='black'>23</div>  | GND      |      |      |
+|           |       |          |          | 19   | GP14 | <div className='green'>19</div> | <div className='green'>22</div>  | GP17     | 22   |      |
+|           |       |          |          | 20   | GP15 | <div className='green'>20</div> | <div className='green'>21</div>  | GP16     | 21   |      |
+|           |       |          |          |      |      | &nbsp;                          |                                  |          |      |      |
+|           |       |          |          | 0    |      | <div className='blue'>LED</div> |                                  |          |      |      |
 
 </div>
+
+### DuoS
+
+`排针 J3`（ RJ45 网口同侧）上的 GPIO 使用 3.3V 逻辑电平。
+
+<div className='gpio_style' style={{ overflow :"auto"}} >
+
+| SPI      | PWM  | I2C      | UART     | NUM | SG2000     | NAME  | PIN                              | PIN                             | NAME     | SG2000     | NUM | UART               | PWM  | SPI     | JTAG      |
+|:---------|:-----|:---------|:---------|:---:|:-----------|------:|:--------------------------------:|:-------------------------------:|:---------|:-----------|:---:|:-------------------|:-----|:--------|:----------|
+|          |      |          |          |     |            | 3V3   | <div className='orange'>1</div>  | <div className='red'>2</div>    | VSYS(5V) |            |     |                    |      |         |           |
+|          | PWM3 | I2C4_SCL |          | 468 | XGPIOB[20] | B20   | <div className='green'>3</div>   | <div className='red'>4</div>    | VSYS(5V) |            |     |                    |      |         |           |
+|          |      | I2C4_SDA |          | 469 | XGPIOB[21] | B21   | <div className='green'>5</div>   | <div className='black'>6</div>  | GND      |            |     |                    |      |         |           |
+|          |      | I2C1_SCL |          | 466 | XGPIOB[18] | B18   | <div className='green'>7</div>   | <div className='green'>8</div>  | A16      | XGPIOA[16] | 496 | UART0_TX/UART1_TX  | PWM4 |         |           |
+|          |      |          |          |     |            | GND\* | <div className='black'>9</div>   | <div className='green'>10</div> | A17      | XGPIOA[17] | 497 | UART0_RX/UART1_RX  | PWM5 |         |           |
+|          | PWM1 | I2C1_SDA | UART2_TX | 459 | XGPIOB[11] | B11   | <div className='green'>11</div>  | <div className='green'>12</div> | B19      | XGPIOB[19] | 467 | UART2_TX           | PWM2 |         |           |
+|          | PWM2 | I2C1_SCL | UART2_RX | 460 | XGPIOB[12] | B12   | <div className='green'>13</div>  | <div className='black'>14</div> | GND      |            |     |                    |      |         |           |
+|          |      |          | UART2_RX | 470 | XGPIOB[22] | B22   | <div className='green'>15</div>  | <div className='green'>16</div> | A20      | XGPIOA[20] | 500 |                    |      |         | JTAG_TRST |
+|          |      |          |          |     |            | 3V3   | <div className='orange'>17</div> | <div className='green'>18</div> | A19      | XGPIOA[19] | 499 | UART1_TX/UART1_RTS | PWM7 |         | JTAG_TMS  |
+| SPI3_SDO | PWM3 | I2C2_SCL |          | 461 | XGPIOB[13] | B13   | <div className='green'>19</div>  | <div className='black'>20</div> | GND      |            |     |                    |      |         |           |
+| SPI3_SDI |      | I2C2_SDA |          | 462 | XGPIOB[14] | B14   | <div className='green'>21</div>  | <div className='green'>22</div> | A18      | XGPIOA[18] | 498 | UART1_RX/UART1_CTS | PWM6 |         | JTAG_TCK  |
+| SPI3_SCK |      |          | UART2_TX | 463 | XGPIOB[15] | B15   | <div className='green'>23</div>  | <div className='green'>24</div> | B16      | XGPIOB[16] | 464 | UART2_RX           |      | SPI3_CS |           |
+|          |      |          |          |     |            | GND   | <div className='black'>25</div>  | <div className='green'>26</div> | A28      | XGPIOA[28] | 508 | UART2_TX/UART1_TX  |      |         |           |
+
+</div>
+
+*GND\*：引脚 9 在 V1.1 版本硬件中是一个低电平的 GPIO，在 V1.2 及更高版本硬件中为 GND。*
+
+注意：CSI 摄像头连接器 J2 上的 I2C 为 I2C2，所以在使用 J2 上的 CSI 摄像头时，J3 排针中的 I2C2 不可用。
+
+`排针 J4`（ USB-A 同侧） 上的 GPIO 使用 1.8V 逻辑电平。
+
+<div className='gpio_style' style={{ overflow :"auto"}} >
+
+| PWM   | I2C      | UART     | MIPI DSI   | NUM | SG2000      | NAME     | PIN                             | PIN                              | NAME        | SG2000     | NUM | MIPI DSI   |
+|:------|:---------|:---------|:-----------|:---:|:------------|---------:|:-------------------------------:|:--------------------------------:|:------------|:-----------|:---:|:-----------|
+|       |          |          |            |     |             | VSYS(5V) | <div className='red'>52</div>   | <div className='blue'>51</div>   | AUDIO_OUT_R |            |     |            |
+| PWM12 | I2C4_SCL | UART3_TX |            | 449 | XGPIOB[1]   | B1       | <div className='green'>50</div> | <div className='blue'>49</div>   | AUDIO_OUT_L |            |     |            |
+| PWM13 | I2C4_SDA | UART3_RX |            | 450 | XGPIOB[2]   | B2       | <div className='green'>48</div> | <div className='blue'>47</div>   | AUDIO_IN_R  |            |     |            |
+|       |          |          |            | 451 | XGPIOB[3]   | B3       | <div className='green'>46</div> | <div className='blue'>45</div>   | AUDIO_IN_L  |            |     |            |
+| PWM10 | I2C2_SDA |          | LCD_RST    | 354 | PWR_GPIO[2] | E2       | <div className='green'>44</div> | <div className='orange'>43</div> | 3V3         |            |     |            |
+| PWM9  | I2C2_SCL | UART2_RX | LCD_PWR_CT | 353 | PWR_GPIO[1] | E1       | <div className='green'>42</div> | <div className='green'>41</div>  | C18         | XGPIOC[18] | 434 | MIPI_TX_3N |
+| PWM8  |          | UART2_TX | LCD_PWM    | 352 | PWR_GPIO[0] | E0       | <div className='green'>40</div> | <div className='green'>39</div>  | C19         | XGPIOC[19] | 435 | MIPI_TX_3P |
+|       |          |          |            |     |             | GND      | <div className='black'>38</div> | <div className='black'>37</div>  | GND         |            |     |            |
+|       |          |          | MIPI_TX_2N | 436 | XGPIOC[20]  | C20      | <div className='green'>36</div> | <div className='green'>35</div>  | C16         | XGPIOC[16] | 432 | MIPI_TX_CN |
+|       |          |          | MIPI_TX_2P | 437 | XGPIOC[21]  | C21      | <div className='green'>34</div> | <div className='green'>33</div>  | C17         | XGPIOC[17] | 433 | MIPI_TX_CP |
+|       |          |          |            |     |             | GND      | <div className='black'>32</div> | <div className='black'>31</div>  | GND         |            |     |            |
+|       |          |          | MIPI_TX_1N | 430 | XGPIOC[14]  | C14      | <div className='green'>30</div> | <div className='green'>29</div>  | C12         | XGPIOC[12] | 428 | MIPI_TX_0N |
+|       |          |          | MIPI_TX_1P | 431 | XGPIOC[15]  | C15      | <div className='green'>28</div> | <div className='green'>27</div>  | C13         | XGPIOC[13] | 429 | MIPI_TX_0P |
+
+</div>
+
+:::warning
+在 DuoS 中， SPI、I2C1/2、ADC 暂时不可用，请您等待后续软件更新。
+:::
 
 ## 三、代码示例
 
@@ -175,9 +241,13 @@ void loop() {
 
 UART 串口默认使用的是物理引脚 `6/7` 上的 `UART3`，在调试 Arduino 程序时，可以通过该串口打印调试信息。
 
-连接方法如下，电脑端可使用 USB 转 TTL 串口线，逻辑电平为 3.3V，波特率为 115200，串口线的 RX 连接 Duo 的 6 脚 UART3_TX，串口线的 TX 连接 Duo 的 7 脚 UART3_RX，串口线的 GND 连接 Duo 的任意 GND 比如引脚 3：
+:::tip
+如果您使用的是 DuoS 开发板，`UART3` 默认映射到 `50/48` 引脚。因为 `50/48` 引脚使用 1.8V 电平，可能造成使用上不方便，建议您使用 `UART2` 代替。
+:::
 
-<Image src='/docs/duo/arduino/duo-arduino-08.jpg' minWidth='40%' maxWidth='90%' align='left' />
+连接方法如下，电脑端可使用 USB 转 TTL 串口线，逻辑电平为 3.3V，波特率为 115200，串口线的 RX 连接 Duo 的 UART3_TX，串口线的 TX 连接 Duo 的 UART3_RX，串口线的 GND 连接 Duo 的任意 GND 比如引脚 3：
+
+<Image src='/docs/duo/arduino/duo-arduino-08.webp' minWidth='40%' maxWidth='90%' align='left' />
 
 测试程序：
 ```C
@@ -212,14 +282,14 @@ void loop() {
 ### I2C 使用示例
 
 :::caution
-Duo 和 Duo256M 的 I2C 接口资源不同，需对照前面的引脚分配图来使用
+Duo、Duo256M 和 DuoS 的 I2C 接口资源不同，需对照前面的引脚分配图来使用。
 :::
 
 #### I2C0 向 I2C1 发送数据 (Duo)
 
 硬件连接如下，将 I2C0 和 I2C1 的 SDA 和 SCL 引脚对应连接，再按上述 UART 示例中的方法连接串口到电脑上查看打印信息。
 
-<Image src='/docs/duo/arduino/duo-arduino-09.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-09.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 Duo 中 `Wire` 函数默认映射为 I2C0，也就是 `Wire` 等价与 `Wire0`。
 
@@ -295,7 +365,7 @@ receive 1 bytes
 
 硬件连接如下，将 I2C1 和 I2C2 的 SDA 和 SCL 引脚对应连接，再按上述 UART 示例中的方法连接串口到电脑上查看打印信息。
 
-<Image src='/docs/duo/arduino/duo-arduino-11.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-11.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 Duo256M 中 `Wire` 函数默认映射为 I2C1，也就是 `Wire` 等价与 `Wire1`。
 
@@ -369,7 +439,7 @@ receive 1 bytes
 
 硬件连接如下，将 SPI 的 MOSI 和 MISO 短接，也就是引脚 10 和引脚 11，再按上述 UART 示例中的方法连接串口到电脑上查看打印信息。
 
-<Image src='/docs/duo/arduino/duo-arduino-10.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-10.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 测试代码：
 ```C
@@ -428,7 +498,7 @@ transfer
 
 硬件连接如下，将 DUO 的 GP4 连接到 LED 负极。
 
-<Image src='/docs/duo/arduino/duo-arduino-12.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-12.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 测试代码：
 ```C
@@ -452,11 +522,15 @@ void loop() {
 
 编译并烧录后能观察到LED灯呼吸效果。
 
+:::warning
+在使用 PWM 时请注意 PWM 资源的分配，同一个 PWM 可以被分配到两个不同引脚，但两个引脚输出是完全相同的。
+:::
+
 ### ADC 使用示例
 
 硬件连接如下，将 DUO 的 GP26 连接到电位器信号脚，其他两脚分别连接电源正极和负极。
 
-<Image src='/docs/duo/arduino/duo-arduino-13.jpg' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/arduino/duo-arduino-13.webp' minWidth='40%' maxWidth='60%' align='left' />
 
 测试代码：
 ```C
@@ -586,6 +660,12 @@ LCD2004 I2C 接口屏幕的示例代码，按代码注释接好线后烧录运�
 buzzer_test 代码目录：[https://github.com/milkv-duo/duo-arduino-examples/tree/master/buzzer_test](https://github.com/milkv-duo/duo-arduino-examples/tree/master/buzzer_test)
 
 蜂鸣器模块示例代码，按代码注释接线后烧录运行，蜂鸣器循环播放三种频率的蜂鸣声。
+
+### Buzzer Play Wave
+
+buzzer_play_wave 代码目录：[https://github.com/milkv-duo/duo-arduino-examples/tree/master/buzzer_play_wave](https://github.com/milkv-duo/duo-arduino-examples/tree/master/buzzer_play_wave)
+
+蜂鸣器模块示例代码，按代码注释接线后烧录运行，蜂鸣器首先播放 C 大调 1-7 七个音调，然后循环播放“两只老虎”。
 
 ### HC-SR04
 

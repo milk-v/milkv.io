@@ -1,11 +1,9 @@
 import React from 'react';
 import styles from './head.module.css'
 import Link from '@docusaurus/Link';
-import { useHistory } from '@docusaurus/router';
 
 export default (props) => {
     const { type } = props
-    const goto = useHistory()
 
     // chinan_url小鹅通
     // other_url 众筹
@@ -20,13 +18,20 @@ export default (props) => {
             arace_url: 'https://arace.tech/collections/milk-v-duo',
             taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=707976817589&sku_properties=1627207:3750323',
             banli_url: 'https://spotpear.cn/category/Milk-V.html',
-            chilli_url: 'https://shop.plati.ma/collections/all?filter.p.vendor=Milk-V'
+            chilli_url: 'https://shop.plati.ma/collections/all?filter.p.vendor=Milk-V',
+            jd_url: 'https://ic-item.jd.com/10107640792852.html',
         },
         'duo-s': {
             arace_url: 'https://arace.tech/products/milkv-duo-s',
-            taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=770462822819&sku_properties=5919063:6536025',
+            taobao_url: 'https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-24811212567.16.4d92224f5Hci1u&id=770462822819&sku_properties=5919063:6536025',
             banli_url: 'https://spotpear.cn/category/Milk-V.html',
-            chilli_url: 'https://shop.plati.ma/products/milk-v-duo-s-512m-1ghz-dual-core-risc-v-arm-sbc?_pos=4&_fid=86ada3723&_ss=c'
+            chilli_url: 'https://shop.plati.ma/products/milk-v-duo-s-512m-1ghz-dual-core-risc-v-arm-sbc?_pos=4&_fid=86ada3723&_ss=c',
+            jd_url: 'https://ic-item.jd.com/10107306617970.html#crumb-wrap'
+        },
+        'duo-module-01': {
+            arace_url: 'https://arace.tech/products/milk-v-duo-module-01',
+            taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=828155295674',
+            chilli_url: 'https://shop.plati.ma/products/milk-v-duo-module-01?_pos=5&_fid=2ba550543&_ss=c'
         },
         'pioneer': {
             crowdSupply_url: 'https://www.crowdsupply.com/milkv/milk-v-pioneer',
@@ -48,20 +53,25 @@ export default (props) => {
             taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=764856801789&skuId=5260392404476',
             arace_url: 'https://arace.tech/products/milk-v-vega',
         },
-        'CV1800B': {
+        'cv1800b': {
             taobao_url: 'https://item.taobao.com/item.htm?id=748015537624&skuId=5330447539309&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA',
             arace_url: 'https://arace.tech/products/sophon-cv1800b-5pcs',
         },
-        'SG2000': {
+        'sg2000': {
             taobao_url: 'https://item.taobao.com/item.htm?id=748015537624&skuId=5258773672599&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA',
             arace_url: 'https://arace.tech/products/sophon-cv1800b-5pcs',
         },
-        'SG2002': {
+        'sg2002': {
             taobao_url: 'https://item.taobao.com/item.htm?id=748015537624&skuId=5258773672598&spm=a1z10.1-c.w4004-24811118368.6.763d224fh8cJmA',
             arace_url: 'https://arace.tech/products/sophon-cv1800b-5pcs',
         },
-        'SG2380': {
+        'sg2380': {
             // arace_url: 'https://arace.tech/products/milk-v-meles',
+        },
+        'jupiter': {
+            taobao_url: 'https://milkv.taobao.com/',
+            jd_url: 'https://item.jd.com/10108225846745.html',
+            arace_url: 'https://arace.tech/products/milk-v-jupiter-spacemit-m1-k1-octa-core-rva22-rvv1-0-risc-v-soc-2tops-miniitx',
         },
     }
 
@@ -70,6 +80,7 @@ export default (props) => {
         'other_url': '/components/other.svg',
         'arace_url': '/components/arace.svg',
         'taobao_url': '/components/taobao.svg',
+        'jd_url': '/components/jd.webp',
         'mouser_url': '/components/mouser.svg',
         'banli_url': '/components/banli.svg',
         'chilli_url': '/components/platima.png',
@@ -78,8 +89,9 @@ export default (props) => {
     const text_data = {
         'crowdSupply_url': 'Crowd Supply',
         'other_url': 'Other countries and regions',
-        'arace_url': 'Arace Tech',
+        'arace_url': 'ARACE',
         'taobao_url': '淘宝',
+        'jd_url': '京东',
         'mouser_url': 'Mouser',
         'banli_url': '斑梨电子',
         'chilli_url': 'Platima Tinkers',
@@ -89,33 +101,24 @@ export default (props) => {
     const product_pictures = {
         'home': '/components/buy-meles-view.webp',
         'duo': '/components/buy-duo-view.webp',
-        'duo-s': '/components/buy-duo-view.webp',
+        'duo-s': '/components/buy-duos-view.webp',
+        'duo-module-01': '/components/duo-module-01-buy.webp',
         'pioneer': '/components/buy-pionner-view.webp',
         'mars': '/components/buy-mars-view.webp',
         'mars-cm': '/components/buy-marscm-view.webp',
         'meles': '/components/buy-meles-view.webp',
         'vega': '/components/buy-vega-view.webp',
-        'CV1800B': '/components/buy-cv1800b-view.webp',
-        'SG2000': '/components/buy-sg2000-view.webp',
-        'SG2002': '/components/buy-sg2002-view.webp',
-        'SG2380': '/components/buy-sg2380-view.webp',
+        'jupiter': '/components/buy-jupiter-view.webp',
+        'cv1800b': '/components/buy-cv1800b-view.webp',
+        'sg2000': '/components/buy-sg2000-view.webp',
+        'sg2002': '/components/buy-sg2002-view.webp',
+        'sg2380': '/components/buy-sg2380-view.webp',
     }
-    function transformString(str) {
-        const words = str.split('-');
-        let newStr
-        if (words.length > 1) {
-            newStr = words[0].charAt(0).toUpperCase() + words[0].slice(1) + ' ' + words[1].toUpperCase()
 
-        } else {
-            newStr = words[0].charAt(0).toUpperCase() + words[0].slice(1)
-        }
-        return newStr
-    }
-    let product_name = transformString(type)
     return (
         <div id='buy' className={styles.buy_box}>
             <div className={styles.buy_center}>
-                <h2>Buy Milk-V {product_name}</h2>
+                <h2>Buy Milk-V {type.toUpperCase()}</h2>
                 <div className={styles.flex_center}>
                     <img src={product_pictures[type]} alt={type} />
                     {
@@ -123,7 +126,7 @@ export default (props) => {
                             <ul className={styles.agents}>
                                 {
                                     Object.keys(buy_info[type]).map((item, key) => {
-                                        let area = item === 'taobao_url' || item === 'banli_url' ? 'to China' : 'Worldwidely'
+                                        let area = item === 'jd_url' || item === 'taobao_url' || item === 'banli_url' ? 'to China' : 'Worldwidely'
 
                                         let shipping_location
                                         if (item === 'arace_url') {

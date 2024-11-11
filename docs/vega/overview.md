@@ -5,13 +5,12 @@ sidebar_position: 1
 
 # Vega
 
-Version 1.0 
-
--------------------------
 ## Introduction
 
 Milk-V Vega offers comprehensive second-layer network protocol processing capabilities, including L2 bridging, L2 multicast, and storm suppression, among others. It supports VLAN functions based on streams, ports, protocols, and subnets. The device also provides support for STP, RSTP, and QinQ functionalities. Additionally, it includes features like defense against DOS attacks, black and white lists, and protocol packet filtering. Milk-V Vega facilitates filtering, link aggregation, OAM message transmission, and port protection functionalities. It further supports both ingress and egress ACL functionalities, as well as Ethernet synchronization and 1588 features.
+
 ![vega-overview](/docs/vega/vega-overview.webp)
+
 Milk-V Vega is a compact and low-density box-style open-source 10 Gigabit network switch developed by Milk-V for the next generation of network architecture. It serves as a unified platform for various services such as broadband, voice, video, and surveillance. Equipped with domestically produced RISC-V high-reliability network switch chips from China, it simplifies network infrastructure, reduces energy and operational costs, and finds applications in data centers, industrial parks, medium to large enterprise networks, hotels, and educational institutions.
 
 ## Fetures
