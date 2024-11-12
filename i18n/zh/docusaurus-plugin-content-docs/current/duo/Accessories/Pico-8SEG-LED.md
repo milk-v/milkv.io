@@ -13,7 +13,7 @@ sidebar_position: 25
 
 Pico-8SEG-LED 引脚图：
 
-<Image src='/static/docs/duo/duos/Accessories/Pico-8SEG-LED.webp' maxWidth='50%' align='center' />
+<Image src='/docs/duo/duos/Accessories/Pico-8SEG-LED.webp' maxWidth='50%' align='center' />
 
 | 连接名称 | VSYS | GND | RCLK | CLK  | DIN  |
 |----------|------|-----|------|------|------|
