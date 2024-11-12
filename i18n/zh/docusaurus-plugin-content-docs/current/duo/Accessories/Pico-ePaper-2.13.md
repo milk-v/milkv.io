@@ -4,7 +4,13 @@ sidebar_position: 25
 ---
 
 # 在 Duo S 上使用 Pico-ePaper-2.13 显示屏
+## Pico-ePaper-2.13 显示屏工作原理
+Pico-ePaper-2.13 显示屏使用通信接口SPI，电子纸采用“微胶囊电泳显示”技术进行图像显示，其基本原理是悬浮在液体中的带电纳米粒子受到电场作用而产生迁移。电子纸显示屏是靠反射环境光来显示图案的，不需要背光，在环境光下，电子纸显示屏清晰可视，可视角度几乎达到了 180°。因此，电子纸显示屏非常适合阅读。
+## 硬件连接
 
+| 连接名称 | GND | VCC  | DC  | CS  | RST | BUSY | CLK  | DIN  |
+|----------|-----|------------|-----|-----|-----|------|------|------|
+| 引脚     | GND | VCC(3.3v)   | PIN50 | PIN11 | PIN13 | PIN46 | PIN23 | PIN19 |
 ## 构建运行环境
 
 参考:` https://github.com/milkv-duo/duo-examples `
@@ -12,9 +18,7 @@ sidebar_position: 25
 ## 编译c
 
 ```
-
 git clone https://github.com/zwyzwm/Pico-ePaper-2.13.git
-
 ```
 
 下载编译完成之后，运行命令 ` scp root@192.168.42.1:/root/ `，将生成的paper，复制到登陆终端，运行程序。
