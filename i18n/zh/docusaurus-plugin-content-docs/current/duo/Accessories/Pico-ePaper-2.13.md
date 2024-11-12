@@ -13,7 +13,7 @@ sidebar_position: 25
 
 ## 硬件接线
 
-<Image src='/static/docs/duo/duos/Accessories/Pico-ePaper1-2.13.webp' maxWidth='50%' align='center' />
+<Image src='/docs/duo/duos/Accessories/Pico-ePaper1-2.13.webp' maxWidth='50%' align='center' />
 
 | 连接名称 | GND | VCC  | DC  | CS  | RST | BUSY | CLK  | DIN  |
 |----------|-----|------------|-----|-----|-----|------|------|------|
