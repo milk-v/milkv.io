@@ -24,13 +24,11 @@ DIN —— PIN19
 ## 编译 c
 
 ```
-
 git clone https://github.com/zwyzwm/Pico-8SEG-LED.git
-
 ```
 下载并编译完成后，运行命令`scp shu root@192.168.42.1:/root/`，将生成的shu复制到登录终端，运行程序即可。
 
-##数码管计数
+## 数码管计数
 
 > - 0000-9999循环计数
 
