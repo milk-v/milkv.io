@@ -13,7 +13,7 @@ Using SPI communication interface, 74HC595 chip, contains an 8-bit serial input 
 
 Pico-8SEG-LED pin diagram:
 
-<Image src='/static/docs/duo/duos/Accessories/Pico-8SEG-LED.webp' maxWidth='50%' align='center' />
+<Image src='/docs/duo/duos/Accessories/Pico-8SEG-LED.webp' maxWidth='50%' align='center' />
 
 | Connection Name | VSYS | GND | RCLK | CLK  | DIN  |
 |----------|------|-----|------|------|------|
