@@ -1,6 +1,6 @@
 {
     "sg2000": {
-        "title": "SG2000 is a high-performance, low-power chip for AIOT. It features multiple cores, swift core switching, H.264/H.265 video codecs, professional-grade image enhancements, a proprietary 0.5TOPS INT8 TPU, an efficient TPU scheduling engine, and diverse peripheral interfaces.",
+        "title": "SG2000 is a high-performance, low-power chip for edge surveillance cameras, facial recognition machines, and smart home devices. It features H.264/H.265 video compression, ISP capabilities, and supports HDR, 3D noise reduction, defogging, and lens correction for professional-grade video quality.",
         "title_zh": "SG2000是面向AIOT领域的高性能、低功耗芯片。它具备多个核心、快速内核切换、H.264/H.265视频编解码器、专业级图像增强功能、专有的0.5TOPS INT8 TPU、高效的TPU调度引擎以及多样化的外设接口。",
         "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
         "front_view": "/chips/sg2000/sg2000-frontview.webp",
@@ -295,7 +295,7 @@
         }
     },
     "sg2002": {
-        "title": "SG2002 is a high-performance chip for AIOT applications, with multiple cores, hardware codecs, an ISP for image enhancements, an in-house TPU for powerful processing, and diverse peripheral interfaces.",
+        "title": "SG2002 is a high-performance, low-power chip for surveillance cameras, smart locks, and visual doorbells. It includes H.264/H.265 video compression, ISP capabilities, and supports HDR, 3D noise reduction, defogging, and lens correction for top-tier video quality.",
         "title_zh": "SG2002是专为AIOT应用而设计的高性能芯片，具备多个核心、硬件编解码器、用于图像增强的ISP、内置TPU提供强大的处理能力以及多样的外设接口",
         "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
         "front_view": "/chips/sg2002/sg2002-frontview.webp",
@@ -550,7 +550,7 @@
         }
     },
     "cv1800b": {
-        "title": "CV1800B: high-performance chip for consumer IP cameras and home intelligence. Integrates H.264/H.265 encoders and ISP for professional video quality.",
+        "title": "CV1800B is a high-performance, low-power chip for IP cameras, featuring video compression, image enhancements, motion detection, built-in DDR, and security solutions. It includes an 8-bit MCU to reduce costs.",
         "title_zh": "CV1800B 是面向民用消费监控 IP 摄像机、居家智能等多项产品领域而推出的高性能、低功耗芯片，集成了 H.264/H.265 视频压缩编码器和 ISP；支持数字宽动态、3D 降噪、除雾、镜头畸变校正等多种图像增强和矫正算法，为客户提供专业级的视频图像质量。",
         "buy_link": "https://arace.tech/products/sophon-cv1800b-5pcs?variant=42525012689076",
         "front_view": "/chips/cv1800b/cv1800b-frontview.webp",
