@@ -16,7 +16,7 @@ Duo256M YOLOv5 代码位置：[sample_yolov5.cpp](https://github.com/milkv-duo/c
 
 ## 获取 cvimodel
 
-你可以直接下载预编译好的 yolov5s int8 对称量化或者非对称量化 cvimodel 模型，亦可按照[模型编译](#模型编译)手动转换模型。
+你可以直接下载预编译好的 yolov5s int8 对称量化 cvimodel 模型，亦可按照[模型编译](#模型编译)手动转换模型。
 
 ### 下载预编译好的 cvimodel
 
@@ -24,8 +24,7 @@ Duo256M YOLOv5 代码位置：[sample_yolov5.cpp](https://github.com/milkv-duo/c
   ```bash
   # int8 对称模型
   wget https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/raw/main/cvimodel/yolov5_cv181x_int8_sym.cvimodel
-  # int8 非对称模型
-  wget wget https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/raw/main/cvimodel/yolov5_cv181x_int8_asym.cvimodel
+
   ```
 
 ### 模型编译
@@ -126,25 +125,6 @@ model_deploy.py \
 ```
 
 编译完成后，会生成名为 `yolov5_cv181x_int8_sym.cvimodel` 的文件。
-
-*（可选）生成 int8 非对称 cvimodel*
-
-```bash
-model_deploy.py \
---mlir yolov5s.mlir \
---quant_input --quant_output \
---quantize INT8 --asymmetric \
---calibration_table yolov5s_cali_table \
---processor cv181x \
---test_input yolov5s_in_f32.npz \
---test_reference yolov5s_top_outputs.npz \
---tolerance 0.85,0.45 \
---model yolov5_cv181x_int8_asym.cvimodel
-```
-
-编译完成后，会生成名为 `yolov5_cv181x_int8_asym.cvimodel` 的文件。
-
-
 
 ## 板端推理
 

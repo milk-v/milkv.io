@@ -147,22 +147,6 @@ model_deploy.py \
 ```
 编译完成后，会生成名为 yolov8n_cv181x_int8_sym.cvimodel 的文件。
 
-（可选）生成 int8 非对称 cvimodel
-
-```
-model_deploy.py \
---mlir yolov8n.mlir \
---quant_input --quant_output \
---quantize INT8 --asymmetric \
---calibration_table yolov8n_cali_table \
---processor cv181x \
---model yolov8n_cv181x_int8_asym.cvimodel
-```
-编译完成后，会生成名为 yolov8n_cv181x_int8_asym.cvimodel 的文件。
-
-
-
-
 ## 板端推理
 
 将编译好的 sample_yolov8、cvimodel、要推理的 jpg 图片，拷贝到板端然后执行二进制程序：

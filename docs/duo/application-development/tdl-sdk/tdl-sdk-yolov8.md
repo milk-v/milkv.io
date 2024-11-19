@@ -144,19 +144,6 @@ model_deploy.py \
 ```
 After the compilation is complete, a file named yolov8n_cv181x_int8_sym.cvimodel will be generated.
 
-(Optional) Generate int8 asymmetric cvimodel
-
-```
-model_deploy.py \
---mlir yolov8n.mlir \
---quant_input --quant_output \
---quantize INT8 --asymmetric \
---calibration_table yolov8n_cali_table \
---processor cv181x \
---model yolov8n_cv181x_int8_asym.cvimodel
-```
-After the compilation is complete, a file named yolov8n_cv181x_int8_asym.cvimodel will be generated.
-
 ## Board-side reasoning
 
 Copy the compiled sample_yolov8, cvimodel, and the jpg image to be inferred to the board and execute the binary program:
