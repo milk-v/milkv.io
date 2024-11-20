@@ -73,6 +73,11 @@ export default (props) => {
             jd_url: 'https://item.jd.com/10108225846745.html',
             arace_url: 'https://arace.tech/products/milk-v-jupiter-spacemit-m1-k1-octa-core-rva22-rvv1-0-risc-v-soc-2tops-miniitx',
         },
+        'megrez': {
+            taobao_url: 'https://milkv.taobao.com/',
+            jd_url: 'https://item.jd.com/10108225846745.html',
+            arace_url: 'https://arace.tech/products/milk-v-jupiter-spacemit-m1-k1-octa-core-rva22-rvv1-0-risc-v-soc-2tops-miniitx',
+        },
     }
 
     const image_data = {
@@ -107,6 +112,7 @@ export default (props) => {
         'mars': '/components/buy-mars-view.webp',
         'mars-cm': '/components/buy-marscm-view.webp',
         'meles': '/components/buy-meles-view.webp',
+        'megrez': '/components/buy-megrez-view.webp',
         'vega': '/components/buy-vega-view.webp',
         'jupiter': '/components/buy-jupiter-view.webp',
         'cv1800b': '/components/buy-cv1800b-view.webp',

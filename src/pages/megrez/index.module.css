@@ -1,18 +1,39 @@
 .__main {
-    background-color: #000;
+    background-color: #1a1a1a;
 }
 
-.pr_name {
+.mg_bg {
+    margin: 0 auto;
+    background: url(/static/megrez/megrez-bg.webp) no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+    aspect-ratio: 192/103;
+}
+
+.title_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.mg_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mg_title>h1 {
     color: #FFF;
     text-align: center;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
-    margin-bottom: 0px;
 }
 
-.pr_info {
+.mg_title>p {
     color: #FFF;
     text-align: center;
     font-family: "Open Sans";
@@ -21,80 +42,1274 @@
     line-height: 120%;
 }
 
+.mg_items>div {
+    width: 100%;
+    display: flex;
+}
+
+.chips {
+    display: flex;
+    align-items: center;
+    aspect-ratio: 144/60;
+}
+
+.chips>div {
+    background-color: #FFF;
+    flex: 1;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.chips>.chip_bg {
+    background: url(/static/megrez/chip.webp) no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+    position: relative;
+}
+
+.chip_bg>p {
+    color: #FFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    background-color: #01a0ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chip_bg>p>font {
+    white-space: nowrap;
+}
+
+.chip_bg>ol {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.chip_bg>ol>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #000;
+}
+
+.chip_bg>p,
+.chip_bg>ol>li {
+    border-radius: 20px;
+    position: absolute;
+}
+
+.chip_bg>ol>li>p {
+    margin: 0;
+}
+
+.chip_bg>ol>li>p:first-child {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    background: linear-gradient(90deg, #00C6FF 0%, #0072FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.chip_text {
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.item_title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    background: linear-gradient(90deg, #00C6FF 0%, #0072FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.item_center {
+    text-align: center;
+}
+
+.chip2>ol,
+.chip2>ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.chip2>ul>li {
+    list-style: disc;
+    color: #000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.chip2>ul>li>font {
+    color: #01A0FF;
+}
+
+.chip2>ol>li {
+    color: #000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 0;
+}
+
+.chip2>img {
+    width: 80%;
+    float: right;
+    display: block;
+}
+
+.parameters {
+    aspect-ratio: 1440/364;
+}
+
+.parameters>div {
+    height: 100%;
+}
+
+.npu {
+    width: 39.375%;
+    background: url(/static/megrez/npu.webp) no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+}
+
+.gpu {
+    flex: 1;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.item_mint {
+    color: #FFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.item_ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.item_ul>li {
+    color: #FFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    list-style: disc;
+}
+
+.gpu>img {
+    width: 90%;
+}
+
+.video {
+    aspect-ratio: 1440/375;
+}
+
+.support2>div,
+.build_title,
+.storage,
+.support>div,
+.ai,
+.video>div {
+    background-color: #000;
+    border-radius: 30px;
+}
+
+.video_8k {
+    width: 59.2%;
+}
+
+.video_support {
+    flex: 1;
+    background: url(/static/megrez/video-view2.webp) no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+}
+
+.storage,
+.ai {
+    display: block !important;
+}
+
+.ai>img {
+    display: block;
+}
+
+.support {
+    aspect-ratio: 1440/413;
+}
+
+.support>div {
+    border-radius: 30px;
+    flex: 1;
+}
+
+.support>div:first-child {
+    background: url(/static/megrez/wireless.webp) no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+}
+
+.support>div:nth-of-type(2) {
+    background: url(/static/megrez/pcie.webp) no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+}
+
+.cards {
+    display: block;
+    width: 80%;
+}
+
+.storage {
+    aspect-ratio: 144/40;
+}
+
+.storage>ol {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.storage>ol>li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #1A1A1A;
+    flex: 1;
+    position: relative;
+}
+
+.storage>ol>li>img {
+    width: 50%;
+}
+
+.storage>ol>li>p {
+    position: absolute;
+    color: #FFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ssd_img {
+    width: 80% !important;
+}
+
+.build_title {
+    justify-content: center;
+}
+
+.build_title>p {
+    margin: 0;
+}
+
+.support2 {
+    aspect-ratio: 144/51;
+}
+
+.support2>div {
+    flex: 1;
+    height: 100%;
+}
+
+.support2>div:nth-of-type(2) {
+    background: url(/static/megrez/power-support.webp) no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+}
+
+.itx,
+.size {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
 @media screen and (min-width: 1950px) {
-    .m_width {
-        width: 1440px !important;
+    .mg_bg {
+        max-width: 2540px;
     }
 
-    .pr_title {
-        margin: 160px 0 100px;
+    .title_box {
+        width: 1920px;
+        gap: 100px;
     }
 
-    .pr_name {
+    .mg_items ul,
+    .mg_items ol {
+        padding-left: 25px !important;
+    }
+
+    .mg_title>h1 {
         font-size: 76px;
     }
 
-    .pr_info {
+    .mg_title>p {
         font-size: 42px;
+        margin-bottom: 55px;
+    }
+
+    .mg_items {
+        width: 1920px;
+        margin: 0 auto 100px;
+    }
+
+    .mg_items>div {
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .chips {
+        gap: 20px;
+    }
+
+    .chip_bg>p {
+        font-size: 28px;
+        padding: 0 20px;
+        height: 120px;
+        gap: 5px;
+        top: 50px;
+    }
+
+    .chip_bg>p>font {
+        font-size: 36px;
+    }
+
+    .chip_bg>ol {
+        gap: 40px;
+    }
+
+    .chip_bg>ol>li {
+        height: 150px;
+        gap: 10px;
+    }
+
+    .chip_bg>p,
+    .chip_bg>ol>li {
+        width: 350px;
+        right: 50px;
+    }
+
+    .chip_bg>ol>li:first-child {
+        bottom: 250px;
+    }
+
+    .chip_bg>ol>li:last-child {
+        bottom: 50px;
+    }
+
+    .chip_bg>ol>li>p:first-child {
+        font-size: 36px;
+    }
+
+    .chip_text {
+        font-size: 28px;
+    }
+
+    .chips>div {
+        padding: 50px;
+    }
+
+    .item_title {
+        font-size: 46px;
+    }
+
+    .chip2>ol,
+    .chip2>ul {
+        margin-bottom: 5px;
+    }
+
+    .chip2>ul>li {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .chip2>ul>li>font {
+        font-size: 36px;
+    }
+
+    .chip2>ol>li {
+        font-size: 26px;
+    }
+
+    .parameters>div {
+        padding: 50px;
+    }
+
+    .item_mint {
+        font-size: 30px;
+    }
+
+    .item_ul>li {
+        font-size: 32px;
+    }
+
+    .gpu>img {
+        margin-top: 20px;
+    }
+
+    .support2>div,
+    .build_title,
+    .storage,
+    .support>div,
+    .ai,
+    .video>div {
+        padding: 50px;
+    }
+
+    .support>div {
+        padding: 50px 30px;
+    }
+
+    .ai>img {
+        width: 1000px;
+        margin: 50px auto 0;
+    }
+
+    .cards {
+        margin: 50px auto;
+    }
+
+    .storage>ol {
+        gap: 25px;
+        height: 350px;
+        margin-top: 50px;
+    }
+
+    .storage>ol>li>p {
+        font-size: 24px;
+        bottom: 20px;
+    }
+
+    .build_title>p {
+        font-size: 56px;
+    }
+
+    .size {
+        margin: 50px auto 0;
+    }
+
+    .tech {
+        font-size: 80px;
+        line-height: 78px;
+    }
+
+    .marginBtm {
+        margin-bottom: 80px !important;
     }
 }
 
 @media screen and (max-width: 1950px) and (min-width: 1450px) {
-    .m_width {
-        width: 1440px !important;
+    .title_box {
+        width: 1440px;
+        gap: 100px;
     }
 
-    .pr_title {
-        margin: 130px 0 80px;
+    .mg_items ul,
+    .mg_items ol {
+        padding-left: 25px !important;
     }
 
-    .pr_name {
-        font-size: 60px;
+    .mg_title>h1 {
+        font-size: 66px;
     }
 
-    .pr_info {
+    .mg_title>p {
         font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .mg_items {
+        width: 1440px;
+        margin: 0 auto 80px;
+    }
+
+    .mg_items>div {
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .chips {
+        gap: 20px;
+    }
+
+    .chip_bg>p {
+        font-size: 24px;
+        padding: 0 20px;
+        height: 100px;
+        gap: 5px;
+        top: 30px;
+    }
+
+    .chip_bg>p>font {
+        font-size: 30px;
+    }
+
+    .chip_bg>ol {
+        gap: 20px;
+    }
+
+    .chip_bg>ol>li {
+        height: 120px;
+        gap: 10px;
+    }
+
+    .chip_bg>p,
+    .chip_bg>ol>li {
+        width: 350px;
+        right: 50px;
+    }
+
+    .chip_bg>ol>li:first-child {
+        bottom: 180px;
+    }
+
+    .chip_bg>ol>li:last-child {
+        bottom: 30px;
+    }
+
+    .chip_bg>ol>li>p:first-child {
+        font-size: 30px;
+    }
+
+    .chip_text {
+        font-size: 24px;
+    }
+
+    .chips>div {
+        padding: 30px;
+    }
+
+    .item_title {
+        font-size: 36px;
+    }
+
+    .chip2>ol,
+    .chip2>ul {
+        margin-bottom: 5px;
+    }
+
+    .chip2>ul>li {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .chip2>ul>li>font {
+        font-size: 30px;
+    }
+
+    .chip2>ol>li {
+        font-size: 20px;
+    }
+
+    .chip2>img {
+        width: 75%;
+    }
+
+    .parameters>div {
+        padding: 30px;
+    }
+
+    .item_mint {
+        font-size: 22px;
+    }
+
+    .item_ul>li {
+        font-size: 24px;
+    }
+
+    .gpu>img {
+        margin-top: 0px;
+    }
+
+    .support2>div,
+    .build_title,
+    .storage,
+    .support>div,
+    .ai,
+    .video>div {
+        padding: 30px;
+    }
+
+    .support>div {
+        padding: 30px 30px;
+    }
+
+    .ai>img {
+        width: 1000px;
+        margin: 50px auto 0;
+    }
+
+    .cards {
+        margin: 50px auto;
+    }
+
+    .storage>ol {
+        gap: 20px;
+        height: 250px;
+        margin-top: 30px;
+    }
+
+    .storage>ol>li>p {
+        font-size: 20px;
+        bottom: 10px;
+    }
+
+    .build_title>p {
+        font-size: 46px;
+    }
+
+    .size {
+        margin: 50px auto 0;
+    }
+
+    .marginBtm {
+        margin-bottom: 80px !important;
     }
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1000px) {
-    .pr_title {
-        margin: 100px 0 60px;
+    .title_box {
+        width: 1000px;
+        gap: 50px;
     }
 
-    .pr_name {
+    .title_box>img {
+        width: 500px;
+    }
+
+    .mg_items ul,
+    .mg_items ol {
+        padding-left: 20px !important;
+    }
+
+    .mg_title>h1 {
         font-size: 50px;
+        margin-bottom: 10px;
     }
 
-    .pr_info {
-        font-size: 26px;
+    .mg_title>p {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .mg_items {
+        width: 90%;
+        margin: 0 auto 50px;
+    }
+
+    .mg_items>div {
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .chips {
+        gap: 15px;
+    }
+
+    .chip_bg>p {
+        font-size: 20px;
+        padding: 0 20px;
+        height: 80px;
+        gap: 5px;
+        top: 20px;
+    }
+
+    .chip_bg>p>font {
+        font-size: 24px;
+    }
+
+    .chip_bg>ol {
+        gap: 15px;
+    }
+
+    .chip_bg>ol>li {
+        height: 90px;
+        gap: 10px;
+    }
+
+    .chip_bg>p,
+    .chip_bg>ol>li {
+        width: 250px;
+        right: 20px;
+    }
+
+    .chip_bg>ol>li:first-child {
+        bottom: 130px;
+    }
+
+    .chip_bg>ol>li:last-child {
+        bottom: 20px;
+    }
+
+    .chip_bg>ol>li>p:first-child {
+        font-size: 20px;
+    }
+
+    .chip_text {
+        font-size: 22px;
+    }
+
+    .chips>div {
+        padding: 20px;
+    }
+
+    .item_title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .chip2>ol,
+    .chip2>ul {
+        margin-bottom: 5px;
+    }
+
+    .chip2>ul>li {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .chip2>ul>li>font {
+        font-size: 22px;
+    }
+
+    .chip2>ol>li {
+        font-size: 18px;
+    }
+
+    .chip2>img {
+        width: 70%;
+    }
+
+    .parameters>div {
+        padding: 20px;
+    }
+
+    .item_mint {
+        font-size: 18px;
+    }
+
+    .item_ul>li {
+        font-size: 17px;
+    }
+
+    .gpu>img {
+        margin-top: 0px;
+    }
+
+    .support2>div,
+    .build_title,
+    .storage,
+    .support>div,
+    .ai,
+    .video>div {
+        padding: 20px;
+    }
+
+    .video>div>img {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .support>div {
+        padding: 30px 30px;
+    }
+
+    .ai>img {
+        width: 600px;
+        margin: 20px auto 0;
+    }
+
+    .cards {
+        margin: 50px auto;
+    }
+
+    .storage>ol {
+        gap: 10px;
+        height: 180px;
+        margin-top: 20px;
+    }
+
+    .storage>ol>li>p {
+        font-size: 20px;
+        bottom: 10px;
+    }
+
+    .build_title>p {
+        font-size: 30px;
+    }
+
+    .size {
+        margin: 20px auto 0;
+    }
+
+    .marginBtm {
+        margin-bottom: 50px !important;
     }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 750px) {
-    .pr_title {
-        margin: 80px 0 40px;
+    .title_box {
+        width: 100%;
+        gap: 50px;
     }
 
-    .pr_name {
-        font-size: 46px;
+    .title_box>img {
+        width: 300px;
     }
 
-    .pr_info {
-        font-size: 24px;
+    .mg_items ul,
+    .mg_items ol {
+        padding-left: 20px !important;
+    }
+
+    .mg_title>h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .mg_title>p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .mg_items {
+        width: 90%;
+        margin: 0 auto 50px;
+    }
+
+    .mg_items>div {
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .chips {
+        gap: 10px;
+    }
+
+    .chip_bg>p {
+        font-size: 12px;
+        padding: 0 10px;
+        height: 60px;
+        gap: 5px;
+        top: 20px;
+    }
+
+    .chip_bg>p>font {
+        font-size: 16px;
+    }
+
+    .chip_bg>ol {
+        gap: 15px;
+    }
+
+    .chip_bg>ol>li {
+        height: 60px;
+        gap: 0px;
+    }
+
+    .chip_bg>p,
+    .chip_bg>ol>li {
+        width: 150px;
+        right: 20px;
+    }
+
+    .chip_bg>ol>li:first-child {
+        bottom: 90px;
+    }
+
+    .chip_bg>ol>li:last-child {
+        bottom: 20px;
+    }
+
+    .chip_bg>ol>li>p:first-child {
+        font-size: 12px;
+    }
+
+    .chip_text {
+        font-size: 14px;
+    }
+
+    .chips>div {
+        padding: 20px;
+    }
+
+    .item_title {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .chip2>ol,
+    .chip2>ul {
+        margin-bottom: 5px;
+    }
+
+    .chip2>ul>li {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .chip2>ul>li>font {
+        font-size: 16px;
+    }
+
+    .chip2>ol>li {
+        font-size: 12px;
+    }
+
+    .chip2>img {
+        width: 60%;
+    }
+
+    .parameters>div {
+        padding: 20px;
+    }
+
+    .item_mint {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .item_ul>li {
+        font-size: 12px;
+    }
+
+    .gpu>img {
+        margin-top: 0px;
+    }
+
+    .support2>div,
+    .build_title,
+    .storage,
+    .support>div,
+    .ai,
+    .video>div {
+        padding: 20px;
+    }
+
+    .video>div>img {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .support>div {
+        padding: 30px 30px;
+    }
+
+    .ai>img {
+        width: 400px;
+        margin: 20px auto 0;
+    }
+
+    .cards {
+        margin: 50px auto;
+    }
+
+    .storage>ol {
+        gap: 10px;
+        height: 120px;
+        margin-top: 20px;
+    }
+
+    .storage>ol>li>p {
+        font-size: 12px;
+        white-space: nowrap;
+        bottom: 0px;
+    }
+
+    .build_title>p {
+        font-size: 22px;
+    }
+
+    .size {
+        margin: 20px auto 0;
+    }
+
+    .marginBtm {
+        margin-bottom: 20px !important;
     }
 }
 
 @media screen and (max-width: 750px) {
-    .pr_title {
-        margin: 40rem 0;
+    .title_box {
+        width: 100%;
+        height: 400rem;
+        gap: 20rem;
+        flex-direction: column-reverse;
     }
 
-    .pr_name {
-        font-size: 28rem;
+    .mg_bg {
+        background-size: cover;
     }
 
-    .pr_info {
+    .title_box>img {
+        width: 250rem;
+    }
+
+    .mg_items>div {
+        flex-direction: column;
+    }
+
+    .chip2,
+    .chip_bg {
+        width: 100%;
+        height: 300rem !important;
+        flex: auto !important;
+    }
+
+    .mg_items ul,
+    .mg_items ol {
+        padding-left: 20rem !important;
+    }
+
+    .mg_title>h1 {
+        font-size: 32rem;
+        margin-bottom: 5rem;
+    }
+
+    .mg_title>p {
         font-size: 18rem;
+        margin-bottom: 20rem;
+    }
+
+    .mg_items {
+        width: 90%;
+        margin: 0 auto 50rem;
+    }
+
+    .mg_items>div {
+        gap: 15rem;
+        margin-bottom: 10rem;
+    }
+
+    .chips {
+        gap: 10rem;
+    }
+
+    .chip_bg>p {
+        font-size: 12rem;
+        padding: 0 10rem;
+        height: 60rem;
+        gap: 5rem;
+        top: 20rem;
+    }
+
+    .chip_bg>p>font {
+        font-size: 16rem;
+    }
+
+    .chip_bg>ol {
+        gap: 15rem;
+    }
+
+    .chip_bg>ol>li {
+        height: 60rem;
+        gap: 0rem;
+    }
+
+    .chip_bg>p,
+    .chip_bg>ol>li {
+        width: 150rem;
+        right: 20rem;
+    }
+
+    .chip_bg>ol>li:first-child {
+        bottom: 90rem;
+    }
+
+    .chip_bg>ol>li:last-child {
+        bottom: 20rem;
+    }
+
+    .chip_bg>ol>li>p:first-child {
+        font-size: 12rem;
+    }
+
+    .chip_text {
+        font-size: 14rem;
+    }
+
+    .chips>div {
+        padding: 20rem;
+    }
+
+    .item_title {
+        font-size: 16rem;
+        margin-bottom: 5rem;
+    }
+
+    .chip2>ol,
+    .chip2>ul {
+        margin-bottom: 5rem;
+    }
+
+    .chip2>ul>li {
+        font-size: 14rem;
+        margin-bottom: 0;
+    }
+
+    .chip2>ul>li>font {
+        font-size: 16rem;
+    }
+
+    .chip2>ol>li {
+        font-size: 12rem;
+    }
+
+    .chip2>img {
+        width: 80%;
+    }
+
+    .parameters>div {
+        padding: 20rem;
+    }
+
+    .item_mint {
+        font-size: 14rem;
+        margin-bottom: 5rem;
+    }
+
+    .item_ul>li {
+        font-size: 12rem;
+    }
+
+    .gpu>img {
+        margin-top: 0rem;
+    }
+
+    .support2>div,
+    .build_title,
+    .storage,
+    .support>div,
+    .ai,
+    .video>div {
+        padding: 20rem;
+    }
+
+    .video>div>img {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .support>div {
+        padding: 30rem 30rem;
+    }
+
+    .ai>img {
+        width: 300rem;
+        margin: 20rem auto 0;
+    }
+
+    .cards {
+        margin: 50rem auto;
+    }
+
+    .storage>ol {
+        gap: 10rem;
+        height: 120rem;
+        margin-top: 20rem;
+    }
+
+    .storage>ol>li>p {
+        font-size: 12rem;
+        white-space: nowrap;
+        bottom: 5rem;
+    }
+
+    .build_title>p {
+        font-size: 18rem;
+    }
+
+    .size {
+        width: 75%;
+        margin: 20rem auto 0;
+    }
+
+    .itx {
+        width: 70%;
+    }
+
+    .marginBtm {
+        margin-bottom: 20rem !important;
+    }
+
+    .gpu,
+    .npu {
+        width: 100%;
+        height: 200rem !important;
+    }
+
+    .video_support {
+        width: 100%;
+        height: 230rem !important;
+        background-size: cover !important;
+        flex: auto;
+    }
+
+    .video_8k {
+        width: 100%;
+        height: 230rem !important;
+    }
+
+    .support>div {
+        height: 300rem;
+        flex: auto;
+    }
+
+    .storage>ol {
+        flex-direction: column;
+        height: auto;
+        gap: 10rem;
+    }
+
+    .storage>ol>li {
+        height: 150rem;
+        flex: auto;
+    }
+
+    .storage>ol>li>img {
+        width: 60%;
+    }
+
+    .support2>div {
+        flex: auto;
+        height: 300rem;
     }
 }

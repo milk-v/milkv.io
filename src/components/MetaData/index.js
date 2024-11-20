@@ -112,6 +112,16 @@ export default (props) => {
                 description: 'Milk-V Jupiter 是一款基于Spacemit K1/M1 的Mini ITX设备。该设备集成了标准PCIe Connector，支持常见PCIe设备，如显卡、PCIe转SATA、网卡；双Gigabit以太网接口；板载WI-FI6/BT5.2；支持NVMe SSD，是入门级 RISC-V Desktop 首选。',
                 keywords: 'Milk-V; Jupiter; Spacemit; K1; M1; MiniITX; RVA22; RVV1.0; 群芯闪耀; 进迭时空',
             },
+        },
+        megrez: {
+            en: {
+                title: 'Milk-V Megrez | RISC-V AI PC',
+                description: "Milk-V Megrez is a Mini-ITX device powered by the ESWIN EIC7700X. It features a built-in quad-core SiFive P550 CPU, specifically designed for RISC-V native development. With a high-performance GPU, it delivers a smooth desktop experience, while its 19.95 TOPS NPU provides exceptional local AI capabilities. The Milk-V Megrez marks a significant milestone in RISC-V desktop technology.",
+            },
+            zh: {
+                title: 'Milk-V Megrez ｜RISC-V AI PC',
+                description: 'Milk-V Megrez 是一款搭载 ESWIN EIC7700X 的 RISC-V Mini-ITX 设备。内置四核 SiFive P550 CPU，专为 RISC-V 原生开发而设计；集成高性能 GPU，提供流畅的桌面体验；同时其 19.95 TOPS NPU 能为用户提供卓越的本地 AI 能力。 Milk-V Megrez 是 RISC-V 桌面级主流化的重要里程碑，也是开发者必备的开发利器',
+            },
         }
     }
 
