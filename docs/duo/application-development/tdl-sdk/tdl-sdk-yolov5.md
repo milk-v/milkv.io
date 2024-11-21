@@ -17,7 +17,7 @@ Refer to the previous section [Introduction](https://milkv.io/zh/docs/duo/applic
 
 ## Obtain cvimodel
 
-You can either download precompiled yolov5s INT8 symmetric or asymmetric quantized cvimodel models directly, or manually convert the models as described in [Model Compilation](#model-compilation).
+You can download precompiled yolov5s INT8 symmetric  quantized cvimodel models directly, or manually convert the models as described in [Model Compilation](#model-compilation).
 
 ### Download Precompiled cvimodels
 
@@ -25,8 +25,6 @@ You can either download precompiled yolov5s INT8 symmetric or asymmetric quantiz
   ```bash
   # INT8 symmetric model
   wget https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/raw/main/cvimodel/yolov5_cv181x_int8_sym.cvimodel
-  # INT8 asymmetric model (commented out as it is optional)
-  wget https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/raw/main/cvimodel/yolov5_cv181x_int8_asym.cvimodel
   ```
 
 ### Model Compilation
@@ -116,23 +114,6 @@ model_deploy.py \
 ```
 
 After compilation, a file named yolov5_cv181x_int8_sym.cvimodel will be generated.
-
-*(Optional) Generate INT8 asymmetric cvimodel*
-
-```bash
-model_deploy.py \
---mlir yolov5s.mlir \
---quant_input --quant_output \
---quantize INT8 --asymmetric \
---calibration_table yolov5s_cali_table \
---processor cv181x \
---test_input yolov5s_in_f32.npz \
---test_reference yolov5s_top_outputs.npz \
---tolerance 0.85,0.45 \
---model yolov5_cv181x_int8_asym.cvimodel
-```
-
-After compilation, a file named yolov5_cv181x_int8_asym.cvimodel will be generated.
 
 ## Inference on the Board
 
