@@ -188,3 +188,64 @@ U-Boot SPL 2021.10 (Aug 31 2023 - 12:55:45 +0800)
 ```
 U-Boot 2021.10 (Aug 31 2023 - 12:55:45 +0800), Build: jenkins-github_visionfive2-17
 ```
+
+## Use Uart to start U-BOOT under Linux
+
+### Download Bootloader Firmware
+
+[Bootloader Firmware](https://github.com/milkv-mars/mars-buildroot-sdk/releases)
+
+```
+SPL: mars_u-boot-spl.bin.normal.out
+U-Boot: mars_visionfive2_fw_payload.img
+```
+
+### Download tio
+
+For reference: https://github.com/tio/tio
+
+:::tip
+Note that you need to download the latest version. The version downloaded by directly running the command `sudo apt-get install tio` does not meet the requirements.
+:::
+
+### Boot from UART
+
+Press and hold the upgrade button on Mars, power the development board and upload `mars_u-boot-spl.bin.normal.out` via XMODEM.
+
+Run the command `tio -b 115200 --databits 8 --flow none --stopbits 1 /dev/ttyUSB0`
+```
+$ tio -b 115200 --databits 8 --flow none --stopbits 1 /dev/ttyUSB0
+[08:14:54.700] tio v2.7
+[08:14:54.700] Press ctrl-t q to quit
+[08:14:54.701] Connected
+
+(C)StarFive
+CCC
+(C)StarFive
+CCCCCCCC
+```
+Press ctrl-t x to start XMODEM-1K transmission and enter according to the prompts.
+
+``` [15:37:49.827] Please enter which X modem protocol to use: [15:37:49.827] (0) XMODEM-1K send [15:37:49.827] (1) XMODEM-CRC send [15:37:49.827] (2) XMODEM-CRC receive CCCCCCCCCCCCCCCC [15:37:51.940] Send file with XMODEM-1K [15:38:15.230] Sending file '/tmp/mars_u-boot-spl.bin.normal.out' [15:38:15.230] Press any key to abort transfer .................................................................................................................................................................| [15:38:29.151] Done U-Boot SPL 2021.10 (Nov 24 2023 - 10:21:39 +0800)
+LPDDR4: 1G version: g8ad50857.
+Trying to boot from SPI
+
+```
+
+Note: `Sending file '/path/to/mars_u-boot-spl.bin.normal.out' `, after entering the file to be sent, wait for the | that appears after ...., which means the sending is complete.
+
+### Flash the new version of U-Boot
+
+Assuming your new U-Boot version is on partition 1 of the SD card, you can install it to the SPI flash using the following commands
+```
+sf probe
+load mmc 0:1 $kernel_addr_r u-boot-spl.bin.normal.out
+sf update $kernel_addr_r 0 $filesize
+load mmc 0:1 $kernel_addr_r u-boot.itb
+sf update $kernel_addr_r 0x100000 $filesize
+```
+After updating U-Boot, you may need to reboot and reset the environment to defaults.
+```
+env default -f -a
+env save
+```

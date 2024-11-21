@@ -218,3 +218,76 @@ U-Boot SPL 2021.10 (Aug 31 2023 - 12:55:45 +0800)
 ```
 U-Boot 2021.10 (Aug 31 2023 - 12:55:45 +0800), Build: jenkins-github_visionfive2-17
 ```
+
+## 在 Linux 下使用 Uart 启动 U-BOOT 
+
+### 下载 Bootloader 固件
+
+[Bootloader 固件](https://github.com/milkv-mars/mars-buildroot-sdk/releases)
+
+```
+SPL:    mars_u-boot-spl.bin.normal.out
+U-Boot: mars_visionfive2_fw_payload.img
+```
+
+### 下载 tio
+
+可参考：https://github.com/tio/tio 
+
+:::tip
+注意要下载最新版本，直接运行命令 `sudo apt-get install tio` 下载的版本是不符合要求的。
+:::
+
+### 从 UART 启动
+
+按住 Mars 上的升级键，为开发板供电并通过 XMODEM 上传 `mars_u-boot-spl.bin.normal.out`。
+
+运行命令 `tio -b 115200 --databits 8 --flow none --stopbits 1 /dev/ttyUSB0`
+```
+$ tio -b 115200 --databits 8 --flow none --stopbits 1 /dev/ttyUSB0
+[08:14:54.700] tio v2.7
+[08:14:54.700] Press ctrl-t q to quit
+[08:14:54.701] Connected
+
+(C)StarFive
+CCC
+(C)StarFive
+CCCCCCCC
+```
+按ctrl-t x启动 XMODEM-1K 传输,根据提示输入即可。
+
+```
+[15:37:49.827] Please enter which X modem protocol to use:
+[15:37:49.827]  (0) XMODEM-1K send
+[15:37:49.827]  (1) XMODEM-CRC send
+[15:37:49.827]  (2) XMODEM-CRC receive
+CCCCCCCCCCCCCCCC
+[15:37:51.940] Send file with XMODEM-1K
+[15:38:15.230] Sending file '/tmp/mars_u-boot-spl.bin.normal.out'  
+[15:38:15.230] Press any key to abort transfer
+................................................................................................................................................|
+[15:38:29.151] Done
+
+U-Boot SPL 2021.10 (Nov 24 2023 - 10:21:39 +0800)
+LPDDR4: 1G version: g8ad50857.
+Trying to boot from SPI
+
+```
+
+注意：`Sending file '/path/to/mars_u-boot-spl.bin.normal.out'  `,输入要发送的文件之后，等待....之后出现的 | ,便是发送完成。
+
+### 刷新新版本的 U-Boot
+
+假设您的新 U-Boot 版本位于 SD 卡的第 1 个分区上，您可以使用以下命令将其安装到 SPI 闪存中
+```
+sf probe
+load mmc 0:1 $kernel_addr_r u-boot-spl.bin.normal.out
+sf update $kernel_addr_r 0 $filesize
+load mmc 0:1 $kernel_addr_r u-boot.itb
+sf update $kernel_addr_r 0x100000 $filesize
+```
+更新 U-Boot 后，您可能需要重新启动并将环境重置为默认值。
+```
+env default -f -a
+env save
+```
