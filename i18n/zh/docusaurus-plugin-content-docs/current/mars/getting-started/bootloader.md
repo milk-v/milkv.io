@@ -219,7 +219,37 @@ U-Boot SPL 2021.10 (Aug 31 2023 - 12:55:45 +0800)
 U-Boot 2021.10 (Aug 31 2023 - 12:55:45 +0800), Build: jenkins-github_visionfive2-17
 ```
 
+## 刷新新版本的 U-Boot
+
+假设您的新 U-Boot 版本位于 SD 卡的第 1 个分区上，您可以使用以下命令将其安装到 SPI 闪存中
+```
+sf probe
+load mmc 0:1 $kernel_addr_r mars_u-boot-spl.bin.normal.out
+sf update $kernel_addr_r 0 $filesize
+load mmc 0:1 $kernel_addr_r mars_visionfive2_fw_payload.img
+sf update $kernel_addr_r 0x100000 $filesize
+```
+注意：load mmc 可能是 0：1 ，也可能是 1:1 。
+
+可以运行命令 `ls mmc 0:1` 跟 `ls mmc 1:1`,观察文件是否存在。
+
+```
+StarFive # ls mmc 1:1
+   147336   mars_u-boot-spl.bin.normal.out
+  2959557   mars_visionfive2_fw_payload.img
+
+2 file(s), 0 dir(s)
+```
+
+更新 U-Boot 后，您可能需要重新启动并将环境重置为默认值。
+```
+env default -f -a
+env save
+```
+
 ## 在 Linux 下使用 Uart 启动 U-BOOT 
+
+当 SPI 中的 U-BOOT 损坏，SD卡也无法启动时，可以使用 uart 启动。
 
 ### 下载 Bootloader 固件
 
@@ -271,23 +301,6 @@ CCCCCCCCCCCCCCCC
 U-Boot SPL 2021.10 (Nov 24 2023 - 10:21:39 +0800)
 LPDDR4: 1G version: g8ad50857.
 Trying to boot from SPI
-
 ```
 
 注意：`Sending file '/path/to/mars_u-boot-spl.bin.normal.out'  `,输入要发送的文件之后，等待....之后出现的 | ,便是发送完成。
-
-### 刷新新版本的 U-Boot
-
-假设您的新 U-Boot 版本位于 SD 卡的第 1 个分区上，您可以使用以下命令将其安装到 SPI 闪存中
-```
-sf probe
-load mmc 0:1 $kernel_addr_r u-boot-spl.bin.normal.out
-sf update $kernel_addr_r 0 $filesize
-load mmc 0:1 $kernel_addr_r u-boot.itb
-sf update $kernel_addr_r 0x100000 $filesize
-```
-更新 U-Boot 后，您可能需要重新启动并将环境重置为默认值。
-```
-env default -f -a
-env save
-```
