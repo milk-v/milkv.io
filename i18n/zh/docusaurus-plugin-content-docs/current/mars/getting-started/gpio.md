@@ -19,7 +19,7 @@ sidebar_position: 41
 |         |       | I2C_SCL  |         |    57     | GPIO57 |   <div className='green'>5</div>   |  <div className='black'>6</div>  | GND   | N/A  |         |       |
 |         |       |          |         |    55     | GPIO55 |   <div className='green'>7</div>   |  <div className='green'>8</div>  | GPIO5 | 5    |UART_TX  |       |
 |         |       |          |         |    N/A    | GND    |   <div className='black'>9</div>   |  <div className='green'>10</div> | GPIO6 | 6    |UART_RX  |       |
-|         |       |          |         |    42     | GPIO42 |   <div className='green'>11</div>  |  <div className='green'>12</div> | GPIO38| 38   |LCD_HSYNC|       |
+|         |       |          |         |    42     | GPIO42 |   <div className='green'>11</div>  |  <div className='green'>12</div> | GPIO38| 38   |         |LCD_HSYNC |   |
 |         |       |          |         |    43     | GPIO43 |   <div className='green'>13</div>  |  <div className='black'>14</div> | GND   | N/A  |         |       |
 |         |       |          |         |    47     | GPIO47 |   <div className='green'>15</div>  |  <div className='green'>16</div> | GPIO54| 54   |         |       |
 |         |       |          |         |    N/A    | +3.3V  |   <div className='orange'>17</div> |  <div className='green'>18</div> | GPIO51| 51   |         |       |

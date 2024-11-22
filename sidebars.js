@@ -264,7 +264,7 @@ const sidebars = {
         'mars/getting-started/hardware',
         'mars/getting-started/third-party-img',
         'mars/getting-started/gpio-usage',
-        'mars/getting-started/GPIO-full-multiplexin',
+        'mars/getting-started/gpio-full-multiplexing',
       ],
     },
     'mars/support-list',
