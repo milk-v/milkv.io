@@ -229,7 +229,7 @@
 }
 
 .video {
-    aspect-ratio: 1440/450;
+    aspect-ratio: 1440/760;
 }
 
 .support2>div,
@@ -242,21 +242,10 @@
     border-radius: 30px;
 }
 
-.video_8k {
-    width: 59.2%;
-}
-
 .video_8k>img {
     width: 80%;
     display: block;
     margin: 0 auto;
-}
-
-.video_support {
-    flex: 1;
-    background: url(/static/megrez/video-view2.webp) no-repeat;
-    background-size: 100%;
-    background-position: 50% 50%;
 }
 
 .storage,
@@ -363,6 +352,55 @@
     width: 90%;
     display: block;
     margin: 0 auto;
+}
+
+.new_video {
+    width: 54.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
+.new_video>div {
+    flex: 1;
+    background-color: black;
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.jcjh {
+    flex: 1;
+}
+
+.video_support {
+    background: url(/static/megrez/chart1.webp) no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+}
+
+.jcjh>img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.ad_new {
+    aspect-ratio: 144/80;
+}
+
+.ad_new>div {
+    background-color: #000;
+    border-radius: 30px;
+    flex: 1;
+}
+
+.chart2,
+.chart1 {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
 
 @media screen and (min-width: 1950px) {
@@ -481,7 +519,7 @@
     }
 
     .item_ul>li {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .gpu>img {
@@ -539,7 +577,36 @@
     }
 
     .video_8k>img {
-        margin: 100px auto;
+        margin: 0px auto;
+    }
+
+    .new_video {
+        gap: 20px;
+    }
+
+    .new_video>div {
+        padding: 50px;
+    }
+
+    .jcjh>img {
+        margin-top: 50px;
+    }
+
+    .ad_new>div {
+        padding: 50px;
+    }
+
+    .chart1 {
+        margin-top: 50px;
+    }
+
+    .chart2 {
+        margin-top: 30px;
+    }
+
+    .flex_center>img {
+        height: 35px;
+        margin-right: 10px;
     }
 }
 
@@ -659,7 +726,7 @@
     }
 
     .item_ul>li {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .gpu>img {
@@ -712,7 +779,36 @@
     }
 
     .video_8k>img {
-        margin: 80px auto;
+        margin: 0px auto;
+    }
+
+    .new_video {
+        gap: 20px;
+    }
+
+    .new_video>div {
+        padding: 30px;
+    }
+
+    .jcjh>img {
+        margin-top: 50px;
+    }
+
+    .ad_new>div {
+        padding: 30px;
+    }
+
+    .chart1 {
+        margin-top: 20px;
+    }
+
+    .chart2 {
+        margin-top: 10px;
+    }
+
+    .flex_center>img {
+        height: 35px;
+        margin-right: 10px;
     }
 }
 
@@ -895,7 +991,36 @@
     }
 
     .video_8k>img {
-        margin: 80px auto;
+        margin: 45px auto;
+    }
+
+    .new_video {
+        gap: 15px;
+    }
+
+    .new_video>div {
+        padding: 20px;
+    }
+
+    .jcjh>img {
+        margin-top: 50px;
+    }
+
+    .ad_new>div {
+        padding: 20px;
+    }
+
+    .chart1 {
+        margin-top: 20px;
+    }
+
+    .chart2 {
+        margin-top: 10px;
+    }
+
+    .flex_center>img {
+        height: 35px;
+        margin-right: 10px;
     }
 }
 
@@ -1080,7 +1205,36 @@
     }
 
     .video_8k>img {
-        margin: 50px auto;
+        margin: 0px auto;
+    }
+
+    .new_video {
+        gap: 15px;
+    }
+
+    .new_video>div {
+        padding: 20px;
+    }
+
+    .jcjh>img {
+        margin-top: 20px;
+    }
+
+    .ad_new>div {
+        padding: 20px;
+    }
+
+    .chart1 {
+        margin-top: 10px;
+    }
+
+    .chart2 {
+        margin-top: -10px;
+    }
+
+    .flex_center>img {
+        height: 25px;
+        margin-right: 10px;
     }
 }
 
@@ -1294,16 +1448,10 @@
         height: 200rem !important;
     }
 
-    .video_support {
-        width: 100%;
-        height: 280rem !important;
-        background-size: cover !important;
-        flex: auto;
-    }
-
     .video_8k {
         width: 100%;
-        height: 230rem !important;
+        padding: 20rem !important;
+        height: 240rem !important;
     }
 
     .support>div {
@@ -1329,5 +1477,41 @@
     .support2>div {
         flex: auto;
         height: 300rem;
+    }
+
+    .new_video {
+        flex-direction: column;
+    }
+
+    .new_video {
+        gap: 15rem;
+        width: 100% !important;
+        padding: 10rem;
+        height: 460rem;
+    }
+
+    .new_video>div {
+        padding: 20rem !important;
+    }
+
+    .jcjh>img {
+        margin-top: 20rem;
+    }
+
+    .ad_new>div {
+        padding: 20rem;
+    }
+
+    .chart1 {
+        margin-top: 10rem;
+    }
+
+    .chart2 {
+        margin-top: -10rem;
+    }
+
+    .flex_center>img {
+        height: 25rem;
+        margin-right: 10rem;
     }
 }

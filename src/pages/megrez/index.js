@@ -76,19 +76,48 @@ export default () => {
                     </div>
                 </div>
                 <div className={styles.video}>
-                    <div className={styles.video_8k}>
-                        <p className={clsx(styles.item_title)}>Support 8K Multi-channel Video Processing</p>
-                        <ul className={styles.item_ul}>
-                            <li>Support HEVC (H.265) and AVC (H.264) encoding and decoding</li>
-                            <li>H.265 up to 8K@50fps or 32-channel 1080P@30fps video decoding</li>
-                            <li>H.265 up to 8K@25fps or 13-channel 1080P@30fps video encoding</li>
-                        </ul>
-                        <img src="/megrez/video-view.webp" alt="Support 8K Multi-channel Video Processing" />
+                    <div className={styles.new_video}>
+                        <div className={styles.video_8k}>
+                            <p className={clsx(styles.item_title)}>Support 8K Multi-channel Video Processing</p>
+                            <ul className={styles.item_ul}>
+                                <li>Support HEVC (H.265) and AVC (H.264) encoding and decoding</li>
+                                <li>H.265 up to 8K@50fps or 32-channel 1080P@30fps video decoding</li>
+                                <li>H.265 up to 8K@25fps or 13-channel 1080P@30fps video encoding</li>
+                            </ul>
+                            <img src="/megrez/video-view.webp" alt="Support 8K Multi-channel Video Processing" />
+                        </div>
+                        <div className={styles.video_support}>
+                            <p className={clsx(styles.item_title)}>28% CPU Frequency Boost Exclusively
+                                on Milk-V Megrez</p>
+                        </div>
                     </div>
-                    <div className={styles.video_support}>
-                        <p className={clsx(styles.item_title)}>Multiple OS Support</p>
+                    <div className={styles.jcjh}>
+                        <p className={clsx(styles.item_title, styles.flex_center)}>
+                            <img src="/megrez/jcjh.svg" />
+                            Support 8K Multi-channel Video Processing</p>
+                        <ul className={styles.item_ul}>
+                            <li>With the robust ecosystem support of the Jiachen Project, everything you need—from distributions to software packages—is at your fingertips.</li>
+                        </ul>
+                        <img src="/megrez/video-view2.webp" alt=" Support 8K Multi-channel Video Processing" />
                     </div>
                 </div>
+                <div className={styles.ad_new}>
+                    <div>
+                        <p className={clsx(styles.item_title)}>This Time, We've Gone All Out</p>
+                        <ul className={styles.item_ul}>
+                            <li>Single-Core/Multi-Core Performance Sees a Leap Forward Compared to SiFive Unmatched</li>
+                        </ul>
+                        <img src="/megrez/all-ai.webp" alt="This Time, We've Gone All Out" className={styles.chart1} />
+                    </div>
+                    <div>
+                        <p className={clsx(styles.item_title)}>Hypervisor, the King of Virtualization</p>
+                        <ul className={styles.item_ul}>
+                            <li>The RISC-V Hypervisor (H) extension is a set of Instruction Set Architecture (ISA) extensions designed to enable virtualization. By introducing new instructions and processor modes, it allows RISC-V hardware to natively support hypervisors running multiple Virtual Machines (VMs).</li>
+                        </ul>
+                        <img src="/megrez/chart2.webp" alt="Hypervisor, the King of Virtualization" className={styles.chart2} />
+                    </div>
+                </div>
+
                 <div className={styles.ai}>
                     <p className={clsx(styles.item_title, styles.item_center)}>Powerful AI Tool Chain</p>
                     <p className={clsx(styles.item_mint, styles.item_center)}>Supports software development frameworks such as PyTorch, TensorFlow, PaddlePaddle, ONNX, etc., and high-precision LLMs</p>
