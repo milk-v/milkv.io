@@ -263,6 +263,8 @@ const sidebars = {
         'mars/getting-started/images',
         'mars/getting-started/hardware',
         'mars/getting-started/third-party-img',
+        'mars/getting-started/gpio-usage',
+        'mars/getting-started/GPIO-full-multiplexin',
       ],
     },
     'mars/support-list',
