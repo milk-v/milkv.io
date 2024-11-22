@@ -36,6 +36,8 @@ sidebar_position: 41
 |         |       |          |         |    N/A    |GND     |   <div className='green'>39</div>  |  <div className='green'>40</div> |GPIO44 | 44   |         |       |       |      |
 </div>
 
+如果需要引脚复用，可参考：https://milkv.io/zh/docs/mars/getting-started/gpio_full_multiplexing
+
 ## 配置GPIO
 
 1. 执行以下操作配置GPIO：
