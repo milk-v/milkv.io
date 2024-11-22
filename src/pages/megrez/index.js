@@ -37,7 +37,7 @@ export default () => {
                         <ol>
                             <li>
                                 <p>up to 1.8GHz</p>
-                                <p className={styles.chip_text}>Quad Core SiFive P550<br />(RV64GBC)</p>
+                                <p className={styles.chip_text}>Quad Core SiFive P550<br />(RV64GBCH)</p>
                             </li>
                             <li>
                                 <p>Up to<br /> 19.95 TOPS@INT8</p>
@@ -48,7 +48,7 @@ export default () => {
                     <div className={styles.chip2}>
                         <p className={clsx(styles.item_title)}>SiFive P550 From SiFive Performance™</p>
                         <ul>
-                            <li>RISC-V RV64GBC CPU, up to <font>1.8GHz</font></li>
+                            <li>RISC-V RV64GBCH CPU, up to <font>1.8GHz</font></li>
                         </ul>
                         <ol>
                             <li>L1 Cache: 32KB (I) + 32KB (D) private</li>
@@ -164,7 +164,7 @@ export default () => {
                         <tr>
                             <td>CPU</td>
                             <td>
-                                <p>4-Core SIFIVE P550(RISC-V RV64GBC)@1.8GHz</p>
+                                <p>4-Core SIFIVE P550(RISC-V RV64GBCH)@1.8GHz</p>
                             </td>
                         </tr>
                         <tr>
