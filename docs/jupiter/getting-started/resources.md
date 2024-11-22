@@ -79,7 +79,7 @@ The default password for the `root` account in the Bianbu system is `milkv`.
 
 ### Fedora 41 (by [Fedora-V Force](https://github.com/fedora-riscv))
 
-Download link: [https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/](https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/)
+Download link: [https://images.fedoravforce.com/Jupiter](https://images.fedoravforce.com/Jupiter)
 
 The default password for the `root` account is `riscv`.
 
