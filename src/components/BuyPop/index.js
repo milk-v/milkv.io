@@ -74,9 +74,8 @@ export default (props) => {
             arace_url: 'https://arace.tech/products/milk-v-jupiter-spacemit-m1-k1-octa-core-rva22-rvv1-0-risc-v-soc-2tops-miniitx',
         },
         'megrez': {
-            taobao_url: 'https://milkv.taobao.com/',
-            jd_url: 'https://item.jd.com/10108225846745.html',
-            arace_url: 'https://arace.tech/products/milk-v-jupiter-spacemit-m1-k1-octa-core-rva22-rvv1-0-risc-v-soc-2tops-miniitx',
+            jd_url: 'https://ic-item.jd.com/10126518696856.html#crumb-wrap',
+            arace_url: 'https://arace.tech/products/milk-v-megrez',
         },
     }
 

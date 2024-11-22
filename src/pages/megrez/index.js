@@ -94,11 +94,11 @@ export default () => {
                     <div className={styles.jcjh}>
                         <p className={clsx(styles.item_title, styles.flex_center)}>
                             <img src="/megrez/jcjh.svg" />
-                            Support 8K Multi-channel Video Processing</p>
+                            Comprehensive Support from the "Jiachen Project"</p>
                         <ul className={styles.item_ul}>
                             <li>With the robust ecosystem support of the Jiachen Project, everything you need—from distributions to software packages—is at your fingertips.</li>
                         </ul>
-                        <img src="/megrez/video-view2.webp" alt=" Support 8K Multi-channel Video Processing" />
+                        <img src="/megrez/video-view2.webp" alt=" Comprehensive Support from the 'Jiachen Project'" />
                     </div>
                 </div>
                 <div className={styles.ad_new}>
