@@ -5,7 +5,9 @@ sidebar_position: 40
 
 # Expand root partition
 
-## Check current disk usage
+## Extended root partition for SD card boot mode
+
+### Check current disk usage
 
 Run command ` df - h ` to view current disk partitions and usage.
 
@@ -35,7 +37,7 @@ Partition table type: DOS (MBR)
 The root partition we want to expand is /dev/mmcblk0p3. Remember the starting sector 266241 of this partition.
 
 Note: /dev/mmcblk0p1 is the boot partition, do not change it.
-## Use fdisk to expand the root partition
+### Use fdisk to expand the root partition
 
 1. Run the command `fdisk /dev/mmcblk0` to start fdisk.
 ```
@@ -124,7 +126,7 @@ tmpfs 159M 36K 159M 1% /run
 ```
 Root partition (/dev/root): 30G, 178M used, 28G remaining.
 
-## Create an extended root partition script
+### Create an extended root partition script
 
 The content is as follows:
 

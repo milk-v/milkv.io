@@ -5,7 +5,9 @@ sidebar_position: 40
 
 # 拓展根分区
 
-## 检查当前磁盘使用情况
+## SD卡启动方式的拓展根分区
+
+### 检查当前磁盘使用情况
 
 运行命令` df- h `查看当前磁盘分区和使用情况。
 
@@ -46,7 +48,7 @@ Device         Boot  Start     End Sectors  Size Id Type
 我们要扩展的根分区就是 /dev/mmcblk0p3 ，要记住此分区的起始扇区 266241 。
 
 注意：/dev/mmcblk0p1 是 boot 分区，不要动。
-## 使用 fdisk 扩展根分区
+### 使用 fdisk 扩展根分区
 
 1. 运行命令 `fdisk /dev/mmcblk0` 启动 fdisk 。
 ```
@@ -149,7 +151,7 @@ tmpfs           159M   36K  159M   1% /run
 ```
 根分区 (/dev/root)：30G，已用178M，剩余28G。
 
-## 创建扩展根分区脚本
+### 创建扩展根分区脚本
 
 内容如下：
 
