@@ -36,6 +36,8 @@ sidebar_position: 41
 |         |       |          |         |    N/A    |GND     |   <div className='green'>39</div>  |  <div className='green'>40</div> |GPIO44 | 44   |         |       |       |      |
 </div>
 
+If pin multiplexing is required, please refer to: https://milkv.io/zh/docs/mars/getting-started/gpio_full_multiplexing
+
 ## Configure GPIO
 
 1. Perform the following operations to configure GPIO:
