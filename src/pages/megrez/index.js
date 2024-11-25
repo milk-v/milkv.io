@@ -250,7 +250,7 @@ export default () => {
                         <tr>
                             <td>Wireless</td>
                             <td>
-                                <p>1x M.2 E Key for Wireless Module</p>
+                                <p>1x M.2 E Key for Wireless Module (sdio+uart)</p>
                             </td>
                         </tr>
                         <tr>
