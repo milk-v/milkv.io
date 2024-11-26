@@ -726,7 +726,7 @@
     "description": "mars info"
   },
   "mars.page.info10": {
-    "message": "Raspberry pi 3Bケースに対応",
+    "message": "Raspberry Pi 3Bケースに対応",
     "description": "mars info"
   },
   "mars.tech.info": {
@@ -958,39 +958,39 @@
     "description": "cv1800b"
   },
   "homepage.corporations.Documentstitle": {
-    "message": "Milk-V Documents",
+    "message": "Milk-Vドキュメント",
     "description": "homepage documents"
   },
   "homepage.corporations.Documentswords": {
-    "message": "View our documentation for technical support",
+    "message": "テクニカルサポートのために私達のドキュメントを見る",
     "description": "homepage documents"
   },
   "homepage.corporations.CommunityBotton": {
-    "message": "Milk-V Community",
+    "message": "Milk-Vコミュニティ",
     "description": "Milk-V Community booton"
   },
   "homepage.corporations.WhyRVBotton": {
-    "message": "Why RISC-V ?",
+    "message": "RISC-Vを選ぶ理由",
     "description": "Why RISC-V ? booton"
   },
   "homepage.corporations.duo": {
-    "message": "Dual cores up to 1GHz (optional RISC-V / ARM), up to 256MB of memory, and a 1TOPS@INT8 TPU. Capable of running both Linux and RTOS simultaneously, with rich I/O interfaces.",
+    "message": "最大1GHzのデュアルコア(RISC-V/ARM切り替え可)、最大256MBのメモリ、1TOPS@INT8のNPUを搭載。豊富なインターフェースでLinuxとRTOSを同時に実行可能です。",
     "description": "duo description"
   },
   "homepage.corporations.duolearnmore": {
-    "message": "Learn more",
+    "message": "もっと見る",
     "description": "duo Learn more"
   },
   "homepage.corporations.duobuynow": {
-    "message": "Buy Now",
+    "message": "購入",
     "description": "duo buy"
   },
   "homepage.corporations.pioneer": {
-    "message": "Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard mATX form factor. It is the first choice for RISC-V developers and hardware pioneers to experience the cutting edge technology of RISC-V.",
+    "message": "Milk-V Pioneerは、標準的なmATXフォームファクターでSOPHON SG2042をベースにした開発者向けマザーボードです。RISC-V開発者やハードウェアパイオニアがRISC-Vの最先端技術を体験するための第一選択です。",
     "description": "pioneer description"
   },
   "homepage.corporations.pioneerlearnmore": {
-    "message": "Learn more",
+    "message": "もっと見る",
     "description": "pioneer Learn more"
   },
   "homepage.corporations.pioneerbuynow": {
@@ -998,79 +998,79 @@
     "description": "pioneer buy"
   },
   "homepage.corporations.marscm": {
-    "message": "The Mars Compute Module is a System on Module (SoM) based on a the StarFive JH7110 System on Chip (SoC). ",
+    "message": "MarsコンピュートモジュールはStarFive JH7110 SoCを基に作られたSoMです。",
     "description": "mars cm"
   },
   "homepage.corporations.mars": {
-    "message": "Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. An RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO. ",
+    "message": "Milk-V Marsは、クレジットカードサイズの高性能RISC-Vシングルボードコンピュータ（SBC）で、StarFive JH7110を基に作られています。PoE（Power over Ethernet）をサポートするRJ45イーサネットポートや、WIFI/BTモジュール用のM.2 E-Keyスロットが備わっています。また、4レーンのMIPI CSIと2レーンのMIPI CSI、さらに40ピンのGPIOも搭載しています。 ",
     "description": "mars"
   },
   "homepage.corporations.marslearnmore": {
-    "message": "Learn more",
+    "message": "もっと見る",
     "description": "mars Learn more"
   },
   "homepage.corporations.marsbuynow": {
-    "message": "Buy Now",
+    "message": "購入",
     "description": "mars buy now"
   },
   "homepage.corporations.meles": {
-    "message": "Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH1520. It is powered by a Quad Core RISC-V 64GCV C910, capable of running up to 1.85GHz. This SBC is packed with rich interfaces and boasts powerful computing and AI capabilities, making it an ideal RISC-V intelligent hardware platform for hobbyists, makers, engineers, teachers, and students.",
+    "message": "Milk-V Melesは、TH1520を基にしたクレジットカードサイズのシングルボードコンピュータ（SBC）です。クアッドコアのRISC-V 64GCV C910を搭載し、最大1.85GHzで動作します。このSBCは豊富なインターフェースを備え、強力な計算能力とAI機能を誇り、愛好家、メイカー、エンジニア、教師、学生にとって理想的なRISC-Vインテリジェントハードウェアプラットフォームです。",
     "description": "meles "
   },
   "homepage.corporations.melesbuynow": {
-    "message": "Buy Now",
+    "message": "購入",
     "description": "meles buy"
   },
   "homepage.corporations.meleslearnmore": {
-    "message": "Learn more",
+    "message": "もっと見る",
     "description": "meles learn more"
   },
   "homepage.corporations.vega": {
-    "message": "Milk-V Vega is a compact and low-density box-style open-source 10 Gigabit network switch developed by Milk-V for the next generation of network architecture. It serves as a unified platform for various services such as broadband, voice, video, and surveillance.",
+    "message": "Milk-V Vegaは、次世代のネットワークアーキテクチャのためにMilk-Vが開発したコンパクトで低密度のボックス型オープンソース10ギガビットネットワークスイッチです。ブロードバンド、音声、ビデオ、監視などのさまざまなサービスを統合するプラットフォームとして機能します。",
     "description": "vega "
   },
   "homepage.corporations.vegabuynow": {
-    "message": "Buy Now",
+    "message": "購入",
     "description": "vega buy"
   },
   "homepage.corporations.vegalearnmore": {
-    "message": "Learn more",
+    "message": "もっと見る",
     "description": "vega learn more"
   },
   "homepage.corporations.docslearnmore": {
-    "message": "Learn more",
+    "message": "もっと見る",
     "description": "docs learn more"
   },
   "homepage.corporations.joinus": {
-    "message": "Join Us to Share More",
+    "message": "参加してシェアしよう",
     "description": "Join Us to Share More"
   },
   "homepage.corporations.emailtitle_1": {
-    "message": "Having questions?",
+    "message": "質問がありますか？",
     "description": "Having questions?"
   },
   "homepage.corporations.emailtitle_2": {
-    "message": "Get in touch with us to resolve!",
+    "message": "ご連絡ください。",
     "description": "Get in touch with us to resolve!"
   },
   "homepage.corporations.salesdepartment": {
-    "message": "Sales Department",
+    "message": "セールス部門",
     "description": "Sales Department"
   },
   "homepage.corporations.devdepartment": {
-    "message": "Development Department",
+    "message": "開発部門",
     "description": "Development Department"
   },
   "homepage.corporations.customerdepartment": {
-    "message": "Customer Support Department",
+    "message": "カスタマーサポート部門",
     "description": "Customer Support Department"
   },
   "homepage.corporations.emailto": {
-    "message": "This e-mail is to",
+    "message": "宛先",
     "description": "This e-mail is to"
   },
   "homepage.corporations.emailmessage": {
-    "message": "Message",
+    "message": "本文",
     "description": "main message"
   },
   "homepage.corporations.companyname": {
@@ -1086,11 +1086,11 @@
     "description": "footer company address"
   },
   "Send": {
-    "message": "Send",
+    "message": "送信",
     "description": "Send"
   },
   "Embracing": {
-    "message": "Milk-VでRISC-Vをつくる",
+    "message": "Milk-VでRISC-Vを迎え入れる",
     "description": " "
   },
   "overview": {
@@ -1126,7 +1126,7 @@
     "description": " "
   },
   "ChoosingUs.item3.title": {
-    "message": "あんしんのアフターサポート",
+    "message": "安心のアフターサポート",
     "description": " "
   },
   "ChoosingUs.item1.info": {
@@ -1146,7 +1146,7 @@
     "description": " "
   },
   "Startingfrom": {
-    "message": "ここから始める",
+    "message": "開始価格",
     "description": " "
   },
   "manykernels": {
@@ -1154,7 +1154,7 @@
     "description": " "
   },
   "large": {
-    "message": "ほかよりももっとパワフル。",
+    "message": "もっとパワフル。",
     "description": " "
   },
   "DualCore": {
@@ -1182,7 +1182,7 @@
     "description": " "
   },
   "Interfaces": {
-    "message": "インターフェイスはRaspberry pi互換",
+    "message": "インターフェイスはRaspberry Pi互換",
     "description": " "
   },
   "AUDIO": {
