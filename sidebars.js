@@ -56,6 +56,7 @@ const sidebars = {
             'duo/application-development/tdl-sdk/tdl-sdk-face-detection',
             'duo/application-development/tdl-sdk/tdl-sdk-yolov5',
             'duo/application-development/tdl-sdk/tdl-sdk-yolov8',
+            'duo/application-development/tdl-sdk/tdl-sdk-yolo11',
           ],
         },
         {
