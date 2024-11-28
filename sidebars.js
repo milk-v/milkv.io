@@ -489,6 +489,7 @@ const sidebars = {
       items: [
         'jupiter/build-os/buildroot',
         'jupiter/build-os/bianbu',
+        'jupiter/build-os/bianbu2.0',
         'jupiter/build-os/ubuntu',
       ],
     },
