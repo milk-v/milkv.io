@@ -190,6 +190,78 @@ U-Boot 2021.10 (Aug 31 2023 - 12:55:45 +0800), Build: jenkins-github_visionfive2
 ```
 ## Flash the new version of U-Boot
 
+### Download Bootloader Firmware
+
+[Bootloader Firmware](https://github.com/milkv-mars/mars-buildroot-sdk/releases)
+
+```
+SPL: mars_u-boot-spl.bin.normal.out
+U-Boot: mars_visionfive2_fw_payload.img
+```
+
+### SD Card Partition
+
+The following takes /dev/sdc as an example:
+
+Run the command `sudo fdisk /dev/sdc` to start fdisk.
+```
+milkv@milkv-desktop:~$ sudo fdisk /dev/sdc
+
+Welcome to fdisk (util-linux 2.37.2).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Command (m for help):
+```
+Enter `n` as prompted to create a new partition.
+```
+Command (m for help): n
+Partition number (1-128, default 1):
+First sector (34-122131422, default 2048):
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-122131422, default 122131422):
+Created a new partition 1 of type 'Linux filesystem' and of size 58.2 GiB.
+```
+Enter as prompted, or press enter directly.
+
+Note: If Do you want to remove the signature? [Y]es/[N]o appears, select N.
+
+After creation, enter `w` to save and exit.
+
+Enter the command `sudo mkfs.vfat -I /dev/sdc1` to format the partition as FAT32.
+
+Run the command `lsdlk -f ` to check whether the formatting is successful.
+
+```
+milkv@milkv-desktop:~$ sudo mkfs.vfat -I /dev/sdc1
+mkfs.fat 4.2 (2021-01-31)
+milkv@milkv-desktop:~$ lsblk -f
+NAME FSTYPE FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+loop0
+     squash 4.0                                                    0   100% /snap/bare/5
+loop1
+     squash 4.0                                                    0   100% /snap/core18/2846
+loop2
+     squash 4.0                                                    0   100% /snap/core20/2379
+
+...
+
+sda                                                                         
+sdc                                                                         
+└─sdc1
+     vfat   FAT32       6A8E-8C2A                                           
+nvme0n1
+│                                                                           
+├─nvme0n1p1
+│    vfat   FAT32       0BA1-44C9                             504.9M     1% /boot/efi
+└─nvme0n1p2
+     ext4   1.0         1ad0a4fe-c1e1-4dbe-a6cb-8488144bd6b7     49G    84% /var/snap/firefox/common/host-hunspell
+                                                                            /
+```
+Run the command `sudo mount /dev/sdc1 /mnt` to mount it to the /mnt directory. You can decide which directory to mount to based on the actual situation.
+
+Copy the downloaded `mars_u-boot-spl.bin.normal.out` and `mars_visionfive2_fw_payload.img` to the mnt directory.
+
+### Refresh u-boot
 Assuming your new U-Boot version is on the 1st partition of the SD card, you can install it to the SPI flash using the following commands
 ```
 sf probe
