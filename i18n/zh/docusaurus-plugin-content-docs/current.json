@@ -51,6 +51,10 @@
     "message": "📷 摄像头",
     "description": "The label for category 📷 Camera in sidebar duo"
   },
+  "sidebar.duo.category.📺 Accessories": {
+    "message": "📺 配件开发指南",
+    "description": "The label for category 📺 Accessories in sidebar duo"
+  },
   "sidebar.duo.link.🏠 Home": {
     "message": "🏠 首页",
     "description": "The label for link 🏠 Home in sidebar duo, linking to /docs"

@@ -149,7 +149,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: 'Accessories',
+      label: '📺 Accessories',
       collapsed: false,
       link: {
         type: 'doc',
