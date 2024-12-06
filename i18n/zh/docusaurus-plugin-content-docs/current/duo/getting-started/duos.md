@@ -120,37 +120,6 @@ Milk-V 是 SG2000 芯片的全球授权经销商。您可以直接从我们的�
 
 </div>
 
-### Duos GPIO 引脚控制
-
-1. 执行以下操作配置 GPIO：
-
-以 GPIO466 为例，序号是[J3排列](https://milkv.io/zh/docs/duo/getting-started/duos#%E6%8E%92%E9%92%88-j3)的 NUM 一列。
-
-```
-$ cd /sys/class/gpio
-
-$ echo 466 > export
-```
-可以运行命令 ls /sys/class/gpio，列出 GPIO 目录，检查是否出现 gpio466，确认导出成功。
-
-运行命令 `echo 466 > unexport`，可以取消 gpio466 引脚的导出。
-
-2. 设置 GPIO 的方向
-
-运行命令 `echo "out" > gpio466/direction`，将 gpio466 方向设置为输出。
-
-运行命令 `echo "in" > gpio466/direction`，将 gpio466 方向设置为输入。
-
-可以通过运行命令 `cat gpio466/direction `，来查看设置的方向。
-
-3. 设置 GPIO 的电平
-
-运行命令 `echo "1" > gpio466/value`，将 gpio466 的电平设置为高。
-
-运行命令 `echo "0" > gpio466/value`，将 gpio466 的电平设置为低。
-
-可以通过运行命令 `cat gpio466/value `，来查看设置的电平。
-
 ### 摄像头接口
 
 DuoS 有两个 CSI 摄像头接连器：
