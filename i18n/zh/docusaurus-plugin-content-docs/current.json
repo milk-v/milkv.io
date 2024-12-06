@@ -27,10 +27,6 @@
     "message": "TPU",
     "description": "The label for category TPU in sidebar duo"
   },
-  "sidebar.duo.category.Sensor Demo": {
-    "message": "传感器示例",
-    "description": "The label for category Sensor Demo in sidebar duo"
-  },
   "sidebar.duo.category.🛠️ Low-level Development": {
     "message": "🛠️ 底层开发",
     "description": "The label for category 🛠️ Low-level Development in sidebar duo"

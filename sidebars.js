@@ -81,19 +81,6 @@ const sidebars = {
             'duo/application-development/tpu/tpu-resnet18',
           ],
         },
-        {
-          type: "category",
-          label: 'Sensor Demo',
-          collapsed: false,
-          link: {
-            title: 'Sensor Demo',
-            description: ' ',
-          },
-          items: [
-            'duo/application-development/sensor-demo/dht22',
-            'duo/application-development/sensor-demo/df9gms180',
-          ],
-        },
       ],
     },
     {
@@ -172,6 +159,8 @@ const sidebars = {
         'duo/Accessories/ST7789',
         'duo/Accessories/Pico-ePaper-2.13',
         'duo/Accessories/Pico-8SEG-LED',
+        'duo/Accessories/dht22',
+        'duo/Accessories/df9gms180',
       ],
     },
     {
