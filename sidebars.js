@@ -21,6 +21,7 @@ const sidebars = {
         'duo/getting-started/duo256m',
         'duo/getting-started/duos',
         'duo/getting-started/duo-module-01',
+        'duo/getting-started/GPIO-pin-control',
         'duo/getting-started/boot',
         'duo/getting-started/setup',
         'duo/getting-started/buildroot-sdk',

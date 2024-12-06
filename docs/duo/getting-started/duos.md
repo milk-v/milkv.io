@@ -119,37 +119,6 @@ GPIO on `Header J4` use 1.8V logic levels.
 
 </div>
 
-### Duos GPIO pin control
-
-1. Perform the following operations to configure GPIO:
-
-Take GPIO466 as an example. The serial number is the NUM column of [J3 arrangement](https://milkv.io/zh/docs/duo/getting-started/duos#%E6%8E%92%E9%92%88-j3).
-
-```
-$ cd /sys/class/gpio
-
-$ echo 466 > export
-```
-You can run the command ls /sys/class/gpio to list the GPIO directory and check whether gpio466 appears to confirm that the export is successful.
-
-Run the command `echo 466 > unexport` to cancel the export of the gpio466 pin.
-
-2. Set the direction of GPIO
-
-Run the command `echo "out" > gpio466/direction` to set the gpio466 direction to output.
-
-Run the command `echo "in" > gpio466/direction` to set the gpio466 direction to input.
-
-You can check the set direction by running the command `cat gpio466/direction`.
-
-3. Set the GPIO level
-
-Run the command `echo "1" > gpio466/value` to set the level of gpio466 to high.
-
-Run the command `echo "0" > gpio466/value` to set the level of gpio466 to low.
-
-You can check the set level by running the command `cat gpio466/value`.
-
 ### Camera interface
 
 DuoS has two CSI camera connectors:
