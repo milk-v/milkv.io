@@ -7,12 +7,14 @@ sidebar_position: 40
 
 Duo 默认的 SDK 是基于 buildroot 构建的，用来生成 Duo 的固件，SDK 主要包含如下几个部分:
 
+## Buildroot SDK V1
+
 - u-boot: 2021.10
 - linux kernel: 5.10.4
 - buildroot: 2021.05
 - opensbi: 89182b2
 
-源码地址: [github](https://github.com/milkv-duo/duo-buildroot-sdk)
+源码地址: [https://github.com/milkv-duo/duo-buildroot-sdk](https://github.com/milkv-duo/duo-buildroot-sdk)
 
 SDK目录结构
 
@@ -34,10 +36,14 @@ SDK目录结构
 ```
 
 :::tip
-当前 SDK 不支持 Duo256M 和 DuoS 的 ARM 核，如果需要使用 ARM 核，可以暂时参考这个仓库：
-
-duo-build: [https://github.com/milkv-duo/duo-buildroot-sdk-v2](https://github.com/milkv-duo/duo-buildroot-sdk-v2)
+V1 版本 SDK 不支持 Duo256M 和 DuoS 的 ARM 核，如果需要使用 ARM 核，请使用 V2 版本的SDK。
 :::
+
+## Buildroot SDK V2
+
+V2 版本 SDK 加入了对 Duo256M 和 DuoS 的 ARM 核的支持，编译方法与 V1 版本 SDK 基本一致。
+
+源码地址: [https://github.com/milkv-duo/duo-buildroot-sdk-v2](https://github.com/milkv-duo/duo-buildroot-sdk-v2)
 
 # 编译镜像
 
