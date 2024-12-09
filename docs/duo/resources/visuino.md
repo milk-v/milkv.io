@@ -7,11 +7,11 @@ sidebar_position: 99
 
 Visuino is a visual programming environment designed for Arduino and other microcontroller boards. It allows users to create projects without needing to write code manually. Instead, you can use a drag-and-drop interface to connect components and set up your project visually. Visuino then generates the necessary code for you.
 
-![Animation](https://visuino.com/wp-content/uploads/revslider/mainslide-ad-11/Visuino-program-Main-slide3.gif)
+<Image src='/docs/duo/visuino/Visuino-program-Main-slide3.gif' maxWidth='100%' align='left' />
 
 Milk-V Duo series now supports Arduino development and automaticly will accept ``Visuino``. You can directly use the Visuino IDE and, after a simple configuration, start using it.
 
-![NEWS](https://i.ibb.co/0FK3L6R/inst-visuino-6.png)
+<Image src='/docs/duo/visuino/inst-visuino-6.webp' maxWidth='100%' align='left' />
 
 The Duo series CPU adopts a big-little core design, where the Visuino firmware runs on the little core, while the big core is responsible for communication with the Visuino IDE. It receives the Visuino firmware and loads it onto the little core for execution. At the same time, the Linux system in the big core also operates normally.
 
@@ -27,14 +27,15 @@ Visuino IDE supports runs on Windows. Go to [Visuino official website](https://w
 
 Open Visuino IDE, select ``Board Type filter`` in the ``Select Board`` of ``Arduino Uno R3 template``, and type Milk V Duo 256M in the  ``Filter``
 
-![Select](https://i.ibb.co/fv4xfGB/inst-visuino-1.png)
+<Image src='/docs/duo/visuino/inst-visuino-1.webp' maxWidth='100%' align='left' />
 
 After configuring, select ``Power Button icon`` and a box will open, then click in  in the ``Gear Icon``, then the project will be compiled.
 
-![Compile](https://i.ibb.co/grXfYR6/inst-visuino-2.png)
+<Image src='/docs/duo/visuino/inst-visuino-2.webp' maxWidth='100%' align='left' />
+
 See the compiling
 
-![Compiling](https://i.ibb.co/MGRGk05/inst-visuino-4.png)
+<Image src='/docs/duo/visuino/inst-visuino-4.webp' maxWidth='100%' align='left' />
 
 Now you can do a VISUINO project and test.
 
@@ -65,11 +66,11 @@ At this time, there will be an additional serial device in the ``Port`` of the `
 
 On upper right size, search for the ``Pulse`` component and drag it to into the IDE, connect the ``Out`` of Pulse in the ``LED input`` of ``Milk V Duo 256M``,  this project of this program is to blink the onboard LED of the Milk V Duo 256 device. In Duo It is also supported. You may need to install ```pyserial``` in order to upload, and then let’s just click the ``Upload`` button to test.
 
-![Flash](https://i.ibb.co/zG5ssSN/inst-visuino-3.png)
+<Image src='/docs/duo/visuino/inst-visuino-3.webp' maxWidth='100%' align='left' />
 
 Upload it
 
-![Upload](https://i.ibb.co/s6CS7yz/inst-visuino-5.png)
+<Image src='/docs/duo/visuino/inst-visuino-5.webp' maxWidth='100%' align='left' />
 
 At this time, you can see the LED on the Duo board blinking at intervals of 1 second.
 
@@ -80,7 +81,8 @@ If you cannot download the firmware to the Duo, please check whether ```pyserial
 
 If you still cannot upload code to the Duo after installing ```pyserial```, please check whether ```serial``` is installed on your computer. Installing both ```pyserial``` and ```serial``` at the same time may cause the firmware to fail to download. Please run ```pip uninstall serial``` to uninstall ```serial```.
 :::
-# Visuino Web Page
+
+## Visuino Web Page
 
 [VISUINO](https://www.visuino.com/)
 Contact
