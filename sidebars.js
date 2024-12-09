@@ -163,18 +163,6 @@ const sidebars = {
         'duo/Accessories/df9gms180',
       ],
     },
-    {
-      type: "category",
-      label: 'FAQ',
-      collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'duo/FAQ/extended-root-partition',
-      },
-      items: [
-        'duo/FAQ/extended-root-partition',
-      ],
-    },
   ],
   pioneer: [
     {
