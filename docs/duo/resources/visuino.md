@@ -44,9 +44,7 @@ Now you can do a VISUINO project and test.
 Currently, Duo's SD card system needs to burn firmware that supports Arduino. Please download the firmware with the prefix `arduino` from [Latest Release](https://github.com/milkv-duo/duo-buildroot-sdk/releases) firmware.
 
 :::tip
-The latest available Arduino firmware version is [Duo-V1.1.2](https://github.com/milkv-duo/duo-buildroot-sdk/releases/tag/Duo-V1.1.2).
-
-DuoS does not currently provide a ready-to-use Arduino version of the firmware. Please go to [Buildroot SDK](https://milkv.io/zh/docs/duo/getting-started/buildroot-sdk) , clone it and switch to the arduino branch to compile.
+The latest available Arduino firmware version is [v1.1.4](https://github.com/milkv-duo/duo-buildroot-sdk/releases/).
 :::
 
 Refer to [Boot the Duo](https://milkv.io/docs/duo/getting-started/boot) to install the system.
