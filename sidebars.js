@@ -109,13 +109,14 @@ const sidebars = {
       },
       items: [
         'duo/resources/image-sdk',
-        'duo/resources/mainline',
+        'duo/resources/third-party-img',
         'duo/resources/mmf',
+        'duo/resources/mainline',
+        'duo/resources/upstream-status',
         'duo/resources/opencv-mobile',
         'duo/resources/xyzdims',
         'duo/resources/spilvgl',
-        'duo/resources/third-party-img',
-        'duo/resources/upstream-status',
+        'duo/resources/visuino',
       ],
     },
     {

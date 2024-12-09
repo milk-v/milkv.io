@@ -11,6 +11,8 @@ Milk-V Duo series now supports Arduino development. You can directly use the Ard
 
 The Duo series CPU adopts a big-little core design, where the Arduino firmware runs on the little core, while the big core is responsible for communication with the Arduino IDE. It receives the Arduino firmware and loads it onto the little core for execution. At the same time, the Linux system in the big core also operates normally.
 
+In addition, the Duo series board already supports the visual programming software VISUINO. For related content, please refer to this chapter: [VISUINO](https://milkv.io/docs/duo/resources/visuino).
+
 ## 1. Development Environment Setup
 
 ### Install Arduino IDE
