@@ -44,6 +44,7 @@ const sidebars = {
         'duo/application-development/pinmux',
         'duo/application-development/wiringx',
         'duo/application-development/pinpong',
+        'duo/application-development/gpio-sysfs',
         {
           type: "category",
           label: 'TDL SDK',
