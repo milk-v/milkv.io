@@ -24,7 +24,6 @@ const sidebars = {
         'duo/getting-started/boot',
         'duo/getting-started/setup',
         'duo/getting-started/buildroot-sdk',
-        'duo/getting-started/GPIO-pin-control',
         'duo/getting-started/rtoscore',
         'duo/getting-started/8051core',
         'duo/getting-started/arduino',
@@ -42,9 +41,9 @@ const sidebars = {
       },
       items: [
         'duo/application-development/pinmux',
+        'duo/application-development/gpio-sysfs',
         'duo/application-development/wiringx',
         'duo/application-development/pinpong',
-        'duo/application-development/gpio-sysfs',
         {
           type: "category",
           label: 'TDL SDK',
