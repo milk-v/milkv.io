@@ -13,13 +13,13 @@ Pedestrian detection program source code location:
 
 Duo256M and DuoS: [sample_vi_od.c](https://github.com/milkv-duo/duo-tdl-examples/blob/master/sample_vi_od/sample_vi_od.c)
 
-Reference: `https://github.com/milkv-duo/duo-tdl-examples/blob/master/README-zh.md` method to compile the sample program.
+Reference: [https://github.com/milkv-duo/duo-tdl-examples/blob/master/README.md](https://github.com/milkv-duo/duo-tdl-examples/blob/master/README.md) method to compile the sample program.
 
 ### Upload the test program and model files to Duos
 
 - Refer to the method in the [Run Duo](https://milkv.io/zh/docs/duo/getting-started/boot) section to install the system
 
-Download the v2 version of the image: https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/tag/v2.0.0
+Download the v2 version of the image: [https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases](https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases)
 
 - Refer to the method in the [Camera](https://milkv.io/zh/docs/duo/camera/gc2083) section to connect the camera and power on
 
@@ -31,13 +31,13 @@ scp sample_vi_od root@192.168.42.1:/root/
 
 Download cvimodel for human and cat and dog detection :
 
-https://github.com/sophgo/tdl_models/blob/main/cv181x/pet_det_640x384.cvimodel
+[https://github.com/sophgo/tdl_models/blob/main/cv181x/pet_det_640x384.cvimodel](https://github.com/sophgo/tdl_models/blob/main/cv181x/pet_det_640x384.cvimodel)
 
-Use scp to upload cvimodel to the Duo development board.
+Use `scp` to upload cvimodel to the Duo development board.
 
 ### Run the example
 
-Log in to the Duo terminal via the serial port or [ssh](https://milkv.io/zh/docs/duo/getting-started/setup#ssh).
+Log in to the Duo terminal via the serial port or [ssh](https://milkv.io/docs/duo/getting-started/setup#ssh).
 
 Add executable permissions to the test program in Duo's terminal
 ```
@@ -96,4 +96,4 @@ After configuration, click `Play` to view the camera's detection effect.
 
 Effect picture below:
 
-<Image src='/docs/duo/duos/duos-yolov8-person-pets-detection.webp' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/tdl-sdk/duos-yolov8-person-pets-detection.webp' minWidth='40%' maxWidth='60%' align='left' />

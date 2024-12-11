@@ -11,15 +11,15 @@ sidebar_position: 20
 
 行人检测程序源码位置：
 
- Duo256M and DuoS：[sample_vi_od.c](https://github.com/milkv-duo/duo-tdl-examples/blob/master/sample_vi_od/sample_vi_od.c)
+Duo256M and DuoS：[sample_vi_od.c](https://github.com/milkv-duo/duo-tdl-examples/blob/master/sample_vi_od/sample_vi_od.c)
 
-参考：`https://github.com/milkv-duo/duo-tdl-examples/blob/master/README-zh.md `中的方法编译示例程序。
+参考：[https://github.com/milkv-duo/duo-tdl-examples/blob/master/README-zh.md](https://github.com/milkv-duo/duo-tdl-examples/blob/master/README-zh.md) 中的方法编译示例程序。
 
 ### 上传测试程序和模型文件到 Duos 中
 
 - 参考 [运行 Duo](https://milkv.io/zh/docs/duo/getting-started/boot) 章节中的方法安装好系统
 
-镜像要下载 v2 版本：https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/tag/v2.0.0
+  镜像要下载 v2 版本：[https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases](https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases)
 
 - 参考 [摄像头](https://milkv.io/zh/docs/duo/camera/gc2083) 章节中的方法连接摄像头之后，上电开机
 
@@ -29,9 +29,9 @@ sidebar_position: 20
 scp sample_vi_od root@192.168.42.1:/root/
 ```
 
-下载用于人形及猫狗侦测检测的 cvimodel :
+下载用于人形及猫狗侦测检测的 cvimodel:
 
-https://github.com/sophgo/tdl_models/blob/main/cv181x/pet_det_640x384.cvimodel
+[https://github.com/sophgo/tdl_models/blob/main/cv181x/pet_det_640x384.cvimodel](https://github.com/sophgo/tdl_models/blob/main/cv181x/pet_det_640x384.cvimodel)
 
 同样用 scp 将 cvimodel 上传到 Duo 开发板中。
 
@@ -39,7 +39,7 @@ https://github.com/sophgo/tdl_models/blob/main/cv181x/pet_det_640x384.cvimodel
 
 通过串口或者 [ssh](https://milkv.io/zh/docs/duo/getting-started/setup#ssh) 登陆到 Duo 的终端。
 
-在 Duo 的终端中为测试程序添加可执行权限
+在 Duo 的终端中为测试程序添加可执行权限：
 ```
 chmod +x sample_vi_od
 ```
@@ -68,7 +68,7 @@ wdrLEOnly:1
 
 ```
 
-此时，将摄像头对着人，猫，狗，Duo 终端中会打印摄像头实时检测到的四点坐标，分类以及 source :
+此时，将摄像头对着人，猫，狗，Duo 终端中会打印摄像头实时检测到的四点坐标，分类以及 source:
 
 ```
  1120.35 451.70 1917.16 1067.80 2 0.68
@@ -98,4 +98,4 @@ rtsp://192.168.42.1/h264
 
 效果图下：
 
-<Image src='/docs/duo/duos/duos-yolov8-person-pets-detection.webp' minWidth='40%' maxWidth='60%' align='left' />
+<Image src='/docs/duo/tdl-sdk/duos-yolov8-person-pets-detection.webp' minWidth='40%' maxWidth='60%' align='left' />
