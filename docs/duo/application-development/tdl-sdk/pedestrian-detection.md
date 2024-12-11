@@ -9,15 +9,17 @@ This test program will pull camera data, add pedestrian detection algorithm, and
 
 ### Compile
 
-Face detection program source code location:
+Pedestrian detection program source code location:
 
-Duo256M and DuoS: [sample_vi_od.c](https://github.com/milkv-duo/cvitek-tdl-sdk-sg200x/blob/main/sample/cvi_tdl/sample_vi_od.c)
+Duo256M and DuoS：[sample_vi_od.c](https://github.com/milkv-duo/duo-tdl-examples/blob/master/sample_vi_od/sample_vi_od.c)
 
-Refer to the method in the previous section [Introduction](https://milkv.io/zh/docs/duo/application-development/tdl-sdk/tdl-sdk-introduction) to compile the sample program.
+Refer to `https://github.com/milkv-duo/duo-tdl-examples/blob/master/README-zh.md `to compile the example program.
 
 ### Upload the test program and model files to Duo
 
 - Refer to the method in the [Run Duo](https://milkv.io/zh/docs/duo/getting-started/boot) section to install the system
+
+To download the v2 version, please visit: https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/tag/v2.0.0
 
 - Refer to the method in the [Camera](https://milkv.io/zh/docs/duo/camera/gc2083) section to connect the camera and power on
 
