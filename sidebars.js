@@ -59,6 +59,8 @@ const sidebars = {
             'duo/application-development/tdl-sdk/tdl-sdk-yolov8',
             'duo/application-development/tdl-sdk/tdl-sdk-yolo11',
             'duo/application-development/tdl-sdk/pedestrian-detection',
+            'duo/application-development/tdl-sdk/yolov8-person-pets-detection',
+
           ],
         },
         {

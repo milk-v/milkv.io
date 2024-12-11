@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'Human, cat and dog detection'
+sidebar_label: 'yolov8 person-pets detection'
 sidebar_position: 20
 ---
 
-# Human, cat and dog detection
+# yolov8 person-pets detection
 
 This test program will pull camera data, add yolov8 algorithm, and use VLC and other tools to pull the stream in real time to view the effect.
 
