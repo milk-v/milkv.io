@@ -11,37 +11,6 @@ Cvitek 所提供的 TDL（Turnkey Deep Learning）集成算法，用以缩短应
 
 目前 TDL SDK 包含 移动侦测，人脸检测，人脸识别，人脸追踪，行人检测，语义分割，车牌辨识，车牌检测，活体识别，IR活体识别，婴儿检测，哭声检测，姿态检测，手势侦测，手势识别 等算法。
 
-## 参考文档
-
-<table>
-<thead>
-  <tr>
-    <td>Chinese Version(中文版)</td>
-    <td colspan="2">格式</td>
-    <td>English Version</td>
-    <td colspan="2">Format</td>
-  </tr>
-</thead>
-<tbody>
-	<tr>
-    <td>深度学习SDK软件开发指南</td>
-    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/TDLSDKSoftwareDevelopmentGuide_zh.pdf">pdf</a></td>
-    <td>TDL SDK Software Development Guide</td>
-    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/index.html">html</a></td>
-    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/TDL_SDK_Software_Development_Guide/build/TDLSDKSoftwareDevelopmentGuide_en.pdf">pdf</a></td>
-  </tr>
-  <tr>
-    <td>YOLO系列开发指南</td>
-    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/YOLO_Development_Guide/build/html/index.html">html</a></td>
-    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/YOLO_Development_Guide/build/YOLODevelopmentGuide_zh.pdf">pdf</a></td>
-    <td>YOLO Development Guide</td>
-    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/YOLO_Development_Guide/build/html/index.html">html</a></td>
-    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/YOLO_Development_Guide/build/YOLODevelopmentGuide_en.pdf">pdf</a></td>
-  </tr>
-</tbody>
-</table>
-
 ## 编译
 
 TDL-SDK 程序需要在 PC 主机的 Linux 环境下进行交叉编译，推荐 Ubuntu 22.04 系统。
@@ -195,3 +164,34 @@ chmod +x sample_vi_fd
 ## 示例说明
 
 各示例的详细说明及运行方法，请参考后面章节。
+
+## 参考文档
+
+<table>
+<thead>
+  <tr>
+    <td>Chinese Version(中文版)</td>
+    <td colspan="2">格式</td>
+    <td>English Version</td>
+    <td colspan="2">Format</td>
+  </tr>
+</thead>
+<tbody>
+	<tr>
+    <td>深度学习SDK软件开发指南</td>
+    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/TDLSDKSoftwareDevelopmentGuide_zh.pdf">pdf</a></td>
+    <td>TDL SDK Software Development Guide</td>
+    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/index.html">html</a></td>
+    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/TDL_SDK_Software_Development_Guide/build/TDLSDKSoftwareDevelopmentGuide_en.pdf">pdf</a></td>
+  </tr>
+  <tr>
+    <td>YOLO系列开发指南</td>
+    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/YOLO_Development_Guide/build/html/index.html">html</a></td>
+    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/YOLO_Development_Guide/build/YOLODevelopmentGuide_zh.pdf">pdf</a></td>
+    <td>YOLO Development Guide</td>
+    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/YOLO_Development_Guide/build/html/index.html">html</a></td>
+    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/YOLO_Development_Guide/build/YOLODevelopmentGuide_en.pdf">pdf</a></td>
+  </tr>
+</tbody>
+</table>

@@ -11,37 +11,6 @@ This architecture realizes the algorithm required by TDL, including its pre and 
 
 At present, TDL SDK includes motion detection, face detection, face recognition, face tracking, pedestrian detection, semantic segmentation, license plate recognition, license plate detection, live recognition, IR live recognition, infant detection, cry detection, attitude detection, gesture detection, Gesture Recognition and other algorithms.
 
-## Documents
-
-<table>
-<thead>
-  <tr>
-    <td>Chinese Version(中文版)</td>
-    <td colspan="2">格式</td>
-    <td>English Version</td>
-    <td colspan="2">Format</td>
-  </tr>
-</thead>
-<tbody>
-	<tr>
-    <td>深度学习SDK软件开发指南</td>
-    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/index.html">html</a></td>
-    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/TDLSDKSoftwareDevelopmentGuide_zh.pdf">pdf</a></td>
-    <td>TDL SDK Software Development Guide</td>
-    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/index.html">html</a></td>
-    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/TDL_SDK_Software_Development_Guide/build/TDLSDKSoftwareDevelopmentGuide_en.pdf">pdf</a></td>
-  </tr>
-  <tr>
-    <td>YOLO系列开发指南</td>
-    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/YOLO_Development_Guide/build/html/index.html">html</a></td>
-    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/YOLO_Development_Guide/build/YOLODevelopmentGuide_zh.pdf">pdf</a></td>
-    <td>YOLO Development Guide</td>
-    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/YOLO_Development_Guide/build/html/index.html">html</a></td>
-    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/YOLO_Development_Guide/build/YOLODevelopmentGuide_en.pdf">pdf</a></td>
-  </tr>
-</tbody>
-</table>
-
 ## Compilation
 
 The TDL-SDK program needs to be cross-compiled in the Linux environment of the PC host, such as Ubuntu 22.04 system.
@@ -202,3 +171,34 @@ At this time, point the camera at the face, and the terminal log will print the 
 ## Example description
 
 For detailed descriptions and running methods of each example, please refer to the following chapters.
+
+## Reference Documentation
+
+<table>
+<thead>
+  <tr>
+    <td>Chinese Version(中文版)</td>
+    <td colspan="2">格式</td>
+    <td>English Version</td>
+    <td colspan="2">Format</td>
+  </tr>
+</thead>
+<tbody>
+	<tr>
+    <td>深度学习SDK软件开发指南</td>
+    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/index.html">html</a></td>
+    <td><a href="https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/TDLSDKSoftwareDevelopmentGuide_zh.pdf">pdf</a></td>
+    <td>TDL SDK Software Development Guide</td>
+    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/index.html">html</a></td>
+    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/TDL_SDK_Software_Development_Guide/build/TDLSDKSoftwareDevelopmentGuide_en.pdf">pdf</a></td>
+  </tr>
+  <tr>
+    <td>YOLO系列开发指南</td>
+    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/YOLO_Development_Guide/build/html/index.html">html</a></td>
+    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/YOLO_Development_Guide/build/YOLODevelopmentGuide_zh.pdf">pdf</a></td>
+    <td>YOLO Development Guide</td>
+    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/YOLO_Development_Guide/build/html/index.html">html</a></td>
+    <td><a href="http://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/YOLO_Development_Guide/build/YOLODevelopmentGuide_en.pdf">pdf</a></td>
+  </tr>
+</tbody>
+</table>
