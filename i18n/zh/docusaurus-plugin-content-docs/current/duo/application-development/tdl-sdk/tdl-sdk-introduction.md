@@ -182,6 +182,16 @@ chmod +x sample_vi_fd
 ```
 此时将摄像头对准人脸，终端日志中会打印当前检测到人脸的数量。如需通过电脑实时预览视频画面，可参考 [人脸检测文档](https://milkv.io/zh/docs/duo/application-development/tdl-sdk/tdl-sdk-face-detection)。
 
+## 模型支持列表
+
+### TDL-SDK 数据类型
+
+[https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/6_Data_Types.html](https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/6_Data_Types.html)
+
+### TDK-SDK 模型下载
+
+[https://github.com/sophgo/tdl_models/tree/main](https://github.com/sophgo/tdl_models/tree/main)
+
 ## 示例说明
 
 各示例的详细说明及运行方法，请参考后面章节。

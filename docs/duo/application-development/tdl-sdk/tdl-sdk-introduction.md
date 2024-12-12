@@ -189,6 +189,16 @@ The command to test the face detection example in DuoS is `sample_vi_fd + face d
 ```
 At this time, point the camera at the face, and the terminal log will print the number of faces currently detected. If you need to preview the video screen in real time on a computer, please refer to [Face Detection Documentation](https://milkv.io/docs/duo/application-development/tdl-sdk/tdl-sdk-face-detection).
 
+## Model support list
+
+### TDL-SDK Model Data Types
+
+[https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/6_Data_Types.html](https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/6_Data_Types.html)
+
+### TDK-SDK Model Download
+
+[https://github.com/sophgo/tdl_models/tree/main](https://github.com/sophgo/tdl_models/tree/main)
+
 ## Example description
 
 For detailed descriptions and running methods of each example, please refer to the following chapters.
