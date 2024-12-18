@@ -237,11 +237,6 @@ const config = {
                 label: 'Jupiter',
                 docId: 'jupiter/overview',
               },
-              {
-                type: 'doc',
-                label: 'Megrez',
-                docId: 'megrez/overview',
-              },
             ],
           },
           {
