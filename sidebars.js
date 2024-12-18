@@ -509,6 +509,32 @@ const sidebars = {
       ],
     },
   ],
+  Megrez: [
+    {
+      type: 'link',
+      label: '🏠 Home',
+      href: '/docs',
+    },
+    'megrez/overview',
+    {
+      type: "category",
+      label: '🚀 Getting Started',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: '🚀 Getting Started',
+        description: 'Getting Started with Megrez',
+        slug: '/megrez/getting-started'
+      },
+      items: [
+        'megrez/getting-started/hardware',
+        'megrez/getting-started/boot',
+        'megrez/getting-started/setup',
+        'megrez/getting-started/boost',
+        'megrez/getting-started/resources',
+      ],
+    },
+  ],
 };
 
 module.exports = sidebars;
