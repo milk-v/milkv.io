@@ -27,10 +27,6 @@
     "message": "TPU",
     "description": "The label for category TPU in sidebar duo"
   },
-  "sidebar.duo.category.Sensor Demo": {
-    "message": "传感器示例",
-    "description": "The label for category Sensor Demo in sidebar duo"
-  },
   "sidebar.duo.category.🛠️ Low-level Development": {
     "message": "🛠️ 底层开发",
     "description": "The label for category 🛠️ Low-level Development in sidebar duo"
@@ -54,6 +50,10 @@
   "sidebar.duo.category.📷 Camera": {
     "message": "📷 摄像头",
     "description": "The label for category 📷 Camera in sidebar duo"
+  },
+  "sidebar.duo.category.📺 Accessories": {
+    "message": "📺 配件开发指南",
+    "description": "The label for category 📺 Accessories in sidebar duo"
   },
   "sidebar.duo.link.🏠 Home": {
     "message": "🏠 首页",

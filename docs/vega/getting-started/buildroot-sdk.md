@@ -27,7 +27,7 @@ The following describes the compilation methods in the two environments.
 ### Packages to be installed
 
 ```bash
-sudo apt install -y make git gcc g++ bison flex device-tree-compiler mtd-utils
+sudo apt install -y make git gcc g++ bison flex device-tree-compiler mtd-utils lz4
 ```
 
 ### Get SDK Source Code

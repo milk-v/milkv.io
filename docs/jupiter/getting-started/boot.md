@@ -163,9 +163,9 @@ fastboot flash gpt partition_universal.json
 fastboot flash bootinfo factory/bootinfo_sd.bin
 fastboot flash fsbl factory/FSBL.bin
 fastboot flash env env.bin
-fastboot flash opensbi opensbi.itb
+fastboot flash opensbi fw_dynamic.itb
 fastboot flash uboot u-boot.itb
-fastboot flash bootfs bootfs.img
+fastboot flash bootfs bootfs.ext4
 fastboot flash rootfs rootfs.ext4
 
 sleep 2

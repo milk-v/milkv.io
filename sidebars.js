@@ -41,6 +41,7 @@ const sidebars = {
       },
       items: [
         'duo/application-development/pinmux',
+        'duo/application-development/gpio-sysfs',
         'duo/application-development/wiringx',
         'duo/application-development/pinpong',
         {
@@ -57,6 +58,8 @@ const sidebars = {
             'duo/application-development/tdl-sdk/tdl-sdk-yolov5',
             'duo/application-development/tdl-sdk/tdl-sdk-yolov8',
             'duo/application-development/tdl-sdk/tdl-sdk-yolo11',
+            'duo/application-development/tdl-sdk/pedestrian-detection',
+            'duo/application-development/tdl-sdk/yolov8-person-pets-detection',
           ],
         },
         {
@@ -77,19 +80,6 @@ const sidebars = {
             'duo/application-development/tpu/tpu-squeezenet',
             'duo/application-development/tpu/tpu-densenet',
             'duo/application-development/tpu/tpu-resnet18',
-          ],
-        },
-        {
-          type: "category",
-          label: 'Sensor Demo',
-          collapsed: false,
-          link: {
-            title: 'Sensor Demo',
-            description: ' ',
-          },
-          items: [
-            'duo/application-development/sensor-demo/dht22',
-            'duo/application-development/sensor-demo/df9gms180',
           ],
         },
       ],
@@ -120,13 +110,14 @@ const sidebars = {
       },
       items: [
         'duo/resources/image-sdk',
-        'duo/resources/mainline',
+        'duo/resources/third-party-img',
         'duo/resources/mmf',
+        'duo/resources/mainline',
+        'duo/resources/upstream-status',
         'duo/resources/opencv-mobile',
         'duo/resources/xyzdims',
         'duo/resources/spilvgl',
-        'duo/resources/third-party-img',
-        'duo/resources/upstream-status',
+        'duo/resources/visuino',
       ],
     },
     {
@@ -160,7 +151,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: 'Accessories',
+      label: '📺 Accessories',
       collapsed: false,
       link: {
         type: 'doc',
@@ -170,18 +161,8 @@ const sidebars = {
         'duo/Accessories/ST7789',
         'duo/Accessories/Pico-ePaper-2.13',
         'duo/Accessories/Pico-8SEG-LED',
-      ],
-    },
-    {
-      type: "category",
-      label: 'FAQ',
-      collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'duo/FAQ/extended-root-partition',
-      },
-      items: [
-        'duo/FAQ/extended-root-partition',
+        'duo/Accessories/dht22',
+        'duo/Accessories/df9gms180',
       ],
     },
   ],

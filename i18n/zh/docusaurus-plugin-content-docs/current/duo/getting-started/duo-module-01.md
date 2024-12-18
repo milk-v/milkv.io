@@ -65,7 +65,122 @@ Duo Module 01 的软件与 DuoS 是通用的，请直接使用 DuoS 的固件。
 
 ### GPIO 引脚定义
 
-Coming soon...
+<div className='gpio_style' style={{ overflow :"auto"}} >
+
+| PIN                             | NAME            | SG2000     | NUM |  MIPI DSI   |
+|:-------------------------------:|:----------------|:-----------|:---:|:---------- |
+| <div className='green'>1</div>  | MIPI_TX_2N      | XGPIOC[16] | 432 | MIPI_TX_CN |
+| <div className='green'>2</div>  | MIPI_TX_2P      | XGPIOC[17] | 433 | MIPI_TX_CP |
+| <div className='green'>3</div>  | MIPI_TX_1N      | XGPIOC[14] | 430 | MIPI_TX_1N |
+| <div className='green'>4</div>  | MIPI_TX_1P      | XGPIOC[15] | 431 | MIPI_TX_1P |
+| <div className='green'>5</div>  | MIPI_TX_0N      | XGPIOC[12] | 428 | MIPI_TX_0N |
+| <div className='green'>6</div>  | MIPI_TX_0P      | XGPIOC[13] | 429 | MIPI_TX_0P |
+| <div className='orange'>7</div> | 3V3             |            |     |            |
+| <div className='orange'>8</div> | 3V3             |            |     |            |
+| <div className='black'>9</div>  | GND             |            |     |            |
+| <div className='green'>10</div> | SENSOR_HS0      | XGPIOA[1]  |     |            |
+| <div className='green'>11</div> | SENSOR_CLK1     | XGPIOA[3]  |     |            |
+| <div className='green'>12</div> | SENSOR_CLK0     | XGPIOA[0]  |     |            |
+| <div className='green'>13</div> | I2C3_SENSOR0_SDA| XGPIOA[6]  |     |            |
+| <div className='green'>14</div> | I2C3_SENSOR0_SCL| XGPIOA[5]  |     |            |
+| <div className='green'>15</div> | SENSOR_RSTN1    | XGPIOA[4]  |     |            |
+| <div className='green'>16</div> | SENSOR_RSTN0    | XGPIOA[2]  |     |            |
+| <div className='green'>17</div> | AUDIO_OUT_L     |            |     |            |
+| <div className='green'>18</div> | AUDIO_OUT_R     |            |     |            |
+| <div className='green'>19</div> | AUDIO_IN_L      |            |     |            |
+| <div className='green'>20</div> | AUDIO_IN_R      |            |     |            |
+| <div className='green'>21</div> | SD_SD0_D1       | XGPIOA[10] |     |            |
+| <div className='green'>22</div> | SD_SD0_CMD      | XGPIOA[8]  |     |            |
+
+
+</div>
+
+<div className='gpio_style' style={{ overflow :"auto"}} >
+
+| PIN                             | NAME            | SG2000     | NUM | UART              | PWM  | JTAG    | MIPI DSI   | I2C      |
+|:-------------------------------:|:----------------|:-----------|:---:|:----------------- |:-----|:--------|:---------- |:---------|
+| <div className='green'>23</div> | SD_SD0_CD       | XGPIOA[13] |     |                   |      |         |            |          |
+| <div className='green'>24</div> | SD_SD0_D0       | XGPIOA[9]  |     |                   |      |         |            |          |
+| <div className='green'>25</div> | SD_SD0_CLK      | XGPIOA[7]  |     |                   |      |         |            |          |
+| <div className='green'>26</div> | SD_SD0_D2       | XGPIOA[11] |     |                   |      |         |            |          |
+| <div className='green'>27</div> | SD_SD0_D3       | XGPIOA[12] |     |                   |      |         |            |          |
+| <div className='green'>28</div> | XGPIOB_22       | XGPIOB[22] | 470 | UART2_RX          |      |         |            |          |
+| <div className='green'>29</div> | SD_PWR_EN       |            |     |                   |      |         |            |          |
+| <div className='green'>30</div> | UART0_RX        | PWR_GPIO[0]| 352 | UART2_TX          | PWM8 |         | LCD_PWM    |          |
+| <div className='green'>31</div> | UART0_TX        | XGPIOA[16] | 496 |UART0_TX/UART1_TX  | PWM4 |         |            |          |
+| <div className='green'>32</div> | XGPIOA_18       | XGPIOA[18] | 498 |UART1_RX/UART1_CTS | PWM6 |JTAG_TCK |            |          |
+| <div className='green'>33</div> | XGPIOA_19       | XGPIOA[19] | 499 |UART1_TX/UART1_RTS | PWM7 |JTAG_TMS |            |          |
+| <div className='green'>34</div> | XGPIOA_30       | XGPIOA[30] |     |                   |      |         |            |          |
+| <div className='green'>35</div> | PWR_VBAT_DET    |            |     |                   |      |         |            |          |
+| <div className='green'>36</div> | LCD_RST         | PWR_GPIO[2]| 354 |                   | PWM10|         | LCD_RST    | I2C2_SDA |
+| <div className='green'>37</div> | LCD_PWR_CT      |            |     |                   |      |         |            |          |
+| <div className='green'>38</div> | LCD_PWM         |            |     |                   |      |         |            |          |
+| <div className='green'>39</div> | I2C_SENSOR1_SDA |PWR_GPIO[13]|     |                   |      |         |            |          |
+| <div className='green'>40</div> | I2C_SENSOR1_SCL |PWR_GPIO[12]|     |                   |      |         |            |          |
+| <div className='green'>41</div> | XGPIOA_20       | XGPIOA[20] | 500 |                   |      |JTAG_TRST|            |          |
+| <div className='green'>42</div> | XGPIOA_29       | XGPIOA[29] |     |                   |      |         |            |          |
+| <div className='green'>43</div> | XGPIOA_28       | XGPIOA[28] | 508 | UART2_TX/UART1_TX |      |         |            |          |
+| <div className='green'>44</div> | VDD_BAT         |            |     |                   |      |         |            |          |
+
+</div>
+
+<div className='gpio_style' style={{ overflow :"auto"}} >
+
+| PIN                             | NAME            | SG2000     | NUM | UART              | PWM  | SPI     |    I2C     |
+|:-------------------------------:|:----------------|:-----------|:---:|:----------------- |:-----|:--------|:-----------|
+| <div className='green'>45</div> |  PWM0_BUCK      | XGPIOB[0]  |     |                   |      |         |            |
+| <div className='green'>46</div> |  VBUS_EN        | XGPIOB[5]  |     |                   |      |         |            |
+| <div className='green'>47</div> |  UPDATE         | XGPIOB[4]  |     |                   |      |         |            |
+| <div className='green'>48</div> |  VBUS_DET       | XGPIOB[6]  |     |                   |      |         |            |
+| <div className='green'>49</div> |  EPHY_LNK_LED   | PWR_GPIO[6]|     |                   |      |         |            |
+| <div className='green'>50</div> |  EPHY_SPD_LED   | PWR_GPIO[8]|     |                   |      |         |            |
+| <div className='green'>51</div> |  XGPIOB_12      | XGPIOB[12] | 460 |   UART2_RX        | PWM2 |         |   I2C1_SCL |
+| <div className='green'>52</div> |  XGPIOB_11      | XGPIOB[11] | 459 |   UART2_TX        | PWM1 |         |   I2C1_SDA |
+| <div className='green'>53</div> |XGPIOB_13/SPI3_SDO| XGPIOB[13]| 461 |                   | PWM3 |SPI3_SDO |   I2C2_SCL |
+| <div className='green'>54</div> |XGPIOB_15/SPI3_SCK| XGPIOB[15]| 463 |   UART2_TX        |      |SPI3_SCK |            |
+| <div className='green'>55</div> |XGPIOB_14/SPI3_SDI| XGPIOB[14]| 462 |                   |      |SPI3_SDI |   I2C2_SDA |
+| <div className='green'>56</div> |XGPIOB_16/SPI3_CS | XGPIOB[16]| 464 |   UART2_RX        |      |SPI3_CS  |            |
+| <div className='green'>57</div> |ADC1             | XGPIOB[3]  | 451 |                   |      |         |            |
+| <div className='green'>58</div> |ADC2             | XGPIOB[2]  | 450 |   UART3_RX        |PWM13 |         |   I2C4_SDA |
+| <div className='green'>59</div> |ADC3             | XGPIOB[1]  | 449 |   UART3_TX        |PWM12 |         |   I2C4_SCL |
+| <div className='green'>60</div> |ARM_RISV_SWITCH  | XGPIOB[23] |     |                   |      |         |            |
+| <div className='green'>61</div> |EPHY_RXP         | XGPIOB[24] |     |                   |      |         |            |
+| <div className='green'>62</div> |EPHY_RXN         | XGPIOB[25] |     |                   |      |         |            |
+| <div className='green'>63</div> |EPHY_TXP         | XGPIOB[26] |     |                   |      |         |            |
+| <div className='green'>64</div> |EPHY_TXN         | XGPIOB[27] |     |                   |      |         |            |
+| <div className='green'>65</div> |USB_DM           |            |     |                   |      |         |            |
+| <div className='green'>66</div> |USB_DP           |            |     |                   |      |         |            |
+
+</div>
+
+<div className='gpio_style' style={{ overflow :"auto"}} >
+
+| PIN                             | NAME              | SG2000     | NUM | UART              | PWM  | MIPI DSI   | I2C      |
+|:-------------------------------:|:------------------|:-----------|:---:|:----------------- |:-----|:---------- |:---------|
+| <div className='green'>67</div> |XGPIOB_17/I2C1_SDA | XGPIOB[17] |     |                   |      |            |          |
+| <div className='green'>68</div> |XGPIOB_18/I2C1_SCL | XGPIOB[18] | 466 |                   |      |            | I2C1_SCL |
+| <div className='green'>69</div> |XGPIOB_19          | XGPIOB[19] | 467 |  UART2_TX         | PWM2 |            |          |
+| <div className='green'>70</div> |XGPIOB_20/I2C4_SCL | XGPIOB[20] | 468 |  UART2_TX         | PWM3 |            | I2C4_SCL |
+| <div className='green'>71</div> |XGPIOB_21/I2C4_SDA | XGPIOB[21] | 469 |                   |      |            | I2C4_SDA |
+| <div className='green'>72</div> |MIPI0_DN5          | XGPIOC[0]  |     |                   |      |            | I2C4_SDA |
+| <div className='green'>73</div> |MIPI0_DP5          | XGPIOC[1]  |     |                   |      |            |          |
+| <div className='green'>74</div> |MIPI0_DN4          | XGPIOC[2]  |     |                   |      |            |          |
+| <div className='green'>75</div> |MIPI0_DP4          | XGPIOC[3]  |     |                   |      |            |          |
+| <div className='green'>76</div> |MIPI0_DN3          | XGPIOC[4]  |     |                   |      |            |          |
+| <div className='green'>77</div> |MIPI0_DP3          | XGPIOC[5]  |     |                   |      |            |          |
+| <div className='green'>78</div> |MIPI0_DN0          | XGPIOC[10] |     |                   |      |            |          |
+| <div className='green'>79</div> |MIPI0_DP0          | XGPIOC[11] |     |                   |      |            |          |
+| <div className='green'>80</div> |MIPI0_DN1          | XGPIOC[8]  |     |                   |      |            |          |
+| <div className='green'>81</div> |MIPI0_DP1          | XGPIOC[9]  |     |                   |      |            |          |
+| <div className='green'>82</div> |MIPI0_DN2          | XGPIOC[6]  |     |                   |      |            |          |
+| <div className='green'>83</div> |MIPI0_DP2          | XGPIOC[7]  |     |                   |      |            |          |
+| <div className='black'>84</div> |GND                |            |     |                   |      |            |          |
+| <div className='green'>85</div> |MIPI_TX_4N         | XGPIOC[18] | 434 |                   |      | MIPI_TX_3N |          |
+| <div className='green'>86</div> |MIPI_TX_4P         | XGPIOC[19] | 435 |                   |      | MIPI_TX_3P |          |
+| <div className='green'>87</div> |MIPI_TX_3N         | XGPIOC[20] | 436 |                   |      | MIPI_TX_2N |          |
+| <div className='green'>88</div> |MIPI_TX_3P         | XGPIOC[21] | 437 |                   |      | MIPI_TX_2P |          |
+
+</div>
 
 ## Duo Module 01 评估板引脚分配
 

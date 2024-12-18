@@ -11,6 +11,8 @@ Milk-V Duo 系列已经支持 Arduino 开发，您可以直接使用 Arduino IDE
 
 Duo 系列 CPU 采用大小核设计，Arduino 固件运行在小核中，大核负责与 Arduino IDE 通讯，接收 Arduino 固件并将其加载到小核中运行。同时，大核中的 Linux 系统也是正常运行的。
 
+另外，Duo 系列开发板已经支持可视化编程软件 VISUINO，相关内容可以参考该章节：[VISUINO](https://milkv.io/docs/duo/resources/visuino)。
+
 ## 一、环境配置
 
 ### 安装 Arduino IDE
