@@ -9,18 +9,20 @@ wiringX is a library that allows developers to control the GPIO of various platf
 
 This article will be divided into the following four parts to introduce how to develop applications on Duo using wiringX:
 
-1. wiringX APIs
+1. Configuration of the application compilation environment based on wiringX
 2. Basic usage code demonstration
-3. Configuration of the application compilation environment based on wiringX
-4. Introduction to some demos and projects implemented using wiringX
+3. Introduction to some demos and projects implemented using wiringX
+4. wiringX APIs
 
-If you are already familiar with the usage of wiringX, you can directly refer to our sample code:  [duo-examples](https://github.com/milkv-duo/duo-examples)
+If you are already familiar with the usage of wiringX, you can directly refer to our sample code: [duo-examples](https://github.com/milkv-duo/duo-examples).
 
 Please note that many pin functions of the Duo series are multiplexed. When using `wiringX` to control the functions of each pin, it is important to confirm the current state of the pin to ensure it matches the desired functionality. If it doesn't, you can use the `duo-pinmux` command to switch it to the desired function.
 
 Please refer to the detailed usage instructions for more information：[pinmux](https://milkv.io/docs/duo/application-development/pinmux).
 
-### Duo/Duo256M wiringX numbers
+## Duo series wiringX pin numbers
+
+### Duo/Duo256M
 
 The wiringX pin numbers of Duo and Duo256M are consistent with the pin name numbers. However, the blue LED control pin is not available on the 40-pin physical pinout, and its wiringX pin number is `25`.
 
@@ -55,7 +57,7 @@ The wiringX pin numbers of Duo and Duo256M are consistent with the pin name numb
 
 </div>
 
-### DuoS wiringX numbers
+### DuoS
 
 The wiringX pin numbers of DuoS are consistent with the physical pin numbers. The blue LED control pin is not on the 40PIN physical pins, and its wiringX number is `0`.
 
@@ -113,7 +115,81 @@ Most of the pins on this header have dedicated functions, such as MIPI DSI signa
 
 </div>
 
-## 1. Code example
+## Development Environment Setup
+
+### Build environment on Ubuntu22.04
+
+You can also use Ubuntu installed in a virtual machine, Ubuntu installed via WSL on Windows, or Ubuntu-based systems using Docker.
+
+- Install the tools that compile dependencies
+  ```
+  sudo apt-get install wget git make
+  ```
+- Get example source code
+  ```
+  git clone https://github.com/milkv-duo/duo-examples.git
+  ```
+
+- Prepare compilation environment
+  ```
+  cd duo-examples
+  source envsetup.sh
+  ```
+  The first time you source it, the required compilation toolchain will be automatically downloaded. The downloaded directory is named `host-tools`. The next time the compilation environment is loaded, the directory will be detected. If it already exists, it will not be downloaded again.
+
+  In the source process, you need to enter the required compilation target as prompted:
+  ```
+  Select Product:
+  1. Duo (CV1800B)
+  2. Duo256M (SG2002) or DuoS (SG2000)
+  ```
+  If the target board is Duo, select `1`, if the target board is Duo256M or DuoS, select `2`. Since Duo256M and DuoS support both RISCV and ARM architectures, you need to continue to select as prompted:
+  ```
+  Select Arch:
+  1. ARM64
+  2. RISCV64
+  Which would you like:
+  ```
+  If the test program needs to be run on a ARM system, select `1`, if it is an RISCV system, select `2`.
+
+  **In the same terminal, you only need to source it once.**
+
+- Compile testing
+
+  Take hello-world as an example, enter the hello-world directory and execute make:
+  ```
+  cd hello-world
+  make
+  ```
+  After the compilation is successful, send the generated `helloworld` executable program to the Duo device through the network port or the USB network. For example, the USB-NCM method supported by the [default firmware](https://github.com/milkv-duo/duo-buildroot-sdk/releases), Duo’s IP is 192.168.42.1, the user name is `root`, and the password is `milkv`.
+  ```
+  scp -O helloworld root@192.168.42.1:/root/
+  ```
+  After sending successfully, run `./helloworld` in the terminal logged in via ssh or serial port, and it will print `Hello, World!`
+  ```
+  [root@milkv]~# ./helloworld
+  Hello, World!
+  ```
+  **At this point, our compilation and development environment is ready for use.**
+
+### How to create your own project
+
+You can simply copy existing examples and make necessary modifications. For instance, if you need to manipulate a GPIO, you can refer to the `blink` example. LED blinking is achieved by controlling the GPIO's voltage level. The current SDK utilizes the WiringX library for GPIO operations, which has been adapted specifically for Duo. You can find the platform initialization and GPIO control methods in the `blink.c` code for reference.
+
+- Create your own project directory called `my-project`.
+- Copy the `blink.c` and `Makefile` files from the `blink` example to the `my-project` directory.
+- Rename `blink.c` to your desired name, such as `gpio_test.c`.
+- Modify the `Makefile` by changing `TARGET=blink` to `TARGET=gpio_test`.
+- Modify `gpio_test.c` to implement your own code logic.
+- Execute the `make` command to compile.
+- Send the generated `gpio_test` executable program to Duo for execution.
+
+Note:
+
+- Creating a new project directory is not mandatory to be placed within the `duo-examples` directory. You can choose any location based on your preference. Before executing the `make` compilation command, it is sufficient to load the compilation environment from the `duo-examples` directory (source /PATH/TO/duo-examples/envsetup.sh).
+- Within the terminal where the compilation environment (envsetup.sh) is loaded, avoid compiling Makefile projects for other platforms such as ARM or X86. If you need to compile projects for other platforms, open a new terminal.
+
+## Code example
 
 ### GPIO Usage Example
 
@@ -288,65 +364,7 @@ The compiled executable of the above program is named `uart_test`. After uploadi
 
 ![duo](/docs/duo/duo-wiringx-uart-test.png)
 
-
-## 2. Development Environment Setup
-
-### Build environment on Ubuntu20.04
-
-You can also use Ubuntu installed in a virtual machine, Ubuntu installed via WSL on Windows, or Ubuntu-based systems using Docker.
-
-- Install the tools that compile dependencies
-  ```
-  sudo apt-get install wget git make
-  ```
-- Get example source code
-  ```
-  git clone https://github.com/milkv-duo/duo-examples.git
-  ```
-
-- Prepare compilation environment
-  ```
-  cd duo-examples
-  source envsetup.sh
-  ```
-  The first time you source it, the required SDK package will be automatically downloaded, which is approximately 180MB in size. Once downloaded, it will be automatically extracted to the `duo-examples` directory with the name `duo-sdk`. When source it next time, if the directory already exists, it will not be downloaded again.
-
-- Compile testing  
-
-  Take hello-world as an example, enter the hello-world directory and execute make:
-  ```
-  cd hello-world
-  make
-  ```
-  After the compilation is successful, send the generated `helloworld` executable program to the Duo device through the network port or the USB network. For example, the USB-NCM method supported by the [default firmware](https://github.com/milkv-duo/duo-buildroot-sdk/releases), Duo’s IP is 192.168.42.1, the user name is `root`, and the password is `milkv`.
-  ```
-  scp -O helloworld root@192.168.42.1:/root/
-  ```
-  After sending successfully, run `./helloworld` in the terminal logged in via ssh or serial port, and it will print `Hello, World!`
-  ```
-  [root@milkv]~# ./helloworld
-  Hello, World!
-  ```
-  **At this point, our compilation and development environment is ready for use.**
-
-### How to create your own project
-
-You can simply copy existing examples and make necessary modifications. For instance, if you need to manipulate a GPIO, you can refer to the `blink` example. LED blinking is achieved by controlling the GPIO's voltage level. The current SDK utilizes the WiringX library for GPIO operations, which has been adapted specifically for Duo. You can find the platform initialization and GPIO control methods in the `blink.c` code for reference.
-
-- Create your own project directory called `my-project`.
-- Copy the `blink.c` and `Makefile` files from the `blink` example to the `my-project` directory.
-- Rename `blink.c` to your desired name, such as `gpio_test.c`.
-- Modify the `Makefile` by changing `TARGET=blink` to `TARGET=gpio_test`.
-- Modify `gpio_test.c` to implement your own code logic.
-- Execute the `make` command to compile.
-- Send the generated `gpio_test` executable program to Duo for execution.
-  
-Note:
-
-- Creating a new project directory is not mandatory to be placed within the `duo-examples` directory. You can choose any location based on your preference. Before executing the `make` compilation command, it is sufficient to load the compilation environment from the `duo-examples` directory (source /PATH/TO/duo-examples/envsetup.sh).
-- Within the terminal where the compilation environment (envsetup.sh) is loaded, avoid compiling Makefile projects for other platforms such as ARM or X86. If you need to compile projects for other platforms, open a new terminal.
-
-## 3. Explanation of each example
+## Explanation of each example
 
 ### hello-world
 
@@ -449,7 +467,7 @@ Source code: [https://github.com/milkv-duo/duo-examples/tree/main/spi/rc522_spi]
 
 Connect the RC522 RFID read-write module via the SPI interface to read the card ID and type and output them to the screen.
 
-## 4. Compile wiringX
+## Compile wiringX library
 
 Duo firmware already contains the compiled wiringX library (/usr/lib/libwiringx.so) and can be used directly. If you need to compile the source code of wiringX to generate the library, you can compile it as follows.
 
@@ -552,7 +570,7 @@ The manually installed `cmake` is in `/usr/local/bin`. At this time, use the `cm
 cmake version 3.27.6
 ```
 
-## 5. wiringX APIs
+## wiringX APIs
 
 ### General
 
