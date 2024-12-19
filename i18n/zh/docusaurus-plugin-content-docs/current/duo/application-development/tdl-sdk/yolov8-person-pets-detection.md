@@ -1,5 +1,5 @@
 ---
-sidebar_label: '人形及猫狗侦测'
+sidebar_label: 'YOLOv8 人形及猫狗侦测'
 sidebar_position: 20
 ---
 

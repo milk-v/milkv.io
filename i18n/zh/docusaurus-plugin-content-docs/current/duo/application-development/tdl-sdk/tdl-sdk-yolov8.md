@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'YOLOv8 目标检测 '
+sidebar_label: 'YOLOv8 目标检测'
 sidebar_position: 21
 ---
 
