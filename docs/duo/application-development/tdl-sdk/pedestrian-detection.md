@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Pedestrian detection'
+sidebar_label: 'Pedestrian Detection'
 sidebar_position: 20
 ---
 
