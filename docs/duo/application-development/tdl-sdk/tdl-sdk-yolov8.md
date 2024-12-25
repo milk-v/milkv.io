@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'YOLOv8 object detection '
+sidebar_label: 'YOLOv8 Object Detection '
 sidebar_position: 21
 ---
 

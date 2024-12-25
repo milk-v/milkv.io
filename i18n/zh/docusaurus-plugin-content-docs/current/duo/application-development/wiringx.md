@@ -4,21 +4,25 @@ sidebar_position: 10
 ---
 
 ## 简介
+
 `wiringX` 是一个开源的 GPIO 控制库，旨在为不同的嵌入式平台提供通用且统一的 GPIO 控制接口。它基于 WiringPi 库进行了改进和扩展，并支持多种嵌入式平台，对`Milk-V Duo`也进行了适配。使用`wiringX`，开发者可以使用相同的代码来控制不同平台上的 GPIO 引脚，简化了跨平台开发的工作，使得开发嵌入式应用程序更加方便和灵活。
 
 本文将分为如下4个部分介绍如何使用 wiringX 在 Duo 上开发应用：
-1. wiringX 的 APIs
-2. 基本使用方法代码示范
-3. 基于 wiringX 的应用程序编译环境配置
-4. 一些使用 wiringX 实现的 Demo 和项目介绍
 
-如果您对 wiringX 的使用方法已经非常熟悉,可以直接参考我们的样例代码: [duo-examples](https://github.com/milkv-duo/duo-examples)
+1. 基于 wiringX 的应用程序编译环境配置
+2. 基本使用方法代码示范
+3. 一些使用 wiringX 实现的 Demo 和项目介绍
+4. wiringX 的 AP
+
+如果您对 wiringX 的使用方法已经非常熟悉，可以直接参考示例代码仓库: [duo-examples](https://github.com/milkv-duo/duo-examples)。
 
 注意，Duo 系列的很多引脚功能是复用的，在使用`wiringX`来控制 Duo/Duo256M/DuoS 各引脚的功能时，要先确认一下引脚当前的状态是不是自己需要的功能, 如果不是，可以用`duo-pinmux`命令来切换为所需功能。
 
 具体方法请参考: [引脚复用](https://milkv.io/zh/docs/duo/application-development/pinmux)。
 
-### Duo/Duo256M wiringX 引脚序号
+## Duo 系列开发板 wiringX 引脚序号
+
+### Duo/Duo256M
 
 Duo 和 Duo256M 的 wiringX 引脚序号, 与引脚名序号是一致的，蓝色 LED 控制引脚不在引出的 40PIN 物理引脚上，其 wiringX 的序号是`25`。
 
@@ -53,7 +57,7 @@ Duo 和 Duo256M 的 wiringX 引脚序号, 与引脚名序号是一致的，蓝�
 
 </div>
 
-### DuoS wiringX 引脚序号
+### DuoS
 
 DuoS 的 wiringX 引脚序号, 与物理引脚序号是一致的，蓝色 LED 控制引脚不在引出的 40PIN 物理引脚上，其 wiringX 的序号是 `0`。
 
@@ -111,7 +115,80 @@ DuoS 的 wiringX 引脚序号, 与物理引脚序号是一致的，蓝色 LED �
 
 </div>
 
-## 一、代码示范
+## 开发环境配置
+
+### 准备开发环境
+
+使用本地的 Ubuntu 系统，推荐 Ubuntu 22.04 LTS
+(也可以使用虚拟机中的 Ubuntu 系统、Windows 中 WSL 安装的 Ubuntu、基于 Docker 的 Ubuntu 系统)。
+
+- 安装编译依赖的工具
+  ```
+  sudo apt-get install wget git make
+  ```
+- 获取 Examples 源码
+  ```
+  git clone https://github.com/milkv-duo/duo-examples.git
+  ```
+
+- 加载编译环境
+  ```
+  cd duo-examples
+  source envsetup.sh
+  ```
+  第一次加载会自动下载所需的编译工具链，下载后的目录名为`host-tools`，下次再加载编译环境时，会检测该目录，如果已存在则不会再次下载。
+
+  加载编译环境时需要按提示输入所需编译目标：
+  ```
+  Select Product:
+  1. Duo (CV1800B)
+  2. Duo256M (SG2002) or DuoS (SG2000)
+  ```
+  如果目标板是 Duo 则选择 `1`，如果目标板是 Duo256M 或者 DuoS 则选择 `2`。由于 Duo256M 和 DuoS 支持 RISCV 和 ARM 两种架构，还需要按提示继续选择：
+  ```
+  Select Arch:
+  1. ARM64
+  2. RISCV64
+  Which would you like:
+  ```
+  如果测试程序需要在 ARM 系统中运行，选择 `1`，如果是 RISCV 系统则选择 `2`。
+
+- 编译测试
+
+  以`hello-world`为例，进入该例子目录直接执行`make`即可：
+  ```
+  cd hello-world
+  make
+  ```
+  编译成功后将生成的`helloworld`可执行程序通过网口或者 USB 网络等方式传送到 Duo 设备中，比如[默认固件](https://github.com/milkv-duo/duo-buildroot-sdk/releases)支持的 USB-NCM 方式，Duo 的 IP 为`192.168.42.1`，用户名是`root`，密码是`milkv`。
+  ```
+  scp helloworld root@192.168.42.1:/root/
+  ```
+  发送成功后，在 ssh 或者串口登陆的终端中运行`./helloworld`，会打印`Hello, World!`
+  ```
+  [root@milkv]~# ./helloworld
+  Hello, World!
+  ```
+  **至此，我们的编译开发环境就可以正常使用了**
+
+### 如何创建自己的工程
+
+根据需要，拷贝现有的例子，稍加修改即可。比如需要操作某个 GPIO，可以参考`blink`例子，LED闪烁就是通过控制 GPIO 电平高低实现的，平台初始化和控制 GPIO 的方法，可参考`blink.c`中的代码。
+
+- 新建自己的工程目录`my-project`
+- 复制`blink`例子中的`blink.c`和`Makefile`文件到`my-project`目录
+- 将`blink.c`重命名为自己所需名字如`gpio_test.c`
+- 修改`Makefile`中的`TARGET=blink`为`TARGET=gpio_test`
+- 修改`gpio_test.c`，实现自己的代码逻辑
+- 执行`make`命令编译
+- 将生成的`gpio_test`可执行程序发送到Duo中运行
+
+注意:
+
+- 新建工程目录不是必须要放到 duo-examples 目录下的，可以根据自己的习惯放到其他位置，执行 make 编译命令之前，加载过 duo-examples 目录下的编译环境就可以了(`source /PATH/TO/duo-examples/envsetup.sh`)。
+- 在加载过编译环境(`envsetup.sh`)的终端里，不要编译其他平台如 ARM 或 X86 的 Makefile 工程，如需编译其他平台项目，需要新开终端。
+
+## 代码示范
 
 ### GPIO 使用示例
 
@@ -286,67 +363,7 @@ int main() {
 
 ![duo](/docs/duo/duo-wiringx-uart-test-zh.png)
 
-## 二、开发环境配置
-
-### 准备开发环境
-
-使用本地的 Ubuntu 系统，推荐 Ubuntu 20.04 LTS  
-(也可以使用虚拟机中的Ubuntu系统、Windows 中 WSL 安装的 Ubuntu、基于 Docker 的 Ubuntu 系统)。
-
-- 安装编译依赖的工具
-  ```
-  sudo apt-get install wget git make
-  ```
-- 获取 Examples 源码
-  ```
-  git clone https://github.com/milkv-duo/duo-examples.git
-  ```
-
-- 加载编译环境
-  ```
-  cd duo-examples
-  source envsetup.sh
-  ```
-  第一次加载会自动下载所需的 SDK 包，大小为180M左右，下载完会自动解压到`duo-examples`下，解压后的目录名为`duo-sdk`，下次加载时检测到已存在该目录，就不会再次下载了。
-
-  注: 如果因为网络原因无法完成SDK包的下载，请通过其他途径获取到`duo-sdk.tar.gz`包，手动解压到`duo-examples`目录下，重新`source envsetup.sh`。
-
-- 编译测试
-
-  以`hello-world`为例，进入该例子目录直接执行`make`即可：
-  ```
-  cd hello-world
-  make
-  ```
-  编译成功后将生成的`helloworld`可执行程序通过网口或者USB网络等方式传送到 Duo 设备中，比如[默认固件](https://github.com/milkv-duo/duo-buildroot-sdk/releases)支持的 USB-NCM 方式，Duo 的 IP 为`192.168.42.1`，用户名是`root`，密码是`milkv`。
-  ```
-  scp helloworld root@192.168.42.1:/root/
-  ```
-  发送成功后，在 ssh 或者串口登陆的终端中运行`./helloworld`，会打印`Hello, World!`
-  ```
-  [root@milkv]~# ./helloworld
-  Hello, World!
-  ```
-  **至此，我们的编译开发环境就可以正常使用了**
-
-### 如何创建自己的工程
-
-根据需要，拷贝现有的例子，稍加修改即可。比如需要操作某个 GPIO，可以参考`blink`例子，LED闪烁就是通过控制 GPIO 电平高低实现的，平台初始化和控制 GPIO 的方法，可参考`blink.c`中的代码。
-
-- 新建自己的工程目录`my-project`
-- 复制`blink`例子中的`blink.c`和`Makefile`文件到`my-project`目录
-- 将`blink.c`重命名为自己所需名字如`gpio_test.c`
-- 修改`Makefile`中的`TARGET=blink`为`TARGET=gpio_test`
-- 修改`gpio_test.c`，实现自己的代码逻辑
-- 执行`make`命令编译
-- 将生成的`gpio_test`可执行程序发送到Duo中运行
-
-注意:
-
-- 新建工程目录不是必须要放到 duo-examples 目录下的，可以根据自己的习惯放到其他位置，执行 make 编译命令之前，加载过 duo-examples 目录下的编译环境就可以了(`source /PATH/TO/duo-examples/envsetup.sh`)。
-- 在加载过编译环境(`envsetup.sh`)的终端里，不要编译其他平台如 ARM 或 X86 的 Makefile 工程，如需编译其他平台项目，需要新开终端。
-
-## 三、Demo和项目说明
+## Demo 和项目说明
 
 ### hello-world
 
@@ -447,7 +464,7 @@ SPI 代码目录：[https://github.com/milkv-duo/duo-examples/tree/main/spi](htt
 
 通过 SPI 接口连接 RC522 RFID 读写模块，读取卡片 ID 和类型并输出到屏幕。
 
-## 四、编译 wiringX
+## 编译 wiringX 库
 
 Duo 固件中已经包含编译好的 wiringX 库（/usr/lib/libwiringx.so），可以直接使用。如果你需要通过编译 wiringX 的源码来生成该库，可以按如下方法编译。
 
@@ -550,7 +567,7 @@ sudo sh cmake-3.27.6-linux-x86_64.sh --skip-license --prefix=/usr/local/
 cmake version 3.27.6
 ```
 
-## 五、wiringX APIs
+## wiringX APIs
 
 ### General
 

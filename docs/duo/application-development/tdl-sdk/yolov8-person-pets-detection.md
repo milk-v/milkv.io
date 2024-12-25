@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'yolov8 person-pets detection'
+sidebar_label: 'YOLOv8 Person Cat Dog Detection'
 sidebar_position: 20
 ---
 
