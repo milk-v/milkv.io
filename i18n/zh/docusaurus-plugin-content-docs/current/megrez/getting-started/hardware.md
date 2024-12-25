@@ -85,7 +85,7 @@ Megrez 主板上的 F_USB2 接口兼容标准 PC 主板 USB2.0 接口，引脚�
 
 Megrez 主板上的 F_USB3 接口兼容标准 PC 主板 USB3.0 接口，引脚定义如下：
 
-<Image src='/docs/megrez/megrez-f_usb2.webp' maxWidth='100%' align='left' />
+<Image src='/docs/megrez/megrez-f_usb3.webp' maxWidth='100%' align='left' />
 
 <div className='gpio_style'>
 

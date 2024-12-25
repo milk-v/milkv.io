@@ -85,7 +85,7 @@ The F_USB2 interface on the Megrez motherboard is compatible with standard PC mo
 
 The F_USB3 interface on the Megrez motherboard is compatible with standard PC motherboard USB3.0 interfaces. The pin definitions are as follows:
 
-<Image src='/docs/megrez/megrez-f_usb2.webp' maxWidth='100%' align='left' />
+<Image src='/docs/megrez/megrez-f_usb3.webp' maxWidth='100%' align='left' />
 
 <div className='gpio_style'>
 
