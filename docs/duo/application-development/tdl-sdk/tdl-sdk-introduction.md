@@ -152,10 +152,18 @@ Programs directly transferred to the Duo development board through `scp` may not
 chmod +x sample_vi_fd
 ```
 
-The command to test the face detection example in DuoS is `sample_vi_fd + face detection model file`:
-```
-./sample_vi_fd /mnt/cvimodel/scrfd_768_432_int8_1x.cvimodel
-```
+The command to test the face detection example in the development board is `sample_vi_fd + face detection model file`. **Note that the models used in Duo and Duo256M/DuoS are different**:
+
+- Duo (CV180X)
+  ```
+  ./sample_vi_fd /mnt/cvimodel/scrfd_320_256_ir_0x.cvimodel
+  ```
+
+- Duo256M/DuoS (SG200X)
+  ```
+  ./sample_vi_fd /mnt/cvimodel/scrfd_768_432_int8_1x.cvimodel
+  ```
+
 At this time, point the camera at the face, and the terminal log will print the number of faces currently detected. If you need to preview the video screen in real time on a computer, please refer to [Face Detection Documentation](https://milkv.io/docs/duo/application-development/tdl-sdk/tdl-sdk-face-detection).
 
 ## Model support list

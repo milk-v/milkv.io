@@ -145,10 +145,18 @@ make
 chmod +x sample_vi_fd
 ```
 
-在 DuoS 中的测试该人脸检测示例的命令为 `sample_vi_fd + 人脸检测模型文件`：
-```
-./sample_vi_fd /mnt/cvimodel/scrfd_768_432_int8_1x.cvimodel
-```
+在开发板中测试该人脸检测示例的命令为 `sample_vi_fd + 人脸检测模型文件`，**注意 Duo 和 Duo256M/DuoS 中使用的模型是不同的**：
+
+- Duo (CV180X)
+  ```
+  ./sample_vi_fd /mnt/cvimodel/scrfd_320_256_ir_0x.cvimodel
+  ```
+
+- Duo256M/DuoS (SG200X)
+  ```
+  ./sample_vi_fd /mnt/cvimodel/scrfd_768_432_int8_1x.cvimodel
+  ```
+
 此时将摄像头对准人脸，终端日志中会打印当前检测到人脸的数量。如需通过电脑实时预览视频画面，可参考 [人脸检测文档](https://milkv.io/zh/docs/duo/application-development/tdl-sdk/tdl-sdk-face-detection)。
 
 ## 模型支持列表
