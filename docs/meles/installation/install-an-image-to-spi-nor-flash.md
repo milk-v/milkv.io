@@ -24,20 +24,20 @@ When you replace a new SPI Nor Flash or the firmware is damaged, you may need to
 Install yoctools
 
 ```
-$ sudo pip install yoctools -U
+sudo pip install yoctools -U
 ```
 
 Check version
 
 ```
-$ yoc --version
+yoc --version
 2.0.74
 ```
 
 Get image writer, iw-single-line.bin
 
 ```
-$ wget https://github.com/milkv-meles/thead-bin/raw/main/image-writer/iw-single-line.bin
+wget https://github.com/milkv-meles/thead-bin/raw/main/image-writer/iw-single-line.bin
 ```
 
 ### Get essential images
@@ -47,7 +47,7 @@ First you need to prepare the image for burning. If your Meles is the 8GB versio
 Download zero image.
 
 ```
-$ wget https://github.com/milkv-meles/thead-bin/raw/main/image-writer/zero-1m.img
+wget https://github.com/milkv-meles/thead-bin/raw/main/image-writer/zero-1m.img
 ```
 
 ### Boot Meles to download mode
@@ -67,7 +67,7 @@ To boot Meles to download mode is simple:
 Run the following command. /dev/ttyUSB0 is the serial port on PC.
 
 ```
-$ sudo cct list -u /dev/ttyUSB0
+sudo cct list -u /dev/ttyUSB0
 Wait ..............
 ```
 
@@ -88,7 +88,7 @@ Do not close the terminal, and ignore the printed logs and go directly to Step 2
 
 The terminal opened in Step 1 will now print a list of storage devices.
 ```
-$ sudo cct list -u /dev/ttyUSB0
+sudo cct list -u /dev/ttyUSB0
 Wait ............................
 Memory device list:
   dev = ram0   , size =    1.1MB
@@ -98,7 +98,7 @@ Memory device list:
 #### Step 3: Download image writer to SRAM
 
 ```
-$ sudo cct download -u /dev/ttyUSB0 -d ram0 -f ./iw-single-line.bin -v checksum -r
+sudo cct download -u /dev/ttyUSB0 -d ram0 -f ./iw-single-line.bin -v checksum -r
 Wait 
 Send file './iw-single-line.bin' to 2:0 ...
 File ./iw-single-line.bin download success.     
@@ -113,7 +113,7 @@ Start to run image...
 Download bootloader to 8GB Meles.
 
 ```
-$ sudo cct download -u /dev/ttyUSB0 -d qspi0 -f ./u-boot-with-spl-meles.bin -v checksum -r -t 1200
+sudo cct download -u /dev/ttyUSB0 -d qspi0 -f ./u-boot-with-spl-meles.bin -v checksum -r -t 1200
 Wait 
 Send file './u-boot-with-spl-meles.bin' to 23:0 ...
 File ./u-boot-with-spl-meles.bin download success.
@@ -134,7 +134,7 @@ Power cycle Meles and the blue LED should be always on.
 Run the following command. Device /dev/ttyUSB0 is the serial port on PC.
 
 ```
-$ sudo cct list -u /dev/ttyUSB0
+sudo cct list -u /dev/ttyUSB0
 Wait ..............
 ```
 
@@ -155,7 +155,7 @@ Do not close the terminal, and ignore the printed logs and go directly to Step 2
 
 The terminal opened in Step 1 will now print a list of storage devices.
 ```
-$ sudo cct list -u /dev/ttyUSB0
+sudo cct list -u /dev/ttyUSB0
 Wait ............................
 Memory device list:
   dev = ram0   , size =    1.1MB
@@ -165,7 +165,7 @@ Memory device list:
 #### Step 3: Download image writer to SRAM
 
 ```
-$ sudo cct download -u /dev/ttyUSB0 -d ram0 -f ./iw-single-line.bin -v checksum -r
+sudo cct download -u /dev/ttyUSB0 -d ram0 -f ./iw-single-line.bin -v checksum -r
 Wait 
 Send file './iw-single-line.bin' to 2:0 ...
 File ./iw-single-line.bin download success.     
@@ -178,7 +178,7 @@ Start to run image...
 #### Step 4: Download zero image to SPI Nor Flash
 
 ```
-$ sudo cct download -u /dev/ttyUSB0 -d qspi0 -f ./zero-1m.img -v checksum -r -t 1200
+sudo cct download -u /dev/ttyUSB0 -d qspi0 -f ./zero-1m.img -v checksum -r -t 1200
 Wait 
 Send file './zero-1m.img' to 23:0 ...
 File ./zero-1m.img download success.     
@@ -222,7 +222,7 @@ In addition, you need to prepare the image file for flashing. If your Meles is t
 Type the following command on the PC to view the device:
 
 ```
-$ lsusb | grep T-HEAD
+lsusb | grep T-HEAD
 Bus 001 Device 045: ID 2345:7654 T-HEAD USB download gadget
 ```
 
