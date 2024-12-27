@@ -10,8 +10,8 @@ export default () => {
     return <Layout>
         <main className={styles.megreznx_main}>
             <div className={styles_s.pr_title}>
-                <h1 className={styles_s.pr_name}>Milk-V Megrez NX</h1>
-                <p className={styles_s.pr_info}>Comparable to NVIDIA Jetson Xavier NX</p>
+                <h1 className={styles_s.pr_name} style={{ color: '#fff' }}>Milk-V Megrez NX</h1>
+                <p className={styles_s.pr_info} style={{ color: '#fff' }}>Comparable to NVIDIA Jetson Xavier NX</p>
             </div>
             <Subscribe product='megrez-nx' />
             <div className={styles_j.j_content}>
