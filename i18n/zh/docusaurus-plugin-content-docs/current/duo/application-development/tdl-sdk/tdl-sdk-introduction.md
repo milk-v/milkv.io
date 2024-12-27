@@ -145,7 +145,9 @@ make
 chmod +x sample_vi_fd
 ```
 
-在开发板中测试该人脸检测示例的命令为 `sample_vi_fd + 人脸检测模型文件`，**注意 Duo 和 Duo256M/DuoS 中使用的模型是不同的**：
+在开发板中测试该人脸检测示例的命令为 `sample_vi_fd + 人脸检测模型文件`。**注意 Duo 和 Duo256M/DuoS 中使用的模型是不同的**。
+
+模型下载链接：[https://github.com/milkv-duo/tdl-models](https://github.com/milkv-duo/tdl-models)。
 
 - Duo (CV180X)
   ```
@@ -165,7 +167,7 @@ chmod +x sample_vi_fd
 
 [https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/6_Data_Types.html](https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/6_Data_Types.html)
 
-### TDK-SDK 模型下载
+### TDK-SDK 模型下载（Sophgo）
 
 [https://github.com/sophgo/tdl_models/tree/main](https://github.com/sophgo/tdl_models/tree/main)
 

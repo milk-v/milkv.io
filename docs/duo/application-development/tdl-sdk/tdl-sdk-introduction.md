@@ -152,7 +152,9 @@ Programs directly transferred to the Duo development board through `scp` may not
 chmod +x sample_vi_fd
 ```
 
-The command to test the face detection example in the development board is `sample_vi_fd + face detection model file`. **Note that the models used in Duo and Duo256M/DuoS are different**:
+The command to test the face detection example in the development board is `sample_vi_fd + face detection model file`. **Note that the models used in Duo and Duo256M/DuoS are different**.
+
+Model download link: [https://github.com/milkv-duo/tdl-models](https://github.com/milkv-duo/tdl-models).
 
 - Duo (CV180X)
   ```
@@ -172,7 +174,7 @@ At this time, point the camera at the face, and the terminal log will print the 
 
 [https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/6_Data_Types.html](https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/en/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/6_Data_Types.html)
 
-### TDK-SDK Model Download
+### TDK-SDK Model Download (Sophgo)
 
 [https://github.com/sophgo/tdl_models/tree/main](https://github.com/sophgo/tdl_models/tree/main)
 
