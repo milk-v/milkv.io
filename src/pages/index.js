@@ -230,6 +230,28 @@ const Vega_module = (props) => {
   )
 }
 
+const Megrez_module = (props) => {
+  return (
+    <>
+      <div className={styles.info_module}>
+        <div className={styles.main_module}>
+          <div className={styles.left_title}>
+            <h2>Milk-V Megrez</h2>
+            <p>Milk-V Megrez, a Mini-ITX device powered by the ESWIN EIC7700X, has a built-in quad-core SiFive P550 CPU for RISC-V native development. It offers a smooth desktop experience with a high-performance GPU and has a 19.95 TOPS NPU for local AI capabilities, marking a milestone in RISC-V desktop technology.</p>
+            <div className={styles.learnMore_use}>
+              <Link href='/megrez'><Translate id='homepage.corporations.vegalearnmore' /></Link>
+              <Link href='/megrez#buy' className={styles.buy_button} ><Translate id='homepage.corporations.vegabuynow' /></Link>
+            </div>
+          </div>
+          <div className={styles.right_img}>
+            <img src='/home/home-megrez-view.webp' alt='megrez' />
+          </div>
+        </div>
+      </div >
+    </>
+  )
+}
+
 const Home_web = () => {
   const [index, setIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false);
@@ -240,13 +262,14 @@ const Home_web = () => {
     { name: 'Meles', index: 3, element: <Meles_module /> },
     { name: 'Vega', index: 4, element: <Vega_module /> },
     { name: 'Jupiter', index: 5, element: <Jupiter_module /> },
-    { name: 'Chips', index: 6, element: <Chips_module /> },
+    { name: 'Megrez', index: 6, element: <Megrez_module /> },
+    { name: 'Chips', index: 7, element: <Chips_module /> },
   ];
 
   useEffect(() => {
     const timer = setInterval(() => {
       if (!isPaused && window.innerWidth > 750) {
-        setIndex(prevCount => (prevCount === 6 ? 0 : prevCount + 1));
+        setIndex(prevCount => (prevCount === 7 ? 0 : prevCount + 1));
       }
     }, 5000);
 
