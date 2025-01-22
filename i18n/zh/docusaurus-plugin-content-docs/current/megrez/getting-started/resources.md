@@ -15,7 +15,7 @@ sidebar_position: 70
 
 RockOS 是 PLCT 实验室支持开发的面向 EIC77 系列芯片生态的 Debian 优化发行版，不仅针对 ESWIN EIC77 系列芯片和 SiFive P550 高性能 CPU 进行了全面适配和优化，特别强化了虚拟化能力。通过深度调优，RockOS 实现了对虚拟机和容器的高效支持，可满足多样化需求。
 
-下载链接：coming soon
+下载链接：[Github](https://github.com/milkv-megrez/megrez-build/releases/tag/2025-0117)
 
 Debian/RockOS 系统的 `debian` 账户默认密码为 `debian`。
 
