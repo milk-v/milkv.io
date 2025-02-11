@@ -15,7 +15,7 @@ RockOS 支持基于 H 扩展（RISC-V Hypervisor Extension）的 KVM 虚拟化�
 
 ## 演示环境
 
-- 系统版本：RockOS [20241117](https://mirror.iscas.ac.cn/rockos/extra/images/evb1/20241130/20241117/)
+- 系统版本：RockOS [github](https://github.com/milkv-megrez/megrez-build/releases/tag/2025-0117)
 - Ubuntu 预安装镜像：https://cdimage.ubuntu.com/releases/24.10/release/ubuntu-24.10-preinstalled-server-riscv64.img.xz
 - openEuler 24.09 QEMU: https://repo.openeuler.org/openEuler-24.09/virtual_machine_img/riscv64/
 - FreeBSD 14.1-RELEASE: https://download.freebsd.org/releases/VM-IMAGES/14.1-RELEASE/riscv64/Latest/
