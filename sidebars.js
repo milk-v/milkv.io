@@ -516,6 +516,20 @@ const sidebars = {
         'megrez/getting-started/resources',
       ],
     },
+    {
+      type: "category",
+      label: '🖥️ Development Guide',
+      collapsed: false,
+      link: {
+        type: "generated-index",
+        title: '🖥️ Development Guide',
+        description: 'Development Guide',
+        slug: '/megrez/development-guide'
+      },
+      items: [
+        'megrez/development-guide/kvm',
+      ],
+    },
   ],
 };
 

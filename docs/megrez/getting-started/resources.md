@@ -13,7 +13,7 @@ For instructions on installing the operating system, please refer to: [Installin
 
 RockOS is a Debian-optimized distribution supported and developed by the PLCT Lab, specifically tailored for the EIC77 series chip ecosystem. It has been fully adapted and optimized for ESWIN EIC77 series chips and the SiFive P550 high-performance CPU, with a particular focus on virtualization capabilities. Through deep optimization, RockOS provides efficient support for virtual machines and containers, meeting diverse requirements.
 
-Download Link: Coming Soon
+Download Link: [Github](https://github.com/milkv-megrez/megrez-build/releases/tag/2025-0117)
 
 The default password for the `debian` account in Debian/RockOS is `debian`.
 
