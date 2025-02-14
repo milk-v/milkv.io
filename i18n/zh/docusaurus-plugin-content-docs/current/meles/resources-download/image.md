@@ -20,3 +20,7 @@ sidebar_position: 10
 ### v2024-1229
 
 镜像链接：[Meles 镜像](https://mirror.iscas.ac.cn/revyos/extra/images/meles/20241229/)。
+
+### v2025-0110
+
+镜像链接：[Meles 镜像](https://mirror.iscas.ac.cn/revyos/extra/images/meles/20250110/)。
