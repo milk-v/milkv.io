@@ -90,7 +90,56 @@ The following instructions use the `gparted` tool as an example for resizing. Yo
 ## Updating/Re-Flashing U-Boot
 
 ### When U-Boot is Available
-Coming soon.
+Please prepare a USB drive and format it to EXT4 format. Store the [bootloader file](http://localhost:3000/docs/megrez/getting-started/resources#bootloader-download) on the USB drive. If there are multiple partitions, place it in the first partition.
+
+While the device is powered off, use a Type-C cable or TTL-USB cable to connect the Milk-V Megrez to the PC. Refer to the [UART Serial Console](https://milkv.io/docs/megrez/getting-started/setup#usb-to-serial-cable) for more details.
+
+Switch the `Recovery/Normal Boot Toggle Switch` to `Normal`.
+
+Power on the device, observe the output from the `UART serial console`, and press `s` to interrupt the automatic boot process.
+
+Use the command `ls usb 0` to check if the files on the USB drive are correctly recognized. If recognition fails, try using another USB port or drive, and ensure it is formatted to EXT4.
+
+Use the following command to load the `bootloader_milkv-megrez-2025-0102.bin` file from the USB drive to the memory address starting at 0x90000000.
+
+~~~
+ext4load usb 0 0x90000000 bootloader_milkv-megrez-2025-0102.bin 
+~~~
+
+Use the following command to burn the file just loaded into the SPI flash.
+
+~~~
+es_burn write 0x90000000 flash
+~~~
 
 ### When U-Boot is Unavailable
-Coming soon.
+Please prepare a USB drive and format it to EXT4 format. Store the [bootloader file](https://milkv.io/docs/megrez/getting-started/resources) on the USB drive. If there are multiple partitions, place it in the first partition.
+
+Switch the `Recovery/Normal Boot Toggle Switch` to `Recovery`.
+
+Use a Type-C cable to connect the Type-C port of the Milk-V Megrez to the PC while the device is powered off.
+
+Power on the device, and the PC will detect a USB storage device named `ESWIN-2030`.
+
+Copy the [bootloader file](https://milkv.io/docs/megrez/getting-started/resources) to `ESWIN-2030`. The `UART serial console` will start printing, and the system will use the uboot file from `ESWIN-2030` as a temporary bootloader.
+
+<Image src='/docs/megrez/recovery-linux.webp' maxWidth='100%' align='left' />
+<Image src='/docs/megrez/recovery-print.webp' maxWidth='100%' align='left' />
+
+Press `s` to interrupt the automatic boot process.
+
+Use the command `ls usb 0` to check if the files on the USB drive are correctly recognized. If recognition fails, try using another USB port or drive, and ensure it is formatted to EXT4.
+
+Use the following command to load the `bootloader_milkv-megrez-2025-0102.bin` file from the USB drive to the memory address starting at 0x90000000.
+
+~~~
+ext4load usb 0 0x90000000 bootloader_milkv-megrez-2025-0102.bin 
+~~~
+
+Use the following command to burn the file just loaded into the SPI flash.
+
+~~~
+es_burn write 0x90000000 flash
+~~~
+
+Wait for the process to complete, then reboot the device to finish the update.

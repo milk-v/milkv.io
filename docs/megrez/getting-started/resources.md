@@ -25,6 +25,10 @@ Download Link: [https://images.fedoravforce.org/Megrez](https://images.fedoravfo
 
 The default password for the `root` account in the system is `riscv`.
 
+## bootloader Download
+
+[bootloader_milkv-megrez-2025-0102.bin](https://github.com/milkv-megrez/megrez-build/releases/tag/2025-0117)
+
 ## Hardware Resource Download
 
 ### V1.0

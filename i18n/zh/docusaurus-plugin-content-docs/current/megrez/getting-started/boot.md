@@ -91,7 +91,59 @@ Coming soon
    ## 更新/重刷 U-boot
 
    ### U-Boot 可用时
-   Coming soon
+
+请准备一个U盘，并格式化成EXT4格式，将[bootloader 文件](http://localhost:3000/docs/megrez/getting-started/resources#bootloader-download)存储在U盘中。如果有多个分区，请存放在第一个分区里。
+
+请在断电时使用 Type-C 线缆 或 TTL-USB 线缆 连接 Milk-V Megrez 与 PC，参考 [UART Serial Console](https://milkv.io/docs/megrez/getting-started/setup#usb-to-serial-cable)
+
+将 `Recovery/Normal Boot Toggle Switch` 拨动至 `Normal`
+
+启动设备，观察 `UART串行控制台` 的打印，按下`s`，将打断自动启动流程。
+
+使用 `ls usb 0` 查看u盘中的文件是否能被正确识别。如若识别失败，请尝试使用其他usb接口/u盘，并且检查是否格式化为 EXT4 格式。
+
+使用以下命令将文件usb 0 中的`bootloader_milkv-megrez-2025-0102.bin`文件读取至以 0x90000000 开始的地址空间。
+
+~~~
+ext4load usb 0 0x90000000 bootloader_milkv-megrez-2025-0102.bin 
+~~~
+
+使用以下命令将刚刚读取到的文件烧录至 spi flash 中
+
+~~~
+es_burn write 0x90000000 flash
+~~~
+
+等待执行完毕后，重启设备即可完成更新。
 
    ### U-boot 不可用时
-   Coming soon
+
+请准备一个U盘，并格式化成EXT4格式，将[bootloader 文件](http://localhost:3000/docs/megrez/getting-started/resources#bootloader-download)存储在U盘中。如果有多个分区，请存放在第一个分区里。
+
+将 `Recovery/Normal 启动切换开关` 拨动至 `Recovery`
+请在断电时使用 Type-C 线缆 连接 Milk-V Megrez的 Type-C 接口 与 PC。
+
+启动设备，此时 PC 上会弹出一个USB存储设备 `ESWIN-2030`。
+
+将 [bootloader 文件](http://localhost:3000/docs/megrez/getting-started/resources#bootloader-download)拷贝至 `ESWIN-2030`下。此时 `UART串行控制台` 开始打印，系统将使用`ESWIN-2030`下的uboot文件作为临时启动的uboot。
+
+<Image src='/docs/megrez/recovery-linux.webp' maxWidth='100%' align='left' />
+<Image src='/docs/megrez/recovery-print.webp' maxWidth='100%' align='left' />
+
+按下`s`，将打断自动启动流程。
+
+使用 `ls usb 0` 查看u盘中的文件是否能被正确识别。如若识别失败，请尝试使用其他usb接口/u盘，并且检查是否格式化为 EXT4 格式。
+
+使用以下命令将文件usb 0 中的`bootloader_milkv-megrez-2025-0102.bin`文件读取至以 0x90000000 开始的地址空间。
+
+~~~
+ext4load usb 0 0x90000000 bootloader_milkv-megrez-2025-0102.bin 
+~~~
+
+使用以下命令将刚刚读取到的文件烧录至 spi flash 中
+
+~~~
+es_burn write 0x90000000 flash
+~~~
+
+等待执行完毕后，重启设备即可完成更新。

@@ -27,6 +27,10 @@ Debian/RockOS 系统的 `debian` 账户默认密码为 `debian`。
 
 系统 `root` 账户默认密码为 `riscv`。
 
+## Bootloader 下载
+
+[bootloader_milkv-megrez-2025-0102.bin](https://github.com/milkv-megrez/megrez-build/releases/tag/2025-0117)
+
 ## 硬件资源下载 
 
 ### V1.0
