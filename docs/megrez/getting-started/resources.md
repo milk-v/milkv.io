@@ -32,4 +32,12 @@ The default password for the `root` account in the system is `riscv`.
 ## Hardware Resource Download
 
 ### V1.0
-Coming Soon
+[megrez_v1.0_schematic_20250108.pdf](https://github.com/milkv-megrez/megrez-files/blob/main/hardware/megrez_v1.0_schematic_20250108.pdf?raw=true)
+
+[megrez_X10_202409014_top.dxf](https://github.com/milkv-megrez/megrez-files/blob/main/hardware/megrez_X10_202409014_top.dxf?raw=true)
+
+[megrez_X10_202409014_bot.dxf](https://github.com/milkv-megrez/megrez-files/blob/main/hardware/megrez_X10_202409014_bot.dxf?raw=true)
+
+[megrez_X10_202409014_TOP](https://github.com/milkv-megrez/megrez-files/blob/main/hardware/megrez_X10_202409014_TOP.pdf?raw=true)
+
+[megrez_X10_202409014_BOTTOM.pdf](https://github.com/milkv-megrez/megrez-files/blob/main/hardware/megrez_X10_202409014_BOTTOM.pdf?raw=true)
