@@ -31,21 +31,21 @@ export default () => {
                         <p className={styles.c_info}>32G bandwidth Layer 2 Ethernet switch chip</p>
                     </div>
                 </div>
-                {/* <div className={clsx(styles.flex_item, styles.supports)}>
+                <div className={clsx(styles.flex_item, styles.supports)}>
                     <div>
                         <div className={styles.contexts3}>
                             <p className={clsx(styles.c_title2, styles.c_title2_top)}>Milk-V BMC 08</p>
                             <p className={styles.c_info}>RISC-V Powered BMC
                             </p>
                         </div>
-                        <div className={styles.support_ul}>
+                        {/* <div className={styles.support_ul}>
                             <p className={styles.support_title}>Support KVM Function
                             </p>
                             <ul>
                                 <li>Remote desktop access</li>
                                 <li>Simulates keyboard and mouse</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                     <div>
                         <div className={styles.support_ul}>
@@ -65,7 +65,7 @@ export default () => {
                             </ul>
                         </div>
                     </div>
-                </div> */}
+                </div>
                 <div className={clsx(styles.banner_module, styles.contexts4)}>
                     <p className={clsx(styles.c_title2, styles.c_title2_top)}>RISC-V Computing Nodes</p>
                     <div className={styles.position_box}>
