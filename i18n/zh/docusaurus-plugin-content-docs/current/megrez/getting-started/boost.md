@@ -9,7 +9,7 @@ sidebar_position: 30
 
 ## 提升频率至 1.8GHz
 
-以 Rock OS 为例，进入 Rock OS后，在 控制台 输入
+以 RockOS 为例，进入 RockOS后，在 控制台 输入
 
 ~~~ 
 sudo sh -c 'echo performance > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor'
@@ -19,7 +19,7 @@ sudo sh -c 'echo performance > /sys/devices/system/cpu/cpufreq/policy0/scaling_g
 
 ## 降低频率至 1.4GHz
 
-以 Rock OS 为例，进入 Rock OS后，在 控制台 输入
+以 RockOS 为例，进入 RockOS后，在 控制台 输入
 
 ~~~ 
 sudo sh -c 'echo userspace > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor'
@@ -31,7 +31,7 @@ sudo sh -c 'echo userspace > /sys/devices/system/cpu/cpufreq/policy0/scaling_gov
 
 Megrez 支持动态调频，可根据当前 CPU 任务负载，自动调整频率，以实现节能与性能的平衡。
 
-以 Rock OS 为例，进入 Rock OS后，在 控制台 输入
+以 RockOS 为例，进入 RockOS后，在 控制台 输入
 
 ~~~ 
 sudo sh -c 'echo schedutil > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor'

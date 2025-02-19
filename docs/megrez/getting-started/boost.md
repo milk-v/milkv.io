@@ -9,7 +9,7 @@ By default, the CPU frequency of Megrez is set to 1.4GHz, with a CPU voltage of 
 
 ## Increasing the Frequency to 1.8GHz
 
-Using Rock OS as an example, after booting into Rock OS, enter the following command in the terminal:
+Using RockOS as an example, after booting into RockOS, enter the following command in the terminal:
 
 ~~~ 
 sudo sh -c 'echo performance > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor'
@@ -19,7 +19,7 @@ At this point, the CPU voltage will increase to 900mV, and the CPU frequency wil
 
 ## Reducing the Frequency to 1.4GHz
 
-Using Rock OS as an example, after booting into Rock OS, enter the following command in the terminal:
+Using RockOS as an example, after booting into RockOS, enter the following command in the terminal:
 
 ~~~ 
 sudo sh -c 'echo userspace > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor'
@@ -31,7 +31,7 @@ At this point, the CPU voltage will decrease to 800mV, and the CPU frequency wil
 
 Megrez supports dynamic frequency scaling, allowing the CPU frequency to adjust automatically based on the current task load to balance energy efficiency and performance.
 
-Using Rock OS as an example, after booting into Rock OS, enter the following command in the terminal:
+Using RockOS as an example, after booting into RockOS, enter the following command in the terminal:
 
 ~~~ 
 sudo sh -c 'echo schedutil > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor'
