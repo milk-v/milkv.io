@@ -59,8 +59,9 @@ Swap:             0B          0B          0B
 
 ### 替换设备树
 
-下载该 dtb 文件：
-[eic7700-milkv-megrez-no-npu.dtb](https://github.com/milkv-megrez/megrez-files/blob/main/software/dtb/eic7700-milkv-megrez-no-npu.dtb?raw=true)
+下载 dtb 文件（根据自己使用的系统镜像版本下载对应的 dtb 文件）：
+
+[eic7700-milkv-megrez-no-npu.dtb](https://github.com/milkv-megrez/megrez-build/releases/)
 
 备份原系统使用的 dtb 文件：
 ```
@@ -85,3 +86,34 @@ $ free -h
 Mem:            15Gi       858Mi        14Gi        10Mi       764Mi        14Gi
 Swap:             0B          0B          0B
 ```
+
+### 临时生效一次的方法
+
+如果只需要临时测试释放 NPU 占用的内存，可以通过在 u-boot 修改配置的方便实现。该方法需要使用串口线，进入 UART 串口控制台操作。
+
+系统上电后，在 PC 的串口终端中注意输出的日志信息，在出现 `Autoboot in 5 seconds` 提示后，任意键来打断 u-boot 启动，进入 u-boot 的命令行。(如果您更新过 u-boot，需要按 `s` 键来进入 u-boot 的命令行)
+
+执行以下命令：
+
+```
+=> fdt mmz mmz_nid_0_part_0 0x300000000 0x1000
+```
+
+再输入 `boot` 命令启动：
+
+```
+=> boot
+```
+
+进入系统后，查看内存信息，已经变为 16G 左右：
+
+```
+debian@rockos-eswin:~$ free -h
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       472Mi        15Gi       9.3Mi       286Mi        15Gi
+Swap:             0B          0B          0B
+```
+
+:::info
+该方法只对本次启动有效，重新上电后 NPU 会恢复系统默认的内存分配。
+:::

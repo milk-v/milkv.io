@@ -59,8 +59,9 @@ Releasing the memory used by the NPU will cause the loss of the NPU and related 
 
 ### Replace the device tree
 
-Download the dtb file:
-[eic7700-milkv-megrez-no-npu.dtb](https://github.com/milkv-megrez/megrez-files/blob/main/software/dtb/eic7700-milkv-megrez-no-npu.dtb?raw=true)
+Download the dtb file (download the corresponding dtb file according to the system image version you use):
+
+[eic7700-milkv-megrez-no-npu.dtb](https://github.com/milkv-megrez/megrez-build/releases/)
 
 Back up the dtb file used by the original system:
 ```
@@ -85,3 +86,34 @@ $ free -h
 Mem:            15Gi       858Mi        14Gi        10Mi       764Mi        14Gi
 Swap:             0B          0B          0B
 ```
+
+### A one-time temporary method
+
+If you only need to temporarily test and release the memory occupied by NPU, you can modify the configuration in u-boot to achieve the convenience. This method requires the use of a serial cable to enter the UART serial console operation.
+
+After the system is powered on, pay attention to the log information output in the PC serial terminal. After the prompt `Autoboot in 5 seconds` appears, press any key to interrupt the u-boot startup and enter the u-boot command line. (If you have updated u-boot, you need to press the `s` key to enter the u-boot command line)
+
+Execute the following command:
+
+```
+=> fdt mmz mmz_nid_0_part_0 0x300000000 0x1000
+```
+
+Then enter the `boot` command to start:
+
+```
+=> boot
+```
+
+After entering the system, check the memory information and it has become about 16G:
+
+```
+debian@rockos-eswin:~$ free -h
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       472Mi        15Gi       9.3Mi       286Mi        15Gi
+Swap:             0B          0B          0B
+```
+
+:::info
+This method is only valid for this startup. After powering on again, the NPU will restore the system's default memory allocation.
+:::
