@@ -13,7 +13,7 @@ For instructions on installing the operating system, please refer to: [Installin
 
 RockOS is a Debian-optimized distribution supported and developed by the PLCT Lab, specifically tailored for the EIC77 series chip ecosystem. It has been fully adapted and optimized for ESWIN EIC77 series chips and the SiFive P550 high-performance CPU, with a particular focus on virtualization capabilities. Through deep optimization, RockOS provides efficient support for virtual machines and containers, meeting diverse requirements.
 
-Download Link: [Github](https://github.com/milkv-megrez/megrez-build/releases/tag/2025-0117)
+Download Link: [Github](https://github.com/milkv-megrez/megrez-build/releases/)
 
 The default password for the `debian` account in Debian/RockOS is `debian`.
 
@@ -26,6 +26,8 @@ Download Link: [https://images.fedoravforce.org/Megrez](https://images.fedoravfo
 The default password for the `root` account in the system is `riscv`.
 
 ## bootloader Download
+
+[bootloader_milkv-megrez-2025-0224.bin](https://github.com/milkv-megrez/megrez-build/releases/tag/2025-0219)
 
 [bootloader_milkv-megrez-2025-0102.bin](https://github.com/milkv-megrez/megrez-build/releases/tag/2025-0117)
 
