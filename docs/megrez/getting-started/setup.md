@@ -89,7 +89,7 @@ Swap:             0B          0B          0B
 
 ### A one-time temporary method
 
-If you only need to temporarily test and release the memory occupied by NPU, you can modify the configuration in u-boot to achieve the convenience. This method requires the use of a serial cable to enter the UART serial console operation.
+If you only need to temporarily test and release the memory occupied by NPU, you can do so by modifying the configuration in u-boot. This method requires the use of a serial line to enter the UART serial console for operation.
 
 After the system is powered on, pay attention to the log information output in the PC serial terminal. After the prompt `Autoboot in 5 seconds` appears, press any key to interrupt the u-boot startup and enter the u-boot command line. (If you have updated u-boot, you need to press the `s` key to enter the u-boot command line)
 
