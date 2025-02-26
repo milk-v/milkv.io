@@ -4,11 +4,8 @@ NPU Runtime 提供的示例目录 (npu_runtime_sample) 主要包括调用 NPU Ru
 
 ## 安装 Yolov3 示例
 
-请按照 [ENNP SDK 下载](../ENNP-SDK/introduction#ennp-sdk-下载) 下载 ai-release
-
 ```bash
-cd ai-release/EIC7x_Release_20241230/softwares/packages
-sudo apt install ./es-sdk-sample-npu.deb
+sudo apt install es-sdk-sample-npu-runtime
 ```
 
 安装后 sample 位于 `/opt/eswin/sample-code/npu_sample/npu_runtime_sample` 目录

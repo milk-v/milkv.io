@@ -2,14 +2,11 @@
 
 ## 安装 MobileNetv2 示例
 
-请按照 [ENNP SDK 下载](../ENNP-SDK/introduction#ennp-sdk-下载) 下载 ai-release
-
 ```bash
-cd ai-release/EIC7x_Release_20241230/softwares/packages
-sudo apt install ./es-sdk-sample-npu-mobilenetv2.deb
+sudo apt install es-sdk-sample-npu-mobilenetv2
 ```
 
-安装后 sample 位于 `/opt/eswin/sample-code/npu_sample /npu_mobilenetv2_sample` 目录
+安装后 sample 位于 `/opt/eswin/sample-code/npu_sample/npu_mobilenetv2_sample` 目录
 
 ## 目录
 
