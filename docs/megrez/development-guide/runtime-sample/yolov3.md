@@ -4,11 +4,8 @@ The example directory provided by NPU Runtime (npu_runtime_sample) mainly includ
 
 ## Installing YOLOv3 Example
 
-Please follow the instructions in [ENNP SDK Download](../ENNP-SDK/introduction#ennp-sdk-download) to download ai-release.
-
 ```bash
-cd ai-release/EIC7x_Release_20241230/softwares/packages
-sudo apt install ./es-sdk-sample-npu.deb
+sudo apt install es-sdk-sample-npu-runtime
 ```
 
 After installation, the sample can be found in the `/opt/eswin/sample-code/npu_sample/npu_runtime_sample` directory.

@@ -35,15 +35,15 @@ This document has been tested on x86 Ubuntu 22.04 with Linux kernel version 6.8.
 - **Load EsAAC_EsSimulator Docker Image**
 
   ```bash
-  cd nn-tools/EIC7x_Release_20241230
+  cd nn-tools/EIC7x_Release_20250130
   sudo docker load -i esaac_essimulator_docker_20241230.tar
   ```
 
 - **Check EsAAC_EsSimulator Docker Image**
 
   ```bash
-  sudo docker images
-  esaac_essimulator 20241230  390b345f56b8  6 weeks ago 3.46GB
+  $sudo docker images
+  esaac_essimulator 20250130  6d014d7a550d  2 weeks ago 3.46GB
   ```
 
 - **Create Container**
