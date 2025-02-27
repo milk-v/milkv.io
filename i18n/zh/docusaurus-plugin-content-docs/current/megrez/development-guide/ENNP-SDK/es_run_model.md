@@ -25,11 +25,14 @@ options:
 
 ## 安装方法
 
-请按照 [ENNP SDK 下载](introduction#ennp-sdk-下载) 下载 ai-release
+:::tip
+在进行安装 deb 包前，建议先升级系统内核：
+`sudo apt update`，
+`sudo apt upgrade`，然后重启
+:::
 
 ```bash
-cd ai-release/EIC7x_Release_20241230/softwares/packages
-sudo apt install ./es-sdk-sample-npu,deb
+sudo apt install es-sdk-npu
 ```
 
 安装后 `es_run_model` 位于 `/opt/eswin/bin` 目录

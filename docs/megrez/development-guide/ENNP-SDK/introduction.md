@@ -28,7 +28,7 @@ The ENNP SDK is hosted on Baidu Cloud. Please use the Baidu Cloud client to down
 - nn-tools.tar.gz
 
 ```bash
-Link: https://pan.baidu.com/s/1juNcBYxXGBGisD4DHDPseA?pwd=1024  Extraction code: 1024
+Link: https://pan.baidu.com/s/1RsM3HGdM1-r1L7DmqVs0rg?pwd=1024  Extraction code: 1024
 ```
 
 ### Extracting the compressed files
@@ -41,4 +41,4 @@ tar -xvf nn-tools.tar.gz
 ## Detailed Documentation
 
 - [ENNP User Manual](https://github.com/milkv-megrez/megrez-files/blob/main/ai-release/docs/ENNP%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_CN_v1.2.pdf)
-- [ENNP Developer Manual](https://github.com/milkv-megrez/megrez-files/blob/main/ai-release/docs/ENNP%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C_CN_v0.9.2.pdf)
+- [ENNP Developer Manual](https://github.com/milkv-megrez/megrez-files/blob/main/ai-release/docs/ENNP%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C_CN_v0.9.4.pdf)

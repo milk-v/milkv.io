@@ -4,11 +4,8 @@ The NPU ResNet50 example directory (`npu_resnet50_sample`) mainly includes examp
 
 ## Installing ResNet50 Example
 
-Please follow the [ENNP SDK Download](../ENNP-SDK/introduction#ennp-sdk-download) to download ai-release.
-
 ```bash
-cd ai-release/EIC7x_Release_20241230/softwares/packages
-sudo apt install ./es-sdk-sample-npu-resnet50.deb
+sudo apt install es-sdk-sample-npu-resnet50
 ```
 
 After installation, the sample is located in the `/opt/eswin/sample-code/npu_sample/npu_resnet50_sample` directory.

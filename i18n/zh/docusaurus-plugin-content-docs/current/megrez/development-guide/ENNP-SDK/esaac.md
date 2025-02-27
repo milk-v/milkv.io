@@ -36,14 +36,14 @@ EsAAC 和 EsSimulator 以同一 docker 形式发布, 请用户在 X86 Linux 平�
 - 加载 EsAAC_EsSimulator Docker 镜像
 
   ```bash
-  cd nn-tools/EIC7x_Release_20241230
+  cd nn-tools/EIC7x_Release_20250130
   sudo docker load -i esaac_essimulator_docker_20241230.tar
   ```
 
 - 查看 EsAAC_EsSimulator Docker 镜像
   ```bash
   $sudo docker images
-  esaac_essimulator 20241230  390b345f56b8  6 weeks ago 3.46GB
+  esaac_essimulator 20250130  6d014d7a550d  2 weeks ago 3.46GB
   ```
 - 创建容器
 

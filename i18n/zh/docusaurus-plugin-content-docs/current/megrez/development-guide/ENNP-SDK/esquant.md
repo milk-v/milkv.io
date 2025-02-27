@@ -27,7 +27,7 @@ EsQuant 以 docker 形式发布, 请用户在 X86 Linux 平台工作站安装好
 - 加载 EsQuant docker 镜像
 
   ```bash
-  cd nn-tools/EIC7x_Release_20241230
+  cd nn-tools/EIC7x_Release_20250130
   sudo docker load -i esquant_docker.tar
   ```
 

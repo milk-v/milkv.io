@@ -25,7 +25,7 @@ EsQuant is released in a Docker format. Please install [Docker](https://docs.doc
 - **Load EsQuant Docker Image**
 
   ```bash
-  cd nn-tools/EIC7x_Release_20241230
+  cd nn-tools/EIC7x_Release_20250130
   sudo docker load -i esquant_docker.tar
   ```
 

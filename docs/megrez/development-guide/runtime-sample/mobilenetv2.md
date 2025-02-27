@@ -2,11 +2,8 @@
 
 ## Install MobileNetV2 Example
 
-Please follow the [ENNP SDK Download](../ENNP-SDK/introduction#ennp-sdk-download) to download ai-release.
-
 ```bash
-cd ai-release/EIC7x_Release_20241230/softwares/packages
-sudo apt install ./es-sdk-sample-npu-mobilenetv2.deb
+sudo apt install es-sdk-sample-npu-mobilenetv2
 ```
 
 After installation, the sample will be located at the `/opt/eswin/sample-code/npu_sample/npu_mobilenetv2_sample` directory.

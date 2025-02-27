@@ -28,7 +28,7 @@ ENNP SDK 通过百度云盘存放托管，用户请使用百度云盘客户端�
 - nn-tools.tar.gz
 
 ```bash
-链接: https://pan.baidu.com/s/1juNcBYxXGBGisD4DHDPseA?pwd=1024 提取码: 1024
+链接: https://pan.baidu.com/s/1RsM3HGdM1-r1L7DmqVs0rg?pwd=1024 提取码: 1024
 ```
 
 ### 解压压缩包
@@ -41,4 +41,4 @@ tar -xvf nn-tools.tar.gz
 ## 详细文档
 
 - [ENNP用户手册](https://github.com/milkv-megrez/megrez-files/blob/main/ai-release/docs/ENNP%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_CN_v1.2.pdf)
-- [ENNP开发者手册](https://github.com/milkv-megrez/megrez-files/blob/main/ai-release/docs/ENNP%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C_CN_v0.9.2.pdf)
+- [ENNP开发者手册](https://github.com/milkv-megrez/megrez-files/blob/main/ai-release/docs/ENNP%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C_CN_v0.9.4.pdf)
