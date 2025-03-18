@@ -529,3 +529,19 @@ BR2_PER_PACKAGE_DIRECTORIES=y
 ```
 
 When a compilation error occurs, in addition to checking the error information of the compilation terminal, you can also check the complete log in `build/br.log` for troubleshooting.
+
+### Buildroot package download failed
+
+When network restrictions are encountered during compilation, Buildroot may not be able to download the configured packages normally. In Buildroot SDK V2, you can try to download our [packaged files](https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/tag/dl) and unzip them to the buildroot directory to skip this step.
+
+The specific steps are as follows:
+
+```bash
+rm -rf ./buildroot-2024.02/output ./buildroot-2024.02/dl
+cd ./buildroot-2024.02
+wget https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/download/dl/dl.tar.gz
+tar xvf ./dl.tar.gz
+
+rm -rf ./dl.tar.gz && cd ..
+```
+ 

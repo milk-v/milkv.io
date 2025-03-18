@@ -523,3 +523,19 @@ BR2_PER_PACKAGE_DIRECTORIES=y
 ```
 
 编译出错时除了查看编译终端的出错信息，还可以查看 `build/br.log` 中的完整日志进行排查。
+
+### Buildroot 软件包下载失败
+
+当编译中遇到网络限制时， Buildroot 可能无法正常下载已经配置安装的软件包，在 Buildroot SDK V2 中您可以尝试下载我们[打包的文件](https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/tag/dl)解压到 buildroot 目录下来跳过这一步骤。
+
+具体步骤如下：
+
+```bash
+rm -rf ./buildroot-2024.02/output ./buildroot-2024.02/dl
+cd ./buildroot-2024.02
+wget https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/download/dl/dl.tar.gz
+tar xvf ./dl.tar.gz
+
+rm -rf ./dl.tar.gz && cd ..
+```
+ 
