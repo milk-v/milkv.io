@@ -20,13 +20,15 @@ export default (props) => {
             banli_url: 'https://spotpear.cn/category/Milk-V.html',
             chilli_url: 'https://shop.plati.ma/collections/all?filter.p.vendor=Milk-V',
             jd_url: 'https://ic-item.jd.com/10107640792852.html',
+            robu_url: 'https://robu.in/?s=milk+v+duo&post_type=product&dgwt_wcas=1'
         },
         'duo-s': {
             arace_url: 'https://arace.tech/products/milkv-duo-s',
             taobao_url: 'https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-24811212567.16.4d92224f5Hci1u&id=770462822819&sku_properties=5919063:6536025',
             banli_url: 'https://spotpear.cn/category/Milk-V.html',
             chilli_url: 'https://shop.plati.ma/products/milk-v-duo-s-512m-1ghz-dual-core-risc-v-arm-sbc?_pos=4&_fid=86ada3723&_ss=c',
-            jd_url: 'https://ic-item.jd.com/10107306617970.html#crumb-wrap'
+            jd_url: 'https://ic-item.jd.com/10107306617970.html#crumb-wrap',
+            robu_url: 'https://robu.in/?s=milk+v+duo+s&post_type=product&dgwt_wcas=1'
         },
         'duo-module-01': {
             arace_url: 'https://arace.tech/products/milk-v-duo-module-01',
@@ -40,10 +42,12 @@ export default (props) => {
         },
         'mars': {
             arace_url: 'https://arace.tech/products/milk-v-mars',
-            taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=756713087930'
+            taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=756713087930',
+            robu_url: 'https://robu.in/?s=milk+v+mars&post_type=product&dgwt_wcas=1'
         },
         'mars-cm': {
             arace_url: 'https://arace.tech/products/milk-v-mars-cm',
+            robu_url: 'https://robu.in/product/milk-v-mars-cm-without-wi-fi/'
         },
         'meles': {
             taobao_url: 'https://item.taobao.com/item.htm?id=779272470113',
@@ -89,7 +93,9 @@ export default (props) => {
         'banli_url': '/components/banli.svg',
         'chilli_url': '/components/platima.png',
         'allnet_url': '/components/allent.svg',
+        'robu_url': '/components/robu.png',
     }
+
     const text_data = {
         'crowdSupply_url': 'Crowd Supply',
         'other_url': 'Other countries and regions',
@@ -100,6 +106,7 @@ export default (props) => {
         'banli_url': '斑梨电子',
         'chilli_url': 'Platima Tinkers',
         'allnet_url': 'ALLNET',
+        'robu_url': 'Rubu.in',
     }
 
     const product_pictures = {
@@ -140,6 +147,8 @@ export default (props) => {
                                             shipping_location = 'United States'
                                         } else if (item === 'chilli_url') {
                                             shipping_location = 'Australia'
+                                        } else if (item === 'robu_url') {
+                                            shipping_location = 'India'
                                         } else {
                                             shipping_location = 'China Mainland'
                                         }
