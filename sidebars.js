@@ -535,6 +535,8 @@ const sidebars = {
             "megrez/development-guide/runtime-sample/yolov3",
             "megrez/development-guide/runtime-sample/resnet50",
             "megrez/development-guide/runtime-sample/mobilenetv2",
+            "megrez/development-guide/runtime-sample/qwen2",
+            "megrez/development-guide/runtime-sample/deepseek-r1",
           ],
         },
       ],
