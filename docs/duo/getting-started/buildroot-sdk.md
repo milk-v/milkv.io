@@ -194,7 +194,7 @@ cd duo-buildroot-sdk
 ### Pull the Docker image and run
 
 ```bash
-docker run --privileged -itd --name duodocker -v $(pwd):/home/work milkvtech/milkv-duo:latest /bin/bash
+docker run --privileged -itd --name duodocker -v "$(pwd)":/home/work milkvtech/milkv-duo:latest /bin/bash
 ```
 
 Description of some parameters in the command:
