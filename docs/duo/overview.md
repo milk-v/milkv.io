@@ -28,7 +28,7 @@ Milk-V Duo S is an upgraded model of Duo, featuring an upgraded SG2000 main cont
 The Duo Module 01 is a compact module with integrated SG2000, WI-FI6/BTDM5.4, and eMMC. It supports SMD mounting. Also it can greatly save product development time. It is the first choice for making products.To enhance your development experience with the Duo Module 01, Milk-V provides the DuoModule 01 Evaluation Board, which is designed to facilitate your development evaluation and provide you with reference designs.
 
 # Specification
-|                | [Duo](/docs/duo/getting-started/duo)                                      | [Duo 256M](/docs/duo/getting-started/duo256m)                             | [Duo S](/docs/duo/getting-started/duos)                                       | DuoModule 01 Evaluation Board                                                 |
+|                | [Duo(EOL)](/docs/duo/getting-started/duo)                                 | [Duo 256M](/docs/duo/getting-started/duo256m)                             | [Duo S](/docs/duo/getting-started/duos)                                       | DuoModule 01 Evaluation Board                                                 |
 | -------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | Overview       | <Image src='/docs/duo/duo-v1.2-top.webp' maxWidth='70%' align='center' /> | <Image src='/docs/duo/duo256m-v1.0.webp' maxWidth='75%' align='center' /> | <Image src='/docs/duo/duos-x1.0.webp' maxWidth='70%' align='center' />        | <Image src='/docs/duo/dm01/dm01-eb.webp' maxWidth='70%' align='center' />     |
 | SoC            | CVITEK CV1800B                                                            | SG2002                                                                    | SG2000                                                                        | SG2000                                                                        |
@@ -51,6 +51,9 @@ The Duo Module 01 is a compact module with integrated SG2000, WI-FI6/BTDM5.4, an
 | Size           | 21mm*51mm                                                                 | 21mm*51mm                                                                 | 43mm x 43mm                                                                   | 100mm x 75mm                                                                  |
 | Others         | N/A                                                                       | N/A                                                                       | 1x BOOT swich, 1x Recovery Key, 1x RST Key                                    | 1x BOOT swich, 1x Recovery Key, 1x RST Key                                    |
 
+:::tip
+Due to SOPHGO ending the lifecycle of CV1800B, Milk-V Duo will no longer be produced. It is recommended that you choose Milk-V Duo 256M or Duo S.
+:::
 
 # Features 
 
