@@ -60,11 +60,11 @@ mkdir jupiter-linux
 cd jupiter-linux
 ```
 
-Download the code, for example download the `bl-v1.0.y` branch:
+Download the code, for example download the `k1-bl-v2.1.y` branch:
 ```bash
-repo init -u https://github.com/milkv-jupiter/manifests.git -b main -m bl-v1.0.y.xml
+repo init -u https://github.com/milkv-jupiter/manifests.git -b main -m k1-bl-v2.1.y.xml
 repo sync
-repo start bl-v1.0.y --all
+repo start k1-bl-v2.1.y --all
 ```
 
 When you need to synchronize the latest code later, just execute `repo sync`.
@@ -78,7 +78,7 @@ The downloaded source package is in the `buildroot/dl` directory.
 Directory Structure:
 ```
 ├── bsp-src               # Linux kernel，uboot and opensbi source code
-│   ├── linux-6.1
+│   ├── linux-6.6
 │   ├── opensbi
 │   └── uboot-2022.10
 ├── buildroot             # Buildroot main directory
@@ -88,64 +88,70 @@ Directory Structure:
 ├── package-src           # Locally deployed application or library source directory
 │   ├── ai-support
 │   ├── drm-test
+│   ├── factorytest
+│   ├── glmark2
 │   ├── img-gpu-powervr
+│   ├── jetson-utils
 │   ├── k1x-cam
 │   ├── k1x-jpu
 │   ├── k1x-vpu-firmware
 │   ├── k1x-vpu-test
 │   ├── mesa3d
 │   ├── mpp
+│   ├── rtk_hciattach
+│   ├── usb-gadget
 │   └── v2d-test
 └── scripts               # Scripts used during compilation
 ```
 
 ### First full compilation
 
-For the first compilation, it is recommended to use `make envconfig` to compile completely. If `buildroot-ext/configs/spacemit_k1_defconfig` is modified later, `make envconfig` should be used to compile. In other cases, just use `make` to compile.
+For the first compilation, it is recommended to use `make envconfig` to compile completely. If `buildroot-ext/configs/spacemit_k1_v2_defconfig` is modified later, `make envconfig` should be used to compile. In other cases, just use `make` to compile.
 
 ```bash
 make envconfig
 Available configs in buildroot-ext/configs/:
-  1. spacemit_k1_defconfig
-  2. spacemit_k1_minimal_defconfig
-  3. spacemit_k1_plt_defconfig
-  4. spacemit_k1_v2_defconfig
-
-
-your choice (1-4):
+  1. spacemit_k1_minimal_defconfig
+  2. spacemit_k1_plt_defconfig
+  3. spacemit_k1_rt_defconfig
+  4. spacemit_k1_upstream_defconfig
+  5. spacemit_k1_v2_defconfig
+\n
+your choice (1-5):
 ```
-Enter `1` and press Enter to start compiling.
+Enter `5` and press Enter to start compiling.
 
 After the compilation is complete, you can see:
 ```
-Images successfully packed into /build/jupiter-linux/output/k1/images/bianbu-linux-k1.zip
+Images successfully packed into /build/jupiter-linux/local/output/k1_v2/images/bianbu-linux-k1_v2.zip
 
 
 Generating sdcard image...................................
-INFO: cmd: "mkdir -p "/build/jupiter-linux/output/k1/build/genimage.tmp"" (stderr):
-INFO: cmd: "rm -rf "/build/jupiter-linux/output/k1/build/genimage.tmp"/*" (stderr):
-INFO: cmd: "mkdir -p "/build/jupiter-linux/output/k1/images"" (stderr):
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition 'bootinfo' from 'factory/bootinfo_sd.bin' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition 'fsbl' (in MBR) from 'factory/FSBL.bin' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition 'env' (in MBR) from 'env.bin' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition 'opensbi' (in MBR) from 'fw_dynamic.itb' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition 'uboot' (in MBR) from 'u-boot.itb' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition 'bootfs' (in MBR) from 'bootfs.img' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition 'rootfs' (in MBR) from 'rootfs.ext4' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition '[MBR]' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition '[GPT header]' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition '[GPT array]' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition '[GPT backup]' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): writing GPT
-INFO: hdimage(bianbu-linux-k1-sdcard.img): writing protective MBR
-INFO: hdimage(bianbu-linux-k1-sdcard.img): writing MBR
-Successfully generated at /build/jupiter-linux/output/k1/images/bianbu-linux-k1-sdcard.img
+INFO: cmd: "mkdir -p "/build/jupiter-linux/local/output/k1_v2/build/genimage.tmp"" (stderr):
+INFO: cmd: "rm -rf "/build/jupiter-linux/local/output/k1_v2/build/genimage.tmp"/*" (stderr):
+INFO: cmd: "mkdir -p "/build/jupiter-linux/local/output/k1_v2/images"" (stderr):
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition 'bootinfo' from 'factory/bootinfo_sd.bin' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition 'fsbl' (in MBR) from 'factory/FSBL.bin' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition 'env' (in MBR) from 'env.bin' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition 'opensbi' (in MBR) from 'fw_dynamic.itb' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition 'uboot' (in MBR) from 'u-boot.itb' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition 'bootfs' (in MBR) from 'bootfs.img' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition 'rootfs' (in MBR) from 'rootfs.ext4' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition '[MBR]' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition '[GPT header]' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition '[GPT array]' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition '[GPT backup]' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): writing GPT
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): writing protective MBR
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): writing MBR
+Successfully generated at /build/jupiter-linux/local/output/k1_v2/images/bianbu-linux-k1_v2-sdcard.img
+make[1]: Leaving directory '/build/jupiter-linux/local/output/k1_v2'
 ```
 
 There are two images generated:
 
-- bianbu-linux-k1.zip is suitable for the `titanflasher` tool, or you can decompress it and use fastboot to flash the device.
-- bianbu-linux-k1-sdcard.img is the SD card firmware. After decompression, you can use the `dd` command or `balenaEtcher` to write it to the SD card.
+- bianbu-linux-k1_v2.zip is suitable for the `titanflasher` tool, or you can decompress it and use fastboot to flash the device.
+- bianbu-linux-k1_v2-sdcard.img is the SD card firmware. After decompression, you can use the `dd` command or `balenaEtcher` to write it to the SD card.
 
 For detailed flashing methods, please refer to: [Milk-V Jupiter Install OS Image](https://milkv.io/docs/jupiter/getting-started/boot).
 
@@ -161,7 +167,7 @@ Call up the buildroot configuration interface:
 ```bash
 make menuconfig
 ```
-After modifying the configuration according to your needs, save the configuration. By default, it is saved to `buildroot-ext/configs/spacemit_k1_defconfig`:
+After modifying the configuration according to your needs, save the configuration. By default, it is saved to `buildroot-ext/configs/spacemit_k1_v2_defconfig`:
 ```bash
 make savedefconfig
 ```
@@ -251,7 +257,7 @@ The compilation will generate `u-boot-env-default.bin` according to `board/space
 #### Compile linux kernel separately
 
 ```bash
-cd /path/to/linux-6.1
+cd /path/to/linux-6.6
 make k1_defconfig
 LOCALVERSION="" make -j$(nproc)
 ```
@@ -286,7 +292,7 @@ Just write `FSBL.bin`, `u-boot-env-default.bin` and `u-boot.itb` to the correspo
 ### Compile linux kernel
 
 ```bash
-cd /path/to/linux-6.1
+cd /path/to/linux-6.6
 make k1_defconfig
 LOCALVERSION="" make -j$(nproc)
 ```

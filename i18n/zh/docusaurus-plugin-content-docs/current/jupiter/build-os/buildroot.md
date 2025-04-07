@@ -60,11 +60,11 @@ mkdir jupiter-linux
 cd jupiter-linux
 ```
 
-下载代码，例如下载 `bl-v1.0.y` 分支：
+下载代码，例如下载 `k1-bl-v2.1.y` 分支：
 ```bash
-repo init -u https://github.com/milkv-jupiter/manifests.git -b main -m bl-v1.0.y.xml
+repo init -u https://github.com/milkv-jupiter/manifests.git -b main -m k1-bl-v2.1.y.xml
 repo sync
-repo start bl-v1.0.y --all
+repo start k1-bl-v2.1.y --all
 ```
 
 后续需要同步最新的代码时，直接执行 `repo sync` 即可。
@@ -78,7 +78,7 @@ wget -c -r -nv -np -nH -R "index.html*" http://archive.spacemit.com/buildroot/dl
 目录结构：
 ```
 ├── bsp-src               # Linux kernel，uboot and opensbi source code
-│   ├── linux-6.1
+│   ├── linux-6.6
 │   ├── opensbi
 │   └── uboot-2022.10
 ├── buildroot             # Buildroot main directory
@@ -88,64 +88,70 @@ wget -c -r -nv -np -nH -R "index.html*" http://archive.spacemit.com/buildroot/dl
 ├── package-src           # Locally deployed application or library source directory
 │   ├── ai-support
 │   ├── drm-test
+│   ├── factorytest
+│   ├── glmark2
 │   ├── img-gpu-powervr
+│   ├── jetson-utils
 │   ├── k1x-cam
 │   ├── k1x-jpu
 │   ├── k1x-vpu-firmware
 │   ├── k1x-vpu-test
 │   ├── mesa3d
 │   ├── mpp
+│   ├── rtk_hciattach
+│   ├── usb-gadget
 │   └── v2d-test
 └── scripts               # Scripts used during compilation
 ```
 
 ### 首次完整编译
 
-首次编译，建议使用 `make envconfig` 完整编译。后续如果修改了 `buildroot-ext/configs/spacemit_k1_defconfig`，要使用 `make envconfig` 编译。其他情况，使用 `make` 编译即可。
+首次编译，建议使用 `make envconfig` 完整编译。后续如果修改了 `buildroot-ext/configs/spacemit_k1_v2_defconfig`，要使用 `make envconfig` 编译。其他情况，使用 `make` 编译即可。
 
 ```bash
 make envconfig
 Available configs in buildroot-ext/configs/:
-  1. spacemit_k1_defconfig
-  2. spacemit_k1_minimal_defconfig
-  3. spacemit_k1_plt_defconfig
-  4. spacemit_k1_v2_defconfig
-
-
-your choice (1-4):
+  1. spacemit_k1_minimal_defconfig
+  2. spacemit_k1_plt_defconfig
+  3. spacemit_k1_rt_defconfig
+  4. spacemit_k1_upstream_defconfig
+  5. spacemit_k1_v2_defconfig
+\n
+your choice (1-5):
 ```
-输入 `1`，然后回车即开始编译。
+输入 `5`，然后回车即开始编译。
 
 编译完成，可以看到：
 ```
-Images successfully packed into /build/jupiter-linux/output/k1/images/bianbu-linux-k1.zip
+Images successfully packed into /build/jupiter-linux/local/output/k1_v2/images/bianbu-linux-k1_v2.zip
 
 
 Generating sdcard image...................................
-INFO: cmd: "mkdir -p "/build/jupiter-linux/output/k1/build/genimage.tmp"" (stderr):
-INFO: cmd: "rm -rf "/build/jupiter-linux/output/k1/build/genimage.tmp"/*" (stderr):
-INFO: cmd: "mkdir -p "/build/jupiter-linux/output/k1/images"" (stderr):
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition 'bootinfo' from 'factory/bootinfo_sd.bin' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition 'fsbl' (in MBR) from 'factory/FSBL.bin' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition 'env' (in MBR) from 'env.bin' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition 'opensbi' (in MBR) from 'fw_dynamic.itb' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition 'uboot' (in MBR) from 'u-boot.itb' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition 'bootfs' (in MBR) from 'bootfs.img' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition 'rootfs' (in MBR) from 'rootfs.ext4' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition '[MBR]' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition '[GPT header]' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition '[GPT array]' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): adding partition '[GPT backup]' ...
-INFO: hdimage(bianbu-linux-k1-sdcard.img): writing GPT
-INFO: hdimage(bianbu-linux-k1-sdcard.img): writing protective MBR
-INFO: hdimage(bianbu-linux-k1-sdcard.img): writing MBR
-Successfully generated at /build/jupiter-linux/output/k1/images/bianbu-linux-k1-sdcard.img
+INFO: cmd: "mkdir -p "/build/jupiter-linux/local/output/k1_v2/build/genimage.tmp"" (stderr):
+INFO: cmd: "rm -rf "/build/jupiter-linux/local/output/k1_v2/build/genimage.tmp"/*" (stderr):
+INFO: cmd: "mkdir -p "/build/jupiter-linux/local/output/k1_v2/images"" (stderr):
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition 'bootinfo' from 'factory/bootinfo_sd.bin' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition 'fsbl' (in MBR) from 'factory/FSBL.bin' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition 'env' (in MBR) from 'env.bin' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition 'opensbi' (in MBR) from 'fw_dynamic.itb' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition 'uboot' (in MBR) from 'u-boot.itb' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition 'bootfs' (in MBR) from 'bootfs.img' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition 'rootfs' (in MBR) from 'rootfs.ext4' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition '[MBR]' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition '[GPT header]' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition '[GPT array]' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): adding partition '[GPT backup]' ...
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): writing GPT
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): writing protective MBR
+INFO: hdimage(bianbu-linux-k1_v2-sdcard.img): writing MBR
+Successfully generated at /build/jupiter-linux/local/output/k1_v2/images/bianbu-linux-k1_v2-sdcard.img
+make[1]: Leaving directory '/build/jupiter-linux/local/output/k1_v2'
 ```
 
 生成的镜像有两个：
 
-- bianbu-linux-k1.zip 适用于 titanflasher  工具，或者解压后用 fastboot 刷机。
-- bianbu-linux-k1-sdcard.img 为 sd 卡固件，解压后可以用 dd 命令或者 balenaEtcher 写入 sd 卡。
+- bianbu-linux-k1_v2.zip 适用于 titanflasher  工具，或者解压后用 fastboot 刷机。
+- bianbu-linux-k1_v2-sdcard.img 为 sd 卡固件，解压后可以用 dd 命令或者 balenaEtcher 写入 sd 卡。
 
 详细的刷机方法请参考：[Milk-V Jupiter 安装操作系统](https://milkv.io/zh/docs/jupiter/getting-started/boot)。
 
@@ -161,7 +167,7 @@ Successfully generated at /build/jupiter-linux/output/k1/images/bianbu-linux-k1-
 ```bash
 make menuconfig
 ```
-根据需求调整好配置后，保存配置，默认保存到 `buildroot-ext/configs/spacemit_k1_defconfig`：
+根据需求调整好配置后，保存配置，默认保存到 `buildroot-ext/configs/spacemit_k1_v2_defconfig`：
 ```bash
 make savedefconfig
 ```
@@ -172,7 +178,7 @@ make savedefconfig
 ```bash
 make linux-menuconfig
 ```
-根据需求调整好配置后，保存配置，默认保存到 `bsp-src/linux-6.1/arch/riscv/configs/k1_defconfig`：
+根据需求调整好配置后，保存配置，默认保存到 `bsp-src/linux-6.6/arch/riscv/configs/k1_defconfig`：
 ```bash
 make linux-update-defconfig
 ```
@@ -251,7 +257,7 @@ make -j$(nproc)
 #### 单独编译 linux 内核
 
 ```bash
-cd /path/to/linux-6.1
+cd /path/to/linux-6.6
 make k1_defconfig
 LOCALVERSION="" make -j$(nproc)
 ```
@@ -286,7 +292,7 @@ make -j$(nproc)
 ### 编译 linux kernel
 
 ```bash
-cd /path/to/linux-6.1
+cd /path/to/linux-6.6
 make k1_defconfig
 LOCALVERSION="" make -j$(nproc)
 ```
