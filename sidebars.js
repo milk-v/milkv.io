@@ -492,6 +492,7 @@ const sidebars = {
         "megrez/getting-started/setup",
         "megrez/getting-started/boost",
         "megrez/getting-started/resources",
+        "megrez/getting-started/wifimodule",
       ],
     },
     {
