@@ -637,6 +637,42 @@ cmdq->para_ptr = 3
 
 ```
 
+### Servo 库 使用示例
+
+首先请使用我们修改的 [Servo 库](https://github.com/milkv-duo/duo-files/blob/main/arduino/Servo.zip) 替换 Arduino 库目录中的 Servo 库，该库默认路径为 `C:\Users\[您的用户名]\AppData\Local\Arduino15\libraries` 。
+
+以下测试代码您也可以在 Arduino-IDE 的菜单栏 `File` - `Examples` - `Servo` - `Sweep` 中找到，请您注意修改引脚号到带 PWM 功能的引脚上。
+
+在烧录代码前，请您注意检查舵机是否正确连接到设定的引脚上。
+
+<Image src='/docs/duo/arduino/duo-arduino-14.webp' minWidth='40%' maxWidth='60%' align='left' />
+
+```C
+#include <Servo.h>
+
+Servo myservo; 
+
+int pos = 0;    // variable to store the servo position
+
+void setup() {
+  myservo.attach(4);  // attaches the servo on pin 4 to the Servo object
+}
+
+void loop() {
+  for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
+    // in steps of 1 degree
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15 ms for the servo to reach the position
+  }
+  for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15 ms for the servo to reach the position
+  }
+}
+```
+
+程序烧录后，您可以观察到连接的舵机按周期来回摆动。
+
 ## 四、传感器示例
 
 ### L9110H

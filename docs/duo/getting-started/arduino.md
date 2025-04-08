@@ -635,6 +635,42 @@ cmdq->para_ptr = 3
 
 ```
 
+### Servo Usage Example
+
+First, please use our modified [Servo library](https://github.com/milkv-duo/duo-files/blob/main/arduino/Servo.zip) to replace the Servo library in the Arduino library directory. The default path of this library is `C:\Users\[User name]\AppData\Local\Arduino15\libraries`.
+
+You can also find the following test code in the menu bar of Arduino-IDE, `File` - `Examples` - `Servo` - `Sweep`. Please note that you should change the pin number to the pin with PWM function.
+
+Before burning the code, please check whether the servo is correctly connected to the pin.
+
+<Image src='/docs/duo/arduino/duo-arduino-14.webp' minWidth='40%' maxWidth='60%' align='left' />
+
+```C
+#include <Servo.h>
+
+Servo myservo; 
+
+int pos = 0;    // variable to store the servo position
+
+void setup() {
+  myservo.attach(4);  // attaches the servo on pin 4 to the Servo object
+}
+
+void loop() {
+  for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
+    // in steps of 1 degree
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15 ms for the servo to reach the position
+  }
+  for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15 ms for the servo to reach the position
+  }
+}
+```
+
+After the program is burned, you can observe the connected servos swinging in cycles.
+
 ## 4. Sensor examples
 
 ### L9110H_test
