@@ -92,7 +92,7 @@ Coming soon
 
    ### U-Boot 可用时
 
-请准备一个U盘，并格式化成EXT4格式，将[bootloader 文件](http://localhost:3000/docs/megrez/getting-started/resources#bootloader-download)存储在U盘中。如果有多个分区，请存放在第一个分区里。
+请准备一个U盘，并格式化成EXT4格式，将[bootloader 文件](http://milkv.io/docs/megrez/getting-started/resources#bootloader-download)存储在U盘中。如果有多个分区，请存放在第一个分区里。
 
 请在断电时使用 Type-C 线缆 或 TTL-USB 线缆 连接 Milk-V Megrez 与 PC，参考 [UART Serial Console](https://milkv.io/docs/megrez/getting-started/setup#usb-to-serial-cable)
 
@@ -118,14 +118,14 @@ es_burn write 0x90000000 flash
 
    ### U-boot 不可用时
 
-请准备一个U盘，并格式化成EXT4格式，将[bootloader 文件](http://localhost:3000/docs/megrez/getting-started/resources#bootloader-download)存储在U盘中。如果有多个分区，请存放在第一个分区里。
+请准备一个U盘，并格式化成EXT4格式，将[bootloader 文件](http://milkv.io/docs/megrez/getting-started/resources#bootloader-download)存储在U盘中。如果有多个分区，请存放在第一个分区里。
 
 将 `Recovery/Normal 启动切换开关` 拨动至 `Recovery`
 请在断电时使用 Type-C 线缆 连接 Milk-V Megrez的 Type-C 接口 与 PC。
 
 启动设备，此时 PC 上会弹出一个USB存储设备 `ESWIN-2030`。
 
-将 [bootloader 文件](http://localhost:3000/docs/megrez/getting-started/resources#bootloader-download)拷贝至 `ESWIN-2030`下。此时 `UART串行控制台` 开始打印，系统将使用`ESWIN-2030`下的uboot文件作为临时启动的uboot。
+将 [bootloader 文件](http://milkv.io/docs/megrez/getting-started/resources#bootloader-download)拷贝至 `ESWIN-2030`下。此时 `UART串行控制台` 开始打印，系统将使用`ESWIN-2030`下的uboot文件作为临时启动的uboot。
 
 <Image src='/docs/megrez/recovery-linux.webp' maxWidth='100%' align='left' />
 <Image src='/docs/megrez/recovery-print.webp' maxWidth='100%' align='left' />

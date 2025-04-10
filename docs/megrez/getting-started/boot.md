@@ -90,7 +90,7 @@ The following instructions use the `gparted` tool as an example for resizing. Yo
 ## Updating/Re-Flashing U-Boot
 
 ### When U-Boot is Available
-Please prepare a USB drive and format it to EXT4 format. Store the [bootloader file](http://localhost:3000/docs/megrez/getting-started/resources#bootloader-download) on the USB drive. If there are multiple partitions, place it in the first partition.
+Please prepare a USB drive and format it to EXT4 format. Store the [bootloader file](http://milkv.io/docs/megrez/getting-started/resources#bootloader-download) on the USB drive. If there are multiple partitions, place it in the first partition.
 
 While the device is powered off, use a Type-C cable or TTL-USB cable to connect the Milk-V Megrez to the PC. Refer to the [UART Serial Console](https://milkv.io/docs/megrez/getting-started/setup#usb-to-serial-cable) for more details.
 
