@@ -2,6 +2,8 @@
 sidebar_label: '启动 Mars'
 sidebar_position: 10
 ---
+# 启动 Mars
+
 ## 从 microSD 卡启动 Mars
 
 ### 准备

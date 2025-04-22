@@ -2,6 +2,8 @@
 sidebar_label: 'Boot the Mars'
 sidebar_position: 10
 ---
+# Boot the Mars
+
 ## Boot Mars from microSD card
 
 ### Prepare
