@@ -42,35 +42,22 @@ export default () => {
                                 <p className={styles_j.parametric_m}>2.0 TOPS</p>
                                 <p className={styles_j.parametric_n}>AI computing power</p>
                             </li>
-                            {/* <li>
-                                <p className={styles_j.parametric_m}>
-                                    30%
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="37" viewBox="0 0 12 37" fill="none">
-                                        <path d="M6 0.5L0.226498 10.5L11.7735 10.5L6 0.5ZM5 9.5L5 36.5L7 36.5L7 9.5L5 9.5Z" fill="white" />
-                                    </svg>
-                                </p>
-                                <p className={styles_j.parametric_n}>Single Core Computing Power<br /> compared to ARM A55</p>
-                            </li> */}
                         </ol>
                     </div>
-
                     <div className={styles.left_item2}>
                         <p className={styles.items_title}>X60™ Intelligent Computing Core</p>
                         <p className={styles.items_info}>Based on RISC-V, it extends AI instructions for a CPU with integrated AI power, <span>compatible with all AI models</span></p>
                         <img src="/jupiter-nx/chat1.webp" alt="X60™ Intelligent Computing Core" />
                     </div>
-
                     <div className={styles.left_item3}>
                         <p className={styles.items_title}>Compatible with Jetson NANO <br />Baseboard</p>
                         <img src="/jupiter-nx/baseboard.webp" alt="Compatible with Jetson NANO Baseboard" />
                     </div>
-
                     <div className={styles.left_item4}>
                         <p className={styles.items_title}>Half the Price,<br />
                             4 Times the AI Performance</p>
                         <img src="/jupiter-nx/chat2.webp" alt="Half the Price, 4 Times the AI Performance" />
                     </div>
-
                     <div className={styles.left_item5}>
                         <p className={styles.items_title}>RVV1.0 & RVA22</p>
                     </div>
@@ -79,7 +66,6 @@ export default () => {
                         <p className={styles.items_title}>PCIe Gen2</p>
                         <p className={styles.items_info}>1x 2-lane  +  1x 1-lane</p>
                     </div>
-
                     <div className={styles.left_item7}>
                         <p className={styles.items_title}>All in Jupiter NX</p>
                         <p className={styles.items_info}>WIFI6/BT5.2 Onboard; Optional eMMC Onboard</p>
@@ -93,8 +79,6 @@ export default () => {
                         <img src="/jupiter-nx/desktop1.webp" alt="Ubuntu / Fedora OS" />
                         <img src="/jupiter-nx/desktop2.webp" alt="Ubuntu / Fedora OS" className={styles.desktop2} />
                     </div>
-
-
                     <div className={styles.right_item2}>
                         <p className={styles.items_title}>Meets industrial-grade standards</p>
                         <p className={styles.items_info}>Stable and reliable operation in temperatures from -40°C to 85°C</p>
@@ -109,14 +93,12 @@ export default () => {
                         </div>
                         <img src="/jupiter/border6-icon4.webp" alt="OpenCL 3.0" />
                     </div>
-
                     <div className={styles.right_item3}>
                         <p className={styles.items_title}>Dedicated AI algorithm deployment tool — Spacengine™</p>
                         <p className={styles.items_info}>Spacengine™ utilizes SpacemiT's advanced AI instructions and quantization technology to deeply optimize the self-developed RISC-V series chips, significantly boosting the inference performance of common algorithm models on Milk-V Jupiter NX.</p>
                         <img src="/jupiter-nx/chat3.webp" alt="chat" />
                         <img src="/jupiter-nx/chat4.webp" alt="chat" />
                     </div>
-
                     <div className={styles.right_item4}>
                         <p className={styles.items_title}>Meets industrial-grade standards</p>
                         <p className={styles.items_info}>Stable and reliable operation in temperatures from -40°C to 85°C</p>
@@ -124,7 +106,6 @@ export default () => {
                     </div>
                 </div>
             </div>
-
             <div className={clsx(styles_s.tabBox_tech, styles_j.tabBox_tech2)}>
                 <h2 className={styles_s.title}><Translate id='line.title.TechSpecs' /></h2>
                 <p className={styles_s.moreP}>Milk-V Jupiter NX is an octa-core AI system-on-module featuring SpacemiT M1/K1 SoC, onboard WiFi/BT, and eMMC. It complies with RVA22 standards, supports RVV1.0, and is compatible with NANO/Xavier NX baseboards, making it the best replacement for NANO.</p>
