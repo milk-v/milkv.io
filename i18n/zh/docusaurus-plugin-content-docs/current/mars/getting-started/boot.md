@@ -65,7 +65,7 @@ saveenv
 下载镜像烧录到 U 盘。使用 microSD 卡启动 Mars，把 U 盘插入 Mars 中，修改 U 盘里的 extlinux.conf 文件。
 
 ```bash
-sudo mount /dev/sad3 /mnt
+sudo mount /dev/sda3 /mnt
 sudo nano /mnt/extlinux/extlinux.conf
 ```
 

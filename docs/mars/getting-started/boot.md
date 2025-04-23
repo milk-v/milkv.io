@@ -65,7 +65,7 @@ saveenv
 Download the image and burn it to the USB drive. Use the microSD card to boot Mars, insert the USB drive into Mars, and modify the `extlinux.conf` file on the USB drive.
 
 ```bash
-sudo mount /dev/sad3 /mnt
+sudo mount /dev/sda3 /mnt
 sudo nano /mnt/extlinux/extlinux.conf
 ```
 
