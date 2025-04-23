@@ -220,7 +220,7 @@ export default () => {
                                     <li>encoding 1080P@60fps</li>
                                     <li>decoding 1080P@60fps</li>
                                 </ul>
-                                <p>Support simultaneously</p>
+                                <p>Support simultaneously processing </p>
                                 <ul>
                                     <li>H264/H265 encoding 1080P@30fps</li>
                                     <li>H264/H265 decoding 4K@30fps</li>

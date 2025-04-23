@@ -81,6 +81,7 @@ export default (props) => {
             jd_url: 'https://ic-item.jd.com/10126518696856.html#crumb-wrap',
             arace_url: 'https://arace.tech/products/milk-v-megrez',
         },
+        'jupiter-nx': {}
     }
 
     const image_data = {
@@ -121,6 +122,7 @@ export default (props) => {
         'megrez': '/components/buy-megrez-view.webp',
         'vega': '/components/buy-vega-view.webp',
         'jupiter': '/components/buy-jupiter-view.webp',
+        'jupiter-nx': '/components/buy-jupiternx-view.webp',
         'cv1800b': '/components/buy-cv1800b-view.webp',
         'sg2000': '/components/buy-sg2000-view.webp',
         'sg2002': '/components/buy-sg2002-view.webp',
