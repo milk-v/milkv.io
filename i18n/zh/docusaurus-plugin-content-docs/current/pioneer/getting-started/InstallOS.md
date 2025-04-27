@@ -42,23 +42,3 @@ c.点击Flash！按钮，开始这个过程。
 
 ### 3.3 完成了! 开始使用Fedora 38
 ![fedora38](/docs/pioneer/fedora38.png)
-
-## 4. 从microSD卡和NVMe SSD启动
-在进行本步骤之前，请完成上述第1-3节的内容
-建议在使用串口操作时采取以下步骤
-
-输入账户密码以登录Fedora系统
-![loginfedora38](/docs/pioneer/loginfedora.png)
-
-### 4.1 使用 'mv-rootfs.sh' 将系统安装到NVMe SSD上
-We have included the '[mv-rootfs.sh](https://milkv.io/docs/pioneer/getting-started/download)' script in /opt for easy configuration of your system to NVMe SSDs.
-
-只需参考以下步骤就可以运行它。
-
-~~~
-[milkv@fedora-riscv ~]$ cd /opt
-[milkv@fedora-riscv opt]$ sudo ./mv-rootfs.sh
-~~~
-
-### 4.2 重新启动
-重启 Pioneer，启用从SD卡和NVMe SSD启动的功能
