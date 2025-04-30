@@ -79,7 +79,7 @@ Bianbu 系统的 `root` 账户默认密码为 `milkv`。
 
 ### Fedora 41 (by [Fedora-V Force](https://github.com/fedora-riscv))
 
-下载链接：[https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/](https://openkoji.iscas.ac.cn/pub/dist-repos/dl/Milk-V/Jupiter/images/)
+下载链接：[https://images.fedoravforce.org/Jupiter](https://images.fedoravforce.org/Jupiter)
 
 系统 `root` 账户默认密码为 `riscv`。
 
