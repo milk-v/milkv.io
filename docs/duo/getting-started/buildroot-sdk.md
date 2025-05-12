@@ -5,9 +5,18 @@ sidebar_position: 40
 
 # Introduction
 
+The default SDK for the Duo series boards is built based on buildroot and is used to generate Duo firmware. Currently, the SDK has two versions: V1 and V2.
+
+:::tip
+- SDK V1 only supports RISC-V core. (This version is recommended for Duo 64M)
+- SDK V2 supports both RISC-V and ARM cores. (This version is recommended for Duo256M and DuoS)
+:::
+
+*It is recommended that Duo 64M use the V1 version of the SDK, mainly because its memory is small. The related AI applications in the V2 version of the SDK cannot currently run normally in Duo 64M.*
+
 ## Buildroot SDK V1
 
-Duo's default SDK is built based on buildroot and is used to generate Duo's firmware. The SDK mainly contains the following parts:
+The SDK mainly contains the following parts:
 
 - u-boot: 2021.10
 - linux kernel: 5.10.4
@@ -35,13 +44,9 @@ SDK Directory Structure
 └── u-boot-2021.10      // u-boot source code
 ```
 
-:::tip
-The V1 version of SDK does not support the ARM core of Duo256M and DuoS. If you need to use the ARM core, please use the V2 version of SDK.
-:::
-
 ## Buildroot SDK V2
 
-The V2 version SDK adds support for Duo256M and DuoS ARM cores, and the compilation method is basically the same as the V1 version SDK.
+The compilation method of the V2 SDK is basically the same as that of the V1 SDK.
 
 Source code: [https://github.com/milkv-duo/duo-buildroot-sdk-v2](https://github.com/milkv-duo/duo-buildroot-sdk-v2)
 
