@@ -536,11 +536,10 @@ BR2_PER_PACKAGE_DIRECTORIES=y
 具体步骤如下：
 
 ```bash
-rm -rf ./buildroot-2024.02/output ./buildroot-2024.02/dl
-cd ./buildroot-2024.02
+rm -rf ./buildroot/output ./buildroot/dl
 wget https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/download/dl/dl.tar.gz
-tar xvf ./dl.tar.gz
+tar xvf ./dl.tar.gz -C ./buildroot/
 
-rm -rf ./dl.tar.gz && cd ..
+rm -rf ./dl.tar.gz
 ```
  
