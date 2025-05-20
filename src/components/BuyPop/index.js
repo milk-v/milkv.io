@@ -38,7 +38,9 @@ export default (props) => {
         'pioneer': {
             crowdSupply_url: 'https://www.crowdsupply.com/milkv/milk-v-pioneer',
             arace_url: 'https://arace.tech/collections/milk-v-pioneer',
-            mouser_url: 'https://www.mouser.com/c/embedded-solutions/computing/?m=Milk-V'
+            // mouser_url: 'https://www.mouser.com/c/embedded-solutions/computing/?m=Milk-V'
+            taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=747577392202&skuId=5389708539957',
+            jd_url: 'https://ic-item.jd.com/10107306192743.html',
         },
         'mars': {
             arace_url: 'https://arace.tech/products/milk-v-mars',
