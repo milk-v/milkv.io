@@ -113,6 +113,16 @@ export default (props) => {
                 keywords: 'Milk-V; Jupiter; Spacemit; K1; M1; MiniITX; RVA22; RVV1.0; 群芯闪耀; 进迭时空',
             },
         },
+        "jupiter-nx": {
+            en: {
+                title: 'Milk-V Jupiter NX',
+                description: "",
+            },
+            zh: {
+                title: 'Milk-V Jupiter NX',
+                description: '',
+            },
+        },
         megrez: {
             en: {
                 title: 'Milk-V Megrez | RISC-V AI PC',

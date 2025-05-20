@@ -8,9 +8,11 @@ import clsx from "clsx";
 import Translate from '@docusaurus/Translate';
 import BuyPop from "@site/src/components/BuyPop"
 import ContactUs from "@site/src/components/ContactUs"
+import MetaData from "../../components/MetaData"
 
 export default () => {
     return <Layout>
+        <MetaData page='jupiter-nx' />
         <main className={styles.jnx_main}>
             <div className={styles.jnx_head}>
                 <div className={styles.banner_module}>
