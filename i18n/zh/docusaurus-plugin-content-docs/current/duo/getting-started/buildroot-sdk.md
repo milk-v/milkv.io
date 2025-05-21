@@ -537,9 +537,9 @@ BR2_PER_PACKAGE_DIRECTORIES=y
 
 ```bash
 rm -rf ./buildroot/output ./buildroot/dl
-wget https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/download/dl/dl.tar.gz
-tar xvf ./dl.tar.gz -C ./buildroot/
+wget https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/download/dl/dl.tar
+tar xvf ./dl.tar -C ./buildroot/
 
-rm -rf ./dl.tar.gz
+rm -rf ./dl.tar
 ```
  
