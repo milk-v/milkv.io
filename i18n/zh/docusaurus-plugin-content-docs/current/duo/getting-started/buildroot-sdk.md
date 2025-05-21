@@ -151,7 +151,7 @@ milkv-duos-sd            cv1813h_milkv_duos_sd
 ```bash
 source device/[board]/boardconfig.sh
 
-source build/milkvsetup.sh
+source build/envsetup_milkv.sh
 defconfig [config]
 clean_all
 build_all
@@ -162,7 +162,7 @@ pack_sd_image
 ```bash
 source device/milkv-duo-sd/boardconfig.sh
 
-source build/milkvsetup.sh
+source build/envsetup_milkv.sh
 defconfig cv1800b_milkv_duo_sd
 clean_all
 build_all
@@ -284,7 +284,7 @@ milkv-duos-sd            cv1813h_milkv_duos_sd
 ```bash
 source device/[board]/boardconfig.sh
 
-source build/milkvsetup.sh
+source build/envsetup_milkv.sh
 defconfig [config]
 clean_all
 build_all
@@ -295,7 +295,7 @@ pack_sd_image
 ```bash
 source device/milkv-duo-sd/boardconfig.sh
 
-source build/milkvsetup.sh
+source build/envsetup_milkv.sh
 defconfig cv1800b_milkv_duo_sd
 clean_all
 build_all
