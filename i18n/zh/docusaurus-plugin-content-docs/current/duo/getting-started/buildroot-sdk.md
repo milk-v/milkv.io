@@ -28,27 +28,43 @@ SDK 主要包含如下几个部分：
 SDK目录结构
 
 ```text
-├── build               // 编译目录，存放编译脚本以及各board差异化配置
-├── build.sh            // Milk-V Duo 一键编译脚本
-├── buildroot-2021.05   // buildroot 开源工具
-├── freertos            // freertos 系统
-├── fsbl                // fsbl启动固件，prebuilt 形式存在
-├── install             // 执行一次完整编译后，临时存放各 image 路径
-├── isp_tuning          // 图像效果调试参数存放路径
-├── linux_5.10          // 开源 linux 内核
-├── middleware          // 自研多媒体框架，包含 so 与 ko
-├── device              // 存放 Milk-V Duo 相关配置及脚本文件的目录
-├── opensbi             // 开源 opensbi 库
-├── out                 // Milk-V Duo 最终生成的 SD 卡烧录镜像所在目录
-├── ramdisk             // 存放最小文件系统的 prebuilt 目录
-└── u-boot-2021.10      // 开源 uboot 代码
+├── build                编译目录，存放编译脚本以及各board差异化配置
+├── build.sh             Milk-V Duo 一键编译脚本
+├── buildroot-2021.05    buildroot 开源工具
+├── freertos             freertos 系统
+├── fsbl                 fsbl启动固件，prebuilt 形式存在
+├── install              执行一次完整编译后，临时存放各 image 路径
+├── isp_tuning           图像效果调试参数存放路径
+├── linux_5.10           开源 linux 内核
+├── middleware           算能多媒体框架，包含 so 与 ko
+├── device               存放 Milk-V Duo 相关配置及脚本文件的目录
+├── opensbi              开源 opensbi 库
+├── out                  Milk-V Duo 最终生成的镜像所在目录
+├── ramdisk              存放最小文件系统的 prebuilt 目录
+└── u-boot-2021.10       开源 uboot 代码
 ```
 
 ## Buildroot SDK V2
 
-V2 版本 SDK 编译方法与 V1 版本 SDK 基本一致。
-
 源码地址: [https://github.com/milkv-duo/duo-buildroot-sdk-v2](https://github.com/milkv-duo/duo-buildroot-sdk-v2)
+
+```text
+├── build                编译目录，存放编译脚本以及各board差异化配置
+├── build.sh             Milk-V Duo 一键编译脚本
+├── buildroot            buildroot 开源工具
+├── cvi_mpi              算能多媒体框架
+├── device               存放 Milk-V Duo 相关配置及脚本文件的目录
+├── freertos             freertos 系统
+├── fsbl                 fsbl启动固件，prebuilt 形式存在
+├── install              执行一次完整编译后，临时存放各 image 路径
+├── isp_tuning           图像效果调试参数存放路径
+├── linux_5.10           开源 linux 内核
+├── osdrv                一些外设驱动源码
+├── opensbi              开源 opensbi 库
+├── out                  Milk-V Duo 最终生成的镜像所在目录
+├── tdl_sdk              算能深度学习算法 SDK
+└── u-boot-2021.10       开源 uboot 代码
+```
 
 # 编译镜像
 
@@ -57,6 +73,8 @@ V2 版本 SDK 编译方法与 V1 版本 SDK 基本一致。
 如果您使用的是其他的 Linux 发行版，我们强烈建议您使用 Docker 环境来编译，以降低编译出错的概率。
 
 以下分别介绍两种环境下的编译方法。
+
+另外，V1 版本和 V2 版本 SDK 的编译方法基本一致，下面以 V2 版本 SDK 为例，介绍 SDK 的编译步骤。
 
 ## 一、使用 Ubuntu 22.04 编译
 
@@ -74,31 +92,46 @@ sudo pip install jinja2
 ### 获取 SDK
 
 ```bash
-git clone https://github.com/milkv-duo/duo-buildroot-sdk.git --depth=1
+git clone https://github.com/milkv-duo/duo-buildroot-sdk-v2.git --depth=1
+```
+
+在编译过程中，Buildroot 会自动下载一些源码包。SDK V1 中已经集成了部分常用源码包，可以直接编译。SDK V2 中，为了避免由于网络原因导致下载失败，可以提前下载 `dl.tar` 包并解压到 `buildroot` 目录：
+```bash
+wget https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/download/dl/dl.tar
+tar xvf ./dl.tar -C ./duo-buildroot-sdk-v2/buildroot/
+```
+解压后 `duo-buildroot-sdk-v2` 的 `buildroot` 中 `dl` 目录结构如下：
+```text
+└── buildroot
+    └── dl
+        ├── acl
+        ├── alsa-lib
+        ├── alsa-utils
+        ├── attr
+        ├── ...
 ```
 
 ### 1、一键编译
 
 执行一键编译脚本 `build.sh`：
 ```bash
-cd duo-buildroot-sdk/
+cd duo-buildroot-sdk-v2/
 ./build.sh
 ```
 会看到编译脚本的使用方法提示：
 ```bash
-# ./build.sh
+$ ./build.sh
 Usage:
 ./build.sh              - Show this menu
 ./build.sh lunch        - Select a board to build
-./build.sh [board]      - Build [board] directly, supported boards asfollows:
-milkv-duo-sd
-milkv-duo-spinand
-milkv-duo-spinor
-milkv-duo256m-sd
-milkv-duo256m-spinand
-milkv-duo256m-spinor
-milkv-duos-emmc
-milkv-duos-sd
+./build.sh [board]      - Build [board] directly, supported boards as follows:
+milkv-duo-musl-riscv64-sd
+milkv-duo256m-glibc-arm64-sd
+milkv-duo256m-musl-riscv64-sd
+milkv-duos-glibc-arm64-emmc
+milkv-duos-glibc-arm64-sd
+milkv-duos-musl-riscv64-emmc
+milkv-duos-musl-riscv64-sd
 ```
 最下边列出的是当前支持的目标版本列表。
 
@@ -106,74 +139,110 @@ milkv-duos-sd
 
 第一种方法是执行 `./build.sh lunch` 调出交互菜单，选择要编译的版本序号，回车：
 ```bash
-# ./build.sh lunch
+$ ./build.sh lunch
 Select a target to build:
-1. milkv-duo-sd
-2. milkv-duo-spinand
-3. milkv-duo-spinor
-4. milkv-duo256m-sd
-5. milkv-duo256m-spinand
-6. milkv-duo256m-spinor
-7. milkv-duos-emmc
-8. milkv-duos-sd
+1. milkv-duo-musl-riscv64-sd
+2. milkv-duo256m-glibc-arm64-sd
+3. milkv-duo256m-musl-riscv64-sd
+4. milkv-duos-glibc-arm64-emmc
+5. milkv-duos-glibc-arm64-sd
+6. milkv-duos-musl-riscv64-emmc
+7. milkv-duos-musl-riscv64-sd
 Which would you like:
 ```
 
-第二种方法是脚本后面带上目标版本的名字，比如要编译 `milkv-duo-sd` 的镜像:
+:::tip
+- Duo (64M-DDR) 只有 RISC-V 核，默认为基于 musl libc 编译的 SD 卡镜像。
+- Duo256M 支持 RISC-V 和 ARM 核(二选一)，RISC-V 核固件基于 musl libc 编译，ARM 核固件基于 glibc 编译，只配置了 SD 卡镜像。
+- DuoS 支持 RISC-V 和 ARM 核(二选一)，RISC-V 核固件基于 musl libc 编译，ARM 核固件基于 glibc 编译，配置了 SD 卡和 eMMC 镜像。
+:::
+
+第二种方法是脚本后面带上目标版本的名字，比如要编译 `milkv-duos-musl-riscv64-sd` 的镜像:
 ```bash
-# ./build.sh milkv-duo-sd
+$ ./build.sh milkv-duos-musl-riscv64-sd
 ```
 
-编译成功后可以在 `out` 目录下看到生成的SD卡烧录镜像 `milkv-duo-sd-*-*.img`
+编译成功后可以在 `out` 目录下看到生成的镜像，其中 `*.img` 后缀的镜像为 SD 卡烧录的镜像，`*.zip` 后缀的镜像为 eMMC 的烧录镜像。
 
 *注: 第一次编译会自动下载所需的工具链，大小为 840M 左右，下载完会自动解压到 SDK 目录下的 `host-tools` 目录，下次编译时检测到已存在 `host-tools` 目录，就不会再次下载了*
 
 ### 2、分步编译
 
-如果未执行过一键编译脚本，需要先手动下载工具链 [host-tools](https://sophon-file.sophon.cn/sophon-prod-s3/drive/23/03/07/16/host-tools.tar.gz)，并解压到 SDK 根目录：
+如果未执行过一键编译脚本，需要先手动下载工具链 [host-tools](https://github.com/milkv-duo/host-tools.git)，再拷贝或移动到 SDK 根目录：
 
 ```bash
-tar -xf host-tools.tar.gz -C /your/sdk/path/
+git clone https://github.com/milkv-duo/host-tools.git
+cp -a host-tools duo-buildroot-sdk-v2/
 ```
 
-再依次输入如下命令完成分步编译，命令中的 `[board]` 和 `[config]` 替换为需要编译的版本，当前支持的 `board` 和对应的 `config` 如下：
-```
-milkv-duo-sd             cv1800b_milkv_duo_sd
-milkv-duo-spinand        cv1800b_milkv_duo_spinand
-milkv-duo-spinor         cv1800b_milkv_duo_spinor
-milkv-duo256m-sd         cv1812cp_milkv_duo256m_sd
-milkv-duo256m-spinand    cv1812cp_milkv_duo256m_spinand
-milkv-duo256m-spinor     cv1812cp_milkv_duo256m_spinor
-milkv-duos-emmc          cv1813h_milkv_duos_emmc
-milkv-duos-sd            cv1813h_milkv_duos_sd
-```
-
+加载环境：
 ```bash
-source device/[board]/boardconfig.sh
+source build/envsetup_milkv.sh
+```
+如果是第一次编译，会提示选择要编译的目标：
+```bash
+Select a target to build:
+1. milkv-duo-musl-riscv64-sd
+2. milkv-duo256m-glibc-arm64-sd
+3. milkv-duo256m-musl-riscv64-sd
+4. milkv-duos-glibc-arm64-emmc
+5. milkv-duos-glibc-arm64-sd
+6. milkv-duos-musl-riscv64-emmc
+7. milkv-duos-musl-riscv64-sd
+Which would you like:
+```
 
-source build/milkvsetup.sh
-defconfig [config]
+选择对应的数字后，回车，成功加载环境变量后，会显示一些当前目标的信息，比如：
+```bash
+Target Board: milkv-duos-musl-riscv64-sd
+Target Board Storage: sd
+Target Board Config: /build/duo-buildroot-sdk-v2/device/target/boardconfig.sh
+Target Image Config: /build/duo-buildroot-sdk-v2/device/target/genimage.cfg
+Build tdl-sdk: 1
+Output dir: /build/duo-buildroot-sdk-v2/install/soc_sg2000_milkv_duos_musl_riscv64_sd
+```
+
+环境加载完成后，会在 `device` 目录下创建一个名为 `target` 的链接，链接到编译目标目录，下次再 source 环境时，检测到该 `target` 链接存在时，就不会再提示选择目标了。如果需要更换编译目标，可以加 `lunch` 参数重新调出交互菜单进行选择：
+```bash
+source build/envsetup_milkv.sh lunch
+```
+
+加载环境成功后，再依次输入如下命令完成分步编译：
+```bash
 clean_all
 build_all
+```
+
+如果编译的是 SD 卡镜像，还需要再执行如下命令生成 `img` 镜像：
+```bash
 pack_sd_image
 ```
 
-比如需要编译 `milkv-duo-sd` 的镜像，分步编译命令如下：
+比如需要编译 `milkv-duos-musl-riscv64-sd` 的镜像，分步编译命令如下：
 ```bash
-source device/milkv-duo-sd/boardconfig.sh
+source build/envsetup_milkv.sh milkv-duos-musl-riscv64-sd
 
-source build/milkvsetup.sh
-defconfig cv1800b_milkv_duo_sd
 clean_all
 build_all
 pack_sd_image
 ```
 
 生成的固件位置：
+```text
+install/soc_sg2000_milkv_duos_musl_riscv64_sd/milkv-duos-musl-riscv64-sd.img
 ```
-Duo:      install/soc_cv1800b_milkv_duo_sd/[board].img
-Duo256M:  install/soc_cv1812cp_milkv_duo256m_sd/[board].img
-```
+
+注意，SD 卡镜像为 `*.img`，eMMC镜像为 `upgrade.zip`。
+
+:::tip
+除了使用 `build_all` 进行完整编译之外，还可以单独编译某个模块，一般来说都是先执行 `clean_xxx` 清理中间文件后，再执行 `build_xxx` 重新编译。支持的模块，可以输入 `clean_` 或者 `build_` 后，双击 `tab` 键查看。以下列出一些常用的模块编译方法：
+- fsbl: `clean_fsbl`，`build_fsbl`
+- uboot: `clean_uboot`，`build_uboot`
+- kernel: `clean_kernel`，`build_kernel`
+- osdrv: `clean_osdrv`，`build_osdrv`
+- cvi_mpi: `clean_middleware`，`build_middleware`
+- tdl-sdk: `clean_tdl_sdk`，`build_tdl_sdk`
+:::
 
 ## 二、使用 Docker 编译
 
@@ -184,13 +253,29 @@ Duo256M:  install/soc_cv1812cp_milkv_duo256m_sd/[board].img
 ### 在 Linux 主机上拉 SDK 代码
 
 ```bash
-git clone https://github.com/milkv-duo/duo-buildroot-sdk.git --depth=1
+git clone https://github.com/milkv-duo/duo-buildroot-sdk-v2.git --depth=1
+```
+
+在编译过程中，Buildroot 会自动下载一些源码包。SDK V1 中已经集成了部分常用源码包，可以直接编译。SDK V2 中，为了避免由于网络原因导致下载失败，可以提前下载 `dl.tar` 包并解压到 `buildroot` 目录：
+```bash
+wget https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/download/dl/dl.tar
+tar xvf ./dl.tar -C ./duo-buildroot-sdk-v2/buildroot/
+```
+解压后 `duo-buildroot-sdk-v2` 的 `buildroot` 中 `dl` 目录结构如下：
+```text
+└── buildroot
+    └── dl
+        ├── acl
+        ├── alsa-lib
+        ├── alsa-utils
+        ├── attr
+        ├── ...
 ```
 
 ### 进入 SDK 代码目录
 
 ```bash
-cd duo-buildroot-sdk
+cd duo-buildroot-sdk-v2
 ```
 
 ### 拉取 Docker 镜像并运行
@@ -220,19 +305,18 @@ CONTAINER ID   IMAGE                        COMMAND       CREATED       STATUS  
 ### 1. 使用 Docker 一键编译
 
 ```bash
-docker exec -it duodocker /bin/bash -c "cd /home/work && cat /etc/issue && ./build.sh [board]"
+docker exec -it duodocker /bin/bash -c "cd /home/work && cat /etc/issue && export FORCE_UNSAFE_CONFIGURE=1 && ./build.sh [board]"
 ```
 
 注意命令最后的 `./build.sh [board]` 和前面在 Ubuntu 22.04 中一键编译说明中的用法是一样的，直接 `./build.sh` 可以查看命令的使用方法，用 `./build.sh lunch` 可以调出交互选择菜单，用 `./build.sh [board]` 可以直接编译目标版本，`[board]` 可以替换为:
 ```
-milkv-duo-sd
-milkv-duo-spinand
-milkv-duo-spinor
-milkv-duo256m-sd
-milkv-duo256m-spinand
-milkv-duo256m-spinor
-milkv-duos-emmc
-milkv-duos-sd
+milkv-duo-musl-riscv64-sd
+milkv-duo256m-glibc-arm64-sd
+milkv-duo256m-musl-riscv64-sd
+milkv-duos-glibc-arm64-emmc
+milkv-duos-glibc-arm64-sd
+milkv-duos-musl-riscv64-emmc
+milkv-duos-musl-riscv64-sd
 ```
 
 命令中部分参数说明:
@@ -240,24 +324,33 @@ milkv-duos-sd
 - `"*"` 双引号中是要在 Docker 镜像中运行的 Shell 命令
 - `cd /home/work` 是切换到 /home/work 目录，由于运行时已经将该目录绑定到主机的代码目录，所以在 Docker 中 /home/work 目录就是该 SDK 的源码目录
 - `cat /etc/issue` 显示 Docker 使用的镜像的版本号，目前是 Ubuntu 22.04.3 LTS，调试用
+- `export FORCE_UNSAFE_CONFIGURE=1` Docker 中默认使用 root 用户编译，需要使用该环境变量
 - `./build.sh [board]` 执行一键编译脚本
 
-比如需要编译 `milkv-duo-sd` 的镜像，编译命令如下:
+比如需要编译 `milkv-duos-musl-riscv64-sd` 的镜像，编译命令如下:
 ```bash
-docker exec -it duodocker /bin/bash -c "cd /home/work && cat /etc/issue && ./build.sh milkv-duo-sd"
+docker exec -it duodocker /bin/bash -c "cd /home/work && cat /etc/issue && export FORCE_UNSAFE_CONFIGURE=1 && ./build.sh milkv-duos-musl-riscv64-sd"
 ```
 
-编译成功后可以在 `out` 目录下看到生成的SD卡烧录镜像 `[board]-*-*.img`
+编译成功后可以在 `out` 目录下看到生成的SD卡烧录镜像 `*.img`
 
 ### 2. 使用 Docker 分步编译
 
-如果未执行过一键编译脚本，需要先手动下载工具链 [host-tools](https://sophon-file.sophon.cn/sophon-prod-s3/drive/23/03/07/16/host-tools.tar.gz)，并解压到 SDK 根目录：
+如果未执行过一键编译脚本，需要先手动下载工具链 [host-tools](https://github.com/milkv-duo/host-tools.git)，再拷贝或移动到 SDK 根目录：
 
 ```bash
-tar -xf host-tools.tar.gz -C /your/sdk/path/
+git clone https://github.com/milkv-duo/host-tools.git
+cp -a host-tools duo-buildroot-sdk-v2/
 ```
 
-分步编译需要登陆到 Docker 中进行操作，用命令 `docker ps -a` 查看并记录容器的 ID 号，比如 8edea33c2239。
+分步编译需要登陆到 Docker 中进行操作，用命令 `docker ps -a` 查看并记录容器的 ID 号，比如 `8edea33c2239`。
+
+如果 `duodocker` 未在列表中，可能是容器已停止，需要先将其重新运行后，再查看窗口的 ID 号：
+```bash
+cd duo-buildroot-sdk-v2/
+docker run --privileged -itd --name duodocker -v $(pwd):/home/work milkvtech/milkv-duo:latest /bin/bash
+docker ps -a
+```
 
 登陆到 Docker 中:
 ```bash
@@ -269,34 +362,58 @@ docker exec -it 8edea33c2239 /bin/bash
 root@8edea33c2239:/# cd /home/work/
 ```
 
-再依次输入如下命令完成分步编译，命令中的 `[board]` 和 `[config]` 替换为需要编译的版本，当前支持的 `board` 和对应的 `config` 如下：
-```
-milkv-duo-sd             cv1800b_milkv_duo_sd
-milkv-duo-spinand        cv1800b_milkv_duo_spinand
-milkv-duo-spinor         cv1800b_milkv_duo_spinor
-milkv-duo256m-sd         cv1812cp_milkv_duo256m_sd
-milkv-duo256m-spinand    cv1812cp_milkv_duo256m_spinand
-milkv-duo256m-spinor     cv1812cp_milkv_duo256m_spinor
-milkv-duos-emmc          cv1813h_milkv_duos_emmc
-milkv-duos-sd            cv1813h_milkv_duos_sd
-```
-
+设置环境变量，Docker 中默认以 root 用户编译，需要配置该环境变量：
 ```bash
-source device/[board]/boardconfig.sh
+export FORCE_UNSAFE_CONFIGURE=1
+```
 
-source build/milkvsetup.sh
-defconfig [config]
+加载环境：
+```bash
+source build/envsetup_milkv.sh
+```
+如果是第一次编译，会提示选择要编译的目标：
+```bash
+Select a target to build:
+1. milkv-duo-musl-riscv64-sd
+2. milkv-duo256m-glibc-arm64-sd
+3. milkv-duo256m-musl-riscv64-sd
+4. milkv-duos-glibc-arm64-emmc
+5. milkv-duos-glibc-arm64-sd
+6. milkv-duos-musl-riscv64-emmc
+7. milkv-duos-musl-riscv64-sd
+Which would you like:
+```
+
+选择对应的数字后，回车，成功加载环境变量后，会显示一些当前目标的信息，比如：
+```bash
+Target Board: milkv-duos-musl-riscv64-sd
+Target Board Storage: sd
+Target Board Config: /build/duo-buildroot-sdk-v2/device/target/boardconfig.sh
+Target Image Config: /build/duo-buildroot-sdk-v2/device/target/genimage.cfg
+Build tdl-sdk: 1
+Output dir: /build/duo-buildroot-sdk-v2/install/soc_sg2000_milkv_duos_musl_riscv64_sd
+```
+
+环境加载完成后，会在 `device` 目录下创建一个名为 `target` 的链接，链接到编译目标目录，下次再 source 环境时，检测到该 `target` 链接存在时，就不会再提示选择目标了。如果需要更换编译目标，可以加 `lunch` 参数重新调出交互菜单进行选择：
+```bash
+source build/envsetup_milkv.sh lunch
+```
+
+加载环境成功后，再依次输入如下命令完成分步编译：
+```bash
 clean_all
 build_all
+```
+
+如果编译的是 SD 卡镜像，还需要再执行如下命令生成 `img` 镜像：
+```bash
 pack_sd_image
 ```
 
-比如需要编译 `milkv-duo-sd` 的镜像，分步编译命令如下：
+比如需要编译 `milkv-duos-musl-riscv64-sd` 的镜像，分步编译命令如下：
 ```bash
-source device/milkv-duo-sd/boardconfig.sh
+source build/envsetup_milkv.sh milkv-duos-musl-riscv64-sd
 
-source build/milkvsetup.sh
-defconfig cv1800b_milkv_duo_sd
 clean_all
 build_all
 pack_sd_image
@@ -304,9 +421,20 @@ pack_sd_image
 
 生成的固件位置：
 ```
-Duo:      install/soc_cv1800b_milkv_duo_sd/[board].img
-Duo256M:  install/soc_cv1812cp_milkv_duo256m_sd/[board].img
+install/soc_sg2000_milkv_duos_musl_riscv64_sd/milkv-duos-musl-riscv64-sd.img
 ```
+
+注意，SD 卡镜像为 `*.img`，eMMC镜像为 `upgrade.zip`。
+
+:::tip
+除了使用 `build_all` 进行完整编译之外，还可以单独编译某个模块，一般来说都是先执行 `clean_xxx` 清理中间文件后，再执行 `build_xxx` 重新编译。支持的模块，可以输入 `clean_` 或者 `build_` 后，双击 `tab` 键查看。以下列出一些常用的模块编译方法：
+- fsbl: `clean_fsbl`，`build_fsbl`
+- uboot: `clean_uboot`，`build_uboot`
+- kernel: `clean_kernel`，`build_kernel`
+- osdrv: `clean_osdrv`，`build_osdrv`
+- cvi_mpi: `clean_middleware`，`build_middleware`
+- tdl-sdk: `clean_tdl_sdk`，`build_tdl_sdk`
+:::
 
 编译完成后可以用 `exit` 命令退出 Docker 环境：
 ```bash
@@ -381,16 +509,16 @@ Buildroot 是一个轻量级的嵌入式 Linux 系统构建框架，其生成的
 在使用 Buildroot 构建的系统中，部分基础命令由 busybox 提供，您可以查看 busybox 的配置文件中是否有您需要的命令，将其打开后重新编译即可，busybox 的配置文件位置在：
 
 ```
-buildroot-2021.05/package/busybox/busybox.config
+buildroot/package/busybox/busybox.config
 ```
 
 比如 timeout 命令，打开的方法：
 
 ```diff {9,10}
-diff --git a/buildroot-2021.05/package/busybox/busybox.config b/buildroot-2021.05/package/busybox/busybox.config
+diff --git a/buildroot/package/busybox/busybox.config b/buildroot/package/busybox/busybox.config
 index d7d58f064..b268cd6f8 100644
---- a/buildroot-2021.05/package/busybox/busybox.config
-+++ b/buildroot-2021.05/package/busybox/busybox.config
+--- a/buildroot/package/busybox/busybox.config
++++ b/buildroot/package/busybox/busybox.config
 @@ -304,7 +304,7 @@ CONFIG_TEST=y
  CONFIG_TEST1=y
  CONFIG_TEST2=y
@@ -406,24 +534,24 @@ index d7d58f064..b268cd6f8 100644
 
 ### 配置 Buildroot 中预置的应用包
 
-另外，Buildroot 中预置了大量的应用包，通过下载源码编译的方式来生成所需的程序，Buildroot 预置的应用包可以在 `buildroot-2021.05/package` 目录中查看。
+另外，Buildroot 中预置了大量的应用包，通过下载源码编译的方式来生成所需的程序，Buildroot 预置的应用包可以在 `buildroot/package` 目录中查看。
 
-配置使用或者禁用某个应用包，是在目标板的配置文件中实现的，以 `milkv-duo-sd` 目标为例，其 buildroot 配置文件是：
+配置使用或者禁用某个应用包，是在目标板的配置文件中实现的，以 `milkv-duos-musl-riscv64-sd` 目标为例，其 buildroot 配置文件是：
 ```
-buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig
+buildroot/configs/milkv-duos-musl-riscv64-sd_defconfig
 ```
 
 我们可以在宿主机（比如 Ubuntu）上整体编译过一次 SDK 后，到 Buildroot 编译目录中通过命令行菜单交互的方式来配置相关的应用包。
 
 1. 进入 Buildroot 编译目录
 
-   ```
-   cd buildroot-2021.05/output/milkv-duo-sd_musl_riscv64
+   ```bash
+   cd buildroot/output/milkv-duos-musl-riscv64-sd/
    ```
 
    可以使用 `make show-targets` 命令来查看当前已经使用的应用包：
 
-   ```
+   ```bash
    $ make show-targets
    busybox coreutils dhcpcd dnsmasq dropbear duo-pinmux e2fsprogs evtest expat fio freetype gdb host-acl host-attr host-autoconf host-automake host-e2fsprogs host-fakeroot host-genimage host-libtool host-libzlib host-m4 host-makedevs host-mkpasswd host-patchelf host-pkgconf host-skeleton host-util-linux host-xz host-zlib htop ifupdown-scripts initscripts iperf3 json-c kmod libevent libffi libnl libopenssl libxml2 libxslt libzlib musl-compat-headers ncurses ntp openssl python-cffi python-evdev python-freetype python-lxml python-modbus-tk python-pillow python-pinpong python-pip python-psutil python-pycparser python-serial python-setuptools python-smbus-cffi python-spidev python3 skeleton skeleton-init-common skeleton-init-sysv spidev_test strace stress-ng tar toolchain toolchain-external toolchain-external-custom urandom-scripts util-linux wpa_supplicant zlib rootfs-ext2 rootfs-tar
    ```
@@ -453,7 +581,7 @@ buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig
    此时回到 SDK 根目录重新编译即可。
 
    :::tip
-   这里也可以比较一下编译目录中的旧配置文件和新配置文件的差异，把需要更改的部分直接手动修改到原始配置文件 `milkv-duo-sd_musl_riscv64_defconfig` 中：
+   这里也可以比较一下编译目录中的旧配置文件和新配置文件的差异，把需要更改的部分直接手动修改到原始配置文件 `milkv-duos-musl-riscv64-sd_defconfig` 中：
    ```diff
    diff -u .config.old .config
    ```
@@ -480,13 +608,13 @@ buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig
 
 如果你在自行编译固件的过程中，需要删除一些不需要的应用包来加快编译速度，或者禁用一些不需要的包，可以采用上述打开 Buildroot 应用包的 `make menuconfig` 方式，禁用相关的包。
 
-也可以在 Buildroot 的配置文件中将对应的包名删除，以 `milkv-duo-sd` 目标为例，比如不需要编译 Python 相关的库，可以做如下修改后，重新编译生成固件即可。
+也可以在 Buildroot 的配置文件中将对应的包名删除，以 `milkv-duos-musl-riscv64-sd` 目标为例，比如不需要编译 Python 相关的库，可以做如下修改后，重新编译生成固件即可。
 
-```diff title="buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig"
-diff --git a/buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig b/buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig
+```diff title="buildroot/configs/milkv-duos-musl-riscv64-sd_defconfig"
+diff --git a/buildroot/configs/milkv-duos-musl-riscv64-sd_defconfig b/buildroot/configs/milkv-duos-musl-riscv64-sd_defconfig
 index 2bc8cd5e3..e78901afb 100644
---- a/buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig
-+++ b/buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig
+--- a/buildroot/configs/milkv-duos-musl-riscv64-sd_defconfig
++++ b/buildroot/configs/milkv-duos-musl-riscv64-sd_defconfig
 @@ -330,25 +330,6 @@ BR2_PACKAGE_EVTEST=y
  # BR2_PACKAGE_FCONFIG is not set
  BR2_PACKAGE_FLASHROM_ARCH_SUPPORTS=y
@@ -521,9 +649,9 @@ index 2bc8cd5e3..e78901afb 100644
 
 SDK 中 Buildroot 默认开启了顶层并行编译以加快编译速度，但是编译出错时，不方便分析出错的日志，所以我们可以先在 config 文件中将其删除，待排解决了问题之后，再将其重新打开。
 
-以 `milkv-duo-sd` 目标为例，在其配置文件中将该配置删除后，再删除 `buildroot-2021.05/output` 目录，重新编译：
+以 `milkv-duos-musl-riscv64-sd` 目标为例，在其配置文件中将该配置删除后，再删除 `buildroot/output` 目录，重新编译：
 
-```bash title="buildroot-2021.05/configs/milkv-duo-sd_musl_riscv64_defconfig"
+```bash title="buildroot/configs/milkv-duos-musl-riscv64-sd_defconfig"
 BR2_PER_PACKAGE_DIRECTORIES=y
 ```
 
@@ -531,15 +659,20 @@ BR2_PER_PACKAGE_DIRECTORIES=y
 
 ### Buildroot 软件包下载失败
 
-当编译中遇到网络限制时， Buildroot 可能无法正常下载已经配置安装的软件包，在 Buildroot SDK V2 中您可以尝试下载我们[打包的文件](https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/tag/dl)解压到 buildroot 目录下来跳过这一步骤。
-
-具体步骤如下：
-
+在编译过程中，Buildroot 会自动下载一些源码包。SDK V1 中已经集成了部分常用源码包，可以直接编译。SDK V2 中，为了避免由于网络原因导致下载失败，可以提前下载 `dl.tar` 包并解压到 `buildroot` 目录后，再重新编译：
 ```bash
 rm -rf ./buildroot/output ./buildroot/dl
 wget https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/download/dl/dl.tar
 tar xvf ./dl.tar -C ./buildroot/
-
-rm -rf ./dl.tar
 ```
- 
+
+解压后 `buildroot` 中 `dl` 目录结构如下：
+```text
+└── buildroot
+    └── dl
+        ├── acl
+        ├── alsa-lib
+        ├── alsa-utils
+        ├── attr
+        ├── ...
+```
