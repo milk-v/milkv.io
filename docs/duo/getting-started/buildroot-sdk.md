@@ -25,7 +25,7 @@ The SDK mainly contains the following parts:
 
 Source code: [https://github.com/milkv-duo/duo-buildroot-sdk](https://github.com/milkv-duo/duo-buildroot-sdk)
 
-SDK Directory Structure
+SDK Directory Structure:
 
 ```text
 ├── build                compilation scripts and board configs
@@ -46,7 +46,16 @@ SDK Directory Structure
 
 ## Buildroot SDK V2
 
+The SDK mainly contains the following parts:
+
+- u-boot: 2021.10
+- linux kernel: 5.10.4
+- buildroot: 2025.02
+- opensbi: 89182b2
+
 Source code: [https://github.com/milkv-duo/duo-buildroot-sdk-v2](https://github.com/milkv-duo/duo-buildroot-sdk-v2)
+
+SDK Directory Structure:
 
 ```text
 ├── build                compilation scripts and board configs

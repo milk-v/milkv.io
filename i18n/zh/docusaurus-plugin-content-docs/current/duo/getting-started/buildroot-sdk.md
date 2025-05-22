@@ -25,7 +25,7 @@ SDK 主要包含如下几个部分：
 
 源码地址: [https://github.com/milkv-duo/duo-buildroot-sdk](https://github.com/milkv-duo/duo-buildroot-sdk)
 
-SDK目录结构
+SDK目录结构：
 
 ```text
 ├── build                编译目录，存放编译脚本以及各board差异化配置
@@ -46,7 +46,16 @@ SDK目录结构
 
 ## Buildroot SDK V2
 
+SDK 主要包含如下几个部分：
+
+- u-boot: 2021.10
+- linux kernel: 5.10.4
+- buildroot: 2025.02
+- opensbi: 89182b2
+
 源码地址: [https://github.com/milkv-duo/duo-buildroot-sdk-v2](https://github.com/milkv-duo/duo-buildroot-sdk-v2)
+
+SDK目录结构：
 
 ```text
 ├── build                编译目录，存放编译脚本以及各board差异化配置
