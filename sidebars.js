@@ -110,7 +110,6 @@ const sidebars = {
         slug: "/duo/useful-resources",
       },
       items: [
-        "duo/resources/image-sdk",
         "duo/resources/mmf",
         "duo/resources/mainline",
         "duo/resources/upstream-status",
