@@ -69,7 +69,7 @@ mv /mnt/system/blink.sh_backup /mnt/system/blink.sh && sync
 <div className='gpio_style'>
 
 | OS | Download Link | Guide Link | Author |
-| ---- | ---- | ---- | ---- |
+|:---- |:---- |:---- |:---- |
 | Fedora 41 | [Download](https://mirror.iscas.ac.cn/fedora-riscv/dl/Milk-V/Duo/images/latest/) | - | Fedora-V Force |
 | Arch Linux | [Download](https://drive.google.com/file/d/1Qf8ioR29KCsvt2MIWre168Um9Q8ot_z5/view?usp=sharing) | [Milk-V Community](https://community.milkv.io/t/arch-linux-on-milkv-duo-milkv-duo-arch-linux/329) [Milk-V Community](https://community.milkv.io/t/debian-arch-linux-on-milkv-duo-256m-milkv-duo-256m-debian-arch-linux/1110) | [@Judehahh](https://community.milkv.io/u/Judehahh) [@sRGB](https://community.milkv.io/u/srgb/summary) |
 | AlpineLinux | [Download](https://drive.google.com/file/d/1LfebzdIubEVe0RRMwWAD5QA5LjK-8sv5/view?usp=drive_link) | [Github](https://github.com/cwt/duo-buildroot-sdk/releases/tag/poc1) [Milk-V Community](https://community.milkv.io/t/alpine-linux-on-the-duo/700/5) | [@xyzdims.com](https://xyzdims.com/3d-printers/misc-hardware-notes/iot-milk-v-duo-risc-v-esbc-running-linux/#AlpineLinux_Disk_Image) [@cwt](https://github.com/cwt) |
@@ -81,7 +81,7 @@ mv /mnt/system/blink.sh_backup /mnt/system/blink.sh && sync
 | Zephyr | [Download](https://github.com/kinsamanka/milkv-zephyros/releases/download/v0.1.1-alpha/milkv-duo_sdcard.img.gz) | [Github](https://github.com/kinsamanka/milkv-zephyros) | [@kinsamanka](https://github.com/kinsamanka) |
 | Yocto | [Learn more](https://github.com/kinsamanka/meta-milkv/blob/master/README.md) | [Github](https://github.com/kinsamanka/meta-milkv) | [@kinsamanka](https://github.com/kinsamanka) |
 | RT-Thread | [Learn more](https://github.com/RT-Thread/rt-thread/tree/master/bsp/cvitek) | [Github](https://github.com/RT-Thread/rt-thread/tree/master/bsp/cvitek)  [RISC-V RT-Thread Programming Guide](https://riscv-rtthread-programming-manual.readthedocs.io/zh-cn/latest/) | [@hflyingcys](https://github.com/flyingcys) |
-| ThreadX | [Learn more](https://github.com/saicogn/ThreadX-to-RISC-V64) | [Github] (https://github.com/saicogn/ThreadX-to-RISC-V64) | [@hsaicogn](https://github.com/saicogn) |
+| ThreadX | [Learn more](https://github.com/saicogn/ThreadX-to-RISC-V64) | [Github](https://github.com/saicogn/ThreadX-to-RISC-V64) | [@hsaicogn](https://github.com/saicogn) |
 
 </div>
 
@@ -90,7 +90,7 @@ mv /mnt/system/blink.sh_backup /mnt/system/blink.sh && sync
 <div className='gpio_style'>
 
 | OS | Download Link | Guide Link | Author |
-| ---- | ---- | ---- | ---- |
+|:---- |:---- |:---- |:---- |
 | Fedora 41 | [Download](https://mirror.iscas.ac.cn/fedora-riscv/dl/Milk-V/Duo256M/images/latest/) | - | Fedora-V Force |
 | Debian | [Download](https://github.com/Fishwaldo/sophgo-sg200x-debian/releases/tag/v1.2.0) | [Github](https://github.com/Fishwaldo/sophgo-sg200x-debian) | [@Fishwaldo](https://github.com/Fishwaldo) |
 | Ubuntu 22.04 | [Download](https://drive.google.com/file/d/1mkzLhvtjJup3GbgWKZdwL80PZMMXg7n1/view) | [Github](https://github.com/bassusteur/milkv-duo-ubuntu) [Milk-V Community](https://community.milkv.io/t/ubuntu-on-the-milk-v-duo/960) | [@bassusteur](https://github.com/bassusteur) [@xyzdims.com](https://xyzdims.com/3d-printers/misc-hardware-notes/iot-milk-v-duo-risc-v-esbc-running-linux/#Ubuntu_Disk_Image) |
@@ -104,7 +104,7 @@ mv /mnt/system/blink.sh_backup /mnt/system/blink.sh && sync
 <div className='gpio_style'>
 
 | OS | Download Link | Guide Link | Author | Account and Password |
-| ---- | ---- | ---- | ---- | ---- |
+|:---- |:---- |:---- |:---- |:---- |
 | Fedora 41 | [Download](https://mirror.iscas.ac.cn/fedora-riscv/dl/Milk-V/DuoS/images/latest/) | - | Fedora-V Force | root/riscv |
 | Debian | [Download](https://github.com/Fishwaldo/sophgo-sg200x-debian/releases) | [Github](https://github.com/Fishwaldo/sophgo-sg200x-debian) | [@Fishwaldo](https://github.com/Fishwaldo) | |
 | NuttX | [Learn more](https://github.com/lupyuen/nuttx-sg2000) | [Github](https://github.com/lupyuen/nuttx-sg2000) | [@lupyuen](https://github.com/lupyuen) | |
