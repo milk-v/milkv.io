@@ -27,6 +27,7 @@ const sidebars = {
         "duo/getting-started/rtoscore",
         "duo/getting-started/8051core",
         "duo/getting-started/arduino",
+        "duo/getting-started/download",
       ],
     },
     {
@@ -110,7 +111,6 @@ const sidebars = {
       },
       items: [
         "duo/resources/image-sdk",
-        "duo/resources/third-party-img",
         "duo/resources/mmf",
         "duo/resources/mainline",
         "duo/resources/upstream-status",
