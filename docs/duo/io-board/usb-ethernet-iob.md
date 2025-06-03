@@ -19,7 +19,7 @@ This expansion board can improve the development efficiency of Duo and facilitat
 - 1x Type-C power input connector
 
 ## Instructions for use
-Before using it, please make sure you are using the [latest image](https://milkv.io/docs/duo/resources/image-sdk).
+Before using it, please make sure you are using the [latest image](https://milkv.io/docs/duo/getting-started/download).
 
 ### Use the IO-Board
 Note that when using the IO-Board, the USB network (USB-NCM) is not available, Please use the Ethernet interface on the IO-Board.

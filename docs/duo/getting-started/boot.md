@@ -16,7 +16,7 @@ sidebar_position: 10
 
 ## Download images and tools
 
-- Download the system image from [Official Image and SDK](https://milkv.io/docs/duo/getting-started/download).
+- Download the system image from [Resource Download Summary](https://milkv.io/docs/duo/getting-started/download).
 - Download the flash tool, [balenaEtcher](https://etcher.balena.io/) or [Rufus](https://rufus.ie/en/).
 
 ## Burn image

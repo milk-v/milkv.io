@@ -16,7 +16,7 @@ sidebar_position: 10
 
 ## 下载镜像和工具
 
-- 从[官方镜像和SDK](https://milkv.io/docs/duo/getting-started/download)下载系统镜像。
+- 从[资源下载汇总](https://milkv.io/docs/duo/getting-started/download)下载系统镜像。
 - 下载镜像烧录工具 [balenaEtcher](https://etcher.balena.io/) 或 [Rufus](https://rufus.ie/en/)。
 
 ## 烧录镜像

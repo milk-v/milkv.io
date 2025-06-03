@@ -16,7 +16,7 @@ At present, TDL SDK includes motion detection, face detection, face recognition,
 The TDL-SDK program needs to be cross-compiled in the Linux environment of the PC host, such as Ubuntu 22.04 system.
 
 :::tip
-Currently, there are two versions of OS for the Duo series board: V1 and V2. For related instructions, please refer to [Official Image and SDK](https://milkv.io/docs/duo/resources/image-sdk). The TDL-SDK for these two versions of OS is also different. The following describes the compilation methods of the TDL-SDK examples for these two versions of firmware.
+Currently, there are two versions of OS for the Duo series board: V1 and V2. For related instructions, please refer to [Resource Download Summary](https://milkv.io/docs/duo/getting-started/download). The TDL-SDK for these two versions of OS is also different. The following describes the compilation methods of the TDL-SDK examples for these two versions of firmware.
 :::
 
 ### TDL-SDK Examples for V1 OS Image

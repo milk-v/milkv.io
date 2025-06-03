@@ -16,7 +16,7 @@ Cvitek 所提供的 TDL（Turnkey Deep Learning）集成算法，用以缩短应
 TDL-SDK 程序需要在 PC 主机的 Linux 环境下进行交叉编译，推荐 Ubuntu 22.04 系统。
 
 :::tip
-目前 Duo 系列开发板的固件有 V1 和 V2 两个版本，相关说明请参考 [官方镜像和SDK](https://milkv.io/zh/docs/duo/resources/image-sdk)。适用于这两个版本固件的 TDL-SDK 也不相同，以下分别介绍适用于这两个版本固件的 TDL-SDK 示例的编译方法。
+目前 Duo 系列开发板的固件有 V1 和 V2 两个版本，相关说明请参考 [资源下载汇总](https://milkv.io/zh/docs/duo/getting-started/download)。适用于这两个版本固件的 TDL-SDK 也不相同，以下分别介绍适用于这两个版本固件的 TDL-SDK 示例的编译方法。
 :::
 
 ### 适用于 V1 版本固件的 TDL-SDK 示例

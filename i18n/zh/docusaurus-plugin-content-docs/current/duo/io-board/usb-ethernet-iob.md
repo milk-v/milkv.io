@@ -20,7 +20,7 @@ Duo USB&Ethernet IO-Board 通过添加4个USB端口、1个RJ45网络端口、1�
 - 1x Type-C power input connector
 
 ## 使用说明
-使用之前，请确认要使用最新的TF卡固件 [latest image](https://milkv.io/docs/duo/resources/image-sdk)。
+使用之前，请确认要使用最新的TF卡固件 [latest image](https://milkv.io/zh/docs/duo/getting-started/download)。
 
 ### 使用 Duo IO-Board
 
