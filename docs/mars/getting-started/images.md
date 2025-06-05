@@ -36,9 +36,7 @@ Password: milkv
 
 Ubuntu 24.04, officially released by Ubuntu, already provides a server version that supports Milk-V Mars.
 
-download link: [https://cdimage.ubuntu.com/releases/24.04/release/](https://cdimage.ubuntu.com/releases/24.04/release/)
-
-Download the preinstalled server image: [ubuntu-24.04-preinstalled-server-riscv64+milkvmars.img.xz](https://cdimage.ubuntu.com/releases/24.04/release/ubuntu-24.04-preinstalled-server-riscv64+milkvmars.img.xz)
+download link: [https://ubuntu.com/download/risc-v#milk-v-mars](https://ubuntu.com/download/risc-v#milk-v-mars)
 
 After downloading, refer to [Burn Image](https://milkv.io/docs/mars/getting-started/boot#burn-image) Burn the image to the microSD card.
 

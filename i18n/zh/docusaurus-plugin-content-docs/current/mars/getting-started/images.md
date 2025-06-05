@@ -36,9 +36,7 @@ sidebar_position: 45
 
 Ubuntu 官方发布的 Ubuntu 24.04 已经提供了支持 Milk-V Mars 的 server 版本。
 
-下载地址： [https://cdimage.ubuntu.com/releases/24.04/release/](https://cdimage.ubuntu.com/releases/24.04/release/)
-
-下载预安装的服务器版本镜像： [ubuntu-24.04-preinstalled-server-riscv64+milkvmars.img.xz](https://cdimage.ubuntu.com/releases/24.04/release/ubuntu-24.04-preinstalled-server-riscv64+milkvmars.img.xz)
+下载地址： [https://ubuntu.com/download/risc-v#milk-v-mars](https://ubuntu.com/download/risc-v#milk-v-mars)
 
 下载后参考 [镜像烧录](https://milkv.io/zh/docs/mars/getting-started/boot#%E7%83%A7%E5%BD%95%E9%95%9C%E5%83%8F) 章节将镜像烧录到 microSD 卡中。
 
