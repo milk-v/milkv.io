@@ -154,16 +154,21 @@ sleep 2
 fastboot stage u-boot.itb
 fastboot continue
 sleep 3
-#adb reboot bootloader
-#sleep 3
+
+fastboot flash mtd partition_2M.json
+fastboot flash bootinfo factory/bootinfo_spinor.bin
+fastboot flash fsbl factory/FSBL.bin
+fastboot flash env env.bin
+fastboot flash opensbi fw_dynamic.itb
+fastboot flash uboot u-boot.itb
 
 fastboot flash gpt partition_universal.json
 fastboot flash bootinfo factory/bootinfo_sd.bin
 fastboot flash fsbl factory/FSBL.bin
 fastboot flash env env.bin
-fastboot flash opensbi opensbi.itb
+fastboot flash opensbi fw_dynamic.itb
 fastboot flash uboot u-boot.itb
-fastboot flash bootfs bootfs.img
+fastboot flash bootfs bootfs.ext4
 fastboot flash rootfs rootfs.ext4
 
 sleep 2
