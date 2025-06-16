@@ -80,8 +80,9 @@ export default (props) => {
             arace_url: 'https://arace.tech/products/milk-v-jupiter-spacemit-m1-k1-octa-core-rva22-rvv1-0-risc-v-soc-2tops-miniitx',
         },
         'megrez': {
-            jd_url: 'https://ic-item.jd.com/10126518696856.html#crumb-wrap',
-            arace_url: 'https://arace.tech/products/milk-v-megrez',
+            contact_url: 'mailto: megrez@milkv.io',
+            // jd_url: 'https://ic-item.jd.com/10126518696856.html#crumb-wrap',
+            // arace_url: 'https://arace.tech/products/milk-v-megrez',
         },
         'jupiter-nx': {}
     }
@@ -97,6 +98,7 @@ export default (props) => {
         'chilli_url': '/components/platima.png',
         'allnet_url': '/components/allent.svg',
         'robu_url': '/components/robu.png',
+        'contact_url': '/components/milkv.webp',
     }
 
     const text_data = {
@@ -110,6 +112,7 @@ export default (props) => {
         'chilli_url': 'Platima Tinkers',
         'allnet_url': 'ALLNET',
         'robu_url': 'Rubu.in',
+        'contact_url': 'Contace us',
     }
 
     const product_pictures = {
