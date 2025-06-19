@@ -107,6 +107,6 @@ Third-party images have not been rigorously tested and may have unknown issues. 
 |:---- |:---- |:---- |:---- |:---- |
 | Fedora 41 | [Download](https://mirror.iscas.ac.cn/fedora-riscv/dl/Milk-V/DuoS/images/latest/) | - | Fedora-V Force | root/riscv |
 | Debian | [Download](https://github.com/Fishwaldo/sophgo-sg200x-debian/releases) | [Github](https://github.com/Fishwaldo/sophgo-sg200x-debian) | [@Fishwaldo](https://github.com/Fishwaldo) | |
-| NuttX | [Learn more](https://github.com/lupyuen/nuttx-sg2000) | [Github](https://github.com/lupyuen/nuttx-sg2000) | [@lupyuen](https://github.com/lupyuen) | |
+| NuttX | [Download](https://github.com/lupyuen/nuttx-sg2000/releases) | [Github](https://github.com/lupyuen/nuttx-sg2000) | [@lupyuen](https://github.com/lupyuen) | |
 
 </div>
