@@ -15,14 +15,6 @@ Version Description:
 
 For OS iamge installation methods, please refer to: [Install OS Image](https://milkv.io/docs/jupiter/getting-started/boot).
 
-### Ubuntu 23.10
-
-Based on Ubuntu 23.10 community source code, adapted to the Desktop system image of Milk-V Jupiter.
-
-Download Link: [https://github.com/milkv-jupiter/jupiter-ubuntu-build/releases](https://github.com/milkv-jupiter/jupiter-ubuntu-build/releases)
-
-The default password for the `root` account in Ubuntu is `milkv`.
-
 ### Bianbu OS
 
 Bianbu is an operating system officially launched by Spacemit that is deeply optimized for RISC-V architecture processors. It is built based on Ubuntu community source code and has versions such as Bianbu Desktop, Bianbu Minimal and Bianbu NAS.
@@ -76,6 +68,14 @@ The default password for the `root` account in the Bianbu system is `milkv`.
   Bianbu Dodbox version integrates Kodbox, a lightweight, easy-to-use, secure and controllable open source private file storage system.
 
   After booting up, execute the `ip a` command in the serial port or check the router web user interface to obtain the IP address of Jupiter. Use the IP address to access the `Kodbox` web interface in the PC browser. Follow the instructions for simple settings and you can use it.
+
+### Ubuntu 23.10
+
+Based on Ubuntu 23.10 community source code, adapted to the Desktop system image of Milk-V Jupiter.
+
+Download Link: [https://github.com/milkv-jupiter/jupiter-ubuntu-build/releases](https://github.com/milkv-jupiter/jupiter-ubuntu-build/releases)
+
+The default password for the `root` account in Ubuntu is `milkv`.
 
 ### Fedora 41 (by [Fedora-V Force](https://github.com/fedora-riscv))
 
