@@ -20,6 +20,12 @@ Jupiter supports the following power supply modes:
 The power consumption of the Jupiter board depends on the power and number of connected peripherals. You need to choose the appropriate power supply method according to the specific situation.
 :::
 
+## Power indicator
+
+There is a blue LED near the ATX power supply interface. This LED will light up only when the ATX power supply is used. When using other power supply methods, there is no power indicator light on the Jupiter motherboard. You need to connect an HDMI monitor or check the serial port log to determine whether the system has started normally.
+
+You can also use the F_PANEL interface to expand the power indicator light, which is a standard PC case front panel expansion interface.
+
 ## Type-C
 
 - The Type-C interface can be used as a burning port to install system-related images for the `SPI FLASH`, `eMMC module`, and `SSD` on the board through a PC.
