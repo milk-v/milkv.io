@@ -132,6 +132,16 @@ export default (props) => {
                 title: 'Milk-V Megrez ｜RISC-V AI PC',
                 description: 'Milk-V Megrez 是一款搭载 ESWIN EIC7700X 的 RISC-V Mini-ITX 设备。内置四核 SiFive P550 CPU，专为 RISC-V 原生开发而设计；集成高性能 GPU，提供流畅的桌面体验；同时其 19.95 TOPS NPU 能为用户提供卓越的本地 AI 能力。 Milk-V Megrez 是 RISC-V 桌面级主流化的重要里程碑，也是开发者必备的开发利器',
             },
+        },
+        titan: {
+            en: {
+                title: 'Milk-V Titrn',
+                description: "",
+            },
+            zh: {
+                title: 'Milk-V Titrn',
+                description: '',
+            },
         }
     }
 

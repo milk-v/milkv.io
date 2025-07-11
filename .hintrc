@@ -20,7 +20,8 @@
         "ignore": [
           "scrollbar-width",
           "-moz-filter",
-          "text-align-last"
+          "text-align-last",
+          "backdrop-filter"
         ]
       }
     ],

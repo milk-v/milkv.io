@@ -89,7 +89,8 @@ export default (props) => {
             'vega': 'https://submit-form.com/CAMdDUGu',
             'jupiter': 'https://submit-form.com/5jvw5ACDK',
             'megrez': 'https://submit-form.com/XoPoHF3x4',
-            'jupiter-nx': 'https://submit-form.com/xry1fvOuo'
+            'jupiter-nx': 'https://submit-form.com/xry1fvOuo',
+            'titan': 'https://submit-form.com/xry1fvOuo',
         };
 
         const _url = productsUrls[product] || url;
