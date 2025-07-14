@@ -484,6 +484,44 @@
     border: 1px solid #000;
 }
 
+.titan_content {
+    background: url(/static/home/banner-titan.webp) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    aspect-ratio: 1440/360;
+}
+
+.titan_left {
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titan_left>h2 {
+    margin-bottom: 0 !important;
+}
+
+
+.titan_left>.titan_text {
+    color: #FFF !important;
+    text-align: center;
+    font-family: "Titillium Web";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    height: auto;
+    margin: 0;
+    margin: 20px 0;
+}
+
+.titan_more>a {
+    color: #fff;
+    border-color: #fff;
+}
+
 @media screen and (min-width: 1950px) {
     .header_title {
         width: 1920px;
@@ -1096,6 +1134,10 @@
         padding: 5px 45px;
         gap: 10px;
     }
+
+    .titan_left>.titan_text {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 750px) {
@@ -1306,6 +1348,11 @@
         height: 38px;
         padding: 5px 45px;
         gap: 10px;
+    }
+
+    .titan_left>.titan_text {
+        font-size: 16px;
+        margin: 10px 0;
     }
 }
 
@@ -1579,5 +1626,20 @@
         padding: 5rem 45rem;
         gap: 10rem;
         font-size: 15rem;
+    }
+
+    .titan_content {
+        height: 200rem !important;
+        background-size: 250%;
+        background-position: 95% 50%;
+    }
+
+    .titan_left>.titan_text {
+        font-size: 16rem;
+        margin: 5rem 0;
+    }
+
+    .titan_left {
+        height: 100% !important;
     }
 }

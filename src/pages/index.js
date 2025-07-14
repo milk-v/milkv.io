@@ -298,36 +298,20 @@ const Home_web = () => {
         </div>
       </div>
       <div className={styles.black_shore}>
-        {/* <div className={styles.new_products}>
-          <p>5 Leading New RISC-V Products Coming Soon</p>
-          <ol>
-            <li>
-              <img src='/home/megrez.webp' alt='Milk-V Megrez' />
-              <p>Milk-V Megrez</p>
-              <Link to="/megrez">Learn More</Link>
-            </li>
-            <li>
-              <img src='/home/jupiter-nx.webp' alt='Milk-V Jupiter NX' />
-              <p>Milk-V Jupiter NX</p>
-              <Link to="/jupiter-nx">Learn More</Link>
-            </li>
-            <li>
-              <img src='/home/megrez-nx.webp' alt='Milk-V Megrez NX' />
-              <p>Milk-V Megrez NX</p>
-              <Link to="megrez-nx">Learn More</Link>
-            </li>
-            <li>
-              <img src='/home/cluster-08.webp' alt='Milk-V Cluster 08' />
-              <p>Milk-V Cluster 08</p>
-              <Link to="/cluster-08">Learn More</Link>
-            </li>
-            <li>
-              <img src='/home/ruyibook.webp' alt='RuyiBook' />
-              <p>RuyiBook</p>
-              <Link to="/ruyibook">Learn More</Link>
-            </li>
-          </ol>
-        </div> */}
+        <div className={styles.info_module} >
+          <div className={clsx(styles.main_module, styles.titan_content)} style={{ height: 'auto' }}>
+            <div className={clsx(styles.left_title, styles.titan_left)}>
+              <h2 style={{ color: '#F5B21B' }}>Milk-V Titan</h2>
+              <p className={styles.titan_text}>Undoubtedly, the Most Powerful<br /> RISC-V MINI-ITX</p>
+              <div className={clsx(styles.learnMore_use, styles.titan_more)}>
+                <Link href='/titan'><Translate id='homepage.corporations.vegalearnmore' /></Link>
+                <Link href='/titan#buy' className={styles.buy_button} ><Translate id='homepage.corporations.vegabuynow' /></Link>
+              </div>
+            </div>
+            <div className={styles.right_img}>
+            </div>
+          </div>
+        </div >
         <ul className={styles.tab} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           {tabs.map((tab, idx) => (
             <li key={idx} className={index === tab.index ? styles.index : null} onClick={() => {
@@ -355,7 +339,7 @@ const Home_web = () => {
         </div>
         <ContactBar product='home' />
         <SupportUs />
-      </div>
+      </div >
     </>
   )
 }

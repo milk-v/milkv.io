@@ -142,6 +142,7 @@ const config = {
               {
                 label: 'Titan',
                 to: '/titan',
+                className: 'new_product',
               },
               {
                 label: 'Duo',
@@ -182,27 +183,22 @@ const config = {
               {
                 label: 'Jupiter NX',
                 to: '/jupiter-nx',
-                className: 'new_product',
               },
               {
                 label: 'Cluster 08',
                 to: '/cluster-08',
-                className: 'new_product',
               },
               {
                 label: 'Megrez',
                 to: '/megrez',
-                className: 'new_product',
               },
               {
                 label: 'Megrez NX',
                 to: '/megrez-nx',
-                className: 'new_product',
               },
               {
                 label: 'RuyiBook',
                 to: '/ruyibook',
-                className: 'new_product',
               },
             ],
           },
