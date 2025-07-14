@@ -133,7 +133,7 @@ export default (props) => {
         'sg2000': '/components/buy-sg2000-view.webp',
         'sg2002': '/components/buy-sg2002-view.webp',
         'sg2380': '/components/buy-sg2380-view.webp',
-        'titan': '/components/buy-sg2380-view.webp',
+        'titan': '/components/buy-titan-view.webp',
     }
 
     return (
