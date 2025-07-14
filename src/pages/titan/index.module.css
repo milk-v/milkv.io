@@ -178,7 +178,7 @@
 }
 
 .ul_list3>li {
-  color: #000;
+  color: #000 !important;
 }
 
 .sourced_module,
@@ -305,6 +305,7 @@
 }
 
 .dk_ul>li {
+  width: 100%;
   border: 1px solid #CFCFCF;
   overflow: hidden;
   display: flex;
@@ -445,7 +446,7 @@
 }
 
 .color_fff>li>p {
-  color: #000;
+  color: #000 !important;
 }
 
 .fromBox {

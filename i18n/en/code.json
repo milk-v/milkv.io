@@ -1256,5 +1256,313 @@
   "page.duo01.text14": {
     "message": "Complete Compliance Certification",
     "description": " "
+  },
+  "page.titan.text1": {
+    "message": "Undoubtedly, the Most Powerful RISC-V MINI-ITX",
+    "description": " "
+  },
+  "page.titan.text2": {
+    "message": "Powered by UltraRISC UR-DP1000",
+    "description": " "
+  },
+  "page.titan.text3": {
+    "message": "8 High-Performance RISC-V Cores UR-CP100",
+    "description": " "
+  },
+  "page.titan.text4": {
+    "message": "Up to",
+    "description": " "
+  },
+  "page.titan.text5": {
+    "message": "1 Cluster (4x UR-CP100 Cores) Sharing 4MB, Total 8MB",
+    "description": " "
+  },
+  "page.titan.text6": {
+    "message": "Syste-level Cache: 16MB Shared by 2 Cluster (8 Cores)",
+    "description": " "
+  },
+  "page.titan.text7": {
+    "message": "The Most Powerful RISC-V Core in Mass Production to Date - UR-CP100 (RV64GCBHX)",
+    "description": " "
+  },
+  "page.titan.text8": {
+    "message": "64-bit <font color='#2CCEFB'>Out-of-Order 4-Issue</font> Superscalar Microarchitecture",
+    "description": " "
+  },
+  "page.titan.text9": {
+    "message": "SPECCPU2006 Single-Core <font color='#2CCEFB'>INT@10.4/GHz</font>",
+    "description": " "
+  },
+  "page.titan.text10": {
+    "message": "SPECCPU2006 Single-Core <font color='#2CCEFB'>FP@12/GHz</font>",
+    "description": " "
+  },
+  "page.titan.text11": {
+    "message": "UltraRISC Proprietary High-Performance \"X\" Instruction Set Extension",
+    "description": " "
+  },
+  "page.titan.text12": {
+    "message": "Compliant with RISC-V <br />International Foundation Standards",
+    "description": " "
+  },
+  "page.titan.text13": {
+    "message": "Fully Compliant with RVA22",
+    "description": " "
+  },
+  "page.titan.text14": {
+    "message": "Compliant with RVA23* (Excluding \"V\" Extension)",
+    "description": " "
+  },
+  "page.titan.text15": {
+    "message": "Supports Hardware Virtualization, RISC-V RV64 ISA H(v1.0) Extension",
+    "description": " "
+  },
+  "page.titan.text16": {
+    "message": "Supports Linux KVM (qemu-kvm), XVisor, Bao Hypervisor",
+    "description": " "
+  },
+  "page.titan.text17": {
+    "message": "Supports DDR4 Memory Stick, Up to 64GB",
+    "description": " "
+  },
+  "page.titan.text18": {
+    "message": "Compatible with Standard PC-Grade Memory Stick (UDIMM)",
+    "description": " "
+  },
+  "page.titan.text19": {
+    "message": "Supports Standard DDR4 JEDEC JESD79-4A Protocol",
+    "description": " "
+  },
+  "page.titan.text20": {
+    "message": "Supports Maximum Speed of 3200MT/s",
+    "description": " "
+  },
+  "page.titan.text21": {
+    "message": "Supports ECC",
+    "description": " "
+  },
+  "page.titan.text22": {
+    "message": "Supports UEFI Boot",
+    "description": " "
+  },
+  "page.titan.text23": {
+    "message": "Supports ACPI, CPPC, SMBIOS",
+    "description": " "
+  },
+  "page.titan.text24": {
+    "message": "Standardized Boot Support",
+    "description": " "
+  },
+  "page.titan.text25": {
+    "message": "Native ISO File Mounting",
+    "description": " "
+  },
+  "page.titan.text26": {
+    "message": "More Flexible Boot Options",
+    "description": " "
+  },
+  "page.titan.text27": {
+    "message": "Enhanced Security",
+    "description": " "
+  },
+  "page.titan.text28": {
+    "message": " Install Mainstream Operating Systems<br /> from <font color='#2CCEFB'>.iso</font> Image",
+    "description": " "
+  },
+  "page.titan.text29": {
+    "message": "Open Source in the Soul<br />Planned Upstream to Linux Mainline (2026 Q4)",
+    "description": " "
+  },
+  "page.titan.text30": {
+    "message": "Planned Support for LTS Linux and Upstream Patches",
+    "description": " "
+  },
+  "page.titan.text31": {
+    "message": "Supports Commodity NVMe SSDs<br />(PCIe Gen4 4-lane)",
+    "description": " "
+  },
+  "page.titan.text32": {
+    "message": "Theoretical Read/Write Speeds up to 7.88 GB/s",
+    "description": " "
+  },
+  "page.titan.text33": {
+    "message": "Supports High-Speed USB3 5Gbps",
+    "description": " "
+  },
+  "page.titan.text34": {
+    "message": "Onboard Full-Size PCIe Connector with<br /> PCIe Gen4 16-lane",
+    "description": " "
+  },
+  "page.titan.text35": {
+    "message": "Maximum Theoretical Unidirectional Bandwidth of 31.5 GB/s",
+    "description": " "
+  },
+  "page.titan.text36": {
+    "message": "Supports High-end Graphics Cards, Plug-and-Play",
+    "description": " "
+  },
+  "page.titan.text37": {
+    "message": "Supports 40GbE Onwards Ethernet Cards , Plug-and-Play",
+    "description": " "
+  },
+  "page.titan.text38": {
+    "message": "Seamlessly Run Windows Software",
+    "description": " "
+  },
+  "page.titan.text39": {
+    "message": "Supports wine64, box64",
+    "description": " "
+  },
+  "page.titan.text40": {
+    "message": "Smooth Gaming",
+    "description": " "
+  },
+  "page.titan.text41": {
+    "message": "Effortless Productivity",
+    "description": " "
+  },
+  "page.titan.text42": {
+    "message": "Supports High-Performance IO <br /> Frameworks",
+    "description": " "
+  },
+  "page.titan.text43": {
+    "message": "Accelerates network packet processing with user-space drivers and optimization techniques to enhance network performance.",
+    "description": " "
+  },
+  "page.titan.text44": {
+    "message": "Optimizes storage device access with user-space drivers and efficient I/O paths to boost storage performance.",
+    "description": " "
+  },
+  "page.titan.text45": {
+    "message": "Supports Mainstream Programming Languages",
+    "description": " "
+  },
+  "page.titan.text46": {
+    "message": "Supports Interpreters and Virtual Machines for Java, JavaScript, Go, Lua, Python, PHP, Rust, C/C++ and more",
+    "description": " "
+  },
+  "page.titan.text47": {
+    "message": "Supports Low-Power Suspend",
+    "description": " "
+  },
+  "page.titan.text48": {
+    "message": "Supports Linux suspend2idle and suspend2disk",
+    "description": " "
+  },
+  "page.titan.text49": {
+    "message": "Supports RTOS",
+    "description": " "
+  },
+  "page.titan.text50": {
+    "message": "Easily Handles High-Real-Time Tasks",
+    "description": " "
+  },
+  "page.titan.text51": {
+    "message": "Supports Milk-V BMC Module",
+    "description": " "
+  },
+  "page.titan.text52": {
+    "message": "Install the Milk-V BMC Module via Connector for Easy Remote Management",
+    "description": " "
+  },
+  "page.titan.text53": {
+    "message": "Power On/Off, Terminal Access, Scheduled Tasks",
+    "description": " "
+  },
+  "page.titan.text54": {
+    "message": "Supports Web Management",
+    "description": " "
+  },
+  "page.titan.text55": {
+    "message": "Supports CLI Management",
+    "description": " "
+  },
+  "page.titan.text56": {
+    "message": "Access Terminal Serial Port via<br /> Type-C Interface",
+    "description": " "
+  },
+  "page.titan.text57": {
+    "message": "This is the Genuine RISC-V PC",
+    "description": " "
+  },
+  "page.titan.text58": {
+    "message": "More Than Just Cooling and Form Factor",
+    "description": " "
+  },
+  "page.titan.text59": {
+    "message": "Onboard PWM-Controlled<br /> Cooling Fan",
+    "description": " "
+  },
+  "page.titan.text60": {
+    "message": "Fearless of High Temperatures, Full <br />Performance Unleashed",
+    "description": " "
+  },
+  "page.titan.text61": {
+    "message": "Standard MINI-ITX Form Factor",
+    "description": " "
+  },
+  "page.titan.text62": {
+    "message": "Compatible with Mainstream PC Cases",
+    "description": " "
+  },
+  "page.titan.text63": {
+    "message": "Standard F_PANEL",
+    "description": " "
+  },
+  "page.titan.text64": {
+    "message": "Supports Standard PC Case Front Panels",
+    "description": " "
+  },
+  "page.titan.text65": {
+    "message": "Power On/Off, Restart, HDD Status Indicator",
+    "description": " "
+  },
+  "page.titan.text66": {
+    "message": "Supports DC Wide Voltage Input <br />(12V-19V)",
+    "description": " "
+  },
+  "page.titan.text67": {
+    "message": "Supports Standard ATX 24-Pin<br /> Power Supply",
+    "description": " "
+  },
+  "page.titan.text68": {
+    "message": "Community Software Support",
+    "description": " "
+  },
+  "page.titan.text69": {
+    "message": "The FVF Team and Jiachen Project Provide Community Technical Support for Milk-V Titan",
+    "description": " "
+  },
+  "page.titan.text70": {
+    "message": "Jiachen Project",
+    "description": " "
+  },
+  "page.titan.text71": {
+    "message": "FVF Team",
+    "description": " "
+  },
+  "page.titan.text72": {
+    "message": "We Open-sourced it",
+    "description": " "
+  },
+  "page.titan.text73": {
+    "message": "Just for Drive RISC-V to New Heights",
+    "description": " "
+  },
+  "page.titan.text74": {
+    "message": "Software",
+    "description": " "
+  },
+  "page.titan.text75": {
+    "message": "Hardware",
+    "description": " "
+  },
+  "page.titan.text76": {
+    "message": "Structural Design",
+    "description": " "
+  },
+  "page.titan.text77": {
+    "message": "The Milk-V Titan, powered by the UltraRISC UR-DP1000 8-core SoC (up to 2.0GHz), is a compact Mini ITX RISC-V board. It supports up to 64GB DDR4 ECC RAM, a PCIe Gen4 x16 slot for graphics/computing cards, and an M.2 NVMe SSD. Featuring Gigabit Ethernet, four USB 3.0 ports, and ATX power support, also support Milk-V BMC remote control, it’s perfect for high-performance RISC-V desktops and servers.",
+    "description": " "
   }
 }

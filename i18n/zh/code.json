@@ -1130,5 +1130,313 @@
   "page.duo01.text14": {
     "message": "完善的合规性认证",
     "description": " "
+  },
+  "page.titan.text1": {
+    "message": "迄今为止，最强的 RISC-V MINI-ITX",
+    "description": " "
+  },
+  "page.titan.text2": {
+    "message": "搭载超睿科技 UR-DP1000",
+    "description": " "
+  },
+  "page.titan.text3": {
+    "message": "8 个高性能 RISC-V 核心 UR-CP100",
+    "description": " "
+  },
+  "page.titan.text4": {
+    "message": "高达",
+    "description": " "
+  },
+  "page.titan.text5": {
+    "message": "1 个簇（4x UR-CP100 核心）共享 4MB，总计 8MB",
+    "description": " "
+  },
+  "page.titan.text6": {
+    "message": "系统级缓存：16MB，由 2 个簇（8 个核心）共享",
+    "description": " "
+  },
+  "page.titan.text7": {
+    "message": "迄今为止已量产的最强 RISC-V 核心 UR-CP100 (RV64GCBHX)",
+    "description": " "
+  },
+  "page.titan.text8": {
+    "message": "64位<font color='#2CCEFB'>乱序 4发射</font>超标量微架构",
+    "description": " "
+  },
+  "page.titan.text9": {
+    "message": "",
+    "description": " "
+  },
+  "page.titan.text10": {
+    "message": "",
+    "description": " "
+  },
+  "page.titan.text11": {
+    "message": "UltraRISC 自研高性能  \"X\"  扩展指令集",
+    "description": " "
+  },
+  "page.titan.text12": {
+    "message": "符合 RISC-V 国际基金会技术规范",
+    "description": " "
+  },
+  "page.titan.text13": {
+    "message": "完全符合 RVA22",
+    "description": " "
+  },
+  "page.titan.text14": {
+    "message": "符合 RVA23*（无 “V” 扩展）",
+    "description": " "
+  },
+  "page.titan.text15": {
+    "message": "支持硬件虚拟化，RISC-V RV64 ISA H(v1.0) 扩展",
+    "description": " "
+  },
+  "page.titan.text16": {
+    "message": "支持Linux KVM (qemu-kvm)、XVisor、Bao Hypervisor",
+    "description": " "
+  },
+  "page.titan.text17": {
+    "message": "支持双通道  DDR4 内存条，最大 64GB",
+    "description": " "
+  },
+  "page.titan.text18": {
+    "message": "兼容标准PC级内存条（UDIMM）",
+    "description": " "
+  },
+  "page.titan.text19": {
+    "message": "支持标准协议 DDR4 JEDEC JESD79-4A",
+    "description": " "
+  },
+  "page.titan.text20": {
+    "message": "支持最大速率为 3200MT/s",
+    "description": " "
+  },
+  "page.titan.text21": {
+    "message": "支持 ECC",
+    "description": " "
+  },
+  "page.titan.text22": {
+    "message": "支持 UEFI 启动",
+    "description": " "
+  },
+  "page.titan.text23": {
+    "message": "支持 ACPI、CPPC、SMBIOS",
+    "description": " "
+  },
+  "page.titan.text24": {
+    "message": "标准化的启动支持",
+    "description": " "
+  },
+  "page.titan.text25": {
+    "message": "原生 ISO 文件挂载",
+    "description": " "
+  },
+  "page.titan.text26": {
+    "message": "更灵活的启动选项",
+    "description": " "
+  },
+  "page.titan.text27": {
+    "message": "安全性保障",
+    "description": " "
+  },
+  "page.titan.text28": {
+    "message": "只需一个 <font color='#2CCEFB'>.iso </font>镜像，轻松安装主流<br />操作系统",
+    "description": " "
+  },
+  "page.titan.text29": {
+    "message": "秉承开源精神计划于 2026Q4 合入 Linux 主线",
+    "description": " "
+  },
+  "page.titan.text30": {
+    "message": "我们计划支持LTS版本的Linux，并积极向上游社区贡献补丁",
+    "description": " "
+  },
+  "page.titan.text31": {
+    "message": "兼容主流 NVMe SSD，支持 PCIe Gen4 <br />四通道接口",
+    "description": " "
+  },
+  "page.titan.text32": {
+    "message": "理论读写速度最高可达 7.88 GB/s",
+    "description": " "
+  },
+  "page.titan.text33": {
+    "message": "支持高速 USB3 5Gbps",
+    "description": " "
+  },
+  "page.titan.text34": {
+    "message": "板载全尺寸 PCIe 插槽<br />支持 PCIe Gen4 16-lane",
+    "description": " "
+  },
+  "page.titan.text35": {
+    "message": "最高理论单向带宽为 31.5 GB/s",
+    "description": " "
+  },
+  "page.titan.text36": {
+    "message": "支持高端显卡，即插即用",
+    "description": " "
+  },
+  "page.titan.text37": {
+    "message": "支持万兆及更高速率网卡，即插即用",
+    "description": " "
+  },
+  "page.titan.text38": {
+    "message": "轻松运行 WINDOWS 软件",
+    "description": " "
+  },
+  "page.titan.text39": {
+    "message": "支持 wine64, box64",
+    "description": " "
+  },
+  "page.titan.text40": {
+    "message": "酣畅游戏",
+    "description": " "
+  },
+  "page.titan.text41": {
+    "message": "丝滑办公",
+    "description": " "
+  },
+  "page.titan.text42": {
+    "message": "支持 DPDK/SPDK 高性能 IO 框架",
+    "description": " "
+  },
+  "page.titan.text43": {
+    "message": "用于加速网络数据包处理，通过用户态驱动和优化技术提升网络性能。",
+    "description": " "
+  },
+  "page.titan.text44": {
+    "message": "用于优化存储设备访问，通过用户态驱动和高效 I/O 路径提升存储性能。",
+    "description": " "
+  },
+  "page.titan.text45": {
+    "message": "支持主流编程语言",
+    "description": " "
+  },
+  "page.titan.text46": {
+    "message": "支持 Java、Javascript、Golang、Lua、Python、PHP、Rust 、C/C++ 等高级语言解释器以及虚拟机",
+    "description": " "
+  },
+  "page.titan.text47": {
+    "message": "支持低功耗休眠",
+    "description": " "
+  },
+  "page.titan.text48": {
+    "message": "支持 Linux suspend2idle 及 suspend2disk",
+    "description": " "
+  },
+  "page.titan.text49": {
+    "message": "支持 RTOS",
+    "description": " "
+  },
+  "page.titan.text50": {
+    "message": "轻松应对高实时性要求任务",
+    "description": " "
+  },
+  "page.titan.text51": {
+    "message": "可安装 Milk-V BMC Module",
+    "description": " "
+  },
+  "page.titan.text52": {
+    "message": "通过连接器安装 Milk-V BMC Module ，轻松获得远程管理能力",
+    "description": " "
+  },
+  "page.titan.text53": {
+    "message": "开关机/终端访问/计划任务",
+    "description": " "
+  },
+  "page.titan.text54": {
+    "message": "支持WEB管理",
+    "description": " "
+  },
+  "page.titan.text55": {
+    "message": "支持CLI管理",
+    "description": " "
+  },
+  "page.titan.text56": {
+    "message": "使用 Type-C 接口，即可轻松访问<br />终端串口",
+    "description": " "
+  },
+  "page.titan.text57": {
+    "message": "真正的，RISC-V PC",
+    "description": " "
+  },
+  "page.titan.text58": {
+    "message": "不止是散热和外形",
+    "description": " "
+  },
+  "page.titan.text59": {
+    "message": "板载 PWM 调速散热器",
+    "description": " "
+  },
+  "page.titan.text60": {
+    "message": "无惧高温，轻松火力全开",
+    "description": " "
+  },
+  "page.titan.text61": {
+    "message": "标准 MINI-ITX 版型",
+    "description": " "
+  },
+  "page.titan.text62": {
+    "message": "兼容主流PC机箱",
+    "description": " "
+  },
+  "page.titan.text63": {
+    "message": "标准 F_PENNEL",
+    "description": " "
+  },
+  "page.titan.text64": {
+    "message": "支持主流标准机箱前面板",
+    "description": " "
+  },
+  "page.titan.text65": {
+    "message": "开关机/重启/硬盘状态灯",
+    "description": " "
+  },
+  "page.titan.text66": {
+    "message": "支持 DC 宽压12V-19V 输入",
+    "description": " "
+  },
+  "page.titan.text67": {
+    "message": "支持标准 ATX 24P 电源",
+    "description": " "
+  },
+  "page.titan.text68": {
+    "message": "社区软件支持",
+    "description": " "
+  },
+  "page.titan.text69": {
+    "message": "FVF 团队和甲辰计划为 Milk-V Titan 提供社区技术支持",
+    "description": " "
+  },
+  "page.titan.text70": {
+    "message": "甲辰计划",
+    "description": " "
+  },
+  "page.titan.text71": {
+    "message": "FVF 团队",
+    "description": " "
+  },
+  "page.titan.text72": {
+    "message": "开源设计资料",
+    "description": " "
+  },
+  "page.titan.text73": {
+    "message": "只为推动 RISC-V 不断发展",
+    "description": " "
+  },
+  "page.titan.text74": {
+    "message": "软件",
+    "description": " "
+  },
+  "page.titan.text75": {
+    "message": "硬件",
+    "description": " "
+  },
+  "page.titan.text76": {
+    "message": "结构设计",
+    "description": " "
+  },
+  "page.titan.text77": {
+    "message": "由 UltraRISC UR-DP1000 8 核 SoC（最高 2.0GHz）驱动的 Milk-V Titan 是一款紧凑型 Mini ITX RISC-V 主板。它支持高达64GB 的 DDR4 ECC RAM、一个用于图形/计算卡的 PCIe Gen4 x16 插槽和一个 M.2 NVMe SSD。具备千兆以太网、四个USB 3.0 端口和 ATX 电源支持，还支持 Milk-V BMC 远程控制，非常适合高性能 RISC-V 桌面和服务器场景。",
+    "description": " "
   }
 }
