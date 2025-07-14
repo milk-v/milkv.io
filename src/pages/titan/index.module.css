@@ -440,8 +440,12 @@
   flex: 1;
 }
 
-.sourced_list>li>p {
+.software_list>li>p {
   color: #fff;
+}
+
+.color_fff>li>p {
+  color: #000;
 }
 
 .fromBox {

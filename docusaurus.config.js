@@ -140,7 +140,7 @@ const config = {
             position: 'right',
             items: [
               {
-                label: 'TiTan',
+                label: 'Titan',
                 to: '/titan',
               },
               {

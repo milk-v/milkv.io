@@ -229,7 +229,7 @@ export default () => {
     <div className={clsx(styles.software_module, styles.module_styles)}>
       <p className={clsx(styles.module_title, styles.ml_bt)} style={{ color: '#000' }}>Community Software Support</p>
       <p className={styles.module_title3}>The FVF Team and Jiachen Project Provide Community Technical Support for Milk-V Titan</p>
-      <ol className={styles.software_list}>
+      <ol className={clsx(styles.software_list, styles.color_fff)}>
         <li>
           <img src='/titan/jiachen.webp' alt='Jiachen Project' />
           <p>--- Jiachen Project ---</p>
