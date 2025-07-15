@@ -135,11 +135,11 @@ export default (props) => {
         },
         titan: {
             en: {
-                title: 'Milk-V Titrn',
+                title: 'Milk-V Titan',
                 description: "",
             },
             zh: {
-                title: 'Milk-V Titrn',
+                title: 'Milk-V Titan',
                 description: '',
             },
         }
