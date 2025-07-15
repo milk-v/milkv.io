@@ -85,7 +85,10 @@ export default (props) => {
             // arace_url: 'https://arace.tech/products/milk-v-megrez',
         },
         'jupiter-nx': {},
-        'titan': {}
+        'titan': {
+            arace_url: 'https://arace.tech/products/milk-v-titan',
+            jd_url: 'http://item.jd.com/10165331347566.html?sdx=ehi-lLxFuZiE6JnJZ4Zfj8cjtDeUDg0rsmpKtqxHZNWLPe_RLJhe4nvmpU3iU2KT',
+        }
     }
 
     const image_data = {

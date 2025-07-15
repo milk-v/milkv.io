@@ -55,6 +55,7 @@ export default () => {
                                     <Link to='/meles'>Meles</Link>
                                     <Link to='/vega'>Vega</Link>
                                     <Link to='/jupiter'>Jupiter</Link>
+                                    <Link to='/titan'>Titan</Link>
                                 </li>
                                 <li>
                                     <p className={styles.line_name}>Chips</p>
