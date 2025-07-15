@@ -518,8 +518,8 @@
 }
 
 .titan_more>a {
-    color: #fff;
-    border-color: #fff;
+    color: #fff !important;
+    border-color: #fff !important;
 }
 
 @media screen and (min-width: 1950px) {
