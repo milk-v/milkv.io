@@ -55,7 +55,7 @@
 .module_title {
   color: #FFF;
   text-align: center;
-  font-family: "Titillium Web";
+  font-family: "Titillium Web2";
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -63,7 +63,7 @@
 
 .module_title2 {
   color: #FFF;
-  font-family: "Titillium Web";
+  font-family: "Titillium Web2";
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
@@ -90,7 +90,7 @@
 
 .ghzs {
   color: #FFF;
-  font-family: "Titillium Web";
+  font-family: "Titillium Web2";
   font-weight: 600;
   border: 1px solid #2CCEFB;
 }
@@ -431,7 +431,7 @@
 .software_list>li>p {
   color: #000;
   text-align: center;
-  font-family: "Titillium Web";
+  font-family: "Titillium Web2";
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
