@@ -46,7 +46,7 @@ export default () => {
                     <li>
                         <img src="/chips/sg2002/sg2002-frontview.webp" alt="SG2002" />
                         <p>SG2002</p>
-                        <Link to='/chips/sg2000'>Learn More</Link>
+                        <Link to='/chips/sg2002'>Learn More</Link>
                     </li>
                 </ul>
             </div>
