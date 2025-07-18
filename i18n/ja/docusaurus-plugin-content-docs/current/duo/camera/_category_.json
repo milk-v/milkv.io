@@ -1,0 +1,9 @@
+{
+  "label": "📷 Camera",
+  "position": 200,
+  "link": {
+    "type": "generated-index",
+	"slug": "/duo/camera",
+    "description": "Camera for Milk-V Duo"
+  }
+}

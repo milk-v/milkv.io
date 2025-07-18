@@ -223,7 +223,7 @@
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "読むのに1分|読むのに{readingTime}",
+    "message": "",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.breadcrumbs.home": {
@@ -730,7 +730,7 @@
     "description": "mars info"
   },
   "mars.tech.info": {
-    "message": "Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. This four-core device supports a plug-and-play eMMC module, as well as up to 8GB of LPDDR4 memory. The board is equipped with three USB 3.0 ports, one USB 2.0 port, an HDMI 2.0 port that supports 4K resolution, an RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO.",
+    "message": "Milk-V Marsは、StarFive JH7110を搭載したクレジットカードサイズの高性能RISC-Vシングルボードコンピュータ（SBC）です。この4コアデバイスは、プラグアンドプレイ対応のeMMCモジュールや最大8GBのLPDDR4メモリをサポートしています。ボードにはUSB 3.0ポートが3つ、USB 2.0ポートが1つ、4K解像度対応のHDMI 2.0ポート、PoE（Power over Ethernet）対応のRJ45イーサネットポート、WIFI/BTモジュール用のM.2 E-Keyスロットが搭載されています。また、4レーンMIPI CSIと2レーンMIPI CSI、40ピンGPIOも備えています。",
     "description": "mars tech"
   },
   "mars": {
@@ -958,39 +958,39 @@
     "description": "cv1800b"
   },
   "homepage.corporations.Documentstitle": {
-    "message": "Milk-V Documents",
+    "message": "Milk-Vドキュメント",
     "description": "homepage documents"
   },
   "homepage.corporations.Documentswords": {
-    "message": "View our documentation for technical support",
+    "message": "ドキュメントを見る",
     "description": "homepage documents"
   },
   "homepage.corporations.CommunityBotton": {
-    "message": "Milk-V Community",
+    "message": "Milk-V コミュニティ",
     "description": "Milk-V Community booton"
   },
   "homepage.corporations.WhyRVBotton": {
-    "message": "Why RISC-V ?",
+    "message": "RISC-Vを選ぶ理由",
     "description": "Why RISC-V ? booton"
   },
   "homepage.corporations.duo": {
-    "message": "Dual cores up to 1GHz (optional RISC-V / ARM), up to 256MB of memory, and a 1TOPS@INT8 TPU. Capable of running both Linux and RTOS simultaneously, with rich I/O interfaces.",
-    "description": "duo description"
+    "message": "デュアルコア最大1GHz(RISC-V / ARM選択可能)、最大256MBのメモリ、1TOPS@INT8のTPUを搭載。LinuxとRTOSが実行可能で、豊富なIOインタフェースも搭載しています。",
+    "description": "duo description" 
   },
   "homepage.corporations.duolearnmore": {
-    "message": "Learn more",
+    "message": "もっと見る",
     "description": "duo Learn more"
   },
   "homepage.corporations.duobuynow": {
-    "message": "Buy Now",
+    "message": "今すぐ購入",
     "description": "duo buy"
   },
   "homepage.corporations.pioneer": {
-    "message": "Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard mATX form factor. It is the first choice for RISC-V developers and hardware pioneers to experience the cutting edge technology of RISC-V.",
+    "message": "Milk-V Pioneerは、標準mATXフォームファクターのSOPHON SG2042を搭載した開発者向けマザーボードです。RISC-Vの最先端技術を体験したいRISC-V開発者やハードウェアパイオニアにとって、最初の選択肢となります。",
     "description": "pioneer description"
   },
   "homepage.corporations.pioneerlearnmore": {
-    "message": "Learn more",
+    "message": "もっと見る",
     "description": "pioneer Learn more"
   },
   "homepage.corporations.pioneerbuynow": {
@@ -998,23 +998,23 @@
     "description": "pioneer buy"
   },
   "homepage.corporations.marscm": {
-    "message": "The Mars Compute Module is a System on Module (SoM) based on a the StarFive JH7110 System on Chip (SoC). ",
+    "message": "Mars Compute ModuleはStarFive JH7110 SoCをベースにしたSystem on Module(SoM)です。",
     "description": "mars cm"
   },
   "homepage.corporations.mars": {
-    "message": "Milk-V Mars is a high-performance RISC-V Single Board Computer (SBC) the size of a credit card, built on the StarFive JH7110. An RJ45 Ethernet port that supports PoE (Power over Ethernet), and an M.2 E-Key slot for a WIFI/BT module. It also includes a 4-lane MIPI CSI and a 2-lane MIPI CSI, along with a 40-pin GPIO. ",
+    "message": "Milk-V Marsは、StarFive JH7110を搭載したクレジットカードサイズの高性能RISC-Vシングルボードコンピュータ（SBC）です。この4コアデバイスは、プラグアンドプレイ対応のeMMCモジュールや最大8GBのLPDDR4メモリをサポートしています。ボードにはUSB 3.0ポートが3つ、USB 2.0ポートが1つ、4K解像度対応のHDMI 2.0ポート、PoE（Power over Ethernet）対応のRJ45イーサネットポート、WIFI/BTモジュール用のM.2 E-Keyスロットが搭載されています。また、4レーンMIPI CSIと2レーンMIPI CSI、40ピンGPIOも備えています。",
     "description": "mars"
   },
   "homepage.corporations.marslearnmore": {
-    "message": "Learn more",
+    "message": "もっと見る",
     "description": "mars Learn more"
   },
   "homepage.corporations.marsbuynow": {
-    "message": "Buy Now",
+    "message": "今すぐ購入",
     "description": "mars buy now"
   },
   "homepage.corporations.meles": {
-    "message": "Milk-V Meles is a credit card-sized, single-board computer (SBC) based on the TH1520. It is powered by a Quad Core RISC-V 64GCV C910, capable of running up to 1.85GHz. This SBC is packed with rich interfaces and boasts powerful computing and AI capabilities, making it an ideal RISC-V intelligent hardware platform for hobbyists, makers, engineers, teachers, and students.",
+    "message": "Milk-V Melesは、TH1520を搭載したクレジットカードサイズのシングルボードコンピュータ（SBC）です。クアッドコアRISC-V 64GCV C910を搭載し、最大1.85GHzで動作します。このSBCは豊富なインターフェースを備え、強力な計算能力とAI機能を持ち、ホビイスト、メイカー、エンジニア、教師、学生にとって理想的なRISC-Vインテリジェントハードウェアプラットフォームです。",
     "description": "meles "
   },
   "homepage.corporations.melesbuynow": {
@@ -1026,43 +1026,43 @@
     "description": "meles learn more"
   },
   "homepage.corporations.vega": {
-    "message": "Milk-V Vega is a compact and low-density box-style open-source 10 Gigabit network switch developed by Milk-V for the next generation of network architecture. It serves as a unified platform for various services such as broadband, voice, video, and surveillance.",
+    "message": "Milk-V Vegaは次世代のネットワークのためにMilk-Vによって設計されたコンパクトな箱型のオープンソース 10ギガビットスイッチです。ブロードバンド、音声、動画や調査向けに統一されたプラットフォームを提供します。",
     "description": "vega "
   },
   "homepage.corporations.vegabuynow": {
-    "message": "Buy Now",
+    "message": "今すぐ購入",
     "description": "vega buy"
   },
   "homepage.corporations.vegalearnmore": {
-    "message": "Learn more",
+    "message": "もっと見る",
     "description": "vega learn more"
   },
   "homepage.corporations.docslearnmore": {
-    "message": "Learn more",
+    "message": "もっと見る",
     "description": "docs learn more"
   },
   "homepage.corporations.joinus": {
-    "message": "Join Us to Share More",
+    "message": "参加してもっと共有しましょう",
     "description": "Join Us to Share More"
   },
   "homepage.corporations.emailtitle_1": {
-    "message": "Having questions?",
+    "message": "質問がありますか？",
     "description": "Having questions?"
   },
   "homepage.corporations.emailtitle_2": {
-    "message": "Get in touch with us to resolve!",
+    "message": "ご連絡ください！",
     "description": "Get in touch with us to resolve!"
   },
   "homepage.corporations.salesdepartment": {
-    "message": "Sales Department",
+    "message": "セールス部門",
     "description": "Sales Department"
   },
   "homepage.corporations.devdepartment": {
-    "message": "Development Department",
+    "message": "開発部門",
     "description": "Development Department"
   },
   "homepage.corporations.customerdepartment": {
-    "message": "Customer Support Department",
+    "message": "カスタマーサポート部門",
     "description": "Customer Support Department"
   },
   "homepage.corporations.emailto": {
@@ -1070,7 +1070,7 @@
     "description": "This e-mail is to"
   },
   "homepage.corporations.emailmessage": {
-    "message": "Message",
+    "message": "メッセージ",
     "description": "main message"
   },
   "homepage.corporations.companyname": {
@@ -1126,7 +1126,7 @@
     "description": " "
   },
   "ChoosingUs.item3.title": {
-    "message": "あんしんのアフターサポート",
+    "message": "安心のアフターサポート",
     "description": " "
   },
   "ChoosingUs.item1.info": {
@@ -1146,7 +1146,7 @@
     "description": " "
   },
   "Startingfrom": {
-    "message": "ここから始める",
+    "message": "開始価格",
     "description": " "
   },
   "manykernels": {
@@ -1255,6 +1255,314 @@
   },
   "page.duo01.text14": {
     "message": "Complete Compliance Certification",
+    "description": " "
+  },
+  "page.titan.text1": {
+    "message": "間違いなく、最も強力なRISC-V MINI-ITX",
+    "description": " "
+  },
+  "page.titan.text2": {
+    "message": "UltraRISC UR-DP1000搭載",
+    "description": " "
+  },
+  "page.titan.text3": {
+    "message": "8つの高性能RISC-Vコア UR-CP100",
+    "description": " "
+  },
+  "page.titan.text4": {
+    "message": "最大",
+    "description": " "
+  },
+  "page.titan.text5": {
+    "message": "1クラスタ（4×UR-CP100コア）が4MBを共有、合計8MB",
+    "description": " "
+  },
+  "page.titan.text6": {
+    "message": "システムレベルキャッシュ：2クラスタ（8コア）で16MB共有",
+    "description": " "
+  },
+  "page.titan.text7": {
+    "message": "量産中で最も強力なRISC-Vコア - UR-CP100（RV64GCBHX）",
+    "description": " "
+  },
+  "page.titan.text8": {
+    "message": "64ビット <font color='#2CCEFB'>アウトオブオーダー、4イシュー</font> スーパースカラ マイクロアーキテクチャ",
+    "description": " "
+  },
+  "page.titan.text9": {
+    "message": "SPECCPU2006 シングルコア <font color='#2CCEFB'>INT@10.4/GHz</font>",
+    "description": " "
+  },
+  "page.titan.text10": {
+    "message": "SPECCPU2006 シングルコア <font color='#2CCEFB'>FP@12/GHz</font>",
+    "description": " "
+  },
+  "page.titan.text11": {
+    "message": "UltraRISC独自の高性能「X」命令セット拡張",
+    "description": " "
+  },
+  "page.titan.text12": {
+    "message": "RISC-Vインターナショナル標準に準拠",
+    "description": " "
+  },
+  "page.titan.text13": {
+    "message": "RVA22に完全準拠",
+    "description": " "
+  },
+  "page.titan.text14": {
+    "message": "RVA23*（「V」拡張を除く）に準拠",
+    "description": " "
+  },
+  "page.titan.text15": {
+    "message": "ハードウェア仮想化、RISC-V RV64 ISA H(v1.0)拡張をサポート",
+    "description": " "
+  },
+  "page.titan.text16": {
+    "message": "Linux KVM（qemu-kvm）、XVisor、Bao Hypervisorをサポート",
+    "description": " "
+  },
+  "page.titan.text17": {
+    "message": "DDR4メモリスティック対応、最大64GB",
+    "description": " "
+  },
+  "page.titan.text18": {
+    "message": "標準PCグレードメモリスティック（UDIMM）と互換性あり",
+    "description": " "
+  },
+  "page.titan.text19": {
+    "message": "標準DDR4 JEDEC JESD79-4Aプロトコル対応",
+    "description": " "
+  },
+  "page.titan.text20": {
+    "message": "最大速度3200MT/s対応",
+    "description": " "
+  },
+  "page.titan.text21": {
+    "message": "ECC対応",
+    "description": " "
+  },
+  "page.titan.text22": {
+    "message": "UEFIブート対応",
+    "description": " "
+  },
+  "page.titan.text23": {
+    "message": "ACPI、CPPC、SMBIOS対応",
+    "description": " "
+  },
+  "page.titan.text24": {
+    "message": "標準化されたブートサポート",
+    "description": " "
+  },
+  "page.titan.text25": {
+    "message": "ネイティブISOファイルマウント",
+    "description": " "
+  },
+  "page.titan.text26": {
+    "message": "より柔軟なブートオプション",
+    "description": " "
+  },
+  "page.titan.text27": {
+    "message": "強化されたセキュリティ",
+    "description": " "
+  },
+  "page.titan.text28": {
+    "message": "主流OSを<font color='#2CCEFB'>.iso</font>イメージからインストール",
+    "description": " "
+  },
+  "page.titan.text29": {
+    "message": "魂はオープンソース<br />Linuxメインラインへのアップストリーム予定（2026年第4四半期）",
+    "description": " "
+  },
+  "page.titan.text30": {
+    "message": "LTS Linuxとアップストリームパッチのサポート予定",
+    "description": " "
+  },
+  "page.titan.text31": {
+    "message": "一般的なNVMe SSDに対応<br />(PCIe Gen4 4レーン)",
+    "description": " "
+  },
+  "page.titan.text32": {
+    "message": "理論上の読み書き速度最大7.88GB/s",
+    "description": " "
+  },
+  "page.titan.text33": {
+    "message": "高速USB3 5Gbps対応",
+    "description": " "
+  },
+  "page.titan.text34": {
+    "message": "オンボードフルサイズPCIeコネクタ<br />PCIe Gen4 16レーン",
+    "description": " "
+  },
+  "page.titan.text35": {
+    "message": "最大理論片方向帯域幅31.5GB/s",
+    "description": " "
+  },
+  "page.titan.text36": {
+    "message": "ハイエンドグラフィックカード対応、プラグアンドプレイ",
+    "description": " "
+  },
+  "page.titan.text37": {
+    "message": "40GbE以降のイーサネットカード対応、プラグアンドプレイ",
+    "description": " "
+  },
+  "page.titan.text38": {
+    "message": "Windowsソフトウェアをシームレスに実行",
+    "description": " "
+  },
+  "page.titan.text39": {
+    "message": "wine64、box64対応",
+    "description": " "
+  },
+  "page.titan.text40": {
+    "message": "スムーズなゲーム体験",
+    "description": " "
+  },
+  "page.titan.text41": {
+    "message": "楽々生産性向上",
+    "description": " "
+  },
+  "page.titan.text42": {
+    "message": "高性能IOフレームワーク対応",
+    "description": " "
+  },
+  "page.titan.text43": {
+    "message": "ユーザ空間ドライバと最適化技術でネットワークパケット処理を加速し、ネットワーク性能を向上",
+    "description": " "
+  },
+  "page.titan.text44": {
+    "message": "ユーザ空間ドライバと効率的なI/Oパスでストレージデバイスアクセスを最適化し、ストレージ性能を向上",
+    "description": " "
+  },
+  "page.titan.text45": {
+    "message": "主流プログラミング言語対応",
+    "description": " "
+  },
+  "page.titan.text46": {
+    "message": "Java、JavaScript、Go、Lua、Python、PHP、Rust、C/C++などのインタプリタ・仮想マシン対応",
+    "description": " "
+  },
+  "page.titan.text47": {
+    "message": "低消費電力サスペンド対応",
+    "description": " "
+  },
+  "page.titan.text48": {
+    "message": "Linux suspend2idleおよびsuspend2disk対応",
+    "description": " "
+  },
+  "page.titan.text49": {
+    "message": "RTOS対応",
+    "description": " "
+  },
+  "page.titan.text50": {
+    "message": "高度なリアルタイムタスクも簡単に処理",
+    "description": " "
+  },
+  "page.titan.text51": {
+    "message": "Milk-V BMCモジュール対応",
+    "description": " "
+  },
+  "page.titan.text52": {
+    "message": "コネクタ経由でMilk-V BMCモジュールを取り付け、簡単にリモート管理",
+    "description": " "
+  },
+  "page.titan.text53": {
+    "message": "電源オン/オフ、ターミナルアクセス、スケジュールタスク",
+    "description": " "
+  },
+  "page.titan.text54": {
+    "message": "Web管理対応",
+    "description": " "
+  },
+  "page.titan.text55": {
+    "message": "CLI管理対応",
+    "description": " "
+  },
+  "page.titan.text56": {
+    "message": "Type-Cインターフェース経由でターミナルシリアルポートにアクセス",
+    "description": " "
+  },
+  "page.titan.text57": {
+    "message": "これが本物のRISC-V PC",
+    "description": " "
+  },
+  "page.titan.text58": {
+    "message": "単なる冷却やフォームファクター以上に!",
+    "description": " "
+  },
+  "page.titan.text59": {
+    "message": "オンボードPWM制御冷却ファン",
+    "description": " "
+  },
+  "page.titan.text60": {
+    "message": "高温の不安なく、フルパフォーマンスを発揮",
+    "description": " "
+  },
+  "page.titan.text61": {
+    "message": "標準MINI-ITXフォームファクター",
+    "description": " "
+  },
+  "page.titan.text62": {
+    "message": "主流PCケースとの互換性あり",
+    "description": " "
+  },
+  "page.titan.text63": {
+    "message": "標準F_PANEL",
+    "description": " "
+  },
+  "page.titan.text64": {
+    "message": "標準PCケースフロントパネル対応",
+    "description": " "
+  },
+  "page.titan.text65": {
+    "message": "電源オン/オフ、再起動、HDDステータスインジケータ",
+    "description": " "
+  },
+  "page.titan.text66": {
+    "message": "広範囲のDC入力電圧対応<br />(12V-19V)",
+    "description": " "
+  },
+  "page.titan.text67": {
+    "message": "標準ATX 24ピン<br />電源対応",
+    "description": " "
+  },
+  "page.titan.text68": {
+    "message": "コミュニティソフトウェアサポート",
+    "description": " "
+  },
+  "page.titan.text69": {
+    "message": "FVFチームとJiachenプロジェクトがMilk-V Titanのコミュニティ技術サポートを提供",
+    "description": " "
+  },
+  "page.titan.text70": {
+    "message": "Jiachenプロジェクト",
+    "description": " "
+  },
+  "page.titan.text71": {
+    "message": "FVFチーム",
+    "description": " "
+  },
+  "page.titan.text72": {
+    "message": "オープンソース化",
+    "description": " "
+  },
+  "page.titan.text73": {
+    "message": "RISC-Vを新たな高みへ導くために",
+    "description": " "
+  },
+  "page.titan.text74": {
+    "message": "ソフトウェア",
+    "description": " "
+  },
+  "page.titan.text75": {
+    "message": "ハードウェア",
+    "description": " "
+  },
+  "page.titan.text76": {
+    "message": "構造設計",
+    "description": " "
+  },
+  "page.titan.text77": {
+    "message": "Milk-V Titanは、UltraRISC UR-DP1000 8コアSoC（最大2.0GHz）を搭載したコンパクトなMini ITX RISC-Vボードです。最大64GB DDR4 ECC RAM、グラフィック/計算カード用PCIe Gen4 x16スロット、M.2 NVMe SSDをサポート。ギガビットイーサネット、USB 3.0ポート×4、ATX電源対応、Milk-V BMCリモート制御もサポートし、高性能RISC-Vデスクトップやサーバーに最適です。",
     "description": " "
   }
 }
