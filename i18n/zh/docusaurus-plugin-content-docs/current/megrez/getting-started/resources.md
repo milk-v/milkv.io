@@ -33,16 +33,18 @@ Debian/RockOS 系统的 `debian` 账户默认密码为 `debian`。
 
 [bootloader_milkv-megrez-2025-0102.bin](https://github.com/milkv-megrez/megrez-build/releases/tag/2025-0117)
 
-## 硬件资源下载 
+## 硬件资源下载
+
+### V1.1
+
+[Megrez_V1.1_Schematic_20250108.pdf](https://github.com/milkv-megrez/megrez-files/blob/main/hardware/v1.1/Megrez_V1.1_Schematic_20250108.pdf?raw=true)
+
+[Megrez_V1.1_SMD_Top_20250106.pdf](https://github.com/milkv-megrez/megrez-files/blob/main/hardware/v1.1/Megrez_V1.1_SMD_Top_20250106.pdf?raw=true)
+
+[Megrez_V1.1_SMD_Bottom_20250106.pdf](https://github.com/milkv-megrez/megrez-files/blob/main/hardware/v1.1/Megrez_V1.1_SMD_Bottom_20250106.pdf?raw=true)
 
 ### V1.0
 
-[megrez_v1.0_schematic_20250108.pdf](https://github.com/milkv-megrez/megrez-files/blob/main/hardware/megrez_v1.0_schematic_20250108.pdf?raw=true)
+[Megrez_X1.0_202409014_Top.dxf](https://github.com/milkv-megrez/megrez-files/blob/main/hardware/2d/Megrez_X1.0_202409014_Top.dxf?raw=true)
 
-[megrez_X10_202409014_top.dxf](https://github.com/milkv-megrez/megrez-files/blob/main/hardware/megrez_X10_202409014_top.dxf?raw=true)
-
-[megrez_X10_202409014_bot.dxf](https://github.com/milkv-megrez/megrez-files/blob/main/hardware/megrez_X10_202409014_bot.dxf?raw=true)
-
-[megrez_X10_202409014_TOP](https://github.com/milkv-megrez/megrez-files/blob/main/hardware/megrez_X10_202409014_TOP.pdf?raw=true)
-
-[megrez_X10_202409014_BOTTOM.pdf](https://github.com/milkv-megrez/megrez-files/blob/main/hardware/megrez_X10_202409014_BOTTOM.pdf?raw=true)
+[Megrez_X1.0_202409014_Bottom.dxf](https://github.com/milkv-megrez/megrez-files/blob/main/hardware/2d/Megrez_X1.0_202409014_Bottom.dxf?raw=true)
