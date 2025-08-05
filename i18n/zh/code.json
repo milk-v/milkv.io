@@ -1183,10 +1183,6 @@
     "message": "完全符合 RVA22",
     "description": " "
   },
-  "page.titan.text14": {
-    "message": "符合 RVA23*（无 “V” 扩展）",
-    "description": " "
-  },
   "page.titan.text15": {
     "message": "支持硬件虚拟化，RISC-V RV64 ISA H(v1.0) 扩展",
     "description": " "
@@ -1392,7 +1388,7 @@
     "description": " "
   },
   "page.titan.text66": {
-    "message": "支持 DC 宽压12V-19V 输入",
+    "message": "支持 DC 12V 电源输入",
     "description": " "
   },
   "page.titan.text67": {

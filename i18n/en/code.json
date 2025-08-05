@@ -1309,10 +1309,6 @@
     "message": "Fully Compliant with RVA22",
     "description": " "
   },
-  "page.titan.text14": {
-    "message": "Compliant with RVA23* (Excluding \"V\" Extension)",
-    "description": " "
-  },
   "page.titan.text15": {
     "message": "Supports Hardware Virtualization, RISC-V RV64 ISA H(v1.0) Extension",
     "description": " "
@@ -1518,7 +1514,7 @@
     "description": " "
   },
   "page.titan.text66": {
-    "message": "Supports DC Wide Voltage Input <br />(12V-19V)",
+    "message": "Supports DC 12V Power input",
     "description": " "
   },
   "page.titan.text67": {

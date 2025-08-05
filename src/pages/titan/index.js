@@ -55,7 +55,6 @@ export default () => {
             ></p>
             <ul className={styles.ul_list}>
               <li><Translate id='page.titan.text13' /></li>
-              <li><Translate id='page.titan.text14' /></li>
             </ul>
           </div>
           <img src='/titan/dp1000.webp' alt='UltraRISC UR-DP1000' />
