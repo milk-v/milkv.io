@@ -20,7 +20,8 @@ export default (props) => {
             banli_url: 'https://spotpear.cn/category/Milk-V.html',
             chilli_url: 'https://shop.plati.ma/collections/all?filter.p.vendor=Milk-V',
             jd_url: 'https://ic-item.jd.com/10107640792852.html',
-            robu_url: 'https://robu.in/?s=milk+v+duo&post_type=product&dgwt_wcas=1'
+            robu_url: 'https://robu.in/?s=milk+v+duo&post_type=product&dgwt_wcas=1',
+            pajenicko_url: 'https://pajenicko.cz/milk-v/milk-v-duo'
         },
         'duo-s': {
             arace_url: 'https://arace.tech/products/milkv-duo-s',
@@ -28,12 +29,14 @@ export default (props) => {
             banli_url: 'https://spotpear.cn/category/Milk-V.html',
             chilli_url: 'https://shop.plati.ma/products/milk-v-duo-s-512m-1ghz-dual-core-risc-v-arm-sbc?_pos=4&_fid=86ada3723&_ss=c',
             jd_url: 'https://ic-item.jd.com/10107306617970.html#crumb-wrap',
-            robu_url: 'https://robu.in/?s=milk+v+duo+s&post_type=product&dgwt_wcas=1'
+            robu_url: 'https://robu.in/?s=milk+v+duo+s&post_type=product&dgwt_wcas=1',
+            pajenicko_url: 'https://pajenicko.cz/milk-v'
         },
         'duo-module-01': {
             arace_url: 'https://arace.tech/products/milk-v-duo-module-01',
             taobao_url: 'https://item.taobao.com/item.htm?ft=t&id=828155295674',
-            chilli_url: 'https://shop.plati.ma/products/milk-v-duo-module-01?_pos=5&_fid=2ba550543&_ss=c'
+            chilli_url: 'https://shop.plati.ma/products/milk-v-duo-module-01?_pos=5&_fid=2ba550543&_ss=c',
+            pajenicko_url: 'https://pajenicko.cz/milk-v/milk-v-duo-module-01'
         },
         'pioneer': {
             crowdSupply_url: 'https://www.crowdsupply.com/milkv/milk-v-pioneer',
@@ -103,6 +106,7 @@ export default (props) => {
         'allnet_url': '/components/allent.svg',
         'robu_url': '/components/robu.png',
         'contact_url': '/components/milkv.webp',
+        'pajenicko_url': '/components/pajenicko.png',
     }
 
     const text_data = {
@@ -117,6 +121,7 @@ export default (props) => {
         'allnet_url': 'ALLNET',
         'robu_url': 'Rubu.in',
         'contact_url': 'Contace us',
+        'pajenicko_url': 'Pajenicko',
     }
 
     const product_pictures = {
@@ -161,6 +166,10 @@ export default (props) => {
                                             shipping_location = 'Australia'
                                         } else if (item === 'robu_url') {
                                             shipping_location = 'India'
+                                        } else if (item === 'robu_url') {
+                                            shipping_location = 'India'
+                                        } else if (item === 'pajenicko_url') {
+                                            shipping_location = 'Česko'
                                         } else {
                                             shipping_location = 'China Mainland'
                                         }
