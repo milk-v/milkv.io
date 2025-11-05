@@ -54,6 +54,7 @@ The SDK mainly contains the following parts:
 - opensbi: 89182b2
 
 Source code: [https://github.com/milkv-duo/duo-buildroot-sdk-v2](https://github.com/milkv-duo/duo-buildroot-sdk-v2)
+Stable branches: main
 
 SDK Directory Structure:
 
