@@ -163,9 +163,9 @@ chmod +x sample_vi_fd
 
 ## 模型支持列表
 
-### TDL-SDK 数据类型
+### TDL-SDK 模型列表（Sophgo）
 
-[https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/6_Data_Types.html](https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/6_Data_Types.html)
+[https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/main.html#id6](https://doc.sophgo.com/cvitek-develop-docs/master/docs_latest_release/CV180x_CV181x/zh/01.software/TPU/TDL_SDK_Software_Development_Guide/build/html/main.html#id6)
 
 ### TDK-SDK 模型下载（Sophgo）
 
