@@ -469,6 +469,7 @@ const sidebars = {
       ],
     },
   ],
+
   Megrez: [
     {
       type: "link",
@@ -540,6 +541,32 @@ const sidebars = {
             "megrez/development-guide/runtime-sample/deepseek-r1",
           ],
         },
+      ],
+    },
+  ],
+
+  Titan: [
+    {
+      type: "link",
+      label: "🏠 Home",
+      href: "/docs",
+    },
+    "titan/overview",
+    {
+      type: "category",
+      label: "🚀 Getting Started",
+      collapsed: false,
+      link: {
+        type: "generated-index",
+        title: "🚀 Getting Started",
+        description: "Getting Started with Titan",
+        slug: "/titan/getting-started",
+      },
+      items: [
+        "titan/getting-started/hardware",
+        "titan/getting-started/boot",
+        "titan/getting-started/setup",
+        "titan/getting-started/resources",
       ],
     },
   ],
