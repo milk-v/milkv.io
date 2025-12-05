@@ -48,6 +48,14 @@ const config = {
             to: '/docs/jupiter/overview',
             from: ['/docs/jupiter'],
           },
+          {
+            to: '/docs/megrez/overview',
+            from: ['/docs/megrez'],
+          },
+          {
+            to: '/docs/titan/overview',
+            from: ['/docs/titan'],
+          },
         ],
       },
     ],
