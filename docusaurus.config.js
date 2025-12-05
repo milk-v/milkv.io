@@ -242,6 +242,11 @@ const config = {
                 label: 'Megrez',
                 docId: 'megrez/overview',
               },
+              {
+                type: 'doc',
+                label: 'Titan',
+                docId: 'titan/overview',
+              },
             ],
           },
           {
