@@ -563,7 +563,9 @@ const sidebars = {
         slug: "/titan/getting-started",
       },
       items: [
+        "titan/getting-started/quick-start",
         "titan/getting-started/hardware",
+        "titan/getting-started/memory",
         "titan/getting-started/boot",
         "titan/getting-started/setup",
         "titan/getting-started/resources",
