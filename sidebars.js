@@ -568,6 +568,7 @@ const sidebars = {
         "titan/getting-started/memory",
         "titan/getting-started/boot",
         "titan/getting-started/setup",
+        "titan/getting-started/bmc",
         "titan/getting-started/resources",
       ],
     },
