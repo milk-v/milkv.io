@@ -48,7 +48,7 @@ The Jupiter board will automatically power on after being powered by the method 
 
 <Image src='/docs/jupiter/jupiter-interface-f-panel-1.webp' maxWidth='100%' align='left' />
 
-<Image src='/docs/jupiter/jupiter-interface-f-panel-2.webp' maxWidth='100%' align='left' />
+<Image src='/docs/common/pc-f-panel.webp' maxWidth='100%' align='left' />
 
 ## F_AUDIO、F_USB2、FUSB3 Interfaces
 

@@ -33,7 +33,7 @@ After powering the Megrez motherboard using one of the methods mentioned in the 
 
 <Image src='/docs/jupiter/jupiter-interface-f-panel-1.webp' maxWidth='100%' align='left' />
 
-<Image src='/docs/jupiter/jupiter-interface-f-panel-2.webp' maxWidth='100%' align='left' />
+<Image src='/docs/common/pc-f-panel.webp' maxWidth='100%' align='left' />
 
 ## F_AUDIO, F_USB2, F_USB3 Interfaces
 

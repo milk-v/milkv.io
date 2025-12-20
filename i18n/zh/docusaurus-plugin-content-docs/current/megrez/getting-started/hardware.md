@@ -33,7 +33,7 @@ Megrez 主板按上述`电源接口`中的方式供电后会自动开机，不�
 
 <Image src='/docs/jupiter/jupiter-interface-f-panel-1.webp' maxWidth='100%' align='left' />
 
-<Image src='/docs/jupiter/jupiter-interface-f-panel-2.webp' maxWidth='100%' align='left' />
+<Image src='/docs/common/pc-f-panel.webp' maxWidth='100%' align='left' />
 
 ## F_AUDIO、F_USB2、FUSB3 接口
 
