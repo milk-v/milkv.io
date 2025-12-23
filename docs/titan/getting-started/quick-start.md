@@ -16,9 +16,9 @@ The purpose of this section is to help you get started quickly with Milk-V Titan
 ### Necessary
 
 1. Titan Motherboard
-2. DDR4: You will need two DDR4 memory modules. Both memory slots must be populated, and the two memory modules installed must have identical specifications. Please refer to this link for specific specifications: [DDR4 Support List](https://milkv.io/docs/titan/getting-started/memory)
+2. DDR4 memory: Two modules are required. Both memory slots must be populated, and the two memory modules installed must have identical specifications. Please refer to this link for specific specifications: [DDR4 Support List](https://milkv.io/docs/titan/getting-started/memory)
 3. Boot Media: NVMe SSD (used for system installation and booting)
-4. Power Supply: Titan supports both ATX (24-pin) and DC (5525) power supply methods.
+4. Power Supply: The Titan supports both ATX (24-pin) and DC (5525) power supply methods.
 
    The power consumption of a Titan motherboard depends on the power and number of connected peripherals, requiring the selection of an appropriate power supply method based on specific circumstances. The following power consumption figures are for reference only, based on idle and CPU stress testing conditions under normal system operation. If you have connected other peripherals, such as an external graphics card, you also need to consider the graphics card's power consumption.
 
@@ -26,7 +26,7 @@ The purpose of this section is to help you get started quickly with Milk-V Titan
    - DDR4 64GB(32GB*2) + M.2 NVMe SSD(128G), Full load power ~30W (12V/2.5A)
 
 :::tip
-The Titan motherboard itself does not have HDMI or other display interfaces, so in scenarios where there is no need for display output, such as servers, there is no need to connect a graphics card and monitor. The device supports login and management via USB debug serial port or SSH network protocol.
+The Titan motherboard itself does not have HDMI or other display interfaces, so in scenarios without display output requirements, such as server use, a graphics card and monitor are not required. The device supports login and management via USB debug serial port or SSH network protocol.
 :::
 
 ### Optional
@@ -41,4 +41,4 @@ The Titan motherboard itself does not have HDMI or other display interfaces, so 
 4. Debugging Tool: Type-C data cable (for serial port login or debugging)
 5. Case: The Titan motherboard is compliant with the Mini-ITX specification, and you can choose a computer case that is compatible with Mini-ITX motherboards.
 
-## 安装操作系统
+## Installing the System
