@@ -1278,7 +1278,7 @@
     "description": " "
   },
   "page.titan.text6": {
-    "message": "Syste-level Cache: 16MB Shared by 2 Cluster (8 Cores)",
+    "message": "System-level Cache: 16MB Shared by 2 Clusters (8 Cores)",
     "description": " "
   },
   "page.titan.text7": {
@@ -1286,7 +1286,7 @@
     "description": " "
   },
   "page.titan.text8": {
-    "message": "64-bit <font color='#2CCEFB'>Out-of-Order 4-Issue</font> Superscalar Microarchitecture",
+    "message": "<font color='#2CCEFB'>64-bit Out-of-Order 4-Issue</font> uarch",
     "description": " "
   },
   "page.titan.text9": {
@@ -1297,16 +1297,16 @@
     "message": "SPECCPU2006 Single-Core <font color='#2CCEFB'>FP@12/GHz</font>",
     "description": " "
   },
-  "page.titan.text11": {
-    "message": "UltraRISC Proprietary High-Performance \"X\" Instruction Set Extension",
-    "description": " "
-  },
   "page.titan.text12": {
     "message": "Compliant with RISC-V <br />International Foundation Standards",
     "description": " "
   },
   "page.titan.text13": {
     "message": "Fully Compliant with RVA22",
+    "description": " "
+  },
+  "page.titan.text13_2": {
+    "message": "First Hypervisor Extension 1.0 compliant silicon",
     "description": " "
   },
   "page.titan.text15": {
@@ -1437,28 +1437,8 @@
     "message": "Supports Interpreters and Virtual Machines for Java, JavaScript, Go, Lua, Python, PHP, Rust, C/C++ and more",
     "description": " "
   },
-  "page.titan.text47": {
-    "message": "Supports Low-Power Suspend",
-    "description": " "
-  },
-  "page.titan.text48": {
-    "message": "Supports Linux suspend2idle and suspend2disk",
-    "description": " "
-  },
-  "page.titan.text49": {
-    "message": "Supports RTOS",
-    "description": " "
-  },
-  "page.titan.text50": {
-    "message": "Easily Handles High-Real-Time Tasks",
-    "description": " "
-  },
   "page.titan.text51": {
-    "message": "Supports Milk-V BMC Module",
-    "description": " "
-  },
-  "page.titan.text52": {
-    "message": "Install the Milk-V BMC Module via Connector for Easy Remote Management",
+    "message": "Onboard BMC for Remote Management",
     "description": " "
   },
   "page.titan.text53": {
@@ -1558,7 +1538,7 @@
     "description": " "
   },
   "page.titan.text77": {
-    "message": "The Milk-V Titan, powered by the UltraRISC UR-DP1000 8-core SoC (up to 2.0GHz), is a compact Mini ITX RISC-V board. It supports up to 64GB DDR4 ECC RAM, a PCIe Gen4 x16 slot for graphics/computing cards, and an M.2 NVMe SSD. Featuring Gigabit Ethernet, four USB 3.0 ports, and ATX power support, also support Milk-V BMC remote control, it’s perfect for high-performance RISC-V desktops and servers.",
+    "message": "The Milk-V Titan, powered by the UltraRISC UR-DP1000 8-core SoC (up to 2.0GHz), is a compact Mini ITX RISC-V board. It supports up to 64GB DDR4 ECC ram, a PCIe Gen4 x16 slot for graphics/computing cards, and an M.2 NVMe SSD. Featuring gigabit ethernet, four USB 3.0 ports, and ATX power support, also support Milk-V BMC remote control, it’s perfect for high-performance RISC-V desktops and servers.",
     "description": " "
   }
 }

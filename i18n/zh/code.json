@@ -1160,7 +1160,7 @@
     "description": " "
   },
   "page.titan.text8": {
-    "message": "64位<font color='#2CCEFB'>乱序 4发射</font>超标量微架构",
+    "message": "<font color='#2CCEFB'>64-bit Out-of-Order 4-Issue</font> uarch",
     "description": " "
   },
   "page.titan.text9": {
@@ -1169,10 +1169,6 @@
   },
   "page.titan.text10": {
     "message": "",
-    "description": " "
-  },
-  "page.titan.text11": {
-    "message": "UltraRISC 自研高性能  \"X\"  扩展指令集",
     "description": " "
   },
   "page.titan.text12": {
@@ -1311,28 +1307,8 @@
     "message": "支持 Java、Javascript、Golang、Lua、Python、PHP、Rust 、C/C++ 等高级语言解释器以及虚拟机",
     "description": " "
   },
-  "page.titan.text47": {
-    "message": "支持低功耗休眠",
-    "description": " "
-  },
-  "page.titan.text48": {
-    "message": "支持 Linux suspend2idle 及 suspend2disk",
-    "description": " "
-  },
-  "page.titan.text49": {
-    "message": "支持 RTOS",
-    "description": " "
-  },
-  "page.titan.text50": {
-    "message": "轻松应对高实时性要求任务",
-    "description": " "
-  },
   "page.titan.text51": {
-    "message": "可安装 Milk-V BMC Module",
-    "description": " "
-  },
-  "page.titan.text52": {
-    "message": "通过连接器安装 Milk-V BMC Module ，轻松获得远程管理能力",
+    "message": "集成BMC实现远程管理",
     "description": " "
   },
   "page.titan.text53": {
@@ -1432,7 +1408,7 @@
     "description": " "
   },
   "page.titan.text77": {
-    "message": "由 UltraRISC UR-DP1000 8 核 SoC（最高 2.0GHz）驱动的 Milk-V Titan 是一款紧凑型 Mini ITX RISC-V 主板。它支持高达64GB 的 DDR4 ECC RAM、一个用于图形/计算卡的 PCIe Gen4 x16 插槽和一个 M.2 NVMe SSD。具备千兆以太网、四个USB 3.0 端口和 ATX 电源支持，还支持 Milk-V BMC 远程控制，非常适合高性能 RISC-V 桌面和服务器场景。",
+    "message": "The Milk-V Titan, powered by the UltraRISC UR-DP1000 8-core SoC (up to 2.0GHz), is a compact Mini ITX RISC-V board. It supports up to 64GB DDR4 ECC ram, a PCIe Gen4 x16 slot for graphics/computing cards, and an M.2 NVMe SSD. Featuring gigabit ethernet, four USB 3.0 ports, and ATX power support, also support Milk-V BMC remote control, it’s perfect for high-performance RISC-V desktops and servers.",
     "description": " "
   }
 }

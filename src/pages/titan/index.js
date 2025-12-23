@@ -10,8 +10,11 @@ export default () => {
   return <Layout>
     <MetaData page='titan' />
     <div className={clsx(styles.module_styles, styles.title_module)}>
-      <h2>Milk-V Titan</h2>
-      <p><Translate id='page.titan.text1' /></p>
+      <div className={styles["flex-box"]}>
+        <h2>Milk-V Titan</h2>
+        <p><Translate id='page.titan.text1' /></p>
+        <img src='/titan/left-logo.webp' alt='Milk-V x 甲辰计划 x Fedora-V Force' />
+      </div>
       <img src='/titan/titan-view.webp' alt='Milk-V Titan' />
     </div>
     <div className={styles.titan_main}>
@@ -43,9 +46,7 @@ export default () => {
               ></li>
               <li>SPECCPU2006 Single-Core <font color='#2CCEFB'>INT@10.4/GHz</font></li>
               <li>SPECCPU2006 Single-Core <font color='#2CCEFB'>FP@12/GHz</font></li>
-              <li><Translate id='page.titan.text11' /></li>
             </ul>
-
             <p className={styles.module_title2}
               dangerouslySetInnerHTML={{
                 __html: translate({
@@ -55,6 +56,7 @@ export default () => {
             ></p>
             <ul className={styles.ul_list}>
               <li><Translate id='page.titan.text13' /></li>
+              <li><Translate id='page.titan.text13_2' /></li>
             </ul>
           </div>
           <img src='/titan/dp1000.webp' alt='UltraRISC UR-DP1000' />
@@ -107,7 +109,25 @@ export default () => {
         }}
       >
       </p>
-      <img src='/titan/os-support.webp' alt='Install Mainstream Operating Systems from .iso Image' />
+      <div className={styles["support-box"]}>
+        <div>
+          <p>Preferred OS:</p>
+          <img src='/titan/ubuntu.webp' />
+        </div>
+        <div>
+          <p>Future OS Support:</p>
+          <div className={styles["support-icons"]}>
+            <img src='/titan/icon1.webp' alt='Support OS' />
+            <img src='/titan/icon2.webp' alt='Support OS' />
+            <img src='/titan/icon3.webp' alt='Support OS' />
+            <img src='/titan/icon4.webp' alt='Support OS' />
+            <img src='/titan/icon5.webp' alt='Support OS' />
+            <img src='/titan/icon6.webp' alt='Support OS' />
+            <img src='/titan/icon7.webp' alt='Support OS' />
+            <img src='/titan/icon8.webp' alt='Support OS' />
+          </div>
+        </div>
+      </div>
     </div>
     <div className={clsx(styles.upstream_module, styles.module_styles)}>
       <p className={clsx(styles.module_title, styles.ml_bt)}
@@ -191,25 +211,8 @@ export default () => {
       <p className={clsx(styles.module_title3, styles.ml_bottom)} style={{ color: '#fff' }}><Translate id='page.titan.text46' /></p>
       <img src='/titan/support-lang.webp' alt='Supports Mainstream Programming Languages' className={styles.lang_img} />
     </div>
-    <div className={clsx(styles.power_module, styles.module_styles)}>
-      <p className={clsx(styles.module_title, styles.ml_bt)} style={{ color: '#000' }}><Translate id='page.titan.text47' /></p>
-      <p className={styles.module_title3}><Translate id='page.titan.text48' /></p>
-      <img src='/titan/liunx-logo2.webp' alt='Supports Low-Power Suspend' />
-      <div className={styles.power_list}>
-        <p>suspend2idle</p>
-        <p>suspend2disk</p>
-      </div>
-    </div>
     <div className={clsx(styles.interface_module, styles.module_styles)}>
-      <p className={clsx(styles.module_title, styles.ml_bt)}><Translate id='page.titan.text49' /></p>
-      <p className={clsx(styles.module_title3, styles.ml_bottom)} style={{ color: '#fff' }}><Translate id='page.titan.text50' /></p>
-      <div className={styles.rtos_list}>
-        <img src='/titan/rtos-1.webp' alt='RTOS' />
-        <img src='/titan/rtos-2.webp' alt='RTOS' />
-        <img src='/titan/rtos-3.webp' alt='RTOS' />
-      </div>
       <p className={clsx(styles.module_title, styles.ml_bt)}><Translate id='page.titan.text51' /></p>
-      <p className={clsx(styles.module_title3, styles.ml_bottom)} style={{ color: '#fff' }}><Translate id='page.titan.text52' /></p>
       <div className={clsx(styles.storage_content, styles.bmc_content)}>
         <ul className={clsx(styles.ul_list, styles.ul_list2)}>
           <li><Translate id='page.titan.text53' /></li>
@@ -334,7 +337,7 @@ export default () => {
           <tbody>
             <tr>
               <td>CPU</td>
-              <td>UltraRISC UR‑DP1000, 8‑core CP‑100(RV64GCBHX), Up to 2.0GHz</td>
+              <td>UltraRISC UR‑DP1000, 8‑core CP‑100(RV64GCBH), Up to 2.0GHz</td>
             </tr>
             <tr>
               <td>RAM</td>
@@ -360,17 +363,11 @@ export default () => {
               <td>1x PCIe x16 Slot (PCIe Gen4, 16‑lane), Supports Graphic Cards and Computing Cards, etc.</td>
             </tr>
             <tr>
-              <td rowSpan="4">BMC Module (Optional)</td>
-              <td colSpan="4">1x Milk‑V BMC Module Connector for Milk‑V BMC Module</td>
+              <td rowSpan="2">Onboard BMC</td>
+              <td colSpan="2">1x 100Mbps RJ45 Port for Remote Control</td>
             </tr>
             <tr>
-              <td colSpan="4">1x 100Mbps RJ45 Port for Remote Control (Via Milk‑V BMC Module)</td>
-            </tr>
-            <tr>
-              <td colSpan="4">1x USB2 for BMC Storage (Via Milk‑V BMC Module)</td>
-            </tr>
-            <tr>
-              <td colSpan="4">1x MicroSD Slot for BMC Storage (Via Milk‑V BMC Module)</td>
+              <td colSpan="2">1x USB2 for BMC Storage</td>
             </tr>
             <tr>
               <td rowSpan="5">Others</td>
@@ -383,12 +380,11 @@ export default () => {
               <td colSpan="5">1x Front Panel header for Power Button / Reset Button / Status LED / Power LED</td>
             </tr>
             <tr>
-              <td colSpan="5">1x CPU Uart(3P)</td>
+              <td colSpan="5">1x CPU UART(3P)</td>
             </tr>
             <tr>
               <td colSpan="5">1x Debug Type‑C</td>
             </tr>
-            {/*  */}
             <tr>
               <td>Operating System</td>
               <td>Ubuntu / Debian / Fedora</td>
@@ -405,7 +401,6 @@ export default () => {
         </table>
       </div>
     </div>
-
     <BuyPop type='titan' />
     <ContactUs product='titan' />
   </Layout>
