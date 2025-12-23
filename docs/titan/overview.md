@@ -15,7 +15,7 @@ The Milk-V Titan adopts the standard Mini-ITX form factor (170mm × 170mm), offe
 
 - PCIe Gen4 x16 slot, supporting discrete graphics cards, AI acceleration cards, and high-speed network cards.
 - PCIe Gen4 x4 M.2 NVMe interface.
-- Dual DDR4 memory slots, supporting ECC, up to 64GB @ 3200MT/s.
+- Dual DDR4 memory slots, supporting ECC, for a total of up to 64GB @ 3200MT/s.
 - Onboard BMC module, supports remote management and system monitoring
 - Universal interfaces like USB 3.0 and Gigabit Ethernet, offering plug-and-play functionality under Ubuntu.
 - Flexible power options, with a standard ATX power for heavy load scenarios or a DC5525 option for light use.
