@@ -6,7 +6,7 @@ sidebar_position: 70
 # DDR4 Support List
 
 :::tip
-The current firmware only supports DDR4 UDIMM. Both memory slots must be populated, and the two memory modules installed must have identical specifications.
+The Titan motherboard supports DDR4 UDIMM memory. Both memory slots must be populated, and the two memory modules installed must have identical specifications.
 :::
 
 | Manufacturer | Model | Voltage | Capacity |

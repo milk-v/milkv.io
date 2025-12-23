@@ -24,7 +24,7 @@ The power consumption of a Titan motherboard depends on the power and number of 
 
 ## DDR4 DIMM Slot
 
-The Titan motherboard has two DDR4 slots, the current firmware only supports DDR4 UDIMMs. Both memory slots must be populated, and the two memory modules installed must have identical specifications. For a list of currently verified DDR4 modules, please refer to the following link:
+The Titan motherboard has two DDR4 slots, which support DDR4 UDIMM modules. Both memory slots must be populated, and the two memory modules installed must have identical specifications. For a list of currently verified DDR4 modules, please refer to the following link:
 
 DDR4 Support List: [https://milkv.io/docs/titan/getting-started/memory](https://milkv.io/docs/titan/getting-started/memory)
 

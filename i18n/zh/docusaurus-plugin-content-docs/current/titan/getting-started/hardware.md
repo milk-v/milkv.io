@@ -23,7 +23,7 @@ Titan 主板功耗取决于所连接的外设功率和数量，需根据具体�
 
 ## 内存插槽
 
-Titan 板载两个 DDR4 插槽，当前固件仅支持 DDR4 UDIMM，您必须为两个内存插槽都安装内存条，并且确保所使用的两条内存规格完全相同。当前验证过的 DDR4 列表请参考如下链接：
+Titan 板载两个 DDR4 插槽，支持 DDR4 UDIMM，您必须为两个内存插槽都安装内存条，并且确保所使用的两条内存规格完全相同。当前验证过的 DDR4 列表请参考如下链接：
 
 内存支持列表: [https://milkv.io/zh/docs/titan/getting-started/memory](https://milkv.io/zh/docs/titan/getting-started/memory)
 
