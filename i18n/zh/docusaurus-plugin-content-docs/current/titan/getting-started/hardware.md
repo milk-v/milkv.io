@@ -23,9 +23,7 @@ Titan 主板功耗取决于所连接的外设功率和数量，需根据具体�
 
 ## 内存插槽
 
-Titan 板载两个 DDR4 插槽，支持 DDR4 UDIMM，您必须为两个内存插槽都安装内存条，并且确保所使用的两条内存规格完全相同。当前验证过的 DDR4 列表请参考如下链接：
-
-内存支持列表: [https://milkv.io/zh/docs/titan/getting-started/memory](https://milkv.io/zh/docs/titan/getting-started/memory)
+Titan 板载两个 DDR4 插槽，支持 DDR4 UDIMM，两个内存插槽都需要安装内存条，并且确保所使用的两条内存规格一致。当前验证过的 DDR4 列表请参考该链接：[内存支持列表](https://milkv.io/zh/docs/titan/getting-started/memory)
 
 ## PCIe M Key
 
@@ -75,13 +73,9 @@ Titan 板载的 PCIe M Key 接口支持 PCIe Gen4 x4，主要用于安装 NVMe �
 
 Titan 主板有两个 Type-C 接口：
 
-1. 靠近 DC 电源接口位置的 Type-C 为 UR-DP1000 的调试口，板载 USB 转 UART 模块与 UR-DP1000 连接，具体用法请参考：
+1. 靠近 DC 电源接口位置的 Type-C 为 UR-DP1000 的调试口，板载 USB 转 UART 模块与 UR-DP1000 连接，具体用法请参考：[USB Type-C 调试口使用说明](https://milkv.io/zh/docs/titan/getting-started/setup)
 
-   USB Type-C 调试口使用说明: [https://milkv.io/zh/docs/titan/getting-started/setup](https://milkv.io/zh/docs/titan/getting-started/setup)
-
-2. 另外一个 Type-C 口为 BMC 模块的烧录口，使用方法请参考 BMC 使用说明：
-
-   BMC 使用说明：[https://milkv.io/zh/docs/titan/getting-started/bmc](https://milkv.io/zh/docs/titan/getting-started/bmc)
+2. 另外一个 Type-C 口为 BMC 模块的烧录口，使用方法请参考：[BMC 使用说明](https://milkv.io/zh/docs/titan/getting-started/bmc)
 
 <Image src='/docs/titan/titan-typec.webp' maxWidth='100%' align='left' />
 
@@ -113,8 +107,6 @@ Titan 主板上的 F_USB2.0 接口兼容标准 PC 主板 USB2.0 接口，您可�
 
 ## BMC 网口和 USB2.0
 
-BMC 模块自带一个 RJ45 网口和 USB2.0 接口，具体使用方法请参考：
-
-BMC 使用说明：[https://milkv.io/zh/docs/titan/getting-started/bmc](https://milkv.io/zh/docs/titan/getting-started/bmc)
+BMC 模块自带一个 RJ45 网口和 USB2.0 接口，具体使用方法请参考：[BMC 使用说明](https://milkv.io/zh/docs/titan/getting-started/bmc)
 
 <Image src='/docs/titan/titan-bmc-rj45-usb.webp' maxWidth='100%' align='left' />

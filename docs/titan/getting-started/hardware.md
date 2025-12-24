@@ -26,7 +26,7 @@ The power consumption of a Titan motherboard depends on the power and number of 
 
 The Titan motherboard has two DDR4 slots, which support DDR4 UDIMM modules. Both memory slots must be populated, and the two memory modules installed must have identical specifications. For a list of currently verified DDR4 modules, please refer to the following link:
 
-DDR4 Support List: [https://milkv.io/docs/titan/getting-started/memory](https://milkv.io/docs/titan/getting-started/memory)
+[DDR4 Support List](https://milkv.io/docs/titan/getting-started/memory)
 
 ## PCIe M Key
 
@@ -76,13 +76,9 @@ You can also use the F_PANEL interface to extend the power indicator LED, which 
 
 The Titan motherboard has two Type-C ports:
 
-1. The Type-C port near the DC power connector is the UR-DP1000's debugging port. An onboard USB-to-UART module connects to the UR-DP1000. For detailed usage instructions, please refer to the following:
+1. The Type-C port near the DC power connector is the UR-DP1000's debugging port. An onboard USB-to-UART module connects to the UR-DP1000. For detailed usage instructions, please refer to: [USB Type-C Debug Port Guide](https://milkv.io/docs/titan/getting-started/setup)
 
-   USB Type-C Debug Port Guide: [https://milkv.io/docs/titan/getting-started/setup](https://milkv.io/docs/titan/getting-started/setup)
-
-2. The other Type-C port is the programming port for the BMC module. Please refer to the BMC Usage.
-
-   BMC Usage：[https://milkv.io/docs/titan/getting-started/bmc](https://milkv.io/docs/titan/getting-started/bmc)
+2. The other Type-C port is the programming port for the BMC module. Please refer to: [BMC Usage](https://milkv.io/docs/titan/getting-started/bmc)
 
 <Image src='/docs/titan/titan-typec.webp' maxWidth='100%' align='left' />
 
@@ -114,8 +110,6 @@ The F_USB2.0 port on the Titan motherboard is compatible with standard PC mother
 
 ## BMC Ethernet and USB2.0
 
-The BMC module comes with an RJ45 network port and a USB 2.0 interface. Please refer to the following for detailed usage instructions:
-
-BMC Usage：[https://milkv.io/docs/titan/getting-started/bmc](https://milkv.io/docs/titan/getting-started/bmc)
+The BMC module comes with an RJ45 network port and a USB 2.0 interface. For detailed usage instructions, please refer to: [BMC Usage](https://milkv.io/docs/titan/getting-started/bmc)
 
 <Image src='/docs/titan/titan-bmc-rj45-usb.webp' maxWidth='100%' align='left' />
