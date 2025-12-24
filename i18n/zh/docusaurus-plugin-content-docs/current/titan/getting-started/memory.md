@@ -19,10 +19,3 @@ Titan 支持 DDR4 UDIMM。两个内存插槽都需要安装内存条，并且确
 | 佰维(BIWIN) | 1R×8 PC4-3200AA-CL22-UA3 | 1.2V | 16GB*2 |
 | 雷克沙(Lexar) | 2Rx8 3200MT/s CL22 | 1.2V | 32GB*2 |
 | 威刚万紫千红(ADATA) | DDR4 3200(22) 32Gx16 U-DIMM | 1.2V | 32GB*2 |
-| 美商海盗船(CORSAIR) | DDR4 3200MHz | 1.35V | 32GB*2 |
-| 金士顿(KINGSTON) | DDR4 3600MT/S UDIMM CL18 | 1.35V | 32GB*2 |
-| 光威天策-弈(GLOWAY) | DDR4 3200MT/s UDIMM CL16 | 1.35V | 8GB*2 |
-| 光威天策-弈(GLOWAY) | DDR4 3200MT/s UDIMM CL16 | 1.35V | 16GB*2 |
-| 金百达 (KingBank) | DDR4 3600MHz UDIMM CL18 | 1.35V | 8GB*2 |
-| 金百达 (KingBank) | DDR4 3600MHz UDIMM CL18 | 1.35V | 32GB*2 |
-| 芝奇皇家戟 (G.SKILL) | DDR4-4000 CL18-22-22-42 | 1.40V | 16GB*2 |
