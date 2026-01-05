@@ -42,7 +42,7 @@ Connect the Duo with a Type-C cable using an adapter (5V) or computer USB.
 The blue LED on the Duo will blink.
 
 :::tip
-If the blue LED does not blink after booting, it means the system is not running properly, and there may be a problem with the image burned to the microSD. You can try to re-burn the image with other burning software, such as balenaEtcher, Rufus, Win32DiskImager, etc. If it still cannot boot normally, you can connect a serial cable and send the log after booting to us for analysis.
+If the blue LED does not blink after booting, it means the system is not running properly, and there may be a problem with the image burned to the microSD. You can try to re-burn the image with other burning software, such as balenaEtcher, Rufus, Win32DiskImager, etc. If it still cannot boot normally, you can connect a serial cable and send the log after booting to us for analysis. If you have the emmc version (do you have a chip or an empty pad?), [go here](https://milkv.io/docs/duo/getting-started/duos#emmc-version-firmware-burning) to get instructions for flashing the emmc over usb, it’s an entirely different installation process.
 :::
 
 ## Troubleshooting
