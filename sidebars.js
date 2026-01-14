@@ -584,6 +584,7 @@ const sidebars = {
       items: [
         "titan/bmc/overview",
         "titan/bmc/user-guide",
+        "titan/bmc/burn-image",
       ],
     },
   ],
