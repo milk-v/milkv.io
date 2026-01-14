@@ -568,8 +568,22 @@ const sidebars = {
         "titan/getting-started/memory",
         "titan/getting-started/boot",
         "titan/getting-started/setup",
-        "titan/getting-started/bmc",
         "titan/getting-started/resources",
+      ],
+    },
+    {
+      type: "category",
+      label: "🛠️ BMC Management",
+      collapsed: false,
+      link: {
+        type: "generated-index",
+        title: "🛠️ BMC Management",
+        description: "BMC management tools and UART Agent documentation",
+        slug: "/titan/bmc",
+      },
+      items: [
+        "titan/bmc/overview",
+        "titan/bmc/user-guide",
       ],
     },
   ],

@@ -1,0 +1,8 @@
+{
+  "label": "BMC Management",
+  "position": 20,
+  "link": {
+    "type": "generated-index",
+    "description": "BMC (Baseboard Management Controller) management tools and documentation for Titan cluster."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "BMC 管理",
+  "position": 20,
+  "link": {
+    "type": "generated-index",
+    "description": "Titan 集群的 BMC（基板管理控制器）管理工具和文档。"
+  }
+}
