@@ -22,7 +22,7 @@ sidebar_position: 2
 
 ## Introduction
 
-Titan BMC is a web-based management tool for Milk-V Cluster nodes. It provides the following key features:
+Titan BMC is a web-based management tool for Milk-V Titan. It provides the following key features:
 
 - **Node Monitoring**: View node status and resource usage
 - **Terminal Access**: Connect to node terminals via UART or TTY
@@ -129,7 +129,7 @@ The main interface displays two primary information areas:
 In the left sidebar, you can see all available nodes:
 
 - **BMC**: Baseboard Management Controller node
-- **Titan**: Compute node (there may be multiple)
+- **Titan**: Compute node
 
 ### Switching Nodes
 
@@ -149,10 +149,10 @@ On the right side of the node title bar, you will find the following action butt
 
 ## Terminal Connection
 
-UART Agent supports two types of terminal connections:
+Titan BMC supports two types of terminal connections:
 
 1. **UART**: Serial port connection, suitable for system boot, debugging, etc.
-2. **TTY**: SSH pseudo-terminal connection, requires Agent installation on the node
+2. **TTY**: PTY connection via UART protocol, requires Agent installation on the node
 
 ### Connecting to UART Terminal
 
@@ -263,8 +263,8 @@ To use TTY terminal and advanced management features, you need to install the Ag
 
 ### Pre-installation Requirements
 
-- Ensure the target node is started and accessible via network
-- Prepare the node's SSH login credentials (username and password)
+- Ensure the target node is started
+- Prepare the node's login credentials (username and password)
 - Ensure Python 3 and necessary system tools are installed on the node
 
 ### Installation Steps
@@ -284,8 +284,8 @@ To use TTY terminal and advanced management features, you need to install the Ag
 4. **Enter Node Credentials**
 
    In the popup dialog, enter the node's login information:
-   - **Username**: Node's SSH username (e.g., `ubuntu`)
-   - **Password**: Node's SSH password
+   - **Username**: Node's username (e.g., `ubuntu`)
+   - **Password**: Node's password
 
    <Image src='/docs/titan/bmc/08-install-agent-dialog.webp' maxWidth='100%' align='left' />
 
@@ -303,7 +303,7 @@ To use TTY terminal and advanced management features, you need to install the Ag
 
    The system will automatically open a BMC TTY terminal window showing the installation progress:
    - Verify node environment
-   - Download Agent installation package
+   - Transfer Agent installer
    - Install dependencies and configure services
    - Start Agent service
 
@@ -337,8 +337,8 @@ The installation script automatically performs the following operations:
    - Stop serial-getty services that may occupy the serial port
 
 3. **Install Agent**
-   - Transfer Agent installation package to the node
-   - Extract and install to `/opt/bmc/uart_agent/`
+   - Transfer Agent installer to the node
+   - Extract and install to `/opt/bmc-agent/`
    - Create systemd service file
 
 4. **Start Service**
@@ -361,7 +361,7 @@ If you need to remove the Agent:
 **What if installation fails?**
 
 1. Check if node credentials are correct
-2. Ensure node network connection is normal
+2. Check if node is starting up normally
 3. Review error messages in the installation log
 4. Try manually SSH connecting to the node to verify access permissions
 
