@@ -470,7 +470,7 @@ const sidebars = {
     },
   ],
 
-  Megrez: [
+  megrez: [
     {
       type: "link",
       label: "🏠 Home",
@@ -545,7 +545,7 @@ const sidebars = {
     },
   ],
 
-  Titan: [
+  titan: [
     {
       type: "link",
       label: "🏠 Home",
