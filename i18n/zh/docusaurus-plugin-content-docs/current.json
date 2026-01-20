@@ -214,6 +214,26 @@
   "sidebar.jupiter.category.🖥️ App Development": {
     "message": "🖥️ 应用开发",
     "description": "The label for category 🖥️ App Development in sidebar jupiter"
+  },
+  "sidebar.titan.link.🏠 Home": {
+    "message": "🏠 主页",
+    "description": "The label for link 🏠 Home in sidebar titan, linking to /docs"
+  },
+  "sidebar.titan.category.🚀 Getting Started": {
+    "message": "🚀 上手指南",
+    "description": "The label for 🚀 Getting Started in sidebar titan"
+  },
+  "sidebar.titan.category.🚀 Getting Started.link.generated-index.description": {
+    "message": "开始使用 Titan",
+    "description": "The generated-index page description for category 🚀 Getting Started in sidebar titan"
+  },
+  "sidebar.titan.category.🛠️ BMC Management": {
+    "message": "🛠️ BMC 管理",
+    "description": "The label for category 🛠️ BMC Management in sidebar titan"
+  },
+  "sidebar.titan.category.🛠️ BMC Management.link.generated-index.description": {
+    "message": "BMC 管理工具和 UART 代理的使用方法",
+    "description": "The generated-index page description for category 🛠️ BMC Management in sidebar titan"
   }
 }
 
