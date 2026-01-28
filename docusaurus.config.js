@@ -148,6 +148,11 @@ const config = {
             position: 'right',
             items: [
               {
+                label: 'Jupiter2',
+                to: '/jupiter2',
+                className: 'new_product',
+              },
+              {
                 label: 'Titan',
                 to: '/titan',
                 className: 'new_product',
