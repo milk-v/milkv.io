@@ -33,6 +33,8 @@ Download the AiBurn burning tool from the official repository:
 
 After downloading, install AiBurn on your Windows PC.
 
+You will need to **reboot your computer** before using the software.
+
 ### Download BMC Image
 
 Download the latest BMC firmware image from the same repository:
