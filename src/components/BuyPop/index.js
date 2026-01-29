@@ -91,7 +91,16 @@ export default (props) => {
         'titan': {
             arace_url: 'https://arace.tech/products/milk-v-titan',
             jd_url: 'http://item.jd.com/10165331347566.html?sdx=ehi-lLxFuZiE6JnJZ4Zfj8cjtDeUDg0rsmpKtqxHZNWLPe_RLJhe4nvmpU3iU2KT',
-        }
+        },
+        'jupiter2': {
+            arace_url: "https://arace.tech/products/milk-v-jupiter2-series-coupon",
+        },
+        'jupiter2-nx': {
+            arace_url: "https://arace.tech/products/milk-v-jupiter2-series-coupon",
+        },
+        'jupiter2-dev-kit': {
+            arace_url: "https://arace.tech/products/milk-v-jupiter2-series-coupon",
+        },
     }
 
     const image_data = {
@@ -142,6 +151,9 @@ export default (props) => {
         'sg2002': '/components/buy-sg2002-view.webp',
         'sg2380': '/components/buy-sg2380-view.webp',
         'titan': '/components/buy-titan-view.webp',
+        'jupiter2': '/components/buy-jupiter2-view.webp',
+        'jupiter2-nx': '/components/buy-jupiter2nx-view.webp',
+        'jupiter2-dev-kit': '/components/buy-jupiter2devkit-view.webp',
     }
 
     return (

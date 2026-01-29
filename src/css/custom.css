@@ -178,6 +178,10 @@ strong {
   height: 16px;
 }
 
+.dropdown__menu {
+  min-width: 12rem;
+}
+
 /* @media screen and (max-width: 1950px) and (min-width: 1450px) {}
 
 @media screen and (max-width: 1450px) and (min-width: 1000px) {} */

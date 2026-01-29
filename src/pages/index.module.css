@@ -137,6 +137,8 @@
 .info_module {
     position: relative;
     overflow: hidden;
+    background-color: #0a0c0e;
+    border-radius: 38px;
 }
 
 .main_module {
@@ -398,7 +400,7 @@
     top: 10%;
     transform: translateX(-50%);
     color: #111;
-    font-family: "Roboto Condensed";
+    font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     line-height: 80px;
@@ -520,6 +522,111 @@
 .titan_more>a {
     color: #fff !important;
     border-color: #fff !important;
+}
+
+.black_shore>.jupiter2_module {
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 100% 50%;
+}
+
+.jupiter2_module {
+    background-color: #0a0c0e;
+    border-radius: 38px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.jupiter2_module:hover .carousel_btn {
+    opacity: 1;
+}
+
+.carousel_btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.buy_button_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 50%;
+}
+
+.header>ol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.header>ol>li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 120px;
+    border: 1px solid #FFF;
+    background: rgba(55, 221, 187, 0.15);
+    color: #37DDBB;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.header>ol>li>span {
+    font-weight: 300;
+}
+
+.jupiter_title {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    background: linear-gradient(90deg, #FDFEFF -0.09%, #37DDBB 99.91%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.jupiter_p {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
 }
 
 @media screen and (min-width: 1950px) {
@@ -716,6 +823,43 @@
         height: 38px;
         padding: 5px 45px;
         gap: 10px;
+    }
+
+    .jupiter2_module {
+        width: 1920px;
+        margin: 30px auto;
+    }
+
+    .buy_button_box {
+        gap: 20px;
+        margin: 50px 0 30px;
+    }
+
+    .header {
+        margin: 150px 0;
+    }
+
+    .header>ol {
+        gap: 20px;
+    }
+
+    .header>ol>li {
+        height: 55px;
+        padding: 0 20px;
+        font-size: 26px;
+        min-width: 210px;
+    }
+
+    .header>ol>li>span {
+        font-size: 16px;
+    }
+
+    .jupiter_title {
+        font-size: 56px;
+    }
+
+    .jupiter_p {
+        font-size: 32px;
     }
 }
 
@@ -925,6 +1069,43 @@
         height: 38px;
         padding: 5px 45px;
         gap: 10px;
+    }
+
+    .jupiter2_module {
+        width: 1350px;
+        margin: 30px auto;
+    }
+
+    .buy_button_box {
+        gap: 20px;
+        margin: 40px 0 30px;
+    }
+
+    .header {
+        margin: 100px 0;
+    }
+
+    .header>ol {
+        gap: 20px;
+    }
+
+    .header>ol>li {
+        height: 50px;
+        padding: 0 20px;
+        font-size: 20px;
+        min-width: 160px;
+    }
+
+    .header>ol>li>span {
+        font-size: 16px;
+    }
+
+    .jupiter_title {
+        font-size: 46px;
+    }
+
+    .jupiter_p {
+        font-size: 24px;
     }
 }
 
@@ -1137,6 +1318,43 @@
 
     .titan_left>.titan_text {
         font-size: 20px;
+    }
+
+    .jupiter2_module {
+        width: 950px;
+        margin: 20px auto;
+    }
+
+    .buy_button_box {
+        gap: 20px;
+        margin: 40px 0 30px;
+    }
+
+    .header {
+        margin: 50px 0;
+    }
+
+    .header>ol {
+        gap: 15px;
+    }
+
+    .header>ol>li {
+        height: 40px;
+        padding: 0 10px;
+        font-size: 16px;
+        min-width: 130px;
+    }
+
+    .header>ol>li>span {
+        font-size: 14px;
+    }
+
+    .jupiter_title {
+        font-size: 36px;
+    }
+
+    .jupiter_p {
+        font-size: 18px;
     }
 }
 
@@ -1354,10 +1572,46 @@
         font-size: 16px;
         margin: 10px 0;
     }
+
+    .jupiter2_module {
+        width: 700px;
+        margin: 10px auto 0;
+    }
+
+    .buy_button_box {
+        gap: 15px;
+        margin: 30px 0 20px;
+    }
+
+    .header {
+        margin: 50px 0;
+    }
+
+    .header>ol {
+        gap: 15px;
+    }
+
+    .header>ol>li {
+        height: 35px;
+        padding: 0 10px;
+        font-size: 14px;
+        min-width: 100px;
+    }
+
+    .header>ol>li>span {
+        font-size: 12px;
+    }
+
+    .jupiter_title {
+        font-size: 24px;
+    }
+
+    .jupiter_p {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 750px) {
-
     .home_header {
         height: 300rem;
         background-position: 60% 50%;
@@ -1641,5 +1895,60 @@
 
     .titan_left {
         height: 100% !important;
+    }
+
+    .carousel_btn {
+        opacity: 1 !important;
+        top: 30%;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .black_shore>.jupiter2_module {
+        width: 350rem;
+        height: 350rem;
+        margin: 10rem auto;
+        background-size: 90%;
+        background-position: 150% 100%;
+    }
+
+    .buy_button_box {
+        gap: 15rem;
+        margin: 30rem 0 20rem;
+    }
+
+    .header {
+        width: 100%;
+        margin: 20rem 0;
+    }
+
+    .header>ol {
+        margin-top: 10rem;
+        gap: 5rem;
+    }
+
+    .header>ol>li {
+        height: 30rem;
+        padding: 0 10rem;
+        font-size: 14rem;
+        min-width: 100rem;
+    }
+
+    .header>ol>li>span {
+        font-size: 10rem;
+    }
+
+    .jupiter_title {
+        font-size: 24rem;
+    }
+
+    .jupiter_p {
+        font-size: 14rem;
     }
 }

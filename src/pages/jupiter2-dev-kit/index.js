@@ -7,6 +7,8 @@ import styles_s from '@site/src/pages/vega/index.module.css';
 import styles_j from '@site/src/pages/jupiter/index.module.css';
 import Translate from "@docusaurus/Translate";
 import styles from './index.module.css';
+import Link from '@docusaurus/Link';
+import BuyPop from "../../components/BuyPop";
 
 export default () => {
   return (
@@ -14,7 +16,7 @@ export default () => {
       title="Jupiter"
       description="Jupiter"
     >
-      <MetaData page='jupiter' />
+      <MetaData page='jupiter2-dev-kit' />
       <div className={styles_j2["jupiter2-content"]}>
         <div className={styles_j2["header"]}>
           <h1>Milk-V Jupiter2 Dev Kit</h1>
@@ -27,6 +29,9 @@ export default () => {
             </li>
           </ol>
           <p>The First RVA23-Compliant RISC-V Dev Kit</p>
+          <Link to='#buy' className={styles_j2["btn-buy"]} >
+            <Translate id='Buy.now' />
+          </Link>
         </div>
         <div className={styles_j2["content"]}>
           <div className={clsx(styles_j2["cpu"], styles_j2["interface-item"])}>
@@ -54,8 +59,7 @@ export default () => {
             </div>
             <div className={styles_j2["interface-item"]}>
               <p className={styles_j2["item-title"]}>
-                High-Performance CPU<br />
-                8-Core X100™ CPU @ 2.4GHz
+                Integrated 3D Graphics Engine
               </p>
               <ul className={styles_j2["item-list"]}>
                 <li>IMG BXM-4-64-MC1</li>
@@ -279,6 +283,7 @@ export default () => {
                   </td>
                   <td>
                     <p>1x Onboard UFS, Up to 256GB</p>
+                    <p>1x microSD Card Slot</p>
                     <p>1x M.2 M Key 2280 Slot</p>
                     <p>1x M.2 M Key 2230 Slot</p>
                   </td>
@@ -352,6 +357,7 @@ export default () => {
         </div>
         <img src="/jupiter2-dev-kit/kit-bg.webp" alt="Jupiter2 dev kit" className={styles_j2["postion-img"]} />
       </div>
+      <BuyPop type='jupiter2-dev-kit' />
     </Layout >
   )
 }

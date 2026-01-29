@@ -142,7 +142,40 @@ export default (props) => {
                 title: 'Milk-V Titan',
                 description: '',
             },
-        }
+        },
+        jupiter2: {
+            en: {
+                title: 'Milk-V Jupiter2 | Your All-in-One Development Platform',
+                description: `Powered by the Spacemit K3 (RVA23), this next-gen RISC-V platform features an 8-core X100™ CPU (up to 2.4GHz) with up to 60 TOPS AI performance and RVV 1.0 up to 1024-bit vector acceleration. It offers up to 32GB LPDDR5, onboard UFS (up to 256GB), and an M.2 NVMe slot (PCIe Gen3 x4).Connectivity includes 10GbE SFP+, GbE RJ45, and Wi- Fi 6/BT 5.2, plus M.2 B Key + Nano SIM for 4G/5G expansion.With USB- C DP Alt, eDP, and RT I/O expansion for EtherCAT/CAN - FD, it’s ideal for RISC - V AI development and high - performance edge deployments.`,
+            },
+            zh: {
+                title: 'Milk-V Jupiter | 您的一体化开发平台',
+                description: 'Milk-V Jupiter2 基于进迭时空 K3（RVA23），搭载 8 核 X100™ CPU（最高 2.4GHz），提供高达 60 TOPS AI 算力，并支持最高 1024 位 RVV 1.0 向量加速。支持最高 32GB LPDDR5，配备板载 UFS（最高 256GB），并提供 M.2 NVMe（PCIe Gen3 x4）扩展。网络与连接方面，提供 10GbE SFP+、GbE RJ45、Wi-Fi 6/BT 5.2，以及 M.2 B Key + Nano SIM（4G/5G 扩展）。支持 USB-C DP Alt、eDP 与 EtherCAT/CAN-FD RT I/O 扩展，适用于 RISC-V AI 开发与高性能边缘部署。',
+                keywords: 'Milk-V; Jupiter2; Spacemit; K3; SBC; RVA23; RVV1.0; 群芯闪耀; 进迭时空',
+            },
+        },
+        "jupiter2-nx": {
+            en: {
+                title: 'Milk-V Jupiter2 NX | Leading the RVA23 Era',
+                description: "Jupiter2 NX is an octa-core AI system-on-module featuring the SpacemiT K3 SoC, LPDDR5 (up to 32GB), and onboard UFS storage. It complies with RVA23 standards, supports RVV 1.0 (up to 1024-bit) vector acceleration, and is compatible with Radxa C200 and Jetson Orin series carrier boards, making it an ideal next-gen upgrade for AI and edge computing.",
+            },
+            zh: {
+                title: 'Milk-V Jupiter2 NX | 引领 RVA23 时代',
+                description: 'Milk-V Jupiter2 NX 是一款 8 核 AI 核心模组，搭载进迭时空 K3 SoC，支持 LPDDR5（最高 32GB）并配备板载 UFS 存储。它符合 RVA23 标准，支持 RVV 1.0（最高 1024 位）向量加速，并兼容瑞莎 C200 及 Jetson Orin 系列载板，是面向 AI 与边缘计算的理想新一代升级选择。',
+                keywords: 'Milk-V; Jupiter2 NX; Spacemit; K3; SoM; RVA23; RVV1.0; 群芯闪耀; 进迭时空',
+            },
+        },
+        "jupiter2-dev-kit": {
+            en: {
+                title: 'Milk-V Jupiter2 Dev Kit | Everything You Need in One Kit',
+                description: "Jupiter2 NX Development Kit pairs the Jupiter2 NX with the Radxa C200, delivering a production-ready RISC-V AI platform. Built around the SpacemiT K3 (RVA23) SoC, it features an 8-core X100™ CPU and delivers 60 TOPS of AI performance with 1024-bit RVV 1.0 vector acceleration. The kit is equipped with up to 32GB LPDDR5 memory, onboard UFS storage, and versatile M.2 expansion slots.Offering a comprehensive set of I/ O including high- speed USB, networking, display outputs, and industrial interfaces, it provides a complete foundation for developing and deploying edge AI, robotics, and high- performance computing solutions.",
+            },
+            zh: {
+                title: 'Milk-V Jupiter2 Dev Kit | 您的一站式开发套件',
+                description: 'Milk-V Jupiter2 开发套件将 Jupiter2 NX 与瑞莎 C200 载板组合，打造一套面向产品化落地的 RISC-V AI 平台。平台基于符合 RVA23 标准的进迭时空 K3 SoC，搭载 8 核 X100™ CPU，提供高达 60 TOPS 的端侧 AI 算力，并支持 1024 位 RVV 1.0 向量加速。最高支持 32GB LPDDR5 内存，配备板载 UFS 存储，并提供灵活的 M.2 扩展能力。依托高速 USB、网络、显示输出与工业接口等丰富 I / O，可为边缘 AI、机器人与高性能计算应用的开发与部署提供完善基础。',
+                keywords: 'Milk-V; Milk-V Jupiter2 Dev Kit; Spacemit; K3; Dev Kit; RVA23; RVV1.0; 群芯闪耀; 进迭时空',
+            },
+        },
     }
 
     const indexMetaData = currentLanguage === '/zh/' ? metadata[page].zh : metadata[page].en

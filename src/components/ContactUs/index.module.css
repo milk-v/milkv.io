@@ -214,7 +214,7 @@
 .banner_items>p {
     color: #767676;
     text-align: center;
-    font-family: "Roboto Condensed";
+    font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -250,7 +250,7 @@
 .touchForm>label>.message_area {
     border-color: #000;
     color: #000;
-    font-family: "Roboto Condensed";
+    font-family: Roboto;
     font-weight: 400;
 }
 
@@ -572,7 +572,7 @@
 
     .banner_items>h2 {
         color: #fff;
-        font-family: "Roboto Condensed";
+        font-family: Roboto;
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
@@ -705,7 +705,7 @@
 
     .banner_items>h2 {
         color: #fff;
-        font-family: "Roboto Condensed";
+        font-family: Roboto;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -918,7 +918,7 @@
 
     .banner_items>h2 {
         color: #fff;
-        font-family: "Roboto Condensed";
+        font-family: Roboto;
         font-size: 20rem;
         font-style: normal;
         font-weight: 400;

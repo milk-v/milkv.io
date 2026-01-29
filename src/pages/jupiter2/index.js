@@ -5,6 +5,8 @@ import clsx from "clsx";
 import styles_s from '@site/src/pages/vega/index.module.css';
 import styles_j from '@site/src/pages/jupiter/index.module.css';
 import Translate from "@docusaurus/Translate";
+import Link from '@docusaurus/Link';
+import BuyPop from "../../components/BuyPop";
 
 export default () => {
   return (
@@ -12,7 +14,7 @@ export default () => {
       title="Jupiter"
       description="Jupiter"
     >
-      <MetaData page='jupiter' />
+      <MetaData page='jupiter2' />
       <div className={styles["jupiter2-content"]}>
         <div className={styles["header"]}>
           <h1>Milk-V Jupiter2</h1>
@@ -25,6 +27,9 @@ export default () => {
             </li>
           </ol>
           <p>The First RVA23-Compliant RISC-V SBC</p>
+          <Link to='#buy' className={styles["btn-buy"]} >
+            <Translate id='Buy.now' />
+          </Link>
         </div>
         <div className={styles["content"]}>
           <div className={clsx(styles["cpu"], styles["interface-item"])}>
@@ -52,8 +57,7 @@ export default () => {
             </div>
             <div className={styles["interface-item"]}>
               <p className={styles["item-title"]}>
-                High-Performance CPU<br />
-                8-Core X100™ CPU @ 2.4GHz
+                Integrated 3D Graphics Engine
               </p>
               <ul className={styles["item-list"]}>
                 <li>IMG BXM-4-64-MC1</li>
@@ -90,7 +94,7 @@ export default () => {
                 <p className={styles["item-p"]}>LPDDR5</p>
                 <ul className={styles["item-list"]}>
                   <li>Up to 32GB</li>
-                  <li>Memory bus width: 32-bit (dual-channel, 16-bit per channel)</li>
+                  <li>Memory bus width: 64-bit (dual-channel, 32-bit per channel)</li>
                   <li>Data rate: up to 6400 MT/s</li>
                 </ul>
               </div>
@@ -149,7 +153,7 @@ export default () => {
               <p className={styles["item-title"]}>
                 Real-Time & Industrial Expansion
               </p>
-              <p className={styles["item-p"]}>Dual-core RT24™ 64-bit RISC-V Real-Time RISC-V Processor</p>
+              <p className={styles["item-p"]}>Dual-core RT24™ 64-bit RISC-V Real-Time Processor</p>
             </div>
             <ul className={clsx(styles["item-list"], styles["item-list-network"])}>
               <li><span>1</span>Power‑off time keeping</li>
@@ -238,7 +242,7 @@ export default () => {
                     <p>LPDDR5</p>
                     <ul>
                       <li>Up to 32GB</li>
-                      <li>Memory bus width: 32-bit (dual-channel, 16-bit per channel)</li>
+                      <li>Memory bus width: 64-bit (dual-channel, 32-bit per channel)</li>
                       <li>Data rate: up to 6400 MT/s</li>
                     </ul>
                   </td>
@@ -348,6 +352,7 @@ export default () => {
         </div>
         <img src="/jupiter2/bg-view.webp" alt="Jupiter2" className={styles["postion-img"]} />
       </div>
+      <BuyPop type='jupiter2' />
     </Layout >
   )
 }

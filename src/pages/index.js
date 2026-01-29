@@ -8,6 +8,7 @@ import SupportUs from "../components/SupportUs"
 import ContactBar from "../components/ContactBar"
 import MetaData from "../components/MetaData"
 import clsx from 'clsx';
+import styles_j2 from "./jupiter2/index.module.css";
 
 const Chips_module = () => {
   const history = useHistory()
@@ -255,6 +256,50 @@ const Megrez_module = (props) => {
 const Home_web = () => {
   const [index, setIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false);
+  const [jupiterIndex, setJupiterIndex] = useState(0);
+  const [jupiterPaused, setJupiterPaused] = useState(false);
+
+  const jupiterModules = [
+    {
+      title: "Milk-V Jupiter2",
+      text: "The First RVA23-Compliant RISC-V SBC",
+      link1: "/jupiter2",
+      link2: "/jupiter2#buy",
+      bgImage: "/home/home-jupiter2.webp"
+    },
+    {
+      title: "Milk-V Jupiter2 NX",
+      text: "The First RVA23-Compliant RISC-V SoM",
+      link1: "/jupiter2-nx",
+      link2: "/jupiter2-nx#buy",
+      bgImage: "/home/home-jupiter2nx.webp"
+    },
+    {
+      title: "Milk-V Jupiter2 Dev Kit",
+      text: "The First RVA23-Compliant RISC-V Dev Kit",
+      link1: "/jupiter2-dev-kit",
+      link2: "/jupiter2-dev-kit#buy",
+      bgImage: "/home/home-jupiter2devkit.webp"
+    }
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (!jupiterPaused) {
+        setJupiterIndex(prev => (prev + 1) % jupiterModules.length);
+      }
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [jupiterPaused]);
+
+  const handlePrev = () => {
+    setJupiterIndex(prev => (prev - 1 + jupiterModules.length) % jupiterModules.length);
+  };
+
+  const handleNext = () => {
+    setJupiterIndex(prev => (prev + 1) % jupiterModules.length);
+  };
+
   const tabs = [
     { name: 'Duo', index: 0, element: <Duo_module /> },
     { name: 'Pioneer', index: 1, element: <Pionner_module /> },
@@ -298,6 +343,35 @@ const Home_web = () => {
         </div>
       </div>
       <div className={styles.black_shore}>
+        <div
+          className={styles["jupiter2_module"]}
+          style={{ backgroundImage: `url(${jupiterModules[jupiterIndex].bgImage})` }}
+          onMouseEnter={() => setJupiterPaused(true)}
+          onMouseLeave={() => setJupiterPaused(false)}
+        >
+          <div className={styles["carousel_btn"] + " " + styles["prev"]} onClick={handlePrev}>
+            <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L2 10L11 19" stroke="white" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+          </div>
+          <div className={styles["carousel_btn"] + " " + styles["next"]} onClick={handleNext}>
+            <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L10 10L1 19" stroke="white" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+          </div>
+          <div className={styles["header"]}>
+            <p className={styles["jupiter_title"]}>{jupiterModules[jupiterIndex].title}</p>
+            <p className={styles["jupiter_p"]}>{jupiterModules[jupiterIndex].text}</p>
+            <div className={styles["buy_button_box"]}>
+              <Link to={jupiterModules[jupiterIndex].link1} className={styles_j2["btn-buy"]} >
+                <Translate id='homepage.corporations.vegalearnmore' />
+              </Link>
+              <Link to={jupiterModules[jupiterIndex].link2} className={styles_j2["btn-buy"]} style={{ border: "none" }}>
+                <Translate id='Buy.now' />
+              </Link>
+            </div>
+          </div>
+        </div>
         <div className={styles.info_module} >
           <div className={clsx(styles.main_module, styles.titan_content)} style={{ height: 'auto' }}>
             <div className={clsx(styles.left_title, styles.titan_left)}>

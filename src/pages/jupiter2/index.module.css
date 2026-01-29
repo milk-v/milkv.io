@@ -51,7 +51,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-family: "Roboto Condensed";
+  font-family: Roboto;
   font-size: 87px;
   font-style: normal;
   font-weight: 400;
@@ -61,7 +61,7 @@
 .header>p {
   color: #FFF;
   text-align: center;
-  font-family: "Roboto Condensed";
+  font-family: Roboto;
   font-size: 56px;
   font-style: normal;
   font-weight: 300;
@@ -195,6 +195,7 @@
 }
 
 .lpddr5 {
+  width: 50%;
   background-image: url(/static/jupiter2/lpddr5-bg.webp);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -303,6 +304,31 @@
   pointer-events: none;
 }
 
+.btn-buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  width: 180px;
+  height: 54px;
+  border: solid 1px #fff;
+  border-radius: 58px;
+}
+
+.btn-buy:hover {
+  background: linear-gradient(90deg, #01F4A4 0%, #01D9F5 100%);
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+
 @media screen and (min-width: 1450px) {
   .content>div {
     max-width: 1440px;
@@ -310,7 +336,11 @@
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1050px) {
-
+  .btn-buy {
+    font-size: 18px;
+    width: 140px;
+    height: 45px;
+  }
 
   .content>div {
     max-width: 1000px;
@@ -395,6 +425,12 @@
 }
 
 @media screen and (max-width: 1050px) and (min-width: 750px) {
+  .btn-buy {
+    font-size: 14px;
+    width: 100px;
+    height: 35px;
+  }
+
   .content>div {
     max-width: 720px;
   }
@@ -493,6 +529,12 @@
 }
 
 @media screen and (max-width: 750px) {
+  .btn-buy {
+    font-size: 14rem;
+    width: 100rem;
+    height: 35rem;
+  }
+
   .content>div {
     max-width: 355rem;
   }
@@ -503,7 +545,7 @@
   }
 
   .header>h1 {
-    font-size: 36rem;
+    font-size: 34rem;
   }
 
   .header>p {
@@ -637,5 +679,9 @@
 
   .postion-img {
     width: 45%;
+  }
+
+  .lpddr5 {
+    width: 100%;
   }
 }

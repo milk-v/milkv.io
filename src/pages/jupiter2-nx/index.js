@@ -6,6 +6,8 @@ import clsx from "clsx";
 import styles_s from '@site/src/pages/vega/index.module.css';
 import styles_j from '@site/src/pages/jupiter/index.module.css';
 import Translate from "@docusaurus/Translate";
+import Link from '@docusaurus/Link';
+import BuyPop from "../../components/BuyPop"
 
 export default () => {
   return (
@@ -13,7 +15,7 @@ export default () => {
       title="Jupiter"
       description="Jupiter"
     >
-      <MetaData page='jupiter' />
+      <MetaData page='jupiter2-nx' />
       <div className={styles_j2["jupiter2-content"]}>
         <div className={styles_j2["header"]}>
           <h1>Milk-V Jupiter2 NX</h1>
@@ -26,6 +28,9 @@ export default () => {
             </li>
           </ol>
           <p>The First RVA23-Compliant RISC-V SoM</p>
+          <Link to='#buy' className={styles_j2["btn-buy"]} >
+            <Translate id='Buy.now' />
+          </Link>
         </div>
         <div className={styles_j2["content"]}>
           <div className={clsx(styles_j2["cpu"], styles_j2["interface-item"])}>
@@ -53,8 +58,7 @@ export default () => {
             </div>
             <div className={styles_j2["interface-item"]}>
               <p className={styles_j2["item-title"]}>
-                High-Performance CPU<br />
-                8-Core X100™ CPU @ 2.4GHz
+                Integrated 3D Graphics Engine
               </p>
               <ul className={styles_j2["item-list"]}>
                 <li>IMG BXM-4-64-MC1</li>
@@ -84,14 +88,15 @@ export default () => {
           </div>
           <div className={styles_j2["interface-item"]}>
             <p className={styles_j2["item-title"]}>
-              Powerful Storage Expansion
+              High-Speed Storage
             </p>
+            <p className={styles_j2["item-p"]}>High bandwidth, low latency, meeting the demands of large-scale data and model loading</p>
             <div className={styles_j2["storage"]}>
               <div className={styles_j2["lpddr5"]}>
                 <p className={styles_j2["item-p"]}>LPDDR5</p>
                 <ul className={styles_j2["item-list"]}>
                   <li>Up to 32GB</li>
-                  <li>Memory bus width: 32-bit (dual-channel, 16-bit per channel)</li>
+                  <li>Memory bus width: 64-bit (dual-channel, 32-bit per channel)</li>
                   <li>Data rate: up to 6400 MT/s</li>
                 </ul>
               </div>
@@ -247,7 +252,7 @@ export default () => {
                     <p>LPDDR5</p>
                     <ul>
                       <li>Up to 32GB</li>
-                      <li>Memory bus width: 32-bit (dual-channel, 16-bit per channel)</li>
+                      <li>Memory bus width: 64-bit (dual-channel, 32-bit per channel)</li>
                       <li>Data rate: up to 6400 MT/s</li>
                     </ul>
                   </td>
@@ -272,7 +277,7 @@ export default () => {
                     <p>Storage</p>
                   </td>
                   <td>
-                    <p>Supports Onboard UFS, microSD card , and external NVMe.</p>
+                    <p>Supports Onboard UFS, microSD card Slot, and external NVMe.</p>
                   </td>
                 </tr>
                 <tr>
@@ -363,6 +368,7 @@ export default () => {
         </div>
         <img src="/jupiter2-nx/position-nx.webp" alt="Jupiter2" className={styles_j2["postion-img"]} />
       </div>
+      <BuyPop type='jupiter2-nx' />
     </Layout >
   )
 }
