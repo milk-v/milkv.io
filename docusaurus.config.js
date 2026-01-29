@@ -158,6 +158,11 @@ const config = {
                 className: 'new_product',
               },
               {
+                label: 'Jupiter2 Dev Kit',
+                to: '/jupiter2-dev-kit',
+                className: 'new_product',
+              },
+              {
                 label: 'Titan',
                 to: '/titan',
               },
