@@ -153,9 +153,13 @@ const config = {
                 className: 'new_product',
               },
               {
+                label: 'Jupiter2 NX',
+                to: '/jupiter2-nx',
+                className: 'new_product',
+              },
+              {
                 label: 'Titan',
                 to: '/titan',
-                className: 'new_product',
               },
               {
                 label: 'Duo',
