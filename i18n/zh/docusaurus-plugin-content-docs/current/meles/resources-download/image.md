@@ -5,35 +5,30 @@ sidebar_position: 10
 
 # Official Image
 
+:::tip
+下方所列出的镜像版本可能不是最新。
+
+请访问 [RevyOS Docs](https://docs.revyos.dev/docs/Installation/intro/) 以获取最新版本镜像相关信息。
+:::
+
 ### v2024-0417
 
 镜像链接：[Meles 镜像](https://github.com/milkv-meles/meles-images/releases/tag/v2024-0417)。
 
-### v2024-0601
+### 20240720
 
-镜像链接：[Meles 镜像](https://mirror.iscas.ac.cn/revyos/extra/images/meles/20240601/)。
-
-### v2024-0720
+:::note
+这是最后一个使用 Linux kernel 5.10 的版本。
+:::
 
 镜像链接：[Meles 镜像](https://mirror.iscas.ac.cn/revyos/extra/images/meles/20240720/)。
 
-### v2024-1229
+### 20251226
 
-镜像链接：[Meles 镜像](https://mirror.iscas.ac.cn/revyos/extra/images/meles/20241229/)。
+:::note
+此版本起，Linux kernel 更新至 6.6。
 
-### v2025-0110
+刷写系统前，请务必先更新 SPI Flash 中的固件。
+:::
 
-镜像链接：[Meles 镜像](https://mirror.iscas.ac.cn/revyos/extra/images/meles/20250110/)。
-
-### v2025-0123
-
-镜像链接：[Meles 镜像](https://fast-mirror.isrc.ac.cn/revyos/extra/images/meles/20250123/)。
-
-### v2025-0323
-
-镜像链接：[Meles 镜像](https://fast-mirror.isrc.ac.cn/revyos/extra/images/meles/20250323/)。
-
-### v2025-0420
-
-镜像链接：[Meles 镜像](https://fast-mirror.isrc.ac.cn/revyos/extra/images/meles/20250420/)。
-
+镜像链接：[Meles 镜像](https://mirror.iscas.ac.cn/revyos/extra/images/meles/20251226)
