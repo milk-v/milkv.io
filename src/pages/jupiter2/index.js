@@ -138,8 +138,8 @@ export default () => {
               </p>
               <p className={styles["item-p"]}>Built for capture / transcoding, low-latency streaming, and edge video analytics</p>
               <ul className={styles["item-list"]}>
-                <li>Encode: H.265 / H.264 / VP9 up to 4K@120fps</li>
-                <li>Decode: H.265 / H.264 up to 4K@60fps</li>
+                <li>Decode: H.265 / H.264 / VP9 up to 4K@120fps</li>
+                <li>Encode: H.265 / H.264 up to 4K@60fps</li>
               </ul>
               <img src="/jupiter2/codec-bg.webp" alt="AI Video Codec" />
             </div>
@@ -248,11 +248,11 @@ export default () => {
                     <p>Codec</p>
                   </td>
                   <td>
-                    <p>Video Encoder:</p>
+                    <p>Video Decoder:</p>
                     <ul>
                       <li>H.265 / H.264 / VP9 up to 4K@120fps</li>
                     </ul>
-                    <p>Video Decoder:</p>
+                    <p>Video Encoder:</p>
                     <ul>
                       <li>H.265 / H.264 up to 4K@60fps</li>
                     </ul>
