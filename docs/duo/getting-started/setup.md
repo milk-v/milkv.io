@@ -137,93 +137,32 @@ The root partition we want to expand is /dev/mmcblk0p3. Remember the starting se
 
 Note: /dev/mmcblk0p1 is the boot partition, do not move it.
 
-#### Use fdisk to expand the root partition
+#### Use parted to expand the root partition
 
-1. Run the command `fdisk /dev/mmcblk0` to start fdisk.
+1. Run the command `parted -s -a opt /dev/mmcblk0 "resizepart 3 100%"` to resize the partition 3rd partition of mmcblk0 (mmcblk0p3) to fill the remaining available space on the SD card.
 ```
-[root@milkv-duo]~# fdisk /dev/mmcblk0
-
-Welcome to fdisk (util-linux 2.36.2).
-Changes will remain in memory only, until you decide to write them.
-Be careful before using the write command.
-
-Command (m for help):
+[root@milkv-duo]~# parted -s -a opt /dev/mmcblk0 "resizepart 3 100%"
 ```
-2. Delete the current root partition
-
-1. Enter d to delete the partition.
-2. Enter the partition number (according to your actual situation) to delete the partition /dev/mmcblk0p3. Delete the current root partition.
-
+You can check with fdisk that the partition size is now filling the SD while the starting sector didn't change:
 ```
-[root@milkv-duo]~# fdisk /dev/mmcblk0
+[root@milkv-duo]~# fdisk -l
+Disk /dev/mmcblk0: 14.56 GiB, 15634268160 bytes, 30535680 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x3b39a00d
 
-Welcome to fdisk (util-linux 2.36.2).
-Changes will remain in memory only, until you decide to write them.
-Be careful before using the write command.
-
-Command (m for help): d
-Partition number (1-3, default 3): 3
-
-Partition 3 has been deleted.
-
+Device         Boot  Start      End  Sectors  Size Id Type
+/dev/mmcblk0p1 *         1   262144   262144  128M  c W95 FAT32 (LBA)
+/dev/mmcblk0p3      266241 30535679 30269439 14.4G 83 Linux
 ```
-3. Create a new partition
 
-1. Enter n to create a new partition.
-
-2. Select p to create a primary partition.
-
-3. Enter partition number 3 (if prompted to select a partition number, enter 3).
-
-4. Enter the starting sector (here is 266241) and press Enter.
-
-5. Enter the ending sector (you can enter 1839104 or press Enter directly to expand to the maximum space).
-
-Note: The partition number, starting sector, and ending sector are determined according to the actual situation.
-
-```
-[root@milkv-duo]~# fdisk /dev/mmcblk0
-
-Welcome to fdisk (util-linux 2.36.2).
-Changes will remain in memory only, until you decide to write them.
-Be careful before using the write command.
-
-
-Command (m for help): d
-Partition number (1-3, default 3): 3
-
-Partition 3 has been deleted.
-
-Command (m for help): n
-Partition type
-   p   primary (2 primary, 0 extended, 2 free)
-   e   extended (container for logical partitions)
-Select (default p): p
-Partition number (3,4, default 3): 3
-First sector (266241-61951999, default 268288): 266241
-Last sector, +/-sectors or +/-size{K,M,G,T,P} (266241-61951999, default 61951999): 
-
-Created a new partition 3 of type 'Linux' and of size 29.4 GiB.
-Partition #3 contains a ext4 signature.
-
-Do you want to remove the signature? [Y]es/[N]o: N
-
-```
-Note: If Do you want to remove the signature? [Y]es/[N]o appears, select N.
-
-4. Save changes
-
-Type w to save changes and exit fdisk.
-```
-Command (m for help): w
-
-The partition table has been altered.
-Syncing disks.
-```
+The file system is still not filling the partition.
 
 5. Extend the file system
 
-After the fdisk operation is complete, you need to extend the file system to use the new partition size.
+After the partition resize operation is complete, you need to extend the file system to use the new partition size.
 ```
 [root@milkv-duo]~# resize2fs /dev/mmcblk0p3
 resize2fs 1.46.2 (28-Feb-2021)
@@ -242,46 +181,6 @@ tmpfs           159M   36K  159M   1% /run
 /dev/mmcblk0p1  128M  3.6M  125M   3% /boot
 ```
 Root partition (/dev/root): 30G, 178M used, 28G remaining.
-#### Create an extended root partition script
-
-Contents are as follows:
-
-```
-#!/bin/bash
-
-# Make sure the script is run as root
-if [ "$EUID" -ne 0 ]; then
-echo "Please run this script as root"
-exit
-fi
-
-# Set the device name
-DEVICE="/dev/mmcblk0"
-
-# Use fdisk to perform partition operations
-{
-echo d # Delete partition
-echo 3 # Delete partition 3
-echo n # Create a new partition
-echo p # Primary partition
-echo 3 # Partition number 3
-echo 266241 # Start sector
-echo # End sector, use the default value (maximum space)
-echo N # Do not remove the signature
-echo w # Save changes
-} | fdisk "$DEVICE"
-
-# Check the file system and expand
-resize2fs "${DEVICE}p3"
-
-# Display the disk usage after expansion
-df -h
-```
-Note: The partition deletion, partition number, start sector, and end sector in this script should be determined according to your actual situation.
-
-Name the script `resize.sh` and run the command `chmod + x resize.sh` to obtain permissions.
-
-Run the command `./resize.sh` to successfully expand the root partition.
 
 ## Others
 
