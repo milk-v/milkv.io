@@ -470,6 +470,33 @@ const sidebars = {
     },
   ],
 
+  jupiter2: [
+    {
+      type: "link",
+      label: "🏠 Home",
+      href: "/docs",
+    },
+    "jupiter2/overview",
+    {
+      type: "category",
+      label: "🚀 Getting Started",
+      collapsed: false,
+      link: {
+        type: "generated-index",
+        title: "🚀 Getting Started",
+        description: "Getting Started with Jupiter2",
+        slug: "/jupiter2/getting-started",
+      },
+      items: [
+        "jupiter2/getting-started/quick-start",
+        "jupiter2/getting-started/hardware",
+        "jupiter2/getting-started/boot",
+        "jupiter2/getting-started/setup",
+        "jupiter2/getting-started/resources",
+      ],
+    },
+  ],
+
   megrez: [
     {
       type: "link",

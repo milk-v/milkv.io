@@ -49,6 +49,10 @@ const config = {
             from: ['/docs/jupiter'],
           },
           {
+            to: '/docs/jupiter2/overview',
+            from: ['/docs/jupiter2'],
+          },
+          {
             to: '/docs/megrez/overview',
             from: ['/docs/megrez'],
           },
@@ -258,6 +262,11 @@ const config = {
                 type: 'doc',
                 label: 'Jupiter',
                 docId: 'jupiter/overview',
+              },
+              {
+                type: 'doc',
+                label: 'Jupiter2',
+                docId: 'jupiter2/overview',
               },
               {
                 type: 'doc',
