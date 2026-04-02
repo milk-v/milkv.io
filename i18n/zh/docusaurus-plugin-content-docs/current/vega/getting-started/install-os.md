@@ -141,7 +141,7 @@ host 192.168.1.10 is alive
    ```
    => run updateubifs_boot
    Using xy1000_eth device
-   TFTP from server 192.168.57.66; our IP address is 192.168.57.234
+   TFTP from server 192.168.1.10; our IP address is 192.168.1.234
    Filename 'ubifs.img'.
    Load address: 0x48300000
    Loading: #################################################################
