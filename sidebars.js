@@ -393,6 +393,7 @@ const sidebars = {
         "vega/getting-started/setup",
         "vega/getting-started/buildroot-sdk",
         "vega/getting-started/modulesupport",
+        "vega/getting-started/install-os",
       ],
     },
   ],
