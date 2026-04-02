@@ -1,0 +1,9 @@
+{
+  "label": "🔳 Compute Module",
+  "position": 200,
+  "link": {
+    "type": "generated-index",
+    "slug": "/mars/cm",
+    "description": "The Mars Compute Module is a System on Module (SoM) based on a the StarFive JH7110 System on Chip (SoC) integrates the Central Process Unit (CPU), Power Management Unit (PMU), DRAM memory, flash storage and wireless connectivity (WiFi 5 and BT 5.2) in a small form factor of just 55mm x 40mm."
+  }
+}

@@ -1,7 +1,11 @@
 {
   "item.label.Home": {
-    "message": "ホーム",
+    "message": "トップページ",
     "description": "Navbar item with label Home"
+  },
+  "item.label.About": {
+    "message": "私達について",
+    "description": "Navbar item with label About"
   },
   "item.label.Duo": {
     "message": "Duo",
@@ -25,6 +29,38 @@
   },
   "item.label.Products": {
     "message": "製品",
-    "description": "Navbar item with label Docs"
+    "description": "Navbar item with label Products"
+  },
+  "logo.alt": {
+    "message": "milkv.io",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Chips": {
+    "message": "半導体チップ",
+    "description": "Navbar item with label Chips"
+  },
+  "item.label.Mars CM": {
+    "message": "Mars CM",
+    "description": "Navbar item with label Mars CM"
+  },
+  "item.label.Meles": {
+    "message": "Meles",
+    "description": "Navbar item with label Meles"
+  },
+  "item.label.Vega": {
+    "message": "Vega",
+    "description": "Navbar item with label Vega"
+  },
+  "item.label.SG2000": {
+    "message": "SG2000",
+    "description": "Navbar item with label SG2000"
+  },
+  "item.label.SG2002": {
+    "message": "SG2002",
+    "description": "Navbar item with label SG2002"
+  },
+  "item.label.CV1800B": {
+    "message": "CV1800B",
+    "description": "Navbar item with label CV1800B"
   }
 }
