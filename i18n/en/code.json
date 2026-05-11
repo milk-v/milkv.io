@@ -1540,5 +1540,457 @@
   "page.titan.text77": {
     "message": "The Milk-V Titan, powered by the UltraRISC UR-DP1000 8-core SoC (up to 2.0GHz), is a compact Mini ITX RISC-V board. It supports up to 64GB DDR4 ECC ram, a PCIe Gen4 x16 slot for graphics/computing cards, and an M.2 NVMe SSD. Featuring gigabit ethernet, four USB 3.0 ports, and ATX power support, also support Milk-V BMC remote control, it’s perfect for high-performance RISC-V desktops and servers.",
     "description": " "
+  },
+  "page.jupiter2.text1": {
+    "message": "RVA23-Ready",
+    "description": " "
+  },
+  "page.jupiter2.text2": {
+    "message": "RVV 1.0",
+    "description": " "
+  },
+  "page.jupiter2.text3": {
+    "message": "1024-bit",
+    "description": " "
+  },
+  "page.jupiter2.text4": {
+    "message": "Vector Acceleration",
+    "description": " "
+  },
+  "page.jupiter2.text5": {
+    "message": "The First RVA23-Compliant RISC-V SBC",
+    "description": " "
+  },
+  "page.jupiter2.text6": {
+    "message": "High-Performance CPU",
+    "description": " "
+  },
+  "page.jupiter2.text7": {
+    "message": "8-Core X100™ CPU @ 2.4GHz",
+    "description": " "
+  },
+  "page.jupiter2.text8": {
+    "message": "64-bit RISC-V AI processor cores",
+    "description": " "
+  },
+  "page.jupiter2.text9": {
+    "message": "<font color='#37DDBB'>130 KDMIPS</font> class CPU performance",
+    "description": " "
+  },
+  "page.jupiter2.text10": {
+    "message": "Built for desktop-class computing and heavy edge workloads",
+    "description": " "
+  },
+  "page.jupiter2.text11": {
+    "message": "On-Device AI Acceleration",
+    "description": " "
+  },
+  "page.jupiter2.text12": {
+    "message": "8-Core A100™ AI CPU",
+    "description": " "
+  },
+  "page.jupiter2.text13": {
+    "message": "Up to 60 TOPS",
+    "description": " "
+  },
+  "page.jupiter2.text14": {
+    "message": "Dedicated <font color='#37DDBB'>TCM + DMA</font> acceleration channels",
+    "description": " "
+  },
+  "page.jupiter2.text15": {
+    "message": "Supports INT4 / INT8 / FP8 / INT16 / FP16 / BF16 precision",
+    "description": " "
+  },
+  "page.jupiter2.text16": {
+    "message": "Integrated 3D Graphics Engine",
+    "description": " "
+  },
+  "page.jupiter2.text17": {
+    "message": "IMG BXM-4-64-MC1",
+    "description": " "
+  },
+  "page.jupiter2.text18": {
+    "message": "RVA23 + RVV 1.0",
+    "description": " "
+  },
+  "page.jupiter2.text19": {
+    "message": "Up to 1024-bit RVV 1.0 vector processing",
+    "description": " "
+  },
+  "page.jupiter2.text20": {
+    "message": "Vector computing made for AI & multimedia",
+    "description": " "
+  },
+  "page.jupiter2.text21": {
+    "message": "Comprehensive Hardware Virtualization",
+    "description": " "
+  },
+  "page.jupiter2.text22": {
+    "message": "Supports RV Hypervisor 1.0, AIA, and RV IOMMU extensions",
+    "description": " "
+  },
+  "page.jupiter2.text23": {
+    "message": "Provides full hardware virtualization for CPU, memory, interrupts, and I/O",
+    "description": " "
+  },
+  "page.jupiter2.text24": {
+    "message": "Powerful Storage Expansion",
+    "description": " "
+  },
+  "page.jupiter2.text25": {
+    "message": "LPDDR5",
+    "description": " "
+  },
+  "page.jupiter2.text26": {
+    "message": "Up to 32GB",
+    "description": " "
+  },
+  "page.jupiter2.text27": {
+    "message": "Memory bus width: 64-bit (dual-channel, 32-bit per channel)",
+    "description": " "
+  },
+  "page.jupiter2.text28": {
+    "message": "Data rate: up to 6400 MT/s",
+    "description": " "
+  },
+  "page.jupiter2.text29": {
+    "message": "Onboard UFS (up to 256GB)",
+    "description": " "
+  },
+  "page.jupiter2.text30": {
+    "message": "Faster boot, snappier apps, improved reliability",
+    "description": " "
+  },
+  "page.jupiter2.text31": {
+    "message": "M.2 M Key 2280 (PCIe Gen3 x4)",
+    "description": " "
+  },
+  "page.jupiter2.text32": {
+    "message": "High-speed NVMe expansion for local knowledge bases, caching, datasets, and NAS/edge storage",
+    "description": " "
+  },
+  "page.jupiter2.text33": {
+    "message": "Comprehensive Hardware Virtualization",
+    "description": " "
+  },
+  "page.jupiter2.text34": {
+    "message": "High-speed uplink/aggregation/storage networking",
+    "description": " "
+  },
+  "page.jupiter2.text35": {
+    "message": "Legacy compatibility and dedicated management link",
+    "description": " "
+  },
+  "page.jupiter2.text36": {
+    "message": "Dual-band, dual-antenna for wireless deployment and edge nodes",
+    "description": " "
+  },
+  "page.jupiter2.text37": {
+    "message": "4G/5G modules and connectivity expansion for mobile/distributed scenarios",
+    "description": " "
+  },
+  "page.jupiter2.text38": {
+    "message": "Dual Display Outputs",
+    "description": " "
+  },
+  "page.jupiter2.text39": {
+    "message": "USB Type-C (DP Alt Mode): up to 4K@60Hz",
+    "description": " "
+  },
+  "page.jupiter2.text40": {
+    "message": "Embedded DisplayPort (eDP): up to 2.5K@90Hz",
+    "description": " "
+  },
+  "page.jupiter2.text41": {
+    "message": "High-Frame-Rate Video Codec",
+    "description": " "
+  },
+  "page.jupiter2.text42": {
+    "message": "Built for capture / transcoding, low-latency streaming, and edge video analytics",
+    "description": " "
+  },
+  "page.jupiter2.text43": {
+    "message": "Decode: H.265 / H.264 / VP9 up to 4K@120fps",
+    "description": " "
+  },
+  "page.jupiter2.text44": {
+    "message": "Encode: H.265 / H.264 up to 4K@60fps",
+    "description": " "
+  },
+  "page.jupiter2.text45": {
+    "message": "Real-Time & Industrial Expansion",
+    "description": " "
+  },
+  "page.jupiter2.text46": {
+    "message": "Dual-core RT24™ 64-bit RISC-V Real-Time Processor",
+    "description": " "
+  },
+  "page.jupiter2.text47": {
+    "message": "Power-off time keeping",
+    "description": " "
+  },
+  "page.jupiter2.text48": {
+    "message": "Support UART, I2C, I2S, CAN-FD, PWM, GPIOs, etc",
+    "description": " "
+  },
+  "page.jupiter2.text49": {
+    "message": "Convenient for both prototyping and production designs",
+    "description": " "
+  },
+  "page.jupiter2.text50": {
+    "message": "Software Support",
+    "description": " "
+  },
+  "page.jupiter2.text51": {
+    "message": "Bianbu 3.0, Ubuntu 26.04, OpenHarmony 6.0, OpenKylin 2.0, deepin 25, Fedora",
+    "description": " "
+  },
+  "page.jupiter2.text52": {
+    "message": "Package List",
+    "description": " "
+  },
+  "page.jupiter2.text53": {
+    "message": "Jupiter 2",
+    "description": " "
+  },
+  "page.jupiter2.text54": {
+    "message": "Active Heatsink",
+    "description": " "
+  },
+  "page.jupiter2.text55": {
+    "message": "Metal Case",
+    "description": " "
+  },
+  "page.jupiter2.text56": {
+    "message": "Powered by the Spacemit K3 (RVA23), this next-gen RISC-V platform features an 8-core X100™ CPU (up to 2.4GHz) with up to 60 TOPS AI performance and RVV 1.0 up to 1024-bit vector acceleration. It offers up to 32GB LPDDR5, onboard UFS (up to 256GB), and an M.2 NVMe slot (PCIe Gen3 x4).",
+    "description": " "
+  },
+  "page.jupiter2.text57": {
+    "message": "Connectivity includes 10GbE SFP+, GbE RJ45, and Wi-Fi 6/BT 5.2, plus M.2 B Key + Nano SIM for 4G/5G expansion. With USB-C DP Alt, eDP, and RT I/O expansion for EtherCAT/CAN-FD, it’s ideal for RISC-V AI development and high-performance edge deployments.",
+    "description": " "
+  },
+  "page.jupiter2.text58": {
+    "message": "SoC",
+    "description": " "
+  },
+  "page.jupiter2.text59": {
+    "message": "CPU",
+    "description": " "
+  },
+  "page.jupiter2.text60": {
+    "message": "Up to 2.4 GHz",
+    "description": " "
+  },
+  "page.jupiter2.text61": {
+    "message": "64-bit RISC-V AI Processor Cores",
+    "description": " "
+  },
+  "page.jupiter2.text62": {
+    "message": "Delivering 130 KDMIPS",
+    "description": " "
+  },
+  "page.jupiter2.text63": {
+    "message": "X100™ is a quad-issue, out-of-order high-performance core",
+    "description": " "
+  },
+  "page.jupiter2.text64": {
+    "message": "8MB shared L2 cache per 8-core cluster",
+    "description": " "
+  },
+  "page.jupiter2.text65": {
+    "message": "GPU",
+    "description": " "
+  },
+  "page.jupiter2.text66": {
+    "message": "OpenGL ES1.1 / ES2.0 / ES3.2",
+    "description": " "
+  },
+  "page.jupiter2.text67": {
+    "message": "OpenCL 3.0",
+    "description": " "
+  },
+  "page.jupiter2.text68": {
+    "message": "Vulkan 1.3",
+    "description": " "
+  },
+  "page.jupiter2.text69": {
+    "message": "AI Performance",
+    "description": " "
+  },
+  "page.jupiter2.text70": {
+    "message": "Up to 60 TOPS",
+    "description": " "
+  },
+  "page.jupiter2.text71": {
+    "message": "Up to 1024-bit RVV 1.0 vector processing",
+    "description": " "
+  },
+  "page.jupiter2.text72": {
+    "message": "Dedicated TCM and DMA acceleration channels provided",
+    "description": " "
+  },
+  "page.jupiter2.text73": {
+    "message": "Supports INT4 / INT8 / FP8 / INT16 / FP16 / BF16 precision",
+    "description": " "
+  },
+  "page.jupiter2.text74": {
+    "message": "RAM",
+    "description": " "
+  },
+  "page.jupiter2.text75": {
+    "message": "Up to 32GB",
+    "description": " "
+  },
+  "page.jupiter2.text76": {
+    "message": "Memory bus width: 64-bit (dual-channel, 32-bit per channel)",
+    "description": " "
+  },
+  "page.jupiter2.text77": {
+    "message": "Data rate: up to 6400 MT/s",
+    "description": " "
+  },
+  "page.jupiter2.text78": {
+    "message": "Codec",
+    "description": " "
+  },
+  "page.jupiter2.text79": {
+    "message": "Video Decoder:",
+    "description": " "
+  },
+  "page.jupiter2.text80": {
+    "message": "H.265 / H.264 / VP9 up to 4K@120fps",
+    "description": " "
+  },
+  "page.jupiter2.text81": {
+    "message": "Video Encoder:",
+    "description": " "
+  },
+  "page.jupiter2.text82": {
+    "message": "H.265 / H.264 up to 4K@60fps",
+    "description": " "
+  },
+  "page.jupiter2.text83": {
+    "message": "Storage",
+    "description": " "
+  },
+  "page.jupiter2.text84": {
+    "message": "1x Onboard UFS, Up to 256GB",
+    "description": " "
+  },
+  "page.jupiter2.text85": {
+    "message": "1x M.2 M Key 2280 Slot (PCIe Gen3 x4) for NVMe SSD",
+    "description": " "
+  },
+  "page.jupiter2.text86": {
+    "message": "Display",
+    "description": " "
+  },
+  "page.jupiter2.text87": {
+    "message": "1x USB Type-C (DisplayPort Alt Mode), Up to 4K@60Hz",
+    "description": " "
+  },
+  "page.jupiter2.text88": {
+    "message": "1x Embedded DisplayPort (eDP), Up to 2.5K@90Hz",
+    "description": " "
+  },
+  "page.jupiter2.text89": {
+    "message": "Networking",
+    "description": " "
+  },
+  "page.jupiter2.text90": {
+    "message": "1x Onboard WiFi 6 + BT 5.2",
+    "description": " "
+  },
+  "page.jupiter2.text91": {
+    "message": "1x GbE RJ45 Port",
+    "description": " "
+  },
+  "page.jupiter2.text92": {
+    "message": "1x 10 GbE SFP+ Port, Supports 10G BASE-R / BASE-X, QinQ, MSI-X, WOL, and clustering.",
+    "description": " "
+  },
+  "page.jupiter2.text93": {
+    "message": "1x Nano SIM Slot",
+    "description": " "
+  },
+  "page.jupiter2.text94": {
+    "message": "1x M.2 B Key Slot (PCIe Gen3 x2 + USB), Supports 2242 / 3042 cards.",
+    "description": " "
+  },
+  "page.jupiter2.text95": {
+    "message": "Audio",
+    "description": " "
+  },
+  "page.jupiter2.text96": {
+    "message": "Onboard Codec",
+    "description": " "
+  },
+  "page.jupiter2.text97": {
+    "message": "1x Audio Connector",
+    "description": " "
+  },
+  "page.jupiter2.text98": {
+    "message": "USB",
+    "description": " "
+  },
+  "page.jupiter2.text99": {
+    "message": "2x USB 3.2 Gen1 Type-C Ports",
+    "description": " "
+  },
+  "page.jupiter2.text100": {
+    "message": "4x USB 2.0 Type-A Ports",
+    "description": " "
+  },
+  "page.jupiter2.text101": {
+    "message": "Other",
+    "description": " "
+  },
+  "page.jupiter2.text102": {
+    "message": "1x RTC Battery Connector",
+    "description": " "
+  },
+  "page.jupiter2.text103": {
+    "message": "1x FAN Connector",
+    "description": " "
+  },
+  "page.jupiter2.text104": {
+    "message": "2x RT I/O Expansion Connector",
+    "description": " "
+  },
+  "page.jupiter2.text105": {
+    "message": "Supporting expansion modules for EtherCAT, CAN-FD and other real-time interfaces.",
+    "description": " "
+  },
+  "page.jupiter2.text107": {
+    "message": "Case & Cooling",
+    "description": " "
+  },
+  "page.jupiter2.text108": {
+    "message": "Aluminum alloy enclosure with built-in PWM cooling fan",
+    "description": " "
+  },
+  "page.jupiter2.text109": {
+    "message": "Operating System",
+    "description": " "
+  },
+  "page.jupiter2.text110": {
+    "message": "Bianbu 3.0, Ubuntu 26.04, OpenHarmony 6.0, OpenKylin, Deepin, Fedora",
+    "description": " "
+  },
+  "page.jupiter2.text111": {
+    "message": "Power",
+    "description": " "
+  },
+  "page.jupiter2.text112": {
+    "message": "USB Type-C (USB-PD 65W) or ATX 2-pin (12V Input)",
+    "description": " "
+  },
+  "page.jupiter2.text113": {
+    "message": "Dimension",
+    "description": " "
+  },
+  "page.jupiter2.text114": {
+    "message": "100 x 86 mm",
+    "description": " "
   }
 }

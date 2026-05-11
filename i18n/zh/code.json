@@ -1410,5 +1410,457 @@
   "page.titan.text77": {
     "message": "The Milk-V Titan, powered by the UltraRISC UR-DP1000 8-core SoC (up to 2.0GHz), is a compact Mini ITX RISC-V board. It supports up to 64GB DDR4 ECC ram, a PCIe Gen4 x16 slot for graphics/computing cards, and an M.2 NVMe SSD. Featuring gigabit ethernet, four USB 3.0 ports, and ATX power support, also support Milk-V BMC remote control, it’s perfect for high-performance RISC-V desktops and servers.",
     "description": " "
+  },
+  "page.jupiter2.text1": {
+    "message": "RVA23 就绪",
+    "description": " "
+  },
+  "page.jupiter2.text2": {
+    "message": "RVV 1.0",
+    "description": " "
+  },
+  "page.jupiter2.text3": {
+    "message": "1024 位",
+    "description": " "
+  },
+  "page.jupiter2.text4": {
+    "message": "向量加速",
+    "description": " "
+  },
+  "page.jupiter2.text5": {
+    "message": "首款 RVA23 RISC-V 单板计算机",
+    "description": " "
+  },
+  "page.jupiter2.text6": {
+    "message": "高性能 CPU",
+    "description": " "
+  },
+  "page.jupiter2.text7": {
+    "message": "8 核 X100™ CPU @ 2.4GHz",
+    "description": " "
+  },
+  "page.jupiter2.text8": {
+    "message": "64 位 RISC-V AI 处理器核心",
+    "description": " "
+  },
+  "page.jupiter2.text9": {
+    "message": "<font color='#37DDBB'>130 KDMIPS</font>算力",
+    "description": " "
+  },
+  "page.jupiter2.text10": {
+    "message": "面向桌面级性能与重负载边缘计算场景",
+    "description": " "
+  },
+  "page.jupiter2.text11": {
+    "message": "端侧 AI 加速",
+    "description": " "
+  },
+  "page.jupiter2.text12": {
+    "message": "8 核 A100™ AI CPU",
+    "description": " "
+  },
+  "page.jupiter2.text13": {
+    "message": "60 TOPS 算力",
+    "description": " "
+  },
+  "page.jupiter2.text14": {
+    "message": "专用 TCM 缓存及 DMA 加速通道",
+    "description": " "
+  },
+  "page.jupiter2.text15": {
+    "message": "支持 INT4 / INT8 / FP8 / INT16 / FP16 / BF16 数据格式",
+    "description": " "
+  },
+  "page.jupiter2.text16": {
+    "message": "集成 3D 图形引擎",
+    "description": " "
+  },
+  "page.jupiter2.text17": {
+    "message": "IMG BXM-4-64-MC1",
+    "description": " "
+  },
+  "page.jupiter2.text18": {
+    "message": "RVA23 + RVV 1.0",
+    "description": " "
+  },
+  "page.jupiter2.text19": {
+    "message": "高达 1024 位的 RVV 1.0 向量并行计算",
+    "description": " "
+  },
+  "page.jupiter2.text20": {
+    "message": "专为 AI 与多媒体优化的向量计算能力",
+    "description": " "
+  },
+  "page.jupiter2.text21": {
+    "message": "完整的硬件虚拟化",
+    "description": " "
+  },
+  "page.jupiter2.text22": {
+    "message": "支持 RV Hypervisor 1.0、RV AIA、RV IOMMU 扩展",
+    "description": " "
+  },
+  "page.jupiter2.text23": {
+    "message": "提供 CPU、内存、中断、IO 的完整硬件虚拟化能力",
+    "description": " "
+  },
+  "page.jupiter2.text24": {
+    "message": "强劲存储",
+    "description": " "
+  },
+  "page.jupiter2.text25": {
+    "message": "LPDDR5",
+    "description": " "
+  },
+  "page.jupiter2.text26": {
+    "message": "最大可选 32GB",
+    "description": " "
+  },
+  "page.jupiter2.text27": {
+    "message": "内存总线宽度: 64位 (双通道，每通道 32 位)",
+    "description": " "
+  },
+  "page.jupiter2.text28": {
+    "message": "数据传输速率: 最高 6400 MT/s",
+    "description": " "
+  },
+  "page.jupiter2.text29": {
+    "message": "板载 UFS（最大可选 256GB）",
+    "description": " "
+  },
+  "page.jupiter2.text30": {
+    "message": "启动更快、应用更流畅、可靠性更高",
+    "description": " "
+  },
+  "page.jupiter2.text31": {
+    "message": "M.2 M Key 2280 卡槽 (PCIe Gen3 x4)",
+    "description": " "
+  },
+  "page.jupiter2.text32": {
+    "message": "支持高速 NVMe 扩展，适用于本地知识库、数据集以及 NAS / 边缘存储场景",
+    "description": " "
+  },
+  "page.jupiter2.text33": {
+    "message": "极速网络",
+    "description": " "
+  },
+  "page.jupiter2.text34": {
+    "message": "高速上联 / 汇聚 / 存储网络",
+    "description": " "
+  },
+  "page.jupiter2.text35": {
+    "message": "兼容传统网络，并支持独立管理链路",
+    "description": " "
+  },
+  "page.jupiter2.text36": {
+    "message": "双频双天线，适合无线部署与边缘节点",
+    "description": " "
+  },
+  "page.jupiter2.text37": {
+    "message": "支持 4G/5G 模组与连接扩展，适用于移动 / 分布式场景",
+    "description": " "
+  },
+  "page.jupiter2.text38": {
+    "message": "双屏显示",
+    "description": " "
+  },
+  "page.jupiter2.text39": {
+    "message": "USB Type-C (DP Alt 模式): 最高可达 4K@60Hz",
+    "description": " "
+  },
+  "page.jupiter2.text40": {
+    "message": "eDP 接口: 最高可达 2.5K@90Hz",
+    "description": " "
+  },
+  "page.jupiter2.text41": {
+    "message": "高帧率视频编解码",
+    "description": " "
+  },
+  "page.jupiter2.text42": {
+    "message": "专为视频采集 / 转码、低延迟流传输及边缘视频分析而设计",
+    "description": " "
+  },
+  "page.jupiter2.text43": {
+    "message": "解码: H.265/H.264/VP9 格式最高可达 4K@120fps",
+    "description": " "
+  },
+  "page.jupiter2.text44": {
+    "message": "编码: H.265/H.264 格式最高可达 4K@60fps",
+    "description": " "
+  },
+  "page.jupiter2.text45": {
+    "message": "实时与工业扩展",
+    "description": " "
+  },
+  "page.jupiter2.text46": {
+    "message": "双核 RT24™ 64 位 RISC-V 实时处理器",
+    "description": " "
+  },
+  "page.jupiter2.text47": {
+    "message": "断电计时保持",
+    "description": " "
+  },
+  "page.jupiter2.text48": {
+    "message": "支持 UART, I2C, I2S,  CAN-FD, PWM, GPIOs 等功能",
+    "description": " "
+  },
+  "page.jupiter2.text49": {
+    "message": "兼顾原型开发与量产设计",
+    "description": " "
+  },
+  "page.jupiter2.text50": {
+    "message": "软件支持",
+    "description": " "
+  },
+  "page.jupiter2.text51": {
+    "message": "Bianbu 3.0、Ubuntu 26.04、OpenHarmony 6.0、OpenKylin 2.0、deepin 25、Fedora",
+    "description": " "
+  },
+  "page.jupiter2.text52": {
+    "message": "包装清单",
+    "description": " "
+  },
+  "page.jupiter2.text53": {
+    "message": "Jupiter 2",
+    "description": " "
+  },
+  "page.jupiter2.text54": {
+    "message": "主动散热器",
+    "description": " "
+  },
+  "page.jupiter2.text55": {
+    "message": "金属外壳",
+    "description": " "
+  },
+  "page.jupiter2.text56": {
+    "message": "Milk-V Jupiter2 基于 Spacemit K3（RVA23），搭载 8 核 X100™ CPU（最高 2.4GHz），提供高达 60 TOPS AI 算力，并支持最高 1024 位 RVV 1.0 向量加速。支持最高 32GB LPDDR5，配备板载 UFS（最高 256GB），并提供 M.2 NVMe（PCIe Gen3 x4）扩展。",
+    "description": " "
+  },
+  "page.jupiter2.text57": {
+    "message": "网络与连接方面，提供 10GbE SFP+、GbE RJ45、Wi-Fi 6/BT 5.2，以及 M.2 B Key + Nano SIM（4G/5G 扩展）。支持 USB-C DP Alt、eDP 与 EtherCAT/CAN-FD RT I/O 扩展，适用于 RISC-V AI 开发与高性能边缘部署。",
+    "description": " "
+  },
+  "page.jupiter2.text58": {
+    "message": "SoC",
+    "description": " "
+  },
+  "page.jupiter2.text59": {
+    "message": "CPU",
+    "description": " "
+  },
+  "page.jupiter2.text60": {
+    "message": "最高 2.4 GHz",
+    "description": " "
+  },
+  "page.jupiter2.text61": {
+    "message": "64 位 RISC-V AI 处理器核心",
+    "description": " "
+  },
+  "page.jupiter2.text62": {
+    "message": "130 KDMIPS 算力",
+    "description": " "
+  },
+  "page.jupiter2.text63": {
+    "message": "X100™是四发射乱序执行的高性能计算大核",
+    "description": " "
+  },
+  "page.jupiter2.text64": {
+    "message": "每 8 核共享 8MB L2 缓存",
+    "description": " "
+  },
+  "page.jupiter2.text65": {
+    "message": "GPU",
+    "description": " "
+  },
+  "page.jupiter2.text66": {
+    "message": "OpenGL ES1.1 / ES2.0 / ES3.2",
+    "description": " "
+  },
+  "page.jupiter2.text67": {
+    "message": "OpenCL 3.0",
+    "description": " "
+  },
+  "page.jupiter2.text68": {
+    "message": "Vulkan 1.3",
+    "description": " "
+  },
+  "page.jupiter2.text69": {
+    "message": "AI 性能",
+    "description": " "
+  },
+  "page.jupiter2.text70": {
+    "message": "60 TOPS 算力",
+    "description": " "
+  },
+  "page.jupiter2.text71": {
+    "message": "高达 1024 位的 RVV 1.0 向量并行计算",
+    "description": " "
+  },
+  "page.jupiter2.text72": {
+    "message": "专用 TCM 缓存及 DMA 加速通道",
+    "description": " "
+  },
+  "page.jupiter2.text73": {
+    "message": "支持 INT4 / INT8 / FP8 / INT16 / FP16 / BF16 等数据格式",
+    "description": " "
+  },
+  "page.jupiter2.text74": {
+    "message": "内存",
+    "description": " "
+  },
+  "page.jupiter2.text75": {
+    "message": "最大可选 32GB",
+    "description": " "
+  },
+  "page.jupiter2.text76": {
+    "message": "内存总线宽度: 64位 (双通道，每通道 32 位)",
+    "description": " "
+  },
+  "page.jupiter2.text77": {
+    "message": "数据传输速率: 最高 6400 MT/s",
+    "description": " "
+  },
+  "page.jupiter2.text78": {
+    "message": "编解码",
+    "description": " "
+  },
+  "page.jupiter2.text79": {
+    "message": "视频解码：",
+    "description": " "
+  },
+  "page.jupiter2.text80": {
+    "message": "H.265 / H.264 / VP9，最高支持 4K@120fps",
+    "description": " "
+  },
+  "page.jupiter2.text81": {
+    "message": "视频编码：",
+    "description": " "
+  },
+  "page.jupiter2.text82": {
+    "message": "H.265 / H.264，最高支持 4K@60fps",
+    "description": " "
+  },
+  "page.jupiter2.text83": {
+    "message": "存储",
+    "description": " "
+  },
+  "page.jupiter2.text84": {
+    "message": "1x 板载 UFS, 最大可选 256GB",
+    "description": " "
+  },
+  "page.jupiter2.text85": {
+    "message": "1x M.2 M Key 2280 插槽 (PCIe Gen3 x4)",
+    "description": " "
+  },
+  "page.jupiter2.text86": {
+    "message": "显示",
+    "description": " "
+  },
+  "page.jupiter2.text87": {
+    "message": "1x USB Type-C (DP Alt 模式), 最高可达 4K@60Hz",
+    "description": " "
+  },
+  "page.jupiter2.text88": {
+    "message": "1x eDP 接口, 最高可达 2.5K@90Hz",
+    "description": " "
+  },
+  "page.jupiter2.text89": {
+    "message": "网络",
+    "description": " "
+  },
+  "page.jupiter2.text90": {
+    "message": "1 个板载 WiFi 6 + BT 5.2",
+    "description": " "
+  },
+  "page.jupiter2.text91": {
+    "message": "1 个 GbE RJ45 端口",
+    "description": " "
+  },
+  "page.jupiter2.text92": {
+    "message": "1个 10 GbE SFP+ 端口, 支持 10G BASE-R / BASE-X、QinQ、MSI-X、WOL 及集群特性",
+    "description": " "
+  },
+  "page.jupiter2.text93": {
+    "message": "1 个 Nano SIM 卡槽",
+    "description": " "
+  },
+  "page.jupiter2.text94": {
+    "message": "1 个 M.2 B Key 插槽（PCIe Gen3 x2 + USB），支持 2242 / 3042 规格卡",
+    "description": " "
+  },
+  "page.jupiter2.text95": {
+    "message": "音频",
+    "description": " "
+  },
+  "page.jupiter2.text96": {
+    "message": "板载音频编解码器",
+    "description": " "
+  },
+  "page.jupiter2.text97": {
+    "message": "1 个Audio接口",
+    "description": " "
+  },
+  "page.jupiter2.text98": {
+    "message": "USB",
+    "description": " "
+  },
+  "page.jupiter2.text99": {
+    "message": "2 个 USB 3.2 Gen1 Type-C 接口",
+    "description": " "
+  },
+  "page.jupiter2.text100": {
+    "message": "4 个 USB 2.0 Type-A 接口",
+    "description": " "
+  },
+  "page.jupiter2.text101": {
+    "message": "其他",
+    "description": " "
+  },
+  "page.jupiter2.text102": {
+    "message": "1 个 RTC 电池接口",
+    "description": " "
+  },
+  "page.jupiter2.text103": {
+    "message": "1 个风扇接口",
+    "description": " "
+  },
+  "page.jupiter2.text104": {
+    "message": "2 个 RT I/O 扩展接口",
+    "description": " "
+  },
+  "page.jupiter2.text105": {
+    "message": "支持 EtherCAT, CAN-FD 等实时拓展接口",
+    "description": " "
+  },
+  "page.jupiter2.text107": {
+    "message": "外壳与散热",
+    "description": " "
+  },
+  "page.jupiter2.text108": {
+    "message": "铝合金外壳，内置 PWM 风扇散热",
+    "description": " "
+  },
+  "page.jupiter2.text109": {
+    "message": "操作系统",
+    "description": " "
+  },
+  "page.jupiter2.text110": {
+    "message": "Bianbu 3.0、Ubuntu 26.04、OpenHarmony 6.0、OpenKylin、Deepin、Fedora",
+    "description": " "
+  },
+  "page.jupiter2.text111": {
+    "message": "电源",
+    "description": " "
+  },
+  "page.jupiter2.text112": {
+    "message": "USB Type-C (USB-PD 65W) 或 ATX 2-pin (12V 输入)",
+    "description": " "
+  },
+  "page.jupiter2.text113": {
+    "message": "尺寸",
+    "description": " "
+  },
+  "page.jupiter2.text114": {
+    "message": "100 x 86 mm",
+    "description": " "
   }
 }

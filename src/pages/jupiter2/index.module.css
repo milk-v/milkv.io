@@ -294,6 +294,73 @@
   height: 90px;
 }
 
+.packageklist {
+  height: 275px;
+  overflow: hidden;
+}
+
+.packageklist::after {
+  content: "";
+  position: absolute;
+  width: 442px;
+  height: 615px;
+  right: 16px;
+  top: -120px;
+  background: linear-gradient(205deg, rgba(55, 221, 187, 1) 5%, rgba(55, 221, 187, 0) 84%);
+  filter: blur(50.4px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.packageklist-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 595px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.packageklist-list>li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.packageklist-list>li>span {
+  width: 6px;
+  height: 6px;
+  background-color: #37DDBB;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.packageklist-board,
+.packageklist-heatsink {
+  position: absolute;
+  display: block;
+  z-index: 2;
+}
+
+.packageklist-board {
+  width: 228px;
+  right: 353px;
+  top: 13px;
+}
+
+.packageklist-heatsink {
+  width: 238px;
+  right: 67px;
+  top: 54px;
+}
+
 .postion-img {
   position: absolute;
   top: 0%;
@@ -422,6 +489,31 @@
   .support>div>img {
     height: 60px;
   }
+
+  .packageklist {
+    height: 235px;
+  }
+
+  .packageklist-list {
+    width: 420px;
+    gap: 8px;
+  }
+
+  .packageklist-list>li {
+    font-size: 22px;
+  }
+
+  .packageklist-board {
+    width: 170px;
+    right: 260px;
+    top: 30px;
+  }
+
+  .packageklist-heatsink {
+    width: 180px;
+    right: 30px;
+    top: 60px;
+  }
 }
 
 @media screen and (max-width: 1050px) and (min-width: 750px) {
@@ -525,6 +617,36 @@
 
   .support>div>img {
     height: 40px;
+  }
+
+  .packageklist {
+    height: 210px;
+  }
+
+  .packageklist-list {
+    width: 340px;
+    gap: 6px;
+  }
+
+  .packageklist-list>li {
+    font-size: 16px;
+  }
+
+  .packageklist-list>li>span {
+    width: 5px;
+    height: 5px;
+  }
+
+  .packageklist-board {
+    width: 125px;
+    right: 188px;
+    top: 45px;
+  }
+
+  .packageklist-heatsink {
+    width: 130px;
+    right: 20px;
+    top: 70px;
   }
 }
 
@@ -683,5 +805,44 @@
 
   .lpddr5 {
     width: 100%;
+  }
+
+  .packageklist {
+    height: 180rem;
+  }
+
+  .packageklist::after {
+    width: 260rem;
+    height: 360rem;
+    right: -20rem;
+    top: -100rem;
+    filter: blur(35rem);
+  }
+
+  .packageklist-list {
+    width: 210rem;
+    gap: 8rem;
+  }
+
+  .packageklist-list>li {
+    font-size: 14rem;
+    gap: 6rem;
+  }
+
+  .packageklist-list>li>span {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .packageklist-board {
+    width: 90rem;
+    right: 104rem;
+    top: 64rem;
+  }
+
+  .packageklist-heatsink {
+    width: 94rem;
+    right: 10rem;
+    top: 82rem;
   }
 }
