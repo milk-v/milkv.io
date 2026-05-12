@@ -94,7 +94,7 @@ export default (props) => {
         },
         'jupiter2': {
             arace_url: "https://arace.tech/products/milk-v-jupiter-2",
-            jd_url: 'https://item.jd.com/10210419604116.html?sdx=ehi-lLxFuZiE6JnKYINYjc8msDSQCQ0rsmpKtqxHZNWLPe_RLJtV4XnhpkvlVmGT&pvid=ef56b6c92b5745acabe2106672c67850',
+            jd_url: 'https://ic-item.jd.com/10210343127962.html#crumb-wrap',
         },
         'jupiter2-nx': {
             arace_url: "https://arace.tech/products/milk-v-jupiter2-series-coupon",
