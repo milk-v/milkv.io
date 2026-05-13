@@ -490,10 +490,6 @@ const sidebars = {
       },
       items: [
         "jupiter2/getting-started/quick-start",
-        "jupiter2/getting-started/hardware",
-        "jupiter2/getting-started/boot",
-        "jupiter2/getting-started/setup",
-        "jupiter2/getting-started/resources",
       ],
     },
   ],

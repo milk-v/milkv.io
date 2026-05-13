@@ -5,5 +5,10 @@ sidebar_position: 70
 
 # Quick Start
 
-The purpose of this section is to help you get started quickly with Milk-V Jupiter2.
+## Usage Reference
 
+[https://www.spacemit.com/community/document/info?lang=en&nodepath=hardware/eco/k3_pico](https://www.spacemit.com/community/document/info?lang=en&nodepath=hardware/eco/k3_pico)
+
+## Document Summary
+
+[https://www.spacemit.com/community/document?nodepath=hardware](https://www.spacemit.com/community/document?nodepath=hardware)
