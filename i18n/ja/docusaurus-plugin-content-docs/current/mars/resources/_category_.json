@@ -1,0 +1,9 @@
+{
+  "label": "🧰 Resources",
+  "position": 90,
+  "link": {
+    "type": "generated-index",
+    "slug": "/mars/resources",
+    "description": "Useful Resources"
+  }
+}
