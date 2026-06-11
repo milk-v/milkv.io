@@ -16,7 +16,7 @@ The purpose of this section is to help you get started quickly with Milk-V Titan
 ### Necessary
 
 1. Titan Motherboard
-2. DDR4 memory: Two modules are required. Both memory slots must be populated, and the two memory modules installed must have identical specifications. Please refer to this link for specific specifications: [DDR4 Support List](https://milkv.io/docs/titan/getting-started/memory)
+2. DDR4 memory: One or two DDR4 UDIMM modules are supported. For dual-module configurations, using two modules with matching specifications is recommended for best compatibility. Please refer to this link for specific specifications: [DDR4 Support List](https://milkv.io/docs/titan/getting-started/memory)
 3. Boot Media: NVMe SSD (used for system installation and booting)
 4. Power Supply: The Titan supports both ATX (24-pin) and DC (5525) power supply methods.
 

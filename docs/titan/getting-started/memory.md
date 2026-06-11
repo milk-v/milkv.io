@@ -6,7 +6,7 @@ sidebar_position: 70
 # DDR4 Support List
 
 :::tip
-The Titan motherboard supports DDR4 UDIMM memory. Both memory slots must be populated, and the two memory modules installed must have identical specifications.
+The Titan motherboard supports DDR4 UDIMM memory in either single-module or dual-module configurations. For dual-module configurations, using two modules with matching specifications is recommended for best compatibility.
 :::
 
 | Manufacturer | Model | Die | Voltage | Capacity |
