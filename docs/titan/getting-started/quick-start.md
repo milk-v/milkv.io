@@ -42,3 +42,5 @@ The Titan motherboard itself does not have HDMI or other display interfaces, so 
 5. Case: The Titan motherboard is compliant with the Mini-ITX specification, and you can choose a computer case that is compatible with Mini-ITX motherboards.
 
 ## Installing the System
+
+- [Ubuntu 24.04](https://milkv.io/docs/titan/getting-started/boot)
