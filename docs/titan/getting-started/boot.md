@@ -31,6 +31,10 @@ To write the image on a PC, connect the NVMe SSD through an M.2 NVMe USB enclosu
 Writing the image will erase all existing data on the selected disk. Back up important data before continuing, and make sure you select the Titan target SSD. If you select the wrong disk, such as the PC system disk or another data disk, its data may be destroyed.
 :::
 
+:::tip
+After the Titan boots from the written SSD, the default system username and password are both `ubuntu`. You will be prompted to change the password on the first login.
+:::
+
 ### Linux
 
 Install 7-Zip:
