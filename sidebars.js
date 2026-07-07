@@ -490,6 +490,7 @@ const sidebars = {
       },
       items: [
         "jupiter2/getting-started/quick-start",
+        "jupiter2/getting-started/metal-case",
       ],
     },
   ],

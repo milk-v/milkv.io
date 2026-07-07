@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Quick Start'
+sidebar_label: '快速上手'
 sidebar_position: 70
 ---
 
