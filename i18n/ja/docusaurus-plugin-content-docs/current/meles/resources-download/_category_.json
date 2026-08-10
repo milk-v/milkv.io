@@ -1,0 +1,9 @@
+{
+  "label": "🧰 Resources Download",
+  "position": 90,
+  "link": {
+    "type": "generated-index",
+	"slug": "/meles/resources-download",
+    "description": "Meles Related Resources Download"
+  }
+}

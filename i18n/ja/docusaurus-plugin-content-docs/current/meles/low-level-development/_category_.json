@@ -1,0 +1,9 @@
+{
+  "label": "🐧 Low Level Development",
+  "position": 60,
+  "link": {
+    "type": "generated-index",
+	"slug": "/meles/low-level-development",
+    "description": "How to build u-boot, kernel and rootfs for meles"
+  }
+}
