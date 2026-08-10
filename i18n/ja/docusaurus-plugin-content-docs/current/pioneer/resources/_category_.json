@@ -1,0 +1,9 @@
+{
+  "label": "🧰 Resources",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+	"slug": "/pioneer/resources",
+    "description": "Useful Resources"
+  }
+}

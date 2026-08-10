@@ -1,0 +1,9 @@
+{
+  "label": "🏁 Getting Started",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "slug": "/pioneer/getting-started",
+    "description": "Getting Started with Pioneer"
+  }
+}
