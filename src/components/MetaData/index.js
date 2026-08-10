@@ -12,8 +12,10 @@ export default function MetaData({page}) {
   const {i18n} = useDocusaurusContext();
   const productContent = useProductContent(productAliases[page] || page);
   const sitePage = siteMetadata[page];
-  const sitePageMetadata = sitePage?.[i18n.currentLocale === 'zh' ? 'zh' : 'en'];
-  const metadata = productContent?.content.seo || sitePageMetadata;
+  const metadataLocale = i18n.currentLocale === 'zh' ? 'zh' : 'en';
+  const legacyMetadata = productContent?.product.legacy?.metadata?.[metadataLocale];
+  const sitePageMetadata = sitePage?.[metadataLocale];
+  const metadata = legacyMetadata || productContent?.content.seo || sitePageMetadata;
 
   if (!metadata) {
     return null;
@@ -27,7 +29,7 @@ export default function MetaData({page}) {
     <Head>
       <title>{metadata.title}</title>
       <meta name="description" content={metadata.description} />
-      {keywords && <meta name="keywords" content={keywords} />}
+      <meta name="keywords" content={keywords} />
     </Head>
   );
 }

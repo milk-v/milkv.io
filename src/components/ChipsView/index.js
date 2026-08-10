@@ -8,7 +8,6 @@ import styles from './index.module.css'
 // import { useLocation } from "@docusaurus/router";
 import Translate from '@docusaurus/Translate';
 import BuyPop from "../BuyPop"
-import MetaData from "../MetaData"
 import useProductContent from '@site/src/hooks/useProductContent';
 
 export default (props) => {
@@ -23,7 +22,7 @@ export default (props) => {
     const downloads_language = isChinese ? 'downloads_zh' : 'downloads'
 
     if (!jsonData) {
-        return <Layout><MetaData page={chipName} /></Layout>
+        return <Layout />
     }
 
     const [imgurl, setImgurl] = useState(0)
@@ -135,7 +134,6 @@ export default (props) => {
 
     return (
         <Layout>
-            <MetaData page={chipName} />
             <div className={styles.tabs_hied}>
                 <div className={styles.tab_card}>
                     <Link to='/'>Home</Link><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

@@ -5,11 +5,9 @@ import styles_s from '@site/src/pages/megrez/index.module.css';
 import styles_j from '@site/src/pages/jupiter-nx/index.module.css';
 import clsx from "clsx";
 import Subscribe from "@site/src/components/Subscribe";
-import MetaData from "@site/src/components/MetaData";
 
 export default () => {
     return <Layout>
-        <MetaData page='megrez-nx' />
         <main className={styles.megreznx_main}>
             <div className={styles_s.pr_title}>
                 <h1 className={styles_s.pr_name} style={{ color: '#fff' }}>Milk-V Megrez NX</h1>

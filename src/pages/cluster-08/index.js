@@ -4,11 +4,9 @@ import styles from './index.module.css';
 import styles_s from '@site/src/pages/megrez/index.module.css';
 import clsx from "clsx";
 import Subscribe from "@site/src/components/Subscribe";
-import MetaData from "@site/src/components/MetaData";
 
 export default () => {
     return <Layout>
-        <MetaData page='cluster-08' />
         <main className={styles.cluster_main}>
             <div className={styles_s.pr_title}>
                 <h1 className={styles_s.pr_name}>Milk-V Cluster 08</h1>
