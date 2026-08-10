@@ -9,16 +9,16 @@ import Link from '@docusaurus/Link';
 import chips_s from '@site/src/components/ChipsView/index.module.css'
 import styles from "./details.module.css"
 import Translate from '@docusaurus/Translate';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles_s from '../duo-s/index.module.css'
-
-const download_data = require("@site/src/jsonFiles/downloadData.json")
+import useProductContent from '@site/src/hooks/useProductContent';
 
 function DetailsPage() {
   const [down_filter_idx, setDown_filter_idx] = useState(0)
-
-  const currentLanguage = useBaseUrl('/');
-  const curren_language = currentLanguage === '/zh/' ? 'duo_zh' : 'duo'
+  const productContent = useProductContent('duo')
+  const downloadData = productContent?.product.legacy?.downloads?.[
+    productContent.locale === 'zh' ? 'zh' : 'en'
+  ] || {}
+  const downloadCategories = Object.keys(downloadData)
 
   return (
     <>
@@ -251,7 +251,7 @@ function DetailsPage() {
               <div className={chips_s.radio_input}>
                 <p><Translate id="SelectionMethod" /></p>
                 {
-                  Object.keys(download_data[curren_language]).map((item, key) => {
+                  downloadCategories.map((item, key) => {
                     return (
                       <label key={key}>
                         <input type="radio" name="Resources" value={item}
@@ -269,10 +269,10 @@ function DetailsPage() {
                 }
               </div>
               <div className={chips_s.download_list}>
-                <p style={{ color: "#fff" }}>{Object.keys(download_data[curren_language])[down_filter_idx]}</p>
+                <p style={{ color: "#fff" }}>{downloadCategories[down_filter_idx]}</p>
                 <ul>
                   {
-                    download_data[curren_language][Object.keys(download_data[curren_language])[down_filter_idx]].map((item, key) => {
+                    (downloadData[downloadCategories[down_filter_idx]] || []).map((item, key) => {
                       return <li key={key}>
                         <Link to={item.file_url}>{item.file_name}</Link>
                         <p style={{ color: "#fff" }}><span>{item.file_format}</span> <span>{item.file_date}</span> <span>{item.file_size}</span></p>

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "example-board",
+  "path": "/product-content-preview",
+  "theme": "light",
+  "heroImage": {
+    "src": "/home/home-duo-view.webp",
+    "alt": "Example development board"
+  },
+  "locales": {
+    "en": {
+      "name": "Example Board",
+      "tagline": "A fixture for validating the shared product page",
+      "summary": "This content is test-only and is not loaded by the normal website build.",
+      "seo": {
+        "title": "Example Board",
+        "description": "Product content renderer validation fixture.",
+        "keywords": ["RISC-V", "development board"]
+      },
+      "actions": [
+        {
+          "label": "Read documentation",
+          "href": "/docs",
+          "variant": "primary"
+        }
+      ],
+      "sections": [
+        {
+          "type": "features",
+          "title": "Highlights",
+          "items": [
+            {
+              "title": "Fast development",
+              "description": "A concise feature description."
+            }
+          ]
+        },
+        {
+          "type": "media",
+          "title": "Built for developers",
+          "body": ["A plain-text paragraph rendered without unsafe HTML."],
+          "image": {
+            "src": "/home/home-duo-view.webp",
+            "alt": "Example board close-up"
+          },
+          "imagePosition": "right"
+        },
+        {
+          "type": "specifications",
+          "title": "Specifications",
+          "groups": [
+            {
+              "title": "Hardware",
+              "rows": [
+                {
+                  "label": "CPU",
+                  "value": "RISC-V"
+                },
+                {
+                  "label": "Interfaces",
+                  "value": ["USB", "Ethernet"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "resources",
+          "title": "Resources",
+          "items": [
+            {
+              "label": "Documentation",
+              "href": "/docs",
+              "description": "Setup and usage guides"
+            }
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "name": "示例开发板",
+      "tagline": "用于验证通用产品详情页的数据",
+      "summary": "此内容只用于测试，正常网站构建不会加载它。",
+      "seo": {
+        "title": "示例开发板",
+        "description": "产品内容渲染器验证数据。"
+      },
+      "actions": [],
+      "sections": []
+    }
+  }
+}

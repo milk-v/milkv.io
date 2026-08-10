@@ -1,4 +1,6 @@
 /** @type {import('@docusaurus/types').Config} */
+const isProduction = process.env.NODE_ENV === 'production';
+
 const config = {
   title: 'Milk-V',
   tagline: 'Everything about RISC-V',
@@ -16,6 +18,13 @@ const config = {
     locales: ['en', 'zh', 'ru', 'ja'],
   },
   plugins: [
+    [
+      require.resolve('./plugins/product-content'),
+      {
+        contentPath: process.env.PRODUCT_DATA_DIR || '.product-data/products',
+        required: process.env.PRODUCT_DATA_REQUIRED === 'true',
+      },
+    ],
     [
       '@docusaurus/plugin-client-redirects',
       {
@@ -63,13 +72,13 @@ const config = {
         ],
       },
     ],
-    [
-      "@docusaurus/plugin-google-gtag",
+    ...(isProduction ? [[
+      '@docusaurus/plugin-google-gtag',
       {
-        trackingID: "G-N9XGGB0XBN",
+        trackingID: 'G-N9XGGB0XBN',
         anonymizeIP: true,
       },
-    ],
+    ]] : []),
   ],
   presets: [
     [

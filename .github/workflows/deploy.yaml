@@ -19,10 +19,22 @@ jobs:
         uses: actions/checkout@v4
         with: 
           fetch-depth: 0
+      - name: Checkout private product data
+        if: github.event_name != 'pull_request'
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.PRODUCT_DATA_REPOSITORY }}
+          token: ${{ secrets.PRODUCT_DATA_TOKEN }}
+          path: .product-data
+          fetch-depth: 1
       - name: Build
+        env:
+          PRODUCT_DATA_DIR: ${{ github.workspace }}/.product-data/products
+          PRODUCT_DATA_REQUIRED: ${{ github.event_name != 'pull_request' }}
         run: |
           python3 contributors.py $GITHUB_REPOSITORY ${{ github.token }}
           yarn install
+          yarn test:product-content
           yarn build
       - name: Setup Pages
         uses: actions/configure-pages@v5

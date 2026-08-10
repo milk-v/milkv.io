@@ -13,6 +13,7 @@ import styles_duo from '@site/src/pages/duo/details.module.css'
 export default () => {
     return (
         <Layout>
+            <MetaData page='duo-s' />
             <div className={styles.content}>
                 <div className={styles.content_head}>
                     <div className={styles.flex_head}>

@@ -7,18 +7,24 @@ import SupportUs from "@site/src/components/SupportUs"
 import styles from './index.module.css'
 // import { useLocation } from "@docusaurus/router";
 import Translate from '@docusaurus/Translate';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-const jsonData = require('../../jsonFiles/chips.json');
 import BuyPop from "../BuyPop"
+import MetaData from "../MetaData"
+import useProductContent from '@site/src/hooks/useProductContent';
 
 export default (props) => {
     const { chipName, children } = props
-    const currentLanguage = useBaseUrl('/');
-    const curren_language = currentLanguage === '/zh/' ? 'resources_zh' : 'resources'
-    const title_language = currentLanguage === '/zh/' ? 'title_zh' : 'title'
-    const intro_language = currentLanguage === '/zh/' ? 'chip_intro_text_zh' : 'chip_intro_text'
-    const scenarios_language = currentLanguage === '/zh/' ? 'scenarios_name_zh' : 'scenarios_name'
-    const downloads_language = currentLanguage === '/zh/' ? 'downloads_zh' : 'downloads'
+    const productContent = useProductContent(chipName)
+    const jsonData = productContent?.product.legacy?.chip
+    const isChinese = productContent?.locale === 'zh'
+    const curren_language = isChinese ? 'resources_zh' : 'resources'
+    const title_language = isChinese ? 'title_zh' : 'title'
+    const intro_language = isChinese ? 'chip_intro_text_zh' : 'chip_intro_text'
+    const scenarios_language = isChinese ? 'scenarios_name_zh' : 'scenarios_name'
+    const downloads_language = isChinese ? 'downloads_zh' : 'downloads'
+
+    if (!jsonData) {
+        return <Layout><MetaData page={chipName} /></Layout>
+    }
 
     const [imgurl, setImgurl] = useState(0)
     const magnifiers = useRef(null)
@@ -38,9 +44,9 @@ export default (props) => {
     const [x, setX] = useState(0);
     const [y, setY] = useState(0);
 
-    const down_filter = Object.keys(jsonData[chipName][downloads_language])
+    const down_filter = Object.keys(jsonData[downloads_language])
     const [down_filter_idx, setDown_filter_idx] = useState(0)
-    const resources_filter = Object.keys(jsonData[chipName][curren_language])
+    const resources_filter = Object.keys(jsonData[curren_language])
     const [resources_filter_idx, setResources_filter_idx] = useState(0)
 
     const t_modern_sty = {
@@ -129,6 +135,7 @@ export default (props) => {
 
     return (
         <Layout>
+            <MetaData page={chipName} />
             <div className={styles.tabs_hied}>
                 <div className={styles.tab_card}>
                     <Link to='/'>Home</Link><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -143,10 +150,10 @@ export default (props) => {
             <div className={styles.chip_module}>
                 <div className={styles.chip_title}>
                     <div className={styles.title_l_t}>
-                        <h4>{jsonData[chipName][title_language]}</h4>
+                        <h4>{jsonData[title_language]}</h4>
                         <Link style={{ cursor: 'pointer' }} to="#buy"><Translate id="homepage.corporations.duobuynow" /></Link>
                     </div>
-                    <img src={jsonData[chipName].front_view} alt="Front View" />
+                    <img src={jsonData.front_view} alt="Front View" />
                 </div>
             </div>
             <div className={styles.table_separate}>
@@ -224,13 +231,13 @@ export default (props) => {
                                         left: `${y * -3}px`,
                                     }}
                                     alt="Chip Views"
-                                    src={jsonData[chipName].chip_view[imgurl]} />
+                                    src={jsonData.chip_view[imgurl]} />
                             </div>
-                            <img src={jsonData[chipName].chip_view[imgurl]} alt="Chip Views" />
+                            <img src={jsonData.chip_view[imgurl]} alt="Chip Views" />
                         </div>
                         {/* <div className={styles.view_ul}>
                             {
-                                jsonData[chipName].chip_view.map((item, key) => {
+                                jsonData.chip_view.map((item, key) => {
                                     return <img src={item} key={key} onMouseEnter={(() => { setImgurl(key) })} onClick={(() => { setImgurl(key) })} />
                                 })
                             }
@@ -238,7 +245,7 @@ export default (props) => {
                     </div>
                     <div className={styles.chip_intro_t}>
                         {
-                            jsonData[chipName][intro_language].map((item, key) => {
+                            jsonData[intro_language].map((item, key) => {
                                 return <p key={key}>{item}</p>
                             })
                         }
@@ -250,18 +257,18 @@ export default (props) => {
             <div className={styles.chip_diagram}>
                 <div ref={chip_diagram}>
                     <h2><Translate id='BlockDiagram' /></h2>
-                    <img src={jsonData[chipName].diagram_url} alt="Block Diagram" className={styles.diagram_img} />
+                    <img src={jsonData.diagram_url} alt="Block Diagram" className={styles.diagram_img} />
                 </div>
                 <div ref={chip_hardware} className={styles.headModule}>
                     <h2 ><Translate id='duo.info.text.Hardware' /></h2>
                     <ul className={styles.hardware_ul}>
                         {
-                            Object.keys(jsonData[chipName].hardware).map((item, key) => {
+                            Object.keys(jsonData.hardware).map((item, key) => {
                                 return <li key={key}>
                                     <p className={styles.causality}>{item}</p>
                                     <ul className={styles.causality_data}>
                                         {
-                                            jsonData[chipName].hardware[item].map((ele, idx) => {
+                                            jsonData.hardware[item].map((ele, idx) => {
                                                 return <li key={idx} style={{ color: "#333" }}>{ele}</li>
                                             })
                                         }
@@ -275,7 +282,7 @@ export default (props) => {
                     <h2> <Translate id='Applications' /></h2>
                     <ul className={styles.scenarios}>
                         {
-                            jsonData[chipName].scenarios.map((item, key) => {
+                            jsonData.scenarios.map((item, key) => {
                                 return <li key={key}>
                                     <img src={item.img_link} alt="Applications" />
                                     <p>{item[scenarios_language]}</p>
@@ -310,7 +317,7 @@ export default (props) => {
                             <p>{down_filter[down_filter_idx]}</p>
                             <ul>
                                 {
-                                    jsonData[chipName][downloads_language][down_filter[down_filter_idx]].map((item, key) => {
+                                    jsonData[downloads_language][down_filter[down_filter_idx]].map((item, key) => {
                                         return (
                                             <li key={key}>
                                                 <Link to={item.download_url}>{item.download_name}</Link>
@@ -347,7 +354,7 @@ export default (props) => {
                         <div className={styles.download_list}>
                             <p>{resources_filter[resources_filter_idx]}</p>
                             {
-                                jsonData[chipName][curren_language][resources_filter[resources_filter_idx]].map((item, key) => {
+                                jsonData[curren_language][resources_filter[resources_filter_idx]].map((item, key) => {
                                     return (
                                         <div className={styles.board_info} key={key}>
                                             <img src={item.resources_img} alt="resources" />
