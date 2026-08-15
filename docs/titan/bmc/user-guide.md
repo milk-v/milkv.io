@@ -17,6 +17,8 @@ sidebar_position: 2
    - [Connecting to TTY Terminal](#connecting-to-tty-terminal)
 7. [Node Configuration](#node-configuration)
 8. [Installing Agent](#installing-agent)
+9. [Accessing BMC via SSH](#accessing-bmc-via-ssh)
+10. [Managing DP1000 from BMC SSH](#managing-dp1000-from-bmc-ssh)
 
 ---
 
@@ -370,6 +372,72 @@ If you need to remove the Agent:
 1. Check if Python version meets requirements (Python 3.x)
 2. Ensure /dev/ttyS3 device exists and is accessible
 3. Check systemd logs: `sudo journalctl -u bmc-agent.service`
+
+---
+
+## Accessing BMC via SSH
+
+After finding the BMC IP address, connect to it from a computer on the same network:
+
+```bash
+ssh root@<BMC_IP>
+```
+
+Replace `<BMC_IP>` with the actual BMC IP address. When prompted, enter the default credentials:
+
+- **Username**: `root`
+- **Password**: `milkv@1234`
+
+The BMC SSH account is separate from the administrator account created in the Cluster Pilot web interface.
+
+:::warning
+For security, change the default SSH password with `passwd` after the first login.
+:::
+
+---
+
+## Managing DP1000 from BMC SSH
+
+After logging in to the BMC over SSH, you can use the utilities included in the firmware to access the DP1000 debug UART and control its power.
+
+### Connecting to the DP1000 Debug UART
+
+Disconnect any UART session open in the Cluster Pilot web interface, then run:
+
+```bash
+python3 /opt/bmc/uart_agent/cli/uart_shell.py
+```
+
+The script connects to the DP1000 debug UART at 115200 baud. Press `Enter` to activate the console. Press `Ctrl+C` to exit; the script will close the serial port and switch the debug UART back to the Type-C interface.
+
+### Controlling DP1000 Power
+
+Use `power_cli.py` with one of the following actions:
+
+```bash
+# Power on
+python3 /opt/bmc/uart_agent/cli/power_cli.py --action on
+
+# Power off
+python3 /opt/bmc/uart_agent/cli/power_cli.py --action off
+
+# Reboot
+python3 /opt/bmc/uart_agent/cli/power_cli.py --action reboot
+```
+
+Additional actions are available:
+
+| Action | Description |
+| --- | --- |
+| `ac` | Enable automatic startup after AC power is restored |
+| `manual` | Enable manual startup mode |
+| `wake` | Notify the MCU that the system is awake; this is not a power-on action |
+
+Run the command without `--action` to open the interactive power-control menu, or use `-h` to display help.
+
+:::warning
+Power-off and reboot operations take effect immediately. Stop running workloads and save important data first.
+:::
 
 ---
 

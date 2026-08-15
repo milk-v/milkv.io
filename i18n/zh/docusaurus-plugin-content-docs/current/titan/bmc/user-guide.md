@@ -17,6 +17,8 @@ sidebar_position: 2
    - [连接 TTY 终端](#连接-tty-终端)
 7. [节点配置](#节点配置)
 8. [安装 Agent](#安装-agent)
+9. [通过 SSH 访问 BMC](#通过-ssh-访问-bmc)
+10. [在 BMC SSH 中管理 DP1000](#在-bmc-ssh-中管理-dp1000)
 
 ---
 
@@ -370,6 +372,72 @@ TTY 终端提供更好的交互体验，但需要在节点上安装 Agent。
 1. 检查 Python 版本是否满足要求（Python 3.x）
 2. 确保 /dev/ttyS3 设备存在且可访问
 3. 检查 systemd 日志：`sudo journalctl -u bmc-agent.service`
+
+---
+
+## 通过 SSH 访问 BMC
+
+获取 BMC 的 IP 地址后，在同一网络中的电脑上执行：
+
+```bash
+ssh root@<BMC_IP>
+```
+
+将 `<BMC_IP>` 替换为 BMC 的实际 IP 地址。根据提示输入默认登录信息：
+
+- **用户名**：`root`
+- **密码**：`milkv@1234`
+
+BMC 的 SSH 账户与 Cluster Pilot Web 界面中创建的管理员账户相互独立。
+
+:::warning
+为保证安全，首次登录后请使用 `passwd` 命令修改默认 SSH 密码。
+:::
+
+---
+
+## 在 BMC SSH 中管理 DP1000
+
+通过 SSH 登录 BMC 后，可以使用固件内置的工具连接 DP1000 调试串口并控制其电源。
+
+### 连接 DP1000 Debug UART
+
+先断开 Cluster Pilot Web 界面中已连接的 UART 会话，然后执行：
+
+```bash
+python3 /opt/bmc/uart_agent/cli/uart_shell.py
+```
+
+脚本将以 115200 波特率连接 DP1000 调试串口。按 `Enter` 激活控制台；使用完毕后按 `Ctrl+C` 退出，脚本会关闭串口并将 Debug UART 切换回 Type-C 接口。
+
+### 控制 DP1000 电源
+
+使用 `power_cli.py` 执行以下操作：
+
+```bash
+# 开机
+python3 /opt/bmc/uart_agent/cli/power_cli.py --action on
+
+# 关机
+python3 /opt/bmc/uart_agent/cli/power_cli.py --action off
+
+# 重启
+python3 /opt/bmc/uart_agent/cli/power_cli.py --action reboot
+```
+
+还支持以下操作：
+
+| Action | 说明 |
+| --- | --- |
+| `ac` | 启用交流电恢复后自动开机 |
+| `manual` | 启用手动开机模式 |
+| `wake` | 通知 MCU 系统已处于唤醒状态，并非开机操作 |
+
+不带 `--action` 运行命令可以进入交互式电源控制菜单，使用 `-h` 可以查看帮助。
+
+:::warning
+关机和重启操作会立即生效。执行前请停止正在运行的任务并保存重要数据。
+:::
 
 ---
 
