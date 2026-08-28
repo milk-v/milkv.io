@@ -75,7 +75,7 @@ Titan 主板有两个 Type-C 接口：
 
 1. 靠近 DC 电源接口位置的 Type-C 为 UR-DP1000 的调试口，板载 USB 转 UART 模块与 UR-DP1000 连接，具体用法请参考：[USB Type-C 调试口使用说明](https://milkv.io/zh/docs/titan/getting-started/setup)
 
-2. 另外一个 Type-C 口为 BMC 模块的烧录口，使用方法请参考：[BMC 使用说明](https://milkv.io/zh/docs/titan/getting-started/bmc)
+2. 另外一个 Type-C 口为 BMC 模块的烧录口，使用方法请参考：[烧录 BMC 镜像](https://milkv.io/zh/docs/titan/bmc/burn-image)
 
 <Image src='/docs/titan/titan-typec.webp' maxWidth='100%' align='left' />
 

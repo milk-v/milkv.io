@@ -78,7 +78,7 @@ The Titan motherboard has two Type-C ports:
 
 1. The Type-C port near the DC power connector is the UR-DP1000's debugging port. An onboard USB-to-UART module connects to the UR-DP1000. For detailed usage instructions, please refer to: [USB Type-C Debug Port Guide](https://milkv.io/docs/titan/getting-started/setup)
 
-2. The other Type-C port is the programming port for the BMC module. Please refer to: [BMC Usage](https://milkv.io/docs/titan/getting-started/bmc)
+2. The other Type-C port is the programming port for the BMC module. Please refer to: [Burn BMC Image](https://milkv.io/docs/titan/bmc/burn-image)
 
 <Image src='/docs/titan/titan-typec.webp' maxWidth='100%' align='left' />
 
