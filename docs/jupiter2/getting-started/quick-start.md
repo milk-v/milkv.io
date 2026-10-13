@@ -7,7 +7,7 @@ sidebar_position: 70
 
 ## Usage Reference
 
-[https://www.spacemit.com/community/document/info?lang=en&nodepath=hardware/eco/k3_pico](https://www.spacemit.com/community/document/info?lang=en&nodepath=hardware/eco/k3_pico)
+[https://spacemit.com/community/document/info?lang=en&nodepath=ecohardware/k3_series/k3_pico/pico_user_guide.md](https://spacemit.com/community/document/info?lang=en&nodepath=ecohardware/k3_series/k3_pico/pico_user_guide.md)
 
 ## Document Summary
 

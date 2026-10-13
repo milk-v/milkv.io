@@ -7,7 +7,7 @@ sidebar_position: 70
 
 ## 上手指南
 
-[https://spacemit.com/community/document/info?lang=zh&nodepath=hardware/eco/k3_pico](https://spacemit.com/community/document/info?lang=zh&nodepath=hardware/eco/k3_pico)
+[https://spacemit.com/community/document/info?lang=zh&nodepath=ecohardware/k3_series/k3_pico/pico_user_guide.md](https://spacemit.com/community/document/info?lang=zh&nodepath=ecohardware/k3_series/k3_pico/pico_user_guide.md)
 
 ## 文档汇总
 
