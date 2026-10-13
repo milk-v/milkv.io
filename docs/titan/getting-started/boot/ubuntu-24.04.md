@@ -9,7 +9,7 @@ We recommend using the Ubuntu 24.04 system officially released by UltraRISC for 
 
 The Ubuntu 24.04 firmware is released at:
 
-[https://github.com/milkv-titan/titan-ubuntu/releases/tag/2026-0605](https://github.com/milkv-titan/titan-ubuntu/releases/tag/2026-0605)
+[https://github.com/milkv-titan/titan-ubuntu/releases](https://github.com/milkv-titan/titan-ubuntu/releases)
 
 Please download all split archive files from the release assets, such as:
 

@@ -9,7 +9,7 @@ sidebar_position: 1
 
 Ubuntu 24.04 固件发布地址：
 
-[https://github.com/milkv-titan/titan-ubuntu/releases/tag/2026-0605](https://github.com/milkv-titan/titan-ubuntu/releases/tag/2026-0605)
+[https://github.com/milkv-titan/titan-ubuntu/releases](https://github.com/milkv-titan/titan-ubuntu/releases)
 
 请在 Release Assets 中下载所有分卷压缩文件，例如：
 
