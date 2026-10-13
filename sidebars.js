@@ -602,6 +602,7 @@ const sidebars = {
           items: [
             "titan/getting-started/boot/ubuntu-24.04",
             "titan/getting-started/boot/fedora-44",
+            "titan/getting-started/boot/openkylin-SP2",
           ],
         },
         "titan/getting-started/setup",
