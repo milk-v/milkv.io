@@ -35,6 +35,8 @@ Titan 主板上的 Flash 芯片安装在可开合的芯片座中，可以取出�
 | 固件文件 | 与 Titan 匹配的启动固件 `.bin` 文件 |
 | 其他工具 | 运行烧录软件的电脑、用于打开主板芯片座的镊子 |
 
+启动固件下载：[Titan Firmware](https://github.com/milkv-titan/titan-firmware/releases)。
+
 准备固件文件时，确认文件来源、版本和大小正确。启动固件、SSD 操作系统镜像和 BMC 固件用途不同，请使用适用于本操作的启动固件文件。
 
 :::warning

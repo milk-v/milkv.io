@@ -35,6 +35,8 @@ The following programmer, socket adapter, and software are the reference combina
 | Firmware file | A boot firmware `.bin` file compatible with Titan |
 | Other tools | A computer running the programming software and tweezers to open the onboard socket |
 
+Boot firmware download: [Titan Firmware](https://github.com/milkv-titan/titan-firmware/releases).
+
 Check the firmware file's source, version, and size before proceeding. Boot firmware, SSD operating system images, and BMC firmware serve different purposes. Use the boot firmware file intended for this procedure.
 
 :::warning
