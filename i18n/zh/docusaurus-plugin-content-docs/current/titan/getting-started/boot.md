@@ -7,5 +7,5 @@ sidebar_position: 10
 
 本节介绍如何在 Milk-V Titan 上安装操作系统镜像。
 
-- [Ubuntu 24.04](/zh/docs/titan/getting-started/boot/ubuntu-24.04)
-- [Fedora 44](/zh/docs/titan/getting-started/boot/fedora-44)
+- [Ubuntu 24.04](./boot/ubuntu-24.04.md)
+- [Fedora 44](./boot/fedora-44.md)

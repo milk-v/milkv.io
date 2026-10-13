@@ -7,5 +7,5 @@ sidebar_position: 10
 
 This section describes how to install operating system images on Milk-V Titan.
 
-- [Ubuntu 24.04](/docs/titan/getting-started/boot/ubuntu-24.04)
-- [Fedora 44](/docs/titan/getting-started/boot/fedora-44)
+- [Ubuntu 24.04](./boot/ubuntu-24.04.md)
+- [Fedora 44](./boot/fedora-44.md)

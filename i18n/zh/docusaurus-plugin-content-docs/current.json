@@ -227,6 +227,10 @@
     "message": "开始使用 Titan",
     "description": "The generated-index page description for category 🚀 Getting Started in sidebar titan"
   },
+  "sidebar.titan.category.Install OS": {
+    "message": "安装操作系统",
+    "description": "The label for category Install OS in sidebar titan"
+  },
   "sidebar.titan.category.🛠️ BMC Management": {
     "message": "🛠️ BMC 管理",
     "description": "The label for category 🛠️ BMC Management in sidebar titan"

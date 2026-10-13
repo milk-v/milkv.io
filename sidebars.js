@@ -591,7 +591,19 @@ const sidebars = {
         "titan/getting-started/quick-start",
         "titan/getting-started/hardware",
         "titan/getting-started/memory",
-        "titan/getting-started/boot",
+        {
+          type: "category",
+          label: "Install OS",
+          collapsed: false,
+          link: {
+            type: "doc",
+            id: "titan/getting-started/boot",
+          },
+          items: [
+            "titan/getting-started/boot/ubuntu-24.04",
+            "titan/getting-started/boot/fedora-44",
+          ],
+        },
         "titan/getting-started/setup",
         "titan/getting-started/resources",
       ],

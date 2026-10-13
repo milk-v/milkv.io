@@ -43,4 +43,4 @@ The Titan motherboard itself does not have HDMI or other display interfaces, so 
 
 ## Installing the System
 
-- [Ubuntu 24.04](https://milkv.io/docs/titan/getting-started/boot)
+- [Ubuntu 24.04](./boot/ubuntu-24.04.md)

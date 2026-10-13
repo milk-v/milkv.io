@@ -42,4 +42,4 @@ Titan 主板本身没有 HDMI 等显示接口，在其做为服务器等无显�
 
 ## 安装操作系统
 
-- [Ubuntu 24.04](https://milkv.io/zh/docs/titan/getting-started/boot)
+- [Ubuntu 24.04](./boot/ubuntu-24.04.md)
