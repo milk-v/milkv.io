@@ -15,6 +15,7 @@ The Titan motherboard supports DDR4 UDIMM memory in either single-module or dual
 | Crucial | DDR4-3200 UDIMM CL22 | Micron | 1.2V | 32GB*2 |
 | SAMSUNG | 2Rx8 PC4-3200AA-UB1-11 | Samsung | 1.2V | 16GB*2 |
 | SAMSUNG | 2Rx8 PC4-3200AA-UB2-11 | Samsung | 1.2V | 32GB*2 |
+| SAMSUNG | M391A4G43BB1-CWE PC4-3200 ECC Unbuffered | Samsung | 1.2V | 32GB*2 |
 | SK Hynix | 1Rx8 PC4-3200AA-UA3-12 | SK Hynix | 1.2V | 16GB*2 |
 | BIWIN | 1R×8 PC4-3200AA-CL22-UA3 | Micron | 1.2V | 16GB*2 |
 | Lexar | 2Rx8 3200MT/s CL22 | Micron | 1.2V | 32GB*2 |
