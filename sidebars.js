@@ -606,6 +606,7 @@ const sidebars = {
           ],
         },
         "titan/getting-started/setup",
+        "titan/getting-started/rtc",
         "titan/getting-started/firmware",
         "titan/getting-started/resources",
       ],
