@@ -39,6 +39,10 @@
     "message": "半導体チップ",
     "description": "Navbar item with label Chips"
   },
+  "item.label.All Chips": {
+    "message": "チップ一覧",
+    "description": "Navbar item with label All Chips"
+  },
   "item.label.Mars CM": {
     "message": "Mars CM",
     "description": "Navbar item with label Mars CM"

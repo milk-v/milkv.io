@@ -293,7 +293,13 @@ const config = {
             type: 'dropdown',
             label: 'Chips',
             position: 'right',
+            to: '/chips',
             items: [
+              {
+                label: 'All Chips',
+                to: '/chips',
+                exact: true,
+              },
               {
                 label: 'SG2000',
                 to: '/chips/sg2000',
@@ -305,10 +311,6 @@ const config = {
               {
                 label: 'CV1800B',
                 to: '/chips/cv1800b'
-              },
-              {
-                label: 'SG2380',
-                to: '/chips/sg2380'
               },
             ],
           },

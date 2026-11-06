@@ -1,4 +1,8 @@
 {
+  "item.label.All Chips": {
+    "message": "All Chips",
+    "description": "Navbar item with label All Chips"
+  },
   "item.label.Home": {
     "message": "Home",
     "description": "Navbar item with label Home"
