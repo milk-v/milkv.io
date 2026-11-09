@@ -72,3 +72,28 @@ builds. Pull request builds never receive the token.
 Private storage does not make published product text confidential. The generated HTML
 and JSON are public after deployment; only the source repository and CI credential stay
 private.
+
+## CV181 兼容芯片接入
+
+六款兼容芯片的数据保存在私有内容仓库 `website/products/cv181*.json`，
+页面继续由本仓库的 `src/pages/chips/<id>/index.js` 提供，数据设置
+`generatePage: false`，避免与插件自动生成的页面产生路由冲突。
+
+目录读取 `legacy.chip.catalogGroup` 和 `catalogOrder`，在原有三款芯片之后
+追加两组三张卡片；`catalog_image` 指向目录示意图，`front_view` 指向详情示意图。
+详情使用 `ChipSpecification`，直接复用 `ChipsView/index.module.css`，仅展示已有的
+概述、硬件规格、服务介绍和联系区域。原 `ChipsView` 及现有芯片数据保持原实现。
+
+在本仓库目录下，使用同级内容仓库进行完整构建和预览：
+
+```bash
+PRODUCT_DATA_DIR="$(realpath ../website/products)" PRODUCT_DATA_REQUIRED=true npm run build
+npm run serve -- --host 0.0.0.0 --port 3000 --no-open
+```
+
+新增数据与主站路由、`static/chips/packages/` 素材需要配套发布。现有工作流读取
+`PRODUCT_DATA_REPOSITORY` 指定的内容仓库；先推送私有内容，再推送主站代码触发构建。
+仅更新私有内容仓库后，需要手动触发主站工作流才能重新发布。
+
+没有私有数据的 PR 构建只显示原有三张目录卡片；新增详情保留型号及返回目录的入口。
+该回退用于验证公开代码可独立构建，正式构建仍需设置 `PRODUCT_DATA_REQUIRED=true`。

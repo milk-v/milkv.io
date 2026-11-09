@@ -3,10 +3,18 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import styles from './index.module.css'
 import ContactUs from "../../components/ContactUs"
+import {usePluginData} from '@docusaurus/useGlobalData';
 // import SupportUs from "../../components/SupportUs"
 
 
 export default () => {
+    const productData = usePluginData('milkv-product-content');
+    const compatibleGroups = ['sg2000', 'sg2002'].map((group) => ({
+        group,
+        products: Object.values(productData?.products || {})
+            .filter((product) => product.legacy?.chip?.catalogGroup === group)
+            .sort((a, b) => a.legacy.chip.catalogOrder - b.legacy.chip.catalogOrder),
+    }));
     return <Layout>
         <div className={styles.chips_center}>
             <div className={styles.tit_box}>
@@ -49,6 +57,23 @@ export default () => {
                         <Link to='/chips/sg2002'>Learn More</Link>
                     </li>
                 </ul>
+                {compatibleGroups.filter(({products}) => products.length > 0).map(({group, products}) => (
+                    <ul key={group}>
+                        {products.map((product) => (
+                            <li key={product.id} className={styles.compatibility_card}>
+                                <span className={styles.compatibility_corner}>
+                                    <span className={`${styles.compatibility_ribbon} ${styles[`compatibility_${group}`]}`}>
+                                        <span>Compatible with </span>
+                                        <strong>{group.toUpperCase()}</strong>
+                                    </span>
+                                </span>
+                                <img src={product.legacy.chip.catalog_image || product.legacy.chip.front_view} alt={`${product.id.toUpperCase()} package illustration`} />
+                                <p>{product.id.toUpperCase()}</p>
+                                <Link to={product.path}>Learn More</Link>
+                            </li>
+                        ))}
+                    </ul>
+                ))}
             </div>
             <div className={styles.buy_samples}>
                 <div className={styles.buy_cards}>

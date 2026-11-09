@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img">
+  <title>QFN package illustration</title>
+  <path d="M 105 72 v 18 M 105 310 v 18 M 72 105 h 18 M 310 105 h 18 M 123 72 v 18 M 123 310 v 18 M 72 123 h 18 M 310 123 h 18 M 141 72 v 18 M 141 310 v 18 M 72 141 h 18 M 310 141 h 18 M 159 72 v 18 M 159 310 v 18 M 72 159 h 18 M 310 159 h 18 M 177 72 v 18 M 177 310 v 18 M 72 177 h 18 M 310 177 h 18 M 195 72 v 18 M 195 310 v 18 M 72 195 h 18 M 310 195 h 18 M 213 72 v 18 M 213 310 v 18 M 72 213 h 18 M 310 213 h 18 M 231 72 v 18 M 231 310 v 18 M 72 231 h 18 M 310 231 h 18 M 249 72 v 18 M 249 310 v 18 M 72 249 h 18 M 310 249 h 18 M 267 72 v 18 M 267 310 v 18 M 72 267 h 18 M 310 267 h 18 M 285 72 v 18 M 285 310 v 18 M 72 285 h 18 M 310 285 h 18" fill="none" stroke="#a3a3a3" stroke-width="8"/>
+  <rect x="90" y="90" width="220" height="220" rx="7" fill="#282d30"/>
+  <rect x="98" y="98" width="204" height="204" rx="4" fill="#303538"/>
+  <circle cx="116" cy="116" r="5" fill="#85898c"/>
+  <text x="200" y="190" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" fill="#d1d3d4">QFN</text>
+  <text x="200" y="225" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#b8bdc0">9 × 9 mm</text>
+  <text x="200" y="365" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#777">Package illustration</text>
+</svg>

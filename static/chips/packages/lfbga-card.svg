@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="468" viewBox="0 0 400 468" role="img">
+  <title>LFBGA package illustration</title>
+  <g transform="translate(-156.363636 -156.363636) scale(1.781818)">
+  <rect x="90" y="90" width="220" height="220" rx="7" fill="#282d30"/>
+  <rect x="98" y="98" width="204" height="204" rx="4" fill="#303538"/>
+  <circle cx="116" cy="116" r="5" fill="#85898c"/>
+  <text x="200" y="190" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" fill="#d1d3d4">LFBGA</text>
+  <text x="200" y="225" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#b8bdc0">10 × 10 mm</text>
+  </g>
+  <text x="200" y="444" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#777">Package illustration</text>
+</svg>
